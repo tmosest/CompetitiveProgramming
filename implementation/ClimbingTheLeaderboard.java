@@ -5,41 +5,43 @@ import java.util.Scanner;
 public class ClimbingTheLeaderboard {
   
   private static final boolean debugMode = false;
-  
-  public static int determineRank(int[] scoreBoard, int score) {
-    int rank = 1;
-    int ScoreToBeat = scoreBoard[0];
-    
-    for (int i = 0; i < scoreBoard.length; i++) {
-      if(debugMode) {
-        System.out.println("ScoreToBeat: " + ScoreToBeat + " score: " + score);
-      }
-      if (score >= ScoreToBeat) {
-        break;
-      } else if (ScoreToBeat != scoreBoard[i]) {
-        ++rank;
-        ScoreToBeat = scoreBoard[i];
-      }
-      if(debugMode) {
-        System.out.println("rank: " + rank);
-      }
-    }
-    if(score < scoreBoard[scoreBoard.length - 1]) {
-      if(debugMode) 
-        System.out.println("absolute looser: " + rank);
-      ++rank;
-    }
-    if(debugMode) {
-      System.out.println("final rank: " + rank);
-    }
-    return rank;
-  }
 
   public static int[] determineRanks(int[] scoreBoard, int[] scores) {
-    for(int i = 0; i < scores.length; i++) {
-      scores[i] = determineRank(scoreBoard, scores[i]);
+    int[] ranks = new int[scores.length];
+    
+    int i = 0;
+    int rank = 1;
+    int ScoreToBeat = scoreBoard[0];
+    boolean isLoser = false;
+    for(int s = scores.length - 1; s >= 0; s--) {
+      
+      int score = scores[s];
+      for (; i < scoreBoard.length; i++) {
+        if(debugMode) {
+          System.out.println("ScoreToBeat: " + ScoreToBeat + " score: " + score);
+        }
+        if (score >= ScoreToBeat) {
+          break;
+        } else if (ScoreToBeat != scoreBoard[i]) {
+          ++rank;
+          ScoreToBeat = scoreBoard[i];
+        }
+        if(debugMode) {
+          System.out.println("rank: " + rank);
+        }
+      }
+      if(score < scoreBoard[scoreBoard.length - 1]) {
+        if(debugMode) 
+          System.out.println("absolute looser");
+        isLoser = true;
+      }
+      if(debugMode) {
+        System.out.println("final rank: " + rank);
+      }
+      ranks[s] = (isLoser) ? rank + 1 : rank;
     }
-    return scores;
+    
+    return ranks;
   }
   
   public static void printRanks(int[] ranks) {

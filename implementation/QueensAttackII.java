@@ -6,250 +6,256 @@ public class QueensAttackII {
 
   private static final boolean debugMode = false;
 
-  private static boolean[][] board;
+  private static int boardSize;
 
-  public static void addBlockersToBoard(int boardSize, int[][] blockers) {
-    board = new boolean[0][0];
-    if (blockers.length != 0) {
-      board = new boolean[boardSize][boardSize];
-      for (int b = 0; b < blockers.length; b++) {
-        board[blockers[b][0] - 1][blockers[b][1] - 1] = true;
-      }
-    }
-  }
+  private static int[] queenPosition = new int[2];
+  
+  private static int north;
+  private static int south;
+  private static int west;
+  private static int east;
 
-  public static boolean isBlockedFast(int x, int y) {
-    if (board.length == 0)
-      return false;
-    return board[x - 1][y - 1];
-  }
+  private static int[] northEast = new int[2];
+  private static int[] northWest = new int[2];
+  private static int[] southEast = new int[2];
+  private static int[] southWest = new int[2];
 
-  public static long numberOfQueenMovesFast(int boardSize, int[] queenPosition) {
-    int movesSize = 0;
+  public static void determineInitialBorders() {
     int queenX = queenPosition[0];
     int queenY = queenPosition[1];
-    // Look to the queen's left
-    if (queenX - 1 >= 1) {
-      // Loop and see what we have
-      for (int p = queenX - 1; p >= 1; p--) {
-        if (isBlockedFast(p, queenY))
-          break;
-        movesSize++;
-      }
-    }
-    if (debugMode)
-      System.out.println("Left Moves: " + movesSize);
-    // Look to the queen's right
-    if (queenX + 1 <= boardSize) {
-      // Loop and see what we have
-      for (int p = queenX + 1; p <= boardSize; p++) {
-        if (isBlockedFast(p, queenY))
-          break;
-        movesSize++;
-      }
-    }
-    if (debugMode)
-      System.out.println("Right Moves: " + movesSize);
-    // Look below the queen
-    if (queenY - 1 >= 1) {
-      // Loop through and check
-      for (int p = queenY - 1; p >= 1; p--) {
-        if (isBlockedFast(queenX, p))
-          break;
-        movesSize++;
-      }
-    }
-    if (debugMode)
-      System.out.println("Below Moves: " + movesSize);
-    // Look above the queen
-    if (queenY + 1 <= boardSize) {
-      // Loop through and count
-      for (int p = queenY + 1; p <= boardSize; p++) {
-        if (isBlockedFast(queenX, p))
-          break;
-        movesSize++;
-      }
-    }
-    if (debugMode)
-      System.out.println("Above Moves: " + movesSize);
-    // Reset to Queen Position
-    queenX = queenPosition[0];
-    queenY = queenPosition[1];
+
+    north = east = boardSize + 1; // Above the board
+    south = west = 0; // Below the board;
+
+    // Set default for top right
+    northEast[0] = queenX;
+    northEast[1] = queenY;
     // Look above and to the right
     if (queenX + 1 <= boardSize && queenY + 1 <= boardSize) {
-      while (++queenX <= boardSize && ++queenY <= boardSize && !isBlockedFast(queenX, queenY))
-        ++movesSize;
+      while (++queenX <= boardSize && ++queenY <= boardSize) {
+        ++northEast[0];
+        ++northEast[1];
+      }
+      ++northEast[0];
+      ++northEast[1];
     }
-    if (debugMode)
-      System.out.println("Above Right Moves: " + movesSize);
     // Reset to Queen Position
     queenX = queenPosition[0];
     queenY = queenPosition[1];
+
+    // Set default for top left
+    northWest[0] = queenX;
+    northWest[1] = queenY;
     // Look above and to the left
     if (queenX - 1 >= 1 && queenY + 1 <= boardSize) {
-      while (--queenX >= 1 && ++queenY <= boardSize && !isBlockedFast(queenX, queenY))
-        ++movesSize;
+      while (--queenX >= 1 && ++queenY <= boardSize) {
+        --northWest[0];
+        ++northWest[1];
+      }
+      --northWest[0];
+      ++northWest[1];
     }
-    if (debugMode)
-      System.out.println("Above left Moves: " + movesSize);
     // Reset to Queen Position
     queenX = queenPosition[0];
     queenY = queenPosition[1];
+
+    // Set default for bottom right
+    southEast[0] = queenX;
+    southEast[1] = queenY;
     // Look below and to the right
     if (queenX + 1 <= boardSize && queenY - 1 >= 1) {
-      while (++queenX <= boardSize && --queenY >= 1 && !isBlockedFast(queenX, queenY))
-        ++movesSize;
+      while (++queenX <= boardSize && --queenY >= 1) {
+        ++southEast[0];
+        --southEast[1];
+      }
+      ++southEast[0];
+      --southEast[1];
     }
-    if (debugMode)
-      System.out.println("Below Right Moves: " + movesSize);
     // Reset to Queen Position
     queenX = queenPosition[0];
     queenY = queenPosition[1];
+
+    // Set default for bottom right
+    southWest[0] = queenX;
+    southWest[1] = queenY;
     // Look below and to the left
     if (queenX - 1 >= 1 && queenY - 1 >= 1) {
-      while (--queenX >= 1 && --queenY >= 1 && !isBlockedFast(queenX, queenY))
-        ++movesSize;
+      while (--queenX >= 1 && --queenY >= 1) {
+        --southWest[0];
+        --southWest[1];
+      }
+      --southWest[0];
+      --southWest[1];
     }
-    if (debugMode)
-      System.out.println("Below Left Moves: " + movesSize);
-    return movesSize;
+
+    if (debugMode) {
+      System.out.println("Default Bounds");
+
+      System.out.println("north: " + north);
+      System.out.println("south: " + south);
+      System.out.println("west: " + west);
+      System.out.println("east: " + east);
+
+      System.out.println("northEast: " + northEast[0] + " : " + northEast[1]);
+      System.out.println("northWest: " + northWest[0] + " : " + northWest[1]);
+      System.out.println("southWest: " + southWest[0] + " : " + southWest[1]);
+      System.out.println("southEast: " + southEast[0] + " : " + southEast[1]);
+    }
   }
 
-  public static void handleProblemFast() {
-    Scanner in = new Scanner(System.in);
-    int n = in.nextInt();
-    int k = in.nextInt();
-    board = new boolean[0][0];
-    if (k != 0)
-      board = new boolean[n][n];
-    int[] queen = new int[2];
-    queen[0] = in.nextInt();
-    queen[1] = in.nextInt();
-    for (int a0 = 0; a0 < k; a0++) {
-      board[in.nextInt() - 1][in.nextInt() - 1] = true;
-    }
-    in.close();
-    System.out.println(numberOfQueenMovesFast(n, queen));
+  private enum Direction {
+    None, North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest,
   }
 
-  public static boolean isBlocked(int x, int y, int[][] blockers) {
-    boolean isBlocked = false;
-    for (int b = 0; b < blockers.length; b++) {
-      if (x == blockers[b][0] && y == blockers[b][1]) {
-        isBlocked = true;
+  private static Direction determineDirect(int x, int y) {
+    Direction pieceDirection = Direction.None;
+    // Determine if same x position
+    if (x == queenPosition[0]) {
+      if (y > queenPosition[1]) {
+        // Above Queen
+        pieceDirection = Direction.North;
+      } else {
+        // Below Queen
+        pieceDirection = Direction.South;
+      }
+    }
+    // Determine if same y position
+    else if (y == queenPosition[1]) {
+      if (x > queenPosition[0]) {
+        // Right of Queen
+        pieceDirection = Direction.East;
+      } else {
+        // Left of Queen
+        pieceDirection = Direction.West;
+      }
+    }
+    // Else maybe it is diagonal
+    else {
+      int deltaX = x - queenPosition[0];
+      int deltaY = y - queenPosition[1];
+      // Look to see if the differences in X and Y are the same magnitude
+      if (Math.abs(deltaX) == Math.abs(deltaY)) {
+        // Top Right
+        if (deltaX > 0 && deltaY > 0) {
+          pieceDirection = Direction.NorthEast;
+        }
+        // Top Left
+        else if (deltaX < 0 && deltaY > 0) {
+          pieceDirection = Direction.NorthWest;
+        }
+        // Bottom Right
+        else if (deltaX > 0 && deltaY < 0) {
+          pieceDirection = Direction.SouthEast;
+        }
+        // Bottom Left
+        else {
+          pieceDirection = Direction.SouthWest;
+        }
+      }
+    }
+    return pieceDirection;
+  }
+
+  public static void updateBounds(int x, int y) {
+    Direction direction = determineDirect(x, y);
+    switch (direction) {
+      case North:
+        north = (y < north) ? y : north;
         break;
-      }
+      case South:
+        south = (y > south) ? y : south;
+        break;
+      case East:
+        east = (x < east) ? x : east;
+        break;
+      case West:
+        west = (x > west) ? x : west;
+        break;
+      case NorthEast:
+        if (x < east && y < north) {
+          northEast[0] = x;
+          northEast[1] = y;
+        }
+        break;
+      case NorthWest:
+        if (x > west && y < north) {
+          northWest[0] = x;
+          northWest[1] = y;
+        }
+        break;
+      case SouthEast:
+        if (x < east && y > south) {
+          southEast[0] = x;
+          southEast[1] = y;
+        }
+        break;
+      case SouthWest:
+        if (x > west && y > south) {
+          southWest[0] = x;
+          southWest[1] = y;
+        }
+        break;
+      default:
+        break;
     }
-    return isBlocked;
+  }
+  
+  public static int calculateNumberOfMoves() {
+    int moves = 0;
+    if (debugMode)
+      System.out.println("Queen at: " + queenPosition[0] + " " + queenPosition[1]);
+    // Four basic directions East, West, Noth, and South
+    moves += (east == queenPosition[0]) ? 0 : east - queenPosition[0] - 1;
+    if (debugMode)
+      System.out.println("East Moves: " + moves);
+    moves += (west == queenPosition[0]) ? 0 : queenPosition[0] - west - 1;
+    if (debugMode)
+      System.out.println("West Moves: " + moves);
+    moves += (north == queenPosition[1]) ? 0 : north - queenPosition[1] - 1;
+    if (debugMode)
+      System.out.println("North Moves: " + moves);
+    moves += (south == queenPosition[1]) ? 0 : queenPosition[1] - south - 1;
+    if (debugMode)
+      System.out.println("South Moves: " + moves);
+    // Four Complex Directions
+    moves += (northEast[0] == queenPosition[0]) ? 0 : northEast[0] - queenPosition[0] - 1;
+    if (debugMode)
+      System.out.println("North East Moves: " + moves);
+    moves += (northWest[0] == queenPosition[0]) ? 0 : queenPosition[0] - northWest[0] - 1;
+    if (debugMode)
+      System.out.println("North West Moves: " + moves);
+    moves += (southEast[0] == queenPosition[0]) ? 0 : southEast[0] - queenPosition[0] - 1;
+    if (debugMode)
+      System.out.println("South East Moves: " + moves);
+    moves += (southWest[0] == queenPosition[0]) ? 0 : queenPosition[0] - southWest[0] - 1;
+    if (debugMode)
+      System.out.println("South West Moves: " + moves);
+    return moves;
   }
 
-  public static long numberOfQueenMoves(int boardSize, int[] queenPosition, int[][] blockers) {
-    int movesSize = 0;
-    int queenX = queenPosition[0];
-    int queenY = queenPosition[1];
-    // Look to the queen's left
-    if (queenX - 1 >= 1) {
-      // Loop and see what we have
-      for (int p = queenX - 1; p >= 1; p--) {
-        if (isBlocked(p, queenY, blockers))
-          break;
-        movesSize++;
-      }
-    }
-    if (debugMode)
-      System.out.println("Left Moves: " + movesSize);
-    // Look to the queen's right
-    if (queenX + 1 <= boardSize) {
-      // Loop and see what we have
-      for (int p = queenX + 1; p <= boardSize; p++) {
-        if (isBlocked(p, queenY, blockers))
-          break;
-        movesSize++;
-      }
-    }
-    if (debugMode)
-      System.out.println("Right Moves: " + movesSize);
-    // Look below the queen
-    if (queenY - 1 >= 1) {
-      // Loop through and check
-      for (int p = queenY - 1; p >= 1; p--) {
-        if (isBlocked(queenX, p, blockers))
-          break;
-        movesSize++;
-      }
-    }
-    if (debugMode)
-      System.out.println("Below Moves: " + movesSize);
-    // Look above the queen
-    if (queenY + 1 <= boardSize) {
-      // Loop through and count
-      for (int p = queenY + 1; p <= boardSize; p++) {
-        if (isBlocked(queenX, p, blockers))
-          break;
-        movesSize++;
-      }
-    }
-    if (debugMode)
-      System.out.println("Above Moves: " + movesSize);
-    // Reset to Queen Position
-    queenX = queenPosition[0];
-    queenY = queenPosition[1];
-    // Look above and to the right
-    if (queenX + 1 <= boardSize && queenY + 1 <= boardSize) {
-      while (++queenX <= boardSize && ++queenY <= boardSize && !isBlocked(queenX, queenY, blockers))
-        ++movesSize;
-    }
-    if (debugMode)
-      System.out.println("Above Right Moves: " + movesSize);
-    // Reset to Queen Position
-    queenX = queenPosition[0];
-    queenY = queenPosition[1];
-    // Look above and to the left
-    if (queenX - 1 >= 1 && queenY + 1 <= boardSize) {
-      while (--queenX >= 1 && ++queenY <= boardSize && !isBlocked(queenX, queenY, blockers))
-        ++movesSize;
-    }
-    if (debugMode)
-      System.out.println("Above left Moves: " + movesSize);
-    // Reset to Queen Position
-    queenX = queenPosition[0];
-    queenY = queenPosition[1];
-    // Look below and to the right
-    if (queenX + 1 <= boardSize && queenY - 1 >= 1) {
-      while (++queenX <= boardSize && --queenY >= 1 && !isBlocked(queenX, queenY, blockers))
-        ++movesSize;
-    }
-    if (debugMode)
-      System.out.println("Below Right Moves: " + movesSize);
-    // Reset to Queen Position
-    queenX = queenPosition[0];
-    queenY = queenPosition[1];
-    // Look below and to the left
-    if (queenX - 1 >= 1 && queenY - 1 >= 1) {
-      while (--queenX >= 1 && --queenY >= 1 && !isBlocked(queenX, queenY, blockers))
-        ++movesSize;
-    }
-    if (debugMode)
-      System.out.println("Below Left Moves: " + movesSize);
-    return movesSize;
-  }
-
-  public static void handleProblem() {
+  public static int handleInputs() {
     Scanner in = new Scanner(System.in);
-    int n = in.nextInt();
-    int k = in.nextInt();
-    int[] queen = new int[2];
-    queen[0] = in.nextInt();
-    queen[1] = in.nextInt();
-    int[][] blockers = new int[k][2];
-    for (int a0 = 0; a0 < k; a0++) {
-      blockers[a0][0] = in.nextInt();
-      blockers[a0][1] = in.nextInt();
-    }
-    System.out.println(numberOfQueenMoves(n, queen, blockers));
-  }
+    boardSize = in.nextInt();
+    int querySize = in.nextInt();
 
+    queenPosition[0] = in.nextInt();
+    queenPosition[1] = in.nextInt();
+    
+    // Set the initial 8 bounds for the queen.
+    determineInitialBorders();
+    
+    // Run queries
+    for(int q = 0; q < querySize; q++) {
+      int x = in.nextInt();
+      int y = in.nextInt();
+      updateBounds(x, y);
+    }
+    int moves = calculateNumberOfMoves();
+    System.out.println(moves);
+    return moves;
+  }
+  
   public static void main(String[] args) {
-    handleProblemFast();
+    handleInputs();
   }
 }

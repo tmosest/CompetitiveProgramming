@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class QueensAttackII {
 
-  private static final boolean debugMode = false;
+  public static boolean debugMode = false;
 
   private static int boardSize;
 
   private static int[] queenPosition = new int[2];
-  
+
   private static int north;
   private static int south;
   private static int west;
@@ -89,17 +89,19 @@ public class QueensAttackII {
     }
 
     if (debugMode) {
-      System.out.println("Default Bounds");
+      System.out.println("Default Bounds:");
 
-      System.out.println("north: " + north);
-      System.out.println("south: " + south);
-      System.out.println("west: " + west);
-      System.out.println("east: " + east);
+      System.out.println("North: " + north);
+      System.out.println("South: " + south);
+      System.out.println("West: " + west);
+      System.out.println("East: " + east);
 
-      System.out.println("northEast: " + northEast[0] + " : " + northEast[1]);
-      System.out.println("northWest: " + northWest[0] + " : " + northWest[1]);
-      System.out.println("southWest: " + southWest[0] + " : " + southWest[1]);
-      System.out.println("southEast: " + southEast[0] + " : " + southEast[1]);
+      System.out.println("North East: " + northEast[0] + " : " + northEast[1]);
+      System.out.println("North West: " + northWest[0] + " : " + northWest[1]);
+      System.out.println("South West: " + southWest[0] + " : " + southWest[1]);
+      System.out.println("South East: " + southEast[0] + " : " + southEast[1]);
+
+      System.out.println("");
     }
   }
 
@@ -135,6 +137,10 @@ public class QueensAttackII {
       int deltaY = y - queenPosition[1];
       // Look to see if the differences in X and Y are the same magnitude
       if (Math.abs(deltaX) == Math.abs(deltaY)) {
+        if (debugMode) {
+          System.out.println("\n Diagonal Found at: " + x + " : " + y + " deltas: " + deltaX + " : "
+              + deltaY + "\n");
+        }
         // Top Right
         if (deltaX > 0 && deltaY > 0) {
           pieceDirection = Direction.NorthEast;
@@ -148,7 +154,7 @@ public class QueensAttackII {
           pieceDirection = Direction.SouthEast;
         }
         // Bottom Left
-        else {
+        else if (deltaX < 0 && deltaY < 0) {
           pieceDirection = Direction.SouthWest;
         }
       }
@@ -172,25 +178,25 @@ public class QueensAttackII {
         west = (x > west) ? x : west;
         break;
       case NorthEast:
-        if (x < east && y < north) {
+        if (x < northEast[0] && y < northEast[1]) {
           northEast[0] = x;
           northEast[1] = y;
         }
         break;
       case NorthWest:
-        if (x > west && y < north) {
+        if (x > northWest[0] && y < northWest[1]) {
           northWest[0] = x;
           northWest[1] = y;
         }
         break;
       case SouthEast:
-        if (x < east && y > south) {
+        if (x < southEast[0] && y > southEast[1]) {
           southEast[0] = x;
           southEast[1] = y;
         }
         break;
       case SouthWest:
-        if (x > west && y > south) {
+        if (x > southWest[0] && y > southWest[1]) {
           southWest[0] = x;
           southWest[1] = y;
         }
@@ -199,12 +205,26 @@ public class QueensAttackII {
         break;
     }
   }
-  
+
   public static int calculateNumberOfMoves() {
     int moves = 0;
-    if (debugMode)
+    if (debugMode) {
+      System.out.println("About to Calculate Moves:");
       System.out.println("Queen at: " + queenPosition[0] + " " + queenPosition[1]);
-    // Four basic directions East, West, Noth, and South
+
+      System.out.println("North: " + north);
+      System.out.println("South: " + south);
+      System.out.println("West: " + west);
+      System.out.println("East: " + east);
+
+      System.out.println("North East: " + northEast[0] + " : " + northEast[1]);
+      System.out.println("North West: " + northWest[0] + " : " + northWest[1]);
+      System.out.println("South West: " + southWest[0] + " : " + southWest[1]);
+      System.out.println("South East: " + southEast[0] + " : " + southEast[1]);
+
+      System.out.println("");
+    }
+    // Four basic directions East, West, North, and South
     moves += (east == queenPosition[0]) ? 0 : east - queenPosition[0] - 1;
     if (debugMode)
       System.out.println("East Moves: " + moves);
@@ -240,12 +260,20 @@ public class QueensAttackII {
 
     queenPosition[0] = in.nextInt();
     queenPosition[1] = in.nextInt();
-    
+
+    if (debugMode) {
+      System.out.println("\nInputs:");
+      System.out.println("Board Size: " + boardSize);
+      System.out.println("Number of Blockers: " + querySize);
+      System.out.println("Queen Position: " + queenPosition[0] + " : " + queenPosition[1]);
+      System.out.println("");
+    }
+
     // Set the initial 8 bounds for the queen.
     determineInitialBorders();
-    
+
     // Run queries
-    for(int q = 0; q < querySize; q++) {
+    for (int q = 0; q < querySize; q++) {
       int x = in.nextInt();
       int y = in.nextInt();
       updateBounds(x, y);
@@ -254,7 +282,7 @@ public class QueensAttackII {
     System.out.println(moves);
     return moves;
   }
-  
+
   public static void main(String[] args) {
     handleInputs();
   }

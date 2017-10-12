@@ -1,4 +1,4 @@
-package _data_structures;
+package datastructures;
 
 import commons.OutOfBoundsException;
 

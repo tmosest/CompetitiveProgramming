@@ -1,10 +1,9 @@
-package _data_structures.tests;
+package datastructures.tests;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import _data_structures.implementations.ResizingArray;
+import datastructures.implementations.ResizingArray;
 
 public class ResizingArrayTest {
 	

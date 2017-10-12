@@ -1,12 +1,11 @@
-package _data_structures.tests;
+package datastructures.tests;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import _data_structures.UnionFindADT;
-import _data_structures.implementations.QuickUnion;
 import commons.OutOfBoundsException;
+import datastructures.UnionFindADT;
+import datastructures.implementations.QuickUnion;
 
 public class QuickUnionTest {
 	

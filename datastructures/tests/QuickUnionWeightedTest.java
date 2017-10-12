@@ -1,21 +1,20 @@
-package _data_structures.tests;
+package datastructures.tests;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import _data_structures.UnionFindADT;
-import _data_structures.implementations.QuickFind;
 import commons.OutOfBoundsException;
+import datastructures.UnionFindADT;
+import datastructures.implementations.QuickUnionWeighted;
 
-public class QuickFindTest {
+public class QuickUnionWeightedTest {
 	
 	int size = 10;
 	UnionFindADT uf;
 	
 	@Before
 	public void setUp() {
-		uf = new QuickFind(10);
+		uf = new QuickUnionWeighted(10);
 	}
 
 	@Test

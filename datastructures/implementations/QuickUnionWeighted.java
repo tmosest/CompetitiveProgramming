@@ -1,7 +1,7 @@
-package _data_structures.implementations;
+package datastructures.implementations;
 
-import _data_structures.UnionFindADT;
 import commons.OutOfBoundsException;
+import datastructures.UnionFindADT;
 /**
  * QuickUnionWeighted: 
  * 

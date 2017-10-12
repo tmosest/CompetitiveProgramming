@@ -1,4 +1,4 @@
-package _data_structures;
+package datastructures;
 
 /**
  * This interface represents the 3 - Sum - Problem.

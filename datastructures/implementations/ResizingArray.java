@@ -1,6 +1,6 @@
-package _data_structures.implementations;
+package datastructures.implementations;
 
-import _data_structures.ArrayListADT;
+import datastructures.ArrayListADT;
 
 public class ResizingArray<T> implements ArrayListADT<T> {
 

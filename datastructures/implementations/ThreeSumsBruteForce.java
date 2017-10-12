@@ -1,6 +1,6 @@
-package _data_structures.implementations;
+package datastructures.implementations;
 
-import _data_structures.ThreeSumProblem;
+import datastructures.ThreeSumProblem;
 
 /**
  * This class represents a brute force solution to the Three Sums Problems

@@ -1,4 +1,4 @@
-package implementations.tests;
+package implementation.tests;
 
 import org.junit.Test;
 import implementation.QueensAttackII;
@@ -36,8 +36,8 @@ public class QueensAttackIITest {
   
   @Test
   public void testCase17() throws NumberFormatException, IOException {
-    File inputFile = new File("implementations/tests/data/QueensAttackII/input17.txt");
-    File outputFile = new File("implementations/tests/data/QueensAttackII/output17.txt");
+    File inputFile = new File("implementation/tests/data/QueensAttackII/input17.txt");
+    File outputFile = new File("implementation/tests/data/QueensAttackII/output17.txt");
     out = new BufferedReader(new FileReader(outputFile));
     int answer = Integer.parseInt(out.readLine());
     InputStream testInput = new FileInputStream(inputFile);

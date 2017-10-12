@@ -1,4 +1,4 @@
-package implementations.tests;
+package implementation.tests;
 
 import java.text.ParseException;
 import org.junit.Assert;

@@ -40,7 +40,7 @@ public class BinarySearch implements SearchADT {
     int low = 0;
     int high = searchArray.length - 1;
     while(low <= high) {
-      int middle = (high + low) / 2;
+      int middle = (high + low) / 2; // The book uses: low + (high - low) / 2 but doesn't seem to matter.
       if(element < searchArray[middle]) // Too Big, Go Left
         high = middle - 1;
       else if(element > searchArray[middle]) // Too Small, Go Right

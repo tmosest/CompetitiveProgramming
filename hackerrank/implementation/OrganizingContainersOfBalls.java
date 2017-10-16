@@ -6,19 +6,35 @@ public class OrganizingContainersOfBalls {
 
   public static boolean debugMode = false;
 
-  private static boolean canOrganizeBalls(long[] balls) {
-    boolean canSwapEven = true;
-    long toCheck = balls[0];
-    for (int b = 0; b < balls.length; b++) {
-      if (debugMode) {
-        System.out.println("Ball Count " + b + " : " + balls[b]);
-      }
-      if (balls[b] != toCheck) {
-        canSwapEven = false;
-        // break;
+  private static int n;
+  private static int[] containers;
+  private static int[] types;
+
+  private static boolean canOrganizeBalls() {
+    boolean result = true;
+    for (int i = 0; i < n; i++) {
+      int j = 0;
+      for (j = i; j < n; j++) {
+        if (debugMode) {
+          System.out.println("Indexes " + i + " : " + j);
+          System.out.println("Containers and Types " + containers[i] + " : " + types[j]);
+        }
+        if (containers[i] == types[j]) {
+          int temp = types[j];
+          types[j] = types[i];
+          types[i] = temp;
+          break;
+        }
+        if (debugMode) {
+          System.out.println("Check for false " + j + " : " + n);
+        }
+        if (j == n - 1) {
+          result = false;
+          break;
+        }
       }
     }
-    return canSwapEven;
+    return result;
   }
 
   private static void printAnswers(String[] answers) {
@@ -30,17 +46,22 @@ public class OrganizingContainersOfBalls {
     Scanner in = new Scanner(System.in);
     int tests = in.nextInt();
     String[] answers = new String[tests];
-    for (int i = 0; i < tests; i++) {
-      int bucketsAndBalls = in.nextInt();
+    for (int t = 0; t < tests; t++) {
+      n = in.nextInt();
       if (debugMode) {
-        System.out.println("\nTest Case: " + i);
-        System.out.println("Balls and Buckets Count: " + bucketsAndBalls);
+        System.out.println("\nTest Case: " + t);
+        System.out.println("Balls and Buckets Count: " + n );
       }
-      long[] balls = new long[bucketsAndBalls];
-      for (int n = 0; n < bucketsAndBalls * bucketsAndBalls; n++) {
-        balls[n % bucketsAndBalls] += in.nextInt();
+      containers = new int[n];
+      types = new int[n];
+      for (int i = 0; i < n ; i++) {
+        for (int j = 0; j < n ; j++) {
+          int input = in.nextInt();
+          containers[i] += input;
+          types[j] += input;
+        }
       }
-      answers[i] = (canOrganizeBalls(balls)) ? "Possible" : "Impossible";
+      answers[t] = (canOrganizeBalls()) ? "Possible" : "Impossible";
     }
     in.close();
     printAnswers(answers);

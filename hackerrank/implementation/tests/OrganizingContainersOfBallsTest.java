@@ -59,14 +59,14 @@ public class OrganizingContainersOfBallsTest {
     testInput = new ByteArrayInputStream(data.getBytes("UTF-8"));
     System.setIn(testInput);
     String[] answers = {"Possible", "Impossible"};
-    OrganizingContainersOfBalls.debugMode = false;
+    OrganizingContainersOfBalls.debugMode = true;
     Assert.assertArrayEquals(answers, OrganizingContainersOfBalls.solve());
   }
 
   @Test
   public void testCase1() throws NumberFormatException, IOException {
     testFromFile(1);
-    OrganizingContainersOfBalls.debugMode = true;
+    OrganizingContainersOfBalls.debugMode = false;
     Assert.assertArrayEquals(answers, OrganizingContainersOfBalls.solve());
   }
 

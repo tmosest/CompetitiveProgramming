@@ -19,7 +19,7 @@ public class WeightedUniformStringsTest {
     String answers[] = {"Yes", "Yes", "Yes", "Yes", "No", "No"};
     testInput = new ByteArrayInputStream(data.getBytes("UTF-8"));
     System.setIn(testInput);
-    WeightedUniformStrings.debugMode = true;
+    WeightedUniformStrings.debugMode = false;
     Assert.assertArrayEquals(answers, WeightedUniformStrings.solve());
   }
 

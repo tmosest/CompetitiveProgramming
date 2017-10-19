@@ -60,6 +60,7 @@ public class AppleAndOrange {
         for(int orange_i=0; orange_i < n; orange_i++){
             orange[orange_i] = in.nextInt();
         }
+        in.close();
         countFruit(s, t, a, b, apple, orange);
     }
 }

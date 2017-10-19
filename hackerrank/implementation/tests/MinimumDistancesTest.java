@@ -10,7 +10,6 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import org.junit.Assert;
 import org.junit.Test;
-import hackerrank.implementation.BeautifulTriplets;
 import hackerrank.implementation.MinimumDistances;
 
 public class MinimumDistancesTest {

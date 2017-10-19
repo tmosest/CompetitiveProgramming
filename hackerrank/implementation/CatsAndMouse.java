@@ -25,5 +25,6 @@ public class CatsAndMouse {
             int z = in.nextInt();
             catAndMoust(x, y, z);
         }
+        in.close();
     }
 }

@@ -42,6 +42,7 @@ public class TimeConversion {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
         String s = in.next();
+        in.close();
         String result = timeCoversion(s);
         System.out.println(result);
 	}

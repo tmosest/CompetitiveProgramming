@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BonAppetit {
 	
-	private static boolean debugMode = true;
+	public static boolean debugMode = true;
 	
 	static int bonAppetit(int n, int k, int b, int[] ar) {
         int result = 0;

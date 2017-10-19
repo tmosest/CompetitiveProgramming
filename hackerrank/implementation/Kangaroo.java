@@ -24,7 +24,7 @@ public class Kangaroo {
 	 */
 	static String kangaroo(int x1, int v1, int x2, int v2) {
 		boolean same = ((x1 - x2) / (v2 - v1) ) >= 0 && ((x1 - x2) % (v2 - v1) ) == 0;
-		return "NO";
+		return (same) ? "YES" : "NO";
     }
 
     public static void main(String[] args) {
@@ -35,6 +35,7 @@ public class Kangaroo {
         int v2 = in.nextInt();
         String result = kangaroo(x1, v1, x2, v2);
         System.out.println(result);
+        in.close();
     }
     
 }

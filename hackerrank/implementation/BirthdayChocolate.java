@@ -32,6 +32,7 @@ public class BirthdayChocolate {
         }
         int d = in.nextInt();
         int m = in.nextInt();
+        in.close();
         int result = solve(n, s, d, m);
         System.out.println(result);
 	}

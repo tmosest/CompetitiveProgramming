@@ -42,6 +42,7 @@ public class DrawingBook {
         int p = in.nextInt();
         int result = solve(n, p);
         System.out.println(result);
+        in.close();
     }
     
 }

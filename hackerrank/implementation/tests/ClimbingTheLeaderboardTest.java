@@ -1,6 +1,5 @@
 package hackerrank.implementation.tests;
 
-import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
 import hackerrank.implementation.ClimbingTheLeaderboard;

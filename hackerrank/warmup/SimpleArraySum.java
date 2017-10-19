@@ -19,6 +19,7 @@
 	        for(int ar_i = 0; ar_i < n; ar_i++){
 	            ar[ar_i] = in.nextInt();
 	        }
+	        in.close();
 	        int result = simpleArraySum(n, ar);
 	        System.out.println(result);
 		}

@@ -37,6 +37,7 @@ public class CompareTheTriplets {
             System.out.print(result[i] + (i != result.length - 1 ? " " : ""));
         }
         System.out.println("");
+        in.close();
     }
     
 }

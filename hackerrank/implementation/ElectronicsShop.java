@@ -1,6 +1,5 @@
 package hackerrank.implementation;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ElectronicsShop {
@@ -34,6 +33,7 @@ public class ElectronicsShop {
         //  The maximum amount of money she can spend on a keyboard and USB drive, or -1 if she can't purchase both items
         int moneySpent = getMoneySpent(keyboards, drives, s);
         System.out.println(moneySpent);
+        in.close();
     }
 	
 }

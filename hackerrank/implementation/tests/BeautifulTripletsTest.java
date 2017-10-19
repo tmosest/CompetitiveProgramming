@@ -11,7 +11,6 @@ import java.io.UnsupportedEncodingException;
 import org.junit.Assert;
 import org.junit.Test;
 import hackerrank.implementation.BeautifulTriplets;
-import hackerrank.implementation.QueensAttackII;
 
 public class BeautifulTripletsTest {
 

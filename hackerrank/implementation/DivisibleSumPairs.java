@@ -26,6 +26,7 @@ public class DivisibleSumPairs {
         }
         int result = divisibleSumPairs(n, k, ar);
         System.out.println(result);
+        in.close();
 	}
 
 }

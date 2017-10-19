@@ -1,18 +1,16 @@
 package hackerrank.implementation.tests;
 
-import org.junit.Test;
-import hackerrank.implementation.QueensAttackII;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import org.junit.Assert;
+import org.junit.Test;
+import hackerrank.implementation.QueensAttackII;
 
 public class QueensAttackIITest {
 

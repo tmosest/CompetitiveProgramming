@@ -39,6 +39,7 @@ public class BreakingTheRecords {
             separator = delimiter;
         }
         System.out.println("");
+        in.close();
 	}
 
 }

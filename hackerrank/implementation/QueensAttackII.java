@@ -278,6 +278,7 @@ public class QueensAttackII {
       int y = in.nextInt();
       updateBounds(x, y);
     }
+    in.close();
     int moves = calculateNumberOfMoves();
     System.out.println(moves);
     return moves;

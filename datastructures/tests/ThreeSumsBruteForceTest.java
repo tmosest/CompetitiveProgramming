@@ -1,10 +1,9 @@
 package datastructures.tests;
 
-import static org.junit.Assert.*;
+import org.junit.Assert;
 import org.junit.Test;
 import commons.StopWatch;
 import datastructures.implementations.ThreeSumsBruteForce;
-import junit.framework.Assert;
 
 public class ThreeSumsBruteForceTest {
 

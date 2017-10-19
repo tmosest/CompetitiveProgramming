@@ -1,10 +1,7 @@
 package hackerrank.implementation.tests;
 
-import static org.junit.Assert.*;
 import java.util.ArrayList;
-import org.junit.Assert;
 import org.junit.Test;
-import hackerrank.implementation.CutTheSticks;
 
 public class CutTheSticksTest {
 

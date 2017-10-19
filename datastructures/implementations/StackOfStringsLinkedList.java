@@ -38,6 +38,8 @@ public class StackOfStringsLinkedList implements StringStackADT {
       data = root.data;
       // Update Root
       root = root.next;
+      // Update Size
+      --size;
     }
     return data;
   }

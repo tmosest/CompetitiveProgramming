@@ -24,25 +24,25 @@ public class StackOfStringsLinkedListTest {
   @Test
   public void shouldBeAbleToReverseStringArray() {
     String[] words = {"to", "be", "or", "not", "to", "be", "that", "is", "the", "question"};
-    for(String word: words)
+    for (String word : words)
       stack.push(word);
-    for(int i = words.length - 1; i > -1; i--)
+    for (int i = words.length - 1; i > -1; i--)
       Assert.assertEquals(words[i], stack.pop());
   }
-  
+
   @Test
   public void shouldBeAbleToEmptyAndRefill() {
     String[] words = {"to", "be", "or", "not", "to", "be", "that", "is", "the", "question"};
-    for(String word: words)
+    for (String word : words)
       stack.push(word);
     Assert.assertEquals(words.length, stack.size());
-    for(int i = words.length - 1; i > -1; i--)
+    for (int i = words.length - 1; i > -1; i--)
       Assert.assertEquals(words[i], stack.pop());
     Assert.assertEquals(0, stack.size());
     Assert.assertEquals(null, stack.pop());
-    for(String word: words)
+    for (String word : words)
       stack.push(word);
-    for(int i = words.length - 1; i > -1; i--)
+    for (int i = words.length - 1; i > -1; i--)
       Assert.assertEquals(words[i], stack.pop());
   }
 

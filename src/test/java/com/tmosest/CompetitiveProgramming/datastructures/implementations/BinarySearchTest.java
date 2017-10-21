@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 
-@DisplayName("Binary Search Test")
+@DisplayName("Data Structures: Binary Search Test")
 public class BinarySearchTest {
 
   

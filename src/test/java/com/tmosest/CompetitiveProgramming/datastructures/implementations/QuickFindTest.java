@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.tmosest.CompetitiveProgramming.datastructures.UnionFindADT;
 
-@DisplayName("Quick Find Union Find")
+@DisplayName("Data Structures: Quick Find Union Find")
 class QuickFindTest {
 
   int size = 10;

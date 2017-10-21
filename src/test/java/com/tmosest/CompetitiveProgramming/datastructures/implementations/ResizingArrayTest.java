@@ -2,9 +2,10 @@ package com.tmosest.CompetitiveProgramming.datastructures.implementations;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-
+@DisplayName("Data Structures: Resizing Array")
 class ResizingArrayTest {
 
   ResizingArray<Double> doubleArray;
@@ -19,6 +20,7 @@ class ResizingArrayTest {
   }
 
   @Test
+  @DisplayName("Uses Generics")
   public void canCreateArraysOfDifferentTypes() {
     Assertions.assertNotNull(doubleArray);
     Assertions.assertNotNull(intArray);
@@ -26,6 +28,7 @@ class ResizingArrayTest {
   }
 
   @Test
+  @DisplayName("Size is zero when empty")
   public void sizeShouldBeZeroForNewEmptyArray() {
     Assertions.assertTrue(doubleArray.isEmpty());
     Assertions.assertEquals(0, doubleArray.size());
@@ -36,6 +39,7 @@ class ResizingArrayTest {
   }
 
   @Test
+  @DisplayName("Size shoud reflect object count")
   public void sizeShouldBeEqualToNumberOfItemsAdded() {
     int n = 0;
     Assertions.assertTrue(doubleArray.isEmpty());

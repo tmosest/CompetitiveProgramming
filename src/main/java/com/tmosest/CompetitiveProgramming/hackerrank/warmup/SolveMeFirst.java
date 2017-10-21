@@ -1,4 +1,4 @@
-package com.tmosest.MvnCompetitiveProgramming.hackerrank.warmup;
+package com.tmosest.CompetitiveProgramming.hackerrank.warmup;
 
 import java.util.Scanner;
 

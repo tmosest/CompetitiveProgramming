@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.tmosest.CompetitiveProgramming.datastructures.LinkedListADT;
 
-@DisplayName("Likned List Tests")
+@DisplayName("Data Structures: Likned List Tests")
 public class LinkedListTest {
 
   LinkedListADT<Integer> linkedList;

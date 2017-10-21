@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.tmosest.CompetitiveProgramming.hackerrank.HackerrankUtil;
 
-@DisplayName("Solved Me First")
+@DisplayName("Hackerrank Warmup: Solved Me First")
 public class SolveMeFirstTest {
 
   String data;

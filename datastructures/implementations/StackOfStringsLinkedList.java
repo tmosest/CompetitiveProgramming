@@ -29,7 +29,6 @@ public class StackOfStringsLinkedList implements StringStackADT {
     ++size;
   }
 
-  @SuppressWarnings("unchecked")
   @Override
   public String pop() {
     String data = null;

@@ -1,4 +1,4 @@
-package com.tmosest.MvnCompetitiveProgramming.hackerrank;
+package com.tmosest.CompetitiveProgramming.hackerrank;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

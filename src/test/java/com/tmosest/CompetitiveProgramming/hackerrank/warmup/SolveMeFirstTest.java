@@ -1,10 +1,10 @@
-package com.tmosest.MvnCompetitiveProgramming.hackerrank.warmup;
+package com.tmosest.CompetitiveProgramming.hackerrank.warmup;
 
 import java.io.UnsupportedEncodingException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import com.tmosest.MvnCompetitiveProgramming.hackerrank.HackerrankUtil;
+import com.tmosest.CompetitiveProgramming.hackerrank.HackerrankUtil;
 
 @DisplayName("Solved Me First")
 public class SolveMeFirstTest {

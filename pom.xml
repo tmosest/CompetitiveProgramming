@@ -40,12 +40,6 @@
 						<include>**/*Tests.java</include>
 						<include>**/*TestCase.java</include>
 					</includes>
-					<properties>
-						<!-- <includeTags>fast</includeTags> -->
-						<excludeTags>slow</excludeTags>
-						<!-- <configurationParameters> junit.jupiter.conditions.deactivate 
-							= * </configurationParameters> -->
-					</properties>
 				</configuration>
 				<dependencies>
 					<dependency>

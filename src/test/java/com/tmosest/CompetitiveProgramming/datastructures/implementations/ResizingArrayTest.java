@@ -19,14 +19,14 @@ class ResizingArrayTest {
   }
 
   @Test
-  public void test_canCreateArraysOfDifferentTypes() {
+  public void canCreateArraysOfDifferentTypes() {
     Assertions.assertNotNull(doubleArray);
     Assertions.assertNotNull(intArray);
     Assertions.assertNotNull(stringArray);
   }
 
   @Test
-  public void test_SizeShouldBeZeroForNewEmptyArray() {
+  public void sizeShouldBeZeroForNewEmptyArray() {
     Assertions.assertTrue(doubleArray.isEmpty());
     Assertions.assertEquals(0, doubleArray.size());
     Assertions.assertTrue(intArray.isEmpty());
@@ -36,7 +36,7 @@ class ResizingArrayTest {
   }
 
   @Test
-  public void test_SizeShouldBeEqualToNumberOfItemsAdded() {
+  public void sizeShouldBeEqualToNumberOfItemsAdded() {
     int n = 0;
     Assertions.assertTrue(doubleArray.isEmpty());
     doubleArray.push(1.00);

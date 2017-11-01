@@ -11,7 +11,6 @@ public class StackOfStringsLinkedList implements StringStackADT {
     size = 0;
   }
 
-  @Override
   public void push(String s) {
     // If no root node
     if (root == null) {
@@ -28,7 +27,6 @@ public class StackOfStringsLinkedList implements StringStackADT {
     ++size;
   }
 
-  @Override
   public String pop() {
     String data = null;
     if (!isEmpty()) {
@@ -42,12 +40,10 @@ public class StackOfStringsLinkedList implements StringStackADT {
     return data;
   }
 
-  @Override
   public boolean isEmpty() {
     return size == 0;
   }
 
-  @Override
   public int size() {
     return size;
   }

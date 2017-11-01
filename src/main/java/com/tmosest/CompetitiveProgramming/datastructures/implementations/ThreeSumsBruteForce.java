@@ -12,7 +12,6 @@ public class ThreeSumsBruteForce implements ThreeSumProblem {
   /**
    * Counts the number of ways we can add up to zero using 3 for loops.
    */
-  @Override
   public int count(int[] array) {
     int count = 0;
     for (int i = 0; i < array.length - 2; i++) {

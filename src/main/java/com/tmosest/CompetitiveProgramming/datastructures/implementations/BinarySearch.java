@@ -33,7 +33,6 @@ public class BinarySearch implements SearchADT {
   /**
    * Implements Binary Search to find an element.
    */
-  @Override
   public int search(int element) {
     int low = 0;
     int high = searchArray.length - 1;

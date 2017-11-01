@@ -68,7 +68,6 @@ public class LinkedList<T> implements LinkedListADT<T> {
    * 
    * @param element The element to add to the end of the list.
    */
-  @Override
   public void append(T element) {
     Node<T> node = createNewNode(element);
     if (!isEmpty()) {
@@ -81,7 +80,6 @@ public class LinkedList<T> implements LinkedListADT<T> {
   /**
    * @return size integer representing the number of elements in the Linked List.
    */
-  @Override
   public boolean isEmpty() {
     return size == 0;
   }
@@ -92,7 +90,6 @@ public class LinkedList<T> implements LinkedListADT<T> {
    * 
    * @param index integer representing where we are looking.
    */
-  @Override
   public T get(int index) throws IndexOutOfBoundsException {
     return getNode(index).data;
   }
@@ -102,7 +99,6 @@ public class LinkedList<T> implements LinkedListADT<T> {
    * 
    * @param element T the object to add to the beginning of the LinkedList.
    */
-  @Override
   public void prepend(T element) {
     Node<T> node = createNewNode(element);
     if (!isEmpty()) {
@@ -117,12 +113,16 @@ public class LinkedList<T> implements LinkedListADT<T> {
    * 
    * @return integer representing the size of the Linked List.
    */
-  @Override
   public int size() {
     return size;
   }
 
-  @Override
+  /**
+   * Allows the user to set the value at a given index.
+   * 
+   * @param index The index from zero of where to set.
+   * @param element The object to set that value to.
+   */
   public void set(int index, T element) throws IndexOutOfBoundsException {
     Node<T> updateNode = getNode(index);
     updateNode.data = element;

@@ -12,7 +12,6 @@ public class StackLinkedList<T> implements SimpleStackADT<T> {
     size = 0;
   }
 
-  @Override
   public void push(T element) {
     if (root == null) {
       root = new Node<T>();
@@ -26,7 +25,6 @@ public class StackLinkedList<T> implements SimpleStackADT<T> {
     ++size;
   }
 
-  @Override
   public T pop() {
     T data = null;
     if (root != null) {
@@ -37,12 +35,10 @@ public class StackLinkedList<T> implements SimpleStackADT<T> {
     return data;
   }
 
-  @Override
   public boolean isEmpty() {
     return size == 0;
   }
 
-  @Override
   public int size() {
     return size;
   }

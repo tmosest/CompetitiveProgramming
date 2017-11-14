@@ -11,7 +11,7 @@ class LuckyPurchaseTest {
 
   String input;
   String output;
-  
+
   /**
    * Utility Function to actually test the class. Sets the input stream to the input data.
    * 
@@ -29,9 +29,17 @@ class LuckyPurchaseTest {
 
   @Test
   @DisplayName("Test Case 0")
-  void test() throws UnsupportedEncodingException {
+  void testCase0() throws UnsupportedEncodingException {
     input = "4\nHackerBook 777444\nRankBook 3\nTheBook 777\nBestBook 47";
     output = "BestBook";
+    test(input, output, false);
+  }
+
+  @Test
+  @DisplayName("Test Case 1")
+  void testCase1() throws UnsupportedEncodingException {
+    input = "1\nabacab 121";
+    output = "-1";
     test(input, output, false);
   }
 

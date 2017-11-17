@@ -1,6 +1,5 @@
 package com.tmosest.CompetitiveProgramming.hackerrank.woc.week35;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**

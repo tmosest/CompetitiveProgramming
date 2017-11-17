@@ -1,6 +1,5 @@
 package com.tmosest.CompetitiveProgramming.hackerrank.woc.week35;
 
-import static org.junit.jupiter.api.Assertions.*;
 import java.io.UnsupportedEncodingException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

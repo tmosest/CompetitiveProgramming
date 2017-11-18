@@ -32,7 +32,15 @@ class MatrixLandTest {
   void testCase0() throws UnsupportedEncodingException {
     input = "4 5\n1 2 3 -1 -2\n-5 -8 -1 2 -150\n1 2 3 -250 100\n1 1 1 1 20";
     output = 37;
-    test(input, output, true);
+    test(input, output, false);
   }
 
+  // start 100 down 200 right-10 right -10 right -10 down -10 right -10 down 200 down 200 = 650
+  @Test
+  @DisplayName("Test Case 1")
+  void testCase1() throws UnsupportedEncodingException {
+    input = "5 5 100 -10 -10 -100 -250 200 -10 -10 -10 -200 10 -10 -200 -10 -10 10 10 -200 -10 200 -10 -10 -200 -10 200";
+    output = 650;
+    test(input, output, true);
+  }
 }

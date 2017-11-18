@@ -11,114 +11,131 @@ public class MatrixLand {
     int rows;
     int columns;
     int bestPath;
-    int[][] bestPathToCache;
+    int[][] bestPathFromCache;
 
     public MaximizedPath(int[][] grid) {
       rows = grid.length;
       columns = grid[0].length;
-      bestPathToCache = new int[rows][columns];
       initCache(grid);
-      bestPath = bestPathTo(rows - 1, columns - 1, grid, 0);
+      bestPath = determineBestPath(grid);
     }
 
     private void initCache(int grid[][]) {
+      bestPathFromCache = new int[rows][columns];
       for (int i = 0; i < rows; i++)
         for (int j = 0; j < columns; j++)
-          bestPathToCache[i][j] = Integer.MIN_VALUE;
-      
-      bestPathToCache[0][0] = grid[0][0];
-      
-      for(int j = 1; j < columns; j++) {
-        bestPathToCache[0][j] = bestPathToCache[0][j - 1];
+          bestPathFromCache[i][j] = Integer.MIN_VALUE;
+
+      for (int j = 0; j < columns; j++) {
+        bestPathFromCache[0][j] = determineBestPathValuesForStartingRow(j, grid);
       }
     }
 
-    public int bestPathTo(int i, int j, int[][] grid, int score) {
-      score += grid[i][j];
-      if (debugMode) {
-        System.out.println("\ni: " + i + " j: " + j + " score: " + score);
-      }
-      if (debugMode) {
-        printGrid(grid);
-        System.out.println();
-      }
-      grid[i][j] = 0;
-      if (i == 0 && j == 0) {
-        return score;
-      }
-      int bestPath = Integer.MIN_VALUE;
-      int[][] newGrid;
-      if (i - 1 > -1) {
-        if (debugMode) {
-          System.out.println("i - 1 : " + (i - 1) + " score: " + score);
-        }
-        newGrid = copyGrid(grid);
-        bestPath = Math.max(bestPath, bestPathTo(i - 1, j, newGrid, score));
-        if (debugMode) {
-          System.out.println("i - 1  best path: " + bestPath);
-        }
-      }
-      boolean shouldTryLeft = shouldTryLeft(i, j, grid);
-      if (debugMode) {
-        System.out.println("shouldTryLeft: " + shouldTryLeft);
-      }
-      if (j - 1 > -1 && shouldTryLeft) {
-        if (debugMode) {
-          System.out.println("j - 1 : " + (j - 1) + " score: " + score);
-        }
-        newGrid = copyGrid(grid);
-        bestPath = Math.max(bestPath, bestPathTo(i, j - 1, newGrid, score));
-        if (debugMode) {
-          System.out.println("j - 1  best path: " + bestPath);
-        }
-      }
-      boolean shouldTryRight = shouldTryRight(i, j, grid);
-      if (debugMode) {
-        System.out.println("shouldTryRight: " + shouldTryRight);
-      }
-      if (j + 1 < columns && shouldTryRight) {
-        if (debugMode) {
-          System.out.println("j + 1 : " + (j + 1));
-        }
-        newGrid = copyGrid(grid);
-        bestPath = Math.max(bestPath, bestPathTo(i, j + 1, newGrid, score));
-      }
-      if (debugMode) {
-        System.out.println("bestPath: " + bestPath);
-      }
-      return bestPath;
-    }
-
-    private boolean shouldTryLeft(int i, int j, int[][] grid) {
-      for (int c = j; c > -1; c--) {
-        if (grid[i][c] > 0)
-          return true;
-      }
-      return false;
-    }
-
-    private boolean shouldTryRight(int i, int j, int[][] grid) {
-      for (int c = j; c < columns; c++) {
-        if (grid[i][c] > 0)
-          return true;
-      }
-      return false;
-    }
-
-    private int[][] copyGrid(int[][] grid) {
-      int[][] newGrid = new int[rows][columns];
-      for (int i = 0; i < rows; i++) {
+    public int determineBestPath(int[][] grid) {
+      int best = Integer.MIN_VALUE;
+      for (int i = 1; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
-          newGrid[i][j] = grid[i][j];
+          bestPathFromCache[i][j] = determineBestPathValuesForRow(i, j, grid);
         }
       }
-      return newGrid;
+      if(debugMode) {
+        System.out.println("Original Grid");
+        printGrid(grid);
+      }
+      if (debugMode) {
+        System.out.println("Best Possible Value Per Row");
+        printGrid(bestPathFromCache);
+      }
+      for(int j = 0; j < columns; j++) {
+        int sum = 0;
+        for(int i = 0; i < rows; i++) {
+          sum += bestPathFromCache[i][j];
+        }
+        best = Math.max(sum, best);
+      }
+      return best;
     }
+
+    public int determineBestPathValuesForStartingRow(int j, int[][] grid) {
+      int bestValue = grid[0][j];
+      int sum;
+      if (j - 1 > -1) {
+        sum = bestValue;
+        for (int c = j - 1; c > -1; c--) {
+          sum += grid[0][c];
+          bestValue = Math.max(bestValue, sum);
+        }
+      }
+      if (j + 1 < columns) {
+        sum = bestValue;
+        for (int c = j + 1; c < columns; c++) {
+          sum += grid[0][c];
+          bestValue = Math.max(bestValue, sum);
+        }
+      }
+      if (debugMode) {
+        System.out.println("j: " + j + " bestValue: " + bestValue);
+      }
+      return bestValue;
+    }
+
+    public int determineBestPathValuesForRow(int i, int j, int[][] grid) {
+      int bestValue = grid[i][j];
+      int sum;
+      if (j - 1 > -1) {
+        sum = bestValue;
+        for (int c = j - 1; c > -1; c--) {
+          sum += grid[i][c];
+          bestValue = Math.max(bestValue, sum);
+        }
+      }
+      if (j + 1 < columns) {
+        sum = bestValue;
+        for (int c = j + 1; c < columns; c++) {
+          sum += grid[i][c];
+          bestValue = Math.max(bestValue, sum);
+        }
+      }
+      if (debugMode) {
+        System.out.println("i: " + i + " j: " + j + " bestValue: " + bestValue);
+      }
+      return bestValue;
+    }
+
+    public int updateBestPathValuesBasedOnPreviousRow(int i, int j) {
+      int bestValue = bestPathFromCache[i][j] + bestPathFromCache[i - 1][j];
+      int sum = Integer.MIN_VALUE;
+      if (j - 1 > -1) {
+        sum = bestPathFromCache[i][j];
+        for (int c = j - 1; c > -1; c--) {
+          sum += bestPathFromCache[i - 1][c] + bestPathFromCache[i][c];
+          if(sum < j - 1) {
+            sum -= bestPathFromCache[i - 1][c +  1];
+          }
+          bestValue = Math.max(bestValue, sum);
+        }
+      }
+      if (j + 1 < columns) {
+        sum = bestPathFromCache[i][j];
+        for (int c = j + 1; c < columns; c++) {
+          sum += bestPathFromCache[i - 1][c] + bestPathFromCache[i][c];
+          if(c > j + 1) {
+            sum -= bestPathFromCache[i - 1][c - 1];
+          }
+          bestValue = Math.max(bestValue, sum);
+        }
+      }
+      if (debugMode) {
+        System.out.println("i : " + i + " j: " + j + " bestValue: " + bestValue);
+      }
+      return bestValue;
+    }
+
 
     private void printGrid(int[][] grid) {
       for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
-          System.out.print(grid[i][j] + " ");
+          System.out.print(String.format("%-5s ", grid[i][j]));
         }
         System.out.println();
       }

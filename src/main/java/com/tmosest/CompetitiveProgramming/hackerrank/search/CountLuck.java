@@ -138,6 +138,9 @@ public class CountLuck {
     }
 
     private void printGrid() {
+      System.out.println("\n====================");
+      System.out.println("Grid");
+      System.out.println("====================\n");
       for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
           String s = matrixToNodeIndex(i, j) + " : " + grid[i][j];
@@ -151,20 +154,30 @@ public class CountLuck {
       int[] position = new int[2];
       position[0] = node / columns;
       position[1] = node % columns;
+      if (node < 0) {
+        position[0] = -1;
+        position[1] = -1;
+      }
       return position;
     }
 
-    private boolean existsMoreThanOnePath(int node, int previousNode) {
+    private boolean existsMoreThanOnePath(int nextNode, int node, int previousNode) {
       int count = 0;
       int[] position = nodeIndexToMatrix(node);
       int[] previousPosition = nodeIndexToMatrix(previousNode);
+      int[] nextPostion = nodeIndexToMatrix(nextNode);
       int r = position[0];
       int c = position[1];
       int pR = previousPosition[0];
-      int cR = previousPosition[1];
+      int pC = previousPosition[1];
+      int nR = nextPostion[0];
+      int nC = nextPostion[1];
       if (debugMode) {
+        System.out.println("\n====================");
+        System.out.println("Exists More Than One Path:");
+        System.out.println("====================");
         System.out.println("\nnode: " + node + " previousNode: " + previousNode);
-        System.out.println("r: " + r + " c: " + c + " pR: " + pR + " cR: " + cR);
+        System.out.println("r: " + r + " c: " + c + " pR: " + pR + " pC: " + pC);
       }
       if (r - 1 > -1 && r - 1 != pR && grid[r - 1][c] != 'X') {
         count++;
@@ -172,7 +185,7 @@ public class CountLuck {
           System.out.println("up? " + count);
         }
       }
-      if (c - 1 > -1 && c - 1 != cR && grid[r][c - 1] != 'X') {
+      if (c - 1 > -1 && c - 1 != pC && grid[r][c - 1] != 'X') {
         count++;
         if (debugMode) {
           System.out.println("left? " + count);
@@ -184,15 +197,16 @@ public class CountLuck {
           System.out.println("down? " + count);
         }
       }
-      if (c + 1 < columns && c + 1 != cR && grid[r][c + 1] != 'X') {
+      if (c + 1 < columns && c + 1 != pC && grid[r][c + 1] != 'X') {
         count++;
         if (debugMode) {
           System.out.println("right? " + count);
         }
       }
       if (debugMode)
-        System.out.println("final count " + count + "\n");
-      return count > 1;
+        System.out.println(
+            "final count " + count + " changed direction: " + (pR != nR && pC != nC) + "\n");
+      return (count > 1); //&& (pR != nR && pC != nC);
     }
 
     private int matrixToNodeIndex(int row, int column) {
@@ -202,6 +216,9 @@ public class CountLuck {
     public boolean wasGuessCorrect(int guess) {
 
       if (debugMode) {
+        System.out.println("\n====================");
+        System.out.println("Path");
+        System.out.println("====================\n");
         for (int w : dfs.pathTo(finishNode)) {
           System.out.print("node : " + w + " -> ");
         }
@@ -213,14 +230,23 @@ public class CountLuck {
 
       int count = 0;
 
-      if (existsMoreThanOnePath(path.get(0), -1))
+      if (existsMoreThanOnePath(path.get(pathLength - 2), path.get(pathLength - 1), -1))
         count++;
 
-      for (int i = 1; i < pathLength - 1; i++) {
-        if (existsMoreThanOnePath(path.get(i), path.get(i - 1)))
+      if (debugMode) {
+        System.out.println("\n====================");
+        System.out.println("Count: " + count);
+        System.out.println("====================\n");
+      }
+
+      for (int i = pathLength - 2; i > 0; --i) {
+        if (existsMoreThanOnePath(path.get(i + 1), path.get(i), path.get(i - 1)))
           count++;
-        if (debugMode)
+        if (debugMode) {
+          System.out.println("\n====================");
           System.out.println("Count: " + count);
+          System.out.println("====================\n");
+        }
       }
       return guess == count;
     }
@@ -232,7 +258,9 @@ public class CountLuck {
     boolean[] results = new boolean[tests];
     for (int t = 0; t < tests; t++) {
       if (debugMode) {
+        System.out.println("\n=======================================");
         System.out.println("Test Case: " + t);
+        System.out.println("=======================================\n");
       }
       int rows = in.nextInt();
       int columns = in.nextInt();

@@ -29,6 +29,6 @@ class MinimumLossTest {
     input = "5\n" + 
         "20 7 8 2 5";
     output = 2;
-    test(input, output, true);
+    test(input, output, false);
   }
 }

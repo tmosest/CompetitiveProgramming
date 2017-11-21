@@ -12,6 +12,8 @@ import java.util.Scanner;
  * https://github.com/chaoxu/mgccl-oj/blob/master/acm_greaterny_2012/Faulhaber.java
  * https://en.wikipedia.org/wiki/Bernoulli_number http://people.reed.edu/~jerry/311/bernoulli.pdf
  * https://en.wikipedia.org/wiki/Pascal%27s_triangle
+ * http://www.geeksforgeeks.org/space-and-time-efficient-binomial-coefficient/
+ * https://www.wolframalpha.com/input/?i=sum+k%5E4,+k%3D2+to+3
  * @author tmosest
  *
  */
@@ -20,7 +22,7 @@ public class HighwayConstruction {
   public static boolean debugMode = false;
 
   public static class Rational {
-    long a, b;
+    public long a, b;
 
     Rational(long n, long d) {
       if (d == 0) {
@@ -97,6 +99,15 @@ public class HighwayConstruction {
     public Rational getBernolli(int i) {
       return f[i][0];
     }
+    
+    public void printArray() {
+      System.out.print("Ration[] bernollis = { ");
+      for(int i = 0; i < f.length; i++) {
+        System.out.print("new Rational(" + f[i][0].a + " , " + f[i][0].b + ")");
+        if(i != f.length - 1) System.out.print(",");
+      }
+      System.out.print("}");
+    }
 
     public void print() {
       for (int i = 0; i < f.length; i++) {
@@ -111,7 +122,7 @@ public class HighwayConstruction {
 
     public PascalsTriangle(int size) {
       arr = new int[size][size];
-      generate();
+      // generate();
     }
 
     private void generate() {
@@ -129,7 +140,21 @@ public class HighwayConstruction {
     }
     
     public int choose(int n, int k) {
-      return arr[n][k];
+      int res = 1;
+      
+      // Since C(n, k) = C(n, n-k)
+      if ( k > n - k )
+          k = n - k;
+   
+      // Calculate value of [n * (n-1) *---* (n-k+1)] / [k * (k-1) *----* 1]
+      for (int i = 0; i < k; ++i)
+      {
+      res *= (n - i);
+      res /= (i + 1);
+      }
+   
+      return res;
+      // return arr[n][k];
     }
   }
 
@@ -166,8 +191,10 @@ public class HighwayConstruction {
   }
   
   public static Rational[] solve() {
-    FaulhaberPowers fp = new FaulhaberPowers(10000, 1000);
-    Scanner in = new Scanner(System.in);
+    //FaulhaberPowers fp = new FaulhaberPowers(100000, 1000);
+    Faulhaber f = new Faulhaber(1000);
+    f.printArray();
+    /*Scanner in = new Scanner(System.in);
     int q = in.nextInt();
     //Rational[] r = new Rational[q];
     Rational one = new Rational(1,1);
@@ -175,7 +202,7 @@ public class HighwayConstruction {
       Rational cost = fp.powerSum(in.nextInt() - 1, in.nextInt()).sub(one);
       System.out.println(cost);
     }
-    in.close();
+    in.close();*/
     return null;
   }
 

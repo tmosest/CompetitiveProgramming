@@ -161,17 +161,14 @@ public class CountLuck {
       return position;
     }
 
-    private boolean existsMoreThanOnePath(int nextNode, int node, int previousNode) {
+    private boolean existsMoreThanOnePath(int node, int previousNode) {
       int count = 0;
       int[] position = nodeIndexToMatrix(node);
       int[] previousPosition = nodeIndexToMatrix(previousNode);
-      int[] nextPostion = nodeIndexToMatrix(nextNode);
       int r = position[0];
       int c = position[1];
       int pR = previousPosition[0];
       int pC = previousPosition[1];
-      int nR = nextPostion[0];
-      int nC = nextPostion[1];
       if (debugMode) {
         System.out.println("\n====================");
         System.out.println("Exists More Than One Path:");
@@ -205,8 +202,8 @@ public class CountLuck {
       }
       if (debugMode)
         System.out.println(
-            "final count " + count + " changed direction: " + (pR != nR && pC != nC) + "\n");
-      return (count > 1); //&& (pR != nR && pC != nC);
+            "final count " + count + "\n");
+      return (count > 1);
     }
 
     private int matrixToNodeIndex(int row, int column) {
@@ -230,7 +227,7 @@ public class CountLuck {
 
       int count = 0;
 
-      if (existsMoreThanOnePath(path.get(pathLength - 2), path.get(pathLength - 1), -1))
+      if (existsMoreThanOnePath(path.get(pathLength - 1), -1))
         count++;
 
       if (debugMode) {
@@ -240,7 +237,7 @@ public class CountLuck {
       }
 
       for (int i = pathLength - 2; i > 0; --i) {
-        if (existsMoreThanOnePath(path.get(i + 1), path.get(i), path.get(i - 1)))
+        if (existsMoreThanOnePath(path.get(i), path.get(i - 1)))
           count++;
         if (debugMode) {
           System.out.println("\n====================");

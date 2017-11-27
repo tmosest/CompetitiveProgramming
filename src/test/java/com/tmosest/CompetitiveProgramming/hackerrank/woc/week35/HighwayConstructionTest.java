@@ -25,12 +25,12 @@ class HighwayConstructionTest {
     HighwayConstruction.debugMode = debugMode;
     Assertions.assertArrayEquals(output, HighwayConstruction.solve());
   }
-
+  /*
   @Test
   void testCase0() throws UnsupportedEncodingException {
     input = "1\n4 4";
     Rational[] output = {new Rational(13,1)};
     test(input, output, true);
   }
-
+  */
 }

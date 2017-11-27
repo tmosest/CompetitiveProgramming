@@ -27,15 +27,15 @@ class MatrixLandTest {
     Assertions.assertEquals(output, MatrixLand.solve());
   }
 
-  
+  /*
   @Test
   @DisplayName("Test Case 0")
   void testCase0() throws UnsupportedEncodingException {
     input = "4 5\n1 2 3 -1 -2\n-5 -8 -1 2 -150\n1 2 3 -250 100\n1 1 1 1 20";
     output = 37;
-    test(input, output, true);
+    test(input, output, false);
   }
-  /*
+  
   // start 100 down 200 right-10 right -10 right -10 down -10 right -10 down 200 down 200 = 650
   @Test
   @DisplayName("Test Case 1")
@@ -44,7 +44,7 @@ class MatrixLandTest {
     output = 650;
     test(input, output, true);
   }
-  */
+  
   @Test
   @DisplayName("Test Case 2")
   void testCase2() throws UnsupportedEncodingException {
@@ -60,5 +60,5 @@ class MatrixLandTest {
     output = 7;
     test(input, output, false);
   }
-  
+  */
 }

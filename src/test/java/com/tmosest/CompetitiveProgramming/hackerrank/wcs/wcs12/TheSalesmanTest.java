@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.tmosest.CompetitiveProgramming.hackerrank.HackerrankUtil;
 
-@DisplayName("Hackerrank WOC Week 35: Lucky Purchase")
+@DisplayName("Hackerrank WCS World Code Sprint 12: The Salesman")
 class TheSalesmanTest {
 
   String input;

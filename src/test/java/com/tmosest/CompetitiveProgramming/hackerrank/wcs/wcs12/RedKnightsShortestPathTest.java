@@ -48,4 +48,11 @@ class RedKnightsShortestPathTest {
     test(input, output, false);
   }
 
+  @Test
+  @DisplayName("Test Case 3")
+  void testCase3() throws UnsupportedEncodingException {
+    String input = "7 0 0 6 1";
+    String output = "LR LR LL";
+    test(input, output, false);
+  }
 }

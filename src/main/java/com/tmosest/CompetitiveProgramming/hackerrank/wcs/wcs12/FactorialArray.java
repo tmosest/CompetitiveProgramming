@@ -13,19 +13,19 @@ public class FactorialArray {
     BigInteger result = BigInteger.ONE;
 
     while (!n.equals(BigInteger.ZERO)) {
-      result = result.multiply(n).mod(mod);
+      result = result.multiply(n);
       n = n.subtract(BigInteger.ONE);
     }
     if (debugMode) {
       System.out.println("factorial " + result);
     }
-    return result.mod(mod);
+    return result;
   }
 
-  private static BigInteger factorialSum(BigInteger[] nums) {
+  private static BigInteger factorialSum(BigInteger[] nums, int l, int r) {
     BigInteger sum = BigInteger.ZERO;
-    for (int i = 0; i < nums.length; i++) {
-      sum = sum.add(factorial(nums[i])).mod(mod);
+    for (int i = l; i < r; i++) {
+      sum = sum.add(factorial(nums[i]));
       if (debugMode) {
         System.out.println("factorial sum" + sum);
       }
@@ -51,12 +51,19 @@ public class FactorialArray {
     }
     if (debugMode)
       System.out.println();
+    int l = 0;
+    int r = 0;
     for (int q = 0; q < qs; q++) {
-      String line = in.nextLine();
-      int[] ops = Arrays.stream(line.split(" ")).mapToInt(Integer::parseInt).toArray();
-      switch (ops[0]) {
+      int op = in.nextInt();
+      if (debugMode)
+        System.out.println("op: " + op);
+      switch (op) {
         case 1:
-          for (int i = ops[1] - 1; i < ops[2]; i++) {
+          l = (in.nextInt() - 1);
+          r = in.nextInt();
+          if (debugMode)
+            System.out.println("op: " + op + " l: " + l + " r: " + r);
+          for (int i = l; i < r; i++) {
             nums[i] = nums[i].add(BigInteger.ONE);
           }
           if (debugMode) {
@@ -67,10 +74,18 @@ public class FactorialArray {
           }
           break;
         case 2:
-          System.out.println(factorialSum(nums));
+          l = (in.nextInt() - 1);
+          r = in.nextInt();
+          if (debugMode)
+            System.out.println("op: " + op + " l: " + l + " r: " + r);
+          System.out.println(factorialSum(nums, l, r));
           break;
         case 3:
-          nums[ops[1] - 1] = new BigInteger(String.valueOf(ops[2]));
+          int index = in.nextInt() - 1;
+          long value = in.nextLong();
+          if (debugMode)
+            System.out.println("op: " + op + " index: " + index + " value: " + value);
+          nums[index] = new BigInteger(String.valueOf(value));
           if (debugMode) {
             for (int i = 0; i < nums.length; i++) {
               System.out.print(nums[i] + " ");

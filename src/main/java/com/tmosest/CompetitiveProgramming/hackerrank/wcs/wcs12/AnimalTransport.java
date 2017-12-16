@@ -25,11 +25,8 @@ public class AnimalTransport {
     }
 
     public boolean intersects(Line line) {
-      boolean containsA = (line.a >= this.a && line.a <= this.b);
-      boolean containsB = (this.b >= this.a && line.b <= this.b);
-      // Need to make sure the endpoints dont overlap
-      boolean endpointsAreSame = (line.a == this.b) || (this.a == line.b);
-      return !endpointsAreSame && (containsA || containsB);
+      boolean contains = this.b > line.a && this.a < line.b;
+      return contains;
     }
 
     public String toString() {
@@ -94,12 +91,6 @@ public class AnimalTransport {
     public boolean isCompatibleRoute(AnimalRoute ar) {
       boolean comptibleAnimals = !this.animal.isIncompatibleTypes(ar.animal);
       boolean result = comptibleAnimals || (!comptibleAnimals && !this.route.intersects(ar.route));
-      /*
-       * if(debugMode) { System.out.println(); System.out.println("This AnimalRoute");
-       * System.out.println(this.toString()); System.out.println("Other Animal Route");
-       * System.out.println(ar.toString()); System.out.println("comptibleAnimals: " +
-       * comptibleAnimals); System.out.println("result: " + result); System.out.println(); }
-       */
       return result;
     }
 

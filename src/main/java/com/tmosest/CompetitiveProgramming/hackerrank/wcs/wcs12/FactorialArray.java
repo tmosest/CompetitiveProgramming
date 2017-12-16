@@ -4,6 +4,9 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// http://mishadoff.com/blog/fast-factorial/
+// https://www.hackerrank.com/challenges/extra-long-factorials/editorial
+// http://www.geeksforgeeks.org/factorial-large-number/
 public class FactorialArray {
 
   public static boolean debugMode = false;
@@ -90,7 +93,7 @@ public class FactorialArray {
     }
     in.close();
   }
-  
+
   public static void main(String[] args) {
     solve();
   }

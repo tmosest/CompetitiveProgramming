@@ -24,4 +24,20 @@ class SherlockAndMiniMaxTest {
     testData(input, output, false);
   }
 
+  @Test
+  @DisplayName("Test Case 2")
+  void testCase2() throws UnsupportedEncodingException {
+    String input = "5\n" + "12 10 50 24 40\n" + "9 16";
+    long output = 16;
+    testData(input, output, false);
+  }
+
+  @Test
+  @DisplayName("Test Case 3")
+  void testCase3() throws UnsupportedEncodingException {
+    String input = "10\n" + "46 64 26 82 18 106 60 138 194 22\n" + "82 182";
+    long output = 166;
+    testData(input, output, false);
+  }
+
 }

@@ -24,7 +24,7 @@ public class TheSoapMystery {
     if (searchValue > array[array.length - 1])
       return array.length;
     // Slight Binary Search
-    int low = 0, high = array.length - 1, mid;
+    int low = 0, high = array.length - 1, mid = 0;
     while (low <= high) {
       mid = low + (high - low) / 2;
       if (debugMode) {
@@ -45,9 +45,18 @@ public class TheSoapMystery {
         high = mid - 1;
       } else if (searchValue > array[mid] && searchValue <= array[mid + 1]) {
         return mid + 1; 
-      } else return mid;
+      } else {
+        break;
+      }
     }
-    return -1;
+    for(int i = mid - 100; i < mid + 100; i++) {
+      if(i >= 0 && i < array.length)
+        if(array[i] >= searchValue) {
+          mid = i;
+          break;
+        }
+    }
+    return mid;
   }
 
   public static int[] solve() {

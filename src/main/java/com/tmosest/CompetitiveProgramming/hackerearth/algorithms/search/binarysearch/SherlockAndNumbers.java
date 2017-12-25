@@ -7,34 +7,48 @@ public class SherlockAndNumbers {
 
   public static boolean debugMode = false;
 
-  public static long nthSmallestNumnber(long n, long[] arr, long nthSmallest) {
-    if(debugMode) {
-      System.out.println("\n==================================");
-      System.out.println("n: " + n + " nthSmallest: " + nthSmallest);
-    }
-    int arr_index = 0;
-    long index = 1;
-    long smallestCount = 0;
-    while (index < n) {
-      if (debugMode) {
-        System.out.println("index: " + index + " n: " + n);
-        if(arr_index < arr.length)
-          System.out.println("arr[arr_index]: " + arr[arr_index]);
-      }
-      if (arr_index < arr.length && arr[arr_index] == index) {
-        if (debugMode)
-          System.out.println("arr_index: " + arr_index + " arr[arr_index]: " + arr[arr_index]);
-        arr_index++;
+  private static int binarySearch(long[] array, long searchValue) {
+    if (searchValue < array[0])
+      return 0;
+    if (searchValue > array[array.length - 1])
+      return array.length;
+    // Slight Binary Search
+    int low = 0, high = array.length - 1, mid = 0;
+    while (low <= high) {
+      mid = low + (high - low) / 2;
+      if (searchValue > array[mid] && searchValue > array[mid + 1]) {
+        low = mid + 1;
+      } else if (searchValue < array[mid] && searchValue < array[mid - 1]) {
+        high = mid - 1;
+      } else if (searchValue > array[mid] && searchValue < array[mid + 1]) {
+        return mid + 1;
+      } else if (searchValue == array[mid + 1]) {
+        return mid + 2;
+      } else if (searchValue == array[mid]) {
+        return mid + 3;
       } else {
-        smallestCount++;
-        if (debugMode)
-          System.out.println("smallestCount: " + smallestCount + " nthSmallest: " + nthSmallest);
-        if (nthSmallest == smallestCount)
-          return index;
+        break;
       }
-      index++;
     }
-    return -1;
+    return mid;
+  }
+
+  public static long nthSmallestNumnber(long n, long[] arr, long nthSmallest) {
+    if (debugMode)
+      System.out.println("n: " + n + " nthSmallest: " + nthSmallest);
+    int binarySearch = binarySearch(arr, nthSmallest);
+    int binarySearch2 = binarySearch(arr, binarySearch + nthSmallest);
+    while (binarySearch != binarySearch2) {
+      if (debugMode)
+        System.out.println("binarySearch: " + binarySearch + " binarySearch2: " + binarySearch2);
+      binarySearch = binarySearch(arr, nthSmallest + binarySearch2);
+      binarySearch2 = binarySearch(arr, nthSmallest + binarySearch);
+    }
+    if (debugMode) {
+      System.out.println(
+          "binarySearch final: " + binarySearch + " binarySearch2 final: " + binarySearch2);
+    }
+    return (nthSmallest + binarySearch > n) ? -1 : nthSmallest + binarySearch;
   }
 
   public static long[] solve() {
@@ -42,6 +56,10 @@ public class SherlockAndNumbers {
     int tests = in.nextInt();
     long[] results = new long[tests];
     for (int t = 0; t < tests; t++) {
+      if (debugMode) {
+        System.out.println("\n==============================");
+        System.out.println("t: " + t);
+      }
       long n = in.nextLong();
       int k = in.nextInt();
       long p = in.nextInt();
@@ -50,6 +68,8 @@ public class SherlockAndNumbers {
         a[i] = in.nextLong();
       Arrays.sort(a);
       results[t] = nthSmallestNumnber(n, a, p);
+      if (debugMode)
+        System.out.println("result: " + results[t]);
     }
     in.close();
     return results;

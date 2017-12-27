@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.UnsupportedEncodingException;
 
-@DisplayName("HackerEarth Algorithms Graphs BFS: Monk and the Islands")
+@DisplayName("HackerEarth Algorithms Graphs Representation: Edge Existence")
 public class EdgeExistenceTest {
 
     private static void test(String input, String[] output, boolean debugMode)

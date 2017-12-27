@@ -16,7 +16,7 @@ class LifeTheUniverseAndEverythingTest {
     java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
     System.setOut(new java.io.PrintStream(out));
     LifeTheUniverseAndEverything.solve();
-    Assertions.assertEquals(output, out.toString());
+    Assertions.assertEquals(output.trim(), out.toString().trim());
   }
 
   @Test

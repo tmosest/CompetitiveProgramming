@@ -14,6 +14,12 @@ public class WeAreOnFire {
     Arrays.stream(solve()).forEach(System.out::println);
   }
 
+  /**
+   * Uses Scanner to read cities and oceans and then determines what cities where burned by a
+   * fireball.
+   *
+   * @return Returns an array of cities left after each fireball.
+   */
   public static int[] solve() {
     Scanner in = new Scanner(System.in);
     int rows = in.nextInt();
@@ -83,7 +89,11 @@ public class WeAreOnFire {
       if (debugMode) {
         System.out.println("row: " + row + " column:" + column + " node: " + node);
       }
-      results[f] = bfs.countCities(node);
+      if (f > 0 && matrix[row - 1][column - 1] == 0) {
+        results[f] = results[f - 1];
+      } else {
+        results[f] = bfs.countCities(node);
+      }
       if (debugMode) {
         System.out.println("f: " + f + " results: " + results[f]);
       }
@@ -96,6 +106,7 @@ public class WeAreOnFire {
   }
 
   private static class Graph {
+
     int verticies;
     int edges;
     ArrayList<Integer>[] adj;
@@ -125,18 +136,25 @@ public class WeAreOnFire {
   }
 
   private static class BreadthFirstSearch {
+
+    int notMarkedCount;
     boolean[] marked;
     Graph graph;
 
     BreadthFirstSearch(Graph graph) {
       this.graph = graph;
       marked = new boolean[graph.verticies()];
+      notMarkedCount = graph.verticies();
     }
 
     private void bfs(int source) {
       Queue<Integer> queue = new LinkedList<Integer>();
       queue.add(source);
+      if (marked[source]) {
+        return;
+      }
       marked[source] = true;
+      notMarkedCount--;
       if (debugMode) {
         System.out.println("source: " + source);
       }
@@ -150,6 +168,7 @@ public class WeAreOnFire {
             System.out.print("link: " + link + " marked: " + marked[link]);
           }
           if (!marked[link]) {
+            notMarkedCount--;
             marked[link] = true;
             queue.add(link);
           }
@@ -162,23 +181,12 @@ public class WeAreOnFire {
 
     public int countCities(int source) {
       bfs(source);
-      int count = 0;
-      for (int i = 0; i < marked.length; i++) {
-        if (debugMode) {
-          System.out.print("i: " + i + " marked: " + marked[i] + " ");
-        }
-        if (!marked[i]) {
-          ++count;
-        }
-      }
-      if (debugMode) {
-        System.out.println("\ncount: " + count);
-      }
-      return count;
+      return notMarkedCount;
     }
 
     public void setOcean(int source) {
       marked[source] = true;
+      notMarkedCount--;
     }
   }
 }

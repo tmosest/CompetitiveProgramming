@@ -11,12 +11,12 @@ public class FactorialArray {
   public static boolean debugMode = false;
   private static BigInteger mod = new BigInteger("1000000000");
 
-  private static BigInteger factorial(long l) {
+  private static BigInteger factorial(long lon) {
     BigInteger result = BigInteger.ONE;
-    BigInteger n = new BigInteger(String.valueOf(l));
-    while (!n.equals(BigInteger.ZERO)) {
-      result = result.multiply(n);
-      n = n.subtract(BigInteger.ONE);
+    BigInteger num = new BigInteger(String.valueOf(lon));
+    while (!num.equals(BigInteger.ZERO)) {
+      result = result.multiply(num);
+      num = num.subtract(BigInteger.ONE);
     }
     if (debugMode) {
       System.out.println("factorial " + result);
@@ -24,9 +24,9 @@ public class FactorialArray {
     return result;
   }
 
-  private static BigInteger factorialSum(long[] nums, int l, int r) {
+  private static BigInteger factorialSum(long[] nums, int left, int right) {
     BigInteger sum = BigInteger.ZERO;
-    for (int i = l; i < r; i++) {
+    for (int i = left; i < right; i++) {
       sum = sum.add(factorial(nums[i]));
       if (debugMode) {
         System.out.println("factorial sum" + sum);
@@ -35,30 +35,33 @@ public class FactorialArray {
     return sum.mod(mod);
   }
 
+  /**
+   * Function to test the solution.
+   */
   public static void solve() {
     Scanner in = new Scanner(System.in);
-    int n = in.nextInt();
+    int num = in.nextInt();
     int qs = in.nextInt();
     in.nextLine();
-    long[] nums = new long[n];
-    for (int i = 0; i < n; i++) {
+    long[] nums = new long[num];
+    for (int i = 0; i < num; i++) {
       nums[i] = in.nextLong();
     }
-    if (debugMode)
-      System.out.println();
-    int l = 0;
-    int r = 0;
+    int left = 0;
+    int right = 0;
     for (int q = 0; q < qs; q++) {
       int op = in.nextInt();
-      if (debugMode)
+      if (debugMode) {
         System.out.println("op: " + op);
+      }
       switch (op) {
         case 1:
-          l = (in.nextInt() - 1);
-          r = in.nextInt();
-          if (debugMode)
-            System.out.println("op: " + op + " l: " + l + " r: " + r);
-          for (int i = l; i < r; i++) {
+          left = (in.nextInt() - 1);
+          right = in.nextInt();
+          if (debugMode) {
+            System.out.println("op: " + op + " l: " + left + " r: " + right);
+          }
+          for (int i = left; i < right; i++) {
             ++nums[i];
           }
           if (debugMode) {
@@ -69,17 +72,19 @@ public class FactorialArray {
           }
           break;
         case 2:
-          l = (in.nextInt() - 1);
-          r = in.nextInt();
-          if (debugMode)
-            System.out.println("op: " + op + " l: " + l + " r: " + r);
-          System.out.println(factorialSum(nums, l, r));
+          left = (in.nextInt() - 1);
+          right = in.nextInt();
+          if (debugMode) {
+            System.out.println("op: " + op + " l: " + left + " r: " + right);
+          }
+          System.out.println(factorialSum(nums, left, right));
           break;
         case 3:
           int index = in.nextInt() - 1;
           long value = in.nextLong();
-          if (debugMode)
+          if (debugMode) {
             System.out.println("op: " + op + " index: " + index + " value: " + value);
+          }
           nums[index] = value;
           if (debugMode) {
             for (int i = 0; i < nums.length; i++) {
@@ -88,11 +93,18 @@ public class FactorialArray {
             System.out.println();
           }
           break;
+        default:
+          break;
       }
     }
     in.close();
   }
 
+  /**
+   * Main function.
+   *
+   * @param args String array.
+   */
   public static void main(String[] args) {
     solve();
   }

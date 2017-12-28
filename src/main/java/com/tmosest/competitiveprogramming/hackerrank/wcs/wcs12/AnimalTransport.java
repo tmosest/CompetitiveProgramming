@@ -10,38 +10,74 @@ public class AnimalTransport {
 
   public static boolean debugMode = false;
 
-  private static class Line {
-    public int a;
-    public int b;
+  /**
+   * Funtion to try to solve the problem.
+   */
+  public static void solve() {
+    Scanner in = new Scanner(System.in);
+    int tests = in.nextInt();
+    for (int t = 0; t < tests; t++) {
+      int zoos = in.nextInt();
+      int animals = in.nextInt();
+      RouteManager routeManager = new RouteManager(zoos, animals);
+      in.nextLine();
+      String[] symbols = in.nextLine().split(" ");
+      int[] sources = Arrays.stream(in.nextLine().split(" ")).mapToInt(Integer::valueOf).toArray();
+      int[] destinations =
+          Arrays.stream(in.nextLine().split(" ")).mapToInt(Integer::valueOf).toArray();
+      for (int i = 0; i < animals; i++) {
+        routeManager.addAnimalRoute(symbols[i], sources[i], destinations[i]);
+      }
+      if (debugMode) {
+        System.out.println(routeManager.toString());
+      }
+      int[] result = routeManager.findMinimumZoos();
+      for (int i = 0; i < result.length; i++) {
+        System.out.print(result[i] + " ");
+      }
+      System.out.println();
+    }
+    in.close();
+  }
 
-    public Line(int a, int b) {
-      if (a < b) {
-        this.a = a;
-        this.b = b;
+  public static void main(String[] args) {
+    solve();
+  }
+
+  private static class Line {
+
+    public int start;
+    public int stop;
+
+    public Line(int start, int stop) {
+      if (start < stop) {
+        this.start = start;
+        this.stop = stop;
       } else {
-        this.a = b;
-        this.b = a;
+        this.start = stop;
+        this.stop = start;
       }
     }
 
     public boolean intersects(Line line) {
-      boolean contains = this.b > line.a && this.a < line.b;
+      boolean contains = this.stop > line.start && this.start < line.stop;
       return contains;
     }
 
     public String toString() {
-      return "Line { a: " + a + ", b: " + b + " }";
+      return "Line { start: " + start + ", stop: " + stop + " }";
     }
   }
 
   public static class Animal {
 
-    public static enum AnimalType {
-      DOG, ELEPHANT, CAT, MOUSE
-    }
-
     AnimalType type;
 
+    /**
+     * Animal Constructor.
+     *
+     * @param type Character representing animal type {D, E, C, M}
+     */
     public Animal(char type) {
       switch (type) {
         case 'D':
@@ -58,28 +94,39 @@ public class AnimalTransport {
       }
     }
 
-    public boolean isIncompatibleTypes(Animal a) {
+    /**
+     * Function to determine if two animals are compatible or not.
+     *
+     * @param animal Other animal to check against.
+     * @return true if they are compatible and false otherwise.
+     */
+    public boolean isIncompatibleTypes(Animal animal) {
       return
-      // DOG != Elephant
-      (a.type == AnimalType.DOG && this.type == AnimalType.ELEPHANT)
-          || (a.type == AnimalType.ELEPHANT && this.type == AnimalType.DOG) ||
-          // Cat != Dog
-          (a.type == AnimalType.CAT && this.type == AnimalType.DOG)
-          || (a.type == AnimalType.DOG && this.type == AnimalType.CAT) ||
-          // Mouse != Cat
-          (a.type == AnimalType.MOUSE && this.type == AnimalType.CAT)
-          || (a.type == AnimalType.CAT && this.type == AnimalType.MOUSE) ||
-          // Elephant != Mouse
-          (a.type == AnimalType.ELEPHANT && this.type == AnimalType.MOUSE)
-          || (a.type == AnimalType.MOUSE && this.type == AnimalType.ELEPHANT);
+          // DOG != Elephant
+          (animal.type == AnimalType.DOG && this.type == AnimalType.ELEPHANT)
+              || (animal.type == AnimalType.ELEPHANT && this.type == AnimalType.DOG)
+              // Cat != Dog
+              || (animal.type == AnimalType.CAT && this.type == AnimalType.DOG)
+              || (animal.type == AnimalType.DOG && this.type == AnimalType.CAT)
+              // Mouse != Cat
+              || (animal.type == AnimalType.MOUSE && this.type == AnimalType.CAT)
+              || (animal.type == AnimalType.CAT && this.type == AnimalType.MOUSE)
+              // Elephant != Mouse
+              || (animal.type == AnimalType.ELEPHANT && this.type == AnimalType.MOUSE)
+              || (animal.type == AnimalType.MOUSE && this.type == AnimalType.ELEPHANT);
     }
 
     public String toString() {
       return "Animal: { type: " + this.type.toString() + " }";
     }
+
+    public static enum AnimalType {
+      DOG, ELEPHANT, CAT, MOUSE
+    }
   }
 
   private static class AnimalRoute {
+
     public Animal animal;
     public Line route;
 
@@ -100,6 +147,7 @@ public class AnimalTransport {
   }
 
   private static class AnimalRouteGroup {
+
     public Set<AnimalRoute> group;
     public int[] destinations = null;
 
@@ -126,32 +174,35 @@ public class AnimalTransport {
       return result;
     }
 
-    public int nthSmalledDestination(int n) {
+    public int nthSmalledDestination(int nth) {
       int size = group.size();
-      if (n >= size)
+      if (nth >= size) {
         return Integer.MAX_VALUE;
-      if(destinations == null) {
+      }
+      if (destinations == null) {
         destinations = new int[size];
         int index = 0;
         for (AnimalRoute ar : group) {
-          destinations[index++] = ar.route.b;
+          destinations[index++] = ar.route.stop;
         }
         Arrays.sort(destinations);
       }
-      return destinations[n];
+      return destinations[nth];
     }
 
     public String toString() {
       StringBuilder sb = new StringBuilder();
       sb.append("\tAnimalRouteGroup: {\n");
-      for (AnimalRoute ar : group)
+      for (AnimalRoute ar : group) {
         sb.append("\t" + ar.toString() + ",\n");
+      }
       sb.append("\t}");
       return sb.toString();
     }
   }
 
   private static class RouteManager {
+
     private Set<AnimalRouteGroup> animalRoutesGroups;
     private int[] minimumZooForCount;
     private int zoos;
@@ -201,37 +252,6 @@ public class AnimalTransport {
       sb.append("}\n");
       return sb.toString();
     }
-  }
-
-  public static void solve() {
-    Scanner in = new Scanner(System.in);
-    int tests = in.nextInt();
-    for (int t = 0; t < tests; t++) {
-      int zoos = in.nextInt();
-      int animals = in.nextInt();
-      RouteManager routeManager = new RouteManager(zoos, animals);
-      in.nextLine();
-      String[] symbols = in.nextLine().split(" ");
-      int[] sources = Arrays.stream(in.nextLine().split(" ")).mapToInt(Integer::valueOf).toArray();
-      int[] destinations =
-          Arrays.stream(in.nextLine().split(" ")).mapToInt(Integer::valueOf).toArray();
-      for (int i = 0; i < animals; i++) {
-        routeManager.addAnimalRoute(symbols[i], sources[i], destinations[i]);
-      }
-      if (debugMode) {
-        System.out.println(routeManager.toString());
-      }
-      int[] result = routeManager.findMinimumZoos();
-      for (int i = 0; i < result.length; i++) {
-        System.out.print(result[i] + " ");
-      }
-      System.out.println();
-    }
-    in.close();
-  }
-
-  public static void main(String[] args) {
-    solve();
   }
 
 }

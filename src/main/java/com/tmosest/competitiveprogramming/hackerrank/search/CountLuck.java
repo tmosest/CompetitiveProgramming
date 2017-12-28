@@ -7,7 +7,49 @@ public class CountLuck {
 
   public static boolean debugMode = false;
 
+  /**
+   * Solves Count Luck.
+   *
+   * @return True if Ron's guess was correct, false otherwise.
+   */
+  public static boolean[] solve() {
+    Scanner in = new Scanner(System.in);
+    int tests = in.nextInt();
+    boolean[] results = new boolean[tests];
+    for (int t = 0; t < tests; t++) {
+      if (debugMode) {
+        System.out.println("\n=======================================");
+        System.out.println("Test Case: " + t);
+        System.out.println("=======================================\n");
+      }
+      int rows = in.nextInt();
+      int columns = in.nextInt();
+      char[][] grid = new char[rows][columns];
+      for (int i = 0; i < rows; i++) {
+        String row = in.next();
+        grid[i] = row.toCharArray();
+      }
+      LuckyGraphSearch luckyGraph = new LuckyGraphSearch(grid);
+      results[t] = luckyGraph.wasGuessCorrect(in.nextInt());
+    }
+    in.close();
+    return results;
+  }
+
+  /**
+   * Main function.
+   * @param args Main string array
+   */
+  public static void main(String[] args) {
+    boolean[] results = solve();
+    for (int i = 0; i < results.length; i++) {
+      String result = (results[i]) ? "Impressed" : "Oops!";
+      System.out.println(result);
+    }
+  }
+
   private static class Graph {
+
     private int verticies;
     private int edges;
     private ArrayList<Integer>[] adj;
@@ -29,55 +71,59 @@ public class CountLuck {
       return edges;
     }
 
-    public void addEdge(int v, int w) {
+    public void addEdge(int from, int to) {
       edges++;
-      adj[v].add(w);
-      adj[w].add(v);
+      adj[from].add(to);
+      adj[to].add(from);
     }
 
-    public Iterable<Integer> adj(int v) {
-      return adj[v];
+    public Iterable<Integer> adj(int node) {
+      return adj[node];
     }
   }
 
   private static class DepthFirstPaths {
+
     private boolean[] marked;
     private int[] edgeTo;
-    private int s;
+    private int source;
 
-    public DepthFirstPaths(Graph G, int s) {
-      this.s = s;
-      edgeTo = new int[G.verticies()];
-      marked = new boolean[G.verticies()];
-      dfs(G, s);
+    public DepthFirstPaths(Graph graph, int source) {
+      this.source = source;
+      edgeTo = new int[graph.verticies()];
+      marked = new boolean[graph.verticies()];
+      dfs(graph, source);
     }
 
-    private void dfs(Graph G, int v) {
-      marked[v] = true;
-      for (int w : G.adj(v)) {
-        if (!marked[w]) {
-          edgeTo[w] = v;
-          dfs(G, w);
+    private void dfs(Graph graph, int root) {
+      marked[root] = true;
+      for (int node : graph.adj(root)) {
+        if (!marked[node]) {
+          edgeTo[node] = root;
+          dfs(graph, node);
         }
       }
     }
 
-    public boolean hasPathTo(int v) {
-      return marked[v];
+    public boolean hasPathTo(int node) {
+      return marked[node];
     }
 
-    public ArrayList<Integer> pathTo(int v) {
-      if (!hasPathTo(v))
+    public ArrayList<Integer> pathTo(int node) {
+      if (!hasPathTo(node)) {
         return null;
+      }
       ArrayList<Integer> path = new ArrayList<Integer>();
-      for (int x = v; x != s; x = edgeTo[x])
+      for (int x = node; x != source; x = edgeTo[x]) {
         path.add(x);
-      path.add(s);
+      }
+      path.add(source);
       return path;
     }
   }
 
   private static class LuckyGraphSearch {
+
     private int rows;
     private int columns;
     private int finishNode;
@@ -108,6 +154,8 @@ public class CountLuck {
               break;
             case 'M':
               startNode = node;
+              break;
+            default:
               break;
           }
           if (grid[r][c] != 'X') {
@@ -143,8 +191,8 @@ public class CountLuck {
       System.out.println("====================\n");
       for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
-          String s = matrixToNodeIndex(i, j) + " : " + grid[i][j];
-          System.out.print(String.format("%-8s ", s));
+          String line = matrixToNodeIndex(i, j) + " : " + grid[i][j];
+          System.out.print(String.format("%-8s ", line));
         }
         System.out.println();
       }
@@ -165,36 +213,37 @@ public class CountLuck {
       int count = 0;
       int[] position = nodeIndexToMatrix(node);
       int[] previousPosition = nodeIndexToMatrix(previousNode);
-      int r = position[0];
-      int c = position[1];
-      int pR = previousPosition[0];
-      int pC = previousPosition[1];
+      int row = position[0];
+      int column = position[1];
+      int previousRow = previousPosition[0];
+      int previousColumn = previousPosition[1];
       if (debugMode) {
         System.out.println("\n====================");
         System.out.println("Exists More Than One Path:");
         System.out.println("====================");
         System.out.println("\nnode: " + node + " previousNode: " + previousNode);
-        System.out.println("r: " + r + " c: " + c + " pR: " + pR + " pC: " + pC);
+        System.out.println("row: " + row + " column: " + column + " previousRow: " + previousRow
+            + " previousColumn: " + previousColumn);
       }
-      if (r - 1 > -1 && r - 1 != pR && grid[r - 1][c] != 'X') {
+      if (row - 1 > -1 && row - 1 != previousRow && grid[row - 1][column] != 'X') {
         count++;
         if (debugMode) {
           System.out.println("up? " + count);
         }
       }
-      if (c - 1 > -1 && c - 1 != pC && grid[r][c - 1] != 'X') {
+      if (column - 1 > -1 && column - 1 != previousColumn && grid[row][column - 1] != 'X') {
         count++;
         if (debugMode) {
           System.out.println("left? " + count);
         }
       }
-      if (r + 1 < rows && r + 1 != pR && grid[r + 1][c] != 'X') {
+      if (row + 1 < rows && row + 1 != previousRow && grid[row + 1][column] != 'X') {
         count++;
         if (debugMode) {
           System.out.println("down? " + count);
         }
       }
-      if (c + 1 < columns && c + 1 != pC && grid[r][c + 1] != 'X') {
+      if (column + 1 < columns && column + 1 != previousColumn && grid[row][column + 1] != 'X') {
         count++;
         if (debugMode) {
           System.out.println("right? " + count);
@@ -247,43 +296,6 @@ public class CountLuck {
         }
       }
       return guess == count;
-    }
-  }
-
-  /**
-   * Solves Count Luck.
-   * 
-   * @return True if Ron's guess was correct, false otherwise.
-   */
-  public static boolean[] solve() {
-    Scanner in = new Scanner(System.in);
-    int tests = in.nextInt();
-    boolean[] results = new boolean[tests];
-    for (int t = 0; t < tests; t++) {
-      if (debugMode) {
-        System.out.println("\n=======================================");
-        System.out.println("Test Case: " + t);
-        System.out.println("=======================================\n");
-      }
-      int rows = in.nextInt();
-      int columns = in.nextInt();
-      char[][] grid = new char[rows][columns];
-      for (int i = 0; i < rows; i++) {
-        String row = in.next();
-        grid[i] = row.toCharArray();
-      }
-      LuckyGraphSearch luckyGraph = new LuckyGraphSearch(grid);
-      results[t] = luckyGraph.wasGuessCorrect(in.nextInt());
-    }
-    in.close();
-    return results;
-  }
-
-  public static void main(String[] args) {
-    boolean[] results = solve();
-    for (int i = 0; i < results.length; i++) {
-      String result = (results[i]) ? "Impressed" : "Oops!";
-      System.out.println(result);
     }
   }
 

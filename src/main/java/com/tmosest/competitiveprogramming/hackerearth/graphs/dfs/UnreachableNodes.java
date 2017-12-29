@@ -5,9 +5,8 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /**
- * Hacker Earth: Depth First Search: Depth First Search
- *
- * link: https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/
+ * <h1>Hacker Earth: Depth First Search: Depth First Search</h2> <p>link:
+ * https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/</p>
  */
 public class UnreachableNodes {
 
@@ -15,6 +14,7 @@ public class UnreachableNodes {
 
   /**
    * Function to read in Graph and find unvisited nodes from a source.
+   *
    * @return Number of unvisited cities.
    */
   public static int solve() {
@@ -34,6 +34,7 @@ public class UnreachableNodes {
 
   /**
    * Main Function.
+   *
    * @param args String array
    */
   public static void main(String[] args) {

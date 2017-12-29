@@ -1,7 +1,6 @@
 package com.tmosest.competitiveprogramming.hackerearth.graphs.dfs;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -10,43 +9,53 @@ public class ComradesI {
 
   public static boolean debugMode = false;
 
+  /**
+   * Function to solve the problem bro!
+   *
+   * @return Return a matrix containing all the results for each case.
+   */
   public static int[][] solve() {
     Scanner in = new Scanner(System.in);
     int tests = in.nextInt();
     int[][] testResults = new int[tests][];
-    for(int t = 0; t < tests; t++) {
-    int nodes = in.nextInt();
-    DiGraph graph = new DiGraph(nodes);
-    for (int i = 0; i < nodes; i++) {
-      int superior = in.nextInt();
-      if (superior != 0) {
-        if(debugMode) {
-          System.out.println("i: " + i + " superior: " + (superior - 1));
+    for (int t = 0; t < tests; t++) {
+      int nodes = in.nextInt();
+      DiGraph graph = new DiGraph(nodes);
+      for (int i = 0; i < nodes; i++) {
+        int superior = in.nextInt();
+        if (superior != 0) {
+          if (debugMode) {
+            System.out.println("i: " + i + " superior: " + (superior - 1));
+          }
+          graph.addEdge(i, superior - 1);
         }
-        graph.addEdge(i, superior - 1);
       }
-    }
-    int reviews = in.nextInt();
-    int[] reviewsNeeded = new int[reviews];
-    for(int r = 0; r < reviews; r++) {
-      int parent = in.nextInt() - 1;
-      BreadthFirstSearch bfs = new BreadthFirstSearch(graph, parent);
-      int child = in.nextInt() - 1;
-      int distance = bfs.getDistTo(child);
-      if(debugMode) {
-        System.out.println("parent: " + parent + " child: " + child + " distance: " + distance);
+      int reviews = in.nextInt();
+      int[] reviewsNeeded = new int[reviews];
+      for (int r = 0; r < reviews; r++) {
+        int parent = in.nextInt() - 1;
+        BreadthFirstSearch bfs = new BreadthFirstSearch(graph, parent);
+        int child = in.nextInt() - 1;
+        int distance = bfs.getDistTo(child);
+        if (debugMode) {
+          System.out.println("parent: " + parent + " child: " + child + " distance: " + distance);
+        }
+        reviewsNeeded[r] = (distance == -1) ? -1 : distance - 1;
       }
-      reviewsNeeded[r] = (distance == -1) ? -1 : distance - 1;
-    }
       testResults[t] = reviewsNeeded;
     }
     return testResults;
   }
 
+  /**
+   * Main function.
+   *
+   * @param args Main string array.
+   */
   public static void main(String[] args) {
     int[][] result = solve();
-    for(int i = 0; i < result.length; i++) {
-      for(int j = 0; j < result[i].length; j++) {
+    for (int i = 0; i < result.length; i++) {
+      for (int j = 0; j < result[i].length; j++) {
         System.out.println(result[i][j]);
       }
     }

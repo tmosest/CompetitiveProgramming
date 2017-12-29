@@ -1,17 +1,21 @@
-package com.tmosest.competitiveprogramming.hackerearth.graphs.dfs;
+package com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.dfs;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class HappyVertices {
+/**
+ * <h1>Hacker Earth: Depth First Search: Depth First Search</h1> <h2>name: Monk and Graph
+ * Problem</h2> <p>max score: 20pts</p> <p>link: https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/monk-and-graph-problem/</p>
+ */
+public class MonkAndGraphProblem {
 
   public static boolean debugMode = false;
 
   /**
-   * Function to count the number of happy children in a graph.
+   * Scans in graph and outputs the # of edges in the largest connected component.
    *
-   * @return Count of happy children.
+   * @return number of edges in largest component.
    */
   public static int solve() {
     Scanner in = new Scanner(System.in);
@@ -23,7 +27,7 @@ public class HappyVertices {
     }
     in.close();
     DepthFirstSearch dfs = new DepthFirstSearch(graph);
-    return dfs.getHappyCount();
+    return dfs.getMaxComponentLength();
   }
 
   public static void main(String[] args) {
@@ -32,39 +36,43 @@ public class HappyVertices {
 
   private static class DepthFirstSearch {
 
-    boolean[] marked;
-    int happyCount;
+    private boolean[] marked;
+    private int maxComponentLength;
 
-    public DepthFirstSearch(Graph graph) {
+    DepthFirstSearch(Graph graph) {
       marked = new boolean[graph.nodes()];
-      happyCount = 0;
+      maxComponentLength = Integer.MIN_VALUE;
       for (int n = 0; n < marked.length; n++) {
-        dfs(graph, n);
-      }
-    }
-
-    private void dfs(Graph graph, int source) {
-      Stack<Integer> stack = new Stack<Integer>();
-      // marked[source] = true;
-      stack.add(source);
-      while (!stack.empty()) {
-        int parent = stack.pop();
-        int parentChildrenSize = graph.adj(parent).size();
-        for (int child : graph.adj(parent)) {
-          if (!marked[child]) {
-            int childChildrenSize = graph.adj(child).size();
-            if (childChildrenSize > parentChildrenSize) {
-              happyCount++;
-            }
-            marked[child] = true;
-            stack.add(child);
-          }
+        if (!marked[n]) {
+          dfs(graph, n);
         }
       }
     }
 
-    public int getHappyCount() {
-      return happyCount;
+    private void dfs(Graph graph, int source) {
+      if (marked[source]) {
+        maxComponentLength = Math.max(0, maxComponentLength);
+        return;
+      }
+      int components = 0;
+      Stack<Integer> stack = new Stack<Integer>();
+      marked[source] = true;
+      stack.add(source);
+      while (!stack.empty()) {
+        int node = stack.pop();
+        for (int link : graph.adj(node)) {
+          components++;
+          if (!marked[link]) {
+            stack.add(link);
+            marked[link] = true;
+          }
+        }
+      }
+      maxComponentLength = Math.max(components / 2, maxComponentLength);
+    }
+
+    public int getMaxComponentLength() {
+      return maxComponentLength;
     }
   }
 
@@ -74,7 +82,7 @@ public class HappyVertices {
     int edges;
     ArrayList<Integer>[] adj;
 
-    public Graph(int nodes) {
+    Graph(int nodes) {
       this.nodes = nodes;
       edges = 0;
       adj = (ArrayList<Integer>[]) new ArrayList[nodes];
@@ -93,7 +101,7 @@ public class HappyVertices {
       return nodes;
     }
 
-    public ArrayList<Integer> adj(int node) {
+    public Iterable<Integer> adj(int node) {
       return adj[node];
     }
   }

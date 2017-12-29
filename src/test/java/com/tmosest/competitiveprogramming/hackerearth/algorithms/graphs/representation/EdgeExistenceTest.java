@@ -1,5 +1,6 @@
-package com.tmosest.competitiveprogramming.hackerearth.graphs.representation;
+package com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.representation;
 
+import com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.representation.EdgeExistence;
 import java.io.UnsupportedEncodingException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

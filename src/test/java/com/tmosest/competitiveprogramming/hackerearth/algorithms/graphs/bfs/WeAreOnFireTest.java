@@ -1,5 +1,6 @@
-package com.tmosest.competitiveprogramming.hackerearth.graphs.bfs;
+package com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.bfs;
 
+import com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.bfs.WeAreOnFire;
 import java.io.UnsupportedEncodingException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

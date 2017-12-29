@@ -1,5 +1,6 @@
-package com.tmosest.competitiveprogramming.hackerearth.graphs.dfs;
+package com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.dfs;
 
+import com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.dfs.UnreachableNodes;
 import com.tmosest.competitiveprogramming.hackerrank.HackerrankUtil;
 import java.io.UnsupportedEncodingException;
 import org.junit.jupiter.api.Assertions;

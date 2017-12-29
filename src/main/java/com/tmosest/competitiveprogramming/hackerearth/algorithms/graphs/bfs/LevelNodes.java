@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.hackerearth.graphs.bfs;
+package com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.bfs;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.hackerearth.graphs.dfs;
+package com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.dfs;
 
 import java.util.ArrayList;
 import java.util.Scanner;

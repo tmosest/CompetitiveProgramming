@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.hackerearth.graphs.representation;
+package com.tmosest.competitiveprogramming.hackerearth.algorithms.graphs.representation;
 
 import java.util.ArrayList;
 import java.util.Arrays;

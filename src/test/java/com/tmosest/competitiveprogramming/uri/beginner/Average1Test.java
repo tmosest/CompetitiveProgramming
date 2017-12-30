@@ -41,4 +41,31 @@ public class Average1Test {
     String output = "MEDIA = 10.00000";
     test(input, output, false);
   }
+
+  @Test
+  @DisplayName("Test Case 3")
+  void testCase3() throws UnsupportedEncodingException {
+    String input = "0.0\n"
+        + "3.8";
+    String output = "MEDIA = 2.59091";
+    test(input, output, false);
+  }
+
+  @Test
+  @DisplayName("Test Case 4")
+  void testCase4() throws UnsupportedEncodingException {
+    String input = "9.5\n"
+        + "6.8";
+    String output = "MEDIA = 7.65909";
+    test(input, output, false);
+  }
+
+  @Test
+  @DisplayName("Test Case 5")
+  void testCase5() throws UnsupportedEncodingException {
+    String input = "5.8\n"
+        + "8.9";
+    String output = "MEDIA = 7.91364";
+    test(input, output, false);
+  }
 }

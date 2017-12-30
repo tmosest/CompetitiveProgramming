@@ -20,7 +20,7 @@ public class AreaOfACircleTest {
   void testCase0() throws UnsupportedEncodingException {
     String input = "2.00";
     String output = "A=12.5664";
-    test(input, output, true);
+    test(input, output, false);
   }
 
   @Test
@@ -28,7 +28,7 @@ public class AreaOfACircleTest {
   void testCase1() throws UnsupportedEncodingException {
     String input = "100.64";
     String output = "A=31819.3103";
-    test(input, output, true);
+    test(input, output, false);
   }
 
   @Test
@@ -36,6 +36,6 @@ public class AreaOfACircleTest {
   void testCase2() throws UnsupportedEncodingException {
     String input = "150.00";
     String output = "A=70685.7750";
-    test(input, output, true);
+    test(input, output, false);
   }
 }

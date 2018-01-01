@@ -73,6 +73,7 @@ public class RoadsAndLibraries {
   }
 
   private static class ConnectedComponents {
+
     int count;
     boolean[] marked;
     HashMap<Integer, Integer> connectedCounts;
@@ -93,19 +94,19 @@ public class RoadsAndLibraries {
       Stack<Integer> stack = new Stack<Integer>();
       marked[source] = true;
       Integer connectedCount = connectedCounts.get(count);
-      if(connectedCount == null) {
+      if (connectedCount == null) {
         connectedCounts.put(count, 1);
       } else {
         connectedCounts.put(count, ++connectedCount);
       }
       stack.push(source);
-      while(!stack.empty()) {
+      while (!stack.empty()) {
         int node = stack.pop();
         for (int child : graph.adj(node)) {
-          if(!marked[child]) {
+          if (!marked[child]) {
             marked[child] = true;
             connectedCount = connectedCounts.get(count);
-            if(connectedCount == null) {
+            if (connectedCount == null) {
               connectedCounts.put(count, 1);
             } else {
               connectedCounts.put(count, ++connectedCount);

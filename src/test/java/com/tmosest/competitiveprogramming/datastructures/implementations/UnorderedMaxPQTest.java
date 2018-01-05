@@ -7,13 +7,12 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Data Structures: Unordered Max Priority Queue")
 public class UnorderedMaxPQTest {
 
-  int capacity = 100;
   UnorderedMaxPq<Integer> integerUnorderedMaxPQ;
 
   @Test
   @DisplayName("Empty queue has size 0")
   void emptySizeTest() {
-    integerUnorderedMaxPQ = new UnorderedMaxPq<Integer>(capacity);
+    integerUnorderedMaxPQ = new UnorderedMaxPq<Integer>();
     Assertions.assertEquals(0, integerUnorderedMaxPQ.size());
     Assertions.assertEquals(true, integerUnorderedMaxPQ.isEmpty());
   }
@@ -21,7 +20,7 @@ public class UnorderedMaxPQTest {
   @Test
   @DisplayName("Can insert keys")
   void canInsert() {
-    integerUnorderedMaxPQ = new UnorderedMaxPq<Integer>(capacity);
+    integerUnorderedMaxPQ = new UnorderedMaxPq<Integer>();
     integerUnorderedMaxPQ.insert(5);
     Assertions.assertEquals(1, integerUnorderedMaxPQ.size());
     Assertions.assertEquals(false, integerUnorderedMaxPQ.isEmpty());
@@ -38,7 +37,7 @@ public class UnorderedMaxPQTest {
   void canGetMaxElement() {
     Integer max = 5;
     Integer min = 1;
-    integerUnorderedMaxPQ = new UnorderedMaxPq<Integer>(capacity);
+    integerUnorderedMaxPQ = new UnorderedMaxPq<Integer>();
     integerUnorderedMaxPQ.insert(max);
     Assertions.assertEquals(max, integerUnorderedMaxPQ.max());
     integerUnorderedMaxPQ.insert(min);
@@ -50,7 +49,7 @@ public class UnorderedMaxPQTest {
   void canDeleteMaxElement() {
     Integer max = 5;
     Integer min = 1;
-    integerUnorderedMaxPQ = new UnorderedMaxPq<Integer>(capacity);
+    integerUnorderedMaxPQ = new UnorderedMaxPq<Integer>();
     integerUnorderedMaxPQ.insert(max);
     Assertions.assertEquals(max, integerUnorderedMaxPQ.delMax());
     Assertions.assertEquals(0, integerUnorderedMaxPQ.size());

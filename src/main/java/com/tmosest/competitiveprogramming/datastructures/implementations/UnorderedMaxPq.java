@@ -2,6 +2,8 @@ package com.tmosest.competitiveprogramming.datastructures.implementations;
 
 import com.tmosest.competitiveprogramming.datastructures.MaxPq;
 
+import java.util.ArrayList;
+
 /**
  * Implementation of a Max Priority Queue using an unordered array.
  *
@@ -10,28 +12,29 @@ import com.tmosest.competitiveprogramming.datastructures.MaxPq;
 public class UnorderedMaxPq<T extends Comparable<T>> implements MaxPq<T> {
 
   int size;
-  T[] unorderedArray;
+  ArrayList<T> unorderedArray;
 
-  public UnorderedMaxPq(int capacity) {
+  public UnorderedMaxPq() {
     size = 0;
-    unorderedArray = (T[]) new Comparable[capacity];
+    unorderedArray = new ArrayList<T>();
   }
 
   /**
    * Deletes the top element off the stack and returns it.
+   *
    * @return The max key on the stack.
    */
   public T delMax() {
     int max = 0;
     for (int i = 1; i < size; i++) {
-      if (unorderedArray[i].compareTo(unorderedArray[max]) > 0) {
+      if (unorderedArray.get(i).compareTo(unorderedArray.get(i)) > 0) {
         max = i;
       }
     }
-    T temp = unorderedArray[size - 1];
-    unorderedArray[size - 1] = unorderedArray[max];
-    unorderedArray[max] = temp;
-    return unorderedArray[--size];
+    T temp = unorderedArray.get(size - 1);
+    unorderedArray.set(size - 1, unorderedArray.get(max));
+    unorderedArray.set(max, temp);
+    return unorderedArray.get(--size);
   }
 
   /**
@@ -40,7 +43,12 @@ public class UnorderedMaxPq<T extends Comparable<T>> implements MaxPq<T> {
    * @param key key to insert.
    */
   public void insert(T key) {
-    unorderedArray[size++] = key;
+    if (size >= unorderedArray.size()) {
+      unorderedArray.add(key);
+    } else {
+      unorderedArray.set(size, key);
+    }
+    size++;
   }
 
   /**
@@ -58,9 +66,9 @@ public class UnorderedMaxPq<T extends Comparable<T>> implements MaxPq<T> {
    * @return the max key in the unordered array.
    */
   public T max() {
-    T max = unorderedArray[0];
+    T max = unorderedArray.get(0);
     for (int i = 0; i < size; i++) {
-      T toCheck = unorderedArray[i];
+      T toCheck = unorderedArray.get(i);
       if (max.compareTo(toCheck) < 0) {
         max = toCheck;
       }

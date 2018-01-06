@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Data Structures: Ordered Max Priority Queue")
+@DisplayName("Data Structures: Priority Queues: Ordered Max Priority Queue")
 public class OrderedMaxPqTest {
 
   OrderedMaxPq<Integer> integerUnorderedMaxPQ;

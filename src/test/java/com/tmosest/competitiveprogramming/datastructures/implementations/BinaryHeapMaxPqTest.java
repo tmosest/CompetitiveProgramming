@@ -14,7 +14,7 @@ public class BinaryHeapMaxPqTest {
   @Test
   @DisplayName("Empty queue has size 0")
   void emptySizeTest() {
-    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>(capacity);
+    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>();
     Assertions.assertEquals(0, integerUnorderedMaxPQ.size());
     Assertions.assertEquals(true, integerUnorderedMaxPQ.isEmpty());
   }
@@ -22,7 +22,7 @@ public class BinaryHeapMaxPqTest {
   @Test
   @DisplayName("Can insert keys")
   void canInsert() {
-    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>(capacity);
+    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>();
     integerUnorderedMaxPQ.insert(5);
     Assertions.assertEquals(1, integerUnorderedMaxPQ.size());
     Assertions.assertEquals(false, integerUnorderedMaxPQ.isEmpty());
@@ -40,7 +40,7 @@ public class BinaryHeapMaxPqTest {
     Integer max = 5;
     Integer min = 1;
     Integer bigger = 7;
-    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>(capacity);
+    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>();
     integerUnorderedMaxPQ.insert(max);
     Assertions.assertEquals(max, integerUnorderedMaxPQ.max());
     integerUnorderedMaxPQ.insert(min);
@@ -52,10 +52,10 @@ public class BinaryHeapMaxPqTest {
   @Test
   @DisplayName("Can delete max element")
   void canDeleteMaxElement() {
-    Integer max = 5;
     Integer min = 1;
-    Integer bigger = 7;
-    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>(capacity);
+    Integer max = 7;
+    Integer bigger = 5;
+    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>();
     integerUnorderedMaxPQ.insert(max);
     Assertions.assertEquals(max, integerUnorderedMaxPQ.delMax());
     Assertions.assertEquals(0, integerUnorderedMaxPQ.size());
@@ -67,13 +67,39 @@ public class BinaryHeapMaxPqTest {
     integerUnorderedMaxPQ.insert(bigger);
     Assertions.assertEquals(bigger, integerUnorderedMaxPQ.delMax());
     Assertions.assertEquals(min, integerUnorderedMaxPQ.delMax());
+    integerUnorderedMaxPQ.insert(max);
+    integerUnorderedMaxPQ.insert(min);
+    integerUnorderedMaxPQ.insert(min);
+    Assertions.assertEquals(max, integerUnorderedMaxPQ.delMax());
+    Assertions.assertEquals(min, integerUnorderedMaxPQ.delMax());
+    Assertions.assertEquals(min, integerUnorderedMaxPQ.delMax());
+    integerUnorderedMaxPQ.insert(min);
+    integerUnorderedMaxPQ.insert(bigger);
+    integerUnorderedMaxPQ.insert(max);
+    integerUnorderedMaxPQ.insert(min);
+    integerUnorderedMaxPQ.insert(min);
+    integerUnorderedMaxPQ.insert(min);
+    integerUnorderedMaxPQ.insert(bigger);
+    integerUnorderedMaxPQ.insert(max);
+    integerUnorderedMaxPQ.insert(bigger);
+    integerUnorderedMaxPQ.insert(bigger);
+    integerUnorderedMaxPQ.insert(max);
+    integerUnorderedMaxPQ.insert(min);
+    Assertions.assertEquals(max, integerUnorderedMaxPQ.delMax());
+    Assertions.assertEquals(max, integerUnorderedMaxPQ.delMax());
+    Assertions.assertEquals(max, integerUnorderedMaxPQ.delMax());
+    Assertions.assertEquals(bigger, integerUnorderedMaxPQ.delMax());
+    Assertions.assertEquals(bigger, integerUnorderedMaxPQ.delMax());
+    Assertions.assertEquals(bigger, integerUnorderedMaxPQ.delMax());
+    Assertions.assertEquals(bigger, integerUnorderedMaxPQ.delMax());
+    Assertions.assertEquals(min, integerUnorderedMaxPQ.delMax());
   }
 
   @Test
   @DisplayName("Capacity Test")
   void capacityTest() {
     Integer max = 5;
-    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>(capacity);
+    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>();
     for (int i = 0; i < capacity; i++) {
       integerUnorderedMaxPQ.insert(max);
     }

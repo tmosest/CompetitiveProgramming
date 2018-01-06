@@ -1,6 +1,7 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
 import com.tmosest.competitiveprogramming.datastructures.MaxPq;
+import java.util.ArrayList;
 
 /**
  * Max Priority Queue, using a Binary Heap. A Max Binary Heap is a Binary Tree with some special
@@ -15,16 +16,14 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
    * Special Array Representation of the Heap. If Index is K then children are 2K + 1 and 2K + 2. If
    * indexed from 1 instead of 0 then you can use 2K and 2K + 1 instead. Parent is Floor (K/2).
    */
-  T[] binaryHeap;
+  ArrayList<T> binaryHeap;
 
   /**
    * Create a new binary heap.
-   *
-   * @param capacity integer showing how big the PQ can be.
    */
-  public BinaryHeapMaxPq(int capacity) {
+  public BinaryHeapMaxPq() {
     size = 0;
-    binaryHeap = (T[]) new Comparable[capacity];
+    binaryHeap = new ArrayList<T>();
   }
 
   /**
@@ -36,9 +35,6 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
    * @return True if the first element is strictly less than the second.
    */
   private boolean less(T first, T second) {
-    if (first == null || second == null) {
-      return false;
-    }
     return first.compareTo(second) < 0;
   }
 
@@ -49,9 +45,9 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
    * @param secondIndex Index of the second element to be switched.
    */
   private void swap(int firstIndex, int secondIndex) {
-    T temp = binaryHeap[firstIndex];
-    binaryHeap[firstIndex] = binaryHeap[secondIndex];
-    binaryHeap[secondIndex] = temp;
+    T temp = binaryHeap.get(firstIndex);
+    binaryHeap.set(firstIndex, binaryHeap.get(secondIndex));
+    binaryHeap.set(secondIndex, temp);
   }
 
   /**
@@ -62,11 +58,11 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
     int firstChildIndex = 2 * parentIndex + 1;
     int secondChildIndex = 2 * parentIndex + 2;
     while (firstChildIndex < size
-        && (less(binaryHeap[parentIndex], binaryHeap[firstChildIndex])
-        || less(binaryHeap[parentIndex], binaryHeap[secondChildIndex]))) {
+        && (less(binaryHeap.get(parentIndex), binaryHeap.get(firstChildIndex))
+        || less(binaryHeap.get(parentIndex), binaryHeap.get(secondChildIndex)))) {
       int maxChildIndex = firstChildIndex;
-      if (secondChildIndex < size && less(binaryHeap[firstChildIndex],
-          binaryHeap[secondChildIndex])) {
+      if (secondChildIndex < size && less(binaryHeap.get(firstChildIndex),
+          binaryHeap.get(secondChildIndex))) {
         maxChildIndex = secondChildIndex;
       }
       swap(parentIndex, maxChildIndex);
@@ -84,7 +80,7 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
   private void swim(int index) {
     int parentIndex = index / 2;
     // Swim up while the parent is less than the child
-    while (parentIndex >= 0 && less(binaryHeap[parentIndex], binaryHeap[index])) {
+    while (parentIndex >= 0 && less(binaryHeap.get(parentIndex), binaryHeap.get(index))) {
       // Exchange them
       swap(parentIndex, index);
       // Then move up the tree
@@ -115,7 +111,12 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
    */
   public void insert(T key) {
     // Append element to the end of the array;
-    binaryHeap[size++] = key;
+    if (size >= binaryHeap.size()) {
+      binaryHeap.add(key);
+    } else {
+      binaryHeap.set(size, key);
+    }
+    size++;
     // Need to swim that element up.
     swim(size - 1);
   }
@@ -135,7 +136,7 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
    * @return The max element in the PQ.
    */
   public T max() {
-    return binaryHeap[0];
+    return binaryHeap.get(0);
   }
 
   /**

@@ -1,18 +1,27 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
+import com.tmosest.competitiveprogramming.datastructures.MaxPqAdt;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Data Structures: Priority Queues: Ordered Max Priority Queue")
 public class OrderedMaxPqTest {
 
-  OrderedMaxPq<Integer> integerUnorderedMaxPQ;
+  MaxPqAdt<Integer> integerUnorderedMaxPQ;
+  Integer max = 7;
+  Integer min = 1;
+  Integer bigger = 5;
+
+  @BeforeEach
+  void createPq() {
+    integerUnorderedMaxPQ = new OrderedMaxPq<Integer>();
+  }
 
   @Test
   @DisplayName("Empty queue has size 0")
   void emptySizeTest() {
-    integerUnorderedMaxPQ = new OrderedMaxPq<Integer>();
     Assertions.assertEquals(0, integerUnorderedMaxPQ.size());
     Assertions.assertEquals(true, integerUnorderedMaxPQ.isEmpty());
   }
@@ -20,15 +29,14 @@ public class OrderedMaxPqTest {
   @Test
   @DisplayName("Can insert keys")
   void canInsert() {
-    integerUnorderedMaxPQ = new OrderedMaxPq<Integer>();
-    integerUnorderedMaxPQ.insert(5);
+    integerUnorderedMaxPQ.insert(bigger);
     Assertions.assertEquals(1, integerUnorderedMaxPQ.size());
     Assertions.assertEquals(false, integerUnorderedMaxPQ.isEmpty());
-    integerUnorderedMaxPQ.insert(7);
+    integerUnorderedMaxPQ.insert(max);
     Assertions.assertEquals(2, integerUnorderedMaxPQ.size());
-    integerUnorderedMaxPQ.insert(7);
-    integerUnorderedMaxPQ.insert(7);
-    integerUnorderedMaxPQ.insert(7);
+    integerUnorderedMaxPQ.insert(max);
+    integerUnorderedMaxPQ.insert(max);
+    integerUnorderedMaxPQ.insert(max);
     Assertions.assertEquals(5, integerUnorderedMaxPQ.size());
   }
 
@@ -38,7 +46,6 @@ public class OrderedMaxPqTest {
     Integer max = 5;
     Integer min = 1;
     Integer bigger = 7;
-    integerUnorderedMaxPQ = new OrderedMaxPq<Integer>();
     integerUnorderedMaxPQ.insert(max);
     Assertions.assertEquals(max, integerUnorderedMaxPQ.max());
     integerUnorderedMaxPQ.insert(min);
@@ -50,10 +57,6 @@ public class OrderedMaxPqTest {
   @Test
   @DisplayName("Can delete max element")
   void canDeleteMaxElement() {
-    Integer max = 5;
-    Integer min = 1;
-    Integer bigger = 7;
-    integerUnorderedMaxPQ = new OrderedMaxPq<Integer>();
     integerUnorderedMaxPQ.insert(max);
     Assertions.assertEquals(max, integerUnorderedMaxPQ.delMax());
     Assertions.assertEquals(0, integerUnorderedMaxPQ.size());
@@ -71,7 +74,6 @@ public class OrderedMaxPqTest {
   @DisplayName("Capacity Test")
   void capacityTest() {
     Integer max = 5;
-    integerUnorderedMaxPQ = new OrderedMaxPq<Integer>();
     for (int i = 0; i < 100; i++) {
       integerUnorderedMaxPQ.insert(max);
     }

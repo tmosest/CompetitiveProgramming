@@ -1,7 +1,6 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
-import com.tmosest.competitiveprogramming.datastructures.MaxPq;
-import java.util.ArrayList;
+import com.tmosest.competitiveprogramming.datastructures.MaxPqAdt;
 
 /**
  * Max Priority Queue, using a Binary Heap. A Max Binary Heap is a Binary Tree with some special
@@ -9,7 +8,7 @@ import java.util.ArrayList;
  * greater that the value of it's two children. This gives some great qualities: 1) The root of the
  * tree is always the max element. 2) Any subtree is also a binary heap.
  */
-public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
+public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPqAdt<T> {
 
   int size;
   /**

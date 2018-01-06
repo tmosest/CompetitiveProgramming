@@ -5,7 +5,7 @@ package com.tmosest.competitiveprogramming.datastructures;
  *
  * @param <Key> Type of Priority Queue needs to be comparable.
  */
-public interface MaxPq<Key extends Comparable<Key>> {
+public interface MaxPqAdt<Key extends Comparable<Key>> {
 
   /**
    * Return and remove the largest key.

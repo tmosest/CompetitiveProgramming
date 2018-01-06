@@ -6,17 +6,17 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Data Structures: Resizing Array")
-class ResizingArrayTest {
+class ArrayListTest {
 
-  ResizingArray<Double> doubleArray;
-  ResizingArray<Integer> intArray;
-  ResizingArray<String> stringArray;
+  ArrayList<Double> doubleArray;
+  ArrayList<Integer> intArray;
+  ArrayList<String> stringArray;
 
   @BeforeEach
   public void setUp() {
-    doubleArray = new ResizingArray<Double>();
-    intArray = new ResizingArray<Integer>();
-    stringArray = new ResizingArray<String>();
+    doubleArray = new ArrayList<Double>();
+    intArray = new ArrayList<Integer>();
+    stringArray = new ArrayList<String>();
   }
 
   @Test
@@ -43,19 +43,23 @@ class ResizingArrayTest {
   public void sizeShouldBeEqualToNumberOfItemsAdded() {
     int n = 0;
     Assertions.assertTrue(doubleArray.isEmpty());
-    doubleArray.push(1.00);
+    doubleArray.add(1.00);
     ++n;
-    doubleArray.push(2.00);
+    doubleArray.add(2.00);
     ++n;
     Assertions.assertEquals(2, doubleArray.size());
     double number = 1.00;
     for (int i = 0; i < 20; i++) {
       ++n;
       number += i;
-      doubleArray.push(number);
+      doubleArray.add(number);
     }
     Assertions.assertEquals(n, doubleArray.size());
-    Assertions.assertEquals((Double) number, doubleArray.peek());
+    Assertions.assertEquals((Double) number, doubleArray.pop());
+    for (int i = 0; i < n; i++) {
+      doubleArray.pop();
+    }
+    Assertions.assertEquals(true, doubleArray.isEmpty());
   }
 
 }

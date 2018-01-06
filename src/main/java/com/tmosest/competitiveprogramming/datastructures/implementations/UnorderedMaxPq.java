@@ -1,15 +1,13 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
-import com.tmosest.competitiveprogramming.datastructures.MaxPq;
-
-import java.util.ArrayList;
+import com.tmosest.competitiveprogramming.datastructures.MaxPqAdt;
 
 /**
  * Implementation of a Max Priority Queue using an unordered array.
  *
  * @param <T> Type of Unordered Max Priority Queue.
  */
-public class UnorderedMaxPq<T extends Comparable<T>> implements MaxPq<T> {
+public class UnorderedMaxPq<T extends Comparable<T>> implements MaxPqAdt<T> {
 
   int size;
   ArrayList<T> unorderedArray;

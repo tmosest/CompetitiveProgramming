@@ -1,8 +1,8 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
-import com.tmosest.competitiveprogramming.datastructures.UnionFindADT;
+import com.tmosest.competitiveprogramming.datastructures.UnionFindAdt;
 
-public class QuickUnion implements UnionFindADT {
+public class QuickUnion implements UnionFindAdt {
 
   /**
    * In this implementation we think of nodes as a nested tree. The value of the node in the array

@@ -1,19 +1,14 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
-import com.tmosest.competitiveprogramming.datastructures.SearchADT;
+import com.tmosest.competitiveprogramming.datastructures.SearchAdt;
 
 /**
- * This class is a wrapper for binary search.
- * 
- * The algorithm is as follows:
- * 
- * Compare key against middle: Too big, go left. Too small, go right. Equals then we can return.
- * 
- * @author tmosest
+ * This class is a wrapper for binary search. The algorithm is as follows: Compare key against
+ * middle: Too big, go left. Too small, go right. Equals then we can return.
  *
- * @param <T>
+ * @author tmosest
  */
-public class BinarySearch implements SearchADT {
+public class BinarySearch implements SearchAdt {
 
   /**
    * Array that we will be searching through We need this to be sorted.
@@ -23,8 +18,6 @@ public class BinarySearch implements SearchADT {
   /**
    * At the moment we assume that the given array is already sorted. This will need to be updated to
    * make the program more robust.
-   * 
-   * @param toSearch
    */
   public BinarySearch(int[] toSearch) {
     searchArray = toSearch;
@@ -38,13 +31,14 @@ public class BinarySearch implements SearchADT {
     int high = searchArray.length - 1;
     while (low <= high) {
       int middle = (high + low) / 2; // The book uses: low + (high - low) / 2 but doesn't seem to
-                                     // matter.
-      if (element < searchArray[middle]) // Too Big, Go Left
+      // matter.
+      if (element < searchArray[middle]) {
         high = middle - 1;
-      else if (element > searchArray[middle]) // Too Small, Go Right
+      } else if (element > searchArray[middle]) {
         low = middle + 1;
-      else
+      } else {
         return middle;
+      }
     }
     return -1;
   }

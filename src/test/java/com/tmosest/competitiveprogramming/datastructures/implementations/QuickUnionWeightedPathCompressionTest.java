@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import com.tmosest.competitiveprogramming.datastructures.UnionFindADT;
+import com.tmosest.competitiveprogramming.datastructures.UnionFindAdt;
 
 @DisplayName("Data Structures: Quick Union Weight Path Compression Union Find")
 class QuickUnionWeightedPathCompressionTest {
 
   int size = 10;
-  UnionFindADT uf;
+  UnionFindAdt uf;
 
   @BeforeEach
   public void setUp() {

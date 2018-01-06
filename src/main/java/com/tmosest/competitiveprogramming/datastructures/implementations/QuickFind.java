@@ -1,8 +1,8 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
-import com.tmosest.competitiveprogramming.datastructures.UnionFindADT;
+import com.tmosest.competitiveprogramming.datastructures.UnionFindAdt;
 
-public class QuickFind implements UnionFindADT {
+public class QuickFind implements UnionFindAdt {
 
   int[] ids;
 

@@ -1,15 +1,15 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
+import com.tmosest.competitiveprogramming.datastructures.LinkedListAdt;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import com.tmosest.competitiveprogramming.datastructures.LinkedListADT;
 
 @DisplayName("Data Structures: Likned List Tests")
 public class LinkedListTest {
 
-  LinkedListADT<Integer> linkedList;
+  LinkedListAdt<Integer> linkedList;
 
   Integer data;
   Integer newdata;
@@ -117,7 +117,7 @@ public class LinkedListTest {
     // Try to append a second piece of data to make sure that it really worked.
     linkedList.append(newdata);
     Assertions.assertEquals(data, linkedList.get(0)); // Confirm that original element is still
-                                                      // first
+    // first
     Assertions.assertEquals(newdata, linkedList.get(1)); // Confirm that new element is second.
     Assertions.assertEquals(2, linkedList.size()); // Confirm that size is working too.
   }

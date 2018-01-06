@@ -1,6 +1,6 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
-import com.tmosest.competitiveprogramming.datastructures.UnionFindADT;
+import com.tmosest.competitiveprogramming.datastructures.UnionFindAdt;
 
 /**
  * QuickUnionWeighted:
@@ -20,7 +20,7 @@ import com.tmosest.competitiveprogramming.datastructures.UnionFindADT;
  * 
  * @author tmosest (Tyler Moses)
  */
-public class QuickUnionWeighted implements UnionFindADT {
+public class QuickUnionWeighted implements UnionFindAdt {
 
   /**
    * This array determines helps point each index to its parent index. Starts with each value equal

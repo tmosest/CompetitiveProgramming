@@ -1,8 +1,8 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
-import com.tmosest.competitiveprogramming.datastructures.SimpleStackADT;
+import com.tmosest.competitiveprogramming.datastructures.SimpleStackAdt;
 
-public class StackLinkedList<T> implements SimpleStackADT<T> {
+public class StackLinkedList<T> implements SimpleStackAdt<T> {
 
   private int size;
 
@@ -12,6 +12,11 @@ public class StackLinkedList<T> implements SimpleStackADT<T> {
     size = 0;
   }
 
+  /**
+   * Push a new element onto the stack.
+   *
+   * @param element new object to add.
+   */
   public void push(T element) {
     if (root == null) {
       root = new Node<T>();
@@ -25,6 +30,9 @@ public class StackLinkedList<T> implements SimpleStackADT<T> {
     ++size;
   }
 
+  /**
+   * Pop an element off of the stack.
+   */
   public T pop() {
     T data = null;
     if (root != null) {
@@ -35,10 +43,20 @@ public class StackLinkedList<T> implements SimpleStackADT<T> {
     return data;
   }
 
+  /**
+   * Determine if the stack is empty or not.
+   *
+   * @return True if the size is zero.
+   */
   public boolean isEmpty() {
     return size == 0;
   }
 
+  /**
+   * Get the size of the stack.
+   *
+   * @return Number of elements on the stack.
+   */
   public int size() {
     return size;
   }

@@ -1,6 +1,6 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
-import com.tmosest.competitiveprogramming.datastructures.UnionFindADT;
+import com.tmosest.competitiveprogramming.datastructures.UnionFindAdt;
 
 /**
  * Another implementation of Union Find.
@@ -14,7 +14,7 @@ import com.tmosest.competitiveprogramming.datastructures.UnionFindADT;
  * 
  * @author tmosest
  */
-public class QuickUnionWeightedPathCompression implements UnionFindADT {
+public class QuickUnionWeightedPathCompression implements UnionFindAdt {
 
   private int[] parents;
   private int[] weights;

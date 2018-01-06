@@ -1,13 +1,11 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
-import com.tmosest.competitiveprogramming.datastructures.MaxPq;
-
-import java.util.ArrayList;
+import com.tmosest.competitiveprogramming.datastructures.MaxPqAdt;
 
 /**
  * Ordered Array version of a Max Priority Queue.
  */
-public class OrderedMaxPq<T extends Comparable<T>> implements MaxPq<T> {
+public class OrderedMaxPq<T extends Comparable<T>> implements MaxPqAdt<T> {
 
   int size;
   ArrayList<T> orderedArray;

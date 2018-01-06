@@ -2,11 +2,10 @@ package com.tmosest.competitiveprogramming.datastructures;
 
 /**
  * Creating my own linked list interface.
- * 
- * @author tmosest (Tyler Owen Moses)
  *
+ * @param <T> The type of LinkedList: EX: Integer, Long, String.
  */
-public interface LinkedListADT<T> {
+public interface LinkedListAdt<T> {
   /**
    * Append an element to the end of the Linked List.
    * 
@@ -17,7 +16,7 @@ public interface LinkedListADT<T> {
   /**
    * Determines if the linked list is null or not.
    * 
-   * @return
+   * @return True if there are no elements in the linked list.
    */
   public boolean isEmpty();
 

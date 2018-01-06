@@ -12,8 +12,8 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
 
   int size;
   /**
-   * Special Array Representation of the Heap. If Index is K then children are 2K + 1 and 2K + 2.
-   * Parent is Floor (K/2).
+   * Special Array Representation of the Heap. If Index is K then children are 2K + 1 and 2K + 2. If
+   * indexed from 1 instead of 0 then you can use 2K and 2K + 1 instead. Parent is Floor (K/2).
    */
   T[] binaryHeap;
 
@@ -57,7 +57,7 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
   /**
    * Function to swim a new root down the tree. O(lg size).
    */
-  private void swimDown() {
+  private void sink() {
     int parentIndex = 0;
     int firstChildIndex = 2 * parentIndex + 1;
     int secondChildIndex = 2 * parentIndex + 2;
@@ -81,7 +81,7 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
    * element up the heap by comparing it to its parent. Ensures that we have a Max Heap in O(lg
    * size).
    */
-  private void swimUp(int index) {
+  private void swim(int index) {
     int parentIndex = index / 2;
     // Swim up while the parent is less than the child
     while (parentIndex >= 0 && less(binaryHeap[parentIndex], binaryHeap[index])) {
@@ -104,7 +104,7 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
     // Swap it with one at the end of the heap.
     swap(0, --size);
     // Swim the new root element down.
-    swimDown();
+    sink();
     return max;
   }
 
@@ -117,7 +117,7 @@ public class BinaryHeapMaxPq<T extends Comparable<T>> implements MaxPq<T> {
     // Append element to the end of the array;
     binaryHeap[size++] = key;
     // Need to swim that element up.
-    swimUp(size - 1);
+    swim(size - 1);
   }
 
   /**

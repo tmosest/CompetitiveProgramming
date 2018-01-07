@@ -16,7 +16,7 @@ public class UnorderedMinPqTest {
 
   @BeforeEach
   void setIntegerMinPq() {
-    integerMinPq = new UnorderedMinPq<Integer>(100);
+    integerMinPq = new UnorderedMinPq<Integer>(capacity);
   }
 
   @Test

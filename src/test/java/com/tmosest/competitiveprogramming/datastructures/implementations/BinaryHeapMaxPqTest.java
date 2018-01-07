@@ -37,7 +37,7 @@ public class BinaryHeapMaxPqTest {
     Assertions.assertEquals(2, integerUnorderedMaxPQ.size());
     integerUnorderedMaxPQ.insert(7);
     integerUnorderedMaxPQ.insert(7);
-    Assertions.assertEquals(5, integerUnorderedMaxPQ.size());
+    Assertions.assertEquals(4, integerUnorderedMaxPQ.size());
   }
 
   @Test

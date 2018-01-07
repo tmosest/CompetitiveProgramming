@@ -96,7 +96,6 @@ public class BinaryHeapMaxPqTest {
   @Test
   @DisplayName("Capacity Test")
   void capacityTest() {
-    integerUnorderedMaxPQ = new BinaryHeapMaxPq<Integer>();
     for (int i = 0; i < capacity; i++) {
       integerUnorderedMaxPQ.insert(max);
     }

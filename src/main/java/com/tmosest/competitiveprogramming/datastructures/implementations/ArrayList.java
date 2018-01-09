@@ -2,7 +2,9 @@ package com.tmosest.competitiveprogramming.datastructures.implementations;
 
 import com.tmosest.competitiveprogramming.datastructures.ArrayListAdt;
 
-public class ArrayList<T> implements ArrayListAdt<T> {
+import java.util.Iterator;
+
+public class ArrayList<T> implements ArrayListAdt<T>, Iterable<T> {
 
   private int size;
   private T[] array;
@@ -100,4 +102,25 @@ public class ArrayList<T> implements ArrayListAdt<T> {
     }
     array[index] = element;
   }
+
+  /**
+   * Make Array List Iterable.
+   *
+   * @return Iterator over the array.
+   */
+  public Iterator<T> iterator() {
+    return new Iterator<T>() {
+      private int counter = 0;
+
+      public boolean hasNext() {
+        return size > counter;
+      }
+
+      public T next() {
+        return array[counter++];
+      }
+
+    };
+  }
+
 }

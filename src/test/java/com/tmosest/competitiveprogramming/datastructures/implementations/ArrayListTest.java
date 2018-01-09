@@ -62,4 +62,18 @@ class ArrayListTest {
     Assertions.assertEquals(true, doubleArray.isEmpty());
   }
 
+  @Test
+  @DisplayName("Can iterate")
+  void canIterate() {
+    int size = 100;
+    int[] array = new int[size];
+    for (int i = 0; i < array.length; i++) {
+      array[i] = i;
+      intArray.add(i);
+    }
+    int index = 0;
+    for (int  i : intArray) {
+      Assertions.assertEquals(array[index++], i);
+    }
+  }
 }

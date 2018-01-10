@@ -47,12 +47,12 @@ public class ArithmeticExpressions {
         if (debugMode) {
           System.out.println("ops: " + ops);
         }
-        Equation add = new Equation(result + numbers[index], ops + "+");
-        equations.add(add);
-        Equation mult = new Equation(result * numbers[index], ops + "*");
-        equations.add(mult);
-        Equation sub = new Equation(result - numbers[index], ops + "-");
+        Equation sub = new Equation((result - numbers[index]) % 101, ops + "-");
         equations.add(sub);
+        Equation add = new Equation((result + numbers[index]) % 101, ops + "+");
+        equations.add(add);
+        Equation mult = new Equation((result * numbers[index]) % 101, ops + "*");
+        equations.add(mult);
         if(add.result % 101 == 0) {
           return convertEquation(add, numbers);
         }

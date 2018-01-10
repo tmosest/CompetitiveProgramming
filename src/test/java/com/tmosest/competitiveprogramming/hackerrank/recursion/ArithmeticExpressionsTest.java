@@ -32,4 +32,15 @@ public class ArithmeticExpressionsTest {
     String output = "55+3-45*33-25";
     test(input, output, false);
   }
+
+  /*
+  @Test
+  @DisplayName("Test Case 34")
+  void testCase34() throws  UnsupportedEncodingException {
+    String input = "37\n"
+        + "15 50 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100";
+    String output = "15-50-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100-100";
+    test(input, output, false);
+  }
+  */
 }

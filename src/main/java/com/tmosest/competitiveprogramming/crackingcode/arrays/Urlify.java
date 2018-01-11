@@ -7,14 +7,14 @@ public class Urlify {
    * @param word
    * @return
    */
-  public static String urlify(char[] word) {
+  public static String urlify(char[] word, int realSize) {
     int realIndex = word.length;
-    for (int c = word.length - 1; c >= 0; c--) {
-      if (word[c] == ' ' && realIndex != word.length) {
+    for (int c = realSize - 1; c >= 0; c--) {
+      if (word[c] == ' ') {
         word[--realIndex] = '0';
         word[--realIndex] = '2';
         word[--realIndex] = '%';
-      } else if(word[c] != ' ') {
+      } else {
         word[--realIndex] = word[c];
       }
     }

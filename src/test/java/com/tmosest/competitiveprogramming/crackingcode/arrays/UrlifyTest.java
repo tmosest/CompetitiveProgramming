@@ -8,7 +8,7 @@ public class UrlifyTest {
   @Test
   void testUrlify() {
     String string = "Mr John Smith    ";
-    Assertions.assertEquals("Mr%20John%20Smith", Urlify.urlify(string.toCharArray()));
+    Assertions.assertEquals("Mr%20John%20Smith", Urlify.urlify(string.toCharArray(), 13));
   }
 
 }

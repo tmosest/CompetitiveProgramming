@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class ZeroMatrixTest {
-/*
+
   @Test
   void testCase0() {
     int[][] matrix = {
@@ -17,7 +17,6 @@ public class ZeroMatrixTest {
     };
     Assertions.assertArrayEquals(result, ZeroMatrix.zeroMatrix(matrix));
   }
-  */
 
   @Test
   void testCase1() {

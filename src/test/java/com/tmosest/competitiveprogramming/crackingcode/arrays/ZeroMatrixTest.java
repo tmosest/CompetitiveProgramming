@@ -33,4 +33,18 @@ public class ZeroMatrixTest {
     Assertions.assertArrayEquals(result, ZeroMatrix.zeroMatrix(matrix));
   }
 
+  @Test
+  void testCase2() {
+    int[][] matrix = {
+        {1 , 1, 0},
+        {1 , 0, 1},
+        {0 , 1, 0}
+    };
+    int[][] result = {
+        {0 , 0, 0},
+        {0 , 0, 0},
+        {0 , 0, 0}
+    };
+    Assertions.assertArrayEquals(result, ZeroMatrix.zeroMatrix(matrix));
+  }
 }

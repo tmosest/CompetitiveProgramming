@@ -25,4 +25,14 @@ public class OneAwayTest {
     Assertions.assertEquals(false, OneAway.isOneAway("pale", "bake"));
   }
 
+  @Test
+  void testCase4() {
+    Assertions.assertEquals(false, OneAway.isOneAway("baked", "bat"));
+  }
+
+  @Test
+  void testCase5() {
+    Assertions.assertEquals(false, OneAway.isOneAway("bale", "pal"));
+  }
+
 }

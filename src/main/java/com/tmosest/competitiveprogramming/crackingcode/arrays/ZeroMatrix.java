@@ -2,6 +2,13 @@ package com.tmosest.competitiveprogramming.crackingcode.arrays;
 
 public class ZeroMatrix {
 
+  /**
+   * Transform a matrix based on the position of the zeros. If an index has a zero, then we set the
+   * row and columns it was found in to zero.
+   *
+   * @param matrix The matrix to transform.
+   * @return New matrix with more zeros.
+   */
   public static int[][] zeroMatrix(int[][] matrix) {
     boolean firstRowHasZero = false;
     boolean firstColumnHasZero = false;

@@ -2,6 +2,12 @@ package com.tmosest.competitiveprogramming.crackingcode.arrays;
 
 public class PalindromePermutation {
 
+  /**
+   * Determines if a word is a permutation of a palindrome.
+   *
+   * @param word String to test.
+   * @return True if the word meet the above criteria.
+   */
   public static boolean isPalindromePermutation(String word) {
     int[] letterCounts = new int[24];
     int wordLength = 0;
@@ -13,13 +19,13 @@ public class PalindromePermutation {
       }
     }
     int oddCount = 0;
-    for (int  i = 0; i < letterCounts.length; i++) {
+    for (int i = 0; i < letterCounts.length; i++) {
       if (letterCounts[i] % 2 == 1) {
         ++oddCount;
-        if(wordLength % 2 == 0 && oddCount > 0) {
+        if (wordLength % 2 == 0 && oddCount > 0) {
           return false;
         }
-        if(wordLength % 2 == 1 && oddCount > 1) {
+        if (wordLength % 2 == 1 && oddCount > 1) {
           return false;
         }
       }

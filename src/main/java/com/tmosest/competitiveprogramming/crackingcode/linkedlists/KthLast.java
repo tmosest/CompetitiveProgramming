@@ -15,17 +15,18 @@ public class KthLast {
    * @return Return the integer value.
    */
   public static int kthLast(LinkedList<Integer> linkedList, int index) {
-    Stack<Integer> stack = new Stack<Integer>();
     Node<Integer> head = linkedList.head();
-    while (head != null) {
-      stack.push(head.data);
+    Node<Integer> runner = linkedList.head();
+    // Run runner
+    for (int i = 0; i < index; i++) {
+      runner = runner.next;
+    }
+    // Now when runner end head is index away!
+    while (runner.next != null) {
       head = head.next;
+      runner = runner.next;
     }
-    int result = -1;
-    for (int i = 0; i <= index; i++) {
-      result = stack.pop();
-    }
-    return result;
+    return head.data;
   }
 
 }

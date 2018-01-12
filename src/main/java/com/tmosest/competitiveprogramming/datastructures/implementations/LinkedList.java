@@ -10,9 +10,10 @@ import com.tmosest.competitiveprogramming.datastructures.LinkedListAdt;
 public class LinkedList<T> implements LinkedListAdt<T> {
 
   /**
-   * The number of elements in the array.
+   * The number of elements in the linked list.
    */
   int size;
+
   /**
    * A reference to the first Node in the list.
    */
@@ -79,10 +80,45 @@ public class LinkedList<T> implements LinkedListAdt<T> {
   }
 
   /**
-   * @return size integer representing the number of elements in the Linked List.
+   * Override the basic equals function for Object comparison.
+   *
+   * @param other Other object to compare to.
+   * @return True if they are LinkedList with the same types of data.
    */
-  public boolean isEmpty() {
-    return size == 0;
+  @Override
+  public boolean equals(Object other) {
+    // If the object is compared with itself then return true
+    if (other == this) {
+      return true;
+    }
+    // If other is null return false
+    if (other == null) {
+      return false;
+    }
+    if (!(other instanceof LinkedList)) {
+      return false;
+    }
+    LinkedList<T> otherLinkedList = (LinkedList) other;
+    if (this.size() != otherLinkedList.size()) {
+      return false;
+    }
+    Node<T> thisHead = this.head();
+    Node<T> otherHead = otherLinkedList.head();
+    for (int i = 0; i < this.size(); i++) {
+      if (!thisHead.data.equals(otherHead.data)) {
+        return false;
+      }
+      thisHead = thisHead.next;
+      otherHead = otherHead.next;
+    }
+    return true;
+  }
+
+  /**
+   * Decrease the size by one
+   */
+  public void decreaseSize() {
+    --size;
   }
 
   /**
@@ -93,6 +129,22 @@ public class LinkedList<T> implements LinkedListAdt<T> {
    */
   public T get(int index) throws IndexOutOfBoundsException {
     return getNode(index).data;
+  }
+
+  /**
+   * Get the head node.
+   */
+  public Node<T> head() {
+    return first;
+  }
+
+  /**
+   * Determines if the set is Linked List is empty or not.
+   *
+   * @return size integer representing the number of elements in the Linked List.
+   */
+  public boolean isEmpty() {
+    return size == 0;
   }
 
   /**
@@ -128,5 +180,4 @@ public class LinkedList<T> implements LinkedListAdt<T> {
     Node<T> updateNode = getNode(index);
     updateNode.data = element;
   }
-
 }

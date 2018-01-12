@@ -3,21 +3,13 @@ package com.tmosest.competitiveprogramming.datastructures.implementations;
 import com.tmosest.competitiveprogramming.datastructures.UnionFindAdt;
 
 /**
- * QuickUnionWeighted:
- * 
- * The goal of this class is to improve on the previous implementation (QuickUnion).
- * 
- * In the previous implementation we created an array to store the parent id of each node.
- * 
- * To determine if two points were connected we found the roots of each node and then saw they were
- * eqaul.
- * 
- * We knew we had found the root of a forest when the index was equal to the value stored in that
- * index.
- * 
- * To make this algorith faster we are going to implement another array that contains weights and
- * look at those too.
- * 
+ * QuickUnionWeighted: The goal of this class is to improve on the previous implementation
+ * (QuickUnion). In the previous implementation we created an array to store the parent id of each
+ * node. To determine if two points were connected we found the roots of each node and then saw they
+ * were eqaul. We knew we had found the root of a forest when the index was equal to the value
+ * stored in that index. To make this algorith faster we are going to implement another array that
+ * contains weights and look at those too.
+ *
  * @author tmosest (Tyler Moses)
  */
 public class QuickUnionWeighted implements UnionFindAdt {
@@ -35,8 +27,8 @@ public class QuickUnionWeighted implements UnionFindAdt {
 
   /**
    * Public constructor. Complexity of O(size). Sets up the parents and weights arrays.
-   * 
-   * @param size
+   *
+   * @param size Max capacity.
    */
   public QuickUnionWeighted(int size) {
     parents = new int[size];
@@ -51,49 +43,53 @@ public class QuickUnionWeighted implements UnionFindAdt {
    * This function is the key to the Quick Union Algorithm. The faster we make this algorithm the
    * better the solution. In this implementation we ensure that the Algorithm is better by making
    * the forest flatter.
-   * 
-   * @param p The point to find the root of.
+   *
+   * @param node The point to find the root of.
    * @return The index of the root node for this point.
    */
-  private int root(int p) {
-    while (p != parents[p])
-      p = parents[p];
-    return p;
+  private int root(int node) {
+    while (node != parents[node]) {
+      node = parents[node];
+    }
+    return node;
   }
 
   /**
    * This function determines if two points are connected or not.
-   * 
-   * @param p One of the points.
-   * @param q The other point.
-   * @throws OutOfBoundsException If either point is outside of the node range.
+   *
+   * @param to One of the points.
+   * @param from The other point.
    * @return True if the two points are connected and false otherwise.
+   * @throws IndexOutOfBoundsException If either point is outside of the node range.
    */
-  public boolean isConnected(int p, int q) throws IndexOutOfBoundsException {
-    if (p < 0 || p >= parents.length || q < 0 || q >= parents.length)
+  public boolean isConnected(int to, int from) throws IndexOutOfBoundsException {
+    if (to < 0 || to >= parents.length || from < 0 || from >= parents.length) {
       throw new IndexOutOfBoundsException();
-    return root(p) == root(q);
+    }
+    return root(to) == root(from);
   }
 
   /**
-   * This function links two points by making sure that the root of one points to root of the other.
-   * 
-   * @param p First point to link.
-   * @param q Second point to link.
-   * @throws OutOfBoundsException If either point is outside of the node range.
+   * This function links two points by making sure that the root of one points to root of the
+   * other.
+   *
+   * @param to First point to link.
+   * @param from Second point to link.
+   * @throws IndexOutOfBoundsException If either point is outside of the node range.
    */
-  public void union(int p, int q) throws IndexOutOfBoundsException {
-    if (p < 0 || p >= parents.length || q < 0 || q >= parents.length)
+  public void union(int to, int from) throws IndexOutOfBoundsException {
+    if (to < 0 || to >= parents.length || from < 0 || from >= parents.length) {
       throw new IndexOutOfBoundsException();
-    int rootP = root(p);
-    int rootQ = root(q);
+    }
+    int rootP = root(to);
+    int rootQ = root(from);
     // This is how we keep the tree flat.
     // We look at the weights and always make sure that the smaller tree points to the larger.
     if (weights[rootP] > weights[rootQ]) {
-      parents[q] = rootP;
+      parents[from] = rootP;
       weights[rootP] += weights[rootQ];
     } else {
-      parents[p] = rootQ;
+      parents[to] = rootQ;
       weights[rootQ] += weights[rootP];
     }
   }

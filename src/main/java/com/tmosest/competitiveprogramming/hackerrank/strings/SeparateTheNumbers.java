@@ -4,12 +4,8 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
- * Algorithms -> Strings -> Alternating Characters
- * 
- * Difficulty: Easy
- * 
- * Score: 20 pts
- * 
+ * Algorithms -> Strings -> Alternating Characters Difficulty: Easy Score: 20 pts.
+ *
  * @author tmosest (Tyler Owen Moses)
  */
 public class SeparateTheNumbers {
@@ -28,31 +24,36 @@ public class SeparateTheNumbers {
   }
 
   private static String isIncreasingSequence(String number) {
-    if (debugMode)
+    if (debugMode) {
       System.out.println("number: " + number);
+    }
     String result = "-1";
     int index = 1;
     int length = 1;
 
     String next = number.substring(0, length);
-    if (next.equals("0"))
+    if (next.equals("0")) {
       return result;
+    }
     String toCheck;
     int lengthToCheck = 1;
     while (index + lengthToCheck <= number.length()) {
 
-      lengthToCheck = getDigitCount(new BigInteger(next).add(BigInteger.ONE));// String.valueOf(Integer.parseInt(next)
-                                                                              // + 1).length();
+      lengthToCheck = getDigitCount(
+          new BigInteger(next).add(BigInteger.ONE));// String.valueOf(Integer.parseInt(next)
+      // + 1).length();
       if (debugMode) {
         System.out.println();
         System.out.println("index : " + index + " length: " + length);
         System.out
             .println("length to Check: " + lengthToCheck + " string length: " + number.length());
       }
-      if (index + length > 0 && index < number.length() && index + lengthToCheck <= number.length())
+      if (index + length > 0 && index < number.length() && index + lengthToCheck <= number
+          .length()) {
         toCheck = number.substring(index, index + lengthToCheck);
-      else
+      } else {
         break;
+      }
       if (debugMode) {
         System.out.println("next: " + next + " toCheck: " + toCheck);
       }
@@ -80,6 +81,11 @@ public class SeparateTheNumbers {
 
   }
 
+  /**
+   * Function for testing.
+   *
+   * @return String matrix.
+   */
   public static String[][] solve() {
     Scanner in = new Scanner(System.in);
     int tests = in.nextInt();
@@ -88,10 +94,11 @@ public class SeparateTheNumbers {
     for (int i = 0; i < tests; i++) {
       String number = in.nextLine();
       String result = isIncreasingSequence(number);
-      if (result.equals("-1"))
+      if (result.equals("-1")) {
         System.out.println("NO");
-      else
+      } else {
         System.out.println("YES " + result);
+      }
       answers[i][0] = (result.equals("-1")) ? "NO" : "YES";
       answers[i][1] = result;
     }

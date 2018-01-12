@@ -94,10 +94,8 @@
               <encoding>UTF-8</encoding>
               <consoleOutput>true</consoleOutput>
               <failsOnError>true</failsOnError>
-              <failsOnWarning>true</failsOnWarning>
-              <failOnViolation>false</failOnViolation>
+              <failOnViolation>true</failOnViolation>
               <violationSeverity>warning</violationSeverity>
-              <linkXRef>false</linkXRef>
             </configuration>
             <goals>
               <goal>check</goal>

@@ -14,7 +14,7 @@ public class TheGreatest {
   public static String solve() {
     Scanner in = new Scanner(System.in);
     int max = Integer.MIN_VALUE;
-    while(in.hasNextInt()) {
+    while (in.hasNextInt()) {
       int num = in.nextInt();
       max = Math.max(max, num);
     }

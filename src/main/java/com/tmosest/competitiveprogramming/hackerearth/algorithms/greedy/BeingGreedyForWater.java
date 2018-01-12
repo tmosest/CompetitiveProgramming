@@ -8,18 +8,24 @@ public class BeingGreedyForWater {
 
   public static boolean debugMode = false;
 
-  public static int calculateBottles(long containerAmount, long[] bottles) {
+  private static int calculateBottles(long containerAmount, long[] bottles) {
     Arrays.sort(bottles);
-    int i = 0;
+    int index = 0;
     for (int b = 0; b < bottles.length; b++) {
-      if (containerAmount - bottles[b] < 0)
+      if (containerAmount - bottles[b] < 0) {
         break;
+      }
       containerAmount -= bottles[b];
-      i++;
+      index++;
     }
-    return i;
+    return index;
   }
 
+  /**
+   * Test function.
+   *
+   * @return int array of indexes.
+   */
   public static int[] solve() {
     Scanner in = new Scanner(System.in);
     int tests = in.nextInt();

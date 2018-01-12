@@ -3,15 +3,11 @@ package com.tmosest.competitiveprogramming.datastructures.implementations;
 import com.tmosest.competitiveprogramming.datastructures.UnionFindAdt;
 
 /**
- * Another implementation of Union Find.
- * 
- * This version improves upon the Weighted Version by adding Path Compression to it.
- * 
- * Path Compressions helps to to keep the tree flat by pointing the nodes to the root as we try to
- * find it.
- * 
- * There is really no reason not to do this since it really only adds one line of code.
- * 
+ * Another implementation of Union Find. This version improves upon the Weighted Version by adding
+ * Path Compression to it. Path Compressions helps to to keep the tree flat by pointing the nodes to
+ * the root as we try to find it. There is really no reason not to do this since it really only adds
+ * one line of code.
+ *
  * @author tmosest
  */
 public class QuickUnionWeightedPathCompression implements UnionFindAdt {
@@ -19,6 +15,11 @@ public class QuickUnionWeightedPathCompression implements UnionFindAdt {
   private int[] parents;
   private int[] weights;
 
+  /**
+   * Create a new UF.
+   *
+   * @param size Max capacity.
+   */
   public QuickUnionWeightedPathCompression(int size) {
     parents = new int[size];
     weights = new int[size];
@@ -32,46 +33,48 @@ public class QuickUnionWeightedPathCompression implements UnionFindAdt {
   /**
    * Function to find the root of a node p. The main difference between this implementation and the
    * last two is path compression.
-   * 
-   * @param p The node we are looking for the root of.
+   *
+   * @param node The node we are looking for the root of.
    * @return The root of node p.
    */
-  private int root(int p) {
-    while (p != parents[p]) {
-      p = parents[p];
+  private int root(int node) {
+    while (node != parents[node]) {
+      node = parents[node];
       // This next line is all we need for compression!
-      parents[p] = parents[parents[p]];
+      parents[node] = parents[parents[node]];
     }
-    return p;
+    return node;
   }
 
   /**
    * This function determines if two points are connected or not.
-   * 
-   * @param p One of the points.
-   * @param q The other point.
-   * @throws OutOfBoundsException If either point is outside of the node range.
+   *
+   * @param to One of the points.
+   * @param from The other point.
    * @return True if the two points are connected and false otherwise.
+   * @throws IndexOutOfBoundsException If either point is outside of the node range.
    */
-  public boolean isConnected(int p, int q) throws IndexOutOfBoundsException {
-    if (p < 0 || p >= parents.length || q < 0 || q >= parents.length)
+  public boolean isConnected(int to, int from) throws IndexOutOfBoundsException {
+    if (to < 0 || to >= parents.length || from < 0 || from >= parents.length) {
       throw new IndexOutOfBoundsException();
-    return root(p) == root(q);
+    }
+    return root(to) == root(from);
   }
 
   /**
    * This function links two points by making sure that the root of one points to root of the other.
    * This version includes the improvement of the previous Weighted version.
-   * 
-   * @param p First point to link.
-   * @param q Second point to link.
-   * @throws OutOfBoundsException If either point is outside of the node range.
+   *
+   * @param to First point to link.
+   * @param from Second point to link.
+   * @throws IndexOutOfBoundsException If either point is outside of the node range.
    */
-  public void union(int p, int q) throws IndexOutOfBoundsException {
-    if (p < 0 || p >= parents.length || q < 0 || q >= parents.length)
+  public void union(int to, int from) throws IndexOutOfBoundsException {
+    if (to < 0 || to >= parents.length || from < 0 || from >= parents.length) {
       throw new IndexOutOfBoundsException();
-    int rootP = root(p);
-    int rootQ = root(q);
+    }
+    int rootP = root(to);
+    int rootQ = root(from);
     // Weighted part!
     if (weights[rootP] < weights[rootQ]) {
       parents[rootP] = rootQ;

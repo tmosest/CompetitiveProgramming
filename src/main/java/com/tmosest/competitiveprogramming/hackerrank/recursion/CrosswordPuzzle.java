@@ -5,40 +5,37 @@ import java.util.Scanner;
 
 public class CrosswordPuzzle {
 
+  private static final int GRID_SIZE = 10;
   public static boolean debugMode = false;
-  
   private static boolean solved;
   private static String[] solution;
 
-  private static final int GRID_SIZE = 10;
-
-  private enum Direction {
-    DOWN, RIGHT
-  }
-
   private static int[] findFirstEmptySpot(String[] puzzle) {
-    int i = 0;
-    int j = 0;
+    int row = 0;
+    int col = 0;
     boolean found = false;
-    for (; i < GRID_SIZE; i++) {
-      for (j = 0; j < GRID_SIZE; j++) {
-        if (puzzle[i].charAt(j) == '-') {
-          if (debugMode)
-            System.out.println("Found - at : (" + i + "," + j + ")");
+    for (; row < GRID_SIZE; row++) {
+      for (col = 0; col < GRID_SIZE; col++) {
+        if (puzzle[row].charAt(col) == '-') {
+          if (debugMode) {
+            System.out.println("Found - at : (" + row + "," + col + ")");
+          }
           found = true;
           break;
         }
       }
-      if (found)
+      if (found) {
         break;
+      }
     }
     int[] cordinates = {-1, -1};
     if (found) {
-      cordinates[0] = i;
-      cordinates[1] = j;
+      cordinates[0] = row;
+      cordinates[1] = col;
     }
-    if (debugMode)
-      System.out.println("Returning - at : (" + i + "," + j + ")");
+    if (debugMode) {
+      System.out.println("Returning - at : (" + row + "," + col + ")");
+    }
     return cordinates;
   }
 
@@ -86,17 +83,20 @@ public class CrosswordPuzzle {
           --cords[1];
         }
         break;
+      default:
     }
-    if (debugMode)
+    if (debugMode) {
       System.out.println("Potential word length: " + wordlength);
+    }
     return wordlength;
   }
 
   private static String[] findPotentialWords(String[] words, int length) {
     String[] potentialWords = new String[words.length];
     for (int i = 0; i < words.length; i++) {
-      if (words[i] != null && words[i].length() == length)
+      if (words[i] != null && words[i].length() == length) {
         potentialWords[i] = words[i];
+      }
     }
     if (debugMode) {
       System.out.println("Potential Words:");
@@ -165,8 +165,9 @@ public class CrosswordPuzzle {
         while (cords[1] - 1 >= 0 && newPuzzle[cords[0]][cords[1] - 1] != '+') {
           --cords[1];
         }
-        if (debugMode)
+        if (debugMode) {
           System.out.println("Starting at: " + cords[1]);
+        }
         // The we go right and copy in
         while (cords[1] < GRID_SIZE && newPuzzle[cords[0]][cords[1]] != '+') {
           // Need to make sure that existing letters are ok.
@@ -184,6 +185,7 @@ public class CrosswordPuzzle {
           ++cords[1];
         }
         break;
+      default:
     }
     return (error) ? null : convertBackToStringArray(newPuzzle);
   }
@@ -191,8 +193,9 @@ public class CrosswordPuzzle {
   private static String[] removeWord(String[] words, String word) {
     String[] newWords = new String[words.length];
     for (int i = 0; i < words.length; i++) {
-      if (!word.equals(words[i]))
+      if (!word.equals(words[i])) {
         newWords[i] = words[i];
+      }
     }
     if (debugMode) {
       System.out.println("New Words");
@@ -209,19 +212,20 @@ public class CrosswordPuzzle {
     String[] finalAnswer = puzzle;
     int length = 0;
     for (int i = 0; i < words.length; i++) {
-      if (words[i] != null)
+      if (words[i] != null) {
         length++;
+      }
     }
     // Need to append unused words.
     if (length != 0) {
       finalAnswer = new String[GRID_SIZE + length];
-      int i = 0;
-      for (; i < puzzle.length; i++) {
-        finalAnswer[i] = puzzle[i];
+      int index = 0;
+      for (; index < puzzle.length; index++) {
+        finalAnswer[index] = puzzle[index];
       }
       for (int j = 0; j < words.length; j++) {
-        if (words[i] != null) {
-          finalAnswer[i++] = words[j];
+        if (words[index] != null) {
+          finalAnswer[index++] = words[j];
         }
       }
     }
@@ -260,10 +264,12 @@ public class CrosswordPuzzle {
         // We need to remove the word and call recursive function.
         String[] newWords = removeWord(words, potentialWords[i]);
         String[] potentialPuzzle = fillInPuzzle(newPuzzle, newWords);
-        if (potentialPuzzle != null)
+        if (potentialPuzzle != null) {
           finalPuzzle = potentialPuzzle;
-        if(solved)
+        }
+        if (solved) {
           finalPuzzle = solution;
+        }
       }
     }
     return (matchFound || solved) ? finalPuzzle : null;
@@ -273,7 +279,11 @@ public class CrosswordPuzzle {
     Arrays.stream(puzzle).forEach(System.out::println);
   }
 
-
+  /**
+   * Testing function.
+   *
+   * @return String result.
+   */
   public static String solve() {
     solved = false;
     solution = null;
@@ -295,8 +305,9 @@ public class CrosswordPuzzle {
 
     in.close();
 
-    if (debugMode)
+    if (debugMode) {
       System.out.println("Words to Split: " + wordsToSplit);
+    }
 
     String[] words = wordsToSplit.split(";");
 
@@ -309,6 +320,10 @@ public class CrosswordPuzzle {
 
   public static void main(String[] args) {
     solve();
+  }
+
+  private enum Direction {
+    DOWN, RIGHT
   }
 
 }

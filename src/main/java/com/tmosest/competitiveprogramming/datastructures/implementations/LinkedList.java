@@ -115,7 +115,7 @@ public class LinkedList<T> implements LinkedListAdt<T> {
   }
 
   /**
-   * Decrease the size by one
+   * Decrease the size by one.
    */
   public void decreaseSize() {
     --size;

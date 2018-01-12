@@ -14,6 +14,7 @@ public class PalindromePermutationTest {
   @Test
   void falseForNonPalindromePermutations() {
     Assertions.assertEquals(false, PalindromePermutation.isPalindromePermutation("Tac Coa"));
+    Assertions.assertEquals(false, PalindromePermutation.isPalindromePermutation("TacaCoa"));
   }
 
   @Test

@@ -2,6 +2,12 @@ package com.tmosest.competitiveprogramming.crackingcode.arrays;
 
 public class StringCompression {
 
+  /**
+   * Converts a word to a compressed form if it is smaller.
+   *
+   * @param word String to compress.
+   * @return Compressed form aabccc -> a2b1c3.
+   */
   public static String compresses(String word) {
     StringBuilder sb = new StringBuilder();
     int count = 1;

@@ -8,16 +8,6 @@ public class ArithmeticExpressions {
 
   public static boolean debugMode = false;
 
-  private static class Equation {
-    String ops;
-    long result;
-
-    public Equation(long result, String ops) {
-      this.result = result;
-      this.ops = ops;
-    }
-  }
-
   private static String convertEquation(Equation equation, int[] numbers) {
     StringBuilder sb = new StringBuilder();
     int charIndex = 0;
@@ -25,7 +15,7 @@ public class ArithmeticExpressions {
       sb.append(num);
       if (charIndex < equation.ops.length()) {
         sb.append(equation.ops.charAt(charIndex));
-      } else if(equation.ops.length() != numbers.length - 1 && charIndex < numbers.length - 1) {
+      } else if (equation.ops.length() != numbers.length - 1 && charIndex < numbers.length - 1) {
         sb.append("*");
       }
       charIndex++;
@@ -38,9 +28,9 @@ public class ArithmeticExpressions {
     int index = 0;
     Equation equation = new Equation(numbers[index++], "");
     equations.add(equation);
-    while(index < numbers.length) {
+    while (index < numbers.length) {
       int count = equations.size();
-      for(int i = 0; i < count; i++) {
+      for (int i = 0; i < count; i++) {
         equation = equations.poll();
         long result = equation.result;
         String ops = equation.ops;
@@ -53,22 +43,22 @@ public class ArithmeticExpressions {
         equations.add(add);
         Equation mult = new Equation((result * numbers[index]) % 101, ops + "*");
         equations.add(mult);
-        if(add.result % 101 == 0) {
+        if (add.result % 101 == 0) {
           return convertEquation(add, numbers);
         }
-        if(mult.result % 101 == 0) {
+        if (mult.result % 101 == 0) {
           return convertEquation(mult, numbers);
         }
-        if(sub.result % 101 == 0) {
+        if (sub.result % 101 == 0) {
           return convertEquation(sub, numbers);
         }
       }
       index++;
     }
     String result = "";
-    while(!equations.isEmpty()) {
+    while (!equations.isEmpty()) {
       equation = equations.poll();
-      if(equation.result % 101 == 0) {
+      if (equation.result % 101 == 0) {
         result = convertEquation(equation, numbers);
         break;
       }
@@ -76,6 +66,11 @@ public class ArithmeticExpressions {
     return result;
   }
 
+  /**
+   * Testing function.
+   *
+   * @return String answer.
+   */
   public static String solve() {
     Scanner in = new Scanner(System.in);
     int size = in.nextInt();
@@ -89,6 +84,17 @@ public class ArithmeticExpressions {
 
   public static void main(String[] args) {
     System.out.println(solve());
+  }
+
+  private static class Equation {
+
+    String ops;
+    long result;
+
+    public Equation(long result, String ops) {
+      this.result = result;
+      this.ops = ops;
+    }
   }
 
 }

@@ -1,66 +1,18 @@
 package com.tmosest.competitiveprogramming.hackerearth.algorithms.search.binarysearch;
 
-import java.io.DataInputStream;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
 
 public class RoundTableMeeting {
 
-  static class Reader {
-    final private int BUFFER_SIZE = 1 << 16;
-    private DataInputStream din;
-    private byte[] buffer;
-    private int bufferPointer, bytesRead;
-
-    public Reader() {
-      din = new DataInputStream(System.in);
-      buffer = new byte[BUFFER_SIZE];
-      bufferPointer = bytesRead = 0;
-    }
-
-    public int nextInt() throws IOException {
-      int ret = 0;
-      byte c = read();
-      while (c <= ' ')
-        c = read();
-      boolean neg = (c == '-');
-      if (neg)
-        c = read();
-      do {
-        ret = ret * 10 + c - '0';
-      } while ((c = read()) >= '0' && c <= '9');
-
-      if (neg)
-        return -ret;
-      return ret;
-    }
-
-    private void fillBuffer() throws IOException {
-      bytesRead = din.read(buffer, bufferPointer = 0, BUFFER_SIZE);
-      if (bytesRead == -1)
-        buffer[0] = -1;
-    }
-
-    private byte read() throws IOException {
-      if (bufferPointer == bytesRead)
-        fillBuffer();
-      return buffer[bufferPointer++];
-    }
-
-    public void close() throws IOException {
-      if (din == null)
-        return;
-      din.close();
-    }
-  }
-
   public static boolean debugMode = false;
 
-  public static int findMinimumTime(int[] universities, int university1, int university2) {
-    if (university1 == university2)
+  private static int findMinimumTime(int[] universities, int university1, int university2) {
+    if (university1 == university2) {
       return 0;
+    }
 
     if (debugMode) {
       System.out.println("\n==============================");
@@ -90,22 +42,30 @@ public class RoundTableMeeting {
           System.out.println("normalDifference: " + normalDifference + " roundDifference: "
               + roundDifference + " difference: " + difference);
         }
-        if (minimumTime <= 0)
+        if (minimumTime <= 0) {
           break;
+        }
       }
     }
-    if (debugMode)
+    if (debugMode) {
       System.out.println("final time: " + minimumTime);
+    }
     return (minimumTime > 0) ? minimumTime : 0;
   }
 
-  public static int[] solve() throws IOException {
-    Reader in = new Reader();
+  /**
+   * Test function.
+   *
+   * @return int array.
+   */
+  public static int[] solve() {
+    Scanner in = new Scanner(System.in);
     int arraySize = in.nextInt();
     int queries = in.nextInt();
     int[] universities = new int[arraySize];
-    for (int i = 0; i < arraySize; i++)
+    for (int i = 0; i < arraySize; i++) {
       universities[i] = in.nextInt();
+    }
     int[] results = new int[queries];
     for (int i = 0; i < queries; i++) {
       int university1 = in.nextInt();
@@ -116,7 +76,12 @@ public class RoundTableMeeting {
     return results;
   }
 
-  public static void main(String[] args) throws IOException {
+  /**
+   * Main function.
+   *
+   * @param args Main String array.
+   */
+  public static void main(String[] args) {
     Arrays.stream(solve()).forEach(System.out::println);
   }
 }

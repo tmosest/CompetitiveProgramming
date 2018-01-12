@@ -7,15 +7,42 @@ import java.util.Scanner;
  * track the visited index. that is, for the first time you visit y, then it will be zero(counter =
  * 1) as per the problem statement, and you go to y+1. if you goback to y again(counter = 1). if
  * counter > 1, you can stop this.
- * 
- * @author tmosest
  *
+ * @author tmosest
  */
 public class MatrixLand {
 
   public static boolean debugMode = false;
 
+  /**
+   * Function for testing.
+   *
+   * @return Integer.
+   */
+  public static int solve() {
+    Scanner in = new Scanner(System.in);
+    int rows = in.nextInt();
+    int columns = in.nextInt();
+    int[][] grid = new int[rows][columns];
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < columns; j++) {
+        grid[i][j] = in.nextInt();
+      }
+    }
+    in.close();
+    MaximizedPath path = new MaximizedPath(grid);
+    if (debugMode) {
+      System.out.println("final answer: " + path.getMaxPath());
+    }
+    return path.getMaxPath();
+  }
+
+  public static void main(String[] args) {
+    System.out.println(solve());
+  }
+
   private static class MaximizedPath {
+
     int rows;
     int columns;
     int bestPath;
@@ -33,11 +60,13 @@ public class MatrixLand {
       bestPath = determineBestPath(grid);
     }
 
-    private void initCache(int grid[][]) {
+    private void initCache(int[][] grid) {
       bestPathFromCache = new int[rows][columns];
-      for (int i = 0; i < rows; i++)
-        for (int j = 0; j < columns; j++)
+      for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
           bestPathFromCache[i][j] = Integer.MIN_VALUE;
+        }
+      }
 
       for (int i = 0; i < 1; i++) {
         for (int j = 0; j < columns; j++) {
@@ -46,25 +75,25 @@ public class MatrixLand {
       }
     }
 
-    public int determineBestPathValuesForRow(int i, int j, int[][] grid) {
-      int bestValue = grid[i][j];
+    public int determineBestPathValuesForRow(int row, int col, int[][] grid) {
+      int bestValue = grid[row][col];
       int sum;
-      if (j - 1 > -1) {
+      if (col - 1 > -1) {
         sum = bestValue;
-        for (int c = j - 1; c > -1; c--) {
-          sum += grid[i][c];
+        for (int c = col - 1; c > -1; c--) {
+          sum += grid[row][c];
           bestValue = Math.max(bestValue, sum);
         }
       }
-      if (j + 1 < columns) {
+      if (col + 1 < columns) {
         sum = bestValue;
-        for (int c = j + 1; c < columns; c++) {
-          sum += grid[i][c];
+        for (int c = col + 1; c < columns; c++) {
+          sum += grid[row][c];
           bestValue = Math.max(bestValue, sum);
         }
       }
       if (debugMode) {
-        System.out.println("i: " + i + " j: " + j + " bestValue: " + bestValue);
+        System.out.println("i: " + row + " j: " + col + " bestValue: " + bestValue);
       }
       return bestValue;
     }
@@ -80,16 +109,16 @@ public class MatrixLand {
       return bestPath;
     }
 
-    public int bestPathTo(int i, int j, int[][] grid, int score) {
+    public int bestPathTo(int row, int col, int[][] grid, int score) {
       if (debugMode) {
-        System.out.println("\ni: " + i + " j: " + j + " score: " + score);
+        System.out.println("\ni: " + row + " j: " + col + " score: " + score);
       }
-      if (i == 0) {
+      if (row == 0) {
         if (debugMode) {
           System.out.println("Hit row 0!");
           // printGrid(bestPathFromCache);
         }
-        return bestPathFromCache[i][j] + score;
+        return bestPathFromCache[row][col] + score;
       }
       if (debugMode) {
         printGrid(grid);
@@ -97,51 +126,51 @@ public class MatrixLand {
       }
       int bestPath = Integer.MIN_VALUE;
       int[][] newGrid;
-      if (i - 1 > -1 && grid[i - 1][j] != -500) {
+      if (row - 1 > -1 && grid[row - 1][col] != -500) {
         if (debugMode) {
           // System.out.println("i - 1 : " + (i - 1) + " score: " + score);
         }
         newGrid = copyGrid(grid);
-        int tempScore = newGrid[i - 1][j];
-        newGrid[i - 1][j] = 0;
+        int tempScore = newGrid[row - 1][col];
+        newGrid[row - 1][col] = 0;
         if (tempScore == 0) {
-          newGrid[i - 1][j] = -500;
+          newGrid[row - 1][col] = -500;
         }
-        bestPath = Math.max(bestPath, bestPathTo(i - 1, j, newGrid, tempScore));
+        bestPath = Math.max(bestPath, bestPathTo(row - 1, col, newGrid, tempScore));
         if (debugMode) {
           // System.out.println("i - 1 best path: " + bestPath);
         }
       }
-      if (j - 1 > -1 && grid[i][j - 1] != -500) {
+      if (col - 1 > -1 && grid[row][col - 1] != -500) {
         if (debugMode) {
           // System.out.println("j - 1 : " + (j - 1) + " score: " + score);
         }
         newGrid = copyGrid(grid);
-        int tempScore = newGrid[i][j - 1];
-        newGrid[i][j - 1] = 0;
+        int tempScore = newGrid[row][col - 1];
+        newGrid[row][col - 1] = 0;
         if (tempScore == 0) {
-          newGrid[i][j - 1] = -500;
+          newGrid[row][col - 1] = -500;
         }
-        bestPath = Math.max(bestPath, bestPathTo(i, j - 1, newGrid, tempScore));
+        bestPath = Math.max(bestPath, bestPathTo(row, col - 1, newGrid, tempScore));
         if (debugMode) {
           // System.out.println("j - 1 best path: " + bestPath);
         }
       }
-      if (j + 1 < columns && grid[i][j + 1] != -500) {
+      if (col + 1 < columns && grid[row][col + 1] != -500) {
         if (debugMode) {
-          System.out.println("j + 1 : " + (j + 1));
+          System.out.println("j + 1 : " + (col + 1));
         }
         newGrid = copyGrid(grid);
-        int tempScore = newGrid[i][j + 1];
-        newGrid[i][j + 1] = 0;
+        int tempScore = newGrid[row][col + 1];
+        newGrid[row][col + 1] = 0;
         if (tempScore == 0) {
-          newGrid[i][j + 1] = -500;
+          newGrid[row][col + 1] = -500;
         }
-        bestPath = Math.max(bestPath, bestPathTo(i, j + 1, newGrid, tempScore));
+        bestPath = Math.max(bestPath, bestPathTo(row, col + 1, newGrid, tempScore));
       }
       //score += grid[i][j];
       if (debugMode) {
-        System.out.println("\ni: " + i + " j: " + j + " bestPath: " + bestPath);
+        System.out.println("\ni: " + row + " j: " + col + " bestPath: " + bestPath);
         printGrid(grid);
         // System.out.println();
       }
@@ -170,28 +199,6 @@ public class MatrixLand {
     public int getMaxPath() {
       return bestPath;
     }
-  }
-
-  public static int solve() {
-    Scanner in = new Scanner(System.in);
-    int rows = in.nextInt();
-    int columns = in.nextInt();
-    int[][] grid = new int[rows][columns];
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < columns; j++) {
-        grid[i][j] = in.nextInt();
-      }
-    }
-    in.close();
-    MaximizedPath path = new MaximizedPath(grid);
-    if (debugMode) {
-      System.out.println("final answer: " + path.getMaxPath());
-    }
-    return path.getMaxPath();
-  }
-
-  public static void main(String[] args) {
-    System.out.println(solve());
   }
 
 }

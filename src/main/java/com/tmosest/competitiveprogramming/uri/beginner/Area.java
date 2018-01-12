@@ -30,7 +30,7 @@ public class Area {
     double squareArea = numB * numB;
     double rectArea = numA * numB;
     String result = "TRIANGULO: " + roundTwoDecimals(triArea) + "\n"
-        + "CIRCULO: "+ roundTwoDecimals(circleArea) + "\n"
+        + "CIRCULO: " + roundTwoDecimals(circleArea) + "\n"
         + "TRAPEZIO: " + roundTwoDecimals(trapArea) + "\n"
         + "QUADRADO: " + roundTwoDecimals(squareArea) + "\n"
         + "RETANGULO: " + roundTwoDecimals(rectArea);

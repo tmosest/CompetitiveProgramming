@@ -10,11 +10,11 @@ public class QuickUnion implements UnionFindAdt {
    */
   private int[] parents;
 
-  private void handleoutOfBounds(int p, int q) throws IndexOutOfBoundsException {
-    if (p < 0 || p >= parents.length || q < 0 || q >= parents.length)
-      throw new IndexOutOfBoundsException();
-  }
-
+  /**
+   * Create a new UF.
+   *
+   * @param size Max size.
+   */
   public QuickUnion(int size) {
     parents = new int[size];
     for (int i = 0; i < parents.length; i++) {
@@ -22,14 +22,17 @@ public class QuickUnion implements UnionFindAdt {
     }
   }
 
+  private void handleoutOfBounds(int node1, int node2) throws IndexOutOfBoundsException {
+    if (node1 < 0 || node1 >= parents.length || node2 < 0 || node2 >= parents.length) {
+      throw new IndexOutOfBoundsException();
+    }
+  }
+
   /**
    * This function is the bread and butter of this approach.
-   * 
-   * @param p
-   * @return
    */
-  private int findRoot(int p) {
-    int root = p;
+  private int findRoot(int node) {
+    int root = node;
     while (root != parents[root]) {
       root = parents[root];
     }
@@ -38,19 +41,26 @@ public class QuickUnion implements UnionFindAdt {
 
   /**
    * Check if p and q have the same root.
+   *
+   * @param to first node.
+   * @param from second node.
+   * @return true if connected.
    */
-  public boolean isConnected(int p, int q) throws IndexOutOfBoundsException {
-    handleoutOfBounds(p, q);
-    return findRoot(p) == findRoot(q);
+  public boolean isConnected(int to, int from) throws IndexOutOfBoundsException {
+    handleoutOfBounds(to, from);
+    return findRoot(to) == findRoot(from);
   }
 
   /**
    * Set the id of p's root to the id of q's root.
+   *
+   * @param to first node.
+   * @param from second node.
    */
-  public void union(int p, int q) throws IndexOutOfBoundsException {
-    handleoutOfBounds(p, q);
-    int rootQ = findRoot(q);
-    int rootP = findRoot(p);
+  public void union(int to, int from) throws IndexOutOfBoundsException {
+    handleoutOfBounds(to, from);
+    int rootQ = findRoot(to);
+    int rootP = findRoot(from);
     parents[rootP] = rootQ;
   }
 

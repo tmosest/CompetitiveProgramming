@@ -9,7 +9,7 @@ public class PasswordCracker {
 
   private static String convertPqToString(MinPriorityQueue wordsMinPq) {
     StringBuilder sb = new StringBuilder();
-    while(wordsMinPq.size > 0) {
+    while (wordsMinPq.size > 0) {
       Word min = wordsMinPq.delMin();
       if (debugMode) {
         System.out.println("min: " + min.word + " : " + min.index);
@@ -36,7 +36,7 @@ public class PasswordCracker {
         return attempt;
       }
       int index = login.indexOf(attempt);
-      while(index > - 1) {
+      while (index > -1) {
         if (debugMode) {
           System.out.println("attempt: " + attempt + " index: " + index);
         }
@@ -52,6 +52,11 @@ public class PasswordCracker {
     return (loginCopy.length() == 0) ? convertPqToString(wordsMinPq) : "WRONG PASSWORD";
   }
 
+  /**
+   * Function for tesing.
+   *
+   * @return String array of results.
+   */
   public static String[] solve() {
     Scanner in = new Scanner(System.in);
     int tests = in.nextInt();
@@ -112,8 +117,8 @@ public class PasswordCracker {
       int parent = 0;
       int childLeft = 1;
       int childRight = 2;
-      while((childLeft < size && (less(heap[childLeft], heap[parent])))
-          || (childRight < size &&  (less(heap[childRight], heap[parent])))) {
+      while ((childLeft < size && (less(heap[childLeft], heap[parent])))
+          || (childRight < size && (less(heap[childRight], heap[parent])))) {
         int childMin = childLeft;
         if (childRight < size && less(heap[childRight], heap[childLeft])) {
           childMin = childRight;

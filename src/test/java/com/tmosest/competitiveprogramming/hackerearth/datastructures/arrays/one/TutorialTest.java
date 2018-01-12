@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.hackerearth.datastructures.arrays.oneD;
+package com.tmosest.competitiveprogramming.hackerearth.datastructures.arrays.one;
 
 import java.io.UnsupportedEncodingException;
 import org.junit.jupiter.api.Assertions;

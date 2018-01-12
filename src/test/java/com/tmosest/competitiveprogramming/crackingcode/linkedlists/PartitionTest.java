@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class PartitionTest {
 
   @Test
-  void shouldRemoveMiddle() {
+  void shouldpartition() {
     LinkedList<Integer> linkedList = new LinkedList<Integer>();
     linkedList.append(5);
     linkedList.append(3);

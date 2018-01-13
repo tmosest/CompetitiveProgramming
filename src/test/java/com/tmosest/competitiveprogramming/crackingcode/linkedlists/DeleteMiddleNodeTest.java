@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Cracking The Code Interview: Arrays: 2.3 Delete the Middle Node")
+@DisplayName("Cracking The Code Interview: Linked Lists: 2.3 Delete the Middle Node")
 public class DeleteMiddleNodeTest {
   @Test
   void shouldRemoveMiddle() {

@@ -1,8 +1,10 @@
 package com.tmosest.competitiveprogramming.crackingcode.arrays;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("Cracking The Code Interview: Arrays: 1.5 One Away")
 public class OneAwayTest {
 
   @Test

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.tmosest.competitiveprogramming.crackingcode.dynamic.Stairs;
 
-@DisplayName("Cracking The Code Interview Dynamic Programming Q1: Stairs")
+@DisplayName("Cracking The Code Interview: Dynamic Programming: Q1 Stairs")
 class StairsTest {
 
   @Test

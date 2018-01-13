@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Cracking The Code Interview: Arrays: 2.6 Intersection")
+@DisplayName("Cracking The Code Interview: Linked Lists: 2.7 Intersection")
 public class IntersectionTest {
 
   @Test

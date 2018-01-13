@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Cracking The Code Interview: Arrays: 2.5 Palindrome")
+@DisplayName("Cracking The Code Interview: Linked Lists: 2.5 Palindrome")
 public class PalindromeTest {
 
   @Test

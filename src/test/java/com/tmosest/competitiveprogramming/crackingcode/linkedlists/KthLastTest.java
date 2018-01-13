@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Cracking The Code Interview: Arrays: 2.2 Return Kth to Last")
+@DisplayName("Cracking The Code Interview: Linked Lists: 2.2 Return Kth to Last")
 public class KthLastTest {
   @Test
   void testCase0() {

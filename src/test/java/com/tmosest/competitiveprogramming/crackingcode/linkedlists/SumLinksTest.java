@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Cracking The Code Interview: Arrays: 2.5 Sum Lists")
+@DisplayName("Cracking The Code Interview: Linked Lists: 2.5 Sum Lists")
 public class SumLinksTest {
 
   @Test

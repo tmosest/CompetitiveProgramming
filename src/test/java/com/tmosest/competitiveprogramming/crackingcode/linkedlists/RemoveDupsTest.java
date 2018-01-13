@@ -2,8 +2,10 @@ package com.tmosest.competitiveprogramming.crackingcode.linkedlists;
 
 import com.tmosest.competitiveprogramming.datastructures.implementations.LinkedList;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("Cracking The Code Interview: Arrays: 2.1 Remove the Dups")
 public class RemoveDupsTest {
 
   @Test

@@ -6,6 +6,11 @@ public class RevisedRussianRoulette {
 
   public static boolean debugMode = false;
 
+  /**
+   * Function for testing.
+   *
+   * @return A min max string of door counts.
+   */
   public static String solve() {
     Scanner in = new Scanner(System.in);
 
@@ -21,13 +26,13 @@ public class RevisedRussianRoulette {
     int minimumDoorsToClose = 0;
     int maximumDoorsToClose = 0;
 
-    for (int i = 0; i < doors.length - 1; i++) {
+    for (int i = 0; i < doors.length; i++) {
       if (doors[i]) {
         minimumDoorsToClose++;
-        if (doors[i + 1]) {
+        if (i + 1 < doors.length && doors[i + 1]) {
           maximumDoorsToClose++;
+          doors[i + 1] = false;
         }
-        doors[i + 1] = false;
         maximumDoorsToClose++;
       }
     }
@@ -36,7 +41,7 @@ public class RevisedRussianRoulette {
   }
 
   public static void main(String[] args) {
-
+    System.out.println(solve());
   }
 
 }

@@ -29,4 +29,12 @@ class RevisedRussianRouletteTest {
     output = "3 6";
     test(input, output, false);
   }
+
+  @Test
+  @DisplayName("Test Case 3")
+  void testCase3() throws UnsupportedEncodingException {
+    input = "1\n1";
+    output = "1 1";
+    test(input, output, false);
+  }
 }

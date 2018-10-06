@@ -5,21 +5,18 @@ import java.util.Scanner;
 /**
  * Given a lower and upper bound the goal is to find the maximum XOR of all given numbers.
  * In Java we use the ^ sign to compute the XOR of two given numbers.
- *
+ * Example:
  *   (decimal)    (binary)
  *       5     =  101
  *       6     =  110
  *   ------------------ xor
  *       3     =  011
- *
+ * XOR Chart:
  *     ^ | 0 1      ^ | F T
  *    --+-----     --+-----
  *     0 | 0 1      F | F T
  *     1 | 1 0      T | T F
- *
- *
  * https://stackoverflow.com/questions/1991380/what-does-the-operator-do-in-java
- *
  * https://www.hackerrank.com/contests/w1/challenges/maximizing-xor
  * 20 points
  */
@@ -46,6 +43,10 @@ public class MaximizingXor {
     return max;
   }
 
+  /**
+   * Public API for reading in the numbers and testing the problem solution.
+   * @return The solution
+   */
   public static int solve() {
     Scanner in = new Scanner(System.in);
     int lowerBound = in.nextInt();
@@ -56,5 +57,7 @@ public class MaximizingXor {
     return maximizeXorBrute(lowerBound, upperBound);
   }
 
-  public static void main(String[] args) {System.out.println(solve());}
+  public static void main(String[] args) {
+    System.out.println(solve());
+  }
 }

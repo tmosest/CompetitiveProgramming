@@ -25,6 +25,10 @@ public class WaysToGiveACheck {
     }
   }
 
+  /**
+   * Public API for reading in the numbers and testing the problem solution.
+   * @return The solution
+   */
   public static String solve() {
     Scanner in = new Scanner(System.in);
     int tests = in.nextInt();

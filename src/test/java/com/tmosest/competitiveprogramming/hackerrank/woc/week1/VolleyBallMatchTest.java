@@ -46,7 +46,7 @@ public class VolleyBallMatchTest {
   void testCase0() throws UnsupportedEncodingException {
     input = "3\n25";
     output = 2925;
-    test(input, output, true);
+    test(input, output, false);
   }
 
   @Test

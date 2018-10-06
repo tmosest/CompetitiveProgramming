@@ -106,21 +106,30 @@ public class VolleyBallMatch {
    */
   private static long countFinalSequences(long teamAScore, long teamBScore) {
     long numberOfSequences = 0;
-    if (teamAScore > 24 || teamBScore > 24) {
-      // First we should compute the total
-      long totalNumberOfSequences = computeLazyPermutationWithRepetition(teamAScore, teamBScore);
-      if (debugMode) {
-        System.out.println("Total Number Of Sequences: " + totalNumberOfSequences);
-      }
-      // Next we need to subtract the impossible loosing scores
-      long countNonFinalScores = countNonFinalScores(teamAScore, teamBScore);
-      if (debugMode) {
-        System.out.println("Total Non-Final Scores: " + countNonFinalScores);
-      }
-      totalNumberOfSequences -= countNonFinalScores;
-      numberOfSequences = totalNumberOfSequences;
+
+    // Check if either score is too low.
+    if (teamAScore < 25 && teamBScore < 25) {
+      return numberOfSequences;
     }
-    return numberOfSequences;
+
+    // check if the gap is too small or too big
+    long absScoreDifference = Math.abs(teamAScore - teamBScore);
+    if ((teamAScore > 25 || teamBScore > 25) && (absScoreDifference != 2)) {
+      return numberOfSequences;
+    }
+
+    // First we should compute the total
+    long totalNumberOfSequences = computeLazyPermutationWithRepetition(teamAScore, teamBScore);
+    if (debugMode) {
+      System.out.println("Total Number Of Sequences: " + totalNumberOfSequences);
+    }
+    // Next we need to subtract the impossible loosing scores
+    long countNonFinalScores = countNonFinalScores(teamAScore, teamBScore);
+    if (debugMode) {
+      System.out.println("Total Non-Final Scores: " + countNonFinalScores);
+    }
+    totalNumberOfSequences -= countNonFinalScores;
+    return totalNumberOfSequences;
   }
 
   /**

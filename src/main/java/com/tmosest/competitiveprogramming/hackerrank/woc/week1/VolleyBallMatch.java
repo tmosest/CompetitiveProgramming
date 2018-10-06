@@ -4,35 +4,26 @@ import java.util.Scanner;
 
 
 /**
- * Given the scores for two team's scores need to find a way to compute the number of final sequences.
- *
+ * Given the scores for two team's scores need to
+ * find a way to compute the number of final sequences.
  * A final sequence is one that results in a win for one team.
- *
  * In volleyball a team when with 25 points if the other is below 24 but must win by two.
- *
- *  Formula for Permutation with repetition
- *
+ * Formula for Permutation with repetition
  *    nPr
  *   -----
  *   x1!x2!...
- *
- *   n: total number of objects to select from
- *   r: number of objects being selected
- *   xi: number of duplicates for each item being selected
- *
- *   If A is team A's score and B is team's B score then we would be doing
- *
- *   (A+B) P (A+B) = (A + B)!
- *   -------------------------
- *            A! * B!
- *
- *  But that over counts some solutions because we cannot have the loosing team score after the game is over.
- *
- *
- *  https://www.ck12.org/book/CK-12-Basic-Probability-and-Statistics-Concepts-A-Full-Course/section/2.4/
- *
- *  https://www.hackerrank.com/contests/w1/challenges/volleyball-match/problem
- *  50 points
+ * n: total number of objects to select from
+ * r: number of objects being selected
+ * xi: number of duplicates for each item being selected
+ * If A is team A's score and B is team's B score then we would be doing
+ * (A+B) P (A+B) = (A + B)!
+ * -------------------------
+ *          A! * B!
+ * But that over counts some solutions because we cannot have
+ * the loosing team score after the game is over.
+ * https://www.ck12.org/book/CK-12-Basic-Probability-and-Statistics-Concepts-A-Full-Course/section/2.4/
+ * https://www.hackerrank.com/contests/w1/challenges/volleyball-match/problem
+ * 50 points
  */
 public class VolleyBallMatch {
   public static boolean debugMode = false;
@@ -42,7 +33,7 @@ public class VolleyBallMatch {
   /**
    * Lazy solution to computing (A + B)! / A!B!
    * The idea is that you can take the max of the two denominators and then divide him out.
-   * Resulting in (A+B)(A+B-1)...(A+1)/B!
+   * Resulting in (A+B)(A+B-1)...(A+1)/B!@
    * @param teamAScore A in the above formula
    * @param teamBScore B in the above formula
    * @return (A + B)! / A!B!
@@ -147,5 +138,7 @@ public class VolleyBallMatch {
     return countFinalSequences(teamAScores, teamBScroes);
   }
 
-  public static void main(String[] args) { System.out.println(solve()); }
+  public static void main(String[] args) {
+    System.out.println(solve());
+  }
 }

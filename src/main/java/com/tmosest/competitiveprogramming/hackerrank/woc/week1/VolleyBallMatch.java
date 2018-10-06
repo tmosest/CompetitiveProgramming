@@ -42,6 +42,7 @@ public class VolleyBallMatch {
   /**
    * Lazy solution to computing (A + B)! / A!B!
    * The idea is that you can take the max of the two denominators and then divide him out.
+   * Resulting in (A+B)(A+B-1)...(A+1)/B!
    * @param teamAScore A in the above formula
    * @param teamBScore B in the above formula
    * @return (A + B)! / A!B!

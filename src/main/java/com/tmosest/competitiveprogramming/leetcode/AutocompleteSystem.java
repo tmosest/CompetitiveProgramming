@@ -1,137 +1,86 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class AutocompleteSystem {
+class AutocompleteSystem {
+  //TrieNode class
+  class TrieNode {
+    public boolean end;
+    public Map<Character, TrieNode> children;
+    public Map<String, Integer> counts;
 
-  private class TrieNode {
-    char letter;
-    Map<Character, TrieNode> children;
-    boolean isWord;
-    int times;
-
-    public TrieNode(char letter) {
-      this.letter = letter;
+    public TrieNode() {
       children = new HashMap<>();
-      isWord = false;
-      times = 0;
+      counts = new HashMap<>();
     }
   }
 
-  private class SearchPhrase {
-    String word;
-    int times;
+  public class Pair {
+    String str;
+    int val;
 
-    public SearchPhrase(String word, int times) {
-      this.word = word;
-      this.times = times;
+    public Pair(String str, int val) {
+      this.str = str;
+      this.val = val;
     }
   }
 
-  private class SearchPhraseComparator implements Comparator<SearchPhrase> {
-
-    @Override
-    public int compare(SearchPhrase o1, SearchPhrase o2) {
-      int compareTimes = Integer.compare(o1.times, o2.times);
-      if (compareTimes == 0) {
-        int compareString = o1.word.compareTo(o2.word);
-        if (compareString < 0) {
-          return -1;
-        } else if (compareString > 0) {
-          return 1;
-        }
-        return 0;
-      }
-      return -1 * compareTimes;
-    }
-  }
-
-  private TrieNode root;
-  private StringBuilder sb;
+  TrieNode root;
+  TrieNode cur;
+  String prefix;
 
   public AutocompleteSystem(String[] sentences, int[] times) {
-    root = new TrieNode('-');
+    //empty the sentences in root
+    root = new TrieNode();
+    prefix = "";
     for (int i = 0; i < sentences.length; i++) {
-      insertWord(sentences[i], times[i]);
+      insert(sentences[i], times[i]);
     }
-    sb = new StringBuilder();
+    cur = root;
   }
 
-  private void insertWord(String word, int times) {
-    TrieNode run = root;
-    for (int i = 0; i < word.length(); i++) {
-      char letter = word.charAt(i);
-      TrieNode child = run.children.get(letter);
-      if (child == null) {
-        child = new TrieNode(letter);
-        run.children.put(letter, child);
+  public void insert(String word, int count) {
+    TrieNode node = root;
+    for (char c: word.toCharArray()) {
+      if (!node.children.containsKey(c)) {
+        node.children.put(c, new TrieNode());
       }
-      run = child;
-    }
-    run.isWord = true;
-    if (run.times != 0) {
-      times += run.times;
-    }
-    run.times = times;
-  }
-
-  private PriorityQueue<SearchPhrase> findSearchPhrases(String phrase) {
-    TrieNode run = root;
-    PriorityQueue<SearchPhrase> queue = new PriorityQueue<>(10, new SearchPhraseComparator());
-    StringBuilder word = new StringBuilder();
-    for (int i = 0; i < phrase.length(); i++) {
-      char letter = phrase.charAt(i);
-      TrieNode child = run.children.get(letter);
-      if (child == null) {
-        return queue;
-      }
-      word.append(letter);
-      if (child.isWord) {
-        SearchPhrase searchPhrase = new SearchPhrase(word.toString(), child.times);
-        queue.add(searchPhrase);
-      }
-      run = child;
-    }
-    constructSearchPhrases(word, queue, run);
-    return queue;
-  }
-
-  private void constructSearchPhrases(StringBuilder phrase, PriorityQueue<SearchPhrase> queue, TrieNode trieNode) {
-    if (trieNode == null) {
-      return;
-    }
-    for (TrieNode child : trieNode.children.values()) {
-      StringBuilder newPhrase = new StringBuilder(phrase.toString());
-      newPhrase.append(child.letter);
-      if (child.isWord) {
-        SearchPhrase searchPhrase = new SearchPhrase(newPhrase.toString(), child.times);
-        queue.add(searchPhrase);
-      }
-      constructSearchPhrases(newPhrase, queue, child);
+      node = node.children.get(c);
+      node.counts.put(word, node.counts.getOrDefault(word, 0) + count);
     }
   }
 
-  public List<String> input(char c) {
-    if (c == '#') {
-      insertWord(sb.toString(), 1);
-      sb = new StringBuilder();
+  public List<String> input(char letter) {
+    if (letter == '#') {
+      insert(prefix, 1);
+      //reset cur!!
+      cur = root;
+      prefix = "";
       return new ArrayList<>();
     }
-    sb.append(c);
-    PriorityQueue<SearchPhrase> queue = findSearchPhrases(sb.toString());
-    List<String> result = new ArrayList<>();
-    String search = sb.toString();
-    while(!queue.isEmpty() && result.size() < 3) {
-      String word = queue.poll().word;
-      if (word.length() >= search.length()) {
-        result.add(word);
-      }
+    prefix += letter;
+    if (cur == null) {
+      return new ArrayList<>();
     }
-    return result;
+    if (!cur.children.containsKey(letter)) {
+      cur = null;
+      return new ArrayList<>();
+    }
+    cur = cur.children.get(letter);
+    PriorityQueue<Pair> heap = new PriorityQueue<>(
+        (o1, o2) -> o1.val == o2.val ? o1.str.compareTo(o2.str) : o2.val - o1.val
+    );
+    for (String str: cur.counts.keySet()) {
+      heap.add(new Pair(str, cur.counts.get(str)));
+    }
+    List<String> res = new ArrayList<>();
+    for (int i = 0; i < 3 && !heap.isEmpty(); i++) {
+      res.add(heap.poll().str);
+    }
+    return res;
   }
 }

@@ -14,7 +14,7 @@ public class StackQueue {
 
   /** Push element x to the back of queue. */
   public void push(int val) {
-    while(!stack.empty()) {
+    while (!stack.empty()) {
       temp.push(stack.pop());
     }
     stack.push(val);

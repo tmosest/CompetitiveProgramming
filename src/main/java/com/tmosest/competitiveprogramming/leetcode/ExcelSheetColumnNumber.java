@@ -9,16 +9,10 @@ public class ExcelSheetColumnNumber {
    */
   public int titleToNumber(String str) {
     int result = 0;
+    int exp = 0;
 
     for (int i = str.length() - 1; i >= 0; i--) {
-      char letter = str.charAt(i);
-      int value = (letter - 'A') + 1;
-      if (i == str.length() - 1) {
-        result += value;
-      } else {
-        int multiplier = (int) Math.pow(26, str.length() - 1 - i);
-        result += multiplier * value;
-      }
+      result += (str.charAt(i) - 'A' + 1) * Math.pow(26, exp++);
     }
 
     return result;

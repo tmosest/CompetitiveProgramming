@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
-@Tag("queue")
-@Tag("stack")
+@Tag("string")
 @DisplayName("LeetCode: 243. Shortest Word Distance")
 public class ShortestWordDistanceTest {
 

@@ -5,6 +5,10 @@ Contains solutions to various sites and data-structure implementations.
 ## Unit Test Tags
 These are tags used to run subsets of problems and help to categorize them.
 
+### Difficulty Levels
+- easy
+- medium
+
 ### Sites
 - leetcode
 

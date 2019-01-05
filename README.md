@@ -9,6 +9,8 @@ These are tags used to run subsets of problems and help to categorize them.
 - leetcode
 
 ### Types of Problems
+- array
+- binarySearch
 - binaryTree
 - number
 - string

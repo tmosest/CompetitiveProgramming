@@ -12,6 +12,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - array
 - binarySearch
 - binaryTree
+- interval
 - number
 - string
 

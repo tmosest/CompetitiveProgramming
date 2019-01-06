@@ -14,9 +14,11 @@ public class RegularExpressionMatching {
     if (pattern.isEmpty()) {
       return str.isEmpty();
     }
-    boolean firstMatch = !str.isEmpty() && (pattern.charAt(0) == str.charAt(0) || pattern.charAt(0) == '.');
+    boolean firstMatch = !str.isEmpty()
+        && (pattern.charAt(0) == str.charAt(0) || pattern.charAt(0) == '.');
     if (pattern.length() >= 2 && pattern.charAt(1) == '*') {
-      return isMatch(str, pattern.substring(2)) || (firstMatch && isMatch(str.substring(1), pattern));
+      return isMatch(str, pattern.substring(2))
+          || (firstMatch && isMatch(str.substring(1), pattern));
     }
     return firstMatch && isMatch(str.substring(1), pattern.substring(1));
   }

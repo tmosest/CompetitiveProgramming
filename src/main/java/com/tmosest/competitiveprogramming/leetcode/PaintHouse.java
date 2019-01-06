@@ -4,6 +4,7 @@ public class PaintHouse {
 
   /**
    * Function to compute the min cost of painting a set of houses.
+   * Uses a dynamic approach to the problem.
    * @param costs A matrix of costs per house per color.
    * @return The min cost to paint all the houses.
    */
@@ -12,25 +13,19 @@ public class PaintHouse {
       return 0;
     }
 
-    int min = Integer.MAX_VALUE;
+    int red = costs[0][0];
+    int blue = costs[0][1];
+    int green = costs[0][2];
 
-    for (int i = 0; i < costs[0].length; i++) {
-      min = Math.min(min, minCost(costs, 1, i, costs[0][i]));
+    for (int i = 1; i < costs.length; i++) {
+      int prevRed = red;
+      int prevBlue = blue;
+      int prevGreen = green;
+      red = costs[i][0] + Math.min(prevBlue, prevGreen);
+      blue = costs[i][1] + Math.min(prevRed, prevGreen);
+      green = costs[i][2] + Math.min(prevRed, prevBlue);
     }
 
-    return min;
-  }
-
-  private int minCost(int[][] costs, int index, int previousColor, int cost) {
-    if (index >= costs.length) {
-      return cost;
-    }
-    int min = Integer.MAX_VALUE;
-    for (int i = 0; i < costs[index].length; i++) {
-      if (i != previousColor) {
-        min = Math.min(min, minCost(costs, index + 1, i, cost + costs[index][i]));
-      }
-    }
-    return min;
+    return Math.min(red, Math.min(blue, green));
   }
 }

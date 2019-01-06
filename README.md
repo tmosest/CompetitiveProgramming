@@ -8,6 +8,7 @@ These are tags used to run subsets of problems and help to categorize them.
 ### Difficulty Levels
 - easy
 - medium
+- hard
 
 ### Sites
 - leetcode
@@ -19,6 +20,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - dynamic
 - interval
 - number
+- regex
 - string
 
 ### Travis CI

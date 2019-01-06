@@ -12,6 +12,7 @@ These are tags used to run subsets of problems and help to categorize them.
 
 ### Sites
 - leetcode
+- interview
 
 ### Types of Problems
 - array
@@ -22,6 +23,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - number
 - regex
 - string
+- trie
 
 ### Travis CI
 [![Build Status](https://travis-ci.org/tmosest/CompetitiveProgramming.svg?branch=develop)](https://travis-ci.org/tmosest/CompetitiveProgramming)

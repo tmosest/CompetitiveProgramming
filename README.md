@@ -19,6 +19,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - binarySearch
 - binaryTree
 - dynamic
+- gameTheory
 - interval
 - number
 - regex

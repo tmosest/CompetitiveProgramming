@@ -14,23 +14,18 @@ public class ReverseOnlyLetters {
     int right = strArray.length - 1;
 
     while (left < right) {
-      char leftChar = strArray[left];
-      char rightChar = strArray[right];
-      boolean leftIsLetter = Character.isLetter(leftChar);
-      boolean rightIsLetter = Character.isLetter(rightChar);
-      if (leftIsLetter && rightIsLetter) {
-        strArray[left] = rightChar;
-        strArray[right] = leftChar;
+      while (left < right && !Character.isLetter(strArray[left])) {
         left++;
-        right--;
-      } else if (leftIsLetter) {
-        right--;
-      } else if (rightIsLetter) {
-        left++;
-      } else {
-        left++;
+      }
+      while (right > left && !Character.isLetter(strArray[right])) {
         right--;
       }
+      char temp = strArray[left];
+      strArray[left] = strArray[right];
+      strArray[right] = temp;
+
+      left++;
+      right--;
     }
 
     return new String(strArray);

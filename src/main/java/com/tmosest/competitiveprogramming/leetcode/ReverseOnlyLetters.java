@@ -3,9 +3,9 @@ package com.tmosest.competitiveprogramming.leetcode;
 public class ReverseOnlyLetters {
 
   /**
-   *
-   * @param str
-   * @return
+   * Reverse only the letters in a string.
+   * @param str The string to reverse.
+   * @return A reversed string.
    */
   public String reverseOnlyLetters(String str) {
     char[] strArray = str.toCharArray();

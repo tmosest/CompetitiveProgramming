@@ -18,6 +18,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - array
 - binarySearch
 - binaryTree
+- depthFirstSearch
 - dynamic
 - gameTheory
 - interval

@@ -22,6 +22,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - dynamic
 - gameTheory
 - interval
+- nAryTree
 - number
 - regex
 - string

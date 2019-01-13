@@ -19,9 +19,11 @@ These are tags used to run subsets of problems and help to categorize them.
 - binarySearch
 - binaryTree
 - depthFirstSearch
+- distance
 - dynamic
 - gameTheory
 - interval
+- list
 - nAryTree
 - number
 - regex

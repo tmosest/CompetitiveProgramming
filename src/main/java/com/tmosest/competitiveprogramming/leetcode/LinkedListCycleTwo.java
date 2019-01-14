@@ -6,8 +6,8 @@ public class LinkedListCycleTwo {
 
   /**
    * Return the node at which a cycle starts.
-   * @param head
-   * @return
+   * @param head The root node of the list.
+   * @return The node that is first repeated.
    */
   public ListNode detectCycle(ListNode head) {
     HashSet<ListNode> set = new HashSet<>();

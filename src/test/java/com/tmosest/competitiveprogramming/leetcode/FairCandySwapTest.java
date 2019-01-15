@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
-@Tag("binarySearchTree")
+@Tag("array")
 @DisplayName("LeetCode: 888. Fair Candy Swap")
 public class FairCandySwapTest {
 

@@ -20,6 +20,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - binarySearchTree
 - binaryTree
 - depthFirstSearch
+- design
 - distance
 - dynamic
 - gameTheory

@@ -34,12 +34,10 @@ public class LongestTurbulentSubarrayTest {
     Assertions.assertEquals(1, longestTurbulentSubarray.maxTurbulenceSize(input));
   }
 
-  /*
   @Test
   @DisplayName("Test Case 3")
   void testCase3() {
     int[] input = {2,0,2,4,2,5,0,1,2,3};
     Assertions.assertEquals(6, longestTurbulentSubarray.maxTurbulenceSize(input));
   }
-  */
 }

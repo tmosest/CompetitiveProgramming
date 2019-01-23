@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
-@Tag("string")
+@Tag("array")
 @DisplayName("LeetCode: 645. Set Mismatch")
 public class SetMismatchTest {
 

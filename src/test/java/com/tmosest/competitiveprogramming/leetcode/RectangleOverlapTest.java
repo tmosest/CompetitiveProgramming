@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("array")
-@DisplayName("LeetCode: 645. Set Mismatch")
+@DisplayName("LeetCode: 836. Rectangle Overlap")
 public class RectangleOverlapTest {
 
   RectangleOverlap rectangleOverlap = new RectangleOverlap();

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("array")
-@DisplayName("LeetCode: 925. Long Pressed Name")
+@DisplayName("LeetCode: 713. Subarray Product Less Than K")
 public class SubarrayProductLessThanTest {
 
   SubarrayProductLessThan subarrayProductLessThan = new SubarrayProductLessThan();

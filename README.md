@@ -27,6 +27,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - interval
 - list
 - matrix
+- map
 - nAryTree
 - number
 - palindrome

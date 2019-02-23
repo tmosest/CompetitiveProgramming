@@ -14,8 +14,18 @@ public class SecondMinimumNodeBinaryTree {
   public int findSecondMinimumValue(TreeNode root) {
     priorityQueue = new PriorityQueue<>();
     addToQueue(root);
-    priorityQueue.poll();
-    return priorityQueue.poll();
+    if (priorityQueue.size() < 2) {
+      return -1;
+    }
+    int smallest = priorityQueue.poll();
+    int next = priorityQueue.poll();
+    while (next == smallest) {
+      if (priorityQueue.isEmpty()) {
+        return -1;
+      }
+      next = priorityQueue.poll();
+    }
+    return next;
   }
 
   private void addToQueue(TreeNode root) {

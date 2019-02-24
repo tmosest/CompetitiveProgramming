@@ -8,14 +8,14 @@ public class XKindDeckCards {
    * @return True if can be partitioned.
    */
   public boolean hasGroupsSizeX(int[] deck) {
-    int[] counts = new int[10000];
+    int[] counts = new int[10001];
 
     for (int card : deck) {
-      counts[card - 1]++;
+      counts[card]++;
     }
 
     int group = -1;
-    for (int i = 0; i < 10000; ++i) {
+    for (int i = 0; i < 10001; ++i) {
       if (counts[i] > 0) {
         if (group == -1) {
           group = counts[i];

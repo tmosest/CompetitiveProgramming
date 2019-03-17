@@ -24,6 +24,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - distance
 - dynamic
 - gameTheory
+- graph
 - interval
 - list
 - matrix

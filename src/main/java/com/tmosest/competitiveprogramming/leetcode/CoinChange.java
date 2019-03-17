@@ -2,8 +2,6 @@ package com.tmosest.competitiveprogramming.leetcode;
 
 public class CoinChange {
 
-  private int minChange = Integer.MAX_VALUE;
-
   /**
    * Determine min number of coins needed to make change.
    * @param coins Coin values.
@@ -11,20 +9,30 @@ public class CoinChange {
    * @return The minimum number of coins needed.
    */
   public int coinChange(int[] coins, int amount) {
-    coinChange(coins, amount, 0);
-    return (minChange == Integer.MAX_VALUE) ? -1 : minChange;
+    if (amount < 1) {
+      return 0;
+    }
+    return coinChange(coins, amount, new int[amount]);
   }
 
-  private void coinChange(int[] coins, int amount, int numOfCoins) {
-    if (amount == 0) {
-      minChange = Math.min(numOfCoins, minChange);
-      return;
-    }
+  private int coinChange(int[] coins, int amount, int[] count) {
     if (amount < 0) {
-      return;
+      return -1;
     }
-    for (int i = 0; i < coins.length; i++) {
-      coinChange(coins, amount - coins[i], numOfCoins + 1);
+    if (amount == 0) {
+      return 0;
     }
+    if (count[amount - 1] != 0) {
+      return count[amount - 1];
+    }
+    int min = Integer.MAX_VALUE;
+    for (int coin : coins) {
+      int res = coinChange(coins, amount - coin, count);
+      if (res >= 0 && res < min) {
+        min = 1 + res;
+      }
+    }
+    count[amount - 1] = (min == Integer.MAX_VALUE) ? -1 : min;
+    return count[amount - 1];
   }
 }

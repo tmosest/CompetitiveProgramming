@@ -26,14 +26,14 @@ public class SearchInRotatedSortedArray {
     }
 
     if (rotateIndex == 0) {
-      return search(nums, 0, length - 1, target);
+      return searchHelper(nums, 0, length - 1, target);
     }
 
     if (target < nums[0]) {
-      return search(nums, rotateIndex, length - 1, target);
+      return searchHelper(nums, rotateIndex, length - 1, target);
     }
 
-    return search(nums, 0, rotateIndex, target);
+    return searchHelper(nums, 0, rotateIndex, target);
   }
 
   private int findRotationIndex(int[] nums, int left, int right) {
@@ -56,7 +56,7 @@ public class SearchInRotatedSortedArray {
     return 0;
   }
 
-  private int search(int[] nums, int left, int right, int target) {
+  private int searchHelper(int[] nums, int left, int right, int target) {
     while (left <= right) {
       int pivot = (left + right) / 2;
       if (nums[pivot] == target) {

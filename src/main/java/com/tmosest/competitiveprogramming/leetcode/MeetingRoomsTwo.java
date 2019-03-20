@@ -8,8 +8,8 @@ public class MeetingRoomsTwo {
 
   /**
    * Determine the minimum number of meeting rooms required.
-   * @param intervals
-   * @return
+   * @param intervals An array of intervals.
+   * @return The minimum number of rooms needed.
    */
   public int minMeetingRooms(Interval[] intervals) {
     int rooms = 0;

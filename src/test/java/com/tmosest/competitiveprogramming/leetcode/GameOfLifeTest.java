@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
-@Tag("binaryTree")
+@Tag("matrix")
 @Tag("medium")
 @DisplayName("LeetCode: 289. Game of Life")
 public class GameOfLifeTest {

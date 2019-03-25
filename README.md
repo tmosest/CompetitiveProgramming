@@ -21,6 +21,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - binarySearch
 - binarySearchTree
 - binaryTree
+- breadthFirstSearch
 - depthFirstSearch
 - design
 - distance

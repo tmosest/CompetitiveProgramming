@@ -15,7 +15,12 @@ public class Minesweeper {
   }
 
   private static void dfs(char[][] board, int row, int col) {
-    if (row >= board.length || row < 0 || col >= board[0].length || col < 0 || board[row][col] == 'B') {
+    if (row >= board.length
+        || row < 0
+        || col >= board[0].length
+        || col < 0
+        || board[row][col] == 'B'
+        ) {
       return;
     }
     // handle mine

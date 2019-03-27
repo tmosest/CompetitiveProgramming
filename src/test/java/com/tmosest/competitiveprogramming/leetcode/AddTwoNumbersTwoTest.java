@@ -41,4 +41,21 @@ public class AddTwoNumbersTwoTest {
 
     Assertions.assertEquals(expected, actual);
   }
+
+  @Test
+  @DisplayName("Test Case 1")
+  void testCase1() {
+    ListNode listOne = new ListNode(5);
+    ListNode expected = new ListNode(1);
+    expected.next = new ListNode(0);
+    ListNode actual = addTwoNumbersTwo.addTwoNumbers(listOne, listOne);
+
+    while (actual != null && expected != null) {
+      Assertions.assertEquals(actual.val, expected.val);
+      actual = actual.next;
+      expected = expected.next;
+    }
+
+    Assertions.assertEquals(expected, actual);
+  }
 }

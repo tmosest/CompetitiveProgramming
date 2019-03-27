@@ -1,6 +1,5 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
-import java.math.BigInteger;
 import java.util.Stack;
 
 public class AddTwoNumbersTwo {
@@ -12,40 +11,41 @@ public class AddTwoNumbersTwo {
    * @return The sum as a list.
    */
   public ListNode addTwoNumbers(ListNode listOne, ListNode listTwo) {
-    BigInteger numOne = listToBigInt(listOne);
-    BigInteger numTwo = listToBigInt(listTwo);
-    return listFromBigInt(numOne.add(numTwo));
-  }
-
-  private BigInteger listToBigInt(ListNode listNode) {
-    BigInteger sum = BigInteger.ZERO;
-    while (listNode != null) {
-      sum = sum.multiply(BigInteger.TEN);
-      sum = sum.add(BigInteger.valueOf(listNode.val));
-      listNode = listNode.next;
-    }
-    return sum;
-  }
-
-  private ListNode listFromBigInt(BigInteger num) {
-    Stack<ListNode> stack = new Stack<>();
-    while (!num.equals(BigInteger.ZERO)) {
-      int val = Integer.valueOf(num.mod(BigInteger.TEN).toString());
-      stack.push(new ListNode(val));
-      num = num.divide(BigInteger.TEN);
-    }
+    Stack<Integer> listOneNumbers = listToStack(listOne);
+    Stack<Integer> listTwoNumbers = listToStack(listTwo);
     ListNode head = null;
-    ListNode runner = null;
-    while (!stack.empty()) {
-      ListNode node = stack.pop();
-      if (head == null && runner == null) {
-        head = node;
-        runner = node;
-      } else {
-        runner.next = node;
-        runner = runner.next;
+    ListNode prev = null;
+    boolean carry = false;
+    while (!listOneNumbers.isEmpty() || !listTwoNumbers.isEmpty() || carry) {
+      int sum = 0;
+      if (!listOneNumbers.isEmpty()) {
+        sum += listOneNumbers.pop();
       }
+      if (!listTwoNumbers.isEmpty()) {
+        sum += listTwoNumbers.pop();
+      }
+      if (carry) {
+        ++sum;
+        carry = false;
+      }
+      if (sum > 9) {
+        sum -= 10;
+        carry = true;
+      }
+      ListNode node = new ListNode(sum);
+      node.next = prev;
+      prev = node;
+      head = node;
     }
     return head;
+  }
+
+  private Stack<Integer> listToStack(ListNode node) {
+    Stack<Integer> stack = new Stack<>();
+    while (node != null) {
+      stack.push(node.val);
+      node = node.next;
+    }
+    return stack;
   }
 }

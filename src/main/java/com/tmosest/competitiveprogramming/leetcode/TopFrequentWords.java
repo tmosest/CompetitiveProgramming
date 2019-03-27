@@ -40,7 +40,7 @@ public class TopFrequentWords {
     }
     // Figure out the results.
     List<String> result = new ArrayList<>();
-    while(size > 0) {
+    while (size > 0) {
       result.add(priorityQueue.poll());
       size--;
     }

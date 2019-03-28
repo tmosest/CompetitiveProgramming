@@ -2,8 +2,13 @@ package com.tmosest.competitiveprogramming.leetcode;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("leetcode")
+@Tag("medium")
+@Tag("array")
+@DisplayName("LeetCode: 523. Continuous Subarray Sum")
 public class ContinuousSubarraySumTest {
 
   ContinuousSubarraySum continuousSubarraySum = new ContinuousSubarraySum();

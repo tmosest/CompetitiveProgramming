@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("medium")
-@Tag("array")
-@DisplayName("LeetCode: 621. Task Scheduler")
+@Tag("list")
+@DisplayName("LeetCode: 143. Reorder List")
 public class ReorderListTest {
 
   ReorderList reorderList = new ReorderList();

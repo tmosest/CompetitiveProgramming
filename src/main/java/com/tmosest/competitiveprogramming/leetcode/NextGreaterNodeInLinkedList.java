@@ -1,7 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
 
 public class NextGreaterNodeInLinkedList {
 
@@ -11,22 +10,22 @@ public class NextGreaterNodeInLinkedList {
    * @return An array where index i is the next largest value of node i.
    */
   public int[] nextLargerNodes(ListNode head) {
-    List<Integer> list = new ArrayList<>();
-    while (head != null) {
-      list.add(head.val);
-      head = head.next;
+    LinkedList<Integer> nodes = new LinkedList<>();
+    for (; head != null; head = head.next) {
+      nodes.push(head.val);
     }
-    int[] result = new int[list.size()];
-    for (int i = 0; i < result.length - 1; i++) {
-      int curr = list.get(i);
-      for (int j = i + 1; j < result.length; j++) {
-        int next = list.get(j);
-        if (next > curr) {
-          result[i] = next;
-          break;
-        }
+
+    LinkedList<Integer> stack = new LinkedList<>();
+    int[] ans = new int[nodes.size()];
+
+    for (int i = nodes.size() - 1; !nodes.isEmpty(); i--) {
+      while (!stack.isEmpty() && nodes.peek() >= stack.peek()) {
+        stack.pop();
       }
+      ans[i] = stack.isEmpty() ? 0 : stack.peek();
+      stack.push(nodes.pop());
     }
-    return result;
+
+    return ans;
   }
 }

@@ -23,6 +23,27 @@ public class Milk extends CondimentDecorator {
 
   @Override
   double cost() {
+    double cost;
+    switch (size) {
+      case VENTI:
+        cost = 1.45;
+        break;
+      case GRANDE:
+        cost = 1.35;
+        break;
+      default:
+        cost = 1.25;
+    }
     return cost + beverage.cost();
+  }
+
+  @Override
+  public Size getSize() {
+    return beverage.getSize();
+  }
+
+  @Override
+  public void setSize(Size size) {
+    beverage.setSize(size);
   }
 }

@@ -5,4 +5,8 @@ package com.tmosest.competitiveprogramming.designpatterns.decorator.starbuzz;
  */
 abstract class CondimentDecorator extends Beverage {
   public abstract String getDescription();
+
+  public abstract Size getSize();
+
+  public abstract void setSize(Size size);
 }

@@ -14,6 +14,13 @@ public class DarkRoast extends Beverage {
 
   @Override
   double cost() {
-    return 2.0;
+    switch (size) {
+      case VENTI:
+        return 2.20;
+      case GRANDE:
+        return 2.10;
+      default:
+        return 2.0;
+    }
   }
 }

@@ -14,6 +14,13 @@ public class Decaf extends Beverage {
 
   @Override
   double cost() {
-    return 2.0;
+    switch (size) {
+      case VENTI:
+        return 2.1;
+      case GRANDE:
+        return 2.0;
+      default:
+        return 1.9;
+    }
   }
 }

@@ -4,7 +4,6 @@ package com.tmosest.competitiveprogramming.designpatterns.decorator.starbuzz;
  * Mocha can decorate a beverage.
  */
 public class Mocha extends CondimentDecorator {
-  private double cost = 1.50;
   // Underlying beverage to decorate.
   Beverage beverage;
 
@@ -23,6 +22,27 @@ public class Mocha extends CondimentDecorator {
 
   @Override
   double cost() {
+    double cost;
+    switch (size) {
+      case VENTI:
+        cost = 1.70;
+        break;
+      case GRANDE:
+        cost = 1.60;
+        break;
+      default:
+        cost = 1.50;
+    }
     return cost + beverage.cost();
+  }
+
+  @Override
+  public Size getSize() {
+    return beverage.getSize();
+  }
+
+  @Override
+  public void setSize(Size size) {
+    beverage.setSize(size);
   }
 }

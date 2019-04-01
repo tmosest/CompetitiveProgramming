@@ -1,5 +1,6 @@
 package com.tmosest.competitiveprogramming.designpatterns.decorator.starbuzz;
 
+import com.tmosest.competitiveprogramming.designpatterns.decorator.starbuzz.Beverage.Size;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -29,5 +30,14 @@ public class StarbuzzTests {
     Beverage crazyBeverage = new Whip(new Milk(new Soy(new Mocha(new Decaf()))));
     Assertions.assertNotEquals("", crazyBeverage.getDescription());
     Assertions.assertNotEquals(0.0, crazyBeverage.cost());
+  }
+
+  @Test
+  @DisplayName("Sizes test")
+  void testSizes() {
+    Beverage crazyBeverage = new Whip(new Milk(new Soy(new Mocha(new Decaf()))));
+    double cost = crazyBeverage.cost();
+    crazyBeverage.setSize(Size.VENTI);
+    Assertions.assertNotEquals(cost, crazyBeverage.cost());
   }
 }

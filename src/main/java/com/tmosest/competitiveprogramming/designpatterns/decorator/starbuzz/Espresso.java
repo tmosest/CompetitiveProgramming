@@ -14,6 +14,13 @@ public class Espresso extends Beverage {
 
   @Override
   double cost() {
-    return 2.0;
+    switch (size) {
+      case VENTI:
+        return 1.7;
+      case GRANDE:
+        return 1.6;
+      default:
+        return 1.5;
+    }
   }
 }

@@ -4,7 +4,6 @@ package com.tmosest.competitiveprogramming.designpatterns.decorator.starbuzz;
  * Soy can decorate a beverage.
  */
 public class Soy extends CondimentDecorator {
-  private double cost = 1.75;
   // Underlying beverage to decorate.
   Beverage beverage;
 
@@ -23,6 +22,27 @@ public class Soy extends CondimentDecorator {
 
   @Override
   double cost() {
+    double cost;
+    switch (size) {
+      case VENTI:
+        cost = 1.95;
+        break;
+      case GRANDE:
+        cost = 1.85;
+        break;
+      default:
+        cost = 1.75;
+    }
     return cost + beverage.cost();
+  }
+
+  @Override
+  public Size getSize() {
+    return beverage.getSize();
+  }
+
+  @Override
+  public void setSize(Size size) {
+    beverage.setSize(size);
   }
 }

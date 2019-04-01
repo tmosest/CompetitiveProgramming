@@ -4,7 +4,6 @@ package com.tmosest.competitiveprogramming.designpatterns.decorator.starbuzz;
  * Whip can decorate a beverage.
  */
 public class Whip extends CondimentDecorator {
-  private double cost = 0.3;
   // Underlying beverage to decorate.
   Beverage beverage;
 
@@ -23,6 +22,27 @@ public class Whip extends CondimentDecorator {
 
   @Override
   double cost() {
+    double cost;
+    switch (size) {
+      case VENTI:
+        cost = .5;
+        break;
+      case GRANDE:
+        cost = .4;
+        break;
+      default:
+        cost = .3;
+    }
     return cost + beverage.cost();
+  }
+
+  @Override
+  public Size getSize() {
+    return beverage.getSize();
+  }
+
+  @Override
+  public void setSize(Size size) {
+    beverage.setSize(size);
   }
 }

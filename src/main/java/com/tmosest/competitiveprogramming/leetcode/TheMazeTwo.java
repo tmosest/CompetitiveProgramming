@@ -50,6 +50,7 @@ public class TheMazeTwo {
         }
       }
     }
-    return distances[destination[0]][destination[1]] == Integer.MAX_VALUE ? -1 : distances[destination[0]][destination[1]];
+    return distances[destination[0]][destination[1]] == Integer.MAX_VALUE
+        ? -1 : distances[destination[0]][destination[1]];
   }
 }

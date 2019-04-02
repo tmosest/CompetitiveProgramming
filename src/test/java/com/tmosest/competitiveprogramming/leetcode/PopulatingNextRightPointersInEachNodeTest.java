@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("list")
-@DisplayName("LeetCode: 116. Populating Next Right Pointers in Each Node\n")
+@DisplayName("LeetCode: 116. Populating Next Right Pointers in Each Node")
 public class PopulatingNextRightPointersInEachNodeTest {
 
   PopulatingNextRightPointersInEachNode populatingNextRightPointersInEachNode = new PopulatingNextRightPointersInEachNode();

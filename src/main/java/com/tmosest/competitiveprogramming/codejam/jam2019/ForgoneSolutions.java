@@ -27,6 +27,11 @@ public class ForgoneSolutions {
     return false;
   }
 
+  /**
+   * Find to numbers that sum to a number but don't have 4's in them.
+   * @param checkSize The number to sum to.
+   * @return Pair with the two numbers.
+   */
   public static Pair getCheckWithOutFours(int checkSize) {
     Pair result = new Pair(checkSize, 0);
     boolean first = containsFour(result.one);

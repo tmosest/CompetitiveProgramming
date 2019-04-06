@@ -3,10 +3,9 @@ package com.tmosest.competitiveprogramming.codejam.jam2019;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class YouCanGoAllTheWay {
 
@@ -71,14 +70,14 @@ public class YouCanGoAllTheWay {
     boolean[] visited = new boolean[nodes.size()];
     String[] moves = new String[nodes.size()];
     moves[0] = "";
-    Queue<Node> queue = new LinkedList<>();
-    queue.add(root);
-    while (!queue.isEmpty()) {
-      root = queue.poll();
+    Stack<Node> stack = new Stack<>();
+    stack.push(root);
+    while (!stack.isEmpty()) {
+      root = stack.pop();
       String mov = moves[root.id];
       for (Node node : root.neighbors) {
         if (!visited[node.id]) {
-          queue.add(node);
+          stack.push(node);
           moves[node.id] = (node.row == root.row + 1) ? mov + "S" : mov + "E";
           if (node.id == getId(length - 1, length - 1, length)) {
             return moves[node.id];

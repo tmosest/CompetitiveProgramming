@@ -27,4 +27,17 @@ public class PrimeUtil {
     }
     return primes;
   }
+
+  /**
+   * Determines the gcd of two numbers.
+   * @param one First number.
+   * @param two Second number.
+   * @return The gcd of the two numbers.
+   */
+  public static long findGcd(long one, long two) {
+    if (two == 0) {
+      return one;
+    }
+    return findGcd(two, one % two);
+  }
 }

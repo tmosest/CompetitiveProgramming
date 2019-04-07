@@ -1,5 +1,6 @@
 package com.tmosest.competitiveprogramming.codejam.jam2019;
 
+import com.tmosest.competitiveprogramming.utils.PrimeUtil;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -10,13 +11,6 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Cryptopangrams {
-
-  private static long findGcd(long one, long two) {
-    if (two == 0) {
-      return one;
-    }
-    return findGcd(two, one % two);
-  }
 
   /**
    * Decrypt a message.
@@ -34,7 +28,7 @@ public class Cryptopangrams {
       if (prevNumber == number) {
         continue;
       }
-      long gcd = findGcd(number, prevNumber);
+      long gcd = PrimeUtil.findGcd(number, prevNumber);
       primeCandidate.add(gcd);
       primeCandidate.add(number / gcd);
       primeCandidate.add(prevNumber / gcd);

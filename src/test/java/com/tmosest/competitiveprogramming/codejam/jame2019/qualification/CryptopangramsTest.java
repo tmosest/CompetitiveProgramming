@@ -2,8 +2,9 @@ package com.tmosest.competitiveprogramming.codejam.jame2019.qualification;
 
 import com.tmosest.competitiveprogramming.codejam.jam2019.Cryptopangrams;
 import com.tmosest.competitiveprogramming.hackerrank.HackerrankUtil;
+import com.tmosest.competitiveprogramming.utils.PrimeUtil;
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
+import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -16,7 +17,7 @@ import org.junit.jupiter.api.Test;
 public class CryptopangramsTest {
 
   private long[] encodeMessage(String message) {
-    ArrayList<Integer> primes = Cryptopangrams.findPrimes(103);
+    List<Integer> primes = PrimeUtil.findPrimes(103);
     long[] result = new long[message.length() - 1];
     char[] mess = message.toCharArray();
     for (int i = 0; i < message.length() - 1; i++) {

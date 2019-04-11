@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("array")
-@DisplayName("LeetCode: 881. Boats to Save People\n")
+@DisplayName("LeetCode: 881. Boats to Save People")
 public class BoatsToSavePeopleTest {
 
   BoatsToSavePeople boatsToSavePeople = new BoatsToSavePeople();

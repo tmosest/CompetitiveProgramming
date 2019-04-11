@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("medium")
-@Tag("matrix")
+@Tag("array")
 @DisplayName("LeetCode: 477. Total Hamming Distance")
 public class TotalHammingDistanceTest {
 

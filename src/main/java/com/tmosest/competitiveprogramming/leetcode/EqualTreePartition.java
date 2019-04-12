@@ -1,42 +1,30 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import com.tmosest.competitiveprogramming.utils.UtilTreeNode;
 
-public class EqualTreePartition {
-
+class EqualTreePartition {
   /**
    * Determine if a tree can but cut into two trees with equal sums.
    * @param root The root of the tree.
    * @return True if deleting one edge produces a two trees with equal sums.
    */
-  public boolean checkEqualTree(TreeNode root) {
-    convertToSum(root);
-    Queue<TreeNode> queue = new LinkedList<>();
-    if (root != null) {
-      queue.add(root);
-    }
-    while (!queue.isEmpty()) {
-      TreeNode node = queue.poll();
-      if (node != root && root.val == node.val + node.val) {
+  boolean checkEqualTree(TreeNode root) {
+    UtilTreeNode<Integer> utilRoot = TreeNodeAdapter.convertToUtility(root);
+    convertToBottomUpSumTree(utilRoot);
+    for (UtilTreeNode<Integer> node : utilRoot.iterateLevelByLevel()) {
+      if (node != utilRoot && utilRoot.val == node.val + node.val) {
         return true;
-      }
-      if (node.left != null) {
-        queue.add(node.left);
-      }
-      if (node.right != null) {
-        queue.add(node.right);
       }
     }
     return false;
   }
 
-  private void convertToSum(TreeNode root) {
+  private void convertToBottomUpSumTree(UtilTreeNode<Integer> root) {
     if (root == null) {
       return;
     }
-    convertToSum(root.left);
-    convertToSum(root.right);
+    convertToBottomUpSumTree(root.left);
+    convertToBottomUpSumTree(root.right);
     if (root.left != null) {
       root.val += root.left.val;
     }

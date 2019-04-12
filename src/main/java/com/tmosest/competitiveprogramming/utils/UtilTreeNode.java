@@ -41,4 +41,12 @@ public class UtilTreeNode<T> {
     }
     return null;
   }
+
+  /**
+   * Iterate level by level starting at this node.
+   * @return A way to iterate over a tree node level by level.
+   */
+  public UtilTreeNodeRowIteration<T> iterateLevelByLevel() {
+    return new UtilTreeNodeRowIteration<>(this);
+  }
 }

@@ -9,11 +9,6 @@ package com.tmosest.competitiveprogramming.datastructures;
 public interface ArrayListAdt<T> {
 
   /**
-   * Adds a new item to the end of the Array.
-   */
-  void add(T item);
-
-  /**
    * Returns the current item in the i'th slot. Starting at zero.
    * @throws IndexOutOfBoundsException index was out of bounds.
    */
@@ -31,17 +26,8 @@ public interface ArrayListAdt<T> {
   T pop();
 
   /**
-   * Function to set an index.
-   * @param index index to be updated.
-   * @param element value to set the index to.
-   * @throws IndexOutOfBoundsException index was out of bounds.
-   */
-  void set(int index, T element) throws IndexOutOfBoundsException;
-
-  /**
    * Returns the current size of the Array List.
    */
   int size();
-
 }
 

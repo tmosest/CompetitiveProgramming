@@ -7,8 +7,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("LeetCode: 642. Design Search Autocomplete System")
-public class AutocompleteSystemTest {
-  AutocompleteSystem autocompleteSystem;
+class AutocompleteSystemTest {
+  private AutocompleteSystem autocompleteSystem;
 
   @Test
   @DisplayName("Test Case 0")

@@ -6,8 +6,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("LeetCode: 677. Map Sum Pairs")
-public class MapSumTest {
-  MapSum mapSum;
+class MapSumTest {
+  private MapSum mapSum;
 
   @BeforeEach
   void setup() {

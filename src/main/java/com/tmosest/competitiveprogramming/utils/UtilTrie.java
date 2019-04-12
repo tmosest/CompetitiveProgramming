@@ -1,10 +1,11 @@
 package com.tmosest.competitiveprogramming.utils;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
-public class UtilTrie {
+public class UtilTrie implements Iterable<UtilTrieNode>, Iterator<UtilTrieNode> {
 
   private UtilTrieNode root = new UtilTrieNode('-');
   private UtilTrieNode runner = root;
@@ -68,14 +69,12 @@ public class UtilTrie {
    * @return Is this word a prefix or not.
    */
   public boolean isPrefix(String prefix) {
-    runner = root;
-    for (char letter : prefix.toCharArray()) {
-      if (!runner.children.containsKey(letter)) {
-        return false;
-      }
-      runner = runner.children.get(letter);
+    setSearch(prefix);
+    int index = 0;
+    for (UtilTrieNode trieNodes : this) {
+      index++;
     }
-    return true;
+    return index == prefix.length() - 1;
   }
 
   /**
@@ -145,5 +144,47 @@ public class UtilTrie {
       }
     }
     return ans;
+  }
+
+  /**
+   * Get words that start with a given prefix.
+   * @param prefix The prefix the words should start with.
+   * @return A list of words that start with this word.
+   */
+  public List<String> getWordsWithPrefix(String prefix) {
+    List<String> result = new ArrayList<>();
+    for (String word : words) {
+      if (word.indexOf(prefix) == 0) {
+        result.add(word);
+      }
+    }
+    return result;
+  }
+
+  private String search;
+  private int searchIndex;
+
+  public void setSearch(String search) {
+    this.search = search;
+    searchIndex = 0;
+  }
+
+  @Override
+  public Iterator<UtilTrieNode> iterator() {
+    runner = root;
+    return this;
+  }
+
+  @Override
+  public boolean hasNext() {
+    return runner != null
+        && searchIndex < search.length()
+        && runner.children.containsKey(search.charAt(searchIndex));
+  }
+
+  @Override
+  public UtilTrieNode next() {
+    runner = runner.children.get(search.charAt(searchIndex));
+    return runner;
   }
 }

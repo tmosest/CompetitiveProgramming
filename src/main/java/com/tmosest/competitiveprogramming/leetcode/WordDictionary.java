@@ -7,7 +7,7 @@ public class WordDictionary {
   boolean debugMode = false;
 
   /**
-   * Inner Trie Node class.
+   * Inner UtilTrie Node class.
    */
   private class TrieNode {
     char letter;

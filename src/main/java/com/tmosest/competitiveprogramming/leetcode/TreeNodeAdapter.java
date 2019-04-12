@@ -8,8 +8,8 @@ import com.tmosest.competitiveprogramming.utils.UtilTreeNode;
 public class TreeNodeAdapter {
 
   /**
-   * Converts leetcode TrieNode to a utility format.
-   * @param treeNode The LeetCode TrieNode.
+   * Converts leetcode UtilTrieNode to a utility format.
+   * @param treeNode The LeetCode UtilTrieNode.
    * @return A UtilityTreeNode.
    */
   static UtilTreeNode<Integer> convertToUtility(TreeNode treeNode) {

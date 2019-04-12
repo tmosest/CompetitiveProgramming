@@ -10,6 +10,8 @@ public class UtilTrie {
   private UtilTrieNode runner = root;
   private List<String> words = new ArrayList<>();
 
+  public UtilTrie() {}
+
   /**
    * Creates all possible words after deletion.
    * @param word A word where we can delete any characters from it.
@@ -17,11 +19,11 @@ public class UtilTrie {
   public UtilTrie(String word) {
     char[] strArray = word.toCharArray();
     for (int i = strArray.length - 1; i >= 0; i--) {
-      UtilTrieNode node = new UtilTrieNode(strArray[i], true);
-      for (char oldLetter : root.children.keySet()) {
-        node.children.put(oldLetter, root.children.get(oldLetter));
+      int size = words.size();
+      for (int j = 0; j < size; j++) {
+        addWord("" + strArray[i] + words.get(j));
       }
-      root.children.put(node.letter, node);
+      addWord("" + strArray[i]);
     }
   }
 
@@ -77,12 +79,25 @@ public class UtilTrie {
   }
 
   /**
-   * Determine if this is a word.
-   * @param word The word to look for.
+   * Determine if this is a word (.'s can be any character).
+   * @param search The word to look for.
    * @return Is this word in the trie.
    */
-  public boolean isWord(String word) {
-    return isPrefix(word) && runner.isWord;
+  public boolean isWord(String search) {
+    for (String word : words) {
+      if (word.length() != search.length()) {
+        continue;
+      }
+      for (int i = 0; i < word.length(); i++) {
+        if (search.charAt(i) != '.' && search.charAt(i) != word.charAt(i)) {
+          break;
+        }
+        if (i == search.length() - 1) {
+          return true;
+        }
+      }
+    }
+    return false;
   }
 
   /**

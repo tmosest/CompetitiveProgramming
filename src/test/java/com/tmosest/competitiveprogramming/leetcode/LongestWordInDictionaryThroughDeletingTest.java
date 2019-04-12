@@ -10,9 +10,10 @@ import org.junit.jupiter.api.Test;
 @Tag("medium")
 @Tag("string")
 @DisplayName("LeetCode: 524. Longest Word in Dictionary through Deleting")
-public class LongestWordInDictionaryThroughDeletingTest {
+class LongestWordInDictionaryThroughDeletingTest {
 
-  LongestWordInDictionaryThroughDeleting longestWordInDictionaryThroughDeleting = new LongestWordInDictionaryThroughDeleting();
+  private LongestWordInDictionaryThroughDeleting longestWordInDictionaryThroughDeleting
+      = new LongestWordInDictionaryThroughDeleting();
 
   @Test
   @DisplayName("Test Case 0")

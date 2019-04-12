@@ -1,8 +1,12 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
 import com.tmosest.competitiveprogramming.utils.StringUtil;
+
 import java.util.List;
 
+/**
+ * LeetCode exercise.
+ */
 public class CamelcaseMatching {
 
   /**

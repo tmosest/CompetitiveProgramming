@@ -6,8 +6,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("LeetCode: 211. Add and Search Word - Data structure design")
-public class WordDictionaryTest {
-  WordDictionary wordDictionary;
+class WordDictionaryTest {
+
+  private  WordDictionary wordDictionary;
 
   @BeforeEach
   void setup() {

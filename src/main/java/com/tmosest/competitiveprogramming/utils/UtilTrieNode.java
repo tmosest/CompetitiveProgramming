@@ -4,21 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class UtilTrieNode {
-  public char letter;
-  public boolean isWord;
+  public char letter = '-';
+  public boolean isWord = false;
   public int endIndex = -1;
   public Map<Character, UtilTrieNode> children = new HashMap<>();
 
-  public UtilTrieNode() {
-    letter = '-';
-  }
+  UtilTrieNode() {}
 
-  public UtilTrieNode(char letter) {
+  UtilTrieNode(char letter) {
     this.letter = letter;
     this.isWord = false;
   }
 
-  public UtilTrieNode(char letter, boolean isWord) {
+  UtilTrieNode(char letter, boolean isWord) {
     this.letter = letter;
     this.isWord = isWord;
   }

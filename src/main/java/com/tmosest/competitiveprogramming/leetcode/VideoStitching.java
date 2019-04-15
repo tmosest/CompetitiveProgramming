@@ -3,7 +3,7 @@ package com.tmosest.competitiveprogramming.leetcode;
 import java.util.PriorityQueue;
 import java.util.Stack;
 
-public class VideoStitching {
+class VideoStitching {
 
   /**
    * Determine the minimum number of clips to make a film from [0, time].
@@ -11,7 +11,7 @@ public class VideoStitching {
    * @param time The time to cover.
    * @return The minimum number of clips needed.
    */
-  public int videoStitching(int[][] clips, int time) {
+  int videoStitching(int[][] clips, int time) {
     PriorityQueue<int[]> pq = new PriorityQueue<>((one, two) -> {
       if (one[0] != two[0]) {
         return one[0] - two[0];

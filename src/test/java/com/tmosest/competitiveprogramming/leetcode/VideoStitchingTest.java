@@ -11,9 +11,9 @@ import org.junit.jupiter.api.Test;
 @Tag("interval")
 @Tag("greedy")
 @DisplayName("LeetCode: 1024. Video Stitching")
-public class VideoStitchingTest {
+class VideoStitchingTest {
 
-  VideoStitching videoStitching = new VideoStitching();
+  private VideoStitching videoStitching = new VideoStitching();
 
   @Test
   @DisplayName("Test Case 0")

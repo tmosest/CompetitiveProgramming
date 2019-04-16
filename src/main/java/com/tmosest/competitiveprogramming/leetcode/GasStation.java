@@ -8,7 +8,7 @@ class GasStation {
    * @param cost The cost of the gas at each index.
    * @return Starting index to complete a trip around the array or -1.
    */
-  public int canCompleteCircuit(int[] gas, int[] cost) {
+  int canCompleteCircuit(int[] gas, int[] cost) {
     int length = gas.length;
     int totalTank = 0;
     int currTask = 0;

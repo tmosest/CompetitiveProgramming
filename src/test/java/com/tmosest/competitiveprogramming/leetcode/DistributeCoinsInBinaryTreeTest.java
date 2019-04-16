@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("binaryTree")
-@DisplayName("LeetCode: 109. Convert Sorted List to Binary Search Tree")
+@DisplayName("LeetCode: 979. Distribute Coins in Binary Tree")
 class DistributeCoinsInBinaryTreeTest {
 
   private DistributeCoinsInBinaryTree distributeCoinsInBinaryTree = new DistributeCoinsInBinaryTree();

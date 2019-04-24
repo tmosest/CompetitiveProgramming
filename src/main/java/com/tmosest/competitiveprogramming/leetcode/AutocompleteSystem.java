@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 class AutocompleteSystem {
-  //TrieNode class
+  //UtilTrieNode class
   class TrieNode {
     public boolean end;
     public Map<Character, TrieNode> children;

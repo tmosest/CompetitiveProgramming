@@ -1,8 +1,5 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
-import java.util.HashSet;
-import java.util.Set;
-
 class MaximumDifferenceBetweenNodeAndAncestor {
 
   private int result = 0;
@@ -14,22 +11,18 @@ class MaximumDifferenceBetweenNodeAndAncestor {
    */
   int maxAncestorDiff(TreeNode root) {
     result = 0;
-    maxAncestorDiff(root, new HashSet<>());
+    maxAncestorDiff(root,root.val, root.val);
     return result;
   }
 
-  private void maxAncestorDiff(TreeNode root, Set<Integer> ancestors) {
+  private void maxAncestorDiff(TreeNode root, int max, int min) {
     if (root == null) {
       return;
     }
-    int val = root.val;
-    for (int num : ancestors) {
-      int diff = Math.abs(val - num);
-      result = Math.max(result, diff);
-    }
-    Set<Integer> newAncestors = new HashSet<>(ancestors);
-    newAncestors.add(root.val);
-    maxAncestorDiff(root.left, newAncestors);
-    maxAncestorDiff(root.right, newAncestors);
+    max = Math.max(root.val, max);
+    min = Math.min(root.val, min);
+    result = Math.max(result, max - min);
+    maxAncestorDiff(root.left, max, min);
+    maxAncestorDiff(root.right, max, min);
   }
 }

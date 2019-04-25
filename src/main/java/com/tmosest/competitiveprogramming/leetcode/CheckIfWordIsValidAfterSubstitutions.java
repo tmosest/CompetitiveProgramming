@@ -10,10 +10,7 @@ class CheckIfWordIsValidAfterSubstitutions {
   boolean isValid(String str) {
     while (str.contains("abc")) {
       str = str.replace("abc", "");
-      if ("".equals(str)) {
-        return true;
-      }
     }
-    return false;
+    return "".equals(str);
   }
 }

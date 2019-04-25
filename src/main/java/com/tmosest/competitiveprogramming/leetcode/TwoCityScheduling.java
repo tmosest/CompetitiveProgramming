@@ -1,8 +1,8 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
-class TwoCityScheduling {
+import java.util.Arrays;
 
-  private int bestCost = 0;
+class TwoCityScheduling {
 
   /**
    * Determine the min cost to get N people to each city.
@@ -10,19 +10,11 @@ class TwoCityScheduling {
    * @return The min cost.
    */
   int twoCitySchedCost(int[][] costs) {
-    bestCost = Integer.MAX_VALUE;
-    determineBest(costs, 0, 0, 0, 0);
-    return bestCost;
-  }
-
-  private void determineBest(int[][] costs, int index, int countA, int countB, int cost) {
-    if (index == costs.length) {
-      if (countA == countB) {
-        bestCost = Math.min(bestCost, cost);
-      }
-      return;
+    Arrays.sort(costs, (one, two) -> ((one[0] - one[1]) - (two[0] - two[1])));
+    int res = 0;
+    for (int i = 0 ; i < costs.length / 2; i++) {
+      res += (costs[i][0] + costs[costs.length - 1 - i][1]);
     }
-    determineBest(costs, index + 1, countA + 1, countB, cost + costs[index][0]);
-    determineBest(costs, index + 1, countA, countB + 1, cost + costs[index][1]);
+    return res;
   }
 }

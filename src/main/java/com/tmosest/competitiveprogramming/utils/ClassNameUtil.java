@@ -12,7 +12,12 @@ class ClassNameUtil {
 
   String convertToClassName(String problemName) {
     String[] names = problemName.split(" ");
+    RomanNumeralUtil romanNumeralUtil = RomanNumeralUtil.instance();
     for (int i = 0; i < names.length; i++) {
+      if (romanNumeralUtil.isRoman(names[i])) {
+        names[i] = String.valueOf(romanNumeralUtil.fromRoman(names[i]));
+        continue;
+      }
       names[i] = names[i].substring(0, 1).toUpperCase() + names[i].substring(1);
     }
     return String.join("", names);

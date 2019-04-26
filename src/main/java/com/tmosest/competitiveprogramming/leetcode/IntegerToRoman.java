@@ -47,7 +47,7 @@ public class IntegerToRoman {
     }
     if (num >= 9) {
       result.append("IX");
-      num -= 10;
+      num -= 9;
     }
     while (num >= 5) {
       result.append('V');

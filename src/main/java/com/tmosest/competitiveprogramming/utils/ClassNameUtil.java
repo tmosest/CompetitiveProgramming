@@ -29,7 +29,8 @@ class ClassNameUtil {
 
   public static void main(String[] args) {
     ClassNameUtil classNameUtil = ClassNameUtil.instance();
-    System.out.println(classNameUtil.convertToClassName("Rabbits in Forest"));
-    System.out.println(classNameUtil.createTestClassName("Rabbits in Forest"));
+    String name = "Add One Row to Tree";
+    System.out.println(classNameUtil.convertToClassName(name));
+    System.out.println(classNameUtil.createTestClassName(name));
   }
 }

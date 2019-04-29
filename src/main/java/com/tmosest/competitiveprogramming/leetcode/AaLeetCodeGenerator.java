@@ -8,6 +8,10 @@ public class AaLeetCodeGenerator {
 
   private static AaLeetCodeGenerator instance = new AaLeetCodeGenerator();
 
+  /**
+   * Get an instance of the singleton.
+   * @return An instance of AaLeetCodeGenerator.
+   */
   public static AaLeetCodeGenerator instance() {
     return instance;
   }
@@ -16,11 +20,14 @@ public class AaLeetCodeGenerator {
 
   private AaLeetCodeGenerator() {}
 
-  private String[] formatProblemName(String numberName) {
-    return numberName.split("\\.");
-  }
-
-  void createNewProblem(
+  /**
+   * Function to create new code for leet code problems.
+   * @param numberName The title of the question in the format (#. Title).
+   * @param functionDeclaration The function declaration.
+   * @param difficulty The difficulty of the question.
+   * @throws IOException If there is an issues with creating or writing to the function.
+   */
+  public void createNewProblem(
       String numberName,
       String functionDeclaration,
       String difficulty
@@ -39,6 +46,10 @@ public class AaLeetCodeGenerator {
         "LeetCode: " + numberName
     };
     javaFileBuilder.createTest(AaLeetCodeGenerator.class, fileName, tags, vals);
+  }
+
+  private String[] formatProblemName(String numberName) {
+    return numberName.split("\\.");
   }
 
   /**

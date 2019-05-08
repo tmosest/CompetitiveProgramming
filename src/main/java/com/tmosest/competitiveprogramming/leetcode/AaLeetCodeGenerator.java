@@ -1,5 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
+import com.tmosest.competitiveprogramming.utils.ClassNameUtil;
 import com.tmosest.competitiveprogramming.utils.JavaFileBuilder;
 
 import java.io.IOException;
@@ -32,8 +33,8 @@ public class AaLeetCodeGenerator {
       String functionDeclaration,
       String difficulty
   ) throws IOException {
-    String[] names = instance().formatProblemName(numberName);
-    String fileName = names[1].trim().replace(" ", "");
+    String[] names = instance().formatIntoNumberAndName(numberName);
+    String fileName = ClassNameUtil.instance().convertToClassName(names[1].trim());
     javaFileBuilder.create(AaLeetCodeGenerator.class, fileName, functionDeclaration);
     String[] tags = {
         "Tag",
@@ -48,7 +49,8 @@ public class AaLeetCodeGenerator {
     javaFileBuilder.createTest(AaLeetCodeGenerator.class, fileName, tags, vals);
   }
 
-  private String[] formatProblemName(String numberName) {
+  // Breaks down "111. Sample Problem Name" into ["111", "Sample Problem Name"]
+  private String[] formatIntoNumberAndName(String numberName) {
     return numberName.split("\\.");
   }
 

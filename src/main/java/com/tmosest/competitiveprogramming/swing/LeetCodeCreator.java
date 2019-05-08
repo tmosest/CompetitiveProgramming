@@ -8,8 +8,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 
 public class LeetCodeCreator {
 
@@ -51,19 +49,16 @@ public class LeetCodeCreator {
 
     JButton button = new JButton("create");
     button.setBounds(offset, 300, width, height);
-    button.addChangeListener(new ChangeListener() {
-      @Override
-      public void stateChanged(ChangeEvent event) {
-        try {
-          AaLeetCodeGenerator.instance().createNewProblem(
-              title.getText(),
-              function.getText(),
-              difficulty.getText()
-          );
-          button.setText(title.getText() + " Created");
-        } catch (IOException exception) {
-          button.setText("Error: " + exception.getMessage());
-        }
+    button.addChangeListener(event -> {
+      try {
+        AaLeetCodeGenerator.instance().createNewProblem(
+            title.getText(),
+            function.getText(),
+            difficulty.getText()
+        );
+        button.setText(title.getText() + " Created");
+      } catch (IOException exception) {
+        button.setText("Error: " + exception.getMessage());
       }
     });
     frame.add(button);

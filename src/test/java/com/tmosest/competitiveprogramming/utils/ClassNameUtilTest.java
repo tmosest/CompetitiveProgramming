@@ -28,4 +28,10 @@ class ClassNameUtilTest {
   void should_be_able_to_covert_ii_to_two() {
     Assertions.assertEquals("RemoveDuplicatesFromSortedArray2", classNameUtil.convertToClassName("Remove Duplicates from Sorted Array II"));
   }
+
+  @Test
+  @DisplayName("Only first letter should be capitalized")
+  void should_only_capitalize_first_letter() {
+    Assertions.assertEquals("RangeSumOfBst", classNameUtil.convertToClassName("Range Sum of BST"));
+  }
 }

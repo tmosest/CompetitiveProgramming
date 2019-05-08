@@ -10,6 +10,10 @@ class ClassNameUtil {
 
   private ClassNameUtil() {}
 
+  private String convertToProperName(String name) {
+    return name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
+  }
+
   String convertToClassName(String problemName) {
     String[] names = problemName.split(" ");
     RomanNumeralUtil romanNumeralUtil = RomanNumeralUtil.instance();
@@ -18,7 +22,7 @@ class ClassNameUtil {
         names[i] = String.valueOf(romanNumeralUtil.fromRoman(names[i]));
         continue;
       }
-      names[i] = names[i].substring(0, 1).toUpperCase() + names[i].substring(1);
+      names[i] = convertToProperName(names[i]);
     }
     return String.join("", names);
   }

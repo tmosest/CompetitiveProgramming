@@ -90,7 +90,9 @@ public class LeetCodeOrganizer {
     String fileDestination = destinationPathWithName(testFileName);
     String testFileSource = absoluteTestFilePath(testFileName);
     String testFileDestination = destinationTestPathWithName(testFileName);
-    return fileUtil.moveFile(fileSource, fileDestination) && fileUtil.moveFile(testFileSource, testFileDestination);
+    boolean movedFile = fileUtil.moveFile(fileSource, fileDestination);
+    boolean movedTestFile = fileUtil.moveFile(testFileSource, testFileDestination);
+    return movedFile && movedTestFile;
   }
 
   private void organizeProblemFiles() {

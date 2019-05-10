@@ -5,7 +5,11 @@ public class TreeNode {
   public TreeNode left;
   public TreeNode right;
 
-  TreeNode(int val) {
+  /**
+   * Create a new tree node with a given value.
+   * @param val The value to set the node to.
+   */
+  public TreeNode(int val) {
     this.val = val;
   }
 }

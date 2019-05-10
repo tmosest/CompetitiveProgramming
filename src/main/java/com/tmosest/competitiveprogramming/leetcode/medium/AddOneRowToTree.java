@@ -1,4 +1,6 @@
-package com.tmosest.competitiveprogramming.leetcode;
+package com.tmosest.competitiveprogramming.leetcode.medium;
+
+import com.tmosest.competitiveprogramming.leetcode.TreeNode;
 
 class AddOneRowToTree {
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class AddToArrayFormOfInteger {
+class AddToArrayFormOfInteger {
 
   /**
    * Add an integer to an an array representation of a number.
@@ -12,10 +12,10 @@ public class AddToArrayFormOfInteger {
    * @param toAdd The integer to add.
    * @return A list representation of the result.
    */
-  public List<Integer> addToArrayForm(int[] arrayNum, int toAdd) {
+  List<Integer> addToArrayForm(int[] arrayNum, int toAdd) {
     int size = arrayNum.length;
     int cur = toAdd;
-    List<Integer> ans = new ArrayList(size);
+    List<Integer> ans = new ArrayList<>(size);
 
     int index = size;
     while (--index >= 0 || cur > 0) {

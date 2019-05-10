@@ -1,6 +1,6 @@
-package com.tmosest.competitiveprogramming.leetcode;
+package com.tmosest.competitiveprogramming.leetcode.easy;
 
-public class AddStrings {
+class AddStrings {
 
   /**
    * Function to sum two numbers strings that are numbers.
@@ -8,7 +8,7 @@ public class AddStrings {
    * @param num2 The second number string.
    * @return The sum of the two numbers as strings.
    */
-  public String addStrings(String num1, String num2) {
+  String addStrings(String num1, String num2) {
     if (num1 == null && num2 == null) {
       return null;
     }

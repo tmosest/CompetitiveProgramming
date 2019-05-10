@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class FileUtil {
@@ -14,6 +15,16 @@ public class FileUtil {
 
   public static FileUtil instance() {
     return instance;
+  }
+
+  public List<String> fileNamesInDirectory(String directory) {
+    File folder = new File(directory);
+    File[] listOfFiles = folder.listFiles();
+    List<String> fileNames = new ArrayList<>();
+    for (File file : listOfFiles) {
+      fileNames.add(file.getName());
+    }
+    return fileNames;
   }
 
   private String getCurrentDir() {
@@ -28,11 +39,11 @@ public class FileUtil {
     return getPackage(className).replace(".", "/").replace(className.getSimpleName(), "");
   }
 
-  private String getAbsolutePath(Class className) {
+  public String getAbsolutePath(Class className) {
     return getCurrentDir() + "/src/main/java/" + getPathToThis(className);
   }
 
-  private String getAbsoluteTestPath(Class className) {
+  public String getAbsoluteTestPath(Class className) {
     return getCurrentDir() + "/src/test/java/" + getPathToThis(className);
   }
 
@@ -69,5 +80,10 @@ public class FileUtil {
 
   void writeTest(Class location, String fileName, List<String> lines) throws IOException {
     write(location, fileName, lines, true);
+  }
+
+  public boolean moveFile(String oldPath, String newPath) {
+    File file = new File(oldPath);
+   return new File(oldPath).renameTo(new File(newPath)) && file.delete();
   }
 }

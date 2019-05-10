@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.leetcode;
+package com.tmosest.competitiveprogramming.leetcode.easy;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -9,9 +9,9 @@ import org.junit.jupiter.api.Test;
 @Tag("easy")
 @Tag("string")
 @DisplayName("LeetCode: 415. Add Strings")
-public class AddStringsTest {
+class AddStringsTest {
 
-  AddStrings addStrings = new AddStrings();
+  private AddStrings addStrings = new AddStrings();
 
   @Test
   @DisplayName("Test Case 0")

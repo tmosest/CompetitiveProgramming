@@ -98,7 +98,7 @@ public class LeetCodeOrganizer {
     for (String testFileName : instance.getTestFiles()) {
       System.out.println("File: " + testFileName);
       try {
-
+        moveFile(testFileName);
       } catch (Exception exception) {
         System.out.println("Error with " + exception.getMessage());
       }

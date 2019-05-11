@@ -50,12 +50,11 @@ public class JavaFile {
           imports.add(line.replace("import", "").replace(";", "").trim());
         }
         if (line.trim().contains("class")) {
-          imports.add(
-              line
-                  .replace("class", "")
-                  .replace("{", "")
-                  .replace("public", "")
-                  .trim());
+          className = line
+              .replace("class", "")
+              .replace("{", "")
+              .replace("public", "")
+              .trim();
         }
       } else {
         content += line + "\n";
@@ -132,11 +131,6 @@ public class JavaFile {
   }
 
   public boolean moveFile(String destination, boolean isTest) throws IOException {
-    if (isTest) {
-      toFile(destination);
-    } else {
-      toTestFile(destination);
-    }
     String oldOrigin = origin;
     origin = destination;
     if (isTest) {

@@ -55,8 +55,7 @@ public class JavaFile {
                   .replace("class", "")
                   .replace("{", "")
                   .replace("public", "")
-                  .trim()
-          );
+                  .trim());
         }
       } else {
         content += line + "\n";
@@ -112,6 +111,9 @@ public class JavaFile {
     addImports(classCode);
     addAnnotations(classCode);
     addClass(classCode);
+    if (!origin.equals("")) {
+      fileUtil.createFile(origin, fileName);
+    }
     if (isTest) {
       fileUtil.createNewTestFile(source, fileName);
       fileUtil.writeTest(source, fileName, classCode);
@@ -135,9 +137,14 @@ public class JavaFile {
     } else {
       toTestFile(destination);
     }
-    boolean delete = fileUtil.deleteFile(origin);
+    String oldOrigin = origin;
     origin = destination;
-    return delete;
+    if (isTest) {
+      toTestFile(className);
+    } else {
+      toFile(className);
+    }
+    return fileUtil.deleteFile(oldOrigin);
   }
 
   public String getPackge() {

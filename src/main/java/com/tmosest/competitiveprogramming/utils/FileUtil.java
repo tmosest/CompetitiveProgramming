@@ -59,6 +59,10 @@ public class FileUtil {
     return file.createNewFile();
   }
 
+  public boolean createFile(String path, String fileName) throws IOException {
+    return new File(path, fileName).createNewFile();
+  }
+
   private void write(
       Class location,
       String fileName,
@@ -66,6 +70,14 @@ public class FileUtil {
       boolean isTest
   ) throws IOException {
     String path = (isTest) ? getAbsoluteTestPath(location) : getAbsolutePath(location);
+    write(path, fileName, lines);
+  }
+
+  public void write(
+      String path,
+      String fileName,
+      List<String> lines
+  ) throws IOException {
     FileWriter fileWriter = new FileWriter(path + fileName + ".java");
     PrintWriter printWriter = new PrintWriter(fileWriter);
     for (String line : lines) {
@@ -82,10 +94,12 @@ public class FileUtil {
     write(location, fileName, lines, true);
   }
 
+  /*
   public boolean moveFile(String oldPath, String newPath) {
     File file = new File(oldPath);
    return new File(oldPath).renameTo(new File(newPath)) && file.delete();
   }
+  */
 
   public boolean deleteFile(String pathToFile) {
     File file = new File(pathToFile);

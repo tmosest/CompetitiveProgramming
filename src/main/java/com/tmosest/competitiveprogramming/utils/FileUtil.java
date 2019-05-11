@@ -35,7 +35,7 @@ public class FileUtil {
     return className.getName();
   }
 
-  private String getPathToThis(Class className) {
+  public String getPathToThis(Class className) {
     return getPackage(className).replace(".", "/").replace(className.getSimpleName(), "");
   }
 
@@ -85,5 +85,10 @@ public class FileUtil {
   public boolean moveFile(String oldPath, String newPath) {
     File file = new File(oldPath);
    return new File(oldPath).renameTo(new File(newPath)) && file.delete();
+  }
+
+  public boolean deleteFile(String pathToFile) {
+    File file = new File(pathToFile);
+    return file.exists() && file.delete();
   }
 }

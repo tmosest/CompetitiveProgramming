@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.leetcode;
+package com.tmosest.competitiveprogramming.leetcode.common;
 
 public class Interval {
   int start;

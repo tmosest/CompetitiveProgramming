@@ -1,6 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
 import com.tmosest.competitiveprogramming.utils.FileUtil;
+import com.tmosest.competitiveprogramming.utils.JavaFile;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -21,10 +22,6 @@ public class LeetCodeOrganizer {
 
   private String getLeetCodeTestPath() {
     return fileUtil.getAbsoluteTestPath(LeetCodeOrganizer.class);
-  }
-
-  private List<String> getFiles() {
-    return fileUtil.fileNamesInDirectory(getLeetCodePath());
   }
 
   private List<String> getTestFiles() {
@@ -85,13 +82,28 @@ public class LeetCodeOrganizer {
     return destinationPath(getDifficulty(testFileName)) + removeTestSuffix(testFileName);
   }
 
+  private JavaFile getJavaFile(String path) throws IOException {
+    return new JavaFile(path);
+  }
+
+  private JavaFile updateToCorrectPackage(JavaFile javaFile, String destination) {
+    String[] split = destination.split(".");
+    String updatedPackage = javaFile.getPackge() + '.' + split[split.length - 1];
+    javaFile.setPackge(updatedPackage);
+    return javaFile;
+  }
+
   private boolean moveFile(String testFileName) throws  IOException {
     String fileSource = absoluteFilePath(testFileName);
     String fileDestination = destinationPathWithName(testFileName);
+    JavaFile javaFile = updateToCorrectPackage(getJavaFile(fileSource), fileDestination);
+
     String testFileSource = absoluteTestFilePath(testFileName);
     String testFileDestination = destinationTestPathWithName(testFileName);
-    boolean movedFile = fileUtil.moveFile(fileSource, fileDestination);
-    boolean movedTestFile = fileUtil.moveFile(testFileSource, testFileDestination);
+    JavaFile javaTestFile = updateToCorrectPackage(getJavaFile(testFileSource), testFileDestination);
+
+    boolean movedFile = javaFile.moveFile(fileDestination, false);
+    boolean movedTestFile = javaTestFile.moveFile(testFileDestination, true);
     return movedFile && movedTestFile;
   }
 

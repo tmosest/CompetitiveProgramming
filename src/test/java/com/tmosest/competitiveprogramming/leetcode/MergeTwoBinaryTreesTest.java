@@ -1,5 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
+import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;

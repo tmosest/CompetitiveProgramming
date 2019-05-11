@@ -1,16 +1,20 @@
 package com.tmosest.competitiveprogramming.utils;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-class JavaFile {
+public class JavaFile {
 
   private class Annotation {
     private String name;
     private String val;
   }
 
+  private String origin = "";
   private Class source = JavaFile.class;
   private String packge = "";
   private String className = "";
@@ -30,6 +34,28 @@ class JavaFile {
     packge = source.getPackage().toString();
     content = "\t" + functionDeclaration + " {\t\n\t}";
     this.className = className;
+  }
+
+  public JavaFile(String absoluteFilePath) throws IOException {
+    origin = absoluteFilePath;
+    File file = new File(absoluteFilePath);
+    BufferedReader reader = new BufferedReader(new FileReader(file));
+    String line;
+    while ((line = reader.readLine()) != null) {
+      if (className.equals("")) {
+        if (line.startsWith("package")) {
+          packge = line.replaceFirst("package", "").replace(";", "").trim();
+        }
+        if (line.trim().startsWith("import") && className.equals("")) {
+          imports.add(line.replace("import", "").replace(";", "").trim());
+        }
+        if (line.trim().startsWith("class")) {
+          imports.add(line.replace("class", "").replace("{", "").trim());
+        }
+      } else {
+        content += line + "\n";
+      }
+    }
   }
 
   private void addPackage(List<String> classCode) {
@@ -89,11 +115,30 @@ class JavaFile {
     }
   }
 
-  void toFile(String fileName) throws IOException {
+  public void toFile(String fileName) throws IOException {
     toFile(fileName, false);
   }
 
-  void toTestFile(String fileName) throws IOException {
+  public void toTestFile(String fileName) throws IOException {
     toFile(fileName, true);
+  }
+
+  public boolean moveFile(String destination, boolean isTest) throws IOException {
+    if (isTest) {
+      toFile(destination);
+    } else {
+      toTestFile(destination);
+    }
+    boolean delete = fileUtil.deleteFile(origin);
+    origin = destination;
+    return delete;
+  }
+
+  public String getPackge() {
+    return packge;
+  }
+
+  public void setPackge(String packge) {
+    this.packge = packge;
   }
 }

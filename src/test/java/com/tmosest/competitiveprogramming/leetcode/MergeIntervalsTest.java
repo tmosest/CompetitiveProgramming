@@ -1,5 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
+import com.tmosest.competitiveprogramming.leetcode.common.Interval;
 import java.util.LinkedList;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;

@@ -1,7 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
-import com.tmosest.competitiveprogramming.leetcode.TreeNode;
-import com.tmosest.competitiveprogramming.leetcode.medium.AddOneRowToTree;
+import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;

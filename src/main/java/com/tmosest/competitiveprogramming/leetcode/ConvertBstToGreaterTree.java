@@ -1,5 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
+import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
+
 public class ConvertBstToGreaterTree {
 
   private int sum = 0;

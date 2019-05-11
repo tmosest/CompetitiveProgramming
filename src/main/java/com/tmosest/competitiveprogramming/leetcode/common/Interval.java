@@ -1,8 +1,8 @@
 package com.tmosest.competitiveprogramming.leetcode.common;
 
 public class Interval {
-  int start;
-  int end;
+  public int start;
+  public int end;
 
   public Interval() {
     start = 0;

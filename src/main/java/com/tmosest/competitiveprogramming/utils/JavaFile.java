@@ -49,8 +49,14 @@ public class JavaFile {
         if (line.trim().startsWith("import") && className.equals("")) {
           imports.add(line.replace("import", "").replace(";", "").trim());
         }
-        if (line.trim().startsWith("class")) {
-          imports.add(line.replace("class", "").replace("{", "").trim());
+        if (line.trim().contains("class")) {
+          imports.add(
+              line
+                  .replace("class", "")
+                  .replace("{", "")
+                  .replace("public", "")
+                  .trim()
+          );
         }
       } else {
         content += line + "\n";

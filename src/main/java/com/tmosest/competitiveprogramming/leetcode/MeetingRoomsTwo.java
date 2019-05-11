@@ -5,14 +5,14 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class MeetingRoomsTwo {
+class MeetingRoomsTwo {
 
   /**
    * Determine the minimum number of meeting rooms required.
    * @param intervals An array of intervals.
    * @return The minimum number of rooms needed.
    */
-  public int minMeetingRooms(Interval[] intervals) {
+  int minMeetingRooms(Interval[] intervals) {
     int rooms = 0;
 
     if (intervals == null || intervals.length < 1) {
@@ -26,12 +26,7 @@ public class MeetingRoomsTwo {
       }
     });
 
-    Arrays.sort(intervals, new Comparator<Interval>() {
-      @Override
-      public int compare(Interval o1, Interval o2) {
-        return Integer.compare(o1.start, o2.start);
-      }
-    });
+    Arrays.sort(intervals, Comparator.comparingInt(o -> o.start));
 
     priorityQueue.add(intervals[0].end);
 

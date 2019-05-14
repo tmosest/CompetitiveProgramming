@@ -74,12 +74,12 @@ public class LeetCodeOrganizer {
     return getLeetCodePath() + problemDifficulty.name() + "/";
   }
 
-  private String destinationTestPathWithName(String testFileName) throws IOException {
-    return destinationTestPath(getDifficulty(testFileName)) + testFileName;
+  private String destinationTestPath(String testFileName) throws IOException {
+    return destinationTestPath(getDifficulty(testFileName));
   }
 
-  private String destinationPathWithName(String testFileName) throws  IOException {
-    return destinationPath(getDifficulty(testFileName)) + removeTestSuffix(testFileName);
+  private String destinationPath(String testFileName) throws  IOException {
+    return destinationPath(getDifficulty(testFileName));
   }
 
   private JavaFile getJavaFile(String path) throws IOException {
@@ -88,18 +88,18 @@ public class LeetCodeOrganizer {
 
   private JavaFile updateToCorrectPackage(JavaFile javaFile, String destination) {
     String[] split = destination.split("/");
-    String updatedPackage = javaFile.getPackge() + '.' + split[split.length - 2];
+    String updatedPackage = javaFile.getPackge() + '.' + split[split.length - 1];
     javaFile.setPackge(updatedPackage);
     return javaFile;
   }
 
   private boolean moveFile(String testFileName) throws  IOException {
     String fileSource = absoluteFilePath(testFileName);
-    String fileDestination = destinationPathWithName(testFileName);
+    String fileDestination = destinationPath(testFileName);
     JavaFile javaFile = updateToCorrectPackage(getJavaFile(fileSource), fileDestination);
 
     String testFileSource = absoluteTestFilePath(testFileName);
-    String testFileDestination = destinationTestPathWithName(testFileName);
+    String testFileDestination = destinationTestPath(testFileName);
     JavaFile javaTestFile = updateToCorrectPackage(getJavaFile(testFileSource), testFileDestination);
 
     boolean movedFile = javaFile.moveFile(fileDestination, false);

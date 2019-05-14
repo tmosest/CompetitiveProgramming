@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Codec {
+public class Codec {
 
   /**
    * Serializes the binary tree.

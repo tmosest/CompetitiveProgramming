@@ -4,6 +4,9 @@ import com.tmosest.competitiveprogramming.utils.graph.UtilBreathFirstSearch;
 import com.tmosest.competitiveprogramming.utils.graph.UtilGraph;
 import com.tmosest.competitiveprogramming.utils.graph.UtilGraphNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A more universal TreeNode that can be used over and over again.
  * @param <T> Type of TreeNode.
@@ -52,5 +55,17 @@ public class UtilTreeNode<T> {
    */
   public UtilTreeNodeRowIteration<T> iterateLevelByLevel() {
     return new UtilTreeNodeRowIteration<>(this);
+  }
+
+  /**
+   * Returns all of the none-null values in the list.
+   * @return A list of all the values in the tree.
+   */
+  public List<T> listOfValues() {
+    List<T> result = new ArrayList<>();
+    for (UtilTreeNode<T> node : iterateLevelByLevel()) {
+      result.add(node.val);
+    }
+    return result;
   }
 }

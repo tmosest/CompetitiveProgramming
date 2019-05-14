@@ -28,4 +28,26 @@ public class TreeNodeAdapter {
     // Return the root of tree.
     return result;
   }
+
+  /**
+   * Convert to a TreeNode.
+   * @param treeNode The root of the util tree.
+   * @return The root of the tree node.
+   */
+  public static TreeNode convertToTreeNode(UtilTreeNode<Integer> treeNode) {
+    if (treeNode == null) {
+      return null;
+    }
+    TreeNode result = new TreeNode(treeNode.val);
+    // Use recursion to fill in left sub-tree.
+    if (treeNode.left != null) {
+      result.left = convertToTreeNode(treeNode.left);
+    }
+    // Use recursion to fill in the right sub-tree.
+    if (treeNode.right != null) {
+      result.right = convertToTreeNode(treeNode.right);
+    }
+    // Return the root of tree.
+    return result;
+  }
 }

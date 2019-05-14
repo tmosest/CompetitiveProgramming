@@ -35,9 +35,11 @@ class CodecTest {
     root.right.left = new TreeNode(2);
     root.right.right = new TreeNode(3);
 
+    String actualString = codec.serialize(root);
     String expected = "[5,10,10,null,null,2,3]";
+    Assertions.assertEquals(expected, actualString);
+
     TreeNode actual = codec.deserialize(expected);
     helper(root, actual);
-    Assertions.assertEquals(expected, codec.serialize(root));
   }
 }

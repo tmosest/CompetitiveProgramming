@@ -5,7 +5,6 @@ import com.tmosest.competitiveprogramming.leetcode.common.TreeNodeAdapter;
 import com.tmosest.competitiveprogramming.utils.tree.UtilTreeNode;
 
 class EqualTreePartition {
-  /* Write code here. */
 
   /**
    * Determine if a tree can but cut into two trees with equal sums.
@@ -37,6 +36,4 @@ class EqualTreePartition {
       root.val += root.right.val;
     }
   }
-
-
 }

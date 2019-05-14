@@ -14,18 +14,6 @@ class CodecTest {
 
   private Codec codec = new Codec();
 
-  private void helper(TreeNode nodeOne, TreeNode nodeTwo) {
-    if (nodeOne == null && nodeTwo == null) {
-      Assertions.assertTrue(true);
-    } else if (nodeOne == null || nodeTwo == null) {
-      Assertions.assertTrue(false);
-    } else {
-      Assertions.assertEquals(nodeOne.val, nodeTwo.val);
-      helper(nodeOne.left, nodeTwo.left);
-      helper(nodeOne.right, nodeTwo.right);
-    }
-  }
-
   @Test
   @DisplayName("Test Case 0")
   void testCase0() {
@@ -40,6 +28,6 @@ class CodecTest {
     Assertions.assertEquals(expected, actualString);
 
     TreeNode actual = codec.deserialize(expected);
-    helper(root, actual);
+    Assertions.assertTrue(root.equals(actual));
   }
 }

@@ -12,6 +12,7 @@ import java.util.List;
  * @param <T> Type of TreeNode.
  */
 public class UtilTreeNode<T> {
+
   public T val;
   public UtilTreeNode<T> left;
   public UtilTreeNode<T> right;
@@ -67,5 +68,28 @@ public class UtilTreeNode<T> {
       result.add(node.val);
     }
     return result;
+  }
+
+  /**
+   * Determines if this tree is equal to another tree.
+   * @param other The other tree.
+   * @return True if they are equal.
+   */
+  public boolean equals(UtilTreeNode<T> other) {
+    return helperEquals(this, other);
+  }
+
+  private boolean helperEquals(UtilTreeNode<T> nodeOne, UtilTreeNode<T> nodeTwo) {
+    if (nodeOne == null && nodeTwo == null) {
+      return true;
+    }
+    if (nodeOne == null || nodeTwo == null) {
+      return false;
+    }
+    if (!nodeOne.val.equals(nodeTwo.val)) {
+      return false;
+    }
+    return helperEquals(nodeOne.left, nodeTwo.left)
+        && helperEquals(nodeOne.right, nodeTwo.right);
   }
 }

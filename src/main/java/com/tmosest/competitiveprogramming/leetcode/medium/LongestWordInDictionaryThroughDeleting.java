@@ -1,6 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
-import com.tmosest.competitiveprogramming.utils.UtilTrie;
+import com.tmosest.competitiveprogramming.utils.trie.UtilTrie;
 
 import java.util.List;
 

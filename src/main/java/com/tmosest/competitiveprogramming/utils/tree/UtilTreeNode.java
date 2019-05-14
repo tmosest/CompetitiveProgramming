@@ -1,4 +1,8 @@
-package com.tmosest.competitiveprogramming.utils;
+package com.tmosest.competitiveprogramming.utils.tree;
+
+import com.tmosest.competitiveprogramming.utils.graph.UtilBreathFirstSearch;
+import com.tmosest.competitiveprogramming.utils.graph.UtilGraph;
+import com.tmosest.competitiveprogramming.utils.graph.UtilGraphNode;
 
 /**
  * A more universal TreeNode that can be used over and over again.

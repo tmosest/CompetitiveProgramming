@@ -1,10 +1,12 @@
-package com.tmosest.competitiveprogramming.utils;
+package com.tmosest.competitiveprogramming.utils.graph;
+
+import com.tmosest.competitiveprogramming.utils.tree.UtilTreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UtilGraph<T> {
-  // The nodes in the utilGraph.
+  // The nodes in the UtilGraph.
   public List<UtilGraphNode<T>> nodes = new ArrayList<>();
 
   /**

@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.utils;
+package com.tmosest.competitiveprogramming.utils.trie;
 
 import java.util.ArrayList;
 import java.util.Iterator;

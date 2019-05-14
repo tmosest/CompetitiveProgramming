@@ -1,6 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode.common;
 
-import com.tmosest.competitiveprogramming.utils.UtilTreeNode;
+import com.tmosest.competitiveprogramming.utils.tree.UtilTreeNode;
 
 /**
  * Class for converting TreeNode to UtilTreeNode.

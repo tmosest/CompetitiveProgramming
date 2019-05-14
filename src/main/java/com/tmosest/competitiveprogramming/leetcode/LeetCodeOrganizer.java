@@ -1,7 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
-import com.tmosest.competitiveprogramming.utils.FileUtil;
-import com.tmosest.competitiveprogramming.utils.JavaFile;
+import com.tmosest.competitiveprogramming.utils.files.FileUtil;
+import com.tmosest.competitiveprogramming.utils.files.JavaFile;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,6 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
-import com.tmosest.competitiveprogramming.utils.UtilTrie;
+import com.tmosest.competitiveprogramming.utils.trie.UtilTrie;
 
 class WordDictionary {
   /* Write code here. */

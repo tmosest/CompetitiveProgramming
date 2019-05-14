@@ -1,9 +1,9 @@
-package com.tmosest.competitiveprogramming.utils;
+package com.tmosest.competitiveprogramming.utils.number;
 
 import java.util.HashMap;
 import java.util.Map;
 
-class RomanNumeralUtil {
+public class RomanNumeralUtil {
 
   private Map<Character, Integer> romanValues;
 
@@ -16,18 +16,32 @@ class RomanNumeralUtil {
 
   private static RomanNumeralUtil instance = new RomanNumeralUtil();
 
-  static RomanNumeralUtil instance() {
+  /**
+   * Get an instance of the Roman Numeral Utility function.
+   * @return Singleton RomanNumeralUtil.
+   */
+  public static RomanNumeralUtil instance() {
     return instance;
   }
 
-  boolean isRoman(String roman) {
+  /**
+   * Determine if a string is made up of roman number numbers.
+   * @param roman The String (IIV).
+   * @return True if made up of roman characters.
+   */
+  public boolean isRoman(String roman) {
     for (Character letter : romanValues.keySet()) {
       roman = roman.replace("" + letter, "");
     }
     return roman.length() == 0;
   }
 
-  int fromRoman(String roman) {
+  /**
+   * Get an integer from a roman numeral.
+   * @param roman The Roman String.
+   * @return The value. ie. IV -> 4.
+   */
+  public int fromRoman(String roman) {
     int result = 0;
     char[] letters = roman.toCharArray();
     for (int c = 0; c < letters.length; c++) {

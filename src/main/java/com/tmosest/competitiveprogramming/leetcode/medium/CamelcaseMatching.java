@@ -1,6 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
-import com.tmosest.competitiveprogramming.utils.StringUtil;
+import com.tmosest.competitiveprogramming.utils.string.StringUtil;
 
 import java.util.List;
 

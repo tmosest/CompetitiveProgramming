@@ -1,6 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
-import com.tmosest.competitiveprogramming.utils.ComplexNumber;
+import com.tmosest.competitiveprogramming.utils.number.ComplexNumber;
 
 class ComplexNumberMultiplication {
   /* Write code here. */

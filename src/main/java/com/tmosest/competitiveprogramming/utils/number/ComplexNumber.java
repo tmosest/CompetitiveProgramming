@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.utils;
+package com.tmosest.competitiveprogramming.utils.number;
 
 import java.security.InvalidParameterException;
 

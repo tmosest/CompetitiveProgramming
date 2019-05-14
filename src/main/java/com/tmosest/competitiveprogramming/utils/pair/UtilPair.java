@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.utils;
+package com.tmosest.competitiveprogramming.utils.pair;
 
 public class UtilPair<T, K> {
   public T first;

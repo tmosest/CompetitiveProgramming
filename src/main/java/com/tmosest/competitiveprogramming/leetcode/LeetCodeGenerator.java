@@ -1,7 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
-import com.tmosest.competitiveprogramming.utils.ClassNameUtil;
-import com.tmosest.competitiveprogramming.utils.JavaFileBuilder;
+import com.tmosest.competitiveprogramming.utils.files.JavaFileBuilder;
+import com.tmosest.competitiveprogramming.utils.string.ClassNameUtil;
 
 import java.io.IOException;
 

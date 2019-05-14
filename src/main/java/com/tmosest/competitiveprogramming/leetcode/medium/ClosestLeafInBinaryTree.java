@@ -2,7 +2,7 @@ package com.tmosest.competitiveprogramming.leetcode.medium;
 
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNodeAdapter;
-import com.tmosest.competitiveprogramming.utils.UtilTreeNode;
+import com.tmosest.competitiveprogramming.utils.tree.UtilTreeNode;
 
 class ClosestLeafInBinaryTree {
   /* Write code here. */

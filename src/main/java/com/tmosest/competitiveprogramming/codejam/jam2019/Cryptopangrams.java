@@ -1,6 +1,6 @@
 package com.tmosest.competitiveprogramming.codejam.jam2019;
 
-import com.tmosest.competitiveprogramming.utils.PrimeUtil;
+import com.tmosest.competitiveprogramming.utils.number.PrimeUtil;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

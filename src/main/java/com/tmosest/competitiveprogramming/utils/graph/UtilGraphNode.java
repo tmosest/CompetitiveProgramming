@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.utils;
+package com.tmosest.competitiveprogramming.utils.graph;
 
 import java.util.ArrayList;
 import java.util.List;

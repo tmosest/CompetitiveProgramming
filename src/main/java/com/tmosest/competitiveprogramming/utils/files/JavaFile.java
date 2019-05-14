@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.utils;
+package com.tmosest.competitiveprogramming.utils.files;
 
 import java.io.BufferedReader;
 import java.io.File;

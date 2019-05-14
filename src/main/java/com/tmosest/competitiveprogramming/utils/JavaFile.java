@@ -13,6 +13,11 @@ public class JavaFile {
     private String name;
     private String val;
 
+    private Annotation(String name, String val) {
+      this.name = name;
+      this.val = val;
+    }
+
     private Annotation(String annotation) {
       int openBracketIndex = annotation.indexOf('(');
       name = annotation.substring(1, openBracketIndex);
@@ -104,14 +109,12 @@ public class JavaFile {
     classCode.add(content);
   }
 
-  public void addNewImport(String imprt) {
+  void addNewImport(String imprt) {
     imports.add(imprt);
   }
 
-  public void addNewAnnotation(String name, String val) {
-    Annotation annotation = new Annotation();
-    annotation.name = name;
-    annotation.val = val;
+  void addNewAnnotation(String name, String val) {
+    Annotation annotation = new Annotation(name, val);
     annotations.add(annotation);
   }
 
@@ -135,11 +138,11 @@ public class JavaFile {
     }
   }
 
-  public void toFile(String fileName) throws IOException {
+  void toFile(String fileName) throws IOException {
     toFile(fileName, false);
   }
 
-  public void toTestFile(String fileName) throws IOException {
+  void toTestFile(String fileName) throws IOException {
     toFile(fileName, true);
   }
 

@@ -12,7 +12,7 @@ public class TreeNodeAdapter {
    * @param treeNode The LeetCode UtilTrieNode.
    * @return A UtilityTreeNode.
    */
-  static UtilTreeNode<Integer> convertToUtility(TreeNode treeNode) {
+  public static UtilTreeNode<Integer> convertToUtility(TreeNode treeNode) {
     if (treeNode == null) {
       return null;
     }

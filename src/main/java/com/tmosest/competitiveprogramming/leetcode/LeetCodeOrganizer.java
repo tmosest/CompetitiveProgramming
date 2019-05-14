@@ -102,8 +102,8 @@ public class LeetCodeOrganizer {
     String testFileDestination = destinationTestPath(testFileName);
     JavaFile javaTestFile = updateToCorrectPackage(getJavaFile(testFileSource), testFileDestination);
 
-    boolean movedFile = javaFile.moveFile(fileDestination, false);
-    boolean movedTestFile = javaTestFile.moveFile(testFileDestination, true);
+    boolean movedFile = javaFile.moveFile(fileDestination);
+    boolean movedTestFile = javaTestFile.moveFile(testFileDestination);
     return movedFile && movedTestFile;
   }
 

@@ -104,15 +104,17 @@ public class JavaFile {
     annotations.add(annotation);
   }
 
-  private void toFile(String fileName, boolean isTest) throws IOException {
+  private List<String> generateClassCode() {
     List<String> classCode = new ArrayList<>();
     addPackage(classCode);
     addImports(classCode);
     addAnnotations(classCode);
     addClass(classCode);
-    if (!origin.equals("")) {
-      fileUtil.createFile(origin, fileName);
-    }
+    return classCode;
+  }
+
+  private void toFile(String fileName, boolean isTest) throws IOException {
+    List<String> classCode = generateClassCode();
     if (isTest) {
       fileUtil.createNewTestFile(source, fileName);
       fileUtil.writeTest(source, fileName, classCode);
@@ -130,14 +132,13 @@ public class JavaFile {
     toFile(fileName, true);
   }
 
-  public boolean moveFile(String destination, boolean isTest) throws IOException {
+  public boolean moveFile(String destination) throws IOException {
     String oldOrigin = origin;
+    List<String> classCode = generateClassCode();
+    String fileName = className + ".java";
+    fileUtil.createFile(destination, fileName);
+    fileUtil.write(destination, fileName, classCode);
     origin = destination;
-    if (isTest) {
-      toTestFile(className);
-    } else {
-      toFile(className);
-    }
     return fileUtil.deleteFile(oldOrigin);
   }
 

@@ -78,7 +78,7 @@ public class FileUtil {
       String fileName,
       List<String> lines
   ) throws IOException {
-    FileWriter fileWriter = new FileWriter(path + fileName + ".java");
+    FileWriter fileWriter = new FileWriter(path + fileName);
     PrintWriter printWriter = new PrintWriter(fileWriter);
     for (String line : lines) {
       printWriter.println(line);

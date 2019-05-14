@@ -1,5 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
+import com.tmosest.competitiveprogramming.leetcode.common.Node;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;

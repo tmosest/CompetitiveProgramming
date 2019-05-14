@@ -76,6 +76,8 @@ public class JavaFile {
         content += line + "\n";
       }
     }
+    int lastBracket = content.lastIndexOf('{');
+    content = content.substring(0, lastBracket) + "\n";
   }
 
   private void addPackage(List<String> classCode) {

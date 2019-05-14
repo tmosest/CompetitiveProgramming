@@ -1,6 +1,6 @@
 package com.tmosest.competitiveprogramming.swing;
 
-import com.tmosest.competitiveprogramming.leetcode.AaLeetCodeGenerator;
+import com.tmosest.competitiveprogramming.leetcode.LeetCodeGenerator;
 
 import java.io.IOException;
 import javax.swing.JButton;
@@ -51,7 +51,7 @@ public class LeetCodeCreator {
     button.setBounds(offset, 300, width, height);
     button.addChangeListener(event -> {
       try {
-        AaLeetCodeGenerator.instance().createNewProblem(
+        LeetCodeGenerator.instance().createNewProblem(
             title.getText(),
             function.getText(),
             difficulty.getText()

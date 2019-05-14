@@ -1,4 +1,6 @@
-package com.tmosest.competitiveprogramming.leetcode;
+package com.tmosest.competitiveprogramming.leetcode.easy;
+
+import com.tmosest.competitiveprogramming.leetcode.common.NumArray;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

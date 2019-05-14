@@ -5,22 +5,21 @@ import com.tmosest.competitiveprogramming.utils.JavaFileBuilder;
 
 import java.io.IOException;
 
-public class AaLeetCodeGenerator {
+public class LeetCodeGenerator {
 
-  private static AaLeetCodeGenerator instance = new AaLeetCodeGenerator();
+  private static LeetCodeGenerator instance = new LeetCodeGenerator();
 
   /**
    * Get an instance of the singleton.
-   * @return An instance of AaLeetCodeGenerator.
+   * @return An instance of LeetCodeGenerator.
    */
-  public static AaLeetCodeGenerator instance() {
+  public static LeetCodeGenerator instance() {
     return instance;
   }
 
   private JavaFileBuilder javaFileBuilder = JavaFileBuilder.instance();
 
-  private AaLeetCodeGenerator() {
-
+  private LeetCodeGenerator() {
   }
 
   /**
@@ -37,7 +36,7 @@ public class AaLeetCodeGenerator {
   ) throws IOException {
     String[] names = instance().formatIntoNumberAndName(numberName);
     String fileName = ClassNameUtil.instance().convertToClassName(names[1].trim());
-    javaFileBuilder.create(AaLeetCodeGenerator.class, fileName, functionDeclaration);
+    javaFileBuilder.create(LeetCodeGenerator.class, fileName, functionDeclaration);
     String[] tags = {
         "Tag",
         "Tag",
@@ -48,7 +47,7 @@ public class AaLeetCodeGenerator {
         difficulty,
         "LeetCode: " + numberName
     };
-    javaFileBuilder.createTest(AaLeetCodeGenerator.class, fileName, tags, vals);
+    javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals);
   }
 
   // Breaks down "111. Sample Problem Name" into ["111", "Sample Problem Name"]

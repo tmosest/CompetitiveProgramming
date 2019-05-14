@@ -26,22 +26,14 @@ class EqualTreePartitionTest {
   @Test
   @DisplayName("Test Case 1")
   void testCase1() {
-    TreeNode root = new TreeNode(1);
-    root.left = new TreeNode(2);
-    root.right = new TreeNode(10);
-    root.right.left = new TreeNode(2);
-    root.right.right = new TreeNode(20);
-
+    TreeNode root = codec.deserialize("[1,2,10,null,null,2,20]");
     Assertions.assertFalse(equalTreePartition.checkEqualTree(root));
   }
 
   @Test
   @DisplayName("Test Case 2")
   void testCase2() {
-    TreeNode root = new TreeNode(0);
-    root.left = new TreeNode(1);
-    root.right = new TreeNode(-1);
-
+    TreeNode root = codec.deserialize("[0,-1,1]");
     Assertions.assertFalse(equalTreePartition.checkEqualTree(root));
   }
 }

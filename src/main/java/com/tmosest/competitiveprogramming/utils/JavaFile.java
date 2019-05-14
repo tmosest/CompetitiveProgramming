@@ -76,7 +76,7 @@ public class JavaFile {
         content += line + "\n";
       }
     }
-    int lastBracket = content.lastIndexOf('{');
+    int lastBracket = content.lastIndexOf('}');
     content = content.substring(0, lastBracket) + "\n";
   }
 

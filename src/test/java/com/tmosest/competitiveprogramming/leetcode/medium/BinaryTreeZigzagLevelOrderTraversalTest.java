@@ -1,6 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
@@ -13,18 +14,13 @@ import org.junit.jupiter.api.Test;
 @Tag("binaryTree")
 @DisplayName("LeetCode: 103. Binary Tree Zigzag Level Order Traversal")
 class BinaryTreeZigzagLevelOrderTraversalTest {
-	/* Write code here. */
 
-  BinaryTreeZigzagLevelOrderTraversal binaryTreeZigzagLevelOrderTraversal = new BinaryTreeZigzagLevelOrderTraversal();
+  private BinaryTreeZigzagLevelOrderTraversal binaryTreeZigzagLevelOrderTraversal = new BinaryTreeZigzagLevelOrderTraversal();
 
   @Test
   @DisplayName("Test Case 0")
   void testCase0() {
-    TreeNode root = new TreeNode(3);
-    root.left = new TreeNode(9);
-    root.right = new TreeNode(20);
-    root.right.right = new TreeNode(7);
-    root.right.left = new TreeNode(15);
+    TreeNode root = new Codec().deserialize("[3,9,20,null,null,15,7]");
 
     List<List<Integer>> expected = new ArrayList<>();
     List<Integer> row = new ArrayList<>();

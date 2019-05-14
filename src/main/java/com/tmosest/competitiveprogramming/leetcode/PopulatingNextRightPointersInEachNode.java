@@ -32,7 +32,8 @@ public class PopulatingNextRightPointersInEachNode {
     public Node right;
     public Node next;
 
-    public Node() {}
+    public Node() {
+    }
 
     /**
      * Create a new node.

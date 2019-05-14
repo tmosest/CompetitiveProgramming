@@ -41,8 +41,8 @@ public class ThreeSum {
           List<Integer> result = Arrays.asList(-target, nums[left], nums[right]);
           results.add(result);
 
-          left ++;
-          right --;
+          left++;
+          right--;
 
           // check if two elements in a row are the same.
           while (left < right && nums[left] == nums[left - 1]) {

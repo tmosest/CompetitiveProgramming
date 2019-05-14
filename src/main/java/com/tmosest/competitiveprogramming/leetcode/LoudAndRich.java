@@ -3,19 +3,19 @@ package com.tmosest.competitiveprogramming.leetcode;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class LoudAndRich {
+class LoudAndRich {
 
   private ArrayList<Integer>[] graph;
   private int[] answer;
   private int[] quiet;
 
   /**
-   * Determine the rich silent people?
+   * Determine the rich silent people.
    * @param richer A set of relationships where x is richer that y.
    * @param quiet An array of quiet values.
    * @return An array of quiet rich people?
    */
-  public int[] loudAndRich(int[][] richer, int[] quiet) {
+  int[] loudAndRich(int[][] richer, int[] quiet) {
     int people = quiet.length;
     graph = new ArrayList[people];
     answer = new int[people];

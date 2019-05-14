@@ -21,7 +21,7 @@ public class KdiffPairsInAnArray {
     for (int i = 0; i < nums.length; i++) {
       if (size == 0) {
         if (set.contains(nums[i]) && !dupSet.contains(nums[i])) {
-          count ++;
+          count++;
           dupSet.add(nums[i]);
         }
       }

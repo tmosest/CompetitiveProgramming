@@ -19,7 +19,9 @@ public class AaLeetCodeGenerator {
 
   private JavaFileBuilder javaFileBuilder = JavaFileBuilder.instance();
 
-  private AaLeetCodeGenerator() {}
+  private AaLeetCodeGenerator() {
+
+  }
 
   /**
    * Function to create new code for leet code problems.

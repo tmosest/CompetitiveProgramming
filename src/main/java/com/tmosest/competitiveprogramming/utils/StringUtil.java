@@ -20,7 +20,7 @@ public class StringUtil {
       char curr = query.charAt(i);
       if (pi < pattern.length() && curr == pattern.charAt(pi)) {
         pi++;
-      } else if (Character.isUpperCase(curr) ) {
+      } else if (Character.isUpperCase(curr)) {
         return false;
       }
     }

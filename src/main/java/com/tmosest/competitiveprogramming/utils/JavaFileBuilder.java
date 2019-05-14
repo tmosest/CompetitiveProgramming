@@ -8,7 +8,8 @@ public class JavaFileBuilder {
     return instance;
   }
 
-  private JavaFileBuilder() {}
+  private JavaFileBuilder() {
+  }
 
   /**
    * Create a new Java File.

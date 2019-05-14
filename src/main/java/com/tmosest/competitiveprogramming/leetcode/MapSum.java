@@ -11,7 +11,8 @@ class MapSum {
   private List<String> words = new ArrayList<>();
   private List<Integer> wordValues = new ArrayList<>();
 
-  MapSum() {}
+  MapSum() {
+  }
 
   /**
    * Insert a new word into the MapSum.

@@ -9,7 +9,8 @@ public class UtilTrieNode {
   public int endIndex = -1;
   public Map<Character, UtilTrieNode> children = new HashMap<>();
 
-  UtilTrieNode() {}
+  UtilTrieNode() {
+  }
 
   UtilTrieNode(char letter) {
     this.letter = letter;

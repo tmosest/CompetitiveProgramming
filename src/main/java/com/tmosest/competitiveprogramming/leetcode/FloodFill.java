@@ -36,6 +36,6 @@ public class FloodFill {
     dfs(image, row + 1, col, newColor, oldColor);
     dfs(image, row - 1, col, newColor, oldColor);
     dfs(image, row, col + 1, newColor, oldColor);
-    dfs(image, row , col - 1, newColor, oldColor);
+    dfs(image, row,col - 1, newColor, oldColor);
   }
 }

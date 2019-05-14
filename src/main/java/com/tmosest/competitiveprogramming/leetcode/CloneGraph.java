@@ -54,7 +54,8 @@ public class CloneGraph {
     /**
      * Create an empty graph node.
      */
-    public Node() {}
+    public Node() {
+    }
 
     /**
      * Creates a node in the graph.

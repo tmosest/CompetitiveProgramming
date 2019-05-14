@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class AssignCookies {
 
   /**
-   * Assign cookies!
+   * Assign cookies.
    * @param arr Array of children.
    * @param more Array of cookies.
    * @return Cookies!!!

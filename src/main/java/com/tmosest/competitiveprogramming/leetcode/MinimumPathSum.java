@@ -45,7 +45,7 @@ public class MinimumPathSum {
       int distance = distances[root.id];
       if (!visited[root.id]) {
         for (Node node : root.neighbors) {
-          distances[node.id] = Math.min(distances[node .id], distance + node.val);
+          distances[node.id] = Math.min(distances[node.id], distance + node.val);
           queue.add(node);
         }
         visited[root.id] = true;

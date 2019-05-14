@@ -1,12 +1,14 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class PathSumThree {
 
   private int pathSum = 0;
+
   /**
    * Find the number of paths that sum to the given value from any node downwards.
    * @param root The root node of the tree.

@@ -12,7 +12,8 @@ public class CopyListWithRandomPointer {
     /**
      * Create an empty random node.
      */
-    public Node() {}
+    public Node() {
+    }
 
     /**
      * Create a random node.

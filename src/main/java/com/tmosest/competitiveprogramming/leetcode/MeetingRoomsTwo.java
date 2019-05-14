@@ -1,6 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
 import com.tmosest.competitiveprogramming.leetcode.common.Interval;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;

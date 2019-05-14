@@ -7,7 +7,8 @@ public class WordDictionary {
   private UtilTrie utilTrie = new UtilTrie();
 
   /** Initialize your data structure here. */
-  WordDictionary() { }
+  WordDictionary() {
+  }
 
   /** Adds a word into the data structure. */
   void addWord(String word) {

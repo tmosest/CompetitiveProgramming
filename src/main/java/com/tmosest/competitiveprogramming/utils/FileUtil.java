@@ -9,7 +9,8 @@ import java.util.List;
 
 public class FileUtil {
 
-  private FileUtil() {}
+  private FileUtil() {
+  }
 
   private static FileUtil instance = new FileUtil();
 
@@ -17,6 +18,11 @@ public class FileUtil {
     return instance;
   }
 
+  /**
+   * Gets all the files in a directory.
+   * @param directory The directory path.
+   * @return A list of file names.
+   */
   public List<String> fileNamesInDirectory(String directory) {
     File folder = new File(directory);
     File[] listOfFiles = folder.listFiles();
@@ -73,6 +79,13 @@ public class FileUtil {
     write(path, fileName, lines);
   }
 
+  /**
+   * Write to a file.
+   * @param path The path of the file.
+   * @param fileName The file name of the file.
+   * @param lines The lines to write to the file.
+   * @throws IOException If it cannot write to the file.
+   */
   public void write(
       String path,
       String fileName,

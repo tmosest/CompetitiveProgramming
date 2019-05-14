@@ -48,6 +48,11 @@ public class JavaFile {
     this.className = className;
   }
 
+  /**
+   * Create a Java file from the absolute path of a file.
+   * @param absoluteFilePath The absolute path. /C/User/someone/JavaFile.java
+   * @throws IOException If it cannot create from the file.
+   */
   public JavaFile(String absoluteFilePath) throws IOException {
     origin = absoluteFilePath;
     File file = new File(absoluteFilePath);
@@ -148,12 +153,18 @@ public class JavaFile {
     toFile(fileName, true);
   }
 
+  /**
+   * Moves this JavaFile to another location.
+   * @param destination The destination folder.
+   * @return True if it was able to move the file.
+   * @throws IOException If it couldn't write or do other things to the file.
+   */
   public boolean moveFile(String destination) throws IOException {
-    String oldOrigin = origin;
     List<String> classCode = generateClassCode();
     String fileName = className + ".java";
     fileUtil.createFile(destination, fileName);
     fileUtil.write(destination, fileName, classCode);
+    String oldOrigin = origin;
     origin = destination;
     return fileUtil.deleteFile(oldOrigin);
   }

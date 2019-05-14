@@ -11,7 +11,8 @@ public class UtilTrie implements Iterable<UtilTrieNode>, Iterator<UtilTrieNode> 
   private UtilTrieNode runner = root;
   private List<String> words = new ArrayList<>();
 
-  public UtilTrie() {}
+  public UtilTrie() {
+  }
 
   /**
    * Creates all possible words after deletion.

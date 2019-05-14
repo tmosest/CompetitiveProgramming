@@ -3,23 +3,23 @@ package com.tmosest.competitiveprogramming.datastructures;
 /**
  * Interface for a Max Priority Queue.
  *
- * @param <Key> Type of Priority Queue needs to be comparable.
+ * @param <T> Type of Priority Queue needs to be comparable.
  */
-public interface MaxPqAdt<Key extends Comparable<Key>> {
+public interface MaxPqAdt<T extends Comparable<T>> {
 
   /**
    * Return and remove the largest key.
    *
    * @return Largest key in the priority queue.
    */
-  Key delMax();
+  T delMax();
 
   /**
    * Insert a key into the priority queue.
    *
    * @param key key to insert.
    */
-  void insert(Key key);
+  void insert(T key);
 
   /**
    * Determine if the priority queue is empty of not.
@@ -33,7 +33,7 @@ public interface MaxPqAdt<Key extends Comparable<Key>> {
    *
    * @return Largest key in the priority queue.
    */
-  Key max();
+  T max();
 
   /**
    * Return the size of the priority queue.

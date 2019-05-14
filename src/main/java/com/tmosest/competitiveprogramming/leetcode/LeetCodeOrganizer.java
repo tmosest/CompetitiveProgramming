@@ -2,6 +2,7 @@ package com.tmosest.competitiveprogramming.leetcode;
 
 import com.tmosest.competitiveprogramming.utils.FileUtil;
 import com.tmosest.competitiveprogramming.utils.JavaFile;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -12,7 +13,8 @@ public class LeetCodeOrganizer {
 
   private static LeetCodeOrganizer instance = new LeetCodeOrganizer();
 
-  private LeetCodeOrganizer() {}
+  private LeetCodeOrganizer() {
+  }
 
   private FileUtil fileUtil = FileUtil.instance();
 
@@ -61,7 +63,9 @@ public class LeetCodeOrganizer {
     File file = new File(absoluteTestFilePath(testFileName));
     BufferedReader reader = new BufferedReader(new FileReader(file));
     ProblemDifficulty difficulty;
-    while ((difficulty = getDifficultyFromTagName(reader.readLine())) == ProblemDifficulty.unknown) {}
+    while ((difficulty = getDifficultyFromTagName(reader.readLine()))
+            == ProblemDifficulty.unknown) {
+    }
     reader.close();
     return difficulty;
   }
@@ -70,12 +74,12 @@ public class LeetCodeOrganizer {
     return getLeetCodeTestPath() + problemDifficulty.name() + "/";
   }
 
-  private String destinationPath(ProblemDifficulty problemDifficulty) {
-    return getLeetCodePath() + problemDifficulty.name() + "/";
-  }
-
   private String destinationTestPath(String testFileName) throws IOException {
     return destinationTestPath(getDifficulty(testFileName));
+  }
+
+  private String destinationPath(ProblemDifficulty problemDifficulty) {
+    return getLeetCodePath() + problemDifficulty.name() + "/";
   }
 
   private String destinationPath(String testFileName) throws  IOException {
@@ -96,11 +100,15 @@ public class LeetCodeOrganizer {
   private boolean moveFile(String testFileName) throws  IOException {
     String fileSource = absoluteFilePath(testFileName);
     String fileDestination = destinationPath(testFileName);
-    JavaFile javaFile = updateToCorrectPackage(getJavaFile(fileSource), fileDestination);
+    JavaFile javaFile = updateToCorrectPackage(
+        getJavaFile(fileSource), fileDestination
+    );
 
     String testFileSource = absoluteTestFilePath(testFileName);
     String testFileDestination = destinationTestPath(testFileName);
-    JavaFile javaTestFile = updateToCorrectPackage(getJavaFile(testFileSource), testFileDestination);
+    JavaFile javaTestFile = updateToCorrectPackage(
+        getJavaFile(testFileSource), testFileDestination
+    );
 
     boolean movedFile = javaFile.moveFile(fileDestination);
     boolean movedTestFile = javaTestFile.moveFile(testFileDestination);

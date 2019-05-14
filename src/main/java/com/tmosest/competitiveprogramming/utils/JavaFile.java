@@ -25,13 +25,13 @@ public class JavaFile {
 
   JavaFile(Class source, String className) {
     this.source = source;
-    packge = source.getPackage().toString();
+    packge = source.getPackage().toString().replaceFirst("package", "");
     this.className = className;
   }
 
   JavaFile(Class source, String className, String functionDeclaration) {
     this.source = source;
-    packge = source.getPackage().toString();
+    packge = source.getPackage().toString().replaceFirst("package", "");
     content = "\t" + functionDeclaration + " {\t\n\t}";
     this.className = className;
   }
@@ -63,7 +63,7 @@ public class JavaFile {
   }
 
   private void addPackage(List<String> classCode) {
-    classCode.add(packge + ";");
+    classCode.add("package " + packge + ";");
     classCode.add("");
   }
 

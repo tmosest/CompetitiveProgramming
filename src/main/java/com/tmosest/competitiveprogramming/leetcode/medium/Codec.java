@@ -2,10 +2,11 @@ package com.tmosest.competitiveprogramming.leetcode.medium;
 
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
 
-import java.util.Stack;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 class Codec {
-  /* Write code here. */
 
   /**
    * Serializes the binary tree.
@@ -15,20 +16,36 @@ class Codec {
    */
   public String serialize(TreeNode root) {
     StringBuilder sb = new StringBuilder();
-    serialize(root, sb);
-    sb.deleteCharAt(sb.length() - 1);
-    return sb.toString();
-  }
+    sb.append("[");
 
-  private void serialize(TreeNode root, StringBuilder sb) {
-    if (root == null) {
-      sb.append("null,");
-      return;
+    Queue<TreeNode> queue = new LinkedList<>();
+    queue.add(root);
+    int nonNullCount = (root != null) ? 1 : 0;
+    while (!queue.isEmpty() && nonNullCount != 0) {
+      for (int i = 0, size = queue.size(); i < size; i++) {
+        root = queue.poll();
+        if (root == null) {
+          sb.append("null");
+          queue.add(null);
+          queue.add(null);
+        } else {
+          sb.append(root.val);
+          nonNullCount--;
+          if (root.left != null) {
+            nonNullCount++;
+          }
+          if (root.right != null) {
+            nonNullCount++;
+          }
+          queue.add(root.left);
+          queue.add(root.right);
+        }
+        sb.append(",");
+      }
     }
-    sb.append(root.val);
-    sb.append(",");
-    serialize(root.left, sb);
-    serialize(root.right, sb);
+    sb.deleteCharAt(sb.length() - 1);
+    sb.append("]");
+    return sb.toString();
   }
 
   /**
@@ -41,40 +58,31 @@ class Codec {
     if (data.equals("null")) {
       return null;
     }
+    data = data
+        .replace("[", "")
+        .replace("]", "");
     String[] array = data.split(",");
-    TreeNode root = new TreeNode(Integer.valueOf(array[0]));
-    Stack<TreeNode> stack = new Stack<>();
-    stack.push(root);
-    deserialize(array, 1, stack, true);
-    return root;
+    ArrayList<TreeNode> nodes = new ArrayList<>();
+    nodes.add(new TreeNode(-1));
+    for (String val : array) {
+      try {
+        nodes.add(new TreeNode(Integer.valueOf(val)));
+      } catch (Exception exception) {
+        nodes.add(null);
+      }
+    }
+    for (int i = 1, size = nodes.size(); i < size; i++) {
+      TreeNode node = nodes.get(i);
+      if (node == null) {
+        continue;
+      }
+      if (2 * i < size) {
+        node.left = nodes.get(2 * i);
+      }
+      if (2 * i + 1 < size) {
+        node.right = nodes.get(2 * i + 1);
+      }
+    }
+    return nodes.get(1);
   }
-
-  private void deserialize(String[] data, int index, Stack<TreeNode> stack, boolean isLeft) {
-    if (index >= data.length) {
-      return;
-    }
-    boolean isNull = data[index].equals("null");
-    if (isNull && isLeft) {
-      deserialize(data, index + 1, stack, false);
-      return;
-    }
-    if (isNull && !isLeft) {
-      stack.pop();
-      deserialize(data, index + 1, stack, false);
-      return;
-    }
-    Integer val = Integer.valueOf(data[index]);
-    TreeNode root = stack.peek();
-    if (isLeft) {
-      root.left = new TreeNode(val);
-      stack.push(root.left);
-      deserialize(data, index + 1, stack, true);
-      return;
-    }
-    root.right = new TreeNode(val);
-    stack.push(root.right);
-    deserialize(data, index + 1, stack, false);
-  }
-
-
 }

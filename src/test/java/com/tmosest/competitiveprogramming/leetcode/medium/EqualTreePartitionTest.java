@@ -13,17 +13,13 @@ import org.junit.jupiter.api.Test;
 class EqualTreePartitionTest {
 	/* Write code here. */
 
-  EqualTreePartition equalTreePartition = new EqualTreePartition();
+	private Codec codec = new Codec();
+  private EqualTreePartition equalTreePartition = new EqualTreePartition();
 
   @Test
   @DisplayName("Test Case 0")
   void testCase0() {
-    TreeNode root = new TreeNode(5);
-    root.left = new TreeNode(10);
-    root.right = new TreeNode(10);
-    root.right.left = new TreeNode(2);
-    root.right.right = new TreeNode(3);
-
+    TreeNode root = codec.deserialize("[5,10,10,null,null,2,3]");
     Assertions.assertTrue(equalTreePartition.checkEqualTree(root));
   }
 
@@ -48,6 +44,4 @@ class EqualTreePartitionTest {
 
     Assertions.assertFalse(equalTreePartition.checkEqualTree(root));
   }
-
-
 }

@@ -12,23 +12,14 @@ import org.junit.jupiter.api.Test;
 @Tag("binaryTree")
 @DisplayName("LeetCode: 113. Path Sum II")
 class PathSumTwoTest {
-	/* Write code here. */
 
-  PathSumTwo pathSumTwo = new PathSumTwo();
+  private Codec codec = new Codec();
+  private PathSumTwo pathSumTwo = new PathSumTwo();
 
   @Test
   @DisplayName("Test Case 0")
   void testCase0() {
-    TreeNode root = new TreeNode(5);
-    root.left = new TreeNode(4);
-    root.right = new TreeNode(8);
-    root.left.left = new TreeNode(11);
-    root.right.left = new TreeNode(13);
-    root.right.right = new TreeNode(4);
-    root.left.left.left = new TreeNode(7);
-    root.left.left.right = new TreeNode(2);
-    root.right.right.left = new TreeNode(5);
-    root.right.right.right = new TreeNode(1);
+    TreeNode root = codec.deserialize("[5,4,8,11,null,13,4,7,2,null,null,5,1]");
     int expectedSum = 22;
     List<List<Integer>> actual = pathSumTwo.pathSum(root, expectedSum);
     Assertions.assertEquals(2, actual.size());
@@ -40,6 +31,4 @@ class PathSumTwoTest {
       Assertions.assertEquals(expectedSum, sum);
     }
   }
-
-
 }

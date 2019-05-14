@@ -71,16 +71,19 @@ class Codec {
         nodes.add(null);
       }
     }
+    int childIndex = 2;
     for (int i = 1, size = nodes.size(); i < size; i++) {
       TreeNode node = nodes.get(i);
       if (node == null) {
         continue;
       }
-      if (2 * i < size) {
-        node.left = nodes.get(2 * i);
+      if (childIndex < size) {
+        node.left = nodes.get(childIndex);
+        childIndex++;
       }
-      if (2 * i + 1 < size) {
-        node.right = nodes.get(2 * i + 1);
+      if (childIndex < size) {
+        node.right = nodes.get(childIndex);
+        childIndex++;
       }
     }
     return nodes.get(1);

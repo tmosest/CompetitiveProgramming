@@ -22,7 +22,7 @@ public class JavaFile {
       int openBracketIndex = annotation.indexOf('(');
       name = annotation.substring(1, openBracketIndex);
       int closeBracketIndex = annotation.indexOf(')', openBracketIndex);
-      val = annotation.substring(openBracketIndex + 1, closeBracketIndex);
+      val = annotation.substring(openBracketIndex + 1, closeBracketIndex).replace("\"","");
     }
   }
 

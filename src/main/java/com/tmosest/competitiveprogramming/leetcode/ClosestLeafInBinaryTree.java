@@ -1,6 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
+import com.tmosest.competitiveprogramming.leetcode.common.TreeNodeAdapter;
 import com.tmosest.competitiveprogramming.utils.UtilTreeNode;
 
 /**

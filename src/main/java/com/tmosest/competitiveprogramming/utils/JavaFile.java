@@ -12,6 +12,13 @@ public class JavaFile {
   private class Annotation {
     private String name;
     private String val;
+
+    private Annotation(String annotation) {
+      int openBracketIndex = annotation.indexOf('(');
+      name = annotation.substring(1, openBracketIndex);
+      int closeBracketIndex = annotation.indexOf(')', openBracketIndex);
+      val = annotation.substring(openBracketIndex + 1, closeBracketIndex);
+    }
   }
 
   private String origin = "";
@@ -55,6 +62,10 @@ public class JavaFile {
               .replace("{", "")
               .replace("public", "")
               .trim();
+        }
+        if (line.trim().startsWith("@")) {
+          Annotation annotation = new Annotation(line);
+          annotations.add(annotation);
         }
       } else {
         content += line + "\n";

@@ -92,4 +92,37 @@ public class UtilTreeNode<T> {
     return helperEquals(nodeOne.left, nodeTwo.left)
         && helperEquals(nodeOne.right, nodeTwo.right);
   }
+
+  /**
+   * Add a new row to the tree.
+   * @param val The value for that row.
+   * @param depth The depth the row should be at.
+   * @return A reference to the root.
+   */
+  public UtilTreeNode<T> addOneRow(T val, int depth) {
+    if (depth == 1) {
+      UtilTreeNode<T> root = new UtilTreeNode<>(val);
+      root.left = this;
+      return root;
+    }
+    addOneRow(this, depth, val, 1);
+    return this;
+  }
+
+  private void addOneRow(UtilTreeNode<T> root, int depth, T val, int level) {
+    if (root == null) {
+      return;
+    }
+    if (level == depth - 1) {
+      UtilTreeNode<T> temp = root.left;
+      root.left = new UtilTreeNode<T>(val);
+      root.left.left = temp;
+      temp = root.right;
+      root.right = new UtilTreeNode<T>(val);
+      root.right.right = temp;
+      return;
+    }
+    addOneRow(root.left, depth, val, level + 1);
+    addOneRow(root.right, depth, val, level + 1);
+  }
 }

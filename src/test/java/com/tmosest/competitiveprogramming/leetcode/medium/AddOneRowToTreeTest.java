@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 class AddOneRowToTreeTest {
 
   private AddOneRowToTree addOneRowToTree = new AddOneRowToTree();
+  private Codec codec = new Codec();
 
   private void treeEquals(TreeNode expected, TreeNode actual) {
     if (actual == null && expected == null) {
@@ -29,12 +30,7 @@ class AddOneRowToTreeTest {
   @Test
   @DisplayName("Test Case 0")
   void testCase0() {
-    TreeNode root = new TreeNode(4);
-    root.left = new TreeNode(2);
-    root.right = new TreeNode(6);
-    root.left.left = new TreeNode(2);
-    root.left.right = new TreeNode(1);
-    root.right.left = new TreeNode(5);
+    TreeNode root = codec.deserialize("[4,2,6,2,1,5]");
 
     TreeNode expected = new TreeNode(4);
     root.left = new TreeNode(1);

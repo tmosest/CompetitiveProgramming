@@ -87,7 +87,7 @@ public class LeetCodeOrganizer {
   }
 
   private JavaFile updateToCorrectPackage(JavaFile javaFile, String destination) {
-    String[] split = destination.split(".");
+    String[] split = destination.split("/");
     String updatedPackage = javaFile.getPackge() + '.' + split[split.length - 1];
     javaFile.setPackge(updatedPackage);
     return javaFile;

@@ -10,15 +10,12 @@ import org.junit.jupiter.api.Test;
 @Tag("string")
 @DisplayName("LeetCode: 43. Multiply Strings")
 class MultiplyStringsTest {
-	/* Write code here. */
 
-  MultiplyStrings multiplyStrings = new MultiplyStrings();
+  private MultiplyStrings multiplyStrings = new MultiplyStrings();
 
   @Test
   @DisplayName("Test Case 0")
   void testCase0() {
     Assertions.assertEquals("6", multiplyStrings.multiply("2", "3"));
   }
-
-
 }

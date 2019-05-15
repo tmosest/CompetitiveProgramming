@@ -12,9 +12,8 @@ import org.junit.jupiter.api.Test;
 @Tag("binaryTree")
 @DisplayName("LeetCode: 993. Cousins in Binary Tree")
 class CousinsInBinaryTreeTest {
-	/* Write code here. */
 
-  CousinsInBinaryTree cousinsInBinaryTree = new CousinsInBinaryTree();
+  private CousinsInBinaryTree cousinsInBinaryTree = new CousinsInBinaryTree();
 
   @Test
   @DisplayName("Test Case 0")
@@ -25,6 +24,4 @@ class CousinsInBinaryTreeTest {
     root.left.left = new TreeNode(4);
     Assertions.assertFalse(cousinsInBinaryTree.isCousins(root, 4, 3));
   }
-
-
 }

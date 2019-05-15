@@ -34,6 +34,4 @@ class CousinsInBinaryTree {
       dfs(node.right, node);
     }
   }
-
-
 }

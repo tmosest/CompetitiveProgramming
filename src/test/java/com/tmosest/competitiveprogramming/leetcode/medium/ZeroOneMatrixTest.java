@@ -10,9 +10,8 @@ import org.junit.jupiter.api.Test;
 @Tag("matrix")
 @DisplayName("LeetCode: 542. 01 Matrix")
 class ZeroOneMatrixTest {
-	/* Write code here. */
 
-  ZeroOneMatrix zeroOneMatrix = new ZeroOneMatrix();
+  private ZeroOneMatrix zeroOneMatrix = new ZeroOneMatrix();
 
   @Test
   @DisplayName("Test Case 0")
@@ -29,6 +28,4 @@ class ZeroOneMatrixTest {
     };
     Assertions.assertArrayEquals(output, zeroOneMatrix.updateMatrix(input));
   }
-
-
 }

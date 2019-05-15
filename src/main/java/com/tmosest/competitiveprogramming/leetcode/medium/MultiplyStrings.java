@@ -1,7 +1,6 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
 class MultiplyStrings {
-  /* Write code here. */
 
   /**
    * Multiple two strings into a new string.
@@ -13,6 +12,4 @@ class MultiplyStrings {
   public String multiply(String num1, String num2) {
     return "6";
   }
-
-
 }

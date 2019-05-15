@@ -1,5 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
+import com.tmosest.competitiveprogramming.utils.number.BigInteger;
+
 class MultiplyStrings {
 
   /**
@@ -10,6 +12,6 @@ class MultiplyStrings {
    * @return The result of multiplication as a string.
    */
   public String multiply(String num1, String num2) {
-    return "6";
+    return new BigInteger(num1).multiply(new BigInteger(num2)).toString();
   }
 }

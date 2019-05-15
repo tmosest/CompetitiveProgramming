@@ -1,8 +1,13 @@
 package com.tmosest.competitiveprogramming.utils.number;
 
-public class BigInteger {
+import java.util.Iterator;
+
+public class BigInteger implements Iterable<BigInteger> {
 
   private String val = "0";
+
+  public BigInteger() {
+  }
 
   /**
    * Create a new big integer with given value.
@@ -79,5 +84,40 @@ public class BigInteger {
       sb.append("1");
     }
     return new BigInteger(sb.reverse().toString());
+  }
+
+  /**
+   * Multiply two big integers together.
+   * @param bigInteger The big integer to multiply by.
+   * @return A BigInteger that is the result of the multiplication.
+   */
+  public BigInteger multiply(BigInteger bigInteger) {
+    BigInteger result = new BigInteger();
+    for (BigInteger count : bigInteger) {
+      result = result.add(this);
+    }
+    return result;
+  }
+
+  /**
+   * Determine if this is equal to another BigInteger.
+   * @param other The other BigInteger.
+   * @return True if they are the same.
+   */
+  public boolean equals(BigInteger other) {
+    return this.toString().equals(other.toString());
+  }
+
+  /**
+   * Iterate over expanded form.
+   * @return The expanded for iterator.
+   */
+  public Iterable<BigInteger> expandFormSmallestToLargest() {
+    return new BigIntegerExpandedFormIterator(this);
+  }
+
+  @Override
+  public Iterator<BigInteger> iterator() {
+    return new BigInterIterator(this);
   }
 }

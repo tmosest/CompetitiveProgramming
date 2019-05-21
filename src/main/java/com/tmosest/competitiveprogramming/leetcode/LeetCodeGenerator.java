@@ -60,9 +60,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1037. Valid Boomerang";
+    String name = "1046. Last Stone Weight";
     String difficulty = "easy";
-    String functionDeclaration = "public boolean isBoomerang(int[][] points)";
+    String functionDeclaration = "public int lastStoneWeight(int[] stones)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

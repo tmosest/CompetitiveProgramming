@@ -107,7 +107,6 @@ public class JavaFile {
 
   private void addClass(List<String> classCode) {
     classCode.add("class " + className + " {");
-    classCode.add("\t/* Write code here. */");
     addContent(classCode);
     classCode.add("}");
   }
@@ -134,8 +133,9 @@ public class JavaFile {
     return classCode;
   }
 
-  private void toFile(String fileName, boolean isTest) throws IOException {
+  private void toFile(boolean isTest) throws IOException {
     List<String> classCode = generateClassCode();
+    String fileName = className + ".java";
     if (isTest) {
       fileUtil.createNewTestFile(source, fileName);
       fileUtil.writeTest(source, fileName, classCode);
@@ -145,12 +145,12 @@ public class JavaFile {
     }
   }
 
-  void toFile(String fileName) throws IOException {
-    toFile(fileName, false);
+  void toFile() throws IOException {
+    toFile(false);
   }
 
-  void toTestFile(String fileName) throws IOException {
-    toFile(fileName, true);
+  void toTestFile() throws IOException {
+    toFile(true);
   }
 
   /**

@@ -55,13 +55,13 @@ public class FileUtil {
 
   boolean createNewFile(Class location, String fileName) throws IOException {
     String source = getAbsolutePath(location);
-    File file = new File(source, fileName + ".java");
+    File file = new File(source, fileName);
     return file.createNewFile();
   }
 
   boolean createNewTestFile(Class location, String fileName) throws IOException {
     String source = getAbsoluteTestPath(location);
-    File file = new File(source, fileName + ".java");
+    File file = new File(source, fileName);
     return file.createNewFile();
   }
 

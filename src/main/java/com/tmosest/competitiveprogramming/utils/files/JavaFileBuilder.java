@@ -18,7 +18,7 @@ public class JavaFileBuilder {
    */
   public void create(Class source, String className) {
     try {
-      new JavaFile(source, className).toFile(className);
+      new JavaFile(source, className).toFile();
     } catch (Exception e) {
       System.out.println("Error: " + e.getMessage());
     }
@@ -32,7 +32,7 @@ public class JavaFileBuilder {
    */
   public void create(Class source, String className, String functionDeclaration) {
     try {
-      new JavaFile(source, className, functionDeclaration).toFile(className);
+      new JavaFile(source, className, functionDeclaration).toFile();
     } catch (Exception e) {
       System.out.println("Error: " + e.getMessage());
     }
@@ -63,7 +63,7 @@ public class JavaFileBuilder {
       for (String imp : testImports) {
         javaFile.addNewImport(imp);
       }
-      javaFile.toTestFile(className + "Test");
+      javaFile.toTestFile();
     } catch (Exception e) {
       System.out.println("Error: " + e.getMessage());
     }

@@ -37,6 +37,4 @@ class ValidBoomerang {
     }
     return (point[1] - otherPoint[1]) / denominator;
   }
-
-
 }

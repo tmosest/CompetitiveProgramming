@@ -1,5 +1,6 @@
 package com.tmosest.competitiveprogramming.javafx;
 
+/*
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -31,3 +32,4 @@ public class HelloWorld extends Application {
     primaryStage.show();
   }
 }
+*/

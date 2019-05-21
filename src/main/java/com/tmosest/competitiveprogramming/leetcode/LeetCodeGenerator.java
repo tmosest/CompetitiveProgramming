@@ -60,9 +60,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1047. Remove All Adjacent Duplicates In String";
+    String name = "1037. Valid Boomerang";
     String difficulty = "easy";
-    String functionDeclaration = "public String removeDuplicates(String S)";
+    String functionDeclaration = "public boolean isBoomerang(int[][] points)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

@@ -35,6 +35,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - nAryTree
 - number
 - palindrome
+- point
 - regex
 - sort
 - string

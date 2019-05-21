@@ -22,6 +22,10 @@ class ClassNameUtil {
         names[i] = String.valueOf(romanNumeralUtil.fromRoman(names[i]));
         continue;
       }
+      if (names[i].length() < 2 && names.length > 1) {
+        names[i] = "";
+        continue;
+      }
       names[i] = convertToProperName(names[i]);
     }
     return String.join("", names);

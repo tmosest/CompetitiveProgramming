@@ -34,4 +34,16 @@ class ClassNameUtilTest {
   void should_only_capitalize_first_letter() {
     Assertions.assertEquals("RangeSumOfBst", classNameUtil.convertToClassName("Range Sum of BST"));
   }
+
+  @Test
+  @DisplayName("Should avoid two caps in a row")
+  void should_avoid_two_caps_in_a_row() {
+    Assertions.assertEquals("TestName", classNameUtil.convertToClassName("Test a Name"));
+  }
+
+  @Test
+  @DisplayName("Name should not be empty if there are two single letters in a row")
+  void should_not_be_empty_with_two_small_numbers() {
+    Assertions.assertEquals("A", classNameUtil.convertToClassName("a"));
+  }
 }

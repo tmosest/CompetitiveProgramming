@@ -60,9 +60,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1046. Last Stone Weight";
+    String name = "1041. Robot Bounded In Circle";
     String difficulty = "easy";
-    String functionDeclaration = "public int lastStoneWeight(int[] stones)";
+    String functionDeclaration = "public boolean isRobotBounded(String instructions)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

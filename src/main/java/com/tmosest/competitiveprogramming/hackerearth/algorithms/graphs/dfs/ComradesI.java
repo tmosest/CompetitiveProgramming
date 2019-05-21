@@ -10,7 +10,7 @@ public class ComradesI {
   public static boolean debugMode = false;
 
   /**
-   * Function to solve the problem bro!
+   * Function to solve the problem bro.
    *
    * @return Return a matrix containing all the results for each case.
    */

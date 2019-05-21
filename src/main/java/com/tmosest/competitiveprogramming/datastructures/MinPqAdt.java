@@ -3,23 +3,23 @@ package com.tmosest.competitiveprogramming.datastructures;
 /**
  * Interface for a Minimum Priority Queue.
  *
- * @param <Key> Type of Minimum Priority Queue, needs to be Comparable.
+ * @param <T> Type of Minimum Priority Queue, needs to be Comparable.
  */
-public interface MinPqAdt<Key extends Comparable<Key>> {
+public interface MinPqAdt<T extends Comparable<T>> {
 
   /**
    * Deletes the minimum element off the queue and returns it.
    *
    * @return The minimum element of the queue.
    */
-  Key delMin();
+  T delMin();
 
   /**
    * Insert a new element into the queue.
    *
    * @param key new element to insert.
    */
-  void insert(Key key);
+  void insert(T key);
 
   /**
    * Determines if the Queue is empty or not.
@@ -33,7 +33,7 @@ public interface MinPqAdt<Key extends Comparable<Key>> {
    *
    * @return The minimum element.
    */
-  Key min();
+  T min();
 
   /**
    * Gets the size of the queue.

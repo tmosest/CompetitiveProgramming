@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /**
- * <h1>Hacker Earth: Depth First Search: Depth First Search</h1> <h2>name: Monk and Graph
+ * <h1>Hacker Earth: Depth First Search: Depth First Search.</h1> <h2>name: Monk and Graph
  * Problem</h2> <p>max score: 20pts</p> <p>link: https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/monk-and-graph-problem/</p>
  */
 public class MonkAndGraphProblem {

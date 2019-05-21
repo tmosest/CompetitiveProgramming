@@ -2,7 +2,7 @@ package com.tmosest.competitiveprogramming.codejam.jame2019.qualification;
 
 import com.tmosest.competitiveprogramming.codejam.jam2019.Cryptopangrams;
 import com.tmosest.competitiveprogramming.hackerrank.HackerrankUtil;
-import com.tmosest.competitiveprogramming.utils.PrimeUtil;
+import com.tmosest.competitiveprogramming.utils.number.PrimeUtil;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;

@@ -5,12 +5,14 @@ package com.tmosest.competitiveprogramming.designpatterns.decorator.starbuzz;
  */
 public abstract class Beverage {
   String description = "unknown blend of coffee";
+
   // enum of sizes
   enum Size {
     TALL,
     GRANDE,
     VENTI
   }
+
   // the current size
   Size size = Size.TALL;
 

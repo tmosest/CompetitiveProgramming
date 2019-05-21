@@ -39,6 +39,7 @@ public class TripleRecursion {
   }
 
   /**
+   * Matrix class.
    * @author tmosest (Tyler Owen Moses).
    * @name Matrix Wrapper class for a matrix.
    */

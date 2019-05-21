@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /**
- * <h1>Hacker Earth: Depth First Search: Depth First Search</h2> <p>link:
+ * <h1>Hacker Earth: Depth First Search: Depth First Search.</h1> <p>link:
  * https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/</p>
  */
 public class UnreachableNodes {

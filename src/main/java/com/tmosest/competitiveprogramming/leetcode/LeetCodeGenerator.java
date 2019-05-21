@@ -60,9 +60,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "831. _Masking Personal Information";
-    String difficulty = "medium";
-    String functionDeclaration = "public String maskPII(String str)";
+    String name = "1047. Remove All Adjacent Duplicates In String";
+    String difficulty = "easy";
+    String functionDeclaration = "public String removeDuplicates(String S)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

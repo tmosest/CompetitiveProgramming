@@ -1,8 +1,3 @@
 language: java
-sudo: false # faster builds
-
-jdk: oraclejdk9
-script: "mvn clean install"
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+jdk:
+  - oraclejdk8

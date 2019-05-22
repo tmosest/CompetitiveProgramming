@@ -38,6 +38,11 @@ public class RandomUtil {
     return new Random().nextInt(max - min + 1) + min;
   }
 
+  /**
+   * Simulates a weighted coin flip.
+   * @param probability The probability that this coin will land on heads.
+   * @return True with some probability.
+   */
   public static boolean isHeads(double probability) {
     return new Random().nextDouble() <= probability;
   }

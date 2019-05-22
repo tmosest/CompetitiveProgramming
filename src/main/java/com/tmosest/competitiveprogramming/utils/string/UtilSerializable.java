@@ -38,7 +38,6 @@ public class UtilSerializable {
     try (final ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(data))) {
       return Optional.of((T) ois.readObject());
     } catch (final IOException | ClassNotFoundException e) {
-      e.printStackTrace();
       return Optional.empty();
     }
   }

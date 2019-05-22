@@ -3,5 +3,9 @@ sudo: false # faster builds
 
 script: "mvn clean install"
 
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)

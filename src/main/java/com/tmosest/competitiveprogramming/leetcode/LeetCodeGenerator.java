@@ -48,6 +48,7 @@ public class LeetCodeGenerator {
         "LeetCode: " + numberName
     };
     javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals);
+    LeetCodeOrganizer.instance.organizeProblemFiles();
   }
 
   // Breaks down "111. Sample Problem Name" into ["111", "Sample Problem Name"]

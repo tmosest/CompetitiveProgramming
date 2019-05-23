@@ -11,7 +11,7 @@ import java.util.List;
 
 public class LeetCodeOrganizer {
 
-  private static LeetCodeOrganizer instance = new LeetCodeOrganizer();
+  public static LeetCodeOrganizer instance = new LeetCodeOrganizer();
 
   private LeetCodeOrganizer() {
   }
@@ -115,7 +115,10 @@ public class LeetCodeOrganizer {
     return movedFile && movedTestFile;
   }
 
-  private void organizeProblemFiles() {
+  /**
+   * Look through test files and try to move them to the correct location.
+   */
+  public void organizeProblemFiles() {
     System.out.println("Path to this is : " + instance.getLeetCodeTestPath());
     for (String testFileName : instance.getTestFiles()) {
       System.out.println("File: " + testFileName);

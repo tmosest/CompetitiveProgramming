@@ -26,7 +26,7 @@ class ClassNameUtilTest {
   @Test
   @DisplayName("Should be able to convert roman numerals to numbers")
   void should_be_able_to_covert_ii_to_two() {
-    Assertions.assertEquals("RemoveDuplicatesFromSortedArray2", classNameUtil.convertToClassName("Remove Duplicates from Sorted Array II"));
+    Assertions.assertEquals("RemoveDuplicatesFromSortedArrayTwo", classNameUtil.convertToClassName("Remove Duplicates from Sorted Array II"));
   }
 
   @Test

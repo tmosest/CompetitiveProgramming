@@ -28,7 +28,7 @@ public class ClassNameUtil {
     RomanNumeralUtil romanNumeralUtil = RomanNumeralUtil.instance();
     for (int i = 0; i < names.length; i++) {
       if (romanNumeralUtil.isRoman(names[i])) {
-        names[i] = String.valueOf(romanNumeralUtil.fromRoman(names[i]));
+        names[i] = NumberToWords.numberToWords(romanNumeralUtil.fromRoman(names[i]));
         continue;
       }
       if (names[i].length() < 2 && names.length > 1) {

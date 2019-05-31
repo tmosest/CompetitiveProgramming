@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1041. Robot Bounded In Circle";
+    String name = "1051. Height Checker";
     String difficulty = "easy";
-    String functionDeclaration = "public boolean isRobotBounded(String instructions)";
+    String functionDeclaration = "public int heightChecker(int[] heights)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

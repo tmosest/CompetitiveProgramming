@@ -17,7 +17,8 @@ class CombinationSum {
   public List<List<Integer>> combinationSum(
       int[] candidates,
       int target,
-      boolean dupeCandidatesAllowed
+      boolean dupeCandidatesAllowed,
+      boolean dupeResultsAllowed
   ) {
     Arrays.sort(candidates);
     List<List<Integer>> result = new ArrayList<>();
@@ -39,15 +40,20 @@ class CombinationSum {
       List<List<Integer>> remainders = combinationSum(
           remainingCandidates,
           remainder,
-          dupeCandidatesAllowed
+          dupeCandidatesAllowed,
+          dupeResultsAllowed
       );
       if (remainder == 0 && remainders.size() == 0) {
         remainders.add(new ArrayList<>());
       }
       for (List<Integer> list : remainders) {
         list.add(candidates[i]);
-        Collections.sort(list);
-        if (!result.contains(list)) {
+        if (!dupeResultsAllowed) {
+          Collections.sort(list);
+          if (!result.contains(list)) {
+            result.add(list);
+          }
+        } else {
           result.add(list);
         }
       }
@@ -62,6 +68,6 @@ class CombinationSum {
    * @return A list of all the list sums.
    */
   List<List<Integer>> combinationSum(int[] candidates, int target) {
-    return combinationSum(candidates, target, true);
+    return combinationSum(candidates, target, true, false);
   }
 }

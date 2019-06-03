@@ -16,7 +16,7 @@ class CombinationSumThree {
    */
   public List<List<Integer>> combinationSum3(int size, int num) {
     int[] candidates = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-    List<List<Integer>> allResults = combinationSum.combinationSum(candidates, num, false);
+    List<List<Integer>> allResults = combinationSum.combinationSum(candidates, num, false, false);
     List<List<Integer>> results = new ArrayList<>();
     for (List<Integer> list : allResults) {
       if (list.size() == size) {

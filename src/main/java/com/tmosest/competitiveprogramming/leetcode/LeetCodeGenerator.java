@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "377. Combination Sum IV";
-    String difficulty = "medium";
-    String functionDeclaration = "public int combinationSum4(int[] nums, int target)";
+    String name = "1056. Confusing Number";
+    String difficulty = "easy";
+    String functionDeclaration = "public boolean confusingNumber(int num)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

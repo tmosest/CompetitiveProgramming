@@ -17,6 +17,10 @@ public class ReadMeGenerator {
   private static final String templateName = "README.template";
   private static final String indicator = "<!--DYNAMIC_CONTENT-->";
 
+  /**
+   * Generate README.md from template and dynamic content.
+   * @throws IOException
+   */
   void generateReadMe() throws IOException {
     System.out.println("Reading Template");
     String readMeFileLocation = FileUtil.instance().getCurrentDir() + "/" + templateName;

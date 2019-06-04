@@ -11,8 +11,7 @@ These are tags used to run subsets of problems and help to categorize them.
 - hard
 
 ### Sites
-- firecode
-- googleCodeJam
+- firecode.io
 - hackerrank
 - leetcode
 - interview

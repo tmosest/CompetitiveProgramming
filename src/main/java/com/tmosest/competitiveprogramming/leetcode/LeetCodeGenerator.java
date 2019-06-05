@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1017. Convert to Base -2";
+    String name = "1054. Distant Barcodes";
     String difficulty = "medium";
-    String functionDeclaration = "public String baseNeg2(int num)";
+    String functionDeclaration = "public int[] rearrangeBarcodes(int[] barcodes)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

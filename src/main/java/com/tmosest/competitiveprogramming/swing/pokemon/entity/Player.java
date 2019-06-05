@@ -5,10 +5,8 @@ import com.tmosest.competitiveprogramming.swing.pokemon.sprites.PlayerSheet;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
-public class Player {
+public class Player extends Obstacle {
 
-  private int xcord = 0;
-  private int ycord = 0;
   private int xvel = 10;
   private int yvel = 10;
   private int[] vals = {0, 0, 0, 0};
@@ -17,19 +15,23 @@ public class Player {
 
   private int startX = 50;
   private int startY = 50;
-  private int wallWidth = 25;
-  private int playerWidth = 15;
-  private int playerHeight = 20;
-  private BufferedImage background;
+  private Background background;
+
+  public Player() {
+    super(50,50,10,20);
+  }
 
   /**
    * Draws the player with the back ground moving.
    * @param graphics The graphics to draw width.
    * @param background The background image we are moving.
    */
-  public void drawWithMovingBackground(Graphics graphics, BufferedImage background) {
+  public void drawWithMovingBackground(Graphics graphics, Background background) {
     this.background = background;
-    graphics.drawImage(background, -xcord, -ycord, null);
+    this.background.setXcord(startX - getXcord());
+    this.background.setYcord(startY - getYcord());
+    this.background.draw(graphics);
+    draw(graphics, background);
     graphics.drawImage(imageState, startX, startY, null);
   }
 
@@ -47,10 +49,10 @@ public class Player {
     vals[1] = 0;
     vals[2] = 0;
     vals[3] = 0;
-    if (xcord < -startX + wallWidth) {
-      return;
+    setXcord(getXcord() - xvel);
+    if (background.collides(this)) {
+      setXcord(getXcord() + xvel);
     }
-    xcord -= xvel;
   }
 
   /**
@@ -67,10 +69,10 @@ public class Player {
     vals[0] = 0;
     vals[2] = 0;
     vals[3] = 0;
-    if (xcord + playerWidth + wallWidth + startX > background.getWidth()) {
-      return;
+    setXcord(getXcord() + xvel);
+    if (background.collides(this)) {
+      setXcord(getXcord() - xvel);
     }
-    xcord += xvel;
   }
 
   /**
@@ -90,10 +92,10 @@ public class Player {
     vals[0] = 0;
     vals[1] = 0;
     vals[3] = 0;
-    if (ycord + playerHeight  + wallWidth + startY > background.getHeight()) {
-      return;
+    setYcord(getYcord() + yvel);
+    if (background.collides(this)) {
+      setYcord(getYcord() - yvel);
     }
-    ycord += yvel;
   }
 
   /**
@@ -113,9 +115,9 @@ public class Player {
     vals[0] = 0;
     vals[1] = 0;
     vals[2] = 0;
-    if (ycord < -startY + wallWidth) {
-      return;
+    setYcord(getYcord() - yvel);
+    if (background.collides(this)) {
+      setYcord(getYcord() + yvel);
     }
-    ycord -= yvel;
   }
 }

@@ -1,20 +1,21 @@
 package com.tmosest.competitiveprogramming.swing.pokemon.ui;
 
 import com.tmosest.competitiveprogramming.swing.game.GamePanel;
+import com.tmosest.competitiveprogramming.swing.pokemon.entity.Background;
+import com.tmosest.competitiveprogramming.swing.pokemon.entity.PalletTown;
 import com.tmosest.competitiveprogramming.swing.pokemon.entity.Player;
-import com.tmosest.competitiveprogramming.swing.pokemon.sprites.PalletTownSpriteSheet;
 
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 
 public class PokemonPanel extends GamePanel {
 
-  PalletTownSpriteSheet palletTownSpriteSheet = PalletTownSpriteSheet.instance();
-  Player player = new Player();
+  private Background background = new PalletTown();
+  private Player player = new Player();
 
   @Override
   public void paintGame(Graphics graphics) {
-    player.drawWithMovingBackground(graphics, palletTownSpriteSheet.getPalletTown());
+    player.drawWithMovingBackground(graphics, background);
   }
 
   @Override

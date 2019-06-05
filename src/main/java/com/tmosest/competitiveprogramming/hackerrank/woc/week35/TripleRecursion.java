@@ -3,7 +3,7 @@ package com.tmosest.competitiveprogramming.hackerrank.woc.week35;
 import java.util.Scanner;
 
 /**
- * Contests -> Week of Code 35 -> Triple Recursion Difficulty: Easy Score: 20 pts link:
+ * Contests -> Week of Code 35 -> Triple Recursion ProblemType: Easy Score: 20 pts link:
  * https://www.hackerrank.com/contests/w35/challenges/triple-recursion/problem.
  *
  * @author tmosest (Tyler Owen Moses).

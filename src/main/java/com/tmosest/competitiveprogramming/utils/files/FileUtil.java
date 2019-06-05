@@ -33,7 +33,11 @@ public class FileUtil {
     return fileNames;
   }
 
-  private String getCurrentDir() {
+  /**
+   * Get the path to the project.
+   * @return The path to the project.
+   */
+  public String getCurrentDir() {
     return System.getProperty("user.dir");
   }
 

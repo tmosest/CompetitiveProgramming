@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
- * Algorithms -> Strings -> Alternating Characters Difficulty: Easy Score: 20 pts.
+ * Algorithms -> Strings -> Alternating Characters ProblemType: Easy Score: 20 pts.
  *
  * @author tmosest (Tyler Owen Moses)
  */

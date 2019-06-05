@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Algorithms -> Strings -> Sherlock and the Valid String Difficulty: Medium Score: 35 pts Sherlock
+ * Algorithms -> Strings -> Sherlock and the Valid String ProblemType: Medium Score: 35 pts Sherlock
  * considers a strings to be valid if either of the following conditions are satisfied: All
  * characters in have the same exact frequency (i.e., occur the same number of times). Deleting
  * exactly character from will result in all its characters having the same frequency. Constraints:

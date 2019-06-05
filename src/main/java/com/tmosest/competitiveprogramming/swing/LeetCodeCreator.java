@@ -39,7 +39,7 @@ public class LeetCodeCreator {
     function.setBounds(offset, 150, width, height);
     frame.add(function);
 
-    JLabel difficultyTitle = new JLabel("Difficulty:");
+    JLabel difficultyTitle = new JLabel("ProblemType:");
     difficultyTitle.setBounds(offset, 200, width, height);
     frame.add(difficultyTitle);
 

@@ -3,7 +3,7 @@ package com.tmosest.competitiveprogramming.hackerrank.woc.week35;
 import java.util.Scanner;
 
 /**
- * Contests -> Week of Code 35 -> Lucky Purchase Difficulty: Easy Score: 10 pts Sharon wants to buy
+ * Contests -> Week of Code 35 -> Lucky Purchase ProblemType: Easy Score: 10 pts Sharon wants to buy
  * a laptop for programming. She wants the minimum prices laptop that contains only 4's and 7's in
  * the price and there must be an equal number of both. Constraints: 1 <= n <= 10^5, 1 <= length of
  * laptop name <= 10, name is in english, 1 <= price <= 10^9 Output: Name or -1. Sample Input 0: 4

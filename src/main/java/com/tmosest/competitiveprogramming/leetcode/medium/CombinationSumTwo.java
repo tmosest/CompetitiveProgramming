@@ -13,6 +13,6 @@ class CombinationSumTwo {
    * @return A list of lists which are the individual sums.
    */
   public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-    return combinationSum.combinationSum(candidates, target, false);
+    return combinationSum.combinationSum(candidates, target, false, false);
   }
 }

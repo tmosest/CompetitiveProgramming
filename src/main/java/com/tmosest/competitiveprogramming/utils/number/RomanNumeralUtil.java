@@ -51,6 +51,9 @@ public class RomanNumeralUtil {
         nextLetter = letters[c + 1];
       }
       switch (letter) {
+        case 'X':
+          result += 10;
+          break;
         case 'V':
           result += 5;
           break;

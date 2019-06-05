@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1071. Greatest Common Divisor of Strings";
-    String difficulty = "easy";
-    String functionDeclaration = "public String gcdOfStrings(String str1, String str2)";
+    String name = "1017. Convert to Base -2";
+    String difficulty = "medium";
+    String functionDeclaration = "public String baseNeg2(int num)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

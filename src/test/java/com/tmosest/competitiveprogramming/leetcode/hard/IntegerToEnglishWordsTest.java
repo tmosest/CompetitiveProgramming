@@ -326,4 +326,10 @@ class IntegerToEnglishWordsTest {
   void testCase44() {
     Assertions.assertEquals("One Billion", integerToEnglishWords.numberToWords(1000000000));
   }
+
+  @Test
+  @DisplayName("-2 is Negative Two")
+  void testCase45() {
+    Assertions.assertEquals("Negative Two", integerToEnglishWords.numberToWords(-2));
+  }
 }

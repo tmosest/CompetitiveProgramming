@@ -46,4 +46,16 @@ class ClassNameUtilTest {
   void should_not_be_empty_with_two_small_numbers() {
     Assertions.assertEquals("A", classNameUtil.convertToClassName("a"));
   }
+
+  @Test
+  @DisplayName("Name should handle negative numbers as well")
+  void should_only_contain_letters() {
+    Assertions.assertEquals("ConvertToBaseNegativeTwo", classNameUtil.convertToClassName("Convert to Base -2"));
+  }
+
+  @Test
+  @DisplayName("Name should handle negative numbers as well")
+  void should_be_able_to_handle_multi_word_numbers() {
+    Assertions.assertEquals("ConvertToBaseTwentyTwo", classNameUtil.convertToClassName("Convert to Base XXII"));
+  }
 }

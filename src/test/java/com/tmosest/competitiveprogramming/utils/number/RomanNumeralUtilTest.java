@@ -42,6 +42,18 @@ class RomanNumeralUtilTest {
   }
 
   @Test
+  @DisplayName("X should return 10")
+  void test_ten() {
+    Assertions.assertEquals(10, romanNumeralUtil.fromRoman("X"));
+  }
+
+  @Test
+  @DisplayName("XXII should return 22")
+  void test_twenty_two() {
+    Assertions.assertEquals(22, romanNumeralUtil.fromRoman("XXII"));
+  }
+
+  @Test
   @DisplayName("II is a roman numeral")
   void test_two_is_roman() {
     Assertions.assertTrue(romanNumeralUtil.isRoman("II"));

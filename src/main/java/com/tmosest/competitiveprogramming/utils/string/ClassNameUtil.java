@@ -29,7 +29,18 @@ public class ClassNameUtil {
     for (int i = 0; i < names.length; i++) {
       if (romanNumeralUtil.isRoman(names[i])) {
         names[i] = NumberToWords.numberToWords(romanNumeralUtil.fromRoman(names[i]));
+        String[] temp = names[i].split(" ");
+        names[i] = String.join("", temp);
         continue;
+      }
+      try {
+        int num = Integer.parseInt(names[i]);
+        names[i] = NumberToWords.numberToWords(num);
+        String[] temp = names[i].split(" ");
+        names[i] = String.join("", temp);
+        continue;
+      } catch (Exception e) {
+        // Was not a number.
       }
       if (names[i].length() < 2 && names.length > 1) {
         names[i] = "";
@@ -37,7 +48,7 @@ public class ClassNameUtil {
       }
       names[i] = convertToProperName(names[i]);
     }
-    return String.join("", names);
+    return String.join("", names).trim();
   }
 
   String createTestClassName(String problemName) {

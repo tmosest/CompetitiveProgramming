@@ -19,7 +19,7 @@ public class ReadMeGenerator {
 
   /**
    * Generate README.md from template and dynamic content.
-   * @throws IOException
+   * @throws IOException Throws exception.
    */
   void generateReadMe() throws IOException {
     System.out.println("Reading Template");

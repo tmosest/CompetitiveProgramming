@@ -16,13 +16,25 @@ public class NumberToWords {
    * @return The string representation in words.
    */
   public static String numberToWords(int num) {
+    boolean isNegative = num < 0;
+    if (isNegative) {
+      num *= -1;
+    }
     for (int i = 0; i < testValues.length; i++) {
       int majorDigit = num / testValues[i];
       if (majorDigit > 0) {
-        return getMajorName(i, num) + getTestValueName(i) + getRemainderName(i, num);
+        String result = getMajorName(i, num) + getTestValueName(i) + getRemainderName(i, num);
+        if (isNegative) {
+          result = "Negative " + result;
+        }
+        return result;
       }
     }
-    return singleDigit(num);
+    String result = singleDigit(num);
+    if (isNegative) {
+      result = "Negative " + result;
+    }
+    return result;
   }
 
   private static String getTestValueName(int index) {

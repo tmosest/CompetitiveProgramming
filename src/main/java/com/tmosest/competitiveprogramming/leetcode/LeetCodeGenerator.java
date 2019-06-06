@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1054. Distant Barcodes";
+    String name = "230. Kth Smallest Element in a BST";
     String difficulty = "medium";
-    String functionDeclaration = "public int[] rearrangeBarcodes(int[] barcodes)";
+    String functionDeclaration = "public int kthSmallest(TreeNode root, int k)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

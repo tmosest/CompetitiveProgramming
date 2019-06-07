@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "161. One Edit Distance";
+    String name = "89. Gray Code";
     String difficulty = "medium";
-    String functionDeclaration = "public boolean isOneEditDistance(String s, String t)";
+    String functionDeclaration = "public List<Integer> grayCode(int num)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

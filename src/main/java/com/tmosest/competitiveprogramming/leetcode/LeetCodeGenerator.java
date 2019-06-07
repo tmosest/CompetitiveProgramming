@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "89. Gray Code";
+    String name = "357. Count Numbers with Unique Digits";
     String difficulty = "medium";
-    String functionDeclaration = "public List<Integer> grayCode(int num)";
+    String functionDeclaration = "public int countNumbersWithUniqueDigits(int num)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

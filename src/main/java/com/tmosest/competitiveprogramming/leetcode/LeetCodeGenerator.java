@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "162. Find Peak Element";
+    String name = "161. One Edit Distance";
     String difficulty = "medium";
-    String functionDeclaration = "public int findPeakElement(int[] nums) ";
+    String functionDeclaration = "public boolean isOneEditDistance(String s, String t)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

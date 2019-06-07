@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "478. Generate Random Point in a Circle";
+    String name = "162. Find Peak Element";
     String difficulty = "medium";
-    String functionDeclaration = "public int kthSmallest(TreeNode root, int k)";
+    String functionDeclaration = "public int findPeakElement(int[] nums) ";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

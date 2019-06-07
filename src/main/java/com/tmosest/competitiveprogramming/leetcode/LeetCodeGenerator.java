@@ -61,7 +61,7 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "230. Kth Smallest Element in a BST";
+    String name = "478. Generate Random Point in a Circle";
     String difficulty = "medium";
     String functionDeclaration = "public int kthSmallest(TreeNode root, int k)";
     try {

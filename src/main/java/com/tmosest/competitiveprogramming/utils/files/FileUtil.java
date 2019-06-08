@@ -27,6 +27,9 @@ public class FileUtil {
     File folder = new File(directory);
     File[] listOfFiles = folder.listFiles();
     List<String> fileNames = new ArrayList<>();
+    if (listOfFiles == null) {
+      return fileNames;
+    }
     for (File file : listOfFiles) {
       fileNames.add(file.getName());
     }

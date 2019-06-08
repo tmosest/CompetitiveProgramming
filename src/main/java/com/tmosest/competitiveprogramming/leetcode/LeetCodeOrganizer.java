@@ -1,33 +1,20 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
-import com.tmosest.competitiveprogramming.utils.files.FileUtil;
 import com.tmosest.competitiveprogramming.utils.files.JavaFile;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.List;
 
 public class LeetCodeOrganizer {
 
   public static LeetCodeOrganizer instance = new LeetCodeOrganizer();
 
+  private LeetCodeFileUtil leetCodeFileUtil;
+
   private LeetCodeOrganizer() {
-  }
-
-  private FileUtil fileUtil = FileUtil.instance();
-
-  private String getLeetCodePath() {
-    return fileUtil.getAbsolutePath(LeetCodeOrganizer.class);
-  }
-
-  private String getLeetCodeTestPath() {
-    return fileUtil.getAbsoluteTestPath(LeetCodeOrganizer.class);
-  }
-
-  private List<String> getTestFiles() {
-    return fileUtil.fileNamesInDirectory(getLeetCodeTestPath());
+    leetCodeFileUtil = LeetCodeFileUtil.instance();
   }
 
   private enum ProblemDifficulty {
@@ -47,20 +34,8 @@ public class LeetCodeOrganizer {
     }
   }
 
-  private String removeTestSuffix(String testFileName) {
-    return testFileName.replace("Test", "");
-  }
-
-  private String absoluteFilePath(String testFileName) {
-    return instance.getLeetCodePath() + removeTestSuffix(testFileName);
-  }
-
-  private String absoluteTestFilePath(String testFileName) {
-    return instance.getLeetCodeTestPath() + testFileName;
-  }
-
   private ProblemDifficulty getDifficulty(String testFileName) throws IOException {
-    File file = new File(absoluteTestFilePath(testFileName));
+    File file = new File(leetCodeFileUtil.absoluteTestFilePath(testFileName));
     BufferedReader reader = new BufferedReader(new FileReader(file));
     ProblemDifficulty difficulty;
     while ((difficulty = getDifficultyFromTagName(reader.readLine()))
@@ -71,7 +46,7 @@ public class LeetCodeOrganizer {
   }
 
   private String destinationTestPath(ProblemDifficulty problemDifficulty) {
-    return getLeetCodeTestPath() + problemDifficulty.name() + "/";
+    return leetCodeFileUtil.getLeetCodeTestPath() + problemDifficulty.name() + "/";
   }
 
   private String destinationTestPath(String testFileName) throws IOException {
@@ -79,15 +54,11 @@ public class LeetCodeOrganizer {
   }
 
   private String destinationPath(ProblemDifficulty problemDifficulty) {
-    return getLeetCodePath() + problemDifficulty.name() + "/";
+    return leetCodeFileUtil.getLeetCodePath() + problemDifficulty.name() + "/";
   }
 
   private String destinationPath(String testFileName) throws  IOException {
     return destinationPath(getDifficulty(testFileName));
-  }
-
-  private JavaFile getJavaFile(String path) throws IOException {
-    return new JavaFile(path);
   }
 
   private JavaFile updateToCorrectPackage(JavaFile javaFile, String destination) {
@@ -98,16 +69,16 @@ public class LeetCodeOrganizer {
   }
 
   private boolean moveFile(String testFileName) throws  IOException {
-    String fileSource = absoluteFilePath(testFileName);
+    String fileSource = leetCodeFileUtil.absoluteFilePath(testFileName);
     String fileDestination = destinationPath(testFileName);
     JavaFile javaFile = updateToCorrectPackage(
-        getJavaFile(fileSource), fileDestination
+        new JavaFile(fileSource), fileDestination
     );
 
-    String testFileSource = absoluteTestFilePath(testFileName);
+    String testFileSource = leetCodeFileUtil.absoluteTestFilePath(testFileName);
     String testFileDestination = destinationTestPath(testFileName);
     JavaFile javaTestFile = updateToCorrectPackage(
-        getJavaFile(testFileSource), testFileDestination
+        new JavaFile(testFileSource), testFileDestination
     );
 
     boolean movedFile = javaFile.moveFile(fileDestination);
@@ -118,9 +89,9 @@ public class LeetCodeOrganizer {
   /**
    * Look through test files and try to move them to the correct location.
    */
-  public void organizeProblemFiles() {
-    System.out.println("Path to this is : " + instance.getLeetCodeTestPath());
-    for (String testFileName : instance.getTestFiles()) {
+  void organizeProblemFiles() {
+    System.out.println("Path to this is : " + leetCodeFileUtil.getLeetCodeTestPath());
+    for (String testFileName : leetCodeFileUtil.getTestFiles()) {
       System.out.println("File: " + testFileName);
       try {
         moveFile(testFileName);

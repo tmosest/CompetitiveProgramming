@@ -9,7 +9,7 @@ import java.util.List;
 
 public class JavaFile {
 
-  private class Annotation {
+  public class Annotation {
     private String name;
     private String val;
 
@@ -23,6 +23,22 @@ public class JavaFile {
       name = annotation.substring(1, openBracketIndex);
       int closeBracketIndex = annotation.indexOf(')', openBracketIndex);
       val = annotation.substring(openBracketIndex + 1, closeBracketIndex).replace("\"","");
+    }
+
+    /**
+     * Get the name of the annotation.
+     * @return The name of the annotation.
+     */
+    public String getName() {
+      return name;
+    }
+
+    /**
+     * The value of the annotation.
+     * @return The value of the annotation.
+     */
+    public String getVal() {
+      return val;
     }
   }
 
@@ -122,6 +138,14 @@ public class JavaFile {
   void addNewAnnotation(String name, String val) {
     Annotation annotation = new Annotation(name, val);
     annotations.add(annotation);
+  }
+
+  /**
+   * Get the annotations for the java file.
+   * @return the annotations.
+   */
+  public List<Annotation> getAnnotations() {
+    return annotations;
   }
 
   private List<String> generateClassCode() {

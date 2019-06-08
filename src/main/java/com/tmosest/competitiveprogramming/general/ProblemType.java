@@ -6,7 +6,8 @@ public class ProblemType {
   public enum Difficulty {
     easy,
     medium,
-    hard
+    hard,
+    expert
   }
 
   // The sites that the problems can come from.
@@ -49,7 +50,7 @@ public class ProblemType {
 
   /**
    * Manual testing.
-   * @param args Command line args.
+   * @param args Command line args.x`x``
    */
   public static void main(String[] args) {
     System.out.println("===============Difficulty===============");

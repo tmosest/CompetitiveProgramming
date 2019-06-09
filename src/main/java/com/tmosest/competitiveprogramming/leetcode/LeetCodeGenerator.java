@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "820. Short Encoding of Words";
+    String name = "5084. Insufficient Nodes in Root to Leaf Paths";
     String difficulty = "medium";
-    String functionDeclaration = "public int minimumLengthEncoding(String[] words)";
+    String functionDeclaration = "public TreeNode sufficientSubset(TreeNode root, int limit)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

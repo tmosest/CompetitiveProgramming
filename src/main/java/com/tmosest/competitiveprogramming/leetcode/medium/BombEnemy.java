@@ -23,8 +23,7 @@ class BombEnemy {
         if (grid[i][j] == '0') {
           int killCount = 0;
           for (int[] delta : deltas) {
-            for (
-                int r = i, c = j;
+            for (int r = i, c = j;
                 r > -1 && r < grid.length && c > -1 && c < grid[0].length && grid[r][c] != 'W';
                 r += delta[0], c += delta[1]
             ) {

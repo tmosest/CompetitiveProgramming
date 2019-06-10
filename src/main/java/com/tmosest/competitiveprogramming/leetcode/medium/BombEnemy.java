@@ -2,6 +2,13 @@ package com.tmosest.competitiveprogramming.leetcode.medium;
 
 class BombEnemy {
 
+  private int[][] deltas = {
+      {1, 0},
+      {-1, 0},
+      {0, 1},
+      {0, -1}
+  };
+
   /**
    * Determine the max number of enemies killed by one bomb.
    *
@@ -15,24 +22,15 @@ class BombEnemy {
         // Empty Cell.
         if (grid[i][j] == '0') {
           int killCount = 0;
-          for (int r = i; r < grid.length && grid[r][j] != 'W'; r++) {
-            if (grid[r][j] == 'E') {
-              ++killCount;
-            }
-          }
-          for (int r = i; r > -1 && grid[r][j] != 'W'; r--) {
-            if (grid[r][j] == 'E') {
-              ++killCount;
-            }
-          }
-          for (int c = j; c < grid[0].length && grid[i][c] != 'W'; c++) {
-            if (grid[i][c] == 'E') {
-              ++killCount;
-            }
-          }
-          for (int c = j; c > -1 && grid[i][c] != 'W'; c--) {
-            if (grid[i][c] == 'E') {
-              ++killCount;
+          for (int[] delta : deltas) {
+            for (
+                int r = i, c = j;
+                r > -1 && r < grid.length && c > -1 && c < grid[0].length && grid[r][c] != 'W';
+                r += delta[0], c += delta[1]
+            ) {
+              if (grid[r][c] == 'E') {
+                ++killCount;
+              }
             }
           }
           max = Math.max(killCount, max);

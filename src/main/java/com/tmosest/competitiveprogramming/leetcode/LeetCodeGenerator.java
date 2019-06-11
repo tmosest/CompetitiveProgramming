@@ -45,7 +45,7 @@ public class LeetCodeGenerator {
     String[] vals = {
         "leetcode",
         difficulty,
-        "LeetCode: " + numberName
+        "LeetCode: " + numberName.replace("\n", "")
     };
     javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals);
     LeetCodeOrganizer.instance.organizeProblemFiles();
@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "284. Peeking Iterator\n";
+    String name = "244. Shortest Word Distance II\n";
     String difficulty = "medium";
-    String functionDeclaration = "public Integer peek()";
+    String functionDeclaration = "public WordDistance(String[] words)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

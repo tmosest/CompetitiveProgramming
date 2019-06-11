@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "244. Shortest Word Distance II\n";
+    String name = "207. Course Schedule\n";
     String difficulty = "medium";
-    String functionDeclaration = "public WordDistance(String[] words)";
+    String functionDeclaration = "public boolean canFinish(int numCourses, int[][] prerequisites)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

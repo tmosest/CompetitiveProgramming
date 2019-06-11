@@ -1,12 +1,10 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
-
-import java.util.LinkedList;
-import java.util.Queue;
+import com.tmosest.competitiveprogramming.leetcode.common.TreeNodeAdapter;
+import com.tmosest.competitiveprogramming.utils.tree.UtilTreeNode;
 
 class PathSumThree {
-  /* Write code here. */
 
   private int pathSum = 0;
 
@@ -17,28 +15,22 @@ class PathSumThree {
    * @param sum The sum we are looking for.
    * @return The number of paths.
    */
-  public int pathSum(TreeNode root, int sum) {
+  int pathSum(TreeNode root, int sum) {
     pathSum = 0;
     if (root == null) {
       return pathSum;
     }
-    Queue<TreeNode> queue = new LinkedList<>();
-    queue.add(root);
-    while (!queue.isEmpty()) {
-      root = queue.poll();
-      findPath(root, sum);
-      if (root.left != null) {
-        queue.add(root.left);
-      }
-      if (root.right != null) {
-        queue.add(root.right);
-      }
+
+    UtilTreeNode<Integer> utilRoot = TreeNodeAdapter.convertToUtility(root);
+    for (UtilTreeNode<Integer> node : utilRoot.iterateBfs()) {
+      findPath(node, sum);
     }
 
     return pathSum;
   }
 
-  private void findPath(TreeNode root, int sum) {
+  // Could refactor this into some sort of DFS.
+  private void findPath(UtilTreeNode<Integer> root, int sum) {
     if (root == null) {
       return;
     }
@@ -48,6 +40,4 @@ class PathSumThree {
     findPath(root.left, sum - root.val);
     findPath(root.right, sum - root.val);
   }
-
-
 }

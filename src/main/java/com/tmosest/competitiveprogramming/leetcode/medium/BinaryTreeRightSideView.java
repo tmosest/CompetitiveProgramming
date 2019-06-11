@@ -2,10 +2,11 @@ package com.tmosest.competitiveprogramming.leetcode.medium;
 
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
 
+import com.tmosest.competitiveprogramming.leetcode.common.TreeNodeAdapter;
+import com.tmosest.competitiveprogramming.utils.tree.UtilTreeNode;
+
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 class BinaryTreeRightSideView {
 
@@ -17,23 +18,14 @@ class BinaryTreeRightSideView {
    */
   List<Integer> rightSideView(TreeNode root) {
     List<Integer> result = new ArrayList<>();
-    Queue<TreeNode> queue = new LinkedList<>();
-    if (root != null) {
-      queue.add(root);
-    }
-    while (!queue.isEmpty()) {
-      int size = queue.size();
-      for (int i = 0; i < size; i++) {
-        root = queue.poll();
-        if (root.left != null) {
-          queue.add(root.left);
-        }
-        if (root.right != null) {
-          queue.add(root.right);
-        }
-        if (i == size - 1) {
-          result.add(root.val);
-        }
+    // Convert to a util tree.
+    UtilTreeNode<Integer> utilRoot = TreeNodeAdapter.convertToUtility(root);
+    // Get each level as a list.
+    for (List<Integer> level : utilRoot.iterateLevelByLevelValuesOnly()) {
+      // Make sure level has a value.
+      if (level.size() > 0) {
+        // Get the last value for each level.
+        result.add(level.get(level.size() - 1));
       }
     }
     return result;

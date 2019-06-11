@@ -58,8 +58,26 @@ public class UtilTreeNode<T> {
    *
    * @return A way to iterate over a tree node level by level.
    */
-  public UtilTreeNodeRowIteration<T> iterateBfs() {
-    return new UtilTreeNodeRowIteration<>(this);
+  public UtilTreeNodeBfsIteration<T> iterateBfs() {
+    return new UtilTreeNodeBfsIteration<>(this);
+  }
+
+  /**
+   * Iterate over a whole level of nodes at a time.
+   *
+   * @return A way to iterate over a whole level as a list.
+   */
+  UtilTreeNodeLevelIteration<T> iterateLevelByLevel() {
+    return new UtilTreeNodeLevelIteration<>(this);
+  }
+
+  /**
+   * Same as iterateLevelByLevel but values only.
+   *
+   * @return See iterateLevelByLevel but values only.
+   */
+  public UtilTreeNodeLevelValueIteration<T> iterateLevelByLevelValuesOnly() {
+    return new UtilTreeNodeLevelValueIteration<>(this);
   }
 
   /**

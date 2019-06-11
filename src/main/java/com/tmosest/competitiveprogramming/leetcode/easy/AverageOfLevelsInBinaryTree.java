@@ -2,13 +2,14 @@ package com.tmosest.competitiveprogramming.leetcode.easy;
 
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
 
+import com.tmosest.competitiveprogramming.leetcode.common.TreeNodeAdapter;
+import com.tmosest.competitiveprogramming.utils.stats.AverageUtil;
+import com.tmosest.competitiveprogramming.utils.tree.UtilTreeNode;
+
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 class AverageOfLevelsInBinaryTree {
-  /* Write code here. */
 
   /**
    * Get the average of each level in a binary tree.
@@ -16,31 +17,14 @@ class AverageOfLevelsInBinaryTree {
    * @param root The root of the tree.
    * @return The average of each level.
    */
-  public List<Double> averageOfLevels(TreeNode root) {
+  List<Double> averageOfLevels(TreeNode root) {
     List<Double> result = new ArrayList<>();
-
-    Queue<TreeNode> queue = new LinkedList<>();
-    queue.add(root);
-
-    while (!queue.isEmpty()) {
-      int size = queue.size();
-      double average = 0;
-      for (int i = 0; i < size; i++) {
-        root = queue.poll();
-        average += root.val;
-        if (root.left != null) {
-          queue.add(root.left);
-        }
-        if (root.right != null) {
-          queue.add(root.right);
-        }
-      }
-      average /= size;
-      result.add(average);
+    UtilTreeNode<Integer> utilRoot = TreeNodeAdapter.convertToUtility(root);
+    // Iterate by a whole level of values at a time.
+    for (List<Integer> row : utilRoot.iterateLevelByLevelValuesOnly()) {
+      // Add the average for the row.
+      result.add(AverageUtil.average(row));
     }
-
     return result;
   }
-
-
 }

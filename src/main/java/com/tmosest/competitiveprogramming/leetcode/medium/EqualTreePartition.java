@@ -15,7 +15,7 @@ class EqualTreePartition {
   boolean checkEqualTree(TreeNode root) {
     UtilTreeNode<Integer> utilRoot = TreeNodeAdapter.convertToUtility(root);
     convertToBottomUpSumTree(utilRoot);
-    for (UtilTreeNode<Integer> node : utilRoot.iterateLevelByLevel()) {
+    for (UtilTreeNode<Integer> node : utilRoot.iterateBfs()) {
       if (node != utilRoot && utilRoot.val == node.val + node.val) {
         return true;
       }

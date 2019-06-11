@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * A more universal TreeNode that can be used over and over again.
+ *
  * @param <T> Type of TreeNode.
  */
 public class UtilTreeNode<T> {
@@ -23,6 +24,7 @@ public class UtilTreeNode<T> {
 
   /**
    * Determines if a node is a leaf node.
+   *
    * @return are the left and right children null.
    */
   public boolean isLeaf() {
@@ -31,6 +33,7 @@ public class UtilTreeNode<T> {
 
   /**
    * Find the closest leaf in the path of the node value.
+   *
    * @param search The node value to start searching from.
    * @return The value of the closest leaf's value.
    */
@@ -52,19 +55,21 @@ public class UtilTreeNode<T> {
 
   /**
    * Iterate level by level starting at this node.
+   *
    * @return A way to iterate over a tree node level by level.
    */
-  public UtilTreeNodeRowIteration<T> iterateLevelByLevel() {
+  public UtilTreeNodeRowIteration<T> iterateBfs() {
     return new UtilTreeNodeRowIteration<>(this);
   }
 
   /**
    * Returns all of the none-null values in the list.
+   *
    * @return A list of all the values in the tree.
    */
   public List<T> listOfValues() {
     List<T> result = new ArrayList<>();
-    for (UtilTreeNode<T> node : iterateLevelByLevel()) {
+    for (UtilTreeNode<T> node : iterateBfs()) {
       result.add(node.val);
     }
     return result;
@@ -72,6 +77,7 @@ public class UtilTreeNode<T> {
 
   /**
    * Determines if this tree is equal to another tree.
+   *
    * @param other The other tree.
    * @return True if they are equal.
    */
@@ -95,6 +101,7 @@ public class UtilTreeNode<T> {
 
   /**
    * Add a new row to the tree.
+   *
    * @param val The value for that row.
    * @param depth The depth the row should be at.
    * @return A reference to the root.

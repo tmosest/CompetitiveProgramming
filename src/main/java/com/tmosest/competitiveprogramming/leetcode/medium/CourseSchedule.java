@@ -18,7 +18,7 @@ class CourseSchedule {
    * @param prerequisites The prerequisites.
    * @return True if all the courses can be taken.
    */
-  public boolean canFinish(int numCourses, int[][] prerequisites) {
+  boolean canFinish(int numCourses, int[][] prerequisites) {
     Map<Integer, Integer> degreeByNode = new HashMap<>();
     Map<Integer, List<Integer>> connsByNode = new HashMap<>();
     fillGraphInfo(numCourses, prerequisites, degreeByNode, connsByNode);

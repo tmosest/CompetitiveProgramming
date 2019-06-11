@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "207. Course Schedule\n";
+    String name = "148. Sort List";
     String difficulty = "medium";
-    String functionDeclaration = "public boolean canFinish(int numCourses, int[][] prerequisites)";
+    String functionDeclaration = "public ListNode sortList(ListNode head)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

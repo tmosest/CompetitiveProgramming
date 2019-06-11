@@ -13,7 +13,7 @@ class CampusBikes {
    * @param bikes Bikes.
    * @return Stuff.
    */
-  public int[] assignBikes(int[][] workers, int[][] bikes) {
+  int[] assignBikes(int[][] workers, int[][] bikes) {
     int workerIndex = workers.length;
     int bikeIndex = bikes.length;
     int[] wo = new int[workerIndex];

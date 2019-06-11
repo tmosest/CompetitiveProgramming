@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "370. Range Addition";
+    String name = "284. Peeking Iterator\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int[] getModifiedArray(int length, int[][] updates)";
+    String functionDeclaration = "public Integer peek()";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

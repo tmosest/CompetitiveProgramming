@@ -3,7 +3,6 @@ package com.tmosest.competitiveprogramming.leetcode.easy;
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
 
 class ConstructStringFromBinaryTree {
-  /* Write code here. */
 
   /**
    * Converts a tree to a string.
@@ -11,7 +10,7 @@ class ConstructStringFromBinaryTree {
    * @param root The root of the node.
    * @return A string representation.
    */
-  public String tree2str(TreeNode root) {
+  String tree2str(TreeNode root) {
     if (root == null) {
       return "";
     }
@@ -23,6 +22,4 @@ class ConstructStringFromBinaryTree {
     }
     return root.val + "(" + tree2str(root.left) + ")(" + tree2str(root.right) + ")";
   }
-
-
 }

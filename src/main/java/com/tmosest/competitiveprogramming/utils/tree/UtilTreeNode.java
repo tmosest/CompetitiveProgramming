@@ -81,6 +81,14 @@ public class UtilTreeNode<T> {
   }
 
   /**
+   * Iterate all paths from root to leafs.
+   * @return A way to iterate over all root to leaf paths.
+   */
+  public UtilTreeNodeRootToLeafPathsIteration<T> iterateRootToLeafPathsValuesOnly() {
+    return new UtilTreeNodeRootToLeafPathsIteration<>(this);
+  }
+
+  /**
    * Returns all of the none-null values in the list.
    *
    * @return A list of all the values in the tree.

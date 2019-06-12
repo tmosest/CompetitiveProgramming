@@ -12,23 +12,14 @@ import org.junit.jupiter.api.Test;
 @Tag("string")
 @DisplayName("LeetCode: 988. Smallest String Starting From Leaf")
 class SmallestStringStartingFromLeafTest {
-	/* Write code here. */
 
-  SmallestStringStartingFromLeaf smallestStringStartingFromLeaf = new SmallestStringStartingFromLeaf();
+  private SmallestStringStartingFromLeaf smallestStringStartingFromLeaf = new SmallestStringStartingFromLeaf();
+  private Codec codec = new Codec();
 
   @Test
   @DisplayName("Test Case 0")
   void testCase0() {
-    TreeNode root = new TreeNode(1);
-    root.left = new TreeNode(2);
-    root.right = new TreeNode(3);
-    root.left.left = new TreeNode(4);
-    root.left.right = new TreeNode(5);
-    root.right.left = new TreeNode(4);
-    root.right.right = new TreeNode(5);
-
+    TreeNode root = codec.deserialize("[0,1,2,3,4,3,4]");
     Assertions.assertEquals("dba", smallestStringStartingFromLeaf.smallestFromLeaf(root));
   }
-
-
 }

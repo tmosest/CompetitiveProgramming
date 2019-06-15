@@ -14,9 +14,8 @@ import org.junit.jupiter.api.Test;
 @Tag("binaryTree")
 @DisplayName("LeetCode: 637. Average of Levels in Binary Tree")
 class AverageOfLevelsInBinaryTreeTest {
-	/* Write code here. */
 
-  AverageOfLevelsInBinaryTree averageOfLevelsInBinaryTree = new AverageOfLevelsInBinaryTree();
+  private AverageOfLevelsInBinaryTree averageOfLevelsInBinaryTree = new AverageOfLevelsInBinaryTree();
 
   @Test
   @DisplayName("Test Case 0")
@@ -39,6 +38,4 @@ class AverageOfLevelsInBinaryTreeTest {
       Assertions.assertEquals(expected.get(i), actual.get(i));
     }
   }
-
-
 }

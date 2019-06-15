@@ -45,7 +45,7 @@ public class LeetCodeGenerator {
     String[] vals = {
         "leetcode",
         difficulty,
-        "LeetCode: " + numberName
+        "LeetCode: " + numberName.replace("\n", "")
     };
     javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals);
     LeetCodeOrganizer.instance.organizeProblemFiles();
@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "370. Range Addition";
+    String name = "199. Binary Tree Right Side View";
     String difficulty = "medium";
-    String functionDeclaration = "public int[] getModifiedArray(int length, int[][] updates)";
+    String functionDeclaration = "public List<Integer> rightSideView(TreeNode root)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

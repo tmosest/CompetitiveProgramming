@@ -3,7 +3,6 @@ package com.tmosest.competitiveprogramming.leetcode.easy;
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
 
 class BinaryTreeTilt {
-  /* Write code here. */
 
   private int tilt = 0;
 
@@ -13,7 +12,7 @@ class BinaryTreeTilt {
    * @param root The root node.
    * @return The tilt.
    */
-  public int findTilt(TreeNode root) {
+  int findTilt(TreeNode root) {
     tilt = 0;
     traverse(root);
     return tilt;
@@ -28,6 +27,4 @@ class BinaryTreeTilt {
     tilt += Math.abs(left - right);
     return left + right + root.val;
   }
-
-
 }

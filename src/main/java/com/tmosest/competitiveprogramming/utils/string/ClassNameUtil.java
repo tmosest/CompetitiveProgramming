@@ -24,7 +24,7 @@ public class ClassNameUtil {
    * @return A string in class name format.
    */
   public String convertToClassName(String problemName) {
-    String[] names = problemName.split(" ");
+    String[] names = problemName.replace("\n", " ").split(" ");
     RomanNumeralUtil romanNumeralUtil = RomanNumeralUtil.instance();
     for (int i = 0; i < names.length; i++) {
       if (romanNumeralUtil.isRoman(names[i])) {
@@ -48,7 +48,7 @@ public class ClassNameUtil {
       }
       names[i] = convertToProperName(names[i]);
     }
-    return String.join("", names).trim();
+    return String.join("", names).trim().replace("\n", "");
   }
 
   String createTestClassName(String problemName) {

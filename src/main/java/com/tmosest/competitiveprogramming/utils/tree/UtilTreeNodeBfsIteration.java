@@ -6,9 +6,9 @@ import java.util.Queue;
 
 /**
  * Allows us to iterate over a tree level by level.
- * @param <T> The type of UtilTreeNodeRowIteration iterator.
+ * @param <T> The type of UtilTreeNodeBfsIteration iterator.
  */
-public class UtilTreeNodeRowIteration<T> implements Iterable<UtilTreeNode<T>> {
+public class UtilTreeNodeBfsIteration<T> implements Iterable<UtilTreeNode<T>> {
 
   private UtilTreeNode<T> root;
 
@@ -16,20 +16,20 @@ public class UtilTreeNodeRowIteration<T> implements Iterable<UtilTreeNode<T>> {
    * Create a way to iterate over a TreeNode level by level.
    * @param root The root of the tree.
    */
-  public UtilTreeNodeRowIteration(UtilTreeNode<T> root) {
+  UtilTreeNodeBfsIteration(UtilTreeNode<T> root) {
     this.root = root;
   }
 
   @Override
   public Iterator<UtilTreeNode<T>> iterator() {
-    return new LevelByLevelIterator<>(root);
+    return new BfsIterator<>(root);
   }
 
-  private class LevelByLevelIterator<T> implements Iterator<UtilTreeNode<T>> {
+  private class BfsIterator<T> implements Iterator<UtilTreeNode<T>> {
 
     private Queue<UtilTreeNode<T>> queue;
 
-    private LevelByLevelIterator(UtilTreeNode<T> root) {
+    private BfsIterator(UtilTreeNode<T> root) {
       queue = new LinkedList<>();
       if (root != null) {
         queue.add(root);

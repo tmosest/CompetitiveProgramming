@@ -58,4 +58,10 @@ class ClassNameUtilTest {
   void should_be_able_to_handle_multi_word_numbers() {
     Assertions.assertEquals("ConvertToBaseTwentyTwo", classNameUtil.convertToClassName("Convert to Base XXII"));
   }
+
+  @Test
+  @DisplayName("Should remove new line characters")
+  void should_remove_new_line_characters() {
+    Assertions.assertEquals("ShortestWordDistanceTwo", classNameUtil.convertToClassName("Shortest Word Distance II\n"));
+  }
 }

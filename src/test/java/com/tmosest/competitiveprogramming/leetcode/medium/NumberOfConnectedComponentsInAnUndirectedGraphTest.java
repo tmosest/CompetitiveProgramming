@@ -10,12 +10,14 @@ import org.junit.jupiter.api.Test;
 @DisplayName("LeetCode: 323. Number of Connected Components in an Undirected Graph")
 class NumberOfConnectedComponentsInAnUndirectedGraphTest {
 
-  private NumberOfConnectedComponentsInAnUndirectedGraph numberOfConnectedComponentsInAnUndirectedGraph = new NumberOfConnectedComponentsInAnUndirectedGraph();
+  private NumberOfConnectedComponentsInAnUndirectedGraph numberOfConnectedComponentsInAnUndirectedGraph
+      = new NumberOfConnectedComponentsInAnUndirectedGraph();
 
   @Test
   @DisplayName("Test Case 0")
   void testCase0() {
     int[][] edges = {{0, 1}, {1, 2}, {3, 4}};
-    Assertions.assertEquals(2, numberOfConnectedComponentsInAnUndirectedGraph.countComponents(5, edges));
+    Assertions
+        .assertEquals(2, numberOfConnectedComponentsInAnUndirectedGraph.countComponents(5, edges));
   }
 }

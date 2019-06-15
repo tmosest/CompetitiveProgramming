@@ -19,6 +19,6 @@ class NumberOfConnectedComponentsInAnUndirectedGraph {
       values[i] = i;
     }
     UtilGraph<Integer> graph = new UtilGraph<>(Arrays.asList(values), edges);
-    return graph.countConnetedComponents();
+    return graph.countConnectedComponents();
   }
 }

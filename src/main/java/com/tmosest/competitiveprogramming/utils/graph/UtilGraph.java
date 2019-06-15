@@ -81,7 +81,7 @@ public class UtilGraph<T> {
    *
    * @return The number of connected components.
    */
-  public int countConnetedComponents() {
+  public int countConnectedComponents() {
     // Keep track of all the visited nodes.
     boolean[] visited = new boolean[nodes.size()];
     int count = 0;

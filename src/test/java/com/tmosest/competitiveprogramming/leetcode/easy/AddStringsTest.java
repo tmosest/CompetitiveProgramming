@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("bigInteger")
 @Tag("string")
 @DisplayName("LeetCode: 415. Add Strings")
 class AddStringsTest {

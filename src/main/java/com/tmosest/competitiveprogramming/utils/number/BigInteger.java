@@ -1,6 +1,8 @@
 package com.tmosest.competitiveprogramming.utils.number;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class BigInteger implements Iterable<BigInteger> {
 
@@ -10,7 +12,35 @@ public class BigInteger implements Iterable<BigInteger> {
   }
 
   /**
+   * Create a big integer from a integer.
+   *
+   * @param num The integer.
+   */
+  public BigInteger(int num) {
+    StringBuilder stringBuilder = new StringBuilder();
+    while (num > 0) {
+      stringBuilder.append(num % 10);
+      num /= 10;
+    }
+    val = stringBuilder.reverse().toString();
+  }
+
+  /**
+   * Create a big integer from a integer.
+   *
+   * @param digits The digits of the number.
+   */
+  public BigInteger(int[] digits) {
+    StringBuilder stringBuilder = new StringBuilder();
+    for (int digit : digits) {
+      stringBuilder.append(digit);
+    }
+    val = stringBuilder.toString();
+  }
+
+  /**
    * Create a new big integer with given value.
+   *
    * @param val The value.
    */
   public BigInteger(String val) {
@@ -18,7 +48,21 @@ public class BigInteger implements Iterable<BigInteger> {
   }
 
   /**
+   * Get the list representation of the big integer.
+   *
+   * @return the list representation.
+   */
+  public List<Integer> asIntegerList() {
+    List<Integer> result = new ArrayList<>();
+    for (char digit : val.toCharArray()) {
+      result.add(digit - '0');
+    }
+    return result;
+  }
+
+  /**
    * Convert to a string.
+   *
    * @return The String representation of the big integer.
    */
   public String toString() {
@@ -27,6 +71,7 @@ public class BigInteger implements Iterable<BigInteger> {
 
   /**
    * Add together two big integers.
+   *
    * @param bigInteger The big int to add.
    * @return The resulting big integer.
    */
@@ -55,7 +100,7 @@ public class BigInteger implements Iterable<BigInteger> {
         sum -= 10;
         hasCarryOver = true;
       }
-      char digit = (char)(sum + '0');
+      char digit = (char) (sum + '0');
       sb.append(digit);
     }
     char[] remainder = null;
@@ -76,7 +121,7 @@ public class BigInteger implements Iterable<BigInteger> {
           sum -= 10;
           hasCarryOver = true;
         }
-        char digit = (char)(sum + '0');
+        char digit = (char) (sum + '0');
         sb.append(digit);
       }
     }
@@ -88,6 +133,7 @@ public class BigInteger implements Iterable<BigInteger> {
 
   /**
    * Multiply two big integers together.
+   *
    * @param bigInteger The big integer to multiply by.
    * @return A BigInteger that is the result of the multiplication.
    */
@@ -101,6 +147,7 @@ public class BigInteger implements Iterable<BigInteger> {
 
   /**
    * Determine if this is equal to another BigInteger.
+   *
    * @param other The other BigInteger.
    * @return True if they are the same.
    */
@@ -110,6 +157,7 @@ public class BigInteger implements Iterable<BigInteger> {
 
   /**
    * Iterate over expanded form.
+   *
    * @return The expanded for iterator.
    */
   public Iterable<BigInteger> expandFormSmallestToLargest() {

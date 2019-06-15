@@ -10,11 +10,11 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("array")
+@Tag("bigInteger")
 @DisplayName("LeetCode: 989. Add to Array-Form of Integer")
 class AddToArrayFormOfIntegerTest {
-	/* Write code here. */
 
-  AddToArrayFormOfInteger addToArrayFormOfInteger = new AddToArrayFormOfInteger();
+  private AddToArrayFormOfInteger addToArrayFormOfInteger = new AddToArrayFormOfInteger();
 
   private void test(int[] input, int toAdd, Integer[] output) {
     List<Integer> expected = Arrays.asList(output);
@@ -49,6 +49,4 @@ class AddToArrayFormOfIntegerTest {
     };
     test(input, 806, output);
   }
-
-
 }

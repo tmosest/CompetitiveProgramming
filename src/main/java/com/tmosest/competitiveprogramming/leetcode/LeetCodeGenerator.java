@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1089. Duplicate Zeros";
+    String name = "1086. High Five";
     String difficulty = "easy";
-    String functionDeclaration = "public void duplicateZeros(int[] arr)";
+    String functionDeclaration = "public int[][] highFive(int[][] items)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

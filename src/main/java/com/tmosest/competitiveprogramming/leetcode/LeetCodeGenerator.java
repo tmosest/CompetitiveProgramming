@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "328. Odd Even Linked List\n";
+    String name = "86. Partition List\n";
     String difficulty = "medium";
-    String functionDeclaration = "public ListNode oddEvenList(ListNode head)";
+    String functionDeclaration = "public ListNode partition(ListNode head, int partitionPoint)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

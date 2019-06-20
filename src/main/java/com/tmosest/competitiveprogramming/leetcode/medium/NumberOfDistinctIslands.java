@@ -1,4 +1,4 @@
-package com.tmosest.competitiveprogramming.leetcode.easy;
+package com.tmosest.competitiveprogramming.leetcode.medium;
 
 import java.util.HashSet;
 import java.util.Set;

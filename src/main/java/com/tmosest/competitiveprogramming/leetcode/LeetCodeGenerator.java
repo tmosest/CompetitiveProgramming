@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "86. Partition List\n";
+    String name = "817. Linked List Components\n";
     String difficulty = "medium";
-    String functionDeclaration = "public ListNode partition(ListNode head, int partitionPoint)";
+    String functionDeclaration = "public int numComponents(ListNode head, int[] groups)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

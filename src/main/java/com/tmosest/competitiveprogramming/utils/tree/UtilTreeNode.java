@@ -53,6 +53,10 @@ public class UtilTreeNode<T> {
     return null;
   }
 
+  public UtilTreeNodeInorderIteration<T> iterateInorder() {
+    return new UtilTreeNodeInorderIteration<>(this);
+  }
+
   /**
    * Iterate level by level starting at this node.
    *

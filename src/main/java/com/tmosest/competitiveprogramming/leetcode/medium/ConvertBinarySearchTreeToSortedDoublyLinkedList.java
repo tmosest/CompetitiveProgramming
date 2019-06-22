@@ -1,12 +1,14 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
 import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
+import com.tmosest.competitiveprogramming.leetcode.common.TreeNodeAdapter;
+import com.tmosest.competitiveprogramming.utils.tree.UtilTreeNode;
 
 class ConvertBinarySearchTreeToSortedDoublyLinkedList {
 
-  private TreeNode head = new TreeNode(Integer.MAX_VALUE);
-  private TreeNode tail = new TreeNode(Integer.MIN_VALUE);
-  private TreeNode prev = null;
+  private UtilTreeNode<Integer> head = new UtilTreeNode<>(Integer.MAX_VALUE);
+  private UtilTreeNode<Integer> tail = new UtilTreeNode<>(Integer.MIN_VALUE);
+  private UtilTreeNode<Integer> prev = null;
 
   /**
    * Convert a BST to a doubly sorted linked list in place.
@@ -16,40 +18,25 @@ class ConvertBinarySearchTreeToSortedDoublyLinkedList {
    */
   TreeNode treeToDoublyList(TreeNode root) {
     prev = null;
-    inOrderTraversal(root);
+    UtilTreeNode<Integer> utilRoot = TreeNodeAdapter.convertToUtility(root);
+    for (UtilTreeNode<Integer> node : utilRoot.iterateInorder()) {
+      if (node.val < head.val) {
+        head = node;
+      }
+
+      if (node.val > tail.val) {
+        tail = node;
+      }
+
+      if (prev != null) {
+        node.left = prev;
+        prev.right = node;
+      }
+
+      prev = node;
+    }
     head.left = tail;
     tail.right = head;
-    return root == null ? null : head;
-  }
-
-  private void inOrderTraversal(TreeNode root) {
-    if (root == null) {
-      return;
-    }
-
-    if (root.left != null) {
-      inOrderTraversal(root.left);
-    }
-
-    if (root.val < head.val) {
-      head = root;
-    }
-
-    if (root.val > tail.val) {
-      tail = root;
-    }
-
-    TreeNode right = root.right;
-
-    if (prev != null) {
-      root.left = prev;
-      prev.right = root;
-    }
-
-    prev = root;
-
-    if (right != null) {
-      inOrderTraversal(right);
-    }
+    return root == null ? null : TreeNodeAdapter.convertToTreeNode(head);
   }
 }

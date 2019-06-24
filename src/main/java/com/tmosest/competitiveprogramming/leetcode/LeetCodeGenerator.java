@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "426. Convert Binary Search Tree to Sorted Doubly Linked List";
+    String name = "130. Surrounded Regions\n";
     String difficulty = "medium";
-    String functionDeclaration = "public Node treeToDoublyList(Node root)";
+    String functionDeclaration = "public void solve(char[][] board)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "655. Print Binary Tree";
+    String name = "1027. Longest Arithmetic Sequence\n";
     String difficulty = "medium";
-    String functionDeclaration = "public List<List<String>> printTree(TreeNode root)";
+    String functionDeclaration = "public int longestArithSeqLength(int[] arr)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

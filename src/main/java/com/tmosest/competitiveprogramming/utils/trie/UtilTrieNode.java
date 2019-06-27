@@ -3,6 +3,9 @@ package com.tmosest.competitiveprogramming.utils.trie;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Trie node utility class.
+ */
 public class UtilTrieNode {
   public char letter = '-';
   public boolean isWord = false;

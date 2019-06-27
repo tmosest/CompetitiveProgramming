@@ -61,7 +61,7 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "106. Construct Binary Tree from Inorder and Postorder Traversal\n";
+    String name = "288. Unique Word Abbreviation\n";
     String difficulty = "medium";
     String functionDeclaration = "public TreeNode helper(int in_left, int in_right)";
     try {

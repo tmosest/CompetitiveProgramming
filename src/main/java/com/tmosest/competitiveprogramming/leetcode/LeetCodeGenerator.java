@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "752. Open the Lock\n";
+    String name = "1091. Shortest Path in Binary Matrix\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int openLock(String[] deadends, String target)";
+    String functionDeclaration = "public int shortestPathBinaryMatrix(int[][] grid)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

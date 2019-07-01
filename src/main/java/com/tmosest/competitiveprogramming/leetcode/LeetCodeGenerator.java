@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1091. Shortest Path in Binary Matrix\n";
+    String name = "156. Binary Tree Upside Down\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int shortestPathBinaryMatrix(int[][] grid)";
+    String functionDeclaration = "public TreeNode upsideDownBinaryTree(TreeNode root)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

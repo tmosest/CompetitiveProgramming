@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "156. Binary Tree Upside Down\n";
+    String name = "1104. Path In Zigzag Labelled Binary Tree\n";
     String difficulty = "medium";
-    String functionDeclaration = "public TreeNode upsideDownBinaryTree(TreeNode root)";
+    String functionDeclaration = "public List<Integer> pathInZigZagTree(int label)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

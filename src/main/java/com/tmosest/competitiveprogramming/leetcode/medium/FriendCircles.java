@@ -2,23 +2,23 @@ package com.tmosest.competitiveprogramming.leetcode.medium;
 
 class FriendCircles {
 
-  public int findCircleNum(int[][] M) {
-    int[] visited = new int[M.length];
+  int findCircleNum(int[][] matrix) {
+    int[] visited = new int[matrix.length];
     int count = 0;
-    for (int i = 0; i < M.length; i++) {
+    for (int i = 0; i < matrix.length; i++) {
       if (visited[i] == 0) {
-        dfs(M, visited, i);
+        dfs(matrix, visited, i);
         count++;
       }
     }
     return count;
   }
 
-  private void dfs(int[][] M, int[] visited, int i) {
-    for (int j = 0; j < M.length; j++) {
-      if (M[i][j] == 1 && visited[j] == 0) {
+  private void dfs(int[][] matrix, int[] visited, int index) {
+    for (int j = 0; j < matrix.length; j++) {
+      if (matrix[index][j] == 1 && visited[j] == 0) {
         visited[j] = 1;
-        dfs(M, visited, j);
+        dfs(matrix, visited, j);
       }
     }
   }

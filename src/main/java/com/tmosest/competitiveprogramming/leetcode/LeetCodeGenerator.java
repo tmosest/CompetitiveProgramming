@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "536. Construct Binary Tree from String\n";
+    String name = "369. Plus One Linked List\n";
     String difficulty = "medium";
-    String functionDeclaration = "public TreeNode str2tree(String s)";
+    String functionDeclaration = "public ListNode plusOne(ListNode head)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

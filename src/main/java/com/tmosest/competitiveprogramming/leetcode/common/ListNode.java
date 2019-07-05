@@ -32,4 +32,22 @@ public class ListNode {
 
     return preHead.next;
   }
+
+  /**
+   * Convert a ListNode to a string.
+   * @return The list from here to end.
+   */
+  public String toString() {
+    StringBuilder stringBuilder = new StringBuilder();
+    stringBuilder.append("[");
+    ListNode head = this;
+    while (head != null) {
+      stringBuilder.append(head.val);
+      stringBuilder.append(",");
+      head = head.next;
+    }
+    stringBuilder.deleteCharAt(stringBuilder.length() - 1);
+    stringBuilder.append("]");
+    return stringBuilder.toString();
+  }
 }

@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "450. Delete Node in a BST\n";
+    String name = "935. Knight Dialer\n";
     String difficulty = "medium";
-    String functionDeclaration = "public String getHint(String secret, String guess)";
+    String functionDeclaration = "public int knightDialer(int N)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

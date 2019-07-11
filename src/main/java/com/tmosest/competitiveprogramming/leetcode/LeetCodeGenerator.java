@@ -61,7 +61,7 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "984. String Without AAA or BBB\n";
+    String name = "1055. Shortest Way to Form String\n";
     String difficulty = "medium";
     String functionDeclaration = "String strWithout3a3b(int A, int B)";
     try {

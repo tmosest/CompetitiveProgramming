@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "935. Knight Dialer\n";
+    String name = "984. String Without AAA or BBB\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int knightDialer(int N)";
+    String functionDeclaration = "String strWithout3a3b(int A, int B)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

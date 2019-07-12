@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1055. Shortest Way to Form String\n";
+    String name = "963. Minimum Area Rectangle II\n";
     String difficulty = "medium";
-    String functionDeclaration = "String strWithout3a3b(int A, int B)";
+    String functionDeclaration = "public double minAreaFreeRect(int[][] points)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

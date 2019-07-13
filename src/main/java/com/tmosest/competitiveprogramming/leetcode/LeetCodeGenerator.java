@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "963. Minimum Area Rectangle II\n";
+    String name = "926. Flip String to Monotone Increasing\n";
     String difficulty = "medium";
-    String functionDeclaration = "public double minAreaFreeRect(int[][] points)";
+    String functionDeclaration = "public int minFlipsMonoIncr(String str)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

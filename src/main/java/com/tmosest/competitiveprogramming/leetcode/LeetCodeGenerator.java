@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "926. Flip String to Monotone Increasing\n";
+    String name = "1060. Missing Element in Sorted Array\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int minFlipsMonoIncr(String str)";
+    String functionDeclaration = "public int missingElement(int[] nums, int k)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

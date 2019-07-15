@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1119. Remove Vowels from a String\n";
+    String name = "555. Split Concatenated Strings\n";
     String difficulty = "easy";
-    String functionDeclaration = "public String removeVowels(String str)";
+    String functionDeclaration = "public String splitLoopedString(String[] strs)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

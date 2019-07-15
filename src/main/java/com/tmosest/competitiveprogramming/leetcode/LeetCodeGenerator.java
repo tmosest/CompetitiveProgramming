@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1118. Number of Days in a Month\n";
+    String name = "1119. Remove Vowels from a String\n";
     String difficulty = "easy";
-    String functionDeclaration = "public int numberOfDays(int Y, int M)";
+    String functionDeclaration = "public String removeVowels(String str)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

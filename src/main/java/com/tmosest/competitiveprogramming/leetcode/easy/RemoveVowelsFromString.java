@@ -11,7 +11,7 @@ class RemoveVowelsFromString {
    * @param str The word.
    * @return The word with no vowels.
    */
-  public String removeVowels(String str) {
+  String removeVowels(String str) {
     if (str == null || str.length() == 0) {
       return "";
     }

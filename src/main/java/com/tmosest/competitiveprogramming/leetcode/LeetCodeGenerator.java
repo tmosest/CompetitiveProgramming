@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "456. 132 Pattern\n";
+    String name = "457. Circular Array Loop\n";
     String difficulty = "medium";
-    String functionDeclaration = "public boolean find132pattern(int[] nums)";
+    String functionDeclaration = "public boolean circularArrayLoop(int[] nums)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

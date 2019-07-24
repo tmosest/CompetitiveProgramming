@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "539. Minimum Time Difference\n";
+    String name = "939. Minimum Area Rectangle\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int findMinDifference(List<String> timePoints)";
+    String functionDeclaration = "public int minAreaRect(int[][] points)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

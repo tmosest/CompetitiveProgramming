@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "338. Counting Bits\n";
+    String name = "873. Length of Longest Fibonacci Subsequence\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int[] countBits(int num)";
+    String functionDeclaration = "public int lenLongestFibSubseq(int[] arr)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

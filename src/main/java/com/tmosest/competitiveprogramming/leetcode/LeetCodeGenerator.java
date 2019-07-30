@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1137. N-th Tribonacci Number\n";
-    String difficulty = "easy";
-    String functionDeclaration = "public int tribonacci(int num)";
+    String name = "338. Counting Bits\n";
+    String difficulty = "medium";
+    String functionDeclaration = "public int[] countBits(int num)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

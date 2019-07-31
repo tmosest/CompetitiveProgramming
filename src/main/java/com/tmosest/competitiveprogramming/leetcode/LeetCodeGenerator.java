@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "911. Online Election\n";
+    String name = "647. Palindromic Substrings\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int lenLongestFibSubseq(int[] arr)";
+    String functionDeclaration = "public int countSubstrings(String s)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

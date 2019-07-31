@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "647. Palindromic Substrings\n";
+    String name = "807. Max Increase to Keep City Skyline\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int countSubstrings(String s)";
+    String functionDeclaration = "public int maxIncreaseKeepingSkyline(int[][] grid)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

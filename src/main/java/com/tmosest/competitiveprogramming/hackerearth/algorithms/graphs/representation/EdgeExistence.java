@@ -29,7 +29,7 @@ public class EdgeExistence {
     for (int q = 0; q < queries; q++) {
       results[q] = graph.hasEdge(in.nextInt() - 1, in.nextInt() - 1) ? "YES" : "NO";
       if (debugMode) {
-        System.out.println("q: " + q + " result: " + results[q]);
+        System.out.println("search: " + q + " result: " + results[q]);
       }
     }
     in.close();

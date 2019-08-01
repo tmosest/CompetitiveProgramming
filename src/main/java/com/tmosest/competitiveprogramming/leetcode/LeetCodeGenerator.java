@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "701. Insert into a Binary Search Tree\n";
+    String name = "451. Sort Characters By Frequency\n";
     String difficulty = "medium";
-    String functionDeclaration = "public TreeNode insertIntoBST(TreeNode root, int val)";
+    String functionDeclaration = "public String frequencySort(String str)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

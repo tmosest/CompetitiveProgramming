@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "495. Teemo Attacking\n";
+    String name = "865. Smallest Subtree with all the Deepest Nodes\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int findPoisonedDuration(int[] timeSeries, int duration)";
+    String functionDeclaration = "public TreeNode subtreeWithAllDeepest(TreeNode root)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

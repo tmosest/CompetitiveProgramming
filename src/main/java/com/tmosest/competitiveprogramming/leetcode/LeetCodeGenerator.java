@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "932. Beautiful Array";
+    String name = "1035. Uncrossed Lines\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int[] beautifulArray(int num)";
+    String functionDeclaration = "public int maxUncrossedLines(int[] A, int[] B)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

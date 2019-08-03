@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1143. Longest Common Subsequence\n";
+    String name = "932. Beautiful Array";
     String difficulty = "medium";
-    String functionDeclaration = "public int longestCommonSubsequence(String text1, String text2)";
+    String functionDeclaration = "public int[] beautifulArray(int num)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

@@ -2,7 +2,7 @@ package com.tmosest.competitiveprogramming.leetcode.medium;
 
 class UncrossedLines {
 
-  public int maxUncrossedLines(int[] one, int[] two) {
+  int maxUncrossedLines(int[] one, int[] two) {
     int[][] dp = new int[one.length][two.length];
     for (int i = 0; i < one.length; i++) {
       for (int j = 0; j < two.length; j++) {

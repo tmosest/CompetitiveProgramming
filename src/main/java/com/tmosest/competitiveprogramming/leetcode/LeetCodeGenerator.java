@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1035. Uncrossed Lines\n";
+    String name = "508. Most Frequent Subtree Sum\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int maxUncrossedLines(int[] A, int[] B)";
+    String functionDeclaration = "public int[] findFrequentTreeSum(TreeNode root)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

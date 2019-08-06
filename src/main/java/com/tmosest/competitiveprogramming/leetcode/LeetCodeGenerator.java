@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "372. Super Pow\n";
+    String name = "376. Wiggle Subsequence\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int superPow(int a, int[] b)";
+    String functionDeclaration = "public int wiggleMaxLength(int[] nums)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

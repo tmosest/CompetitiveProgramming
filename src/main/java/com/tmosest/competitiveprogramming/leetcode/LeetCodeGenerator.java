@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1094. Car Pooling\n";
+    String name = "877. Stone Game\n";
     String difficulty = "medium";
-    String functionDeclaration = "boolean carPooling(int[][] trips, int capacity)";
+    String functionDeclaration = "public boolean stoneGame(int[] piles)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

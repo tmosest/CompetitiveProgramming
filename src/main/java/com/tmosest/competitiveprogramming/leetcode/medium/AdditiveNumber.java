@@ -28,7 +28,7 @@ class AdditiveNumber {
     return false;
   }
 
-  public boolean isAdditiveStr(String num1, String num2, String str) {
+  private boolean isAdditiveStr(String num1, String num2, String str) {
     String num3 = addStr(num1, num2);
     while (str.startsWith(num3)) {
       str = str.substring(num3.length());

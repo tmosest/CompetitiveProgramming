@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "306. Additive Number\n";
+    String name = "372. Super Pow\n";
     String difficulty = "medium";
-    String functionDeclaration = "public boolean isAdditiveNumber(String num)";
+    String functionDeclaration = "public int superPow(int a, int[] b)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

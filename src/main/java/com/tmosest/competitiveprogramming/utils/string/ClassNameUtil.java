@@ -24,7 +24,7 @@ public class ClassNameUtil {
    * @return A string in class name format.
    */
   public String convertToClassName(String problemName) {
-    String[] names = problemName.replace("\n", " ").split(" ");
+    String[] names = problemName.replace("\n", " ").replace("N-th", "Nth").split(" ");
     RomanNumeralUtil romanNumeralUtil = RomanNumeralUtil.instance();
     for (int i = 0; i < names.length; i++) {
       if (romanNumeralUtil.isRoman(names[i])) {

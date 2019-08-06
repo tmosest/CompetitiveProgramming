@@ -64,4 +64,10 @@ class ClassNameUtilTest {
   void should_remove_new_line_characters() {
     Assertions.assertEquals("ShortestWordDistanceTwo", classNameUtil.convertToClassName("Shortest Word Distance II\n"));
   }
+
+  @Test
+  @DisplayName("Should remove new line characters")
+  void should_remove_underscores() {
+    Assertions.assertEquals("NthTribonacciNumber", classNameUtil.convertToClassName("N-th Tribonacci Number"));
+  }
 }

@@ -22,10 +22,10 @@ public class HighwayConstruction {
     Faulhaber f = new Faulhaber(1000);
     f.printArray();
     Scanner in = new Scanner(System.in);
-    int q = in.nextInt();
-    //Rational[] r = new Rational[q];
+    int search = in.nextInt();
+    //Rational[] r = new Rational[search];
     Rational one = new Rational(1,1);
-    for(int i = 0; i < q; i++) {
+    for(int i = 0; i < search; i++) {
       Rational cost = fp.powerSum(in.nextInt() - 1, in.nextInt()).sub(one);
       System.out.println(cost);
     }

@@ -97,7 +97,7 @@ public class TheSoapMystery {
     for (int q = 0; q < queries; q++) {
       if (debugMode) {
         System.out.println("\n=================================");
-        System.out.println("q: " + q);
+        System.out.println("search: " + q);
       }
       results[q] = binarySearch(array, in.nextLong());
       if (debugMode) {

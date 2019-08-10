@@ -61,7 +61,7 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "274. H-Index\n";
+    String name = "275. H-Index II\n";
     String difficulty = "medium";
     String functionDeclaration = "public int hIndex(int[] citations)";
     try {

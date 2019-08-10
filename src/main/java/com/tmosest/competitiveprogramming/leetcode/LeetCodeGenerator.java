@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "275. H-Index II\n";
+    String name = "90. Subsets II\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int hIndex(int[] citations)";
+    String functionDeclaration = "public List<List<Integer>> subsetsWithDup(int[] nums)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

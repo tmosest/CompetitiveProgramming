@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "324. Wiggle Sort II\n";
+    String name = "318. Maximum Product of Word Lengths\n";
     String difficulty = "medium";
-    String functionDeclaration = "public void wiggleSort(int[] nums)";
+    String functionDeclaration = "public int maxProduct(String[] words)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

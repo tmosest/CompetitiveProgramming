@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "318. Maximum Product of Word Lengths\n";
+    String name = "365. Water and Jug Problem\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int maxProduct(String[] words)";
+    String functionDeclaration = "public boolean canMeasureWater(int x, int y, int z)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

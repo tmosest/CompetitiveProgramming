@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "365. Water and Jug Problem\n";
+    String name = "368. Largest Divisible Subset\n";
     String difficulty = "medium";
-    String functionDeclaration = "public boolean canMeasureWater(int x, int y, int z)";
+    String functionDeclaration = "public List<Integer> largestDivisibleSubset(int[] nums)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

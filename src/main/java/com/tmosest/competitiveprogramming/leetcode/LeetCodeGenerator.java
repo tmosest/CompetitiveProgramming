@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "331. Verify Preorder Serialization of a Binary Tree\n";
+    String name = "735. Asteroid Collision\n";
     String difficulty = "medium";
-    String functionDeclaration = "public boolean isValidSerialization(String preorder)";
+    String functionDeclaration = "public int[] asteroidCollision(int[] asteroids)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

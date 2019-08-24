@@ -66,7 +66,7 @@ class ClassNameUtilTest {
   }
 
   @Test
-  @DisplayName("Should remove new line characters")
+  @DisplayName("Should remove hyphens line characters")
   void should_remove_underscores() {
     Assertions.assertEquals("NthTribonacciNumber", classNameUtil.convertToClassName("N-th Tribonacci Number"));
   }

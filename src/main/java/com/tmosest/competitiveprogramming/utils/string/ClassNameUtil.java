@@ -24,7 +24,15 @@ public class ClassNameUtil {
    * @return A string in class name format.
    */
   public String convertToClassName(String problemName) {
-    String[] names = problemName.replace("\n", " ").replace("N-th", "Nth").split(" ");
+    String[] names = problemName.replace("\n", " ").split(" ");
+    for (int i = 0; i < names.length; i++) {
+      if (names[i].contains("-")) {
+        String[] split = names[i].split("-");
+        if (!split[0].equals("")) {
+          names[i] = names[i].replace("-", "");
+        }
+      }
+    }
     RomanNumeralUtil romanNumeralUtil = RomanNumeralUtil.instance();
     for (int i = 0; i < names.length; i++) {
       if (romanNumeralUtil.isRoman(names[i])) {

@@ -8,7 +8,7 @@ class DayOfTheYear {
    * @param date The date in YYYY-MM-DD format.
    * @return The number day of the year.
    */
-  public int dayOfYear(String date) {
+  int dayOfYear(String date) {
     String[] str = date.split("-");
     int res = 0;
     int year = Integer.valueOf(str[0]);

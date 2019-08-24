@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "392. Is Subsequence\n";
+    String name = "1154. Day of the Year\n";
     String difficulty = "easy";
-    String functionDeclaration = "public boolean isSubsequence(String s, String t)";
+    String functionDeclaration = "public int dayOfYear(String date)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

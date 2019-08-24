@@ -9,34 +9,35 @@ class AsteroidCollision {
     if (len == 0) {
       return asteroids;
     }
-    Stack<Integer> s = new Stack<>();
+    Stack<Integer> stack = new Stack<>();
 
     int index = 0;
     while (index < len) {
       if (asteroids[index] > 0) {
-        s.push(asteroids[index]);
+        stack.push(asteroids[index]);
       } else {
-        if (s.isEmpty()) {
-          s.push(asteroids[index]);
+        if (stack.isEmpty()) {
+          stack.push(asteroids[index]);
         } else {
-          while (!s.isEmpty() && s.peek() > 0 && s.peek() < Math.abs(asteroids[index])) {
-            s.pop();
+          while (!stack.isEmpty() && stack.peek() > 0 && stack.peek() < Math
+              .abs(asteroids[index])) {
+            stack.pop();
           }
-          if (s.isEmpty()) {
-            s.push(asteroids[index]);
-          } else if (s.peek() < 0) {
-            s.push(asteroids[index]);
-          } else if (s.peek() == Math.abs(asteroids[index])) {
-            s.pop();
+          if (stack.isEmpty()) {
+            stack.push(asteroids[index]);
+          } else if (stack.peek() < 0) {
+            stack.push(asteroids[index]);
+          } else if (stack.peek() == Math.abs(asteroids[index])) {
+            stack.pop();
           }
         }
       }
       index++;
     }
 
-    int[] res = new int[s.size()];
+    int[] res = new int[stack.size()];
     for (int j = res.length - 1; j >= 0; j--) {
-      res[j] = s.pop();
+      res[j] = stack.pop();
     }
     return res;
   }

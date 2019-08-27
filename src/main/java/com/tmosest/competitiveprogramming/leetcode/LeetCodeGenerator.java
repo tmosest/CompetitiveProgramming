@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1006. Clumsy Factorial\n";
+    String name = "332. Reconstruct Itinerary\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int clumsy(int N)";
+    String functionDeclaration = "public List<String> findItinerary(List<List<String>> tickets)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

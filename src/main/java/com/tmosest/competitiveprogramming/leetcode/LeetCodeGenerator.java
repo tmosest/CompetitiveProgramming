@@ -61,8 +61,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "735. Asteroid Collision\n";
-    String difficulty = "medium";
+    String name = "1160. Find Words That Can Be Formed by Characters\n";
+    String difficulty = "easy";
     String functionDeclaration = "public int[] asteroidCollision(int[] asteroids)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);

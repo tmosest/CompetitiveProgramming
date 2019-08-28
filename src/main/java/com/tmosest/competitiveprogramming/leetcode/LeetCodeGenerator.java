@@ -63,7 +63,7 @@ public class LeetCodeGenerator {
   public static void main(String[] args) {
     String name = "1072. Flip Columns For Maximum Number of Equal Rows\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int maxEqualRowsAfterFlips(int[][] matrix)";
+    String functionDeclaration = "public String solveEquation(String equation)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

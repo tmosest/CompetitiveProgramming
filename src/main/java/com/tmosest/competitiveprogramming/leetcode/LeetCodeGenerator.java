@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1072. Flip Columns For Maximum Number of Equal Rows\n";
+    String name = "714. Best Time to Buy and Sell Stock with Transaction Fee\n";
     String difficulty = "medium";
-    String functionDeclaration = "public String solveEquation(String equation)";
+    String functionDeclaration = "public int maxProfit(int[] prices, int fee)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

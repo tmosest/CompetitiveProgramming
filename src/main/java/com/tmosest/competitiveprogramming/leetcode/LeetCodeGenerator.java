@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "640. Solve the Equation\n";
+    String name = "1072. Flip Columns For Maximum Number of Equal Rows\n";
     String difficulty = "medium";
-    String functionDeclaration = "public String solveEquation(String equation)";
+    String functionDeclaration = "public int maxEqualRowsAfterFlips(int[][] matrix)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

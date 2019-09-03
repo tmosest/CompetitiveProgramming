@@ -61,7 +61,7 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "609. Find Duplicate File in System\n";
+    String name = "1176. Diet Plan Performance\n";
     String difficulty = "medium";
     String functionDeclaration = "public List<List<String>> findDuplicate(String[] paths)";
     try {

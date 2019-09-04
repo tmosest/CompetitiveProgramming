@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1176. Diet Plan Performance\n";
+    String name = "583. Delete Operation for Two Strings\n";
     String difficulty = "medium";
-    String functionDeclaration = "public List<List<String>> findDuplicate(String[] paths)";
+    String functionDeclaration = "public int minDistance(String word1, String word2)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "416. Partition Equal Subset Sum\n";
+    String name = "396. Rotate Function\n";
     String difficulty = "medium";
-    String functionDeclaration = "public boolean canPartition(int[] nums)";
+    String functionDeclaration = "public int maxRotateFunction(int[] A)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "583. Delete Operation for Two Strings\n";
+    String name = "416. Partition Equal Subset Sum\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int minDistance(String word1, String word2)";
+    String functionDeclaration = "public boolean canPartition(int[] nums)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

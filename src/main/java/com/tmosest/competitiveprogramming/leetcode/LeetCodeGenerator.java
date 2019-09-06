@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "421. Maximum XOR of Two Numbers in an Array\n";
-    String difficulty = "medium";
-    String functionDeclaration = "public int findMaximumXOR(int[] nums)";
+    String name = "1175. Prime Arrangements\n";
+    String difficulty = "easy";
+    String functionDeclaration = "public int numPrimeArrangements(int n)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

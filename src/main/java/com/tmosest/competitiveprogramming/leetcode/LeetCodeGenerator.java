@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "808. Soup Servings\n";
+    String name = "452. Minimum Number of Arrows to Burst Balloons\n";
     String difficulty = "medium";
-    String functionDeclaration = "public double soupServings(int N)";
+    String functionDeclaration = "public int findMinArrowShots(int[][] points)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

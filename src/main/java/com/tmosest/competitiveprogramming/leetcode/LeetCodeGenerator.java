@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1155. Number of Dice Rolls With Target Sum\n";
+    String name = "672. Bulb Switcher II\n";
     String difficulty = "medium";
-    String functionDeclaration = "public int numRollsToTarget(int d, int f, int target)";
+    String functionDeclaration = "public int flipLights(int n, int m)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

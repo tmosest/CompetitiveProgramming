@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1200. Minimum Absolute Difference\n";
+    String name = "1185. Day of the Week\n";
     String difficulty = "easy";
-    String functionDeclaration = "public List<List<Integer>> minimumAbsDifference(int[] arr)";
+    String functionDeclaration = "public String dayOfTheWeek(int day, int month, int year)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

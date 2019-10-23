@@ -14,16 +14,16 @@ class MinimumAbsoluteDifference {
       minDiff = Math.min(minDiff, arr[i] - arr[i - 1]);
     }
 
-    List<List<Integer>> l = new ArrayList<>();
+    List<List<Integer>> len = new ArrayList<>();
 
     for (int i = 1; i < arr.length; i++) {
       if (arr[i] - arr[i - 1] == minDiff) {
         List<Integer> temp = new ArrayList<>();
         temp.add(arr[i - 1]);
         temp.add(arr[i]);
-        l.add(temp);
+        len.add(temp);
       }
     }
-    return l;
+    return len;
   }
 }

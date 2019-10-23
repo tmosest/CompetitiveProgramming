@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1207. Unique Number of Occurrences\n";
+    String name = "1200. Minimum Absolute Difference\n";
     String difficulty = "easy";
-    String functionDeclaration = "public boolean uniqueOccurrences(int[] arr)";
+    String functionDeclaration = "public List<List<Integer>> minimumAbsDifference(int[] arr)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1221. Split a String in Balanced Strings\n";
+    String name = "1207. Unique Number of Occurrences\n";
     String difficulty = "easy";
-    String functionDeclaration = "public int balancedStringSplit(String s)";
+    String functionDeclaration = "public boolean uniqueOccurrences(int[] arr)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

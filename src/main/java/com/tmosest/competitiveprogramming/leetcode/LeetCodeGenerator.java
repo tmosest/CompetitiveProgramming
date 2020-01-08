@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1217. Play with Chips\n";
+    String name = "1290. Convert Binary Number in a Linked List to Integer";
     String difficulty = "easy";
-    String functionDeclaration = "public int minCostToMoveChips(int[] chips)";
+    String functionDeclaration = "public int getDecimalValue(ListNode head)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

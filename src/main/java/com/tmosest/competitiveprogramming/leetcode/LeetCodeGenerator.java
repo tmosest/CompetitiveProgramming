@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1295. Find Numbers with Even Number of Digits\n";
-    String difficulty = "easy";
-    String functionDeclaration = "public int findNumbers(int[] nums)";
+    String name = "792. Number of Matching Subsequences\n";
+    String difficulty = "medium";
+    String functionDeclaration = "public int numMatchingSubseq(String S, String[] words)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

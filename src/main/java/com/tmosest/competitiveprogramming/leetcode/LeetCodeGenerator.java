@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "792. Number of Matching Subsequences\n";
-    String difficulty = "medium";
-    String functionDeclaration = "public int numMatchingSubseq(String S, String[] words)";
+    String name = "1275. Find Winner on a Tic Tac Toe Game\n";
+    String difficulty = "easy";
+    String functionDeclaration = "public String tictactoe(int[][] moves)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

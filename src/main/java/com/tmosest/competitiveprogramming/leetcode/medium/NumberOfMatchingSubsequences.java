@@ -1,29 +1,59 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 class NumberOfMatchingSubsequences {
 
-  int numMatchingSubseq(String str, String[] words) {
-    return (int) Arrays.stream(words)
-        .filter((word) -> isSubsequence(str, word))
-        .count();
-  }
+  private int binarySearch(List<Integer> list, int target) {
+    int low = 0;
+    int high = list.size() - 1;
+    int idx = -1;
 
-  boolean isSubsequence(String word, String search) {
-    char[] words = word.toCharArray();
-    char[] searches = search.toCharArray();
-
-    int wordIndex = 0;
-    int searchIndex = 0;
-
-    while (wordIndex < words.length && searchIndex < searches.length) {
-      if (words[wordIndex] == searches[searchIndex]) {
-        ++searchIndex;
+    while (low <= high) {
+      int mid = low + (high - low) / 2;
+      if (list.get(mid) <= target) {
+        low = mid + 1;
+      } else {
+        idx = mid;
+        high = mid - 1;
       }
-      ++wordIndex;
     }
 
-    return searchIndex == searches.length;
+    return idx == -1 ? -1 : list.get(idx);
+  }
+
+  public int numMatchingSubseq(String str, String[] words) {
+    int ret = 0;
+    List<Integer>[] buckets = new ArrayList[26];
+    for (int i = 0; i < str.length(); i++) {
+      char ch = str.charAt(i);
+      if (buckets[ch - 'a'] == null) {
+        buckets[ch - 'a'] = new ArrayList<>();
+      }
+      buckets[ch - 'a'].add(i);
+    }
+
+    for (String word : words) {
+      int prev = -1;
+      int pnt;
+      for (pnt = 0; pnt < word.length(); pnt++) {
+        char ch = word.charAt(pnt);
+        if (buckets[ch - 'a'] == null) {
+          break;
+        }
+        // Find the element that is just greater than this element
+        int curr = binarySearch(buckets[ch - 'a'], prev);
+        if (curr == -1) {
+          break;
+        }
+        prev = curr;
+      }
+      if (pnt == word.length()) {
+        ret++;
+      }
+    }
+
+    return ret;
   }
 }

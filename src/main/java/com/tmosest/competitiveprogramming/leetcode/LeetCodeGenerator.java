@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1290. Convert Binary Number in a Linked List to Integer";
+    String name = "1287. Element Appearing More Than 25% In Sorted Array\n";
     String difficulty = "easy";
-    String functionDeclaration = "public int getDecimalValue(ListNode head)";
+    String functionDeclaration = "public int findSpecialInteger(int[] arr)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

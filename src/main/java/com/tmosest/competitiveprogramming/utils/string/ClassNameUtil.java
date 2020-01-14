@@ -1,6 +1,11 @@
 package com.tmosest.competitiveprogramming.utils.string;
 
+import com.google.common.collect.ImmutableMap;
+
 import com.tmosest.competitiveprogramming.utils.number.RomanNumeralUtil;
+
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class ClassNameUtil {
 
@@ -10,6 +15,12 @@ public class ClassNameUtil {
     return classNameUtil;
   }
 
+  private static final Map<String, String> ILLEGAL_CHARACTER_MAP =
+      new ImmutableMap.Builder<String, String>()
+      .put("\n", " ")
+      .put("%", " Percent")
+      .build();
+
   private ClassNameUtil() {
   }
 
@@ -17,14 +28,29 @@ public class ClassNameUtil {
     return name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
   }
 
+  private boolean isValidClassName(String name) {
+    if (name == null || name.isEmpty() || !Character.isAlphabetic(name.charAt(0))) {
+      return false;
+    }
+    for (char letter : name.toCharArray()) {
+      if (!Character.isSpaceChar(letter) && !Character.isLetterOrDigit(letter)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   /**
-   * Converts a string to a class name.
-   * See unit tests for examples.
+   * Converts a string to a class name. See unit tests for examples.
+   *
    * @param problemName The name of the problem to convert.
    * @return A string in class name format.
    */
-  public String convertToClassName(String problemName) {
-    String[] names = problemName.replace("\n", " ").split(" ");
+  public String convertToClassName(String problemName) throws IllegalArgumentException {
+    for (Entry<String, String> entry : ILLEGAL_CHARACTER_MAP.entrySet()) {
+      problemName = problemName.replace(entry.getKey(), entry.getValue());
+    }
+    String[] names = problemName.split(" ");
     for (int i = 0; i < names.length; i++) {
       if (names[i].contains("-")) {
         String[] split = names[i].split("-");
@@ -56,18 +82,27 @@ public class ClassNameUtil {
       }
       names[i] = convertToProperName(names[i]);
     }
-    return String.join("", names).trim().replace("\n", "");
+
+    String res = String.join("", names).trim().replace("\n", "");
+
+    // Bad design to wait till the end to do this.
+    if (!isValidClassName(res)) {
+      throw new IllegalArgumentException("Class name must be alpha numeric with spaces: " + res);
+    }
+
+    return res;
   }
 
-  String createTestClassName(String problemName) {
+  String createTestClassName(String problemName) throws IllegalArgumentException {
     return convertToClassName(problemName) + "Test";
   }
 
   /**
    * Method to test this class.
+   *
    * @param args main string array.
    */
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IllegalArgumentException {
     ClassNameUtil classNameUtil = ClassNameUtil.instance();
     String name = "Add One Row to Tree";
     System.out.println(classNameUtil.convertToClassName(name));

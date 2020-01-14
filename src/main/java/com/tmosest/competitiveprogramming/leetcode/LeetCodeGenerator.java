@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1287. Element Appearing More Than 25% In Sorted Array\n";
+    String name = "1295. Find Numbers with Even Number of Digits\n";
     String difficulty = "easy";
-    String functionDeclaration = "public int findSpecialInteger(int[] arr)";
+    String functionDeclaration = "public int findNumbers(int[] nums)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

@@ -61,9 +61,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1309. Decrypt String from Alphabet to Integer Mapping\n";
+    String name = "1299. Replace Elements with Greatest Element on Right Side\n";
     String difficulty = "easy";
-    String functionDeclaration = "public String freqAlphabets(String str)";
+    String functionDeclaration = "public int[] replaceElements(int[] arr)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

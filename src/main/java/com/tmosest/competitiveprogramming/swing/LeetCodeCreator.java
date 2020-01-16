@@ -13,6 +13,7 @@ public class LeetCodeCreator {
 
   /**
    * Creates a basic hello world swing example.
+   *
    * @param args usual main args.
    */
   public static void main(String[] args) {
@@ -50,16 +51,12 @@ public class LeetCodeCreator {
     JButton button = new JButton("create");
     button.setBounds(offset, 300, width, height);
     button.addChangeListener(event -> {
-      try {
-        LeetCodeGenerator.instance().createNewProblem(
-            title.getText(),
-            function.getText(),
-            difficulty.getText()
-        );
-        button.setText(title.getText() + " Created");
-      } catch (IOException exception) {
-        button.setText("Error: " + exception.getMessage());
-      }
+      LeetCodeGenerator.instance().createNewProblem(
+          title.getText(),
+          function.getText(),
+          difficulty.getText()
+      );
+      button.setText(title.getText() + " Created");
     });
     frame.add(button);
 

@@ -11,6 +11,7 @@ public class LeetCodeGenerator {
 
   /**
    * Get an instance of the singleton.
+   *
    * @return An instance of LeetCodeGenerator.
    */
   public static LeetCodeGenerator instance() {
@@ -24,6 +25,7 @@ public class LeetCodeGenerator {
 
   /**
    * Function to create new code for leet code problems.
+   *
    * @param numberName The title of the question in the format (#. Title).
    * @param functionDeclaration The function declaration.
    * @param difficulty The difficulty of the question.
@@ -58,12 +60,14 @@ public class LeetCodeGenerator {
 
   /**
    * Run this function to generate files.
+   *
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1299. Replace Elements with Greatest Element on Right Side\n";
+    String name = "1184. Distance Between Bus Stops\n";
     String difficulty = "easy";
-    String functionDeclaration = "public int[] replaceElements(int[] arr)";
+    String functionDeclaration
+        = "public int distanceBetweenBusStops(int[] distance, int start, int destination)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

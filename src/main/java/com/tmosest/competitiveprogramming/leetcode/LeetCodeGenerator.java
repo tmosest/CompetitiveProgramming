@@ -64,10 +64,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1184. Distance Between Bus Stops\n";
+    String name = "1232. Check If It Is a Straight Line\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "public int distanceBetweenBusStops(int[] distance, int start, int destination)";
+        = "public boolean checkStraightLine(int[][] coordinates)";
     try {
       instance().createNewProblem(name, functionDeclaration, difficulty);
       System.out.println(name + " created.");

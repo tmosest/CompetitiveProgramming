@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1313. Decompress Run-Length Encoded List\n";
+    String name = "1323. Maximum 69 Number\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "public int[] decompressRLElist(int[] nums)";
+        = "public int maximum69Number (int num)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

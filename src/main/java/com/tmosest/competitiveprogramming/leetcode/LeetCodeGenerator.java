@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1323. Maximum 69 Number\n";
+    String name = "1189. Maximum Number of Balloons\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "public int maximum69Number (int num)";
+        = "int maxNumberOfBalloons(String text)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

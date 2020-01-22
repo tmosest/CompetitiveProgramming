@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1281. Subtract the Product and Sum of Digits of an Integer\n";
+    String name = "1304. Find N Unique Integers Sum up to Zero\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "int subtractProductAndSum(int n)";
+        = "int[] sumZero(int n)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1304. Find N Unique Integers Sum up to Zero\n";
+    String name = "1317. Convert Integer to the Sum of Two No-Zero Integers\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "int[] sumZero(int n)";
+        = "int[] getNoZeroIntegers(int n)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

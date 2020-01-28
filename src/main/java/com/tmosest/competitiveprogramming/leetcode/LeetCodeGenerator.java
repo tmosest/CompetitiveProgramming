@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1317. Convert Integer to the Sum of Two No-Zero Integers\n";
+    String name = "1332. Remove Palindromic Subsequences\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "int[] getNoZeroIntegers(int n)";
+        = "int removePalindromeSub(String s)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

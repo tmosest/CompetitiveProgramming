@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1332. Remove Palindromic Subsequences\n";
+    String name = "1331. Rank Transform of an Array\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "int removePalindromeSub(String s)";
+        = "int[] arrayRankTransform(int[] arr)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

@@ -61,8 +61,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "592. Fraction Addition and Subtraction\n";
-    String difficulty = "easy";
+    String name = "93. Restore IP Addresses\n";
+    String difficulty = "medium";
     String functionDeclaration
         = "String fractionAddition(String expression)";
 

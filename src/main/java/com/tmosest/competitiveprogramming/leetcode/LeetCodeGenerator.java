@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1331. Rank Transform of an Array\n";
+    String name = "592. Fraction Addition and Subtraction\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "int[] arrayRankTransform(int[] arr)";
+        = "String fractionAddition(String expression)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

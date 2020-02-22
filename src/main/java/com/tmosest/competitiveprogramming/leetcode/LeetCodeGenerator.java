@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1351. Count Negative Numbers in a Sorted Matrix\n";
-    String difficulty = "easy";
+    String name = "214. Shortest Palindrome\n";
+    String difficulty = "hard";
     String functionDeclaration
-        = "int countNegatives(int[][] grid)";
+        = "String shortestPalindrome(String str)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "93. Restore IP Addresses\n";
-    String difficulty = "medium";
+    String name = "1346. Check If N and Its Double Exist\n";
+    String difficulty = "easy";
     String functionDeclaration
-        = "String fractionAddition(String expression)";
+        = "boolean checkIfExist(int[] arr)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

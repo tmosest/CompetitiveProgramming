@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1342. Number of Steps to Reduce a Number to Zero\n";
+    String name = "1356. Sort Integers by The Number of 1 Bits\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "int numberOfSteps (int num)";
+        = "int[] sortByBits(int[] arr)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

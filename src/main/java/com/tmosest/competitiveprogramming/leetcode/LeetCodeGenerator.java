@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1356. Sort Integers by The Number of 1 Bits\n";
+    String name = "1360. Number of Days Between Two Dates\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "int[] sortByBits(int[] arr)";
+        = "int daysBetweenDates(String date1, String date2)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1360. Number of Days Between Two Dates\n";
+    String name = "1337. The K Weakest Rows in a Matrix\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "int daysBetweenDates(String date1, String date2)";
+        = "int[] kWeakestRows(int[][] mat, int k)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

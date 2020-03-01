@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "435. Non-overlapping Intervals\n";
+    String name = "60. Permutation Sequence\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int eraseOverlapIntervals(int[][] intervals)";
+        = "String getPermutation(int nums, int offset)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

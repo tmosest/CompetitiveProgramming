@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "60. Permutation Sequence\n";
+    String name = "77. Combinations\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "String getPermutation(int nums, int offset)";
+        = "List<List<Integer>> combine(int nums, int groupSize)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

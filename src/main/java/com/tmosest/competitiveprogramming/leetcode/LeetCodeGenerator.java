@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1337. The K Weakest Rows in a Matrix\n";
-    String difficulty = "easy";
+    String name = "435. Non-overlapping Intervals\n";
+    String difficulty = "medium";
     String functionDeclaration
-        = "int[] kWeakestRows(int[][] mat, int k)";
+        = "int eraseOverlapIntervals(int[][] intervals)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

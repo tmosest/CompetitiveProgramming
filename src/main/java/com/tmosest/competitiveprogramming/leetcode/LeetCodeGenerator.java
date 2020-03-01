@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "77. Combinations\n";
-    String difficulty = "medium";
+    String name = "1365. How Many Numbers Are Smaller Than the Current Number\n";
+    String difficulty = "easy";
     String functionDeclaration
-        = "List<List<Integer>> combine(int nums, int groupSize)";
+        = "int[] smallerNumbersThanCurrent(int[] nums)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

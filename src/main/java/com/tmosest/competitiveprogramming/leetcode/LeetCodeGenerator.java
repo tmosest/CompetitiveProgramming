@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "384. Shuffle an Array\n";
+    String name = "59. Spiral Matrix II\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "public int[] shuffle()";
+        = "int[][] generateMatrix(int num)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

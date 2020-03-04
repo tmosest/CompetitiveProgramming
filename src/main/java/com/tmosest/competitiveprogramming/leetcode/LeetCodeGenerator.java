@@ -61,7 +61,7 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "74. Search a 2D Matrix\n";
+    String name = "240. Search a 2D Matrix II\n";
     String difficulty = "medium";
     String functionDeclaration
         = "boolean searchMatrix(int[][] matrix, int target)";

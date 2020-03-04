@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "718. Maximum Length of Repeated Subarray\n";
+    String name = "209. Minimum Size Subarray Sum\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int findLength(int[] one, int[] two)";
+        = "int minSubArrayLen(int sum, int[] nums)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "240. Search a 2D Matrix II\n";
+    String name = "718. Maximum Length of Repeated Subarray\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "boolean searchMatrix(int[][] matrix, int target)";
+        = "int findLength(int[] one, int[] two)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

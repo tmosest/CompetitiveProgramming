@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "209. Minimum Size Subarray Sum\n";
+    String name = "81. Search in Rotated Sorted Array II\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int minSubArrayLen(int sum, int[] nums)";
+        = "boolean search(int[] nums, int target)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

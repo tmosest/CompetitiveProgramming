@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "95. Unique Binary Search Trees II\n";
+    String name = "388. Longest Absolute File Path\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "List<TreeNode> generateTrees(int num)";
+        = "int lengthLongestPath(String input)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

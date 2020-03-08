@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1310. XOR Queries of a Subarray\n";
-    String difficulty = "medium";
+    String name = "1374. Generate a String With Characters That Have Odd Counts";
+    String difficulty = "easy";
     String functionDeclaration
-        = "int[] xorQueries(int[] arr, int[][] queries)";
+        = "String generateTheString(int num)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

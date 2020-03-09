@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "916. Word Subsets\n";
+    String name = "1361. Validate Binary Tree Nodes\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "List<String> wordSubsets(String[] one, String[] two)";
+        = "boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

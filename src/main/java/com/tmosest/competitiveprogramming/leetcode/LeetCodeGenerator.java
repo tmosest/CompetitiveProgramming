@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1374. Generate a String With Characters That Have Odd Counts";
+    String name = "1370. Increasing Decreasing String\n";
     String difficulty = "easy";
     String functionDeclaration
-        = "String generateTheString(int num)";
+        = "String sortString(String str)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(name + " created.");

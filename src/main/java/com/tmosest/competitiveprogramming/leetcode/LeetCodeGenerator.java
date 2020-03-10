@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1138. Alphabet Board Path\n";
+    String name = "395. Longest Substring with At Least K Repeating Characters";
     String difficulty = "medium";
     String functionDeclaration
-        = "String alphabetBoardPath(String target)";
+        = "int longestSubstring(String s, int k)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

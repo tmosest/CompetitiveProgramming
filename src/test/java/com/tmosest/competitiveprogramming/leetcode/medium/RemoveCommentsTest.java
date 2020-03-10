@@ -65,14 +65,14 @@ class RemoveCommentsTest {
     String[] source = {
         "class test{",
         "public: ",
-        "   int x = 1;",
-        "   /*double y = 1;*/",
+        "   int left = 1;",
+        "   /*double right = 1;*/",
         "   char c;", "};"
     };
     String[] output = {
         "class test{",
         "public: ",
-        "   int x = 1;",
+        "   int left = 1;",
         "   ",
         "   char c;",
         "};"

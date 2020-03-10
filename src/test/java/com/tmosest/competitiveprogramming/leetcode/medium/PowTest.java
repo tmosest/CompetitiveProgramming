@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("number")
-@DisplayName("LeetCode: 50. Pow(x, n")
+@DisplayName("LeetCode: 50. Pow(left, n")
 class PowTest {
 	/* Write code here. */
 

@@ -28,7 +28,7 @@ class EvaluateDivisionTest {
         {"b", "a"},
         {"a", "e"},
         {"a", "a"},
-        {"x", "x"}
+        {"left", "left"}
     };
     double[] expected = {
         6.0, 0.5, -1.0, 1.0, -1.0

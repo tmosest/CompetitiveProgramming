@@ -7,14 +7,13 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("medium")
-@DisplayName("LeetCode: 640. Solve the Equation")
-class SolveTheEquationTest {
+@DisplayName("LeetCode: 1138. Alphabet Board Path")
+class AlphabetBoardPathTest {
 
-  private SolveTheEquation solveTheEquation = new SolveTheEquation();
+  private AlphabetBoardPath alphabetBoardPath = new AlphabetBoardPath();
 
   @Test
-  @DisplayName("Test Case 0")
   void testCase0() {
-    Assertions.assertEquals("left=2", solveTheEquation.solveEquation("left+5-3+left=6+left-2"));
+    Assertions.assertEquals("DDR!UURRR!!DDD!", alphabetBoardPath.alphabetBoardPath("leet"));
   }
 }

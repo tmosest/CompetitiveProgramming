@@ -21,7 +21,7 @@ class PrimePalindrome {
           return temp;
         }
         //If we didn't check for even-length palindromes:
-        //return N <= 11 ? min(x, 11) : x
+        //return N <= 11 ? min(left, 11) : left
       }
 
       //Check for even-length palindromes

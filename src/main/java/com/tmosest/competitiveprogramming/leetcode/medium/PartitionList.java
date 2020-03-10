@@ -12,13 +12,13 @@ class PartitionList {
 
     while (head != null) {
 
-      // If the original list node is lesser than the given x,
+      // If the original list node is lesser than the given left,
       // assign it to the before list.
       if (head.val < partitionPoint) {
         before.next = head;
         before = before.next;
       } else {
-        // If the original list node is greater or equal to the given x,
+        // If the original list node is greater or equal to the given left,
         // assign it to the after list.
         after.next = head;
         after = after.next;

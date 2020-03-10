@@ -5,9 +5,9 @@ class SolveTheEquation {
   private String coeff(String equat) {
     if (equat.length() > 1 && equat.charAt(equat.length() - 2) >= '0'
         && equat.charAt(equat.length() - 2) <= '9') {
-      return equat.replace("x", "");
+      return equat.replace("left", "");
     }
-    return equat.replace("x", "1");
+    return equat.replace("left", "1");
   }
 
   String solveEquation(String equation) {
@@ -15,7 +15,7 @@ class SolveTheEquation {
     int lhs = 0;
     int rhs = 0;
     for (String x : lr[0].split("(?=\\+)|(?=-)")) {
-      if (x.indexOf("x") >= 0) {
+      if (x.indexOf("left") >= 0) {
 
         lhs += Integer.parseInt(coeff(x));
       } else {
@@ -23,7 +23,7 @@ class SolveTheEquation {
       }
     }
     for (String x : lr[1].split("(?=\\+)|(?=-)")) {
-      if (x.indexOf("x") >= 0) {
+      if (x.indexOf("left") >= 0) {
         lhs -= Integer.parseInt(coeff(x));
       } else {
         rhs += Integer.parseInt(x);
@@ -36,7 +36,7 @@ class SolveTheEquation {
         return "No solution";
       }
     } else {
-      return "x=" + rhs / lhs;
+      return "left=" + rhs / lhs;
     }
   }
 }

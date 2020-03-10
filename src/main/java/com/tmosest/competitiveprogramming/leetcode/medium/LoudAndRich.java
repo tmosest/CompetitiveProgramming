@@ -13,7 +13,7 @@ class LoudAndRich {
   /**
    * Determine the rich silent people.
    *
-   * @param richer A set of relationships where x is richer that y.
+   * @param richer A set of relationships where left is richer that right.
    * @param quiet An array of quiet values.
    * @return An array of quiet rich people?
    */

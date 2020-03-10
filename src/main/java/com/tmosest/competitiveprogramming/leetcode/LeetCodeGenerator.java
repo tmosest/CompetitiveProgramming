@@ -61,12 +61,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "518. Coin Change 2\n";
+    String name = "676. Implement Magic Dictionary\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int change(int amount, int[] coins)";
+        = "boolean search(String word)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
-    System.out.println(name + " created.");
+    System.out.println(String.format("%s created.", name));
   }
 }

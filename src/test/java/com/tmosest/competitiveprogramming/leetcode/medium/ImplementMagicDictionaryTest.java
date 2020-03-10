@@ -17,5 +17,8 @@ class ImplementMagicDictionaryTest {
   void testCase0() {
     String[] dictionary = {"hello", "leetcode"};
     implementMagicDictionary.buildDict(dictionary);
+
+    Assertions.assertFalse(implementMagicDictionary.search("hello"));
+    Assertions.assertTrue(implementMagicDictionary.search("hhllo"));
   }
 }

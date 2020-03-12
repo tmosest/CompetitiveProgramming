@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "279. Perfect Squares\n";
+    String name = "1218. Longest Arithmetic Subsequence of Given Difference\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int numSquare(int num)";
+        = "int longestSubsequence(int[] arr, int difference)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

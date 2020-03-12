@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "898. Bitwise ORs of Subarrays\n";
+    String name = "279. Perfect Squares\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int subarrayBitwiseORs(int[] A)";
+        = "int numSquare(int num)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

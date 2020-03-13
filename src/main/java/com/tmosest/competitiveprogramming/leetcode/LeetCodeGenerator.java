@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "51. N-Queens\n";
+    String name = "52. N-Queens II\n";
     String difficulty = "hard";
     String functionDeclaration
-        = "List<List<String>> solveNQueens(int num)";
+        = "int totalNQueens(int num)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "721. Accounts Merge\n";
+    String name = "220. Contains Duplicate III\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "List<List<String>> accountsMerge(List<List<String>> accounts)";
+        = "boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

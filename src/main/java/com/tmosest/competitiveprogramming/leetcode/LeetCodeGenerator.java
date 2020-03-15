@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "5356. Lucky Numbers in a Matrix";
-    String difficulty = "easy";
+    String name = "5357. Design a Stack With Increment Operation";
+    String difficulty = "medium";
     String functionDeclaration
-        = "List<Integer> luckyNumbers (int[][] matrix)";
+        = "public void push(int x)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

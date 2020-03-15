@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("medium")
+@Tag("wc180")
 @DisplayName("LeetCode: 5179. Balance a Binary Search Tree")
 class BalanceBinarySearchTreeTest {
 

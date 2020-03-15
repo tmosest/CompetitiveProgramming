@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "5357. Design a Stack With Increment Operation";
+    String name = "5179. Balance a Binary Search Tree";
     String difficulty = "medium";
     String functionDeclaration
-        = "public void push(int x)";
+        = "TreeNode balanceBST(TreeNode root)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

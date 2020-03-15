@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("wc180")
 @DisplayName("LeetCode: 5356. Lucky Numbers in a Matrix")
 class LuckyNumbersInMatrixTest {
 

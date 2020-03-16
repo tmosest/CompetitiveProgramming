@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "5359. Maximum Performance of a Team";
-    String difficulty = "hard";
+    String name = "1008. Construct Binary Search Tree from Preorder Traversal\n";
+    String difficulty = "medium";
     String functionDeclaration
-        = "int maxPerformance(int n, int[] speed, int[] efficiency, int k)";
+        = "TreeNode bstFromPreorder(int[] preorder)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

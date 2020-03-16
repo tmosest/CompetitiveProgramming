@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1315. Sum of Nodes with Even Valued Grandparent\n";
+    String name = "756. Pyramid Transition Matrix\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int sumEvenGrandparent(TreeNode root)";
+        = "boolean pyramidTransition(String bottom, List<String> allowed)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

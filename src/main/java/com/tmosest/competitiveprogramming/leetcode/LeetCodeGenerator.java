@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1008. Construct Binary Search Tree from Preorder Traversal\n";
+    String name = "1315. Sum of Nodes with Even Valued Grandparent\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "TreeNode bstFromPreorder(int[] preorder)";
+        = "int sumEvenGrandparent(TreeNode root)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

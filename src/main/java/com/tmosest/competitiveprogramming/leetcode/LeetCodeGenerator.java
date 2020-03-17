@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "987. Vertical Order Traversal of a Binary Tree\n";
+    String name = "468. Validate IP Address\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "List<List<Integer>> verticalTraversal(TreeNode root)";
+        = "static String validIPAddress(String IP)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "700. Search in a Binary Search Tree\n";
-    String difficulty = "easy";
+    String name = "494. Target Sum\n";
+    String difficulty = "medium";
     String functionDeclaration
-        = "TreeNode searchBST(TreeNode root, int val)";
+        = "int findTargetSumWays(int[] nums, int search)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1219. Path with Maximum Gold\n";
+    String name = "1358. Number of Substrings Containing All Three Characters\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int getMaximumGold(int[][] A)";
+        = "int numberOfSubstrings(String s)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1358. Number of Substrings Containing All Three Characters\n";
+    String name = "1222. Queens That Can Attack the King\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int numberOfSubstrings(String s)";
+        = "List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

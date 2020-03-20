@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "907. Sum of Subarray Minimums\n";
+    String name = "838. Push Dominoes\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int sumSubarrayMins(int[] arr)";
+        = "String pushDominoes(String dominoes)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

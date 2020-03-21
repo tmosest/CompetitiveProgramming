@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
+@Tag("interval")
 @Tag("medium")
 @DisplayName("LeetCode: 729. My Calendar I")
 class MyCalendarOneTest {

@@ -16,7 +16,7 @@ class MyCalendarOne {
     }
 
     private boolean overlaps(Interval other) {
-      if (other.start < this.start && this.start < other.end) {
+      if (other.start <= this.start && this.start < other.end) {
         return true;
       }
 
@@ -24,7 +24,7 @@ class MyCalendarOne {
         return true;
       }
 
-      if (this.start < other.start && other.start < this.end) {
+      if (this.start <= other.start && other.start < this.end) {
         return true;
       }
 

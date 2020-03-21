@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "915. Partition Array into Disjoint Intervals\n";
+    String name = "729. My Calendar I\n";
     String difficulty = "medium";
     String functionDeclaration
-        = "int partitionDisjoint(int[] arr)";
+        = "boolean book(int start, int end)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

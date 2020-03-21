@@ -61,10 +61,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1385. Find the Distance Value Between Two Arrays";
-    String difficulty = "easy";
+    String name = "1386. Cinema Seat Allocation";
+    String difficulty = "medium";
     String functionDeclaration
-        = "int findTheDistanceValue(int[] arr1, int[] arr2, int diff)";
+        = "int maxNumberOfFamilies(int n, int[][] reservedSeats)";
 
     instance().createNewProblem(name, functionDeclaration, difficulty);
     System.out.println(String.format("%s created.", name));

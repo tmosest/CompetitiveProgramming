@@ -2,24 +2,23 @@ package com.tmosest.competitiveprogramming.leetcode.medium;
 
 
 import com.tmosest.competitiveprogramming.leetcode.common.Interval;
-import java.util.Collections;
+
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 class CinemaSeatAllocation {
 
   int maxNumberOfFamilies(int rows, int[][] reservedSeats) {
-    List<Interval> intervals = Interval.fromMatrix(reservedSeats);
-    Collections.sort(intervals);
+    Map<Integer, List<Interval>> intervalMap = Interval.levelsFromMatrix(reservedSeats);
     int fams = 0;
-    int intervalIndex = 0;
 
     for (int r = 0; r < rows; r++) {
 
       boolean[] reserved = new boolean[10];
 
-      while (intervalIndex < intervals.size() && intervals.get(intervalIndex).start == r + 1) {
-        reserved[intervals.get(intervalIndex).end - 1] = true;
-        ++intervalIndex;
+      for (Interval i : intervalMap.getOrDefault(r + 1, new ArrayList<>())) {
+        reserved[i.end - 1] = true;
       }
 
       if (!reserved[1] && !reserved[2] && !reserved[3] && !reserved[4]) {

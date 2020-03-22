@@ -1,7 +1,10 @@
 package com.tmosest.competitiveprogramming.leetcode.common;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Interval implements Comparable<Interval> {
@@ -21,6 +24,22 @@ public class Interval implements Comparable<Interval> {
 
   public static List<Interval> fromMatrix(int[][] matrix) {
     return Arrays.stream(matrix).map(Interval::new).collect(Collectors.toList());
+  }
+
+  /**
+   * Create levels from matrix.
+   * @param matrix Matrix of intervals.
+   * @return Map of start to list of intervals for that start interval.
+   */
+  public static Map<Integer, List<Interval>> levelsFromMatrix(int[][] matrix) {
+    List<Interval> intervals = fromMatrix(matrix);
+    Map<Integer, List<Interval>> levels = new HashMap<>();
+    for (Interval i : intervals) {
+      List<Interval> level = levels.getOrDefault(i.start, new ArrayList<>());
+      level.add(i);
+      levels.put(i.start, level);
+    }
+    return levels;
   }
 
   @Override

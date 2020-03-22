@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
+@Tag("bwc22")
 @Tag("medium")
 @DisplayName("LeetCode: 1387. Sort Integers by The Power Value")
 class SortIntegersByThePowerValueTest {

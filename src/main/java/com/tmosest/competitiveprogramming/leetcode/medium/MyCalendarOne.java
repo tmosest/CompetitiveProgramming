@@ -16,7 +16,7 @@ class MyCalendarOne {
   boolean book(int start, int end) {
     Interval next = new Interval(start, end);
     for (Interval i : intervals) {
-      if (next.overlaps(i)) {
+      if (next.overlapsClosedOpen(i)) {
         return false;
       }
     }

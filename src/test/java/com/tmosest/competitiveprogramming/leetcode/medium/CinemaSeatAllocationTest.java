@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
+@Tag("interval")
 @Tag("medium")
 @DisplayName("LeetCode: 1386. Cinema Seat Allocation")
 class CinemaSeatAllocationTest {
@@ -18,8 +19,20 @@ class CinemaSeatAllocationTest {
     Assertions.assertEquals(4,
         cinemaSeatAllocation.maxNumberOfFamilies(
             3,
-            new int[][]{
+            new int[][] {
                 {1, 2}, {1, 3}, {1, 8}, {2, 6}, {3, 1}, {3, 10}
+            }
+        )
+    );
+  }
+
+  @Test
+  void testCase1() {
+    Assertions.assertEquals(2,
+        cinemaSeatAllocation.maxNumberOfFamilies(
+            2,
+            new int[][] {
+                {2,1},{1,8},{2,6}
             }
         )
     );

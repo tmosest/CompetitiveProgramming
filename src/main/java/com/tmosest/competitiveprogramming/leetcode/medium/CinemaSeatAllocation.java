@@ -1,39 +1,49 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
+
+import com.tmosest.competitiveprogramming.leetcode.common.Interval;
+import java.util.Collections;
+import java.util.List;
+
 class CinemaSeatAllocation {
 
   int maxNumberOfFamilies(int rows, int[][] reservedSeats) {
+    List<Interval> intervals = Interval.fromMatrix(reservedSeats);
+    Collections.sort(intervals);
     int fams = 0;
-
-    boolean[][] reserved = new boolean[rows][10];
-
-    for (int[] reservedSeat : reservedSeats) {
-      reserved[reservedSeat[0] - 1][reservedSeat[1] - 1] = true;
-    }
+    int intervalIndex = 0;
 
     for (int r = 0; r < rows; r++) {
-      if (!reserved[r][1] && !reserved[r][2] && !reserved[r][3] && !reserved[r][4]) {
-        ++fams;
-        reserved[r][1] = true;
-        reserved[r][2] = true;
-        reserved[r][3] = true;
-        reserved[r][2] = true;
+
+      boolean[] reserved = new boolean[10];
+
+      while (intervalIndex < intervals.size() && intervals.get(intervalIndex).start == r + 1) {
+        reserved[intervals.get(intervalIndex).end - 1] = true;
+        ++intervalIndex;
       }
 
-      if (!reserved[r][3] && !reserved[r][4] && !reserved[r][5] && !reserved[r][6]) {
+      if (!reserved[1] && !reserved[2] && !reserved[3] && !reserved[4]) {
         ++fams;
-        reserved[r][3] = true;
-        reserved[r][4] = true;
-        reserved[r][5] = true;
-        reserved[r][6] = true;
+        reserved[1] = true;
+        reserved[2] = true;
+        reserved[3] = true;
+        reserved[2] = true;
       }
 
-      if (!reserved[r][5] && !reserved[r][6] && !reserved[r][7] && !reserved[r][8]) {
+      if (!reserved[3] && !reserved[4] && !reserved[5] && !reserved[6]) {
         ++fams;
-        reserved[r][5] = true;
-        reserved[r][6] = true;
-        reserved[r][7] = true;
-        reserved[r][8] = true;
+        reserved[3] = true;
+        reserved[4] = true;
+        reserved[5] = true;
+        reserved[6] = true;
+      }
+
+      if (!reserved[5] && !reserved[6] && !reserved[7] && !reserved[8]) {
+        ++fams;
+        reserved[5] = true;
+        reserved[6] = true;
+        reserved[7] = true;
+        reserved[8] = true;
       }
     }
 

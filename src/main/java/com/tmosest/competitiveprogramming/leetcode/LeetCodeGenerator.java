@@ -6,6 +6,7 @@ import com.tmosest.competitiveprogramming.general.ProblemType.Types;
 import com.tmosest.competitiveprogramming.utils.files.JavaFileBuilder;
 import com.tmosest.competitiveprogramming.utils.string.ClassNameUtil;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -44,16 +45,24 @@ public class LeetCodeGenerator {
     String[] names = instance().formatIntoNumberAndName(numberName);
     String fileName = ClassNameUtil.instance().convertToClassName(names[1].trim());
     javaFileBuilder.create(LeetCodeGenerator.class, fileName, functionDeclaration);
-    List<String> tags = Arrays.asList(
+    List<String> tags = new ArrayList<>(Arrays.asList(
         "Tag",
         "Tag",
         "DisplayName"
-    );
-    List<String> vals = Arrays.asList(
+    ));
+    List<String> vals = new ArrayList<>(Arrays.asList(
         "leetcode",
         difficulty,
         "LeetCode: " + numberName.replace("\n", "")
-    );
+    ));
+    if (type != null) {
+      tags.add(2, "Tag");
+      vals.add(2, type);
+    }
+    if (contest != null) {
+      tags.add(3, "Tag");
+      vals.add(3, contest);
+    }
     javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals);
     LeetCodeOrganizer.instance.organizeProblemFiles();
   }
@@ -69,11 +78,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1389. Create Target Array in the Given Order";
+    String name = "1390. Four Divisors";
     String functionDeclaration
-        = "int[] createTargetArray(int[] nums, int[] index)";
-    String difficulty = Difficulty.easy.name();
-    String type = Types.array.name();
+        = "int sumFourDivisors(int[] nums)";
+    String difficulty = Difficulty.medium.name();
+    String type = Types.dynamic.name();
     String contest = Contests.wc181.name();
 
 

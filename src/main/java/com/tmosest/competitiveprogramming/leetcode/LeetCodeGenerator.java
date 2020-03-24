@@ -78,9 +78,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1390. Four Divisors";
+    String name = "1391. Check if There is a Valid Path in a Grid";
     String functionDeclaration
-        = "int sumFourDivisors(int[] nums)";
+        = "boolean hasValidPath(int[][] grid)";
     String difficulty = Difficulty.medium.name();
     String type = Types.dynamic.name();
     String contest = Contests.wc181.name();

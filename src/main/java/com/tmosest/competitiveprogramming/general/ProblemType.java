@@ -48,6 +48,12 @@ public class ProblemType {
     trie
   }
 
+  public enum Contests {
+    wc180,
+    wc181,
+    wc182
+  }
+
   /**
    * Manual testing.
    * @param args Command line args.x`x``
@@ -64,6 +70,10 @@ public class ProblemType {
     System.out.println("===============Topic===============");
     for (Types type : Types.values()) {
       System.out.println(type);
+    }
+    System.out.println("===============Contests===============");
+    for (Contests contest : Contests.values()) {
+      System.out.println(contest);
     }
   }
 }

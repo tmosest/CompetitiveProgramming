@@ -1,5 +1,7 @@
 package com.tmosest.competitiveprogramming.utils.files;
 
+import java.util.List;
+
 public class JavaFileBuilder {
 
   private static JavaFileBuilder instance = new JavaFileBuilder();
@@ -45,14 +47,18 @@ public class JavaFileBuilder {
    * @param annotations The annotations.
    * @param values The values for the annotations.
    */
-  public void createTest(Class source, String className, String[] annotations, String[] values) {
-    if (annotations == null || values ==  null || annotations.length != values.length) {
+  public void createTest(
+      Class source, String className,
+      List<String> annotations,
+      List<String> values
+  ) {
+    if (annotations == null || values ==  null || annotations.size() != values.size()) {
       return;
     }
     try {
       JavaFile javaFile = new JavaFile(source, className + "Test");
-      for (int i = 0; i < annotations.length; i++) {
-        javaFile.addNewAnnotation(annotations[i], values[i]);
+      for (int i = 0; i < annotations.size(); i++) {
+        javaFile.addNewAnnotation(annotations.get(i), values.get(i));
       }
       String[] testImports = {
           "org.junit.jupiter.api.Assertions",

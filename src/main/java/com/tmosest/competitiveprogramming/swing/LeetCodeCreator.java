@@ -54,7 +54,9 @@ public class LeetCodeCreator {
       LeetCodeGenerator.instance().createNewProblem(
           title.getText(),
           function.getText(),
-          difficulty.getText()
+          difficulty.getText(),
+          null,
+          null
       );
       button.setText(title.getText() + " Created");
     });

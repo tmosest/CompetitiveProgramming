@@ -78,11 +78,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1366. Rank Teams by Votes\n";
+    String name = "1324. Print Words Vertically\n";
     String functionDeclaration
-        = "String rankTeams(String[] votes)";
+        = "List<String> printVertically(String s)";
     String difficulty = Difficulty.medium.name();
-    String type = Types.map.name();
+    String type = Types.string.name();
     String contest = null;
 
 

@@ -78,12 +78,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1391. Check if There is a Valid Path in a Grid";
+    String name = "1319. Number of Operations to Make Network Connected\n";
     String functionDeclaration
-        = "boolean hasValidPath(int[][] grid)";
+        = "int makeConnected(int n, int[][] connections)";
     String difficulty = Difficulty.medium.name();
     String type = Types.dynamic.name();
-    String contest = Contests.wc181.name();
+    String contest = null;
 
 
     instance().createNewProblem(name, functionDeclaration, difficulty, type, contest);

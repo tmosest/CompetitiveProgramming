@@ -78,11 +78,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1319. Number of Operations to Make Network Connected\n";
+    String name = "1366. Rank Teams by Votes\n";
     String functionDeclaration
-        = "int makeConnected(int n, int[][] connections)";
+        = "String rankTeams(String[] votes)";
     String difficulty = Difficulty.medium.name();
-    String type = Types.dynamic.name();
+    String type = Types.map.name();
     String contest = null;
 
 

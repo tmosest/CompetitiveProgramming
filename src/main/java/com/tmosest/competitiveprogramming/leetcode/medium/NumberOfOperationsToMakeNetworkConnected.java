@@ -7,8 +7,8 @@ import java.util.Set;
 
 class NumberOfOperationsToMakeNetworkConnected {
 
-  Map<Integer, Set<Integer>> setToNode = new HashMap<>();
-  Map<Integer, Integer> nodeToSet = new HashMap<>();
+  private Map<Integer, Set<Integer>> setToNode = new HashMap<>();
+  private Map<Integer, Integer> nodeToSet = new HashMap<>();
 
   int makeConnected(int size, int[][] connections) {
     if (connections.length == 0) {

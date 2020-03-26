@@ -78,11 +78,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1324. Print Words Vertically\n";
+    String name = "1254. Number of Closed Islands\n";
     String functionDeclaration
-        = "List<String> printVertically(String s)";
+        = "int closedIsland(int[][] grid)";
     String difficulty = Difficulty.medium.name();
-    String type = Types.string.name();
+    String type = Types.matrix.name();
     String contest = null;
 
 

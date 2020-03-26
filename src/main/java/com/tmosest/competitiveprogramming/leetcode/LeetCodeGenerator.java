@@ -78,11 +78,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1254. Number of Closed Islands\n";
+    String name = "1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree\n";
     String functionDeclaration
-        = "int closedIsland(int[][] grid)";
+        = "";
     String difficulty = Difficulty.medium.name();
-    String type = Types.matrix.name();
+    String type = Types.binaryTree.name();
     String contest = null;
 
 

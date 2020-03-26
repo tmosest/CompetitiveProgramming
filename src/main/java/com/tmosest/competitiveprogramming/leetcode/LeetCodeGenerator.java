@@ -78,9 +78,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree\n";
+    String name = "1130. Minimum Cost Tree From Leaf Values\n";
     String functionDeclaration
-        = "";
+        = "int mctFromLeafValues(int[] arr)";
     String difficulty = Difficulty.medium.name();
     String type = Types.binaryTree.name();
     String contest = null;

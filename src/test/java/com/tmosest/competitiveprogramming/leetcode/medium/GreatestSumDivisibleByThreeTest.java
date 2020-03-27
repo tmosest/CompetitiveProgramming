@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("array")
+@Tag("dynamic")
 @DisplayName("LeetCode: 1262. Greatest Sum Divisible by Three")
 class GreatestSumDivisibleByThreeTest {
 

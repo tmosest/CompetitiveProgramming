@@ -78,9 +78,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1262. Greatest Sum Divisible by Three\n";
+    String name = "213. House Robber II\n";
     String functionDeclaration
-        = "int maxSumDivThree(int[] nums)";
+        = "int rob(int[] nums)";
     String difficulty = Difficulty.medium.name();
     String type = Types.array.name();
     String contest = null;

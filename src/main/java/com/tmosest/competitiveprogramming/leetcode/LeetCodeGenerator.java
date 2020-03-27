@@ -78,11 +78,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1261. Find Elements in a Contaminated Binary Tree\n";
+    String name = "1262. Greatest Sum Divisible by Three\n";
     String functionDeclaration
-        = "boolean find(int target)";
+        = "int maxSumDivThree(int[] nums)";
     String difficulty = Difficulty.medium.name();
-    String type = Types.binaryTree.name();
+    String type = Types.array.name();
     String contest = null;
 
 

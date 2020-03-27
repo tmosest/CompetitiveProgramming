@@ -78,9 +78,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1130. Minimum Cost Tree From Leaf Values\n";
+    String name = "1325. Delete Leaves With a Given Value\n";
     String functionDeclaration
-        = "int mctFromLeafValues(int[] arr)";
+        = "TreeNode removeLeafNodes(TreeNode root, int target)";
     String difficulty = Difficulty.medium.name();
     String type = Types.binaryTree.name();
     String contest = null;

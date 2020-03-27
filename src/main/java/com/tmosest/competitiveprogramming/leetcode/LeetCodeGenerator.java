@@ -78,9 +78,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "213. House Robber II\n";
+    String name = "337. House Robber III\n";
     String functionDeclaration
-        = "int rob(int[] nums)";
+        = "int rob(TreeNode root)";
     String difficulty = Difficulty.medium.name();
     String type = Types.array.name();
     String contest = null;

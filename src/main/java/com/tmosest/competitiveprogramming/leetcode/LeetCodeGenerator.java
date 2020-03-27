@@ -78,9 +78,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "513. Find Bottom Left Tree Value\n";
+    String name = "1261. Find Elements in a Contaminated Binary Tree\n";
     String functionDeclaration
-        = "int findBottomLeftValue(TreeNode root)";
+        = "boolean find(int target)";
     String difficulty = Difficulty.medium.name();
     String type = Types.binaryTree.name();
     String contest = null;

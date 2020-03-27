@@ -2,31 +2,28 @@ package com.tmosest.competitiveprogramming.leetcode.medium;
 
 class GreatestSumDivisibleByThree {
 
-	private int max;
+  int maxSumDivThree(int[] nums) {
 
-	int maxSumDivThree(int[] nums) {
-		max = 0;
+    int len = nums.length;
+    int[][] cache = new int[len][3];
 
-		for (int i = 0; i < nums.length; i++) {
-			maxSumDivThree(nums, i, 0);
-		}
+    cache[0][nums[0] % 3] = nums[0];
 
-		return max;
-	}
+    for (int i = 1; i < len; i++) {
+      for (int j = 0; j < 3; j++) {
 
-	private void maxSumDivThree(int[] nums, int index, int sum) {
-		if (index >= nums.length) {
-			return;
-		}
+        int num = cache[i - 1][j] + nums[i];
 
-		sum += nums[index];
+        int pos = num % 3;
 
-		if (sum % 3 == 0) {
-			max = Math.max(max, sum);
-		}
+        cache[i][pos] = Math.max(num, cache[i][pos]);
 
-		for (int j = index + 1; j < nums.length; j++) {
-			maxSumDivThree(nums, j, sum);
-		}
-	}
+        cache[i][j] = Math.max(cache[i][j], cache[i - 1][j]);
+
+      }
+    }
+
+    return cache[len - 1][0];
+
+  }
 }

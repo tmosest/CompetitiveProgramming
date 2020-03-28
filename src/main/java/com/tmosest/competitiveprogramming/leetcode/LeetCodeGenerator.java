@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "787. Cheapest Flights Within K Stops\n";
+    String name = "1286. Iterator for Combination\n";
     String functionDeclaration
-        = "int findCheapestPrice(int len, int[][] flights, int src, int dst, int stops)";
+        = "boolean hasNext()";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.binaryTree.name(),

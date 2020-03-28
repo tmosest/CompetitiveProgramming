@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "890. Find and Replace Pattern\n";
+    String name = "1372. Longest ZigZag Path in a Binary Tree\n";
     String functionDeclaration
-        = "List<String> findAndReplacePattern(String[] words, String pattern)";
+        = "int longestZigZag(TreeNode root)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.string.name()
+        Types.binaryTree.name(),
+        Types.dynamic.name()
     );
     String contest = null;
 

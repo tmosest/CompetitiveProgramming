@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1372. Longest ZigZag Path in a Binary Tree\n";
+    String name = "787. Cheapest Flights Within K Stops\n";
     String functionDeclaration
-        = "int longestZigZag(TreeNode root)";
+        = "int findCheapestPrice(int len, int[][] flights, int src, int dst, int stops)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.binaryTree.name(),

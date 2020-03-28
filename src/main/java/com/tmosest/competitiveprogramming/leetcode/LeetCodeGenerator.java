@@ -39,7 +39,7 @@ public class LeetCodeGenerator {
       String numberName,
       String functionDeclaration,
       String difficulty,
-      String type,
+      List<String> types,
       String contest
   ) {
     String[] names = instance().formatIntoNumberAndName(numberName);
@@ -55,9 +55,11 @@ public class LeetCodeGenerator {
         difficulty,
         "LeetCode: " + numberName.replace("\n", "")
     ));
-    if (type != null) {
-      tags.add(2, "Tag");
-      vals.add(2, type);
+    if (types != null) {
+      for (String type : types) {
+        tags.add(2, "Tag");
+        vals.add(2, type);
+      }
     }
     if (contest != null) {
       tags.add(3, "Tag");
@@ -78,15 +80,18 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "337. House Robber III\n";
+    String name = "890. Find and Replace Pattern\n";
     String functionDeclaration
-        = "int rob(TreeNode root)";
+        = "List<String> findAndReplacePattern(String[] words, String pattern)";
     String difficulty = Difficulty.medium.name();
-    String type = Types.array.name();
+    List<String> types = Arrays.asList(
+        Types.array.name(),
+        Types.string.name()
+    );
     String contest = null;
 
 
-    instance().createNewProblem(name, functionDeclaration, difficulty, type, contest);
+    instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));
   }
 }

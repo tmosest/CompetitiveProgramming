@@ -80,15 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1286. Iterator for Combination\n";
+    String name = "1394. Find Lucky Integer in an Array";
     String functionDeclaration
-        = "boolean hasNext()";
+        = "int findLucky(int[] arr)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.binaryTree.name(),
-        Types.dynamic.name()
+        Types.array.name()
     );
-    String contest = null;
+    String contest = Contests.wc182.name();
 
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);

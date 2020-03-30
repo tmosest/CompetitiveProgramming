@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1394. Find Lucky Integer in an Array";
+    String name = "1395. Count Number of Teams";
     String functionDeclaration
-        = "int findLucky(int[] arr)";
+        = "int numTeams(int[] rating)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()

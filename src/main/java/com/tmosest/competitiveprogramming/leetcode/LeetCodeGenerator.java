@@ -80,12 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1396. Design Underground System";
+    String name = "1397. Find All Good Strings";
     String functionDeclaration
-        = "double getAverageTime(String startStation, String endStation)";
-    String difficulty = Difficulty.medium.name();
+        = "int findGoodStrings(int len, String strOne, String strTwo, String evil)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.design.name()
+        Types.dynamic.name(),
+        Types.string.name()
     );
     String contest = Contests.wc182.name();
 

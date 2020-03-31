@@ -40,4 +40,18 @@ public class StringUtil {
     }
     return result;
   }
+
+  /**
+   * Creates a string that is a repeat of another string.
+   * @param repeat The string to repeat.
+   * @param times The number of times to repeat.
+   * @return The string repeated.
+   */
+  public static String createRepeatString(String repeat, int times) {
+    StringBuilder sb = new StringBuilder();
+    for (; times >= 1; times--) {
+      sb.append(repeat);
+    }
+    return sb.toString();
+  }
 }

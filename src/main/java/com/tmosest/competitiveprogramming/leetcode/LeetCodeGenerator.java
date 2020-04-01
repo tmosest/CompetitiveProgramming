@@ -80,15 +80,15 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1397. Find All Good Strings";
+    String name = "1367. Linked List in Binary Tree\n";
     String functionDeclaration
-        = "int findGoodStrings(int len, String strOne, String strTwo, String evil)";
-    String difficulty = Difficulty.hard.name();
+        = "boolean isSubPath(ListNode head, TreeNode root)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.dynamic.name(),
-        Types.string.name()
+        Types.binaryTree.name(),
+        Types.list.name()
     );
-    String contest = Contests.wc182.name();
+    String contest = Contests.wc179.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

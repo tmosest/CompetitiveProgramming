@@ -49,6 +49,8 @@ public class ProblemType {
   }
 
   public enum Contests {
+    wc178,
+    wc179,
     wc180,
     wc181,
     wc182

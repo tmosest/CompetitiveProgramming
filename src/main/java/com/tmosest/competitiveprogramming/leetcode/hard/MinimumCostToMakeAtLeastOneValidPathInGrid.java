@@ -5,8 +5,8 @@ import java.util.PriorityQueue;
 
 class MinimumCostToMakeAtLeastOneValidPathInGrid {
 
-  int[][] costs = {{0, 1, 1, 1}, {1, 0, 1, 1}, {1, 1, 0, 1}, {1, 1, 1, 0}};
-  int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+  private int[][] costs = {{0, 1, 1, 1}, {1, 0, 1, 1}, {1, 1, 0, 1}, {1, 1, 1, 0}};
+  private int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
   int minCost(int[][] grid) {
     int oneLen = grid.length;
@@ -28,7 +28,7 @@ class MinimumCostToMakeAtLeastOneValidPathInGrid {
         int nx = cur.left + dirs[d][0];
         int ny = cur.right + dirs[d][1];
         int cost = cur.cost + costs[grid[cur.left][cur.right] - 1][d];
-        if (nx >= 0 && nx < oneLen && ny >= 0 && ny < twoLen && visited[nx][ny] == false) {
+        if (nx >= 0 && nx < oneLen && ny >= 0 && ny < twoLen && !visited[nx][ny]) {
           pq.offer(new Entry(nx, ny, cost));
         }
       }

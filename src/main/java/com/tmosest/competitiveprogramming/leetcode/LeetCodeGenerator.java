@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1367. Linked List in Binary Tree\n";
+    String name = "1368. Minimum Cost to Make at Least One Valid Path in a Grid";
     String functionDeclaration
-        = "boolean isSubPath(ListNode head, TreeNode root)";
-    String difficulty = Difficulty.medium.name();
+        = "int minCost(int[][] grid)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.binaryTree.name(),
-        Types.list.name()
-    );
+        Types.depthFirstSearch.name(),
+        Types.matrix.name()
+        );
     String contest = Contests.wc179.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);

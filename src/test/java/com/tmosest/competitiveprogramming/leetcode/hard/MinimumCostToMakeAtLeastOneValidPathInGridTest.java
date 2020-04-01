@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("hard")
 @Tag("matrix")
-@Tag("wc179")
+@Tag("wc177")
 @Tag("depthFirstSearch")
 @DisplayName("LeetCode: 1368. Minimum Cost to Make at Least One Valid Path in a Grid")
 class MinimumCostToMakeAtLeastOneValidPathInGridTest {
@@ -18,12 +18,9 @@ class MinimumCostToMakeAtLeastOneValidPathInGridTest {
 
   @Test
   void testCase0() {
-    Assertions.assertEquals(
-        3,
-        minimumCostToMakeAtLeastOneValidPathInGrid.minCost(
-            new int[][] 
-                {{1,1,1,1},{2,2,2,2},{1,1,1,1},{2,2,2,2}}
-        )
+    Assertions.assertArrayEquals(
+        new int[] {3,3},
+        minimumCostToMakeAtLeastOneValidPathInGrid.closestDivisors(8)
     );
   }
 }

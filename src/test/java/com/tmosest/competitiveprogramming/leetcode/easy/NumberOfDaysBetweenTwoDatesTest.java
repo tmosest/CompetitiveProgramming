@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("wc177")
 @DisplayName("LeetCode: 1360. Number of Days Between Two Dates")
 class NumberOfDaysBetweenTwoDatesTest {
 

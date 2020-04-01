@@ -88,7 +88,7 @@ public class LeetCodeGenerator {
         Types.depthFirstSearch.name(),
         Types.matrix.name()
         );
-    String contest = Contests.wc179.name();
+    String contest = Contests.wc177.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

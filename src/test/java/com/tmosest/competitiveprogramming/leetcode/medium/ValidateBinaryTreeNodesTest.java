@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("medium")
+@Tag("wc177")
 @DisplayName("LeetCode: 1361. Validate Binary Tree Nodes")
 class ValidateBinaryTreeNodesTest {
 

@@ -1,53 +1,31 @@
 package com.tmosest.competitiveprogramming.leetcode.hard;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
 class MinimumCostToMakeAtLeastOneValidPathInGrid {
 
-  private int[][] costs = {{0, 1, 1, 1}, {1, 0, 1, 1}, {1, 1, 0, 1}, {1, 1, 1, 0}};
-  private int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-
-  int minCost(int[][] grid) {
-    int oneLen = grid.length;
-    int twoLen = grid[0].length;
-    boolean[][] visited = new boolean[oneLen][twoLen];
-    PriorityQueue<Entry> pq = new PriorityQueue<>(new Comparator<Entry>() {
-      public int compare(Entry one, Entry two) {
-        return one.cost - two.cost;
-      }
-    });
-    pq.offer(new Entry(0, 0, 0));
-    while (!pq.isEmpty()) {
-      Entry cur = pq.poll();
-      if (cur.left == oneLen - 1 && cur.right == twoLen - 1) {
-        return cur.cost;
-      }
-      visited[cur.left][cur.right] = true;
-      for (int d = 0; d < 4; d++) {
-        int nx = cur.left + dirs[d][0];
-        int ny = cur.right + dirs[d][1];
-        int cost = cur.cost + costs[grid[cur.left][cur.right] - 1][d];
-        if (nx >= 0 && nx < oneLen && ny >= 0 && ny < twoLen && !visited[nx][ny]) {
-          pq.offer(new Entry(nx, ny, cost));
-        }
+  int[] closestDivisors(int nums) {
+    int max;
+    for (int i = 0; ; i++) {
+      if (i * i >= nums + 2) {
+        max = i;
+        break;
       }
     }
-    return 0;
+    return met(nums + 1, nums + 2, max);
   }
 
-
-  private static class Entry {
-
-    private int left;
-    private int right;
-    private int cost;
-
-    private Entry(int left, int right, int cost) {
-      this.left = left;
-      this.right = right;
-      this.cost = cost;
+  private int[] met(int one, int two, int max) {
+    int[] ans = new int[2];
+    for (int i = max; i > 0; i--) {
+      if (one % i == 0) {
+        ans[0] = i;
+        ans[1] = one / ans[0];
+        return ans;
+      } else if (two % i == 0) {
+        ans[0] = i;
+        ans[1] = two / ans[0];
+        return ans;
+      }
     }
+    return ans;
   }
-
 }

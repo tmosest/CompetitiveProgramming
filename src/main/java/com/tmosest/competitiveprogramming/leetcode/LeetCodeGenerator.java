@@ -80,15 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1368. Minimum Cost to Make at Least One Valid Path in a Grid";
+    String name = "1399. Count Largest Group";
     String functionDeclaration
-        = "int minCost(int[][] grid)";
-    String difficulty = Difficulty.hard.name();
+        = "int countLargestGroup(int n)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.depthFirstSearch.name(),
-        Types.matrix.name()
+        Types.number.name()
         );
-    String contest = Contests.wc177.name();
+    String contest = Contests.bwc23.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

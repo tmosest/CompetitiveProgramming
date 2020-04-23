@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1328. Break a Palindrome\n";
+    String name = "1403. Minimum Subsequence in Non-Increasing Order\n";
     String functionDeclaration
-        = "String breakPalindrome(String palindrome)";
-    String difficulty = Difficulty.medium.name();
+        = "List<Integer> minSubsequence(int[] nums)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
     String contest = null;
 

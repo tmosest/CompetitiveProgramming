@@ -80,12 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1408. String Matching in an Array\n";
+    String name = "1328. Break a Palindrome\n";
     String functionDeclaration
-        = "List<String> stringMatching(String[] words)";
-    String difficulty = Difficulty.easy.name();
+        = "String breakPalindrome(String palindrome)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
         Types.string.name()
     );
     String contest = null;

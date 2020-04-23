@@ -80,14 +80,15 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1399. Count Largest Group";
+    String name = "1408. String Matching in an Array\n";
     String functionDeclaration
-        = "int countLargestGroup(int n)";
+        = "List<String> stringMatching(String[] words)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.number.name()
-        );
-    String contest = Contests.bwc23.name();
+        Types.array.name(),
+        Types.string.name()
+    );
+    String contest = null;
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

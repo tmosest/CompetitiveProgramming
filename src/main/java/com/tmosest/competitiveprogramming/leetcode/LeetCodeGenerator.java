@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1403. Minimum Subsequence in Non-Increasing Order\n";
+    String name = "1413. Minimum Value to Get Positive Step by Step Sum\n";
     String functionDeclaration
-        = "List<Integer> minSubsequence(int[] nums)";
+        = "int minStartValue(int[] nums)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.array.name()

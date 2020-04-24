@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1296. Divide Array in Sets of K Consecutive Numbers\n";
+    String name = "659. Split Array into Consecutive Subsequences\n";
     String functionDeclaration
-        = "boolean isPossibleDivide(int[] nums, int count)";
+        = "boolean isPossible(int[] nums)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()

@@ -80,10 +80,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1413. Minimum Value to Get Positive Step by Step Sum\n";
+    String name = "1296. Divide Array in Sets of K Consecutive Numbers\n";
     String functionDeclaration
-        = "int minStartValue(int[] nums)";
-    String difficulty = Difficulty.easy.name();
+        = "boolean isPossibleDivide(int[] nums, int count)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );

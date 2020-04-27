@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "659. Split Array into Consecutive Subsequences\n";
+    String name = "1425. Constrained Subset Sum";
     String functionDeclaration
-        = "boolean isPossible(int[] nums)";
-    String difficulty = Difficulty.medium.name();
+        = "int constrainedSubsetSum(int[] nums, int k)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = null;
+    String contest = Contests.wc186.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -7,9 +7,14 @@ import java.util.List;
 public class MatrixListAdapter<T> {
 
   private static final MatrixListAdapter<Integer> intAdapter = new MatrixListAdapter<>();
+  private static final MatrixListAdapter<String> stringAdapter = new MatrixListAdapter<>();
 
   public static List<List<Integer>> toList(Integer[][] matrix) {
     return intAdapter.convertToLists(matrix);
+  }
+
+  public static List<List<String>> toList(String[][] matrix) {
+    return stringAdapter.convertToLists(matrix);
   }
 
   /**

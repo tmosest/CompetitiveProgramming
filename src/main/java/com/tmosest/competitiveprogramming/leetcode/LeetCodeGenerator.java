@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1420. Build Array Where You Can Find The Maximum Exactly K Comparisons";
+    String name = "221. Maximal Square\n";
     String functionDeclaration
-        = "int numOfArrays(int n, int m, int k)";
+        = "int maximalSquare(char[][] matrix)";
     String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.depthFirstSearch.name()
+        Types.dynamic.name()
     );
-    String contest = Contests.wc185.name();
+    String contest = Contests.april30Day.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

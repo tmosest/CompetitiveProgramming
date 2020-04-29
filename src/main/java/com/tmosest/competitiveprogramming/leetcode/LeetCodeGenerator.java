@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "221. Maximal Square\n";
+    String name = "x. First Unique Number\n";
     String functionDeclaration
         = "int maximalSquare(char[][] matrix)";
-    String difficulty = Difficulty.hard.name();
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.dynamic.name()
+        Types.design.name()
     );
     String contest = Contests.april30Day.name();
 

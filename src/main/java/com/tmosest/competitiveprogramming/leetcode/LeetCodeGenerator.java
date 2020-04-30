@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "x. First Unique Number\n";
+    String name = "124. Binary Tree Maximum Path Sum\n";
     String functionDeclaration
-        = "int maximalSquare(char[][] matrix)";
-    String difficulty = Difficulty.medium.name();
+        = "int maxPathSum(TreeNode root)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.design.name()
+        Types.binaryTree.name()
     );
     String contest = Contests.april30Day.name();
 

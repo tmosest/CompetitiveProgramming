@@ -80,10 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "124. Binary Tree Maximum Path Sum\n";
+    String name = "y. Check If a String Is a Valid Sequence "
+        + "from Root to Leaves Path in a Binary Tree";
     String functionDeclaration
-        = "int maxPathSum(TreeNode root)";
-    String difficulty = Difficulty.hard.name();
+        = "boolean isValidSequence(TreeNode root, int[] arr)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.binaryTree.name()
     );

@@ -80,13 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "y. Check If a String Is a Valid Sequence "
-        + "from Root to Leaves Path in a Binary Tree";
+    String name = "771. Jewels and Stones\n";
     String functionDeclaration
-        = "boolean isValidSequence(TreeNode root, int[] arr)";
-    String difficulty = Difficulty.medium.name();
+        = "int numJewelsInStones(String J, String S)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.binaryTree.name()
+        Types.string.name()
     );
     String contest = Contests.april30Day.name();
 

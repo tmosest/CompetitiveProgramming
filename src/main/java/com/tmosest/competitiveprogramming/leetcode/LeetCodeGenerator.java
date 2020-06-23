@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1446. Consecutive Characters\n";
+    String name = "1436. Destination City\n";
     String functionDeclaration
-        = "int maxPower(String str)";
+        = "String destCity(List<List<String>> paths)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.string.name()

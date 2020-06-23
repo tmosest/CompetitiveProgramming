@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "771. Jewels and Stones\n";
+    String name = "1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence\n";
     String functionDeclaration
-        = "int numJewelsInStones(String J, String S)";
+        = "int isPrefixOfWord(String sentence, String searchWord)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.string.name()
     );
-    String contest = Contests.april30Day.name();
+    String contest = null; // Contests.april30Day.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

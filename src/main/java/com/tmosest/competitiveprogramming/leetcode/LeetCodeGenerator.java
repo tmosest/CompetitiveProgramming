@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence\n";
+    String name = "1446. Consecutive Characters\n";
     String functionDeclaration
-        = "int isPrefixOfWord(String sentence, String searchWord)";
+        = "int maxPower(String str)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.string.name()

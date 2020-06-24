@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1486. XOR Operation in an Array\n";
+    String name = "1464. Maximum Product of Two Elements in an Array\n";
     String functionDeclaration
-        = "int xorOperation(int n, int start)";
+        = "int maxProduct(int[] nums)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.number.name()

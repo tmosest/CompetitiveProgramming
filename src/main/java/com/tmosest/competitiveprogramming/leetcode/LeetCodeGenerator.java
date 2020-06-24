@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1441. Build an Array With Stack Operations\n";
+    String name = "1486. XOR Operation in an Array\n";
     String functionDeclaration
-        = "List<String> buildArray(int[] target, int n)";
+        = "int xorOperation(int n, int start)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.number.name()
     );
     String contest = null; // Contests.april30Day.name();
 

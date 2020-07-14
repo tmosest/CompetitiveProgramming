@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1513. Number of Substrings With Only 1s";
+    String name = "1514. Path with Maximum Probability";
     String functionDeclaration
-        = "int numSub(String str)";
+        = "double maxProbability(int n, int[][] edges, double[] succProb, int start, int end)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.graph.name()
     );
     String contest = Contests.wc197.name();
 

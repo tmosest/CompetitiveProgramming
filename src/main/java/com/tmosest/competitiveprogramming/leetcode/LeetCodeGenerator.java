@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1514. Path with Maximum Probability";
+    String name = "1515. Best Position for a Service Centre";
     String functionDeclaration
-        = "double maxProbability(int n, int[][] edges, double[] succProb, int start, int end)";
-    String difficulty = Difficulty.medium.name();
+        = "double getMinDistSum(int[][] positions)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.graph.name()
+        Types.matrix.name()
     );
     String contest = Contests.wc197.name();
 

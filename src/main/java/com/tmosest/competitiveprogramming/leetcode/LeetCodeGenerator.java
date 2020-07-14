@@ -80,10 +80,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1502. Can Make Arithmetic Progression From Sequence";
+    String name = "1503. Last Moment Before All Ants Fall Out of a Plank";
     String functionDeclaration
-        = "boolean canMakeArithmeticProgression(int[] arr)";
-    String difficulty = Difficulty.easy.name();
+        = "int getLastMoment(int num, int[] left, int[] right)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );

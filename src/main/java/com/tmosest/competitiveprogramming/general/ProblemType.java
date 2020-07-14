@@ -58,7 +58,8 @@ public class ProblemType {
     wc181,
     wc182,
     wc185,
-    wc186
+    wc186,
+    wc197
   }
 
   /**

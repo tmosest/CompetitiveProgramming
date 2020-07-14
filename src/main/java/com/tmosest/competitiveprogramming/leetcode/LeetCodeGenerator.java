@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1464. Maximum Product of Two Elements in an Array\n";
+    String name = "1512. Number of Good Pairs";
     String functionDeclaration
-        = "int maxProduct(int[] nums)";
+        = "int numIdenticalPairs(int[] nums)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.number.name()
+        Types.array.name()
     );
-    String contest = null; // Contests.april30Day.name();
+    String contest = Contests.wc197.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -18,28 +18,28 @@ class LastMomentBeforeAllAntsFallOutOfPlankTest {
   @Test
   void testCase0() {
     Assertions.assertEquals(4, lastMomentBeforeAllAntsFallOutOfPlank.getLastMoment(
-        4, new int[] {4,3}, new int[] {0,1}
+        4, new int[]{4, 3}, new int[]{0, 1}
     ));
   }
 
   @Test
   void testCase1() {
     Assertions.assertEquals(7, lastMomentBeforeAllAntsFallOutOfPlank.getLastMoment(
-        7, new int[] {}, new int[] {0,1,2,3,4,5,6,7}
+        7, new int[]{}, new int[]{0, 1, 2, 3, 4, 5, 6, 7}
     ));
   }
 
   @Test
   void testCase2() {
     Assertions.assertEquals(7, lastMomentBeforeAllAntsFallOutOfPlank.getLastMoment(
-        7, new int[] {0,1,2,3,4,5,6,7}, new int[] {}
+        7, new int[]{0, 1, 2, 3, 4, 5, 6, 7}, new int[]{}
     ));
   }
 
   @Test
   void testCase3() {
     Assertions.assertEquals(5, lastMomentBeforeAllAntsFallOutOfPlank.getLastMoment(
-        9, new int[] {5}, new int[] {4}
+        9, new int[]{5}, new int[]{4}
     ));
   }
 }

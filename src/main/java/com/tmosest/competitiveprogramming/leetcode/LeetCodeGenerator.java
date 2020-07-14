@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1512. Number of Good Pairs";
+    String name = "1513. Number of Substrings With Only 1s";
     String functionDeclaration
-        = "int numIdenticalPairs(int[] nums)";
-    String difficulty = Difficulty.easy.name();
+        = "int numSub(String str)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.string.name()
     );
     String contest = Contests.wc197.name();
 

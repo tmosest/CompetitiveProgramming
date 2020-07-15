@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1496. Path Crossing";
+    String name = "1497. Check If Array Pairs Are Divisible by k";
     String functionDeclaration
-        = "boolean isPathCrossing(String path)";
-    String difficulty = Difficulty.easy.name();
+        = "boolean canArrange(int[] arr, int k)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
     String contest = Contests.wc196.name();
 

@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1503. Last Moment Before All Ants Fall Out of a Plank";
+    String name = "1504. Count Submatrices With All Ones";
     String functionDeclaration
-        = "int getLastMoment(int num, int[] left, int[] right)";
+        = "int numSubmat(int[][] mat)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.matrix.name()
     );
     String contest = Contests.wc196.name();
 

@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1504. Count Submatrices With All Ones";
+    String name = "1496. Path Crossing";
     String functionDeclaration
-        = "int numSubmat(int[][] mat)";
-    String difficulty = Difficulty.medium.name();
+        = "boolean isPathCrossing(String path)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.matrix.name()
+        Types.string.name()
     );
     String contest = Contests.wc196.name();
 

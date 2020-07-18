@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1520. Maximum Number of Non-Overlapping Substrings";
+    String name = "1488. Avoid Flood in The City";
     String functionDeclaration
-        = "List<String> maxNumOfSubstrings(String s)";
+        = "int[] avoidFlood(int[] rains)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
     String contest = Contests.wc198.name();
 

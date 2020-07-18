@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1497. Check If Array Pairs Are Divisible by k";
+    String name = "1498. Number of Subsequences That Satisfy the Given Sum Condition";
     String functionDeclaration
-        = "boolean canArrange(int[] arr, int k)";
+        = "numSubseq(int[] nums, int target)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()

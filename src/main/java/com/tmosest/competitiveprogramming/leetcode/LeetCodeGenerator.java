@@ -80,12 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1486. XOR Operation in an Array";
+    String name = "1487. Making File Names Unique";
     String functionDeclaration
-        = "int xorOperation(int n, int start)";
+        = "String[] getFolderNames(String[] names)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.array.name(),
+        Types.string.name()
     );
     String contest = Contests.wc194.name();
 

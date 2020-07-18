@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("array")
-@Tag("wc196")
+@Tag("wc195")
 @DisplayName("LeetCode: 1498. Number of Subsequences That Satisfy the Given Sum Condition")
 class NumberOfSubsequencesThatSatisfyTheGivenSumConditionTest {
 

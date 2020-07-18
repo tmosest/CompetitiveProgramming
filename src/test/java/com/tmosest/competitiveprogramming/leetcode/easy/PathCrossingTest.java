@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("string")
-@Tag("wc196")
+@Tag("wc195")
 @DisplayName("LeetCode: 1496. Path Crossing")
 class PathCrossingTest {
 

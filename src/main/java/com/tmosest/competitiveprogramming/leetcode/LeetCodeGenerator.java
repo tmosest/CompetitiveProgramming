@@ -87,7 +87,7 @@ public class LeetCodeGenerator {
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.wc196.name();
+    String contest = Contests.wc195.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

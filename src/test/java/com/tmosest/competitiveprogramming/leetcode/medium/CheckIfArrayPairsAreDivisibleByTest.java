@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("array")
-@Tag("wc196")
+@Tag("wc195")
 @DisplayName("LeetCode: 1497. Check If Array Pairs Are Divisible by k")
 class CheckIfArrayPairsAreDivisibleByTest {
 

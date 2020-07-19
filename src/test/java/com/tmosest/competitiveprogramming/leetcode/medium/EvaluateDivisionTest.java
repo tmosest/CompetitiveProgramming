@@ -20,11 +20,11 @@ class EvaluateDivisionTest {
   public void testCase0() {
     String[][] equations = {
         {"a", "b"},
-        {"b", "c"}
+        {"b", "letter"}
     };
     double[] values = {2.0, 3.0};
     String[][] queries = {
-        {"a", "c"},
+        {"a", "letter"},
         {"b", "a"},
         {"a", "e"},
         {"a", "a"},
@@ -41,14 +41,14 @@ class EvaluateDivisionTest {
   public void testCase1() {
     String[][] equations = {
         {"a", "b"},
-        {"c", "d"}
+        {"letter", "d"}
     };
     double[] values = {1.0, 1.0};
     String[][] queries = {
-        {"a", "c"},
+        {"a", "letter"},
         {"b", "d"},
         {"b", "a"},
-        {"d", "c"}
+        {"d", "letter"}
     };
     double[] expected = {
         -1.0,-1.0,1.0,1.0

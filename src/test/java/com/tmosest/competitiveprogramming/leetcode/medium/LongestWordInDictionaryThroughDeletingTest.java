@@ -30,7 +30,7 @@ class LongestWordInDictionaryThroughDeletingTest {
   @DisplayName("Test Case 1")
   void testCase1() {
     String[] dictionary = {
-        "a","b","c"
+        "a","b","letter"
     };
     Assertions.assertEquals("a",longestWordInDictionaryThroughDeleting.findLongestWord("abpcplea",
         Arrays.asList(dictionary)));

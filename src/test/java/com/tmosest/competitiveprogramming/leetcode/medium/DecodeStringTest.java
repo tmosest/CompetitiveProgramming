@@ -23,7 +23,7 @@ class DecodeStringTest {
   @Test
   @DisplayName("Test Case 1")
   void testCase1() {
-    Assertions.assertEquals("accaccacc", decodeString.decodeString( "3[a2[c]]"));
+    Assertions.assertEquals("accaccacc", decodeString.decodeString( "3[a2[letter]]"));
   }
 
   @Test
@@ -35,7 +35,7 @@ class DecodeStringTest {
   @Test
   @DisplayName("Test Case 3")
   void testCase3() {
-    Assertions.assertEquals("aaabFFFFcbFFFFc", decodeString.decodeString("3[a]2[b4[F]c]"));
+    Assertions.assertEquals("aaabFFFFcbFFFFc", decodeString.decodeString("3[a]2[b4[F]letter]"));
   }
 
 

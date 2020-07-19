@@ -80,15 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1487. Making File Names Unique";
+    String name = "1518. Water Bottles";
     String functionDeclaration
-        = "String[] getFolderNames(String[] names)";
-    String difficulty = Difficulty.medium.name();
+        = "int numWaterBottles(int numBottles, int numExchange)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.string.name()
+        Types.number.name()
     );
-    String contest = Contests.wc194.name();
+    String contest = Contests.wc198.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

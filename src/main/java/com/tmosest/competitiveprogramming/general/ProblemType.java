@@ -62,7 +62,8 @@ public class ProblemType {
     wc194,
     wc195,
     wc196,
-    wc197
+    wc197,
+    wc198
   }
 
   /**

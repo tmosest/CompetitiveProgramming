@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1519. Number of Nodes in the Sub-Tree With the Same Label";
+    String name = "1518. Water Bottles";
     String functionDeclaration
-        = "int[] countSubTrees(int n, int[][] edges, String labels)";
-    String difficulty = Difficulty.medium.name();
+        = "int numWaterBottles(int numBottles, int numExchange)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.binaryTree.name()
+        Types.number.name()
     );
     String contest = Contests.wc198.name();
 

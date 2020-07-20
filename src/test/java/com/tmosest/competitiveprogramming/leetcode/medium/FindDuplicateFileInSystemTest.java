@@ -22,12 +22,12 @@ class FindDuplicateFileInSystemTest {
   void testCase0() {
 
     String[] input = {
-        "root/a 1.txt(abcd) 2.txt(efgh)", "root/letter 3.txt(abcd)", "root/letter/d 4.txt(efgh)", "root 4.txt(efgh)"
+        "root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"
     };
 
     String[][] expectedArray = {
-        {"root/a/2.txt","root/letter/d/4.txt","root/4.txt"},
-        {"root/a/1.txt","root/letter/3.txt"}
+        {"root/a/2.txt","root/c/d/4.txt","root/4.txt"},
+        {"root/a/1.txt","root/c/3.txt"}
     };
 
     List<List<String>> expected = new ArrayList<>();

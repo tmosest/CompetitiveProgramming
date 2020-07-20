@@ -35,19 +35,19 @@ class SimplifyPathTest {
   @Test
   @DisplayName("Test Case 3")
   void testCase3() {
-    Assertions.assertEquals("/letter", simplifyPath.simplifyPath("/a/./b/../../letter/"));
+    Assertions.assertEquals("/c", simplifyPath.simplifyPath("/a/./b/../../c/"));
   }
 
   @Test
   @DisplayName("Test Case 4")
   void testCase4() {
-    Assertions.assertEquals("/letter", simplifyPath.simplifyPath("/a/../../b/../letter//.//"));
+    Assertions.assertEquals("/c", simplifyPath.simplifyPath("/a/../../b/../c//.//"));
   }
 
   @Test
   @DisplayName("Test Case 5")
   void testCase5() {
-    Assertions.assertEquals("/a/b/letter", simplifyPath.simplifyPath("/a//b////letter/d//././/.."));
+    Assertions.assertEquals("/a/b/c", simplifyPath.simplifyPath("/a//b////c/d//././/.."));
   }
 
 

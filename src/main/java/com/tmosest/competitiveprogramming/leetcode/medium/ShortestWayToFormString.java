@@ -32,15 +32,15 @@ class ShortestWayToFormString {
     // Go through target and account for each character
     char[] temp = target.toCharArray();
     for (char c : temp) {
-      // If there are no occurrences of letter with index greater than 0
+      // If there are no occurrences of c with index greater than 0
       // then it doesn't occur at all. Hence, we cannot get that letter from
       // a subsequence of source.
       if (dict[0][c - 'a'] == -1) {
         return -1;
       }
 
-      // If there are no letter's left in source that occur >= idx
-      // but there are letter's from earlier in the subsequence
+      // If there are no c's left in source that occur >= idx
+      // but there are c's from earlier in the subsequence
       // add 1 to subsequence count and reset idx of source to 0.
       if (dict[idx][c - 'a'] == -1) {
         ++ans;

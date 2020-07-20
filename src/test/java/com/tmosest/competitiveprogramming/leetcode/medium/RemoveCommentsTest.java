@@ -32,15 +32,15 @@ class RemoveCommentsTest {
         "int main()",
         "{ ",
         "  // variable declaration ",
-        "int a, b, letter;",
+        "int a, b, c;",
         "/* This is a test",
         "   multiline  ",
         "   comment for ",
-        "   testing */", "a = b + letter;",
+        "   testing */", "a = b + c;",
         "}"
     };
     String[] output = {
-        "int main()","{ ","  ","int a, b, letter;","a = b + letter;","}"
+        "int main()","{ ","  ","int a, b, c;","a = b + c;","}"
     };
     test(source, output);
   }
@@ -67,14 +67,14 @@ class RemoveCommentsTest {
         "public: ",
         "   int left = 1;",
         "   /*double right = 1;*/",
-        "   char letter;", "};"
+        "   char c;", "};"
     };
     String[] output = {
         "class test{",
         "public: ",
         "   int left = 1;",
         "   ",
-        "   char letter;",
+        "   char c;",
         "};"
     };
     test(source, output);
@@ -104,7 +104,7 @@ class RemoveCommentsTest {
   @DisplayName("Test Case 4")
   void testCase4() {
     String[] source = {
-        "a/*/b//*letter",
+        "a/*/b//*c",
         "blank",
         "d/*/e*//f"
     };

@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1488. Avoid Flood in The City";
+    String name = "1480. Running Sum of 1d Array";
     String functionDeclaration
-        = "int[] avoidFlood(int[] rains)";
-    String difficulty = Difficulty.medium.name();
+        = "int[] runningSum(int[] nums)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.wc198.name();
+    String contest = Contests.wc193.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

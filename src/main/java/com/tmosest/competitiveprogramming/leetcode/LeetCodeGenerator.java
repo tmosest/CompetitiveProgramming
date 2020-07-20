@@ -80,10 +80,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1480. Running Sum of 1d Array";
+    String name = "1481. Least Number of Unique Integers after K Removals";
     String functionDeclaration
-        = "int[] runningSum(int[] nums)";
-    String difficulty = Difficulty.easy.name();
+        = "int findLeastNumOfUniqueInts(int[] arr, int k)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );

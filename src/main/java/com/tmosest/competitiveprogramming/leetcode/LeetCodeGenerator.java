@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1481. Least Number of Unique Integers after K Removals";
+    String name = "1482. Minimum Number of Days to Make m Bouquets";
     String functionDeclaration
-        = "int findLeastNumOfUniqueInts(int[] arr, int k)";
+        = "int minDays(int[] bloomDay, int m, int k)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()

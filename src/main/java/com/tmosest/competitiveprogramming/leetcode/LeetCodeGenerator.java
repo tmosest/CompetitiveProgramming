@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1519. Number of Nodes in the Sub-Tree With the Same Label";
+    String name = "1520. Maximum Number of Non-Overlapping Substrings";
     String functionDeclaration
-        = "int[] countSubTrees(int n, int[][] edges, String labels)";
+        = "List<String> maxNumOfSubstrings(String s)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.binaryTree.name()
+        Types.string.name()
     );
     String contest = Contests.wc198.name();
 

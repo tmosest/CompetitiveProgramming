@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1471. The k Strongest Values in an Array";
+    String name = "1472. Design Browser History";
     String functionDeclaration
-        = "int[] getStrongest(int[] arr, int size)";
+        = "void visit(String url)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()

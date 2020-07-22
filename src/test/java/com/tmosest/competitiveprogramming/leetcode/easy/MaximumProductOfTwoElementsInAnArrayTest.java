@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("number")
+@Tag("wc192")
 @DisplayName("LeetCode: 1464. Maximum Product of Two Elements in an Array")
 class MaximumProductOfTwoElementsInAnArrayTest {
 

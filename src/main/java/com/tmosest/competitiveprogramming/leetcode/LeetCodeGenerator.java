@@ -83,11 +83,11 @@ public class LeetCodeGenerator {
     String name = "1472. Design Browser History";
     String functionDeclaration
         = "void visit(String url)";
-    String difficulty = Difficulty.medium.name();
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.wc192.name();
+    String contest = Contests.wc191.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts";
+    String name = "1466. Reorder Routes to Make All Paths Lead to the City Zero";
     String functionDeclaration
-        = "int maxArea(int h, int w, int[] horizontalCuts, int[] verticalCuts)";
+        = "int minReorder(int n, int[][] connections)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.graph.name()
     );
     String contest = Contests.wc191.name();
 

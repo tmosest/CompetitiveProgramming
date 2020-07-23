@@ -80,10 +80,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence";
+    String name = "1456. Maximum Number of Vowels in a Substring of Given Length";
     String functionDeclaration
-        = "int isPrefixOfWord(String sentence, String searchWord)";
-    String difficulty = Difficulty.easy.name();
+        = "int maxVowels(String s, int k)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.string.name()
     );

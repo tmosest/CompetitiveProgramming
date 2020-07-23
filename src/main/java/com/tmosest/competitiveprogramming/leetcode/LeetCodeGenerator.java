@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1456. Maximum Number of Vowels in a Substring of Given Length";
+    String name = "1457. Pseudo-Palindromic Paths in a Binary Tree";
     String functionDeclaration
-        = "int maxVowels(String s, int k)";
+        = "int pseudoPalindromicPaths (TreeNode root)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.binaryTree.name()
     );
     String contest = Contests.wc190.name();
 

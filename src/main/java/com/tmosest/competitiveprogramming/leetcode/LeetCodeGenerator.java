@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1457. Pseudo-Palindromic Paths in a Binary Tree";
+    String name = "1450. Number of Students Doing Homework at a Given Time";
     String functionDeclaration
-        = "int pseudoPalindromicPaths (TreeNode root)";
-    String difficulty = Difficulty.medium.name();
+        = "int busyStudent(int[] startTime, int[] endTime, int queryTime)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.binaryTree.name()
+        Types.array.name()
     );
-    String contest = Contests.wc190.name();
+    String contest = Contests.wc189.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

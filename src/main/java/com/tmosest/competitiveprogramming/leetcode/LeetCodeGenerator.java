@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1451. Rearrange Words in a Sentence";
+    String name = "1452. People Whose List of Favorite Companies Is Not a Subset of Another List";
     String functionDeclaration
-        = "String arrangeWords(String text)";
+        = "List<Integer> peopleIndexes(List<List<String>> fc)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.matrix.name()
     );
     String contest = Contests.wc189.name();
 

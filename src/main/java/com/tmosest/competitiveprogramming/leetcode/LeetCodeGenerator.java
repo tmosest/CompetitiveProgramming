@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1529. Bulb Switcher IV";
+    String name = "1530. Number of Good Leaf Nodes Pairs";
     String functionDeclaration
-        = "int minFlips(String target)";
+        = "int countPairs(TreeNode root, int distance)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.graph.name()
     );
     String contest = Contests.wc199.name();
 

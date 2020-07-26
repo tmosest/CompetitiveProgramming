@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1442. Count Triplets That Can Form Two Arrays of Equal XOR";
+    String name = "1443. Minimum Time to Collect All Apples in a Tree";
     String functionDeclaration
         = "int countTriplets(int[] arr)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.binaryTree.name()
     );
     String contest = Contests.wc188.name();
 

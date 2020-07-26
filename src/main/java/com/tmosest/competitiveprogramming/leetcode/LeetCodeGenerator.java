@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1528. Shuffle String";
+    String name = "1529. Bulb Switcher IV";
     String functionDeclaration
-        = "String restoreString(String s, int[] indices)";
+        = "int minFlips(String target)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.binaryTree.name()
+        Types.string.name()
     );
     String contest = Contests.wc199.name();
 

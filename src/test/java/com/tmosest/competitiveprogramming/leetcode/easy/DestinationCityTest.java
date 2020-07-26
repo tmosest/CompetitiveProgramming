@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("string")
+@Tag("wc187")
 @DisplayName("LeetCode: 1436. Destination City")
 class DestinationCityTest {
 

@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1452. People Whose List of Favorite Companies Is Not a Subset of Another List";
+    String name = "1442. Count Triplets That Can Form Two Arrays of Equal XOR";
     String functionDeclaration
-        = "List<Integer> peopleIndexes(List<List<String>> fc)";
+        = "int countTriplets(int[] arr)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.matrix.name()
+        Types.array.name()
     );
-    String contest = Contests.wc189.name();
+    String contest = Contests.wc188.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

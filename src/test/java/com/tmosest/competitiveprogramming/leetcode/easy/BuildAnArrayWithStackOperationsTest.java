@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("array")
+@Tag("wc188")
 @DisplayName("LeetCode: 1441. Build an Array With Stack Operations")
 class BuildAnArrayWithStackOperationsTest {
 

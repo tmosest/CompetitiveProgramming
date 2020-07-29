@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1352. Product of the Last K Numbers";
+    String name = "1353. Maximum Number of Events That Can Be Attended";
     String functionDeclaration
-        = "void add(int num)";
+        = "int maxEvents(int[][] events)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.graph.name()
+        Types.matrix.name()
     );
     String contest = Contests.wc176.name();
 

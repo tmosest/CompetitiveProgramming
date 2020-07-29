@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("medium")
-@Tag("graph")
+@Tag("design")
 @Tag("wc176")
 @DisplayName("LeetCode: 1352. Product of the Last K Numbers")
 class ProductOfTheLastNumbersTest {

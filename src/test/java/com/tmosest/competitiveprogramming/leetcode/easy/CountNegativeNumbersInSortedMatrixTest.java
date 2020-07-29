@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("wc176")
 @DisplayName("LeetCode: 1351. Count Negative Numbers in a Sorted Matrix")
 class CountNegativeNumbersInSortedMatrixTest {
 

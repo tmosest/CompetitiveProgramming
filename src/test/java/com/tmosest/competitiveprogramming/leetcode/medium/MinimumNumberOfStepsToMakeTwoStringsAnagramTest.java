@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("medium")
-@Tag("matrix")
+@Tag("string")
 @Tag("wc175")
 @DisplayName("LeetCode: 1347. Minimum Number of Steps to Make Two Strings Anagram")
 class MinimumNumberOfStepsToMakeTwoStringsAnagramTest {

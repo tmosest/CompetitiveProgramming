@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1347. Minimum Number of Steps to Make Two Strings Anagram";
+    String name = "1348. Tweet Counts Per Frequency";
     String functionDeclaration
-        = "int minSteps(String one, String two)";
+        = "void recordTweet(String tweetName, int time)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.matrix.name()
+        Types.design.name()
     );
     String contest = Contests.wc175.name();
 

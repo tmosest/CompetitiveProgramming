@@ -80,12 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1348. Tweet Counts Per Frequency";
+    String name = "1349. Maximum Students Taking Exam";
     String functionDeclaration
-        = "void recordTweet(String tweetName, int time)";
-    String difficulty = Difficulty.medium.name();
+        = "int maxStudents(char[][] seats)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.design.name()
+        Types.dynamic.name(),
+        Types.matrix.name()
     );
     String contest = Contests.wc175.name();
 

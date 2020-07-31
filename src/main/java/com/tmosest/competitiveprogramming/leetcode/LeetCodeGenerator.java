@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1353. Maximum Number of Events That Can Be Attended";
+    String name = "1347. Minimum Number of Steps to Make Two Strings Anagram";
     String functionDeclaration
-        = "int maxEvents(int[][] events)";
+        = "int minSteps(String one, String two)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.matrix.name()
     );
-    String contest = Contests.wc176.name();
+    String contest = Contests.wc175.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

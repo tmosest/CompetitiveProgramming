@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("wc175")
 @DisplayName("LeetCode: 1346. Check If N and Its Double Exist")
 class CheckIfAndItsDoubleExistTest {
 

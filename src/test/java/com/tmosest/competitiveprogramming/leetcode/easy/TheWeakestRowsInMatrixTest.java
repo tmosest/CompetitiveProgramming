@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("wc174")
 @DisplayName("LeetCode: 1337. The K Weakest Rows in a Matrix")
 class TheWeakestRowsInMatrixTest {
 

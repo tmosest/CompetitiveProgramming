@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1339. Maximum Product of Splitted Binary Tree";
+    String name = "1534. Count Good Triplets";
     String functionDeclaration
-        = "int maxProduct(TreeNode root)";
-    String difficulty = Difficulty.medium.name();
+        = "int countGoodTriplets(int[] arr, int a, int b, int c)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.binaryTree.name()
+        Types.array.name()
     );
-    String contest = Contests.wc174.name();
+    String contest = Contests.wc200.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

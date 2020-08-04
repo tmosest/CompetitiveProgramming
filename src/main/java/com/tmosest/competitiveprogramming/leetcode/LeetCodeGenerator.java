@@ -80,12 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1534. Count Good Triplets";
+    String name = "1535. Find the Winner of an Array Game";
     String functionDeclaration
-        = "int countGoodTriplets(int[] arr, int a, int b, int c)";
-    String difficulty = Difficulty.easy.name();
+        = "int getWinner(int[] arr, int k)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.array.name(),
+        Types.gameTheory.name()
     );
     String contest = Contests.wc200.name();
 

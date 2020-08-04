@@ -9,7 +9,7 @@ class DetectCapital {
    * @param word The word.
    * @return True if all caps, no caps, or only first letter is a cap.
    */
-  public boolean detectCapitalUse(String word) {
+  boolean detectCapitalUse(String word) {
     int capitalCount = 0;
     for (char letter : word.toCharArray()) {
       if (Character.isUpperCase(letter)) {
@@ -20,6 +20,4 @@ class DetectCapital {
         || (capitalCount == 1 && Character.isUpperCase(word.charAt(0)))
         || capitalCount == word.length();
   }
-
-
 }

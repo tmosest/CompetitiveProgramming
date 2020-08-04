@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1338. Reduce Array Size to The Half";
+    String name = "1339. Maximum Product of Splitted Binary Tree";
     String functionDeclaration
-        = "int minSetSize(int[] arr)";
+        = "int maxProduct(TreeNode root)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.binaryTree.name()
     );
     String contest = Contests.wc174.name();
 

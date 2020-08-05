@@ -80,13 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1535. Find the Winner of an Array Game";
+    String name = "1536. Minimum Swaps to Arrange a Binary Grid";
     String functionDeclaration
-        = "int getWinner(int[] arr, int k)";
+        = "int minSwaps(int[][] grid)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.gameTheory.name()
+        Types.matrix.name()
     );
     String contest = Contests.wc200.name();
 

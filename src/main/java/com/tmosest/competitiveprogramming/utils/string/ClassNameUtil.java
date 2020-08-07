@@ -18,6 +18,7 @@ public class ClassNameUtil {
   private static final Map<String, String> ILLEGAL_CHARACTER_MAP =
       new ImmutableMap.Builder<String, String>()
       .put("\n", " ")
+      .put(",", "")
       .put("%", " Percent")
       .build();
 

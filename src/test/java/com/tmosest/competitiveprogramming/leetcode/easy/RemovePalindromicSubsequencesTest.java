@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("wc173")
 @DisplayName("LeetCode: 1332. Remove Palindromic Subsequences")
 class RemovePalindromicSubsequencesTest {
 

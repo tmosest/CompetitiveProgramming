@@ -80,14 +80,15 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1536. Minimum Swaps to Arrange a Binary Grid";
+    String name = "1333. Filter Restaurants by Vegan-Friendly, Price and Distance";
     String functionDeclaration
-        = "int minSwaps(int[][] grid)";
+        = "List<Integer> filterRestaurants(int[][] restaurants, int "
+        + "veganFriendly, int maxPrice, int maxDistance)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.matrix.name()
+        Types.array.name()
     );
-    String contest = Contests.wc200.name();
+    String contest = Contests.wc173.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

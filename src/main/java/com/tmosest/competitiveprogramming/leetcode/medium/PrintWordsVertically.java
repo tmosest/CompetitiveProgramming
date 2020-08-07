@@ -1,41 +1,62 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Map;
 
 class PrintWordsVertically {
 
   List<String> printVertically(String str) {
-    String[] words = str.split(" ");
 
-    int longestWordSize = longestWordSize(words);
-    char[][] matrix = new char[longestWordSize][words.length];
+    String[] array = str.split(" ");
+    Map<Integer, StringBuilder> map = new HashMap<>();
+    int limit = longestWord(array);
 
-    for (int col = 0; col < matrix[0].length; col++) {
-      for (int row = 0; row < longestWordSize; row++) {
-        matrix[row][col] = (row < words[col].length()) ? words[col].charAt(row) : ' ';
+    for (int i = 0; i < limit; i++) {
+      map.put(i, new StringBuilder());
+    }
+
+    for (int i : map.keySet()) {
+      for (int w = 0; w < array.length; w++) {
+        if (i < array[w].length()) {
+          map.get(i).append(array[w].charAt(i));
+        } else {
+          map.get(i).append(" ");
+        }
       }
     }
 
-    return Arrays.stream(matrix).map(String::new).map(this::rtrim).collect(Collectors.toList());
+    List<String> list = new ArrayList<>();
+    for (int i : map.keySet()) {
+      list.add(removeTrailingSpaces(map.get(i).toString()));
+    }
+    return list;
   }
 
-  private String rtrim(String str) {
-    int index = str.length() - 1;
-    while (index >= 0 && Character.isWhitespace(str.charAt(index))) {
-      index--;
+
+  //get the longest word so that we can know how many index = string mappings are needed
+  private int longestWord(String[] array) {
+    int len = 0;
+    for (String str : array) {
+      if (str.length() > len) {
+        len = str.length();
+      }
     }
-    return str.substring(0, index + 1);
+    return len;
   }
 
-  private int longestWordSize(String[] words) {
-    int max = 0;
-
-    for (String word : words) {
-      max = Math.max(max, word.length());
+  //helper function to remove trailing spaces
+  private String removeTrailingSpaces(String param) {
+    if (param == null) {
+      return null;
     }
-
-    return max;
+    int len = param.length();
+    for (; len > 0; len--) {
+      if (!Character.isWhitespace(param.charAt(len - 1))) {
+        break;
+      }
+    }
+    return param.substring(0, len);
   }
 }

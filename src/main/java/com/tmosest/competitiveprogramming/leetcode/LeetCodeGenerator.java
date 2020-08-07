@@ -80,16 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1334. Find the City With the Smallest Number of "
-        + "Neighbors at a Threshold Distance";
+    String name = "1324. Print Words Vertically";
     String functionDeclaration
-        = "int findTheCity(int n, int[][] edges, int distanceThreshold)";
+        = "List<String> printVertically(String s)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.graph.name()
+        Types.string.name()
     );
-    String contest = Contests.wc173.name();
+    String contest = Contests.wc172.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

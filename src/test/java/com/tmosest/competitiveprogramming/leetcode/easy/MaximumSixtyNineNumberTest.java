@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("wc172")
 @DisplayName("LeetCode: 1323. Maximum 69 Number")
 class MaximumSixtyNineNumberTest {
 

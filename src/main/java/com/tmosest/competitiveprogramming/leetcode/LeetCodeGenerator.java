@@ -80,13 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1333. Filter Restaurants by Vegan-Friendly, Price and Distance";
+    String name = "1334. Find the City With the Smallest Number of "
+        + "Neighbors at a Threshold Distance";
     String functionDeclaration
-        = "List<Integer> filterRestaurants(int[][] restaurants, int "
-        + "veganFriendly, int maxPrice, int maxDistance)";
+        = "int findTheCity(int n, int[][] edges, int distanceThreshold)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.array.name(),
+        Types.graph.name()
     );
     String contest = Contests.wc173.name();
 

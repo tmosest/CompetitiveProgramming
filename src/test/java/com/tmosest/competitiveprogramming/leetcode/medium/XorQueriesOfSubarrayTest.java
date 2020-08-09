@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("medium")
+@Tag("wc170")
 @DisplayName("LeetCode: 1310. XOR Queries of a Subarray")
 class XorQueriesOfSubarrayTest {
 

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("wc171")
 @DisplayName("LeetCode: 1317. Convert Integer to the Sum of Two No-Zero Integers")
 class ConvertIntegerToTheSumOfTwoNozeroIntegersTest {
 

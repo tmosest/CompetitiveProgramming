@@ -51,6 +51,8 @@ public class ProblemType {
   public enum Contests {
     april30Day,
     bwc23,
+    wc170,
+    wc171,
     wc172,
     wc173,
     wc174,

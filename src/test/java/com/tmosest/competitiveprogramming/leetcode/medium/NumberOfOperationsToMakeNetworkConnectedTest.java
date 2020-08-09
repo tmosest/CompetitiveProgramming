@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("dynamic")
+@Tag("wc171")
 @DisplayName("LeetCode: 1319. Number of Operations to Make Network Connected")
 class NumberOfOperationsToMakeNetworkConnectedTest {
 

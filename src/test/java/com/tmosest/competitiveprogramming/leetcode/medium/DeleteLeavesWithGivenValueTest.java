@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("medium")
 @Tag("binaryTree")
+@Tag("wc172")
 @DisplayName("LeetCode: 1325. Delete Leaves With a Given Value")
 class DeleteLeavesWithGivenValueTest {
 

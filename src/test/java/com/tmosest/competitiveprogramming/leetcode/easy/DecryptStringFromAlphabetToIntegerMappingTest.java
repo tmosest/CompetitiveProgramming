@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
+@Tag("wc170")
 @DisplayName("LeetCode: 1309. Decrypt String from Alphabet to Integer Mapping")
 class DecryptStringFromAlphabetToIntegerMappingTest {
 

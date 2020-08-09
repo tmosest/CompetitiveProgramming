@@ -80,14 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1324. Print Words Vertically";
+    String name = "1318. Minimum Flips to Make a OR b Equal to c";
     String functionDeclaration
-        = "List<String> printVertically(String s)";
+        = "int minFlips(int a, int b, int c)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.number.name()
     );
-    String contest = Contests.wc172.name();
+    String contest = Contests.wc171.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

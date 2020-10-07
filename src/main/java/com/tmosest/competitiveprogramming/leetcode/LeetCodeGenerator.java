@@ -80,13 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1311. Get Watched Videos by Your Friends";
-    String functionDeclaration
-        = "List<String> watchedVideosByFriends(List<List<String>> "
-        + "watchedVideos, int[][] friends, int id, int level)";
-    String difficulty = Difficulty.medium.name();
+    String name = "1608. Special Array With X Elements Greater Than or Equal X";
+    String functionDeclaration = "public int specialArray(int[] nums)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.graph.name()
+        Types.array.name()
     );
     String contest = Contests.wc170.name();
 

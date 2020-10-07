@@ -11,7 +11,7 @@ class BinaryTreeLongestConsecutiveSequence {
    * @param root The root of the tree.
    * @return The length of the longest ascending sequence.
    */
-  public int longestConsecutive(TreeNode root) {
+  int longestConsecutive(TreeNode root) {
     longestSequence = 0;
     if (root == null) {
       return longestSequence;

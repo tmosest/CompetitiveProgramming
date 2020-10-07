@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 @Tag("medium")
 @Tag("array")
 @DisplayName("LeetCode: 1296. Divide Array in Sets of K Consecutive Numbers")
-class DivideArrayInSetsOfConsecutiveNumbersTest {
+class DivideArrayInSetsOfAdjacentDuplicatesTestTest {
 
   private DivideArrayInSetsOfConsecutiveNumbers divideArrayInSetsOfConsecutiveNumbers =
       new DivideArrayInSetsOfConsecutiveNumbers();

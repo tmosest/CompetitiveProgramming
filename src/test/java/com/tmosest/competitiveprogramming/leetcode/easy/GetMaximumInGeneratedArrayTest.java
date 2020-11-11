@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("number")
-@Tag("wc170")
+@Tag("wc214")
 @DisplayName("LeetCode: 1646. Get Maximum in Generated Array")
 class GetMaximumInGeneratedArrayTest {
 

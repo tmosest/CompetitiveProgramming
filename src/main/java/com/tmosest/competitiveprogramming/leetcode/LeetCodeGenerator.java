@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1608. Special Array With X Elements Greater Than or Equal X";
-    String functionDeclaration = "public int specialArray(int[] nums)";
+    String name = "1491. Average Salary Excluding the Minimum and Maximum Salary\n";
+    String functionDeclaration = "double average(int[] salary)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.wc170.name();
+    String contest = null; // Contests.wc170.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

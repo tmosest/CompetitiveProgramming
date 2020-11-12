@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1637. Widest Vertical Area Between Two Points Containing No Points";
-    String functionDeclaration = "int maxWidthOfVerticalArea(int[][] points)";
+    String name = "1638. Count Substrings That Differ by One Character";
+    String functionDeclaration = "int countSubstrings(String s, String t)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.matrix.name()
+        Types.string.name()
     );
     String contest = Contests.bwc38.name();
 

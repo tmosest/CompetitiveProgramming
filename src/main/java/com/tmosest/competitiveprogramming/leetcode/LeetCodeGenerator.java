@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1636. Sort Array by Increasing Frequency";
-    String functionDeclaration = "int[] frequencySort(int[] nums)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1637. Widest Vertical Area Between Two Points Containing No Points";
+    String functionDeclaration = "int maxWidthOfVerticalArea(int[][] points)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.matrix.name()
     );
     String contest = Contests.bwc38.name();
 

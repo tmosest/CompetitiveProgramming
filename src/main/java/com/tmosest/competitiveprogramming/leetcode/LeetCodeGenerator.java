@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1647. Minimum Deletions to Make Character Frequencies Unique";
-    String functionDeclaration = "int minDeletions(String s)";
+    String name = "1642. Furthest Building You Can Reach";
+    String functionDeclaration = "int furthestBuilding(int[] heights, int bricks, int ladders)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
-    String contest = Contests.wc214.name();
+    String contest = Contests.wc213.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

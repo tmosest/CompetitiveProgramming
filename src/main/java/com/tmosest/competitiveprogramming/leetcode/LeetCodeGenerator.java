@@ -80,10 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1638. Count Substrings That Differ by One Character";
-    String functionDeclaration = "int countSubstrings(String s, String t)";
-    String difficulty = Difficulty.medium.name();
+    String name = "1639. Number of Ways to Form a Target String Given a Dictionary";
+    String functionDeclaration = "int numWays(String[] words, String target)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
+        Types.array.name(),
         Types.string.name()
     );
     String contest = Contests.bwc38.name();

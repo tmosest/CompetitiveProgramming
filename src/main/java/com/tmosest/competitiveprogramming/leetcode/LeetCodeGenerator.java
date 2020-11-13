@@ -80,13 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1630. Arithmetic Subarrays";
-    String functionDeclaration = "List<Boolean> checkArithmetic"
-        + "Subarrays(int[] nums, int[] l, int[] r)";
+    String name = "1631. Path With Minimum Effort";
+    String functionDeclaration = "int minimumEffortPath(int[][] heights)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.number.name()
+        Types.graph.name(),
+        Types.matrix.name()
     );
     String contest = Contests.wc212.name();
 

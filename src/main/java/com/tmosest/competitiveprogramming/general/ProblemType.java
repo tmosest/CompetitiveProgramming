@@ -54,6 +54,7 @@ public class ProblemType {
     bwc38,
     wc214,
     wc213,
+    wc212,
     wc209,
     wc170,
     wc171,

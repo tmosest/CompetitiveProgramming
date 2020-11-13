@@ -80,11 +80,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1631. Path With Minimum Effort";
-    String functionDeclaration = "int minimumEffortPath(int[][] heights)";
-    String difficulty = Difficulty.medium.name();
+    String name = "1632. Rank Transform of a Matrix";
+    String functionDeclaration = "int[][] matrixRankTransform(int[][] matrix)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.graph.name(),
         Types.matrix.name()
     );
     String contest = Contests.wc212.name();

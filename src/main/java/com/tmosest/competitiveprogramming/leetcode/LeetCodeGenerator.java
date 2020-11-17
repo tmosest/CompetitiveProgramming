@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1658. Minimum Operations to Reduce X to Zero";
-    String functionDeclaration = "int minOperations(int[] nums, int x)";
-    String difficulty = Difficulty.medium.name();
+    String name = "1624. Largest Substring Between Two Equal Characters";
+    String functionDeclaration = "int maxLengthBetweenEqualCharacters(String s)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.string.name()
     );
-    String contest = Contests.wc215.name();
+    String contest = Contests.wc211.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

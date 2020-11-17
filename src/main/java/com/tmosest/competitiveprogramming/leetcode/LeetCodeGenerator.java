@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1657. Determine if Two Strings Are Close";
-    String functionDeclaration = "boolean closeStrings(String word1, String word2)";
+    String name = "1658. Minimum Operations to Reduce X to Zero";
+    String functionDeclaration = "int minOperations(int[] nums, int x)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
     String contest = Contests.wc215.name();
 

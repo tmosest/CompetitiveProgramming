@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1656. Design an Ordered Stream";
-    String functionDeclaration = "List<String> insert";
-    String difficulty = Difficulty.easy.name();
+    String name = "1657. Determine if Two Strings Are Close";
+    String functionDeclaration = "boolean closeStrings(String word1, String word2)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.design.name()
+        Types.string.name()
     );
     String contest = Contests.wc215.name();
 

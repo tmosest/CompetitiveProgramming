@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1624. Largest Substring Between Two Equal Characters";
-    String functionDeclaration = "int maxLengthBetweenEqualCharacters(String s)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1625. Lexicographically Smallest String After Applying Operations";
+    String functionDeclaration = "String findLexSmallestString(String s, int a, int b)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.string.name()
     );

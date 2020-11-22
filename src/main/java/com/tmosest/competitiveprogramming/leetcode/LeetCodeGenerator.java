@@ -80,11 +80,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1662. Check If Two String Arrays are Equivalent";
-    String functionDeclaration = "boolean arrayStringsAreEqual(String[] word1, String[] word2)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1663. Smallest String With A Given Numeric Value";
+    String functionDeclaration = "String getSmallestString(int n, int k)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
         Types.string.name()
     );
     String contest = Contests.wc216.name();

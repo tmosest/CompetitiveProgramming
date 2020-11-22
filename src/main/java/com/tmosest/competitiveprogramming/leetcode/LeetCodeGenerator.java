@@ -80,13 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1625. Lexicographically Smallest String After Applying Operations";
-    String functionDeclaration = "String findLexSmallestString(String s, int a, int b)";
-    String difficulty = Difficulty.medium.name();
+    String name = "1662. Check If Two String Arrays are Equivalent";
+    String functionDeclaration = "boolean arrayStringsAreEqual(String[] word1, String[] word2)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
+        Types.array.name(),
         Types.string.name()
     );
-    String contest = Contests.wc211.name();
+    String contest = Contests.wc216.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

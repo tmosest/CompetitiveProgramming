@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1663. Smallest String With A Given Numeric Value";
-    String functionDeclaration = "String getSmallestString(int n, int k)";
+    String name = "1664. Ways to Make a Fair Array";
+    String functionDeclaration = "int waysToMakeFair(int[] nums)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
     String contest = Contests.wc216.name();
 

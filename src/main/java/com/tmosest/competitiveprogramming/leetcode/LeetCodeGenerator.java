@@ -80,11 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1614. Maximum Nesting Depth of the Parentheses";
-    String functionDeclaration = "int maxDepth(String str)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1615. Maximal Network Rank";
+    String functionDeclaration = "int maximalNetworkRank(int n, int[][] roads)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.matrix.name(),
+        Types.matrix.name()
     );
     String contest = Contests.wc210.name();
 

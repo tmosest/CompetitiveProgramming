@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1616. Split Two Strings to Make Palindrome";
-    String functionDeclaration = "boolean checkPalindromeFormation(String a, String b)";
+    String name = "1617. Count Subtrees With Max Distance Between Cities";
+    String functionDeclaration = "int[] countSubgraphsForEachDiameter(int n, int[][] edges)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.graph.name()
     );
     String contest = Contests.wc210.name();
 

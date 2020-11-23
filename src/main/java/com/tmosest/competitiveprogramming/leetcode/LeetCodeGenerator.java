@@ -80,12 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1615. Maximal Network Rank";
-    String functionDeclaration = "int maximalNetworkRank(int n, int[][] roads)";
+    String name = "1616. Split Two Strings to Make Palindrome";
+    String functionDeclaration = "boolean checkPalindromeFormation(String a, String b)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.matrix.name(),
-        Types.matrix.name()
+        Types.string.name()
     );
     String contest = Contests.wc210.name();
 

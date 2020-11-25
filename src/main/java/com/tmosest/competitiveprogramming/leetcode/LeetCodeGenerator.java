@@ -80,9 +80,10 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1598. Crawler Log Folder";
-    String functionDeclaration = "int minOperations(String[] logs)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1599. Maximum Profit of Operating a Centennial Wheel";
+    String functionDeclaration = "int minOperationsMaxProfit(int[] customers,"
+        + " int boardingCost, int runningCost)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );

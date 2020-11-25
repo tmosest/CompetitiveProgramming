@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1599. Maximum Profit of Operating a Centennial Wheel";
+    String name = "1600. Throne Inheritance";
     String functionDeclaration = "int minOperationsMaxProfit(int[] customers,"
         + " int boardingCost, int runningCost)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.design.name()
     );
     String contest = Contests.wc208.name();
 

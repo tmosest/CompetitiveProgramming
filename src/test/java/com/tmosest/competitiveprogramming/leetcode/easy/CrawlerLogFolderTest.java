@@ -16,6 +16,8 @@ class CrawlerLogFolderTest {
 
   @Test
   void test1() {
-
+    Assertions.assertEquals(2, crawlerLogFolder.minOperations(new String[] {
+        "d1/", "d2/", "../", "d21", "./"
+    }));
   }
 }

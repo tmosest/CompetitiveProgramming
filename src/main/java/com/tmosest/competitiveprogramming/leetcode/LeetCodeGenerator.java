@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1593. Split a String Into the Max Number of Unique Substrings";
+    String name = "1594. Maximum Non Negative Product in a Matrix";
     String functionDeclaration = "int maxUniqueSplit(String s)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.matrix.name()
     );
     String contest = Contests.wc208.name();
 

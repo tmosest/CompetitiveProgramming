@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1592. Rearrange Spaces Between Words";
-    String functionDeclaration = "String reorderSpaces(String text)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1593. Split a String Into the Max Number of Unique Substrings";
+    String functionDeclaration = "int maxUniqueSplit(String s)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.string.name()
     );

@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1594. Maximum Non Negative Product in a Matrix";
-    String functionDeclaration = "int maxUniqueSplit(String s)";
-    String difficulty = Difficulty.medium.name();
+    String name = "1595. Minimum Cost to Connect Two Groups of Points";
+    String functionDeclaration = "int connectTwoGroups(List<List<Integer>> cost)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.matrix.name()
+        Types.graph.name()
     );
     String contest = Contests.wc208.name();
 

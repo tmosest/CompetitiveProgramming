@@ -80,8 +80,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1673. Find the Most Competitive Subsequence";
-    String functionDeclaration = "int[] mostCompetitive(int[] nums, int k)";
+    String name = "1674. Minimum Moves to Make Array Complementary";
+    String functionDeclaration = "int minMoves(int[] nums, int limit)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()

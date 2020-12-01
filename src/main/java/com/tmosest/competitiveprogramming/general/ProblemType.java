@@ -52,6 +52,7 @@ public class ProblemType {
     april30Day,
     bwc23,
     bwc38,
+    wc217,
     wc216,
     wc215,
     wc214,

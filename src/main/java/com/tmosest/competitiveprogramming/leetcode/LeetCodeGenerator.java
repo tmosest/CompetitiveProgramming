@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1654. Minimum Jumps to Reach Home";
-    String functionDeclaration = "int minimumJumps(int[] forbidden, int a, int b, int x)";
-    String difficulty = Difficulty.medium.name();
+    String name = "1655. Distribute Repeating Integers";
+    String functionDeclaration = "boolean canDistribute(int[] nums, int[] quantity)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.graph.name()
+        Types.array.name()
     );
     String contest = Contests.bwc39.name();
 

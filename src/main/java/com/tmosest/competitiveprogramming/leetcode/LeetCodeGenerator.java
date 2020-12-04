@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1653. Minimum Deletions to Make String Balanced";
-    String functionDeclaration = "int minimumDeletions(String s)";
+    String name = "1654. Minimum Jumps to Reach Home";
+    String functionDeclaration = "int minimumJumps(int[] forbidden, int a, int b, int x)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.graph.name()
     );
     String contest = Contests.bwc39.name();
 

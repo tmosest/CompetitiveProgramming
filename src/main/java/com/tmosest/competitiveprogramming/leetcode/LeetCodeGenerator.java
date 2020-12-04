@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1655. Distribute Repeating Integers";
-    String functionDeclaration = "boolean canDistribute(int[] nums, int[] quantity)";
-    String difficulty = Difficulty.hard.name();
+    String name = "1619. Mean of Array After Removing Some Elements";
+    String functionDeclaration = "double trimMean(int[] arr)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.bwc39.name();
+    String contest = Contests.bwc37.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

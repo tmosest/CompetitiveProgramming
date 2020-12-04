@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1620. Coordinate With Maximum Network Quality";
-    String functionDeclaration = "int[] bestCoordinate(int[][] towers, int radius)";
+    String name = "1621. Number of Sets of K Non-Overlapping Line Segments";
+    String functionDeclaration = "int numberOfSets(int n, int k)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.interval.name()
     );
     String contest = Contests.bwc37.name();
 

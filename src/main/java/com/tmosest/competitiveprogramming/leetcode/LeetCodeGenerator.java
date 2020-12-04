@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1619. Mean of Array After Removing Some Elements";
-    String functionDeclaration = "double trimMean(int[] arr)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1620. Coordinate With Maximum Network Quality";
+    String functionDeclaration = "int[] bestCoordinate(int[][] towers, int radius)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );

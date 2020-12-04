@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1668. Maximum Repeating Substring";
-    String functionDeclaration = "int maxRepeating(String sequence, String word)";
+    String name = "1652. Defuse the Bomb";
+    String functionDeclaration = "int[] decrypt(int[] code, int k)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
-    String contest = Contests.bwc40.name();
+    String contest = Contests.bwc39.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

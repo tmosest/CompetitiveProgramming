@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1652. Defuse the Bomb";
-    String functionDeclaration = "int[] decrypt(int[] code, int k)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1653. Minimum Deletions to Make String Balanced";
+    String functionDeclaration = "int minimumDeletions(String s)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.string.name()
     );
     String contest = Contests.bwc39.name();
 

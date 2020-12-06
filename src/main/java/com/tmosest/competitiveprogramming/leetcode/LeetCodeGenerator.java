@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1621. Number of Sets of K Non-Overlapping Line Segments";
-    String functionDeclaration = "int numberOfSets(int n, int k)";
+    String name = "1680. Concatenation of Consecutive Binary Numbers";
+    String functionDeclaration = "int concatenatedBinary(int n)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.interval.name()
+        Types.array.name()
     );
-    String contest = Contests.bwc37.name();
+    String contest = Contests.wc218.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

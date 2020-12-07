@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1680. Concatenation of Consecutive Binary Numbers";
-    String functionDeclaration = "int concatenatedBinary(int n)";
+    String name = "1604. Alert Using Same Key-Card Three or More Times in a One Hour Period";
+    String functionDeclaration = "List<String> alertNames(String[] keyName, String[] keyTime)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.wc218.name();
+    String contest = Contests.bwc36.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

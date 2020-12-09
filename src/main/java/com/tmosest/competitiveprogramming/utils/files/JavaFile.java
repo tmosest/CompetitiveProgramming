@@ -47,7 +47,7 @@ public class JavaFile {
   private String packge = "";
   private String className = "";
   private List<String> imports = new ArrayList<>();
-  private String content = "";
+  private StringBuilder content = new StringBuilder();
   private List<Annotation> annotations = new ArrayList<>();
   private FileUtil fileUtil = FileUtil.instance();
 
@@ -57,10 +57,10 @@ public class JavaFile {
     this.className = className;
   }
 
-  JavaFile(Class source, String className, String functionDeclaration) {
+  JavaFile(Class source, String className, JavaFileMethod functionDeclaration) {
     this.source = source;
     packge = source.getPackage().toString().replaceFirst("package", "");
-    content = "\t" + functionDeclaration + " {\t\n\t}";
+    addRawContent("\t" + functionDeclaration.toString() + "\n");
     this.className = className;
   }
 
@@ -94,11 +94,13 @@ public class JavaFile {
           annotations.add(annotation);
         }
       } else {
-        content += line + "\n";
+        content.append( line + "\n");
       }
     }
-    int lastBracket = content.lastIndexOf('}');
-    content = content.substring(0, lastBracket) + "\n";
+    int lastBracket = content.lastIndexOf("}");
+    String finalContent = content.toString().substring(0, lastBracket) + "\n";
+    content = new StringBuilder();
+    content.append(finalContent);
   }
 
   private void addPackage(List<String> classCode) {
@@ -128,7 +130,7 @@ public class JavaFile {
   }
 
   private void addContent(List<String> classCode) {
-    classCode.add(content);
+    classCode.add(content.toString());
   }
 
   void addNewImport(String imprt) {
@@ -138,6 +140,10 @@ public class JavaFile {
   void addNewAnnotation(String name, String val) {
     Annotation annotation = new Annotation(name, val);
     annotations.add(annotation);
+  }
+
+  void addRawContent(String content) {
+    this.content.append(content);
   }
 
   /**

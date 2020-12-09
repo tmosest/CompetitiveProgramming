@@ -25,10 +25,6 @@ public class ClassNameUtil {
   private ClassNameUtil() {
   }
 
-  private String convertToProperName(String name) {
-    return name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
-  }
-
   private boolean isValidClassName(String name) {
     if (name == null || name.isEmpty() || !Character.isAlphabetic(name.charAt(0))) {
       return false;
@@ -81,7 +77,7 @@ public class ClassNameUtil {
         names[i] = "";
         continue;
       }
-      names[i] = convertToProperName(names[i]);
+      names[i] = StringUtil.toProperName(names[i]);
     }
 
     String res = String.join("", names).trim().replace("\n", "");

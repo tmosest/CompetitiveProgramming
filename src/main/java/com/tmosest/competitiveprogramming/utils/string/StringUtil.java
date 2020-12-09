@@ -54,4 +54,28 @@ public class StringUtil {
     }
     return sb.toString();
   }
+
+  /**
+   * Takes a string and makes the first character lowercase.
+   * @param word The string to convert.
+   * @return Only makes the first letter lower case but leaves the rest in tac.
+   */
+  public static String uncapitalize(String word) {
+    if (word == null) {
+      return null;
+    }
+    return  word.substring(0, 1).toLowerCase() + word.substring(1);
+  }
+
+  /**
+   * Takes a string and converts it to Proper name.
+   * @param word The string to convert.
+   * @return "Word".
+   */
+  static String toProperName(String word) {
+    if (word == null) {
+      return null;
+    }
+    return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
+  }
 }

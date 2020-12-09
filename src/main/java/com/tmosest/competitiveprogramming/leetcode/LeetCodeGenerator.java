@@ -4,6 +4,7 @@ import com.tmosest.competitiveprogramming.general.ProblemType.Contests;
 import com.tmosest.competitiveprogramming.general.ProblemType.Difficulty;
 import com.tmosest.competitiveprogramming.general.ProblemType.Types;
 import com.tmosest.competitiveprogramming.utils.files.JavaFileBuilder;
+import com.tmosest.competitiveprogramming.utils.files.JavaFileMethod;
 import com.tmosest.competitiveprogramming.utils.string.ClassNameUtil;
 
 import java.util.ArrayList;
@@ -44,7 +45,8 @@ public class LeetCodeGenerator {
   ) {
     String[] names = instance().formatIntoNumberAndName(numberName);
     String fileName = ClassNameUtil.instance().convertToClassName(names[1].trim());
-    javaFileBuilder.create(LeetCodeGenerator.class, fileName, functionDeclaration);
+    JavaFileMethod javaFileMethod = JavaFileMethod.fromString(functionDeclaration);
+    javaFileBuilder.create(LeetCodeGenerator.class, fileName, javaFileMethod);
     List<String> tags = new ArrayList<>(Arrays.asList(
         "Tag",
         "Tag",
@@ -65,7 +67,7 @@ public class LeetCodeGenerator {
       tags.add(3, "Tag");
       vals.add(3, contest);
     }
-    javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals);
+    javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals, javaFileMethod);
     LeetCodeOrganizer.instance.organizeProblemFiles();
   }
 
@@ -80,8 +82,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1605. Find Valid Matrix Given Row and Column Sums";
-    String functionDeclaration = "int[][] restoreMatrix(int[] rowSum, int[] colSum) ";
+    String name = "1588. Sum of All Odd Length Subarrays";
+    String functionDeclaration = "int sumOddLengthSubarrays(int[] arr)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()

@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1588. Sum of All Odd Length Subarrays";
-    String functionDeclaration = "int sumOddLengthSubarrays(int[] arr)";
+    String name = "1589. Maximum Sum Obtained of Any Permutation";
+    String functionDeclaration = "int maxSumRangeQuery(int[] nums, int[][] requests)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.bwc36.name();
+    String contest = Contests.bwc35.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

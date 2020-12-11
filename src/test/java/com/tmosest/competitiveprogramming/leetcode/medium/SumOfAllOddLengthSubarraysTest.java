@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
-@Tag("medium")
+@Tag("easy")
 @Tag("array")
-@Tag("bwc36")
+@Tag("bwc35")
 @DisplayName("LeetCode: 1588. Sum of All Odd Length Subarrays")
 class SumOfAllOddLengthSubarraysTest {
 

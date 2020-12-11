@@ -82,8 +82,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1589. Maximum Sum Obtained of Any Permutation";
-    String functionDeclaration = "int maxSumRangeQuery(int[] nums, int[][] requests)";
+    String name = "1590. Make Sum Divisible by P";
+    String functionDeclaration = "int minSubarray(int[] nums, int sum)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()

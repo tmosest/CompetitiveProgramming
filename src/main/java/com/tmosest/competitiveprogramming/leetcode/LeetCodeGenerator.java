@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1590. Make Sum Divisible by P";
-    String functionDeclaration = "int minSubarray(int[] nums, int sum)";
+    String name = "1690. Stone Game VII";
+    String functionDeclaration = "int stoneGameVII(int[] stones)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.gameTheory.name()
     );
-    String contest = Contests.bwc35.name();
+    String contest = Contests.wc219.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

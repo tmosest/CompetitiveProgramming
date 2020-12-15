@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1572. Matrix Diagonal Sum";
-    String functionDeclaration = "int diagonalSum(int[][] mat)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1573. Number of Ways to Split a String";
+    String functionDeclaration = "int numWays(String s)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.matrix.name()
+        Types.string.name()
     );
     String contest = Contests.bwc35.name();
 

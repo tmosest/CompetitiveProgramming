@@ -82,13 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1711. Count Good Meals";
-    String functionDeclaration = "int countPairs(int[] deliciousness)";
+    String name = "1712. Ways to Split Array Into Three Subarrays";
+    String functionDeclaration = "int waysToSplit(int[] nums)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.dynamic.name(),
-        Types.map.name()
+        Types.array.name()
     );
     String contest = Contests.wc222.name();
 

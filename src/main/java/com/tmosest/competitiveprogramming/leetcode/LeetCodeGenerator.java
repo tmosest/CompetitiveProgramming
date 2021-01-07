@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1704. Determine if String Halves Are Alike";
-    String functionDeclaration = "boolean halvesAreAlike(String s)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1705. Maximum Number of Eaten Apples";
+    String functionDeclaration = "int eatenApples(int[] apples, int[] days)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
     String contest = Contests.wc221.name();
 

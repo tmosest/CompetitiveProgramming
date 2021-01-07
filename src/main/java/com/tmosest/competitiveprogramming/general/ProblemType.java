@@ -61,6 +61,7 @@ public class ProblemType {
     bwc23,
     wc222,
     wc221,
+    wc220,
     wc219,
     wc218,
     wc217,

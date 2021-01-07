@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1713. Minimum Operations to Make a Subsequence";
-    String functionDeclaration = "int minOperations(int[] target, int[] A)";
-    String difficulty = Difficulty.hard.name();
+    String name = "1704. Determine if String Halves Are Alike";
+    String functionDeclaration = "boolean halvesAreAlike(String s)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.string.name()
     );
-    String contest = Contests.wc222.name();
+    String contest = Contests.wc221.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -82,14 +82,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1695. Maximum Erasure Value";
-    String functionDeclaration = "int maximumUniqueSubarray(int[] nums)";
-    String difficulty = Difficulty.medium.name();
+    String name = "1720. Decode XORed Array";
+    String functionDeclaration = "int[] decode(int[] encoded, int first)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.array.name(),
         Types.map.name()
     );
-    String contest = Contests.wc220.name();
+    String contest = Contests.wc223.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

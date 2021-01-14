@@ -82,11 +82,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1694. Reformat Phone Number";
-    String functionDeclaration = "String reformatNumber(String number)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1695. Maximum Erasure Value";
+    String functionDeclaration = "int maximumUniqueSubarray(int[] nums)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.array.name(),
+        Types.map.name()
     );
     String contest = Contests.wc220.name();
 

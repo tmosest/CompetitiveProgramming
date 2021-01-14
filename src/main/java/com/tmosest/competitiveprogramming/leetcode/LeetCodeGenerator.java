@@ -82,12 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1720. Decode XORed Array";
-    String functionDeclaration = "int[] decode(int[] encoded, int first)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1721. Swapping Nodes in a Linked List";
+    String functionDeclaration = "ListNode swapNodes(ListNode head, int k)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.map.name()
+        Types.list.name()
     );
     String contest = Contests.wc223.name();
 

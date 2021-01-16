@@ -11,15 +11,19 @@ public enum FileReader {
   INSTANCE;
 
   public int[] readInts(String filePath) throws IOException {
+    return this.readLines(filePath).stream().mapToInt(Integer::valueOf).toArray();
+  }
+
+  public List<String> readLines(String filePath) throws IOException {
     ClassLoader classLoader = this.getClass().getClassLoader();
     File file = new File(classLoader.getResource(filePath).getFile());
     Scanner scanner = new Scanner(file);
-    List<Integer> list = new ArrayList<>();
+    List<String> lines = new ArrayList<>();
 
-    while(scanner.hasNextInt()){
-      list.add(scanner.nextInt());
+    while (scanner.hasNextLine()) {
+      lines.add(scanner.nextLine());
     }
 
-    return list.stream().mapToInt(num -> (int) num).toArray();
+    return lines;
   }
 }

@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "Day 1. Report Repair";
-    String functionDeclaration = "int findMultipleOfSum(int[] arrs, int sum)";
+    String name = "Day 2. Password Philosophy";
+    String functionDeclaration = "int findValidPasswords(List<String> inputs)";
     String difficulty = Difficulty.advent.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.string.name()
     );
     String contest = Contests.advent2020.name();
 

@@ -20,6 +20,7 @@ public class ClassNameUtil {
       .put("\n", " ")
       .put(",", "")
       .put("%", " Percent")
+      .put(":", "")
       .build();
 
   private ClassNameUtil() {

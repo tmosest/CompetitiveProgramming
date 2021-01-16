@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1721. Swapping Nodes in a Linked List";
-    String functionDeclaration = "ListNode swapNodes(ListNode head, int k)";
-    String difficulty = Difficulty.medium.name();
+    String name = "Day 1. Report Repair";
+    String functionDeclaration = "int findMultipleOfSum(int[] arrs, int sum)";
+    String difficulty = Difficulty.advent.name();
     List<String> types = Arrays.asList(
-        Types.list.name()
+        Types.array.name()
     );
-    String contest = Contests.wc223.name();
+    String contest = Contests.advent2020.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

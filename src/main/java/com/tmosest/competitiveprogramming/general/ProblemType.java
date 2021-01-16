@@ -4,6 +4,7 @@ public class ProblemType {
 
   // Difficulty levels for problems.
   public enum Difficulty {
+    advent,
     easy,
     medium,
     hard,
@@ -49,6 +50,7 @@ public class ProblemType {
   }
 
   public enum Contests {
+    advent2020,
     april30Day,
     bwc41,
     bwc40,

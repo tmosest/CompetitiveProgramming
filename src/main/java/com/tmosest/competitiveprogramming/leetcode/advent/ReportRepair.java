@@ -25,15 +25,10 @@ class ReportRepair {
     int length = arrs.length;
 
     for (int i = 0; i < length; i++) {
-      for (int j = 0; j < length; j++) {
-        for (int k = 0; k < length; k++) {
-          if (i == j || i == k || j == k) {
-            continue;
-          }
-          if (arrs[i] + arrs[j] + arrs[k] == sum) {
-            return arrs[i] * arrs[j] * arrs[k];
-          }
-        }
+      int target = sum - arrs[i];
+      int mult = findMultipleOfSum(arrs, target);
+      if (mult > -1) {
+        return mult * arrs[i];
       }
     }
 

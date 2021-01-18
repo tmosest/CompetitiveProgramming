@@ -31,7 +31,9 @@ public class FileUtil {
       return fileNames;
     }
     for (File file : listOfFiles) {
-      fileNames.add(file.getName());
+      if (!file.isDirectory()) {
+        fileNames.add(file.getName());
+      }
     }
     return fileNames;
   }

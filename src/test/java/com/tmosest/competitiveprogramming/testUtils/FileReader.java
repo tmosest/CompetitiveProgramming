@@ -2,6 +2,7 @@ package com.tmosest.competitiveprogramming.testUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -16,7 +17,8 @@ public enum FileReader {
 
   public List<String> readLines(String filePath) throws IOException {
     ClassLoader classLoader = this.getClass().getClassLoader();
-    File file = new File(classLoader.getResource(filePath).getFile());
+    URL url = classLoader.getResource(filePath);
+    File file = new File(url.getFile());
     Scanner scanner = new Scanner(file);
     List<String> lines = new ArrayList<>();
 

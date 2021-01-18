@@ -1,11 +1,14 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
+import com.tmosest.competitiveprogramming.general.ProblemType.Difficulty;
 import com.tmosest.competitiveprogramming.utils.files.JavaFile;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class LeetCodeOrganizer {
 
@@ -17,35 +20,20 @@ public class LeetCodeOrganizer {
     leetCodeFileUtil = LeetCodeFileUtil.instance();
   }
 
-  private enum ProblemDifficulty {
-    unknown, easy, medium, hard
-  }
-
-  private ProblemDifficulty getDifficultyFromTagName(String tag) {
-    switch (tag.trim().toLowerCase()) {
-      case "@tag(\"easy\")":
-        return ProblemDifficulty.easy;
-      case "@tag(\"medium\")":
-        return ProblemDifficulty.medium;
-      case "@tag(\"hard\")":
-        return ProblemDifficulty.hard;
-      default:
-        return ProblemDifficulty.unknown;
-    }
-  }
-
-  private ProblemDifficulty getDifficulty(String testFileName) throws IOException {
+  private Difficulty getDifficulty(String testFileName) throws IOException {
     File file = new File(leetCodeFileUtil.absoluteTestFilePath(testFileName));
-    BufferedReader reader = new BufferedReader(new FileReader(file));
-    ProblemDifficulty difficulty;
-    while ((difficulty = getDifficultyFromTagName(reader.readLine()))
-            == ProblemDifficulty.unknown) {
+    Scanner scanner = new Scanner(file);
+    Difficulty difficulty = Difficulty.unknown;
+    while (scanner.hasNextLine() && difficulty == Difficulty.unknown) {
+      String line = scanner.nextLine().toLowerCase();
+      if (line != null && line.startsWith("@tag")) {
+        difficulty = Difficulty.fromTag(line);
+      }
     }
-    reader.close();
     return difficulty;
   }
 
-  private String destinationTestPath(ProblemDifficulty problemDifficulty) {
+  private String destinationTestPath(Difficulty problemDifficulty) {
     return leetCodeFileUtil.getLeetCodeTestPath() + problemDifficulty.name() + "/";
   }
 
@@ -53,7 +41,7 @@ public class LeetCodeOrganizer {
     return destinationTestPath(getDifficulty(testFileName));
   }
 
-  private String destinationPath(ProblemDifficulty problemDifficulty) {
+  private String destinationPath(Difficulty problemDifficulty) {
     return leetCodeFileUtil.getLeetCodePath() + problemDifficulty.name() + "/";
   }
 
@@ -90,7 +78,7 @@ public class LeetCodeOrganizer {
    * Look through test files and try to move them to the correct location.
    */
   void organizeProblemFiles() {
-    System.out.println("Path to this is : " + leetCodeFileUtil.getLeetCodeTestPath());
+    System.out.println("Path to test folder is : " + leetCodeFileUtil.getLeetCodeTestPath());
     for (String testFileName : leetCodeFileUtil.getTestFiles()) {
       System.out.println("File: " + testFileName);
       try {

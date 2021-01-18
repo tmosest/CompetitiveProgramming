@@ -1,5 +1,7 @@
 package com.tmosest.competitiveprogramming.general;
 
+import java.util.Arrays;
+
 public class ProblemType {
 
   // Difficulty levels for problems.
@@ -8,7 +10,15 @@ public class ProblemType {
     easy,
     medium,
     hard,
-    expert
+    expert,
+    unknown;
+
+    public static Difficulty fromTag(String tag) {
+      return Arrays.stream(Difficulty.values()).filter(value ->
+          String.format("@tag(\"%s\")", value.name()).equalsIgnoreCase(tag))
+          .findAny()
+          .orElse(Difficulty.unknown);
+    }
   }
 
   // The sites that the problems can come from.

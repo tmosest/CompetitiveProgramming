@@ -13,6 +13,11 @@ public class ProblemType {
     expert,
     unknown;
 
+    /**
+     * Gets the Difficulty from the Testing tags.
+     * @param tag The tag from the Java Test file that has the difficulty in it.
+     * @return The difficulty or unknown if not found.
+     */
     public static Difficulty fromTag(String tag) {
       return Arrays.stream(Difficulty.values()).filter(value ->
           String.format("@tag(\"%s\")", value.name()).equalsIgnoreCase(tag))

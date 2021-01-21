@@ -1,6 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode.advent;
 
-import java.util.ArrayList;
+import com.tmosest.competitiveprogramming.utils.string.StringUtil;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -9,6 +10,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 class PassportProcessing {
 
@@ -23,19 +25,9 @@ class PassportProcessing {
   }
 
   long validPassport(List<String> inputs) {
-    this.passports = new ArrayList<>();
-    StringBuilder stringBuilder = new StringBuilder();
-
-    for (String line : inputs) {
-      if (line.length() < 1) {
-        this.passports.add(new Passport(stringBuilder.toString()));
-        stringBuilder = new StringBuilder();
-        continue;
-      }
-      stringBuilder.append(line).append(" ");
-    }
-
-    this.passports.add(new Passport(stringBuilder.toString()));
+    this.passports = StringUtil.fromLineSeperatedToSpaceSeperated(inputs).stream()
+        .map(Passport::new).collect(
+            Collectors.toList());
 
     return this.passports.stream()
         .filter(passport -> passport.isValid(requiredKeys, validationRules)).count();

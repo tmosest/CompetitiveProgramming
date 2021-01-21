@@ -78,4 +78,28 @@ public class StringUtil {
     }
     return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
   }
+
+  /**
+   * Takes strings that were separated by line breaks and makes them space separated.
+   * @param list List of strings that are grouped by line breaks.
+   * @return List of strings that are grouped by spaces.
+   */
+  public static List<String> fromLineSeperatedToSpaceSeperated(List<String> list) {
+    List<String> results = new ArrayList<>();
+    StringBuilder stringBuilder = new StringBuilder();
+
+    for (String line : list) {
+      line = line.trim();
+      if (line.length() < 1) {
+        results.add(stringBuilder.toString());
+        stringBuilder = new StringBuilder();
+        continue;
+      }
+      stringBuilder.append(line).append(" ");
+    }
+
+    results.add(stringBuilder.toString());
+
+    return results;
+  }
 }

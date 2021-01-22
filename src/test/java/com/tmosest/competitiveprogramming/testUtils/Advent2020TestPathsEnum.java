@@ -11,7 +11,9 @@ public enum Advent2020TestPathsEnum {
   DAY_5("advent_2020_day5.txt"),
   DAY_5_SAMPLE("advent_2020_day5_sample.txt"),
   DAY_6("advent_2020_day6.txt"),
-  DAY_6_SAMPLE("advent_2020_day6_sample.txt");
+  DAY_6_SAMPLE("advent_2020_day6_sample.txt"),
+  DAY_7("advent_2020_day7.txt"),
+  DAY_7_SAMPLE("advent_2020_day7_sample.txt");
 
   private String path;
 

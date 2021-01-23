@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public enum FileReader {
 
@@ -13,6 +14,13 @@ public enum FileReader {
 
   public int[] readInts(String filePath) throws IOException {
     return this.readLines(filePath).stream().mapToInt(Integer::valueOf).toArray();
+  }
+
+  public List<Long> readLongs(String filePath) throws IOException {
+    return this.readLines(filePath).stream()
+        .mapToLong(Long::valueOf)
+        .boxed()
+        .collect(Collectors.toList());
   }
 
   public List<String> readLines(String filePath) throws IOException {

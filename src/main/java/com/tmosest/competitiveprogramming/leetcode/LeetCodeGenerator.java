@@ -82,8 +82,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "Day 9. Encoding Error";
-    String functionDeclaration = "long firstInvalidNumber(List<Long> numbers)";
+    String name = "Day 10. Adapter Array";
+    String functionDeclaration = "int getCellPhoneAdapterValue(List<Integer> numbers)";
     String difficulty = Difficulty.advent.name();
     List<String> types = Arrays.asList(
         Types.number.name()

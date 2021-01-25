@@ -33,11 +33,29 @@ class SeatingSystemTest {
 
   @Test
   void test0_getOccupiedSeatsAfterSettles_sampleSuccess() throws IOException {
+    SeatingSystem.ADJACENT_DISTANCE = 1;
+    SeatingSystem.THRESHOLD = 4;
     test(37, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
   }
 
   @Test
   void test0_getOccupiedSeatsAfterSettles_realSuccess() throws IOException {
+    SeatingSystem.ADJACENT_DISTANCE = 1;
+    SeatingSystem.THRESHOLD = 4;
     test(2319, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
+  }
+
+  @Test
+  void test1_getOccupiedSeatsAfterSettles_sampleSuccess() throws IOException {
+    SeatingSystem.ADJACENT_DISTANCE = Integer.MAX_VALUE;
+    SeatingSystem.THRESHOLD = 5;
+    test(26, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
+  }
+
+  @Test
+  void test1_getOccupiedSeatsAfterSettles_realSuccess() throws IOException {
+    SeatingSystem.ADJACENT_DISTANCE = Integer.MAX_VALUE;
+    SeatingSystem.THRESHOLD = 5;
+    test(2117, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
   }
 }

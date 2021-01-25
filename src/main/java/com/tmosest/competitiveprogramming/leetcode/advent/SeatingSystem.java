@@ -5,10 +5,11 @@ import java.util.List;
 
 class SeatingSystem {
 
-  private static final char FLOOR = '.';
   private static final char SEAT = 'L';
   private static final char OCCUPIED_SEAT = '#';
-  private static final int THRESHOLD = 4;
+
+  static int THRESHOLD = 4;
+  static int ADJACENT_DISTANCE = 1;
 
   private static int countLetter(String str, char letter) {
     return (int) str.chars()
@@ -60,7 +61,7 @@ class SeatingSystem {
             stringBuilder.append(OCCUPIED_SEAT);
             continue;
           }
-          if (spot == OCCUPIED_SEAT && adjacentCount >= 4) {
+          if (spot == OCCUPIED_SEAT && adjacentCount >= THRESHOLD) {
             stringBuilder.append(SEAT);
             continue;
           }
@@ -80,39 +81,92 @@ class SeatingSystem {
       return OCCUPIED_SEAT == getValue(row, col);
     }
 
+    private boolean isEmptySeat(int row, int col) {
+      return SEAT == getValue(row, col);
+    }
+
+    // TODO refactor this bit.
     private int getAdjacentCount(int row, int col) {
       int count = 0;
 
-      if (row + 1 < rows && isOccupied(row + 1, col)) {
-        count++;
+      for (int diff = 1; diff <= ADJACENT_DISTANCE; diff++) {
+        if (row + diff >= rows || isEmptySeat(row + diff, col)) {
+          break;
+        }
+        if (isOccupied(row + diff, col)) {
+          count++;
+          break;
+        }
       }
 
-      if (col + 1 < cols && isOccupied(row, col + 1)) {
-        count++;
+      for (int diff = 1; diff <= ADJACENT_DISTANCE; diff++) {
+        if (col + diff >= cols || isEmptySeat(row, col + diff)) {
+          break;
+        }
+        if (isOccupied(row, col + diff)) {
+          count++;
+          break;
+        }
       }
 
-      if (row - 1 > -1 && isOccupied(row - 1, col)) {
-        count++;
+      for (int diff = 1; diff <= ADJACENT_DISTANCE; diff++) {
+        if (row - diff < 0 || isEmptySeat(row - diff, col)) {
+          break;
+        }
+        if (isOccupied(row - diff, col)) {
+          count++;
+          break;
+        }
       }
 
-      if (col - 1 > -1 && isOccupied(row, col - 1)) {
-        count++;
+      for (int diff = 1; diff <= ADJACENT_DISTANCE; diff++) {
+        if (col - diff < 0 || isEmptySeat(row, col - diff)) {
+          break;
+        }
+        if (isOccupied(row, col - diff)) {
+          count++;
+          break;
+        }
       }
 
-      if (row + 1 < rows && col + 1 < cols && isOccupied(row + 1, col + 1)) {
-        count++;
+      for (int diff = 1; diff <= ADJACENT_DISTANCE; diff++) {
+        if (row + diff >= rows || col + diff >= cols || isEmptySeat(row + diff, col + diff)) {
+          break;
+        }
+        if (isOccupied(row + diff, col + diff)) {
+          count++;
+          break;
+        }
       }
 
-      if (row - 1 > -1 && col + 1 < cols && isOccupied(row - 1, col + 1)) {
-        count++;
+      for (int diff = 1; diff <= ADJACENT_DISTANCE; diff++) {
+        if (row - diff < 0 || col + diff >= cols || isEmptySeat(row - diff, col + diff)) {
+          break;
+        }
+        if (isOccupied(row - diff, col + diff)) {
+          count++;
+          break;
+        }
       }
 
-      if (row - 1 > -1 && col - 1 > -1 && isOccupied(row - 1, col - 1)) {
-        count++;
+      for (int diff = 1; diff <= ADJACENT_DISTANCE; diff++) {
+        if (row - diff < 0 || col - diff < 0 || isEmptySeat(row - diff, col - diff)) {
+          break;
+        }
+        if (isOccupied(row - diff, col - diff)) {
+          count++;
+          break;
+        }
       }
 
-      if (row + 1 < rows && col - 1 > -1 && isOccupied(row + 1, col - 1)) {
-        count++;
+      for (int diff = 1; diff <= ADJACENT_DISTANCE; diff++) {
+        if (row + diff >= rows || col - diff < 0 || isEmptySeat(row + diff, col - diff)) {
+          break;
+        }
+        if (isOccupied(row + diff, col - diff)) {
+          count++;
+          break;
+        }
       }
 
       return count;

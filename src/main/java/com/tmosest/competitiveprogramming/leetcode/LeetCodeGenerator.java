@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "Day 11. Seating System";
-    String functionDeclaration = "int getOccupiedSeatsAfterSettles(List<String> lines)";
+    String name = "Day 12. Rain Risk";
+    String functionDeclaration = "int getManhattanDistance(List<String> lines)";
     String difficulty = Difficulty.advent.name();
     List<String> types = Arrays.asList(
-        Types.number.name()
+        Types.string.name()
     );
     String contest = Contests.advent2020.name();
 

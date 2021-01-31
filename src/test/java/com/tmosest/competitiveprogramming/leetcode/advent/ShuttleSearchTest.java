@@ -3,6 +3,7 @@ package com.tmosest.competitiveprogramming.leetcode.advent;
 import com.tmosest.competitiveprogramming.testUtils.Advent2020TestPathsEnum;
 import com.tmosest.competitiveprogramming.testUtils.FileReader;
 import java.io.IOException;
+import java.math.BigInteger;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -31,6 +32,10 @@ class ShuttleSearchTest {
     Assertions.assertEquals(output, shuttleSearch.getDiffTimesBusId(lines));
   }
 
+  private void test2(long output, List<String> lines) {
+    Assertions.assertEquals(BigInteger.valueOf(output), shuttleSearch.getWinningLotteryTime(lines));
+  }
+
   @Test
   void test0_getDiffTimesBusId_sampleSuccess() throws IOException {
     test(295, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
@@ -40,4 +45,16 @@ class ShuttleSearchTest {
   void test0_getDiffTimesBusId_realSuccess() throws IOException {
     test(3606, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
   }
+
+  @Test
+  void test1_getWinningLotteryTime_sampleSuccess() throws IOException {
+    test2(1068781, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
+  }
+
+  /*
+  @Test
+  void test1_getWinningLotteryTime_realSuccess() throws IOException {
+    test2(3606, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
+  }
+  */
 }

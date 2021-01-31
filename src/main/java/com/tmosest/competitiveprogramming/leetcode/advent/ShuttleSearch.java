@@ -1,7 +1,9 @@
 package com.tmosest.competitiveprogramming.leetcode.advent;
 
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 class ShuttleSearch {
 
@@ -21,6 +23,40 @@ class ShuttleSearch {
           return diff * bus.getId();
         })
         .orElse(-1L);
+  }
+
+  BigInteger getWinningLotteryTime(List<String> lines) {
+    List<BusStop> busStops = Arrays.stream(lines.get(1).split(","))
+        .map(str -> !str.contains("x") ? new BusStop(str, 0) : null).collect(
+        Collectors.toList());
+
+    BusStop firstBus = busStops.get(0);
+    BigInteger time = BigInteger.valueOf((long) firstBus.getId());
+    BigInteger increment = BigInteger.valueOf((long) firstBus.getId());
+
+    while (true) {
+      boolean shouldBreak = true;
+
+      for (int i = 0; i < busStops.size(); i++) {
+        BusStop current = busStops.get(i);
+        if (current == null) {
+          continue;
+        }
+        BigInteger timeNeeded = time.add(BigInteger.valueOf((long) i));
+        if (!timeNeeded.mod(BigInteger.valueOf((long) current.getId())).equals(BigInteger.ZERO)) {
+          shouldBreak = false;
+          break;
+        }
+      }
+
+      if (shouldBreak) {
+        break;
+      }
+
+      time = time.add(increment);
+    }
+
+    return time;
   }
 
   private static class BusStop {

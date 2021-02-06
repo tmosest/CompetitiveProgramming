@@ -47,11 +47,11 @@ class TicketTranslationTest {
 
   @Test
   void test1_getErrorRate_sampleSuccess() throws IOException {
-    test2(0, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
+    test2(-1, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
   }
 
   @Test
   void test1_getErrorRate_realSuccess() throws IOException {
-    test2(0, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
+    test2(1053686852011L, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
   }
 }

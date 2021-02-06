@@ -2,13 +2,18 @@ package com.tmosest.competitiveprogramming.leetcode.advent;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 class TicketTranslation {
 
   private List<Rule> rules;
   private List<Ticket> tickets;
+  private Ticket myTicket;
 
   TicketTranslation() {
     rules = new ArrayList<>();
@@ -38,6 +43,21 @@ class TicketTranslation {
     }
   }
 
+  private void readInMyTicket(List<String> inputs) {
+    boolean foundTickets = false;
+    for (String line : inputs) {
+      if (line.contains("your ticket:")) {
+        foundTickets = true;
+        continue;
+      }
+      if (!foundTickets) {
+        continue;
+      }
+      myTicket = new Ticket(line);
+      break;
+    }
+  }
+
   int getErrorRate(List<String> input) {
     readInRules(input);
     readInOtherTickets(input);
@@ -49,8 +69,50 @@ class TicketTranslation {
         .orElse(-1);
   }
 
-  int multiplyDepartures(List<String> input) {
-    return 0;
+  long multiplyDepartures(List<String> input) {
+    readInRules(input);
+    readInOtherTickets(input);
+    readInMyTicket(input);
+
+    List<Ticket> validTickets = tickets.stream()
+        .filter(ticket -> ticket.isValid(rules))
+        .collect(Collectors.toList());
+
+    validTickets.add(myTicket);
+
+    Map<Integer, Rule> ruleMap = new HashMap<>();
+
+    for (Rule rule : rules) {
+      rule.calculateIndex(validTickets);
+    }
+
+    Collections.sort(rules, Comparator.comparingInt(rule -> rule.indexes.size()));
+
+    for (int i = 0; i < rules.size(); i++) {
+      Rule rule = rules.get(i);
+      for (int j = i + 1; j < rules.size(); j++) {
+        Rule nextRule = rules.get(j);
+        nextRule.indexes.removeAll(rule.indexes);
+      }
+    }
+
+    for (Rule rule : rules) {
+      ruleMap.put(rule.indexes.get(0), rule);
+    }
+
+    long res = -1;
+
+    for (int i = 0; i < myTicket.getNumbers().size(); i++) {
+      Rule rule = ruleMap.get(i);
+      if (rule != null && rule.name.contains("departure")) {
+        if (res == -1) {
+          res = 1;
+        }
+        res *= myTicket.getNumbers().get(i);
+      }
+    }
+
+    return res;
   }
 
   private static class Ticket {
@@ -65,10 +127,18 @@ class TicketTranslation {
           .collect(Collectors.toList());
     }
 
+    public List<Integer> getNumbers() {
+      return numbers;
+    }
+
     private List<Integer> getInvalidNumbers(List<Rule> rules) {
       return numbers.stream()
           .filter(num -> rules.stream().filter(rule -> rule.isValidNumber(num)).count() == 0)
           .collect(Collectors.toList());
+    }
+
+    private boolean isValid(List<Rule> rules) {
+      return getInvalidNumbers(rules).size() == 0;
     }
   }
 
@@ -76,6 +146,7 @@ class TicketTranslation {
 
     private String name;
     private List<Interval> intervals;
+    private List<Integer> indexes;
 
     private Rule(String name) {
       this.name = name;
@@ -96,6 +167,22 @@ class TicketTranslation {
       return intervals.stream()
           .filter(interval -> interval.isInInterval(number))
           .count() > 0;
+    }
+
+    private void calculateIndex(List<Ticket> tickets) {
+      indexes = new ArrayList<>();
+      int size = tickets.get(0).getNumbers().size();
+      for (int i = 0; i < size; i++) {
+        for (int j = 0; j < tickets.size(); j++) {
+          int num = tickets.get(j).getNumbers().get(i);
+          if (!isValidNumber(num)) {
+            break;
+          }
+          if (j == tickets.size() - 1) {
+            indexes.add(i);
+          }
+        }
+      }
     }
   }
 

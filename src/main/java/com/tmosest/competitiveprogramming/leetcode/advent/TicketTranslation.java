@@ -1,5 +1,8 @@
 package com.tmosest.competitiveprogramming.leetcode.advent;
 
+import com.tmosest.competitiveprogramming.datastructures.Interval;
+import com.tmosest.competitiveprogramming.datastructures.implementations.ClosedInterval;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -145,7 +148,7 @@ class TicketTranslation {
   private static class Rule {
 
     private String name;
-    private List<Interval> intervals;
+    private List<Interval<Integer>> intervals;
     private List<Integer> indexes;
 
     private Rule(String name) {
@@ -155,10 +158,13 @@ class TicketTranslation {
 
     private static Rule fromString(String str) {
       String[] nameIntervalPair = str.trim().split(":");
+
       Rule rule = new Rule(nameIntervalPair[0].trim());
-      List<Interval> intervals = Arrays.stream(nameIntervalPair[1].split("or"))
-          .map(Interval::fromString)
+
+      List<Interval<Integer>> intervals = Arrays.stream(nameIntervalPair[1].split("or"))
+          .map(ClosedInterval::fromIntString)
           .collect(Collectors.toList());
+
       rule.intervals.addAll(intervals);
       return rule;
     }
@@ -183,26 +189,6 @@ class TicketTranslation {
           }
         }
       }
-    }
-  }
-
-  private static class Interval {
-
-    private int start;
-    private int end;
-
-    private Interval(int start, int end) {
-      this.start = start;
-      this.end = end;
-    }
-
-    private static Interval fromString(String str) {
-      String[] values = str.trim().split("-");
-      return new Interval(Integer.valueOf(values[0]), Integer.valueOf(values[1]));
-    }
-
-    private boolean isInInterval(int value) {
-      return this.start <= value && value <= this.end;
     }
   }
 }

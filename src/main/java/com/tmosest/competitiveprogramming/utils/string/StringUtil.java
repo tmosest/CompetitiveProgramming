@@ -102,4 +102,18 @@ public class StringUtil {
 
     return results;
   }
+
+  /**
+   * Determines if a string is a number or not.
+   * @param str The string
+   * @return True if it is a number
+   */
+  public static boolean isNumber(String str) {
+    try {
+      Integer.valueOf(str);
+      return true;
+    } catch (NumberFormatException e) {
+      return false;
+    }
+  }
 }

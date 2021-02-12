@@ -110,7 +110,7 @@ public class StringUtil {
    */
   public static boolean isNumber(String str) {
     try {
-      Integer.valueOf(str);
+      Long.valueOf(str);
       return true;
     } catch (NumberFormatException e) {
       return false;

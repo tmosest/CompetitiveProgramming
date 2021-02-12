@@ -40,12 +40,12 @@ class OperationOrderTest {
     test(122, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
   }
 
-  /*
   @Test
   void test0_sumLines_realSuccess() throws IOException {
     test(6923486965641L, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
   }
 
+  /*
   @Test
   void test1_sumLines_sampleSuccess() throws IOException {
     test2(282, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));

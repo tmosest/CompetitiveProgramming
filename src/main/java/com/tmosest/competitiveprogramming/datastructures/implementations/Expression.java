@@ -1,6 +1,7 @@
 package com.tmosest.competitiveprogramming.datastructures.implementations;
 
 import com.tmosest.competitiveprogramming.utils.string.StringUtil;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,7 +20,10 @@ public class Expression {
     expressionMap = new HashMap<>();
   }
 
-  // Will reduce to simplified form based on operations it knows.
+  /**
+   * Takes an expression and reduces it to a smaller one.
+   * @return A smaller expression with potentially unknown operations.
+   */
   public Expression reduce() {
     StringBuilder nextExpression = new StringBuilder();
 
@@ -30,10 +34,10 @@ public class Expression {
       String nextToAdd = null;
       switch (val) {
         case Bracket.STANDARD_OPENING_BRACKET:
-          if (index == 0) {
+          int endIndex = Bracket.findEndingBracketIndex(original, index);
+          if (index == 0 && endIndex == original.length() - 1) {
             continue;
           }
-          int endIndex = Bracket.findEndingBracketIndex(original, index);
           Expression innerExpression = new Expression(
               original.substring(index + 1, endIndex)
           );
@@ -51,15 +55,25 @@ public class Expression {
             operation = new Operation(val);
             continue;
           }
-          nextToAdd = "" + val;
+          StringBuilder digit = new StringBuilder();
+          while (index < original.length()) {
+            val = original.charAt(index);
+            if (Character.isDigit(val)) {
+              digit.append(val);
+              index++;
+            } else {
+              break;
+            }
+          }
+          nextToAdd = digit.toString();
       }
-      if (index == original.length() - 1 && nextToAdd == null) {
+      if (index >= original.length() - 1 && nextToAdd == null) {
         nextExpression.append(tempValue);
         continue;
       }
       try {
-        tempValue = operation.operate(tempValue, Integer.valueOf(nextToAdd));
-        if (index == original.length() - 1) {
+        tempValue = operation.operate(tempValue, Long.valueOf(nextToAdd));
+        if (index >= original.length() - 1) {
           nextExpression.append(tempValue);
         }
       } catch (IllegalArgumentException e) {
@@ -68,11 +82,11 @@ public class Expression {
         nextExpression.append(operation.toString());
         nextExpression.append(" ");
         if (StringUtil.isNumber(nextToAdd)) {
-          tempValue = Integer.valueOf(nextToAdd);
-          if (index == original.length() - 1) {
+          tempValue = Long.valueOf(nextToAdd);
+          if (index >= original.length() - 1) {
             nextExpression.append(tempValue);
           }
-        } else {
+        } else if (nextToAdd != null) {
           nextExpression.append(nextToAdd + " ");
         }
         operation = Operation.ADDITION;
@@ -89,7 +103,7 @@ public class Expression {
 
   private void calculateValue() {
     if (StringUtil.isNumber(original)) {
-      value = Integer.valueOf(original);
+      value = Long.valueOf(original);
       return;
     }
     value = new Expression(original).reduce().getValue();

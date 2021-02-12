@@ -13,6 +13,12 @@ public class Operation {
     this.operation = operation;
   }
 
+  /**
+   * Takes two longs and performs an operation on them.
+   * @param one First long.
+   * @param two Second ling.
+   * @return The result of the operation on them.
+   */
   public long operate(long one, long two) {
     switch (operation) {
       case MULTIPLICATION_SYMBOL:

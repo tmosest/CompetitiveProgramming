@@ -1,8 +1,8 @@
 package com.tmosest.competitiveprogramming.leetcode.advent;
 
 import com.tmosest.competitiveprogramming.datastructures.implementations.Expression;
-
 import com.tmosest.competitiveprogramming.datastructures.implementations.Operation;
+
 import java.util.List;
 
 class OperationOrder {

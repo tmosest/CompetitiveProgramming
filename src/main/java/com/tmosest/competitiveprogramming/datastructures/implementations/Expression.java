@@ -27,7 +27,7 @@ public class Expression {
   public Expression reduce() {
     StringBuilder nextExpression = new StringBuilder();
 
-    long tempValue = 0;
+    Long tempValue = null;
     Operation operation = Operation.ADDITION;
     for (int index = 0; index < original.length(); index++) {
       char val = original.charAt(index);
@@ -67,17 +67,24 @@ public class Expression {
           }
           nextToAdd = digit.toString();
       }
-      if (index >= original.length() - 1 && nextToAdd == null) {
+      if (index >= original.length() - 1 && nextToAdd == null && tempValue != null) {
         nextExpression.append(tempValue);
         continue;
       }
       try {
-        tempValue = operation.operate(tempValue, Long.valueOf(nextToAdd));
+        if (tempValue == null && nextToAdd != null && StringUtil.isNumber(nextToAdd)) {
+          tempValue = Long.valueOf(nextToAdd);
+        } else {
+          tempValue = operation.operate(tempValue, Long.valueOf(nextToAdd));
+        }
         if (index >= original.length() - 1) {
           nextExpression.append(tempValue);
         }
-      } catch (IllegalArgumentException e) {
-        nextExpression.append(tempValue);
+      } catch (IllegalArgumentException | NullPointerException e) {
+        if (tempValue != null) {
+          nextExpression.append(tempValue);
+          tempValue = null;
+        }
         nextExpression.append(" ");
         nextExpression.append(operation.toString());
         nextExpression.append(" ");

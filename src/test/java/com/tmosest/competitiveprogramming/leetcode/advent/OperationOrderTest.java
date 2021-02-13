@@ -3,6 +3,7 @@ package com.tmosest.competitiveprogramming.leetcode.advent;
 import com.tmosest.competitiveprogramming.testUtils.Advent2020TestPathsEnum;
 import com.tmosest.competitiveprogramming.testUtils.FileReader;
 import java.io.IOException;
+import java.math.BigInteger;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -45,12 +46,12 @@ class OperationOrderTest {
     test(6923486965641L, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
   }
 
-  /*
   @Test
   void test1_sumLines_sampleSuccess() throws IOException {
     test2(282, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
   }
 
+  /*
   @Test
   void test1_sumLines_realSuccess() throws IOException {
     test2(6923486965641L, FileReader.INSTANCE.readLines(REAL_TEST_PATH));

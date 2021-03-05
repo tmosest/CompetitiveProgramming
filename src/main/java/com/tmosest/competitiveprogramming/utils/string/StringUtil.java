@@ -116,4 +116,19 @@ public class StringUtil {
       return false;
     }
   }
+
+  /**
+   * Takes a string and reverses it.
+   * @param str The string to reverse.
+   * @return The reversed string.
+   */
+  public static String reverse(String str) {
+    StringBuilder stringBuilder = new StringBuilder();
+
+    for (char letter : str.toCharArray()) {
+      stringBuilder.insert(0, letter);
+    }
+
+    return stringBuilder.toString();
+  }
 }

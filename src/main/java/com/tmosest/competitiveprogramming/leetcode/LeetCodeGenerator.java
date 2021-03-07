@@ -82,8 +82,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "Day 20. Jurassic Jigsaw";
-    String functionDeclaration = "long matchPuzzleAndMultiplyCorners(List<String> input)";
+    String name = "Day 21. Allergen Assessment";
+    String functionDeclaration = "long countNonAllergenWords(List<String> input)";
     String difficulty = Difficulty.advent.name();
     List<String> types = Arrays.asList(
         Types.string.name()

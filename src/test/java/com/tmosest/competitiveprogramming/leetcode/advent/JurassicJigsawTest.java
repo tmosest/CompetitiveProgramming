@@ -31,6 +31,10 @@ class JurassicJigsawTest {
     Assertions.assertEquals(output, jurassicJigsaw.matchPuzzleAndMultiplyCorners(input));
   }
 
+  private void test2(long output, List<String> input) {
+    Assertions.assertEquals(output, jurassicJigsaw.countRoughWaters(input));
+  }
+
   @Test
   void test0_matchPuzzleAndMultiplyCorners_sampleSuccess() throws IOException {
     test(20899048083289L, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
@@ -39,5 +43,15 @@ class JurassicJigsawTest {
   @Test
   void test0_matchPuzzleAndMultiplyCorners_realSuccess() throws IOException {
     test(14986175499719L, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
+  }
+
+  @Test
+  void test1_countRoughWaters_sampleSuccess() throws IOException {
+    test2(0, FileReader.INSTANCE.readLines(SAMPLE_TEST_PATH));
+  }
+
+  @Test
+  void test1_countRoughWaters_realSuccess() throws IOException {
+    test2(0, FileReader.INSTANCE.readLines(REAL_TEST_PATH));
   }
 }

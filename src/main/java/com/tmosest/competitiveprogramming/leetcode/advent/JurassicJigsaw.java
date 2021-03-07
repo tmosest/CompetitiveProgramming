@@ -4,32 +4,21 @@ import com.tmosest.competitiveprogramming.utils.string.StringUtil;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 class JurassicJigsaw {
 
   long matchPuzzleAndMultiplyCorners(List<String> input) {
-    List<Tile> tiles = fromInput(input);
-
-    for (int i = 0; i < tiles.size(); i++) {
-      for (int j = 0; j < tiles.size(); j++) {
-
-        if (i == j) {
-          continue;
-        }
-
-        tiles.get(i).findConnections(tiles.get(j));
-      }
-    }
-
-    List<Tile> corners = tiles.stream()
-        .filter(Tile::isCorner).collect(Collectors.toList());
-
-    return corners.stream()
+    return fromInput(input).stream()
+        .filter(Tile::isCorner)
         .filter(Tile::isCorner)
         .map(Tile::getId)
         .reduce((one, two) -> one * two)
         .orElse(-1L);
+  }
+
+  long countRoughWaters(List<String> input) {
+    List<Tile> tiles = fromInput(input);
+    return 0;
   }
 
   private List<Tile> fromInput(List<String> input) {
@@ -46,22 +35,23 @@ class JurassicJigsaw {
       titleInput.add(str);
     }
 
+    for (int i = 0; i < tiles.size(); i++) {
+      for (int j = 0; j < tiles.size(); j++) {
+
+        if (i == j) {
+          continue;
+        }
+
+        tiles.get(i).findConnections(tiles.get(j));
+      }
+    }
+
     return tiles;
   }
 
   private static class Tile {
+
     private static final int EDGES = 4;
-
-    private enum Direction {
-      TOP(0), RIGHT(1), BOTTOM(2), LEFT(3);
-
-      int index;
-
-      Direction(int index) {
-        this.index = index;
-      }
-    }
-
     // index order top, right, bottom, left
     private int id;
     private List<String> edges;
@@ -69,11 +59,15 @@ class JurassicJigsaw {
     private List<String> map;
     private List<List<Tile>> edgeConnections;
 
-
     private Tile(int id, List<String> map) {
       this.id = id;
       this.map = new ArrayList<>(map);
       setEdge();
+    }
+
+    private static Tile fromStringList(List<String> strList) {
+      int id = Integer.valueOf(strList.get(0).split(" ")[1].replace(":", "").trim());
+      return new Tile(id, strList.subList(1, strList.size()));
     }
 
     private long getId() {
@@ -140,9 +134,14 @@ class JurassicJigsaw {
       return knownEdgeCount == 2;
     }
 
-    private static Tile fromStringList(List<String> strList) {
-      int id = Integer.valueOf(strList.get(0).split(" ")[1].replace(":", "").trim());
-      return new Tile(id, strList.subList(1, strList.size()));
+    private enum Direction {
+      TOP(0), RIGHT(1), BOTTOM(2), LEFT(3);
+
+      int index;
+
+      Direction(int index) {
+        this.index = index;
+      }
     }
   }
 }

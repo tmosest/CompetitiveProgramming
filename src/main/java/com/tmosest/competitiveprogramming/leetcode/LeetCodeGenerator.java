@@ -82,8 +82,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "Day 22. Crab Combat";
-    String functionDeclaration = "long scoreCrabCombatGame(List<String> input)";
+    String name = "Day 23. Crab Cups";
+    String functionDeclaration = "String crabCupsConfigClockwiseFromOneCup(String input, int move)";
     String difficulty = Difficulty.advent.name();
     List<String> types = Arrays.asList(
         Types.string.name()

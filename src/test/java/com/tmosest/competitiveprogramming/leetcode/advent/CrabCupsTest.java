@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 class CrabCupsTest {
 
   private static final int MOVES = 100;
+  private static final int MOVES_2 = 10000000;
 
   private CrabCups crabCups;
 
@@ -24,6 +25,10 @@ class CrabCupsTest {
 
   private void test(String output, String input, int move) {
     Assertions.assertEquals(output, crabCups.crabCupsConfigClockwiseFromOneCup(input, move));
+  }
+
+  private void test2(long output, String input, int move) {
+    Assertions.assertEquals(output, crabCups.multTwoCupsAfterCupMarkedOne(input, move));
   }
 
   @Test
@@ -40,4 +45,16 @@ class CrabCupsTest {
   void test0_crabCupsConfigClockwiseFromOneCup_realSuccess() {
     test("82934675", "327465189", MOVES);
   }
+
+  /*
+  @Test
+  void test2_crabCupsConfigClockwiseFromOneCup_sampleSuccess() {
+    test2(149245887792L, "389125467", MOVES_2);
+  }
+
+  @Test
+  void test2_crabCupsConfigClockwiseFromOneCup_realSuccess() {
+    test2(149245887792L, "327465189", MOVES_2);
+  }
+  */
 }

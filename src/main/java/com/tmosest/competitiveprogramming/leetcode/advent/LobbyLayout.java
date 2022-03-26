@@ -23,7 +23,7 @@ class LobbyLayout {
   }
 
   String getTileFromDirections(String line) {
-   int[] pos = {0, 0}; // -1,1 -> -2,1 -> -3,1 -> -2 -> 1
+    int[] pos = {0, 0}; // -1,1 -> -2,1 -> -3,1 -> -2 -> 1
 
     char[] letters = line.toCharArray();
     for (int index = 0; index < letters.length; index++) {
@@ -60,6 +60,6 @@ class LobbyLayout {
       }
     }
 
-   return pos[0] + "," + pos[1];
+    return pos[0] + "," + pos[1];
   }
 }

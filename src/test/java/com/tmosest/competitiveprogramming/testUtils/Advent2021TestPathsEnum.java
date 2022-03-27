@@ -6,7 +6,9 @@ public enum Advent2021TestPathsEnum {
   DAY_2_SAMPLE("advent_2021_day2_sample.txt"),
   DAY_2("advent_2021_day2.txt"),
   DAY_3_SAMPLE("advent_2021_day3_sample.txt"),
-  DAY_3("advent_2021_day3.txt");
+  DAY_3("advent_2021_day3.txt"),
+  DAY_4_SAMPLE("advent_2021_day4_sample.txt"),
+  DAY_4("advent_2021_day4.txt");
 
   private String path;
 

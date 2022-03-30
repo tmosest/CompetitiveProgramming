@@ -82,8 +82,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "Day 5. Hydrothermal Venture";
-    String functionDeclaration = "int countVentOverlaps(List<String> input)";
+    String name = "Day 6. Lanternfish";
+    String functionDeclaration = "long countFish(List<String> input)";
     String difficulty = Difficulty.advent.name();
     List<String> types = Arrays.asList(
         Types.array.name()

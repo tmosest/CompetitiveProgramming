@@ -84,11 +84,11 @@ public class LeetCodeGenerator {
   public static void main(String[] args) {
     String name = "Day 7. The Treachery of Whales";
     String functionDeclaration = "int getFuelCount(List<Integer> input)";
-    String difficulty = Difficulty.advent.name();
+    String difficulty = Difficulty.codejam.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.advent2021.name();
+    String contest = Contests.codeJam2022.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

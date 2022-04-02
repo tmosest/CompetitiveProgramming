@@ -11,7 +11,8 @@ public class ProblemType {
     medium,
     hard,
     expert,
-    unknown;
+    unknown,
+    codejam;
 
     /**
      * Gets the Difficulty from the Testing tags.
@@ -68,6 +69,7 @@ public class ProblemType {
     advent2020,
     advent2021,
     april30Day,
+    codeJam2022,
     bwc41,
     bwc40,
     bwc39,

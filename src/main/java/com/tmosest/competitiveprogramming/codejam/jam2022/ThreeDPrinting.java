@@ -9,27 +9,9 @@ import java.util.Scanner;
 
 public class ThreeDPrinting {
 
-  private static class Printer {
-    private int cyan;
-    private int magenta;
-    private int yellow;
-    private int black;
-
-    private Printer(int cyan, int magenta, int yellow, int black) {
-      this.cyan = cyan;
-      this.magenta = magenta;
-      this.yellow = yellow;
-      this.black = black;
-    }
-
-    private static Printer fromStr(String str) {
-       int[] vals = Arrays.stream(str.split(" ")).mapToInt(Integer::parseInt).toArray();
-       return new Printer(vals[0], vals[1], vals[2], vals[3]);
-    }
-  }
-
   /**
    * Function to run the program.
+   *
    * @param args The args for the program.
    */
   public static void main(String[] args) {
@@ -55,7 +37,9 @@ public class ThreeDPrinting {
         }
 
         // Check if solution is possible.
-        long sum = Arrays.stream(results).mapToLong(x -> (long) x).reduce((x, y) -> x + y).orElse(0);
+        long sum = Arrays.stream(results).mapToLong(one -> (long) one)
+            .reduce((one, two) -> one + two)
+            .orElse(0);
 
         if (sum < 1000000L) {
           System.out.println("IMPOSSIBLE");
@@ -79,6 +63,26 @@ public class ThreeDPrinting {
       } catch (Exception e) {
         // System.out.println("Case #" + t + ": ");
       }
+    }
+  }
+
+  private static class Printer {
+
+    private int cyan;
+    private int magenta;
+    private int yellow;
+    private int black;
+
+    private Printer(int cyan, int magenta, int yellow, int black) {
+      this.cyan = cyan;
+      this.magenta = magenta;
+      this.yellow = yellow;
+      this.black = black;
+    }
+
+    private static Printer fromStr(String str) {
+      int[] vals = Arrays.stream(str.split(" ")).mapToInt(Integer::parseInt).toArray();
+      return new Printer(vals[0], vals[1], vals[2], vals[3]);
     }
   }
 }

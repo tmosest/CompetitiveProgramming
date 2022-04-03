@@ -16,7 +16,7 @@ public class ThreeDPrintingTest {
   @Test
   void test_sample_works() throws UnsupportedEncodingException {
     HackerrankUtil.setSystemIn(
-            "3\n"
+        "3\n"
             + "300000 200000 300000 500000\n"
             + "300000 200000 500000 300000\n"
             + "300000 500000 300000 200000\n"

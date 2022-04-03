@@ -2,17 +2,14 @@ package com.tmosest.competitiveprogramming.codejam.jam2022;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.PriorityQueue;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class DiceGame {
 
   /**
    * Function to run the program.
+   *
    * @param args The args for the program.
    */
   public static void main(String[] args) {

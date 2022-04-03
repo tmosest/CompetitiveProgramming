@@ -28,7 +28,7 @@ class ConwayCubesTest {
   }
 
   private void test(long output, List<String> input) {
-    Assertions.assertEquals(output, conwayCubes.countSixthCycleCubes(input));
+    Assertions.assertEquals(output, conwayCubes.countDays(input, 1));
   }
 
   @Test

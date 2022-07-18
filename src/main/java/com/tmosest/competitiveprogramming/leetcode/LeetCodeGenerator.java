@@ -82,9 +82,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2341. Maximum Number of Pairs in Array";
-    String functionDeclaration = "public int[] numberOfPairs(int[] nums)";
-    String difficulty = Difficulty.easy.name();
+    String name = "2342. Max Sum of a Pair With Equal Sum of Digits";
+    String functionDeclaration = "public int maximumSum(int[] nums)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );

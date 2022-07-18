@@ -65,10 +65,10 @@ class ConwayCubes {
 
     private List<Integer> coordinates = new ArrayList<>();
 
-    private Cube(int xDim, int yDim, int zDim) {
-      coordinates.add(xDim);
-      coordinates.add(yDim);
-      coordinates.add(zDim);
+    private Cube(int xdim, int ydim, int zdim) {
+      coordinates.add(xdim);
+      coordinates.add(ydim);
+      coordinates.add(zdim);
     }
 
     private static Cube fromString(String str) {

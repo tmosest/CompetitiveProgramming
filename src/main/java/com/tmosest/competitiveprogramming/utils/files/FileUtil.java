@@ -70,6 +70,7 @@ public class FileUtil {
 
   boolean createNewTestFile(Class location, String fileName) throws IOException {
     String source = getAbsoluteTestPath(location);
+    System.out.println("Test file is at " + source);
     File file = new File(source, fileName);
     return file.createNewFile();
   }

@@ -68,6 +68,7 @@ public class ProblemType {
   public enum Contests {
     advent2020,
     advent2021,
+    advent2022,
     april30Day,
     codeJam2022,
     bwc41,

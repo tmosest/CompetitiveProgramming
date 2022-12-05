@@ -1,18 +1,17 @@
 package com.tmosest.competitiveprogramming.utils.files;
 
 import com.tmosest.competitiveprogramming.utils.string.StringUtil;
-
 import java.util.List;
 
 public class JavaFileBuilder {
 
   private static JavaFileBuilder instance = new JavaFileBuilder();
 
-  public static JavaFileBuilder instance() {
-    return instance;
+  private JavaFileBuilder() {
   }
 
-  private JavaFileBuilder() {
+  public static JavaFileBuilder instance() {
+    return instance;
   }
 
   /**
@@ -60,47 +59,53 @@ public class JavaFileBuilder {
       JavaFileMethod javaFileMethod
   ) {
     if (annotations == null || values == null || annotations.size() != values.size()) {
+      System.out.println("Empty!");
       return;
     }
+    JavaFile javaFile = new JavaFile(source, className + "Test");
+    // Create test class for user.
+    javaFile
+        .addRawContent("private "
+            + className
+            + " " + StringUtil.uncapitalize(className)
+            + ";\n\n");
+    // Setup the new test class.
+    javaFile.addRawContent("@BeforeEach\nvoid setup() {\n "
+        + StringUtil.uncapitalize(className)
+        + " = new " + className + "();\n}\n"
+    );
+    // Add a void test method
+    String parameters = javaFileMethod.getParameters().stream()
+        .reduce((one, two) -> one + ", " + two).orElse("");
+    String parametersNames = javaFileMethod.getParameters().stream()
+        .map(str -> {
+          if (str.length() < 1) {
+            return "";
+          }
+          return str.split(" ")[1];
+        })
+        .reduce((one, two) -> one + ", " + two).orElse("");
+    javaFile.addRawContent("private void test( "
+        + javaFileMethod.getReturnType()
+        + " output, " + parameters + ") {\n Assertions.assertEquals(output, "
+        + StringUtil.uncapitalize(className) + "." + javaFileMethod.getMethodName() + "("
+        + parametersNames + ")); }\n");
+    // Add first test
+    javaFile.addRawContent("@Test\nvoid test0() {\n test(output, " + parametersNames + "); }\n");
+    for (int i = 0; i < annotations.size(); i++) {
+      javaFile.addNewAnnotation(annotations.get(i), values.get(i));
+    }
+    String[] testImports = {
+        "org.junit.jupiter.api.Assertions",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.DisplayName",
+        "org.junit.jupiter.api.Tag",
+        "org.junit.jupiter.api.Test"
+    };
+    for (String imp : testImports) {
+      javaFile.addNewImport(imp);
+    }
     try {
-      JavaFile javaFile = new JavaFile(source, className + "Test");
-      // Create test class for user.
-      javaFile
-          .addRawContent("private "
-              + className
-              + " " + StringUtil.uncapitalize(className)
-              + ";\n\n");
-      // Setup the new test class.
-      javaFile.addRawContent("@BeforeEach\nvoid setup() {\n "
-          + StringUtil.uncapitalize(className)
-          + " = new " + className + "();\n}\n"
-      );
-      // Add a void test method
-      String parameters = javaFileMethod.getParameters().stream()
-          .reduce((one, two) -> one + ", " + two).orElse("");
-      String parametersNames = javaFileMethod.getParameters().stream()
-          .map(str -> str.split(" ")[1])
-          .reduce((one, two) -> one + ", " + two).orElse("");;
-      javaFile.addRawContent("private void test( "
-          + javaFileMethod.getReturnType()
-          + " output, " + parameters + ") {\n Assertions.assertEquals(output, "
-          + StringUtil.uncapitalize(className) + "." + javaFileMethod.getMethodName() + "("
-          + parametersNames + ")); }\n");
-      // Add first test
-      javaFile.addRawContent("@Test\nvoid test0() {\n test(output, " + parametersNames + "); }\n");
-      for (int i = 0; i < annotations.size(); i++) {
-        javaFile.addNewAnnotation(annotations.get(i), values.get(i));
-      }
-      String[] testImports = {
-          "org.junit.jupiter.api.Assertions",
-          "org.junit.jupiter.api.BeforeEach",
-          "org.junit.jupiter.api.DisplayName",
-          "org.junit.jupiter.api.Tag",
-          "org.junit.jupiter.api.Test"
-      };
-      for (String imp : testImports) {
-        javaFile.addNewImport(imp);
-      }
       javaFile.toTestFile();
     } catch (Exception e) {
       System.out.println("Error: " + e.getMessage());

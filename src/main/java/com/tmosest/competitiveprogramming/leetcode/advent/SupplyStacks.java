@@ -17,7 +17,8 @@ class SupplyStacks {
 
     while (data.get(index).trim().length() > 0) {
       String line = data.get(index++);
-      // Use the initial letter offset plus the fact that they are wrapped in [] or three blank spaces.
+      // Use the initial letter offset plus the fact
+      // that they are wrapped in [] or three blank spaces.
       for (int i = 1 ; i < line.length(); i += 4) {
         if (i / 4 >= stacks.size()) {
           stacks.add(new ArrayList<>());
@@ -35,10 +36,10 @@ class SupplyStacks {
     for (; index < data.size(); index++) {
       List<Integer> inputs = new ArrayList<>();
 
-      Matcher m = pattern.matcher(data.get(index));
+      Matcher matcher = pattern.matcher(data.get(index));
 
-      while(m.find()) {
-        inputs.add(Integer.parseInt(m.group()));
+      while (matcher.find()) {
+        inputs.add(Integer.parseInt(matcher.group()));
       }
 
       List<Character> from = stacks.get(inputs.get(1) - 1);

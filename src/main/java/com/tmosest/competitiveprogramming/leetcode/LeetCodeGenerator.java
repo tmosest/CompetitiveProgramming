@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "6. Tuning Trouble";
-    String functionDeclaration = "public int getBufferMarker(String buffer)";
-    String difficulty = Difficulty.advent.name();
+    String name = "3076. Shortest Uncommon Substring in an Array";
+    String functionDeclaration = "public String[] shortestSubstrings(String[] arr)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.advent2022.name();
+    String contest = Contests.wc388.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

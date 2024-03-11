@@ -128,7 +128,8 @@ public class ProblemType {
     wc200,
     wc286,
     wc301,
-    wc302
+    wc302,
+    wc388
   }
 
   /**

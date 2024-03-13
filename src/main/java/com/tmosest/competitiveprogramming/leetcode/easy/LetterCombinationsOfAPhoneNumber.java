@@ -7,8 +7,57 @@ import java.util.Set;
 
 class LetterCombinationsOfAPhoneNumber {
 
-  /* Write code here. */
-  public boolean debugMode = false;
+  /**
+   * Function to convert a phone number to the letters of the keys.
+   * Time Complexity is O(N^4) and Space complexity is O(N) where N is the number
+   * of digits.
+   * https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+   * 
+   * @param digits String of numbers.
+   * @return A List of all letter combinations.
+   */
+  public List<String> letterCombinations(String digits) {
+    List<String> result = new ArrayList<>();
+
+    if (digits == null || digits.length() == 0) {
+      return result;
+    }
+
+    recursive(digits, result, 0);
+
+    return result;
+  }
+
+  private void recursive(String digits, List<String> result, int index) {
+
+    if (index >= digits.length()) {
+      return;
+    }
+
+    char digit = digits.charAt(index);
+    String letters = getLettersForDigit(digit);
+
+    if (result.isEmpty()) {
+      for (char letter : letters.toCharArray()) {
+        result.add("" + letter);
+      }
+      recursive(digits, result, index + 1);
+      return;
+    }
+
+    List<String> resultsNew = new ArrayList<>();
+
+    for (String s : result) {
+      for (char letter : letters.toCharArray()) {
+        resultsNew.add(s + letter);
+      }
+    }
+
+    result.clear();
+    result.addAll(resultsNew);
+
+    recursive(digits, result, index + 1);
+  }
 
   private String getLettersForDigit(char digit) {
     String result = "";
@@ -42,62 +91,4 @@ class LetterCombinationsOfAPhoneNumber {
     }
     return result;
   }
-
-  private void constructLettercombinations(String digits, Set<String> set) {
-    if ("".equals(digits)) {
-      return;
-    }
-    char digit = digits.charAt(0);
-    String possibleLetters = getLettersForDigit(digit);
-    if (debugMode) {
-      System.out.println("possibleLetters: " + possibleLetters);
-    }
-    if (set.isEmpty()) {
-      for (int i = 0; i < possibleLetters.length(); i++) {
-        set.add(possibleLetters.substring(i, i + 1));
-      }
-    } else {
-      Set<String> newResults = new HashSet<>();
-      for (String s : set) {
-        for (int i = 0; i < possibleLetters.length(); i++) {
-          newResults.add(s + possibleLetters.substring(i, i + 1));
-        }
-      }
-      set.clear();
-      set.addAll(newResults);
-    }
-    String remainder = digits.substring(1, digits.length());
-    if (debugMode) {
-      System.out.println("remainder: " + remainder);
-      for (String s : set) {
-        System.out.println(s);
-      }
-    }
-
-    constructLettercombinations(remainder, set);
-  }
-
-  /**
-   * Function to convert a phone number to the letters of the keys.
-   *
-   * @param digits String of numbers.
-   * @return A List of all letter combinations.
-   */
-  public List<String> letterCombinations(String digits) {
-    List<String> result = new ArrayList<>();
-    if (digits == null && digits.length() < 1) {
-      return result;
-    }
-    Set<String> set = new HashSet<>();
-    constructLettercombinations(digits, set);
-    if (debugMode) {
-      for (String s : set) {
-        System.out.println(s);
-      }
-    }
-    result.addAll(set);
-    return result;
-  }
-
-
 }

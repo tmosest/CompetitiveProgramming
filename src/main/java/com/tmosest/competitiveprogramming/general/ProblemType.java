@@ -80,6 +80,7 @@ public class ProblemType {
     bwc35,
     bwc34,
     bwc23,
+    wcx,
     wc223,
     wc222,
     wc221,
@@ -129,6 +130,8 @@ public class ProblemType {
     wc286,
     wc301,
     wc302,
+    wc385,
+    wc386,
     wc387,
     wc388
   }

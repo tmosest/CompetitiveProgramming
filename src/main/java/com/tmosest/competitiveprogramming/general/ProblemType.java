@@ -133,7 +133,8 @@ public class ProblemType {
     wc385,
     wc386,
     wc387,
-    wc388
+    wc388,
+    wc389
   }
 
   /**

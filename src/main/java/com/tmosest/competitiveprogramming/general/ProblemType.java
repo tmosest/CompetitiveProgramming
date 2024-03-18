@@ -71,6 +71,7 @@ public class ProblemType {
     advent2022,
     april30Day,
     codeJam2022,
+    bwc126,
     bwc41,
     bwc40,
     bwc39,

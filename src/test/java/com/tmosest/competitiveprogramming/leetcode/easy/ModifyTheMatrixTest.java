@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("matrix")
-@Tag("wc385")
+@Tag("wc384")
 @DisplayName("LeetCode: 3033. Modify the Matrix")
 class ModifyTheMatrixTest {
     private ModifyTheMatrix modifyTheMatrix;

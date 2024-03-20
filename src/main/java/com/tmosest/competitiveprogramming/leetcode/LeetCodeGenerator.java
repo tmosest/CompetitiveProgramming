@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1728. Cat and Mouse II";
-    String functionDeclaration = "public boolean canMouseWin(String[] grid, int catJump, int mouseJump)";
-    String difficulty = Difficulty.hard.name();
+    String name = "1720. Decode XORed Array";
+    String functionDeclaration = "public int[] decode(int[] encoded, int first)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.gameTheory.name()
+        Types.array.name()
     );
     String contest = Contests.wc224.name();
 

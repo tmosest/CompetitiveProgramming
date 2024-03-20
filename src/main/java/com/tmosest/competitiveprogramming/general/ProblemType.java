@@ -49,6 +49,7 @@ public class ProblemType {
     dynamic,
     gameTheory,
     graph,
+    greedy,
     interval,
     list,
     matrix,

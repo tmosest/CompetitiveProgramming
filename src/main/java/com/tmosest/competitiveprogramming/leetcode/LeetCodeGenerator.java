@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "206. Reverse Linked List";
-    String functionDeclaration = "public ListNode reverseList(ListNode head)";
-    String difficulty = Difficulty.easy.name();
+    String name = "3031. Minimum Time to Revert Word to Initial State II";
+    String functionDeclaration = "public int minimumTimeToInitialState(String word, int k)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.list.name()
+        Types.string.name()
     );
-    String contest = Contests.wcx.name();
+    String contest = Contests.wc383.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -1,6 +1,11 @@
 package com.tmosest.competitiveprogramming.general;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ProblemType {
 
@@ -16,12 +21,13 @@ public class ProblemType {
 
     /**
      * Gets the Difficulty from the Testing tags.
+     * 
      * @param tag The tag from the Java Test file that has the difficulty in it.
      * @return The difficulty or unknown if not found.
      */
     public static Difficulty fromTag(String tag) {
-      return Arrays.stream(Difficulty.values()).filter(value ->
-          String.format("@tag(\"%s\")", value.name()).equalsIgnoreCase(tag))
+      return Arrays.stream(Difficulty.values())
+          .filter(value -> String.format("@tag(\"%s\")", value.name()).equalsIgnoreCase(tag))
           .findAny()
           .orElse(Difficulty.unknown);
     }
@@ -67,40 +73,21 @@ public class ProblemType {
   }
 
   public enum Contests {
-    advent2020,
+    dvent2020,
     advent2021,
     advent2022,
     april30Day,
-    codeJam2022,
-    bwc126,
-    bwc41,
-    bwc40,
-    bwc39,
-    bwc38,
-    bwc37,
-    bwc36,
-    bwc35,
-    bwc34,
     bwc23,
-    wcx,
-    wc224,
-    wc223,
-    wc222,
-    wc221,
-    wc220,
-    wc219,
-    wc218,
-    wc217,
-    wc216,
-    wc215,
-    wc214,
-    wc213,
-    wc212,
-    wc211,
-    wc210,
-    wc209,
-    wc208,
-    wc207,
+    bwc34,
+    bwc35,
+    bwc36,
+    bwc37,
+    bwc38,
+    bwc39,
+    bwc40,
+    bwc41,
+    bwc126,
+    codeJam2022,
     wc170,
     wc171,
     wc172,
@@ -130,36 +117,102 @@ public class ProblemType {
     wc198,
     wc199,
     wc200,
+    wc207,
+    wc208,
+    wc209,
+    wc210,
+    wc211,
+    wc212,
+    wc213,
+    wc214,
+    wc215,
+    wc216,
+    wc217,
+    wc218,
+    wc219,
+    wc220,
+    wc221,
+    wc222,
+    wc223,
+    wc224,
     wc286,
     wc301,
     wc302,
+    wc383,
+    wc384,
     wc385,
     wc386,
     wc387,
     wc388,
-    wc389
+    wc389,
+    wcx
   }
 
   /**
    * Manual testing.
+   * 
    * @param args Command line args.x`x``
    */
   public static void main(String[] args) {
     System.out.println("===============Difficulty===============");
-    for (Difficulty difficulty : Difficulty.values()) {
+    Difficulty[] difficulties = Difficulty.values();
+    Arrays.sort(difficulties);
+    for (Difficulty difficulty : difficulties) {
       System.out.println(difficulty);
     }
     System.out.println("===============Sites===============");
-    for (Site site : Site.values()) {
+    Site[] sites = Site.values();
+    Arrays.sort(sites);
+    for (Site site : sites) {
       System.out.println(site);
     }
     System.out.println("===============Topic===============");
-    for (Types type : Types.values()) {
+    Types[] types = Types.values();
+    Arrays.sort(types);
+    for (Types type : types) {
       System.out.println(type);
     }
     System.out.println("===============Contests===============");
-    for (Contests contest : Contests.values()) {
-      System.out.println(contest);
+    List<Contests> contests = Arrays.asList(Contests.values());
+    Collections.sort(contests, new Comparator<Contests>() {
+
+      @Override
+      public int compare(Contests one, Contests two) {
+        one.toString().matches("[a-zA-Z]+");
+
+        Matcher oneLetters = Pattern.compile("[a-zA-Z]+").matcher(one.toString());
+        Matcher twoLetters = Pattern.compile("[a-zA-Z]+").matcher(two.toString());
+
+        List<String> allOneMatches = new java.util.ArrayList<String>();
+        while (oneLetters.find()) {
+          allOneMatches.add(oneLetters.group());
+        }
+
+        List<String> allTwoMatches = new java.util.ArrayList<String>();
+        while (twoLetters.find()) {
+          allTwoMatches.add(twoLetters.group());
+        }
+
+        // TODO th
+        if (allOneMatches.size() == allTwoMatches.size()) {
+          String oneStr = one.toString();
+          String twoStr = two.toString();
+          for (int i = 0; i < allOneMatches.size(); i++) {
+            if (!allOneMatches.get(i).equals(allTwoMatches.get(i))) {
+              return one.toString().compareToIgnoreCase(two.toString());
+            }
+            oneStr = oneStr.replace(allOneMatches.get(i), "");
+            twoStr = twoStr.replace(allTwoMatches.get(i), "");
+          }
+
+          return Integer.compare(Integer.valueOf(oneStr), Integer.valueOf(twoStr));
+        }
+
+        return one.toString().compareToIgnoreCase(two.toString());
+      }
+    });
+    for (Contests contest : contests) {
+      System.out.println(contest + ",");
     }
   }
 }

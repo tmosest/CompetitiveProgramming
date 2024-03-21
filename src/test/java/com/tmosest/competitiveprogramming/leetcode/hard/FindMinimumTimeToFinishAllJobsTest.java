@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("hard")
-@Tag("greedy")
+@Tag("depthFirstSearch")
 @Tag("wc223")
 @DisplayName("LeetCode: 1723. Find Minimum Time to Finish All Jobs")
 class FindMinimumTimeToFinishAllJobsTest {

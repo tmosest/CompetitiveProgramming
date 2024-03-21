@@ -48,7 +48,7 @@ public class LeetCodeGenerator {
     JavaFileMethod javaFileMethod = JavaFileMethod.fromString(functionDeclaration);
     javaFileBuilder.create(LeetCodeGenerator.class, fileName, javaFileMethod);
     List<String> tags = new ArrayList<>(Arrays.asList(
-        "Tag",
+      "Tag",
         "Tag",
         "DisplayName"
     ));
@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1723. Find Minimum Time to Finish All Jobs";
-    String functionDeclaration = "public int minimumTimeRequired(int[] jobs, int k)";
-    String difficulty = Difficulty.hard.name();
+    String name = "206. Reverse Linked List";
+    String functionDeclaration = "public ListNode reverseList(ListNode head)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.greedy.name()
+        Types.list.name()
     );
-    String contest = Contests.wc223.name();
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

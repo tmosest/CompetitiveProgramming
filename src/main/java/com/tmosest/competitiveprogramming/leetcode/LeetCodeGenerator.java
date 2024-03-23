@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3019. Number of Changing Keys";
-    String functionDeclaration = "public int countKeyChanges(String s)";
-    String difficulty = Difficulty.easy.name();
+    String name = "3021. Alice and Bob Playing Flower Game";
+    String functionDeclaration = "public long flowerGame(int n, int m)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.gameTheory.name()
     );
     String contest = Contests.wc382.name();
 

@@ -1,9 +1,12 @@
-# Floyd–Warshall Algorithm
+# Floyd–Warshall Algorithm:
 
 This algorithm finds shortest paths in a directed weighted graph with positive and negative edge weights.
 
-## Comparison to Common Graph Algorithms
+## Comparison to Common Graph Algorithms:
 ![Floyd-Warshall Init](../../images/graphs/dijkstra,%20bellman-ford,%20and%20floyd-warshall.png)
+
+## History:
+The Floyd–Warshall algorithm is an example of dynamic programming, and was published in its currently recognized form by Robert Floyd in 1962. However, it is essentially the same as algorithms previously published by Bernard Roy in 1959 and also by Stephen Warshall in 1962 for finding the transitive closure of a graph, and is closely related to Kleene's algorithm (published in 1956) for converting a deterministic finite automaton into a regular expression. The modern formulation of the algorithm as three nested for-loops was first described by Peter Ingerman, also in 1962.
 
 ## Sudo Code:
 ```
@@ -34,17 +37,17 @@ for k from 1 to V
 
 The result is the shortest path between all nodes in the graph.
 
-## Complexity
+## Complexity:
 This algorithm has a time complexity of `O(V^3)` where `V` is the number of vertices because we have the inner triple `for` loop.
 
 This algorithm also has a space complexity of O(V^2) since we have to create a matrix for the distances. This is a V x V matrix.
 
-## Examples
+## Examples:
 * [From LeetCode WC 381: #3015 Count Number of Houses](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-i/description/)
 
 ## Notes:
 It should be rare to have someone ask you to code this by hand given the complexity of it.
 
-## References
+## References:
 - [Wikipedia](https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm)
 - [Youtube in 4 Minutes](https://www.youtube.com/watch?v=4OQeCuLYj-4)

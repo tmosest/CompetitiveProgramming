@@ -22,7 +22,7 @@ class CountTheNumberOfHousesAtCertainDistanceOneTest {
     }
 
     private void test(int[] output, int n, int x, int y) {
-        Assertions.assertEquals(output, countTheNumberOfHousesAtCertainDistanceOne.countOfPairs(n, x, y));
+        Assertions.assertArrayEquals(output, countTheNumberOfHousesAtCertainDistanceOne.countOfPairs(n, x, y));
     }
 
     @Test

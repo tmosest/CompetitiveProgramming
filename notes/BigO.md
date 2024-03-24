@@ -12,6 +12,21 @@ Here is a list of common complixities in order of growing maginitude with an exa
 * Exponential O(c^N): programs that need to create multiple stack calls per input size. E.G. Simple fibbonacci function that is needs to make 2 recursive calls for each element to calculate the N element.
 * Factorial O(N!): these algorithms generally consisist of generating all permutations of a set or partitions.  
 
+## Big Omega & Big Theta:
+
+## Constant Time O(1):
+
+## Logarithmic O(log(N)):
+
+## Linear O(N):
+
+## Lineararithmic O(N log(N)):
+
+## Quadratic O(N^2):
+
+## Exponential O(c^N):
+
+## Factorial O(N!):
 
 ## TODO
 - Make a flash card game for people to play and learn more about complexity.

@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3000. Maximum Area of Longest Diagonal Rectangle";
-    String functionDeclaration = "public int areaOfMaxDiagonal(int[][] dimensions)";
-    String difficulty = Difficulty.easy.name();
+    String name = "3001. Minimum Moves to Capture The Queen";
+    String functionDeclaration = "public int minMovesToCaptureTheQueen(int a, int b, int c, int d, int e, int f)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.rectangle.name()
+        Types.chess.name()
     );
-    String contest = Contests.wc380.name();
+    String contest = Contests.wc379.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -49,6 +49,7 @@ public class ProblemType {
     binarySearchTree,
     binaryTree,
     breadthFirstSearch,
+    chess,
     depthFirstSearch,
     design,
     distance,

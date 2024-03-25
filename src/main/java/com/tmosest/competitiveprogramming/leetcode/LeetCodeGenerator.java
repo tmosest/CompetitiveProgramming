@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3005. Count Elements With Maximum Frequency";
-    String functionDeclaration = "public int maxFrequencyElements(int[] nums)";
-    String difficulty = Difficulty.easy.name();
+    String name = "3006. Find Beautiful Indices in the Given Array I";
+    String functionDeclaration = "public List<Integer> beautifulIndices(String s, String a, String b, int k)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.list.name()
     );
     String contest = Contests.wc380.name();
 

@@ -5,9 +5,6 @@ import java.util.List;
 
 class FindBeautifulIndicesInTheGivenArrayOne {
 	/**
-	 * https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/
-	 * 
-	 * KMP
 	 * 
 	 * @param s
 	 * @param a

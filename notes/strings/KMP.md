@@ -81,6 +81,9 @@ Here are the two algorithms side-by-side.
 
 ![KMP & LPS](../../images/strings/KMP-LPS-Python-Both.png)
 
+## Examples
+- [LeetCode: 3006. Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/)
+
 ## References
 - [Wikipedia](https://en.wikipedia.org/wiki/Knuth–Morris–Pratt_algorithm)
 - [YouTube Visualization](https://www.youtube.com/watch?v=pu2aO_3R118)

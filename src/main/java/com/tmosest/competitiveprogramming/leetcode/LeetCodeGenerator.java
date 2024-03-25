@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3001. Minimum Moves to Capture The Queen";
-    String functionDeclaration = "public int minMovesToCaptureTheQueen(int a, int b, int c, int d, int e, int f)";
-    String difficulty = Difficulty.medium.name();
+    String name = "3003. Maximize the Number of Partitions After Operations";
+    String functionDeclaration = "public int maxPartitionsAfterOperations(String s, int k)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.chess.name()
+        Types.string.name()
     );
     String contest = Contests.wc379.name();
 

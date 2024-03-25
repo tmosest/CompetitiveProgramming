@@ -48,6 +48,7 @@ public class ProblemType {
     binarySearch,
     binarySearchTree,
     binaryTree,
+    bitmask,
     breadthFirstSearch,
     chess,
     depthFirstSearch,

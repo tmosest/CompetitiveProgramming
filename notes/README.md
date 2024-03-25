@@ -6,3 +6,4 @@ These are notes about Data Structures and Algorithms.
 
 - [Big O notation](BigO.md)
 - [Graph Algorithms](graphs/README.md)
+- [Strings](strings/README.md)

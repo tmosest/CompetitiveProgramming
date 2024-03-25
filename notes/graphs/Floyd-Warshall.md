@@ -23,6 +23,8 @@ for k from 1 to V
                 dist[i][j] <- dist[i][k] + dist[k][j]
 ```
 
+## Explanation
+
 1. In the first `for` loop we set the distance from each loop to itself as zero.
 ![Floyd-Warshall Init](../../images/graphs/floyd-warshall-init.png)
 

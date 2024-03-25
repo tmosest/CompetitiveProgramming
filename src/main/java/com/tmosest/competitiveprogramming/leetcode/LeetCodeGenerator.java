@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3006. Find Beautiful Indices in the Given Array I";
-    String functionDeclaration = "public List<Integer> beautifulIndices(String s, String a, String b, int k)";
-    String difficulty = Difficulty.medium.name();
+    String name = "3000. Maximum Area of Longest Diagonal Rectangle";
+    String functionDeclaration = "public int areaOfMaxDiagonal(int[][] dimensions)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.list.name()
+        Types.rectangle.name()
     );
     String contest = Contests.wc380.name();
 

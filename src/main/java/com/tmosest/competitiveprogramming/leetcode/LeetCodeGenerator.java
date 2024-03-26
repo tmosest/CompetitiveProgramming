@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3003. Maximize the Number of Partitions After Operations";
-    String functionDeclaration = "public int maxPartitionsAfterOperations(String s, int k)";
+    String name = "2983. Palindrome Rearrangement Queries";
+    String functionDeclaration = "public boolean[] canMakePalindromeQueries(String s, int[][] queries)";
     String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
         Types.string.name()
     );
-    String contest = Contests.wc379.name();
+    String contest = Contests.wc378.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

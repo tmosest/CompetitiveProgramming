@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 @Tag("medium")
 @Tag("array")
 @Tag("array")
-@Tag("floydWarshalStandard")
+@Tag("floydWarshal")
 @Tag("wc381")
 @DisplayName("LeetCode: 3015. Count the Number of Houses at a Certain Distance I")
 class CountTheNumberOfHousesAtCertainDistanceOneTest {

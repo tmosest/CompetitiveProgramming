@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2976. Minimum Cost to Convert String I";
-    String functionDeclaration = "public long minimumCost(String source, String target, char[] original, char[] changed, int[] cost)";
-    String difficulty = Difficulty.medium.name();
+    String name = "992. Subarrays with K Different Integers";
+    String functionDeclaration = "public int subarraysWithKDistinct(int[] nums, int k)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
-    String contest = Contests.wc377.name();
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

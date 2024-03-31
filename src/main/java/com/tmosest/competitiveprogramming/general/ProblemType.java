@@ -73,7 +73,8 @@ public class ProblemType {
     string,
     suffixArray,
     suffixTree,
-    trie
+    trie,
+    twoPointer
   }
 
   public enum Contests {

@@ -125,6 +125,7 @@ class BinarySearch {
 ```
 
 ## Examples:
+- [LeetCode: 2968. Apply Operations to Maximize Frequency Score](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/description/)
 - [LeetCode: 3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K (med)](https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/description/)
 - [LeetCode: 3008. Find Beautiful Indices in the Given Array II (hard)](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/description/)
 

@@ -67,6 +67,7 @@ public class ProblemType {
     number,
     palindrome,
     point,
+    priorityQueue,
     rectangle,
     regex,
     sort,
@@ -159,6 +160,7 @@ public class ProblemType {
     wc387,
     wc388,
     wc389,
+    wc390,
     wcx
   }
 

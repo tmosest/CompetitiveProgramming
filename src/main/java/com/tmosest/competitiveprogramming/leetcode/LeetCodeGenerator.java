@@ -82,11 +82,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2444. Count Subarrays With Fixed Bounds";
-    String functionDeclaration = "public long countSubarrays(int[] nums, int minK, int maxK)";
-    String difficulty = Difficulty.hard.name();
+    String name = "58. Length of Last Word";
+    String functionDeclaration = "public int lengthOfLastWord(String s)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.string.name()
     );
     String contest = Contests.wcx.name();
 

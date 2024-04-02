@@ -41,6 +41,12 @@ Somthing similar happens when we add a new server. We will now need to reassign 
 
 In general we need to reassign `k/n` keys where `k` is the number of keys and `n` is the number of servers.
 
+## Back to Load Balancing
+
+To get load balancing working again we can now use consistent caching to do heartbeats and then store that data in the a database. 
+
+We can then also use consistent hashing to send the data to the correct server within the load balancer.
+
 ## References 
 
 - [Toptal](https://www.toptal.com/big-data/consistent-hashing)

@@ -7,6 +7,7 @@ This contains notes about System Design from various places.
 - [Introduction to Distributed Sytems with Pizza Shop](./Distributed-Systems.md)
 - [Load Balancing / Consistent Hashing](./LoadBalancing.md)
 - [Message Queue](./MessageQueue.md)
+- [Microservices vs Monolith](./MicroserviceArchitecture.md)
 
 ## References
 * [Gauran Sen: System Design Basics](https://www.youtube.com/@gkcs)

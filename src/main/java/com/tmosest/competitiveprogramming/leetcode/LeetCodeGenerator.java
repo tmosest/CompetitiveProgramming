@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3093. Longest Common Suffix Queries";
-    String functionDeclaration = "public int[] stringIndices(String[] wordsContainer, String[] wordsQuery)";
+    String name = "3102. Minimize Manhattan Distances";
+    String functionDeclaration = "public int minimumDistance(int[][] points)";
     String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.matrix.name()
     );
-    String contest = Contests.wc390.name();
+    String contest = Contests.wc391.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2954. Count the Number of Infection Sequences";
-    String functionDeclaration = "public int numberOfSequence(int n, int[] sick)";
-    String difficulty = Difficulty.hard.name();
+    String name = "79. Word Search";
+    String functionDeclaration = "public boolean exist(char[][] board, String word)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.matrix.name()
     );
-    String contest = Contests.wc374.name();
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

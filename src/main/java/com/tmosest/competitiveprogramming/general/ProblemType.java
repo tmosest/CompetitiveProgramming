@@ -76,7 +76,8 @@ public class ProblemType {
     suffixArray,
     suffixTree,
     trie,
-    twoPointer
+    twoPointer,
+    unionFind
   }
 
   public enum Contests {
@@ -146,6 +147,7 @@ public class ProblemType {
     wc300,
     wc301,
     wc302,
+    wc373,
     wc374,
     wc375,
     wc376,

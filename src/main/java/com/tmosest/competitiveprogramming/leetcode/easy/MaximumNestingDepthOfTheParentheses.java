@@ -3,20 +3,29 @@ package com.tmosest.competitiveprogramming.leetcode.easy;
 import java.util.Stack;
 
 class MaximumNestingDepthOfTheParentheses {
-
-  int maxDepth(String str) {
-    Stack<Character> openingBrackets = new Stack<>();
-    int maxSize = 0;
+  /**
+   * https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/
+   * 
+   * @param str
+   * @return
+   */
+  public int maxDepth(String str) {
+    int max = 0;
+    int openings = 0;
 
     for (char letter : str.toCharArray()) {
-      if ('(' == letter) {
-        openingBrackets.push(letter);
-        maxSize = Math.max(maxSize, openingBrackets.size());
-      } else if (')' == letter) {
-        openingBrackets.pop();
+      if (letter == '(') {
+        openings++;
+        max = Math.max(max, openings);
+        continue;
+      }
+
+      if (letter == ')') {
+        --openings;
+        continue;
       }
     }
 
-    return maxSize;
+    return max;
   }
 }

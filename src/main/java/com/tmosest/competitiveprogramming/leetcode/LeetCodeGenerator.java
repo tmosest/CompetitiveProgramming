@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2935. Maximum Strong Pair XOR II";
-    String functionDeclaration = "public int maximumStrongPairXor(int[] nums)";
+    String name = "2926. Maximum Balanced Subsequence Sum";
+    String functionDeclaration = "public long maxBalancedSubsequenceSum(int[] nums)";
     String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.wc371.name();
+    String contest = Contests.wc370.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

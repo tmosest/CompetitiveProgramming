@@ -163,6 +163,7 @@ public class Trie {
 ```
 
 ## Examples
+- [LeetCode: 2935. Maximum Strong Pair XOR II (hard)](https://leetcode.com/problems/maximum-strong-pair-xor-ii/description/)
 - [Leetcode: 3093. Longest Common Suffix Queries (hard)](https://leetcode.com/problems/longest-common-suffix-queries/description/)
 
 ## References

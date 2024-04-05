@@ -9,5 +9,7 @@ This contains notes about System Design from various places.
 - [Message Queue](./MessageQueue.md)
 - [Microservices vs Monolith](./MicroserviceArchitecture.md)
 
+- [Tinder System Design](./Tinder.md)
+
 ## References
 * [Gauran Sen: System Design Basics](https://www.youtube.com/@gkcs)

@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2926. Maximum Balanced Subsequence Sum";
-    String functionDeclaration = "public long maxBalancedSubsequenceSum(int[] nums)";
-    String difficulty = Difficulty.hard.name();
+    String name = "1249. Minimum Remove to Make Valid Parentheses";
+    String functionDeclaration = "public String minRemoveToMakeValid(String s)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.string.name()
     );
-    String contest = Contests.wc370.name();
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

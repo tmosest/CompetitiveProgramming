@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1249. Minimum Remove to Make Valid Parentheses";
-    String functionDeclaration = "public String minRemoveToMakeValid(String s)";
-    String difficulty = Difficulty.medium.name();
+    String name = "2920. Maximum Points After Collecting Coins From All Nodes";
+    String functionDeclaration = "public int maximumPoints(int[][] edges, int[] coins, int k)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.graph.name()
     );
-    String contest = Contests.wcx.name();
+    String contest = Contests.wc369.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

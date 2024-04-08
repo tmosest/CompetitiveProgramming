@@ -82,13 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3108. Minimum Cost Walk in Weighted Graph";
-    String functionDeclaration = "public int[] minimumCost(int n, int[][] edges, int[][] query)";
-    String difficulty = Difficulty.hard.name();
+    String name = "1700. Number of Students Unable to Eat Lunch";
+    String functionDeclaration = "public int countStudents(int[] students, int[] sandwiches)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.directedGraph.name()
     );
-    String contest = Contests.wc392.name();
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

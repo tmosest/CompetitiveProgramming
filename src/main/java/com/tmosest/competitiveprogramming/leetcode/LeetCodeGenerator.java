@@ -32,31 +32,29 @@ public class LeetCodeGenerator {
   /**
    * Function to create new code for leet code problems.
    *
-   * @param numberName The title of the question in the format (#. Title).
+   * @param numberName          The title of the question in the format (#.
+   *                            Title).
    * @param functionDeclaration The function declaration.
-   * @param difficulty The difficulty of the question.
+   * @param difficulty          The difficulty of the question.
    */
   public void createNewProblem(
       String numberName,
       String functionDeclaration,
       String difficulty,
       List<String> types,
-      String contest
-  ) {
+      String contest) {
     String[] names = instance().formatIntoNumberAndName(numberName);
     String fileName = ClassNameUtil.instance().convertToClassName(names[1].trim());
     JavaFileMethod javaFileMethod = JavaFileMethod.fromString(functionDeclaration);
     javaFileBuilder.create(LeetCodeGenerator.class, fileName, javaFileMethod);
     List<String> tags = new ArrayList<>(Arrays.asList(
-      "Tag",
         "Tag",
-        "DisplayName"
-    ));
+        "Tag",
+        "DisplayName"));
     List<String> vals = new ArrayList<>(Arrays.asList(
         "leetcode",
         difficulty,
-        "LeetCode: " + numberName.replace("\n", "")
-    ));
+        "LeetCode: " + numberName.replace("\n", "")));
     if (types != null) {
       for (String type : types) {
         tags.add(2, "Tag");
@@ -82,13 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1700. Number of Students Unable to Eat Lunch";
-    String functionDeclaration = "public int countStudents(int[] students, int[] sandwiches)";
-    String difficulty = Difficulty.easy.name();
+    String name = "2906. Construct Product Matrix";
+    String functionDeclaration = "public int[][] constructProductMatrix(int[][] grid)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.directedGraph.name()
-    );
-    String contest = Contests.wcx.name();
+        Types.matrix.name());
+    String contest = Contests.wc367.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

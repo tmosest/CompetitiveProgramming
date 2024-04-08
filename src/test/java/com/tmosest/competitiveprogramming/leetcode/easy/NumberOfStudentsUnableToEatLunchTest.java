@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
-@Tag("directedGraph")
+@Tag("array")
 @Tag("wcx")
 @DisplayName("LeetCode: 1700. Number of Students Unable to Eat Lunch")
 class NumberOfStudentsUnableToEatLunchTest {

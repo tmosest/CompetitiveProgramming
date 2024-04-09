@@ -16,6 +16,8 @@ We can either store this as a `File` or as a `Blob`
 3. Note Matches - 10 ^ -3 per Number of Active Users.
 4. Direct Messaging
 
+We make a call to a Gateway Service that will delegate calls to other services. We can use the Profile Service to determine if someone should be logged in or now. It would be better to break this into another service latter. It would also be best to store the images in another service to future proof any issues there. We could run them through a machine learning algorithm later for example.
+
 ## Exponent Example
 
 Exponent Example

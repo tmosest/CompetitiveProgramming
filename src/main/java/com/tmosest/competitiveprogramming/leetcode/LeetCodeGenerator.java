@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2867. Count Valid Paths in a Tree";
-    String functionDeclaration = "public long countPaths(int n, int[][] edges)";
-    String difficulty = Difficulty.hard.name();
+    String name = "402. Remove K Digits";
+    String functionDeclaration = "public String removeKdigits(String num, int k)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.tree.name()
+        Types.array.name()
     );
-    String contest = Contests.wc364.name();
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

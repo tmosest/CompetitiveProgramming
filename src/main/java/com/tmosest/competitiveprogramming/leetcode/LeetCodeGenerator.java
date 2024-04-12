@@ -80,13 +80,16 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2862. Maximum Element-Sum of a Complete Subset of Indices";
-    String functionDeclaration = "public long maximumSum(List<Integer> nums)";
+    String name = "2851. String Transformation";
+    String functionDeclaration = "public int numberOfWays(String s, String t, long k)";
     String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.dynamic.name(),
+        Types.math.name(),
+        Types.string.name(),
+        Types.stringMatching.name()
     );
-    String contest = Contests.wc363.name();
+    String contest = Contests.wc362.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

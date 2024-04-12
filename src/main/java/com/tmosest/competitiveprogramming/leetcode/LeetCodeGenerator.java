@@ -80,9 +80,9 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "402. Remove K Digits";
-    String functionDeclaration = "public String removeKdigits(String num, int k)";
-    String difficulty = Difficulty.medium.name();
+    String name = "42. Trapping Rain Water";
+    String functionDeclaration = "public int trap(int[] height)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );

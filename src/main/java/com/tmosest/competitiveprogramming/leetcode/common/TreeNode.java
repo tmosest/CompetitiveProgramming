@@ -1,5 +1,8 @@
 package com.tmosest.competitiveprogramming.leetcode.common;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TreeNode {
 
   public int val;
@@ -23,5 +26,27 @@ public class TreeNode {
     return TreeNodeAdapter
         .convertToUtility(this)
         .equals(TreeNodeAdapter.convertToUtility(root));
+  }
+
+  public static TreeNode fromString(String str) {
+    String[] array = str.replace("[", "").replace("]", "").split(",");
+    
+    List<TreeNode> nodes = new ArrayList<>();
+
+    for (String local : array) {
+      nodes.add(new TreeNode(Integer.parseInt(local.trim())));
+    }
+
+    for (int i = 0; i < nodes.size(); i++) {
+      TreeNode node = nodes.get(i);
+      if (i * 2 + 1 < nodes.size()) {
+        node.left = nodes.get(i * 2 + 1);
+      }
+      if (i * 2 + 2 < nodes.size()) {
+        node.right = nodes.get(i * 2 + 2);
+      }
+    }
+
+    return nodes.get(0);
   }
 }

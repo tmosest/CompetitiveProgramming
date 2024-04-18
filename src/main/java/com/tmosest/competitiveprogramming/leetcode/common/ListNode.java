@@ -13,6 +13,11 @@ public class ListNode {
     this.val = val;
   }
 
+  public ListNode(int val, ListNode next) {
+    this.val = val;
+    this.next = next;
+  }
+
   /**
    * Not an inherient method of the leetcode data model.
    *

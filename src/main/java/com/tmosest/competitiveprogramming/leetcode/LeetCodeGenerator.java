@@ -80,13 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "129. Sum Root to Leaf Numbers";
-    String functionDeclaration = "public int sumNumbers(TreeNode root)";
+    String name = "2831. Find the Longest Equal Subarray";
+    String functionDeclaration = "public int longestEqualSubarray(List<Integer> nums, int k)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.tree.name()
+        Types.array.name(),
+        Types.binarySearch.name()
     );
-    String contest = Contests.wcx.name();
+    String contest = Contests.wc359.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

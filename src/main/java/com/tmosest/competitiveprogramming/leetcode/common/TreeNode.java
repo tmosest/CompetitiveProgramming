@@ -1,7 +1,9 @@
 package com.tmosest.competitiveprogramming.leetcode.common;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class TreeNode {
 
@@ -34,11 +36,18 @@ public class TreeNode {
     List<TreeNode> nodes = new ArrayList<>();
 
     for (String local : array) {
+      if (local.equals("null")) {
+        nodes.add(null);
+        continue;
+      }
       nodes.add(new TreeNode(Integer.parseInt(local.trim())));
     }
 
     for (int i = 0; i < nodes.size(); i++) {
       TreeNode node = nodes.get(i);
+      if (node == null) {
+        continue;
+      }
       if (i * 2 + 1 < nodes.size()) {
         node.left = nodes.get(i * 2 + 1);
       }
@@ -48,5 +57,46 @@ public class TreeNode {
     }
 
     return nodes.get(0);
+  }
+
+  public String toString() {
+    List<Integer> list = toList();
+    
+    StringBuilder stringBuilder = new StringBuilder();
+
+    for (Integer num : list) {
+      if (num == null) {
+        stringBuilder.append("null,");
+        continue;
+      }
+      stringBuilder.append(num);
+      stringBuilder.append(",");
+    }
+
+    if (stringBuilder.length() > 0) {
+      stringBuilder.deleteCharAt(stringBuilder.length() - 1);
+    }
+
+    return stringBuilder.toString();
+  }
+
+  public List<Integer> toList() {
+    List<Integer> list = new ArrayList<>();
+
+    Queue<TreeNode> queue = new LinkedList<>();
+    queue.add(this);
+
+    while(!queue.isEmpty()) {
+      TreeNode current = queue.poll();
+      if (current == null) {
+        list.add(null);
+        continue;
+      }
+      list.add(current.val);
+      queue.add(current.left);
+      queue.add(current.right);
+    }
+
+    return list;
   }
 }

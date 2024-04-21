@@ -80,16 +80,15 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2818. Apply Operations to Maximize Score";
-    String functionDeclaration = "public int maximumScore(List<Integer> nums, int k)";
-    String difficulty = Difficulty.hard.name();
+    String name = "2811. Check if it is Possible to Split Array";
+    String functionDeclaration = "public boolean canSplitArray(List<Integer> nums, int m)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name(),
-        Types.greedy.name(),
-        Types.math.name(),
-        Types.stack.name()
+        Types.dynamic.name(),
+        Types.greedy.name()
     );
-    String contest = Contests.wc358.name();
+    String contest = Contests.wc357.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -1,91 +1,70 @@
 package com.tmosest.competitiveprogramming.leetcode.medium;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
 class OpenTheLock {
+	/**
+	 * https://leetcode.com/problems/open-the-lock/description/?envType=daily-question&envId=2024-04-22
+	 * 
+	 * @param deadends
+	 * @param target
+	 * @return
+	 */
+	public int openLock(String[] deadends, String target) {
+		
+		Set<String> deadendSet = new HashSet<>();
+		
+		for (String deadend : deadends) {
+			deadendSet.add(deadend);
+		}
 
-  private class CombinationFactory {
+		Set<String> visited = new HashSet<>();
 
-    private Set<String> deadEnds;
+		Queue<Position> queue = new LinkedList<>();
+		queue.add(new Position("0000", 0));
 
-    private CombinationFactory(String[] deadends) {
-      deadEnds = new HashSet<>();
-      deadEnds.addAll(Arrays.asList(deadends));
-    }
+		while(!queue.isEmpty()) {
+			
+			Position pos = queue.poll();
 
-    private List<Combination> generateNextMoves(Combination combo) {
-      List<Combination> moves = new ArrayList<>();
+			visited.add(pos.lock);
 
-      if (deadEnds.contains(combo.combination)) {
-        return moves;
+			if (target.equals(pos.lock)) {
+				return pos.pos;
+			}
 
-      }
-      int len = combo.combination.length();
-      for (int i = 0; i < len; i++) {
-        int digit = (int) combo.combination.charAt(i) - '0';
-        String prefix = combo.combination.substring(0, i);
-        String up = prefix + (digit > 8 ? 0 : digit + 1);
-        String down = prefix + (digit < 1 ? 9 : digit - 1);
-        if (i < len - 1) {
-          up += combo.combination.substring(i + 1, len);
-          down += combo.combination.substring(i + 1, len);
-        }
-        if (!deadEnds.contains(up)) {
-          moves.add(new Combination(up, combo.movesAway + 1));
-        }
-        if (!deadEnds.contains(down)) {
-          moves.add(new Combination(down, combo.movesAway + 1));
-        }
-      }
+			for (int i = 0; i < pos.lock.length(); i++) {
+				int digit = pos.lock.charAt(i) - '0';
+				int digitPlus = digit == 9 ? 0 : digit + 1;
+				int digitMinus = digit == 0 ? 9 : digit - 1;
+				
+				StringBuilder stringBuilder = new StringBuilder(pos.lock);
+				stringBuilder.setCharAt(i, (char) (digitPlus + '0'));
 
-      return moves;
-    }
-  }
+				if (!deadendSet.contains(stringBuilder.toString()) && !visited.contains(stringBuilder.toString())) {
+					queue.add(new Position(stringBuilder.toString(), pos.pos + 1));
+				}
 
-  private class Combination {
-    String combination;
-    int movesAway;
+				stringBuilder.setCharAt(i, (char) (digitMinus + '0'));
+				if (!deadendSet.contains(stringBuilder.toString()) && !visited.contains(stringBuilder.toString())) {
+					queue.add(new Position(stringBuilder.toString(), pos.pos + 1));
+				}
+			}
+		}
 
-    private Combination(String combination, int movesAway) {
-      this.combination = combination;
-      this.movesAway = movesAway;
-    }
-  }
+		return -1;
+	}
+	
+	private static class Position {
+		String lock;
+		int pos;
 
-  /**
-   * Determine if we can open the lock.
-   *
-   * @param deadends The dead-end combinations.
-   * @param target The target code.
-   * @return The minimum number of moves needed or -1.
-   */
-  int openLock(String[] deadends, String target) {
-    Set<String> visited = new HashSet<>();
-    CombinationFactory combinationFactory = new CombinationFactory(deadends);
-    Queue<Combination> queue = new LinkedList<>();
-    queue.add(new Combination("0000", 0));
-    while (!queue.isEmpty()) {
-      Combination combination = queue.poll();
-
-      if (combination.combination.equals(target)) {
-        return combination.movesAway;
-      }
-
-      if (visited.contains(combination.combination)) {
-        continue;
-      }
-
-      visited.add(combination.combination);
-
-      List<Combination> moves = combinationFactory.generateNextMoves(combination);
-      queue.addAll(moves);
-    }
-    return -1;
-  }
+		public Position(String lock, int pos) {
+			this.lock = lock;
+			this.pos = pos;
+		}
+	}
 }

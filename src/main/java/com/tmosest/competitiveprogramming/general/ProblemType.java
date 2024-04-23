@@ -195,6 +195,7 @@ public class ProblemType {
     wc390,
     wc391,
     wc392,
+    wc393,
     wcx
   }
 

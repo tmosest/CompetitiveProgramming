@@ -80,16 +80,17 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "310. Minimum Height Trees";
-    String functionDeclaration = "public List<Integer> findMinHeightTrees(int n, int[][] edges)";
-    String difficulty = Difficulty.medium.name();
+    String name = "3123. Find Edges in Shortest Paths";
+    String functionDeclaration = "public boolean[] findAnswer(int n, int[][] edges)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
         Types.breadthFirstSearch.name(),
         Types.depthFirstSearch.name(),
         Types.graph.name(),
-        Types.topologicalSort.name()
+        Types.priorityQueue.name(),
+        Types.shortestPath.name()
     );
-    String contest = Contests.wcx.name();
+    String contest = Contests.wc394.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -53,6 +53,7 @@ public class ProblemType {
     chess,
     depthFirstSearch,
     design,
+    dijkstra,
     directedGraph,
     distance,
     distanceChebyshev,
@@ -77,6 +78,7 @@ public class ProblemType {
     regex,
     slidingWindow,
     set,
+    shortestPath,
     sort,
     stack,
     string,
@@ -197,6 +199,7 @@ public class ProblemType {
     wc391,
     wc392,
     wc393,
+    wc394,
     wcx
   }
 

@@ -80,15 +80,16 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3115. Maximum Prime Difference";
-    String functionDeclaration = "public int maximumPrimeDifference(int[] nums)";
+    String name = "310. Minimum Height Trees";
+    String functionDeclaration = "public List<Integer> findMinHeightTrees(int n, int[][] edges)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.math.name(),
-        Types.primes.name()
+        Types.breadthFirstSearch.name(),
+        Types.depthFirstSearch.name(),
+        Types.graph.name(),
+        Types.topologicalSort.name()
     );
-    String contest = Contests.wc393.name();
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -87,6 +87,7 @@ public class ProblemType {
     tree,
     treeMap,
     trie,
+    topologicalSort,
     twoPointer,
     unionFind
   }

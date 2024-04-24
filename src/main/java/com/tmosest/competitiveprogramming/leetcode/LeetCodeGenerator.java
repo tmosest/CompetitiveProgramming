@@ -80,17 +80,16 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3123. Find Edges in Shortest Paths";
-    String functionDeclaration = "public boolean[] findAnswer(int n, int[][] edges)";
+    String name = "2791. Count Paths That Can Form a Palindrome in a Tree";
+    String functionDeclaration = "public long countPalindromePaths(List<Integer> parent, String s)";
     String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.breadthFirstSearch.name(),
-        Types.depthFirstSearch.name(),
-        Types.graph.name(),
-        Types.priorityQueue.name(),
-        Types.shortestPath.name()
+        Types.dynamic.name(),
+        Types.bitmask.name(),
+        Types.tree.name(),
+        Types.depthFirstSearch.name()
     );
-    String contest = Contests.wc394.name();
+    String contest = Contests.wc355.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

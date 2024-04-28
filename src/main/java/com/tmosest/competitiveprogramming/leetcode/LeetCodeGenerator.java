@@ -82,13 +82,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3134. Find the Median of the Uniqueness Array";
-    String functionDeclaration = "public int medianOfUniquenessArray(int[] nums)";
+    String name = "2763. Sum of Imbalance Numbers of All Subarrays";
+    String functionDeclaration = "public int sumImbalanceNumbers(int[] nums)";
     String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.array.name(),
+        Types.orderedSet.name()
     );
-    String contest = Contests.wc395.name();
+    String contest = Contests.wc352.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -80,16 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2781. Length of the Longest Valid Substring";
-    String functionDeclaration = "public int longestValidSubstring(String word, List<String> forbidden)";
-    String difficulty = Difficulty.hard.name();
+    String name = "2772. Apply Operations to Make All Array Elements Equal to Zero";
+    String functionDeclaration = "public boolean checkArray(int[] nums, int k)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
         Types.array.name(),
-        Types.string.name(),
-        Types.set.name(),
-        Types.sort.name()
+        Types.prefix.name()
     );
-    String contest = Contests.wc354.name();
+    String contest = Contests.wc353.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

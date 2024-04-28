@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.sound.sampled.AudioFileFormat.Type;
+
 public class LeetCodeGenerator {
 
   private static LeetCodeGenerator instance = new LeetCodeGenerator();
@@ -80,14 +82,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2772. Apply Operations to Make All Array Elements Equal to Zero";
-    String functionDeclaration = "public boolean checkArray(int[] nums, int k)";
-    String difficulty = Difficulty.medium.name();
+    String name = "3134. Find the Median of the Uniqueness Array";
+    String functionDeclaration = "public int medianOfUniquenessArray(int[] nums)";
+    String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.prefix.name()
+        Types.array.name()
     );
-    String contest = Contests.wc353.name();
+    String contest = Contests.wc395.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -109,6 +109,7 @@ public class ProblemType {
     bwc40,
     bwc41,
     bwc126,
+    bwc129,
     codeJam2022,
     wc170,
     wc171,
@@ -203,6 +204,7 @@ public class ProblemType {
     wc392,
     wc393,
     wc394,
+    wc395,
     wcx
   }
 

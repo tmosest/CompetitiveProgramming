@@ -163,6 +163,8 @@ public class ProblemType {
     wc300,
     wc301,
     wc302,
+    wc350,
+    wc351,
     wc352,
     wc353,
     wc354,

@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.sound.sampled.AudioFileFormat.Type;
 
 public class LeetCodeGenerator {
 
@@ -82,14 +81,15 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2763. Sum of Imbalance Numbers of All Subarrays";
-    String functionDeclaration = "public int sumImbalanceNumbers(int[] nums)";
+    String name = "2751. Robot Collisions";
+    String functionDeclaration = "public List<Integer> survivedRobotsHealths(int[] positions, int[] healths, String directions)";
     String difficulty = Difficulty.hard.name();
     List<String> types = Arrays.asList(
         Types.array.name(),
-        Types.orderedSet.name()
+        Types.dynamic.name(),
+        Types.math.name()
     );
-    String contest = Contests.wc352.name();
+    String contest = Contests.wc351.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

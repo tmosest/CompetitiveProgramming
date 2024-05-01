@@ -77,6 +77,7 @@ public class ProblemType {
     primes,
     rectangle,
     regex,
+    simulation,
     slidingWindow,
     set,
     shortestPath,

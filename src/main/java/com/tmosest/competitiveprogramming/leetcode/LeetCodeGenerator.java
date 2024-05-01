@@ -81,15 +81,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2751. Robot Collisions";
-    String functionDeclaration = "public List<Integer> survivedRobotsHealths(int[] positions, int[] healths, String directions)";
-    String difficulty = Difficulty.hard.name();
+    String name = "720. Longest Word in Dictionary";
+    String functionDeclaration = "public String longestWord(String[] words)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.dynamic.name(),
-        Types.math.name()
+        Types.string.name(),
+        Types.trie.name()
     );
-    String contest = Contests.wc351.name();
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

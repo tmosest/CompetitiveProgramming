@@ -81,12 +81,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "720. Longest Word in Dictionary";
-    String functionDeclaration = "public String longestWord(String[] words)";
+    String name = "2429. Minimize XOR";
+    String functionDeclaration = "public int minimizeXor(int num1, int num2)";
     String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name(),
-        Types.trie.name()
+        Types.xor.name()
     );
     String contest = Contests.wcx.name();
 

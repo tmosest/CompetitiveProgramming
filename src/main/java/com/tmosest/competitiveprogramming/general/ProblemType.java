@@ -93,7 +93,8 @@ public class ProblemType {
     trie,
     topologicalSort,
     twoPointer,
-    unionFind
+    unionFind,
+    xor
   }
 
   public enum Contests {

@@ -81,13 +81,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "896. Monotonic Array";
-    String functionDeclaration = "public boolean isMonotonic(int[] nums)";
+    String name = "905. Sort Array By Parity";
+    String functionDeclaration = "public int[] sortArrayByParity(int[] nums)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.array.name()
     );
-    String contest = Contests.wc100.name();
+    String contest = Contests.wc102.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

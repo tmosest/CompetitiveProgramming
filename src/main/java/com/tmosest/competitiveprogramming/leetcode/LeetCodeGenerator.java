@@ -81,13 +81,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2429. Minimize XOR";
-    String functionDeclaration = "public int minimizeXor(int num1, int num2)";
-    String difficulty = Difficulty.medium.name();
+    String name = "896. Monotonic Array";
+    String functionDeclaration = "public boolean isMonotonic(int[] nums)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.xor.name()
+        Types.array.name()
     );
-    String contest = Contests.wcx.name();
+    String contest = Contests.wc100.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

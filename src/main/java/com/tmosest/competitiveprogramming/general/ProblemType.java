@@ -116,6 +116,7 @@ public class ProblemType {
     codeJam2022,
     wc100,
     wc102,
+    wc104,
     wc170,
     wc171,
     wc172,

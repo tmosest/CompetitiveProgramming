@@ -81,13 +81,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "905. Sort Array By Parity";
-    String functionDeclaration = "public int[] sortArrayByParity(int[] nums)";
+    String name = "914. X of a Kind in a Deck of CardsI";
+    String functionDeclaration = "public boolean hasGroupsSizeX(int[] deck)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.array.name(),
+        Types.map.name()
     );
-    String contest = Contests.wc102.name();
+    String contest = Contests.wc104.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

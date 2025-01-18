@@ -1,37 +1,38 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
 class ReverseOnlyLetters {
-  /* Write code here. */
+	/**
+	 * Given a string s, reverse the string according to the following rules:
+	 *
+	 *	All the characters that are not English letters remain in the same position.
+	 *	All the English letters (lowercase or uppercase) should be reversed.
+	 *	Return s after reversing it.
+	 *
+	 * @param s string
+	 * @return reversed string
+	 */
+	public String reverseOnlyLetters(String s) {
+		
+		StringBuilder reverseCharacters = new StringBuilder();
 
-  /**
-   * Reverse only the letters in a string.
-   *
-   * @param str The string to reverse.
-   * @return A reversed string.
-   */
-  public String reverseOnlyLetters(String str) {
-    char[] strArray = str.toCharArray();
+		for (char letter : s.toCharArray()) {
+			if (Character.isAlphabetic(letter))
+				reverseCharacters.append(letter);
+		}
 
-    int left = 0;
-    int right = strArray.length - 1;
+		reverseCharacters.reverse();
 
-    while (left < right) {
-      while (left < right && !Character.isLetter(strArray[left])) {
-        left++;
-      }
-      while (right > left && !Character.isLetter(strArray[right])) {
-        right--;
-      }
-      char temp = strArray[left];
-      strArray[left] = strArray[right];
-      strArray[right] = temp;
+		StringBuilder res = new StringBuilder();
 
-      left++;
-      right--;
-    }
+		int r = 0;
+		for (char letter : s.toCharArray()) {
+			if (Character.isAlphabetic(letter)) {
+				res.append(reverseCharacters.charAt(r++));
+				continue;
+			}
+			res.append(letter);
+		}
 
-    return new String(strArray);
-  }
-
-
+		return res.toString();
+	}
 }

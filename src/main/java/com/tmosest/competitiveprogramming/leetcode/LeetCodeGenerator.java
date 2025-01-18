@@ -81,14 +81,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "914. X of a Kind in a Deck of CardsI";
-    String functionDeclaration = "public boolean hasGroupsSizeX(int[] deck)";
+    String name = "917. Reverse Only Letters";
+    String functionDeclaration = "public String reverseOnlyLetters(String s)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.map.name()
+        Types.string.name()
     );
-    String contest = Contests.wc104.name();
+    String contest = Contests.wc105.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

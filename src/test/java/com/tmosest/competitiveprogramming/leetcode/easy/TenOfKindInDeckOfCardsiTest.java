@@ -41,6 +41,6 @@ class TenOfKindInDeckOfCardsiTest {
 
     @Test
     void test3() {
-        test(true, new int[] { 1, 1, 1, 1, 2, 2, 2, 2, 2, 2 });
+        test(true, new int[] { 1, 1, 1, 1, 2, 2, 2, 2, 2, 2 }); // [1,1] x 2 , [2,2] x 3 from gcd(6,4) = 2 so each group needs to be of size 2.
     }
 }

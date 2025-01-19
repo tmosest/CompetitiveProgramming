@@ -1,6 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -8,35 +9,37 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("string")
+@Tag("wc106")
 @DisplayName("LeetCode: 925. Long Pressed Name")
 class LongPressedNameTest {
-	/* Write code here. */
+    private LongPressedName longPressedName;
 
-  LongPressedName longPressedName = new LongPressedName();
+    @BeforeEach
+    void setup() {
+        longPressedName = new LongPressedName();
+    }
 
-  @Test
-  @DisplayName("Test Case 0")
-  void testCase0() {
-    Assertions.assertTrue(longPressedName.isLongPressedName("alex", "aaleex"));
-  }
+    private void test(boolean output, String name, String typed) {
+        Assertions.assertEquals(output, longPressedName.isLongPressedName(name, typed));
+    }
 
-  @Test
-  @DisplayName("Test Case 1")
-  void testCase1() {
-    Assertions.assertFalse(longPressedName.isLongPressedName("saeed", "ssaaedd"));
-  }
+    @Test
+    void test0() {
+        test(true, "alex", "aaleex");
+    }
 
-  @Test
-  @DisplayName("Test Case 2")
-  void testCase2() {
-    Assertions.assertTrue(longPressedName.isLongPressedName("leelee", "lleeelee"));
-  }
+    @Test
+    void test1() {
+        test(false, "saeed", "ssaaedd");
+    }
 
-  @Test
-  @DisplayName("Test Case 3")
-  void testCase3() {
-    Assertions.assertTrue(longPressedName.isLongPressedName("laiden", "laiden"));
-  }
+    @Test
+    void test2() {
+        test(false, "rick", "kric");
+    }
 
-
+    @Test
+    void test4() {
+        test(false, "alex", "aaleexa");
+    }
 }

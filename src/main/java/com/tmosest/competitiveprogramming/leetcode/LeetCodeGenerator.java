@@ -81,8 +81,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "922. Sort Array By Parity II";
-    String functionDeclaration = "public int[] sortArrayByParityII(int[] nums)";
+    String name = "925. Long Pressed Name";
+    String functionDeclaration = "public boolean isLongPressedName(String name, String typed)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.string.name()

@@ -81,13 +81,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "925. Long Pressed Name";
-    String functionDeclaration = "public boolean isLongPressedName(String name, String typed)";
+    String name = "941. Valid Mountain Array";
+    String functionDeclaration = "public boolean validMountainArray(int[] arr)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.array.name()
     );
-    String contest = Contests.wc106.name();
+    String contest = Contests.wc111.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

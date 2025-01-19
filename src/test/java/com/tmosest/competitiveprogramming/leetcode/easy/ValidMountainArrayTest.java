@@ -1,6 +1,7 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -8,40 +9,37 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("array")
+@Tag("wc111")
 @DisplayName("LeetCode: 941. Valid Mountain Array")
 class ValidMountainArrayTest {
-	/* Write code here. */
+    private ValidMountainArray validMountainArray;
 
-  ValidMountainArray validMountainArray = new ValidMountainArray();
+    @BeforeEach
+    void setup() {
+        validMountainArray = new ValidMountainArray();
+    }
 
-  @Test
-  @DisplayName("Test Case 0")
-  void testCase0() {
-    int[] array = {2, 1};
-    Assertions.assertFalse(validMountainArray.validMountainArray(array));
-  }
+    private void test(boolean output, int[] arr) {
+        Assertions.assertEquals(output, validMountainArray.validMountainArray(arr));
+    }
 
-  @Test
-  @DisplayName("Test Case 1")
-  void testCase1() {
-    int[] array = {3,5,5};
-    Assertions.assertFalse(validMountainArray.validMountainArray(array));
-  }
+    @Test
+    void test0() {
+        test(false, new int[] { 2, 1 });
+    }
 
-  @Test
-  @DisplayName("Test Case 2")
-  void testCase2() {
-    int[] array = {0,3,2,1};
-    Assertions.assertTrue(validMountainArray.validMountainArray(array));
-  }
+    @Test
+    void test1() {
+        test(false, new int[] { 3, 5, 5 });
+    }
 
-  @Test
-  @DisplayName("Test Case 3")
-  void testCase3() {
-    int[] array = {14,82,89,84,79,70,70,68,67,66,63,60,58,54,44,43,32,28,26,25,22,15,13,12,10,8,7,5,4,3};
-    Assertions.assertFalse(validMountainArray.validMountainArray(array));
-  }
+    @Test
+    void test2() {
+        test(true, new int[] { 0, 3, 2, 1 });
+    }
 
-
-
+    @Test
+    void test3() {
+        test(false, new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+    }
 }

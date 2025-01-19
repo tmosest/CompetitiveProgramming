@@ -81,13 +81,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "917. Reverse Only Letters";
-    String functionDeclaration = "public String reverseOnlyLetters(String s)";
+    String name = "922. Sort Array By Parity II";
+    String functionDeclaration = "public int[] sortArrayByParityII(int[] nums)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.string.name()
     );
-    String contest = Contests.wc105.name();
+    String contest = Contests.wc106.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

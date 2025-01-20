@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
 public class LeetCodeGenerator {
 
   private static LeetCodeGenerator instance = new LeetCodeGenerator();
@@ -81,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "997. Find the Town Judge";
-    String functionDeclaration = "public int findJudge(int n, int[][] trust)";
+    String name = "1002. Find Common Characters";
+    String functionDeclaration = "public List<String> commonChars(String[] words)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.graph.name()
-    );
+        Types.array.name(),
+        Types.string.name());
     String contest = Contests.wc125.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);

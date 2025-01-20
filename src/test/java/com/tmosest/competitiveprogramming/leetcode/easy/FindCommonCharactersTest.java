@@ -1,57 +1,44 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
+
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
-@Tag("array")
 @Tag("string")
+@Tag("wc125")
+@Tag("array")
 @DisplayName("LeetCode: 1002. Find Common Characters")
 class FindCommonCharactersTest {
-	/* Write code here. */
+    private FindCommonCharacters findCommonCharacters;
 
-  FindCommonCharacters findCommonCharacters = new FindCommonCharacters();
-
-  private void test(String[] input, String[] output) {
-    List<String> expected = Arrays.asList(output);
-    List<String> actual = findCommonCharacters.commonChars(input);
-    Assertions.assertEquals(expected.size(), actual.size());
-    Collections.sort(expected);
-    Collections.sort(actual);
-    for (int i = 0; i < expected.size(); i++) {
-      Assertions.assertEquals(expected.get(i), actual.get(i));
+    @BeforeEach
+    void setup() {
+        findCommonCharacters = new FindCommonCharacters();
     }
-  }
 
-  @Test
-  @DisplayName("Test Case 0")
-  void testCase0() {
-    String[] input = {
-        "bella","label","roller"
-    };
-    String[] output = {
-        "e","l","l"
-    };
-    test(input, output);
-  }
+    private void test(List<String> output, String[] words) {
+        Assertions.assertEquals(output, findCommonCharacters.commonChars(words));
+    }
 
-  @Test
-  @DisplayName("Test Case 1")
-  void testCase1() {
-    String[] input = {
-        "cool","lock","cook"
-    };
-    String[] output = {
-        "c","o"
-    };
-    test(input, output);
-  }
+    @Test
+    void test0() {
+        test(List.of("e", "l", "l"), new String[] { "bella", "label", "roller" });
+    }
 
+    @Test
+    void test1() {
+        test(List.of("c", "o"), new String[] { "cool", "lock", "cook" });
+    }
 
+    @Test
+    void test2() {
+        test(List.of(), new String[] { "acabcddd", "bcbdbcbd", "baddbadb", "cbdddcac", "aacbcccd", "ccccddda",
+                "cababaab", "addcaccd" });
+    }
 }

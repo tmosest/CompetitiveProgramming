@@ -8,8 +8,8 @@ import com.tmosest.competitiveprogramming.leetcode.common.TreeNode;
 class BinaryTreePostorderTraversal {
 	/**
 	 * Given the root of a binary tree, return the postorder traversal of its nodes' values.
-	 * @param root
-	 * @return
+	 * @param root The root of the tree.
+	 * @return A list of values in the tree. Using Post Order traversal.
 	 */
 	public List<Integer> postorderTraversal(TreeNode root) {
 		List<Integer> result = new ArrayList<>();

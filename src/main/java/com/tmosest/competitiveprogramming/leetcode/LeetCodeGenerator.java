@@ -81,13 +81,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "145. Binary Tree Postorder Traversal";
-    String functionDeclaration = "public List<Integer> postorderTraversal(TreeNode root)";
+    String name = "997. Find the Town Judge";
+    String functionDeclaration = "public int findJudge(int n, int[][] trust)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.tree.name()
+        Types.graph.name()
     );
-    String contest = Contests.wcx.name();
+    String contest = Contests.wc125.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

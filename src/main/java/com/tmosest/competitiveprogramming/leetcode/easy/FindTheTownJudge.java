@@ -1,41 +1,43 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
-import java.util.HashSet;
-import java.util.Set;
-
 class FindTheTownJudge {
+	/**
+	 * In a town, there are n people labeled from 1 to n. There is a rumor that one
+	 * of these people is secretly the town judge.
+	 * If the town judge exists, then:
+	 * 
+	 * 1. The town judge trusts nobody.
+	 * 2. Everybody (except for the town judge) trusts the town judge.
+	 * 3. There is exactly one person that satisfies properties 1 and 2.
+	 * 
+	 * You are given an array trust where trust[i] = [ai, bi] representing that the
+	 * person labeled ai trusts the person labeled bi.
+	 * If a trust relationship does not exist in trust array, then such a trust
+	 * relationship does not exist.
+	 * 
+	 * @param n     The number of people in the town
+	 * @param trust A matrix with trust relationships.
+	 * @return Return the label of the town judge if the town judge exists and can
+	 *         be identified, or return -1 otherwise.
+	 */
+	public int findJudge(int N, int[][] trust) {
 
-  /* Write code here. */
-  private Set<Integer>[] trusts;
-  private Set<Integer>[] trustedBy;
+		if (trust.length < N - 1) {
+			return -1;
+		}
 
-  /**
-   * Find the town judge.
-   *
-   * @param size The size of the town.
-   * @param trust Who trusts who as a matrix.
-   * @return The guys who is trusted and trusts no one.
-   */
-  public int findJudge(int size, int[][] trust) {
-    trusts = (Set<Integer>[]) new Set[size];
-    trustedBy = (Set<Integer>[]) new Set[size];
-    for (int i = 0; i < size; i++) {
-      trusts[i] = new HashSet<>();
-      trustedBy[i] = new HashSet<>();
-    }
-    for (int[] pair : trust) {
-      trusts[pair[0] - 1].add(pair[1] - 1);
-      trustedBy[pair[1] - 1].add(pair[0] - 1);
-    }
-    int result = -1;
-    for (int i = 0; i < size; i++) {
-      if (trusts[i].size() == 0 && trustedBy[i].size() == size - 1) {
-        result = i + 1;
-        break;
-      }
-    }
-    return result;
-  }
+		int[] trustScores = new int[N + 1];
 
+		for (int[] relation : trust) {
+			trustScores[relation[0]]--;
+			trustScores[relation[1]]++;
+		}
 
+		for (int i = 1; i <= N; i++) {
+			if (trustScores[i] == N - 1) {
+				return i;
+			}
+		}
+		return -1;
+	}
 }

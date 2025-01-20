@@ -1,58 +1,50 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
-@Tag("array")
-@DisplayName("997. Find the Town Judge")
+@Tag("graph")
+@Tag("wc125")
+@DisplayName("LeetCode: 997. Find the Town Judge")
 class FindTheTownJudgeTest {
-	/* Write code here. */
+    private FindTheTownJudge findTheTownJudge;
 
-  FindTheTownJudge findTheTownJudge = new FindTheTownJudge();
+    @BeforeEach
+    void setup() {
+        findTheTownJudge = new FindTheTownJudge();
+    }
 
-  @Test
-  @DisplayName("Test Case 0")
-  void testCase0() {
-    int[][] trusts = {
-        {1,2}
-    };
-    Assertions.assertEquals(2, findTheTownJudge.findJudge(2, trusts));
-  }
+    private void test(int output, int n, int[][] trust) {
+        Assertions.assertEquals(output, findTheTownJudge.findJudge(n, trust));
+    }
 
-  @Test
-  @DisplayName("Test Case 1")
-  void testCase1() {
-    int[][] trusts = {
-        {1,3},
-        {2,3}
-    };
-    Assertions.assertEquals(3, findTheTownJudge.findJudge(3, trusts));
-  }
+    @Test
+    void test0() {
+        test(2, 2, new int[][] { { 1, 2 } });
+    }
 
-  @Test
-  @DisplayName("Test Case 2")
-  void testCase2() {
-    int[][] trusts = {
-        {1,3},
-        {2,3},
-        {3,1}
-    };
-    Assertions.assertEquals(-1, findTheTownJudge.findJudge(3, trusts));
-  }
+    @Test
+    void test1() {
+        test(3, 3, new int[][] { { 1, 3 }, { 2, 3 } });
+    }
 
-  @Test
-  @DisplayName("Test Case 3")
-  void testCase3() {
-    int[][] trusts = {
-        {1,2},
-        {2,3}
-    };
-    Assertions.assertEquals(-1, findTheTownJudge.findJudge(3, trusts));
-  }
+    @Test
+    void test2() {
+        test(-1, 3, new int[][] { { 1, 3 }, { 2, 3 }, { 3, 1 } });
+    }
 
+    @Test
+    void test3() {
+        test(3, 4, new int[][] { { 1, 3 }, { 1, 4 }, { 2, 3 }, { 2, 4 }, { 4, 3 } });
+    }
 
+    @Test
+    void test4() {
+        test(1, 1, new int[][] {});
+    }
 }

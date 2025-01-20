@@ -30,10 +30,10 @@ class AddToArrayFormOfIntegerTest {
   @DisplayName("Test Case 0")
   void testCase0() {
     int[] input = {
-        1,2,0,0
+        1, 2, 0, 0
     };
     Integer[] output = {
-        1,2,3,4
+        1, 2, 3, 4
     };
     test(input, 34, output);
   }
@@ -42,10 +42,10 @@ class AddToArrayFormOfIntegerTest {
   @DisplayName("Test Case 1")
   void testCase1() {
     int[] input = {
-        2,1,5
+        2, 1, 5
     };
     Integer[] output = {
-        1,0,2,1
+        1, 0, 2, 1
     };
     test(input, 806, output);
   }

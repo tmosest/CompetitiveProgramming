@@ -20,7 +20,7 @@ class DistributeElementsIntoTwoArraysTwoTest {
     }
 
     private void test(int[] output, int[] nums) {
-        Assertions.assertEquals(output, distributeElementsIntoTwoArraysTwo.resultArray(nums));
+        Assertions.assertArrayEquals(output, distributeElementsIntoTwoArraysTwo.resultArray(nums));
     }
 
     @Test

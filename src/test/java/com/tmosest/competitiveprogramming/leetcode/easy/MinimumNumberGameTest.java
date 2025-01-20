@@ -21,7 +21,7 @@ class MinimumNumberGameTest {
     }
 
     private void test(int[] output, int[] nums) {
-        Assertions.assertEquals(output, minimumNumberGame.numberGame(nums));
+        Assertions.assertArrayEquals(output, minimumNumberGame.numberGame(nums));
     }
 
     @Test

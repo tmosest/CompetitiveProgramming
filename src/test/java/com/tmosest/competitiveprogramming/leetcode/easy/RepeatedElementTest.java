@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("string")
+@Tag("wc116")
 @DisplayName("LeetCode: 961. N-Repeated Element in Size 2N Array")
 class RepeatedElementTest {
 	/* Write code here. */

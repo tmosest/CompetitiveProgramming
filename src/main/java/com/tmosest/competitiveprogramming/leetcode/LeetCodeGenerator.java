@@ -81,13 +81,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "941. Valid Mountain Array";
-    String functionDeclaration = "public boolean validMountainArray(int[] arr)";
+    String name = "965. Univalued Binary Tree";
+    String functionDeclaration = "public boolean isUnivalTree(TreeNode root)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.tree.name()
     );
-    String contest = Contests.wc111.name();
+    String contest = Contests.wc117.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

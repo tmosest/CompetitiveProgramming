@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("medium")
+@Tag("wc115")
 @DisplayName("LeetCode: 958. Check Completeness of a Binary Tree")
 class CheckCompletenessOfBinaryTreeTest {
 

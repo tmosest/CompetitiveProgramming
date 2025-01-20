@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 @Tag("easy")
 @Tag("array")
 @Tag("string")
+@Tag("wc114")
 @DisplayName("LeetCode: 953. Verifying an Alien Dictionary")
 class VerifyingAnAlienDictionaryTest {
 	/* Write code here. */

@@ -129,6 +129,7 @@ public class ProblemType {
     wc128,
     wc129,
     wc130,
+    wc131,
     wc170,
     wc171,
     wc172,

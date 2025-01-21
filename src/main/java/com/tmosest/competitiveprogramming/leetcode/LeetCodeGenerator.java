@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1009. Complement of Base 10 Integer";
-    String functionDeclaration = "public int bitwiseComplement(int n)";
+    String name = "1013. Partition Array Into Three Parts With Equal Sum";
+    String functionDeclaration = "public boolean canThreePartsEqualSum(int[] arr)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.number.name()
+        Types.array.name()
     );
-    String contest = Contests.wc128.name();
+    String contest = Contests.wc129.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

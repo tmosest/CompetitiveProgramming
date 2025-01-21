@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1002. Find Common Characters";
-    String functionDeclaration = "public List<String> commonChars(String[] words)";
+    String name = "1009. Complement of Base 10 Integer";
+    String functionDeclaration = "public int bitwiseComplement(int n)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name(),
-        Types.string.name());
-    String contest = Contests.wc125.name();
+        Types.number.name()
+    );
+    String contest = Contests.wc128.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

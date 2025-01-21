@@ -1,36 +1,45 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
-@Tag("number")
 @Tag("easy")
-@DisplayName("LeetCode: 1012. Complement of Base 10 Integer")
+@Tag("number")
+@Tag("wc128")
+@DisplayName("LeetCode: 1009. Complement of Base 10 Integer")
 class ComplementOfBaseTenIntegerTest {
-	/* Write code here. */
+    private ComplementOfBaseTenInteger complementOfBaseTenInteger;
 
-  ComplementOfBaseTenInteger complementOfBaseTenInteger = new ComplementOfBaseTenInteger();
+    @BeforeEach
+    void setup() {
+        complementOfBaseTenInteger = new ComplementOfBaseTenInteger();
+    }
 
-  @Test
-  @DisplayName("Test Case 0")
-  void testCase0() {
-    Assertions.assertEquals(2, complementOfBaseTenInteger.bitwiseComplement(5));
-  }
+    private void test(int output, int n) {
+        Assertions.assertEquals(output, complementOfBaseTenInteger.bitwiseComplement(n));
+    }
 
-  @Test
-  @DisplayName("Test Case 1")
-  void testCase1() {
-    Assertions.assertEquals(0, complementOfBaseTenInteger.bitwiseComplement(7));
-  }
+    @Test
+    void test0() {
+        test(2, 5);
+    }
 
-  @Test
-  @DisplayName("Test Case 2")
-  void testCase2() {
-    Assertions.assertEquals(5, complementOfBaseTenInteger.bitwiseComplement(10));
-  }
+    @Test
+    void test1() {
+        test(0, 7);
+    }
 
+    @Test
+    void test2() {
+        test(5, 10);
+    }
 
+    @Test
+    void test3() {
+        test(1, 0);
+    }
 }

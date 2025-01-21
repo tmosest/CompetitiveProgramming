@@ -80,13 +80,14 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1013. Partition Array Into Three Parts With Equal Sum";
-    String functionDeclaration = "public boolean canThreePartsEqualSum(int[] arr)";
+    String name = "1018. Binary Prefix Divisible By 5";
+    String functionDeclaration = "public List<Boolean> prefixesDivBy5(int[] nums)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
+        Types.array.name(),
+        Types.number.name()
     );
-    String contest = Contests.wc129.name();
+    String contest = Contests.wc130.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

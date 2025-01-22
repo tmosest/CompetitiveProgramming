@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1021. Remove Outermost Parentheses";
-    String functionDeclaration = "public String removeOuterParentheses(String s)";
+    String name = "1037. Valid Boomerang";
+    String functionDeclaration = "public boolean isBoomerang(int[][] points)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.string.name()
+        Types.matrix.name()
     );
-    String contest = Contests.wc131.name();
+    String contest = Contests.wc135.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

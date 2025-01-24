@@ -1,36 +1,47 @@
 package com.tmosest.competitiveprogramming.leetcode.easy;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 class LastStoneWeight {
+	/**
+	 * We are playing a game with the stones. On each turn, we choose the heaviest two stones and smash them together. 
+	 * Suppose the heaviest two stones have weights x and y with x <= y. The result of this smash is:
+	 * 
+	 * If x == y, both stones are destroyed, and
+	 * 
+	 * If x != y, the stone of weight x is destroyed, and the stone of weight y has new weight y - x.
+	 * 
+	 * At the end of the game, there is at most one stone left.
+	 * 
+	 * Return the weight of the last remaining stone. If there are no stones left, return 0.
+	 * 
+	 * @param stones
+	 * @return
+	 */
+    public int lastStoneWeight(int[] stones) {
+        List<Integer> stoneList = new ArrayList<>();
+        for (int weight : stones) {
+            stoneList.add(weight);
+        }
 
-  /**
-   * Determine how much weight is left after smashing stones.
-   *
-   * @param stones The weights of the stones.
-   * @return The final weight of the final stone.
-   */
-  public int lastStoneWeight(int[] stones) {
-    PriorityQueue<Integer> queue = new PriorityQueue<>(stones.length, new Comparator<Integer>() {
-      @Override
-      public int compare(Integer o1, Integer o2) {
-        return o2.compareTo(o1);
-      }
-    });
-    for (int stone : stones) {
-      queue.add(stone);
+        while (stoneList.size() > 1) {
+            int stone1 = removeLargest(stoneList);
+            int stone2 = removeLargest(stoneList);
+            if (stone1 != stone2) {
+                stoneList.add(stone1 - stone2);
+            }
+        }
+
+        return !stoneList.isEmpty() ? stoneList.remove(0) : 0;
     }
-    while (queue.size() > 1) {
-      int heaviest = queue.poll();
-      int nextHeaviest = queue.poll();
-      if (heaviest != nextHeaviest) {
-        queue.add(heaviest - nextHeaviest);
-      }
+
+	private int removeLargest(List<Integer> stones) {
+        int indexOfLargest = stones.indexOf(Collections.max(stones));
+        int result = stones.get(indexOfLargest);
+        stones.set(indexOfLargest, stones.get(stones.size() - 1));
+        stones.remove(stones.size() - 1);
+        return result;
     }
-    if (queue.size() > 0) {
-      return queue.poll();
-    }
-    return 0;
-  }
 }

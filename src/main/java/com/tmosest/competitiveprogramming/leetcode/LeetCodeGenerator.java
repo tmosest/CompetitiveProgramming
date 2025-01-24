@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1037. Valid Boomerang";
-    String functionDeclaration = "public boolean isBoomerang(int[][] points)";
+    String name = "1046. Last Stone Weight";
+    String functionDeclaration = "public int lastStoneWeight(int[] stones)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.matrix.name()
+        Types.array.name()
     );
-    String contest = Contests.wc135.name();
+    String contest = Contests.wc137.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

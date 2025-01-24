@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 @Tag("leetcode")
 @Tag("easy")
 @Tag("array")
-@Tag("wc137")
+@Tag("wc138")
 @DisplayName("LeetCode: 1051. Height Checker")
 class HeightCheckerTest {
     private HeightChecker heightChecker;

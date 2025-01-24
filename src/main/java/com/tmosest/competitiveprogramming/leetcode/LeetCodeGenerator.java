@@ -80,8 +80,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1046. Last Stone Weight";
-    String functionDeclaration = "public int lastStoneWeight(int[] stones)";
+    String name = "1051. Height Checker";
+    String functionDeclaration = "public int heightChecker(int[] heights)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
         Types.array.name()

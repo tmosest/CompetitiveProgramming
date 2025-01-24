@@ -3,26 +3,33 @@ package com.tmosest.competitiveprogramming.leetcode.easy;
 import java.util.Arrays;
 
 class HeightChecker {
+	/**
+	 * A school is trying to take an annual photo of all the students. 
+	 * The students are asked to stand in a single file line in non-decreasing order by height. 
+	 * Let this ordering be represented by the integer array expected where expected[i] is the expected height of the ith student in line.
+	 * 
+	 * You are given an integer array heights representing the current order that the students are standing in.
+	 * Each heights[i] is the height of the ith student in line (0-indexed).
+	 * 
+	 * Return the number of indices where heights[i] != expected[i].
+	 * 
+	 * @param heights An array of integers.
+	 * @return Number where expected and actual do not match;
+	 */
+	public int heightChecker(int[] heights) {
 
-  /**
-   * Determine how many points make this non-decreasing.
-   * @param heights An array of integers.
-   * @return The number of values that are non-decreasing.
-   */
-  public int heightChecker(int[] heights) {
-    //Make a copy of heights and sort it
-    int[] sorted = heights.clone();
-    Arrays.sort(sorted);
-    //Variable to track misplaced students
-    int students = 0;
+		int result = 0;
 
-    //Compare values to determine misplacement
-    for (int i = 0; i < heights.length; i++) {
-      if (heights[i] != sorted[i]) {
-        students++;
-      }
-    }
+		int[] expectedHeights = Arrays.copyOf(heights, heights.length);
 
-    return students;
-  }
+		Arrays.sort(expectedHeights);
+
+		for (int i = 0; i < heights.length; i++) {
+			if (expectedHeights[i] != heights[i]) {
+				++result;
+			}
+		}
+
+		return result;
+	}
 }

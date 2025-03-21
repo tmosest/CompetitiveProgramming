@@ -17,6 +17,7 @@ public class ProblemType {
     hard,
     expert,
     unknown,
+    projectEulerPlus, // https://www.hackerrank.com/contests/projecteuler
     codejam;
 
     /**

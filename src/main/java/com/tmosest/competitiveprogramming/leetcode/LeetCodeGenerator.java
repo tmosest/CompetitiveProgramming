@@ -80,13 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1051. Height Checker";
-    String functionDeclaration = "public int heightChecker(int[] heights)";
-    String difficulty = Difficulty.easy.name();
+    String name = "1. Multiples of 3 and 5";
+    String functionDeclaration = "public long sumOf3and5BelowNumber(int num)";
+    String difficulty = Difficulty.projectEulerPlus.name();
     List<String> types = Arrays.asList(
-        Types.array.name()
-    );
-    String contest = Contests.wc137.name();
+        Types.number.name());
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

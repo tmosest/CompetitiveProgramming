@@ -80,8 +80,8 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "1. Multiples of 3 and 5";
-    String functionDeclaration = "public long sumOf3and5BelowNumber(int num)";
+    String name = "2. Even Fibonacci numbers";
+    String functionDeclaration = "public long sumEvenFibonacci(int num)";
     String difficulty = Difficulty.projectEulerPlus.name();
     List<String> types = Arrays.asList(
         Types.number.name());

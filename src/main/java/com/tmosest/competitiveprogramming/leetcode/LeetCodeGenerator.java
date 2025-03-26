@@ -80,7 +80,7 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "2. Even Fibonacci numbers";
+    String name = "3. Largest Prime Factor";
     String functionDeclaration = "public long sumEvenFibonacci(int num)";
     String difficulty = Difficulty.projectEulerPlus.name();
     List<String> types = Arrays.asList(

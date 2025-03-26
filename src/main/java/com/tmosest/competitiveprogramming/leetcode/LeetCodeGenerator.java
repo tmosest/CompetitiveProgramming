@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3. Largest Prime Factor";
-    String functionDeclaration = "public long sumEvenFibonacci(int num)";
-    String difficulty = Difficulty.projectEulerPlus.name();
+    String name = "2033. Minimum Operations to Make a Uni-Value Grid";
+    String functionDeclaration = "public int minOperations(int[][] grid, int x)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.number.name());
+        Types.array.name());
     String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);

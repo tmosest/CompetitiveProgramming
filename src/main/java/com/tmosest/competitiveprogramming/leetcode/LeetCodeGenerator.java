@@ -80,11 +80,11 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "282. Expression Add Operators";
-    String functionDeclaration = "public List<String> addOperators(String num, int target)";
-    String difficulty = Difficulty.hard.name();
+    String name = "909. Snakes and Ladders";
+    String functionDeclaration = "public int snakesAndLadders(int[][] board)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.string.name());
+        Types.graph.name());
     String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);

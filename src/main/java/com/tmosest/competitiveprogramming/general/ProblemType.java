@@ -81,6 +81,7 @@ public class ProblemType {
     regex,
     simulation,
     slidingWindow,
+    segmentTree,
     set,
     shortestPath,
     sort,
@@ -232,6 +233,7 @@ public class ProblemType {
     wc393,
     wc394,
     wc395,
+    wc452,
     wc453,
     wcx
   }

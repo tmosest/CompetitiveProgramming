@@ -52,6 +52,7 @@ public class ProblemType {
     bitmask,
     breadthFirstSearch,
     chess,
+    combinatorics,
     depthFirstSearch,
     design,
     dijkstra,
@@ -231,6 +232,7 @@ public class ProblemType {
     wc393,
     wc394,
     wc395,
+    wc453,
     wcx
   }
 

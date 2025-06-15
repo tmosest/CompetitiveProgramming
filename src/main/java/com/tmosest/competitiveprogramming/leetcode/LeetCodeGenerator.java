@@ -80,13 +80,13 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3569. Maximize Count of Distinct Primes After Split";
-    String functionDeclaration = "public int[] maximumCount(int[] nums, int[][] queries)";
-    String difficulty = Difficulty.hard.name();
+    String name = "1432. Max Difference You Can Get From Changing an Integer";
+    String functionDeclaration = "public int maxDiff(int num)";
+    String difficulty = Difficulty.medium.name();
     List<String> types = Arrays.asList(
-        Types.segmentTree.name(),
-        Types.array.name());
-    String contest = Contests.wcx.name();
+        Types.math.name(),
+        Types.greedy.name());
+    String contest = Contests.daily.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

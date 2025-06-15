@@ -101,10 +101,11 @@ public class ProblemType {
   }
 
   public enum Contests {
-    dvent2020,
+    advent2020,
     advent2021,
     advent2022,
     april30Day,
+    daily,
     bwc23,
     bwc34,
     bwc35,

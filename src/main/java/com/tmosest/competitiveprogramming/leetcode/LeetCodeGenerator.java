@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3585. Find Weighted Median Node in Tree";
-    String functionDeclaration = "public int[] findMedian(int n, int[][] edges, int[][] queries)";
-    String difficulty = Difficulty.hard.name();
+    String name = "3487. Maximum Unique Subarray Sum After Deletion";
+    String functionDeclaration = "public int maxSum(int[] nums)";
+    String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.graph.name());
-    String contest = Contests.wc454.name();
+        Types.array.name());
+    String contest = Contests.wcx.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

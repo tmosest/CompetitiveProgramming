@@ -80,12 +80,12 @@ public class LeetCodeGenerator {
    * @param args Command line.... not needed.
    */
   public static void main(String[] args) {
-    String name = "3487. Maximum Unique Subarray Sum After Deletion";
-    String functionDeclaration = "public int maxSum(int[] nums)";
+    String name = "3622. Check Divisibility by Digit Sum and Product";
+    String functionDeclaration = "public boolean checkDivisibility(int n)";
     String difficulty = Difficulty.easy.name();
     List<String> types = Arrays.asList(
-        Types.array.name());
-    String contest = Contests.wcx.name();
+        Types.math.name());
+    String contest = Contests.wc459.name();
 
     instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
     System.out.println(String.format("%s created.", name));

@@ -237,6 +237,7 @@ public class ProblemType {
     wc452,
     wc453,
     wc454,
+    wc459,
     wcx
   }
 

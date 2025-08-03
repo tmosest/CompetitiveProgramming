@@ -1,5 +1,6 @@
 package com.tmosest.competitiveprogramming.utils.files;
 
+import com.tmosest.competitiveprogramming.leetcode.LeetCodeExample;
 import com.tmosest.competitiveprogramming.utils.string.StringUtil;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public class JavaFileBuilder {
   /**
    * Create a new Java File.
    *
-   * @param source Where the file will go.
+   * @param source    Where the file will go.
    * @param className The name of the new file.
    */
   public void create(Class source, String className) {
@@ -32,8 +33,8 @@ public class JavaFileBuilder {
   /**
    * Creates a new java file.
    *
-   * @param source The package destination.
-   * @param className The class name.
+   * @param source              The package destination.
+   * @param className           The class name.
    * @param functionDeclaration public void String someFunction(String str).
    */
   public void create(Class source, String className, JavaFileMethod functionDeclaration) {
@@ -47,18 +48,18 @@ public class JavaFileBuilder {
   /**
    * Creates a new test file.
    *
-   * @param source The package destination.
-   * @param className The class name.
-   * @param annotations The annotations.
-   * @param values The values for the annotations.
+   * @param source         The package destination.
+   * @param className      The class name.
+   * @param annotations    The annotations.
+   * @param values         The values for the annotations.
    * @param javaFileMethod The method being tested.
    */
   public void createTest(
       Class source, String className,
       List<String> annotations,
       List<String> values,
-      JavaFileMethod javaFileMethod
-  ) {
+      JavaFileMethod javaFileMethod,
+      List<LeetCodeExample> examples) {
     if (annotations == null || values == null || annotations.size() != values.size()) {
       System.out.println("Empty!");
       return;
@@ -73,8 +74,7 @@ public class JavaFileBuilder {
     // Setup the new test class.
     javaFile.addRawContent("@BeforeEach\nvoid setup() {\n "
         + StringUtil.uncapitalize(className)
-        + " = new " + className + "();\n}\n"
-    );
+        + " = new " + className + "();\n}\n");
     // Add a void test method
     String parameters = javaFileMethod.getParameters().stream()
         .reduce((one, two) -> one + ", " + two).orElse("");
@@ -91,11 +91,22 @@ public class JavaFileBuilder {
         + " output, " + parameters + ") {\n Assertions.assertEquals(output, "
         + StringUtil.uncapitalize(className) + "." + javaFileMethod.getMethodName() + "("
         + parametersNames + ")); }\n");
-    // Add first test
-    javaFile.addRawContent("@Test\nvoid test0() {\n test(output, " + parametersNames + "); }\n");
+
+    if (examples == null || examples.size() < 1) {
+      // Add first test
+      javaFile.addRawContent("@Test\nvoid test0() {\n test(output, " + parametersNames + "); }\n");
+    }
+
+    for (LeetCodeExample leetCodeExample : examples) {
+      javaFile.addRawContent("/* " + leetCodeExample.toString() + " */\n\n");
+      javaFile.addRawContent(
+          "@Test\nvoid test" + leetCodeExample.index + "() {\n test(output, " + parametersNames + "); }\n");
+    }
+
     for (int i = 0; i < annotations.size(); i++) {
       javaFile.addNewAnnotation(annotations.get(i), values.get(i));
     }
+
     String[] testImports = {
         "org.junit.jupiter.api.Assertions",
         "org.junit.jupiter.api.BeforeEach",

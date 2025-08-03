@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class JavaFileMethod {
@@ -60,6 +61,7 @@ public class JavaFileMethod {
   }
 
   private AccessSpecifier accessSpecifier = AccessSpecifier.NONE;
+  private String comment = null;
   private List<Declaration> declarations = new ArrayList<>();
   private String returnType = "";
   private String methodName = "";
@@ -70,7 +72,20 @@ public class JavaFileMethod {
     return new JavaFileMethod(function);
   }
 
+  private static Pattern commentPattern = Pattern.compile("/*([\\S\\s]+?)\\*/");
+
   private JavaFileMethod(String content) {
+    System.out.println(content);
+    // if (content.trim().contains("\\*/")) {
+    if (content.contains("*/")) {
+      // We have a comment.
+      comment = content.split("\\*/")[0].replace("/*", "")
+        .replace("/\\*\\*", "")
+        .trim();
+      // content = content.replace(comment, "");
+      //comment = commentPattern.matcher(content).group();
+      content = content.replaceAll("/\\*([\\S\\s]+?)\\*/", "");
+    }
     String[] contentArray = content.trim()
         .replace("{", "")
         .replace("}", "")
@@ -135,6 +150,10 @@ public class JavaFileMethod {
   @Override
   public String toString() {
     StringBuilder stringBuilder = new StringBuilder();
+
+    if (comment != null) {
+      stringBuilder.append(String.format("/* %s */\n", comment));
+    }
 
     stringBuilder.append(accessSpecifier.getDisplayValue());
     stringBuilder.append(" ");

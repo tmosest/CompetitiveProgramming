@@ -42,7 +42,8 @@ public class LeetCodeGenerator {
       String functionDeclaration,
       String difficulty,
       List<String> types,
-      String contest) {
+      String contest,
+      List<LeetCodeExample> examples) {
     String[] names = instance().formatIntoNumberAndName(numberName);
     String fileName = ClassNameUtil.instance().convertToClassName(names[1].trim());
     JavaFileMethod javaFileMethod = JavaFileMethod.fromString(functionDeclaration);
@@ -65,7 +66,7 @@ public class LeetCodeGenerator {
       tags.add(3, "Tag");
       vals.add(3, contest);
     }
-    javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals, javaFileMethod);
+    javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals, javaFileMethod, examples);
     LeetCodeOrganizer.instance.organizeProblemFiles();
   }
 
@@ -87,7 +88,7 @@ public class LeetCodeGenerator {
         Types.math.name());
     String contest = Contests.wc459.name();
 
-    instance().createNewProblem(name, functionDeclaration, difficulty, types, contest);
+    instance().createNewProblem(name, functionDeclaration, difficulty, types, contest, new ArrayList<>());
     System.out.println(String.format("%s created.", name));
   }
 }

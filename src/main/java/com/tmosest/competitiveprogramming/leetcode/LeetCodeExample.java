@@ -1,5 +1,8 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class LeetCodeExample {
     public int index;
     public String input;
@@ -16,7 +19,28 @@ public class LeetCodeExample {
     }
 
     public String getOutput() {
-        return input.replace("Output:", "").trim();
+        String out = output.replace("Output:", "").trim();
+        return out;
+    }
+
+    public String getParamters(String parametersNames) {
+        
+        String in = getInput();
+        Map<String, String> paramsMap = new HashMap<>();
+
+        for(String param : in.split(", ")) {
+            String[] keyVal = param.split("=");
+            paramsMap.put(keyVal[0].trim(), keyVal[1].trim());
+        }
+
+        StringBuilder sb = new StringBuilder();
+
+        for(String param : parametersNames.split(", ")) {
+            sb.append(paramsMap.getOrDefault(param.trim(), param));
+            sb.append(", ");
+        }
+
+        return sb.toString();
     }
 
     public String toString() {

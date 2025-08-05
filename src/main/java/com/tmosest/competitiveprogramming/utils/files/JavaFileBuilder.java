@@ -100,7 +100,9 @@ public class JavaFileBuilder {
     for (LeetCodeExample leetCodeExample : examples) {
       javaFile.addRawContent("/* " + leetCodeExample.toString() + " */\n\n");
       javaFile.addRawContent(
-          "@Test\nvoid test" + leetCodeExample.index + "() {\n test(output, " + parametersNames + "); }\n");
+          "@Test\nvoid test" + leetCodeExample.index + "() {\n test(" + 
+            leetCodeExample.getOutput() + 
+            ", " + leetCodeExample.getParamters(parametersNames) + "); }\n");
     }
 
     for (int i = 0; i < annotations.size(); i++) {

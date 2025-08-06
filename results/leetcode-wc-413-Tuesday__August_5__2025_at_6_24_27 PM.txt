@@ -1,0 +1,175 @@
+PROBLEM_ID:0;=;=3274. Check if Two Chessboard Squares Have the Same Color;=;=Easy;=;=public boolean checkTwoChessboards(String coordinate1, String coordinate2);=;=You are given two strings, coordinate1 and coordinate2, representing the coordinates of a square on an 8 x 8 chessboard.
+
+Below is the chessboard for reference.
+
+
+
+Return true if these two squares have the same color and false otherwise.
+
+The coordinate will always represent a valid chessboard square. The coordinate will always have the letter first (indicating its column), and the number second (indicating its row).
+
+ 
+
+Example 1:
+
+Input: coordinate1 = "a1", coordinate2 = "c3"
+
+Output: true
+
+Explanation:
+
+Both squares are black.
+
+Example 2:
+
+Input: coordinate1 = "a1", coordinate2 = "h3"
+
+Output: false
+
+Explanation:
+
+Square "a1" is black and "h3" is white.
+
+ 
+
+Constraints:
+
+coordinate1.length == coordinate2.length == 2
+'a' <= coordinate1[0], coordinate2[0] <= 'h'
+'1' <= coordinate1[1], coordinate2[1] <= '8';=;=https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/description/;=;=https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/7027718/java-easy-solution-0ms-by-akashraj06-xjaa/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/6914810/java-solution-by-monish1153-w9kg/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5732832/ts-o1-3-liner-math-solution-by-ashwanide-03c1/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5718177/easy-video-solution-5-liners-how-to-in-i-t17s/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5718345/100-beat-3-lines-code-super-easy-tc-sc-o-ucye/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5718006/simple-trick-detailed-explanation-with-i-su8p/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5885208/easiestfaster-lesser-cpython3javacpython-6s9k/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5725010/simple-java-c-code-by-abhinandannaik1717-aw96/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5718031/java-solution-by-harsh__005-rfdp/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5755917/simple-code4-lines-beats-100-by-waheed_6-j2e1/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5722821/simple-easy-to-understand-clean-logic-by-i9cp/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/6637994/check-if-two-chessboard-squares-have-the-2a1r/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/7001740/java-solution-beat-100-easy-approach-3-l-ihye/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/6791581/clean-code-by-smileysuneet-tfk2/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/6207532/0ms-100-in-java-very-easiest-code-with-e-fvex/;;;=;==;=;=;PROBLEM_ID:1;=;=3275. K-th Nearest Obstacle Queries;=;=Medium;=;=public int[] resultsArray(int[][] queries, int k);=;=There is an infinite 2D plane.
+
+You are given a positive integer k. You are also given a 2D array queries, which contains the following queries:
+
+queries[i] = [x, y]: Build an obstacle at coordinate (x, y) in the plane. It is guaranteed that there is no obstacle at this coordinate when this query is made.
+After each query, you need to find the distance of the kth nearest obstacle from the origin.
+
+Return an integer array results where results[i] denotes the kth nearest obstacle after query i, or results[i] == -1 if there are less than k obstacles.
+
+Note that initially there are no obstacles anywhere.
+
+The distance of an obstacle at coordinate (x, y) from the origin is given by |x| + |y|.
+
+ 
+
+Example 1:
+
+Input: queries = [[1,2],[3,4],[2,3],[-3,0]], k = 2
+
+Output: [-1,7,5,3]
+
+Explanation:
+
+Initially, there are 0 obstacles.
+After queries[0], there are less than 2 obstacles.
+After queries[1], there are obstacles at distances 3 and 7.
+After queries[2], there are obstacles at distances 3, 5, and 7.
+After queries[3], there are obstacles at distances 3, 3, 5, and 7.
+Example 2:
+
+Input: queries = [[5,5],[4,4],[3,3]], k = 1
+
+Output: [10,8,6]
+
+Explanation:
+
+After queries[0], there is an obstacle at distance 10.
+After queries[1], there are obstacles at distances 8 and 10.
+After queries[2], there are obstacles at distances 6, 8, and 10.
+ 
+
+Constraints:
+
+1 <= queries.length <= 2 * 105
+All queries[i] are unique.
+-109 <= queries[i][0], queries[i][1] <= 109
+1 <= k <= 105;=;=https://leetcode.com/problems/k-th-nearest-obstacle-queries/description/;=;=https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/7035824/easy-solution-in-java-using-maxheap-by-k-3dhc/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5718090/heap-by-fahad06-0bm1/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/6990911/easy-java-solution-by-samarth_144-nb5q/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/6704065/simple-java-solution-with-least-time-com-ym11/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5719153/easy-video-solution-how-to-in-interview-agxj7/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5720014/easy-video-solution-how-to-in-interview-cvb5e/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5718146/easy-java-priorityqueue-solution-by-hksu-2s91/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5718545/simple-max-heap-approach-beats-100-java-v5udl/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5718053/java-solution-by-harsh__005-r1bx/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5718222/priority-queue-tc-onlogk-simple-solution-rtv9/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5718425/simple-approach-using-2-priorityqueue-be-0zvf/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5719603/beats-100-easy-java-solution-by-priyansh-bd3g/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5718068/123-ms-beats-10000-by-shubhamyadav32100-34es/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5720424/simplest-approach-beats-100-by-ruturaj_7-8p3n/;;https://leetcode.com/problems/k-th-nearest-obstacle-queries/solutions/5718036/java-clean-simple-solution-by-shree_govi-fhe4/;;;=;==;=;=;PROBLEM_ID:2;=;=3276. Select Cells in Grid With Maximum Score;=;=Hard;=;=public int maxScore(List<List<Integer>> grid);=;=You are given a 2D matrix grid consisting of positive integers.
+
+You have to select one or more cells from the matrix such that the following conditions are satisfied:
+
+No two selected cells are in the same row of the matrix.
+The values in the set of selected cells are unique.
+Your score will be the sum of the values of the selected cells.
+
+Return the maximum score you can achieve.
+
+ 
+
+Example 1:
+
+Input: grid = [[1,2,3],[4,3,2],[1,1,1]]
+
+Output: 8
+
+Explanation:
+
+
+
+We can select the cells with values 1, 3, and 4 that are colored above.
+
+Example 2:
+
+Input: grid = [[8,7,6],[8,3,2]]
+
+Output: 15
+
+Explanation:
+
+
+
+We can select the cells with values 7 and 8 that are colored above.
+
+ 
+
+Constraints:
+
+1 <= grid.length, grid[i].length <= 10
+1 <= grid[i][j] <= 100;=;=https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/description/;=;=https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718057/python-java-dfs-in-descending-orders-wit-m5c1/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718452/min-cost-max-flow-solution-with-diagrams-cz81/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718459/easy-video-solution-how-to-in-interview-mpk5v/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718056/beats-100-time-beats-100-space-greedy-tr-robr/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718333/java-recursion-memoization-solution-by-i-dzj3/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718730/java-solution-by-harsh__005-owaz/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5722395/java-take-not-take-dp-using-bitmask-fast-xy13/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5719657/how-i-solved-it-by-shikharcookies-seu5/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718124/java-bruteforce-by-gr33dnim-zxhn/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5722330/bottom-up-dp-bitmask-clean-code-beats-10-zucl/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5721880/beats-100-of-the-java-users-by-deeepakga-dcn1/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5720517/java-beats-100-dp-bitmask-by-neel_diyora-u5fv/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5719696/dp-bitmask-beats-10000-by-chenyuanqin826-35d4/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718946/java-dp-bitmask-by-zephyryau-fsx3/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5961814/simple-and-easy-java-solution-using-memo-gz88/;;;=;==;=;=;PROBLEM_ID:3;=;=3277. Maximum XOR Score Subarray Queries;=;=Hard;=;=public int[] maximumSubarrayXor(int[] nums, int[][] queries);=;=You are given an array nums of n integers, and a 2D integer array queries of size q, where queries[i] = [li, ri].
+
+For each query, you must find the maximum XOR score of any subarray of nums[li..ri].
+
+The XOR score of an array a is found by repeatedly applying the following operations on a so that only one element remains, that is the score:
+
+Simultaneously replace a[i] with a[i] XOR a[i + 1] for all indices i except the last one.
+Remove the last element of a.
+Return an array answer of size q where answer[i] is the answer to query i.
+
+ 
+
+Example 1:
+
+Input: nums = [2,8,4,32,16,1], queries = [[0,2],[1,4],[0,5]]
+
+Output: [12,60,60]
+
+Explanation:
+
+In the first query, nums[0..2] has 6 subarrays [2], [8], [4], [2, 8], [8, 4], and [2, 8, 4] each with a respective XOR score of 2, 8, 4, 10, 12, and 6. The answer for the query is 12, the largest of all XOR scores.
+
+In the second query, the subarray of nums[1..4] with the largest XOR score is nums[1..4] with a score of 60.
+
+In the third query, the subarray of nums[0..5] with the largest XOR score is nums[1..4] with a score of 60.
+
+Example 2:
+
+Input: nums = [0,7,3,2,8,5,1], queries = [[0,3],[1,5],[2,4],[2,6],[5,6]]
+
+Output: [7,14,11,14,5]
+
+Explanation:
+
+Index	nums[li..ri]	Maximum XOR Score Subarray	Maximum Subarray XOR Score
+0	[0, 7, 3, 2]	[7]	7
+1	[7, 3, 2, 8, 5]	[7, 3, 2, 8]	14
+2	[3, 2, 8]	[3, 2, 8]	11
+3	[3, 2, 8, 5, 1]	[2, 8, 5, 1]	14
+4	[5, 1]	[5]	5
+ 
+
+Constraints:
+
+1 <= n == nums.length <= 2000
+0 <= nums[i] <= 231 - 1
+1 <= q == queries.length <= 105
+queries[i].length == 2 
+queries[i] = [li, ri]
+0 <= li <= ri <= n - 1;=;=https://leetcode.com/problems/maximum-xor-score-subarray-queries/description/;=;=https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5718161/javacpython-dp-by-lee215-4yqq/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5718121/java-clean-solution-using-2d-array-xor-b-3ogo/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5721649/java-by-rakshit2002-u8c4/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5931085/simple-and-easy-java-solution-using-dp-a-nndr/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5756894/java-simple-solution-using-xorij-xorij-1-3g95/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5754992/java-by-abhiguptanitb-1nz6/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5751552/java-solution-using-queries-by-charlie-t-gy33/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5745491/99-beat-on2-no-dp-well-explained-must-ch-td0c/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5744761/java-solution-dp-by-neel_diyora-klry/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5724721/maximum-xor-score-subarray-queries-by-le-pndd/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5724668/easy-java-solution-by-danish_jamil-jlrc/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5721021/dynamic-programming-c-by-fitran-nhrw/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5720072/my-solution-by-shikharcookies-k4ae/;;https://leetcode.com/problems/maximum-xor-score-subarray-queries/solutions/5718193/java-save-all-the-scores-and-max-values-zzuft/;;;=;==;=;=;

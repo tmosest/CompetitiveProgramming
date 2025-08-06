@@ -1,0 +1,157 @@
+PROBLEM_ID:0;=;=3226. Number of Bit Changes to Make Two Integers Equal;=;=Easy;=;=public int minChanges(int n, int k);=;=You are given two positive integers n and k.
+
+You can choose any bit in the binary representation of n that is equal to 1 and change it to 0.
+
+Return the number of changes needed to make n equal to k. If it is impossible, return -1.
+
+ 
+
+Example 1:
+
+Input: n = 13, k = 4
+
+Output: 2
+
+Explanation:
+Initially, the binary representations of n and k are n = (1101)2 and k = (0100)2.
+We can change the first and fourth bits of n. The resulting integer is n = (0100)2 = k.
+
+Example 2:
+
+Input: n = 21, k = 21
+
+Output: 0
+
+Explanation:
+n and k are already equal, so no changes are needed.
+
+Example 3:
+
+Input: n = 14, k = 13
+
+Output: -1
+
+Explanation:
+It is not possible to make n equal to k.
+
+ 
+
+Constraints:
+
+1 <= n, k <= 106;=;=https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/description/;=;=https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5508923/o1-bit-manipulation-by-fahad06-9gj5/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5509343/beats-100-explained-with-video-cjavapyth-yfv9/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/6651405/easy-peasy-o1-bit-manipulation-by-lucife-dk1x/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5517876/python-s-java-scala-rust-elegant-short-o-dfbs/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5508964/detailed-explanation-100-beats-by-muhamm-kmos/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5509530/simple-java-code-by-abhinandannaik1717-ctuq/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/7037520/beats-100-only-4-cases-exist-here-explai-cnqs/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/6859629/o1-by-gitchuan-eau3/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5849133/java-beats-100-user-in-java-by-shubhash_-t1v4/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5509101/java-solution-by-harsh__005-f7k0/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5518775/using-string-java-soln-not-used-bits-by-frnhi/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5511623/string-array-logic-beats-100-in-time-and-3i9p/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5511292/beats-100-beginner-friendly-easy-approac-98ck/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/6516505/easy-to-understand-solution-beats-100-by-cryu/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5509028/check-each-bit-c-python-java-by-not_yl3-msly/;;;=;==;=;=;PROBLEM_ID:1;=;=3227. Vowels Game in a String;=;=Medium;=;=public boolean doesAliceWin(String s);=;=Alice and Bob are playing a game on a string.
+
+You are given a string s, Alice and Bob will take turns playing the following game where Alice starts first:
+
+On Alice's turn, she has to remove any non-empty substring from s that contains an odd number of vowels.
+On Bob's turn, he has to remove any non-empty substring from s that contains an even number of vowels.
+The first player who cannot make a move on their turn loses the game. We assume that both Alice and Bob play optimally.
+
+Return true if Alice wins the game, and false otherwise.
+
+The English vowels are: a, e, i, o, and u.
+
+ 
+
+Example 1:
+
+Input: s = "leetcoder"
+
+Output: true
+
+Explanation:
+Alice can win the game as follows:
+
+Alice plays first, she can delete the underlined substring in s = "leetcoder" which contains 3 vowels. The resulting string is s = "der".
+Bob plays second, he can delete the underlined substring in s = "der" which contains 0 vowels. The resulting string is s = "er".
+Alice plays third, she can delete the whole string s = "er" which contains 1 vowel.
+Bob plays fourth, since the string is empty, there is no valid play for Bob. So Alice wins the game.
+Example 2:
+
+Input: s = "bbcd"
+
+Output: false
+
+Explanation:
+There is no valid play for Alice in her first turn, so Alice loses the game.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/vowels-game-in-a-string/description/;=;=https://leetcode.com/problems/vowels-game-in-a-string/solutions/5508944/find-a-vowel-by-fahad06-1i4z/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5509406/beats-100-explained-with-video-cjavapyth-pgut/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/6248043/easy-and-simple-to-understand-100-by-hem-532m/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5537716/beats-100-best-java-solution-by-hardik24-gjog/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5508940/return-true-if-vowel-found-by-lokeshsk1-lgne/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5651754/vowels-game-in-a-string-java-very-easy-t-fns6/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5509618/simple-java-c-code-by-abhinandannaik1717-crfi/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/6202270/easy-to-understand-beats-9924-java-by-pr-oih3/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5560839/simple-code-easy-to-understand-beginner-gwemn/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5630921/vowels-game-in-a-string-by-trgaurkar-r6k3/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5510289/easiestfaster-lesser-cpython3javacpython-r7l8/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5509079/java-solution-by-harsh__005-rabz/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5517612/beats-1004-ms-easy-java-solution-by-priy-3lc1/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5515611/poor-bob-tum-builder-hi-shi-the-by-shiva-suyb/;;https://leetcode.com/problems/vowels-game-in-a-string/solutions/5508926/full-explanation-example-c-java-python-e-a69a/;;;=;==;=;=;PROBLEM_ID:2;=;=3228. Maximum Number of Operations to Move Ones to the End;=;=Medium;=;=public int maxOperations(String s);=;=You are given a binary string s.
+
+You can perform the following operation on the string any number of times:
+
+Choose any index i from the string where i + 1 < s.length such that s[i] == '1' and s[i + 1] == '0'.
+Move the character s[i] to the right until it reaches the end of the string or another '1'. For example, for s = "010010", if we choose i = 1, the resulting string will be s = "000110".
+Return the maximum number of operations that you can perform.
+
+ 
+
+Example 1:
+
+Input: s = "1001101"
+
+Output: 4
+
+Explanation:
+
+We can perform the following operations:
+
+Choose index i = 0. The resulting string is s = "0011101".
+Choose index i = 4. The resulting string is s = "0011011".
+Choose index i = 3. The resulting string is s = "0010111".
+Choose index i = 2. The resulting string is s = "0001111".
+Example 2:
+
+Input: s = "00111"
+
+Output: 0
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/description/;=;=https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5508962/greedy-by-fahad06-gbw2/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509454/beats-100-explained-with-video-cjavapyth-ry7k/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509105/intuition-approach-tc-on-sc-o1-by-bhawes-zscz/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509007/javacpython-count-ones-by-lee215-fouu/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/6712260/solution-with-counting-by-chickendje02-vsef/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5510787/explanations-no-one-will-give-youvery-de-ci52/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509078/effortlessly-dominate-100-with-beginner-w2awp/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/6664269/pending-total-by-795-2im4/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/7025258/java-greedy-approach-beats-100-clean-and-3thq/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509048/java-solution-by-harsh__005-t9q4/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5510067/easy-code-beats-100-by-satyam_mishra_1-drkh/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509299/java-on-solution-explained-by-gaurav621-bole/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509155/java-clean-simple-solution-21072024-by-s-4384/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509637/implementation-using-stack-by-alwayssant-84mo/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509069/easy-java-solution-prefix-sum-by-21a31a0-87x5/;;;=;==;=;=;PROBLEM_ID:3;=;=3229. Minimum Operations to Make Array Equal to Target;=;=Hard;=;=public long minimumOperations(int[] nums, int[] target);=;=You are given two positive integer arrays nums and target, of the same length.
+
+In a single operation, you can select any subarray of nums and increment each element within that subarray by 1 or decrement each element within that subarray by 1.
+
+Return the minimum number of operations required to make nums equal to the array target.
+
+ 
+
+Example 1:
+
+Input: nums = [3,5,1,2], target = [4,6,2,4]
+
+Output: 2
+
+Explanation:
+
+We will perform the following operations to make nums equal to target:
+- Increment nums[0..3] by 1, nums = [4,6,2,3].
+- Increment nums[3..3] by 1, nums = [4,6,2,4].
+
+Example 2:
+
+Input: nums = [1,3,2], target = [2,1,4]
+
+Output: 5
+
+Explanation:
+
+We will perform the following operations to make nums equal to target:
+- Increment nums[0..0] by 1, nums = [2,3,2].
+- Decrement nums[1..1] by 1, nums = [2,2,2].
+- Decrement nums[1..1] by 1, nums = [2,1,2].
+- Increment nums[2..2] by 1, nums = [2,1,3].
+- Increment nums[2..2] by 1, nums = [2,1,4].
+
+ 
+
+Constraints:
+
+1 <= nums.length == target.length <= 105
+1 <= nums[i], target[i] <= 108;=;=https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/description/;=;=https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5508919/on-keep-track-of-how-many-increments-dec-9ucn/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509031/javacpython-just-sum-up-increments-by-le-999d/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509532/beats-100-explained-with-video-cjavapyth-ef7w/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509182/difference-array-tutorial-minimum-operat-vzvx/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509070/python3cjava-greedy-monotonic-stack-idea-bgbb/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5514799/easiest-approach-beats-100-must-watch-by-nnvw/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5508938/javacpythongojavascript-on-divide-and-co-iwrr/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5676857/easy-greedy-no-dp-on-by-abhishekkant135-tmsk/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509138/solution-by-dare2solve-detailed-explanat-xvf1/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5511158/weekly-contest-409-by-sajaltiwari007-vq13/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509029/effortlessly-dominate-100-with-beginner-6bjun/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5508988/java-solution-by-harsh__005-ocp8/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/6918577/easy-java-solution-greedy-by-nikitaaa-j97h/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/6673485/reduce-to-lc1526-by-torchcc-imv7/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/6212428/95-simple-intution-by-prachikumari-wpuy/;;;=;==;=;=;

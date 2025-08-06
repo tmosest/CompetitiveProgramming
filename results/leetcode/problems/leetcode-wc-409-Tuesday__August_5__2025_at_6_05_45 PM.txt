@@ -1,0 +1,237 @@
+PROBLEM_ID:0;=;=3242. Design Neighbor Sum Service;=;=Easy;=;=NeighborSum     public NeighborSum(int[][] grid)                     public int adjacentSum(int value)                     public int diagonalSum(int value);=;=You are given a n x n 2D array grid containing distinct elements in the range [0, n2 - 1].
+
+Implement the NeighborSum class:
+
+NeighborSum(int [][]grid) initializes the object.
+int adjacentSum(int value) returns the sum of elements which are adjacent neighbors of value, that is either to the top, left, right, or bottom of value in grid.
+int diagonalSum(int value) returns the sum of elements which are diagonal neighbors of value, that is either to the top-left, top-right, bottom-left, or bottom-right of value in grid.
+
+
+ 
+
+Example 1:
+
+Input:
+
+["NeighborSum", "adjacentSum", "adjacentSum", "diagonalSum", "diagonalSum"]
+
+[[[[0, 1, 2], [3, 4, 5], [6, 7, 8]]], [1], [4], [4], [8]]
+
+Output: [null, 6, 16, 16, 4]
+
+Explanation:
+
+
+
+The adjacent neighbors of 1 are 0, 2, and 4.
+The adjacent neighbors of 4 are 1, 3, 5, and 7.
+The diagonal neighbors of 4 are 0, 2, 6, and 8.
+The diagonal neighbor of 8 is 4.
+Example 2:
+
+Input:
+
+["NeighborSum", "adjacentSum", "diagonalSum"]
+
+[[[[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]]], [15], [9]]
+
+Output: [null, 23, 45]
+
+Explanation:
+
+
+
+The adjacent neighbors of 15 are 0, 10, 7, and 6.
+The diagonal neighbors of 9 are 4, 12, 14, and 15.
+ 
+
+Constraints:
+
+3 <= n == grid.length == grid[0].length <= 10
+0 <= grid[i][j] <= n2 - 1
+All grid[i][j] are distinct.
+value in adjacentSum and diagonalSum will be in the range [0, n2 - 1].
+At most 2 * n2 calls will be made to adjacentSum and diagonalSum.;=;=https://leetcode.com/problems/design-neighbor-sum-service/description/;=;=https://leetcode.com/problems/design-neighbor-sum-service/solutions/5583228/java-1liner-clean-solution-by-shree_govi-im0b/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6849078/simple-java-solution-hashtable-by-rohan_-p1si/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5584708/simple-java-code-by-abhinandannaik1717-9alt/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6774289/java-easy-100-solution-by-ytchouar-5dxc/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5656443/fastest-java-solution-pure-o1-by-im_obid-hn2b/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5583231/hash-map-easy-and-clean-code-c-java-c-be-38wv/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5583325/hashmap-of-value-index-pairs-dont-search-q8rs/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5589379/java-solution-by-ashuuy-q1u2/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5586160/beginner-friendly-solution-in-depth-solu-kgn7/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5587146/easy-java-solution-simple-explanation-by-iigm/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6968802/java-easy-by-sumeetrayat-gdvj/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5583287/beats-100-javacc-solution-for-leectcode3-ipux/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6719059/used-map-to-store-index-of-each-value-ja-hxjs/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6516770/easy-to-understand-solution-in-java-by-k-j0sk/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6467839/ultimate-modular-code-for-machine-coding-x2gu/;;;=;==;=;=;PROBLEM_ID:1;=;=3243. Shortest Distance After Road Addition Queries I;=;=Medium;=;=public int[] shortestDistanceAfterQueries(int n, int[][] queries);=;=You are given an integer n and a 2D integer array queries.
+
+There are n cities numbered from 0 to n - 1. Initially, there is a unidirectional road from city i to city i + 1 for all 0 <= i < n - 1.
+
+queries[i] = [ui, vi] represents the addition of a new unidirectional road from city ui to city vi. After each query, you need to find the length of the shortest path from city 0 to city n - 1.
+
+Return an array answer where for each i in the range [0, queries.length - 1], answer[i] is the length of the shortest path from city 0 to city n - 1 after processing the first i + 1 queries.
+
+ 
+
+Example 1:
+
+Input: n = 5, queries = [[2,4],[0,2],[0,4]]
+
+Output: [3,2,1]
+
+Explanation:
+
+
+
+After the addition of the road from 2 to 4, the length of the shortest path from 0 to 4 is 3.
+
+
+
+After the addition of the road from 0 to 2, the length of the shortest path from 0 to 4 is 2.
+
+
+
+After the addition of the road from 0 to 4, the length of the shortest path from 0 to 4 is 1.
+
+Example 2:
+
+Input: n = 4, queries = [[0,3],[0,2]]
+
+Output: [1,1]
+
+Explanation:
+
+
+
+After the addition of the road from 0 to 3, the length of the shortest path from 0 to 3 is 1.
+
+
+
+After the addition of the road from 0 to 2, the length of the shortest path remains 1.
+
+ 
+
+Constraints:
+
+3 <= n <= 500
+1 <= queries.length <= 500
+queries[i].length == 2
+0 <= queries[i][0] < queries[i][1] < n
+1 < queries[i][1] - queries[i][0]
+There are no repeated roads among the queries.;=;=https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/description/;=;=https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087071/video-beats-100-explained-step-by-step-b-no9m/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087268/shortest-path-using-bfs-breadth-first-se-tfzi/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/5583538/dijkstra-bfs-by-fahad06-0imw/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087411/easy-and-clean-code-c-java-by-sourav_n06-whn0/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087365/simple-pyjava-code-expalined-in-detail-b-lorv/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087781/brute-force-solution-by-arunk_leetcode-s6qc/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087107/bfs-solution-for-leetcode3243-by-samir02-1qst/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6619503/easy-sol-by-rajan_singh01-8zu2/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/5583238/java-clean-simple-graph-solution-by-shre-ktls/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/5584725/beats-90-best-java-solution-dijkstras-al-wgz6/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087741/bfs-and-chill-finding-the-fastest-route-jb55c/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087877/clean-java-solution-easy-to-understand-b-a40r/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/5584006/explanations-no-one-will-give-youvery-de-izt9/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087812/java-bfs-adjacency-list-by-mani-26-6m7b/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/solutions/6087376/c-c-java-python3-easy-and-simple-solutio-a7rj/;;;=;==;=;=;PROBLEM_ID:2;=;=3244. Shortest Distance After Road Addition Queries II;=;=Hard;=;=public int[] shortestDistanceAfterQueries(int n, int[][] queries);=;=You are given an integer n and a 2D integer array queries.
+
+There are n cities numbered from 0 to n - 1. Initially, there is a unidirectional road from city i to city i + 1 for all 0 <= i < n - 1.
+
+queries[i] = [ui, vi] represents the addition of a new unidirectional road from city ui to city vi. After each query, you need to find the length of the shortest path from city 0 to city n - 1.
+
+There are no two queries such that queries[i][0] < queries[j][0] < queries[i][1] < queries[j][1].
+
+Return an array answer where for each i in the range [0, queries.length - 1], answer[i] is the length of the shortest path from city 0 to city n - 1 after processing the first i + 1 queries.
+
+ 
+
+Example 1:
+
+Input: n = 5, queries = [[2,4],[0,2],[0,4]]
+
+Output: [3,2,1]
+
+Explanation:
+
+
+
+After the addition of the road from 2 to 4, the length of the shortest path from 0 to 4 is 3.
+
+
+
+After the addition of the road from 0 to 2, the length of the shortest path from 0 to 4 is 2.
+
+
+
+After the addition of the road from 0 to 4, the length of the shortest path from 0 to 4 is 1.
+
+Example 2:
+
+Input: n = 4, queries = [[0,3],[0,2]]
+
+Output: [1,1]
+
+Explanation:
+
+
+
+After the addition of the road from 0 to 3, the length of the shortest path from 0 to 3 is 1.
+
+
+
+After the addition of the road from 0 to 2, the length of the shortest path remains 1.
+
+ 
+
+Constraints:
+
+3 <= n <= 105
+1 <= queries.length <= 105
+queries[i].length == 2
+0 <= queries[i][0] < queries[i][1] < n
+1 < queries[i][1] - queries[i][0]
+There are no repeated roads among the queries.
+There are no two queries such that i != j and queries[i][0] < queries[j][0] < queries[i][1] < queries[j][1].;=;=https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/description/;=;=https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5583267/simple-solution-with-only-unordered-map-3ejzf/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5586020/javacpython-linked-list-on-solution-by-l-oskb/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5585223/using-hashmap-beats-1000-by-ravi_kumar67-vqf1/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5584347/java-solution-no-need-of-graph-traversal-ktz0/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5583390/java-solution-by-agaltsovd-bovj/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/6088874/simple-hashmap-solution-by-risabhuchiha-lge8/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5600064/java-treeset-by-extremania-nawz/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5589706/java-solution-with-lower-and-upper-bound-6odj/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5589166/java-easy-solution-by-danish_jamil-qs2h/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5588266/simple-linked-list-solution-by-phanthehu-0xk9/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5587657/on-time-complexity-beats-100-using-just-jsq3m/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5587624/easy-java-solution-treeset-by-ravikumar5-ni7v/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5586047/beats-100-java-solution-just-treemap-imp-7efu/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5585706/4ms-beats-100-java-onm-detailed-comments-bzbe/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5584215/java-memoization-hash-table-by-mot882000-71ay/;;;=;==;=;=;PROBLEM_ID:3;=;=3245. Alternating Groups III;=;=Hard;=;=public List<Integer> numberOfAlternatingGroups(int[] colors, int[][] queries);=;=There are some red and blue tiles arranged circularly. You are given an array of integers colors and a 2D integers array queries.
+
+The color of tile i is represented by colors[i]:
+
+colors[i] == 0 means that tile i is red.
+colors[i] == 1 means that tile i is blue.
+An alternating group is a contiguous subset of tiles in the circle with alternating colors (each tile in the group except the first and last one has a different color from its adjacent tiles in the group).
+
+You have to process queries of two types:
+
+queries[i] = [1, sizei], determine the count of alternating groups with size sizei.
+queries[i] = [2, indexi, colori], change colors[indexi] to colori.
+Return an array answer containing the results of the queries of the first type in order.
+
+Note that since colors represents a circle, the first and the last tiles are considered to be next to each other.
+
+ 
+
+Example 1:
+
+Input: colors = [0,1,1,0,1], queries = [[2,1,0],[1,4]]
+
+Output: [2]
+
+Explanation:
+
+
+
+First query:
+
+Change colors[1] to 0.
+
+
+
+Second query:
+
+Count of the alternating groups with size 4:
+
+
+
+Example 2:
+
+Input: colors = [0,0,1,0,1,1], queries = [[1,3],[2,3,0],[1,5]]
+
+Output: [2,0]
+
+Explanation:
+
+
+
+First query:
+
+Count of the alternating groups with size 3:
+
+
+
+Second query: colors will not change.
+
+Third query: There is no alternating group with size 5.
+
+ 
+
+Constraints:
+
+4 <= colors.length <= 5 * 104
+0 <= colors[i] <= 1
+1 <= queries.length <= 5 * 104
+queries[i][0] == 1 or queries[i][0] == 2
+For all i that:
+queries[i][0] == 1: queries[i].length == 2, 3 <= queries[i][1] <= colors.length - 1
+queries[i][0] == 2: queries[i].length == 3, 0 <= queries[i][1] <= colors.length - 1, 0 <= queries[i][2] <= 1;=;=https://leetcode.com/problems/alternating-groups-iii/description/;=;=https://leetcode.com/problems/alternating-groups-iii/solutions/5604073/straightforward-java-onlogn-qlogn-sqrtn-jxg44/;;https://leetcode.com/problems/alternating-groups-iii/solutions/5583425/java-solution-by-kartikeysingh907-3niu/;;https://leetcode.com/problems/alternating-groups-iii/solutions/5681712/counting-alternating-groups-in-a-circula-127g/;;https://leetcode.com/problems/alternating-groups-iii/solutions/5585947/java-easy-method-by-sky02-lwga/;;https://leetcode.com/problems/alternating-groups-iii/solutions/5583432/java-beats-100-beginner-friendly-easy-so-djus/;;;=;==;=;=;

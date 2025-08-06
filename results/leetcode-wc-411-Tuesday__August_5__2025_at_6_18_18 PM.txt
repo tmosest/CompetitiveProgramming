@@ -1,0 +1,171 @@
+PROBLEM_ID:0;=;=3258. Count Substrings That Satisfy K-Constraint I;=;=Easy;=;=public int countKConstraintSubstrings(String s, int k);=;=You are given a binary string s and an integer k.
+
+A binary string satisfies the k-constraint if either of the following conditions holds:
+
+The number of 0's in the string is at most k.
+The number of 1's in the string is at most k.
+Return an integer denoting the number of substrings of s that satisfy the k-constraint.
+
+ 
+
+Example 1:
+
+Input: s = "10101", k = 1
+
+Output: 12
+
+Explanation:
+
+Every substring of s except the substrings "1010", "10101", and "0101" satisfies the k-constraint.
+
+Example 2:
+
+Input: s = "1010101", k = 2
+
+Output: 25
+
+Explanation:
+
+Every substring of s except the substrings with a length greater than 5 satisfies the k-constraint.
+
+Example 3:
+
+Input: s = "11111", k = 1
+
+Output: 15
+
+Explanation:
+
+All substrings of s satisfy the k-constraint.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 50 
+1 <= k <= s.length
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/description/;=;=https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5653203/easy-video-solution-how-to-in-interview-7p8bm/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5654029/sliding-window-approach-to-count-substri-61gj/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/6901971/simple-java-solution-by-adityaralhan-yheq/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5656907/concise-sliding-window-solution-c-python-b5js/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5660344/simple-java-c-code-by-abhinandannaik1717-s3os/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/6760975/easy-substrings-check-this-out-simple-fo-uezx/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5654801/java-solution-by-harsh__005-8dra/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5653099/solution-in-java-c-prefix-sum-by-yeuhoah-387m/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5979669/java-solution-by-khushi_1502-l0ng/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5654879/easiestfaster-lesser-cpython3javacpython-8ut6/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/6968784/count-substrings-that-satisfy-k-constrai-6lk8/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/6607704/using-brute-force-2ms-by-theuntoldname-6hl2/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5653064/java-linear-solution-by-shree_govind_jee-0m0d/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5653270/sliding-window-on-by-iknownothingaboutco-8tek/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/6216470/java-brute-force-approach-by-ritabrata_1-bn9l/;;;=;==;=;=;PROBLEM_ID:1;=;=3259. Maximum Energy Boost From Two Drinks;=;=Medium;=;=public long maxEnergyBoost(int[] energyDrinkA, int[] energyDrinkB);=;=You are given two integer arrays energyDrinkA and energyDrinkB of the same length n by a futuristic sports scientist. These arrays represent the energy boosts per hour provided by two different energy drinks, A and B, respectively.
+
+You want to maximize your total energy boost by drinking one energy drink per hour. However, if you want to switch from consuming one energy drink to the other, you need to wait for one hour to cleanse your system (meaning you won't get any energy boost in that hour).
+
+Return the maximum total energy boost you can gain in the next n hours.
+
+Note that you can start consuming either of the two energy drinks.
+
+ 
+
+Example 1:
+
+Input: energyDrinkA = [1,3,1], energyDrinkB = [3,1,1]
+
+Output: 5
+
+Explanation:
+
+To gain an energy boost of 5, drink only the energy drink A (or only B).
+
+Example 2:
+
+Input: energyDrinkA = [4,1,1], energyDrinkB = [1,1,3]
+
+Output: 7
+
+Explanation:
+
+To gain an energy boost of 7:
+
+Drink the energy drink A for the first hour.
+Switch to the energy drink B and we lose the energy boost of the second hour.
+Gain the energy boost of the drink B in the third hour.
+ 
+
+Constraints:
+
+n == energyDrinkA.length == energyDrinkB.length
+3 <= n <= 105
+1 <= energyDrinkA[i], energyDrinkB[i] <= 105;=;=https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/description/;=;=https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653184/dp-o1-space-by-fahad06-3nc3/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653075/recursion-top-down-bottom-up-dp-easy-to-5hvse/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653182/easy-video-solution-how-to-in-interview-ot1lo/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653077/java-clean-simple-solution-without-dp-by-fcph/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5655786/detailed-easy-java-python3-c-solution-0m-0fqc/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653061/linear-dp-o1-space-by-jay_1410-lyy5/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653310/beats-100-best-solution-using-java-by-_d-iyes/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5654834/java-solution-by-harsh__005-s781/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653142/simple-java-dp-by-harshsharma08-d3i0/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5672387/very-easy-solution-by-vansh0123-led9/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5772198/must-watcheasiest-approach-with-beginner-xa8o/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5654168/maximum-energy-boost-from-two-drinks-usi-qh5g/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5657350/dp-clean-tabulation-by-vikasseervi357-8a5i/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5654285/easy-to-understand-memoization-using-2d-xrlu8/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5656247/java-recursion-memo-bottom-up-by-priyans-f16n/;;;=;==;=;=;PROBLEM_ID:2;=;=3260. Find the Largest Palindrome Divisible by K;=;=Hard;=;=public String largestPalindrome(int n, int k);=;=You are given two positive integers n and k.
+
+An integer x is called k-palindromic if:
+
+x is a palindrome.
+x is divisible by k.
+Return the largest integer having n digits (as a string) that is k-palindromic.
+
+Note that the integer must not have leading zeros.
+
+ 
+
+Example 1:
+
+Input: n = 3, k = 5
+
+Output: "595"
+
+Explanation:
+
+595 is the largest k-palindromic integer with 3 digits.
+
+Example 2:
+
+Input: n = 1, k = 4
+
+Output: "8"
+
+Explanation:
+
+4 and 8 are the only k-palindromic integers with 1 digit.
+
+Example 3:
+
+Input: n = 5, k = 6
+
+Output: "89898"
+
+ 
+
+Constraints:
+
+1 <= n <= 105
+1 <= k <= 9;=;=https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/description/;=;=https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5657358/very-simple-java-solutionbrute-force-by-bmh6d/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5653396/simple-math-based-solution-with-explanat-l3p6/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5732877/onk10-solution-digit-dp-beats-100-by-its-atka/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5669989/java-easy-dp-solution-by-kartikeysemwal-smuu/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5654497/simple-solution-no-dp-beats-100-by-umarm-zscu/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/6166956/pure-mathematics-by-s_u_04-fmq9/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/6055772/brute-force-solution-by-risabhuchiha-f4di/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5724986/cook-by-v9pt-sqmb/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5683095/java-solution-using-digit-dp-by-java_pro-o4op/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5676934/find-the-largest-palindrome-divisible-by-6qhe/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5675303/java-solution-by-charlie-tej-123-qbci/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5667719/crafting-the-perfect-palindrome-the-art-wbowz/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5663813/best-easy-solution-using-math-calculatio-y8j1/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5662341/java-solution-no-used-dp-by-keshavkr_cod-f5x4/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5660566/seriously-by-nbkflab-m3x8/;;;=;==;=;=;PROBLEM_ID:3;=;=3261. Count Substrings That Satisfy K-Constraint II;=;=Hard;=;=public long[] countKConstraintSubstrings(String s, int k, int[][] queries);=;=You are given a binary string s and an integer k.
+
+You are also given a 2D integer array queries, where queries[i] = [li, ri].
+
+A binary string satisfies the k-constraint if either of the following conditions holds:
+
+The number of 0's in the string is at most k.
+The number of 1's in the string is at most k.
+Return an integer array answer, where answer[i] is the number of substrings of s[li..ri] that satisfy the k-constraint.
+
+ 
+
+Example 1:
+
+Input: s = "0001111", k = 2, queries = [[0,6]]
+
+Output: [26]
+
+Explanation:
+
+For the query [0, 6], all substrings of s[0..6] = "0001111" satisfy the k-constraint except for the substrings s[0..5] = "000111" and s[0..6] = "0001111".
+
+Example 2:
+
+Input: s = "010101", k = 1, queries = [[0,5],[1,4],[2,3]]
+
+Output: [15,9,3]
+
+Explanation:
+
+The substrings of s with a length greater than 3 do not satisfy the k-constraint.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s[i] is either '0' or '1'.
+1 <= k <= s.length
+1 <= queries.length <= 105
+queries[i] == [li, ri]
+0 <= li <= ri < s.length
+All queries are distinct.;=;=https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/description/;=;=https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5655450/java-on-sliding-window-with-explanation-ckhbp/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5655271/java-transition-from-tle-to-2-non-tle-so-xbwp/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5653393/java-solution-onlogn-by-neilchetty-4txn/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5679228/easy-video-explanation-easy-video-soluti-1ex6/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5688467/without-segment-tree-using-sum-arrays-an-2t0c/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5679218/easy-video-explanation-easy-video-soluti-4khi/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5679205/easy-video-explanation-easy-video-soluti-1e3d/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5669725/java-on-easy-code-explanation-by-kartike-inyc/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5668901/binarysearch-sliding-window-prefixsum-ja-ym5m/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5666843/single-pass-sliding-window-tc-on-sc-on-b-i8ve/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5666022/java-solution-by-keshavkr_codderboy-3db2/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5661642/java-easy-implementation-using-array-by-vvpdi/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5660436/best-easy-solution-using-prefix-sum-slid-f4xe/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5657206/sliding-windows-prefixsum-offline-soluti-afsg/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/solutions/5657176/solution-4-by-anubhav_bajpai-9551/;;;=;==;=;=;

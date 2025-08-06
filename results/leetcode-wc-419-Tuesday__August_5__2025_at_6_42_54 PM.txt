@@ -1,0 +1,177 @@
+PROBLEM_ID:0;=;=3318. Find X-Sum of All K-Long Subarrays I;=;=Easy;=;=public�int[]�findXSum(int[]�nums,�int�k,�int�x);=;=You are given an array nums of n integers and two integers k and x.
+
+The x-sum of an array is calculated by the following procedure:
+
+Count the occurrences of all elements in the array.
+Keep only the occurrences of the top x most frequent elements. If two elements have the same number of occurrences, the element with the bigger value is considered more frequent.
+Calculate the sum of the resulting array.
+Note that if an array has less than x distinct elements, its x-sum is the sum of the array.
+
+Return an integer array answer of length n - k + 1 where answer[i] is the x-sum of the subarray nums[i..i + k - 1].
+
+�
+
+Example 1:
+
+Input: nums = [1,1,2,2,3,4,2,3], k = 6, x = 2
+
+Output: [6,10,12]
+
+Explanation:
+
+For subarray [1, 1, 2, 2, 3, 4], only elements 1 and 2 will be kept in the resulting array. Hence, answer[0] = 1 + 1 + 2 + 2.
+For subarray [1, 2, 2, 3, 4, 2], only elements 2 and 4 will be kept in the resulting array. Hence, answer[1] = 2 + 2 + 2 + 4. Note that 4 is kept in the array since it is bigger than 3 and 1 which occur the same number of times.
+For subarray [2, 2, 3, 4, 2, 3], only elements 2 and 3 are kept in the resulting array. Hence, answer[2] = 2 + 2 + 2 + 3 + 3.
+Example 2:
+
+Input: nums = [3,8,7,8,7,5], k = 2, x = 2
+
+Output: [11,15,15,15,12]
+
+Explanation:
+
+Since k == x, answer[i] is equal to the sum of the subarray nums[i..i + k - 1].
+
+�
+
+Constraints:
+
+1 <= n == nums.length <= 50
+1 <= nums[i] <= 50
+1 <= x <= k <= nums.length;=;=https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/description/;=;=https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905520/simple-java-solution-by-harsh__005-0eni/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905546/brutal-brute-force-java-on-sliding-windo-vnin/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6721566/easy-java-solution-by-imbluegold-s8x8/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905418/100-beat-java-simple-solution-by-shree_g-7ug9/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/7039352/sum-of-top-x-frequent-elements-in-each-w-h5qn/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905606/brute-force-using-priority-queue-and-has-o17n/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905533/java-sliding-window-sort-2d-array-by-cg1-ekbe/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6190311/find-x-sum-of-all-k-long-subarrays-i-sli-ctpn/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905368/java-map-priority-queue-solution-by-solv-0ksv/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5906236/beats-100-by-aniket_raut-2nql/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/7032610/dont-depend-on-heap-learn-bucket-sort-be-0ksd/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6110569/priorityqueue-min-heap-sliding-window-so-kzf6/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6834228/fast-java-solution-by-tydaljames-kk5p/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6775242/java-easy-by-sumeetrayat-wa8h/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6631181/java-easy-solution-explained-by-tbekpro-pw78/;;;=;==;=;=;PROBLEM_ID:1;=;=3319. K-th Largest Perfect Subtree Size in Binary Tree;=;=Medium;=;=/**�*�Definition�for�a�binary�tree�node.�*�public��TreeNode��*�����int�val;�*�����TreeNode�left;�*�����TreeNode�right;�*�����TreeNode()��*�����TreeNode(int�val)��this.val�=�val;��*�����TreeNode(int�val,�TreeNode�left,�TreeNode�right)��*���������this.val�=�val;�*���������this.left�=�left;�*���������this.right�=�right;�*������*;=;=You are given the root of a binary tree and an integer k.
+
+Return an integer denoting the size of the kth largest perfect binary subtree, or -1 if it doesn't exist.
+
+A perfect binary tree is a tree where all leaves are on the same level, and every parent has two children.
+
+�
+
+Example 1:
+
+Input: root = [5,3,6,5,2,5,7,1,8,null,null,6,8], k = 2
+
+Output: 3
+
+Explanation:
+
+
+
+The roots of the perfect binary subtrees are highlighted in black. Their sizes, in non-increasing order are [3, 3, 1, 1, 1, 1, 1, 1].
+The 2nd largest size is 3.
+
+Example 2:
+
+Input: root = [1,2,3,4,5,6,7], k = 1
+
+Output: 7
+
+Explanation:
+
+
+
+The sizes of the perfect binary subtrees in non-increasing order are [7, 3, 3, 1, 1, 1, 1]. The size of the largest perfect binary subtree is 7.
+
+Example 3:
+
+Input: root = [1,2,3,null,4], k = 3
+
+Output: -1
+
+Explanation:
+
+
+
+The sizes of the perfect binary subtrees in non-increasing order are [1, 1]. There are fewer than 3 perfect binary subtrees.
+
+�
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 2000].
+1 <= Node.val <= 2000
+1 <= k <= 1024;=;=https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/description/;=;=https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/7040955/simple-dfs-solution-similar-to-balanced-b18pn/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5905494/easy-on-dfs-traversal-solution-by-be_fig-wg2e/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5905522/javacpython-dfs-by-lee215-5ejv/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5913315/python3-10-lines-dfs-ts-82-77-by-spauldi-mfov/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5905673/observation-approach-simple-and-easy-imp-3hu8/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5905508/simple-java-solution-by-harsh__005-sbfl/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5906408/here-is-the-solution-which-beats-100-of-9vdkx/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5905389/java-simple-solution-weekly-contest-by-s-zd7r/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5905544/java-solution-by-simple-post-order-trave-5c16/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5905471/100-runtime-and-memory-beats-java-soluti-8fyo/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5999766/java-5ms-95-dfs-count-fastest-best-by-st-mfu2/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5906705/time-complexity-on-java-by-adddeepanshuv-pqc5/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5906253/simple-post-order-onlogk-java-and-c-solu-29f6/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/5905377/heap-dfs-approach-beats-100-by-david1121-dlvs/;;https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/solutions/6925358/simple-java-solution-beats-90-by-yeabkal-mu9x/;;;=;==;=;=;PROBLEM_ID:2;=;=3320. Count The Number of Winning Sequences;=;=Hard;=;=public�int�countWinningSequences(String�s);=;=Alice and Bob are playing a fantasy battle game consisting of n rounds where they summon one of three magical creatures each round: a Fire Dragon, a Water Serpent, or an Earth Golem. In each round, players simultaneously summon their creature and are awarded points as follows:
+
+If one player summons a Fire Dragon and the other summons an Earth Golem, the player who summoned the Fire Dragon is awarded a point.
+If one player summons a Water Serpent and the other summons a Fire Dragon, the player who summoned the Water Serpent is awarded a point.
+If one player summons an Earth Golem and the other summons a Water Serpent, the player who summoned the Earth Golem is awarded a point.
+If both players summon the same creature, no player is awarded a point.
+You are given a string s consisting of n characters 'F', 'W', and 'E', representing the sequence of creatures Alice will summon in each round:
+
+If s[i] == 'F', Alice summons a Fire Dragon.
+If s[i] == 'W', Alice summons a Water Serpent.
+If s[i] == 'E', Alice summons an Earth Golem.
+Bob�s sequence of moves is unknown, but it is guaranteed that Bob will never summon the same creature in two consecutive rounds. Bob beats Alice if the total number of points awarded to Bob after n rounds is strictly greater than the points awarded to Alice.
+
+Return the number of distinct sequences Bob can use to beat Alice.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+�
+
+Example 1:
+
+Input: s = "FFF"
+
+Output: 3
+
+Explanation:
+
+Bob can beat Alice by making one of the following sequences of moves: "WFW", "FWF", or "WEW". Note that other winning sequences like "WWE" or "EWW" are invalid since Bob cannot make the same move twice in a row.
+
+Example 2:
+
+Input: s = "FWEFW"
+
+Output: 18
+
+Explanation:
+
+Bob can beat Alice by making one of the following sequences of moves: "FWFWF", "FWFWE", "FWEFE", "FWEWE", "FEFWF", "FEFWE", "FEFEW", "FEWFE", "WFEFE", "WFEWE", "WEFWF", "WEFWE", "WEFEF", "WEFEW", "WEWFW", "WEWFE", "EWFWE", or "EWEWE".
+
+�
+
+Constraints:
+
+1 <= s.length <= 1000
+s[i] is one of 'F', 'W', or 'E'.;=;=https://leetcode.com/problems/count-the-number-of-winning-sequences/description/;=;=https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5906619/easiest-fastest-solution-most-optimized-rrcce/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5928211/easy-take-notake-dp-solution-on42001-tim-virc/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5905589/simulation-memo-by-harshpreet931-ez3u/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5905382/java-solution-easy-by-dhruvbansal153-30dc/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5905518/java-easy-solution-recursion-memo-by-lau-yp3m/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5905428/java-solution-by-shagun917-ffkn/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5922128/java-fastest-solution-on2-time-on-space-hufto/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5905837/3d-dp-problem-beats-75-runtime-by-harish-n6nk/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5918899/java-solution-by-dp-map-easy-to-understa-4ajg/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5917210/recursive-memo-solution-by-imsaurabhkhar-rqta/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/6579736/on-space-on2-time-bottom-up-dp-beats-100-sj3q/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5907784/simple-and-easy-java-solution-by-kalyaan-g4ks/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5907031/simple-and-easy-java-solution-using-dp-m-4n45/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5907012/recursion-memoization-dp-beats-75-by-viv-zsx0/;;https://leetcode.com/problems/count-the-number-of-winning-sequences/solutions/5906268/3320-count-the-number-of-winning-sequenc-0otv/;;;=;==;=;=;PROBLEM_ID:3;=;=3321. Find X-Sum of All K-Long Subarrays II;=;=Hard;=;=public�long[]�findXSum(int[]�nums,�int�k,�int�x);=;=You are given an array nums of n integers and two integers k and x.
+
+The x-sum of an array is calculated by the following procedure:
+
+Count the occurrences of all elements in the array.
+Keep only the occurrences of the top x most frequent elements. If two elements have the same number of occurrences, the element with the bigger value is considered more frequent.
+Calculate the sum of the resulting array.
+Note that if an array has less than x distinct elements, its x-sum is the sum of the array.
+
+Return an integer array answer of length n - k + 1 where answer[i] is the x-sum of the subarray nums[i..i + k - 1].
+
+�
+
+Example 1:
+
+Input: nums = [1,1,2,2,3,4,2,3], k = 6, x = 2
+
+Output: [6,10,12]
+
+Explanation:
+
+For subarray [1, 1, 2, 2, 3, 4], only elements 1 and 2 will be kept in the resulting array. Hence, answer[0] = 1 + 1 + 2 + 2.
+For subarray [1, 2, 2, 3, 4, 2], only elements 2 and 4 will be kept in the resulting array. Hence, answer[1] = 2 + 2 + 2 + 4. Note that 4 is kept in the array since it is bigger than 3 and 1 which occur the same number of times.
+For subarray [2, 2, 3, 4, 2, 3], only elements 2 and 3 are kept in the resulting array. Hence, answer[2] = 2 + 2 + 2 + 3 + 3.
+Example 2:
+
+Input: nums = [3,8,7,8,7,5], k = 2, x = 2
+
+Output: [11,15,15,15,12]
+
+Explanation:
+
+Since k == x, answer[i] is equal to the sum of the subarray nums[i..i + k - 1].
+
+�
+
+Constraints:
+
+nums.length == n
+1 <= n <= 105
+1 <= nums[i] <= 109
+1 <= x <= k <= nums.length;=;=https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/description/;=;=https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/5911343/java-implementation-treeset-map-by-bhawe-teyk/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/5906152/two-treesets-hashmap-by-jeckafedorov-2wl3/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/5905482/treeset-solution-by-shree_govind_jee-0w8i/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/5905483/java-code-that-beats-100-using-sliding-w-n6lk/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/5906621/3321-find-x-sum-of-all-k-long-subarrays-fadvd/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/5906961/beats-100-sliding-window-two-treesets-ja-cpap/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/6219812/java-solution-by-sausanet4-wtxn/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/6156254/complicated-solution-using-2-heaps-by-ri-om2o/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/5910387/easy-to-understand-by-bpoluri-1hd5/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/5906772/max-and-min-treeset-java-solution-by-new-9rd6/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/solutions/5905844/easiest-solution-of-java-by-nency_parmar-jb03/;;;=;==;=;=;

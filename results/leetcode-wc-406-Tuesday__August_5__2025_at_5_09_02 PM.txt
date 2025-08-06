@@ -1,0 +1,191 @@
+PROBLEM_ID:0;=;=3216. Lexicographically Smallest String After a Swap;=;=Easy;=;=public String getSmallestString(String s);=;=Given a string s containing only digits, return the lexicographically smallest string that can be obtained after swapping adjacent digits in s with the same parity at most once.
+
+Digits have the same parity if both are odd or both are even. For example, 5 and 9, as well as 2 and 4, have the same parity, while 6 and 9 do not.
+
+ 
+
+Example 1:
+
+Input: s = "45320"
+
+Output: "43520"
+
+Explanation:
+
+s[1] == '5' and s[2] == '3' both have the same parity, and swapping them results in the lexicographically smallest string.
+
+Example 2:
+
+Input: s = "001"
+
+Output: "001"
+
+Explanation:
+
+There is no need to perform a swap because s is already the lexicographically smallest.
+
+ 
+
+Constraints:
+
+2 <= s.length <= 100
+s consists only of digits.;=;=https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/description/;=;=https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473408/easy-video-solution-how-to-in-interview-52gu1/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/6935178/beats-100-using-stringbuilder-by-alexand-cxfe/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473276/1-linear-java-intuitive-solution-by-shre-k5af/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473223/solution-by-dare2solve-detailed-explanat-9dw6/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473282/java-solution-by-harsh__005-zugl/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/6638464/simple-efficient-two-pointer-solution-on-2rg1/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5483538/easiestfaster-lesser-cpython3javacpython-1q28/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473108/effortlessly-dominate-100-with-beginner-yfld5/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/7038108/optimal-strategy-by-manish_pratap_singh-b2wr/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/6826608/check-it-out-bro-by-madhansingh-htnv/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5474027/simple-java-code-by-abhinandannaik1717-o6un/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/6314888/1ms-100-beat-java-by-galani_jenis-x7e0/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5474387/simple-java-solution-beats-100-by-anshul-wxfw/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5532646/solution-by-dare2solve-detailed-explanat-0iyg/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5475527/simple-java-beats-100-by-harshsharma08-rvc4/;;;=;==;=;=;PROBLEM_ID:1;=;=3217. Delete Nodes From Linked List Present in Array;=;=Medium;=;=/** * Definition for singly-linked list. * public  ListNode  *     int val; *     ListNode next; *     ListNode()  *     ListNode(int val)  this.val = val;  *     ListNode(int val, ListNode next)  this.val = val; this.next = next;  *  */class      public ListNode modifiedList(int[] nums, ListNode head);=;=You are given an array of integers nums and the head of a linked list. Return the head of the modified linked list after removing all nodes from the linked list that have a value that exists in nums.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3], head = [1,2,3,4,5]
+
+Output: [4,5]
+
+Explanation:
+
+
+
+Remove the nodes with values 1, 2, and 3.
+
+Example 2:
+
+Input: nums = [1], head = [1,2,1,2,1,2]
+
+Output: [2,2,2]
+
+Explanation:
+
+
+
+Remove the nodes with value 1.
+
+Example 3:
+
+Input: nums = [5], head = [1,2,3,4]
+
+Output: [1,2,3,4]
+
+Explanation:
+
+
+
+No node has value 5.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105
+All elements in nums are unique.
+The number of nodes in the given list is in the range [1, 105].
+1 <= Node.val <= 105
+The input is generated such that there is at least one node in the linked list that has a value not present in nums.;=;=https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/;=;=https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5745229/best-solution-on-runtime-with-explanatio-jmky/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/7001472/remove-values-from-linked-list-using-has-495a/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/6910345/easy-solution-by-adhi_m_s-untw/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/6909712/remove-target-values-from-a-linked-list-np3gs/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5473411/easy-video-solution-how-to-in-interview-kflkw/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5473120/beats-100-c-python-java-go-rust-javascri-jmv1/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5473261/java-solution-by-harsh__005-mq4y/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/6881116/hashset-by-nisatsama7-vnv0/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5744387/deleting-nodes-using-link-updation-and-f-yg34/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/6801461/easy-and-simple-solution-beginner-friend-dp40/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5744355/easy-video-solution-how-to-in-interview-5fwph/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5482006/simple-java-c-code-by-abhinandannaik1717-22jp/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/6437196/beats-100-counting-easy-and-beginner-fri-vrgn/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5743850/dcc-06092024-linkedlist-on-by-sajaltiwar-vq6i/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/6777678/beats-100-simple-approach-beginner-frien-5qid/;;;=;==;=;=;PROBLEM_ID:2;=;=3218. Minimum Cost for Cutting Cake I;=;=Medium;=;=public int minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut);=;=There is an m x n cake that needs to be cut into 1 x 1 pieces.
+
+You are given integers m, n, and two arrays:
+
+horizontalCut of size m - 1, where horizontalCut[i] represents the cost to cut along the horizontal line i.
+verticalCut of size n - 1, where verticalCut[j] represents the cost to cut along the vertical line j.
+In one operation, you can choose any piece of cake that is not yet a 1 x 1 square and perform one of the following cuts:
+
+Cut along a horizontal line i at a cost of horizontalCut[i].
+Cut along a vertical line j at a cost of verticalCut[j].
+After the cut, the piece of cake is divided into two distinct pieces.
+
+The cost of a cut depends only on the initial cost of the line and does not change.
+
+Return the minimum total cost to cut the entire cake into 1 x 1 pieces.
+
+ 
+
+Example 1:
+
+Input: m = 3, n = 2, horizontalCut = [1,3], verticalCut = [5]
+
+Output: 13
+
+Explanation:
+
+
+
+Perform a cut on the vertical line 0 with cost 5, current total cost is 5.
+Perform a cut on the horizontal line 0 on 3 x 1 subgrid with cost 1.
+Perform a cut on the horizontal line 0 on 3 x 1 subgrid with cost 1.
+Perform a cut on the horizontal line 1 on 2 x 1 subgrid with cost 3.
+Perform a cut on the horizontal line 1 on 2 x 1 subgrid with cost 3.
+The total cost is 5 + 1 + 1 + 3 + 3 = 13.
+
+Example 2:
+
+Input: m = 2, n = 2, horizontalCut = [7], verticalCut = [4]
+
+Output: 15
+
+Explanation:
+
+Perform a cut on the horizontal line 0 with cost 7.
+Perform a cut on the vertical line 0 on 1 x 2 subgrid with cost 4.
+Perform a cut on the vertical line 0 on 1 x 2 subgrid with cost 4.
+The total cost is 7 + 4 + 4 = 15.
+
+ 
+
+Constraints:
+
+1 <= m, n <= 20
+horizontalCut.length == m - 1
+verticalCut.length == n - 1
+1 <= horizontalCut[i], verticalCut[i] <= 103;=;=https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/description/;=;=https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5473151/javacpython-greedy-by-lee215-rksx/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5474149/easy-video-solution-pictorial-explanatio-bp83/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5473400/greedy-algorithm-for-minimizing-grid-cut-6ze4/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/6995040/beats-100-greedy-no-dp-simple-explanatio-pwgf/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5479538/easy-java-solution-by-abinath-jwhs/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5473199/solution-by-dare2solve-detailed-explanat-zogi/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/7006779/greedy-approach-to-minimize-cost-of-cutt-4y3b/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5473071/java-dfs-memo-pass-diagram-explanation-b-7a75/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5473116/java-clean-simple-solution-by-shree_govi-qk8y/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5473196/java-solution-by-harsh__005-4adt/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5477079/beats-100-users-with-java-2-ms-by-dhruvb-xduv/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5480927/java-simple-solution-dp-4-state-capture-lf2d0/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5637887/greedy-solution-pythoncjava-beats-9767-r-dz7h/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5473200/memoization-java-by-pavan_d_naik-8ycw/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/solutions/5522705/java-solution-time-space-omn-by-i_am_sou-xjzh/;;;=;==;=;=;PROBLEM_ID:3;=;=3219. Minimum Cost for Cutting Cake II;=;=Hard;=;=public long minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut);=;=There is an m x n cake that needs to be cut into 1 x 1 pieces.
+
+You are given integers m, n, and two arrays:
+
+horizontalCut of size m - 1, where horizontalCut[i] represents the cost to cut along the horizontal line i.
+verticalCut of size n - 1, where verticalCut[j] represents the cost to cut along the vertical line j.
+In one operation, you can choose any piece of cake that is not yet a 1 x 1 square and perform one of the following cuts:
+
+Cut along a horizontal line i at a cost of horizontalCut[i].
+Cut along a vertical line j at a cost of verticalCut[j].
+After the cut, the piece of cake is divided into two distinct pieces.
+
+The cost of a cut depends only on the initial cost of the line and does not change.
+
+Return the minimum total cost to cut the entire cake into 1 x 1 pieces.
+
+ 
+
+Example 1:
+
+Input: m = 3, n = 2, horizontalCut = [1,3], verticalCut = [5]
+
+Output: 13
+
+Explanation:
+
+
+
+Perform a cut on the vertical line 0 with cost 5, current total cost is 5.
+Perform a cut on the horizontal line 0 on 3 x 1 subgrid with cost 1.
+Perform a cut on the horizontal line 0 on 3 x 1 subgrid with cost 1.
+Perform a cut on the horizontal line 1 on 2 x 1 subgrid with cost 3.
+Perform a cut on the horizontal line 1 on 2 x 1 subgrid with cost 3.
+The total cost is 5 + 1 + 1 + 3 + 3 = 13.
+
+Example 2:
+
+Input: m = 2, n = 2, horizontalCut = [7], verticalCut = [4]
+
+Output: 15
+
+Explanation:
+
+Perform a cut on the horizontal line 0 with cost 7.
+Perform a cut on the vertical line 0 on 1 x 2 subgrid with cost 4.
+Perform a cut on the vertical line 0 on 1 x 2 subgrid with cost 4.
+The total cost is 7 + 4 + 4 = 15.
+
+ 
+
+Constraints:
+
+1 <= m, n <= 105
+horizontalCut.length == m - 1
+verticalCut.length == n - 1
+1 <= horizontalCut[i], verticalCut[i] <= 103;=;=https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/description/;=;=https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5473140/javacpython-greedy-by-lee215-h01x/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5473102/buckets-no-heap-fastest-omn-c-by-subbuff-6x10/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5473670/100-beats-on-taking-the-higher-cost-cut-m40j3/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5474316/easy-video-solution-pictorial-explanatio-f3jp/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5475782/beginner-friendly-using-sorting-java-by-d0dj5/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/6865942/minimum-cost-for-cutting-cake-ii-using-g-zlvs/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5473374/greedy-algorithm-for-minimizing-grid-cut-yanh/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5473218/java-solution-by-harsh__005-4nxv/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5530645/simple-code-easy-to-understand-logical-b-9uk7/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/6243309/easiest-java-solution-amost-100-beats-by-eujj/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5473178/solution-by-dare2solve-detailed-explanat-k930/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5473162/java-simple-approach-optimize-version-of-zp3l/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5473317/greedy-approac-with-comments-and-explana-gwh7/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5478138/simple-sorting-greedy-solution-beats-100-yes5/;;https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/solutions/5991999/greedy-solution-java-by-indranilpal-eqjy/;;;=;==;=;=;

@@ -75,9 +75,11 @@ public class JavaFileBuilder {
     javaFile.addRawContent("@BeforeEach\nvoid setup() {\n "
         + StringUtil.uncapitalize(className)
         + " = new " + className + "();\n}\n");
-    // Add a void test method
+    
+        // Add a void test method
     String parameters = javaFileMethod.getParameters().stream()
         .reduce((one, two) -> one + ", " + two).orElse("");
+
     String parametersNames = javaFileMethod.getParameters().stream()
         .map(str -> {
           if (str.length() < 1) {
@@ -86,7 +88,8 @@ public class JavaFileBuilder {
           return str.split(" ")[1];
         })
         .reduce((one, two) -> one + ", " + two).orElse("");
-    javaFile.addRawContent("private void test( "
+    
+        javaFile.addRawContent("private void test( "
         + javaFileMethod.getReturnType()
         + " output, " + parameters + ") {\n Assertions.assertEquals(output, "
         + StringUtil.uncapitalize(className) + "." + javaFileMethod.getMethodName() + "("
@@ -102,7 +105,7 @@ public class JavaFileBuilder {
       javaFile.addRawContent(
           "@Test\nvoid test" + leetCodeExample.index + "() {\n test(" + 
             leetCodeExample.getOutput() + 
-            ", " + leetCodeExample.getParamters(parametersNames) + "); }\n");
+            ", " + leetCodeExample.getParamters(javaFileMethod.getParameters()) + "); }\n");
     }
 
     for (int i = 0; i < annotations.size(); i++) {

@@ -1,0 +1,175 @@
+PROBLEM_ID:0;=;=3304. Find the K-th Character in String Game I;=;=Easy;=;=public char kthCharacter(int k);=;=Alice and Bob are playing a game. Initially, Alice has a string word = "a".
+
+You are given a positive integer k.
+
+Now Bob will ask Alice to perform the following operation forever:
+
+Generate a new string by changing each character in word to its next character in the English alphabet, and append it to the original word.
+For example, performing the operation on "c" generates "cd" and performing the operation on "zb" generates "zbac".
+
+Return the value of the kth character in word, after enough operations have been done for word to have at least k characters.
+
+ 
+
+Example 1:
+
+Input: k = 5
+
+Output: "b"
+
+Explanation:
+
+Initially, word = "a". We need to do the operation three times:
+
+Generated string is "b", word becomes "ab".
+Generated string is "bc", word becomes "abbc".
+Generated string is "bccd", word becomes "abbcbccd".
+Example 2:
+
+Input: k = 10
+
+Output: "c"
+
+ 
+
+Constraints:
+
+1 <= k <= 500;=;=https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/description/;=;=https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6911890/beginner-freindlyjavacpythonjs-by-ashokv-h1au/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6912907/simple-explanation-for-why-1-liner-solut-nari/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6916164/3-approaches-detailed-dry-run-and-observ-9j92/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6912903/find-the-k-th-character-in-string-game-i-72i7/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6897074/if-an-idiot-like-me-can-solve-it-so-can-74zkr/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6913069/1-trick-2x-growth-0-tles-build-until-you-q6q2/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6912997/o1-solution-explained-for-any-language-b-w1sy/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/5846330/javacpython-1-line-ologk-by-lee215-lbm9/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6914230/beats-super-easy-beginners-java-c-c-pyth-1jtr/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6914188/bit-manipulation-in-o1-without-precomput-3y0e/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6913189/easy-solution-eng-hing-explained-0-ms-ol-0d9u/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6913141/beginner-freindly-simulate-until-k-java-2hsmt/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6913287/find-the-k-th-character-in-string-game-i-redy/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6915748/one-line-code-in-java-must-try-by-notadi-m4s6/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6916562/from-a-to-amazing-tracking-the-k-th-char-jlgz/;;;=;==;=;=;PROBLEM_ID:1;=;=3305. Count of Substrings Containing Every Vowel and K Consonants I;=;=Medium;=;=public int countOfSubstrings(String word, int k);=;=You are given a string word and a non-negative integer k.
+
+Return the total number of substrings of word that contain every vowel ('a', 'e', 'i', 'o', and 'u') at least once and exactly k consonants.
+
+ 
+
+Example 1:
+
+Input: word = "aeioqq", k = 1
+
+Output: 0
+
+Explanation:
+
+There is no substring with every vowel.
+
+Example 2:
+
+Input: word = "aeiou", k = 0
+
+Output: 1
+
+Explanation:
+
+The only substring with every vowel and zero consonants is word[0..4], which is "aeiou".
+
+Example 3:
+
+Input: word = "ieaouqqieaouqq", k = 1
+
+Output: 3
+
+Explanation:
+
+The substrings with every vowel and one consonant are:
+
+word[0..5], which is "ieaouq".
+word[6..11], which is "qieaou".
+word[7..12], which is "ieaouq".
+ 
+
+Constraints:
+
+5 <= word.length <= 250
+word consists only of lowercase English letters.
+0 <= k <= word.length - 5;=;=https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/description/;=;=https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846122/simple-brute-force-by-_sxrthakk-5x1m/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5862631/python3-map-and-two-pointer-ts-91-96-by-po1eq/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846204/sliding-window-approach-by-prashasst-1e7z/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846101/brute-force-by-shubhamyadav32100-80k8/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5847383/easy-to-understand-and-fast-by-ram2310-pr9y/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846142/beats-100-and-easy-to-understand-by-anik-8xqx/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846071/java-simple-solution-by-shree_govind_jee-zbyy/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5850621/better-than-100-beginner-friendly-soluti-9rbn/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5847475/100-user-beat-java-solution-by-s_a_m2003-kfkx/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846109/my-code-in-java-by-guna_sai_kumar-rb5q/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846073/java-solution-by-ganesh_dandekar-nopy/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846836/brute-force-easy-solution-with-intution-eumkw/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5847816/java-code-100-beats-but-1000ms-p-btw-eas-fvot/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846193/brute-force-solution-simple-early-stoppi-66zf/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5872791/best-java-solution-beats-100-sliding-win-ayiy/;;;=;==;=;=;PROBLEM_ID:2;=;=3306. Count of Substrings Containing Every Vowel and K Consonants II;=;=Medium;=;=public long countOfSubstrings(String word, int k);=;=You are given a string word and a non-negative integer k.
+
+Return the total number of substrings of word that contain every vowel ('a', 'e', 'i', 'o', and 'u') at least once and exactly k consonants.
+
+ 
+
+Example 1:
+
+Input: word = "aeioqq", k = 1
+
+Output: 0
+
+Explanation:
+
+There is no substring with every vowel.
+
+Example 2:
+
+Input: word = "aeiou", k = 0
+
+Output: 1
+
+Explanation:
+
+The only substring with every vowel and zero consonants is word[0..4], which is "aeiou".
+
+Example 3:
+
+Input: word = "ieaouqqieaouqq", k = 1
+
+Output: 3
+
+Explanation:
+
+The substrings with every vowel and one consonant are:
+
+word[0..5], which is "ieaouq".
+word[6..11], which is "qieaou".
+word[7..12], which is "ieaouq".
+ 
+
+Constraints:
+
+5 <= word.length <= 2 * 105
+word consists only of lowercase English letters.
+0 <= k <= word.length - 5;=;=https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/description/;=;=https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6519195/beats-100-java-c-c-python3-c-js-ts-optim-vxxb/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6518886/conditional-sliding-window-visualization-z8ro/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6518814/sliding-through-vowels-consonants-optimi-9y9a/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6519611/beats-super-easy-beginners-java-c-c-pyth-8x9f/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6519589/beats-100-easy-visual-explaination-begin-6kx0/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/5862654/python3-map-and-two-pointer-ts-85-38-by-v07a8/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6879875/sliding-window-approach-easy-explanation-sdcx/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/5846240/sliding-window-with-2-pointer-with-exp-b-en4b/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/5846168/java-sliding-window-by-mbsanjayp66-r4gk/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6518880/do-atleast-k-instead-of-exactly-k-by-jay-bvzs/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6519429/sliding-window-java-easy-solution-with-e-ybhq/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6519439/easy-go-java-and-python-solution-by-oimi-t61b/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6519067/count-of-substrings-containing-every-vow-8od4/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6519521/easy-code-must-try-code-in-java-by-notad-t5pk/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/5846947/window-sliding-by-be_default-bp7m/;;;=;==;=;=;PROBLEM_ID:3;=;=3307. Find the K-th Character in String Game II;=;=Hard;=;=public char kthCharacter(long k, int[] operations);=;=Alice and Bob are playing a game. Initially, Alice has a string word = "a".
+
+You are given a positive integer k. You are also given an integer array operations, where operations[i] represents the type of the ith operation.
+
+Now Bob will ask Alice to perform all operations in sequence:
+
+If operations[i] == 0, append a copy of word to itself.
+If operations[i] == 1, generate a new string by changing each character in word to its next character in the English alphabet, and append it to the original word. For example, performing the operation on "c" generates "cd" and performing the operation on "zb" generates "zbac".
+Return the value of the kth character in word after performing all the operations.
+
+Note that the character 'z' can be changed to 'a' in the second type of operation.
+
+ 
+
+Example 1:
+
+Input: k = 5, operations = [0,0,0]
+
+Output: "a"
+
+Explanation:
+
+Initially, word == "a". Alice performs the three operations as follows:
+
+Appends "a" to "a", word becomes "aa".
+Appends "aa" to "aa", word becomes "aaaa".
+Appends "aaaa" to "aaaa", word becomes "aaaaaaaa".
+Example 2:
+
+Input: k = 10, operations = [0,1,0,1]
+
+Output: "b"
+
+Explanation:
+
+Initially, word == "a". Alice performs the four operations as follows:
+
+Appends "a" to "a", word becomes "aa".
+Appends "bb" to "aa", word becomes "aabb".
+Appends "aabb" to "aabb", word becomes "aabbaabb".
+Appends "bbccbbcc" to "aabbaabb", word becomes "aabbaabbbbccbbcc".
+ 
+
+Constraints:
+
+1 <= k <= 1014
+1 <= operations.length <= 100
+operations[i] is either 0 or 1.
+The input is generated such that word has at least k characters after all operations.;=;=https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/description/;=;=https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6916406/beginner-freindlyjavacpythonjs-by-ashokv-ydj8/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6918225/100-beats-fast-and-clear-with-iterations-b24a/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6918299/best-explanation-possible-in-detail-appr-3twt/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6917139/beginner-friendly-no-bitwise-operaors-op-9n4z/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6916159/beginner-freindly-bit-logic-simulation-j-sws7/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6917431/easy-solution-eng-hing-explained-0-ms-ol-o2qb/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6917611/beginner-freindly-easy-simple-java-by-sa-96yf/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6917182/3-easy-to-understand-python-solutions-by-v59c/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6917439/easy-recursive-code-o-log_2-n2-by-ankith-0rav/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6920348/full-explained-java-solution-beginner-fr-qr8r/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6920013/easy-intuitive-original-java-code-beats-1el4c/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6918126/efficient-k-th-character-finder-via-reve-nefg/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6918435/100-beats-hinglish-explanation-genius-tr-q2pg/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6916279/alice-making-it-hard-so-you-just-by-hell-du30/;;https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6918836/easy-code-in-java-using-recursion-by-yas-ibpw/;;;=;==;=;=;

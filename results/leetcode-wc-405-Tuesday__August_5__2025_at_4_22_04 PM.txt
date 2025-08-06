@@ -1,0 +1,155 @@
+PROBLEM_ID:0;=;=3210. Find the Encrypted String;=;=Easy;=;=public String getEncryptedString(String s, int k);=;=You are given a string s and an integer k. Encrypt the string using the following algorithm:
+
+For each character c in s, replace c with the kth character after c in the string (in a cyclic manner).
+Return the encrypted string.
+
+ 
+
+Example 1:
+
+Input: s = "dart", k = 3
+
+Output: "tdar"
+
+Explanation:
+
+For i = 0, the 3rd character after 'd' is 't'.
+For i = 1, the 3rd character after 'a' is 'd'.
+For i = 2, the 3rd character after 'r' is 'a'.
+For i = 3, the 3rd character after 't' is 'r'.
+Example 2:
+
+Input: s = "aaa", k = 1
+
+Output: "aaa"
+
+Explanation:
+
+As all the characters are the same, the encrypted string will also be the same.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+1 <= k <= 104
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/find-the-encrypted-string/description/;=;=https://leetcode.com/problems/find-the-encrypted-string/solutions/6968320/break-the-word-into-two-parts-and-merge-l9wo9/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/6952458/simple-and-easy-java-solution-two-approc-yog7/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5432068/1-line-java-by-navid-hsn3/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5431672/k-kn-easy-to-understand-100-beats-detail-gfw5/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5469159/explanations-no-one-will-give-you1-detai-tdxq/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5431686/easy-video-solution-how-to-in-interview-au6mh/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5438697/string-encryption-with-cyclic-modulo-bea-0j6n/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5432029/simple-java-c-code-by-abhinandannaik1717-bzl2/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5540933/simple-code-easy-to-understand-beats-100-d8s1/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5849393/java-beats-100-user-in-java-by-shubhash_-3z56/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5431835/easy-beginner-java-c-python-by-abhishekk-p1pa/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/5431701/effortlessly-dominate-100-with-beginner-oaict/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/6963550/easy-solution-in-java-by-srinivasan0910-gave/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/6917942/o1-solutionusing-substring-by-thakur_ama-a6j1/;;https://leetcode.com/problems/find-the-encrypted-string/solutions/6835834/100-beginner-friendly-optimal-solution-b-qhnr/;;;=;==;=;=;PROBLEM_ID:1;=;=3211. Generate Binary Strings Without Adjacent Zeros;=;=Medium;=;=public List<String> validStrings(int n);=;=You are given a positive integer n.
+
+A binary string x is valid if all substrings of x of length 2 contain at least one "1".
+
+Return all valid strings with length n, in any order.
+
+ 
+
+Example 1:
+
+Input: n = 3
+
+Output: ["010","011","101","110","111"]
+
+Explanation:
+
+The valid strings of length 3 are: "010", "011", "101", "110", and "111".
+
+Example 2:
+
+Input: n = 1
+
+Output: ["0","1"]
+
+Explanation:
+
+The valid strings of length 1 are: "0" and "1".
+
+ 
+
+Constraints:
+
+1 <= n <= 18;=;=https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/description/;=;=https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/7043339/recursive-approach-easy-by-komalsathvik-n74t/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/7029384/100-beats-solution-1ms-back-tracking-by-ih7aj/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/5432107/pick-not-pick-with-condition-by-fahad06-x92g/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/5431898/beats-100-backtrack-as-it-is-easy-commen-fblf/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6843444/java-backtracking-solution-92-by-zerkxes-qeoj/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6383663/java-backtracking-solution-by-mmohmedjas-mri8/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/5433954/easy-java-solution-by-ravikumar50-kwqu/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/5431673/effortlessly-dominate-100-with-beginner-m1xw6/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6614978/simple-beginner-friendly-by-nithin_2305-gwfn/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6810132/backtracking-solution-to-tackle-the-prob-du26/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6474883/java-dfs-easy-to-understand-by-kdhakal-uzxf/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6781678/recursive-approach-by-shivam7307-zo1a/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6693998/1-ms-beats-10000-by-gunanshu_joshi-spu2/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6673065/simple-way-easy-to-understand-for-beginn-xm4a/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6594614/java-by-pradyumn_chaudhary-vdj0/;;;=;==;=;=;PROBLEM_ID:2;=;=3212. Count Submatrices With Equal Frequency of X and Y;=;=Medium;=;=public int numberOfSubmatrices(char[][] grid);=;=Given a 2D character matrix grid, where grid[i][j] is either 'X', 'Y', or '.', return the number of submatrices that contain:
+
+grid[0][0]
+an equal frequency of 'X' and 'Y'.
+at least one 'X'.
+ 
+
+Example 1:
+
+Input: grid = [["X","Y","."],["Y",".","."]]
+
+Output: 3
+
+Explanation:
+
+
+
+Example 2:
+
+Input: grid = [["X","X"],["X","Y"]]
+
+Output: 0
+
+Explanation:
+
+No submatrix has an equal frequency of 'X' and 'Y'.
+
+Example 3:
+
+Input: grid = [[".","."],[".","."]]
+
+Output: 0
+
+Explanation:
+
+No submatrix has at least one 'X'.
+
+ 
+
+Constraints:
+
+1 <= grid.length, grid[i].length <= 1000
+grid[i][j] is either 'X', 'Y', or '.'.;=;=https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/description/;=;=https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431675/javacpython-dp-by-lee215-0b31/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431998/java-solution-by-cindertree-qlwx/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431750/easy-video-solution-how-to-in-interview-ytr3f/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5432001/dp-prefix-sum-array-easy-to-understand-c-jo5i/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431847/java-clean-solution-weekly-contest-07072-z91i/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5440426/intuition-and-code-tconm-sc-om-by-bhawes-y7x7/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/6940700/best-and-easiest-code-ever-for-begineers-883o/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431988/simple-iteration-must-see-java-c-python-wkdvz/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5435061/count-the-frequency-of-x-and-y-horizonta-zg4r/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5432898/store-previous-row-prefix-sum-technique-g0ask/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5434020/easy-java-solution-by-ravikumar50-a2s7/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5432303/explained-thought-process-brute-better-c-qliu/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431786/solution-by-dare2solve-detailed-explanat-nrpq/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5434417/easy-java-solution-by-vaibhav_goyal_18-nyqf/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/6863739/prefix-sum-by-gitchuan-9myh/;;;=;==;=;=;PROBLEM_ID:3;=;=3213. Construct String with Minimum Cost;=;=Hard;=;=public int minimumCost(String target, String[] words, int[] costs);=;=You are given a string target, an array of strings words, and an integer array costs, both arrays of the same length.
+
+Imagine an empty string s.
+
+You can perform the following operation any number of times (including zero):
+
+Choose an index i in the range [0, words.length - 1].
+Append words[i] to s.
+The cost of operation is costs[i].
+Return the minimum cost to make s equal to target. If it's not possible, return -1.
+
+ 
+
+Example 1:
+
+Input: target = "abcdef", words = ["abdef","abc","d","def","ef"], costs = [100,1,1,10,5]
+
+Output: 7
+
+Explanation:
+
+The minimum cost can be achieved by performing the following operations:
+
+Select index 1 and append "abc" to s at a cost of 1, resulting in s = "abc".
+Select index 2 and append "d" to s at a cost of 1, resulting in s = "abcd".
+Select index 4 and append "ef" to s at a cost of 5, resulting in s = "abcdef".
+Example 2:
+
+Input: target = "aaaa", words = ["z","zz","zzz"], costs = [1,10,100]
+
+Output: -1
+
+Explanation:
+
+It is impossible to make s equal to target, so we return -1.
+
+ 
+
+Constraints:
+
+1 <= target.length <= 5 * 104
+1 <= words.length == costs.length <= 5 * 104
+1 <= words[i].length <= target.length
+The total sum of words[i].length is less than or equal to 5 * 104.
+target and words[i] consist only of lowercase English letters.
+1 <= costs[i] <= 104;=;=https://leetcode.com/problems/construct-string-with-minimum-cost/description/;=;=https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5431698/java-trie-dp-with-comments-by-bradleypel-umb6/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5437139/beats-100-detailed-explanation-using-tri-k661/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5432200/tire-dijkstra-shortest-path-find-by-real-g749/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5432252/nice-trie-by-postyfranky-xv8w/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5432116/java-trie-dp-optimized-top-down-solution-auyk/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5442455/beat-100-java-easy-construct-string-with-qpav/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5431775/easiest-java-solution-by-murariamboffici-qoqy/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5491493/aho-corasick-java-version-by-toolatebloo-o4t3/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5444770/well-explained-java-trie-dp-by-px_07-u53t/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5431924/trie-and-dp-and-why-this-doesnt-tle-by-m-xc9k/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5435881/100-faster-100-space-efficient-by-jasawa-egjg/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5433648/kmp-string-matching-dp-by-rohan-v8rma-ppg7/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5451945/trie-dpmemo-the-easiest-way-by-dhruvpati-trea/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5449742/easy-java-solution-trie-dp-by-shaurya_ma-8pq3/;;https://leetcode.com/problems/construct-string-with-minimum-cost/solutions/5447456/2-dp-trie-approaches-explained-top-down-c40gi/;;;=;==;=;=;

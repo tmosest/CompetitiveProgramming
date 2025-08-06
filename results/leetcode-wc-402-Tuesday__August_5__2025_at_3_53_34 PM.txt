@@ -1,0 +1,151 @@
+PROBLEM_ID:0;=;=3184. Count Pairs That Form a Complete Day I;=;=Easy;=;=public int countCompleteDayPairs(int[] hours);=;=Given an integer array hours representing times in hours, return an integer denoting the number of pairs i, j where i < j and hours[i] + hours[j] forms a complete day.
+
+A complete day is defined as a time duration that is an exact multiple of 24 hours.
+
+For example, 1 day is 24 hours, 2 days is 48 hours, 3 days is 72 hours, and so on.
+
+ 
+
+Example 1:
+
+Input: hours = [12,12,30,24,24]
+
+Output: 2
+
+Explanation:
+
+The pairs of indices that form a complete day are (0, 1) and (3, 4).
+
+Example 2:
+
+Input: hours = [72,48,24,3]
+
+Output: 3
+
+Explanation:
+
+The pairs of indices that form a complete day are (0, 1), (0, 2), and (1, 2).
+
+ 
+
+Constraints:
+
+1 <= hours.length <= 100
+1 <= hours[i] <= 109;=;=https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/description/;=;=https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/5319834/brute-force-vs-hashmap-approach-detailed-gv7g/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/6656964/100-beats-easy-to-understand-simple-by-k-8yow/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/5319866/brute-force-tutorial-count-pairs-that-fo-gied/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/6791322/java-easy-100-solution-counting-by-ytcho-vg7z/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/5319819/simple-java-code-by-ydvaaman-d7qn/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/5854992/one-pass-solution-only-one-loop-with-sim-n9e8/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/6374002/easiest-solution-in-java-by-sathurnithy-euhc/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/6363776/solution-in-java-and-c-by-vickyy234-bgby/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/5324934/easy-java-solution-beats-100-by-ravikuma-uoqn/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/6229550/1ms-in-java-very-easiest-code-by-galani_-g0io/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/6510789/simple-double-forloop-by-sairangineeni-we4f/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/6252976/beats-97-code-easiest-solution-in-java-u-khv2/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/5659892/very-easy-on-solution-understand-in-2-mi-qkc4/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/5320056/simple-solution-multiple-approach-easy-e-a9jr/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/solutions/5319835/easy-solution-beats-100-by-deleted_user-kxe4/;;;=;==;=;=;PROBLEM_ID:1;=;=3185. Count Pairs That Form a Complete Day II;=;=Medium;=;=public long countCompleteDayPairs(int[] hours);=;=Given an integer array hours representing times in hours, return an integer denoting the number of pairs i, j where i < j and hours[i] + hours[j] forms a complete day.
+
+A complete day is defined as a time duration that is an exact multiple of 24 hours.
+
+For example, 1 day is 24 hours, 2 days is 48 hours, 3 days is 72 hours, and so on.
+
+ 
+
+Example 1:
+
+Input: hours = [12,12,30,24,24]
+
+Output: 2
+
+Explanation: The pairs of indices that form a complete day are (0, 1) and (3, 4).
+
+Example 2:
+
+Input: hours = [72,48,24,3]
+
+Output: 3
+
+Explanation: The pairs of indices that form a complete day are (0, 1), (0, 2), and (1, 2).
+
+ 
+
+Constraints:
+
+1 <= hours.length <= 5 * 105
+1 <= hours[i] <= 109;=;=https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/description/;=;=https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5319811/hash-table-tutorial-count-pairs-that-for-xo5x/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5319980/mapdictionary-remainder-method-explained-itjg/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5319983/hashmap-java-by-ganesh_dandekar-eh49/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5659923/very-easy-solution-do-and-understand-in-7ajgo/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5319932/easy-solution-beats-100-by-deleted_user-k7a6/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/6848112/on-by-gitchuan-0i4a/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5319923/on-approach-most-efficient-by-aiqqia-9070/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5322384/java-fastest-array-only-100-time-on-100s-bj1e/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5324949/easy-java-solution-hashmap-by-ravikumar5-7yju/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5320901/easy-java-map-by-shapunk-h2st/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5319893/easy-java-beginner-solution-by-ravi_prak-ictk/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5320946/vote-it-by-tharundev-k9k4/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/5323244/the-simple-explanation69_beats_100easy-s-56wl/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/6791644/clean-code-by-smileysuneet-y1ii/;;https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/solutions/6338154/hashmap-java-by-prachikumari-brzy/;;;=;==;=;=;PROBLEM_ID:2;=;=3186. Maximum Total Damage With Spell Casting;=;=Medium;=;=public long maximumTotalDamage(int[] power);=;=A magician has various spells.
+
+You are given an array power, where each element represents the damage of a spell. Multiple spells can have the same damage value.
+
+It is a known fact that if a magician decides to cast a spell with a damage of power[i], they cannot cast any spell with a damage of power[i] - 2, power[i] - 1, power[i] + 1, or power[i] + 2.
+
+Each spell can be cast only once.
+
+Return the maximum possible total damage that a magician can cast.
+
+ 
+
+Example 1:
+
+Input: power = [1,1,3,4]
+
+Output: 6
+
+Explanation:
+
+The maximum possible damage of 6 is produced by casting spells 0, 1, 3 with damage 1, 1, 4.
+
+Example 2:
+
+Input: power = [7,1,6,6]
+
+Output: 13
+
+Explanation:
+
+The maximum possible damage of 13 is produced by casting spells 1, 2, 3 with damage 1, 6, 6.
+
+ 
+
+Constraints:
+
+1 <= power.length <= 105
+1 <= power[i] <= 109;=;=https://leetcode.com/problems/maximum-total-damage-with-spell-casting/description/;=;=https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5320446/beats-100-explained-with-video-cjavapyth-di6s/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5323940/6-approaches-by-jay_1410-0lsn/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5319898/dynamic-programming-tutorial-maximum-tot-n5mo/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5319804/simple-dfs-solution-by-0x4c0de-h4j1/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5321288/dp-sorting-either-take-every-occurrence-i8o4x/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5320111/dp-beats-by-mohityadavtx-lbor/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5320557/beats-100-java-dp-memoization-simple-cle-u3ta/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5322681/beats-100-intution-memoization-tabulatio-hd6k/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5321159/java-dpmap-from-recursion-to-optimised-b-ah0m/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5319922/java-dp-solution-by-sudasan3-lsjl/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5321069/dont-know-how-to-optimize-100-beats-java-9ux2/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5323573/on-solutionjava-using-dynamic-programmin-55lb/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5393000/iterative-solution-java-space-complexity-a7l1/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5372079/easy-to-understand-java-solution-by-godo-xyzx/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/5320036/java-top-down-dp-by-robertskonieczny-tnnr/;;;=;==;=;=;PROBLEM_ID:3;=;=3187. Peaks in Array;=;=Hard;=;=public List<Integer> countOfPeaks(int[] nums, int[][] queries);=;=A peak in an array arr is an element that is greater than its previous and next element in arr.
+
+You are given an integer array nums and a 2D integer array queries.
+
+You have to process queries of two types:
+
+queries[i] = [1, li, ri], determine the count of peak elements in the subarray nums[li..ri].
+queries[i] = [2, indexi, vali], change nums[indexi] to vali.
+Return an array answer containing the results of the queries of the first type in order.
+
+Notes:
+
+The first and the last element of an array or a subarray cannot be a peak.
+ 
+
+Example 1:
+
+Input: nums = [3,1,4,2,5], queries = [[2,3,4],[1,0,4]]
+
+Output: [0]
+
+Explanation:
+
+First query: We change nums[3] to 4 and nums becomes [3,1,4,4,5].
+
+Second query: The number of peaks in the [3,1,4,4,5] is 0.
+
+Example 2:
+
+Input: nums = [4,1,4,2,1,5], queries = [[2,2,4],[1,0,2],[1,0,4]]
+
+Output: [0,1]
+
+Explanation:
+
+First query: nums[2] should become 4, but it is already set to 4.
+
+Second query: The number of peaks in the [4,1,4] is 0.
+
+Third query: The second 4 is a peak in the [4,1,4,2,1].
+
+ 
+
+Constraints:
+
+3 <= nums.length <= 105
+1 <= nums[i] <= 105
+1 <= queries.length <= 105
+queries[i][0] == 1 or queries[i][0] == 2
+For all i that:
+queries[i][0] == 1: 0 <= queries[i][1] <= queries[i][2] <= nums.length - 1
+queries[i][0] == 2: 0 <= queries[i][1] <= nums.length - 1, 1 <= queries[i][2] <= 105;=;=https://leetcode.com/problems/peaks-in-array/description/;=;=https://leetcode.com/problems/peaks-in-array/solutions/5319870/segment-tree-solution-beat-1000-by-mysel-1181/;;https://leetcode.com/problems/peaks-in-array/solutions/7044629/fenwick-tree-java-simple-understand-code-t7z9/;;https://leetcode.com/problems/peaks-in-array/solutions/6184659/easy-segment-tree-solution-by-viraj_pati-gcsu/;;https://leetcode.com/problems/peaks-in-array/solutions/5321237/java-yet-another-segment-tree-solution-b-1bt7/;;https://leetcode.com/problems/peaks-in-array/solutions/6993530/easy-java-fenwick-tree-solution-by-arham-bxxb/;;https://leetcode.com/problems/peaks-in-array/solutions/5320380/sqrt-decomposition-nsqrtn-by-ppwani-lnnw/;;https://leetcode.com/problems/peaks-in-array/solutions/5344380/segment-tree-by-irvifa-z3lk/;;https://leetcode.com/problems/peaks-in-array/solutions/5323230/counting-peaks-in-a-range-by-cregan_wolf-doco/;;https://leetcode.com/problems/peaks-in-array/solutions/6946994/java-solution-using-segment-trees-by-deb-uxk7/;;https://leetcode.com/problems/peaks-in-array/solutions/5862002/java-solution-segment-tree-onlogn-by-har-djak/;;https://leetcode.com/problems/peaks-in-array/solutions/5496493/easy-to-understande-commented-step-by-st-eoiv/;;https://leetcode.com/problems/peaks-in-array/solutions/5388746/simple-solution-segment-tree-by-akash_so-3d2n/;;https://leetcode.com/problems/peaks-in-array/solutions/5373314/java-use-segment-tree-by-biolearning-vdzl/;;https://leetcode.com/problems/peaks-in-array/solutions/5337835/peaks-in-array-using-segment-tree-by-nag-id7h/;;https://leetcode.com/problems/peaks-in-array/solutions/5336884/clean-segment-tree-solution-onlogn-by-kl-qekq/;;;=;==;=;=;

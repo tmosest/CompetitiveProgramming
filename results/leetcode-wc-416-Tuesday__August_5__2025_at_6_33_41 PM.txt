@@ -1,0 +1,175 @@
+PROBLEM_ID:0;=;=3295. Report Spam Message;=;=Medium;=;=public boolean reportSpam(String[] message, String[] bannedWords);=;=You are given an array of strings message and an array of strings bannedWords.
+
+An array of words is considered spam if there are at least two words in it that exactly match any word in bannedWords.
+
+Return true if the array message is spam, and false otherwise.
+
+ 
+
+Example 1:
+
+Input: message = ["hello","world","leetcode"], bannedWords = ["world","hello"]
+
+Output: true
+
+Explanation:
+
+The words "hello" and "world" from the message array both appear in the bannedWords array.
+
+Example 2:
+
+Input: message = ["hello","programming","fun"], bannedWords = ["world","programming","leetcode"]
+
+Output: false
+
+Explanation:
+
+Only one word from the message array ("programming") appears in the bannedWords array.
+
+ 
+
+Constraints:
+
+1 <= message.length, bannedWords.length <= 105
+1 <= message[i].length, bannedWords[i].length <= 15
+message[i] and bannedWords[i] consist only of lowercase English letters.;=;=https://leetcode.com/problems/report-spam-message/description/;=;=https://leetcode.com/problems/report-spam-message/solutions/5818250/using-hashset-in-java-by-shubhamyadav321-r29u/;;https://leetcode.com/problems/report-spam-message/solutions/5819491/easiestfaster-lesser-cpython3javacpython-yo85/;;https://leetcode.com/problems/report-spam-message/solutions/5838146/two-lines-with-hashset-by-scala62-uh1n/;;https://leetcode.com/problems/report-spam-message/solutions/5819463/simple-java-code-by-abhinandannaik1717-er9d/;;https://leetcode.com/problems/report-spam-message/solutions/7018561/hashset-java-solution-by-pannier40-6y3r/;;https://leetcode.com/problems/report-spam-message/solutions/5820121/simple-approach-without-using-much-brain-wm7b/;;https://leetcode.com/problems/report-spam-message/solutions/5818291/easy-java-solution-using-hashset-by-dhru-5nhb/;;https://leetcode.com/problems/report-spam-message/solutions/5820260/easy-java-solution-by-enkixly-fyyz/;;https://leetcode.com/problems/report-spam-message/solutions/5824830/easy-beginner-friendly-set-solution-java-fab6/;;https://leetcode.com/problems/report-spam-message/solutions/5819873/brute-force-java-solution-beats-time-bea-awom/;;https://leetcode.com/problems/report-spam-message/solutions/5818561/detecting-spam-in-messages-using-banned-r5b28/;;https://leetcode.com/problems/report-spam-message/solutions/5818662/java-solution-using-hashset-beats-100-in-0ggh/;;https://leetcode.com/problems/report-spam-message/solutions/5818587/2-approaches-with-sort-constant-space-by-3zyz/;;https://leetcode.com/problems/report-spam-message/solutions/6592668/java-by-soumya_699-k50a/;;https://leetcode.com/problems/report-spam-message/solutions/6908759/report-spam-message-by-hariharan8678-9xk1/;;;=;==;=;=;PROBLEM_ID:1;=;=3296. Minimum Number of Seconds to Make Mountain Height Zero;=;=Medium;=;=public long minNumberOfSeconds(int mountainHeight, int[] workerTimes);=;=You are given an integer mountainHeight denoting the height of a mountain.
+
+You are also given an integer array workerTimes representing the work time of workers in seconds.
+
+The workers work simultaneously to reduce the height of the mountain. For worker i:
+
+To decrease the mountain's height by x, it takes workerTimes[i] + workerTimes[i] * 2 + ... + workerTimes[i] * x seconds. For example:
+To reduce the height of the mountain by 1, it takes workerTimes[i] seconds.
+To reduce the height of the mountain by 2, it takes workerTimes[i] + workerTimes[i] * 2 seconds, and so on.
+Return an integer representing the minimum number of seconds required for the workers to make the height of the mountain 0.
+
+ 
+
+Example 1:
+
+Input: mountainHeight = 4, workerTimes = [2,1,1]
+
+Output: 3
+
+Explanation:
+
+One way the height of the mountain can be reduced to 0 is:
+
+Worker 0 reduces the height by 1, taking workerTimes[0] = 2 seconds.
+Worker 1 reduces the height by 2, taking workerTimes[1] + workerTimes[1] * 2 = 3 seconds.
+Worker 2 reduces the height by 1, taking workerTimes[2] = 1 second.
+Since they work simultaneously, the minimum time needed is max(2, 3, 1) = 3 seconds.
+
+Example 2:
+
+Input: mountainHeight = 10, workerTimes = [3,2,2,4]
+
+Output: 12
+
+Explanation:
+
+Worker 0 reduces the height by 2, taking workerTimes[0] + workerTimes[0] * 2 = 9 seconds.
+Worker 1 reduces the height by 3, taking workerTimes[1] + workerTimes[1] * 2 + workerTimes[1] * 3 = 12 seconds.
+Worker 2 reduces the height by 3, taking workerTimes[2] + workerTimes[2] * 2 + workerTimes[2] * 3 = 12 seconds.
+Worker 3 reduces the height by 2, taking workerTimes[3] + workerTimes[3] * 2 = 12 seconds.
+The number of seconds needed is max(9, 12, 12, 12) = 12 seconds.
+
+Example 3:
+
+Input: mountainHeight = 5, workerTimes = [1]
+
+Output: 15
+
+Explanation:
+
+There is only one worker in this example, so the answer is workerTimes[0] + workerTimes[0] * 2 + workerTimes[0] * 3 + workerTimes[0] * 4 + workerTimes[0] * 5 = 15.
+
+ 
+
+Constraints:
+
+1 <= mountainHeight <= 105
+1 <= workerTimes.length <= 104
+1 <= workerTimes[i] <= 106;=;=https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/description/;=;=https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5818267/binary-search-approach-in-java-by-shubha-zfuj/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5818358/binary-search-solution-java-100-faster-b-pvo0/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5818413/beats-100-easy-to-understand-code-optima-c7bz/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5829294/contest-416-ques-2-binary-search-by-saja-dsxw/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5818368/priorityqueue-simulation-java-solution-b-g23b/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5821219/the-only-explanation-you-need-best-so-fa-4pz8/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5820143/binary-search-math-detailed-explanation-m1s4z/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5818301/use-priorityqueue-to-solve-omountainheig-mbzf/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5818530/java-binary-search-on-answer-best-soluti-z14b/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5825301/priority-queue-beats-100-by-dineshkumar5-wz52/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5829364/naruto-reducing-height-of-the-mountain-b-w8js/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5819005/priority-based-java-solution-by-sachinag-qxtg/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5818371/binary-search-on-answers-java-solution-b-zkip/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5821144/beats-100-clean-java-solution-binary-sea-6sh1/;;https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/5825241/ohlogk-solution-using-heap-by-srula-xdd6/;;;=;==;=;=;PROBLEM_ID:2;=;=3297. Count Substrings That Can Be Rearranged to Contain a String I;=;=Medium;=;=public long validSubstringCount(String word1, String word2);=;=You are given two strings word1 and word2.
+
+A string x is called valid if x can be rearranged to have word2 as a prefix.
+
+Return the total number of valid substrings of word1.
+
+ 
+
+Example 1:
+
+Input: word1 = "bcca", word2 = "abc"
+
+Output: 1
+
+Explanation:
+
+The only valid substring is "bcca" which can be rearranged to "abcc" having "abc" as a prefix.
+
+Example 2:
+
+Input: word1 = "abcabc", word2 = "abc"
+
+Output: 10
+
+Explanation:
+
+All the substrings except substrings of size 1 and size 2 are valid.
+
+Example 3:
+
+Input: word1 = "abcabc", word2 = "aaabc"
+
+Output: 0
+
+ 
+
+Constraints:
+
+1 <= word1.length <= 105
+1 <= word2.length <= 104
+word1 and word2 consist only of lowercase English letters.;=;=https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/description/;=;=https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5818284/sliding-window-with-example-walkthrough-udkc4/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5818750/simple-two-pointer-approach-in-on-time-a-lnk1/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5818282/sliding-window-approach-in-java-by-shubh-pkja/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5828812/contest-416-ques-3-sliding-window-by-saj-b6vl/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5820266/easy-java-solution-by-enkixly-dals/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5855674/easy-stepwise-standard-template-window-b-271q/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5818393/beginner-friendly-simple-java-code-beats-xezf/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5818925/beats-super-easy-beginners-by-codewithsp-nkmz/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5821489/simple-java-solution-using-freq-by-rajna-ro0b/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5821439/sliding-window-intuition-using-maps-by-b-cvts/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5818544/easy-java-solution-using-hashmaps-by-aks-10yx/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5818343/using-sliding-window-tcon-java-python-by-tetm/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/5818435/java-sliding-window-hashmap-by-dhananjay-st1v/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/6932613/easiest-soln-in-java-by-bharam_dev2-ry26/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/solutions/6567864/java-sliding-window-generic-template-sol-ofou/;;;=;==;=;=;PROBLEM_ID:3;=;=3298. Count Substrings That Can Be Rearranged to Contain a String II;=;=Hard;=;=public long validSubstringCount(String word1, String word2);=;=You are given two strings word1 and word2.
+
+A string x is called valid if x can be rearranged to have word2 as a prefix.
+
+Return the total number of valid substrings of word1.
+
+Note that the memory limits in this problem are smaller than usual, so you must implement a solution with a linear runtime complexity.
+
+ 
+
+Example 1:
+
+Input: word1 = "bcca", word2 = "abc"
+
+Output: 1
+
+Explanation:
+
+The only valid substring is "bcca" which can be rearranged to "abcc" having "abc" as a prefix.
+
+Example 2:
+
+Input: word1 = "abcabc", word2 = "abc"
+
+Output: 10
+
+Explanation:
+
+All the substrings except substrings of size 1 and size 2 are valid.
+
+Example 3:
+
+Input: word1 = "abcabc", word2 = "aaabc"
+
+Output: 0
+
+ 
+
+Constraints:
+
+1 <= word1.length <= 106
+1 <= word2.length <= 104
+word1 and word2 consist only of lowercase English letters.;=;=https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/description/;=;=https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818740/simple-two-pointers-approach-in-on-time-ah0ld/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818289/sliding-window-approach-in-java-by-shubh-xxrn/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5828829/contest-416-ques-4-sliding-window-by-saj-rapt/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818275/sliding-window-with-example-walkthrough-jfvit/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5855683/stepwise-approach-java-by-abhishekkant13-f894/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818318/simple-java-solution-beats-100-by-ram436-9sfx/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818952/beats-super-easy-beginners-by-codewithsp-m0hu/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/6916976/sliding-window-by-watt_walk-017x/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/6817632/java-linear-solution-beats-100-by-keshav-s84q/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5821568/sliding-window-solution-substring-count-79obn/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5820809/sliding-window-by-clcwcxfwf-vswh/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818987/easy-sliding-window-by-macrohard-circ/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818901/easy-solution-using-hashmap-beats-100-by-h3nh/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818696/sliding-window-solution-by-risabhuchiha-f12c/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818486/java-2-pointer-solution-by-pranay__01-2f76/;;;=;==;=;=;

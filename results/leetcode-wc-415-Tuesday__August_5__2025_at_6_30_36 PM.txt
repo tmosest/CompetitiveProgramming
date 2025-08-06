@@ -1,0 +1,172 @@
+PROBLEM_ID:0;=;=3289. The Two Sneaky Numbers of Digitville;=;=Easy;=;=public int[] getSneakyNumbers(int[] nums);=;=In the town of Digitville, there was a list of numbers called nums containing integers from 0 to n - 1. Each number was supposed to appear exactly once in the list, however, two mischievous numbers sneaked in an additional time, making the list longer than usual.
+
+As the town detective, your task is to find these two sneaky numbers. Return an array of size two containing the two numbers (in any order), so peace can return to Digitville.
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,1,0]
+
+Output: [0,1]
+
+Explanation:
+
+The numbers 0 and 1 each appear twice in the array.
+
+Example 2:
+
+Input: nums = [0,3,2,1,3,2]
+
+Output: [2,3]
+
+Explanation:
+
+The numbers 2 and 3 each appear twice in the array.
+
+Example 3:
+
+Input: nums = [7,1,5,4,3,4,6,0,9,5,8,2]
+
+Output: [4,5]
+
+Explanation:
+
+The numbers 4 and 5 each appear twice in the array.
+
+ 
+
+Constraints:
+
+2 <= n <= 100
+nums.length == n + 2
+0 <= nums[i] < n
+The input is generated such that nums contains exactly two repeated elements.;=;=https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/description/;=;=https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7042845/java-easy-solution-1ms-by-akashraj06-mt06/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7017622/my-solution-java-by-codersquare-6d8l/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7004512/simple-java-solution-by-rajdeep001-w4mz/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/5789363/easy-video-solution-without-extra-space-5namp/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6727039/easiest-100-beats-solution-in-java-by-hi-g3uf/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6901995/easy-100-beats-by-dima853-0885/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6539706/100-beats-without-using-set-by-kdhakal-t2iz/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/5809246/simple-java-code-by-abhinandannaik1717-0d51/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6462432/easy-fr-beginners-by-hle0mpwjhw-osqw/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6806242/java-easy-100-solution-by-ytchouar-ynaf/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6339574/java-hashset-solution-using-array-beat-1-j9yb/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6568830/java-best-solution-hashmap-by-aimlc_22b1-ceqq/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/5788384/1-liner-solution-by-shree_govind_jee-2pad/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6690018/easy-java-solution-with-only-one-loop-10-avvm/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/5794315/easy-sorting-solution-3-lines-2-steps-by-9dwv/;;;=;==;=;=;PROBLEM_ID:1;=;=3290. Maximum Multiplication Score;=;=Medium;=;=public long maxScore(int[] a, int[] b);=;=You are given an integer array a of size 4 and another integer array b of size at least 4.
+
+You need to choose 4 indices i0, i1, i2, and i3 from the array b such that i0 < i1 < i2 < i3. Your score will be equal to the value a[0] * b[i0] + a[1] * b[i1] + a[2] * b[i2] + a[3] * b[i3].
+
+Return the maximum score you can achieve.
+
+ 
+
+Example 1:
+
+Input: a = [3,2,5,6], b = [2,-6,4,-5,-3,2,-7]
+
+Output: 26
+
+Explanation:
+We can choose the indices 0, 1, 2, and 5. The score will be 3 * 2 + 2 * (-6) + 5 * 4 + 6 * 2 = 26.
+
+Example 2:
+
+Input: a = [-1,4,5,-2], b = [-5,-1,-3,-2,-4]
+
+Output: -1
+
+Explanation:
+We can choose the indices 0, 1, 3, and 4. The score will be (-1) * (-5) + 4 * (-1) + 5 * (-2) + (-2) * (-4) = -1.
+
+ 
+
+Constraints:
+
+a.length == 4
+4 <= b.length <= 105
+-105 <= a[i], b[i] <= 105;=;=https://leetcode.com/problems/maximum-multiplication-score/description/;=;=https://leetcode.com/problems/maximum-multiplication-score/solutions/5788387/recursion-memoization-iterative-by-_sxrt-07sa/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5788548/javacpython-dp-by-lee215-dnbl/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5789187/easy-video-solution-how-to-in-interview-sokr2/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5788372/java-clean-dptabulation-by-shree_govind_-luhk/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5789197/easy-to-understand-on-solution-using-dp-fv30v/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/7043013/easy-solution-in-java-on4-by-kumarakash-bny8/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/6939581/fastest-dp-solution-with-only-4-variable-mtja/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5788857/java-solution-by-harsh__005-poeb/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5789665/take-or-nottake-recursionmemoization-by-274wn/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5792498/java-space-optimised-bottom-up-dp-by-chu-408d/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5788466/easy-java-solution-beats-100-by-shaurya_-gk6r/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5788361/java-2d-dp-memoization-by-viraj_modi-6nw9/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5788348/simple-java-solution-by-sakshikishore-4cq0/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/6866023/take-or-skip-by-ashutosh_prajapati1205-8kt2/;;https://leetcode.com/problems/maximum-multiplication-score/solutions/5793501/rec-memorization-on-by-ankith_kumar-vg26/;;;=;==;=;=;PROBLEM_ID:2;=;=3291. Minimum Number of Valid Strings to Form Target I;=;=Medium;=;=public int minValidStrings(String[] words, String target);=;=You are given an array of strings words and a string target.
+
+A string x is called valid if x is a prefix of any string in words.
+
+Return the minimum number of valid strings that can be concatenated to form target. If it is not possible to form target, return -1.
+
+ 
+
+Example 1:
+
+Input: words = ["abc","aaaaa","bcdef"], target = "aabcdabc"
+
+Output: 3
+
+Explanation:
+
+The target string can be formed by concatenating:
+
+Prefix of length 2 of words[1], i.e. "aa".
+Prefix of length 3 of words[2], i.e. "bcd".
+Prefix of length 3 of words[0], i.e. "abc".
+Example 2:
+
+Input: words = ["abababab","ab"], target = "ababaababa"
+
+Output: 2
+
+Explanation:
+
+The target string can be formed by concatenating:
+
+Prefix of length 5 of words[0], i.e. "ababa".
+Prefix of length 5 of words[0], i.e. "ababa".
+Example 3:
+
+Input: words = ["abcdef"], target = "xyz"
+
+Output: -1
+
+ 
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length <= 5 * 103
+The input is generated such that sum(words[i].length) <= 105.
+words[i] consists only of lowercase English letters.
+1 <= target.length <= 5 * 103
+target consists only of lowercase English letters.;=;=https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/description/;=;=https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5789298/easy-video-solution-critical-thinking-ho-f71v/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5788559/simple-java-solution-by-ram4366-lxqs/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5788357/java-clean-trie-solution-by-shree_govind-qdfl/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5790407/the-description-should-clarify-that-it-i-rwv0/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5788581/minimum-number-of-valid-strings-to-form-7vcpw/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6729848/java-triedp-by-shashankmore47-l8sf/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6693576/java-trie-greedy-approach-by-cheercode-8ufm/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6671647/kmp-java-beats-90-by-ivakhnenko-zb0z/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6625369/java-solution-using-trie-by-senareddy-xv13/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6528455/simple-java-solution-by-sakshikishore-7pwa/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5881127/simple-and-easy-java-solution-using-trie-0hkr/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5881120/simple-and-easy-java-solution-using-trie-6ak5/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5831506/java-solution-trie-dp-memo-tabulation-bo-e3sa/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5814985/java-dp-tle-educational-by-muddassirzfr-57ak/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5811056/easy-java-solution-by-danish_jamil-p0up/;;;=;==;=;=;PROBLEM_ID:3;=;=3292. Minimum Number of Valid Strings to Form Target II;=;=Hard;=;=public int minValidStrings(String[] words, String target);=;=You are given an array of strings words and a string target.
+
+A string x is called valid if x is a prefix of any string in words.
+
+Return the minimum number of valid strings that can be concatenated to form target. If it is not possible to form target, return -1.
+
+ 
+
+Example 1:
+
+Input: words = ["abc","aaaaa","bcdef"], target = "aabcdabc"
+
+Output: 3
+
+Explanation:
+
+The target string can be formed by concatenating:
+
+Prefix of length 2 of words[1], i.e. "aa".
+Prefix of length 3 of words[2], i.e. "bcd".
+Prefix of length 3 of words[0], i.e. "abc".
+Example 2:
+
+Input: words = ["abababab","ab"], target = "ababaababa"
+
+Output: 2
+
+Explanation:
+
+The target string can be formed by concatenating:
+
+Prefix of length 5 of words[0], i.e. "ababa".
+Prefix of length 5 of words[0], i.e. "ababa".
+Example 3:
+
+Input: words = ["abcdef"], target = "xyz"
+
+Output: -1
+
+ 
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length <= 5 * 104
+The input is generated such that sum(words[i].length) <= 105.
+words[i] consists only of lowercase English letters.
+1 <= target.length <= 5 * 104
+target consists only of lowercase English letters.;=;=https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/description/;=;=https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/5788600/easy-java-solution-beginner-friendly-by-4yfwo/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/5794239/java-solution-beats-100-kmp-by-shaurya_m-7jyp/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/6598509/using-kmp-to-store-all-the-length-of-pre-irc7/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/5811062/easy-java-solution-by-danish_jamil-361s/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/5802271/java-by-abhiguptanitb-29mf/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/5812200/3292-minimum-number-of-valid-strings-to-mhlkr/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/5796299/easy-explanation-of-kmp-approach-beats-b-zwnk/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/5791394/java-beats-100-string-hashing-dp-by-jai_-e0tj/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/5788410/solution-by-shikharcookies-7q9i/;;;=;==;=;=;

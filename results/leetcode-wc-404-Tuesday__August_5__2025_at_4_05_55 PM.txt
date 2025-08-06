@@ -1,0 +1,174 @@
+PROBLEM_ID:0;=;=3200. Maximum Height of a Triangle;=;=Easy;=;=public int maxHeightOfTriangle(int red, int blue);=;=You are given two integers red and blue representing the count of red and blue colored balls. You have to arrange these balls to form a triangle such that the 1st row will have 1 ball, the 2nd row will have 2 balls, the 3rd row will have 3 balls, and so on.
+
+All the balls in a particular row should be the same color, and adjacent rows should have different colors.
+
+Return the maximum height of the triangle that can be achieved.
+
+ 
+
+Example 1:
+
+Input: red = 2, blue = 4
+
+Output: 3
+
+Explanation:
+
+
+
+The only possible arrangement is shown above.
+
+Example 2:
+
+Input: red = 2, blue = 1
+
+Output: 2
+
+Explanation:
+
+
+The only possible arrangement is shown above.
+
+Example 3:
+
+Input: red = 1, blue = 1
+
+Output: 1
+
+Example 4:
+
+Input: red = 10, blue = 1
+
+Output: 2
+
+Explanation:
+
+
+The only possible arrangement is shown above.
+
+ 
+
+Constraints:
+
+1 <= red, blue <= 100;=;=https://leetcode.com/problems/maximum-height-of-a-triangle/description/;=;=https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/7020083/easy-and-100-fast-solution-using-greedy-7w967/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/5389255/brute-force-iterative-greedy-approach-de-i8q3/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/5389269/easy-video-solution-how-to-in-interview-nggny/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/5391512/using-ap-sum-formula-tc-o1-intution-code-mop0/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/5389451/simple-java-c-code-by-abhinandannaik1717-67qe/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/6719230/easy-code-by-akilmasilamani-j3oi/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/6719231/easy-code-by-akilmasilamani-udeu/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/6519422/beats-c-java-python-greedy-by-rajshingal-mq71/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/5389288/java-solution-by-harsh__005-pri1/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/5390028/recursion-may-be-helpful-by-_mr_mercury-77ln/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/5389289/java-two-cases-by-sajid_hussain-mif2/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/6748069/minimum-lines-of-code-java-by-runnn-1sim/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/5389260/java-solution-by-arunprakashtpv-wt15/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/5389295/effortless-mastery-dominates-100-with-th-aseq/;;https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/6191302/0ms-100-in-java-very-easiest-code-for-be-18rh/;;;=;==;=;=;PROBLEM_ID:1;=;=3201. Find the Maximum Length of Valid Subsequence I;=;=Medium;=;=public int maximumLength(int[] nums);=;=You are given an integer array nums.
+A subsequence sub of nums with length x is called valid if it satisfies:
+
+(sub[0] + sub[1]) % 2 == (sub[1] + sub[2]) % 2 == ... == (sub[x - 2] + sub[x - 1]) % 2.
+Return the length of the longest valid subsequence of nums.
+
+A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4]
+
+Output: 4
+
+Explanation:
+
+The longest valid subsequence is [1, 2, 3, 4].
+
+Example 2:
+
+Input: nums = [1,2,1,1,2,1,2]
+
+Output: 6
+
+Explanation:
+
+The longest valid subsequence is [1, 2, 1, 2, 1, 2].
+
+Example 3:
+
+Input: nums = [1,3]
+
+Output: 2
+
+Explanation:
+
+The longest valid subsequence is [1, 3].
+
+ 
+
+Constraints:
+
+2 <= nums.length <= 2 * 105
+1 <= nums[i] <= 107;=;=https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/description/;=;=https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6964257/find-the-max-length-of-valid-subsequence-pzvh/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6964649/easy-solution-beats-100-example-walkthro-e9rr/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6964551/easy-solution-eng-hing-explained-beats-1-lpsk/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6964453/easy-explanation-python-java-c-javascrip-pa66/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6964670/simple-counting-approachno-dp-by-knowpra-7sjw/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6969142/efficient-on-solution-intuitive-and-simp-wv3q/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6964795/find-the-maximum-length-of-valid-subsequ-1eht/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6966717/on-approach-explained-java-by-komalsathv-x1k2/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6965839/100-beats-fast-and-clear-with-iterations-9895/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6965386/beats-space-o1super-easy-beginners-java-fjhoo/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6964907/951951-testcases-passed-by-muthuvrn-69zg/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6967685/simple-java-c-code-by-abhinandannaik1717-a71b/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6967657/even-vs-odd-vs-chaos-who-rules-the-array-6faj/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6967228/easy-solution-beats-100-by-akshatchawla1-2zyq/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6966677/java-solution-by-monish1153-5442/;;;=;==;=;=;PROBLEM_ID:2;=;=3202. Find the Maximum Length of Valid Subsequence II;=;=Medium;=;=public int maximumLength(int[] nums, int k);=;=You are given an integer array nums and a positive integer k.
+A subsequence sub of nums with length x is called valid if it satisfies:
+
+(sub[0] + sub[1]) % k == (sub[1] + sub[2]) % k == ... == (sub[x - 2] + sub[x - 1]) % k.
+Return the length of the longest valid subsequence of nums.
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4,5], k = 2
+
+Output: 5
+
+Explanation:
+
+The longest valid subsequence is [1, 2, 3, 4, 5].
+
+Example 2:
+
+Input: nums = [1,4,2,3,1,4], k = 3
+
+Output: 4
+
+Explanation:
+
+The longest valid subsequence is [1, 4, 1, 4].
+
+ 
+
+Constraints:
+
+2 <= nums.length <= 103
+1 <= nums[i] <= 107
+1 <= k <= 103;=;=https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/description/;=;=https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6968937/easy-solution-eng-hing-explained-beats-1-8vv5/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6969437/beats-super-easy-beginners-java-c-c-pyth-oe8e/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6968572/3202-cracked-the-modulo-pattern-longest-6frpp/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6969710/98-beats-fast-and-clear-with-iterations-fism8/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6968776/rescursive-memo-easy-to-understand-by-ar-hpe7/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6968983/simple-6lines-of-code-732732-testcases-p-z5rf/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6968982/simple-6lines-of-code-732732-testcases-p-u59m/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6968985/java-solution-for-find-the-maximum-lengt-eh36/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/5389531/beats-100-explained-with-video-cjavapyth-289d/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6970724/easy-solution-with-explanation-by-prathm-af03/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6969939/easy-n2-java-solution-by-dinesh_12334-baya/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6968955/leetcode-3202-find-the-maximum-length-of-adkm/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6968638/find-the-maximum-length-of-valid-subsequ-2sih/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/5389322/yes-its-a-2d-dp-by-jay_1410-mm3a/;;https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6971446/easy-code-must-try-code-in-java-by-notad-tmsc/;;;=;==;=;=;PROBLEM_ID:3;=;=3203. Find Minimum Diameter After Merging Two Trees;=;=Hard;=;=public int minimumDiameterAfterMerge(int[][] edges1, int[][] edges2);=;=There exist two undirected trees with n and m nodes, numbered from 0 to n - 1 and from 0 to m - 1, respectively. You are given two 2D integer arrays edges1 and edges2 of lengths n - 1 and m - 1, respectively, where edges1[i] = [ai, bi] indicates that there is an edge between nodes ai and bi in the first tree and edges2[i] = [ui, vi] indicates that there is an edge between nodes ui and vi in the second tree.
+
+You must connect one node from the first tree with another node from the second tree with an edge.
+
+Return the minimum possible diameter of the resulting tree.
+
+The diameter of a tree is the length of the longest path between any two nodes in the tree.
+
+ 
+
+Example 1:
+
+Input: edges1 = [[0,1],[0,2],[0,3]], edges2 = [[0,1]]
+
+Output: 3
+
+Explanation:
+
+We can obtain a tree of diameter 3 by connecting node 0 from the first tree with any node from the second tree.
+
+Example 2:
+
+
+Input: edges1 = [[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]], edges2 = [[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]]
+
+Output: 5
+
+Explanation:
+
+We can obtain a tree of diameter 5 by connecting node 0 from the first tree with node 0 from the second tree.
+
+ 
+
+Constraints:
+
+1 <= n, m <= 105
+edges1.length == n - 1
+edges2.length == m - 1
+edges1[i].length == edges2[i].length == 2
+edges1[i] = [ai, bi]
+0 <= ai, bi < n
+edges2[i] = [ui, vi]
+0 <= ui, vi < m
+The input is generated such that edges1 and edges2 represent valid trees.;=;=https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/description/;=;=https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6179654/simple-approach-cjavajspython-by-arunk_l-nn7q/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6179551/minimum-diameter-after-tree-merge-c-java-k5lc/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6180644/detailed-codedry-runhighly-arousing-by-i-rzdr/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6179650/bfs-greedy-solution-by-siva_devireddy-ira6/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6180143/best-solution-beats-100-both-time-and-me-sd9i/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/5389408/simple-java-solution-dfs-100-fast-by-ron-9569/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/5391371/beats-100-detailed-explaination-cjavapyt-myrj/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6621648/merge-two-trees-without-letting-their-di-bhv4/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6182525/most-efficient-step-by-step-optimized-so-brif/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/5393558/best-explanation-includes-dry-running-an-muaa/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6180790/java-by-ayeshakhan7-xslr/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/5389509/solution-by-dare2solve-detailed-explanat-mv29/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/7014747/bfs-solution-by-user6434u-nb06/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6182456/java-dfs-greedy-easy-by-shaligramyash-fdcf/;;https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6182063/dfs-by-prachikumari-gd7l/;;;=;==;=;=;

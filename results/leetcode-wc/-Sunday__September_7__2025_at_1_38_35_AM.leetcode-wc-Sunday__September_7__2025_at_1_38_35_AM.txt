@@ -1,0 +1,23 @@
+473. Matchsticks to Square;=;=Medium;=;=public boolean makesquare(int[] matchsticks);=;=You are given an integer array matchsticks where matchsticks[i] is the length of the ith matchstick. You want to use all the matchsticks to make one square. You should not break any stick, but you can link them up, and each matchstick must be used exactly one time.
+
+Return true if you can make this square and false otherwise.
+
+ 
+
+Example 1:
+
+
+Input: matchsticks = [1,1,2,2,2]
+Output: true
+Explanation: You can form a square with length 2, one side of the square came two sticks with length 1.
+Example 2:
+
+Input: matchsticks = [3,3,3,3,4]
+Output: false
+Explanation: You cannot find a way to form a square with all the matchsticks.
+ 
+
+Constraints:
+
+1 <= matchsticks.length <= 15
+1 <= matchsticks[i] <= 108;=;=https://leetcode.com/problems/matchsticks-to-square/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/matchsticks-to-square/solutions/7135291/easy-and-efficient-solution-by-kgoutamku-q6ac/;;https://leetcode.com/problems/matchsticks-to-square/solutions/6950972/really-intuitive-solution-java-by-rubiks-emg2/;;https://leetcode.com/problems/matchsticks-to-square/solutions/2270381/simple-java-solution-using-recursion-by-mlnca/;;https://leetcode.com/problems/matchsticks-to-square/solutions/5559911/please-add-more-question-that-can-be-sol-rqfn/;;https://leetcode.com/problems/matchsticks-to-square/solutions/1275625/js-python-java-c-easy-optimized-backtrac-mvev/;;https://leetcode.com/problems/matchsticks-to-square/solutions/5512972/simple-intuitive-java-solution-by-dixon_-y2t7/;;https://leetcode.com/problems/matchsticks-to-square/solutions/6606321/slow-but-simple-by-dummy_nick-xe6i/;;https://leetcode.com/problems/matchsticks-to-square/solutions/1273924/easy-to-understand-java-solution-explana-3bn2/;;https://leetcode.com/problems/matchsticks-to-square/solutions/2270458/java-1ms-solution-beats-100-dfs-easy-und-tg8z/;;https://leetcode.com/problems/matchsticks-to-square/solutions/7161045/2ms-beats-97-backtracking-easy-to-unders-xd5z/;;https://leetcode.com/problems/matchsticks-to-square/solutions/352617/beats-100-java-solutions-1-ms-dfs-withou-1mkf/;;https://leetcode.com/problems/matchsticks-to-square/solutions/2270926/java-dptle-back-tracking-clean-code-by-b-ikmd/;;https://leetcode.com/problems/matchsticks-to-square/solutions/3702626/one-line-in-backtracking-changed-from-20-s3wk/;;https://leetcode.com/problems/matchsticks-to-square/solutions/2270798/clean-java-code-by-subham_99-x71x/;;https://leetcode.com/problems/matchsticks-to-square/solutions/1276038/java-simple-and-easy-backtracking-soluti-oice/;;;=;==;=;=;

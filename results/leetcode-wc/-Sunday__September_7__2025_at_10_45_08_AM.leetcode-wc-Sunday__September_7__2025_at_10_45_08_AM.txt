@@ -1,0 +1,32 @@
+420. Strong Password Checker;=;=Hard;=;=public int strongPasswordChecker(String password);=;=A password is considered strong if the below conditions are all met:
+
+It has at least 6 characters and at most 20 characters.
+It contains at least one lowercase letter, at least one uppercase letter, and at least one digit.
+It does not contain three repeating characters in a row (i.e., "Baaabb0" is weak, but "Baaba0" is strong).
+Given a string password, return the minimum number of steps required to make password strong. if password is already strong, return 0.
+
+In one step, you can:
+
+Insert one character to password,
+Delete one character from password, or
+Replace one character of password with another character.
+ 
+
+Example 1:
+
+Input: password = "a"
+Output: 5
+Example 2:
+
+Input: password = "aA1"
+Output: 3
+Example 3:
+
+Input: password = "1337C0d3"
+Output: 0
+ 
+
+Constraints:
+
+1 <= password.length <= 50
+password consists of letters, digits, dot '.' or exclamation mark '!'.;=;=https://leetcode.com/problems/strong-password-checker/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/strong-password-checker/solutions/2342184/javacpppython-explained-100-0-ms-meme-by-f4i2/;;https://leetcode.com/problems/strong-password-checker/solutions/5107769/easy-to-follow-1ms-solution-heap-by-roha-dza1/;;https://leetcode.com/problems/strong-password-checker/solutions/2431603/share-my-clean-java-solution-with-explan-fju9/;;https://leetcode.com/problems/strong-password-checker/solutions/6037385/beats-100step-by-step-solutionusing-hash-mgl8/;;https://leetcode.com/problems/strong-password-checker/solutions/6734620/beginner-friendly-easy-to-understand-jav-ha0m/;;https://leetcode.com/problems/strong-password-checker/solutions/6696266/java-best-solution-by-heyysankalp-6m6e/;;https://leetcode.com/problems/strong-password-checker/solutions/91002/java-easy-solution-with-explanation-by-d-mw74/;;https://leetcode.com/problems/strong-password-checker/solutions/357454/java-0ms-on-solution-with-video-in-chine-00dl/;;https://leetcode.com/problems/strong-password-checker/solutions/3302687/plz-dont-see-w-a-s-t-e-d-m-o-m-e-n-t-by-aypxu/;;https://leetcode.com/problems/strong-password-checker/solutions/91020/very-easy-and-simple-on-solution-python-ccbar/;;https://leetcode.com/problems/strong-password-checker/solutions/7107117/hahahaha-by-samyak_07-jfju/;;https://leetcode.com/problems/strong-password-checker/solutions/5808625/medium-by-bhagya_patel_01-il6z/;;https://leetcode.com/problems/strong-password-checker/solutions/2231499/java-solution-edge-cases-and-priorities-58fyz/;;https://leetcode.com/problems/strong-password-checker/solutions/6711534/clean-intuitive-combining-insertions-rep-spy4/;;https://leetcode.com/problems/strong-password-checker/solutions/6525873/on-in-java-0-ms-by-mohankancherla519-vm25/;;;=;==;=;=;

@@ -1,0 +1,26 @@
+354. Russian Doll Envelopes;=;=Hard;=;=publicÊintÊmaxEnvelopes(int[][]Êenvelopes);=;=You are given a 2D array of integers envelopes where envelopes[i] = [wi, hi] represents the width and the height of an envelope.
+
+One envelope can fit into another if and only if both the width and height of one envelope are greater than the other envelope's width and height.
+
+Return the maximum number of envelopes you can Russian doll (i.e., put one inside the other).
+
+Note: You cannot rotate an envelope.
+
+Ê
+
+Example 1:
+
+Input: envelopes = [[5,4],[6,4],[6,7],[2,3]]
+Output: 3
+Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
+Example 2:
+
+Input: envelopes = [[1,1],[1,1],[1,1]]
+Output: 1
+Ê
+
+Constraints:
+
+1 <= envelopes.length <= 105
+envelopes[i].length == 2
+1 <= wi, hi <= 105;=;=https://leetcode.com/problems/russian-doll-envelopes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/russian-doll-envelopes/solutions/2071477/cjava-pythonbest-explanation-with-pictur-73bl/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/7146135/easy-code-in-java-using-binary-search-by-47qt/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/82763/java-nlogn-solution-with-explanation-by-gq7yc/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/1134011/js-python-java-c-easy-lis-solution-w-exp-wvra/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/6994322/russian-doll-envelopes-by-shreysatadeve2-luw2/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/5791505/lis-single-pattern-to-solve-all-lis-prob-kcw5/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/5366973/no-dp-using-binary-search-lis-cpp-java-c-7epf/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/6810803/java-best-solution-by-heyysankalp-8xsf/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/2071387/java-solution-10-lines-by-ghrushneshr25-iwfc/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/82810/short-and-simple-java-solution-15-lines-lallh/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/7155074/java-code-solution-by-rishi_247-xylr/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/1134299/java-lis-application-by-himanshuchhikara-5q51/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/2076588/lis-run-time-on-logn-space-on-by-lowkeyi-7jby/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/4516108/easy-relatable-approach-learn-from-300-b-2ogf/;;https://leetcode.com/problems/russian-doll-envelopes/solutions/1545621/java-easy-to-understand-dynamic-programm-pps8/;;;=;==;=;=;

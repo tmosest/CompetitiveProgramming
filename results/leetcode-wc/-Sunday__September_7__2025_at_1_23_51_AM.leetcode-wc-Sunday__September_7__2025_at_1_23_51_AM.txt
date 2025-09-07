@@ -1,0 +1,32 @@
+335. Self Crossing;=;=Hard;=;=public boolean isSelfCrossing(int[] distance);=;=You are given an array of integers distance.
+
+You start at the point (0, 0) on an X-Y plane, and you move distance[0] meters to the north, then distance[1] meters to the west, distance[2] meters to the south, distance[3] meters to the east, and so on. In other words, after each move, your direction changes counter-clockwise.
+
+Return true if your path crosses itself or false if it does not.
+
+ 
+
+Example 1:
+
+
+Input: distance = [2,1,1,2]
+Output: true
+Explanation: The path crosses itself at the point (0, 1).
+Example 2:
+
+
+Input: distance = [1,2,3,4]
+Output: false
+Explanation: The path does not cross itself at any point.
+Example 3:
+
+
+Input: distance = [1,1,1,2,1]
+Output: true
+Explanation: The path crosses itself at the point (0, 0).
+ 
+
+Constraints:
+
+1 <= distance.length <= 105
+1 <= distance[i] <= 105;=;=https://leetcode.com/problems/self-crossing/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/self-crossing/solutions/79168/simple-java-solution-by-munsteur-kntf/;;https://leetcode.com/problems/self-crossing/solutions/79192/java-on-o1-0ms-solution-with-explanation-k8rh/;;https://leetcode.com/problems/self-crossing/solutions/5192666/clean-solution-with-useful-comments-by-p-8rcw/;;https://leetcode.com/problems/self-crossing/solutions/4468731/clean-code-optimize-solution-by-shree_go-kkxn/;;https://leetcode.com/problems/self-crossing/solutions/1018879/java-arm-leg-and-swirl-by-orc-dev-5a9e/;;https://leetcode.com/problems/self-crossing/solutions/1959315/java-beats-10000-memoryspeed-0ms-april-2-yjl1/;;https://leetcode.com/problems/self-crossing/solutions/682848/java-1ms-12-some-explanation-by-zeus1985-oqx0/;;https://leetcode.com/problems/self-crossing/solutions/79183/java-one-pass-solution-0ms-by-lavenger-yypr/;;https://leetcode.com/problems/self-crossing/solutions/7006806/self-crossing-easy-to-understand-by-__ni-fzph/;;https://leetcode.com/problems/self-crossing/solutions/5608380/solution-in-java-100-by-ashimasingh0610-2b8j/;;https://leetcode.com/problems/self-crossing/solutions/5079866/java-by-pankajkumar101-i3iv/;;https://leetcode.com/problems/self-crossing/solutions/4764620/java-on-by-yulia_sd-hzth/;;https://leetcode.com/problems/self-crossing/solutions/4693873/on-explained-soln-by-harsh007kumar-ugrn/;;https://leetcode.com/problems/self-crossing/solutions/4446679/ee-by-user3043sb-v38c/;;https://leetcode.com/problems/self-crossing/solutions/3936031/easy-lineartime-solution-java-kotlin-hyd-z8ri/;;;=;==;=;=;

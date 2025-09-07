@@ -1,0 +1,35 @@
+573. Squirrel Simulation;=;=Medium;=;=public int minDistance(int height, int width, int[] tree, int[] squirrel, int[][] nuts);=;=You are given two integers height and width representing a garden of size height x width. You are also given:
+
+an array tree where tree = [treer, treec] is the position of the tree in the garden,
+an array squirrel where squirrel = [squirrelr, squirrelc] is the position of the squirrel in the garden,
+and an array nuts where nuts[i] = [nutir, nutic] is the position of the ith nut in the garden.
+The squirrel can only take at most one nut at one time and can move in four directions: up, down, left, and right, to the adjacent cell.
+
+Return the minimal distance for the squirrel to collect all the nuts and put them under the tree one by one.
+
+The distance is the number of moves.
+
+ 
+
+Example 1:
+
+
+Input: height = 5, width = 7, tree = [2,2], squirrel = [4,4], nuts = [[3,0], [2,5]]
+Output: 12
+Explanation: The squirrel should go to the nut at [2, 5] first to achieve a minimal distance.
+Example 2:
+
+
+Input: height = 1, width = 3, tree = [0,1], squirrel = [0,0], nuts = [[0,2]]
+Output: 3
+ 
+
+Constraints:
+
+1 <= height, width <= 100
+tree.length == 2
+squirrel.length == 2
+1 <= nuts.length <= 5000
+nuts[i].length == 2
+0 <= treer, squirrelr, nutir <= height
+0 <= treec, squirrelc, nutic <= width;=;=https://leetcode.com/problems/squirrel-simulation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/squirrel-simulation/solutions/5807773/java-on-solution-using-manhattan-distanc-elrm/;;https://leetcode.com/problems/squirrel-simulation/solutions/4267160/100-faster-java-by-charioter-c8g3/;;https://leetcode.com/problems/squirrel-simulation/solutions/4266095/java-swap-explained-by-prashant404-8k9y/;;https://leetcode.com/problems/squirrel-simulation/solutions/4263386/java-array-math-on-o1-by-vmlnt-mrnz/;;https://leetcode.com/problems/squirrel-simulation/solutions/3405011/solution-by-deleted_user-zdem/;;https://leetcode.com/problems/squirrel-simulation/solutions/1781940/java-8-lines-explained-by-student2091-uu2h/;;https://leetcode.com/problems/squirrel-simulation/solutions/1049932/squirrel-simulation-java-simple-solution-dodg/;;https://leetcode.com/problems/squirrel-simulation/solutions/1047289/java-solution-w-detailed-comments-by-nik-esht/;;;=;==;=;=;

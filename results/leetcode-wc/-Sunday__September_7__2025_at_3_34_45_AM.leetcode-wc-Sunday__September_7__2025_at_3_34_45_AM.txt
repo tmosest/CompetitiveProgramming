@@ -1,0 +1,22 @@
+516. Longest Palindromic Subsequence;=;=Medium;=;=public int longestPalindromeSubseq(String s);=;=Given a string s, find the longest palindromic subsequence's length in s.
+
+A subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.
+
+ 
+
+Example 1:
+
+Input: s = "bbbab"
+Output: 4
+Explanation: One possible longest palindromic subsequence is "bbbb".
+Example 2:
+
+Input: s = "cbbd"
+Output: 2
+Explanation: One possible longest palindromic subsequence is "bb".
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/longest-palindromic-subsequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-palindromic-subsequence/solutions/7158455/easiest-space-optimized-bottom-up-approa-e13u/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/3414715/easy-solutions-in-java-python-and-c-look-fl62/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/7122317/beats-98-easiest-solution-straight-forwa-7yfo/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/7024133/longest-palindrome-subsequence-dynamic-p-nosb/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/7099975/from-palindrome-from-2-pointer-type-of-s-sus9/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/6910241/lps-recursion-to-lcs-4-clean-approaches-qp6qh/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/3414839/java-easy-image-explaination-dp-beginner-r69e/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/7054137/dp-spaced-optimised-solution-beats-81-in-rnlu/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/7049694/java-code-by-birunda-mx0y/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/6525475/finding-the-longest-palindromic-subseque-e2fp/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/6747900/java-3-approaches-dp-lcs-trick-beginner-k2jte/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/6833767/longest-palindrome-subsequence-by-java_k-5zam/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/6923672/beat-100-with-tabulation-and-memoization-2827/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/6926017/longest-palindromic-subsequence-dynamic-6vdfy/;;https://leetcode.com/problems/longest-palindromic-subsequence/solutions/7069078/longest-palindromic-subsequence-dp-2-poi-awc7/;;;=;==;=;=;

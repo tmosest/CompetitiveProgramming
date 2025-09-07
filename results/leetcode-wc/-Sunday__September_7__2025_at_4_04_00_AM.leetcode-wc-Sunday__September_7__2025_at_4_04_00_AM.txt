@@ -1,0 +1,27 @@
+410. Split Array Largest Sum;=;=Hard;=;=publicÊintÊsplitArray(int[]Ênums,ÊintÊk);=;=Given an integer array nums and an integer k, split nums into k non-empty subarrays such that the largest sum of any subarray is minimized.
+
+Return the minimized largest sum of the split.
+
+A subarray is a contiguous part of the array.
+
+Ê
+
+Example 1:
+
+Input: nums = [7,2,5,10,8], k = 2
+Output: 18
+Explanation: There are four ways to split nums into two subarrays.
+The best way is to split it into [7,2,5] and [10,8], where the largest sum among the two subarrays is only 18.
+Example 2:
+
+Input: nums = [1,2,3,4,5], k = 2
+Output: 9
+Explanation: There are four ways to split nums into two subarrays.
+The best way is to split it into [1,2,3] and [4,5], where the largest sum among the two subarrays is only 9.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 1000
+0 <= nums[i] <= 106
+1 <= k <= min(50, nums.length);=;=https://leetcode.com/problems/split-array-largest-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/split-array-largest-sum/solutions/6695631/understanding-the-optimal-way-problem-pa-v8u0/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7154282/100-beat-this-solution-using-binary-sera-79zx/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7148980/very-easy-and-most-optimal-solution-beat-j7dy/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7117111/master-the-binary-search-pattern-detaile-0c73/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7075608/java-binary-search-solution-split-array-fzm3d/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7098605/runtime-0ms-beats-10000-java-cpp-python-b4bej/;;https://leetcode.com/problems/split-array-largest-sum/solutions/6864708/binary-search-approach-with-simple-logic-m4ue/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7119381/binary-search-by-delbin_de_yohan-cfem/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7106850/100-beats-optimal-binary-search-minmaxsu-j6sc/;;https://leetcode.com/problems/split-array-largest-sum/solutions/6947718/hard-problem-made-easy-java-binary-searc-baqw/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7072926/damn-it-took-me-only-10-min-to-figure-ou-e1zh/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7066557/java-beats-100-0-ms-binary-search-easy-t-ae83/;;https://leetcode.com/problems/split-array-largest-sum/solutions/1899033/java-simple-and-easy-solution-beats-100-kwjgt/;;https://leetcode.com/problems/split-array-largest-sum/solutions/6253584/100-binary-search-easy-to-understand-sim-kc9v/;;https://leetcode.com/problems/split-array-largest-sum/solutions/7066911/binary-search-by-soujitdas65-0qqu/;;;=;==;=;=;

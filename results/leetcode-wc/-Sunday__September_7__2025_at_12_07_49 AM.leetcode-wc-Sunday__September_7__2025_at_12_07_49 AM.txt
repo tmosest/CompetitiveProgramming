@@ -1,0 +1,32 @@
+330. Patching Array;=;=Hard;=;=public int minPatches(int[] nums, int n);=;=Given a sorted integer array nums and an integer n, add/patch elements to the array such that any number in the range [1, n] inclusive can be formed by the sum of some elements in the array.
+
+Return the minimum number of patches required.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3], n = 6
+Output: 1
+Explanation:
+Combinations of nums are [1], [3], [1,3], which form possible sums of: 1, 3, 4.
+Now if we add/patch 2 to nums, the combinations are: [1], [2], [3], [1,3], [2,3], [1,2,3].
+Possible sums are 1, 2, 3, 4, 5, 6, which now covers the range [1, 6].
+So we only need 1 patch.
+Example 2:
+
+Input: nums = [1,5,10], n = 20
+Output: 2
+Explanation: The two patches can be [2, 4].
+Example 3:
+
+Input: nums = [1,2,2], n = 5
+Output: 0
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 104
+nums is sorted in ascending order.
+1 <= n <= 231 - 1;=;=https://leetcode.com/problems/patching-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/patching-array/solutions/5319434/easy-to-understand-greedy-approach-detai-ddek/;;https://leetcode.com/problems/patching-array/solutions/5320226/leetcode-hard-in-6-mins-beats-100-explai-ld15/;;https://leetcode.com/problems/patching-array/solutions/5321154/fastest-efficient-simplest-solution-dryr-9ia0/;;https://leetcode.com/problems/patching-array/solutions/5319724/100-beats-easy-to-understand-detailed-st-hdw9/;;https://leetcode.com/problems/patching-array/solutions/5319564/easy-java-python3-c-solution-0-ms-_-by-s-urpt/;;https://leetcode.com/problems/patching-array/solutions/5319537/greedy-formal-proof-tutorial-patching-ar-agth/;;https://leetcode.com/problems/patching-array/solutions/5319705/beats-98-users-efficient-and-easy-to-und-i27v/;;https://leetcode.com/problems/patching-array/solutions/6296472/patching-array-solution-explanation-and-hpndr/;;https://leetcode.com/problems/patching-array/solutions/5319632/java-solution-beats-10000-by-mohit-005-lz8y/;;https://leetcode.com/problems/patching-array/solutions/5319481/easy-java-python3-c-solution-0-ms-_-by-s-0ocj/;;https://leetcode.com/problems/patching-array/solutions/5322469/java-solution-explained-in-hindi-by-the_-cff7/;;https://leetcode.com/problems/patching-array/solutions/5320601/beats-100-users-with-java-simple-approac-gjwt/;;https://leetcode.com/problems/patching-array/solutions/5880405/simple-easy-to-understand-clear-by-kdhak-encw/;;https://leetcode.com/problems/patching-array/solutions/5320910/most-optimal-solution-in-java-by-yash_ja-i34b/;;https://leetcode.com/problems/patching-array/solutions/6721285/minimum-number-of-patches-by-ajeetverma3-njrd/;;;=;==;=;=;

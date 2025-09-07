@@ -1,0 +1,30 @@
+333. Largest BST Subtree;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public int largestBSTSubtree(TreeNode root);=;=Given the root of a binary tree, find the largest subtree, which is also a Binary Search Tree (BST), where the largest means subtree has the largest number of nodes.
+
+A Binary Search Tree (BST) is a tree in which all the nodes follow the below-mentioned properties:
+
+The left subtree values are less than the value of their parent (root) node's value.
+The right subtree values are greater than the value of their parent (root) node's value.
+Note: A subtree must include all of its descendants.
+
+ 
+
+Example 1:
+
+
+
+Input: root = [10,5,15,1,8,null,7]
+Output: 3
+Explanation: The Largest BST Subtree in this case is the highlighted one. The return value is the subtree's size, which is 3.
+Example 2:
+
+Input: root = [4,2,7,2,3,5,null,2,null,null,null,null,null,1]
+Output: 2
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [0, 104].
+-104 <= Node.val <= 104
+ 
+
+Follow up: Can you figure out ways to solve it with O(n) time complexity?;=;=https://leetcode.com/problems/largest-bst-subtree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-bst-subtree/solutions/443235/java-simple-with-comments-by-glukharev-owl0/;;https://leetcode.com/problems/largest-bst-subtree/solutions/2692209/easy-to-understand-java-recursion-soluti-lfc4/;;https://leetcode.com/problems/largest-bst-subtree/solutions/6364243/easy-to-understand-validbst-check-and-co-fbmg/;;https://leetcode.com/problems/largest-bst-subtree/solutions/7152224/simple-recursive-solution-by-suryaprakas-c0w4/;;https://leetcode.com/problems/largest-bst-subtree/solutions/78910/share-my-java-on-solution-very-easy-to-u-t553/;;https://leetcode.com/problems/largest-bst-subtree/solutions/1186646/java-oop-solution-on-by-tomonarifeehan-cffx/;;https://leetcode.com/problems/largest-bst-subtree/solutions/4254764/postorder-beat-100-java-detailed-explana-zaoz/;;https://leetcode.com/problems/largest-bst-subtree/solutions/1103489/java-on-0ms-postorder-by-xbe-jh9q/;;https://leetcode.com/problems/largest-bst-subtree/solutions/78908/onlogn-java-solution-by-yfcheng-jcbv/;;https://leetcode.com/problems/largest-bst-subtree/solutions/78948/1ms-java-solution-by-_algo_yan_0322-km0g/;;https://leetcode.com/problems/largest-bst-subtree/solutions/6907796/dfs-1-traverse-linear-complexity-by-lxyu-7y6z/;;https://leetcode.com/problems/largest-bst-subtree/solutions/337897/straight-forward-java-solution-by-ssl_91-5gc3/;;https://leetcode.com/problems/largest-bst-subtree/solutions/6700163/inorder-traverse-and-compare-with-previo-nd3i/;;https://leetcode.com/problems/largest-bst-subtree/solutions/6700130/inorder-traverse-and-track-previous-visi-z6sp/;;https://leetcode.com/problems/largest-bst-subtree/solutions/6807067/simple-easy-beats-100-by-ritamjha-hxbx/;;;=;==;=;=;

@@ -1,0 +1,32 @@
+546. Remove Boxes;=;=Hard;=;=publicÊintÊremoveBoxes(int[]Êboxes);=;=You are given several boxes with different colors represented by different positive numbers.
+
+You may experience several rounds to remove boxes until there is no box left. Each time you can choose some continuous boxes with the same color (i.e., composed of k boxes, k >= 1), remove them and get k * k points.
+
+Return the maximum points you can get.
+
+Ê
+
+Example 1:
+
+Input: boxes = [1,3,2,2,2,3,4,3,1]
+Output: 23
+Explanation:
+[1, 3, 2, 2, 2, 3, 4, 3, 1] 
+----> [1, 3, 3, 4, 3, 1] (3*3=9 points) 
+----> [1, 3, 3, 3, 1] (1*1=1 points) 
+----> [1, 1] (3*3=9 points) 
+----> [] (2*2=4 points)
+Example 2:
+
+Input: boxes = [1,1,1]
+Output: 9
+Example 3:
+
+Input: boxes = [1]
+Output: 1
+Ê
+
+Constraints:
+
+1 <= boxes.length <= 100
+1 <= boxes[i]Ê<= 100;=;=https://leetcode.com/problems/remove-boxes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-boxes/solutions/1402639/java-explanation-with-illustration-by-on-3459/;;https://leetcode.com/problems/remove-boxes/solutions/6850655/remove-boxes-interval-dp-recursion-memoi-9a9u/;;https://leetcode.com/problems/remove-boxes/solutions/5687901/solution-in-java-100-by-ashimasingh0610-96l1/;;https://leetcode.com/problems/remove-boxes/solutions/5368608/3d-dp-basic-and-lalach-options-by-venkat-y7a4/;;https://leetcode.com/problems/remove-boxes/solutions/3396286/solution-by-deleted_user-zbgl/;;https://leetcode.com/problems/remove-boxes/solutions/2339470/java-bottom-up-dp-4-for-loop-by-student2-jxme/;;https://leetcode.com/problems/remove-boxes/solutions/4235163/solution-for-bignnrs-by-jaiarora-v784/;;https://leetcode.com/problems/remove-boxes/solutions/975800/java-dpdfs-codephoto-by-magiciendecode-v534/;;https://leetcode.com/problems/remove-boxes/solutions/3313588/dynamic-programming-on-intermittent-sequ-k2xi/;;https://leetcode.com/problems/remove-boxes/solutions/7120736/my-thinking-from-brute-to-3d-dp-by-monal-iojm/;;https://leetcode.com/problems/remove-boxes/solutions/5901147/more-intuitive-on6-on5-acc-approach-by-v-78bj/;;https://leetcode.com/problems/remove-boxes/solutions/5629605/recursion-arrays-java-best-problem-by-he-nzqo/;;https://leetcode.com/problems/remove-boxes/solutions/5626811/recursion-java-array-by-hemant-batra-jaag/;;https://leetcode.com/problems/remove-boxes/solutions/5051214/best-java-solution-33ms-of-runtime-by-ri-1ez2/;;https://leetcode.com/problems/remove-boxes/solutions/4478092/bottom-up-3d-dp-by-fredzqm-dk7l/;;;=;==;=;=;

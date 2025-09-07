@@ -1,0 +1,48 @@
+591. Tag Validator;=;=Hard;=;=public boolean isValid(String code);=;=Given a string representing a code snippet, implement a tag validator to parse the code and return whether it is valid.
+
+A code snippet is valid if all the following rules hold:
+
+The code must be wrapped in a valid closed tag. Otherwise, the code is invalid.
+A closed tag (not necessarily valid) has exactly the following format : <TAG_NAME>TAG_CONTENT</TAG_NAME>. Among them, <TAG_NAME> is the start tag, and </TAG_NAME> is the end tag. The TAG_NAME in start and end tags should be the same. A closed tag is valid if and only if the TAG_NAME and TAG_CONTENT are valid.
+A valid TAG_NAME only contain upper-case letters, and has length in range [1,9]. Otherwise, the TAG_NAME is invalid.
+A valid TAG_CONTENT may contain other valid closed tags, cdata and any characters (see note1) EXCEPT unmatched <, unmatched start and end tag, and unmatched or closed tags with invalid TAG_NAME. Otherwise, the TAG_CONTENT is invalid.
+A start tag is unmatched if no end tag exists with the same TAG_NAME, and vice versa. However, you also need to consider the issue of unbalanced when tags are nested.
+A < is unmatched if you cannot find a subsequent >. And when you find a < or </, all the subsequent characters until the next > should be parsed as TAG_NAME (not necessarily valid).
+The cdata has the following format : <![CDATA[CDATA_CONTENT]]>. The range of CDATA_CONTENT is defined as the characters between <![CDATA[ and the first subsequent ]]>.
+CDATA_CONTENT may contain any characters. The function of cdata is to forbid the validator to parse CDATA_CONTENT, so even it has some characters that can be parsed as tag (no matter valid or invalid), you should treat it as regular characters.
+ 
+
+Example 1:
+
+Input: code = "<DIV>This is the first line <![CDATA[<div>]]></DIV>"
+Output: true
+Explanation: 
+The code is wrapped in a closed tag : <DIV> and </DIV>. 
+The TAG_NAME is valid, the TAG_CONTENT consists of some characters and cdata. 
+Although CDATA_CONTENT has an unmatched start tag with invalid TAG_NAME, it should be considered as plain text, not parsed as a tag.
+So TAG_CONTENT is valid, and then the code is valid. Thus return true.
+Example 2:
+
+Input: code = "<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>"
+Output: true
+Explanation:
+We first separate the code into : start_tag|tag_content|end_tag.
+start_tag -> "<DIV>"
+end_tag -> "</DIV>"
+tag_content could also be separated into : text1|cdata|text2.
+text1 -> ">>  ![cdata[]] "
+cdata -> "<![CDATA[<div>]>]]>", where the CDATA_CONTENT is "<div>]>"
+text2 -> "]]>>]"
+The reason why start_tag is NOT "<DIV>>>" is because of the rule 6.
+The reason why cdata is NOT "<![CDATA[<div>]>]]>]]>" is because of the rule 7.
+Example 3:
+
+Input: code = "<A>  <B> </A>   </B>"
+Output: false
+Explanation: Unbalanced. If "<A>" is closed, then "<B>" must be unmatched, and vice versa.
+ 
+
+Constraints:
+
+1 <= code.length <= 500
+code consists of English letters, digits, '<', '>', '/', '!', '[', ']', '.', and ' '.;=;=https://leetcode.com/problems/tag-validator/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/tag-validator/solutions/6869240/validate-xml-tags-using-stack-logic-1-ms-dfdb/;;https://leetcode.com/problems/tag-validator/solutions/3409219/solution-by-deleted_user-mh6d/;;https://leetcode.com/problems/tag-validator/solutions/6199643/591-tag-validator-by-g8xd0qpqty-x53o/;;https://leetcode.com/problems/tag-validator/solutions/6133116/simplest-java-code-friendly-for-beginner-gvhy/;;https://leetcode.com/problems/tag-validator/solutions/6126116/stack-usage-easy-by-prachikumari-bltz/;;https://leetcode.com/problems/tag-validator/solutions/6054947/my-java-1ms-solution-100-faster-by-ragha-0ut5/;;https://leetcode.com/problems/tag-validator/solutions/5075588/solution-for-this-problem-by-crazyycoder-oeay/;;https://leetcode.com/problems/tag-validator/solutions/4655178/best-java-solution-with-runtime-2ms-by-p-akc9/;;https://leetcode.com/problems/tag-validator/solutions/4612022/beat-100-in-java-sometimes-sometimes-onl-b5ky/;;https://leetcode.com/problems/tag-validator/solutions/3180364/easiest-way-to-solve-this-problem-by-kan-02u7/;;https://leetcode.com/problems/tag-validator/solutions/2633917/1ms-using-stack-many-edge-cases-using-if-y13h/;;https://leetcode.com/problems/tag-validator/solutions/2399305/i-hate-simulation-problems-by-nooboon-egoa/;;https://leetcode.com/problems/tag-validator/solutions/1999505/java-stack-by-xxuhu-n6g3/;;https://leetcode.com/problems/tag-validator/solutions/1999355/java-easy-understanding-by-artists-hxgs/;;https://leetcode.com/problems/tag-validator/solutions/1865199/java-dont-read-this-code-please-by-crack-k3v6/;;;=;==;=;=;

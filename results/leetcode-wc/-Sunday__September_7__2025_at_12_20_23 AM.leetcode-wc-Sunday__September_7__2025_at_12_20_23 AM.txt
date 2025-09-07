@@ -1,0 +1,28 @@
+474. Ones and Zeroes;=;=Medium;=;=public int findMaxForm(String[] strs, int m, int n);=;=You are given an array of binary strings strs and two integers m and n.
+
+Return the size of the largest subset of strs such that there are at most m 0's and n 1's in the subset.
+
+A set x is a subset of a set y if all elements of x are also elements of y.
+
+ 
+
+Example 1:
+
+Input: strs = ["10","0001","111001","1","0"], m = 5, n = 3
+Output: 4
+Explanation: The largest subset with at most 5 0's and 3 1's is {"10", "0001", "1", "0"}, so the answer is 4.
+Other valid but smaller subsets include {"0001", "1"} and {"10", "1", "0"}.
+{"111001"} is an invalid subset because it contains 4 1's, greater than the maximum of 3.
+Example 2:
+
+Input: strs = ["10","0","1"], m = 1, n = 1
+Output: 2
+Explanation: The largest subset is {"0", "1"}, so the answer is 2.
+ 
+
+Constraints:
+
+1 <= strs.length <= 600
+1 <= strs[i].length <= 100
+strs[i] consists only of digits '0' and '1'.
+1 <= m, n <= 100;=;=https://leetcode.com/problems/ones-and-zeroes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/ones-and-zeroes/solutions/1138695/js-python-java-c-easy-dp-knapsack-soluti-g2y9/;;https://leetcode.com/problems/ones-and-zeroes/solutions/2065570/100-0-ms-concise-code-epic-meme-by-manoj-gs2o/;;https://leetcode.com/problems/ones-and-zeroes/solutions/6860164/simple-clean-dp-solution-top-down-memoiz-46ex/;;https://leetcode.com/problems/ones-and-zeroes/solutions/6788160/simple-dp-approach-by-anaymas_25-7fou/;;https://leetcode.com/problems/ones-and-zeroes/solutions/2065874/java-recursive-solution-dynamic-programm-6n6k/;;https://leetcode.com/problems/ones-and-zeroes/solutions/6739092/simple-memoization-based-solution-using-re0rw/;;https://leetcode.com/problems/ones-and-zeroes/solutions/824896/java-memoization-easy-to-understand-by-h-yn8l/;;https://leetcode.com/problems/ones-and-zeroes/solutions/2065419/java-easy-approach-dp-pyrogramming-by-ni-55qh/;;https://leetcode.com/problems/ones-and-zeroes/solutions/1139815/java-simple-and-easy-to-understand-dp-so-9wq1/;;https://leetcode.com/problems/ones-and-zeroes/solutions/3793246/java-easy-solution-using-dp-by-vishesht2-2170/;;https://leetcode.com/problems/ones-and-zeroes/solutions/2065155/java-solution-by-aayushkumar20-pufq/;;https://leetcode.com/problems/ones-and-zeroes/solutions/3316032/from-memoization-tabulation-and-optimize-w9tj/;;https://leetcode.com/problems/ones-and-zeroes/solutions/3315555/java-dynamic-programming-memoization-eas-zlf4/;;https://leetcode.com/problems/ones-and-zeroes/solutions/3814032/top-down-approach-java-osnm-by-youssef19-fyix/;;https://leetcode.com/problems/ones-and-zeroes/solutions/2704404/java-solution-very-intuitive-by-yuanqixi-np58/;;;=;==;=;=;

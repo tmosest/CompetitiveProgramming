@@ -1,0 +1,36 @@
+553. Optimal Division;=;=Medium;=;=public String optimalDivision(int[] nums);=;=You are given an integer array nums. The adjacent integers in nums will perform the float division.
+
+For example, for nums = [2,3,4], we will evaluate the expression "2/3/4".
+However, you can add any number of parenthesis at any position to change the priority of operations. You want to add these parentheses such the value of the expression after the evaluation is maximum.
+
+Return the corresponding expression that has the maximum value in string format.
+
+Note: your expression should not contain redundant parenthesis.
+
+ 
+
+Example 1:
+
+Input: nums = [1000,100,10,2]
+Output: "1000/(100/10/2)"
+Explanation: 1000/(100/10/2) = 1000/((100/10)/2) = 200
+However, the bold parenthesis in "1000/((100/10)/2)" are redundant since they do not influence the operation priority.
+So you should return "1000/(100/10/2)".
+Other cases:
+1000/(100/10)/2 = 50
+1000/(100/(10/2)) = 50
+1000/100/10/2 = 0.5
+1000/100/(10/2) = 2
+Example 2:
+
+Input: nums = [2,3,4]
+Output: "2/(3/4)"
+Explanation: (2/(3/4)) = 8/3 = 2.667
+It can be shown that after trying all possibilities, we cannot get an expression with evaluation greater than 2.667
+ 
+
+Constraints:
+
+1 <= nums.length <= 10
+2 <= nums[i] <= 1000
+There is only one optimal division for the given input.;=;=https://leetcode.com/problems/optimal-division/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/optimal-division/solutions/7163862/java-solution-by-dheerajpoojary-6uue/;;https://leetcode.com/problems/optimal-division/solutions/7109310/code-explanation-by-amyy_1256-1idh/;;https://leetcode.com/problems/optimal-division/solutions/3399907/solution-by-deleted_user-rt7a/;;https://leetcode.com/problems/optimal-division/solutions/1109725/simple-java-solution-by-himanshuchhikara-fh40/;;https://leetcode.com/problems/optimal-division/solutions/4463326/java-bottom-up-approach-by-sunny_danny19-4erx/;;https://leetcode.com/problems/optimal-division/solutions/4116157/java-simple-and-clear-solution-by-abbos9-y1oc/;;https://leetcode.com/problems/optimal-division/solutions/2756130/java-easy-and-naive-approach-by-humam_sa-do7d/;;https://leetcode.com/problems/optimal-division/solutions/1799114/easy-java-soution-beats-68-by-john123gau-72ez/;;https://leetcode.com/problems/optimal-division/solutions/7096263/easiest-solution-by-aman4545-0vvc/;;https://leetcode.com/problems/optimal-division/solutions/6866472/clean-easy-to-understand-solution-in-jav-hf19/;;https://leetcode.com/problems/optimal-division/solutions/6511583/medium-solution-in-java-by-shaileshlodhi-tk91/;;https://leetcode.com/problems/optimal-division/solutions/6128888/best-approach-for-beginners-using-java-b-n9nf/;;https://leetcode.com/problems/optimal-division/solutions/5574804/beats-100-java-code-with-explanation-by-fuvdq/;;https://leetcode.com/problems/optimal-division/solutions/5162040/always-the-same-format-java-by-wangcai20-sfmr/;;https://leetcode.com/problems/optimal-division/solutions/4966186/optimal-division-by-deleted_user-92aj/;;;=;==;=;=;

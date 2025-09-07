@@ -1,0 +1,29 @@
+493. Reverse Pairs;=;=Hard;=;=void merge(vector<int>& A, int start, int mid, int end)    int n1 = (mid - start + 1);    int n2 = (end - mid);    int L[n1], R[n2];    for (int i = 0; i < n1; i++)        L[i] = A[start + i];    for (int j = 0; j < n2; j++)        R[j] = A[mid + 1 + j];    int i = 0, j = 0;    for (int k = start; k <= end; k++)         if (j >= n2 || (i < n1 && L[i] <= R[j]))            A[k] = L[i++];        else            A[k] = R[j++];    int mergesort_and_count(vector<int>& A, int start, int end)    if (start < end)         int mid = (start + end) / 2;        int count = mergesort_and_count(A, start, mid) + mergesort_and_count(A, mid + 1, end);        int j = mid + 1;        for (int i = start; i <= mid; i++)             while (j <= end && A[i] > A[j]  2LL)                j++;            count += j - (mid + 1);                merge(A, start, mid, end);        return count;;=;=Given an integer array nums, return the number of reverse pairs in the array.
+
+A reverse pair is a pair (i, j) where:
+
+0 <= i < j < nums.length and
+nums[i] > 2 * nums[j].
+ 
+
+Example 1:
+
+Input: nums = [1,3,2,3,1]
+Output: 2
+Explanation: The reverse pairs are:
+(1, 4) --> nums[1] = 3, nums[4] = 1, 3 > 2 * 1
+(3, 4) --> nums[3] = 3, nums[4] = 1, 3 > 2 * 1
+Example 2:
+
+Input: nums = [2,4,3,5,1]
+Output: 3
+Explanation: The reverse pairs are:
+(1, 4) --> nums[1] = 4, nums[4] = 1, 4 > 2 * 1
+(2, 4) --> nums[2] = 3, nums[4] = 1, 3 > 2 * 1
+(3, 4) --> nums[3] = 5, nums[4] = 1, 5 > 2 * 1
+ 
+
+Constraints:
+
+1 <= nums.length <= 5 * 104
+-231 <= nums[i] <= 231 - 1;=;=https://leetcode.com/problems/reverse-pairs/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/reverse-pairs/solutions/7144783/one-of-the-best-solution-that-you-can-fi-my6t/;;https://leetcode.com/problems/reverse-pairs/solutions/6918737/easyyyy-solution-efficient-merge-sort-ap-7zi9/;;https://leetcode.com/problems/reverse-pairs/solutions/7092169/very-easy-and-most-optimal-solution-beat-0h3j/;;https://leetcode.com/problems/reverse-pairs/solutions/7070022/reverse-pairs-using-merge-by-delbin_de_y-8r1a/;;https://leetcode.com/problems/reverse-pairs/solutions/7000471/easy-and-simple-approach-by-samruddhi_kh-52hs/;;https://leetcode.com/problems/reverse-pairs/solutions/6997545/detailed-explanation-beginner-friendly-a-p1ft/;;https://leetcode.com/problems/reverse-pairs/solutions/7032516/merge-sort-magic-onlogn-by-nikunj_saini-0pk6/;;https://leetcode.com/problems/reverse-pairs/solutions/6855347/java-solution-optimal-divide-conquer-beg-2x9e/;;https://leetcode.com/problems/reverse-pairs/solutions/7023455/divide-and-rule-technique-by-soujitdas65-u1f0/;;https://leetcode.com/problems/reverse-pairs/solutions/6709294/merge-sort-divide-and-conquer-optimal-so-3dr3/;;https://leetcode.com/problems/reverse-pairs/solutions/6981503/reverse-pairs-optimal-using-merge-sort-b-rgz0/;;https://leetcode.com/problems/reverse-pairs/solutions/6969890/easyyyy-java-solution-efficient-merge-so-twyy/;;https://leetcode.com/problems/reverse-pairs/solutions/6969891/easyyyy-java-solution-efficient-merge-so-ws5b/;;https://leetcode.com/problems/reverse-pairs/solutions/6910442/this-is-my-approach-by-abhinash7870-8n50/;;https://leetcode.com/problems/reverse-pairs/solutions/5766021/best-solution-with-explaination-beats-10-of21/;;;=;==;=;=;

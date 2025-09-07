@@ -1,0 +1,24 @@
+484. Find Permutation;=;=Medium;=;=public int[] findPermutation(String s);=;=A permutation perm of n integers of all the integers in the range [1, n] can be represented as a string s of length n - 1 where:
+
+s[i] == 'I' if perm[i] < perm[i + 1], and
+s[i] == 'D' if perm[i] > perm[i + 1].
+Given a string s, reconstruct the lexicographically smallest permutation perm and return it.
+
+ 
+
+Example 1:
+
+Input: s = "I"
+Output: [1,2]
+Explanation: [1,2] is the only legal permutation that can represented by s, where the number 1 and 2 construct an increasing relationship.
+Example 2:
+
+Input: s = "DI"
+Output: [2,1,3]
+Explanation: Both [2,1,3] and [3,1,2] can be represented as "DI", but since we want to find the smallest lexicographical permutation, you should return [2,1,3]
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s[i] is either 'I' or 'D'.;=;=https://leetcode.com/problems/find-permutation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-permutation/solutions/96663/greedy-on-java-solution-with-explanation-se0y/;;https://leetcode.com/problems/find-permutation/solutions/4612779/on-sliding-window-by-nicholasxie-11o8/;;https://leetcode.com/problems/find-permutation/solutions/4830008/using-stack-a-bit-cleaner-than-official-icfm6/;;https://leetcode.com/problems/find-permutation/solutions/4629038/java-solution-very-easy-to-understand-an-pdim/;;https://leetcode.com/problems/find-permutation/solutions/4397428/java-on-time-without-stack-solution-by-r-7yfl/;;https://leetcode.com/problems/find-permutation/solutions/3850161/two-short-solutions-stack-two-pointers-j-9602/;;https://leetcode.com/problems/find-permutation/solutions/3473501/clean-withwithout-using-stack-by-sarafra-9k10/;;https://leetcode.com/problems/find-permutation/solutions/3373546/solution-by-deleted_user-7jg8/;;https://leetcode.com/problems/find-permutation/solutions/2974558/java-solution-using-stack-by-madian-5q7g/;;https://leetcode.com/problems/find-permutation/solutions/2362930/java-100-by-fatezai-uo3w/;;https://leetcode.com/problems/find-permutation/solutions/2362443/java-one-pass-2-ms-faster-than-10000-tim-7q5e/;;https://leetcode.com/problems/find-permutation/solutions/2015642/java-javascript-c-solution-by-lachezarts-l6o2/;;https://leetcode.com/problems/find-permutation/solutions/2010926/java-stack-by-cooper-3qjb/;;https://leetcode.com/problems/find-permutation/solutions/2005395/java-on-solution-beat-100-by-leoever-tjcx/;;https://leetcode.com/problems/find-permutation/solutions/2002933/java-simple-efficient-on-solution-with-v-vrkg/;;;=;==;=;=;

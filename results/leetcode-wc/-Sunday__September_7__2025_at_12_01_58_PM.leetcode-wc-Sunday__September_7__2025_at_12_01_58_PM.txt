@@ -1,0 +1,43 @@
+588. Design In-Memory File System;=;=Hard;=;=FileSystem     public FileSystem()                     public List<String> ls(String path)                     public void mkdir(String path)                     public void addContentToFile(String filePath, String content)                     public String readContentFromFile(String filePath)             /  Your FileSystem object will be instantiated and called as such:  FileSystem obj = new FileSystem();  List<String> param_1 = obj.ls(path);  obj.mkdir(path);  obj.addContentToFile(filePath,content);  String param_4 = obj.readContentFromFile(filePath);;=;=Design a data structure that simulates an in-memory file system.
+
+Implement the FileSystem class:
+
+FileSystem() Initializes the object of the system.
+List<String> ls(String path)
+If path is a file path, returns a list that only contains this file's name.
+If path is a directory path, returns the list of file and directory names in this directory.
+The answer should in lexicographic order.
+void mkdir(String path) Makes a new directory according to the given path. The given directory path does not exist. If the middle directories in the path do not exist, you should create them as well.
+void addContentToFile(String filePath, String content)
+If filePath does not exist, creates that file containing given content.
+If filePath already exists, appends the given content to original content.
+String readContentFromFile(String filePath) Returns the content in the file at filePath.
+ 
+
+Example 1:
+
+
+Input
+["FileSystem", "ls", "mkdir", "addContentToFile", "ls", "readContentFromFile"]
+[[], ["/"], ["/a/b/c"], ["/a/b/c/d", "hello"], ["/"], ["/a/b/c/d"]]
+Output
+[null, [], null, null, ["a"], "hello"]
+
+Explanation
+FileSystem fileSystem = new FileSystem();
+fileSystem.ls("/");                         // return []
+fileSystem.mkdir("/a/b/c");
+fileSystem.addContentToFile("/a/b/c/d", "hello");
+fileSystem.ls("/");                         // return ["a"]
+fileSystem.readContentFromFile("/a/b/c/d"); // return "hello"
+ 
+
+Constraints:
+
+1 <= path.length, filePath.length <= 100
+path and filePath are absolute paths which begin with '/' and do not end with '/' except that the path is just "/".
+You can assume that all directory names and file names only contain lowercase letters, and the same names will not exist in the same directory.
+You can assume that all operations will be passed valid parameters, and users will not attempt to retrieve file content or list a directory or file that does not exist.
+You can assume that the parent directory for the file in addContentToFile will exist.
+1 <= content.length <= 50
+At most 300 calls will be made to ls, mkdir, addContentToFile, and readContentFromFile.;=;=https://leetcode.com/problems/design-in-memory-file-system/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/design-in-memory-file-system/solutions/1679689/java-trie-clean-explained-by-prashant404-hr7x/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/1543042/oop-java-implement-with-composite-design-hkrx/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/7157318/easy-to-understand-by-using-java-trie-ha-ybxl/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/4695943/ez-and-simple-java-trie-way-only-56-line-wiiy/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/2450872/n-ary-treetrie-based-solution-with-comme-15qd/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/4333653/easy-to-implement-use-trienode-by-jerryy-l8ta/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/1184666/excellent-design-problem-complete-soluti-tr9r/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/3027569/java-treemaphashmap-trie-by-tanklyh-8q3n/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/2248318/java-trie-by-ywang305-vihb/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/1651374/java-trie-hashmap-explanation-easy-to-fo-00wy/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/7022349/java-trie-based-solution-by-manas_sharma-xodi/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/391408/java-trie-solution-using-treemap-by-ksub-5ps8/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/6781485/file-tree-file-support-both-file-and-dic-96rp/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/6863079/clean-java-solution-using-treemap-by-aks-c26r/;;https://leetcode.com/problems/design-in-memory-file-system/solutions/6861734/java-trie-solution-not-a-hard-problem-if-25s7/;;;=;==;=;=;

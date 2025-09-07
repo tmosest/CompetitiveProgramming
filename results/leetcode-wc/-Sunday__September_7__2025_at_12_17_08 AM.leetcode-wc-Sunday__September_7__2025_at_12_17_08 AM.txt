@@ -1,0 +1,30 @@
+329. Longest Increasing Path in a Matrix;=;=Hard;=;=public int longestIncreasingPath(int[][] matrix);=;=Given an m x n integers matrix, return the length of the longest increasing path in matrix.
+
+From each cell, you can either move in four directions: left, right, up, or down. You may not move diagonally or move outside the boundary (i.e., wrap-around is not allowed).
+
+ 
+
+Example 1:
+
+
+Input: matrix = [[9,9,4],[6,6,8],[2,1,1]]
+Output: 4
+Explanation: The longest increasing path is [1, 2, 6, 9].
+Example 2:
+
+
+Input: matrix = [[3,4,5],[3,2,6],[2,2,1]]
+Output: 4
+Explanation: The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
+Example 3:
+
+Input: matrix = [[1]]
+Output: 1
+ 
+
+Constraints:
+
+m == matrix.length
+n == matrix[i].length
+1 <= m, n <= 200
+0 <= matrix[i][j] <= 231 - 1;=;=https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/7140509/problem-no-329-longest-increasing-path-i-dwzy/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/2052444/4-approaches-bfs-memorization-dfs-dp-top-ikd2/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/2997533/solution-by-deleted_user-opnw/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/7058379/straight-forward-solution-by-kiruthhik-9o3q/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/78313/java-14ms-relative-short-easy-to-code-so-7yvo/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/1375981/generic-dfs-template-how-to-solve-dfs-ba-u1v4/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/6640066/simple-dfs-memo-solution-97-beats-java-b-umbl/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/1151293/js-python-java-c-recursive-dfs-memoizati-fedn/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/6930203/bsf-and-dfsmemo-explanation-how-topologi-9e7o/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/5524265/same-pattern-very-easy-problem-solving-b-3bdl/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/6808355/java-simple-solution-by-heyysankalp-7zpr/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/6022387/topological-sort-by-welldefinedid-qmqd/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/5952436/java-original-thought-9943-beat-2-d-dp-b-pdc3/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/2052190/java-dfs-solution-by-achyutav-p9d4/;;https://leetcode.com/problems/longest-increasing-path-in-a-matrix/solutions/7157910/bfs-topological-sort-om-x-n-longest-incr-kd6i/;;;=;==;=;=;

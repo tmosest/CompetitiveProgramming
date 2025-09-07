@@ -1,0 +1,29 @@
+487. Max Consecutive Ones II;=;=Medium;=;=public int findMaxConsecutiveOnes(int[] nums);=;=Given a binary array nums, return the maximum number of consecutive 1's in the array if you can flip at most one 0.
+
+ 
+
+Example 1:
+
+Input: nums = [1,0,1,1,0]
+Output: 4
+Explanation: 
+- If we flip the first zero, nums becomes [1,1,1,1,0] and we have 4 consecutive ones.
+- If we flip the second zero, nums becomes [1,0,1,1,1] and we have 3 consecutive ones.
+The max number of consecutive ones is 4.
+Example 2:
+
+Input: nums = [1,0,1,1,0,1]
+Output: 4
+Explanation: 
+- If we flip the first zero, nums becomes [1,1,1,1,0,1] and we have 4 consecutive ones.
+- If we flip the second zero, nums becomes [1,0,1,1,1,1] and we have 4 consecutive ones.
+The max number of consecutive ones is 4.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+nums[i] is either 0 or 1.
+ 
+
+Follow up: What if the input numbers come in one by one as an infinite stream? In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. Could you solve it efficiently?;=;=https://leetcode.com/problems/max-consecutive-ones-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/max-consecutive-ones-ii/solutions/6825755/beats-86-java-simple-sliding-window-two-u2lqc/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/1508045/java-tc-on-sc-o1-four-solutions-with-fol-pad1/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/7156837/one-pass-on-jump-window-track-lastzero-b-7z4h/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/4475953/fast-and-simple-solution-using-by-slidin-wdlq/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/2532113/java-simple-dp-solution-on-runtime-on-sp-jxcs/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/7106665/beating-100-of-submissions-runtime-by-cb-p9hq/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/4706276/infinite-stream-solution-by-alexg43-b5ti/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/6844588/javajsts-solution-jw-by-specter01wj-1njo/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/1820354/java-on-linear-dp-with-optimized-space-b-whvh/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/985488/intuitive-java-on-time-o1-space-beat-100-2qk9/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/6619309/java-solution-with-explanation-on-time-o-t00x/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/6712033/java-sliding-window-two-pointers-by-yimi-5edp/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/6894814/simple-sliding-window-problem-with-expla-sp7w/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/6602721/easy-and-intuitive-sliding-window-java-b-uthg/;;https://leetcode.com/problems/max-consecutive-ones-ii/solutions/6764607/single-for-loop-solution-by-oselmo-r5t7/;;;=;==;=;=;

@@ -1,0 +1,28 @@
+548. Split Array with Equal Sum;=;=Hard;=;=public boolean splitArray(int[] nums);=;=Given an integer array nums of length n, return true if there is a triplet (i, j, k) which satisfies the following conditions:
+
+0 < i, i + 1 < j, j + 1 < k < n - 1
+The sum of subarrays (0, i - 1), (i + 1, j - 1), (j + 1, k - 1) and (k + 1, n - 1) is equal.
+A subarray (l, r) represents a slice of the original array starting from the element indexed l to the element indexed r.
+ 
+
+Example 1:
+
+Input: nums = [1,2,1,2,1,2,1]
+Output: true
+Explanation:
+i = 1, j = 3, k = 5. 
+sum(0, i - 1) = sum(0, 0) = 1
+sum(i + 1, j - 1) = sum(2, 2) = 1
+sum(j + 1, k - 1) = sum(4, 4) = 1
+sum(k + 1, n - 1) = sum(6, 6) = 1
+Example 2:
+
+Input: nums = [1,2,1,2,1,2,1,2]
+Output: false
+ 
+
+Constraints:
+
+n == nums.length
+1 <= n <= 2000
+-106 <= nums[i] <= 106;=;=https://leetcode.com/problems/split-array-with-equal-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/split-array-with-equal-sum/solutions/7072380/java-space-on-time-on2-by-meomeal_3-i15a/;;https://leetcode.com/problems/split-array-with-equal-sum/solutions/101494/java-dfs-solution-only-traversing-possib-ppdt/;;https://leetcode.com/problems/split-array-with-equal-sum/solutions/1045893/very-easy-to-understand-java-solution-wi-rj3t/;;https://leetcode.com/problems/split-array-with-equal-sum/solutions/6553056/java-solution-tc-n2-by-ndsjqwbbb-k5lx/;;https://leetcode.com/problems/split-array-with-equal-sum/solutions/5858252/simple-java-solution-by-sakshikishore-ffpr/;;https://leetcode.com/problems/split-array-with-equal-sum/solutions/5529725/prefix-dp-by-jon371449-pigt/;;https://leetcode.com/problems/split-array-with-equal-sum/solutions/3396291/solution-by-deleted_user-mof3/;;https://leetcode.com/problems/split-array-with-equal-sum/solutions/3027642/cjavapython3-nested-loop-by-ye15-om9m/;;https://leetcode.com/problems/split-array-with-equal-sum/solutions/2438762/simple-java-solution-with-explanation-ha-184q/;;https://leetcode.com/problems/split-array-with-equal-sum/solutions/2348701/java-middle-cut-precompute-w-hashmap-by-uj8np/;;;=;==;=;=;

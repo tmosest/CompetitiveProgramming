@@ -1,0 +1,25 @@
+531. Lonely Pixel I;=;=Medium;=;=public int findLonelyPixel(char[][] picture);=;=Given an m x n picture consisting of black 'B' and white 'W' pixels, return the number of black lonely pixels.
+
+A black lonely pixel is a character 'B' that located at a specific position where the same row and same column don't have any other black pixels.
+
+ 
+
+Example 1:
+
+
+Input: picture = [["W","W","B"],["W","B","W"],["B","W","W"]]
+Output: 3
+Explanation: All the three 'B's are black lonely pixels.
+Example 2:
+
+
+Input: picture = [["B","B","B"],["B","B","W"],["B","B","B"]]
+Output: 0
+ 
+
+Constraints:
+
+m == picture.length
+n == picture[i].length
+1 <= m, n <= 500
+picture[i][j] is 'W' or 'B'.;=;=https://leetcode.com/problems/lonely-pixel-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/lonely-pixel-i/solutions/6281880/java-self-intuitive-solution-really-fast-m910/;;https://leetcode.com/problems/lonely-pixel-i/solutions/7156739/omn-time-complexity-solution-in-java-by-mowkk/;;https://leetcode.com/problems/lonely-pixel-i/solutions/1083295/java-count-row-and-col-by-ysz951-a19z/;;https://leetcode.com/problems/lonely-pixel-i/solutions/2645199/java-time-om-n-n-space-om-n-1-ms-faster-fqclf/;;https://leetcode.com/problems/lonely-pixel-i/solutions/3572973/onm-two-pass-o1-constant-space-by-irving-6isz/;;https://leetcode.com/problems/lonely-pixel-i/solutions/812546/java-solution-n2-solution-using-o1-space-qoof/;;https://leetcode.com/problems/lonely-pixel-i/solutions/5303427/concise-rust-solution-by-chen17981-kxmf/;;https://leetcode.com/problems/lonely-pixel-i/solutions/4982877/java-on-solution-by-tbekpro-n4y5/;;https://leetcode.com/problems/lonely-pixel-i/solutions/4920984/java-solution-by-gmblack-vnvv/;;https://leetcode.com/problems/lonely-pixel-i/solutions/4722797/two-pass-counting-approach-easy-simple-b-49qr/;;https://leetcode.com/problems/lonely-pixel-i/solutions/4415113/easy-java-by-wds3817-owbf/;;https://leetcode.com/problems/lonely-pixel-i/solutions/5097603/java-solution-tc-onm-by-tar_9897-0i8m/;;https://leetcode.com/problems/lonely-pixel-i/solutions/4379586/union-find-intuitive-solution-om-n-solut-mzto/;;https://leetcode.com/problems/lonely-pixel-i/solutions/4207834/omn-no-extra-space-no-need-to-modify-inp-wioe/;;https://leetcode.com/problems/lonely-pixel-i/solutions/4007673/simple-java-solution-by-sakshikishore-rhe3/;;;=;==;=;=;

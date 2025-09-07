@@ -1,0 +1,20 @@
+340. Longest Substring with At Most K Distinct Characters;=;=Medium;=;=public int lengthOfLongestSubstringKDistinct(String s, int k);=;=Given a string s and an integer k, return the length of the longest substring of s that contains at most k distinct characters.
+
+ 
+
+Example 1:
+
+Input: s = "eceba", k = 2
+Output: 3
+Explanation: The substring is "ece" with length 3.
+Example 2:
+
+Input: s = "aa", k = 1
+Output: 2
+Explanation: The substring is "aa" with length 2.
+ 
+
+Constraints:
+
+1 <= s.length <= 5 * 104
+0 <= k <= 50;=;=https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/80047/15-lines-java-solution-using-slide-windo-rd7l/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/7008035/simple-easy-to-understand-solution-by-an-dv6v/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/6904600/sliding-window-hashmap-tracking-char-cha-xu77/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/80055/generic-solution-in-java-that-can-be-use-m2zw/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/1886667/easy-sliding-window-provided-step-by-ste-xow7/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/610757/follow-up-infinite-stream-by-chandrameen-9e1q/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/2563852/easy-java-solution-o1-space-by-mevishals-psa7/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/1496838/java-tc-on-sc-ok-one-pass-sliding-window-ldef/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/80139/standard-two-pointer-solution-by-gubrian-mb2k/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/7065921/easy-java-solution-using-hashmap-by-anwe-jpde/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/6987426/sliding-window-solution-using-map-tc-on-omtwu/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/1223445/java-clear-sliding-window-using-map-to-c-f7d5/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/6399293/on-easy-solution-by-mohamedhiisham9-sd83/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/6597943/java-use-last-occurence-instead-of-the-c-1pzs/;;https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solutions/6414840/java-by-mythree-oywe/;;;=;==;=;=;

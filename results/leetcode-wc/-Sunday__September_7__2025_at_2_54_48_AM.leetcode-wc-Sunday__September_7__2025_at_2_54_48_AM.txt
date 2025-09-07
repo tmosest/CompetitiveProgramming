@@ -1,0 +1,40 @@
+497. Random Point in Non-overlapping Rectangles;=;=Medium;=;=public Solution(int[][] rects)                     public int[] pick()             /  Your Solution object will be instantiated and called as such:  Solution obj = new Solution(rects);  int[] param_1 = obj.pick();;=;=You are given an array of non-overlapping axis-aligned rectangles rects where rects[i] = [ai, bi, xi, yi] indicates that (ai, bi) is the bottom-left corner point of the ith rectangle and (xi, yi) is the top-right corner point of the ith rectangle. Design an algorithm to pick a random integer point inside the space covered by one of the given rectangles. A point on the perimeter of a rectangle is included in the space covered by the rectangle.
+
+Any integer point inside the space covered by one of the given rectangles should be equally likely to be returned.
+
+Note that an integer point is a point that has integer coordinates.
+
+Implement the Solution class:
+
+Solution(int[][] rects) Initializes the object with the given rectangles rects.
+int[] pick() Returns a random integer point [u, v] inside the space covered by one of the given rectangles.
+ 
+
+Example 1:
+
+
+Input
+["Solution", "pick", "pick", "pick", "pick", "pick"]
+[[[[-2, -2, 1, 1], [2, 2, 4, 6]]], [], [], [], [], []]
+Output
+[null, [1, -2], [1, -1], [-1, -2], [-2, -2], [0, 0]]
+
+Explanation
+Solution solution = new Solution([[-2, -2, 1, 1], [2, 2, 4, 6]]);
+solution.pick(); // return [1, -2]
+solution.pick(); // return [1, -1]
+solution.pick(); // return [-1, -2]
+solution.pick(); // return [-2, -2]
+solution.pick(); // return [0, 0]
+ 
+
+Constraints:
+
+1 <= rects.length <= 100
+rects[i].length == 4
+-109 <= ai < xi <= 109
+-109 <= bi < yi <= 109
+xi - ai <= 2000
+yi - bi <= 2000
+All the rectangles do not overlap.
+At most 104 calls will be made to pick.;=;=https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/805547/java-accepted-clean-and-concise-commente-7o67/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/805432/random-point-testcase-3235-fault-by-user-6onp/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/4535031/try-to-explain-with-pen-paper-by-ankit14-a0wu/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/3507848/solution-by-deleted_user-pgif/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/3515668/java-solution-with-comment-explanation-b-l190/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/805545/solution-without-binary-search-by-bhadr3-rfx2/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/2333072/tc-3235-showing-the-wrong-answer-but-why-l1gl/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/1333114/pick-rectangle-with-binary-search-and-we-f3ya/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/6738153/object-oriented-approach-single-random-c-xa4b/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/6212635/random-point-generation-based-of-weighte-ewb3/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/6275066/random-point-picker-in-rectangles-by-lee-bmm2/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/6227653/random-point-in-non-overlapping-rectangl-fls5/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/6217930/easy-by-bhagya_patel_01-mw06/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/6212823/497-random-point-in-non-overlapping-rect-9bhq/;;https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/solutions/6112448/simple-dont-pick-random-rectangle-that-r-dr7q/;;;=;==;=;=;

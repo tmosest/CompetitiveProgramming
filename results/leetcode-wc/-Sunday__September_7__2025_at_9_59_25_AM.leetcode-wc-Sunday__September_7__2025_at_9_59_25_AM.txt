@@ -1,0 +1,19 @@
+556. Next Greater Element III;=;=Medium;=;=public int nextGreaterElement(int n);=;=Given a positive integer n, find the smallest integer which has exactly the same digits existing in the integer n and is greater in value than n. If no such positive integer exists, return -1.
+
+Note that the returned integer should fit in 32-bit integer, if there is a valid answer but it does not fit in 32-bit integer, return -1.
+
+ 
+
+Example 1:
+
+Input: n = 12
+Output: 21
+Example 2:
+
+Input: n = 21
+Output: -1
+ 
+
+Constraints:
+
+1 <= n <= 231 - 1;=;=https://leetcode.com/problems/next-greater-element-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/next-greater-element-iii/solutions/7162784/next-greater-elements-iii-by-xhhbiku3wb-u4b8/;;https://leetcode.com/problems/next-greater-element-iii/solutions/7104489/beats-100-java-most-easiest-and-fastest-om784/;;https://leetcode.com/problems/next-greater-element-iii/solutions/7042940/next-greater-element-iii-beats-100-in-ru-jhdp/;;https://leetcode.com/problems/next-greater-element-iii/solutions/7099007/beats-100-best-appraoch-helpful-by-samir-yujm/;;https://leetcode.com/problems/next-greater-element-iii/solutions/7081503/cracking-the-next-permutation-code-for-i-aue3/;;https://leetcode.com/problems/next-greater-element-iii/solutions/1407530/java-0ms-solution-easy-to-understand-wit-ap9w/;;https://leetcode.com/problems/next-greater-element-iii/solutions/6652301/beat-100-the-next-greater-element-this-s-nsy7/;;https://leetcode.com/problems/next-greater-element-iii/solutions/6963892/beats-100-percent-by-anshgupta1234-cfpz/;;https://leetcode.com/problems/next-greater-element-iii/solutions/6666028/easy-to-undertsand-beats-100-java-by-kra-9fn9/;;https://leetcode.com/problems/next-greater-element-iii/solutions/6387078/very-bad-but-beats-100-by-sharqawycs-1v0y/;;https://leetcode.com/problems/next-greater-element-iii/solutions/6704043/beats-100-first-non-increasing-element-f-g7c5/;;https://leetcode.com/problems/next-greater-element-iii/solutions/4799378/easy-approach-by-aseelmohammad-3t9f/;;https://leetcode.com/problems/next-greater-element-iii/solutions/2597736/0ms-java-solution-100-with-explanation-b-b6xw/;;https://leetcode.com/problems/next-greater-element-iii/solutions/1156839/beats-100-0ms-java-most-efficient-soluti-1r25/;;https://leetcode.com/problems/next-greater-element-iii/solutions/2484547/1ms-simple-java-solution-with-explanatio-hc33/;;;=;==;=;=;

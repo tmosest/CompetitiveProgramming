@@ -1,0 +1,18 @@
+479. Largest Palindrome Product;=;=Hard;=;=public int largestPalindrome(int n);=;=Given an integer n, return the largest palindromic integer that can be represented as the product of two n-digits integers. Since the answer can be very large, return it modulo 1337.
+
+ 
+
+Example 1:
+
+Input: n = 2
+Output: 987
+Explanation: 99 x 91 = 9009, 9009 % 1337 = 987
+Example 2:
+
+Input: n = 1
+Output: 9
+ 
+
+Constraints:
+
+1 <= n <= 8;=;=https://leetcode.com/problems/largest-palindrome-product/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-palindrome-product/solutions/6757092/precomputed-palindromes-optimized-lookup-zecz/;;https://leetcode.com/problems/largest-palindrome-product/solutions/4426138/full-solution-by-parvez__khan-8zb9/;;https://leetcode.com/problems/largest-palindrome-product/solutions/4911478/easiest-solution-dont-even-need-to-know-e48v0/;;https://leetcode.com/problems/largest-palindrome-product/solutions/3373533/solution-by-deleted_user-h08l/;;https://leetcode.com/problems/largest-palindrome-product/solutions/6010615/java-simple-logic-by-devanshsharm_cs22-qocg/;;https://leetcode.com/problems/largest-palindrome-product/solutions/5993887/simply-100-one-liner-by-ducquoc-indf/;;https://leetcode.com/problems/largest-palindrome-product/solutions/5710367/0ms-beats-100-by-pribyte1-bkum/;;https://leetcode.com/problems/largest-palindrome-product/solutions/5660821/solution-in-java-100-by-ashimasingh0610-eqi4/;;https://leetcode.com/problems/largest-palindrome-product/solutions/5183492/java-solution-by-raghu3696-8kbr/;;https://leetcode.com/problems/largest-palindrome-product/solutions/5067069/my-code-by-l1nux-awa5/;;https://leetcode.com/problems/largest-palindrome-product/solutions/5036926/solution-with-greedy-and-mathematics-by-0bjnr/;;https://leetcode.com/problems/largest-palindrome-product/solutions/4382956/huh-by-user3043sb-6il0/;;https://leetcode.com/problems/largest-palindrome-product/solutions/4346980/workable-solution-in-java-without-memori-zhfo/;;https://leetcode.com/problems/largest-palindrome-product/solutions/4318498/simple-java-solution-by-ayush162-qlfr/;;https://leetcode.com/problems/largest-palindrome-product/solutions/3977433/best-java-solution-beats-100-by-ravikuma-sp2o/;;;=;==;=;=;

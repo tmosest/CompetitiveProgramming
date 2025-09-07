@@ -1,0 +1,41 @@
+418. Sentence Screen Fitting;=;=Medium;=;=public int wordsTyping(String[] sentence, int rows, int cols);=;=Given a rows x cols screen and a sentence represented as a list of strings, return the number of times the given sentence can be fitted on the screen.
+
+The order of words in the sentence must remain unchanged, and a word cannot be split into two lines. A single space must separate two consecutive words in a line.
+
+ 
+
+Example 1:
+
+Input: sentence = ["hello","world"], rows = 2, cols = 8
+Output: 1
+Explanation:
+hello---
+world---
+The character '-' signifies an empty space on the screen.
+Example 2:
+
+Input: sentence = ["a", "bcd", "e"], rows = 3, cols = 6
+Output: 2
+Explanation:
+a-bcd- 
+e-a---
+bcd-e-
+The character '-' signifies an empty space on the screen.
+Example 3:
+
+Input: sentence = ["i","had","apple","pie"], rows = 4, cols = 5
+Output: 1
+Explanation:
+i-had
+apple
+pie-i
+had--
+The character '-' signifies an empty space on the screen.
+ 
+
+Constraints:
+
+1 <= sentence.length <= 100
+1 <= sentence[i].length <= 10
+sentence[i] consists of lowercase English letters.
+1 <= rows, cols <= 2 * 104;=;=https://leetcode.com/problems/sentence-screen-fitting/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sentence-screen-fitting/solutions/90874/12ms-java-solution-using-dp-by-destinywz-dqnw/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/1380883/intiuiteve-easy-java-simulation-by-darkr-9v2d/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/6874489/intuitive-solution-easy-understanding-by-20c4/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/3507770/calculate-the-length-of-sentences-upfron-0q33/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/1603256/java-simple-and-logical-approach-by-krau-mf23/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/1853113/java-clean-solution-by-superman-qiang-wide/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/5597278/java-solution-4ms-beats-100-time-complex-0nu3/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/1924564/java-0ms-optimal-solution-olength-of-wor-e5mc/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/2292337/as-easy-to-understand-as-brute-force-as-zyriw/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/1933593/java-solution-with-comments-by-ietam-gk0r/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/258554/clean-simple-java-solution-omn-time-o1-s-wm5y/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/4189169/one-pass-no-extra-space-short-java-solut-krlw/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/1111577/java-simple-interactive-solution-by-faan-4hjx/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/1251066/java-solution-orowssentencelength-time-a-ejuw/;;https://leetcode.com/problems/sentence-screen-fitting/solutions/6999787/greedy-solution-orow-n-by-saketcodescrib-iu1o/;;;=;==;=;=;

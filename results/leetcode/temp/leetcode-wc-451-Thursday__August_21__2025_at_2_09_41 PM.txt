@@ -1,0 +1,219 @@
+PROBLEM_ID:0;=;=3560. Find Minimum Log Transportation Cost;=;=Easy;=;=public long minCuttingCost(int n, int m, int k)         if (n == 0 || m == 0 || k == 0) return 0;        long ans = 0;        if (m<=k && n<=k) return 0;        if (m>k && n<=k)             ans += (long)(m-k)k;                if (n>k && m<=k)             ans += (long)(n-k)k;                return ans;;=;=You are given integers n, m, and k.
+
+There are two logs of lengths n and m units, which need to be transported in three trucks where each truck can carry one log with length at most k units.
+
+You may cut the logs into smaller pieces, where the cost of cutting a log of length x into logs of length len1 and len2 is cost = len1 * len2 such that len1 + len2 = x.
+
+Return the minimum total cost to distribute the logs onto the trucks. If the logs don't need to be cut, the total cost is 0.
+
+ 
+
+Example 1:
+
+Input: n = 6, m = 5, k = 5
+
+Output: 5
+
+Explanation:
+
+Cut the log with length 6 into logs with length 1 and 5, at a cost equal to 1 * 5 == 5. Now the three logs of length 1, 5, and 5 can fit in one truck each.
+
+Example 2:
+
+Input: n = 4, m = 4, k = 6
+
+Output: 0
+
+Explanation:
+
+The two logs can fit in the trucks already, hence we don't need to cut the logs.
+
+ 
+
+Constraints:
+
+2 <= k <= 105
+1 <= n, m <= 2 * k
+The input is generated such that it is always possible to transport the logs.;=;=https://leetcode.com/problems/find-minimum-log-transportation-cost/description/;=;=https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6778424/simple-o1-solution-explanation-java-c-py-9zm7/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/7093672/easy-o1-solution-cpp-java-python-by-ashi-su78/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6778723/blazing-fast-o1-solution-minimum-log-cut-d3iy/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6778356/easy-solution-3-lines-beats-100-by-adity-eaif/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6781158/simple-c-java-c-solution-with-detailed-e-tozc/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6778469/beats-100-with-o1-time-and-space-complex-r0u7/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6778399/simple-solution-on-by-ankith_kumar-632m/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6778675/easy-solution-in-python-java-and-c-by-ni-r8w3/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6780498/this-is-what-youre-searching-for-shortes-7mqy/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6778426/0ms-simple-java-by-ritik-saxena-npy9/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6778410/beats-100-with-o1-time-complexity-by-nav-e7yv/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6824176/power-of-clear-thinking-one-line-but-und-qroi/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6780835/java-easiest-solution-by-shreyagarg63-41ky/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6822520/clean-code-by-smileysuneet-l1d6/;;https://leetcode.com/problems/find-minimum-log-transportation-cost/solutions/6804221/log-cutting-cost-minimisation-with-algeb-3xkf/;;;=;==;=;=;PROBLEM_ID:1;=;=3561. Resulting String After Adjacent Removals;=;=Medium;=;=public String resultingString(String s)         StringBuilder sb = new StringBuilder();                for (char ch:s.toCharArray())             if (sb.length()>0)                 char top = sb.charAt(sb.length()-1);                int diff = Math.abs(top-ch);                                if (diff == 1 || diff == 25)                     sb.deleteCharAt(sb.length()-1);                    continue;                                        sb.append(ch);                 return sb.toString();;=;=You are given a string s consisting of lowercase English letters.
+
+You must repeatedly perform the following operation while the string s has at least two consecutive characters:
+
+Remove the leftmost pair of adjacent characters in the string that are consecutive in the alphabet, in either order (e.g., 'a' and 'b', or 'b' and 'a').
+Shift the remaining characters to the left to fill the gap.
+Return the resulting string after no more operations can be performed.
+
+Note: Consider the alphabet as circular, thus 'a' and 'z' are consecutive.
+
+ 
+
+Example 1:
+
+Input: s = "abc"
+
+Output: "c"
+
+Explanation:
+
+Remove "ab" from the string, leaving "c" as the remaining string.
+No further operations are possible. Thus, the resulting string after all possible removals is "c".
+Example 2:
+
+Input: s = "adcb"
+
+Output: ""
+
+Explanation:
+
+Remove "dc" from the string, leaving "ab" as the remaining string.
+Remove "ab" from the string, leaving "" as the remaining string.
+No further operations are possible. Thus, the resulting string after all possible removals is "".
+Example 3:
+
+Input: s = "zadb"
+
+Output: "db"
+
+Explanation:
+
+Remove "za" from the string, leaving "db" as the remaining string.
+No further operations are possible. Thus, the resulting string after all possible removals is "db".
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/resulting-string-after-adjacent-removals/description/;=;=https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6778459/simple-stack-simulation-explanation-java-cxky/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/7036071/resulting-string-after-adjacent-removals-3s5x/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6778323/java-stack-solution-clean-easy-on-remove-pwgh/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6786403/faster-lesser-cpython3javacpythoncexplai-k6eu/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6977064/remove-circular-consecutive-characters-b-2ij6/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6778454/stack-on-by-ankith_kumar-9z0e/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6937640/easy-solution-stack-by-adhi_m_s-ir3b/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6937641/remove-adjacent-alphabetically-consecuti-wdag/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6807153/stack-implementation-java-by-naveshj-h9za/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6778857/on-simple-java-solution-using-a-stack-wi-jqps/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6817187/simple-java-stack-implementation-by-nikh-mpii/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6779613/stack-approach-easy-java-by-codebyraj-gvxe/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6799289/clean-the-chaos-remove-alphabetically-co-zs30/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6778481/optimal-solution-using-stack-on-solution-5kki/;;https://leetcode.com/problems/resulting-string-after-adjacent-removals/solutions/6785205/beginner-friendly-optimal-stack-solution-i5km/;;;=;==;=;=;PROBLEM_ID:2;=;=3562. Maximum Profit from Trading Stocks with Discounts;=;=Hard;=;=public int maxProfit(int n, int[] present, int[] future, int[][] hierarchy, int budget)         // Build tree        List<Integer>[] tree = new List[n];        for (int i = 0; i < n; i++) tree[i] = new ArrayList<>();        for (int[] edge : hierarchy)             tree[edge[0] - 1].add(edge[1] - 1);                int[][][] dp = new int[n][2][budget + 1];  // [node][parentBought][budget]        dfs(0, present, future, tree, dp, budget);        // Answer is the max profit in dp[0][0][b] for any b <= budget        int ans = 0;        for (int b = 0; b <= budget; b++)             ans = Math.max(ans, dp[0][0][b]);                return ans;        private void dfs(int u, int[] present, int[] future, List<Integer>[] tree,                            int[][][] dp, int budget)         // Base case: no children, init to 0        for (int b = 0; b <= budget; b++) dp[u][0][b] = dp[u][1][b] = 0;        // For each child, process recursively        List<int[][]> childDPs = new ArrayList<>();        for (int v : tree[u])             dfs(v, present, future, tree, dp, budget);            childDPs.add(new int[][]dp[v][0], dp[v][1]);                // For parentNotBought and parentBought        for (int parentBought = 0; parentBought <= 1; parentBought++);=;=You are given an integer n, representing the number of employees in a company. Each employee is assigned a unique ID from 1 to n, and employee 1 is the CEO. You are given two 1-based integer arrays, present and future, each of length n, where:
+
+present[i] represents the current price at which the ith employee can buy a stock today.
+future[i] represents the expected price at which the ith employee can sell the stock tomorrow.
+The company's hierarchy is represented by a 2D integer array hierarchy, where hierarchy[i] = [ui, vi] means that employee ui is the direct boss of employee vi.
+
+Additionally, you have an integer budget representing the total funds available for investment.
+
+However, the company has a discount policy: if an employee's direct boss purchases their own stock, then the employee can buy their stock at half the original price (floor(present[v] / 2)).
+
+Return the maximum profit that can be achieved without exceeding the given budget.
+
+Note:
+
+You may buy each stock at most once.
+You cannot use any profit earned from future stock prices to fund additional investments and must buy only from budget.
+ 
+
+Example 1:
+
+Input: n = 2, present = [1,2], future = [4,3], hierarchy = [[1,2]], budget = 3
+
+Output: 5
+
+Explanation:
+
+
+
+Employee 1 buys the stock at price 1 and earns a profit of 4 - 1 = 3.
+Since Employee 1 is the direct boss of Employee 2, Employee 2 gets a discounted price of floor(2 / 2) = 1.
+Employee 2 buys the stock at price 1 and earns a profit of 3 - 1 = 2.
+The total buying cost is 1 + 1 = 2 <= budget. Thus, the maximum total profit achieved is 3 + 2 = 5.
+Example 2:
+
+Input: n = 2, present = [3,4], future = [5,8], hierarchy = [[1,2]], budget = 4
+
+Output: 4
+
+Explanation:
+
+
+
+Employee 2 buys the stock at price 4 and earns a profit of 8 - 4 = 4.
+Since both employees cannot buy together, the maximum profit is 4.
+Example 3:
+
+Input: n = 3, present = [4,6,8], future = [7,9,11], hierarchy = [[1,2],[1,3]], budget = 10
+
+Output: 10
+
+Explanation:
+
+
+
+Employee 1 buys the stock at price 4 and earns a profit of 7 - 4 = 3.
+Employee 3 would get a discounted price of floor(8 / 2) = 4 and earns a profit of 11 - 4 = 7.
+Employee 1 and Employee 3 buy their stocks at a total cost of 4 + 4 = 8 <= budget. Thus, the maximum total profit achieved is 3 + 7 = 10.
+Example 4:
+
+Input: n = 3, present = [5,2,3], future = [8,5,6], hierarchy = [[1,2],[2,3]], budget = 7
+
+Output: 12
+
+Explanation:
+
+
+
+Employee 1 buys the stock at price 5 and earns a profit of 8 - 5 = 3.
+Employee 2 would get a discounted price of floor(2 / 2) = 1 and earns a profit of 5 - 1 = 4.
+Employee 3 would get a discounted price of floor(3 / 2) = 1 and earns a profit of 6 - 1 = 5.
+The total cost becomes 5 + 1 + 1 = 7 <= budget. Thus, the maximum total profit achieved is 3 + 4 + 5 = 12.
+ 
+
+Constraints:
+
+1 <= n <= 160
+present.length, future.length == n
+1 <= present[i], future[i] <= 50
+hierarchy.length == n - 1
+hierarchy[i] == [ui, vi]
+1 <= ui, vi <= n
+ui != vi
+1 <= budget <= 160
+There are no duplicate edges.
+Employee 1 is the direct or indirect boss of every employee.
+The input graph hierarchy is guaranteed to have no cycles.;=;=https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/description/;=;=https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/solutions/6778488/detailed-editorial-tree-dp-dfs-c-python-7095o/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/solutions/6778376/java-topo-sort-solution-by-nickulman-sre1/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/solutions/6779472/clear-step-by-step-explanation-of-how-to-ky5y/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/solutions/6783709/short-solution-with-comments-tc-onbudget-uxqt/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/solutions/6923023/java-dynamic-programming-solution-with-e-t1ca/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/solutions/6920116/simple-and-sort-code-in-java-by-omjimaur-ae57/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/solutions/6799161/recursive-solution-by-combining-sub-solu-xbc1/;;;=;==;=;=;PROBLEM_ID:3;=;=3563. Lexicographically Smallest String After Adjacent Removals;=;=Hard;=;=public String lexicographicallySmallestString(String s);=;=You are given a string s consisting of lowercase English letters.
+
+You can perform the following operation any number of times (including zero):
+
+Remove any pair of adjacent characters in the string that are consecutive in the alphabet, in either order (e.g., 'a' and 'b', or 'b' and 'a').
+Shift the remaining characters to the left to fill the gap.
+Return the lexicographically smallest string that can be obtained after performing the operations optimally.
+
+Note: Consider the alphabet as circular, thus 'a' and 'z' are consecutive.
+
+ 
+
+Example 1:
+
+Input: s = "abc"
+
+Output: "a"
+
+Explanation:
+
+Remove "bc" from the string, leaving "a" as the remaining string.
+No further operations are possible. Thus, the lexicographically smallest string after all possible removals is "a".
+Example 2:
+
+Input: s = "bcda"
+
+Output: ""
+
+Explanation:
+
+???????Remove "cd" from the string, leaving "ba" as the remaining string.
+Remove "ba" from the string, leaving "" as the remaining string.
+No further operations are possible. Thus, the lexicographically smallest string after all possible removals is "".
+Example 3:
+
+Input: s = "zdce"
+
+Output: "zdce"
+
+Explanation:
+
+Remove "dc" from the string, leaving "ze" as the remaining string.
+No further operations are possible on "ze".
+However, since "zdce" is lexicographically smaller than "ze", the smallest string after all possible removals is "zdce".
+ 
+
+Constraints:
+
+1 <= s.length <= 250
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/description/;=;=https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/solutions/6780876/short-solution-with-comments-tc-on3l-sc-d58j5/;;https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/solutions/6782354/top-down-dp-solution-by-saketcodescribe-f4w4/;;https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/solutions/6779527/easy-java-solution-by-ansariwajid-g77v/;;https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/solutions/6778387/86-beats-solution-by-727722euec018-wdrx/;;;=;==;=;=;

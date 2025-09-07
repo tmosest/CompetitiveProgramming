@@ -1,0 +1,204 @@
+PROBLEM_ID:0;=;=3622. Check Divisibility by Digit Sum and Product;=;=Easy;=;=public boolean checkDivisibility(int n)         ProductSum productSum = new ProductSum(n);        System.out.println(String.format("Prod: %d, Sum: %d", productSum.product, productSum.sum));        return n % (productSum.sum + productSum.product) == 0;        public static class ProductSum         int product = 1;        int sum = 0;        public ProductSum(int n)                    while (n > 0)                 sum += n % 10;                product = n % 10;                n /= 10;;=;=You are given a positive integer n. Determine whether n is divisible by the sum of the following two values:
+
+The digit sum of n (the sum of its digits).
+
+The digit product of n (the product of its digits).
+
+Return true if n is divisible by this sum; otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: n = 99
+
+Output: true
+
+Explanation:
+
+Since 99 is divisible by the sum (9 + 9 = 18) plus product (9 * 9 = 81) of its digits (total 99), the output is true.
+
+Example 2:
+
+Input: n = 23
+
+Output: false
+
+Explanation:
+
+Since 23 is not divisible by the sum (2 + 3 = 5) plus product (2 * 3 = 6) of its digits (total 11), the output is false.
+
+ 
+
+Constraints:
+
+1 <= n <= 106;=;=https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/description/;=;=https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/7096970/easy-java-by-sairangineeni-f20n/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/6980340/one-line-solution-easy-beginner-friendly-awoi/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/6997364/simple-math-based-check-divisible-by-sum-etqw/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/6987221/easy-brute-force-approach-beats-100-by-j-4erz/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/6982200/3622-check-divisibility-by-digit-sum-and-tir6/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/7027783/java-easy-solution-0ms-by-akashraj06-uuvl/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/6983319/easiest-solution-in-java-by-sushil_sethi-meno/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/6980400/java-codebeat-100-by-reshu_upadhyay-17ll/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/6994298/digit-extraction-by-soujitdas65-nons/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/6980349/olenn-by-gitchuan-knlr/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/7057815/easiest-logic-to-understand-by-guhan_18-8xbm/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/7010329/thrilled-to-share-by-vardhan_06042k3-5tmm/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/7007978/java-stream-solution-with-one-liner-by-f-y4er/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/7006087/simple-solution-by-prince_kumar1-tp3y/;;https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/6998821/100-beats-0ms-by-vishnu9l-vczl/;;;=;==;=;=;PROBLEM_ID:1;=;=3623. Count Number of Trapezoids I;=;=Medium;=;=public int countTrapezoids(int[][] points);=;=You are given a 2D integer array points, where points[i] = [xi, yi] represents the coordinates of the ith point on the Cartesian plane.
+
+A horizontal trapezoid is a convex quadrilateral with at least one pair of horizontal sides (i.e. parallel to the x-axis). Two lines are parallel if and only if they have the same slope.
+
+Return the number of unique horizontal trapezoids that can be formed by choosing any four distinct points from points.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: points = [[1,0],[2,0],[3,0],[2,2],[3,2]]
+
+Output: 3
+
+Explanation:
+
+
+
+There are three distinct ways to pick four points that form a horizontal trapezoid:
+
+Using points [1,0], [2,0], [3,2], and [2,2].
+Using points [2,0], [3,0], [3,2], and [2,2].
+Using points [1,0], [3,0], [3,2], and [2,2].
+Example 2:
+
+Input: points = [[0,0],[1,0],[0,1],[2,1]]
+
+Output: 1
+
+Explanation:
+
+
+
+There is only one horizontal trapezoid that can be formed.
+
+ 
+
+Constraints:
+
+4 <= points.length <= 105
+–108 <= xi, yi <= 108
+All points are pairwise distinct.;=;=https://leetcode.com/problems/count-number-of-trapezoids-i/description/;=;=https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980311/on-solution-using-hashmap-c-python-java-8p00z/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980353/prefix-sum-efficient-solution-c-by-himan-d9d5/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980339/hashmap-on-by-gitchuan-zvz8/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980697/100-accepted-beginner-friendle-java-fast-wzxc/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6983528/count-trapezoids-approaches-explained-br-m7wk/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980404/pure-maths-easiest-explanation-java-by-p-d2sk/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980592/2-approaches-modular-arithmetic-explaine-246w/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/7000161/let-use-math-efficient-on-solution-by-3a-oz4c/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6982520/simple-java-code-on-beats-100-by-harsh_r-d326/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980547/simplest-solution-that-beats-100-in-time-9mgo/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/7002756/approach-onk-hashmap-thought-process-exp-0t3c/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6999641/easy-and-very-much-intuitive-solution-be-vx6d/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980319/combinations-easy-straight-forward-by-pa-dznm/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6983250/simple-and-easy-use-of-hashmap-100-beats-klws/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980783/easy-approach-with-prefix-sum-by-v-a-i-b-d3a5/;;;=;==;=;=;PROBLEM_ID:2;=;=3624. Number of Integers With Popcount-Depth Equal to K II;=;=Hard;=;=public int[] popcountDepth(long[] nums, long[][] queries);=;=You are given an integer array nums.
+
+For any positive integer x, define the following sequence:
+
+p0 = x
+pi+1 = popcount(pi) for all i >= 0, where popcount(y) is the number of set bits (1's) in the binary representation of y.
+This sequence will eventually reach the value 1.
+
+The popcount-depth of x is defined as the smallest integer d >= 0 such that pd = 1.
+
+For example, if x = 7 (binary representation "111"). Then, the sequence is: 7 ? 3 ? 2 ? 1, so the popcount-depth of 7 is 3.
+
+You are also given a 2D integer array queries, where each queries[i] is either:
+
+[1, l, r, k] - Determine the number of indices j such that l <= j <= r and the popcount-depth of nums[j] is equal to k.
+[2, idx, val] - Update nums[idx] to val.
+Return an integer array answer, where answer[i] is the number of indices for the ith query of type [1, l, r, k].
+
+ 
+
+Example 1:
+
+Input: nums = [2,4], queries = [[1,0,1,1],[2,1,1],[1,0,1,0]]
+
+Output: [2,1]
+
+Explanation:
+
+i	queries[i]	nums	binary(nums)	popcount-
+depth	[l, r]	k	Valid
+nums[j]	updated
+nums	Answer
+0	[1,0,1,1]	[2,4]	[10, 100]	[1, 1]	[0, 1]	1	[0, 1]	—	2
+1	[2,1,1]	[2,4]	[10, 100]	[1, 1]	—	—	—	[2,1]	—
+2	[1,0,1,0]	[2,1]	[10, 1]	[1, 0]	[0, 1]	0	[1]	—	1
+Thus, the final answer is [2, 1].
+
+Example 2:
+
+Input: nums = [3,5,6], queries = [[1,0,2,2],[2,1,4],[1,1,2,1],[1,0,1,0]]
+
+Output: [3,1,0]
+
+Explanation:
+
+i	queries[i]	nums	binary(nums)	popcount-
+depth	[l, r]	k	Valid
+nums[j]	updated
+nums	Answer
+0	[1,0,2,2]	[3, 5, 6]	[11, 101, 110]	[2, 2, 2]	[0, 2]	2	[0, 1, 2]	—	3
+1	[2,1,4]	[3, 5, 6]	[11, 101, 110]	[2, 2, 2]	—	—	—	[3, 4, 6]	—
+2	[1,1,2,1]	[3, 4, 6]	[11, 100, 110]	[2, 1, 2]	[1, 2]	1	[1]	—	1
+3	[1,0,1,0]	[3, 4, 6]	[11, 100, 110]	[2, 1, 2]	[0, 1]	0	[]	—	0
+Thus, the final answer is [3, 1, 0].
+
+Example 3:
+
+Input: nums = [1,2], queries = [[1,0,1,1],[2,0,3],[1,0,0,1],[1,0,0,2]]
+
+Output: [1,0,1]
+
+Explanation:
+
+i	queries[i]	nums	binary(nums)	popcount-
+depth	[l, r]	k	Valid
+nums[j]	updated
+nums	Answer
+0	[1,0,1,1]	[1, 2]	[1, 10]	[0, 1]	[0, 1]	1	[1]	—	1
+1	[2,0,3]	[1, 2]	[1, 10]	[0, 1]	—	—	—	[3, 2]	 
+2	[1,0,0,1]	[3, 2]	[11, 10]	[2, 1]	[0, 0]	1	[]	—	0
+3	[1,0,0,2]	[3, 2]	[11, 10]	[2, 1]	[0, 0]	2	[0]	—	1
+Thus, the final answer is [1, 0, 1].
+
+ 
+
+Constraints:
+
+1 <= n == nums.length <= 105
+1 <= nums[i] <= 1015
+1 <= queries.length <= 105
+queries[i].length == 3 or 4
+queries[i] == [1, l, r, k] or,
+queries[i] == [2, idx, val]
+0 <= l <= r <= n - 1
+0 <= k <= 5
+0 <= idx <= n - 1
+1 <= val <= 1015;=;=https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/description/;=;=https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6981120/bit-fenwick-tree-java-easy-to-understand-423e/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6981805/c-java-easy-sqrt-decomposition-by-meatym-twc7/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6981254/ordered-set-c-easy-efficient-by-ojasvi_t-kcyp/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6980306/efficient-popcount-depth-queries-using-f-l9tu/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6992898/best-question-to-learn-the-segment-tree-ey8q4/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6982308/beats-100-java-segment-tree-range-query-ydegs/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6985284/easy-fenwick-tree-solution-by-arham121-nuyw/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6982888/fenwick-2d-tree-java-by-ganeshmanchala-z6ov/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6981522/my-first-segment-tree-code-java-by-shast-twuu/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6990297/92-memory-buckets-configurable-java-by-v-4z35/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6985030/java-solution-beats-100-segment-tree-per-mb0j/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6980398/java-solution-by-shagun_raj-r6y6/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6992897/best-question-to-learn-the-segment-tree-iufub/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/7021317/segment-tree-dp-by-saketcodescribe-vwn6/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6980524/java-segement-tree-solution-by-rishabhra-zrct/;;;=;==;=;=;PROBLEM_ID:3;=;=3625. Count Number of Trapezoids II;=;=Hard;=;=public int countTrapezoids(int[][] points);=;=You are given a 2D integer array points where points[i] = [xi, yi] represents the coordinates of the ith point on the Cartesian plane.
+
+Return the number of unique trapezoids that can be formed by choosing any four distinct points from points.
+
+A trapezoid is a convex quadrilateral with at least one pair of parallel sides. Two lines are parallel if and only if they have the same slope.
+
+ 
+
+Example 1:
+
+Input: points = [[-3,2],[3,0],[2,3],[3,2],[2,-3]]
+
+Output: 2
+
+Explanation:
+
+
+
+There are two distinct ways to pick four points that form a trapezoid:
+
+The points [-3,2], [2,3], [3,2], [2,-3] form one trapezoid.
+The points [2,3], [3,2], [3,0], [2,-3] form another trapezoid.
+Example 2:
+
+Input: points = [[0,0],[1,0],[0,1],[2,1]]
+
+Output: 1
+
+Explanation:
+
+
+
+There is only one trapezoid which can be formed.
+
+ 
+
+Constraints:
+
+4 <= points.length <= 500
+–1000 <= xi, yi <= 1000
+All points are pairwise distinct.;=;=https://leetcode.com/problems/count-number-of-trapezoids-ii/description/;=;=https://leetcode.com/problems/count-number-of-trapezoids-ii/solutions/6982188/hashmap-java-simple-solution-quadratice-bkpam/;;https://leetcode.com/problems/count-number-of-trapezoids-ii/solutions/6990812/java-on2-counting-slopes-midpoints-with-t66w1/;;https://leetcode.com/problems/count-number-of-trapezoids-ii/solutions/6987189/java-easy-sol-792-ms-10212-mb-by-bhanuka-4brh/;;https://leetcode.com/problems/count-number-of-trapezoids-ii/solutions/7090869/parallel-and-midpoint-on2-runtime-by-y_h-4dnh/;;https://leetcode.com/problems/count-number-of-trapezoids-ii/solutions/7048668/no-floating-point-numbers-by-oskarnowak1-w1bf/;;https://leetcode.com/problems/count-number-of-trapezoids-ii/solutions/6985589/java-hashmap-no-double-gcd-by-muller2333-7v7f/;;https://leetcode.com/problems/count-number-of-trapezoids-ii/solutions/6985590/java-hashmap-no-double-gcd-by-muller2333-2skq/;;;=;==;=;=;

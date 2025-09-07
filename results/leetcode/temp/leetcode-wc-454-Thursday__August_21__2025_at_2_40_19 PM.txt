@@ -1,0 +1,232 @@
+PROBLEM_ID:0;=;=3582. Generate Tag for Video Caption;=;=Easy;=;=public String generateTag(String caption)         // Handle null input        if(caption == null)             return "#";                        // Split the caption into words, removing extra spaces        String[] words = caption.trim().split("\\s+");        StringBuilder sb = new StringBuilder("#");                // Process each word        for(int i = 0; i < words.length; i++)             String w = words[i];                        // Skip empty words            if(w.length() == 0 || w == null)                 continue;                                    if(i == 0)                 // First word: convert to lowercase                sb.append(words[i].toLowerCase());             else                 // Subsequent words: capitalize first letter, lowercase the rest                sb.append(Character.toUpperCase(w.charAt(0)));                sb.append(w.substring(1).toLowerCase());                                    // Check length limit and truncate if necessary        if(sb.length() < 100)             return sb.toString();                return sb.substring(0, 100);;=;=You are given a string caption representing the caption for a video.
+
+The following actions must be performed in order to generate a valid tag for the video:
+
+Combine all words in the string into a single camelCase string prefixed with '#'. A camelCase string is one where the first letter of all words except the first one is capitalized. All characters after the first character in each word must be lowercase.
+
+Remove all characters that are not an English letter, except the first '#'.
+
+Truncate the result to a maximum of 100 characters.
+
+Return the tag after performing the actions on caption.
+
+ 
+
+Example 1:
+
+Input: caption = "Leetcode daily streak achieved"
+
+Output: "#leetcodeDailyStreakAchieved"
+
+Explanation:
+
+The first letter for all words except "leetcode" should be capitalized.
+
+Example 2:
+
+Input: caption = "can I Go There"
+
+Output: "#canIGoThere"
+
+Explanation:
+
+The first letter for all words except "can" should be capitalized.
+
+Example 3:
+
+Input: caption = "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+
+Output: "#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+
+Explanation:
+
+Since the first word has length 101, we need to truncate the last two letters from the word.
+
+ 
+
+Constraints:
+
+1 <= caption.length <= 150
+caption consists only of English letters and ' '.;=;=https://leetcode.com/problems/generate-tag-for-video-caption/description/;=;=https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6845630/beats-100-very-easy-solution-beginner-fr-u7bq/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/7057735/generate-tag-for-video-caption-on-time-s-v5vt/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6846900/easy-java-solution-with-on-time-and-on-s-e54v/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6857366/commented-explained-easy-but-tricky-by-n-kpxv/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6847106/approach-easy-lot-of-edge-cases-that-nee-cgdl/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6844727/easy-one-loop-solution-with-a-flag-strin-uudk/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6845346/java-solution-beats-100-by-naveenkumar71-gah2/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6844744/stringbuilderbeats-easy-to-understandopt-gm8t/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6850253/simple-intuition-and-easy-approach-no-fa-g5z7/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6844733/easy-and-imtutitve-approach-by-beast2004-m7tm/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6846177/beginner-friendly-generate-hashtag-from-ehv3j/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6845143/easy-solution-in-java-by-nidhibaratam200-cmut/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6844723/simple-java-solution-by-yeshhh-s7m2/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6845401/easy-java-solution-the-question-was-a-li-3ogd/;;https://leetcode.com/problems/generate-tag-for-video-caption/solutions/6844793/easy-solution-beats-100-generate-hashtag-eh2n/;;;=;==;=;=;PROBLEM_ID:1;=;=3583. Count Special Triplets;=;=Medium;=;=public int specialTriplets(int[] A)         int MOD = 1_000_000_007, n = A.length;        long[] res = new long[n];        Map<Integer, Integer> count = new HashMap<>();        // Forward pass        for (int i = 0; i < n; ++i)             res[i] = count.getOrDefault(A[i]  2, 0);            count.put(A[i], count.getOrDefault(A[i], 0) + 1);                count.clear();        long total = 0;        // Backward pass        for (int i = n - 1; i >= 0; --i)             res[i] = count.getOrDefault(A[i]  2, 0);            count.put(A[i], count.getOrDefault(A[i], 0) + 1);            total = (total + res[i]) % MOD;                return (int) total;;=;=You are given an integer array nums.
+
+A special triplet is defined as a triplet of indices (i, j, k) such that:
+
+0 <= i < j < k < n, where n = nums.length
+nums[i] == nums[j] * 2
+nums[k] == nums[j] * 2
+Return the total number of special triplets in the array.
+
+Since the answer may be large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: nums = [6,3,6]
+
+Output: 1
+
+Explanation:
+
+The only special triplet is (i, j, k) = (0, 1, 2), where:
+
+nums[0] = 6, nums[1] = 3, nums[2] = 6
+nums[0] = nums[1] * 2 = 3 * 2 = 6
+nums[2] = nums[1] * 2 = 3 * 2 = 6
+Example 2:
+
+Input: nums = [0,1,0,0]
+
+Output: 1
+
+Explanation:
+
+The only special triplet is (i, j, k) = (0, 2, 3), where:
+
+nums[0] = 0, nums[2] = 0, nums[3] = 0
+nums[0] = nums[2] * 2 = 0 * 2 = 0
+nums[3] = nums[2] * 2 = 0 * 2 = 0
+Example 3:
+
+Input: nums = [8,4,2,8,4]
+
+Output: 2
+
+Explanation:
+
+There are exactly two special triplets:
+
+(i, j, k) = (0, 1, 3)
+nums[0] = 8, nums[1] = 4, nums[3] = 8
+nums[0] = nums[1] * 2 = 4 * 2 = 8
+nums[3] = nums[1] * 2 = 4 * 2 = 8
+(i, j, k) = (1, 2, 4)
+nums[1] = 4, nums[2] = 2, nums[4] = 4
+nums[1] = nums[2] * 2 = 2 * 2 = 4
+nums[4] = nums[2] * 2 = 2 * 2 = 4
+ 
+
+Constraints:
+
+3 <= n == nums.length <= 105
+0 <= nums[i] <= 105;=;=https://leetcode.com/problems/count-special-triplets/description/;=;=https://leetcode.com/problems/count-special-triplets/solutions/6844768/javacpython-two-passes-by-lee215-vot5/;;https://leetcode.com/problems/count-special-triplets/solutions/6844682/explanation-with-example-optimal-easy-ap-uqwg/;;https://leetcode.com/problems/count-special-triplets/solutions/6852883/faster-lesser-cpython3javacpythoncexplai-ny37/;;https://leetcode.com/problems/count-special-triplets/solutions/6845417/easy-but-a-little-bit-tricky-by-krishn13-x4w6/;;https://leetcode.com/problems/count-special-triplets/solutions/7000472/0ms-beats-100-simple-intuitive-code-usin-upfe/;;https://leetcode.com/problems/count-special-triplets/solutions/6846890/java-50ms-frequency-count-by-vikasseervi-3g3i/;;https://leetcode.com/problems/count-special-triplets/solutions/6846866/simple-java-solution-using-hashmap-beats-8mrw/;;https://leetcode.com/problems/count-special-triplets/solutions/6844758/simple-java-solution-using-left-right-co-p88d/;;https://leetcode.com/problems/count-special-triplets/solutions/6844696/java-solution-by-solved-8080/;;https://leetcode.com/problems/count-special-triplets/solutions/6846880/simple-2-hashmap-solution-beats-100-by-b-vgjr/;;https://leetcode.com/problems/count-special-triplets/solutions/6846736/easy-code-in-java-using-hashmap-by-yasl1-4fpn/;;https://leetcode.com/problems/count-special-triplets/solutions/6845312/efficient-on-solution-using-prefix-suffi-tcvi/;;https://leetcode.com/problems/count-special-triplets/solutions/6850511/on-time-space-clean-explanation-proof-in-dx0q/;;https://leetcode.com/problems/count-special-triplets/solutions/6864188/special-triplets-in-on-javacpython-brute-y6ac/;;https://leetcode.com/problems/count-special-triplets/solutions/6848761/easy-java-solution-using-binary-search-b-es40/;;;=;==;=;=;PROBLEM_ID:2;=;=3584. Maximum Product of First and Last Elements of a Subsequence;=;=Medium;=;=public long maximumProduct(int[] nums, int m)         int n = nums.length;        long ans = Long.MIN_VALUE;        if (m == 1)             for (int x : nums)                 ans = Math.max(ans, 1L  x  x);                        return ans;                long maxi = Long.MIN_VALUE;        long mini = Long.MAX_VALUE;        for (int j = m - 1; j < n; j++)             int i = j - m + 1;            maxi = Math.max(maxi, nums[i]);            mini = Math.min(mini, nums[i]);            long prod1 = maxi  nums[j];            long prod2 = mini  nums[j];            ans = Math.max(ans, Math.max(prod1, prod2));                return ans;;=;=You are given an integer array nums and an integer m.
+
+Return the maximum product of the first and last elements of any subsequence of nums of size m.
+
+ 
+
+Example 1:
+
+Input: nums = [-1,-9,2,3,-2,-3,1], m = 1
+
+Output: 81
+
+Explanation:
+
+The subsequence [-9] has the largest product of the first and last elements: -9 * -9 = 81. Therefore, the answer is 81.
+
+Example 2:
+
+Input: nums = [1,3,-5,5,6,-4], m = 3
+
+Output: 20
+
+Explanation:
+
+The subsequence [-5, 6, -4] has the largest product of the first and last elements.
+
+Example 3:
+
+Input: nums = [2,-1,2,-6,5,2,-5,7], m = 2
+
+Output: 35
+
+Explanation:
+
+The subsequence [5, 7] has the largest product of the first and last elements.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+-105 <= nums[i] <= 105
+1 <= m <= nums.length;=;=https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/description/;=;=https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6844678/javacpython-sliding-window-by-lee215-s9e0/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6844680/explanation-with-example-optimal-easy-ap-ajkp/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6847922/simple-template-for-beginners-easy-on-ap-8ohe/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6844917/easy-two-pointer-approach-beats-100-by-m-e5ao/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6844807/easy-solution-maximum-product-of-first-a-vlte/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6844783/2-arrays-tracking-java-easy-solution-by-l1ujv/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6847720/simple-java-greedy-easy-to-understand-by-tamy/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6844718/simple-solution-hashmap-by-singh_abhiish-t0so/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6849622/optimal-solution-in-cjava-python-by-dipe-2hyk/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6844712/java-on-o1-max-min-by-unhale-og3p/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6844705/using-pefix-max-and-prefix-min-best-solu-l968/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6844675/javacpython-sliding-window-by-lee215-6g8l/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6864815/sliding-subsequence-maxmin-lookup-for-ma-5lqx/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6864328/brute-force-optimized-solution-javacpyth-8aa6/;;https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/solutions/6845157/easy-solution-in-java-by-nidhibaratam200-mjv8/;;;=;==;=;=;PROBLEM_ID:3;=;=3585. Find Weighted Median Node in Tree;=;=Hard;=;=import java.util.;      static final int M = 25;    static List<List<long[]>> adj;    static int[] dep;    static long[][] Par, Sum;    public static void dfs(int cur, int parent)         if (parent != -1) dep[cur] = dep[parent] + 1;        if (parent != -1) Par[0][cur] = parent;        for (long[] ne : adj.get(cur))             if ((int) ne[0] == parent)                 Sum[0][cur] = ne[1];                break;                            for (int j = 1; j < M; j++)             int y = (int) Par[j - 1][cur];            Par[j][cur] = Par[j - 1][y];            Sum[j][cur] = Sum[j - 1][cur] + Sum[j - 1][y];                for (long[] x : adj.get(cur))             if ((int) x[0] != parent) dfs((int) x[0], cur);                public static int LCA(int u, int v)         if (u == v) return u;        if (dep[u] < dep[v])             int temp = u; u = v; v = temp;                int diff = dep[u] - dep[v];        for (int j = M - 1; j >= 0; j--)             if (((diff >> j) & 1) == 1) u = (int) Par[j][u];;=;=You are given an integer n and an undirected, weighted tree rooted at node 0 with n nodes numbered from 0 to n - 1. This is represented by a 2D array edges of length n - 1, where edges[i] = [ui, vi, wi] indicates an edge from node ui to vi with weight wi.
+
+The weighted median node is defined as the first node x on the path from ui to vi such that the sum of edge weights from ui to x is greater than or equal to half of the total path weight.
+
+You are given a 2D integer array queries. For each queries[j] = [uj, vj], determine the weighted median node along the path from uj to vj.
+
+Return an array ans, where ans[j] is the node index of the weighted median for queries[j].
+
+ 
+
+Example 1:
+
+Input: n = 2, edges = [[0,1,7]], queries = [[1,0],[0,1]]
+
+Output: [0,1]
+
+Explanation:
+
+
+
+Query	Path	Edge
+Weights	Total
+Path
+Weight	Half	Explanation	Answer
+[1, 0]	1 ? 0	[7]	7	3.5	Sum from 1 ? 0 = 7 >= 3.5, median is node 0.	0
+[0, 1]	0 ? 1	[7]	7	3.5	Sum from 0 ? 1 = 7 >= 3.5, median is node 1.	1
+Example 2:
+
+Input: n = 3, edges = [[0,1,2],[2,0,4]], queries = [[0,1],[2,0],[1,2]]
+
+Output: [1,0,2]
+
+Explanation:
+
+
+
+Query	Path	Edge
+Weights	Total
+Path
+Weight	Half	Explanation	Answer
+[0, 1]	0 ? 1	[2]	2	1	Sum from 0 ? 1 = 2 >= 1, median is node 1.	1
+[2, 0]	2 ? 0	[4]	4	2	Sum from 2 ? 0 = 4 >= 2, median is node 0.	0
+[1, 2]	1 ? 0 ? 2	[2, 4]	6	3	Sum from 1 ? 0 = 2 < 3.
+Sum from 1 ? 2 = 2 + 4 = 6 >= 3, median is node 2.	2
+Example 3:
+
+Input: n = 5, edges = [[0,1,2],[0,2,5],[1,3,1],[2,4,3]], queries = [[3,4],[1,2]]
+
+Output: [2,2]
+
+Explanation:
+
+
+
+Query	Path	Edge
+Weights	Total
+Path
+Weight	Half	Explanation	Answer
+[3, 4]	3 ? 1 ? 0 ? 2 ? 4	[1, 2, 5, 3]	11	5.5	Sum from 3 ? 1 = 1 < 5.5.
+Sum from 3 ? 0 = 1 + 2 = 3 < 5.5.
+Sum from 3 ? 2 = 1 + 2 + 5 = 8 >= 5.5, median is node 2.	2
+[1, 2]	1 ? 0 ? 2	[2, 5]	7	3.5	
+Sum from 1 ? 0 = 2 < 3.5.
+Sum from 1 ? 2 = 2 + 5 = 7 >= 3.5, median is node 2.
+
+2
+ 
+
+Constraints:
+
+2 <= n <= 105
+edges.length == n - 1
+edges[i] == [ui, vi, wi]
+0 <= ui, vi < n
+1 <= wi <= 109
+1 <= queries.length <= 105
+queries[j] == [uj, vj]
+0 <= uj, vj < n
+The input is generated such that edges represents a valid tree.;=;=https://leetcode.com/problems/find-weighted-median-node-in-tree/description/;=;=https://leetcode.com/problems/find-weighted-median-node-in-tree/solutions/6845348/java-binary-lifting-binary-search-on-pat-3svg/;;https://leetcode.com/problems/find-weighted-median-node-in-tree/solutions/6846346/java-lca-binary-search-prefix-sum-binary-a4zt/;;https://leetcode.com/problems/find-weighted-median-node-in-tree/solutions/6845089/java-solution-by-jaykimyra-nwbv/;;https://leetcode.com/problems/find-weighted-median-node-in-tree/solutions/6855555/binary-lifting-lca-binary-search-java-by-0744/;;https://leetcode.com/problems/find-weighted-median-node-in-tree/solutions/6906826/java-lowest-common-ancestor-solution-by-k5fhw/;;https://leetcode.com/problems/find-weighted-median-node-in-tree/solutions/6848191/java-beats-100-with-onlogn-by-meringueee-x33c/;;;=;==;=;=;

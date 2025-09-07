@@ -1,0 +1,204 @@
+PROBLEM_ID:0;=;=3627. Maximum Median Sum of Subsequences of Size 3;=;=Medium;=;=public long maximumMedianSum(int[] nums)         int n = nums.length;        long sum = 0;        Arrays.sort(nums);        for(int i = n-2; i >= n/3; i-=2)             sum += nums[i];                return sum;;=;=You are given an integer array nums with a length divisible by 3.
+
+You want to make the array empty in steps. In each step, you can select any three elements from the array, compute their median, and remove the selected elements from the array.
+
+The median of an odd-length sequence is defined as the middle element of the sequence when it is sorted in non-decreasing order.
+
+Return the maximum possible sum of the medians computed from the selected elements.
+
+ 
+
+Example 1:
+
+Input: nums = [2,1,3,2,1,3]
+
+Output: 5
+
+Explanation:
+
+In the first step, select elements at indices 2, 4, and 5, which have a median 3. After removing these elements, nums becomes [2, 1, 2].
+In the second step, select elements at indices 0, 1, and 2, which have a median 2. After removing these elements, nums becomes empty.
+Hence, the sum of the medians is 3 + 2 = 5.
+
+Example 2:
+
+Input: nums = [1,1,10,10,10,10]
+
+Output: 20
+
+Explanation:
+
+In the first step, select elements at indices 0, 2, and 3, which have a median 10. After removing these elements, nums becomes [1, 10, 10].
+In the second step, select elements at indices 0, 1, and 2, which have a median 10. After removing these elements, nums becomes empty.
+Hence, the sum of the medians is 10 + 10 = 20.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 5 * 105
+nums.length % 3 == 0
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/description/;=;=https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7009779/easy-code-beginner-friendly-beats-100-by-wpi3/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7009749/beginner-friendly-example-walkthrough-op-uquj/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7009964/javacpython-sort-by-lee215-uy0q/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7041004/java-24ms-onlogn-clean-code-by-aryanajwa-fsgu/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7013742/java-solution-on-log-n-by-negi_mags-n2tf/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7009837/two-pointer-by-gitchuan-s77u/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7009923/sorting-onlogn-easy-code-by-ankith_kumar-2bsk/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7011279/two-pointer-approach-greedy-solution-by-xiv03/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7009775/java-solution-by-solved-1m38/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7012489/easy-solution-beats-98-java-by-rajan_sin-q23p/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7010837/stellars-clean-code-video-intuition-appr-fdus/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7010281/java-solution-by-chai0709-0o6g/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7009733/easy-java-solution-intuitive-deque-by-ra-w1e8/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7056649/easy-solution-better-way-to-understand-t-j5i7/;;https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/solutions/7052492/greedy-simple-sorting-onlogn-24-ms-beats-9zdl/;;;=;==;=;=;PROBLEM_ID:1;=;=3628. Maximum Number of Subsequences After One Inserting;=;=Medium;=;=public long numOfSubsequences(String s)         int n = s.length();        long l = 0, c = 0, count = 0;        int lc=0,cc=0,tc=0;        for (int i = 0; i < n; i++)             char ch = s.charAt(i);            if (ch == 'L') l++;lc++;            else if (ch == 'C') c += l;cc++;                        else if (ch == 'T') count += c;tc++;                long max = count;;=;=You are given a string s consisting of uppercase English letters.
+
+You are allowed to insert at most one uppercase English letter at any position (including the beginning or end) of the string.
+
+Return the maximum number of "LCT" subsequences that can be formed in the resulting string after at most one insertion.
+
+ 
+
+Example 1:
+
+Input: s = "LMCT"
+
+Output: 2
+
+Explanation:
+
+We can insert a "L" at the beginning of the string s to make "LLMCT", which has 2 subsequences, at indices [0, 3, 4] and [1, 3, 4].
+
+Example 2:
+
+Input: s = "LCCT"
+
+Output: 4
+
+Explanation:
+
+We can insert a "L" at the beginning of the string s to make "LLCCT", which has 4 subsequences, at indices [0, 2, 4], [0, 3, 4], [1, 2, 4] and [1, 3, 4].
+
+Example 3:
+
+Input: s = "L"
+
+Output: 0
+
+Explanation:
+
+Since it is not possible to obtain the subsequence "LCT" by inserting a single letter, the result is 0.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of uppercase English letters.;=;=https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/description/;=;=https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7009729/prefix-and-suffix-sum-detailed-explanati-tomq/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7009785/simple-java-solution-with-prefix-and-suf-7z5p/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7013590/java-100-with-greedy-solution-on-by-meri-7wuf/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7050867/very-easy-to-understand-prefixsuffix-sum-t2nt/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7009935/suffix-on-by-ankith_kumar-f0l4/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7009782/java-solution-by-solved-lerj/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7009846/simple-solution-by-singh_abhiishek-ic37/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7011136/simple-solution-prefix-suffix-greedy-by-lgncm/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7012043/2-appraoches-by-kj1000-2ye9/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7011162/just-works-by-utalmighty-saq1/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7010093/easy-intuitive-solution-by-arham121-reoi/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7019895/java-solution-finally-did-post-contest-b-jydc/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7010026/understandable-code-using-prefix-and-suf-qexm/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7021619/java-greedy-on-space-on-solution-by-qing-b7ri/;;https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/solutions/7010726/three-ways-lt-and-c-l-and-t-are-add-at-f-xy2s/;;;=;==;=;=;PROBLEM_ID:2;=;=3629. Minimum Jumps to Reach End via Prime Teleportation;=;=Medium;=;=import java.util.*;      boolean[] primes;    // Precompute primes up to 1e6    public void sieve()         int N = (int) 1e6 + 1;        primes = new boolean[N + 1];        Arrays.fill(primes, true);        primes[0] = primes[1] = false;        for (int i = 2; i * i <= N; i++)             if (primes[i]);=;=You are given an integer array nums of length n.
+
+You start at index 0, and your goal is to reach index n - 1.
+
+From any index i, you may perform one of the following operations:
+
+Adjacent Step: Jump to index i + 1 or i - 1, if the index is within bounds.
+Prime Teleportation: If nums[i] is a prime number p, you may instantly jump to any index j != i such that nums[j] % p == 0.
+Return the minimum number of jumps required to reach index n - 1.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,4,6]
+
+Output: 2
+
+Explanation:
+
+One optimal sequence of jumps is:
+
+Start at index i = 0. Take an adjacent step to index 1.
+At index i = 1, nums[1] = 2 is a prime number. Therefore, we teleport to index i = 3 as nums[3] = 6 is divisible by 2.
+Thus, the answer is 2.
+
+Example 2:
+
+Input: nums = [2,3,4,7,9]
+
+Output: 2
+
+Explanation:
+
+One optimal sequence of jumps is:
+
+Start at index i = 0. Take an adjacent step to index i = 1.
+At index i = 1, nums[1] = 3 is a prime number. Therefore, we teleport to index i = 4 since nums[4] = 9 is divisible by 3.
+Thus, the answer is 2.
+
+Example 3:
+
+Input: nums = [4,6,5,8]
+
+Output: 3
+
+Explanation:
+
+Since no teleportation is possible, we move through 0 ? 1 ? 2 ? 3. Thus, the answer is 3.
+ 
+
+Constraints:
+
+1 <= n == nums.length <= 105
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/description/;=;=https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7013232/stellars-clean-code-video-intuition-appr-i1b0/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7011288/easy-graph-dijkstra-solution-on-logmax-b-5xzu/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7009950/graph-queue-onlogm-by-ankith_kumar-k169/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7015322/java-solution-priority-queue-bfs-by-ayus-voz8/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7011222/simple-bfs-traversal-by-anurag_100305-wupx/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7013550/easy-java-solution-bfs-sieve-implementat-d493/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7009932/java-solution-by-1729karthik_d-ms28/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7009810/seive-of-primes-graphbfs-very-simple-and-gwmx/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7009998/bfs-using-the-priority-queue-by-k_l_sri_-qxeq/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7010216/simple-bfs-by-catchme999-7l54/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7028295/java-javascript-typescript-c-c-kotlin-go-otxo/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7018934/java-back-to-the-front-bfs-approach-with-nhar/;;https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/solutions/7017293/java-simple-bfs-implementation-beats-100-ezqb/;;;=;==;=;=;PROBLEM_ID:3;=;=3630. Partition Array for Maximum XOR and AND;=;=Hard;=;=import java.util.Arrays;public  XORBasisExample     static class XORBasis         private final int[] basis; // Stores the basis for each bit position        private final int maxBits; // Number of bits (e.g., 32 for integers)        public XORBasis(int maxBits)             this.maxBits = maxBits;            this.basis = new int[maxBits];                // Insert a number into the basis;=;=You are given an integer array nums.
+
+Partition the array into three (possibly empty) subsequences A, B, and C such that every element of nums belongs to exactly one subsequence.
+
+Your goal is to maximize the value of: XOR(A) + AND(B) + XOR(C)
+
+where:
+
+XOR(arr) denotes the bitwise XOR of all elements in arr. If arr is empty, its value is defined as 0.
+AND(arr) denotes the bitwise AND of all elements in arr. If arr is empty, its value is defined as 0.
+Return the maximum value achievable.
+
+Note: If multiple partitions result in the same maximum sum, you can consider any one of them.
+
+ 
+
+Example 1:
+
+Input: nums = [2,3]
+
+Output: 5
+
+Explanation:
+
+One optimal partition is:
+
+A = [3], XOR(A) = 3
+B = [2], AND(B) = 2
+C = [], XOR(C) = 0
+The maximum value of: XOR(A) + AND(B) + XOR(C) = 3 + 2 + 0 = 5. Thus, the answer is 5.
+
+Example 2:
+
+Input: nums = [1,3,2]
+
+Output: 6
+
+Explanation:
+
+One optimal partition is:
+
+A = [1], XOR(A) = 1
+B = [2], AND(B) = 2
+C = [3], XOR(C) = 3
+The maximum value of: XOR(A) + AND(B) + XOR(C) = 1 + 2 + 3 = 6. Thus, the answer is 6.
+
+Example 3:
+
+Input: nums = [2,3,6,7]
+
+Output: 15
+
+Explanation:
+
+One optimal partition is:
+
+A = [7], XOR(A) = 7
+B = [2,3], AND(B) = 2
+C = [6], XOR(C) = 6
+The maximum value of: XOR(A) + AND(B) + XOR(C) = 7 + 2 + 6 = 15. Thus, the answer is 15.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 19
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/partition-array-for-maximum-xor-and-and/description/;=;=https://leetcode.com/problems/partition-array-for-maximum-xor-and-and/solutions/7064031/java-beat-100-easy-solution-by-kishan_sh-64a4/;;https://leetcode.com/problems/partition-array-for-maximum-xor-and-and/solutions/7013450/java-solution-by-following-hints-compute-wp37/;;;=;==;=;=;

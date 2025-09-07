@@ -1,0 +1,130 @@
+PROBLEM_ID:0;=;=914. X of a Kind in a Deck of Cards;=;=Easy;=;=public boolean hasGroupsSizeX(int[] deck)                 Map<Integer, Integer> count = new HashMap<>();                for (int num : deck)             count.put(num, count.getOrDefault(num, 0) + 1);                int gcd = count.get(deck[0]);        for (int val : count.values())             gcd = gcd(gcd, val);;=;=You are given an integer array deck where deck[i] represents the number written on the ith card.
+
+Partition the cards into one or more groups such that:
+
+Each group has exactly x cards where x > 1, and
+All the cards in one group have the same integer written on them.
+Return true if such partition is possible, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: deck = [1,2,3,4,4,3,2,1]
+Output: true
+Explanation: Possible partition [1,1],[2,2],[3,3],[4,4].
+Example 2:
+
+Input: deck = [1,1,1,2,2,2,3,3]
+Output: false
+Explanation: No possible partition.
+ 
+
+Constraints:
+
+1 <= deck.length <= 104
+0 <= deck[i] < 104;=;=https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/description/;=;=https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/176027/x-of-a-kind-in-a-deck-of-cards-by-leetco-xa3a/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/175845/cjavapython-greatest-common-divisor-by-l-ibi5/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/7018529/solving-x-of-a-kind-in-a-deck-of-cards-j-fam0/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/6949008/java-beats-100-1-ms-by-teja_1403-7r6w/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/6788069/simple-python-solution-beats-100-by-user-tpn5/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/6753616/c-clear-and-efficient-solution-beats-100-ap4q/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/1277550/c-easy-to-understand-fast-and-efficient-osbhj/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/776795/c-simple-with-explanations-without-gcd-f-lr3l/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/1929514/easy-step-by-step-explanation-by-juno_11-1a33/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/6739187/java-easy-100-solution-using-gcd-by-ytch-g48g/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/1609224/c-easy-solution-accepted-by-wjeevika-5f5s/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/6699746/simple-c-solution-by-namanverma01-jhbc/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/759833/java-simple-solution-with-description-by-wyjz/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/6666850/greatest-common-divisor-by-khaled-alomar-35pk/;;https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/solutions/285942/python-faster-than-97-without-in-build-g-7th6/;;;=;==;=;=;PROBLEM_ID:1;=;=915. Partition Array into Disjoint Intervals;=;=Medium;=;=public int partitionDisjoint(int[] nums);=;=Given an integer array nums, partition it into two (contiguous) subarrays left and right so that:
+
+Every element in left is less than or equal to every element in right.
+left and right are non-empty.
+left has the smallest possible size.
+Return the length of left after such a partitioning.
+
+Test cases are generated such that partitioning exists.
+
+ 
+
+Example 1:
+
+Input: nums = [5,0,3,8,6]
+Output: 3
+Explanation: left = [5,0,3], right = [8,6]
+Example 2:
+
+Input: nums = [1,1,1,0,6,12]
+Output: 4
+Explanation: left = [1,1,1,0], right = [6,12]
+ 
+
+Constraints:
+
+2 <= nums.length <= 105
+0 <= nums[i] <= 106
+There is at least one valid answer for the given input.;=;=https://leetcode.com/problems/partition-array-into-disjoint-intervals/description/;=;=https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/7037192/easy-code-in-java-by-yasl1-ayng/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/1122368/java-2-solutions-by-himanshuchhikara-hg50/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/6613339/beats-100-smart-solution-javacpython-not-g2r1/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/6276645/java-c-most-optimal-single-pass-maximum-811q3/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/6599965/partition-array-into-disjoint-intervals-v3n8i/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/6620944/java-easy-solution-time-complexity-on-by-57l7/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/6586528/java-on-by-hanumana_ram-251h/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/2496228/java-tcon-sco1-with-comments-on-every-li-lhdw/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/1354779/partition-array-into-disjoint-intervals-az3p1/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/1354639/java-solution-explained-with-comments-by-4l8m/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/4073199/here-is-my-solution-on-for-java-by-furru-8bte/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/1131928/java-solution-beat-100-by-yuyuh-8dw3/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/3514724/solution-by-deleted_user-hq7x/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/3241893/java-easy-solution-0sec-by-sadanandsidhu-tw93/;;https://leetcode.com/problems/partition-array-into-disjoint-intervals/solutions/6891952/java-one-array-by-harshitsinghra_cs22-vnjt/;;;=;==;=;=;PROBLEM_ID:2;=;=916. Word Subsets;=;=Medium;=;=public List<String> wordSubsets(String[] words1, String[] words2);=;=You are given two string arrays words1 and words2.
+
+A string b is a subset of string a if every letter in b occurs in a including multiplicity.
+
+For example, "wrr" is a subset of "warrior" but is not a subset of "world".
+A string a from words1 is universal if for every string b in words2, b is a subset of a.
+
+Return an array of all the universal strings in words1. You may return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: words1 = ["amazon","apple","facebook","google","leetcode"], words2 = ["e","o"]
+
+Output: ["facebook","google","leetcode"]
+
+Example 2:
+
+Input: words1 = ["amazon","apple","facebook","google","leetcode"], words2 = ["lc","eo"]
+
+Output: ["leetcode"]
+
+Example 3:
+
+Input: words1 = ["acaac","cccbb","aacbb","caacc","bcbbb"], words2 = ["c","cc","b"]
+
+Output: ["cccbb"]
+
+ 
+
+Constraints:
+
+1 <= words1.length, words2.length <= 104
+1 <= words1[i].length, words2[i].length <= 10
+words1[i] and words2[i] consist only of lowercase English letters.
+All the strings of words1 are unique.;=;=https://leetcode.com/problems/word-subsets/description/;=;=https://leetcode.com/problems/word-subsets/solutions/6257553/memsetfreq-detailed-solution-by-sumeet_s-07xg/;;https://leetcode.com/problems/word-subsets/solutions/6258168/simple-brute-force-solution-c-java-pytho-v2wb/;;https://leetcode.com/problems/word-subsets/solutions/6258094/beats-100-array-max-freq-in-words2-solut-u2om/;;https://leetcode.com/problems/word-subsets/solutions/6257618/max-frequency-for-each-character-on-m-c-245ad/;;https://leetcode.com/problems/word-subsets/solutions/6257966/easy-to-understand-frequency-aggregation-b4ee/;;https://leetcode.com/problems/word-subsets/solutions/2352794/c-java-python-full-explanations-with-com-yos7/;;https://leetcode.com/problems/word-subsets/solutions/6261620/clean-explanation-beats-100-runtime-cpy3-q5j2/;;https://leetcode.com/problems/word-subsets/solutions/6257778/most-optimized-python-solution-for-word-yvg6w/;;https://leetcode.com/problems/word-subsets/solutions/1128456/java-100-faster-by-himanshuchhikara-207j/;;https://leetcode.com/problems/word-subsets/solutions/6260541/easy-beats-9244-java-optimal-tc-onm-sc-o-zw2c/;;https://leetcode.com/problems/word-subsets/solutions/6260878/beats-super-easy-beginners-by-codewithsp-aepc/;;https://leetcode.com/problems/word-subsets/solutions/6583443/easy-to-understand-by-omesh987-nvcs/;;https://leetcode.com/problems/word-subsets/solutions/6258822/java-solution-using-hashmap-by-ruch21-4rmd/;;https://leetcode.com/problems/word-subsets/solutions/6257928/java-hash-table-easy-by-mani-26-3qho/;;https://leetcode.com/problems/word-subsets/solutions/6258685/simplest-approach-by-shoaib94577-rpx7/;;;=;==;=;=;PROBLEM_ID:3;=;=913. Cat and Mouse;=;=Hard;=;=public int catMouseGame(int[][] graph);=;=A game on an undirected graph is played by two players, Mouse and Cat, who alternate turns.
+
+The graph is given as follows: graph[a] is a list of all nodes b such that ab is an edge of the graph.
+
+The mouse starts at node 1 and goes first, the cat starts at node 2 and goes second, and there is a hole at node 0.
+
+During each player's turn, they must travel along one edge of the graph that meets where they are.  For example, if the Mouse is at node 1, it must travel to any node in graph[1].
+
+Additionally, it is not allowed for the Cat to travel to the Hole (node 0).
+
+Then, the game can end in three ways:
+
+If ever the Cat occupies the same node as the Mouse, the Cat wins.
+If ever the Mouse reaches the Hole, the Mouse wins.
+If ever a position is repeated (i.e., the players are in the same position as a previous turn, and it is the same player's turn to move), the game is a draw.
+Given a graph, and assuming both players play optimally, return
+
+1 if the mouse wins the game,
+2 if the cat wins the game, or
+0 if the game is a draw.
+ 
+
+Example 1:
+
+
+Input: graph = [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]
+Output: 0
+Example 2:
+
+
+Input: graph = [[1,3],[0],[3],[0,2]]
+Output: 1
+ 
+
+Constraints:
+
+3 <= graph.length <= 50
+1 <= graph[i].length < graph.length
+0 <= graph[i][j] < graph.length
+graph[i][j] != i
+graph[i] is unique.
+The mouse and the cat can always move.;=;=https://leetcode.com/problems/cat-and-mouse/description/;=;=https://leetcode.com/problems/cat-and-mouse/solutions/3224728/java-easy-top-down-dp-by-code_alone-3jdt/;;https://leetcode.com/problems/cat-and-mouse/solutions/3108176/913-cat-and-mouse-by-stormsunshine-yzt2/;;https://leetcode.com/problems/cat-and-mouse/solutions/3606518/java-solution-with-approach-beats-80-by-oqqbh/;;https://leetcode.com/problems/cat-and-mouse/solutions/3514720/solution-by-deleted_user-q5qf/;;https://leetcode.com/problems/cat-and-mouse/solutions/3241876/java-easy-solution-0sec-by-sadanandsidhu-j64l/;;https://leetcode.com/problems/cat-and-mouse/solutions/6151525/cat-mouse-problem-1-by-shubhadeep23-wbnh/;;https://leetcode.com/problems/cat-and-mouse/solutions/6215698/913-cat-and-mouse-by-g8xd0qpqty-r94b/;;https://leetcode.com/problems/cat-and-mouse/solutions/6525109/java-optimal-solution-by-heyysankalp-knne/;;https://leetcode.com/problems/cat-and-mouse/solutions/6366982/beats-9939-by-rhyd3dxa6x-h1n9/;;https://leetcode.com/problems/cat-and-mouse/solutions/5894695/java-bfs-solution-by-realhandle-2o0y/;;https://leetcode.com/problems/cat-and-mouse/solutions/4532774/cat-and-mouse-by-muskan_chaudhary01-zj8d/;;https://leetcode.com/problems/cat-and-mouse/solutions/3512317/java-solution-with-by-safo-samson-hof6/;;https://leetcode.com/problems/cat-and-mouse/solutions/2203459/java-draw-is-kinda-tricky-short-solution-868u/;;https://leetcode.com/problems/cat-and-mouse/solutions/1949123/cat-and-mouse-solution-java-by-bhupendra-bsb7/;;;=;==;=;=;

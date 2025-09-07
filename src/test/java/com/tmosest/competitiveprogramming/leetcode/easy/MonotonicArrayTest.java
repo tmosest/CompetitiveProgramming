@@ -8,33 +8,45 @@ import org.junit.jupiter.api.Test;
 
 @Tag("leetcode")
 @Tag("easy")
-@Tag("array")
-@Tag("wc100")
 @DisplayName("LeetCode: 896. Monotonic Array")
+@Tag("wc100")
 class MonotonicArrayTest {
-    private MonotonicArray monotonicArray;
+private MonotonicArray monotonicArray;
 
-    @BeforeEach
-    void setup() {
-        monotonicArray = new MonotonicArray();
-    }
+@BeforeEach
+void setup() {
+ monotonicArray = new MonotonicArray();
+}
+private void test( boolean output, int[] nums) {
+ Assertions.assertEquals(output, monotonicArray.isMonotonic(nums)); }
+/* Example 1
+Input: nums = [1,2,2,3]
+Output: true
+null
+ */
 
-    private void test(boolean output, int[] nums) {
-        Assertions.assertEquals(output, monotonicArray.isMonotonic(nums));
-    }
+@Test
+void test1() {
+ test(true, new int[] { 1,2,2,3}); }
+/* Example 2
+Input: nums = [6,5,4,4]
+Output: true
+null
+ */
 
-    @Test
-    void test0() {
-        test(true, new int[] { 1, 2, 2, 3 });
-    }
+@Test
+void test2() {
+ test(true, new int[] { 6,5,4,4}); }
+/* Example 3
+Input: nums = [1,3,2]
+Output: false
+null
+ */
 
-    @Test
-    void test1() {
-        test(true, new int[] { 6, 5, 4, 4 });
-    }
+@Test
+void test3() {
+ test(false, new int[] { 1,3,2}); }
 
-    @Test
-    void test2() {
-        test(false, new int[] { 1, 3, 2 });
-    }
+
+
 }

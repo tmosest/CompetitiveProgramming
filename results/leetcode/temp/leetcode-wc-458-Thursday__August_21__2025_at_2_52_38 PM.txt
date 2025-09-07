@@ -1,0 +1,217 @@
+PROBLEM_ID:0;=;=3612. Process String with Special Operations I;=;=Medium;=;=public String processStr(String s);=;=You are given a string s consisting of lowercase English letters and the special characters: *, #, and %.
+
+Build a new string result by processing s according to the following rules from left to right:
+
+If the letter is a lowercase English letter append it to result.
+A '*' removes the last character from result, if it exists.
+A '#' duplicates the current result and appends it to itself.
+A '%' reverses the current result.
+Return the final string result after processing all characters in s.
+
+ 
+
+Example 1:
+
+Input: s = "a#b%*"
+
+Output: "ba"
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'a'	Append 'a'	"a"
+1	'#'	Duplicate result	"aa"
+2	'b'	Append 'b'	"aab"
+3	'%'	Reverse result	"baa"
+4	'*'	Remove the last character	"ba"
+Thus, the final result is "ba".
+
+Example 2:
+
+Input: s = "z*#"
+
+Output: ""
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'z'	Append 'z'	"z"
+1	'*'	Remove the last character	""
+2	'#'	Duplicate the string	""
+Thus, the final result is "".
+
+ 
+
+Constraints:
+
+1 <= s.length <= 20
+s consists of only lowercase English letters and special characters *, #, and %.;=;=https://leetcode.com/problems/process-string-with-special-operations-i/description/;=;=https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6951614/very-easy-code-beginner-friendly-brute-a-u0ic/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6954702/faster-lesser-cpython3javacpythoncexplai-znmc/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6960265/very-easy-detailed-solution-java-c-by-ch-7vij/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6951595/easy-solution-using-java-beats-100-by-ra-p4j3/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6969279/java-on-one-pass-string-processor-using-mnq0u/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6951574/beats-10000-simple-approach-with-intuiti-cso8/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6958666/easy-java-solution-bears-100-of-users-on-xvzf/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6990878/javabeat-100-by-reshu_upadhyay-z63p/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6957435/stringbuilder-easy-code-on2-by-ankith_ku-sptd/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6951661/process-string-with-special-characters-j-bwwm/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6954503/stringbuilder-java-brute-force-by-mhr_22-sd3c/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/7103518/java-using-stringbuilder-by-sandeepkc599-mrfr/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/7005820/java-solution-by-anurag_jana-mysb/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6976505/java-by-sumeetrayat-thoh/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6975925/java-by-reyhanehsalkhi-2t6w/;;;=;==;=;=;PROBLEM_ID:1;=;=3613. Minimize Maximum Component Cost;=;=Medium;=;=public int minCost(int n, int[][] edges, int k);=;=You are given an undirected connected graph with n nodes labeled from 0 to n - 1 and a 2D integer array edges where edges[i] = [ui, vi, wi] denotes an undirected edge between node ui and node vi with weight wi, and an integer k.
+
+You are allowed to remove any number of edges from the graph such that the resulting graph has at most k connected components.
+
+The cost of a component is defined as the maximum edge weight in that component. If a component has no edges, its cost is 0.
+
+Return the minimum possible value of the maximum cost among all components after such removals.
+
+ 
+
+Example 1:
+
+Input: n = 5, edges = [[0,1,4],[1,2,3],[1,3,2],[3,4,6]], k = 2
+
+Output: 4
+
+Explanation:
+
+
+
+Remove the edge between nodes 3 and 4 (weight 6).
+The resulting components have costs of 0 and 4, so the overall maximum cost is 4.
+Example 2:
+
+Input: n = 4, edges = [[0,1,5],[1,2,5],[2,3,5]], k = 1
+
+Output: 5
+
+Explanation:
+
+
+
+No edge can be removed, since allowing only one component (k = 1) requires the graph to stay fully connected.
+That single component’s cost equals its largest edge weight, which is 5.
+ 
+
+Constraints:
+
+1 <= n <= 5 * 104
+0 <= edges.length <= 105
+edges[i].length == 3
+0 <= ui, vi < n
+1 <= wi <= 106
+1 <= k <= n
+The input graph is connected.;=;=https://leetcode.com/problems/minimize-maximum-component-cost/description/;=;=https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6951576/binary-search-dfs-bfs-by-_sxrthakk-lfin/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6951913/intuitive-explanation-from-problem-to-it-8wug/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6951654/easy-solution-dsu-beats-100-by-ridhimago-f8dx/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6977988/dsu-solution-with-explain-complexities-b-vfcz/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6951643/most-efficent-dsuunion-find-solution-bes-bcta/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6957542/dsu-binary-search-onlogn-by-ankith_kumar-gdln/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6952174/binary-search-disjoint-set-by-warmachine-gwu6/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6953323/simple-java-bs-dsu-easy-to-understand-by-nbia/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6974353/minimize-maximum-component-cost-by-lavis-052z/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6954932/java-union-find-binary-search-omlgm-nlgm-gxl6/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6954373/easy-understanding-java-solution-100-bea-j622/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6967578/java-dsu-by-tanmayrsm-y4ef/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6953426/this-is-what-it-is-by-updatingmyhim-mfxi/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6951960/union-find-approach-with-vido-by-chaotic-hzmi/;;https://leetcode.com/problems/minimize-maximum-component-cost/solutions/6951592/java-solution-by-solved-fncc/;;;=;==;=;=;PROBLEM_ID:2;=;=3614. Process String with Special Operations II;=;=Hard;=;=public char processStr(String s, long k);=;=You are given a string s consisting of lowercase English letters and the special characters: '*', '#', and '%'.
+
+You are also given an integer k.
+
+Build a new string result by processing s according to the following rules from left to right:
+
+If the letter is a lowercase English letter append it to result.
+A '*' removes the last character from result, if it exists.
+A '#' duplicates the current result and appends it to itself.
+A '%' reverses the current result.
+Return the kth character of the final string result. If k is out of the bounds of result, return '.'.
+
+ 
+
+Example 1:
+
+Input: s = "a#b%*", k = 1
+
+Output: "a"
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'a'	Append 'a'	"a"
+1	'#'	Duplicate result	"aa"
+2	'b'	Append 'b'	"aab"
+3	'%'	Reverse result	"baa"
+4	'*'	Remove the last character	"ba"
+The final result is "ba". The character at index k = 1 is 'a'.
+
+Example 2:
+
+Input: s = "cd%#*#", k = 3
+
+Output: "d"
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'c'	Append 'c'	"c"
+1	'd'	Append 'd'	"cd"
+2	'%'	Reverse result	"dc"
+3	'#'	Duplicate result	"dcdc"
+4	'*'	Remove the last character	"dcd"
+5	'#'	Duplicate result	"dcddcd"
+The final result is "dcddcd". The character at index k = 3 is 'd'.
+
+Example 3:
+
+Input: s = "z*#", k = 0
+
+Output: "."
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'z'	Append 'z'	"z"
+1	'*'	Remove the last character	""
+2	'#'	Duplicate the string	""
+The final result is "". Since index k = 0 is out of bounds, the output is '.'.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of only lowercase English letters and special characters '*', '#', and '%'.
+0 <= k <= 1015
+The length of result after processing s will not exceed 1015.;=;=https://leetcode.com/problems/process-string-with-special-operations-ii/description/;=;=https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951573/example-walkthrough-easy-optimal-beats-1-fkkd/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951646/javacpython-reverse-by-lee215-8fz9/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6953318/java-oop-logical-class-based-solution-la-nafp/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951639/java-simple-and-easy-solution-by-mokumok-s8lb/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6952295/easy-explanation-java-linear-time-by-var-7c4i/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951760/beats-97-on-time-o1-space-no-string-buil-7p18/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951738/compute-max-length-after-all-operations-r4aj9/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6968719/reverse-simulation-with-length-only-trac-l3p6/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6958598/java-on-recursive-solution-from-back-to-05jbn/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/7042035/java-solution-by-barakamon-j605/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6956334/java-beats-100-by-sayanta_nandi-j7xs/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6982058/time-on-and-space-o1-java-answer-by-kamo-q51u/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6977811/2-approaches-by-kj1000-419i/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6952469/hardcore-problem-man-by-updatingmyhim-o8v3/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6982041/visual-explanation-easy-understand-rever-558k/;;;=;==;=;=;PROBLEM_ID:3;=;=3615. Longest Palindromic Path in Graph;=;=Hard;=;=public int maxLen(int n, int[][] edges, String label);=;=You are given an integer n and an undirected graph with n nodes labeled from 0 to n - 1 and a 2D array edges, where edges[i] = [ui, vi] indicates an edge between nodes ui and vi.
+
+You are also given a string label of length n, where label[i] is the character associated with node i.
+
+You may start at any node and move to any adjacent node, visiting each node at most once.
+
+Return the maximum possible length of a palindrome that can be formed by visiting a set of unique nodes along a valid path.
+
+ 
+
+Example 1:
+
+Input: n = 3, edges = [[0,1],[1,2]], label = "aba"
+
+Output: 3
+
+Explanation:
+
+
+
+The longest palindromic path is from node 0 to node 2 via node 1, following the path 0 ? 1 ? 2 forming string "aba".
+This is a valid palindrome of length 3.
+Example 2:
+
+Input: n = 3, edges = [[0,1],[0,2]], label = "abc"
+
+Output: 1
+
+Explanation:
+
+
+
+No path with more than one node forms a palindrome.
+The best option is any single node, giving a palindrome of length 1.
+Example 3:
+
+Input: n = 4, edges = [[0,2],[0,3],[3,1]], label = "bbac"
+
+Output: 3
+
+Explanation:
+
+
+
+The longest palindromic path is from node 0 to node 1, following the path 0 ? 3 ? 1, forming string "bcb".
+This is a valid palindrome of length 3.
+ 
+
+Constraints:
+
+1 <= n <= 14
+n - 1 <= edges.length <= n * (n - 1) / 2
+edges[i] == [ui, vi]
+0 <= ui, vi <= n - 1
+ui != vi
+label.length == n
+label consists of lowercase English letters.
+There are no duplicate edges.;=;=https://leetcode.com/problems/longest-palindromic-path-in-graph/description/;=;=https://leetcode.com/problems/longest-palindromic-path-in-graph/solutions/6952055/java-recursion-bitmask-cache-by-asmgf-z1zs/;;https://leetcode.com/problems/longest-palindromic-path-in-graph/solutions/6963631/java-easy-sol-by-bhanukarnwal-dyqp/;;https://leetcode.com/problems/longest-palindromic-path-in-graph/solutions/6953377/simple-top-down-approach-using-dfsdp-bit-dxmz/;;https://leetcode.com/problems/longest-palindromic-path-in-graph/solutions/7066413/straight-forward-java-solution-301-ms-by-2kjx/;;https://leetcode.com/problems/longest-palindromic-path-in-graph/solutions/7012548/simple-top-down-intuitive-dp-java-by-ran-qmvo/;;https://leetcode.com/problems/longest-palindromic-path-in-graph/solutions/6984627/discussed-all-the-whys-and-hows-brillian-9bqp/;;https://leetcode.com/problems/longest-palindromic-path-in-graph/solutions/6957266/easy-to-understand-java-solution-by-vg_8-s3ir/;;https://leetcode.com/problems/longest-palindromic-path-in-graph/solutions/6963429/java-solution-approach-with-proper-expla-z8hs/;;;=;==;=;=;

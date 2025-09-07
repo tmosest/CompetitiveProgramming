@@ -1,0 +1,214 @@
+PROBLEM_ID:0;=;=3597. Partition String;=;=Medium;=;=public List<String> partitionString(String s);=;=Given a string s, partition it into unique segments according to the following procedure:
+
+Start building a segment beginning at index 0.
+Continue extending the current segment character by character until the current segment has not been seen before.
+Once the segment is unique, add it to your list of segments, mark it as seen, and begin a new segment from the next index.
+Repeat until you reach the end of s.
+Return an array of strings segments, where segments[i] is the ith segment created.
+
+ 
+
+Example 1:
+
+Input: s = "abbccccd"
+
+Output: ["a","b","bc","c","cc","d"]
+
+Explanation:
+
+Index	Segment After Adding	Seen Segments	Current Segment Seen Before?	New Segment	Updated Seen Segments
+0	"a"	[]	No	""	["a"]
+1	"b"	["a"]	No	""	["a", "b"]
+2	"b"	["a", "b"]	Yes	"b"	["a", "b"]
+3	"bc"	["a", "b"]	No	""	["a", "b", "bc"]
+4	"c"	["a", "b", "bc"]	No	""	["a", "b", "bc", "c"]
+5	"c"	["a", "b", "bc", "c"]	Yes	"c"	["a", "b", "bc", "c"]
+6	"cc"	["a", "b", "bc", "c"]	No	""	["a", "b", "bc", "c", "cc"]
+7	"d"	["a", "b", "bc", "c", "cc"]	No	""	["a", "b", "bc", "c", "cc", "d"]
+Hence, the final output is ["a", "b", "bc", "c", "cc", "d"].
+
+Example 2:
+
+Input: s = "aaaa"
+
+Output: ["a","aa"]
+
+Explanation:
+
+Index	Segment After Adding	Seen Segments	Current Segment Seen Before?	New Segment	Updated Seen Segments
+0	"a"	[]	No	""	["a"]
+1	"a"	["a"]	Yes	"a"	["a"]
+2	"aa"	["a"]	No	""	["a", "aa"]
+3	"a"	["a", "aa"]	Yes	"a"	["a", "aa"]
+Hence, the final output is ["a", "aa"].
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s contains only lowercase English letters.;=;=https://leetcode.com/problems/partition-string/description/;=;=https://leetcode.com/problems/partition-string/solutions/6897458/easiest-code-with-example-walkthrough-by-8431/;;https://leetcode.com/problems/partition-string/solutions/6897443/easy-optimal-approach-beats-100-cjavapyt-fldr/;;https://leetcode.com/problems/partition-string/solutions/6898146/easy-contest-solution-clean-code-beginne-d8k6/;;https://leetcode.com/problems/partition-string/solutions/6934370/classical-trie-usage-demonstration-by-an-15bt/;;https://leetcode.com/problems/partition-string/solutions/6897604/one-pass-by-ajay_prabhu-nqfj/;;https://leetcode.com/problems/partition-string/solutions/6898957/brute-force-method-using-hashset-by-jakk-3ag6/;;https://leetcode.com/problems/partition-string/solutions/6898270/3597-partition-string-cpp-java-python3-s-bus4/;;https://leetcode.com/problems/partition-string/solutions/6900461/easy-approach-by-v4glhbqcjt-ibwh/;;https://leetcode.com/problems/partition-string/solutions/6902174/simple-one-pass-solution-beats-100-expla-mcxg/;;https://leetcode.com/problems/partition-string/solutions/6897520/hashset-easy-code-by-ankith_kumar-ah3g/;;https://leetcode.com/problems/partition-string/solutions/6902182/simple-java-on-solution-for-beginners-ea-cri7/;;https://leetcode.com/problems/partition-string/solutions/6897650/using-a-hashset-to-track-unique-characte-ffzy/;;https://leetcode.com/problems/partition-string/solutions/6898728/simple-solu-using-hashset-java-by-harshs-utmy/;;https://leetcode.com/problems/partition-string/solutions/6899854/simple-java-solution-by-mukesh1855-f7kr/;;https://leetcode.com/problems/partition-string/solutions/6899029/easy-solution-in-java-by-nidhibaratam200-ibz5/;;;=;==;=;=;PROBLEM_ID:1;=;=3598. Longest Common Prefix Between Adjacent Strings After Removals;=;=Medium;=;=public int[] longestCommonPrefix(String[] words);=;=You are given an array of strings words. For each index i in the range [0, words.length - 1], perform the following steps:
+
+Remove the element at index i from the words array.
+Compute the length of the longest common prefix among all adjacent pairs in the modified array.
+Return an array answer, where answer[i] is the length of the longest common prefix between the adjacent pairs after removing the element at index i. If no adjacent pairs remain or if none share a common prefix, then answer[i] should be 0.
+
+ 
+
+Example 1:
+
+Input: words = ["jump","run","run","jump","run"]
+
+Output: [3,0,0,3,3]
+
+Explanation:
+
+Removing index 0:
+words becomes ["run", "run", "jump", "run"]
+Longest adjacent pair is ["run", "run"] having a common prefix "run" (length 3)
+Removing index 1:
+words becomes ["jump", "run", "jump", "run"]
+No adjacent pairs share a common prefix (length 0)
+Removing index 2:
+words becomes ["jump", "run", "jump", "run"]
+No adjacent pairs share a common prefix (length 0)
+Removing index 3:
+words becomes ["jump", "run", "run", "run"]
+Longest adjacent pair is ["run", "run"] having a common prefix "run" (length 3)
+Removing index 4:
+words becomes ["jump", "run", "run", "jump"]
+Longest adjacent pair is ["run", "run"] having a common prefix "run" (length 3)
+Example 2:
+
+Input: words = ["dog","racer","car"]
+
+Output: [0,0,0]
+
+Explanation:
+
+Removing any index results in an answer of 0.
+ 
+
+Constraints:
+
+1 <= words.length <= 105
+1 <= words[i].length <= 104
+words[i] consists of lowercase English letters.
+The sum of words[i].length is smaller than or equal 105.;=;=https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/description/;=;=https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6897505/easy-optimal-approach-beats-100-cjavapyt-jf6g/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6902517/prefix-suffix-on-l-track-max-prefix-leng-3z26/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6897492/omn-just-keep-track-hash-map-by-sjain807-tirj/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6901664/efficient-prefix-hashing-binary-search-o-a9ht/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6897931/longest-common-prefix-after-deletion-on-ku3lg/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6908386/simple-java-solution-prefix-suffix-pre-c-csfq/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6897554/precomputation-dp-prefixsuffix-by-saketc-u8gk/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6898977/easy-approach-using-tree-map-and-helper-tzgb4/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6897445/java-solution-by-solved-fmnr/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6908826/java-pre-compute-lcp-27-ms-beats-925-by-74ymt/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6897476/optimised-prefix-comparison-after-remova-eu70/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6899377/java-interview-friendly-detailed-explana-1i95/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6898463/precomputing-prefixes-26ms-by-karanpaul-jopd/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6897434/count-lcp-among-the-adjacent-element-by-4ezqv/;;https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/solutions/6901533/java-solution-prefix-suffix-calculated-e-m09y/;;;=;==;=;=;PROBLEM_ID:2;=;=3599. Partition Array to Minimize XOR;=;=Medium;=;=public int minXor(int[] nums, int k);=;=You are given an integer array nums and an integer k.
+
+Your task is to partition nums into k non-empty subarrays. For each subarray, compute the bitwise XOR of all its elements.
+
+Return the minimum possible value of the maximum XOR among these k subarrays.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3], k = 2
+
+Output: 1
+
+Explanation:
+
+The optimal partition is [1] and [2, 3].
+
+XOR of the first subarray is 1.
+XOR of the second subarray is 2 XOR 3 = 1.
+The maximum XOR among the subarrays is 1, which is the minimum possible.
+
+Example 2:
+
+Input: nums = [2,3,3,2], k = 3
+
+Output: 2
+
+Explanation:
+
+The optimal partition is [2], [3, 3], and [2].
+
+XOR of the first subarray is 2.
+XOR of the second subarray is 3 XOR 3 = 0.
+XOR of the third subarray is 2.
+The maximum XOR among the subarrays is 2, which is the minimum possible.
+
+Example 3:
+
+Input: nums = [1,1,2,3,1], k = 2
+
+Output: 0
+
+Explanation:
+
+The optimal partition is [1, 1] and [2, 3, 1].
+
+XOR of the first subarray is 1 XOR 1 = 0.
+XOR of the second subarray is 2 XOR 3 XOR 1 = 0.
+The maximum XOR among the subarrays is 0, which is the minimum possible.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 250
+1 <= nums[i] <= 109
+1 <= k <= n;=;=https://leetcode.com/problems/partition-array-to-minimize-xor/description/;=;=https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6897480/minimize-max-xor-in-k-subarrays-dp-prefi-jt0w/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6899459/recursion-with-memorisation-step-by-step-ywug/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6899111/binary-search-from-tle-to-accepted-witho-nbe6/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6899531/brute-force-to-optimized-approaches-recu-mud0/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6897779/easy-solution-dp-java-by-anees03-9ui2/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6897776/intuitive-detailed-explanation-into-dp-b-l634/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6918535/solution-by-sumit-shukla-1bpm/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6897502/java-dp-on2-k-by-rishabhrawat192-14c6/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/7035706/java-memoization-easy-solution-by-_adars-z8w4/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6922419/java-solution-by-barakamon-z3hi/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6901562/java-solution-dp-solution-by-rohitprime0-6ck4/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6900179/java-space-complexity-on-by-vkochengin-35mg/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6906319/on-space-complexity-easy-explanation-100-0xrt/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6898980/easy-2d-dp-code-beginner-friendly-code-b-me3p/;;https://leetcode.com/problems/partition-array-to-minimize-xor/solutions/6897511/top-down-dynamic-programming-java-by-aba-ldml/;;;=;==;=;=;PROBLEM_ID:3;=;=3600. Maximize Spanning Tree Stability with Upgrades;=;=Hard;=;=public int maxStability(int n, int[][] edges, int k);=;=You are given an integer n, representing n nodes numbered from 0 to n - 1 and a list of edges, where edges[i] = [ui, vi, si, musti]:
+
+ui and vi indicates an undirected edge between nodes ui and vi.
+si is the strength of the edge.
+musti is an integer (0 or 1). If musti == 1, the edge must be included in the spanning tree. These edges cannot be upgraded.
+You are also given an integer k, the maximum number of upgrades you can perform. Each upgrade doubles the strength of an edge, and each eligible edge (with musti == 0) can be upgraded at most once.
+
+The stability of a spanning tree is defined as the minimum strength score among all edges included in it.
+
+Return the maximum possible stability of any valid spanning tree. If it is impossible to connect all nodes, return -1.
+
+Note: A spanning tree of a graph with n nodes is a subset of the edges that connects all nodes together (i.e. the graph is connected) without forming any cycles, and uses exactly n - 1 edges.
+
+ 
+
+Example 1:
+
+Input: n = 3, edges = [[0,1,2,1],[1,2,3,0]], k = 1
+
+Output: 2
+
+Explanation:
+
+Edge [0,1] with strength = 2 must be included in the spanning tree.
+Edge [1,2] is optional and can be upgraded from 3 to 6 using one upgrade.
+The resulting spanning tree includes these two edges with strengths 2 and 6.
+The minimum strength in the spanning tree is 2, which is the maximum possible stability.
+Example 2:
+
+Input: n = 3, edges = [[0,1,4,0],[1,2,3,0],[0,2,1,0]], k = 2
+
+Output: 6
+
+Explanation:
+
+Since all edges are optional and up to k = 2 upgrades are allowed.
+Upgrade edges [0,1] from 4 to 8 and [1,2] from 3 to 6.
+The resulting spanning tree includes these two edges with strengths 8 and 6.
+The minimum strength in the tree is 6, which is the maximum possible stability.
+Example 3:
+
+Input: n = 3, edges = [[0,1,1,1],[1,2,1,1],[2,0,1,1]], k = 0
+
+Output: -1
+
+Explanation:
+
+All edges are mandatory and form a cycle, which violates the spanning tree property of acyclicity. Thus, the answer is -1.
+ 
+
+Constraints:
+
+2 <= n <= 105
+1 <= edges.length <= 105
+edges[i] = [ui, vi, si, musti]
+0 <= ui, vi < n
+ui != vi
+1 <= si <= 105
+musti is either 0 or 1.
+0 <= k <= n
+There are no duplicate edges.;=;=https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/description/;=;=https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/6897609/understanding-guaranteed-step-by-step-bi-2g53/;;https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/6899403/dsu-on-sorted-edge-by-rite_sharma-ivao/;;https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/6899600/java-solution-with-explanation-by-tirth_-ov7k/;;https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/6897563/most-intutive-code-java-by-shastrii-3n5v/;;https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/6922432/java-solution-by-barakamon-fyl7/;;https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/7038047/dsu-greedy-by-_adarsh-urxv/;;https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/6945959/only-beats-6-by-reshugupta500-vmu2/;;https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/6901064/java-onlogn-solution-with-sort-union-fin-l1kf/;;https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/6900427/see-only-once-variant-of-kruskal-beats-1-aua5/;;https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/6903618/100-beat-union-find-greedy-easy-explanat-dv8h/;;;=;==;=;=;

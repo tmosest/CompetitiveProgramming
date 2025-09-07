@@ -1,0 +1,183 @@
+PROBLEM_ID:0;=;=3550. Smallest Index With Digit Sum Equal to Index;=;=Easy;=;=public int smallestIndex(int[] nums)         for (int i = 0; i < nums.length; i++)             if (i == sumDigits(nums[i]))                 return i;                            return -1;        public int sumDigits(int num)         int result = 0;        while (num > 0)            result += num % 10;            num /= 10;                return result;;=;=You are given an integer array nums.
+
+Return the smallest index i such that the sum of the digits of nums[i] is equal to i.
+
+If no such index exists, return -1.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,2]
+
+Output: 2
+
+Explanation:
+
+For nums[2] = 2, the sum of digits is 2, which is equal to index i = 2. Thus, the output is 2.
+Example 2:
+
+Input: nums = [1,10,11]
+
+Output: 1
+
+Explanation:
+
+For nums[1] = 10, the sum of digits is 1 + 0 = 1, which is equal to index i = 1.
+For nums[2] = 11, the sum of digits is 1 + 1 = 2, which is equal to index i = 2.
+Since index 1 is the smallest, the output is 1.
+Example 3:
+
+Input: nums = [1,2,3]
+
+Output: -1
+
+Explanation:
+
+Since no index satisfies the condition, the output is -1.
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+0 <= nums[i] <= 1000;=;=https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/description/;=;=https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/7103814/easy-java-solution-beats-100-by-rajdeep0-01p4/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/7044738/easy-java-by-sairangineeni-42vy/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/7027766/java-easy-solution-1ms-by-akashraj06-9ep2/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6756603/faster-lesser-cpython3javacpythoncexplai-fxa2/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6754972/easy-solution-on-logn-by-ankith_kumar-q50q/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6894595/easy-solution-in-java-python-and-c-by-ni-0qvb/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6775698/fastest-java-o1-space-100-efficient-by-a-o1mr/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6756315/beats-100easiest-solution-with-tc-on-by-7ge1r/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6755035/java-solution-by-harsh__005-03nq/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6755016/javaeasy-to-understand100-by-naveennisha-9jo5/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6824908/simple-solution-java-beats-100-smallest-ict4u/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6768346/easy-clean-solution-java-by-mustafogli-83zn/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/6787870/simple-java-solution-9999-by-darwadenidh-78iu/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/7090933/beats-9994-users-in-java-in-time-complex-pcql/;;https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/solutions/7084495/index-equals-digit-sum-or-does-it-by-rrr-yghr/;;;=;==;=;=;PROBLEM_ID:1;=;=3551. Minimum Swaps to Sort by Digit Sum;=;=Medium;=;=Pair    int dsum,val,idx;    public Pair(int d,int a,int b)            this.dsum = d;        this.val = a;        this.idx = b;    class      public int digitSum(int num)            int s = 0;        while(num != 0)                    s += num%10;            num = num/10;                return s;        public int minSwaps(int[] nums)         int n = nums.length;        List<Pair> list = new ArrayList<>();        for(int i=0;i<n;i++)                    list.add(new Pair(digitSum(nums[i]),nums[i],i));                Collections.sort(list,(a,b)->            if(a.dsum == b.dsum) return Integer.compare(a.val,b.val);            return Integer.compare(a.dsum,b.dsum);        );        int cnt = 0;        for(int i=0;i<n;i++);=;=You are given an array nums of distinct positive integers. You need to sort the array in increasing order based on the sum of the digits of each number. If two numbers have the same digit sum, the smaller number appears first in the sorted order.
+
+Return the minimum number of swaps required to rearrange nums into this sorted order.
+
+A swap is defined as exchanging the values at two distinct positions in the array.
+
+ 
+
+Example 1:
+
+Input: nums = [37,100]
+
+Output: 1
+
+Explanation:
+
+Compute the digit sum for each integer: [3 + 7 = 10, 1 + 0 + 0 = 1] ? [10, 1]
+Sort the integers based on digit sum: [100, 37]. Swap 37 with 100 to obtain the sorted order.
+Thus, the minimum number of swaps required to rearrange nums is 1.
+Example 2:
+
+Input: nums = [22,14,33,7]
+
+Output: 0
+
+Explanation:
+
+Compute the digit sum for each integer: [2 + 2 = 4, 1 + 4 = 5, 3 + 3 = 6, 7 = 7] ? [4, 5, 6, 7]
+Sort the integers based on digit sum: [22, 14, 33, 7]. The array is already sorted.
+Thus, the minimum number of swaps required to rearrange nums is 0.
+Example 3:
+
+Input: nums = [18,43,34,16]
+
+Output: 2
+
+Explanation:
+
+Compute the digit sum for each integer: [1 + 8 = 9, 4 + 3 = 7, 3 + 4 = 7, 1 + 6 = 7] ? [9, 7, 7, 7]
+Sort the integers based on digit sum: [16, 34, 43, 18]. Swap 18 with 16, and swap 43 with 34 to obtain the sorted order.
+Thus, the minimum number of swaps required to rearrange nums is 2.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109
+nums consists of distinct positive integers.;=;=https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/description/;=;=https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6755235/simplified-with-iteration-no-cycle-detec-qt6m/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6754984/sorting-hashmap-by-ankith_kumar-7b1t/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6949427/java-solution-by-dheerajpoojary-7a7r/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6755798/easy-to-understandbeat-100-with-line-by-io9xl/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6755032/java-solution-by-harsh__005-oqv8/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6755609/java-onlogn-sort-hashmap-intuitive-easy-ikmp9/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6755448/most-easy-solution-all-the-people-must-t-z5fv/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6756074/simple-intuition-list-sorting-comparator-jo1h/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/7016436/java-javascript-typescript-c-c-kotlin-go-ma9r/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6995016/no-cycle-detection-2-solutions-in-java-b-mabd/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6985025/clean-and-easy-java-sorting-solution-by-f8azo/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6780682/java_solution-by-rishank1234-qc33/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6754980/custom-sorting-by-purav123-7t0f/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6767976/java-solution-by-mihirshrestha4-yzpy/;;https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/6755930/track-cycles-logic-cppjavapy-by-nishant_-cpwh/;;;=;==;=;=;PROBLEM_ID:2;=;=3552. Grid Teleportation Traversal;=;=Medium;=;=public int minMoves(String[] matrix);=;=You are given a 2D character grid matrix of size m x n, represented as an array of strings, where matrix[i][j] represents the cell at the intersection of the ith row and jth column. Each cell is one of the following:
+
+'.' representing an empty cell.
+'#' representing an obstacle.
+An uppercase letter ('A'-'Z') representing a teleportation portal.
+You start at the top-left cell (0, 0), and your goal is to reach the bottom-right cell (m - 1, n - 1). You can move from the current cell to any adjacent cell (up, down, left, right) as long as the destination cell is within the grid bounds and is not an obstacle.
+
+If you step on a cell containing a portal letter and you haven't used that portal letter before, you may instantly teleport to any other cell in the grid with the same letter. This teleportation does not count as a move, but each portal letter can be used at most once during your journey.
+
+Return the minimum number of moves required to reach the bottom-right cell. If it is not possible to reach the destination, return -1.
+
+ 
+
+Example 1:
+
+Input: matrix = ["A..",".A.","..."]
+
+Output: 2
+
+Explanation:
+
+
+
+Before the first move, teleport from (0, 0) to (1, 1).
+In the first move, move from (1, 1) to (1, 2).
+In the second move, move from (1, 2) to (2, 2).
+Example 2:
+
+Input: matrix = [".#...",".#.#.",".#.#.","...#."]
+
+Output: 13
+
+Explanation:
+
+
+
+ 
+
+Constraints:
+
+1 <= m == matrix.length <= 103
+1 <= n == matrix[i].length <= 103
+matrix[i][j] is either '#', '.', or an uppercase English letter.
+matrix[0][0] is not an obstacle.;=;=https://leetcode.com/problems/grid-teleportation-traversal/description/;=;=https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755069/concise-and-clear-solution-in-java-bfs-i-5dfm/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755199/bfs-0-1-deque-c-java-python-by-_harshney-avlo/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755017/bfs-by-ankith_kumar-sw38/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755040/bfaopatimal-approacgh-by-coding_with_sta-64gt/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6771889/intuitive-bfs-solution-by-adhishramkumar-nre7/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755515/java-solution-bfs-by-1729karthik_d-dx1l/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755012/simple-bfs-with-teleportation-condition-hm85x/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6760301/simple-bfs-and-map-method-to-solve-the-p-ukhw/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755025/java-solution-by-harsh__005-jndr/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6758633/easy-50-lines-dijkstras-solution-java-by-payp/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755023/bfs-java-by-adddeepanshuverma-ezmw/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6756403/0-1-bfs-sol-java-by-sandesh90-9k9m/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6754999/priority-queue-java-by-22881a05h6-6ovg/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755639/java-hashmap-arraydeque-by-zhang_jiabo-dw52/;;https://leetcode.com/problems/grid-teleportation-traversal/solutions/6755011/0-1-bfs-by-harshwardhan063-5lfr/;;;=;==;=;=;PROBLEM_ID:3;=;=3553. Minimum Weighted Subgraph With the Required Paths II;=;=Hard;=;=public int[] minimumWeight(int[][] edges, int[][] queries);=;=You are given an undirected weighted tree with n nodes, numbered from 0 to n - 1. It is represented by a 2D integer array edges of length n - 1, where edges[i] = [ui, vi, wi] indicates that there is an edge between nodes ui and vi with weight wi.?
+
+Additionally, you are given a 2D integer array queries, where queries[j] = [src1j, src2j, destj].
+
+Return an array answer of length equal to queries.length, where answer[j] is the minimum total weight of a subtree such that it is possible to reach destj from both src1j and src2j using edges in this subtree.
+
+A subtree here is any connected subset of nodes and edges of the original tree forming a valid tree.
+
+ 
+
+Example 1:
+
+Input: edges = [[0,1,2],[1,2,3],[1,3,5],[1,4,4],[2,5,6]], queries = [[2,3,4],[0,2,5]]
+
+Output: [12,11]
+
+Explanation:
+
+The blue edges represent one of the subtrees that yield the optimal answer.
+
+
+
+answer[0]: The total weight of the selected subtree that ensures a path from src1 = 2 and src2 = 3 to dest = 4 is 3 + 5 + 4 = 12.
+
+answer[1]: The total weight of the selected subtree that ensures a path from src1 = 0 and src2 = 2 to dest = 5 is 2 + 3 + 6 = 11.
+
+Example 2:
+
+Input: edges = [[1,0,8],[0,2,7]], queries = [[0,1,2]]
+
+Output: [15]
+
+Explanation:
+
+
+
+answer[0]: The total weight of the selected subtree that ensures a path from src1 = 0 and src2 = 1 to dest = 2 is 8 + 7 = 15.
+ 
+
+Constraints:
+
+3 <= n <= 105
+edges.length == n - 1
+edges[i].length == 3
+0 <= ui, vi < n
+1 <= wi <= 104
+1 <= queries.length <= 105
+queries[j].length == 3
+0 <= src1j, src2j, destj < n
+src1j, src2j, and destj are pairwise distinct.
+The input is generated such that edges represents a valid tree.;=;=https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/description/;=;=https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/solutions/6770437/straight-forward-approach-beats-7172-sol-impt/;;https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/solutions/6754990/dfs-lca-by-22881a05h6-dfox/;;https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/solutions/6757273/clean-java-solution-binary-lifting-by-vg-be79/;;https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/solutions/6914748/binary-lifting-java-by-navneetkchy-ygcd/;;https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/solutions/6773432/minimum-weighted-subgraph-by-poorvawasni-j6jt/;;https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/solutions/6760620/java-solution-by-finding-common-ancestor-w9qz/;;https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/solutions/6761375/just-see-the-hints-of-the-question-and-d-k90e/;;https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/solutions/6757073/code-with-comments-tc-onlognqlogn-sc-onl-jrj7/;;https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/solutions/6758211/java-solution-using-dfs-by-dpasala-pwcu/;;;=;==;=;=;

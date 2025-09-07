@@ -29,6 +29,11 @@ public class LeetCodeGenerator {
   private LeetCodeGenerator() {
   }
 
+  public static class Params
+  {
+
+  }
+
   /**
    * Function to create new code for leet code problems.
    *

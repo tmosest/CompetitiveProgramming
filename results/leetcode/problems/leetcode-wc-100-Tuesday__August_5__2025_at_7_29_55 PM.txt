@@ -1,0 +1,100 @@
+PROBLEM_ID:0;=;=896. Monotonic Array;=;=Easy;=;=public�boolean�isMonotonic(int[]�nums)���������if�(nums.length�<�2)�������������return�true;����������������boolean�isIncreasing�=�false;��������boolean�isDecreasing�=�false;��������for�(int�i�=�1;�i�<�nums.length;�i++)�������������if�(nums[i]�>�nums[i�-�1])�����������������isIncreasing�=�true;;=;=An array is monotonic if it is either monotone increasing or monotone decreasing.
+
+An array nums is monotone increasing if for all i <= j, nums[i] <= nums[j]. An array nums is monotone decreasing if for all i <= j, nums[i] >= nums[j].
+
+Given an integer array nums, return true if the given array is monotonic, or false otherwise.
+
+�
+
+Example 1:
+
+Input: nums = [1,2,2,3]
+Output: true
+Example 2:
+
+Input: nums = [6,5,4,4]
+Output: true
+Example 3:
+
+Input: nums = [1,3,2]
+Output: false
+�
+
+Constraints:
+
+1 <= nums.length <= 105
+-105 <= nums[i] <= 105;=;=https://leetcode.com/problems/monotonic-array/description/;=;=https://leetcode.com/problems/monotonic-array/solutions/7049173/9940-easy-java-by-dodo_bird-19ll/;;https://leetcode.com/problems/monotonic-array/solutions/6097952/video-two-flags-python-javascript-java-c-hwgv/;;https://leetcode.com/problems/monotonic-array/solutions/4102869/9515-single-pass-check-by-vanamsen-beoy/;;https://leetcode.com/problems/monotonic-array/solutions/4102847/9744increasing-decreasing1-line-code-by-n8gl9/;;https://leetcode.com/problems/monotonic-array/solutions/7009488/easy-java-solution-for-beginners-monoton-k69y/;;https://leetcode.com/problems/monotonic-array/solutions/6998401/beats-9948-by-simonrajesh_1723-uwj5/;;https://leetcode.com/problems/monotonic-array/solutions/6966406/easy-java-solution-flawlessly-beats-50-b-72rf/;;https://leetcode.com/problems/monotonic-array/solutions/4103078/video-how-we-think-about-a-solution-two-xjwb4/;;https://leetcode.com/problems/monotonic-array/solutions/4102860/9324-one-pass-solution-commented-code-by-0uho/;;https://leetcode.com/problems/monotonic-array/solutions/5349496/video-two-flags-python-javascript-java-c-4bxf/;;https://leetcode.com/problems/monotonic-array/solutions/5253403/video-two-flags-python-javascript-java-c-s3q9/;;https://leetcode.com/problems/monotonic-array/solutions/4103805/9982-simple-solution-c-java-python-javas-ogij/;;https://leetcode.com/problems/monotonic-array/solutions/4102978/easy-to-understand-beginner-by-touseeb00-9f49/;;https://leetcode.com/problems/monotonic-array/solutions/6727691/fast-and-clear-with-iterations-by-dima85-0ptb/;;https://leetcode.com/problems/monotonic-array/solutions/6987842/beginner-friendly-java-solution-to-check-wno4/;;;=;==;=;=;PROBLEM_ID:1;=;=897. Increasing Order Search Tree;=;=Easy;=;=/**�*�Definition�for�a�binary�tree�node.�*�public��TreeNode��*�����int�val;�*�����TreeNode�left;�*�����TreeNode�right;�*�����TreeNode()��*�����TreeNode(int�val)��this.val�=�val;��*�����TreeNode(int�val,�TreeNode�left,�TreeNode�right)��*���������this.val�=�val;�*���������this.left�=�left;�*���������this.right�=�right;�*������*;=;=Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
+
+�
+
+Example 1:
+
+
+Input: root = [5,3,6,2,4,null,8,1,null,null,null,7,9]
+Output: [1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]
+Example 2:
+
+
+Input: root = [5,1,7]
+Output: [1,null,5,null,7]
+�
+
+Constraints:
+
+The number of nodes in the given tree will be in the range [1, 100].
+0 <= Node.val <= 1000;=;=https://leetcode.com/problems/increasing-order-search-tree/description/;=;=https://leetcode.com/problems/increasing-order-search-tree/solutions/7029890/most-optimized-java-dfs-beginner-freindl-83je/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/6968922/easy-solution-recursion-by-adhi_m_s-od4f/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/6649252/increasing-order-bst-beats-100-by-lokesh-14ec/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/6957105/solution-by-deepakumar-developer-jtzq/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/5640700/easiestfaster-lesser-cpython3javacpython-3bsd/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/1097619/simple-and-easy-to-understand-java-0-ms-jzimz/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/1956051/java-0ms-naive-optimized-simple-inorder-lvyku/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/1958092/0ms-beats-100-easy-explained-with-diagra-p5px/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/1955921/day-17-daily-leetcode-challenge-problem-4x24s/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/4988827/java-solution-very-simple-solution-beats-nnsh/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/7040728/beginner-friendly-by-saikeshavb-6879/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/3511732/solution-by-deleted_user-bdre/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/1465015/increasing-order-search-tree-java-recurs-sd4a/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/1723817/100-faster-inorder-traversal-recursion-s-0ahi/;;https://leetcode.com/problems/increasing-order-search-tree/solutions/6174236/easy-to-understand-java-100-beat-by-b_ka-q3y4/;;;=;==;=;=;PROBLEM_ID:2;=;=898. Bitwise ORs of Subarrays;=;=Medium;=;=public�int�subarrayBitwiseORs(int[]�A)���������Set<Integer>�ans�=�new�HashSet();��������Set<Integer>�cur�=�new�HashSet();��������cur.add(0);��������for�(int�x:�A)�������������Set<Integer>�cur2�=�new�HashSet();������������for�(int�y:�cur)����������������cur2.add(x�|�y);������������cur2.add(x);������������cur�=�cur2;������������ans.addAll(cur);;=;=Given an integer array arr, return the number of distinct bitwise ORs of all the non-empty subarrays of arr.
+
+The bitwise OR of a subarray is the bitwise OR of each integer in the subarray. The bitwise OR of a subarray of one integer is that integer.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+�
+
+Example 1:
+
+Input: arr = [0]
+Output: 1
+Explanation: There is only one possible result: 0.
+Example 2:
+
+Input: arr = [1,1,2]
+Output: 3
+Explanation: The possible subarrays are [1], [1], [2], [1, 1], [1, 2], [1, 1, 2].
+These yield the results 1, 1, 2, 1, 3, 3.
+There are 3 unique values, so the answer is 3.
+Example 3:
+
+Input: arr = [1,2,4]
+Output: 6
+Explanation: The possible results are 1, 2, 3, 4, 6, and 7.
+�
+
+Constraints:
+
+1 <= arr.length <= 5 * 104
+0 <= arr[i] <= 109;=;=https://leetcode.com/problems/bitwise-ors-of-subarrays/description/;=;=https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7026280/bitwise-ors-of-subarrays-pythoncjava-by-mu7uj/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7026282/100-runtime-beat-optimal-bitwise-ors-of-h1krh/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7027231/beats-super-easy-beginners-java-c-c-pyth-fg80/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7026676/easy-solution-eng-hing-explained-beat-99-6cvu/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7027429/fast-and-clear-with-iterations-in-tables-c4au/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7026385/set-propagation-approach-example-walkthr-a56d/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7029116/easy-code-must-try-code-in-java-by-notad-4fs6/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7027027/leetcode-898-bitwise-ors-of-subarrays-87-qsfo/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7028727/c-100-java-996-c-968-solution-with-in-pl-i01e/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7026739/java-solution-for-bitwise-ors-of-subarra-w89u/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7027170/most-intuitive-beginner-friendly-solutio-8035/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7026428/bitwise-ors-of-subarrays-on2-time-on-spa-23fv/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7027133/new-and-better-approach-to-solve-the-pro-awep/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7027467/java-easy-solution-by-heyysankalp-y90r/;;https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7028674/brute-and-optimized-approaches-by-meetmo-i5mn/;;;=;==;=;=;PROBLEM_ID:3;=;=899. Orderly Queue;=;=Hard;=;=public�String�orderlyQueue(String�s,�int�k);=;=You are given a string s and an integer k. You can choose one of the first k letters of s and append it at the end of the string.
+
+Return the lexicographically smallest string you could have after applying the mentioned step any number of moves.
+
+�
+
+Example 1:
+
+Input: s = "cba", k = 1
+Output: "acb"
+Explanation: 
+In the first move, we move the 1st character 'c' to the end, obtaining the string "bac".
+In the second move, we move the 1st character 'b' to the end, obtaining the final result "acb".
+Example 2:
+
+Input: s = "baaca", k = 3
+Output: "aaabc"
+Explanation: 
+In the first move, we move the 1st character 'b' to the end, obtaining the string "aacab".
+In the second move, we move the 3rd character 'c' to the end, obtaining the final result "aaabc".
+�
+
+Constraints:
+
+1 <= k <= s.length <= 1000
+s consist of lowercase English letters.;=;=https://leetcode.com/problems/orderly-queue/description/;=;=https://leetcode.com/problems/orderly-queue/solutions/6964732/2ms-solution-100-beat-zero-runtime-hack-2e6gi/;;https://leetcode.com/problems/orderly-queue/solutions/2782998/leetcode-the-hard-way-explained-line-by-zi005/;;https://leetcode.com/problems/orderly-queue/solutions/2782816/java-faster-simple-and-easy-by-itsmesohi-m411/;;https://leetcode.com/problems/orderly-queue/solutions/541497/real-on-solution-for-java-by-hihihi_hihi-u6yf/;;https://leetcode.com/problems/orderly-queue/solutions/1108744/bubble-sort-by-himanshuchhikara-5rsf/;;https://leetcode.com/problems/orderly-queue/solutions/2784761/javaeasy-solution-fast-explained-code-by-nkty/;;https://leetcode.com/problems/orderly-queue/solutions/6124649/java-easy-100-solution-sorting-by-ytchou-uesq/;;https://leetcode.com/problems/orderly-queue/solutions/2802903/java-solution-by-janhvi__28-3th1/;;https://leetcode.com/problems/orderly-queue/solutions/2783600/java-easy-96-string-by-samir_alam-uj4e/;;https://leetcode.com/problems/orderly-queue/solutions/2784929/smallest-and-easiest-java-soln-with-comm-bcuu/;;https://leetcode.com/problems/orderly-queue/solutions/2783767/java-easy-to-understand-sort-or-rotate-b-t5uo/;;https://leetcode.com/problems/orderly-queue/solutions/2224276/orderly-queue-string-builder-trick-onlog-o2wn/;;https://leetcode.com/problems/orderly-queue/solutions/2786295/java-clean-and-simple-by-sourin_bruh-9um2/;;https://leetcode.com/problems/orderly-queue/solutions/2782799/java-solution-faster-than-100-of-java-su-c6fb/;;https://leetcode.com/problems/orderly-queue/solutions/4695279/java-clean-solution-by-shree_govind_jee-m0rw/;;;=;==;=;=;

@@ -1,0 +1,219 @@
+PROBLEM_ID:0;=;=3606. Coupon Code Validator;=;=Easy;=;=public List<String> validateCoupons(String[] code, String[] businessLine, boolean[] isActive);=;=You are given three arrays of length n that describe the properties of n coupons: code, businessLine, and isActive. The ith coupon has:
+
+code[i]: a string representing the coupon identifier.
+businessLine[i]: a string denoting the business category of the coupon.
+isActive[i]: a boolean indicating whether the coupon is currently active.
+A coupon is considered valid if all of the following conditions hold:
+
+code[i] is non-empty and consists only of alphanumeric characters (a-z, A-Z, 0-9) and underscores (_).
+businessLine[i] is one of the following four categories: "electronics", "grocery", "pharmacy", "restaurant".
+isActive[i] is true.
+Return an array of the codes of all valid coupons, sorted first by their businessLine in the order: "electronics", "grocery", "pharmacy", "restaurant", and then by code in lexicographical (ascending) order within each category.
+
+ 
+
+Example 1:
+
+Input: code = ["SAVE20","","PHARMA5","SAVE@20"], businessLine = ["restaurant","grocery","pharmacy","restaurant"], isActive = [true,true,true,true]
+
+Output: ["PHARMA5","SAVE20"]
+
+Explanation:
+
+First coupon is valid.
+Second coupon has empty code (invalid).
+Third coupon is valid.
+Fourth coupon has special character @ (invalid).
+Example 2:
+
+Input: code = ["GROCERY15","ELECTRONICS_50","DISCOUNT10"], businessLine = ["grocery","electronics","invalid"], isActive = [false,true,true]
+
+Output: ["ELECTRONICS_50"]
+
+Explanation:
+
+First coupon is inactive (invalid).
+Second coupon is valid.
+Third coupon has invalid business line (invalid).
+ 
+
+Constraints:
+
+n == code.length == businessLine.length == isActive.length
+1 <= n <= 100
+0 <= code[i].length, businessLine[i].length <= 100
+code[i] and businessLine[i] consist of printable ASCII characters.
+isActive[i] is either true or false.;=;=https://leetcode.com/problems/coupon-code-validator/description/;=;=https://leetcode.com/problems/coupon-code-validator/solutions/6926906/validate-and-sort-coupons-clean-code-beg-x1h5/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925907/super-easy-priority-queue-java-by-rishab-dgtl/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925761/beats-10000-simple-approach-step-by-step-kkup/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925738/best-approach-and-explaination-hash-map-va2ng/;;https://leetcode.com/problems/coupon-code-validator/solutions/6948802/easy-solution-by-qddl3tbjhy-t53d/;;https://leetcode.com/problems/coupon-code-validator/solutions/6938820/sorting-easy-implementation-by-ankith_ku-vlul/;;https://leetcode.com/problems/coupon-code-validator/solutions/6927496/valid-coupons-by-business-category-with-g5hi5/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925749/using-basic-lists-sets-and-string-manipu-wlpj/;;https://leetcode.com/problems/coupon-code-validator/solutions/6944133/simple-and-linear-with-java-streams-and-mwfzj/;;https://leetcode.com/problems/coupon-code-validator/solutions/6926037/map-solution-by-saketcodescribe-gdkm/;;https://leetcode.com/problems/coupon-code-validator/solutions/6937243/java-solution-by-dharmendersheshma-7zlm/;;https://leetcode.com/problems/coupon-code-validator/solutions/6936597/clean-code-by-smileysuneet-gj3m/;;https://leetcode.com/problems/coupon-code-validator/solutions/7034011/thought-is-was-small-easy-java-by-adayal-i258/;;https://leetcode.com/problems/coupon-code-validator/solutions/6926450/java-implementation-coding-interviews-co-uzgp/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925757/easy-and-optimal-java-solution-by-anil34-59op/;;;=;==;=;=;PROBLEM_ID:1;=;=3607. Power Grid Maintenance;=;=Medium;=;=public int[] processQueries(int c, int[][] connections, int[][] queries);=;=You are given an integer c representing c power stations, each with a unique identifier id from 1 to c (1-based indexing).
+
+These stations are interconnected via n bidirectional cables, represented by a 2D array connections, where each element connections[i] = [ui, vi] indicates a connection between station ui and station vi. Stations that are directly or indirectly connected form a power grid.
+
+Initially, all stations are online (operational).
+
+You are also given a 2D array queries, where each query is one of the following two types:
+
+[1, x]: A maintenance check is requested for station x. If station x is online, it resolves the check by itself. If station x is offline, the check is resolved by the operational station with the smallest id in the same power grid as x. If no operational station exists in that grid, return -1.
+
+[2, x]: Station x goes offline (i.e., it becomes non-operational).
+
+Return an array of integers representing the results of each query of type [1, x] in the order they appear.
+
+Note: The power grid preserves its structure; an offline (non-operational) node remains part of its grid and taking it offline does not alter connectivity.
+
+ 
+
+Example 1:
+
+Input: c = 5, connections = [[1,2],[2,3],[3,4],[4,5]], queries = [[1,3],[2,1],[1,1],[2,2],[1,2]]
+
+Output: [3,2,3]
+
+Explanation:
+
+
+
+Initially, all stations {1, 2, 3, 4, 5} are online and form a single power grid.
+Query [1,3]: Station 3 is online, so the maintenance check is resolved by station 3.
+Query [2,1]: Station 1 goes offline. The remaining online stations are {2, 3, 4, 5}.
+Query [1,1]: Station 1 is offline, so the check is resolved by the operational station with the smallest id among {2, 3, 4, 5}, which is station 2.
+Query [2,2]: Station 2 goes offline. The remaining online stations are {3, 4, 5}.
+Query [1,2]: Station 2 is offline, so the check is resolved by the operational station with the smallest id among {3, 4, 5}, which is station 3.
+Example 2:
+
+Input: c = 3, connections = [], queries = [[1,1],[2,1],[1,1]]
+
+Output: [1,-1]
+
+Explanation:
+
+There are no connections, so each station is its own isolated grid.
+Query [1,1]: Station 1 is online in its isolated grid, so the maintenance check is resolved by station 1.
+Query [2,1]: Station 1 goes offline.
+Query [1,1]: Station 1 is offline and there are no other stations in its grid, so the result is -1.
+ 
+
+Constraints:
+
+1 <= c <= 105
+0 <= n == connections.length <= min(105, c * (c - 1) / 2)
+connections[i].length == 2
+1 <= ui, vi <= c
+ui != vi
+1 <= queries.length <= 2 * 105
+queries[i].length == 2
+queries[i][0] is either 1 or 2.
+1 <= queries[i][1] <= c;=;=https://leetcode.com/problems/power-grid-maintenance/description/;=;=https://leetcode.com/problems/power-grid-maintenance/solutions/6925713/dsu-and-heaps-with-in-depth-explanation-v4pxi/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6925758/dsu-best-optimal-approach-java-c-python-mcrfr/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6928296/dsu-priorityqueue-by-panchalyash-j36f/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6931987/java-solution-by-charlie-tej-123-f4t3/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6927177/dont-know-dsu-so-dfs-by-utalmighty-7to5/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6925768/power-grid-maintenance-with-bfs-and-tree-hb64/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6927735/fixing-power-grids-with-dsu-treeset-clea-mp8w/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6925746/union-find-based-approach-by-sanjeev_a-p8or/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6926029/dsu-treeset-solution-by-saketcodescribe-mkvg/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6930749/weekly-contest-457-ques-2-dsumin-heaps-b-c4n0/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6925833/java-solution-using-heap-and-dsu-by-akas-brhy/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6925711/disjoint-set-simple-easy-solution-by-sha-0uoa/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6957867/java-solution-dsu-solution-map-minheap-b-xlvn/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6931267/easy-java-solution-by-tarun_the_eagle-j8e5/;;https://leetcode.com/problems/power-grid-maintenance/solutions/6929179/java-27ms9982-with-union-find-connection-7nux/;;;=;==;=;=;PROBLEM_ID:2;=;=3608. Minimum Time for K Connected Components;=;=Medium;=;=public int minTime(int n, int[][] edges, int k);=;=You are given an integer n and an undirected graph with n nodes labeled from 0 to n - 1. This is represented by a 2D array edges, where edges[i] = [ui, vi, timei] indicates an undirected edge between nodes ui and vi that can be removed at timei.
+
+You are also given an integer k.
+
+Initially, the graph may be connected or disconnected. Your task is to find the minimum time t such that after removing all edges with time <= t, the graph contains at least k connected components.
+
+Return the minimum time t.
+
+A connected component is a subgraph of a graph in which there exists a path between any two vertices, and no vertex of the subgraph shares an edge with a vertex outside of the subgraph.
+
+ 
+
+Example 1:
+
+Input: n = 2, edges = [[0,1,3]], k = 2
+
+Output: 3
+
+Explanation:
+
+
+
+Initially, there is one connected component {0, 1}.
+At time = 1 or 2, the graph remains unchanged.
+At time = 3, edge [0, 1] is removed, resulting in k = 2 connected components {0}, {1}. Thus, the answer is 3.
+Example 2:
+
+Input: n = 3, edges = [[0,1,2],[1,2,4]], k = 3
+
+Output: 4
+
+Explanation:
+
+
+
+Initially, there is one connected component {0, 1, 2}.
+At time = 2, edge [0, 1] is removed, resulting in two connected components {0}, {1, 2}.
+At time = 4, edge [1, 2] is removed, resulting in k = 3 connected components {0}, {1}, {2}. Thus, the answer is 4.
+Example 3:
+
+Input: n = 3, edges = [[0,2,5]], k = 2
+
+Output: 0
+
+Explanation:
+
+
+
+Since there are already k = 2 disconnected components {1}, {0, 2}, no edge removal is needed. Thus, the answer is 0.
+ 
+
+Constraints:
+
+1 <= n <= 105
+0 <= edges.length <= 105
+edges[i] = [ui, vi, timei]
+0 <= ui, vi < n
+ui != vi
+1 <= timei <= 109
+1 <= k <= n
+There are no duplicate edges.;=;=https://leetcode.com/problems/minimum-time-for-k-connected-components/description/;=;=https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6925748/javacpython-reverse-by-lee215-l268/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6925775/dsu-java-disjoint-set-union-by-adddeepan-gna7/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6925762/java-dsu-binary-search-by-vishal_9782-xvh4/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/7033307/dsu-kruskal-beats-5590-java-by-flash-qixz/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6934968/java-binary-search-dsu-by-ikshitmadan71-qu7e/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6934967/java-binary-search-dsu-by-ikshitmadan71-ofey/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6972105/java-minimum-time-for-k-connected-compon-2fss/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6931690/easy-java-solution-using-union-find-and-ntcm0/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6950236/dsubinary-search-simple-intution-java-by-ur1q/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6930581/java-solution-disjoint-set-union-by-rohi-dzku/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6930580/java-solution-disjoint-set-union-by-rohi-d69v/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6925692/binary-search-by-0x4c0de-kvgb/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6927985/dsu-binary-search-on-ans-beats-97-41ms-j-ooc8/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6926744/disconnected-to-connected-approach-java-cr6mm/;;https://leetcode.com/problems/minimum-time-for-k-connected-components/solutions/6926019/dsu-binary-search-solution-by-saketcodes-bqjv/;;;=;==;=;=;PROBLEM_ID:3;=;=3609. Minimum Moves to Reach Target in Grid;=;=Hard;=;=public int minMoves(int sx, int sy, int tx, int ty);=;=You are given four integers sx, sy, tx, and ty, representing two points (sx, sy) and (tx, ty) on an infinitely large 2D grid.
+
+You start at (sx, sy).
+
+At any point (x, y), define m = max(x, y). You can either:
+
+Move to (x + m, y), or
+Move to (x, y + m).
+Return the minimum number of moves required to reach (tx, ty). If it is impossible to reach the target, return -1.
+
+ 
+
+Example 1:
+
+Input: sx = 1, sy = 2, tx = 5, ty = 4
+
+Output: 2
+
+Explanation:
+
+The optimal path is:
+
+Move 1: max(1, 2) = 2. Increase the y-coordinate by 2, moving from (1, 2) to (1, 2 + 2) = (1, 4).
+Move 2: max(1, 4) = 4. Increase the x-coordinate by 4, moving from (1, 4) to (1 + 4, 4) = (5, 4).
+Thus, the minimum number of moves to reach (5, 4) is 2.
+
+Example 2:
+
+Input: sx = 0, sy = 1, tx = 2, ty = 3
+
+Output: 3
+
+Explanation:
+
+The optimal path is:
+
+Move 1: max(0, 1) = 1. Increase the x-coordinate by 1, moving from (0, 1) to (0 + 1, 1) = (1, 1).
+Move 2: max(1, 1) = 1. Increase the x-coordinate by 1, moving from (1, 1) to (1 + 1, 1) = (2, 1).
+Move 3: max(2, 1) = 2. Increase the y-coordinate by 2, moving from (2, 1) to (2, 1 + 2) = (2, 3).
+Thus, the minimum number of moves to reach (2, 3) is 3.
+
+Example 3:
+
+Input: sx = 1, sy = 1, tx = 2, ty = 2
+
+Output: -1
+
+Explanation:
+
+It is impossible to reach (2, 2) from (1, 1) using the allowed moves. Thus, the answer is -1.
+ 
+
+Constraints:
+
+0 <= sx <= tx <= 109
+0 <= sy <= ty <= 109;=;=https://leetcode.com/problems/minimum-moves-to-reach-target-in-grid/description/;=;=https://leetcode.com/problems/minimum-moves-to-reach-target-in-grid/solutions/6925712/javacpython-reverse-by-lee215-3bu2/;;https://leetcode.com/problems/minimum-moves-to-reach-target-in-grid/solutions/6926157/beats-100-java-by-22881a05h6-fm23/;;https://leetcode.com/problems/minimum-moves-to-reach-target-in-grid/solutions/6928852/easy-and-simple-approach-beats-100-by-lo-wp8v/;;;=;==;=;=;

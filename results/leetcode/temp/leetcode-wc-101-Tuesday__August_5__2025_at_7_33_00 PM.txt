@@ -1,0 +1,136 @@
+PROBLEM_ID:0;=;=900. RLE Iterator;=;=Medium;=;=RLEIterator     public RLEIterator(int[] encoding)                     public int next(int n)             /** * Your RLEIterator object will be instantiated and called as such: * RLEIterator obj = new RLEIterator(encoding);;=;=We can use run-length encoding (i.e., RLE) to encode a sequence of integers. In a run-length encoded array of even length encoding (0-indexed), for all even i, encoding[i] tells us the number of times that the non-negative integer value encoding[i + 1] is repeated in the sequence.
+
+For example, the sequence arr = [8,8,8,5,5] can be encoded to be encoding = [3,8,2,5]. encoding = [3,8,0,9,2,5] and encoding = [2,8,1,8,2,5] are also valid RLE of arr.
+Given a run-length encoded array, design an iterator that iterates through it.
+
+Implement the RLEIterator class:
+
+RLEIterator(int[] encoded) Initializes the object with the encoded array encoded.
+int next(int n) Exhausts the next n elements and returns the last element exhausted in this way. If there is no element left to exhaust, return -1 instead.
+ 
+
+Example 1:
+
+Input
+["RLEIterator", "next", "next", "next", "next"]
+[[[3, 8, 0, 9, 2, 5]], [2], [1], [1], [2]]
+Output
+[null, 8, 8, 5, -1]
+
+Explanation
+RLEIterator rLEIterator = new RLEIterator([3, 8, 0, 9, 2, 5]); // This maps to the sequence [8,8,8,5,5].
+rLEIterator.next(2); // exhausts 2 terms of the sequence, returning 8. The remaining sequence is now [8, 5, 5].
+rLEIterator.next(1); // exhausts 1 term of the sequence, returning 8. The remaining sequence is now [5, 5].
+rLEIterator.next(1); // exhausts 1 term of the sequence, returning 5. The remaining sequence is now [5].
+rLEIterator.next(2); // exhausts 2 terms, returning -1. This is because the first term exhausted was 5,
+but the second term did not exist. Since the last term exhausted does not exist, we return -1.
+ 
+
+Constraints:
+
+2 <= encoding.length <= 1000
+encoding.length is even.
+0 <= encoding[i] <= 109
+1 <= n <= 109
+At most 1000 calls will be made to next.;=;=https://leetcode.com/problems/rle-iterator/description/;=;=https://leetcode.com/problems/rle-iterator/solutions/4470485/short-concise-java-solution-beats-97-by-xwxl9/;;https://leetcode.com/problems/rle-iterator/solutions/4133271/easy-java-solution-tc-on-sc-o1-by-amaaty-bqf7/;;https://leetcode.com/problems/rle-iterator/solutions/1418913/java-faster-than-100-by-20136916-9ieo/;;https://leetcode.com/problems/rle-iterator/solutions/1139032/java-on-time-o1-space-recursive-approach-ptlb/;;https://leetcode.com/problems/rle-iterator/solutions/3513912/solution-by-deleted_user-1yzc/;;https://leetcode.com/problems/rle-iterator/solutions/1654358/java-simple-stack-solution-by-saiharini-i45r/;;https://leetcode.com/problems/rle-iterator/solutions/4267721/java-5ms-simple-solution-by-ayush172-hrjw/;;https://leetcode.com/problems/rle-iterator/solutions/3661624/simple-java-solution-with-linkedhashmap-qvu0k/;;https://leetcode.com/problems/rle-iterator/solutions/6934989/easy-iterator-solution-by-piyusha_7-rr9f/;;https://leetcode.com/problems/rle-iterator/solutions/1611756/easy-java-treemap-solution-by-silver__bu-3pcl/;;https://leetcode.com/problems/rle-iterator/solutions/1960717/java-on-straight-forward-by-ninad07-ynrd/;;https://leetcode.com/problems/rle-iterator/solutions/1318712/java-treemap-solution-by-ayyild1z-qg20/;;https://leetcode.com/problems/rle-iterator/solutions/1253300/java-modular-solution-5-ms-faster-than-9-7pm1/;;https://leetcode.com/problems/rle-iterator/solutions/1515134/easy-understanding-solution-by-pvs_prane-6uly/;;https://leetcode.com/problems/rle-iterator/solutions/1387478/java-easy-understanding-deque-solution-b-1ypi/;;;=;==;=;=;PROBLEM_ID:1;=;=901. Online Stock Span;=;=Medium;=;=StockSpanner     public StockSpanner()                     public int next(int price)             /** * Your StockSpanner object will be instantiated and called as such: * StockSpanner obj = new StockSpanner();;=;=Design an algorithm that collects daily price quotes for some stock and returns the span of that stock's price for the current day.
+
+The span of the stock's price in one day is the maximum number of consecutive days (starting from that day and going backward) for which the stock price was less than or equal to the price of that day.
+
+For example, if the prices of the stock in the last four days is [7,2,1,2] and the price of the stock today is 2, then the span of today is 4 because starting from today, the price of the stock was less than or equal 2 for 4 consecutive days.
+Also, if the prices of the stock in the last four days is [7,34,1,2] and the price of the stock today is 8, then the span of today is 3 because starting from today, the price of the stock was less than or equal 8 for 3 consecutive days.
+Implement the StockSpanner class:
+
+StockSpanner() Initializes the object of the class.
+int next(int price) Returns the span of the stock's price given that today's price is price.
+ 
+
+Example 1:
+
+Input
+["StockSpanner", "next", "next", "next", "next", "next", "next", "next"]
+[[], [100], [80], [60], [70], [60], [75], [85]]
+Output
+[null, 1, 1, 1, 2, 1, 4, 6]
+
+Explanation
+StockSpanner stockSpanner = new StockSpanner();
+stockSpanner.next(100); // return 1
+stockSpanner.next(80);  // return 1
+stockSpanner.next(60);  // return 1
+stockSpanner.next(70);  // return 2
+stockSpanner.next(60);  // return 1
+stockSpanner.next(75);  // return 4, because the last 4 prices (including today's price of 75) were less than or equal to today's price.
+stockSpanner.next(85);  // return 6
+ 
+
+Constraints:
+
+1 <= price <= 105
+At most 104 calls will be made to next.;=;=https://leetcode.com/problems/online-stock-span/description/;=;=https://leetcode.com/problems/online-stock-span/solutions/7038918/beats-100-monotonic-stack-java-python-ja-yoxl/;;https://leetcode.com/problems/online-stock-span/solutions/7048041/naiveextra-stack-approach-optimalstack-w-o0cd/;;https://leetcode.com/problems/online-stock-span/solutions/6866465/100-bets-with-o1-time-complexity-for-eac-hwo5/;;https://leetcode.com/problems/online-stock-span/solutions/6390995/beats-100-o1-amortized-optimal-approach-hj1qw/;;https://leetcode.com/problems/online-stock-span/solutions/6975245/stack-based-stock-span-o1-amortized-clea-whu8/;;https://leetcode.com/problems/online-stock-span/solutions/3391419/cjavapythonjavascript-monotonic-stack-qu-d8u9/;;https://leetcode.com/problems/online-stock-span/solutions/6975086/beginner-friendly-brute-force-stock-span-v7hb/;;https://leetcode.com/problems/online-stock-span/solutions/640648/clean-java-stack-solution-with-explanati-g3xp/;;https://leetcode.com/problems/online-stock-span/solutions/6925479/easiest-solution-in-java-by-ronit_kanoje-hpun/;;https://leetcode.com/problems/online-stock-span/solutions/6044048/easy-beats-proof-java-beginner-friendly-jmuz1/;;https://leetcode.com/problems/online-stock-span/solutions/6883412/why-we-store-price-span-in-stack-java-so-ylw3/;;https://leetcode.com/problems/online-stock-span/solutions/6882036/optimal-monotonic-stack-solution-in-cjav-t16r/;;https://leetcode.com/problems/online-stock-span/solutions/6554291/efficient-stock-span-calculation-using-m-3d7d/;;https://leetcode.com/problems/online-stock-span/solutions/6719732/most-intuitive-java-stack-solution-expla-126n/;;https://leetcode.com/problems/online-stock-span/solutions/2795197/java-stack-easy-understanding-by-amandub-wac0/;;;=;==;=;=;PROBLEM_ID:2;=;=902. Numbers At Most N Given Digit Set;=;=Hard;=;=public int atMostNGivenDigitSet(String[] digits, int n);=;=Given an array of digits which is sorted in non-decreasing order. You can write numbers using each digits[i] as many times as we want. For example, if digits = ['1','3','5'], we may write numbers such as '13', '551', and '1351315'.
+
+Return the number of positive integers that can be generated that are less than or equal to a given integer n.
+
+ 
+
+Example 1:
+
+Input: digits = ["1","3","5","7"], n = 100
+Output: 20
+Explanation: 
+The 20 numbers that can be written are:
+1, 3, 5, 7, 11, 13, 15, 17, 31, 33, 35, 37, 51, 53, 55, 57, 71, 73, 75, 77.
+Example 2:
+
+Input: digits = ["1","4","9"], n = 1000000000
+Output: 29523
+Explanation: 
+We can write 3 one digit numbers, 9 two digit numbers, 27 three digit numbers,
+81 four digit numbers, 243 five digit numbers, 729 six digit numbers,
+2187 seven digit numbers, 6561 eight digit numbers, and 19683 nine digit numbers.
+In total, this is 29523 integers that can be written using the digits array.
+Example 3:
+
+Input: digits = ["7"], n = 8
+Output: 1
+ 
+
+Constraints:
+
+1 <= digits.length <= 9
+digits[i].length == 1
+digits[i] is a digit from '1' to '9'.
+All the values in digits are unique.
+digits is sorted in non-decreasing order.
+1 <= n <= 109;=;=https://leetcode.com/problems/numbers-at-most-n-given-digit-set/description/;=;=https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/1633656/java-code-explanation-by-image-dp-counti-ba8r/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/6705689/easy-java-solution-using-digit-dp-by-vir-dzl0/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/3008473/java-1ms-without-recursion-iterative-by-by77l/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/875457/java-beats-both-time-and-space-100-by-an-26n0/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/1633898/java-100-faster-math-based-solution-by-a-4izd/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/1633878/java-easy-solution-dp-by-aniket7419-5wv4/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/3602914/java-easy-to-understanddigit-dp-by-manmo-xzli/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/2479037/java-beginner-friendly-detailed-with-dry-w4ff/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/3513914/solution-by-deleted_user-m693/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/1633815/java-100-faster-iterative-explained-easy-p2tv/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/6911226/java-digit-dp-by-anjan_diyora-ml8y/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/6668027/digit-dp-beats-100-by-kumarnis89-6w45/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/6661639/top-down-bottom-up-versions-of-code-with-15g0/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/6174312/beats-100-easy-to-understand-using-recur-57cx/;;https://leetcode.com/problems/numbers-at-most-n-given-digit-set/solutions/5913182/java-by-hassam_472-hxlt/;;;=;==;=;=;PROBLEM_ID:3;=;=903. Valid Permutations for DI Sequence;=;=Hard;=;=public int numPermsDISequence(String s);=;=You are given a string s of length n where s[i] is either:
+
+'D' means decreasing, or
+'I' means increasing.
+A permutation perm of n + 1 integers of all the integers in the range [0, n] is called a valid permutation if for all valid i:
+
+If s[i] == 'D', then perm[i] > perm[i + 1], and
+If s[i] == 'I', then perm[i] < perm[i + 1].
+Return the number of valid permutations perm. Since the answer may be large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: s = "DID"
+Output: 5
+Explanation: The 5 valid permutations of (0, 1, 2, 3) are:
+(1, 0, 3, 2)
+(2, 0, 3, 1)
+(2, 1, 3, 0)
+(3, 0, 2, 1)
+(3, 1, 2, 0)
+Example 2:
+
+Input: s = "D"
+Output: 1
+ 
+
+Constraints:
+
+n == s.length
+1 <= n <= 200
+s[i] is either 'I' or 'D'.;=;=https://leetcode.com/problems/valid-permutations-for-di-sequence/description/;=;=https://leetcode.com/problems/valid-permutations-for-di-sequence/solutions/7014237/java-solution-by-monish1153-abcx/;;https://leetcode.com/problems/valid-permutations-for-di-sequence/solutions/5085134/easiest-approach-recursive-memoization-j-8ylo/;;https://leetcode.com/problems/valid-permutations-for-di-sequence/solutions/7005867/valid-permutations-of-di-sequence-by-pra-pt8i/;;https://leetcode.com/problems/valid-permutations-for-di-sequence/solutions/4208416/java-easy-memoization-after-recursion-dp-hrn7/;;https://leetcode.com/problems/valid-permutations-for-di-sequence/solutions/4085333/easiest-solution-by-kunal7216-lnpl/;;https://leetcode.com/problems/valid-permutations-for-di-sequence/solutions/3513915/solution-by-deleted_user-btew/;;https://leetcode.com/problems/valid-permutations-for-di-sequence/solutions/2450477/java-time-on2-space-on-3ms2ms-dpn1-by-vk-7ss1/;;https://leetcode.com/problems/valid-permutations-for-di-sequence/solutions/2349395/java-solution-by-user6539fn-mioy/;;;=;==;=;=;

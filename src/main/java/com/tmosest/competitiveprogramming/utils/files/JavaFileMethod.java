@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+
+import javax.management.RuntimeErrorException;
 
 public class JavaFileMethod {
 
@@ -14,6 +15,7 @@ public class JavaFileMethod {
 
     /**
      * To String.
+     * 
      * @return To String.
      */
     @Override
@@ -23,6 +25,7 @@ public class JavaFileMethod {
 
     /**
      * Return the value that should be displayed.
+     * 
      * @return The display value.
      */
     public String getDisplayValue() {
@@ -38,6 +41,7 @@ public class JavaFileMethod {
 
     /**
      * To String.
+     * 
      * @return To String.
      */
     @Override
@@ -47,6 +51,7 @@ public class JavaFileMethod {
 
     /**
      * Determines the correct order based on the enum ordering.
+     * 
      * @return Helps order the declarations for the function.
      */
     public int getOrder() {
@@ -61,10 +66,11 @@ public class JavaFileMethod {
   }
 
   private AccessSpecifier accessSpecifier = AccessSpecifier.NONE;
-  private String comment = null;
+  private List<String> comments = new ArrayList<>();
   private List<Declaration> declarations = new ArrayList<>();
   private String returnType = "";
   private String methodName = "";
+  private String methodContent = "";
   private List<String> parameters = new ArrayList<>();
   private List<String> exceptions = new ArrayList<>();
 
@@ -72,19 +78,21 @@ public class JavaFileMethod {
     return new JavaFileMethod(function);
   }
 
-  private static Pattern commentPattern = Pattern.compile("/*([\\S\\s]+?)\\*/");
-
   private JavaFileMethod(String content) {
     System.out.println(content);
-    // if (content.trim().contains("\\*/")) {
     if (content.contains("*/")) {
       // We have a comment.
-      comment = content.split("\\*/")[0].replace("/*", "")
+      String[] commentsRaw = content.split("\\*/");
+    
+      for (String comment : commentsRaw)
+        comments.add(comment.replace("/*", "")
         .replace("/\\*\\*", "")
-        .trim();
-      // content = content.replace(comment, "");
-      //comment = commentPattern.matcher(content).group();
+        .trim());
+    
       content = content.replaceAll("/\\*([\\S\\s]+?)\\*/", "");
+      System.out.println(content);
+      content = content.replaceAll("/\\**([\\S\\s]+?)\\*/", "");
+      System.out.println(content);
     }
     String[] contentArray = content.trim()
         .replace("{", "")
@@ -98,6 +106,7 @@ public class JavaFileMethod {
       index++;
     } catch (Exception ex) {
       System.out.println("No AccessSpecifier");
+      throw new Error(String.format("No AccessSpecifier in %s", contentArray[0]));
     }
     // Determine declarations.
     try {
@@ -134,8 +143,8 @@ public class JavaFileMethod {
             .replace("(", "")
             .replace(")", "")
             .trim()
-            .split(",")
-    ).map(String::trim).collect(Collectors.toList());
+            .split(","))
+        .map(String::trim).collect(Collectors.toList());
   }
 
   private List<String> toExceptions(String parameters) {
@@ -143,16 +152,16 @@ public class JavaFileMethod {
         parameters
             .replace("throws", "")
             .trim()
-            .split(",")
-    ).map(String::trim).collect(Collectors.toList());
+            .split(","))
+        .map(String::trim).collect(Collectors.toList());
   }
 
   @Override
   public String toString() {
     StringBuilder stringBuilder = new StringBuilder();
 
-    if (comment != null) {
-      stringBuilder.append(String.format("/* %s */\n", comment));
+    for (String commnet : comments) {
+      stringBuilder.append(String.format("/* %s */\n", commnet));
     }
 
     stringBuilder.append(accessSpecifier.getDisplayValue());

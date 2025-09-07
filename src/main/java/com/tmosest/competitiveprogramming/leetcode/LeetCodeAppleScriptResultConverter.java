@@ -76,7 +76,7 @@ public class LeetCodeAppleScriptResultConverter {
     List<String> contents = new ArrayList<>();
 
     for (File file : instance().getLeetCodeWeeklyTextFiles()) {
-      System.out.println(file.getName());
+      // System.out.println(file.getName());
       String content = instance().getFileContent(file.getAbsolutePath());
       contents.add(content);
       contentMap.put("wc" + file.getName().split("-")[2], content);

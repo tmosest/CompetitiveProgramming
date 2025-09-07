@@ -1,0 +1,27 @@
+535. Encode and Decode TinyURL;=;=Medium;=;=public  Codec     // Encodes a URL to a shortened URL.    public String encode(String longUrl)                 // Decodes a shortened URL to its original URL.    public String decode(String shortUrl)             // Your Codec object will be instantiated and called as such:// Codec codec = new Codec();// codec.decode(codec.encode(url));;=;=Note: This is a companion problem to the System Design problem: Design TinyURL.
+TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl and it returns a short URL such as http://tinyurl.com/4e9iAk. Design a class to encode a URL and decode a tiny URL.
+
+There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.
+
+Implement the Solution class:
+
+Solution() Initializes the object of the system.
+String encode(String longUrl) Returns a tiny URL for the given longUrl.
+String decode(String shortUrl) Returns the original long URL for the given shortUrl. It is guaranteed that the given shortUrl was encoded by the same object.
+ 
+
+Example 1:
+
+Input: url = "https://leetcode.com/problems/design-tinyurl"
+Output: "https://leetcode.com/problems/design-tinyurl"
+
+Explanation:
+Solution obj = new Solution();
+string tiny = obj.encode(url); // returns the encoded tiny url.
+string ans = obj.decode(tiny); // returns the original url after decoding it.
+ 
+
+Constraints:
+
+1 <= url.length <= 104
+url is guranteed to be a valid URL.;=;=https://leetcode.com/problems/encode-and-decode-tinyurl/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/1110551/js-python-java-c-easy-map-solution-w-exp-wieg/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/7084995/solution-using-java-by-aadithya_s_j-cbvj/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/6977631/solution-by-deepakumar-developer-kvc0/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/7011562/my-solution-by-codersquare-e1cv/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/867053/huffman-tree-based-solution-java-by-_dsa-hhpj/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/6884126/identity-mapping-java-stub-one-liner-by-tfx16/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/6654278/beginner-friendly-url-encoder-decoder-us-ceko/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/3154331/0ms-easy-java-faster-by-sourabh-jadhav-nner/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/1111557/java-simple-and-easy-to-understand-solut-zq10/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/6744302/beats-100-o1-o1-easy-cum-clever-solution-acgg/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/2816315/java-straightforward-solution-hashmap-by-8uvn/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/1974328/java-xor-with-explaination-simple-soluti-x39t/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/6416822/caesar-cipher-simple-java-solution-by-ha-yiv0/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/3866915/beats-100-java-one-line-code-easy-proble-2tve/;;https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/1974762/java-beats-10000-memoryspeed-0ms-april-2-220c/;;;=;==;=;=;

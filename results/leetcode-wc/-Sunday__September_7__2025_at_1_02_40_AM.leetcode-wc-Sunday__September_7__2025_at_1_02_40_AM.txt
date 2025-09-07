@@ -1,0 +1,28 @@
+454. 4Sum II;=;=Medium;=;=publicÊintÊfourSumCount(int[]Ênums1,Êint[]Ênums2,Êint[]Ênums3,Êint[]Ênums4);=;=Given four integer arrays nums1, nums2, nums3, and nums4 all of length n, return the number of tuples (i, j, k, l) such that:
+
+0 <= i, j, k, l < n
+nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
+Ê
+
+Example 1:
+
+Input: nums1 = [1,2], nums2 = [-2,-1], nums3 = [-1,2], nums4 = [0,2]
+Output: 2
+Explanation:
+The two tuples are:
+1. (0, 0, 0, 1) -> nums1[0] + nums2[0] + nums3[0] + nums4[1] = 1 + (-2) + (-1) + 2 = 0
+2. (1, 1, 0, 0) -> nums1[1] + nums2[1] + nums3[0] + nums4[0] = 2 + (-1) + (-1) + 0 = 0
+Example 2:
+
+Input: nums1 = [0], nums2 = [0], nums3 = [0], nums4 = [0]
+Output: 1
+Ê
+
+Constraints:
+
+n == nums1.length
+n == nums2.length
+n == nums3.length
+n == nums4.length
+1 <= n <= 200
+-228 <= nums1[i], nums2[i], nums3[i], nums4[i] <= 228;=;=https://leetcode.com/problems/4sum-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/4sum-ii/solutions/1740606/going-from-on4-on3-on2-javac-by-hi-malik-2kxh/;;https://leetcode.com/problems/4sum-ii/solutions/1740490/java-3-liner-simple-explained-by-prashan-e5yy/;;https://leetcode.com/problems/4sum-ii/solutions/93946/simple-java-solution-with-explanation-by-y8dq/;;https://leetcode.com/problems/4sum-ii/solutions/5338247/optimised-approach-by-sukritisinha0717-kit0/;;https://leetcode.com/problems/4sum-ii/solutions/6784590/java-beats-100-using-hashmap-on2-time-by-liyz/;;https://leetcode.com/problems/4sum-ii/solutions/6784589/java-beats-100-using-hashmap-on2-time-by-fjoy/;;https://leetcode.com/problems/4sum-ii/solutions/6758551/solution-in-java-using-hashmap-by-yasl1-kmku/;;https://leetcode.com/problems/4sum-ii/solutions/6743513/hashmap-solution-by-jabbastin-hh3e/;;https://leetcode.com/problems/4sum-ii/solutions/288500/easy-java-solution-uses-hashmap-with-on2-jzge/;;https://leetcode.com/problems/4sum-ii/solutions/6567289/optimized-4sum-ii-hashmap-approach-for-o-llcb/;;https://leetcode.com/problems/4sum-ii/solutions/6558235/a-simple-hashtable-dictionary-solution-b-v1t5/;;https://leetcode.com/problems/4sum-ii/solutions/5546986/easiest-optimized-soln-using-hashmap-by-fxtw9/;;https://leetcode.com/problems/4sum-ii/solutions/6384648/smarter-way-by-adityamah2002-l043/;;https://leetcode.com/problems/4sum-ii/solutions/5221923/java-clean-solution-with-detail-explanat-56u6/;;https://leetcode.com/problems/4sum-ii/solutions/5187089/easiest-solution-by-mantosh_kumar04-z7tu/;;;=;==;=;=;

@@ -1,0 +1,36 @@
+510. Inorder Successor in BST II;=;=Medium;=;=// Definition for a Node. Node     public int val;    public Node left;    public Node right;    public Node parent;;class      public Node inorderSuccessor(Node node);=;=Given a node in a binary search tree, return the in-order successor of that node in the BST. If that node has no in-order successor, return null.
+
+The successor of a node is the node with the smallest key greater than node.val.
+
+You will have direct access to the node but not to the root of the tree. Each node will have a reference to its parent node. Below is the definition for Node:
+
+class Node {
+    public int val;
+    public Node left;
+    public Node right;
+    public Node parent;
+}
+ 
+
+Example 1:
+
+
+Input: tree = [2,1,3], node = 1
+Output: 2
+Explanation: 1's in-order successor node is 2. Note that both the node and the return value is of Node type.
+Example 2:
+
+
+Input: tree = [5,3,6,2,4,null,null,1], node = 6
+Output: null
+Explanation: There is no in-order successor of the current node, so the answer is null.
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 104].
+-105 <= Node.val <= 105
+All Nodes will have unique values.
+ 
+
+Follow up: Could you solve it without looking up any of the node's values?;=;=https://leetcode.com/problems/inorder-successor-in-bst-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/847741/java-beats-100-recursion-by-yoavs88-dgtt/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/2526475/simple-java-solution-by-vagabond112-64cc/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/6680393/java-pointer-beats-45-by-siyang_yin-g9dh/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/6537565/parent-and-child-by-awuxiaoqi-ylqt/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/6127226/cheating-easy-solution-for-the-follow-up-amrt/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/6031797/java-intuitive-solution-by-samcodes07-lfbj/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/5702143/java-simple-solution-100-by-samiksha12-cwg2/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/4937491/java-on-solution-by-tbekpro-8chd/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/4414195/on-solution-java-by-tpavulur-ftz7/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/4020271/simple-java-solution-by-sakshikishore-c997/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/3838576/share-my-solution-standard-tree-traversa-al7q/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/3838575/share-my-solution-standard-tree-traversa-vdnm/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/3682922/simple-java-beats-97-by-silvermonkey52-ktm3/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/3642534/simple-java-find-root-first-then-binary-0v37e/;;https://leetcode.com/problems/inorder-successor-in-bst-ii/solutions/3381941/solution-by-deleted_user-e9b8/;;;=;==;=;=;

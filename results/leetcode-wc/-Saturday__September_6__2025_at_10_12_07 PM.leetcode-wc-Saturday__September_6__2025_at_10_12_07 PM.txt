@@ -1,0 +1,32 @@
+364. Nested List Weight Sum II;=;=Medium;=;=public int depthSumInverse(List<NestedInteger> nestedList) Queue<NestedInteger> Q = new LinkedList<>();Q.addAll(nestedList);int depth = 1;int maxDepth = 0;int sumOfElements = 0;int sumOfProducts = 0;while (!Q.isEmpty()) int size = Q.size();maxDepth = Math.max(maxDepth, depth);for (int i = 0; i < size; i++) NestedInteger nested = Q.poll();if (nested.isInteger());=;=You are given a nested list of integers nestedList. Each element is either an integer or a list whose elements may also be integers or other lists.
+
+The depth of an integer is the number of lists that it is inside of. For example, the nested list [1,[2,2],[[3],2],1] has each integer's value set to its depth. Let maxDepth be the maximum depth of any integer.
+
+The weight of an integer is maxDepth - (the depth of the integer) + 1.
+
+Return the sum of each integer in nestedList multiplied by its weight.
+
+ 
+
+Example 1:
+
+
+Input: nestedList = [[1,1],2,[1,1]]
+Output: 8
+Explanation: Four 1's with a weight of 1, one 2 with a weight of 2.
+1*1 + 1*1 + 2*2 + 1*1 + 1*1 = 8
+Example 2:
+
+
+Input: nestedList = [1,[4,[6]]]
+Output: 17
+Explanation: One 1 at depth 3, one 4 at depth 2, and one 6 at depth 1.
+1*3 + 4*2 + 6*1 = 17
+ 
+
+Constraints:
+
+1 <= nestedList.length <= 50
+The values of the integers in the nested list is in the range [-100, 100].
+The maximum depth of any integer is less than or equal to 50.
+There are no empty lists.;=;=https://leetcode.com/problems/nested-list-weight-sum-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/83649/share-my-2ms-intuitive-one-pass-no-multi-vob6/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/6560880/bfs-in-java-beats-100-by-kochuva-yq50/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/7162953/java-solution-dfs-by-sanjayrawat177-esxl/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/4342239/java-bfs-stack-one-pass-solution-by-lawr-qe5z/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/1356338/java-solution-0ms-beats-100-by-shashwatk-6uw2/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/83672/java-extremely-simple-dfs-solution-by-gt-em3g/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/2278007/java-very-simple-one-pass-bfs-by-leeeooo-k4nj/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/6529666/simple-java-solution-beats-100-by-iamron-wtdl/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/6675605/return-value-and-depth-at-the-same-time-te1kw/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/1599537/java-recursion-100-simple-and-clear-just-x1mz/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/1899173/java-no-math-normal-person-bfs-solution-bwsd0/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/1724911/java-dfs-solution-by-pallav_jhaveri-h00g/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/1711936/simple-dfs-solution-0-ms-faster-than-100-nsam/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/1340727/straightforward-java-solution-by-2018hsr-dh5n/;;https://leetcode.com/problems/nested-list-weight-sum-ii/solutions/916828/simple-on-with-queue-by-shadylady-xa34/;;;=;==;=;=;

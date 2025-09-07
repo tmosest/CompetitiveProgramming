@@ -1,0 +1,28 @@
+425. Word Squares;=;=Hard;=;=public List<List<String>> wordSquares(String[] words);=;=Given an array of unique strings words, return all the word squares you can build from words. The same word from words can be used multiple times. You can return the answer in any order.
+
+A sequence of strings forms a valid word square if the kth row and column read the same string, where 0 <= k < max(numRows, numColumns).
+
+For example, the word sequence ["ball","area","lead","lady"] forms a word square because each word reads the same both horizontally and vertically.
+ 
+
+Example 1:
+
+Input: words = ["area","lead","wall","lady","ball"]
+Output: [["ball","area","lead","lady"],["wall","area","lead","lady"]]
+Explanation:
+The output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).
+Example 2:
+
+Input: words = ["abat","baba","atan","atal"]
+Output: [["baba","abat","baba","atal"],["baba","abat","baba","atan"]]
+Explanation:
+The output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).
+ 
+
+Constraints:
+
+1 <= words.length <= 1000
+1 <= words[i].length <= 4
+All words[i] have the same length.
+words[i] consists of only lowercase English letters.
+All words[i] are unique.;=;=https://leetcode.com/problems/word-squares/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/word-squares/solutions/3359525/solution-by-deleted_user-p44v/;;https://leetcode.com/problems/word-squares/solutions/1569959/java-simple-clean-solution-w-complexity-19uh5/;;https://leetcode.com/problems/word-squares/solutions/870897/easiest-solution-ever-java-trie-by-shiri-dovu/;;https://leetcode.com/problems/word-squares/solutions/854545/java-simple-backtracking-solution-by-jia-ti4k/;;https://leetcode.com/problems/word-squares/solutions/5725622/java-trie-and-non-trie-based-soln-by-vha-tmsb/;;https://leetcode.com/problems/word-squares/solutions/5725625/java-trie-and-non-trie-based-soln-by-vha-ewm1/;;https://leetcode.com/problems/word-squares/solutions/4599453/19ms-java-solution-using-trie-by-faisal0-wf49/;;https://leetcode.com/problems/word-squares/solutions/4099685/java-pure-hashmap-no-backtracking-beat-9-7ush/;;https://leetcode.com/problems/word-squares/solutions/3863813/using-trie-and-backtracking-by-vikasvats-15a5/;;https://leetcode.com/problems/word-squares/solutions/2692768/easy-backtracking-solution-in-java-by-co-5pu9/;;https://leetcode.com/problems/word-squares/solutions/2483147/java-solution-by-bwanave-wrrb/;;https://leetcode.com/problems/word-squares/solutions/2173102/java-trie-dfs-by-lihsuan-ynxd/;;https://leetcode.com/problems/word-squares/solutions/2164019/great-question-java-40ms-dfs-backtrack-t-78j1/;;https://leetcode.com/problems/word-squares/solutions/2019494/java-backtracking-hashmap-prefix-by-some-4iz6/;;https://leetcode.com/problems/word-squares/solutions/1934895/java-backtracking-dfs-trie-easy-to-under-uk9l/;;;=;==;=;=;

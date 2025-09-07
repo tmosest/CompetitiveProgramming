@@ -1,0 +1,32 @@
+378. Kth Smallest Element in a Sorted Matrix;=;=Medium;=;=public int kthSmallest(int[][] matrix, int k);=;=Given an n x n matrix where each of the rows and columns is sorted in ascending order, return the kth smallest element in the matrix.
+
+Note that it is the kth smallest element in the sorted order, not the kth distinct element.
+
+You must find a solution with a memory complexity better than O(n2).
+
+ 
+
+Example 1:
+
+Input: matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8
+Output: 13
+Explanation: The elements in the matrix are [1,5,9,10,11,12,13,13,15], and the 8th smallest number is 13
+Example 2:
+
+Input: matrix = [[-5]], k = 1
+Output: -5
+ 
+
+Constraints:
+
+n == matrix.length == matrix[i].length
+1 <= n <= 300
+-109 <= matrix[i][j] <= 109
+All the rows and columns of matrix are guaranteed to be sorted in non-decreasing order.
+1 <= k <= n2
+ 
+
+Follow up:
+
+Could you solve the problem with a constant memory (i.e., O(1) memory complexity)?
+Could you solve the problem in O(n) time complexity? The solution may be too advanced for an interview but you may find reading this paper fun.;=;=https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/7146050/kth-smallest-element-binary-search-0ms-o-4w7v/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/7148975/easy-code-for-solve-this-problem-by-4_k4-it01/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/7137477/binary-search-by-delbin_de_yohan-6nk6/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/2366981/c-java-full-explanation-using-6-method-b-myha/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/1547354/3-different-approaches-for-interview-wit-3mg1/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/7130884/easy-solution-using-priority-queue-java-f44uo/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/2367160/java-easy-solution-100-faster-code-by-sh-dhqo/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/394294/using-binary-search-in-java-and-analysis-t09n/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/6259689/simple-solution-with-diagrams-in-video-j-v5t5/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/6972293/youngs-matrix-bst-view-minheap-by-axmxhe-3ep3/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/1524783/java-two-solutions-binary-search-priorit-h55z/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/6886311/solution-kth-smallest-element-in-a-sorte-6iec/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/6145329/cpython3javacpython3cgoexplained-beats-1-uy12/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/2367173/1-ms-faster-than-9244-using-binary-searc-5ntd/;;https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/6892465/kth-smallest-element-in-a-sorted-matrix-jskmd/;;;=;==;=;=;

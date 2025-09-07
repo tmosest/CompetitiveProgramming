@@ -1,0 +1,18 @@
+96. Unique Binary Search Trees;=;=Medium;=;=public int numTrees(int n);=;=Given an integer n, return the number of structurally unique BST's (binary search trees) which has exactly n nodes of unique values from 1 to n.
+
+ 
+
+Example 1:
+
+
+Input: n = 3
+Output: 5
+Example 2:
+
+Input: n = 1
+Output: 1
+ 
+
+Constraints:
+
+1 <= n <= 19;=;=https://leetcode.com/problems/unique-binary-search-trees/description/;=;=https://leetcode.com/problems/unique-binary-search-trees/solutions/31666/dp-solution-in-6-lines-with-explanation-duwyl/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/6066004/counting-nodes-on-the-left-and-right-by-s8sfb/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/409987/summary-of-all-solutions-in-java-with-ex-omog/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/7085124/java-beats-100-on-time-and-memory-by-kar-hocu/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/7072134/unique-binary-search-tree-by-yashbansal4-fs1c/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/7063609/easiest-solution-in-java-beats-100-by-ro-fn8i/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/4715425/dynamic-programming-approach-for-countin-hie4/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/7024830/unique-binary-search-trees-by-pranavdewa-bjoq/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/2364615/very-easy-0-ms-100-fully-explainedjava-c-l5eo/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/31696/simple-recursion-java-solution-with-expl-7oaq/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/6358222/beats-100-easier-than-you-think-by-thaku-69dp/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/5666787/simple-code-easy-to-understand-beats-100-5drj/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/6752212/dp-solution-with-example-breakdown-by-ed-4zpy/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/6358223/beats-100-easier-than-you-think-by-thaku-yza2/;;https://leetcode.com/problems/unique-binary-search-trees/solutions/6673802/from-intuition-to-code-mastering-unique-f7yw9/;;;=;==;=;=;

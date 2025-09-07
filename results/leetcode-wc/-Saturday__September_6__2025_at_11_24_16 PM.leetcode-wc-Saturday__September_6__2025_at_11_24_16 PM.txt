@@ -1,0 +1,36 @@
+446. Arithmetic Slices II - Subsequence;=;=Hard;=;=public int numberOfArithmeticSlices(int[] nums);=;=Given an integer array nums, return the number of all the arithmetic subsequences of nums.
+
+A sequence of numbers is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.
+
+For example, [1, 3, 5, 7, 9], [7, 7, 7, 7], and [3, -1, -5, -9] are arithmetic sequences.
+For example, [1, 1, 2, 5, 7] is not an arithmetic sequence.
+A subsequence of an array is a sequence that can be formed by removing some elements (possibly none) of the array.
+
+For example, [2,5,10] is a subsequence of [1,2,1,2,4,1,5,10].
+The test cases are generated so that the answer fits in 32-bit integer.
+
+ 
+
+Example 1:
+
+Input: nums = [2,4,6,8,10]
+Output: 7
+Explanation: All arithmetic subsequence slices are:
+[2,4,6]
+[4,6,8]
+[6,8,10]
+[2,4,6,8]
+[4,6,8,10]
+[2,4,6,8,10]
+[2,6,10]
+Example 2:
+
+Input: nums = [7,7,7,7,7]
+Output: 16
+Explanation: Any subsequence of this array is arithmetic.
+ 
+
+Constraints:
+
+1  <= nums.length <= 1000
+-231 <= nums[i] <= 231 - 1;=;=https://leetcode.com/problems/arithmetic-slices-ii-subsequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4520265/9843easy-solutionwith-dynamic-programmin-sf0l/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4520405/beats-100-dynamic-programming-explained-yoxu7/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4520526/beats-9917-users-c-java-python-javascrip-rssv/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4520442/easily-explained-optimized-c-java-python-isqd/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/6976852/dp-map-by-piyusha_7-707w/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/6846001/easy-java-solution-dp-approach-not-beati-g5d2/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/2852730/java-easy-solution-by-amitkhedkar41-m46k/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4522134/simplified-with-memoization-by-harsharay-11wy/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/2854615/java-solution-recursion-memo-by-rpeter_3-gosb/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/2853903/java-recursion-memoization-by-sankalpjad-an8c/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/948367/java-bottom-up-dfs-with-memo-on2-by-kelv-cune/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4522958/top-down-approach-dp-on3-clean-java-code-5shh/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4322781/beats-98-easiest-solution-java-by-shivan-rhg6/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4523434/80-beats-by-abhishek-g06-xrzp/;;https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4522722/dp-recursion-memoization-by-devashish_ba-4pk4/;;;=;==;=;=;

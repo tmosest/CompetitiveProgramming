@@ -1,0 +1,21 @@
+325. Maximum Size Subarray Sum Equals k;=;=Medium;=;=publicÊintÊmaxSubArrayLen(int[]Ênums,ÊintÊk);=;=Given an integer array nums and an integer k, return the maximum length of a subarray that sums to k. If there is not one, return 0 instead.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,-1,5,-2,3], k = 3
+Output: 4
+Explanation: The subarray [1, -1, 5, -2] sums to 3 and is the longest.
+Example 2:
+
+Input: nums = [-2,-1,2,1], k = 1
+Output: 2
+Explanation: The subarray [-1, 2] sums to 1 and is the longest.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 2 * 105
+-104 <= nums[i] <= 104
+-109Ê<= k <= 109;=;=https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/description/;=;=https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/77784/on-clean-short-javapython-solution-with-i11bo/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/6890072/two-pointers-same-direction-hashmapprefi-x2im/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/77844/java-with-newer-methods-by-stefanpochman-w5nc/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/1017059/java-prefix-sums-by-ffbit-gkwy/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/963606/single-pass-on-java-soln-with-explanatio-sdc6/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/77841/java-22-ms-on-beats-100-by-minimizing-ma-vqmi/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/4166008/java-super-simple-code-by-nuvvula-ity8/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/4166007/java-super-simple-code-by-nuvvula-seun/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/77840/share-my-on-solution-for-max-subarray-su-n46f/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/1494764/java-prefix-sum-explained-by-prashant404-hv89/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/7128662/hashmap-prefix-sum-approach-in-java-intu-lxj7/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/6796976/maximum-size-subarray-java-by-souravgang-lfmd/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/77845/java-easy-to-understand-solution-with-ha-08og/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/412378/explained-java-suuuper-simple-solution-o-f53l/;;https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/solutions/6920939/prefix-sum-hashmap-by-tinkerbel-7h0d/;;;=;==;=;=;

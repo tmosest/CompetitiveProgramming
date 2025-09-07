@@ -1,0 +1,407 @@
+
+    <script type="text/javascript" src="/static/bootstrap/dist/js/bootstrap.min.js?v=3.3.7"></script>
+    <script type="text/javascript" src="/static/bootstrap-table/dist/bootstrap-table.min.js"></script>
+    <script src="/static/CACHE/js/output.74019921ae23.js"></script>
+
+    <script type="text/javascript" src="/static/webpack_bundles/runtime.f5758cf00.js"></script>
+    <script type="text/javascript" src="/static/webpack_bundles/common/global.df0db8610.js"></script>
+    <script type="text/javascript" src="/static/webpack_bundles/common/styles/index.ead4564bd.js"></script>
+    <script type="text/javascript" src="/static/webpack_bundles/vendor-libs.5c1c67dab.js"></script>
+    <script type="text/javascript" src="/static/webpack_bundles/common-libs.a6ccc5a1b.js"></script>
+    <script type="text/javascript" src="/static/webpack_bundles/new-libs.10311b540.js"></script>
+
+    
+
+    
+  <div id="app"><div class="playground-mini-base snippet-mode"><div class="toolbar-base disable-run-code"><div class="lang-btn-set-base"><div class="lang-btn-set"><button class="btn active">Java</button><button class="btn false">Python</button></div></div><div class="pull-right button-set-base" title="queue-reconstruction-by-height-0"><button class="btn copy-code-btn btn-default"><i class="fa fa-clipboard" aria-hidden="true"></i>&nbsp; Copy</button></div></div><div class="editor-base"><div class="editor"><div class="ReactCodeMirror"><textarea name="lc-codemirror" autocomplete="off" style="display: none;">class Solution {
+  public int[][] reconstructQueue(int[][] people) {
+    Arrays.sort(people, new Comparator&lt;int[]&gt;() {
+      @Override
+      public int compare(int[] o1, int[] o2) {
+        // if the heights are equal, compare k-values
+        return o1[0] == o2[0] ? o1[1] - o2[1] : o2[0] - o1[0];
+      }
+    });
+
+    List&lt;int[]&gt; output = new LinkedList&lt;&gt;();
+    for(int[] p : people){
+      output.add(p[1], p);
+    }
+
+    int n = people.length;
+    return output.toArray(new int[n][2]);
+  }
+}</textarea><div class="CodeMirror cm-s-textmate CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 3.994564px; left: 41.467395px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 38px; margin-bottom: -13px; border-right-width: 17px; min-height: 322px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><span><span>?</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 3.478264px; top: 0px; height: 16.52174px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">class</span> <span class="cm-def">Solution</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">public</span> <span class="cm-type">int</span>[][] <span class="cm-variable">reconstructQueue</span>(<span class="cm-type">int</span>[][] <span class="cm-variable">people</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">Arrays</span>.<span class="cm-variable">sort</span>(<span class="cm-variable">people</span>, <span class="cm-keyword">new</span> <span class="cm-variable">Comparator</span><span class="cm-operator">&lt;</span><span class="cm-type">int</span>[]<span class="cm-operator">&gt;</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-meta">@Override</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">public</span> <span class="cm-type">int</span> <span class="cm-variable">compare</span>(<span class="cm-type">int</span>[] <span class="cm-variable">o1</span>, <span class="cm-type">int</span>[] <span class="cm-variable">o2</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// if the heights are equal, compare k-values</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">return</span> <span class="cm-variable">o1</span>[<span class="cm-number">0</span>] <span class="cm-operator">==</span> <span class="cm-variable">o2</span>[<span class="cm-number">0</span>] <span class="cm-operator">?</span> <span class="cm-variable">o1</span>[<span class="cm-number">1</span>] <span class="cm-operator">-</span> <span class="cm-variable">o2</span>[<span class="cm-number">1</span>] : <span class="cm-variable">o2</span>[<span class="cm-number">0</span>] <span class="cm-operator">-</span> <span class="cm-variable">o1</span>[<span class="cm-number">0</span>];</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  });</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">?</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">List</span><span class="cm-operator">&lt;</span><span class="cm-type">int</span>[]<span class="cm-operator">&gt;</span> <span class="cm-variable">output</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">LinkedList</span><span class="cm-operator">&lt;&gt;</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">for</span>(<span class="cm-type">int</span>[] <span class="cm-variable">p</span> : <span class="cm-variable">people</span>){</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-variable">output</span>.<span class="cm-variable">add</span>(<span class="cm-variable">p</span>[<span class="cm-number">1</span>], <span class="cm-variable">p</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">?</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-type">int</span> <span class="cm-variable">n</span> <span class="cm-operator">=</span> <span class="cm-variable">people</span>.<span class="cm-variable">length</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> <span class="cm-variable">output</span>.<span class="cm-variable">toArray</span>(<span class="cm-keyword">new</span> <span class="cm-type">int</span>[<span class="cm-variable">n</span>][<span class="cm-number">2</span>]);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -37.989131px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 17px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 322px;"></div><div class="CodeMirror-gutters" style="height: 339px; left: 0.010869px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></div></div></div><div class="copied-panel false">Code copied for&nbsp;Java</div></div></div>
+
+
+    <script>
+      $(document).ready(function() {
+        var time_diff = new Date() - new Date(localStorage.getItem('region_switcher_last_close_ts'))
+        if (time_diff > 86400000) {  // 86400000ms == 1day
+          $("#region_switcher").removeClass('hide');
+        }
+      });
+
+      function closeRegion() {
+        $("#region_switcher").addClass('hide');
+        localStorage.setItem('region_switcher_last_close_ts', new Date());
+      }
+    </script>
+
+    
+  <script>
+  const pageData = {
+    playgroundUuid: 'KW74tsbz',
+  };
+  </script>
+  <script type="text/javascript" src="/static/webpack_bundles/apps/playground/shared_playground.3bedc52d6.js"></script><div></div><div></div>
+
+    
+      <script type="text/javascript">
+  var eventURL = "https://leetcode.com/discuss/general-discussion/2314284/WE'RE-HIRING!-Join-LeetCode's-Content-Team!"
+  var CONTENT = "?  We're Hiring!  ?"
+
+  function getHashCode(str) {
+    var hash = 0,
+      i,
+      chr
+    if (str.length === 0) return hash
+    for (i = 0; i < str.length; i++) {
+      chr = str.charCodeAt(i)
+      hash = (hash << 5) - hash + chr
+      hash |= 0
+    }
+    return hash
+  }
+
+  var LOCAL_STORAGE_KEY = 'feedback-tab:' + getHashCode(eventURL + CONTENT)
+  var CLOSE_BUTTON_CLICKED = false
+
+  var CLOSE_BUTTON_HTML =
+    '\
+          <?xml version="1.0" encoding="UTF-8"?>\
+          <svg id="close-icon-svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\
+              <title>icon/close</title>\
+              <defs></defs>\
+              <g id="close-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\
+                  <polygon id="path-1" points="19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12"></polygon>\
+              </g>\
+          </svg>\
+      '
+
+  function onClickClose(e) {
+    e.preventDefault()
+    document.querySelector('.feedback-anchor').classList.add('feedback-anchor-closing')
+    window.localStorage.setItem(LOCAL_STORAGE_KEY, Date.now())
+    CLOSE_BUTTON_CLICKED = true
+  }
+
+  function onTransitionEnd(event) {
+    if (event.target && CLOSE_BUTTON_CLICKED && event.propertyName === 'opacity') {
+      event.target.remove()
+    }
+  }
+
+  function createFeedbackTab() {
+    var closeButton = document.createElement('span')
+    closeButton.classList.add('feedback-tab-close-button')
+    closeButton.innerHTML = CLOSE_BUTTON_HTML
+    closeButton.addEventListener('click', onClickClose)
+
+    var feedbackTabContent = document.createElement('span')
+    feedbackTabContent.innerHTML = CONTENT
+
+    var feedbackTab = document.createElement('div')
+    feedbackTab.classList.add('feedback-tab')
+
+    feedbackTab.appendChild(feedbackTabContent)
+    feedbackTab.appendChild(closeButton)
+
+    var feedbackAnchor = document.createElement('a')
+    feedbackAnchor.classList.add('feedback-anchor')
+    feedbackAnchor.setAttribute('href', eventURL)
+    feedbackAnchor.setAttribute('target', '_blank')
+    feedbackAnchor.appendChild(feedbackTab)
+    feedbackAnchor.addEventListener('transitionend', onTransitionEnd)
+    return feedbackAnchor
+  }
+
+  function createComingSoonBanner(text) {
+    var banner = document.createElement('div')
+    banner.classList.add('card-label')
+    banner.style.background = 'rgb(95, 123, 230)'
+    banner.style.color = 'white'
+    banner.style['font-weight'] = 'bold'
+    banner.innerHTML = text
+    return banner
+  }
+
+  function insertFeedbackTab() {
+    var feedbackTab = createFeedbackTab()
+    var navbarRightContainer = document.getElementById('navbar-right-container')
+    if (navbarRightContainer) {
+      navbarRightContainer.insertBefore(feedbackTab, navbarRightContainer.firstChild)
+    }
+  }
+
+  function insertComingSoonBanner(text, clsname) {
+    var banner = createComingSoonBanner(text)
+    var exploreCardContainer = document.getElementsByClassName(clsname)
+
+    if (!exploreCardContainer.length) {
+      return false
+    }
+
+    var innerLayer = exploreCardContainer[0].getElementsByClassName('top-inner-layer')
+
+    if (!innerLayer.length) {
+      return false
+    }
+
+    innerLayer[0].insertBefore(banner, innerLayer[0].firstChild)
+    return true
+  }
+
+  function loadLeetCodeChallenge() {
+    if (!window.localStorage.getItem(LOCAL_STORAGE_KEY)) {
+      setTimeout(insertFeedbackTab, 500)
+    }
+
+    if (window.location.pathname === '/explore/') {
+      var comingSoonInterval = setInterval(function () {
+        var res2 = insertComingSoonBanner('Day 30', 'september-leetcoding-challenge-2021')
+        if (/*res && */ res2 && comingSoonInterval) {
+          clearInterval(comingSoonInterval)
+        }
+      }, 300)
+    }
+  }
+</script>
+<style>
+  .feedback-tab {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    right: 270px;
+    background-color: #ffa400;
+    color: white;
+    opacity: 0.6;
+    border-radius: 0 0 3px 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+  }
+  .feedback-tab:hover {
+    opacity: 1;
+  }
+  .feedback-tab-close-button {
+    margin-left: 5px;
+    height: 1em;
+    width: 1em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feedback-anchor:focus {
+    text-decoration: none;
+  }
+  .feedback-anchor-closing {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  aside#region_switcher {
+    position: initial;
+  }
+  #close-icon-svg {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+  }
+  #close-icon-svg:hover {
+    opacity: 1;
+  }
+  #close-icon {
+    fill: white;
+  }
+</style>
+
+<!--@START: Nav Highlight Tag -->
+<style>
+  [id='interview-nav-item'] a.ant-dropdown-link::after {
+    display: block;
+    border-radius: 20px;
+    padding: 0px 8px;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: -9px;
+    font-weight: 500;
+    transform: scale(0.6);
+    right: -25px;
+    content: 'New';
+    background: rgb(236, 64, 122);
+  }
+  [class*='nav-item-container'] a[href='/contest/']::after {
+    display: block;
+    background: red;
+    border-radius: 20px;
+    padding: 0px 8px;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: -9px;
+    right: -15px;
+    font-weight: 500;
+    transform: scale(0.6);
+  }
+</style>
+
+<script type="text/javascript">
+  var DISCOUNT_URL = '/subscribe/'
+  var DISCOUNT_CONTENT =
+    'In an effort to fight COVID-19, from now until a limited time only, users residing in India can enjoy discount on both&nbsp'
+  var DISCOUNT_LINK = 'monthly and annual subscriptions'
+
+  function createDiscountTab() {
+    var discountTabContent = document.createElement('span')
+    discountTabContent.innerHTML = DISCOUNT_CONTENT
+    var subscribeLink = document.createElement('a')
+    subscribeLink.setAttribute('href', DISCOUNT_URL)
+    subscribeLink.classList.add('subscribe-link')
+    subscribeLink.innerHTML = DISCOUNT_LINK
+    var exclamation = document.createElement('span')
+    exclamation.innerHTML = '!'
+
+    var discountTab = document.createElement('div')
+    discountTab.classList.add('col-md-12')
+    discountTab.classList.add('alert')
+    discountTab.classList.add('alert-warning')
+
+    discountTab.appendChild(discountTabContent)
+    discountTab.appendChild(subscribeLink)
+    discountTab.appendChild(exclamation)
+
+    var DiscountContainer = document.createElement('div')
+    DiscountContainer.classList.add('container')
+    DiscountContainer.classList.add('row')
+    DiscountContainer.classList.add('no-margin')
+    DiscountContainer.classList.add('container-center')
+    DiscountContainer.appendChild(discountTab)
+    return DiscountContainer
+  }
+
+  function insertDiscountTab() {
+    var discountTab = createDiscountTab()
+    var container = document.getElementById('base_content')
+    if (container) {
+      container.insertBefore(discountTab, container.firstChild)
+    }
+  }
+
+  function replaceExploreFeaturedWithDiscount() {
+    const exploreCards = document.querySelectorAll('.category-title')
+    if (!exploreCards) return
+    const exploreFeatured = exploreCards[0]
+    if (!exploreFeatured) return
+    exploreFeatured.innerText = `? Black Friday Sale ?`
+  }
+
+  function replaceVACDiscountedPrice() {
+    let vacPrices = document.querySelectorAll('.original-price-value')
+    if (vacPrices && vacPrices.length > 0) {
+      const vacPrice = vacPrices[0]
+
+      if (window.location.pathname.includes('/leetcodes-interview-crash-course-data-structures-and-algorithms/')) {
+        vacPrice.innerText = '$89.99'
+      }
+      if (window.location.pathname.includes('/system-design-for-interviews-and-beyond/')) {
+        vacPrice.innerText = '$119.99'
+      }
+      if (window.location.pathname.includes('/system-design/')) {
+        vacPrice.innerText = '$75.99'
+      }
+      return
+    }
+    vacPrices = document.querySelectorAll('.price-value-container')
+    if (vacPrices && vacPrices.length > 0) {
+      const vacPrice = vacPrices[0]
+      if (window.location.pathname.includes('/leetcodes-interview-crash-course-data-structures-and-algorithms/')) {
+        vacPrice.innerHTML =
+          '<span class="" data-toggle="tooltip" data-placement="top" data-original-title="Discounted yearly premium price" aria-hidden="true" style="cursor: pointer;"><img src="/static/webpack_bundles/images/premium-crown.9efc127a2.png" alt="premium"></span><span>$</span><span class="price-value">69.99</span></span><span class="original-price-value">$89.99</span>'
+      }
+      if (window.location.pathname.includes('/system-design-for-interviews-and-beyond/')) {
+        vacPrice.innerHTML =
+          '<span class="" data-toggle="tooltip" data-placement="top" data-original-title="Discounted yearly premium price" aria-hidden="true" style="cursor: pointer;"><img src="/static/webpack_bundles/images/premium-crown.9efc127a2.png" alt="premium"></span><span>$</span><span class="price-value">94.99</span></span><span class="original-price-value">$119.99</span>'
+      }
+      if (window.location.pathname.includes('/system-design/')) {
+        vacPrice.innerHTML =
+          '<span class="" data-toggle="tooltip" data-placement="top" data-original-title="Discounted yearly premium price" aria-hidden="true" style="cursor: pointer;"><img src="/static/webpack_bundles/images/premium-crown.9efc127a2.png" alt="premium"></span><span>$</span><span class="price-value">59.99</span></span><span class="original-price-value">$75.99</span>'
+      }
+    }
+  }
+
+  window.onload = function () {
+
+    if (window.LeetCodeData) {
+      const {
+        features: { enableIndiaPricing },
+        userStatus: { countryCode },
+      } = window.LeetCodeData
+      if (
+        (window.location.pathname === '/' || window.location.pathname.startsWith('/problemset')) &&
+        enableIndiaPricing &&
+        countryCode === 'IN'
+      ) {
+        setTimeout(insertDiscountTab, 500)
+      }
+
+      var script = document.createElement('script')
+      script.async = true
+      document.body.appendChild(script)
+    }
+  }
+</script>
+<style>
+  .container-center {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .subscribe-link {
+    cursor: pointer;
+  }
+</style>
+    
+
+    
+
+    <script type="text/javascript" src="/static/legacy/common/js/base.js"></script>
+
+    <script>
+      try {
+        ace.config.set("basePath", "/static/ace-builds/src-noconflict/")
+      } catch(err) {}
+    </script>
+
+    <script>
+      function recaptchaV2Callback() {
+        window.grecaptchaV2 = Object.assign(Object.create(Object.getPrototypeOf(window.grecaptcha.enterprise)), window.grecaptcha.enterprise)
+      }
+      function recaptchaV3Callback() {
+        window.grecaptchaV3 = Object.assign(Object.create(Object.getPrototypeOf(window.grecaptcha.enterprise)), window.grecaptcha.enterprise)
+      }
+    </script>
+    <script type="text/javascript" src="https://www.recaptcha.net/recaptcha/enterprise.js?onload=recaptchaV2Callback&amp;render=explicit" async="" defer="">
+    </script>
+    
+    <script src="https://www.recaptcha.net/recaptcha/enterprise.js?onload=recaptchaV3Callback&amp;render=6LdBpsIUAAAAAKAYWjZfIpn4cJHVIk_tsmxpl7cz">
+    </script>
+
+
+  
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-jl9z7b5cmnik" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&amp;k=6LdBpsIUAAAAAKAYWjZfIpn4cJHVIk_tsmxpl7cz&amp;co=aHR0cHM6Ly9sZWV0Y29kZS5jb206NDQz&amp;hl=en&amp;v=Lu6n5xwy2ghvnPNo3IxkhcCb&amp;size=invisible&amp;anchor-ms=20000&amp;execute-ms=15000&amp;cb=sgu8j7zg3obk"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><script async=""></script>

@@ -1,0 +1,30 @@
+406. Queue Reconstruction by Height;=;=Medium;=;=public int[][] reconstructQueue(int[][] people);=;=You are given an array of people, people, which are the attributes of some people in a queue (not necessarily in order). Each people[i] = [hi, ki] represents the ith person of height hi with exactly ki other people in front who have a height greater than or equal to hi.
+
+Reconstruct and return the queue that is represented by the input array people. The returned queue should be formatted as an array queue, where queue[j] = [hj, kj] is the attributes of the jth person in the queue (queue[0] is the person at the front of the queue).
+
+ 
+
+Example 1:
+
+Input: people = [[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]
+Output: [[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]]
+Explanation:
+Person 0 has height 5 with no other people taller or the same height in front.
+Person 1 has height 7 with no other people taller or the same height in front.
+Person 2 has height 5 with two persons taller or the same height in front, which is person 0 and 1.
+Person 3 has height 6 with one person taller or the same height in front, which is person 1.
+Person 4 has height 4 with four people taller or the same height in front, which are people 0, 1, 2, and 3.
+Person 5 has height 7 with one person taller or the same height in front, which is person 1.
+Hence [[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]] is the reconstructed queue.
+Example 2:
+
+Input: people = [[6,0],[5,0],[4,0],[3,2],[2,2],[1,4]]
+Output: [[4,0],[5,0],[2,2],[3,2],[1,4],[6,0]]
+ 
+
+Constraints:
+
+1 <= people.length <= 2000
+0 <= hi <= 106
+0 <= ki < people.length
+It is guaranteed that the queue can be reconstructed.;=;=https://leetcode.com/problems/queue-reconstruction-by-height/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/queue-reconstruction-by-height/solutions/2211641/visual-explanation-java-greedy-by-ciote-c9f2/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/7092986/java-solution-segment-tree-implementatio-en02/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/7071409/13-ms-beats-8206-with-indian-tadka-cpp-j-jx8c/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/768976/detailed-article-with-multiple-approache-c1yv/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/2211635/pythonjavac-short-greedy-solution-with-i-bfeq/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/5878672/greedy-approach-explanation-sorting-comp-32e6/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/1129280/java-faster-989-sorting-greedy-by-himans-ioyu/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/5576230/good-to-go-by-dixon_n-qvyw/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/5787322/solution-by-dare2solve-detailed-explanat-o0zp/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/855407/2-java-solutions-greedy-comparator-by-cr-frvw/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/2212363/easy-java-solution-by-nisthaagarwal-ksdo/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/2838655/java-onlogn-solution-with-binary-indexed-wppg/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/2744468/java-10ms-faster-segment-tree-range-sum-i0jl8/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/2212239/java-solution-with-explanation-by-mansim-r9o7/;;https://leetcode.com/problems/queue-reconstruction-by-height/solutions/3483045/solution-with-brute-force-and-with-optim-lm7g/;;;=;==;=;=;

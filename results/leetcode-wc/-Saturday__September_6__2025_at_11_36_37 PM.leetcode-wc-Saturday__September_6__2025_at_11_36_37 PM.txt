@@ -1,0 +1,34 @@
+436. Find Right Interval;=;=Medium;=;=publicÊint[]ÊfindRightInterval(int[][]Êintervals);=;=You are given an array of intervals, where intervals[i] = [starti, endi] and each starti is unique.
+
+The right interval for an interval i is an interval j such that startj >= endi and startj is minimized. Note that i may equal j.
+
+Return an array of right interval indices for each interval i. If no right interval exists for interval i, then put -1 at index i.
+
+Ê
+
+Example 1:
+
+Input: intervals = [[1,2]]
+Output: [-1]
+Explanation: There is only one interval in the collection, so it outputs -1.
+Example 2:
+
+Input: intervals = [[3,4],[2,3],[1,2]]
+Output: [-1,0,1]
+Explanation: There is no right interval for [3,4].
+The right interval for [2,3] is [3,4] since start0 = 3 is the smallest start that is >= end1 = 3.
+The right interval for [1,2] is [2,3] since start1 = 2 is the smallest start that is >= end2 = 2.
+Example 3:
+
+Input: intervals = [[1,4],[2,3],[3,4]]
+Output: [-1,2,-1]
+Explanation: There is no right interval for [1,4] and [3,4].
+The right interval for [2,3] is [3,4] since start2 = 3 is the smallest start that is >= end1 = 3.
+Ê
+
+Constraints:
+
+1 <= intervals.length <= 2 * 104
+intervals[i].length == 2
+-106 <= starti <= endi <= 106
+The start point of each interval is unique.;=;=https://leetcode.com/problems/find-right-interval/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-right-interval/solutions/7048561/easy-peasy-java-code-by-arunsainarla-9gvy/;;https://leetcode.com/problems/find-right-interval/solutions/6913943/easy-to-understand-code-by-omkaarr_01-bbim/;;https://leetcode.com/problems/find-right-interval/solutions/814472/java-easy-to-understand-on-logn-based-on-mbge/;;https://leetcode.com/problems/find-right-interval/solutions/4655390/simple-approach-using-hashmap-and-binary-iujk/;;https://leetcode.com/problems/find-right-interval/solutions/5141975/best-binary-search-solution-by-mohitsing-pjte/;;https://leetcode.com/problems/find-right-interval/solutions/1544529/java-2-heaps-intuition-easy-to-understan-pkp0/;;https://leetcode.com/problems/find-right-interval/solutions/6328163/simple-java-solution-without-binary-sear-hvgs/;;https://leetcode.com/problems/find-right-interval/solutions/6211612/solution-in-java-by-thejas01-o3yv/;;https://leetcode.com/problems/find-right-interval/solutions/1070955/java-3-easy-solutions-easy-to-understand-tr8v/;;https://leetcode.com/problems/find-right-interval/solutions/7163252/solved-by-treemap-by-charan_raju8-u9hd/;;https://leetcode.com/problems/find-right-interval/solutions/7033492/find-the-minimum-right-interval-index-fo-d7f2/;;https://leetcode.com/problems/find-right-interval/solutions/6681722/find-right-interval-binary-search-approa-g9nv/;;https://leetcode.com/problems/find-right-interval/solutions/6531598/java-easy-100-binary-search-solution-by-4ssim/;;https://leetcode.com/problems/find-right-interval/solutions/3141719/beats-99-java-code-by-abstractconnoisseu-oz3b/;;https://leetcode.com/problems/find-right-interval/solutions/1817689/java-two-heaps-with-comments-by-omars_le-3ot3/;;;=;==;=;=;

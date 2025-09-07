@@ -1,0 +1,33 @@
+465. Optimal Account Balancing;=;=Hard;=;=public int minTransfers(int[][] transactions);=;=You are given an array of transactions transactions where transactions[i] = [fromi, toi, amounti] indicates that the person with ID = fromi gave amounti $ to the person with ID = toi.
+
+Return the minimum number of transactions required to settle the debt.
+
+ 
+
+Example 1:
+
+Input: transactions = [[0,1,10],[2,0,5]]
+Output: 2
+Explanation:
+Person #0 gave person #1 $10.
+Person #2 gave person #0 $5.
+Two transactions are needed. One way to settle the debt is person #1 pays person #0 and #2 $5 each.
+Example 2:
+
+Input: transactions = [[0,1,10],[1,0,1],[1,2,5],[2,0,5]]
+Output: 1
+Explanation:
+Person #0 gave person #1 $10.
+Person #1 gave person #0 $1.
+Person #1 gave person #2 $5.
+Person #2 gave person #0 $5.
+Therefore, person #1 only need to give person #0 $4, and all debt is settled.
+ 
+
+Constraints:
+
+1 <= transactions.length <= 8
+transactions[i].length == 3
+0 <= fromi, toi < 12
+fromi != toi
+1 <= amounti <= 100;=;=https://leetcode.com/problems/optimal-account-balancing/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/optimal-account-balancing/solutions/1157154/java-clean-backtracking-solution-with-co-ldty/;;https://leetcode.com/problems/optimal-account-balancing/solutions/1587705/well-commented-code-after-i-digested-it-u4cx0/;;https://leetcode.com/problems/optimal-account-balancing/solutions/631091/faster-than-74-dfsbacktracking-java-by-d-jpfq/;;https://leetcode.com/problems/optimal-account-balancing/solutions/1504515/simple-1-3ms-java-solution-using-recurss-uhh8/;;https://leetcode.com/problems/optimal-account-balancing/solutions/1763239/dew-it-1ms-9985-solution-trim-bitmask-by-ysi4/;;https://leetcode.com/problems/optimal-account-balancing/solutions/2274757/java-idea-from-yuxiong-post-2ms-98-by-st-23pz/;;https://leetcode.com/problems/optimal-account-balancing/solutions/1651376/java-backtracking-99-faster-by-achyutav-b366/;;https://leetcode.com/problems/optimal-account-balancing/solutions/307421/repeated-n-sum-formulation-approach-1ms-8fc1l/;;https://leetcode.com/problems/optimal-account-balancing/solutions/3733988/solution-in-java-using-dfs-by-ankititsme-jn4m/;;https://leetcode.com/problems/optimal-account-balancing/solutions/6889537/javaeasy-to-understand-simple-java-code-trwmn/;;https://leetcode.com/problems/optimal-account-balancing/solutions/6308524/backtracking-approach-by-shawnlee15-nnqv/;;https://leetcode.com/problems/optimal-account-balancing/solutions/6060068/video-beats-100-by-piotr_maminski-i5vu/;;https://leetcode.com/problems/optimal-account-balancing/solutions/5383202/shortest-java-solution-simple-backtracki-gwz4/;;https://leetcode.com/problems/optimal-account-balancing/solutions/4916459/java-code-1ms-beats-100-using-dfs-and-ha-7zvc/;;https://leetcode.com/problems/optimal-account-balancing/solutions/4717665/java-solution-backtracking-by-ndsjqwbbb-6sb2/;;;=;==;=;=;

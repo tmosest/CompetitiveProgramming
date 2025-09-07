@@ -1,0 +1,26 @@
+403. Frog Jump;=;=Hard;=;=public boolean canCross(int[] stones);=;=A frog is crossing a river. The river is divided into some number of units, and at each unit, there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water.
+
+Given a list of stones positions (in units) in sorted ascending order, determine if the frog can cross the river by landing on the last stone. Initially, the frog is on the first stone and assumes the first jump must be 1 unit.
+
+If the frog's last jump was k units, its next jump must be either k - 1, k, or k + 1 units. The frog can only jump in the forward direction.
+
+ 
+
+Example 1:
+
+Input: stones = [0,1,3,5,6,8,12,17]
+Output: true
+Explanation: The frog can jump to the last stone by jumping 1 unit to the 2nd stone, then 2 units to the 3rd stone, then 2 units to the 4th stone, then 3 units to the 6th stone, 4 units to the 7th stone, and 5 units to the 8th stone.
+Example 2:
+
+Input: stones = [0,1,2,3,4,8,9,11]
+Output: false
+Explanation: There is no way to jump to the last stone as the gap between the 5th and 6th stone is too large.
+ 
+
+Constraints:
+
+2 <= stones.length <= 2000
+0 <= stones[i] <= 231 - 1
+stones[0] == 0
+stones is sorted in a strictly increasing order.;=;=https://leetcode.com/problems/frog-jump/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/frog-jump/solutions/6280324/video-solution-by-niits-br29/;;https://leetcode.com/problems/frog-jump/solutions/7131274/code-explanation-by-amyy_1256-1tkw/;;https://leetcode.com/problems/frog-jump/solutions/3965107/dp-beginners-friendly-easy-to-understand-7egp/;;https://leetcode.com/problems/frog-jump/solutions/3964889/simple-java-solution-beginner-friendly-e-k03j/;;https://leetcode.com/problems/frog-jump/solutions/3968651/video-ex-amazon-explains-a-solution-with-cx9v/;;https://leetcode.com/problems/frog-jump/solutions/3967612/recursion-memoization-using-binary-searc-b63b/;;https://leetcode.com/problems/frog-jump/solutions/5063096/video-hashmap-solution-with-python-javas-fv6h/;;https://leetcode.com/problems/frog-jump/solutions/3722536/recursion-memoization-optimized-using-bi-t54k/;;https://leetcode.com/problems/frog-jump/solutions/6936784/java-easy-recursion-memoization-beats-93-jksd/;;https://leetcode.com/problems/frog-jump/solutions/6602684/easy-description-java-dp-by-anshsinghson-ztj5/;;https://leetcode.com/problems/frog-jump/solutions/3965008/simple-java-memoization-no-confusion-by-4vewx/;;https://leetcode.com/problems/frog-jump/solutions/3966547/my-first-hard-question-solved-without-an-j5w5/;;https://leetcode.com/problems/frog-jump/solutions/3940111/pure-recursion-memoization-no-hashtable-xq5s7/;;https://leetcode.com/problems/frog-jump/solutions/6732886/simple-optimized-dp-approach-java-by-mug-3cxl/;;https://leetcode.com/problems/frog-jump/solutions/6241116/java-dp-easy-to-understand-recursion-ple-7nql/;;;=;==;=;=;

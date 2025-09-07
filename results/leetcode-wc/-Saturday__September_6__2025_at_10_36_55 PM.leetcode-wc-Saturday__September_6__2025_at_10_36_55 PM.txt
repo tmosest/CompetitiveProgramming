@@ -1,0 +1,38 @@
+432. All O`one Data Structure;=;=Hard;=;=AllOne     public AllOne()                     public void inc(String key)                     public void dec(String key);=;=Design a data structure to store the strings' count with the ability to return the strings with minimum and maximum counts.
+
+Implement the AllOne class:
+
+AllOne() Initializes the object of the data structure.
+inc(String key) Increments the count of the string key by 1. If key does not exist in the data structure, insert it with count 1.
+dec(String key) Decrements the count of the string key by 1. If the count of key is 0 after the decrement, remove it from the data structure. It is guaranteed that key exists in the data structure before the decrement.
+getMaxKey() Returns one of the keys with the maximal count. If no element exists, return an empty string "".
+getMinKey() Returns one of the keys with the minimum count. If no element exists, return an empty string "".
+Note that each function must run in O(1) average time complexity.
+
+ 
+
+Example 1:
+
+Input
+["AllOne", "inc", "inc", "getMaxKey", "getMinKey", "inc", "getMaxKey", "getMinKey"]
+[[], ["hello"], ["hello"], [], [], ["leet"], [], []]
+Output
+[null, null, null, "hello", "hello", null, "hello", "leet"]
+
+Explanation
+AllOne allOne = new AllOne();
+allOne.inc("hello");
+allOne.inc("hello");
+allOne.getMaxKey(); // return "hello"
+allOne.getMinKey(); // return "hello"
+allOne.inc("leet");
+allOne.getMaxKey(); // return "hello"
+allOne.getMinKey(); // return "leet"
+ 
+
+Constraints:
+
+1 <= key.length <= 10
+key consists of lowercase English letters.
+It is guaranteed that for each call to dec, key is existing in the data structure.
+At most 5 * 104 calls will be made to inc, dec, getMaxKey, and getMinKey.;=;=https://leetcode.com/problems/all-oone-data-structure/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/all-oone-data-structure/solutions/5845777/optimize-your-code-with-the-all-oone-dat-66p9/;;https://leetcode.com/problems/all-oone-data-structure/solutions/5845908/o1-average-easy-solution-c-72ms-beats-96-djk6/;;https://leetcode.com/problems/all-oone-data-structure/solutions/6820225/beats-93-very-easy-solution-java-doubly-rmqrb/;;https://leetcode.com/problems/all-oone-data-structure/solutions/5846007/keep-it-simple-understand-o1-with-added-cm6ur/;;https://leetcode.com/problems/all-oone-data-structure/solutions/5846060/very-easy-to-understand-straight-forowar-g6vp/;;https://leetcode.com/problems/all-oone-data-structure/solutions/5846045/just-code-99-beats-with-o1-and-without-v-q64n/;;https://leetcode.com/problems/all-oone-data-structure/solutions/5846167/easy-javaoptimized-by-akash_y_codes-4xl8/;;https://leetcode.com/problems/all-oone-data-structure/solutions/5845869/beats-96-map-simple-approach-time-comple-ef0w/;;https://leetcode.com/problems/all-oone-data-structure/solutions/6710312/simplest-java-solution-heap-map-by-rubik-jsyn/;;https://leetcode.com/problems/all-oone-data-structure/solutions/5848501/java-solution-for-all-oone-data-structur-y9zv/;;https://leetcode.com/problems/all-oone-data-structure/solutions/1229078/java-one-map-double-linked-list-clean-co-c2t4/;;https://leetcode.com/problems/all-oone-data-structure/solutions/6644787/all-o1-modular-easy-to-read-and-understa-sddh/;;https://leetcode.com/problems/all-oone-data-structure/solutions/6664819/using-two-maps-by-anandhu-udayakumar-sqb0/;;https://leetcode.com/problems/all-oone-data-structure/solutions/7142576/solution-by-kanikamonga14-fihc/;;https://leetcode.com/problems/all-oone-data-structure/solutions/5846336/solution-by-dare2solve-detailed-explanat-7vy0/;;;=;==;=;=;

@@ -1,0 +1,27 @@
+466. Count The Repetitions;=;=Hard;=;=int getMaxRepetitions(string s1, int n1, string s2, int n2)    if (n1 == 0)        return 0;    int indexr[s2.size() + 1] =  0 ; // index at start of each s1 block    int countr[s2.size() + 1] =  0 ; // count of repititions till the present s1 block    int index = 0, count = 0;    for (int i = 0; i < n1; i++)         for (int j = 0; j < s1.size(); j++)             if (s1[j] == s2[index]);=;=We define str = [s, n] as the string str which consists of the string s concatenated n times.
+
+For example, str == ["abc", 3] =="abcabcabc".
+We define that string s1 can be obtained from string s2 if we can remove some characters from s2 such that it becomes s1.
+
+For example, s1 = "abc" can be obtained from s2 = "abdbec" based on our definition by removing the bolded underlined characters.
+You are given two strings s1 and s2 and two integers n1 and n2. You have the two strings str1 = [s1, n1] and str2 = [s2, n2].
+
+Return the maximum integer m such that str = [str2, m] can be obtained from str1.
+
+ 
+
+Example 1:
+
+Input: s1 = "acb", n1 = 4, s2 = "ab", n2 = 2
+Output: 2
+Example 2:
+
+Input: s1 = "acb", n1 = 1, s2 = "acb", n2 = 1
+Output: 1
+ 
+
+Constraints:
+
+1 <= s1.length, s2.length <= 100
+s1 and s2 consist of lowercase English letters.
+1 <= n1, n2 <= 106;=;=https://leetcode.com/problems/count-the-repetitions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-repetitions/solutions/2997580/solution-by-deleted_user-cg9d/;;https://leetcode.com/problems/count-the-repetitions/solutions/5667812/java-solution-easy-to-understand-by-neel-lb8f/;;https://leetcode.com/problems/count-the-repetitions/solutions/2777287/java-solution-4ms-runtime-with-brief-exp-dj3m/;;https://leetcode.com/problems/count-the-repetitions/solutions/2307017/java-6ms-find-cycle-omn-by-student2091-kkk8/;;https://leetcode.com/problems/count-the-repetitions/solutions/632449/java-solution-by-shyam7-dpk1/;;https://leetcode.com/problems/count-the-repetitions/solutions/6053035/java-brute-force-solution-but-accepted-b-yumz/;;https://leetcode.com/problems/count-the-repetitions/solutions/6041985/simple-dp-by-rahulsaini1234-siki/;;https://leetcode.com/problems/count-the-repetitions/solutions/5645675/solution-in-java-100-by-ashimasingh0610-srgg/;;https://leetcode.com/problems/count-the-repetitions/solutions/5204284/count-the-repetitions-java-easy-by-user4-4n60/;;https://leetcode.com/problems/count-the-repetitions/solutions/4693273/easy-java-solution-by-harshkumar_23-wmd5/;;https://leetcode.com/problems/count-the-repetitions/solutions/4345935/ridiculous-by-user3043sb-3ebj/;;https://leetcode.com/problems/count-the-repetitions/solutions/3827802/java-solution-4ms-runtime-with-brief-exp-vew4/;;https://leetcode.com/problems/count-the-repetitions/solutions/3667172/3913-faster-by-trunkunala-h7lc/;;;=;==;=;=;

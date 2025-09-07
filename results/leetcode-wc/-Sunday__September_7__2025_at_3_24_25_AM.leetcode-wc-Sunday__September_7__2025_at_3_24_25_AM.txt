@@ -1,0 +1,39 @@
+352. Data Stream as Disjoint Intervals;=;=Hard;=;=SummaryRanges     public SummaryRanges()                     public void addNum(int value)                     public int[][] getIntervals()             /  Your SummaryRanges object will be instantiated and called as such:  SummaryRanges obj = new SummaryRanges();  obj.addNum(value);  int[][] param_2 = obj.getIntervals();;=;=Given a data stream input of non-negative integers a1, a2, ..., an, summarize the numbers seen so far as a list of disjoint intervals.
+
+Implement the SummaryRanges class:
+
+SummaryRanges() Initializes the object with an empty stream.
+void addNum(int value) Adds the integer value to the stream.
+int[][] getIntervals() Returns a summary of the integers in the stream currently as a list of disjoint intervals [starti, endi]. The answer should be sorted by starti.
+ 
+
+Example 1:
+
+Input
+["SummaryRanges", "addNum", "getIntervals", "addNum", "getIntervals", "addNum", "getIntervals", "addNum", "getIntervals", "addNum", "getIntervals"]
+[[], [1], [], [3], [], [7], [], [2], [], [6], []]
+Output
+[null, null, [[1, 1]], null, [[1, 1], [3, 3]], null, [[1, 1], [3, 3], [7, 7]], null, [[1, 3], [7, 7]], null, [[1, 3], [6, 7]]]
+
+Explanation
+SummaryRanges summaryRanges = new SummaryRanges();
+summaryRanges.addNum(1);      // arr = [1]
+summaryRanges.getIntervals(); // return [[1, 1]]
+summaryRanges.addNum(3);      // arr = [1, 3]
+summaryRanges.getIntervals(); // return [[1, 1], [3, 3]]
+summaryRanges.addNum(7);      // arr = [1, 3, 7]
+summaryRanges.getIntervals(); // return [[1, 1], [3, 3], [7, 7]]
+summaryRanges.addNum(2);      // arr = [1, 2, 3, 7]
+summaryRanges.getIntervals(); // return [[1, 3], [7, 7]]
+summaryRanges.addNum(6);      // arr = [1, 2, 3, 6, 7]
+summaryRanges.getIntervals(); // return [[1, 3], [6, 7]]
+ 
+
+Constraints:
+
+0 <= value <= 104
+At most 3 * 104 calls will be made to addNum and getIntervals.
+At most 102 calls will be made to getIntervals.
+ 
+
+Follow up: What if there are lots of merges and the number of disjoint intervals is small compared to the size of the data stream?;=;=https://leetcode.com/problems/data-stream-as-disjoint-intervals/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3107293/day-28-ordered-set-easiest-beginner-frie-lakv/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/82553/java-solution-using-treemap-real-ologn-p-yqq0/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3107556/fast-java-solution-by-coding_menance-06ob/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3107283/simple-and-detailed-explanation-with-vid-207o/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3107325/clean-codes-full-explanation-ordered-set-8apn/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/5792184/accepted-simple-solution-treemap-by-dixo-nna6/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/82610/java-fast-log-n-solution-186ms-without-u-a01y/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3108400/java-2-solutions-explained-by-sourin_bru-r93g/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3107428/c-java-ordered_set-tree-map-binary-searc-hnah/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3109566/java-easy-to-understand-solution-by-faro-ku21/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3109383/simple-java-easy-beginners-steps-by-moh-azblu/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/82619/java-ac-union-find-solution-by-yrj-xhv4/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3110238/java-tree-map-easy-solution-by-jain20131-9bkz/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3109290/data-stream-linked-list-node-by-surendaa-x83o/;;https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3107991/hey-could-you-retrieve-element-in-consta-8vxh/;;;=;==;=;=;

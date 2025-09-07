@@ -1,0 +1,18 @@
+491. Non-decreasing Subsequences;=;=Medium;=;=public List<List<Integer>> findSubsequences(int[] nums);=;=Given an integer array nums, return all the different possible non-decreasing subsequences of the given array with at least two elements. You may return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: nums = [4,6,7,7]
+Output: [[4,6],[4,6,7],[4,6,7,7],[4,7],[4,7,7],[6,7],[6,7,7],[7,7]]
+Example 2:
+
+Input: nums = [4,4,3,2,1]
+Output: [[4,4]]
+ 
+
+Constraints:
+
+1 <= nums.length <= 15
+-100 <= nums[i] <= 100;=;=https://leetcode.com/problems/non-decreasing-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/non-decreasing-subsequences/solutions/2910678/non-decreasing-subsequences-by-leetcode-yy42/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/3075096/c-easy-solution-backtracking-approach-he-ondm/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/6664383/master-increasing-subsequences-with-back-hfcr/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/3074895/easy-explanation-for-beginners-with-vide-lxja/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/3074787/python3-backtracking-for-beginners-by-me-0yzh/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/97147/java-solution-beats-100-by-lceveryday-sqfi/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/7058422/straightforward-solution-using-backtrack-zwa2/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/3075034/easy-solutionfully-explained-c-python3-j-koxy/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/97124/c-dfs-solution-using-unordered_set-by-em-o0k6/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/5115280/video-solution-intuition-and-approach-ex-1duj/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/7042753/solution-for-the-fellas-by-abhiie-fgyw/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/97127/simple-python-by-stefanpochmann-re48/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/7035634/beats-9895-c-easy-solution-by-aryanrahar-jjeg/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/97130/java-20-lines-backtracking-solution-usin-kiw8/;;https://leetcode.com/problems/non-decreasing-subsequences/solutions/1319745/java-easy-backtracking-solution-by-rmani-wn92/;;;=;==;=;=;

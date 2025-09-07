@@ -1,0 +1,23 @@
+503. Next Greater Element II;=;=Medium;=;=public int[] nextGreaterElements(int[] nums);=;=Given a circular integer array nums (i.e., the next element of nums[nums.length - 1] is nums[0]), return the next greater number for every element in nums.
+
+The next greater number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, return -1 for this number.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,1]
+Output: [2,-1,2]
+Explanation: The first 1's next greater number is 2; 
+The number 2 can't find next greater number. 
+The second 1's next greater number needs to search circularly, which is also 2.
+Example 2:
+
+Input: nums = [1,2,3,4,3]
+Output: [2,3,4,-1,4]
+ 
+
+Constraints:
+
+1 <= nums.length <= 104
+-109 <= nums[i] <= 109;=;=https://leetcode.com/problems/next-greater-element-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/next-greater-element-ii/solutions/7077959/brute-force-to-optimized-solutionmonoton-3pyz/;;https://leetcode.com/problems/next-greater-element-ii/solutions/7036031/next-greater-element-ii-circular-array-s-7g4j/;;https://leetcode.com/problems/next-greater-element-ii/solutions/6422098/optimized-solution-easy-java-stack-imple-4yqf/;;https://leetcode.com/problems/next-greater-element-ii/solutions/6941880/monotonic-stack-java-by-aadi_dayal08-l9k0/;;https://leetcode.com/problems/next-greater-element-ii/solutions/5666763/simple-code-easy-to-understand-beginner-x8rp2/;;https://leetcode.com/problems/next-greater-element-ii/solutions/1449789/java-damn-easy-to-understand-by-rohitkum-qg7v/;;https://leetcode.com/problems/next-greater-element-ii/solutions/7098148/easy-optimized-cpp-java-python-by-priyan-suxg/;;https://leetcode.com/problems/next-greater-element-ii/solutions/6938208/next-greater-element-ii-by-shibin_1125-f186/;;https://leetcode.com/problems/next-greater-element-ii/solutions/3387062/cpythonjavajavascript-using-stack-with-s-1r53/;;https://leetcode.com/problems/next-greater-element-ii/solutions/6864632/easy-to-understand-stack-solution-not-bl-k5v6/;;https://leetcode.com/problems/next-greater-element-ii/solutions/7048859/approach-simulating-two-passes-using-mod-ys1j/;;https://leetcode.com/problems/next-greater-element-ii/solutions/7037080/next-greater-circular-array-by-samruddhi-avu0/;;https://leetcode.com/problems/next-greater-element-ii/solutions/6985485/next-greater-element-in-circular-array-u-ctta/;;https://leetcode.com/problems/next-greater-element-ii/solutions/5201809/brute-intuitive-solution-beats-98-monoto-9lng/;;https://leetcode.com/problems/next-greater-element-ii/solutions/6941879/monotonic-stack-java-by-aadi_dayal08-sntu/;;;=;==;=;=;

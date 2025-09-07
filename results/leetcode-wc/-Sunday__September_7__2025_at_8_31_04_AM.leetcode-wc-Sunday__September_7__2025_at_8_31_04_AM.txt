@@ -1,0 +1,25 @@
+562. Longest Line of Consecutive One in Matrix;=;=Medium;=;=public int longestLine(int[][] mat);=;=Given an m x n binary matrix mat, return the length of the longest line of consecutive one in the matrix.
+
+The line could be horizontal, vertical, diagonal, or anti-diagonal.
+
+ 
+
+Example 1:
+
+
+Input: mat = [[0,1,1,0],[0,1,1,0],[0,0,0,1]]
+Output: 3
+Example 2:
+
+
+Input: mat = [[1,1,1,1],[0,1,1,0],[0,0,0,1]]
+Output: 4
+ 
+
+Constraints:
+
+m == mat.length
+n == mat[i].length
+1 <= m, n <= 104
+1 <= m * n <= 104
+mat[i][j] is either 0 or 1.;=;=https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/2159751/onm-bf-beats-95-java-by-beken-otrx/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/2091883/java-beats-8595-why-use-dp-when-you-can-cpe18/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/947625/java-clean-recursive-with-memoization-by-sh8r/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/1527240/java-tc-omn-sc-ominm-n-or-o1-two-space-o-0hr4/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/665467/maybe-a-little-bit-more-readable-than-th-5yzw/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/102273/java-o1-space-and-omn-time-69-running-ti-7bon/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/7056283/iteration-based-solution-in-java-by-some-t39u/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/2354398/simple-java-solution-time-onm-space-om-b-95cf/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/6477095/seperate-dp-matrix-for-each-direction-dp-qjfl/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/6309041/omn-single-pass-dp-solution-on-extra-spa-37qv/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/6143206/beats-80-solution-with-dp-by-abhineshp-xw23/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/5271795/java-dp-solution-by-vharshal1994-s9tj/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/5062444/java-on-solution-by-tbekpro-ngkq/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/4957584/my-poor-dfs-solution-by-darrenkimbat-tif8/;;https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/solutions/4702818/java-3d-dp-by-robertskonieczny-13pc/;;;=;==;=;=;

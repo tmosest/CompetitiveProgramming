@@ -1,0 +1,32 @@
+3216. Lexicographically Smallest String After a Swap;=;=Easy;=;=public String getSmallestString(String s);=;=Given a string s containing only digits, return the lexicographically smallest string that can be obtained after swapping adjacent digits in s with the same parity at most once.
+
+Digits have the same parity if both are odd or both are even. For example, 5 and 9, as well as 2 and 4, have the same parity, while 6 and 9 do not.
+
+ 
+
+Example 1:
+
+Input: s = "45320"
+
+Output: "43520"
+
+Explanation:
+
+s[1] == '5' and s[2] == '3' both have the same parity, and swapping them results in the lexicographically smallest string.
+
+Example 2:
+
+Input: s = "001"
+
+Output: "001"
+
+Explanation:
+
+There is no need to perform a swap because s is already the lexicographically smallest.
+
+ 
+
+Constraints:
+
+2 <= s.length <= 100
+s consists only of digits.;=;=https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473408/easy-video-solution-how-to-in-interview-52gu1/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473276/1-linear-java-intuitive-solution-by-shre-k5af/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/6935178/beats-100-using-stringbuilder-by-alexand-cxfe/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473223/solution-by-dare2solve-detailed-explanat-9dw6/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473282/java-solution-by-harsh__005-zugl/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/6638464/simple-efficient-two-pointer-solution-on-2rg1/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5483538/easiestfaster-lesser-cpython3javacpython-1q28/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/7150280/java-by-soumya_699-59je/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/6826608/check-it-out-bro-by-madhansingh-htnv/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5473108/effortlessly-dominate-100-with-beginner-yfld5/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5474027/simple-java-code-by-abhinandannaik1717-o6un/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/6314888/1ms-100-beat-java-by-galani_jenis-x7e0/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5532646/solution-by-dare2solve-detailed-explanat-0iyg/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5475527/simple-java-beats-100-by-harshsharma08-rvc4/;;https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/solutions/5474387/simple-java-solution-beats-100-by-anshul-wxfw/;;;=;==;=;=;

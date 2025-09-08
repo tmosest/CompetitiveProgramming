@@ -1,0 +1,121 @@
+JavaPythonÊ Copy
+
+1
+class Solution {
+2
+ Ê Êpublic int[] pourWater(int[] H, int V, int K) {
+3
+ Ê Ê Ê Êwhile (V-- > 0) droplet: {
+4
+ Ê Ê Ê Ê Ê Êfor (int d = -1; d <= 1; d += 2) {
+5
+ Ê Ê Ê Ê Ê Ê Ê Êint i = K, best = K;
+6
+ Ê Ê Ê Ê Ê Ê Ê Êwhile (0 <= i+d && i+d < H.length && H[i+d] <= H[i]) {
+7
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê Êif (H[i+d] < H[i]) best = i + d;
+8
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê Êi += d;
+9
+ Ê Ê Ê Ê Ê Ê Ê  }
+10
+ Ê Ê Ê Ê Ê Ê Ê Êif (H[best] < H[K]) {
+11
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê ÊH[best]++;
+12
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê Êbreak droplet;
+13
+ Ê Ê Ê Ê Ê Ê Ê  }
+14
+ Ê Ê Ê Ê Ê  }
+15
+ Ê Ê Ê Ê Ê ÊH[K]++;
+16
+ Ê Ê Ê  }
+17
+ Ê Ê Ê Êreturn H;
+18
+ Ê  }
+19
+}
+JavaPythonÊ Copy
+
+1
+class Solution {
+2
+ Ê Êpublic int[] pourWater(int[] H, int V, int K) {
+3
+ Ê Ê Ê Êwhile (V-- > 0) droplet: {
+4
+ Ê Ê Ê Ê Ê Êfor (int d = -1; d <= 1; d += 2) {
+5
+ Ê Ê Ê Ê Ê Ê Ê Êint i = K, best = K;
+6
+ Ê Ê Ê Ê Ê Ê Ê Êwhile (0 <= i+d && i+d < H.length && H[i+d] <= H[i]) {
+7
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê Êif (H[i+d] < H[i]) best = i + d;
+8
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê Êi += d;
+9
+ Ê Ê Ê Ê Ê Ê Ê  }
+10
+ Ê Ê Ê Ê Ê Ê Ê Êif (H[best] < H[K]) {
+11
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê ÊH[best]++;
+12
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê Êbreak droplet;
+13
+ Ê Ê Ê Ê Ê Ê Ê  }
+14
+ Ê Ê Ê Ê Ê  }
+15
+ Ê Ê Ê Ê Ê ÊH[K]++;
+16
+ Ê Ê Ê  }
+17
+ Ê Ê Ê Êreturn H;
+18
+ Ê  }
+19
+}
+JavaPythonÊ Copy
+
+1
+class Solution {
+2
+ Ê Êpublic int[] pourWater(int[] H, int V, int K) {
+3
+ Ê Ê Ê Êwhile (V-- > 0) droplet: {
+4
+ Ê Ê Ê Ê Ê Êfor (int d = -1; d <= 1; d += 2) {
+5
+ Ê Ê Ê Ê Ê Ê Ê Êint i = K, best = K;
+6
+ Ê Ê Ê Ê Ê Ê Ê Êwhile (0 <= i+d && i+d < H.length && H[i+d] <= H[i]) {
+7
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê Êif (H[i+d] < H[i]) best = i + d;
+8
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê Êi += d;
+9
+ Ê Ê Ê Ê Ê Ê Ê  }
+10
+ Ê Ê Ê Ê Ê Ê Ê Êif (H[best] < H[K]) {
+11
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê ÊH[best]++;
+12
+ Ê Ê Ê Ê Ê Ê Ê Ê Ê Êbreak droplet;
+13
+ Ê Ê Ê Ê Ê Ê Ê  }
+14
+ Ê Ê Ê Ê Ê  }
+15
+ Ê Ê Ê Ê Ê ÊH[K]++;
+16
+ Ê Ê Ê  }
+17
+ Ê Ê Ê Êreturn H;
+18
+ Ê  }
+19
+}
+Code copied forÊPython

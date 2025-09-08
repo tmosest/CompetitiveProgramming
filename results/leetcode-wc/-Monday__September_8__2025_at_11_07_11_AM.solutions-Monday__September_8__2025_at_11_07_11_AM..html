@@ -1,0 +1,417 @@
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+    public List<Integer> findNumOfValidWords(String[] words, String[] puzzles) {
+3
+        int SIZE = 26; // total character size
+4
+        ArrayList<Integer[]> trie = new ArrayList<>(); // we use list to mimic the trie tree
+5
+        trie.add(Collections.nCopies(SIZE, 0).toArray(new Integer[0]));
+6
+        ArrayList<Integer> count = new ArrayList<>(List.of(0)); // the number of words ending at node i
+7
+        for (String word : words) {
+8
+            // sort and remove duplicates
+9
+            char[] chars = word.toCharArray();
+10
+            Arrays.sort(chars);
+11
+            StringBuilder sb = new StringBuilder();
+12
+            sb.append(chars[0]);
+13
+            for (int i = 1; i < chars.length; i++) {
+14
+                if (chars[i] != chars[i - 1]) {
+15
+                    sb.append(chars[i]);
+16
+                }
+17
+            }
+18
+            if (sb.length() <= 7) { // longer words are never valid
+19
+                // insert into trie
+20
+                int node = 0;
+21
+                for (char letter : sb.toString().toCharArray()) {
+22
+                    int i = letter - 'a';
+23
+                    if (trie.get(node)[i] == 0) { // push empty node
+24
+                        trie.add(Collections.nCopies(SIZE, 0).toArray(new Integer[0]));
+25
+                        count.add(0);
+26
+                        trie.get(node)[i] = trie.size() - 1;
+27
+                    }
+28
+                    node = trie.get(node)[i];
+29
+                }
+30
+                count.set(node, count.get(node) + 1);
+31
+            }
+32
+        }
+33
+        ArrayList<Integer> result = new ArrayList<>();
+34
+        for (String puzzle : puzzles) {
+35
+            result.add(dfs(0, false, puzzle, trie, count));
+36
+        }
+37
+        return result;
+38
+    }
+39
+?
+40
+    // search for valid words
+41
+    int dfs(int node, boolean hasFirst, String puzzle, List<Integer[]> trie, List<Integer> cnt) {
+42
+        int total = hasFirst ? cnt.get(node) : 0;
+43
+        for (char letter : puzzle.toCharArray()) {
+44
+            int i = letter - 'a';
+45
+            if (trie.get(node)[i] > 0) {
+46
+                total += dfs(trie.get(node)[i], hasFirst || (letter == puzzle.charAt(0)), puzzle, trie, cnt);
+47
+            }
+48
+        }
+49
+        return total;
+50
+    }
+51
+}
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+    public List<Integer> findNumOfValidWords(String[] words, String[] puzzles) {
+3
+        int SIZE = 26; // total character size
+4
+        ArrayList<Integer[]> trie = new ArrayList<>(); // we use list to mimic the trie tree
+5
+        trie.add(Collections.nCopies(SIZE, 0).toArray(new Integer[0]));
+6
+        ArrayList<Integer> count = new ArrayList<>(List.of(0)); // the number of words ending at node i
+7
+        for (String word : words) {
+8
+            // sort and remove duplicates
+9
+            char[] chars = word.toCharArray();
+10
+            Arrays.sort(chars);
+11
+            StringBuilder sb = new StringBuilder();
+12
+            sb.append(chars[0]);
+13
+            for (int i = 1; i < chars.length; i++) {
+14
+                if (chars[i] != chars[i - 1]) {
+15
+                    sb.append(chars[i]);
+16
+                }
+17
+            }
+18
+            if (sb.length() <= 7) { // longer words are never valid
+19
+                // insert into trie
+20
+                int node = 0;
+21
+                for (char letter : sb.toString().toCharArray()) {
+22
+                    int i = letter - 'a';
+23
+                    if (trie.get(node)[i] == 0) { // push empty node
+24
+                        trie.add(Collections.nCopies(SIZE, 0).toArray(new Integer[0]));
+25
+                        count.add(0);
+26
+                        trie.get(node)[i] = trie.size() - 1;
+27
+                    }
+28
+                    node = trie.get(node)[i];
+29
+                }
+30
+                count.set(node, count.get(node) + 1);
+31
+            }
+32
+        }
+33
+        ArrayList<Integer> result = new ArrayList<>();
+34
+        for (String puzzle : puzzles) {
+35
+            result.add(dfs(0, false, puzzle, trie, count));
+36
+        }
+37
+        return result;
+38
+    }
+39
+?
+40
+    // search for valid words
+41
+    int dfs(int node, boolean hasFirst, String puzzle, List<Integer[]> trie, List<Integer> cnt) {
+42
+        int total = hasFirst ? cnt.get(node) : 0;
+43
+        for (char letter : puzzle.toCharArray()) {
+44
+            int i = letter - 'a';
+45
+            if (trie.get(node)[i] > 0) {
+46
+                total += dfs(trie.get(node)[i], hasFirst || (letter == puzzle.charAt(0)), puzzle, trie, cnt);
+47
+            }
+48
+        }
+49
+        return total;
+50
+    }
+51
+}
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+    public List<Integer> findNumOfValidWords(String[] words, String[] puzzles) {
+3
+        int SIZE = 26; // total character size
+4
+        ArrayList<Integer[]> trie = new ArrayList<>(); // we use list to mimic the trie tree
+5
+        trie.add(Collections.nCopies(SIZE, 0).toArray(new Integer[0]));
+6
+        ArrayList<Integer> count = new ArrayList<>(List.of(0)); // the number of words ending at node i
+7
+        for (String word : words) {
+8
+            // sort and remove duplicates
+9
+            char[] chars = word.toCharArray();
+10
+            Arrays.sort(chars);
+11
+            StringBuilder sb = new StringBuilder();
+12
+            sb.append(chars[0]);
+13
+            for (int i = 1; i < chars.length; i++) {
+14
+                if (chars[i] != chars[i - 1]) {
+15
+                    sb.append(chars[i]);
+16
+                }
+17
+            }
+18
+            if (sb.length() <= 7) { // longer words are never valid
+19
+                // insert into trie
+20
+                int node = 0;
+21
+                for (char letter : sb.toString().toCharArray()) {
+22
+                    int i = letter - 'a';
+23
+                    if (trie.get(node)[i] == 0) { // push empty node
+24
+                        trie.add(Collections.nCopies(SIZE, 0).toArray(new Integer[0]));
+25
+                        count.add(0);
+26
+                        trie.get(node)[i] = trie.size() - 1;
+27
+                    }
+28
+                    node = trie.get(node)[i];
+29
+                }
+30
+                count.set(node, count.get(node) + 1);
+31
+            }
+32
+        }
+33
+        ArrayList<Integer> result = new ArrayList<>();
+34
+        for (String puzzle : puzzles) {
+35
+            result.add(dfs(0, false, puzzle, trie, count));
+36
+        }
+37
+        return result;
+38
+    }
+39
+?
+40
+    // search for valid words
+41
+    int dfs(int node, boolean hasFirst, String puzzle, List<Integer[]> trie, List<Integer> cnt) {
+42
+        int total = hasFirst ? cnt.get(node) : 0;
+43
+        for (char letter : puzzle.toCharArray()) {
+44
+            int i = letter - 'a';
+45
+            if (trie.get(node)[i] > 0) {
+46
+                total += dfs(trie.get(node)[i], hasFirst || (letter == puzzle.charAt(0)), puzzle, trie, cnt);
+47
+            }
+48
+        }
+49
+        return total;
+50
+    }
+51
+}
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+    public List<Integer> findNumOfValidWords(String[] words, String[] puzzles) {
+3
+        int SIZE = 26; // total character size
+4
+        ArrayList<Integer[]> trie = new ArrayList<>(); // we use list to mimic the trie tree
+5
+        trie.add(Collections.nCopies(SIZE, 0).toArray(new Integer[0]));
+6
+        ArrayList<Integer> count = new ArrayList<>(List.of(0)); // the number of words ending at node i
+7
+        for (String word : words) {
+8
+            // sort and remove duplicates
+9
+            char[] chars = word.toCharArray();
+10
+            Arrays.sort(chars);
+11
+            StringBuilder sb = new StringBuilder();
+12
+            sb.append(chars[0]);
+13
+            for (int i = 1; i < chars.length; i++) {
+14
+                if (chars[i] != chars[i - 1]) {
+15
+                    sb.append(chars[i]);
+16
+                }
+17
+            }
+18
+            if (sb.length() <= 7) { // longer words are never valid
+19
+                // insert into trie
+20
+                int node = 0;
+21
+                for (char letter : sb.toString().toCharArray()) {
+22
+                    int i = letter - 'a';
+23
+                    if (trie.get(node)[i] == 0) { // push empty node
+24
+                        trie.add(Collections.nCopies(SIZE, 0).toArray(new Integer[0]));
+25
+                        count.add(0);
+26
+                        trie.get(node)[i] = trie.size() - 1;
+27
+                    }
+28
+                    node = trie.get(node)[i];
+29
+                }
+30
+                count.set(node, count.get(node) + 1);
+31
+            }
+32
+        }
+33
+        ArrayList<Integer> result = new ArrayList<>();
+34
+        for (String puzzle : puzzles) {
+35
+            result.add(dfs(0, false, puzzle, trie, count));
+36
+        }
+37
+        return result;
+38
+    }
+39
+?
+40
+    // search for valid words
+41
+    int dfs(int node, boolean hasFirst, String puzzle, List<Integer[]> trie, List<Integer> cnt) {
+42
+        int total = hasFirst ? cnt.get(node) : 0;
+43
+        for (char letter : puzzle.toCharArray()) {
+44
+            int i = letter - 'a';
+45
+            if (trie.get(node)[i] > 0) {
+46
+                total += dfs(trie.get(node)[i], hasFirst || (letter == puzzle.charAt(0)), puzzle, trie, cnt);
+47
+            }
+48
+        }
+49
+        return total;
+50
+    }
+51
+}
+Code copied for Python3

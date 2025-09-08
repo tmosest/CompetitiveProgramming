@@ -1,0 +1,38 @@
+2617. Minimum Number of Visited Cells in a Grid;=;=Hard;=;=public int minimumVisitedCells(int[][] grid);=;=You are given a 0-indexed m x n integer matrix grid. Your initial position is at the top-left cell (0, 0).
+
+Starting from the cell (i, j), you can move to one of the following cells:
+
+Cells (i, k) with j < k <= grid[i][j] + j (rightward movement), or
+Cells (k, j) with i < k <= grid[i][j] + i (downward movement).
+Return the minimum number of cells you need to visit to reach the bottom-right cell (m - 1, n - 1). If there is no valid path, return -1.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[3,4,2,1],[4,2,3,1],[2,1,0,0],[2,4,0,0]]
+Output: 4
+Explanation: The image above shows one of the paths that visits exactly 4 cells.
+Example 2:
+
+
+Input: grid = [[3,4,2,1],[4,2,1,1],[2,1,1,0],[3,4,1,0]]
+Output: 3
+Explanation: The image above shows one of the paths that visits exactly 3 cells.
+Example 3:
+
+
+Input: grid = [[2,1,0],[1,0,0]]
+Output: -1
+Explanation: It can be proven that no path exists.
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 105
+1 <= m * n <= 105
+0 <= grid[i][j] < m * n
+grid[m - 1][n - 1] == 0;=;=https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/3395709/c-java-python3-settreesetsortedlist-bfs-n9vgh/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/6923327/beginner-friendly-by-ashu_6205-ru11/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/3396173/java-the-solution-that-records-max-is-fo-fffo/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/3398401/java-dijkstra-by-cursed__03-9iqm/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/3395924/dijkstra-by-wddd-tqkd/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/3396488/optimized-bfs-recording-maximum-reach-on-hqge/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/3395858/java-bfs-solution-dont-know-why-its-hard-p50n/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/3400965/bfs-finding-min-steps-omn2-time-by-kench-gk1u/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/3398976/step-by-step-easy-solution-using-queue-b-sz5e/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/3396647/java-simple-solution-with-time-complexit-2qyq/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/6923328/beginner-friendly-by-ashu_6205-o7rn/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/6861660/monotonic-stack-omn-by-suiler-e9ez/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/6838984/efficient-bfs-with-treeset-pruning-for-m-cipj/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/6002451/i-dont-know-why-its-working-recording-co-fopt/;;https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/solutions/6002444/i-dont-know-why-its-working-recording-co-fb9i/;;;=;==;=;=;

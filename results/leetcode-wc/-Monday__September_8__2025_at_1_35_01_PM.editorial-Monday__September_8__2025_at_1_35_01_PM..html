@@ -1,0 +1,183 @@
+<div class="relative break-words"><div class="flex flex-col w-full" style="position: relative;"><div class="mYe_l WRmCx"><h2 id="solution" level="2" class="group/heading relative"><a href="#solution" class="!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Solution</h2>
+<hr>
+<h3 id="approach-1-brute-force" level="3" class="group/heading relative"><a href="#approach-1-brute-force" class="!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Approach 1: Brute Force</h3>
+<h4 id="intuition">Intuition</h4>
+<p>A logical approach is to check every possible subarray of size <code>k</code> within the given array. Our goal is to determine if these subarrays contain consecutive integers in ascending order and their power.</p>
+<p>For each starting index <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></span>, we extract the subarray of elements from <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mord mathnormal">s</span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mclose">]</span></span></span></span></span> to <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mord mathnormal">s</span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.7778em; vertical-align: -0.0833em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">-</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span></span>. We then need to verify two conditions: the elements must be sorted in ascending order, and they must be consecutive integers.</p>
+<p>To check the consecutive property, we iterate through the elements in the subarray and compare each element with the next. If two adjacent elements are not consecutive (meaning the next element is not equal to the current element plus one), we mark the subarray as invalid. If the subarray passes both checks, we take the last element as the maximum, as the elements are sorted.</p>
+<h4 id="algorithm">Algorithm</h4>
+<ul>
+<li>
+<p>Initialize <code>length</code> to the size of <code>nums</code>.</p>
+</li>
+<li>
+<p>Create an integer array <code>result</code> with size <code>length - k + 1</code> to store the output.</p>
+</li>
+<li>
+<p>Iterate through each starting position of the subarray in <code>nums</code> using <code>start</code>:</p>
+<ul>
+<li>
+<p>Set <code>isConsecutiveAndSorted</code> to <code>true</code> to assume the subarray is valid initially.</p>
+</li>
+<li>
+<p>Check if the current subarray (of size <code>k</code>) is sorted and consecutive:</p>
+<ul>
+<li>Loop through each element in the subarray (from <code>start</code> to <code>start + k - 2</code>):
+<ul>
+<li>If the next element is not exactly <code>1</code> greater than the current element, set <code>isConsecutiveAndSorted</code> to <code>false</code> and break out of the loop.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>After the loop, if <code>isConsecutiveAndSorted</code> is still <code>true</code>:</p>
+<ul>
+<li>Set <code>result[start]</code> to the maximum element in the subarray, which is <code>nums[start + k - 1]</code>.</li>
+</ul>
+</li>
+<li>
+<p>Otherwise, set <code>result[start]</code> to <code>-1</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Return <code>result</code>, where indices with valid sequences contain the last element of the sequence, and others remain <code>-1</code>.</p>
+</li>
+</ul>
+<h4 id="implementation">Implementation</h4>
+<iframe src="https://leetcode.com/playground/4qoaNgvF/shared" width="100%" height="500" name="user-content-4qoaNgvF" allowfullscreen="" translate="no"></iframe>
+<h4 id="complexity-analysis">Complexity Analysis</h4>
+<p>Let <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span> be the length of the input array <code>nums</code> and <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6944em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span></span></span></span></span> be the length of the subarrays we are checking.</p>
+<ul>
+<li>
+<p>Time complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">·</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The outer loop iterates <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6667em; vertical-align: -0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">-</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.7778em; vertical-align: -0.0833em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">1</span></span></span></span></span> times, as we are checking each possible starting point for subarrays of length <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6944em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span></span></span></span></span> within <code>nums</code>.</p>
+<p>For each starting position, the inner loop iterates <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.7778em; vertical-align: -0.0833em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">-</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">1</span></span></span></span></span> times to verify if the subarray is consecutive and sorted.</p>
+<p>Therefore, the total time complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">((</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">-</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.7778em; vertical-align: -0.0833em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">·</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">-</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">))</span></span></span></span></span>, which simplifies to <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">·</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mclose">)</span></span></span></span></span>.</p>
+</li>
+<li>
+<p>Space complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The <code>result</code> array has a size of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6667em; vertical-align: -0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">-</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.7778em; vertical-align: -0.0833em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">1</span></span></span></span></span>, which is required to store the output. However, since this is the required output (stated in the problem statement), it does not count as auxiliary space.</p>
+</li>
+</ul>
+<hr>
+<h3 id="approach-2-sliding-window-with-deque" level="3" class="group/heading relative"><a href="#approach-2-sliding-window-with-deque" class="!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Approach 2: Sliding Window with Deque</h3>
+<h4 id="intuition-1">Intuition</h4>
+<p>For a more efficient approach, we can use the sliding window technique to avoid rechecking the entire subarray from scratch each time we move the window.</p>
+<p>We use a deque to store the indices of elements in the valid sequence. We'll maintain a window of size <code>k</code> to slide through the array, focusing on two aspects: keeping track of the current valid window, and ensuring the consecutive property holds.</p>
+<p>As we move to a new element, we first check if it breaks the consecutive sequence with the last inserted element in the deque. If it does, we invalidate the entire window and clear the deque. Otherwise, we add the current element’s index to the deque.</p>
+<p>When our window size reaches <code>k</code>, we examine the size of the deque. If the deque contains exactly <code>k</code> indices, we conclude that we have a valid subarray, and we can retrieve the maximum element efficiently from the end of the deque. If the deque does not have <code>k</code> elements, we set the result for that position to -1.</p>
+<h4 id="algorithm-1">Algorithm</h4>
+<ul>
+<li>
+<p>Initialize <code>length</code> to the size of the <code>nums</code> array and <code>result</code> array of size <code>length - k + 1</code>.</p>
+</li>
+<li>
+<p>Create a deque <code>indexDeque</code> to store indices within the sliding window.</p>
+</li>
+<li>
+<p>Loop through each index <code>currentIndex</code> in <code>nums</code>:</p>
+<ul>
+<li>
+<p>If <code>indexDeque</code> is not empty and the index at the front of <code>indexDeque</code> is out of the window range, remove it to maintain the sliding window size.</p>
+</li>
+<li>
+<p>If <code>indexDeque</code> is not empty and <code>nums[currentIndex]</code> does not follow the consecutive and sorted condition (i.e., <code>nums[currentIndex]</code> is not <code>nums[currentIndex - 1] + 1</code>), clear <code>indexDeque</code> as the current sequence is invalid.</p>
+</li>
+<li>
+<p>Add <code>currentIndex</code> to the end of <code>indexDeque</code>.</p>
+</li>
+<li>
+<p>If <code>currentIndex</code> has reached at least <code>k - 1</code> (window has a full size of <code>k</code>):</p>
+<ul>
+<li>If <code>indexDeque</code> contains exactly <code>k</code> elements, set <code>result[currentIndex - k + 1]</code> to the value at <code>nums[indexDeque.peekLast()]</code> since the window is valid.</li>
+<li>Otherwise, set <code>result[currentIndex - k + 1]</code> to <code>-1</code> as it indicates an invalid window.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Return <code>result</code>, where indices with valid sequences contain the last element of the sequence, and others remain -1.</p>
+</li>
+</ul>
+<h4 id="implementation-1">Implementation</h4>
+<iframe src="https://leetcode.com/playground/hAyw3dTF/shared" width="100%" height="500" name="user-content-hAyw3dTF" allowfullscreen="" translate="no"></iframe>
+<h4 id="complexity-analysis-1">Complexity Analysis</h4>
+<p>Let <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span> be the length of the input array <code>nums</code> and <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6944em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span></span></span></span></span> be the length of the subarrays we are checking.</p>
+<ul>
+<li>
+<p>Time complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The <code>for</code> loop iterates over each element in <code>nums</code>, making it <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>.</p>
+<p>Inside the loop:<br>
+- Removing elements from the <code>indexDeque</code> and clearing it takes <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span> since the <code>Deque</code> operations are all constant-time operations.<br>
+- Each index is added and removed from the <code>indexDeque</code> at most once, resulting in <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> total operations for managing the <code>Deque</code>.</p>
+<p>Thus, the overall time complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>.</p>
+</li>
+<li>
+<p>Space complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The space complexity is primarily due to the <code>indexDeque</code>, which can hold at most <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6944em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span></span></span></span></span> elements at any time, as elements that are out of the window are removed from the <code>Deque</code>.</p>
+<p>Thus, the auxiliary space complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mclose">)</span></span></span></span></span>.</p>
+</li>
+</ul>
+<hr>
+<h3 id="approach-3-optimized-via-counter" level="3" class="group/heading relative"><a href="#approach-3-optimized-via-counter" class="!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Approach 3: Optimized Via Counter</h3>
+<h4 id="intuition-2">Intuition</h4>
+<p>In the previous approach, we used a deque to track a sequence of size <code>k</code> and check if each new element is consecutive with the last element added to the deque. However, this raises an important question: why use a deque at all if we’re only interested in checking whether the current element follows directly from the last one we examined?</p>
+<p>This leads us to a simpler approach: we can replace the deque with a simple counter that tracks the length of the consecutive sequence. As we go through the array, we check each element with the one that follows it. If they are consecutive, we increase our counter. Otherwise, we reset the counter to 1 since the sequence is broken.</p>
+<p>When our counter reaches <code>k</code>, it signals that we’ve found a valid subarray of size <code>k</code>. At this point, we store the last element of this sequence as the result. For any indices that don’t meet the consecutive condition, we set their result to -1.</p>
+<p><img alt="Optimized Via Counter" src="../Figures/3254/3254_approach3.png"></p>
+<h4 id="algorithm-2">Algorithm</h4>
+<ul>
+<li>
+<p>If <code>k</code> is 1, return <code>nums</code> directly, as each single element is a valid subarray.</p>
+</li>
+<li>
+<p>Initialize <code>length</code> to the length of <code>nums</code> and create an array <code>result</code> of size <code>length - k + 1</code>.</p>
+<ul>
+<li>Fill <code>result</code> with -1 to represent non-matching positions.</li>
+</ul>
+</li>
+<li>
+<p>Initialize <code>consecutiveCount</code> to 1, which keeps track of consecutive elements.</p>
+</li>
+<li>
+<p>Loop through <code>nums</code> from the start to <code>length - 1</code>:</p>
+<ul>
+<li>
+<p>If <code>nums[index] + 1</code> equals <code>nums[index + 1]</code>, increment <code>consecutiveCount</code>.</p>
+</li>
+<li>
+<p>If the elements are not consecutive, reset <code>consecutiveCount</code> to 1.</p>
+</li>
+<li>
+<p>If <code>consecutiveCount</code> reaches or exceeds <code>k</code>, update <code>result</code> at position <code>index - k + 2</code> with <code>nums[index + 1]</code>.</p>
+<ul>
+<li>This indicates that a valid sequence of length <code>k</code> ending at <code>nums[index + 1]</code> was found.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Return <code>result</code>, where indices with valid sequences contain the last element of the sequence, and others remain -1.</p>
+</li>
+</ul>
+<h4 id="implementation-2">Implementation</h4>
+<iframe src="https://leetcode.com/playground/mtTWbLVy/shared" width="100%" height="500" name="user-content-mtTWbLVy" allowfullscreen="" translate="no"></iframe>
+<h4 id="complexity-analysis-2">Complexity Analysis</h4>
+<p>Let <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span> be the length of the input array <code>nums</code> and <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6944em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span></span></span></span></span> be the length of the subarrays we are checking.</p>
+<ul>
+<li>
+<p>Time complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The filling of the array with -1 takes <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> since it initializes the <code>result</code> array.</p>
+<p>The <code>for</code> loop iterates over each element in <code>nums</code> once (up to <code>length - 1</code>), making the primary loop <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>.</p>
+<p>Inside the loop:<br>
+- We perform a constant-time check to determine if the current element is consecutive with the next element and increment or reset <code>consecutiveCount</code>.<br>
+- The <code>result</code> array is updated in constant time as well when a valid subarray of size <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6944em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span></span></span></span></span> is found.</p>
+<p>Thus, the overall time complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>.</p>
+</li>
+<li>
+<p>Space complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The <code>result</code> array has a size of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6667em; vertical-align: -0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">-</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.7778em; vertical-align: -0.0833em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">1</span></span></span></span></span>, which is required to store the output. However, since this is the required output(stated in the problem statement), it does not count as auxiliary space.</p>
+</li>
+</ul>
+<hr></div><span style="font-size: 0px; line-height: 0;">&nbsp;</span></div></div>

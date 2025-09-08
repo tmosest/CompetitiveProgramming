@@ -1,0 +1,233 @@
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+?
+3
+    public int[] resultsArray(int[] nums, int k) {
+4
+        if (k == 1) {
+5
+            return nums; // If k is 1, every single element is a valid subarray
+6
+        }
+7
+?
+8
+        int length = nums.length;
+9
+        int[] result = new int[length - k + 1];
+10
+        Arrays.fill(result, -1); // Initialize results to -1
+11
+        int consecutiveCount = 1; // Count of consecutive elements
+12
+?
+13
+        for (int index = 0; index < length - 1; index++) {
+14
+            if (nums[index] + 1 == nums[index + 1]) {
+15
+                consecutiveCount++;
+16
+            } else {
+17
+                consecutiveCount = 1; // Reset count if not consecutive
+18
+            }
+19
+?
+20
+            // If we have enough consecutive elements, update the result
+21
+            if (consecutiveCount >= k) {
+22
+                result[index - k + 2] = nums[index + 1];
+23
+            }
+24
+        }
+25
+?
+26
+        return result;
+27
+    }
+28
+}
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+?
+3
+    public int[] resultsArray(int[] nums, int k) {
+4
+        if (k == 1) {
+5
+            return nums; // If k is 1, every single element is a valid subarray
+6
+        }
+7
+?
+8
+        int length = nums.length;
+9
+        int[] result = new int[length - k + 1];
+10
+        Arrays.fill(result, -1); // Initialize results to -1
+11
+        int consecutiveCount = 1; // Count of consecutive elements
+12
+?
+13
+        for (int index = 0; index < length - 1; index++) {
+14
+            if (nums[index] + 1 == nums[index + 1]) {
+15
+                consecutiveCount++;
+16
+            } else {
+17
+                consecutiveCount = 1; // Reset count if not consecutive
+18
+            }
+19
+?
+20
+            // If we have enough consecutive elements, update the result
+21
+            if (consecutiveCount >= k) {
+22
+                result[index - k + 2] = nums[index + 1];
+23
+            }
+24
+        }
+25
+?
+26
+        return result;
+27
+    }
+28
+}
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+?
+3
+    public int[] resultsArray(int[] nums, int k) {
+4
+        if (k == 1) {
+5
+            return nums; // If k is 1, every single element is a valid subarray
+6
+        }
+7
+?
+8
+        int length = nums.length;
+9
+        int[] result = new int[length - k + 1];
+10
+        Arrays.fill(result, -1); // Initialize results to -1
+11
+        int consecutiveCount = 1; // Count of consecutive elements
+12
+?
+13
+        for (int index = 0; index < length - 1; index++) {
+14
+            if (nums[index] + 1 == nums[index + 1]) {
+15
+                consecutiveCount++;
+16
+            } else {
+17
+                consecutiveCount = 1; // Reset count if not consecutive
+18
+            }
+19
+?
+20
+            // If we have enough consecutive elements, update the result
+21
+            if (consecutiveCount >= k) {
+22
+                result[index - k + 2] = nums[index + 1];
+23
+            }
+24
+        }
+25
+?
+26
+        return result;
+27
+    }
+28
+}
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+?
+3
+    public int[] resultsArray(int[] nums, int k) {
+4
+        if (k == 1) {
+5
+            return nums; // If k is 1, every single element is a valid subarray
+6
+        }
+7
+?
+8
+        int length = nums.length;
+9
+        int[] result = new int[length - k + 1];
+10
+        Arrays.fill(result, -1); // Initialize results to -1
+11
+        int consecutiveCount = 1; // Count of consecutive elements
+12
+?
+13
+        for (int index = 0; index < length - 1; index++) {
+14
+            if (nums[index] + 1 == nums[index + 1]) {
+15
+                consecutiveCount++;
+16
+            } else {
+17
+                consecutiveCount = 1; // Reset count if not consecutive
+18
+            }
+19
+?
+20
+            // If we have enough consecutive elements, update the result
+21
+            if (consecutiveCount >= k) {
+22
+                result[index - k + 2] = nums[index + 1];
+23
+            }
+24
+        }
+25
+?
+26
+        return result;
+27
+    }
+28
+}
+Code copied for Python3

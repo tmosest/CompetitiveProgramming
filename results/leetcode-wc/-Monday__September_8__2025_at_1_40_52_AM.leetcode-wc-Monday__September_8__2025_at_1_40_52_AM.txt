@@ -1,0 +1,22 @@
+629. K Inverse Pairs Array;=;=Hard;=;=publicÊintÊkInversePairs(intÊn,ÊintÊk);=;=For an integer array nums, an inverse pair is a pair of integers [i, j] where 0 <= i < j < nums.length and nums[i] > nums[j].
+
+Given two integers n and k, return the number of different arrays consisting of numbers from 1 to n such that there are exactly k inverse pairs. Since the answer can be huge, return it modulo 109 + 7.
+
+Ê
+
+Example 1:
+
+Input: n = 3, k = 0
+Output: 1
+Explanation: Only the array [1,2,3] which consists of numbers from 1 to 3 has exactly 0 inverse pairs.
+Example 2:
+
+Input: n = 3, k = 1
+Output: 2
+Explanation: The array [1,3,2] and [2,1,3] have exactly 1 inverse pair.
+Ê
+
+Constraints:
+
+1 <= n <= 1000
+0 <= k <= 1000;=;=https://leetcode.com/problems/k-inverse-pairs-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/k-inverse-pairs-array/solutions/4632048/cjavapythonjavascript-explained-by-marks-vrks/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/4632133/easily-dp-explained-c-java-python-by-rec-a4mf/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/4632683/beats-100-py-java-c-c-c-js-go-rust-by-ne-q2j0/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/2293256/java-dp-detailed-explanation-easy-to-und-kfpr/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/6884815/inverse-engineering-dynamic-k-pair-combo-pefp/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/5575886/recursion-caching-tabulation-space-optim-s0iq/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/6476282/optimization-to-oklogk-time-complexity-f-72a4/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/4632299/full-explained-easy-to-understand-javacp-tk4h/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/4635060/beats-100-java-by-enoch1974-2xof/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/4632799/java-solution-explained-in-hindi-by-the_-0f9m/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/4633131/explaning-different-approaches-onk2-and-ukh7c/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/4633113/java-recursion-memoization-by-iamvineett-ztlr/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/4632166/easy-to-understand-java-code-beats-100-b-ezw5/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/2292458/java-simple-and-easy-solution-97-faster-32n6v/;;https://leetcode.com/problems/k-inverse-pairs-array/solutions/4639850/recursive-memo-bottomup-optimized-bottom-fpup/;;;=;==;=;=;

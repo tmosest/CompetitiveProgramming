@@ -1,0 +1,24 @@
+2180. Count Integers With Even Digit Sum;=;=Easy;=;=public int countEven(int num);=;=Given a positive integer num, return the number of positive integers less than or equal to num whose digit sums are even.
+
+The digit sum of a positive integer is the sum of all its digits.
+
+ 
+
+Example 1:
+
+Input: num = 4
+Output: 2
+Explanation:
+The only integers less than or equal to 4 whose digit sums are even are 2 and 4.    
+Example 2:
+
+Input: num = 30
+Output: 14
+Explanation:
+The 14 integers less than or equal to 30 whose digit sums are even are
+2, 4, 6, 8, 11, 13, 15, 17, 19, 20, 22, 24, 26, and 28.
+ 
+
+Constraints:
+
+1 <= num <= 1000;=;=https://leetcode.com/problems/count-integers-with-even-digit-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/7162285/easy-code-0ms-100-beats-by-sivaaleet-7no4/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/7162246/easy-code-by-sivaaleet-7b40/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/7151520/beginner-friendly-java-solution-count-ev-6pyc/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/1784711/python3-java-c-1-liners-olengthnum-by-to-ln8b/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/7019533/java-easy-solution-2ms-by-akashraj06-a2az/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/6816004/2180-count-integers-with-even-digit-sum-7hjex/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/6378397/easy-java-solution-1ms-self-explanatory-pqhfl/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/6869933/java-solution-by-shubhamxgupta-z7la/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/6343382/java-easy-solution-explained-in-detail-b-f61f/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/7148817/easy-lines-100-by-hari_cse_03-aavl/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/7148010/java-by-sssanskarrr-9tjy/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/7141574/simple-java-solution-count-integers-with-idzu/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/6602243/simple-count-way-by-sairangineeni-1z02/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/6336200/beginner-friendly-by-its_gokhul-ppt8/;;https://leetcode.com/problems/count-integers-with-even-digit-sum/solutions/5561174/2180-easy-solution-by-roger2023-uexf/;;;=;==;=;=;

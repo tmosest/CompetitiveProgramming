@@ -1,0 +1,369 @@
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+public:
+3
+    int smallestDistancePair(vector<int>& nums, int k) {
+4
+        sort(nums.begin(), nums.end());
+5
+        int arraySize = nums.size();
+6
+?
+7
+        // Initialize binary search range
+8
+        int low = 0;
+9
+        int high = nums[arraySize - 1] - nums[0];
+10
+?
+11
+        while (low < high) {
+12
+            int mid = (low + high) / 2;
+13
+?
+14
+            // Count pairs with distance <= mid
+15
+            int count = countPairsWithMaxDistance(nums, mid);
+16
+?
+17
+            // Adjust binary search bounds based on count
+18
+            if (count < k) {
+19
+                low = mid + 1;
+20
+            } else {
+21
+                high = mid;
+22
+            }
+23
+        }
+24
+        return low;
+25
+    }
+26
+?
+27
+private:
+28
+    // Count number of pairs with distance <= maxDistance using a moving window
+29
+    int countPairsWithMaxDistance(vector<int>& nums, int maxDistance) {
+30
+        int count = 0;
+31
+        int arraySize = nums.size();
+32
+        int left = 0;
+33
+?
+34
+        for (int right = 0; right < arraySize; ++right) {
+35
+            // Adjust the left pointer to maintain the window with distances <=
+36
+            // maxDistance
+37
+            while (nums[right] - nums[left] > maxDistance) {
+38
+                ++left;
+39
+            }
+40
+            // Add the number of valid pairs ending at the current right index
+41
+            count += right - left;
+42
+        }
+43
+        return count;
+44
+    }
+45
+};
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+public:
+3
+    int smallestDistancePair(vector<int>& nums, int k) {
+4
+        sort(nums.begin(), nums.end());
+5
+        int arraySize = nums.size();
+6
+?
+7
+        // Initialize binary search range
+8
+        int low = 0;
+9
+        int high = nums[arraySize - 1] - nums[0];
+10
+?
+11
+        while (low < high) {
+12
+            int mid = (low + high) / 2;
+13
+?
+14
+            // Count pairs with distance <= mid
+15
+            int count = countPairsWithMaxDistance(nums, mid);
+16
+?
+17
+            // Adjust binary search bounds based on count
+18
+            if (count < k) {
+19
+                low = mid + 1;
+20
+            } else {
+21
+                high = mid;
+22
+            }
+23
+        }
+24
+        return low;
+25
+    }
+26
+?
+27
+private:
+28
+    // Count number of pairs with distance <= maxDistance using a moving window
+29
+    int countPairsWithMaxDistance(vector<int>& nums, int maxDistance) {
+30
+        int count = 0;
+31
+        int arraySize = nums.size();
+32
+        int left = 0;
+33
+?
+34
+        for (int right = 0; right < arraySize; ++right) {
+35
+            // Adjust the left pointer to maintain the window with distances <=
+36
+            // maxDistance
+37
+            while (nums[right] - nums[left] > maxDistance) {
+38
+                ++left;
+39
+            }
+40
+            // Add the number of valid pairs ending at the current right index
+41
+            count += right - left;
+42
+        }
+43
+        return count;
+44
+    }
+45
+};
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+public:
+3
+    int smallestDistancePair(vector<int>& nums, int k) {
+4
+        sort(nums.begin(), nums.end());
+5
+        int arraySize = nums.size();
+6
+?
+7
+        // Initialize binary search range
+8
+        int low = 0;
+9
+        int high = nums[arraySize - 1] - nums[0];
+10
+?
+11
+        while (low < high) {
+12
+            int mid = (low + high) / 2;
+13
+?
+14
+            // Count pairs with distance <= mid
+15
+            int count = countPairsWithMaxDistance(nums, mid);
+16
+?
+17
+            // Adjust binary search bounds based on count
+18
+            if (count < k) {
+19
+                low = mid + 1;
+20
+            } else {
+21
+                high = mid;
+22
+            }
+23
+        }
+24
+        return low;
+25
+    }
+26
+?
+27
+private:
+28
+    // Count number of pairs with distance <= maxDistance using a moving window
+29
+    int countPairsWithMaxDistance(vector<int>& nums, int maxDistance) {
+30
+        int count = 0;
+31
+        int arraySize = nums.size();
+32
+        int left = 0;
+33
+?
+34
+        for (int right = 0; right < arraySize; ++right) {
+35
+            // Adjust the left pointer to maintain the window with distances <=
+36
+            // maxDistance
+37
+            while (nums[right] - nums[left] > maxDistance) {
+38
+                ++left;
+39
+            }
+40
+            // Add the number of valid pairs ending at the current right index
+41
+            count += right - left;
+42
+        }
+43
+        return count;
+44
+    }
+45
+};
+C++JavaPython3  Copy
+
+1
+class Solution {
+2
+public:
+3
+    int smallestDistancePair(vector<int>& nums, int k) {
+4
+        sort(nums.begin(), nums.end());
+5
+        int arraySize = nums.size();
+6
+?
+7
+        // Initialize binary search range
+8
+        int low = 0;
+9
+        int high = nums[arraySize - 1] - nums[0];
+10
+?
+11
+        while (low < high) {
+12
+            int mid = (low + high) / 2;
+13
+?
+14
+            // Count pairs with distance <= mid
+15
+            int count = countPairsWithMaxDistance(nums, mid);
+16
+?
+17
+            // Adjust binary search bounds based on count
+18
+            if (count < k) {
+19
+                low = mid + 1;
+20
+            } else {
+21
+                high = mid;
+22
+            }
+23
+        }
+24
+        return low;
+25
+    }
+26
+?
+27
+private:
+28
+    // Count number of pairs with distance <= maxDistance using a moving window
+29
+    int countPairsWithMaxDistance(vector<int>& nums, int maxDistance) {
+30
+        int count = 0;
+31
+        int arraySize = nums.size();
+32
+        int left = 0;
+33
+?
+34
+        for (int right = 0; right < arraySize; ++right) {
+35
+            // Adjust the left pointer to maintain the window with distances <=
+36
+            // maxDistance
+37
+            while (nums[right] - nums[left] > maxDistance) {
+38
+                ++left;
+39
+            }
+40
+            // Add the number of valid pairs ending at the current right index
+41
+            count += right - left;
+42
+        }
+43
+        return count;
+44
+    }
+45
+};
+Code copied for Python3

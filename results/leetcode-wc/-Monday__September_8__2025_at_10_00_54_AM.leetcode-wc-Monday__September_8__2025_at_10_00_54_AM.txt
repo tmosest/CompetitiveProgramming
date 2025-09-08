@@ -1,0 +1,33 @@
+2824. Count Pairs Whose Sum is Less than Target;=;=Easy;=;=publicÊintÊcountPairs(List<Integer>Ênums,ÊintÊtarget);=;=Given a 0-indexed integer array nums of length n and an integer target, return the number of pairs (i, j) where 0 <= i < j < n and nums[i] + nums[j] < target.
+Ê
+
+Example 1:
+
+Input: nums = [-1,1,2,3,1], target = 2
+Output: 3
+Explanation: There are 3 pairs of indices that satisfy the conditions in the statement:
+- (0, 1) since 0 < 1 and nums[0] + nums[1] = 0 < target
+- (0, 2) since 0 < 2 and nums[0] + nums[2] = 1 < target 
+- (0, 4) since 0 < 4 and nums[0] + nums[4] = 0 < target
+Note that (0, 3) is not counted since nums[0] + nums[3] is not strictly less than the target.
+Example 2:
+
+Input: nums = [-6,2,5,-2,-7,-1,3], target = -2
+Output: 10
+Explanation: There are 10 pairs of indices that satisfy the conditions in the statement:
+- (0, 1) since 0 < 1 and nums[0] + nums[1] = -4 < target
+- (0, 3) since 0 < 3 and nums[0] + nums[3] = -8 < target
+- (0, 4) since 0 < 4 and nums[0] + nums[4] = -13 < target
+- (0, 5) since 0 < 5 and nums[0] + nums[5] = -7 < target
+- (0, 6) since 0 < 6 and nums[0] + nums[6] = -3 < target
+- (1, 4) since 1 < 4 and nums[1] + nums[4] = -5 < target
+- (3, 4) since 3 < 4 and nums[3] + nums[4] = -9 < target
+- (3, 5) since 3 < 5 and nums[3] + nums[5] = -3 < target
+- (4, 5) since 4 < 5 and nums[4] + nums[5] = -8 < target
+- (4, 6) since 4 < 6 and nums[4] + nums[6] = -4 < target
+Ê
+
+Constraints:
+
+1 <= nums.length == n <= 50
+-50 <= nums[i], target <= 50;=;=https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/3933451/two-pointers-approach-easy-to-understand-fvip/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/7130089/java-easy-solution-2ms-by-akashraj06-nnv0/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/6907731/binary-search-approach-beats-100-all-lan-eouy/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/7112764/counting-pairs-easy-100beats-java-by-mis-246c/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/6666228/binary-search-approach-beats-100-all-lan-vk3h/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/7048535/java-code-count-pair-easy-to-understand-eqzi9/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/6990943/easy-beginner-friendly-two-pointer-based-uay6/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/6993181/simple-brute-force-beats-97-by-arshiya17-p6q0/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/6981457/easy-solutions-using-brute-force-and-two-4q2q/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/6976438/easy-code-for-beginners-and-understandab-fplj/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/6897914/simple-java-insert-merge-easy-to-underst-51hd/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/3933747/two-pointers-onlogn-solution-fully-expla-yx9n/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/6578789/brute-force-on2-and-optimized-on-log-n-s-hpym/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/6557839/simple-java-code-simple-logic-by-adityar-a103/;;https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/solutions/5878118/java-easy-brute-force-approach-by-shubha-9snk/;;;=;==;=;=;

@@ -1,0 +1,31 @@
+719. Find K-th Smallest Pair Distance;=;=Hard;=;=public int smallestDistancePair(int[] nums, int k);=;=The distance of a pair of integers a and b is defined as the absolute difference between a and b.
+
+Given an integer array nums and an integer k, return the kth smallest distance among all the pairs nums[i] and nums[j] where 0 <= i < j < nums.length.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,1], k = 1
+Output: 0
+Explanation: Here are all the pairs:
+(1,3) -> 2
+(1,1) -> 0
+(3,1) -> 2
+Then the 1st smallest distance pair is (1,1), and its distance is 0.
+Example 2:
+
+Input: nums = [1,1,1], k = 2
+Output: 0
+Example 3:
+
+Input: nums = [1,6,1], k = 3
+Output: 5
+ 
+
+Constraints:
+
+n == nums.length
+2 <= n <= 104
+0 <= nums[i] <= 106
+1 <= k <= n * (n - 1) / 2;=;=https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5632765/on-log-n-n-log-w-binary-search-sliding-w-zlo2/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5633378/binary-search-easy-solution-6ms-beats-10-qe6p/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5633163/2-approaches-max-heap-and-binary-search-tai1v/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/1807345/java-code-and-explanation-with-comments-xyxow/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/1024240/java-simple-binary-search-wexplanation-b-78qw/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/6704476/easy-bs-solutioni-using-java-by-viraj_pa-n6a1/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5634671/finding-the-k-th-smallest-distance-pair-t3x0p/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5633858/binary-search-optimised-by-vibishraj-43xp/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5637098/easiestfaster-lesser-cpython3javacpython-whj3/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5634256/runtime-3ms-binary-search-sliding-window-sj4w/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5634004/binary-search-over-answer-with-sliding-w-q1g7/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5634363/binary-search-on-possible-difference-sli-uoll/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5633487/k-th-smallest-pair-distance-easy-explana-aw4t/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5633433/mastering-k-th-smallest-pair-distance-wi-5l1y/;;https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5633531/java-clean-two-pointer-solution-by-shree-i380/;;;=;==;=;=;

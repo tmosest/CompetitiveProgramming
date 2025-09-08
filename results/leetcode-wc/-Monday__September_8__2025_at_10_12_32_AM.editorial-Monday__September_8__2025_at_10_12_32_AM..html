@@ -1,0 +1,323 @@
+<div class="relative break-words"><div class="flex flex-col w-full" style="position: relative;"><div class="mYe_l WRmCx"><h2 id="solution" level="2" class="group/heading relative"><a href="#solution" class="!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Solution</h2>
+<hr>
+<h3 id="overview" level="3" class="group/heading relative"><a href="#overview" class="!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Overview</h3>
+<p>The goal is to find the <code>k</code>-th smallest distance between any two different elements in an array <code>nums</code>. The distance between two elements <code>nums[i]</code> and <code>nums[j]</code> is defined as the absolute difference between their values, <code>|nums[i] - nums[j]|</code>. We only consider pairs where <code>i</code> is less than <code>j</code> to avoid counting the same pair twice.</p>
+<p>For example:</p>
+<blockquote>
+<p><strong>Input:</strong> <code>nums = [1, 3, 1]</code>, <code>k = 1</code><br>
+<strong>Output:</strong> <code>0</code></p>
+</blockquote>
+<p>Let's look at all possible pairs of elements and their distances:</p>
+<ol>
+<li data-length="1">
+<p>Pair (1, 3):</p>
+<ul>
+<li>Distance: |1 - 3| = 2</li>
+</ul>
+</li>
+<li data-length="1">
+<p>Pair (1, 1):</p>
+<ul>
+<li>Distance: |1 - 1| = 0</li>
+</ul>
+</li>
+<li data-length="1">
+<p>Pair (3, 1):</p>
+<ul>
+<li>Distance: |3 - 1| = 2</li>
+</ul>
+</li>
+</ol>
+<p>So, the distances are <code>[2, 0, 2]</code>.</p>
+<p>To find the <code>k</code>-th smallest distance, we sort these distances: <code>[0, 2, 2]</code>.</p>
+<p>Since <code>k = 1</code>, we need the 1st smallest distance, which is <code>0</code>.</p>
+<p>Thus, the result is <code>0</code>.</p>
+<p>The brute-force approach involves checking the distance for every possible pair of elements in the array and maintaining the <code>k</code> smallest distances using a heap. Specifically, we iterate over all pairs, calculate their absolute distances, and use a max-heap to keep track of the <code>k</code> smallest distances. If the heap size exceeds <code>k</code>, we remove the largest element. After processing all pairs, the root of the heap will represent the <code>k-th</code> smallest distance.</p>
+<p>However, this method is computationally heavy and will lead to a Time Limit Exceeded (TLE) error. The time complexity is dominated by the need to examine all pairs, which is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span>, combined with the overhead of maintaining a heap of size <code>k</code>, resulting in an overall time complexity of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mclose">)</span></span></span></span></span>, where <code>n</code> is the number of elements. This makes the approach impractical for large values of <code>n</code>.</p>
+<hr>
+<h3 id="approach-1-bucket-sort" level="3" class="group/heading relative"><a href="#approach-1-bucket-sort" class="!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Approach 1: Bucket Sort</h3>
+<h4 id="intuition">Intuition</h4>
+<p>Given that array elements can be as large as <code>1,000,000</code>, a direct comparison approach would be computationally expensive. However, since the distances are bounded by the maximum element in the array, we can leverage this property to use a bucket sort approach, which is efficient for problems with a known range of values. This transforms the problem of finding the <code>k</code>-th smallest distance into a counting problem within a fixed range.</p>
+<p>We first observe that the range of possible distances is finite and bounded:</p>
+<ul>
+<li>The minimum distance is 0, occurring when two numbers in the array are identical.</li>
+<li>The maximum distance is the difference between the largest and smallest numbers in the array.</li>
+</ul>
+<p>This bounded range forms the foundation of our approach. With this range established, we conceptualize a series of "buckets," each representing a specific distance within our range. These buckets serve as counters, allowing us to tally the frequency of each distance without needing to store the actual pairs that produce them. This abstraction significantly reduces memory requirements and computational complexity.</p>
+<p>Now for each pair of numbers in the array, calculate the absolute difference and increment the corresponding bucket count.</p>
+<p>After processing all pairs, our bucket array contains a comprehensive frequency distribution of all distances present in the original array. Now traverse the bucket array from the smallest distance upwards, maintaining a running sum of counts. The distance where this running sum first equals or exceeds is the  k-th smallest distance.</p>
+<h4 id="algorithm">Algorithm</h4>
+<ul>
+<li>
+<p>Determine the size of the input array <code>nums</code> and store it in <code>arraySize</code>.</p>
+</li>
+<li>
+<p>Find the maximum element in the array <code>nums</code> and store it in <code>maxElement</code>.</p>
+</li>
+<li>
+<p>Create a bucket array <code>distanceBucket</code> with size <code>maxElement + 1</code>, initialized to 0, to store the counts of each distance.</p>
+</li>
+<li>
+<p>Populate the <code>distanceBucket</code> array:</p>
+<ul>
+<li>Iterate over all pairs of indices <code>(i, j)</code> where <code>i &lt; j</code> in the array <code>nums</code>.
+<ul>
+<li>Calculate the distance between <code>nums[i]</code> and <code>nums[j]</code> as <code>abs(nums[i] - nums[j])</code>.</li>
+<li>Increment the count for this distance in the <code>distanceBucket</code> array.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Find the k-th smallest distance:</p>
+<ul>
+<li>Iterate over all possible distances from 0 to <code>maxElement</code>.
+<ul>
+<li>Subtract the count of pairs with the current distance from <code>k</code>.</li>
+<li>If <code>k</code> becomes less than or equal to 0, return the current distance as it is the k-th smallest distance.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>If the function does not return within the loop, return <code>-1</code> indicating no distance was found, although this case should not occur with valid inputs.</p>
+</li>
+</ul>
+<h4 id="implementation">Implementation</h4>
+<blockquote>
+<p>Note: The Python implementation for this approach will encounter a Time Limit Exceeded (TLE) error because Python's inherent slower execution speed.</p>
+</blockquote>
+<iframe src="https://leetcode.com/playground/H5scviJc/shared" width="100%" height="500" name="user-content-H5scviJc" allowfullscreen="" translate="no"></iframe>
+<h4 id="complexity-analysis">Complexity Analysis</h4>
+<p>Let <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span> be the number of elements and <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span></span></span></span></span> be the maximum possible distance.</p>
+<ul>
+<li>
+<p>Time complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span> term arises from the nested loops used to calculate all pairwise distances between elements. Since we are examining every possible pair of elements in the array, this results in <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">-</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">/2</span></span></span></span></span> comparisons, which simplifies to <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span>.</p>
+<p>After calculating all distances, we traverse the <code>distanceBucket</code> array to find the k-th smallest distance. This traversal is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span>, where <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span></span></span></span></span> is the maximum possible distance, which is proportional to the largest element in the array. Thus, the total time complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span>, accounting for both the pair distance calculations and the bucket traversal.</p>
+</li>
+<li>
+<p>Space complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The space complexity is dominated by the <code>distanceBucket</code> array, which is used to count occurrences of each possible distance. The size of this array is proportional to the maximum possible distance <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span></span></span></span></span>. Aside from this array, the space usage is minimal and does not depend on the number of elements, leading to a space complexity of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span>.</p>
+</li>
+</ul>
+<hr>
+<h3 id="approach-2-binary-search--dynamic-programming-dp" level="3" class="group/heading relative"><a href="#approach-2-binary-search--dynamic-programming-dp" class="!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Approach 2: Binary Search + Dynamic Programming (DP)</h3>
+<h4 id="intuition-1">Intuition</h4>
+<p>We now explore a sophisticated approach that combines binary search with dynamic programming, especially effective for arrays with a broad range of values where bucket sort might be impractical due to memory constraints.</p>
+<p>First, recognize that our solution space—the range of possible distances—is bounded. The minimum distance is 0, and the maximum is the difference between the largest and smallest elements in the array. This bounded range allows us to use binary search to efficiently find the <code>k</code>-th smallest distance.</p>
+<p>Our key insight is that for any given distance <code>d</code>, we can count the number of pairs in the array with a distance less than or equal to <code>d</code>. If this count is less than <code>k</code>, the <code>k</code>-th smallest distance must be greater than <code>d</code>. Conversely, if the count is at least <code>k</code>, the <code>k</code>-th smallest distance must be less than or equal to <code>d</code>. This forms the basis of our binary search approach.</p>
+<p>To implement this, we first sort the input array. Sorting is crucial because it enables us to efficiently count pairs with distances less than or equal to a given value.</p>
+<p>We then set up our binary search:</p>
+<ul>
+<li>The lower bound of our search range is <code>0</code>, and the upper bound is the difference between the maximum and minimum elements in the sorted array.</li>
+<li>In each iteration, we calculate the midpoint of the current range and count the number of pairs with distances less than or equal to this midpoint.</li>
+</ul>
+<p>The counting process is where dynamic programming comes into play. We use two auxiliary arrays to optimize our pair counting:</p>
+<ol>
+<li data-length="1"><strong>prefixCount</strong>: This array maintains the cumulative count of elements up to each value in the sorted array. For any index <code>i</code>, <code>prefixCount[i]</code> represents the number of elements less than or equal to <code>i</code>.</li>
+<li data-length="1"><strong>valueCount</strong>: Implemented as a hash map, <code>valueCount[i]</code> stores the count of occurrences of the value <code>i</code> in the array.</li>
+</ol>
+<p>To count pairs for a given distance <code>d</code>, we iterate through the sorted array. For each element <code>x</code>, we calculate:</p>
+<ul>
+<li>The number of elements within distance <code>d</code> of <code>x</code> using <code>prefixCount</code>.</li>
+<li>The number of pairs formed by duplicate occurrences of <code>x</code> using <code>valueCount</code>.</li>
+</ul>
+<p>Based on the count of pairs at the current midpoint distance, we adjust our binary search range:</p>
+<ul>
+<li>If the count is less than <code>k</code>, we need to look at larger distances by adjusting the lower bound.</li>
+<li>If the count is greater than or equal to <code>k</code>, we need to look at smaller distances by adjusting the upper bound.</li>
+</ul>
+<p>We repeat this process, halving the search range each time, until the lower and upper bounds converge, giving us the <code>k</code>-th smallest pair distance.</p>
+<h4 id="algorithm-1">Algorithm</h4>
+<ul>
+<li>
+<p>Sort the array <code>nums</code> to simplify distance calculations.</p>
+</li>
+<li>
+<p>Determine the size of the sorted array <code>nums</code> and store it in <code>arraySize</code>.</p>
+</li>
+<li>
+<p>Find the largest element in the sorted array <code>nums</code> and store it in <code>maxElement</code>.</p>
+</li>
+<li>
+<p>Calculate the maximum possible distance as <code>maxElement * 2</code>.</p>
+</li>
+<li>
+<p>Initialize arrays and maps:</p>
+<ul>
+<li>Create an array <code>prefixCount</code> with size <code>maxPossibleDistance</code> to store prefix counts of distances.</li>
+<li>Create a map <code>valueCount</code> to count occurrences of each value in the array.</li>
+</ul>
+</li>
+<li>
+<p>Populate the <code>prefixCount</code> array:</p>
+<ul>
+<li>Iterate through possible distance values from 0 to <code>maxPossibleDistance - 1</code>.
+<ul>
+<li>For each distance value, determine the number of elements in the array <code>nums</code> that are less than or equal to this distance.</li>
+<li>Store this count in <code>prefixCount</code> for the current distance.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Populate the <code>valueCount</code> map:</p>
+<ul>
+<li>Iterate through the array <code>nums</code>.
+<ul>
+<li>Count occurrences of each value and store in <code>valueCount</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Perform binary search for the k-th smallest distance:</p>
+<ul>
+<li>Set <code>low</code> to 0 and <code>high</code> to <code>maxElement</code>.</li>
+<li>While <code>low</code> is less than <code>high</code>:
+<ul>
+<li>Calculate the middle point <code>mid</code> as <code>(low + high) / 2</code>.</li>
+<li>Count the number of pairs with distance ≤ <code>mid</code> using the helper function <code>countPairs</code>.</li>
+<li>Adjust the binary search bounds based on whether the count is less than or greater than or equal to <code>k</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Return the smallest distance found by the binary search.</p>
+</li>
+<li>
+<p>Helper function <code>countPairs</code>:</p>
+<ul>
+<li>Count the number of pairs with distance ≤ <code>maxDistance</code>:
+<ul>
+<li>Iterate through the array <code>nums</code>.</li>
+<li>Calculate the number of pairs involving the current value that are within the allowed distance.</li>
+<li>Accumulate the total count of such pairs.</li>
+</ul>
+</li>
+<li>Return the count of pairs with distance ≤ <code>maxDistance</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="implementation-1">Implementation</h4>
+<iframe src="https://leetcode.com/playground/SU4MpYrm/shared" width="100%" height="500" name="user-content-SU4MpYrm" allowfullscreen="" translate="no"></iframe>
+<h4 id="complexity-analysis-1">Complexity Analysis</h4>
+<p>Let <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span> be the number of elements and <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span></span></span></span></span> be the maximum possible distance.</p>
+<ul>
+<li>
+<p>Time complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.8889em; vertical-align: -0.1944em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> term arises from sorting the array, which is necessary for efficiently calculating distances and performing binary search. Sorting takes <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> time.</p>
+<p>The <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span> term comes from the binary search over the range of possible distances and counting pairs for each mid-value. Counting pairs involves traversing the array, and the binary search operations are logarithmic with respect to the maximum possible distance <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span></span></span></span></span>. And we populate the <code>prefixCount</code> array by iterating through the possible values from 0 to <code>maxPossibleDistance</code> - 1 taking <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span>. Hence, the combined time complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.8889em; vertical-align: -0.1944em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span>.</p>
+</li>
+<li>
+<p>Space complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.7667em; vertical-align: -0.0833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.05764em;">S</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The space complexity includes <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> for storing the <code>prefixCount</code> array and the value counts in the <code>valueCount</code> map. The <code>prefixCount</code> array tracks the number of elements up to each possible distance, while <code>valueCount</code> stores counts of each unique element. Additionally, <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span> is required for the <code>prefixCount</code> array.</p>
+<p>Some extra space is used when we sort an array of size <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span> in place. The space complexity of the sorting algorithm (<span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.05764em;">S</span></span></span></span></span>) depends on the programming language. The value of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.05764em;">S</span></span></span></span></span> depends on the programming language and the sorting algorithm being used:</p>
+<ul>
+<li>In Python, the sort method sorts a list using the Timsort algorithm which is a combination of Merge Sort and Insertion Sort and has a space complexity of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></li>
+<li>In C++, the <code>sort()</code> function is implemented as a hybrid of Quick Sort, Heap Sort, and Insertion Sort, with a worst-case space complexity of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></li>
+<li>In Java, <code>Arrays.sort()</code> is implemented using a variant of the Quick Sort algorithm which has a space complexity of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></li>
+</ul>
+<p>Thus, the total space complexity of the algorithm is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.7667em; vertical-align: -0.0833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.05764em;">S</span><span class="mclose">)</span></span></span></span></span>.</p>
+</li>
+</ul>
+<hr>
+<h3 id="approach-3-binary-search--sliding-window" level="3" class="group/heading relative"><a href="#approach-3-binary-search--sliding-window" class="!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Approach 3: Binary Search + Sliding Window</h3>
+<h4 id="intuition-2">Intuition</h4>
+<p>The core idea remains similar to our previous approach: for any given distance <code>d</code>, we aim to count the number of pairs in the array with a distance less than or equal to <code>d</code>. If this count is less than <code>k</code>, we know the <code>k</code>-th smallest distance must be greater than <code>d</code>. If the count is greater than or equal to <code>k</code>, the <code>k</code>-th smallest distance must be less than or equal to <code>d</code>.</p>
+<p>Where this approach diverges is in how we perform this counting operation. Instead of using pre-computed dynamic programming arrays, we employ a sliding window technique that takes advantage of the sorted nature of our array.</p>
+<p>We begin by sorting the input array and then we set up binary search as before, with the lower bound at 0 and the upper bound at the difference between the maximum and minimum elements in the sorted array. In each iteration of the binary search, we calculate the midpoint of our current range.</p>
+<p>The key innovation in this approach is the sliding window method used to count pairs with distances less than or equal to our current midpoint distance. Here's how it works:</p>
+<ul>
+<li>Start with two pointers, <code>left</code> and <code>right</code>, both at the start of the array. Move the <code>right</code> pointer to check distances.</li>
+<li>As long as the distance between <code>right</code> and <code>left</code> is within the allowed range, keep moving <code>right</code> forward. Once we find a distance greater than our midpoint, we know that all elements between <code>left</code> and <code>right</code> (exclusive) form valid pairs with the element at <code>left</code>. We add this count to our total and then move the <code>left</code> pointer forward. Repeat until all pairs are checked.</li>
+</ul>
+<p>This sliding window technique counts valid pairs in linear time for each binary search iteration. The efficiency arises because the <code>right</code> pointer doesn't need to reset for each new <code>left</code> position; it continues from where it left off, leveraging the sorted array.</p>
+<p>Based on the count of pairs for the current midpoint distance, we adjust our binary search range as follows:</p>
+<ul>
+<li>If the count is less than <code>k</code>, we increase the distance by adjusting our lower bound.</li>
+<li>If the count is greater than or equal to <code>k</code>, we decrease the distance by adjusting our upper bound.</li>
+</ul>
+<p>We continue this process, halving our search range each time, until the lower and upper bounds converge. At this point, we identify the <code>k</code>-th smallest pair distance.</p>
+<p>The efficiency of this approach is due to the combination of binary search, which reduces the search space logarithmically, and the sliding window technique, which allows us to count pairs in linear time for each binary search iteration, given that the array is sorted.</p>
+<h4 id="algorithm-2">Algorithm</h4>
+<ul>
+<li>
+<p>Sort the array <code>nums</code> to simplify distance calculations.</p>
+</li>
+<li>
+<p>Determine the size of the sorted array <code>nums</code> and store it in <code>arraySize</code>.</p>
+</li>
+<li>
+<p>Initialize the binary search range:</p>
+<ul>
+<li>Set <code>low</code> to 0.</li>
+<li>Set <code>high</code> to the difference between the maximum and minimum elements in <code>nums</code> (i.e., <code>nums[arraySize - 1] - nums[0]</code>).</li>
+</ul>
+</li>
+<li>
+<p>Perform binary search to find the smallest distance:</p>
+<ul>
+<li>While <code>low</code> is less than <code>high</code>:
+<ul>
+<li>Calculate the middle point <code>mid</code> as <code>(low + high) / 2</code>.</li>
+<li>Count the number of pairs with distance ≤ <code>mid</code> using the helper function <code>countPairsWithMaxDistance</code>.</li>
+<li>Adjust the binary search bounds:
+<ul>
+<li>If the count of pairs is less than <code>k</code>, set <code>low</code> to <code>mid + 1</code>.</li>
+<li>Otherwise, set <code>high</code> to <code>mid</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Return the smallest distance found by the binary search.</p>
+</li>
+<li>
+<p>Helper function <code>countPairsWithMaxDistance</code>:</p>
+<ul>
+<li>Count the number of pairs with distance ≤ <code>maxDistance</code> using a sliding window:
+<ul>
+<li>Initialize <code>count</code> to 0.</li>
+<li>Set <code>left</code> pointer to 0.</li>
+<li>Iterate with <code>right</code> pointer from 0 to the end of the array:
+<ul>
+<li>Adjust the <code>left</code> pointer to maintain the window where the distance between <code>nums[right]</code> and <code>nums[left]</code> is ≤ <code>maxDistance</code>.</li>
+<li>Add the number of valid pairs ending at the current <code>right</code> index to <code>count</code> (i.e., <code>right - left</code>).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Return the total count of pairs with distance ≤ <code>maxDistance</code>.</li>
+</ul>
+</li>
+</ul>
+<p>The algorithm is visualized below:</p>
+<p><div class="border-label-1 relative mx-auto mb-6 flex flex-col overflow-hidden rounded-lg border-[1px]" style="max-width: 980px;"><div class="rounded-lg" style="max-height: 760px;"><img alt="Current" class="object-fit-contain !mb-0 max-h-full max-w-full" src="blob:https://leetcode.com/35cb9f78-75bf-4a50-8bc6-e2bcd819c02d"></div><div class="absolute left-[50%] top-[50%] flex h-12 w-12 translate-x-[-50%] translate-y-[-50%] items-center justify-center rounded-full bg-black/30"><div class="flex h-4 w-4 cursor-pointer items-center justify-center text-[35px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-full w-full text-white"><path fill-rule="evenodd" d="M18.97 12.871l-12.96 7.29a1 1 0 01-1.49-.87V4.71a1 1 0 011.49-.872l12.96 7.29a1 1 0 010 1.743z" clip-rule="evenodd"></path></svg></div></div><div class="relative flex h-8 select-none items-center justify-around bg-black"><div class="flex items-center space-x-7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="w-4 cursor-pointer text-gray-6 dark:text-dark-gray-6 hover:text-gray-7 dark:hover:text-dark-gray-7"><path fill-rule="evenodd" d="M16.091 4.929l-7.057 7.078 7.057 7.064a1 1 0 01-1.414 1.414l-7.764-7.77a1 1 0 010-1.415l7.764-7.785a1 1 0 111.415 1.414z" clip-rule="evenodd"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="w-4 cursor-pointer text-gray-6 dark:text-dark-gray-6 hover:text-gray-7 dark:hover:text-dark-gray-7"><path fill-rule="evenodd" d="M18.97 12.871l-12.96 7.29a1 1 0 01-1.49-.87V4.71a1 1 0 011.49-.872l12.96 7.29a1 1 0 010 1.743z" clip-rule="evenodd"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="w-4 cursor-pointer text-gray-6 dark:text-dark-gray-6 hover:text-gray-7 dark:hover:text-dark-gray-7"><path fill-rule="evenodd" d="M7.913 19.071l7.057-7.078-7.057-7.064a1 1 0 011.414-1.414l7.764 7.77a1 1 0 010 1.415l-7.764 7.785a1 1 0 01-1.414-1.414z" clip-rule="evenodd"></path></svg></div><div class="absolute right-0 mr-5 text-xs font-medium text-white">1 / 13</div></div></div></p>
+<h4 id="implementation-2">Implementation</h4>
+<iframe src="https://leetcode.com/playground/VeCnLoRm/shared" width="100%" height="500" name="user-content-VeCnLoRm" allowfullscreen="" translate="no"></iframe>
+<h4 id="complexity-analysis-2">Complexity Analysis</h4>
+<p>Let <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span> be the number of elements and <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span></span></span></span></span> be the maximum possible distance.</p>
+<ul>
+<li>
+<p>Time complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span> term arises from the binary search over possible distances, where the search space is up to the maximum possible distance <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span></span></span></span></span>. For each mid-value in the binary search, the <code>countPairsWithMaxDistance</code> function is called, which operates in linear time <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>.</p>
+<p>The binary search itself runs in <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mclose">)</span></span></span></span></span> time. Hence, the combined time complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">M</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>, where the binary search and pair counting operations are combined.</p>
+</li>
+<li>
+<p>Space complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.05764em;">S</span><span class="mclose">)</span></span></span></span></span></p>
+<p>The space complexity is constant because the algorithm only uses a fixed amount of extra space for the left and right pointers, the mid-value, and counters. It does not require additional data structures that scale with the input size, so the space complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span>, excluding the space used to store the input array.</p>
+<p>Some extra space is used when we sort an array of size <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span> in place. The space complexity of the sorting algorithm (<span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.05764em;">S</span></span></span></span></span>) depends on the programming language. The value of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.05764em;">S</span></span></span></span></span> depends on the programming language and the sorting algorithm being used:</p>
+<ul>
+<li>In Python, the <code>sort()</code> method sorts a list using the Timsort algorithm which is a combination of Merge Sort and Insertion Sort and has a space complexity of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></li>
+<li>In C++, the <code>sort()</code> function is implemented as a hybrid of Quick Sort, Heap Sort, and Insertion Sort, with a worst-case space complexity of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></li>
+<li>In Java, <code>Arrays.sort()</code> is implemented using a variant of the Quick Sort algorithm which has a space complexity of <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></li>
+</ul>
+<p>Thus, the total space complexity of the algorithm is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.05764em;">S</span><span class="mclose">)</span></span></span></span></span>.</p>
+</li>
+</ul>
+<hr></div><span style="font-size: 0px; line-height: 0;">&nbsp;</span></div></div>

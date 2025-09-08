@@ -1,0 +1,31 @@
+2484. Count Palindromic Subsequences;=;=Hard;=;=public int countPalindromes(String s);=;=Given a string of digits s, return the number of palindromic subsequences of s having length 5. Since the answer may be very large, return it modulo 109 + 7.
+
+Note:
+
+A string is palindromic if it reads the same forward and backward.
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+ 
+
+Example 1:
+
+Input: s = "103301"
+Output: 2
+Explanation: 
+There are 6 possible subsequences of length 5: "10330","10331","10301","10301","13301","03301". 
+Two of them (both equal to "10301") are palindromic.
+Example 2:
+
+Input: s = "0000000"
+Output: 21
+Explanation: All 21 subsequences are "00000", which is palindromic.
+Example 3:
+
+Input: s = "9999900000"
+Output: 2
+Explanation: The only two palindromic subsequences are "99999" and "00000".
+ 
+
+Constraints:
+
+1 <= s.length <= 104
+s consists of digits.;=;=https://leetcode.com/problems/count-palindromic-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-palindromic-subsequences/solutions/2850466/c-java-python3-counting-prefixes-and-suf-4r70/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/7044465/full-prefix-sweeps-streaming-layered-rol-mh26/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/5005591/prefix-and-suffix-arrays-java-by-wizwilz-jhr5/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/6819855/detailed-recursion-and-memoization-solut-zyne/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/2850442/java-on-with-comments-by-zadeluca-b0ck/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/6194160/3d-prefix-and-suffix-arrays-by-dharmende-cx37/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/5625593/linear-dp-by-chuko-2q1x/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/3788955/java-dp-memoization-no-prefix-suffix-cal-nfho/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/2850957/java-dp-count-the-occurrences-of-0199-on-6uv8/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/2850753/rollingo100n-timeo100-extra-spacejava-by-kkco/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/3600480/java-solution-easy-to-read-commented-by-plapo/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/2860518/java-easy-similar-to-lis-on2-perfect-cle-dtt3/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/2850975/on100-clean-java-solution-by-divyansh120-g53m/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/7020790/modular-code-with-no-code-duplication-by-kj80/;;https://leetcode.com/problems/count-palindromic-subsequences/solutions/6419936/java-beats-100-users-dynamic-programming-9dud/;;;=;==;=;=;

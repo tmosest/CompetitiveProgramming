@@ -1,0 +1,31 @@
+1492. The kth Factor of n;=;=Medium;=;=public int kthFactor(int n, int k);=;=You are given two positive integers n and k. A factor of an integer n is defined as an integer i where n % i == 0.
+
+Consider a list of all factors of n sorted in ascending order, return the kth factor in this list or return -1 if n has less than k factors.
+
+ 
+
+Example 1:
+
+Input: n = 12, k = 3
+Output: 3
+Explanation: Factors list is [1, 2, 3, 4, 6, 12], the 3rd factor is 3.
+Example 2:
+
+Input: n = 7, k = 2
+Output: 7
+Explanation: Factors list is [1, 7], the 2nd factor is 7.
+Example 3:
+
+Input: n = 4, k = 4
+Output: -1
+Explanation: Factors list is [1, 2, 4], there is only 3 factors. We should return -1.
+ 
+
+Constraints:
+
+1 <= k <= n <= 1000
+ 
+
+Follow up:
+
+Could you solve this problem in less than O(n) complexity?;=;=https://leetcode.com/problems/the-kth-factor-of-n/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/the-kth-factor-of-n/solutions/7147418/easy-code-for-solve-this-problem-by-4_k4-zqwy/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/7104900/easy-way-to-identify-the-factor-by-tejas-cp1g/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/4684663/easy-beginner-friendly-dry-run-iteration-hqef/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/7084235/simple-solution-by-lynx1-397h/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/6920640/finding-the-k-in-divisibility-a-factor-h-ul8g/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/708548/java-simple-loop-osqrtn-by-hobiter-aea0/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/6065349/simple-solution-with-explanation-by-tech-scfy/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/6644013/on-easy-math-solution-100-best-by-saurab-ydgz/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/3647693/java-7-liner-osqrtn-solution-easy-to-und-o3hg/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/4361746/beginner-to-advanced-solutions-easy-to-u-pz6w/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/6502348/simple-100-beats-easy-to-understand-by-k-1a80/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/6759522/effecient-and-easy-java-solution-by-vive-wos5/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/5746639/simple-java-c-code-by-abhinandannaik1717-12zt/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/6348819/finding-the-kth-factor-of-n-a-simple-by-iom9j/;;https://leetcode.com/problems/the-kth-factor-of-n/solutions/6516269/brute-force-approach-finding-the-kth-fac-jops/;;;=;==;=;=;

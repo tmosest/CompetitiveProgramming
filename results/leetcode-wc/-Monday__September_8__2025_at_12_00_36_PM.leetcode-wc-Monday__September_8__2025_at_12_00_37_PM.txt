@@ -1,0 +1,34 @@
+2961. Double Modular Exponentiation;=;=Medium;=;=public List<Integer> getGoodIndices(int[][] variables, int target);=;=You are given a 0-indexed 2D array variables where variables[i] = [ai, bi, ci, mi], and an integer target.
+
+An index i is good if the following formula holds:
+
+0 <= i < variables.length
+((aibi % 10)ci) % mi == target
+Return an array consisting of good indices in any order.
+
+ 
+
+Example 1:
+
+Input: variables = [[2,3,3,10],[3,3,3,1],[6,1,1,4]], target = 2
+Output: [0,2]
+Explanation: For each index i in the variables array:
+1) For the index 0, variables[0] = [2,3,3,10], (23 % 10)3 % 10 = 2.
+2) For the index 1, variables[1] = [3,3,3,1], (33 % 10)3 % 1 = 0.
+3) For the index 2, variables[2] = [6,1,1,4], (61 % 10)1 % 4 = 2.
+Therefore we return [0,2] as the answer.
+Example 2:
+
+Input: variables = [[39,3,1000,1000]], target = 17
+Output: []
+Explanation: For each index i in the variables array:
+1) For the index 0, variables[0] = [39,3,1000,1000], (393 % 10)1000 % 1000 = 1.
+Therefore we return [] as the answer.
+ 
+
+Constraints:
+
+1 <= variables.length <= 100
+variables[i] == [ai, bi, ci, mi]
+1 <= ai, bi, ci, mi <= 103
+0 <= target <= 103;=;=https://leetcode.com/problems/double-modular-exponentiation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/double-modular-exponentiation/solutions/4384579/cjavapythonjavascript-easy-approach-expl-0bk3/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/7008074/beats-10000-by-lcioceha9q-w7ui/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/4384819/mastering-modular-exponentiation-beginne-rsfw/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/4385182/100-beat-c-java-easy-to-understand-by-ad-e17h/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/4385586/simple-java-solution-by-siddhant_1602-udvc/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/4385300/easy-video-solution-with-proofs-exponent-bth3/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/4384433/simple-iterative-power-function-by-aanch-flpz/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/6409400/java-solution-easy-to-understand-by-anim-zx5h/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/4817437/clear-java-solution-by-leetcatt-pnxw/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/4384511/simple-brute-force-by-clcwcxfwf-s7yc/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/4385205/java-solution-100-faster-solution-1ms-so-uhla/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/4385048/java-100-faster-by-harsh__005-zt1h/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/6950230/power-mod-chain-match-easy-simple-by-val-fvyb/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/5762139/solution-with-help-func-to-calculate-mod-ey70/;;https://leetcode.com/problems/double-modular-exponentiation/solutions/6409401/java-solution-easy-to-understand-by-anim-w9e7/;;;=;==;=;=;

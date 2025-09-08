@@ -1,0 +1,241 @@
+C++JavaPython3Ê Copy
+
+1
+class Solution {
+2
+?
+3
+ Ê Êpublic int bestClosingTime(String customers) {
+4
+ Ê Ê Ê Ê// Start with closing at hour 0 and assume the current penalty is 0.
+5
+ Ê Ê Ê Êint minPenalty = 0, curPenalty = 0;
+6
+ Ê Ê Ê Êint earliestHour = 0;
+7
+?
+8
+ Ê Ê Ê Êfor (int i = 0; i < customers.length(); i++) {
+9
+ Ê Ê Ê Ê Ê Êchar ch = customers.charAt(i);
+10
+?
+11
+ Ê Ê Ê Ê Ê Ê// If status in hour i is 'Y', moving it to open hours decrement
+12
+ Ê Ê Ê Ê Ê Ê// penalty by 1. Otherwise, moving 'N' to open hours increment
+13
+ Ê Ê Ê Ê Ê Ê// penatly by 1.
+14
+ Ê Ê Ê Ê Ê Êif (ch == 'Y') {
+15
+ Ê Ê Ê Ê Ê Ê Ê ÊcurPenalty--;
+16
+ Ê Ê Ê Ê Ê  } else {
+17
+ Ê Ê Ê Ê Ê Ê Ê ÊcurPenalty++;
+18
+ Ê Ê Ê Ê Ê  }
+19
+?
+20
+ Ê Ê Ê Ê Ê Ê// Update earliestHour if a smaller penatly is encountered.
+21
+ Ê Ê Ê Ê Ê Êif (curPenalty < minPenalty) {
+22
+ Ê Ê Ê Ê Ê Ê Ê ÊearliestHour = i + 1;
+23
+ Ê Ê Ê Ê Ê Ê Ê ÊminPenalty = curPenalty;
+24
+ Ê Ê Ê Ê Ê  }
+25
+ Ê Ê Ê  }
+26
+?
+27
+ Ê Ê Ê Êreturn earliestHour;
+28
+ Ê  }
+29
+}
+C++JavaPython3Ê Copy
+
+1
+class Solution {
+2
+?
+3
+ Ê Êpublic int bestClosingTime(String customers) {
+4
+ Ê Ê Ê Ê// Start with closing at hour 0 and assume the current penalty is 0.
+5
+ Ê Ê Ê Êint minPenalty = 0, curPenalty = 0;
+6
+ Ê Ê Ê Êint earliestHour = 0;
+7
+?
+8
+ Ê Ê Ê Êfor (int i = 0; i < customers.length(); i++) {
+9
+ Ê Ê Ê Ê Ê Êchar ch = customers.charAt(i);
+10
+?
+11
+ Ê Ê Ê Ê Ê Ê// If status in hour i is 'Y', moving it to open hours decrement
+12
+ Ê Ê Ê Ê Ê Ê// penalty by 1. Otherwise, moving 'N' to open hours increment
+13
+ Ê Ê Ê Ê Ê Ê// penatly by 1.
+14
+ Ê Ê Ê Ê Ê Êif (ch == 'Y') {
+15
+ Ê Ê Ê Ê Ê Ê Ê ÊcurPenalty--;
+16
+ Ê Ê Ê Ê Ê  } else {
+17
+ Ê Ê Ê Ê Ê Ê Ê ÊcurPenalty++;
+18
+ Ê Ê Ê Ê Ê  }
+19
+?
+20
+ Ê Ê Ê Ê Ê Ê// Update earliestHour if a smaller penatly is encountered.
+21
+ Ê Ê Ê Ê Ê Êif (curPenalty < minPenalty) {
+22
+ Ê Ê Ê Ê Ê Ê Ê ÊearliestHour = i + 1;
+23
+ Ê Ê Ê Ê Ê Ê Ê ÊminPenalty = curPenalty;
+24
+ Ê Ê Ê Ê Ê  }
+25
+ Ê Ê Ê  }
+26
+?
+27
+ Ê Ê Ê Êreturn earliestHour;
+28
+ Ê  }
+29
+}
+C++JavaPython3Ê Copy
+
+1
+class Solution {
+2
+?
+3
+ Ê Êpublic int bestClosingTime(String customers) {
+4
+ Ê Ê Ê Ê// Start with closing at hour 0 and assume the current penalty is 0.
+5
+ Ê Ê Ê Êint minPenalty = 0, curPenalty = 0;
+6
+ Ê Ê Ê Êint earliestHour = 0;
+7
+?
+8
+ Ê Ê Ê Êfor (int i = 0; i < customers.length(); i++) {
+9
+ Ê Ê Ê Ê Ê Êchar ch = customers.charAt(i);
+10
+?
+11
+ Ê Ê Ê Ê Ê Ê// If status in hour i is 'Y', moving it to open hours decrement
+12
+ Ê Ê Ê Ê Ê Ê// penalty by 1. Otherwise, moving 'N' to open hours increment
+13
+ Ê Ê Ê Ê Ê Ê// penatly by 1.
+14
+ Ê Ê Ê Ê Ê Êif (ch == 'Y') {
+15
+ Ê Ê Ê Ê Ê Ê Ê ÊcurPenalty--;
+16
+ Ê Ê Ê Ê Ê  } else {
+17
+ Ê Ê Ê Ê Ê Ê Ê ÊcurPenalty++;
+18
+ Ê Ê Ê Ê Ê  }
+19
+?
+20
+ Ê Ê Ê Ê Ê Ê// Update earliestHour if a smaller penatly is encountered.
+21
+ Ê Ê Ê Ê Ê Êif (curPenalty < minPenalty) {
+22
+ Ê Ê Ê Ê Ê Ê Ê ÊearliestHour = i + 1;
+23
+ Ê Ê Ê Ê Ê Ê Ê ÊminPenalty = curPenalty;
+24
+ Ê Ê Ê Ê Ê  }
+25
+ Ê Ê Ê  }
+26
+?
+27
+ Ê Ê Ê Êreturn earliestHour;
+28
+ Ê  }
+29
+}
+C++JavaPython3Ê Copy
+
+1
+class Solution {
+2
+?
+3
+ Ê Êpublic int bestClosingTime(String customers) {
+4
+ Ê Ê Ê Ê// Start with closing at hour 0 and assume the current penalty is 0.
+5
+ Ê Ê Ê Êint minPenalty = 0, curPenalty = 0;
+6
+ Ê Ê Ê Êint earliestHour = 0;
+7
+?
+8
+ Ê Ê Ê Êfor (int i = 0; i < customers.length(); i++) {
+9
+ Ê Ê Ê Ê Ê Êchar ch = customers.charAt(i);
+10
+?
+11
+ Ê Ê Ê Ê Ê Ê// If status in hour i is 'Y', moving it to open hours decrement
+12
+ Ê Ê Ê Ê Ê Ê// penalty by 1. Otherwise, moving 'N' to open hours increment
+13
+ Ê Ê Ê Ê Ê Ê// penatly by 1.
+14
+ Ê Ê Ê Ê Ê Êif (ch == 'Y') {
+15
+ Ê Ê Ê Ê Ê Ê Ê ÊcurPenalty--;
+16
+ Ê Ê Ê Ê Ê  } else {
+17
+ Ê Ê Ê Ê Ê Ê Ê ÊcurPenalty++;
+18
+ Ê Ê Ê Ê Ê  }
+19
+?
+20
+ Ê Ê Ê Ê Ê Ê// Update earliestHour if a smaller penatly is encountered.
+21
+ Ê Ê Ê Ê Ê Êif (curPenalty < minPenalty) {
+22
+ Ê Ê Ê Ê Ê Ê Ê ÊearliestHour = i + 1;
+23
+ Ê Ê Ê Ê Ê Ê Ê ÊminPenalty = curPenalty;
+24
+ Ê Ê Ê Ê Ê  }
+25
+ Ê Ê Ê  }
+26
+?
+27
+ Ê Ê Ê Êreturn earliestHour;
+28
+ Ê  }
+29
+}
+Code copied forÊPython3

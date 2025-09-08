@@ -1,0 +1,39 @@
+1829. Maximum XOR for Each Query;=;=Medium;=;=public int[] getMaximumXor(int[] nums, int maximumBit);=;=You are given a sorted array nums of n non-negative integers and an integer maximumBit. You want to perform the following query n times:
+
+Find a non-negative integer k < 2maximumBit such that nums[0] XOR nums[1] XOR ... XOR nums[nums.length-1] XOR k is maximized. k is the answer to the ith query.
+Remove the last element from the current array nums.
+Return an array answer, where answer[i] is the answer to the ith query.
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,1,3], maximumBit = 2
+Output: [0,3,2,3]
+Explanation: The queries are answered as follows:
+1st query: nums = [0,1,1,3], k = 0 since 0 XOR 1 XOR 1 XOR 3 XOR 0 = 3.
+2nd query: nums = [0,1,1], k = 3 since 0 XOR 1 XOR 1 XOR 3 = 3.
+3rd query: nums = [0,1], k = 2 since 0 XOR 1 XOR 2 = 3.
+4th query: nums = [0], k = 3 since 0 XOR 3 = 3.
+Example 2:
+
+Input: nums = [2,3,4,7], maximumBit = 3
+Output: [5,2,6,5]
+Explanation: The queries are answered as follows:
+1st query: nums = [2,3,4,7], k = 5 since 2 XOR 3 XOR 4 XOR 7 XOR 5 = 7.
+2nd query: nums = [2,3,4], k = 2 since 2 XOR 3 XOR 4 XOR 2 = 7.
+3rd query: nums = [2,3], k = 6 since 2 XOR 3 XOR 6 = 7.
+4th query: nums = [2], k = 5 since 2 XOR 5 = 7.
+Example 3:
+
+Input: nums = [0,1,2,2,5,7], maximumBit = 3
+Output: [4,3,6,4,6,7]
+ 
+
+Constraints:
+
+nums.length == n
+1 <= n <= 105
+1 <= maximumBit <= 20
+0 <= nums[i] < 2maximumBit
+nums??? is sorted in ascending order.;=;=https://leetcode.com/problems/maximum-xor-for-each-query/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6021142/easiest-solution-beats-100-c-java-python-m68i/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6021112/beats-100-very-short-simple-solution-by-74750/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6021314/very-simple-beats-100-java-c-go-python-s-o1ub/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/1163087/java-on-very-detailed-explanation-for-st-mj79/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6024766/beats-100-very-short-easily-understandab-2ldr/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6023276/only-for-beginners-of-bitwise-operations-1eiu/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6021880/simple-java-solution-well-explained-by-g-hpku/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6021118/easy-solution-beats-100-step-by-step-exp-5opk/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6021513/java-clean-solution-by-shree_govind_jee-zx6b/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6021200/maximum-xor-for-each-query-easy-solution-q8r4/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6021268/the-great-bit-flip-chasing-maximum-xor-g-fbdp/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6021381/bit-manipulation-super-simple-code-2ms-b-eszm/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6023855/simple-pyjava-code-explained-in-detail-u-iis9/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6022155/java-soltuion-100-faster-solution-by-vip-9aa1/;;https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6087712/cracking-the-xor-code-the-genius-solutio-o2t0/;;;=;==;=;=;

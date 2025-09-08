@@ -1,0 +1,17 @@
+625. Minimum Factorization;=;=Medium;=;=public int smallestFactorization(int num);=;=Given a positive integer num, return the smallest positive integer x whose multiplication of each digit equals num. If there is no answer or the answer is not fit in 32-bit signed integer, return 0.
+
+ 
+
+Example 1:
+
+Input: num = 48
+Output: 68
+Example 2:
+
+Input: num = 15
+Output: 35
+ 
+
+Constraints:
+
+1 <= num <= 231 - 1;=;=https://leetcode.com/problems/minimum-factorization/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-factorization/solutions/6583368/dfs-approach-by-trunkunala-ema9/;;https://leetcode.com/problems/minimum-factorization/solutions/5823427/simple-java-solution-by-sakshikishore-4rls/;;https://leetcode.com/problems/minimum-factorization/solutions/3416463/solution-by-deleted_user-87g1/;;https://leetcode.com/problems/minimum-factorization/solutions/2317949/java-easy-solution-by-lakhans671-pq56/;;https://leetcode.com/problems/minimum-factorization/solutions/903848/my-java-dfs-tbh-i-dk-why-it-passed-by-us-7a0i/;;;=;==;=;=;

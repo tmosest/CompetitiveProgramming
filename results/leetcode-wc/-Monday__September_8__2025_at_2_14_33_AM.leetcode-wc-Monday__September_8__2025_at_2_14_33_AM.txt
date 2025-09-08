@@ -1,0 +1,30 @@
+600. Non-negative Integers without Consecutive Ones;=;=Hard;=;=public int findIntegers(int n);=;=Given a positive integer n, return the number of the integers in the range [0, n] whose binary representations do not contain consecutive ones.
+
+ 
+
+Example 1:
+
+Input: n = 5
+Output: 5
+Explanation:
+Here are the non-negative integers <= 5 with their corresponding binary representations:
+0 : 0
+1 : 1
+2 : 10
+3 : 11
+4 : 100
+5 : 101
+Among them, only integer 3 disobeys the rule (two consecutive ones) and the other 5 satisfy the rule. 
+Example 2:
+
+Input: n = 1
+Output: 2
+Example 3:
+
+Input: n = 2
+Output: 3
+ 
+
+Constraints:
+
+1 <= n <= 109;=;=https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/1362331/simple-recursion-java-append-01-by-shrey-l3az/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/2991649/simple-java-solution-with-dynamic-progra-ukpo/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/481493/dew-it-very-simple-logic-recursion-by-i_-8hwd/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/2308001/java-dp-on-number-by-student2091-9rig/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/3409235/solution-by-deleted_user-ital/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/3600829/java-easy-to-understanddigit-dp-by-manmo-cy97/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/2312114/fibonacci-dp-java-easy-by-lil_toeturtle-m1g1/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/7135491/basic-memoisation-by-ithealth-8cbt/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/1363440/java-short-code-with-fibonacci-by-dudean-hj08/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/6966744/fibonacci-series-intuition-with-example-wtpdr/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/6540040/dp-with-memoization-method-by-priyanshu_-z0ap/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/6244480/bit-manipulation-java-direct-solution-wi-cwy2/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/5931393/counting-valid-integers-with-non-consecu-lkrp/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/5754976/java-dp-approach-by-brijeshyadav221011-j66k/;;https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solutions/5715301/shortest-java-solution-intuition-by-jaip-97ky/;;;=;==;=;=;

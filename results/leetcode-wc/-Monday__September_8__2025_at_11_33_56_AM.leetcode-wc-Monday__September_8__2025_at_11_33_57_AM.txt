@@ -1,0 +1,44 @@
+1880. Check if Word Equals Summation of Two Words;=;=Easy;=;=publicÊbooleanÊisSumEqual(StringÊfirstWord,ÊStringÊsecondWord,ÊStringÊtargetWord);=;=The letter value of a letter is its position in the alphabet starting from 0 (i.e. 'a' -> 0, 'b' -> 1, 'c' -> 2, etc.).
+
+The numerical value of some string of lowercase English letters s is the concatenation of the letter values of each letter in s, which is then converted into an integer.
+
+For example, if s = "acb", we concatenate each letter's letter value, resulting in "021". After converting it, we get 21.
+You are given three strings firstWord, secondWord, and targetWord, each consisting of lowercase English letters 'a' through 'j' inclusive.
+
+Return true if the summation of the numerical values of firstWord and secondWord equals the numerical value of targetWord, or false otherwise.
+
+Ê
+
+Example 1:
+
+Input: firstWord = "acb", secondWord = "cba", targetWord = "cdb"
+Output: true
+Explanation:
+The numerical value of firstWord is "acb" -> "021" -> 21.
+The numerical value of secondWord is "cba" -> "210" -> 210.
+The numerical value of targetWord is "cdb" -> "231" -> 231.
+We return true because 21 + 210 == 231.
+Example 2:
+
+Input: firstWord = "aaa", secondWord = "a", targetWord = "aab"
+Output: false
+Explanation: 
+The numerical value of firstWord is "aaa" -> "000" -> 0.
+The numerical value of secondWord is "a" -> "0" -> 0.
+The numerical value of targetWord is "aab" -> "001" -> 1.
+We return false because 0 + 0 != 1.
+Example 3:
+
+Input: firstWord = "aaa", secondWord = "a", targetWord = "aaaa"
+Output: true
+Explanation: 
+The numerical value of firstWord is "aaa" -> "000" -> 0.
+The numerical value of secondWord is "a" -> "0" -> 0.
+The numerical value of targetWord is "aaaa" -> "0000" -> 0.
+We return true because 0 + 0 == 0.
+Ê
+
+Constraints:
+
+1 <= firstWord.length, secondWord.length, targetWord.length <= 8
+firstWord, secondWord, and targetWord consist of lowercase English letters from 'a' to 'j' inclusive.;=;=https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/6941623/clear-and-easy-solution-1ms-on-o1-by-gok-xobb/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/6859199/beats-100-by-alexander_sergeev-ofrf/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/6015377/easiestfaster-lesser-cpython3javacpython-krug/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/6264107/0ms-beats-100-proof-concise-code-java-be-cupn/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/7133843/a-java-solution-by-yucan29-ajsr/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/6957647/beats-100easy-to-understand-by-qprmvxcyo-6vdl/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/6912054/1880-check-if-word-equals-summation-of-t-kt1i/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/1247463/java-on-easy-and-fast-by-luca_mazzucco-a5ff/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/6648474/simple-easy-code-by-sairangineeni-m242/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/6610480/easy-solution-java-python-c-by-vermaansh-dccz/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/3625570/easy-and-short-solution-in-java-0-ms-100-nakq/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/1241732/java-2-solutions-100-and-25-by-kunalsuri-4j5r/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/3745510/highly-optimised-easy-solution-beats-100-prei/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/1761566/java-0-ms-explained-by-prashant404-t301/;;https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/solutions/2109978/java-simple-solution-by-tech-nomad-s990/;;;=;==;=;=;

@@ -1,0 +1,30 @@
+356. Line Reflection;=;=Medium;=;=public boolean isReflected(int[][] points);=;=Given n points on a 2D plane, find if there is such a line parallel to the y-axis that reflects the given points symmetrically.
+
+In other words, answer whether or not if there exists a line that after reflecting all points over the given line, the original points' set is the same as the reflected ones.
+
+Note that there can be repeated points.
+
+ 
+
+Example 1:
+
+
+Input: points = [[1,1],[-1,1]]
+Output: true
+Explanation: We can choose the line x = 0.
+Example 2:
+
+
+Input: points = [[1,1],[-1,-1]]
+Output: false
+Explanation: We can't choose a line.
+ 
+
+Constraints:
+
+n == points.length
+1 <= n <= 104
+-108 <= points[i][j] <= 108
+ 
+
+Follow up: Could you do better than O(n2)?;=;=https://leetcode.com/problems/line-reflection/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/line-reflection/solutions/82970/simple-java-hashset-solution-by-juanren-aihc/;;https://leetcode.com/problems/line-reflection/solutions/4183052/easy-to-understand-solution-with-hashmap-zz7t/;;https://leetcode.com/problems/line-reflection/solutions/3331741/solution-by-deleted_user-0b3o/;;https://leetcode.com/problems/line-reflection/solutions/7121677/map-based-solution-in-java-by-someuser_i-c1wq/;;https://leetcode.com/problems/line-reflection/solutions/83031/ac-java-with-explain-from-hint-not-using-yu9n/;;https://leetcode.com/problems/line-reflection/solutions/83033/solution-and-explanation-by-lzb700m-vzb9/;;https://leetcode.com/problems/line-reflection/solutions/6822323/java-simple-maths-by-rnotappl-bscn/;;https://leetcode.com/problems/line-reflection/solutions/5745943/simple-solution-with-comments-by-doudmit-k15a/;;https://leetcode.com/problems/line-reflection/solutions/5285538/java-javascript-typescript-c-c-kotlin-go-mkg3/;;https://leetcode.com/problems/line-reflection/solutions/4492431/concise-java-solution-by-fllght-garc/;;https://leetcode.com/problems/line-reflection/solutions/4195769/java-easy-solution-by-shubhangigr8-kcvi/;;https://leetcode.com/problems/line-reflection/solutions/3519577/java-solution-on-hashmap-math-by-yihaoye-xnxu/;;https://leetcode.com/problems/line-reflection/solutions/3371633/java-nlogn-sorting-x-axis-reflection-by-kyr28/;;https://leetcode.com/problems/line-reflection/solutions/1925058/java-easy-solution-by-terkalt-bf5s/;;https://leetcode.com/problems/line-reflection/solutions/1597958/java-o15n-group2-pointer-easy-to-underst-csgg/;;;=;==;=;=;

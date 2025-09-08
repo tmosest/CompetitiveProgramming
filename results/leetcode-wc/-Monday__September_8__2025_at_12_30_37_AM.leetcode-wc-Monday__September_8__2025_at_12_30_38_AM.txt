@@ -1,0 +1,27 @@
+483. Smallest Good Base;=;=Hard;=;=;=;=Given an integer n represented as a string, return the smallest good base of n.
+
+We call k >= 2 a good base of n, if all digits of n base k are 1's.
+
+Ê
+
+Example 1:
+
+Input: n = "13"
+Output: "3"
+Explanation: 13 base 3 is 111.
+Example 2:
+
+Input: n = "4681"
+Output: "8"
+Explanation: 4681 base 8 is 11111.
+Example 3:
+
+Input: n = "1000000000000000000"
+Output: "999999999999999999"
+Explanation: 1000000000000000000 base 999999999999999999 is 11.
+Ê
+
+Constraints:
+
+n is an integer in the range [3, 1018].
+n does not contain any leading zeros.;=;=https://leetcode.com/problems/smallest-good-base/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-good-base/solutions/3004597/solution-by-deleted_user-7za7/;;https://leetcode.com/problems/smallest-good-base/solutions/96587/python-solution-with-detailed-mathematic-7kac/;;https://leetcode.com/problems/smallest-good-base/solutions/96590/3ms-ac-c-long-long-int-binary-search-by-kl0eu/;;https://leetcode.com/problems/smallest-good-base/solutions/96589/java-solution-with-hand-writing-explain-5ird6/;;https://leetcode.com/problems/smallest-good-base/solutions/96591/java-ologn2-binary-search-solution-by-fu-7fwn/;;https://leetcode.com/problems/smallest-good-base/solutions/543924/python-97-detailed-explaination-with-tip-jes2/;;https://leetcode.com/problems/smallest-good-base/solutions/6888259/binary-search-solution-c-by-siddharth_20-inph/;;https://leetcode.com/problems/smallest-good-base/solutions/6591037/newton-rhapson-method-to-find-k-thorugh-xgjrq/;;https://leetcode.com/problems/smallest-good-base/solutions/6837953/simple-python-solution-beats-100-by-user-zsmz/;;https://leetcode.com/problems/smallest-good-base/solutions/3787685/binary-search-100-faster-in-both-java-an-4ghb/;;https://leetcode.com/problems/smallest-good-base/solutions/6759994/python-2-0-ms-beats-10000-beginner-frien-7kxd/;;https://leetcode.com/problems/smallest-good-base/solutions/3282829/483-solution-with-step-by-step-explanati-1jr5/;;https://leetcode.com/problems/smallest-good-base/solutions/6625005/binary-search-approach-by-atharvmittal98-01wq/;;https://leetcode.com/problems/smallest-good-base/solutions/936793/c-binary-search-solution-with-explanatio-ylqc/;;https://leetcode.com/problems/smallest-good-base/solutions/625034/easy-to-understand-java-solution-without-sjoj/;;;=;==;=;=;

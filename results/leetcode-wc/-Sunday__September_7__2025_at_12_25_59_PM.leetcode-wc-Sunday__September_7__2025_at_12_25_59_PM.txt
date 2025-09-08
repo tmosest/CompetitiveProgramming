@@ -1,0 +1,30 @@
+565. Array Nesting;=;=Medium;=;=public int arrayNesting(int[] nums);=;=You are given an integer array nums of length n where nums is a permutation of the numbers in the range [0, n - 1].
+
+You should build a set s[k] = {nums[k], nums[nums[k]], nums[nums[nums[k]]], ... } subjected to the following rule:
+
+The first element in s[k] starts with the selection of the element nums[k] of index = k.
+The next element in s[k] should be nums[nums[k]], and then nums[nums[nums[k]]], and so on.
+We stop adding right before a duplicate element occurs in s[k].
+Return the longest length of a set s[k].
+
+ 
+
+Example 1:
+
+Input: nums = [5,4,0,3,1,6,2]
+Output: 4
+Explanation: 
+nums[0] = 5, nums[1] = 4, nums[2] = 0, nums[3] = 3, nums[4] = 1, nums[5] = 6, nums[6] = 2.
+One of the longest sets s[k]:
+s[0] = {nums[0], nums[5], nums[6], nums[2]} = {5, 6, 2, 0}
+Example 2:
+
+Input: nums = [0,1,2]
+Output: 1
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] < nums.length
+All the values of nums are unique.;=;=https://leetcode.com/problems/array-nesting/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/array-nesting/solutions/6965671/easy-code-in-java-by-yasl1-tc91/;;https://leetcode.com/problems/array-nesting/solutions/4993515/beats-100-users-java-best-by-dhruvbansal-jzb4/;;https://leetcode.com/problems/array-nesting/solutions/1438158/array-nesting-with-clear-explanation-by-zz6iv/;;https://leetcode.com/problems/array-nesting/solutions/1439808/java-solution-using-hashset-by-subhankar-ig7q/;;https://leetcode.com/problems/array-nesting/solutions/4507412/clear-simple-by-shadab_ahmad_khan-2xel/;;https://leetcode.com/problems/array-nesting/solutions/1800303/java-self-explanatory-on-easy-by-bharat1-3qka/;;https://leetcode.com/problems/array-nesting/solutions/3404998/solution-by-deleted_user-wb8r/;;https://leetcode.com/problems/array-nesting/solutions/638814/easy-java-solution-100-faster-1-ms-by-ka-pzi4/;;https://leetcode.com/problems/array-nesting/solutions/5007857/basic-approach-for-beginners-without-usi-zl2v/;;https://leetcode.com/problems/array-nesting/solutions/4189123/simple-java-solution-using-dfs-by-sagarr-a75c/;;https://leetcode.com/problems/array-nesting/solutions/1470388/java-on-solution-o1-space-by-returnstr-dgyo/;;https://leetcode.com/problems/array-nesting/solutions/1191497/java-1ms-faster-than-100-with-explanatio-56h6/;;https://leetcode.com/problems/array-nesting/solutions/1438231/java-clean-concise-optimal-code-depth-fi-omi9/;;https://leetcode.com/problems/array-nesting/solutions/1439490/java-solution-using-union-find-with-path-9510/;;https://leetcode.com/problems/array-nesting/solutions/1439248/easy-java-solution-naive-to-optimized-on-7x3i/;;;=;==;=;=;

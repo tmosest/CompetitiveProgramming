@@ -1,0 +1,229 @@
+C++Java  Copy
+
+1
+class Solution {
+2
+    // Returns true if the character is a vowel.
+3
+    boolean isVowel(Character c) {
+4
+        return c == 'a' || c == 'e' || c == 'o'|| c == 'u'|| c == 'i'
+5
+                || c == 'A' || c == 'E' || c == 'O'|| c == 'U'|| c == 'I';
+6
+    }
+7
+?
+8
+    public String sortVowels(String s) {
+9
+        int[] count = new int[1000];
+10
+?
+11
+        // Store the frequencies for each character.
+12
+        for (char c : s.toCharArray()) {
+13
+            if (isVowel(c)) {
+14
+                count[c - 'A']++;
+15
+            }
+16
+        }
+17
+?
+18
+        // Sorted string having all the vowels.
+19
+        String sortedVowel = "AEIOUaeiou";
+20
+        StringBuilder ans = new StringBuilder();
+21
+        int j = 0;
+22
+        for (int i = 0; i < s.length(); i++) {
+23
+            if (!isVowel(s.charAt(i))) {
+24
+                ans.append(s.charAt(i));
+25
+            } else {
+26
+                // Skip to the character which is having remaining count.
+27
+                while (count[sortedVowel.charAt(j) - 'A'] == 0) {
+28
+                    j++;
+29
+                }
+30
+?
+31
+                ans.append(sortedVowel.charAt(j));
+32
+                count[sortedVowel.charAt(j) - 'A']--;
+33
+            }
+34
+        }
+35
+        return ans.toString();
+36
+    }
+37
+};
+C++Java  Copy
+
+1
+class Solution {
+2
+    // Returns true if the character is a vowel.
+3
+    boolean isVowel(Character c) {
+4
+        return c == 'a' || c == 'e' || c == 'o'|| c == 'u'|| c == 'i'
+5
+                || c == 'A' || c == 'E' || c == 'O'|| c == 'U'|| c == 'I';
+6
+    }
+7
+?
+8
+    public String sortVowels(String s) {
+9
+        int[] count = new int[1000];
+10
+?
+11
+        // Store the frequencies for each character.
+12
+        for (char c : s.toCharArray()) {
+13
+            if (isVowel(c)) {
+14
+                count[c - 'A']++;
+15
+            }
+16
+        }
+17
+?
+18
+        // Sorted string having all the vowels.
+19
+        String sortedVowel = "AEIOUaeiou";
+20
+        StringBuilder ans = new StringBuilder();
+21
+        int j = 0;
+22
+        for (int i = 0; i < s.length(); i++) {
+23
+            if (!isVowel(s.charAt(i))) {
+24
+                ans.append(s.charAt(i));
+25
+            } else {
+26
+                // Skip to the character which is having remaining count.
+27
+                while (count[sortedVowel.charAt(j) - 'A'] == 0) {
+28
+                    j++;
+29
+                }
+30
+?
+31
+                ans.append(sortedVowel.charAt(j));
+32
+                count[sortedVowel.charAt(j) - 'A']--;
+33
+            }
+34
+        }
+35
+        return ans.toString();
+36
+    }
+37
+};
+C++Java  Copy
+
+1
+class Solution {
+2
+    // Returns true if the character is a vowel.
+3
+    boolean isVowel(Character c) {
+4
+        return c == 'a' || c == 'e' || c == 'o'|| c == 'u'|| c == 'i'
+5
+                || c == 'A' || c == 'E' || c == 'O'|| c == 'U'|| c == 'I';
+6
+    }
+7
+?
+8
+    public String sortVowels(String s) {
+9
+        int[] count = new int[1000];
+10
+?
+11
+        // Store the frequencies for each character.
+12
+        for (char c : s.toCharArray()) {
+13
+            if (isVowel(c)) {
+14
+                count[c - 'A']++;
+15
+            }
+16
+        }
+17
+?
+18
+        // Sorted string having all the vowels.
+19
+        String sortedVowel = "AEIOUaeiou";
+20
+        StringBuilder ans = new StringBuilder();
+21
+        int j = 0;
+22
+        for (int i = 0; i < s.length(); i++) {
+23
+            if (!isVowel(s.charAt(i))) {
+24
+                ans.append(s.charAt(i));
+25
+            } else {
+26
+                // Skip to the character which is having remaining count.
+27
+                while (count[sortedVowel.charAt(j) - 'A'] == 0) {
+28
+                    j++;
+29
+                }
+30
+?
+31
+                ans.append(sortedVowel.charAt(j));
+32
+                count[sortedVowel.charAt(j) - 'A']--;
+33
+            }
+34
+        }
+35
+        return ans.toString();
+36
+    }
+37
+};
+Code copied for Java

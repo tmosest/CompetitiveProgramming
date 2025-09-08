@@ -1,0 +1,50 @@
+30. Substring with Concatenation of All Words;=;=Hard;=;=public List<Integer> findSubstring(String s, String[] words);=;=You are given a string s and an array of strings words. All the strings of words are of the same length.
+
+A concatenated string is a string that exactly contains all the strings of any permutation of words concatenated.
+
+For example, if words = ["ab","cd","ef"], then "abcdef", "abefcd", "cdabef", "cdefab", "efabcd", and "efcdab" are all concatenated strings. "acdbef" is not a concatenated string because it is not the concatenation of any permutation of words.
+Return an array of the starting indices of all the concatenated substrings in s. You can return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: s = "barfoothefoobarman", words = ["foo","bar"]
+
+Output: [0,9]
+
+Explanation:
+
+The substring starting at 0 is "barfoo". It is the concatenation of ["bar","foo"] which is a permutation of words.
+The substring starting at 9 is "foobar". It is the concatenation of ["foo","bar"] which is a permutation of words.
+
+Example 2:
+
+Input: s = "wordgoodgoodgoodbestword", words = ["word","good","best","word"]
+
+Output: []
+
+Explanation:
+
+There is no concatenated substring.
+
+Example 3:
+
+Input: s = "barfoofoobarthefoobarman", words = ["bar","foo","the"]
+
+Output: [6,9,12]
+
+Explanation:
+
+The substring starting at 6 is "foobarthe". It is the concatenation of ["foo","bar","the"].
+The substring starting at 9 is "barthefoo". It is the concatenation of ["bar","the","foo"].
+The substring starting at 12 is "thefoobar". It is the concatenation of ["the","foo","bar"].
+
+ 
+
+Constraints:
+
+1 <= s.length <= 104
+1 <= words.length <= 5000
+1 <= words[i].length <= 30
+s and words[i] consist of lowercase English letters.;=;=https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/7099022/if-not-understood-block-me-by-amyy_1256-1g7w/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/6613074/easy-explanation-of-sliding-window-hashm-8qiy/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/7143151/substring-with-concatanation-by-prabhas_-olnh/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/13658/easy-two-map-solution-cjava-by-jianchao-wlsli/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/5317355/java-solution-simple-approach-hashing-sl-a2f2/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/6941500/hashtable-string-sliding-window-smart-ap-v7if/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/13673/accepted-java-solution-12ms-with-explana-7iuq/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/6575644/beats-94-optimal-by-ank24499-edq9/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/2992611/solution-by-deleted_user-zj46/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/13664/simple-java-solution-with-two-pointers-a-15u6/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/5350117/easy-java-soln-using-hashmaps-by-lopamud-tax9/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/5005301/java-98-faster-by-deleted_user-y0tx/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/2418368/java-clean-solution-using-hashmap-by-fll-cxjb/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/6931905/substring-with-concatenation-of-all-word-wq9n/;;https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/4151979/simple-intutive-and-detailed-explainatio-ptvr/;;;=;==;=;=;

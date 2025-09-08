@@ -1,0 +1,35 @@
+2390. Removing Stars From a String;=;=Medium;=;=public String removeStars(String s);=;=You are given a string s, which contains stars *.
+
+In one operation, you can:
+
+Choose a star in s.
+Remove the closest non-star character to its left, as well as remove the star itself.
+Return the string after all stars have been removed.
+
+Note:
+
+The input will be generated such that the operation is always possible.
+It can be shown that the resulting string will always be unique.
+ 
+
+Example 1:
+
+Input: s = "leet**cod*e"
+Output: "lecoe"
+Explanation: Performing the removals from left to right:
+- The closest character to the 1st star is 't' in "leet**cod*e". s becomes "lee*cod*e".
+- The closest character to the 2nd star is 'e' in "lee*cod*e". s becomes "lecod*e".
+- The closest character to the 3rd star is 'd' in "lecod*e". s becomes "lecoe".
+There are no more stars, so we return "lecoe".
+Example 2:
+
+Input: s = "erase*****"
+Output: ""
+Explanation: The entire string is removed, so we return an empty string.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of lowercase English letters and stars *.
+The operation above can be performed on s.;=;=https://leetcode.com/problems/removing-stars-from-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/removing-stars-from-a-string/solutions/3402366/python3cjava-easy-and-understand-stack-s-43fr/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/7157114/efficient-string-manipulation-using-stac-pmcy/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/3402529/easy-solutions-in-java-python-and-c-look-6p51/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/2493117/javacpython-stack-simulation-by-lee215-8kf2/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/7050039/2390-removing-stars-from-a-string-easy-j-ovbi/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/5784784/very-simple-explanation-by-techno_cratt-i7nm/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/7068374/beginner-friendly-dry-run-includedremovi-ajjq/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/3402278/pythonjava-csimple-solutionvideo-solutio-2txy/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/6933583/easy-solution-stack-by-adhi_m_s-o39y/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/7038173/removing-stars-from-a-string-by-pranavde-jx0b/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/6933891/remove-stars-from-string-optimized-vs-br-a32o/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/7020503/remove-stars-like-a-pro-super-clean-stac-cp75/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/6990986/hey-here-is-the-easy-and-simple-solution-kj0c/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/6454149/stack-based-removal-beats-100-java-c-pyt-9d2h/;;https://leetcode.com/problems/removing-stars-from-a-string/solutions/6972301/beats-9478-on-time-on-space-solution-by-xj1wk/;;;=;==;=;=;

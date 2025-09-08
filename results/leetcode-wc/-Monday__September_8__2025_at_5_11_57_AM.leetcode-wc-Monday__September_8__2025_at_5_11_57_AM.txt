@@ -1,0 +1,27 @@
+2409. Count Days Spent Together;=;=Easy;=;=public int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob);=;=Alice and Bob are traveling to Rome for separate business meetings.
+
+You are given 4 strings arriveAlice, leaveAlice, arriveBob, and leaveBob. Alice will be in the city from the dates arriveAlice to leaveAlice (inclusive), while Bob will be in the city from the dates arriveBob to leaveBob (inclusive). Each will be a 5-character string in the format "MM-DD", corresponding to the month and day of the date.
+
+Return the total number of days that Alice and Bob are in Rome together.
+
+You can assume that all dates occur in the same calendar year, which is not a leap year. Note that the number of days per month can be represented as: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31].
+
+ 
+
+Example 1:
+
+Input: arriveAlice = "08-15", leaveAlice = "08-18", arriveBob = "08-16", leaveBob = "08-19"
+Output: 3
+Explanation: Alice will be in Rome from August 15 to August 18. Bob will be in Rome from August 16 to August 19. They are both in Rome together on August 16th, 17th, and 18th, so the answer is 3.
+Example 2:
+
+Input: arriveAlice = "10-01", leaveAlice = "10-31", arriveBob = "11-01", leaveBob = "12-31"
+Output: 0
+Explanation: There is no day when Alice and Bob are in Rome together, so we return 0.
+ 
+
+Constraints:
+
+All dates are provided in the format "MM-DD".
+Alice and Bob's arrival dates are earlier than or equal to their leaving dates.
+The given dates are valid dates of a non-leap year.;=;=https://leetcode.com/problems/count-days-spent-together/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-days-spent-together/solutions/2587883/simple-solution-by-java_programmer_ketan-0vea/;;https://leetcode.com/problems/count-days-spent-together/solutions/2591264/python-cjava-beginner-levelsimple-short-athl8/;;https://leetcode.com/problems/count-days-spent-together/solutions/2587884/java-explained-by-aaveshk-h30c/;;https://leetcode.com/problems/count-days-spent-together/solutions/2587978/easy-java-solution-by-abhizz-h3pk/;;https://leetcode.com/problems/count-days-spent-together/solutions/2588418/java-with-zero-maths-simple-if-else-easy-bwn6/;;https://leetcode.com/problems/count-days-spent-together/solutions/7155592/java-by-sssanskarrr-sgmf/;;https://leetcode.com/problems/count-days-spent-together/solutions/2600563/the-most-easiest-soln-of-this-problem-ja-clk4/;;https://leetcode.com/problems/count-days-spent-together/solutions/2698314/java-using-standard-time-libraries-by-fl-a5n4/;;https://leetcode.com/problems/count-days-spent-together/solutions/2591247/java-easy-to-understand-by-shardon-ywqq/;;https://leetcode.com/problems/count-days-spent-together/solutions/2588232/u-wanted-bigger-is-it-just-as-she-said-b-0r7p/;;https://leetcode.com/problems/count-days-spent-together/solutions/2589152/java-solution-complex-but-simple-comment-z1mb/;;https://leetcode.com/problems/count-days-spent-together/solutions/2596515/java-calculate-day-of-year-by-romannab-gqwo/;;https://leetcode.com/problems/count-days-spent-together/solutions/5056452/java-easy-to-understand-o1-solution-by-m-f2sd/;;https://leetcode.com/problems/count-days-spent-together/solutions/2588069/java-clean-self-explanotary-code-100-fas-1jmu/;;https://leetcode.com/problems/count-days-spent-together/solutions/4784335/core-logic-explained-including-border-ca-at22/;;;=;==;=;=;

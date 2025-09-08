@@ -1,0 +1,31 @@
+2963. Count the Number of Good Partitions;=;=Hard;=;=public int numberOfGoodPartitions(int[] nums);=;=You are given a 0-indexed array nums consisting of positive integers.
+
+A partition of an array into one or more contiguous subarrays is called good if no two subarrays contain the same number.
+
+Return the total number of good partitions of nums.
+
+Since the answer may be large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4]
+Output: 8
+Explanation: The 8 possible good partitions are: ([1], [2], [3], [4]), ([1], [2], [3,4]), ([1], [2,3], [4]), ([1], [2,3,4]), ([1,2], [3], [4]), ([1,2], [3,4]), ([1,2,3], [4]), and ([1,2,3,4]).
+Example 2:
+
+Input: nums = [1,1,1,1]
+Output: 1
+Explanation: The only possible good partition is: ([1,1,1,1]).
+Example 3:
+
+Input: nums = [1,2,1,3]
+Output: 2
+Explanation: The 2 possible good partitions are: ([1,2,1], [3]) and ([1,2,1,3]).
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/count-the-number-of-good-partitions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/4384415/javacpython-two-passes-by-lee215-8cju/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/4385345/easy-video-solutions-with-proofs-last-in-bepw/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/4389687/explained-count-unbreakable-groups-very-j0lst/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/6775230/beats-90-simple-merging-intervals-by-esw-tn40/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/6654561/number-of-good-partitions-by-ajeetverma3-uubq/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/4386932/easy-2-pointer-solution-codestorywithmik-5wt6/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/4384629/mastering-efficient-good-partition-count-6eqj/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/4391711/dsu-java-beats-50-best-explanation-easy-rx4np/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/4384510/cjavapythonjavascript-easy-approach-expl-v83s/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/4384818/solving-using-the-intervals-by-saicharan-6ziq/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/4384661/monotonic-stack-no-sorting-needed-by-hay-6pcv/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/6915360/easy-java-solution-by-realharsh30-23b2/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/6984020/java-2-pointer-29ms-by-niteshshewaramani-wem2/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/6976962/count-the-number-of-good-partition-by-ka-3oyc/;;https://leetcode.com/problems/count-the-number-of-good-partitions/solutions/6050044/2-pointer-tc-on-sc-on-by-rmehta007-agga/;;;=;==;=;=;

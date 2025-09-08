@@ -1,0 +1,30 @@
+3345. Smallest Divisible Digit Product I;=;=Easy;=;=public int smallestNumber(int n, int t);=;=You are given two integers n and t. Return the smallest number greater than or equal to n such that the product of its digits is divisible by t.
+
+ 
+
+Example 1:
+
+Input: n = 10, t = 2
+
+Output: 10
+
+Explanation:
+
+The digit product of 10 is 0, which is divisible by 2, making it the smallest number greater than or equal to 10 that satisfies the condition.
+
+Example 2:
+
+Input: n = 15, t = 3
+
+Output: 16
+
+Explanation:
+
+The digit product of 16 is 6, which is divisible by 3, making it the smallest number greater than or equal to 15 that satisfies the condition.
+
+ 
+
+Constraints:
+
+1 <= n <= 100
+1 <= t <= 10;=;=https://leetcode.com/problems/smallest-divisible-digit-product-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6027586/python3-2-lines-check-10-integers-ts-99-dkhkw/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6027169/with-dry-run-table-easiest-solution-pyth-6b6z/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6027303/easiest-solution-100-beats-brute-force-a-b09h/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6954691/beats-100-javac-c-python-beginner-by-cod-ztnh/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6030267/python-java-elegant-short-enumeration-by-1ah9/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6027819/very-simple-javac-solution-by-rajnarayan-m5b1/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6029146/easiestfaster-lesser-cpython3javacpython-jofi/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6027276/easy-solution-with-explanation-by-ramitg-ro6o/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6791528/clean-code-by-smileysuneet-njxg/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6027163/java-solution-by-shree_govind_jee-cigh/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6196825/0ms-100-in-java-very-easy-code-for-begin-hqo9/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6466613/100-beats-java-by-user8688f-6e63/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6028534/simple-solution-brute-force-pythoncjava-ayeji/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6223293/0-ms-100-beats-simple-logic-java-by-siva-9mca/;;https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/6027173/simulation-based-solution-by-computerofa-0iul/;;;=;==;=;=;

@@ -1,0 +1,361 @@
+C++Java  Copy
+
+1
+// Custom class Trie with function to get 3 words starting with given prefix
+2
+class Trie {
+3
+?
+4
+    // Node definition of a trie
+5
+    class Node {
+6
+        boolean isWord = false;
+7
+        List<Node> children = Arrays.asList(new Node[26]);
+8
+    };
+9
+    Node Root, curr;
+10
+    List<String> resultBuffer;
+11
+?
+12
+    // Runs a DFS on trie starting with given prefix and adds all the words in the resultBuffer, limiting result size to 3
+13
+    void dfsWithPrefix(Node curr, String word) {
+14
+        if (resultBuffer.size() == 3)
+15
+            return;
+16
+        if (curr.isWord)
+17
+            resultBuffer.add(word);
+18
+?
+19
+        // Run DFS on all possible paths.
+20
+        for (char c = 'a'; c <= 'z'; c++)
+21
+            if (curr.children.get(c - 'a') != null)
+22
+                dfsWithPrefix(curr.children.get(c - 'a'), word + c);
+23
+    }
+24
+    Trie() {
+25
+        Root = new Node();
+26
+    }
+27
+?
+28
+    // Inserts the string in trie.
+29
+    void insert(String s) {
+30
+?
+31
+        // Points curr to the root of trie.
+32
+        curr = Root;
+33
+        for (char c : s.toCharArray()) {
+34
+            if (curr.children.get(c - 'a') == null)
+35
+                curr.children.set(c - 'a', new Node());
+36
+            curr = curr.children.get(c - 'a');
+37
+        }
+38
+?
+39
+        // Mark this node as a completed word.
+40
+        curr.isWord = true;
+41
+    }
+42
+    List<String> getWordsStartingWith(String prefix) {
+43
+        curr = Root;
+44
+        resultBuffer = new ArrayList<String>();
+45
+        // Move curr to the end of prefix in its trie representation.
+46
+        for (char c : prefix.toCharArray()) {
+47
+            if (curr.children.get(c - 'a') == null)
+48
+                return resultBuffer;
+49
+            curr = curr.children.get(c - 'a');
+50
+        }
+51
+        dfsWithPrefix(curr, prefix);
+52
+        return resultBuffer;
+53
+    }
+54
+};
+55
+class Solution {
+56
+    List<List<String>> suggestedProducts(String[] products,
+57
+                                         String searchWord) {
+58
+        Trie trie = new Trie();
+59
+        List<List<String>> result = new ArrayList<>();
+C++Java  Copy
+
+1
+// Custom class Trie with function to get 3 words starting with given prefix
+2
+class Trie {
+3
+?
+4
+    // Node definition of a trie
+5
+    class Node {
+6
+        boolean isWord = false;
+7
+        List<Node> children = Arrays.asList(new Node[26]);
+8
+    };
+9
+    Node Root, curr;
+10
+    List<String> resultBuffer;
+11
+?
+12
+    // Runs a DFS on trie starting with given prefix and adds all the words in the resultBuffer, limiting result size to 3
+13
+    void dfsWithPrefix(Node curr, String word) {
+14
+        if (resultBuffer.size() == 3)
+15
+            return;
+16
+        if (curr.isWord)
+17
+            resultBuffer.add(word);
+18
+?
+19
+        // Run DFS on all possible paths.
+20
+        for (char c = 'a'; c <= 'z'; c++)
+21
+            if (curr.children.get(c - 'a') != null)
+22
+                dfsWithPrefix(curr.children.get(c - 'a'), word + c);
+23
+    }
+24
+    Trie() {
+25
+        Root = new Node();
+26
+    }
+27
+?
+28
+    // Inserts the string in trie.
+29
+    void insert(String s) {
+30
+?
+31
+        // Points curr to the root of trie.
+32
+        curr = Root;
+33
+        for (char c : s.toCharArray()) {
+34
+            if (curr.children.get(c - 'a') == null)
+35
+                curr.children.set(c - 'a', new Node());
+36
+            curr = curr.children.get(c - 'a');
+37
+        }
+38
+?
+39
+        // Mark this node as a completed word.
+40
+        curr.isWord = true;
+41
+    }
+42
+    List<String> getWordsStartingWith(String prefix) {
+43
+        curr = Root;
+44
+        resultBuffer = new ArrayList<String>();
+45
+        // Move curr to the end of prefix in its trie representation.
+46
+        for (char c : prefix.toCharArray()) {
+47
+            if (curr.children.get(c - 'a') == null)
+48
+                return resultBuffer;
+49
+            curr = curr.children.get(c - 'a');
+50
+        }
+51
+        dfsWithPrefix(curr, prefix);
+52
+        return resultBuffer;
+53
+    }
+54
+};
+55
+class Solution {
+56
+    List<List<String>> suggestedProducts(String[] products,
+57
+                                         String searchWord) {
+58
+        Trie trie = new Trie();
+59
+        List<List<String>> result = new ArrayList<>();
+C++Java  Copy
+
+1
+// Custom class Trie with function to get 3 words starting with given prefix
+2
+class Trie {
+3
+?
+4
+    // Node definition of a trie
+5
+    class Node {
+6
+        boolean isWord = false;
+7
+        List<Node> children = Arrays.asList(new Node[26]);
+8
+    };
+9
+    Node Root, curr;
+10
+    List<String> resultBuffer;
+11
+?
+12
+    // Runs a DFS on trie starting with given prefix and adds all the words in the resultBuffer, limiting result size to 3
+13
+    void dfsWithPrefix(Node curr, String word) {
+14
+        if (resultBuffer.size() == 3)
+15
+            return;
+16
+        if (curr.isWord)
+17
+            resultBuffer.add(word);
+18
+?
+19
+        // Run DFS on all possible paths.
+20
+        for (char c = 'a'; c <= 'z'; c++)
+21
+            if (curr.children.get(c - 'a') != null)
+22
+                dfsWithPrefix(curr.children.get(c - 'a'), word + c);
+23
+    }
+24
+    Trie() {
+25
+        Root = new Node();
+26
+    }
+27
+?
+28
+    // Inserts the string in trie.
+29
+    void insert(String s) {
+30
+?
+31
+        // Points curr to the root of trie.
+32
+        curr = Root;
+33
+        for (char c : s.toCharArray()) {
+34
+            if (curr.children.get(c - 'a') == null)
+35
+                curr.children.set(c - 'a', new Node());
+36
+            curr = curr.children.get(c - 'a');
+37
+        }
+38
+?
+39
+        // Mark this node as a completed word.
+40
+        curr.isWord = true;
+41
+    }
+42
+    List<String> getWordsStartingWith(String prefix) {
+43
+        curr = Root;
+44
+        resultBuffer = new ArrayList<String>();
+45
+        // Move curr to the end of prefix in its trie representation.
+46
+        for (char c : prefix.toCharArray()) {
+47
+            if (curr.children.get(c - 'a') == null)
+48
+                return resultBuffer;
+49
+            curr = curr.children.get(c - 'a');
+50
+        }
+51
+        dfsWithPrefix(curr, prefix);
+52
+        return resultBuffer;
+53
+    }
+54
+};
+55
+class Solution {
+56
+    List<List<String>> suggestedProducts(String[] products,
+57
+                                         String searchWord) {
+58
+        Trie trie = new Trie();
+59
+        List<List<String>> result = new ArrayList<>();
+Code copied for Java

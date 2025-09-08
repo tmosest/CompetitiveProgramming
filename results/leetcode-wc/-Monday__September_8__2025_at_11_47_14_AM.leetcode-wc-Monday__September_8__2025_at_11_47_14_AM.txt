@@ -1,0 +1,31 @@
+1268. Search Suggestions System;=;=Medium;=;=public List<List<String>> suggestedProducts(String[] products, String searchWord);=;=You are given an array of strings products and a string searchWord.
+
+Design a system that suggests at most three product names from products after each character of searchWord is typed. Suggested products should have common prefix with searchWord. If there are more than three products with a common prefix return the three lexicographically minimums products.
+
+Return a list of lists of the suggested products after each character of searchWord is typed.
+
+ 
+
+Example 1:
+
+Input: products = ["mobile","mouse","moneypot","monitor","mousepad"], searchWord = "mouse"
+Output: [["mobile","moneypot","monitor"],["mobile","moneypot","monitor"],["mouse","mousepad"],["mouse","mousepad"],["mouse","mousepad"]]
+Explanation: products sorted lexicographically = ["mobile","moneypot","monitor","mouse","mousepad"].
+After typing m and mo all products match and we show user ["mobile","moneypot","monitor"].
+After typing mou, mous and mouse the system suggests ["mouse","mousepad"].
+Example 2:
+
+Input: products = ["havana"], searchWord = "havana"
+Output: [["havana"],["havana"],["havana"],["havana"],["havana"],["havana"]]
+Explanation: The only word "havana" will be always suggested while typing the search word.
+ 
+
+Constraints:
+
+1 <= products.length <= 1000
+1 <= products[i].length <= 3000
+1 <= sum(products[i].length) <= 2 * 104
+All the strings of products are unique.
+products[i] consists of lowercase English letters.
+1 <= searchWord.length <= 1000
+searchWord consists of lowercase English letters.;=;=https://leetcode.com/problems/search-suggestions-system/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/search-suggestions-system/solutions/7134143/easy-brute-solution-for-beginners-easy-t-ns3r/;;https://leetcode.com/problems/search-suggestions-system/solutions/471718/java-priority-queue-no-sort-or-trie-by-g-bxvg/;;https://leetcode.com/problems/search-suggestions-system/solutions/6640405/c-python-java-beats-100-by-bob_dylan-2m0m/;;https://leetcode.com/problems/search-suggestions-system/solutions/2167835/a-more-intuitive-solution-java-explained-cu5k/;;https://leetcode.com/problems/search-suggestions-system/solutions/7085454/trie-heap-in-on-beginner-advanced-detail-gshs/;;https://leetcode.com/problems/search-suggestions-system/solutions/440474/java-trie-explained-clean-code-14ms-by-g-amhq/;;https://leetcode.com/problems/search-suggestions-system/solutions/1242832/js-python-java-c-easy-iterative-solution-h0na/;;https://leetcode.com/problems/search-suggestions-system/solutions/6216288/easy-program-in-java-by-nidhibaratam2005-6pxo/;;https://leetcode.com/problems/search-suggestions-system/solutions/5692569/solution-by-dare2solve-detailed-explanat-hlm8/;;https://leetcode.com/problems/search-suggestions-system/solutions/4672929/two-pointer-approach-9917-percent-faster-lmbd/;;https://leetcode.com/problems/search-suggestions-system/solutions/6870600/map-trie-sorting-solution-with-clear-cod-bdc6/;;https://leetcode.com/problems/search-suggestions-system/solutions/510681/java-super-easy-and-clean-solution-beats-zxw1/;;https://leetcode.com/problems/search-suggestions-system/solutions/6702718/trie-backtracking-by-pj_pradyumna_7-x2cl/;;https://leetcode.com/problems/search-suggestions-system/solutions/6904699/very-easy-to-understand-explained-with-c-uu3n/;;https://leetcode.com/problems/search-suggestions-system/solutions/5051944/java-bruteforce-99-faster-by-deleted_use-cm4s/;;;=;==;=;=;

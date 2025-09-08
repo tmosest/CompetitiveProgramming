@@ -1,0 +1,32 @@
+630. Course Schedule III;=;=Hard;=;=public int scheduleCourse(int[][] courses);=;=There are n different online courses numbered from 1 to n. You are given an array courses where courses[i] = [durationi, lastDayi] indicate that the ith course should be taken continuously for durationi days and must be finished before or on lastDayi.
+
+You will start on the 1st day and you cannot take two or more courses simultaneously.
+
+Return the maximum number of courses that you can take.
+
+ 
+
+Example 1:
+
+Input: courses = [[100,200],[200,1300],[1000,1250],[2000,3200]]
+Output: 3
+Explanation: 
+There are totally 4 courses, but you can take 3 courses at most:
+First, take the 1st course, it costs 100 days so you will finish it on the 100th day, and ready to take the next course on the 101st day.
+Second, take the 3rd course, it costs 1000 days so you will finish it on the 1100th day, and ready to take the next course on the 1101st day. 
+Third, take the 2nd course, it costs 200 days so you will finish it on the 1300th day. 
+The 4th course cannot be taken now, since you will finish it on the 3300th day, which exceeds the closed date.
+Example 2:
+
+Input: courses = [[1,2]]
+Output: 1
+Example 3:
+
+Input: courses = [[3,2],[4,3]]
+Output: 0
+ 
+
+Constraints:
+
+1 <= courses.length <= 104
+1 <= durationi, lastDayi <= 104;=;=https://leetcode.com/problems/course-schedule-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/course-schedule-iii/solutions/1187504/js-python-java-c-simple-priority-queue-h-h2mn/;;https://leetcode.com/problems/course-schedule-iii/solutions/2185367/java-greedy-explained-by-prashant404-4s8k/;;https://leetcode.com/problems/course-schedule-iii/solutions/2185248/java-priorityqueue-sorting-well-explanat-ut3v/;;https://leetcode.com/problems/course-schedule-iii/solutions/5094458/greedy-heap-made-coding-fun-clean-code-b-nyhr/;;https://leetcode.com/problems/course-schedule-iii/solutions/7168245/greedy-with-max-heap-for-course-scheduli-e851/;;https://leetcode.com/problems/course-schedule-iii/solutions/1187242/java-course-schedule-iii-minimal-solutio-qs7o/;;https://leetcode.com/problems/course-schedule-iii/solutions/308492/java-bottom-up-dp-solution-one-by-toffee-kyqr/;;https://leetcode.com/problems/course-schedule-iii/solutions/3915673/java-easy-using-heap-by-mohd_danish_khan-ioyw/;;https://leetcode.com/problems/course-schedule-iii/solutions/2188085/course-schedule-iii-java-solution-full-e-4ozo/;;https://leetcode.com/problems/course-schedule-iii/solutions/2186574/copied-answer-easy-explaination-by-mayan-bm9q/;;https://leetcode.com/problems/course-schedule-iii/solutions/3416467/solution-by-deleted_user-ies3/;;https://leetcode.com/problems/course-schedule-iii/solutions/1441889/greedy-approach-easy-understanding-java-pulpd/;;https://leetcode.com/problems/course-schedule-iii/solutions/1190269/java-simple-and-easy-to-understand-solut-08bo/;;https://leetcode.com/problems/course-schedule-iii/solutions/2186379/java-sorting-priority-queue-by-zx007java-x9li/;;https://leetcode.com/problems/course-schedule-iii/solutions/2185464/java-onlogn-priority-queue-w-video-expla-quc9/;;;=;==;=;=;

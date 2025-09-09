@@ -1,0 +1,26 @@
+1542. Find Longest Awesome Substring;=;=Hard;=;=public int longestAwesome(String s);=;=You are given a string s. An awesome substring is a non-empty substring of s such that we can make any number of swaps in order to make it a palindrome.
+
+Return the length of the maximum length awesome substring of s.
+
+ 
+
+Example 1:
+
+Input: s = "3242415"
+Output: 5
+Explanation: "24241" is the longest awesome substring, we can form the palindrome "24142" with some swaps.
+Example 2:
+
+Input: s = "12345678"
+Output: 1
+Example 3:
+
+Input: s = "213123"
+Output: 6
+Explanation: "213123" is the longest awesome substring, we can form the palindrome "231132" with some swaps.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists only of digits.;=;=https://leetcode.com/problems/find-longest-awesome-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-longest-awesome-substring/solutions/6843807/easy-java-solution-beats-100-of-java-use-70i5/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/4151776/awesome-solution-for-awesome-substring-b-03vj/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/3414556/intuitive-bit-mask-solution-with-comment-ov68/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/6714371/bitmask-hashmap-to-find-longest-palindro-dsar/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/5656465/java-best-explanation-tc-on-sc-o1-10-ms-2c2sk/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/5092869/easy-to-understand-solution-in-java-usin-i3jf/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/4460409/prefix-sums-map-bitmasking-by-sbiswas165-qti1/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/4189131/java-by-gadmo-7q1t/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/3143256/simple-java-presum-bitmask-solution-by-s-lbna/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/2197275/easy-solution-java-ton-so210-with-array-zzr3x/;;https://leetcode.com/problems/find-longest-awesome-substring/solutions/1848904/help-please-tell-why-is-this-solution-wo-gmsd/;;;=;==;=;=;

@@ -1,0 +1,26 @@
+2231. Largest Number After Digit Swaps by Parity;=;=Easy;=;=public int largestInteger(int num);=;=You are given a positive integer num. You may swap any two digits of num that have the same parity (i.e. both odd digits or both even digits).
+
+Return the largest possible value of num after any number of swaps.
+
+ 
+
+Example 1:
+
+Input: num = 1234
+Output: 3412
+Explanation: Swap the digit 3 with the digit 1, this results in the number 3214.
+Swap the digit 2 with the digit 4, this results in the number 3412.
+Note that there may be other sequences of swaps but it can be shown that 3412 is the largest possible number.
+Also note that we may not swap the digit 4 with the digit 1 since they are of different parities.
+Example 2:
+
+Input: num = 65875
+Output: 87655
+Explanation: Swap the digit 8 with the digit 6, this results in the number 85675.
+Swap the first digit 5 with the digit 7, this results in the number 87655.
+Note that there may be other sequences of swaps but it can be shown that 87655 is the largest possible number.
+ 
+
+Constraints:
+
+1 <= num <= 109;=;=https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/1931147/concise-java-9-lines-by-climberig-l6g8/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/6218388/largest-number-after-digit-swaps-by-pari-wcyt/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/1931238/java-solution-using-two-priority-queue-b-m4f8/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/1931268/java-counting-sort-solution-faster-than-qez6k/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/6644219/beats-100-by-dummy_nick-pgj1/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/6586434/easy-java-solution-by-vermaanshul975-qkly/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/7141250/using-to-max-heap-by-ankit_saha-vaxe/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/2101944/java-2-priority-queues-easy-by-devansh28-a2a4/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/5979342/beats-10000-easiest-solution-by-develope-nr50/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/2787961/java-solution-by-janhvi__28-t56b/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/5512963/easy-solution-by-arunkumarkandasamy-3jyz/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/4234968/largest-number-after-digit-swaps-by-pari-iplf/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/5122950/simple-java-code-0-ms-beats-100-by-arobh-14mn/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/3354983/2231-largest-number-after-digit-swaps-by-hjpo/;;https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/solutions/2847358/worst-solution-java-basic-by-prathmeshde-hk95/;;;=;==;=;=;

@@ -1,0 +1,47 @@
+3095. Shortest Subarray With OR at Least K I;=;=Easy;=;=public int minimumSubarrayLength(int[] nums, int k);=;=You are given an array nums of non-negative integers and an integer k.
+
+An array is called special if the bitwise OR of all of its elements is at least k.
+
+Return the length of the shortest special non-empty subarray of nums, or return -1 if no special subarray exists.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3], k = 2
+
+Output: 1
+
+Explanation:
+
+The subarray [3] has OR value of 3. Hence, we return 1.
+
+Note that [2] is also a special subarray.
+
+Example 2:
+
+Input: nums = [2,1,8], k = 10
+
+Output: 3
+
+Explanation:
+
+The subarray [2,1,8] has OR value of 11. Hence, we return 3.
+
+Example 3:
+
+Input: nums = [1,2], k = 0
+
+Output: 1
+
+Explanation:
+
+The subarray [1] has OR value of 1. Hence, we return 1.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 50
+0 <= nums[i] <= 50
+0 <= k < 64;=;=https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/4961902/java-sliding-window-bit-frequency-table-qz4c3/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/4947413/simple-java-solution-by-siddhant_1602-evhz/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/4947579/very-easy-solution-beats-leetcode-contes-zln7/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/5856986/beginner-friendly-solution-easy-and-deta-pris/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/5838981/easy-solution-using-brute-force-approach-q2y0/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/4947585/java-brute-force-easy-to-understand-by-r-9smx/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/4948690/fully-explained-java-solution-sliding-wi-0qlk/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/4947659/simple-solution-java-beats-100-of-users-ai8jg/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/4950294/super-simple-java-solution-solved-with-1-0fj7/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/7088003/3095-shortest-subarray-with-or-at-least-mt0mt/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/7004518/beggeners-understanding-solution-with-sl-kk4v/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/6772706/java-100-by-xyza41004-6jkx/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/6028979/c-beginner-friendly-by-animus2001-lli1/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/6626145/sliding-window-by-leetgame-8y25/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/solutions/6793693/clean-code-by-smileysuneet-3gg7/;;;=;==;=;=;

@@ -1,0 +1,43 @@
+3038. Maximum Number of Operations With the Same Score I;=;=Easy;=;=public int maxOperations(int[] nums);=;=You are given an array of integers nums. Consider the following operation:
+
+Delete the first two elements nums and define the score of the operation as the sum of these two elements.
+You can perform this operation until nums contains fewer than two elements. Additionally, the same score must be achieved in all operations.
+
+Return the maximum number of operations you can perform.
+
+ 
+
+Example 1:
+
+Input: nums = [3,2,1,4,5]
+
+Output: 2
+
+Explanation:
+
+We can perform the first operation with the score 3 + 2 = 5. After this operation, nums = [1,4,5].
+We can perform the second operation as its score is 4 + 1 = 5, the same as the previous operation. After this operation, nums = [5].
+As there are fewer than two elements, we can't perform more operations.
+Example 2:
+
+Input: nums = [1,5,3,3,4,1,3,2,2,3]
+
+Output: 2
+
+Explanation:
+
+We can perform the first operation with the score 1 + 5 = 6. After this operation, nums = [3,3,4,1,3,2,2,3].
+We can perform the second operation as its score is 3 + 3 = 6, the same as the previous operation. After this operation, nums = [4,1,3,2,2,3].
+We cannot perform the next operation as its score is 4 + 1 = 5, which is different from the previous scores.
+Example 3:
+
+Input: nums = [5,3]
+
+Output: 1
+
+ 
+
+Constraints:
+
+2 <= nums.length <= 100
+1 <= nums[i] <= 1000;=;=https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/4893937/best-explanation-100-on-runtime-easy-sol-sfuk/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/6701780/maximum-number-of-equal-sum-operations-o-dxdm/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/7168309/beginner-friendly-by-amyy_1256-vp8s/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/6608471/maximum-number-of-operations-with-the-sa-cduf/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/6338575/0ms-java-by-galani_jenis-9abi/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/4742431/java-easy-to-understand-solution-for-beg-jw68/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/4755145/java-solution-beats-100-by-manya07-m3gj/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/5561890/beats-100-users-java-0n-solution-by-anki-nquy/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/4745018/faster-lesser-cpython3javacpythonexplain-dh0l/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/5026305/beats-100-users-java-0n-solution-by-chir-n8av/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/4743849/beats-100-in-time-and-space-easiest-solu-ihg0/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/4816519/easy-code-by-harika_atta-4crq/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/6324583/easy-to-understand-beats-10000-by-shiwan-7ey2/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/6495751/simple-solution-beats-10000-by-developer-ivd1/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/solutions/7070262/maximum-number-of-operations-with-the-sa-gq3m/;;;=;==;=;=;

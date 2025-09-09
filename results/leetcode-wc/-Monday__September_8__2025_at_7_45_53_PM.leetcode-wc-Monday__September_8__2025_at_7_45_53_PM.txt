@@ -1,0 +1,21 @@
+870. Advantage Shuffle;=;=Medium;=;=publicÊint[]ÊadvantageCount(int[]Ênums1,Êint[]Ênums2);=;=You are given two integer arrays nums1 and nums2 both of the same length. The advantage of nums1 with respect to nums2 is the number of indices i for which nums1[i] > nums2[i].
+
+Return any permutation of nums1 that maximizes its advantage with respect to nums2.
+
+Ê
+
+Example 1:
+
+Input: nums1 = [2,7,11,15], nums2 = [1,10,4,11]
+Output: [2,11,7,15]
+Example 2:
+
+Input: nums1 = [12,24,8,32], nums2 = [13,25,32,11]
+Output: [24,32,8,12]
+Ê
+
+Constraints:
+
+1 <= nums1.length <= 105
+nums2.length == nums1.length
+0 <= nums1[i], nums2[i] <= 109;=;=https://leetcode.com/problems/advantage-shuffle/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/advantage-shuffle/solutions/1125217/js-python-java-c-short-solution-w-explan-i4s6/;;https://leetcode.com/problems/advantage-shuffle/solutions/3499371/solution-by-deleted_user-w014/;;https://leetcode.com/problems/advantage-shuffle/solutions/6635473/think-smart-not-hard-clean-greedy-for-ma-1mry/;;https://leetcode.com/problems/advantage-shuffle/solutions/1126314/java-simple-and-easy-to-understand-solut-vmr2/;;https://leetcode.com/problems/advantage-shuffle/solutions/1125511/greedy-two-pointers-sorting-java-by-hima-gleq/;;https://leetcode.com/problems/advantage-shuffle/solutions/4508474/java-clean-code-clear-explanations-by-st-e4o4/;;https://leetcode.com/problems/advantage-shuffle/solutions/1130646/java-treemap-bst-on-log-n-by-133c7-royv/;;https://leetcode.com/problems/advantage-shuffle/solutions/1125788/java-simple-concise-solution-using-sorti-znif/;;https://leetcode.com/problems/advantage-shuffle/solutions/3036588/sorting-two-pointers-approach-java-simpl-hf35/;;https://leetcode.com/problems/advantage-shuffle/solutions/1672786/java-easy-solution-greedy-sorting-hashma-ce4q/;;https://leetcode.com/problems/advantage-shuffle/solutions/7058999/binary-serach-by-sumanish-crth/;;https://leetcode.com/problems/advantage-shuffle/solutions/1126524/java-easy-and-intuitive-by-mahm-h7m7/;;https://leetcode.com/problems/advantage-shuffle/solutions/815886/java-solution-87-by-idbasketball08-fn2p/;;https://leetcode.com/problems/advantage-shuffle/solutions/6685199/870-advantage-shuffle-by-gjccqfw0rw-l0hn/;;https://leetcode.com/problems/advantage-shuffle/solutions/6088937/treemap-greedy-by-prachikumari-2tyz/;;;=;==;=;=;

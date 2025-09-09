@@ -1,0 +1,50 @@
+3217. Delete Nodes From Linked List Present in Array;=;=Medium;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode()       ListNode(int val)  this.val = val;       ListNode(int val, ListNode next)  this.val = val; this.next = next;    class      public ListNode modifiedList(int[] nums, ListNode head);=;=You are given an array of integers nums and the head of a linked list. Return the head of the modified linked list after removing all nodes from the linked list that have a value that exists in nums.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3], head = [1,2,3,4,5]
+
+Output: [4,5]
+
+Explanation:
+
+
+
+Remove the nodes with values 1, 2, and 3.
+
+Example 2:
+
+Input: nums = [1], head = [1,2,1,2,1,2]
+
+Output: [2,2,2]
+
+Explanation:
+
+
+
+Remove the nodes with value 1.
+
+Example 3:
+
+Input: nums = [5], head = [1,2,3,4]
+
+Output: [1,2,3,4]
+
+Explanation:
+
+
+
+No node has value 5.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105
+All elements in nums are unique.
+The number of nodes in the given list is in the range [1, 105].
+1 <= Node.val <= 105
+The input is generated such that there is at least one node in the linked list that has a value not present in nums.;=;=https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5745229/best-solution-on-runtime-with-explanatio-jmky/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5473411/easy-video-solution-how-to-in-interview-kflkw/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/7074191/linked-list-node-removal-using-a-hashset-lbjh/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/7059948/easiest-solution-in-java-beats-86-by-ron-h8t0/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/6909712/remove-target-values-from-a-linked-list-np3gs/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/6910345/easy-solution-by-adhi_m_s-untw/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5473120/beats-100-c-python-java-go-rust-javascri-jmv1/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5473261/java-solution-by-harsh__005-mq4y/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/7001472/remove-values-from-linked-list-using-has-495a/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5744387/deleting-nodes-using-link-updation-and-f-yg34/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5744355/easy-video-solution-how-to-in-interview-5fwph/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5482006/simple-java-c-code-by-abhinandannaik1717-22jp/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5743850/dcc-06092024-linkedlist-on-by-sajaltiwar-vq6i/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/6437196/beats-100-counting-easy-and-beginner-fri-vrgn/;;https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5744145/simple-solution-995-beats-java-by-eshwar-j3hi/;;;=;==;=;=;

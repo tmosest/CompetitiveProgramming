@@ -1,0 +1,52 @@
+3404. Count Special Subsequences;=;=Medium;=;=public long numberOfSubsequences(int[] nums);=;=You are given an array nums consisting of positive integers.
+
+A special subsequence is defined as a subsequence of length 4, represented by indices (p, q, r, s), where p < q < r < s. This subsequence must satisfy the following conditions:
+
+nums[p] * nums[r] == nums[q] * nums[s]
+There must be at least one element between each pair of indices. In other words, q - p > 1, r - q > 1 and s - r > 1.
+Return the number of different special subsequences in nums.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4,3,6,1]
+
+Output: 1
+
+Explanation:
+
+There is one special subsequence in nums.
+
+(p, q, r, s) = (0, 2, 4, 6):
+This corresponds to elements (1, 3, 3, 1).
+nums[p] * nums[r] = nums[0] * nums[4] = 1 * 3 = 3
+nums[q] * nums[s] = nums[2] * nums[6] = 3 * 1 = 3
+Example 2:
+
+Input: nums = [3,4,3,4,3,4,3,4]
+
+Output: 3
+
+Explanation:
+
+There are three special subsequences in nums.
+
+(p, q, r, s) = (0, 2, 4, 6):
+This corresponds to elements (3, 3, 3, 3).
+nums[p] * nums[r] = nums[0] * nums[4] = 3 * 3 = 9
+nums[q] * nums[s] = nums[2] * nums[6] = 3 * 3 = 9
+(p, q, r, s) = (1, 3, 5, 7):
+This corresponds to elements (4, 4, 4, 4).
+nums[p] * nums[r] = nums[1] * nums[5] = 4 * 4 = 16
+nums[q] * nums[s] = nums[3] * nums[7] = 4 * 4 = 16
+(p, q, r, s) = (0, 2, 5, 7):
+This corresponds to elements (3, 3, 4, 4).
+nums[p] * nums[r] = nums[0] * nums[5] = 3 * 4 = 12
+nums[q] * nums[s] = nums[2] * nums[7] = 3 * 4 = 12
+ 
+
+Constraints:
+
+7 <= nums.length <= 1000
+1 <= nums[i] <= 1000;=;=https://leetcode.com/problems/count-special-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-special-subsequences/solutions/6199504/dp-for-ratios-by-whoawhoawhoa-112q/;;https://leetcode.com/problems/count-special-subsequences/solutions/6199570/beats-100-sliding-window-most-optimized-natzt/;;https://leetcode.com/problems/count-special-subsequences/solutions/6199759/on2logn-map-binary-search-wasted-lot-of-4wkmp/;;https://leetcode.com/problems/count-special-subsequences/solutions/6249496/java-easy-to-understand-solution-by-sdfl-v3gp/;;https://leetcode.com/problems/count-special-subsequences/solutions/6834815/hashmap-and-loop-optimisation-easy-solut-870l/;;https://leetcode.com/problems/count-special-subsequences/solutions/6249491/java-easy-to-understand-solution-by-sdfl-txmf/;;https://leetcode.com/problems/count-special-subsequences/solutions/6207420/count-special-subsequence-by-subham_puja-3yxx/;;https://leetcode.com/problems/count-special-subsequences/solutions/6202670/easy-java-solution-hashmap-on2-by-raviku-6ybu/;;https://leetcode.com/problems/count-special-subsequences/solutions/6202478/binary-search-solution-on2-log-n-by-ninz-18lr/;;https://leetcode.com/problems/count-special-subsequences/solutions/6200323/java-gcd-hashmap-time-on-2-space-on-2-by-0l3y/;;https://leetcode.com/problems/count-special-subsequences/solutions/6199774/using-map-by-risabhuchiha-f2x0/;;https://leetcode.com/problems/count-special-subsequences/solutions/6437839/easy-explanation-by-saurabhabd_360-45-tq7n/;;https://leetcode.com/problems/count-special-subsequences/solutions/6201153/n2-logn-solution-but-very-intuitive-hash-1hp5/;;https://leetcode.com/problems/count-special-subsequences/solutions/6201152/n2-logn-solution-but-very-intuitive-hash-yykc/;;https://leetcode.com/problems/count-special-subsequences/solutions/6201145/hashmap-first-fix-either-of-q-or-r-by-ch-qlfc/;;;=;==;=;=;

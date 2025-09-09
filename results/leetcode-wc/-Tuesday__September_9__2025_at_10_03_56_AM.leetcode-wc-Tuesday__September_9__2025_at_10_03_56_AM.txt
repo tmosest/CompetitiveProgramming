@@ -1,0 +1,33 @@
+1888. Minimum Number of Flips to Make the Binary String Alternating;=;=Medium;=;=public int minFlips(String s);=;=You are given a binary string s. You are allowed to perform two types of operations on the string in any sequence:
+
+Type-1: Remove the character at the start of the string s and append it to the end of the string.
+Type-2: Pick any character in s and flip its value, i.e., if its value is '0' it becomes '1' and vice-versa.
+Return the minimum number of type-2 operations you need to perform such that s becomes alternating.
+
+The string is called alternating if no two adjacent characters are equal.
+
+For example, the strings "010" and "1010" are alternating, while the string "0100" is not.
+ 
+
+Example 1:
+
+Input: s = "111000"
+Output: 2
+Explanation: Use the first operation two times to make s = "100011".
+Then, use the second operation on the third and sixth elements to make s = "101010".
+Example 2:
+
+Input: s = "010"
+Output: 0
+Explanation: The string is already alternating.
+Example 3:
+
+Input: s = "1110"
+Output: 1
+Explanation: Use the second operation on the second element to make s = "1010".
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/1261056/java-simple-and-easy-using-sliding-windo-4b0d/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/4144179/java-sliding-window-solution-time-comple-x6jd/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/2823006/java-sliding-window-video-solution-by-so-l314/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/4619598/detailed-explanation-sliding-window-java-3q65/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/1950776/java100-faster-by-sachinsingh1451-jm90/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/1254706/doubt-on-testcase-0-1-0-0-1-0-0-1-1-0-1-szvl0/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/1258013/java-short-on-time-o1-space-sliding-wind-pays/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/6646590/easyy-100-beat-by-srinivas_lingampelli-9hij/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/6551023/sliding-window-by-shuaigouzhang-p0uo/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/6153405/minimum-number-of-flips-to-make-binary-s-w7r5/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/5876657/java-on-sliding-window-by-singhsaket-uwdp/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/5754554/solution-in-java-by-knandi_asu-ak1v/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/5667531/on-sliding-window-in-java-by-aamarnath-6uyx/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/5666643/simple-and-easy-java-solution-using-rota-a1fe/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/5645751/most-intuitive-solution-in-java-using-sl-l9z1/;;;=;==;=;=;

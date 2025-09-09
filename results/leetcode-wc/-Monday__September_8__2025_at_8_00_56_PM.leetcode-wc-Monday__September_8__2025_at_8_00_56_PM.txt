@@ -1,0 +1,44 @@
+3224. Minimum Array Changes to Make Differences Equal;=;=Medium;=;=public int minChanges(int[] nums, int k);=;=You are given an integer array nums of size n where n is even, and an integer k.
+
+You can perform some changes on the array, where in one change you can replace any element in the array with any integer in the range from 0 to k.
+
+You need to perform some changes (possibly none) such that the final array satisfies the following condition:
+
+There exists an integer X such that abs(a[i] - a[n - i - 1]) = X for all (0 <= i < n).
+Return the minimum number of changes required to satisfy the above condition.
+
+ 
+
+Example 1:
+
+Input: nums = [1,0,1,2,4,3], k = 4
+
+Output: 2
+
+Explanation:
+We can perform the following changes:
+
+Replace nums[1] by 2. The resulting array is nums = [1,2,1,2,4,3].
+Replace nums[3] by 3. The resulting array is nums = [1,2,1,3,4,3].
+The integer X will be 2.
+
+Example 2:
+
+Input: nums = [0,1,2,3,3,6,5,4], k = 6
+
+Output: 2
+
+Explanation:
+We can perform the following operations:
+
+Replace nums[3] by 0. The resulting array is nums = [0,1,2,0,3,6,5,4].
+Replace nums[4] by 4. The resulting array is nums = [0,1,2,0,4,6,5,4].
+The integer X will be 4.
+
+ 
+
+Constraints:
+
+2 <= n == nums.length <= 105
+n is even.
+0 <= nums[i] <= k <= 105;=;=https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/7022040/just-one-pattern-and-boom-the-problem-is-gd0e/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5506771/java-prefix-sum-29ms-by-pavan_d_naik-pczk/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5507259/tc-on-solution-explained-with-pictures-b-hfsy/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5676652/a-much-explained-code-binary-search-by-a-liqm/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5507409/simple-on-solution-in-java-by-thezwische-zyt3/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/6250955/java-easy-solution-with-explanation-ok-b-7op1/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5508342/java-on-solution-prefix-sum-math-by-new_-dm0z/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5517254/javacpppython-detailed-explaination-easy-er2m/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5506963/easy-and-simple-java-solution-using-hash-nlhf/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/6595390/java-line-sweep-by-joban9872-4cox/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/6426682/java-onlogn-search-by-etherwei-uqsn/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5514136/java-5ms-onk-by-meringueee-1vw1/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/6026514/java-linear-space-difference-array-by-at-gwz9/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5973999/solution-using-hashmap-prefix-sum-java-b-vo0k/;;https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/solutions/5762229/java-on-by-nivedha-1h3k/;;;=;==;=;=;

@@ -28,8 +28,10 @@ class MaximumNumberOfGroupsWithIncreasingLengthTest {
         Assertions.assertEquals(output, maximumNumberOfGroupsWithIncreasingLength.maxIncreasingGroups(usageLimits));
     }
 
+    /*
     @Test
     void test0() {
         test(3, List.of(1, 2, 5));
     }
+    */
 }

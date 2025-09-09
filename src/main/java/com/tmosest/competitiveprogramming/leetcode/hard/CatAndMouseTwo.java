@@ -22,15 +22,13 @@ class CatAndMouseTwo {
 		int catI = 0, catJ = 0;
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
-				switch (grid[i].charAt(j)) {
-					case 'M' -> {
-						mouseI = i;
-						mouseJ = j;
-					}
-					case 'C' -> {
-						catI = i;
-						catJ = j;
-					}
+				if (grid[i].charAt(j) == 'M') {
+					mouseI = i;
+					mouseJ = j;
+				}
+				if (grid[i].charAt(j) == 'C') {
+					catI = i;
+					catJ = j;
 				}
 			}
 		}

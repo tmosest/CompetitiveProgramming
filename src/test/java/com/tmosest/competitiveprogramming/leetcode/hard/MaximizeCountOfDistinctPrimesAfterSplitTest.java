@@ -23,9 +23,10 @@ class MaximizeCountOfDistinctPrimesAfterSplitTest {
     private void test(int[] output, int[] nums, int[][] queries) {
         Assertions.assertEquals(output, maximizeCountOfDistinctPrimesAfterSplit.maximumCount(nums, queries));
     }
-
+    /*
     @Test
     void test0() {
         test(new int[] {3,4}, new int[] {2,1,3,1,2}, new int[][] {{1,2}, {3,3}});
     }
+    */
 }

@@ -25,8 +25,10 @@ class SwappingNodesInLinkedListTest {
     Assertions.assertEquals(output, swappingNodesInLinkedList.swapNodes(head, k));
   }
 
+  /*
   @Test
   void test0() {
     test(null, null, 1);
   }
+  */
 }

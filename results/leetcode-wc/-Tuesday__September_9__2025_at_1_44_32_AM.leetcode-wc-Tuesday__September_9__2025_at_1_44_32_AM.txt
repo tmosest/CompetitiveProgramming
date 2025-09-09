@@ -1,0 +1,52 @@
+3239. Minimum Number of Flips to Make Binary Grid Palindromic I;=;=Medium;=;=public int minFlips(int[][] grid);=;=You are given an m x n binary matrix grid.
+
+A row or column is considered palindromic if its values read the same forward and backward.
+
+You can flip any number of cells in grid from 0 to 1, or from 1 to 0.
+
+Return the minimum number of cells that need to be flipped to make either all rows palindromic or all columns palindromic.
+
+ 
+
+Example 1:
+
+Input: grid = [[1,0,0],[0,0,0],[0,0,1]]
+
+Output: 2
+
+Explanation:
+
+
+
+Flipping the highlighted cells makes all the rows palindromic.
+
+Example 2:
+
+Input: grid = [[0,1],[0,1],[0,0]]
+
+Output: 1
+
+Explanation:
+
+
+
+Flipping the highlighted cell makes all the columns palindromic.
+
+Example 3:
+
+Input: grid = [[1],[0]]
+
+Output: 0
+
+Explanation:
+
+All rows are already palindromic.
+
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m * n <= 2 * 105
+0 <= grid[i][j] <= 1;=;=https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/6576166/simple-almost-96-beats-easy-to-understan-swu7/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/5628435/simple-code-easy-to-understand-beginner-cyfmv/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/7164890/ok-ok-solution-by-gyanshugupta-v1vo/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/7160182/solution-using-java-by-kushal_bharadwaj-v6696/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/5580971/java-clean-solution-by-shree_govind_jee-dxbd/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/5581032/simple-clean-java-code-easy-to-understan-ekmu/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/5587131/beats-100-easy-solution-java-by-cvm0-sqiu/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/5581721/beats-100-users-using-java-by-yarrabelly-asyq/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/5580934/easy-and-clean-code-c-java-c-beats-100-b-dirf/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/5581488/easy-java-solution-by-shaurya_malhan-sqcn/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/5586565/100-beats-easy-java-solution-using-only-vttlt/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/5591951/beats-100-easy-java-solution-by-priyansh-56d4/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/7120345/java-onm-solution-by-aadityavikram-7ubj/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/6316621/very-easy-100-solved-by-shubhamrathore24-nmsg/;;https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/solutions/6973958/two-pointers-by-karan2229sharma-weww/;;;=;==;=;=;

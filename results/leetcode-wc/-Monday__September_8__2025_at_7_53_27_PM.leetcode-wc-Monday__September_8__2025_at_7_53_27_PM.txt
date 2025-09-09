@@ -1,0 +1,39 @@
+2740. Find the Value of the Partition;=;=Medium;=;=public int findValueOfPartition(int[] nums);=;=You are given a positive integer array nums.
+
+Partition nums into two arrays, nums1 and nums2, such that:
+
+Each element of the array nums belongs to either the array nums1 or the array nums2.
+Both arrays are non-empty.
+The value of the partition is minimized.
+The value of the partition is |max(nums1) - min(nums2)|.
+
+Here, max(nums1) denotes the maximum element of the array nums1, and min(nums2) denotes the minimum element of the array nums2.
+
+Return the integer denoting the value of such partition.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,2,4]
+Output: 1
+Explanation: We can partition the array nums into nums1 = [1,2] and nums2 = [3,4].
+- The maximum element of the array nums1 is equal to 2.
+- The minimum element of the array nums2 is equal to 3.
+The value of the partition is |2 - 3| = 1. 
+It can be proven that 1 is the minimum value out of all partitions.
+Example 2:
+
+Input: nums = [100,1,10]
+Output: 9
+Explanation: We can partition the array nums into nums1 = [10] and nums2 = [100,1].
+- The maximum element of the array nums1 is equal to 10.
+- The minimum element of the array nums2 is equal to 1.
+The value of the partition is |10 - 1| = 9.
+It can be proven that 9 is the minimum value out of all partitions.
+ 
+
+Constraints:
+
+2 <= nums.length <= 105
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/find-the-value-of-the-partition/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3650441/javacpython-sort-by-lee215-w2d1/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/6866411/solution-in-java-and-c-by-vickyy234-ku5h/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/6897936/easy-simple-way-by-sairangineeni-yh0f/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3650430/java-sorting-5-lines-clean-code-by-judge-6qg4/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3650447/simple-short-clean-java-solution-by-hima-lczd/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3650453/simple-java-onlogn-solution-using-sortin-1wtf/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3653012/java-sort-by-xiangcan-kyz9/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3784187/java-easy-solution-explained-by-jugantar-6ej5/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3650858/java-simple-solution-by-saran456-qhri/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3650487/image-representation-well-explained-java-wi24/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3652709/easy-java-c-by-deveshpatel11-x6g4/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3651072/java-solution-by-tirth2742-0tb6/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/3651911/java-100-faster-time-complexity-on-log-n-yck7/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/6642494/java-fastest-solution-sorting-by-zccyiqx-wekb/;;https://leetcode.com/problems/find-the-value-of-the-partition/solutions/7142927/java-solution-by-gmblack-q8p9/;;;=;==;=;=;

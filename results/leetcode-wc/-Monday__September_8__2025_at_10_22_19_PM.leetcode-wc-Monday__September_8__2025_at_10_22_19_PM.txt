@@ -1,0 +1,39 @@
+3588. Find Maximum Area of a Triangle;=;=Medium;=;=public long maxArea(int[][] coords);=;=You are given a 2D array coords of size n x 2, representing the coordinates of n points in an infinite Cartesian plane.
+
+Find twice the maximum area of a triangle with its corners at any three elements from coords, such that at least one side of this triangle is parallel to the x-axis or y-axis. Formally, if the maximum area of such a triangle is A, return 2 * A.
+
+If no such triangle exists, return -1.
+
+Note that a triangle cannot have zero area.
+
+ 
+
+Example 1:
+
+Input: coords = [[1,1],[1,2],[3,2],[3,3]]
+
+Output: 2
+
+Explanation:
+
+
+
+The triangle shown in the image has a base 1 and height 2. Hence its area is 1/2 * base * height = 1.
+
+Example 2:
+
+Input: coords = [[1,1],[2,2],[3,3]]
+
+Output: -1
+
+Explanation:
+
+The only possible triangle has corners (1, 1), (2, 2), and (3, 3). None of its sides are parallel to the x-axis or the y-axis.
+
+ 
+
+Constraints:
+
+1 <= n == coords.length <= 105
+1 <= coords[i][0], coords[i][1] <= 106
+All coords[i] are unique.;=;=https://leetcode.com/problems/find-maximum-area-of-a-triangle/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6869458/c-very-easy-to-understand-beginner-frien-2dse/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/7132569/easy-solution-by-qddl3tbjhy-vpyd/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6873929/sorting-greedy-ono1-by-ankith_kumar-nor9/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6869540/beats-99-on-solution-java-maps-by-shruti-2xpo/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6884058/beats-97-two-pointers-easy-to-understand-ryw0/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6881804/easy-to-understand-hashmap-solution-by-a-jl2a/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6870131/hashmap-on-solution-by-saketcodescribe-8q6m/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6869982/finding-maxarea-of-triangle-by-rs-had-d5xc/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6869818/java-math-solution-easy-to-understand-by-hegy/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6872338/intuition-based-very-easy-solution-sorti-qrgh/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6869559/beats-93-by-saish_dhuri8-24at/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6876218/simple-treemap-solution-take-1st-and-las-k5jl/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6882598/java-100-faster-by-jaidevramakrishna-i0cz/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6869587/java-using-integer-treesetinteger-by-add-638z/;;https://leetcode.com/problems/find-maximum-area-of-a-triangle/solutions/6869533/easy-solution-java-by-harshwardhan063-vd6k/;;;=;==;=;=;

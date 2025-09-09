@@ -1,0 +1,36 @@
+2310. Sum of Numbers With Units Digit K;=;=Medium;=;=public int minimumNumbers(int num, int k);=;=Given two integers num and k, consider a set of positive integers with the following properties:
+
+The units digit of each integer is k.
+The sum of the integers is num.
+Return the minimum possible size of such a set, or -1 if no such set exists.
+
+Note:
+
+The set can contain multiple instances of the same integer, and the sum of an empty set is considered 0.
+The units digit of a number is the rightmost digit of the number.
+ 
+
+Example 1:
+
+Input: num = 58, k = 9
+Output: 2
+Explanation:
+One valid set is [9,49], as the sum is 58 and each integer has a units digit of 9.
+Another valid set is [19,39].
+It can be shown that 2 is the minimum possible size of a valid set.
+Example 2:
+
+Input: num = 37, k = 2
+Output: -1
+Explanation: It is not possible to obtain a sum of 37 using only integers that have a units digit of 2.
+Example 3:
+
+Input: num = 0, k = 7
+Output: 0
+Explanation: The sum of an empty set is considered 0.
+ 
+
+Constraints:
+
+0 <= num <= 3000
+0 <= k <= 9;=;=https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2168323/javacpython-enumerate-from-1-to-10-by-le-g5zf/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2168113/java-easy-to-understand-by-aaveshk-0i8k/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2172088/o1-solution-using-a-simple-math-trick-by-n7oi/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/4670067/beats-100-java-0ms-easy-solution-maths-b-w4lu/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2176147/java-binary-search-easy-and-well-explain-vpu3/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2168573/java-easy-solution-beginner-friendly-by-7lovl/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/3063162/java-dp-memoization-by-bishal2520-q84c/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2170965/java-solution-using-cyclicity-o1-time-an-ti4a/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2168399/java-easy-math-by-caoxz0815-fifs/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2168199/java-dp-dfs-with-memorization-two-soluti-wz28/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2356330/sum-of-numbers-with-units-digit-k-java-e-zref/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2168485/desperate-top-of-the-mind-solution-by-st-ba92/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2170807/java-math-easy-fast-solution-by-tara-97-gc6e/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2168944/easiest-java-solution-with-explanation-b-elz8/;;https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/solutions/2168232/java-solution-by-coder9029-xnwv/;;;=;==;=;=;

@@ -1,0 +1,22 @@
+311. Sparse Matrix Multiplication;=;=Medium;=;=public int[][] multiply(int[][] mat1, int[][] mat2);=;=Given two sparse matrices mat1 of size m x k and mat2 of size k x n, return the result of mat1 x mat2. You may assume that multiplication is always possible.
+
+ 
+
+Example 1:
+
+
+Input: mat1 = [[1,0,0],[-1,0,3]], mat2 = [[7,0,0],[0,0,0],[0,0,1]]
+Output: [[7,0,0],[-7,0,3]]
+Example 2:
+
+Input: mat1 = [[0]], mat2 = [[0]]
+Output: [[0]]
+ 
+
+Constraints:
+
+m == mat1.length
+k == mat1[i].length == mat2.length
+n == mat2[i].length
+1 <= m, n, k <= 100
+-100 <= mat1[i][j], mat2[i][j] <= 100;=;=https://leetcode.com/problems/sparse-matrix-multiplication/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sparse-matrix-multiplication/solutions/76154/easiest-java-solution-by-yavinci-50uc/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/76150/java-and-python-solutions-with-and-witho-ivgj/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/1886625/java-hashmap-minimized-number-of-multipl-vv5b/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/7140037/java-solution-matrix-multiplication-by-n-5ne2/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/76179/my-java-solution-based-on-triple-by-mouw-7wna/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/986870/java-non-zero-elements-only-by-fubao66-b8ax/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/7085475/java-onm-time-and-space-simple-by-tezvee-6d9a/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/1663122/java-hashmap-hashset-for-sparse-vector-b-wrw5/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/3498504/java-solution-beats-100-but-further-impr-smgb/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/3354154/java-simple-solution-by-sanjevraj_r-pkqv/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/1150534/java-simple-solution-beat-100in-time-and-wfob/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/407905/java-runtime-0-ms-faster-than-10000-memo-wj82/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/6932774/fastest-algorithm-omn-nk-time-omn-space-m82v3/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/1527243/java-using-optimal-sparse-matrix-represe-6pp6/;;https://leetcode.com/problems/sparse-matrix-multiplication/solutions/625999/0ms-beats-100-on-time-7-on-memory-by-use-6dpi/;;;=;==;=;=;

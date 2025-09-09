@@ -1,0 +1,49 @@
+3542. Minimum Operations to Convert All Elements to Zero;=;=Medium;=;=public int minOperations(int[] nums);=;=You are given an array nums of size n, consisting of non-negative integers. Your task is to apply some (possibly zero) operations on the array so that all elements become 0.
+
+In one operation, you can select a subarray [i, j] (where 0 <= i <= j < n) and set all occurrences of the minimum non-negative integer in that subarray to 0.
+
+Return the minimum number of operations required to make all elements in the array 0.
+
+ 
+
+Example 1:
+
+Input: nums = [0,2]
+
+Output: 1
+
+Explanation:
+
+Select the subarray [1,1] (which is [2]), where the minimum non-negative integer is 2. Setting all occurrences of 2 to 0 results in [0,0].
+Thus, the minimum number of operations required is 1.
+Example 2:
+
+Input: nums = [3,1,2,1]
+
+Output: 3
+
+Explanation:
+
+Select subarray [1,3] (which is [1,2,1]), where the minimum non-negative integer is 1. Setting all occurrences of 1 to 0 results in [3,0,2,0].
+Select subarray [2,2] (which is [2]), where the minimum non-negative integer is 2. Setting all occurrences of 2 to 0 results in [3,0,0,0].
+Select subarray [0,0] (which is [3]), where the minimum non-negative integer is 3. Setting all occurrences of 3 to 0 results in [0,0,0,0].
+Thus, the minimum number of operations required is 3.
+Example 3:
+
+Input: nums = [1,2,1,2,1,2]
+
+Output: 4
+
+Explanation:
+
+Select subarray [0,5] (which is [1,2,1,2,1,2]), where the minimum non-negative integer is 1. Setting all occurrences of 1 to 0 results in [0,2,0,2,0,2].
+Select subarray [1,1] (which is [2]), where the minimum non-negative integer is 2. Setting all occurrences of 2 to 0 results in [0,0,0,2,0,2].
+Select subarray [3,3] (which is [2]), where the minimum non-negative integer is 2. Setting all occurrences of 2 to 0 results in [0,0,0,0,0,2].
+Select subarray [5,5] (which is [2]), where the minimum non-negative integer is 2. Setting all occurrences of 2 to 0 results in [0,0,0,0,0,0].
+Thus, the minimum number of operations required is 4.
+ 
+
+Constraints:
+
+1 <= n == nums.length <= 105
+0 <= nums[i] <= 105;=;=https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6731695/100-beat-monotonic-increasing-stack-on-o-f50a/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6731340/javacpython-short-stack-on-by-lee215-zbra/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6731415/on-easy-monotonic-stack-solution-by-srkn-f6u2/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6731241/java-by-pravesh_verma-xurf/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6937462/easy-solution-stack-by-adhi_m_s-zqv1/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6937525/minimum-operations-to-convert-all-elemen-b16f/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6746801/unique-solution-using-divide-conquor-has-86db/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6830061/minimum-operations-to-build-a-strictly-i-wpax/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6732352/stack-set-readable-code-by-ankith_kumar-mtme/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6731194/optimal-approach-fenwick-tree-by-coding_-xf21/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6739622/java-solution-by-barakamon-xihb/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/7000568/stack-use-what-u-know-java-nse-by-anaya_-h7ci/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/7008716/java-solution-use-int-as-a-stack-achieve-oar3/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6731937/sqrt-decomposition-solution-by-user9377s-eqir/;;https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/solutions/6939318/monotonic-decreasing-stack-hashmap-java-ofs4n/;;;=;==;=;=;

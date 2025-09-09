@@ -1,0 +1,24 @@
+668. Kth Smallest Number in Multiplication Table;=;=Hard;=;=public int findKthNumber(int m, int n, int k);=;=Nearly everyone has used the Multiplication Table. The multiplication table of size m x n is an integer matrix mat where mat[i][j] == i * j (1-indexed).
+
+Given three integers m, n, and k, return the kth smallest element in the m x n multiplication table.
+
+ 
+
+Example 1:
+
+
+Input: m = 3, n = 3, k = 5
+Output: 3
+Explanation: The 5th smallest number is 3.
+Example 2:
+
+
+Input: m = 2, n = 3, k = 6
+Output: 6
+Explanation: The 6th smallest number is 6.
+ 
+
+Constraints:
+
+1 <= m, n <= 3 * 104
+1 <= k <= m * n;=;=https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/1580533/cjavapython-short-binary-search-solution-c7e3/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/7067623/easy-to-understand-binary-search-by-jain-6hlb/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/7059935/binary-search-on-value-to-find-the-k-th-euyg3/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/6911274/binary-search-on-multiplication-table-fi-t4xa/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/5200086/java-clean-simple-solution-two-approach-ovlx6/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/1943950/binary-search-simple-and-clear-explanati-mlx9/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/1577601/java-binary-search-with-explanation-by-f-lkf1/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/3426868/solution-by-deleted_user-xxwv/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/4542134/fuck-memory-limit-exceeded-i-used-priori-c9uy/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/843122/java-binary-search-solution-by-vrohith-n2nl/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/1580442/javac-very-understandable-sol-omlogmn-tc-7fwo/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/404111/java-solution-with-loads-of-comments-by-v9brt/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/1580813/easy-java-solution-by-himanshubhoir-ms3b/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/1581388/java-simple-solution-binary-search-by-ab-bc2b/;;https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solutions/1581410/simple-java-solution-by-siddhant_1602-q5lh/;;;=;==;=;=;

@@ -1,0 +1,37 @@
+825. Friends Of Appropriate Ages;=;=Medium;=;=public int numFriendRequests(int[] ages);=;=There are n persons on a social media website. You are given an integer array ages where ages[i] is the age of the ith person.
+
+A Person x will not send a friend request to a person y (x != y) if any of the following conditions is true:
+
+age[y] <= 0.5 * age[x] + 7
+age[y] > age[x]
+age[y] > 100 && age[x] < 100
+Otherwise, x will send a friend request to y.
+
+Note that if x sends a request to y, y will not necessarily send a request to x. Also, a person will not send a friend request to themself.
+
+Return the total number of friend requests made.
+
+ 
+
+Example 1:
+
+Input: ages = [16,16]
+Output: 2
+Explanation: 2 people friend request each other.
+Example 2:
+
+Input: ages = [16,17,18]
+Output: 2
+Explanation: Friend requests are made 17 -> 16, 18 -> 17.
+Example 3:
+
+Input: ages = [20,30,100,110,120]
+Output: 3
+Explanation: Friend requests are made 110 -> 100, 120 -> 110, 120 -> 100.
+ 
+
+Constraints:
+
+n == ages.length
+1 <= n <= 2 * 104
+1 <= ages[i] <= 120;=;=https://leetcode.com/problems/friends-of-appropriate-ages/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/friends-of-appropriate-ages/solutions/7094072/simple-java-solution-easy-to-understand-fmf7s/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/7020200/java-solution-using-counting-with-bucket-kvy3/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/7008779/easy-code-in-java-by-yasl1-zvgr/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/5483585/java-two-pointer-solution-by-cindertree-rmey/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/558722/java-2-ms-short-and-simple-by-danyh-tdzd/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/4877333/3-clean-java-solutions-with-comments-fro-n6bj/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/3185944/java-onlogn-easy-to-understand-highly-co-lz1i/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/1621896/java-sorting-binary-search-on-log-n-by-t-ek8r/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/4034801/best-java-solution-beats-80-by-ravikumar-fenu/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/5819000/beats-80-user-runtime-3msunderstandable-gi2zb/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/4388405/optimize-solution-using-map-by-shree_gov-kcgq/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/3481569/solution-by-deleted_user-uh6c/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/3202645/java-group-by-age-and-count-by-stefanels-7a6u/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/658569/the-easiest-way-by-v7fgg-7q26/;;https://leetcode.com/problems/friends-of-appropriate-ages/solutions/2635031/java-8-features-more-concise-code-3-line-nnph/;;;=;==;=;=;

@@ -1,0 +1,26 @@
+2239. Find Closest Number to Zero;=;=Easy;=;=public int findClosestNumber(int[] nums);=;=Given an integer array nums of size n, return the number with the value closest to 0 in nums. If there are multiple answers, return the number with the largest value.
+
+ 
+
+Example 1:
+
+Input: nums = [-4,-2,1,4,8]
+Output: 1
+Explanation:
+The distance from -4 to 0 is |-4| = 4.
+The distance from -2 to 0 is |-2| = 2.
+The distance from 1 to 0 is |1| = 1.
+The distance from 4 to 0 is |4| = 4.
+The distance from 8 to 0 is |8| = 8.
+Thus, the closest number to 0 in the array is 1.
+Example 2:
+
+Input: nums = [2,-1,1]
+Output: 1
+Explanation: 1 and -1 are both the closest numbers to 0, so 1 being larger is returned.
+ 
+
+Constraints:
+
+1 <= n <= 1000
+-105 <= nums[i] <= 105;=;=https://leetcode.com/problems/find-closest-number-to-zero/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-closest-number-to-zero/solutions/7152238/easy-peasy-by-amyy_1256-o0np/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/7035584/easy-and-100-fast-solution-using-maths-b-9h4n/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/6622725/java-solution-with-clear-description-by-eu5xs/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/7032071/java-beats-100-simple-by-preet_chaudhary-cbqf/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/6250167/find-closest-number-to-zero-time-complex-sn81/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/6949944/simple-solution-have-a-look-by-maniharan-3u3l/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/6521370/simple-code-by-fwupexegyb-6nwb/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/1953639/java-by-aaveshk-iokx/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/4118899/c-java-simple-approach-using-map-for-beg-ajwd/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/2637617/my-clean-solution-in-java-by-sourin_bruh-o120/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/1977609/javacpythonjavascriptkotlin1line-ontimeb-ftpl/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/1953643/java-solution-by-ayush2332-xzza/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/7161623/easiest-solution-ever-beats-100-by-moham-jx9d/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/7152347/easy-solutionbeats-100-by-ananyapal0421-5foh/;;https://leetcode.com/problems/find-closest-number-to-zero/solutions/4138037/java-easy-by-saurabh_kumar1-oen6/;;;=;==;=;=;

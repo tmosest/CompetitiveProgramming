@@ -1,0 +1,21 @@
+1256. Encode Number;=;=Medium;=;=public String encode(int num);=;=Given a non-negative integer num, Return its encoding string.
+
+The encoding is done by converting the integer to a string using a secret function that you should deduce from the following table:
+
+
+
+ 
+
+Example 1:
+
+Input: num = 23
+Output: "1000"
+Example 2:
+
+Input: num = 107
+Output: "101100"
+ 
+
+Constraints:
+
+0 <= num <= 10^9;=;=https://leetcode.com/problems/encode-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/encode-number/solutions/3099425/java-one-line-solution-with-explanation-bdd6s/;;https://leetcode.com/problems/encode-number/solutions/430691/java-1-liner-by-hsihsa-2w8y/;;https://leetcode.com/problems/encode-number/solutions/4003877/simple-java-solution-by-sakshikishore-v9bl/;;https://leetcode.com/problems/encode-number/solutions/3584261/solution-by-deleted_user-9ejo/;;https://leetcode.com/problems/encode-number/solutions/1651131/java-two-solution-from-ologn-to-o1-by-st-s92y/;;https://leetcode.com/problems/encode-number/solutions/767569/share-java-solution-by-leetcode07051-83rd/;;;=;==;=;=;

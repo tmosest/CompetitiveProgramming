@@ -1,0 +1,37 @@
+3153. Sum of Digit Differences of All Pairs;=;=Medium;=;=public long sumDigitDifferences(int[] nums);=;=You are given an array nums consisting of positive integers where all integers have the same number of digits.
+
+The digit difference between two integers is the count of different digits that are in the same position in the two integers.
+
+Return the sum of the digit differences between all pairs of integers in nums.
+
+ 
+
+Example 1:
+
+Input: nums = [13,23,12]
+
+Output: 4
+
+Explanation:
+We have the following:
+- The digit difference between 13 and 23 is 1.
+- The digit difference between 13 and 12 is 1.
+- The digit difference between 23 and 12 is 2.
+So the total sum of digit differences between all pairs of integers is 1 + 1 + 2 = 4.
+
+Example 2:
+
+Input: nums = [10,10,10,10]
+
+Output: 0
+
+Explanation:
+All the integers in the array are the same. So the total sum of digit differences between all pairs of integers will be 0.
+
+ 
+
+Constraints:
+
+2 <= nums.length <= 105
+1 <= nums[i] < 109
+All integers in nums have the same number of digits.;=;=https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/7093441/simple-approach-of-digit-column-counting-5zoj/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5177497/javacpython-count-digits-by-lee215-zq9v/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5177101/easy-to-understand-by-mohakharjani-h7r7/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5177097/java-solution-by-harsh__005-endk/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5177129/javapython-clean-solution-by-shree_govin-b4rc/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/6466536/5-lines-c-easiest-explanation-by-sapilol-zizv/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5177218/common-sense-beats-100-detailed-explaina-h0jb/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5177261/easy-python3-solution-contest-1952024-be-t4l6/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5751386/beats-100-of-users-easy-to-understand-by-wjij/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5180894/efficient-solution-using-frequency-array-vz63/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5177199/java-100-beats-soltions-on10-complexiety-yj96/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5181874/intuition-simple-code-matrix-optimisatio-phtd/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5191523/simple-java-solution-by-sajaltiwari007-51o1/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5180302/better-than-100-basic-solution-basic-mat-s4xe/;;https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/solutions/5177873/beats-100-java-users-in-time-and-space-s-j5k1/;;;=;==;=;=;

@@ -1,0 +1,35 @@
+1851. Minimum Interval to Include Each Query;=;=Hard;=;=public int[] minInterval(int[][] intervals, int[] queries);=;=You are given a 2D integer array intervals, where intervals[i] = [lefti, righti] describes the ith interval starting at lefti and ending at righti (inclusive). The size of an interval is defined as the number of integers it contains, or more formally righti - lefti + 1.
+
+You are also given an integer array queries. The answer to the jth query is the size of the smallest interval i such that lefti <= queries[j] <= righti. If no such interval exists, the answer is -1.
+
+Return an array containing the answers to the queries.
+
+ 
+
+Example 1:
+
+Input: intervals = [[1,4],[2,4],[3,6],[4,4]], queries = [2,3,4,5]
+Output: [3,3,1,4]
+Explanation: The queries are processed as follows:
+- Query = 2: The interval [2,4] is the smallest interval containing 2. The answer is 4 - 2 + 1 = 3.
+- Query = 3: The interval [2,4] is the smallest interval containing 3. The answer is 4 - 2 + 1 = 3.
+- Query = 4: The interval [4,4] is the smallest interval containing 4. The answer is 4 - 4 + 1 = 1.
+- Query = 5: The interval [3,6] is the smallest interval containing 5. The answer is 6 - 3 + 1 = 4.
+Example 2:
+
+Input: intervals = [[2,3],[2,5],[1,8],[20,25]], queries = [2,19,5,22]
+Output: [2,-1,4,6]
+Explanation: The queries are processed as follows:
+- Query = 2: The interval [2,3] is the smallest interval containing 2. The answer is 3 - 2 + 1 = 2.
+- Query = 19: None of the intervals contain 19. The answer is -1.
+- Query = 5: The interval [2,5] is the smallest interval containing 5. The answer is 5 - 2 + 1 = 4.
+- Query = 22: The interval [20,25] is the smallest interval containing 22. The answer is 25 - 20 + 1 = 6.
+ 
+
+Constraints:
+
+1 <= intervals.length <= 105
+1 <= queries.length <= 105
+intervals[i].length == 2
+1 <= lefti <= righti <= 107
+1 <= queries[j] <= 107;=;=https://leetcode.com/problems/minimum-interval-to-include-each-query/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/1207571/java-simple-and-easy-to-understand-solut-xh45/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/3481339/simple-readable-and-fast-with-explanatio-u9xt/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/1202402/java-solution-with-priorityqueue-comment-0aj8/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/5644530/beginner-friendly-java-optimal-solution-3fcvm/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/7157062/minimum-interval-to-include-each-query-s-43li/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/4908234/java-min-heap-priority-queue-solution-by-2qxu/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/2252405/java-sweep-line-algorithm-easy-by-rong2r-4k6a/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/7017528/not-the-optimal-one-but-uses-simple-line-jp4n/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/1187206/java-on-log-n-q-log-n-balanced-bst-onlin-afnf/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/4183507/java-priority-queue-sorting-by-jeckafedo-g2hp/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/6903949/java-solutions-two-heap-by-hopecheung-rtuf/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/6992538/python3-solution-by-the_hao-a3ez/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/6799371/java-easy-readable-min-heap-solution-by-ug59e/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/6673103/minimum-interval-to-include-each-query-p-jgf6/;;https://leetcode.com/problems/minimum-interval-to-include-each-query/solutions/6595964/beats-98-intuitive-solution-easy-explana-yd4e/;;;=;==;=;=;

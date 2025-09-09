@@ -1,0 +1,38 @@
+2465. Number of Distinct Averages;=;=Easy;=;=public int distinctAverages(int[] nums);=;=You are given a 0-indexed integer array nums of even length.
+
+As long as nums is not empty, you must repetitively:
+
+Find the minimum number in nums and remove it.
+Find the maximum number in nums and remove it.
+Calculate the average of the two removed numbers.
+The average of two numbers a and b is (a + b) / 2.
+
+For example, the average of 2 and 3 is (2 + 3) / 2 = 2.5.
+Return the number of distinct averages calculated using the above process.
+
+Note that when there is a tie for a minimum or maximum number, any can be removed.
+
+ 
+
+Example 1:
+
+Input: nums = [4,1,4,0,3,5]
+Output: 2
+Explanation:
+1. Remove 0 and 5, and the average is (0 + 5) / 2 = 2.5. Now, nums = [4,1,4,3].
+2. Remove 1 and 4. The average is (1 + 4) / 2 = 2.5, and nums = [4,3].
+3. Remove 3 and 4, and the average is (3 + 4) / 2 = 3.5.
+Since there are 2 distinct numbers among 2.5, 2.5, and 3.5, we return 2.
+Example 2:
+
+Input: nums = [1,100]
+Output: 1
+Explanation:
+There is only one average to be calculated after removing 1 and 100, so we return 1.
+ 
+
+Constraints:
+
+2 <= nums.length <= 100
+nums.length is even.
+0 <= nums[i] <= 100;=;=https://leetcode.com/problems/number-of-distinct-averages/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-distinct-averages/solutions/7160896/easy-1ms-by-sivaaleet-ouj4/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/7160891/using-queue-2ms-by-sivaaleet-swox/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/6513277/99-simplest-program-java-python-c-simple-33p0/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/5359352/simple-java-solution-pattern-template-qu-vnwe/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/2807175/javapython-3-put-into-hashset-int-instea-clo6/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/6591845/java-beginner-friendly-solution-beats-98-0i0n/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/2807282/avg-not-compulsory-sum-will-also-do-by-k-4q0s/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/6764605/two-pointers-way-very-simple-try-this-by-5e3q/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/6443327/simple-and-optimal-solution-by-harshal-0-z7gl/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/6575654/using-hashset-0-ms-runtime-by-aashna_sah-2erd/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/7142930/java-easy-solution-by-janhaviii-2q1a/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/7118186/java-986-beats-by-190602-0zgg/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/7056724/simple-approach-using-hashset-by-ksig8o7-pfyl/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/6967905/beats-13-users-hashset-arraylist-by-tipu-2u27/;;https://leetcode.com/problems/number-of-distinct-averages/solutions/6931323/java-solution-sort-arraylist-hashset-on-ac70w/;;;=;==;=;=;

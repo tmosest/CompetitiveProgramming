@@ -1,0 +1,22 @@
+84. Largest Rectangle in Histogram;=;=Hard;=;=public int largestRectangleArea(int[] heights);=;=Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
+
+ 
+
+Example 1:
+
+
+Input: heights = [2,1,5,6,2,3]
+Output: 10
+Explanation: The above is a histogram where width of each bar is 1.
+The largest rectangle is shown in the red area, which has an area = 10 units.
+Example 2:
+
+
+Input: heights = [2,4]
+Output: 4
+ 
+
+Constraints:
+
+1 <= heights.length <= 105
+0 <= heights[i] <= 104;=;=https://leetcode.com/problems/largest-rectangle-in-histogram/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/5378360/video-explanation-by-niits-vacy/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/7039068/easiest-explanation-nearest-greator-to-l-6ami/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/7161429/striver-style-on-java-solution-explained-m2u0/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/28902/5ms-on-java-solution-explained-beats-96-skgtx/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/7105632/easiest-approachbeats-99-in-space-and-90-cxno/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/6757248/using-stack-beginner-friendly-explanatio-owg7/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/6126363/beats-super-easy-beginners-by-codewithsp-83a9/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/1727776/javac-explanation-going-from-brute-to-op-5m0n/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/28900/short-and-clean-on-stack-based-java-solu-s9u8/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/7116968/largest-rectangle-in-histogram-monotonic-lg68/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/7114504/easy-solution-by-prernabarodiya-dgzu/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/29018/ac-clean-java-solution-using-stack-by-je-e0le/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/7091042/most-optimised-java-solution-without-pre-a39z/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/7084422/best-solution-for-largest-rectangle-in-h-v7s8/;;https://leetcode.com/problems/largest-rectangle-in-histogram/solutions/7080157/monotonic-stack-beats-100-explained-simp-o3oq/;;;=;==;=;=;

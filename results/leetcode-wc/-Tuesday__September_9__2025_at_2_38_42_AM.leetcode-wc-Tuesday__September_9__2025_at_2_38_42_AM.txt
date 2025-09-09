@@ -1,0 +1,27 @@
+759. Employee Free Time;=;=Hard;=;=// Definition for an Interval. Interval     public int start;    public int end;    public Interval()     public Interval(int _start, int _end)         start = _start;        end = _end;    ;class      public List<Interval> employeeFreeTime(List<List<Interval>> schedule);=;=We are given a list schedule of employees, which represents the working time for each employee.
+
+Each employee has a list of non-overlapping Intervals, and these intervals are in sorted order.
+
+Return the list of finite intervals representing common, positive-length free time for all employees, also in sorted order.
+
+(Even though we are representing Intervals in the form [x, y], the objects inside are Intervals, not lists or arrays. For example, schedule[0][0].start = 1, schedule[0][0].end = 2, and schedule[0][0][0] is not defined).  Also, we wouldn't include intervals like [5, 5] in our answer, as they have zero length.
+
+ 
+
+Example 1:
+
+Input: schedule = [[[1,2],[5,6]],[[1,3]],[[4,10]]]
+Output: [[3,4]]
+Explanation: There are a total of three employees, and all common
+free time intervals would be [-inf, 1], [3, 4], [10, inf].
+We discard any intervals that contain inf as they aren't finite.
+Example 2:
+
+Input: schedule = [[[1,3],[6,7]],[[2,4]],[[2,5],[9,12]]]
+Output: [[5,6],[7,9]]
+ 
+
+Constraints:
+
+1 <= schedule.length , schedule[i].length <= 50
+0 <= schedule[i].start < schedule[i].end <= 10^8;=;=https://leetcode.com/problems/employee-free-time/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/employee-free-time/solutions/1394966/java-simple-and-clean-and-intuitive-by-c-saca/;;https://leetcode.com/problems/employee-free-time/solutions/2208230/java-sweep-line-priorityqueue-and-compar-yusl/;;https://leetcode.com/problems/employee-free-time/solutions/1429412/java-priorityqueue-readable-and-easy-to-xur3n/;;https://leetcode.com/problems/employee-free-time/solutions/2813051/clean-intuitive-and-simple-java-solution-lqsh/;;https://leetcode.com/problems/employee-free-time/solutions/1567310/java-easy-to-understand-with-comments-by-d11u/;;https://leetcode.com/problems/employee-free-time/solutions/2392460/java-on1logk-pqll-ez-correct-by-wtbjerbb-1r6h/;;https://leetcode.com/problems/employee-free-time/solutions/1336151/java-easy-solution-by-lastofcoding-y5kg/;;https://leetcode.com/problems/employee-free-time/solutions/2342969/java-simple-solution-explained-by-bwanav-95ag/;;https://leetcode.com/problems/employee-free-time/solutions/1836027/clean-java-priorityqueue-solution-by-jan-r1i2/;;https://leetcode.com/problems/employee-free-time/solutions/999694/java-easy-to-understand-2-solutions-with-wiwg/;;https://leetcode.com/problems/employee-free-time/solutions/1769726/java-easy-solution-88-by-phani_java-ngj9/;;https://leetcode.com/problems/employee-free-time/solutions/1050879/java-on-log-k-priorityqueue-by-xbe-2nit/;;https://leetcode.com/problems/employee-free-time/solutions/1052162/priorityqueue-by-argenbarakanov-1u90/;;https://leetcode.com/problems/employee-free-time/solutions/739702/java-priorityqueue-greedy-solution-merge-x5ot/;;https://leetcode.com/problems/employee-free-time/solutions/6228866/merge-sorted-k-intervals-insert-missing-m3fzh/;;;=;==;=;=;

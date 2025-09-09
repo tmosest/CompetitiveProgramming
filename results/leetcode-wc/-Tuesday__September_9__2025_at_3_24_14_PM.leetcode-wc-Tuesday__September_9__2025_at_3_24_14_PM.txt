@@ -1,0 +1,29 @@
+2352. Equal Row and Column Pairs;=;=Medium;=;=public int equalPairs(int[][] grid);=;=Given a 0-indexed n x n integer matrix grid, return the number of pairs (ri, cj) such that row ri and column cj are equal.
+
+A row and column pair is considered equal if they contain the same elements in the same order (i.e., an equal array).
+
+ 
+
+Example 1:
+
+
+Input: grid = [[3,2,1],[1,7,6],[2,7,7]]
+Output: 1
+Explanation: There is 1 equal row and column pair:
+- (Row 2, Column 1): [2,7,7]
+Example 2:
+
+
+Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]
+Output: 3
+Explanation: There are 3 equal row and column pairs:
+- (Row 0, Column 0): [3,1,2,2]
+- (Row 2, Column 2): [2,4,2,2]
+- (Row 3, Column 2): [2,4,2,2]
+ 
+
+Constraints:
+
+n == grid.length == grid[i].length
+1 <= n <= 200
+1 <= grid[i][j] <= 105;=;=https://leetcode.com/problems/equal-row-and-column-pairs/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/equal-row-and-column-pairs/solutions/7116504/beginner-friendly-dry-run-includedequal-0d26c/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/7147273/marveleous-wonder-of-strings-in-array-by-h6gx/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/3630812/java-c-python-easy-to-understand-by-armo-m22q/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/6858302/simple-approach-by-haricharan123461-m4tr/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/2324750/javapython-3-on-2-codes-w-brief-explanat-m31v/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/7008441/java-easy-solution-by-guni_paliwal-5j94/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/2325191/java-two-pass-clean-solution-on2-by-ange-bhjg/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/6510814/easiest-and-java-solution-by-using-hashm-z7d3/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/6868011/simplest-solution-using-java-by-sss2803-njoy/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/6913925/hash-table-clean-and-easy-to-understand-x1pc0/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/5894798/java-hashmap-solution-by-pranavya_akula-fxi1/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/5782791/2ms-beat-100-hashkey-handling-dicussion-faabq/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/2324649/java-hashmap-by-clasiqh-okvw/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/3630920/hashmap-solution-video-java-c-python-by-nw0l5/;;https://leetcode.com/problems/equal-row-and-column-pairs/solutions/2325049/dont-think-too-much-by-hekarket-gqa3/;;;=;==;=;=;

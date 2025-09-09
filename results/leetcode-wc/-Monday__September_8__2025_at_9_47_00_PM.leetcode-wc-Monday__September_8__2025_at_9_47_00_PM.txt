@@ -1,0 +1,26 @@
+930. Binary Subarrays With Sum;=;=Medium;=;=publicÊintÊnumSubarraysWithSum(int[]Ênums,ÊintÊgoal);=;=Given a binary array nums and an integer goal, return the number of non-empty subarrays with a sum goal.
+
+A subarray is a contiguous part of the array.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,0,1,0,1], goal = 2
+Output: 4
+Explanation: The 4 subarrays are bolded and underlined below:
+[1,0,1,0,1]
+[1,0,1,0,1]
+[1,0,1,0,1]
+[1,0,1,0,1]
+Example 2:
+
+Input: nums = [0,0,0,0,0], goal = 0
+Output: 15
+Ê
+
+Constraints:
+
+1 <= nums.length <= 3 * 104
+nums[i] is either 0 or 1.
+0 <= goal <= nums.length;=;=https://leetcode.com/problems/binary-subarrays-with-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/binary-subarrays-with-sum/solutions/4873917/why-usual-sliding-window-fails-approach-dfwpm/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/4872696/java-prefix-sum-3ms-easy-to-understand-e-8380/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/4872579/solved-with-sliding-window-brute-force-y-k7e3/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/7052249/930-binary-subarrays-with-sum-by-akshat-kmo7z/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/4872605/prefixsumhashmap-9885-beats-on-time-comp-hcxb/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/7112086/two-approaches-sliding-window-and-prefix-9u28/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/6877487/easiest-explanation-code-2-approaches-ja-vsdc/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/4873684/3-approach-all-3-explained-in-depth-java-zxe1/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/7017356/beats-100-using-sliding-window-and-mathe-caeu/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/7094813/counting-subarrays-with-sum-exactly-k-sl-9xe9/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/7028137/prefixsum-hashmap-solution-dry-run-by-ar-6fd7/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/7051008/shopping-for-exactly-goal-how-we-solved-vyrw2/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/7046443/java-sliding-window-on-explained-with-in-eqld/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/6283353/prefix-sum-without-hashmap-explained-usi-h2gt/;;https://leetcode.com/problems/binary-subarrays-with-sum/solutions/6946569/all-2-approaches-visuals-dry-run-brute-f-u4t0/;;;=;==;=;=;

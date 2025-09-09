@@ -1,0 +1,30 @@
+1554. Strings Differ by One Character;=;=Medium;=;=public boolean differByOne(String[] dict);=;=Given a list of strings dict where all the strings are of the same length.
+
+Return true if there are 2 strings that only differ by 1 character in the same index, otherwise return false.
+
+ 
+
+Example 1:
+
+Input: dict = ["abcd","acbd", "aacd"]
+Output: true
+Explanation: Strings "abcd" and "aacd" differ only by one character in the index 1.
+Example 2:
+
+Input: dict = ["ab","cd","yz"]
+Output: false
+Example 3:
+
+Input: dict = ["abcd","cccc","abyd","abab"]
+Output: true
+ 
+
+Constraints:
+
+The number of characters in dict <= 105
+dict[i].length == dict[j].length
+dict[i] should be unique.
+dict[i] contains only lowercase English letters.
+ 
+
+Follow up: Could you solve this problem in O(n * m) where n is the length of dict and m is the length of each string.;=;=https://leetcode.com/problems/strings-differ-by-one-character/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/strings-differ-by-one-character/solutions/6884194/polynomial-hashing-approach-explained-by-8tlr/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/2065288/java-solution-that-actually-works-based-919zs/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/1655572/easy-and-clean-java-omn-solution-by-icec-pdy5/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/3971276/trie-and-rabin-karp-solutions-explanatio-o4ko/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/1624598/java-hashmap-solution-by-noobbbbcoder-aqkz/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/1994053/java-trie-solution-by-6x7-kj8x/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/1890145/hashset-by-ntinamu7543-rfqw/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/2489359/java-trie-solution-by-yugandhar02-c288/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/2393368/java-easy-new-test-cases-easy-to-underst-vrb2/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/1983321/two-stage-comparison-java-solution-with-o0x82/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/1584205/easy-java-hashset-on-m-solution-beats-96-vpzv/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/6830765/java-solution-works-with-new-test-cases-8mrl7/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/6628163/easy-trietree-java-solution-by-code_newb-zhol/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/4418832/o26mn-java-solution-should-been-better-t-6na4/;;https://leetcode.com/problems/strings-differ-by-one-character/solutions/4206182/java-simple-solution-brute-force-beat-20-z3bx/;;;=;==;=;=;

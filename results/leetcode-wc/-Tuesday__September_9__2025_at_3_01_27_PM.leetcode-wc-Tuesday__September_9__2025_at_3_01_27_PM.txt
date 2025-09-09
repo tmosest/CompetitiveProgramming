@@ -1,0 +1,29 @@
+1666. Change the Root of a Binary Tree;=;=Medium;=;=// Definition for a Node. Node     public int val;    public Node left;    public Node right;    public Node parent;;class      public Node flipBinaryTree(Node root, Node leaf);=;=Given the root of a binary tree and a leaf node, reroot the tree so that the leaf is the new root.
+
+You can reroot the tree with the following steps for each node cur on the path starting from the leaf up to the root??? excluding the root:
+
+If cur has a left child, then that child becomes cur's right child.
+cur's original parent becomes cur's left child. Note that in this process the original parent's pointer to cur becomes null, making it have at most one child.
+Return the new root of the rerooted tree.
+
+Note: Ensure that your solution sets the Node.parent pointers correctly after rerooting or you will receive "Wrong Answer".
+
+ 
+
+Example 1:
+
+
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], leaf = 7
+Output: [7,2,null,5,4,3,6,null,null,null,1,null,null,0,8]
+Example 2:
+
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], leaf = 0
+Output: [0,1,null,3,8,5,null,null,null,6,2,null,null,7,4]
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [2, 100].
+-109 <= Node.val <= 109
+All Node.val are unique.
+leaf exist in the tree.;=;=https://leetcode.com/problems/change-the-root-of-a-binary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/change-the-root-of-a-binary-tree/solutions/954468/java-dfs-its-all-about-pointer-manipulat-vb2l/;;https://leetcode.com/problems/change-the-root-of-a-binary-tree/solutions/4611012/java-solution-dfs-beats-100-by-ndsjqwbbb-u5q2/;;https://leetcode.com/problems/change-the-root-of-a-binary-tree/solutions/3798696/java-ologn-iteration-by-jhdwhz-56ha/;;https://leetcode.com/problems/change-the-root-of-a-binary-tree/solutions/5365541/post-order-traversal-on-without-using-pa-ffwd/;;https://leetcode.com/problems/change-the-root-of-a-binary-tree/solutions/5187166/simple-java-dfs-by-envy7-sbt7/;;https://leetcode.com/problems/change-the-root-of-a-binary-tree/solutions/4223928/beats-100-simple-solution-of-chaging-the-n36q/;;https://leetcode.com/problems/change-the-root-of-a-binary-tree/solutions/4154526/java-oh-solution-no-recursion-too-frustr-8ncy/;;https://leetcode.com/problems/change-the-root-of-a-binary-tree/solutions/3055694/solution-by-deleted_user-1yy9/;;;=;==;=;=;

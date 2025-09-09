@@ -1,0 +1,23 @@
+255. Verify Preorder Sequence in Binary Search Tree;=;=Medium;=;=public boolean verifyPreorder(int[] preorder);=;=Given an array of unique integers preorder, return true if it is the correct preorder traversal sequence of a binary search tree.
+
+ 
+
+Example 1:
+
+
+Input: preorder = [5,2,1,3,6]
+Output: true
+Example 2:
+
+Input: preorder = [5,2,6,1,3]
+Output: false
+ 
+
+Constraints:
+
+1 <= preorder.length <= 104
+1 <= preorder[i] <= 104
+All the elements of preorder are unique.
+ 
+
+Follow up: Could you do it using only constant space complexity?;=;=https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/68142/java-on-and-o1-extra-space-by-stefanpoch-7ibk/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/6826888/beats-80-java-simple-solutio-using-stack-j0wt/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/68144/java-on-log-n-time-and-o1-space-recursiv-ktrs/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/2072117/java-recursion-by-somesh9827-jemu/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/7146010/optimal-recursive-solution-tc-onsc-o1-by-rh39/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/68147/easy-solution-with-recursion-by-skywalke-wh7t/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/1809470/java-2-simple-solutions-98-speed-by-stud-3se4/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/6830672/monotonic-decreasing-stack-explained-by-sarka/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/6819049/java-simple-stack-by-rnotappl-g3iq/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/7037868/java-recursive-solution-without-extra-da-4lml/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/68193/constant-space-onlogn-worst-case-on2-rec-cdh9/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/6308294/java-on-preorder-to-midorder-by-qikaigao-c2ua/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/6003289/solution-based-on-intutive-preoder-prope-8uka/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/4990449/java-solution-with-deque-10-ms-by-goldru-vtm4/;;https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/solutions/4871507/java-monotonic-stack-observation-explain-xgkm/;;;=;==;=;=;

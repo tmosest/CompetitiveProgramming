@@ -1,0 +1,29 @@
+685. Redundant Connection II;=;=Hard;=;=public int[] findRedundantDirectedConnection(int[][] edges);=;=In this problem, a rooted tree is a directed graph such that, there is exactly one node (the root) for which all other nodes are descendants of this node, plus every node has exactly one parent, except for the root node which has no parents.
+
+The given input is a directed graph that started as a rooted tree with n nodes (with distinct values from 1 to n), with one additional directed edge added. The added edge has two different vertices chosen from 1 to n, and was not an edge that already existed.
+
+The resulting graph is given as a 2D-array of edges. Each element of edges is a pair [ui, vi] that represents a directed edge connecting nodes ui and vi, where ui is a parent of child vi.
+
+Return an edge that can be removed so that the resulting graph is a rooted tree of n nodes. If there are multiple answers, return the answer that occurs last in the given 2D-array.
+
+ 
+
+Example 1:
+
+
+Input: edges = [[1,2],[1,3],[2,3]]
+Output: [2,3]
+Example 2:
+
+
+Input: edges = [[1,2],[2,3],[3,4],[4,1],[1,5]]
+Output: [4,1]
+ 
+
+Constraints:
+
+n == edges.length
+3 <= n <= 1000
+edges[i].length == 2
+1 <= ui, vi <= n
+ui != vi;=;=https://leetcode.com/problems/redundant-connection-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/redundant-connection-ii/solutions/2190590/explained-why-can-i-apply-dsu-to-a-direc-owdt/;;https://leetcode.com/problems/redundant-connection-ii/solutions/6970768/balanced-roots-detect-delete-the-imposto-99yy/;;https://leetcode.com/problems/redundant-connection-ii/solutions/6901157/java-solution-using-union-based-approach-856l/;;https://leetcode.com/problems/redundant-connection-ii/solutions/6351491/java-solution-dsu-by-dsuryaprakash89-2pvj/;;https://leetcode.com/problems/redundant-connection-ii/solutions/6390462/95-beats-done-using-modified-union-and-f-rpbz/;;https://leetcode.com/problems/redundant-connection-ii/solutions/6344190/dsu-easy-to-understand-the-code-by-algoa-9jbh/;;https://leetcode.com/problems/redundant-connection-ii/solutions/6363824/java-soln-with-easy-to-understand-and-de-8oxk/;;https://leetcode.com/problems/redundant-connection-ii/solutions/1689003/java-disjoint-set-solution-using-indegre-qtdt/;;https://leetcode.com/problems/redundant-connection-ii/solutions/2012203/java-straightforward-check-from-end-to-s-5mlo/;;https://leetcode.com/problems/redundant-connection-ii/solutions/2373872/easy-solution-faster-by-pritamsinghsolan-qisw/;;https://leetcode.com/problems/redundant-connection-ii/solutions/3430968/solution-by-deleted_user-j8kt/;;https://leetcode.com/problems/redundant-connection-ii/solutions/1618773/intuitive-java-solution-with-explanation-c84t/;;https://leetcode.com/problems/redundant-connection-ii/solutions/2761007/java-unionfind-easy-solution-by-raymond_-62rv/;;https://leetcode.com/problems/redundant-connection-ii/solutions/2801373/java-solution-using-union-find-with-expl-pkpe/;;https://leetcode.com/problems/redundant-connection-ii/solutions/1771592/java-solution-with-very-detail-explanati-322o/;;;=;==;=;=;

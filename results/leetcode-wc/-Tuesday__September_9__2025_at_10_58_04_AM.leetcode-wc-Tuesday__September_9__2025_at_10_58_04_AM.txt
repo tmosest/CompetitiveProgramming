@@ -1,0 +1,56 @@
+2102. Sequentially Ordinal Rank Tracker;=;=Hard;=;=SORTrackerÊÊÊÊÊpublicÊSORTracker()ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊvoidÊadd(StringÊname,ÊintÊscore)ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊStringÊget()ÊÊÊÊÊÊÊÊÊÊÊÊÊ/ÊÊYourÊSORTrackerÊobjectÊwillÊbeÊinstantiatedÊandÊcalledÊasÊsuch:ÊÊSORTrackerÊobjÊ=ÊnewÊSORTracker();ÊÊobj.add(name,score);ÊÊStringÊparam_2Ê=Êobj.get();;=;=A scenic location is represented by its name and attractiveness score, where name is a unique string among all locations and score is an integer. Locations can be ranked from the best to the worst. The higher the score, the better the location. If the scores of two locations are equal, then the location with the lexicographically smaller name is better.
+
+You are building a system that tracks the ranking of locations with the system initially starting with no locations. It supports:
+
+Adding scenic locations, one at a time.
+Querying the ith best location of all locations already added, where i is the number of times the system has been queried (including the current query).
+For example, when the system is queried for the 4th time, it returns the 4th best location of all locations already added.
+Note that the test data are generated so that at any time, the number of queries does not exceed the number of locations added to the system.
+
+Implement the SORTracker class:
+
+SORTracker() Initializes the tracker system.
+void add(string name, int score) Adds a scenic location with name and score to the system.
+string get() Queries and returns the ith best location, where i is the number of times this method has been invoked (including this invocation).
+Ê
+
+Example 1:
+
+Input
+["SORTracker", "add", "add", "get", "add", "get", "add", "get", "add", "get", "add", "get", "get"]
+[[], ["bradford", 2], ["branford", 3], [], ["alps", 2], [], ["orland", 2], [], ["orlando", 3], [], ["alpine", 2], [], []]
+Output
+[null, null, null, "branford", null, "alps", null, "bradford", null, "bradford", null, "bradford", "orland"]
+
+Explanation
+SORTracker tracker = new SORTracker(); // Initialize the tracker system.
+tracker.add("bradford", 2); // Add location with name="bradford" and score=2 to the system.
+tracker.add("branford", 3); // Add location with name="branford" and score=3 to the system.
+tracker.get();              // The sorted locations, from best to worst, are: branford, bradford.
+                            // Note that branford precedes bradford due to its higher score (3 > 2).
+                            // This is the 1st time get() is called, so return the best location: "branford".
+tracker.add("alps", 2);     // Add location with name="alps" and score=2 to the system.
+tracker.get();              // Sorted locations: branford, alps, bradford.
+                            // Note that alps precedes bradford even though they have the same score (2).
+                            // This is because "alps" is lexicographically smaller than "bradford".
+                            // Return the 2nd best location "alps", as it is the 2nd time get() is called.
+tracker.add("orland", 2);   // Add location with name="orland" and score=2 to the system.
+tracker.get();              // Sorted locations: branford, alps, bradford, orland.
+                            // Return "bradford", as it is the 3rd time get() is called.
+tracker.add("orlando", 3);  // Add location with name="orlando" and score=3 to the system.
+tracker.get();              // Sorted locations: branford, orlando, alps, bradford, orland.
+                            // Return "bradford".
+tracker.add("alpine", 2);   // Add location with name="alpine" and score=2 to the system.
+tracker.get();              // Sorted locations: branford, orlando, alpine, alps, bradford, orland.
+                            // Return "bradford".
+tracker.get();              // Sorted locations: branford, orlando, alpine, alps, bradford, orland.
+                            // Return "orland".
+Ê
+
+Constraints:
+
+name consists of lowercase English letters, and is unique among all locations.
+1 <= name.length <= 10
+1 <= score <= 105
+At any time, the number of calls to get does not exceed the number of calls to add.
+At most 4 * 104 calls in total will be made to add and get.;=;=https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/1623437/java-treeset-pointer-simple-by-tobias2co-hgjh/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/1632156/two-heaps-by-penguindev-gb6p/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/2595070/java-using-min-max__heap-by-aditya_jain_-yqig/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/2176110/java-simple-solution-using-minheap-and-m-xtbz/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/2571762/java-no-need-for-treeset-binary-search-w-ocl9/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/1966133/sequentially-ordinal-rank-tracker-java-t-wcui/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/3011388/java-binary-search-by-banghuazhao-gduu/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/2890743/python-100-faster-solution-with-proof-by-mlk9/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/2123859/java-using-min-heap-and-max-heap-by-mfib-ul9f/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/1942474/java-min-max-heap-solution-easy-by-devan-yh9o/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/1623583/java-simple-solution-by-rueihuan-j85v/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/2752795/tle-to-acceptedbinary-search-to-find-ins-swt1/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/6056365/two-priorityqueue-by-fredzqm-8qii/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/5639226/max-min-heap-solution-by-its_shiv43-shmr/;;https://leetcode.com/problems/sequentially-ordinal-rank-tracker/solutions/5634672/java-javascript-typescript-c-c-kotlin-go-e51a/;;;=;==;=;=;

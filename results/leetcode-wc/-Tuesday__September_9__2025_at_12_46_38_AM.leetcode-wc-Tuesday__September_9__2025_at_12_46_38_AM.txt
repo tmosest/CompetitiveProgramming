@@ -1,0 +1,25 @@
+858. Mirror Reflection;=;=Medium;=;=public int mirrorReflection(int p, int q);=;=There is a special square room with mirrors on each of the four walls. Except for the southwest corner, there are receptors on each of the remaining corners, numbered 0, 1, and 2.
+
+The square room has walls of length p and a laser ray from the southwest corner first meets the east wall at a distance q from the 0th receptor.
+
+Given the two integers p and q, return the number of the receptor that the ray meets first.
+
+The test cases are guaranteed so that the ray will meet a receptor eventually.
+
+ 
+
+Example 1:
+
+
+Input: p = 2, q = 1
+Output: 2
+Explanation: The ray meets receptor 2 the first time it gets reflected back to the left wall.
+Example 2:
+
+Input: p = 3, q = 1
+Output: 1
+ 
+
+Constraints:
+
+1 <= q <= p <= 1000;=;=https://leetcode.com/problems/mirror-reflection/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/mirror-reflection/solutions/2377070/pseudocode-explain-why-odd-and-even-matt-w65f/;;https://leetcode.com/problems/mirror-reflection/solutions/2376302/java-easy-solution-with-left-and-right-s-bltr/;;https://leetcode.com/problems/mirror-reflection/solutions/939187/simple-explanation-with-java-code-by-wil-858v/;;https://leetcode.com/problems/mirror-reflection/solutions/2376836/0-ms-faster-than-10000-of-java-online-su-d6n8/;;https://leetcode.com/problems/mirror-reflection/solutions/2377427/easy-java-solution-faster-than-100-by-ac-pfr8/;;https://leetcode.com/problems/mirror-reflection/solutions/2379928/super-fast-gcdlcm-java-solute-in-solvent-tukp/;;https://leetcode.com/problems/mirror-reflection/solutions/2376940/java-ll-easy-to-understand-solution-by-s-ig9v/;;https://leetcode.com/problems/mirror-reflection/solutions/2376992/java-easy-100-faster-gcd-by-tauhait-h6ny/;;https://leetcode.com/problems/mirror-reflection/solutions/2392011/java-easiest-solution-0ms-runtime-faster-3gjo/;;https://leetcode.com/problems/mirror-reflection/solutions/2376888/java-6-liner-0ms-100-faster-solution-by-s7mfc/;;https://leetcode.com/problems/mirror-reflection/solutions/4334708/beats-99-easiest-java-solution-by-shivan-ouwj/;;https://leetcode.com/problems/mirror-reflection/solutions/2378550/java-math-solution-beats-100-by-olsh-jhgc/;;https://leetcode.com/problems/mirror-reflection/solutions/2376161/java-solution-by-solved-k8vh/;;https://leetcode.com/problems/mirror-reflection/solutions/2380580/javaeli5-solution-with-illustrations-by-zlhcb/;;https://leetcode.com/problems/mirror-reflection/solutions/4307943/javaccjavascriptsimple-optimize-solution-n29g/;;;=;==;=;=;

@@ -1,0 +1,28 @@
+1980. Find Unique Binary String;=;=Medium;=;=public String findDifferentBinaryString(String[] nums);=;=Given an array of strings nums containing n unique binary strings each of length n, return a binary string of length n that does not appear in nums. If there are multiple answers, you may return any of them.
+
+ 
+
+Example 1:
+
+Input: nums = ["01","10"]
+Output: "11"
+Explanation: "11" does not appear in nums. "00" would also be correct.
+Example 2:
+
+Input: nums = ["00","01"]
+Output: "11"
+Explanation: "11" does not appear in nums. "10" would also be correct.
+Example 3:
+
+Input: nums = ["111","011","001"]
+Output: "101"
+Explanation: "101" does not appear in nums. "000", "010", "100", and "110" would also be correct.
+ 
+
+Constraints:
+
+n == nums.length
+1 <= n <= 16
+nums[i].length == n
+nums[i] is either '0' or '1'.
+All the strings of nums are unique.;=;=https://leetcode.com/problems/find-unique-binary-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-unique-binary-string/solutions/6444814/beats-100-efficient-unique-binary-string-rmah/;;https://leetcode.com/problems/find-unique-binary-string/solutions/1418687/detailed-explanation-on-java-c-python-sh-fs1f/;;https://leetcode.com/problems/find-unique-binary-string/solutions/6557676/video-give-me-7-minutes-how-we-think-abo-lc5j/;;https://leetcode.com/problems/find-unique-binary-string/solutions/4292653/beats-100-explained-with-video-simplest-nfgs3/;;https://leetcode.com/problems/find-unique-binary-string/solutions/7154553/hide-and-seek-binary-edition-wheres-wald-58w4/;;https://leetcode.com/problems/find-unique-binary-string/solutions/6444126/4-simple-solution-beat-100-c-by-inam_28_-vrmt/;;https://leetcode.com/problems/find-unique-binary-string/solutions/6444160/solution-for-leetcode1980-by-samir023041-2onz/;;https://leetcode.com/problems/find-unique-binary-string/solutions/4292864/3-approaches-brute-force-to-optimized-th-9ewl/;;https://leetcode.com/problems/find-unique-binary-string/solutions/6447290/beats-100-simplest-program-java-python-c-yden/;;https://leetcode.com/problems/find-unique-binary-string/solutions/4292875/sorting-cantors-diagonal-argument-explai-22ny/;;https://leetcode.com/problems/find-unique-binary-string/solutions/6444543/cantors-diagonalization-optimal-on-solut-85rs/;;https://leetcode.com/problems/find-unique-binary-string/solutions/6445126/beats-super-easy-beginners-java-c-c-pyth-iy7r/;;https://leetcode.com/problems/find-unique-binary-string/solutions/7074037/find-unique-binary-string-generate-and-c-fwjq/;;https://leetcode.com/problems/find-unique-binary-string/solutions/6444859/using-hashing-17msnew-methodfollow-for-o-bc59/;;https://leetcode.com/problems/find-unique-binary-string/solutions/4293749/video-give-me-7-minutes-how-we-think-abo-tcti/;;;=;==;=;=;

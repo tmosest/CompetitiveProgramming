@@ -1,0 +1,33 @@
+76. Minimum Window Substring;=;=Hard;=;=public String minWindow(String s, String t);=;=Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
+
+The testcases will be generated such that the answer is unique.
+
+ 
+
+Example 1:
+
+Input: s = "ADOBECODEBANC", t = "ABC"
+Output: "BANC"
+Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t.
+Example 2:
+
+Input: s = "a", t = "a"
+Output: "a"
+Explanation: The entire string s is the minimum window.
+Example 3:
+
+Input: s = "a", t = "aa"
+Output: ""
+Explanation: Both 'a's from t must be included in the window.
+Since the largest window of s only has one 'a', return empty string.
+ 
+
+Constraints:
+
+m == s.length
+n == t.length
+1 <= m, n <= 105
+s and t consist of uppercase and lowercase English letters.
+ 
+
+Follow up: Could you find an algorithm that runs in O(m + n) time?;=;=https://leetcode.com/problems/minimum-window-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-window-substring/solutions/5756564/video-sliding-window-solution-by-niits-gnec/;;https://leetcode.com/problems/minimum-window-substring/solutions/4673541/beats-100-explained-any-language-by-prod-7gfe/;;https://leetcode.com/problems/minimum-window-substring/solutions/7155811/simple-solution-with-best-explanation-sl-ohrz/;;https://leetcode.com/problems/minimum-window-substring/solutions/3164335/solution-by-deleted_user-0fsy/;;https://leetcode.com/problems/minimum-window-substring/solutions/7150486/beginner-friendly-dry-run-includedsimple-46k0/;;https://leetcode.com/problems/minimum-window-substring/solutions/4673578/beats-97-users-cjavapythonjavascript-exp-g9af/;;https://leetcode.com/problems/minimum-window-substring/solutions/5485181/sliding-window-beats-100-java-python-c-j-57n6/;;https://leetcode.com/problems/minimum-window-substring/solutions/6330795/sliding-window-explained-beginner-friend-ojis/;;https://leetcode.com/problems/minimum-window-substring/solutions/7057681/using-sliding-window-by-shresta-vorugant-yl3k/;;https://leetcode.com/problems/minimum-window-substring/solutions/1891931/sliding-window-approach-with-explanation-tgop/;;https://leetcode.com/problems/minimum-window-substring/solutions/7109460/fastest-java-code-using-sliding-window-a-mb1a/;;https://leetcode.com/problems/minimum-window-substring/solutions/7005311/minimum-window-substring-java-by-surya05-a47l/;;https://leetcode.com/problems/minimum-window-substring/solutions/7096340/easy-code-for-beginners-by-amyy_1256-7xc4/;;https://leetcode.com/problems/minimum-window-substring/solutions/7091740/easy-java-code-beats-users-in-by-shipra_-epnh/;;https://leetcode.com/problems/minimum-window-substring/solutions/6226503/animated-video-sliding-window-template-v-q06l/;;;=;==;=;=;

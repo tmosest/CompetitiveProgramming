@@ -1,0 +1,19 @@
+1550. Three Consecutive Odds;=;=Easy;=;=public boolean threeConsecutiveOdds(int[] arr);=;=Given an integer array arr, return true if there are three consecutive odd numbers in the array. Otherwise, return false.
+ 
+
+Example 1:
+
+Input: arr = [2,6,4,1]
+Output: false
+Explanation: There are no three consecutive odds.
+Example 2:
+
+Input: arr = [1,2,34,3,4,5,7,23,12]
+Output: true
+Explanation: [5,7,23] are three consecutive odds.
+ 
+
+Constraints:
+
+1 <= arr.length <= 1000
+1 <= arr[i] <= 1000;=;=https://leetcode.com/problems/three-consecutive-odds/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/three-consecutive-odds/solutions/6732151/3-approaches-with-images-example-walkthr-7c05/;;https://leetcode.com/problems/three-consecutive-odds/solutions/5393466/beats-100-explained-with-video-cjavapyth-b5r3/;;https://leetcode.com/problems/three-consecutive-odds/solutions/6733302/beats-space-o1-super-easy-beginners-java-0r1i/;;https://leetcode.com/problems/three-consecutive-odds/solutions/7158773/simple-few-lines-solution-beats-100-by-y-mwue/;;https://leetcode.com/problems/three-consecutive-odds/solutions/7133618/easy-way-to-approch-this-question-by-imb-4veu/;;https://leetcode.com/problems/three-consecutive-odds/solutions/5393679/easy-java-python3-c-solution-0-ms-_-by-s-g8dk/;;https://leetcode.com/problems/three-consecutive-odds/solutions/7109240/beginner-friendlyjava-beat-100-by-alagar-s4q8/;;https://leetcode.com/problems/three-consecutive-odds/solutions/5393409/sliding-window-space-o1-time-on-any-lang-jfbb/;;https://leetcode.com/problems/three-consecutive-odds/solutions/6732178/cpp-java-array-bit-manipulation-100-beat-zv6a/;;https://leetcode.com/problems/three-consecutive-odds/solutions/7101864/beginner-friendly-java-code-beats-100-0m-3jzo/;;https://leetcode.com/problems/three-consecutive-odds/solutions/7042142/three-consecutive-odds-by-e_deepika24-swh0/;;https://leetcode.com/problems/three-consecutive-odds/solutions/6733077/c-4-approaches-brute-force-sliding-windo-64zz/;;https://leetcode.com/problems/three-consecutive-odds/solutions/5393999/smart-solution-just-few-lines-beats-100-yr5pj/;;https://leetcode.com/problems/three-consecutive-odds/solutions/7094099/easy-java-by-dhankeerth-yswo/;;https://leetcode.com/problems/three-consecutive-odds/solutions/6754201/100-efficient-and-easy-approach-by-priya-0sh4/;;;=;==;=;=;

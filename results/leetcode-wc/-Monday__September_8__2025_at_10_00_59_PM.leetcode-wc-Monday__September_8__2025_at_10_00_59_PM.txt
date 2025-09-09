@@ -1,0 +1,37 @@
+3668. Restore Finishing Order;=;=Easy;=;=public int[] recoverOrder(int[] order, int[] friends);=;=You are given an integer array order of length n and an integer array friends.
+
+order contains every integer from 1 to n exactly once, representing the IDs of the participants of a race in their finishing order.
+friends contains the IDs of your friends in the race sorted in strictly increasing order. Each ID in friends is guaranteed to appear in the order array.
+Return an array containing your friends' IDs in their finishing order.
+
+ 
+
+Example 1:
+
+Input: order = [3,1,2,5,4], friends = [1,3,4]
+
+Output: [3,1,4]
+
+Explanation:
+
+The finishing order is [3, 1, 2, 5, 4]. Therefore, the finishing order of your friends is [3, 1, 4].
+
+Example 2:
+
+Input: order = [1,4,5,3,2], friends = [2,5]
+
+Output: [5,2]
+
+Explanation:
+
+The finishing order is [1, 4, 5, 3, 2]. Therefore, the finishing order of your friends is [5, 2].
+
+ 
+
+Constraints:
+
+1 <= n == order.length <= 100
+order contains every integer from 1 to n exactly once
+1 <= friends.length <= min(8, n)
+1 <= friends[i] <= n
+friends is strictly increasing;=;=https://leetcode.com/problems/restore-finishing-order/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/restore-finishing-order/solutions/7160966/time-complexity-on-m-space-complexity-on-g8bl/;;https://leetcode.com/problems/restore-finishing-order/solutions/7140209/javacpython-set-by-lee215-wx34/;;https://leetcode.com/problems/restore-finishing-order/solutions/7162780/friends-in-race-order-100-optimal-cpytho-uf57/;;https://leetcode.com/problems/restore-finishing-order/solutions/7166232/jsdi-simple-beats-100-by-abhinav_patel-79gp/;;https://leetcode.com/problems/restore-finishing-order/solutions/7164311/java-easy-solution-by-shreyagarg63-tndj/;;https://leetcode.com/problems/restore-finishing-order/solutions/7163317/easy-solution-in-cpp-by-xegl87zdze-7df5/;;https://leetcode.com/problems/restore-finishing-order/solutions/7162629/recover-order-from-friends-list-by-vansh-0tyu/;;https://leetcode.com/problems/restore-finishing-order/solutions/7140167/binary-search-c-java-c-beats-100-by-saya-p6s7/;;https://leetcode.com/problems/restore-finishing-order/solutions/7156081/2-ms-beats-7076-by-gunanshu_joshi-7tsi/;;https://leetcode.com/problems/restore-finishing-order/solutions/7142223/very-simple-clean-solution-easy-explanat-vjyx/;;https://leetcode.com/problems/restore-finishing-order/solutions/7140185/easy-solution-in-java-by-nidhibaratam200-wkya/;;https://leetcode.com/problems/restore-finishing-order/solutions/7151991/solution-that-beats-100-using-arrays-ple-jeb8/;;https://leetcode.com/problems/restore-finishing-order/solutions/7140386/recover-friends-finishing-order-brute-fo-uije/;;https://leetcode.com/problems/restore-finishing-order/solutions/7140195/simple-and-easy-by-younus07-i8o2/;;https://leetcode.com/problems/restore-finishing-order/solutions/7140231/most-efficient-beat-everyone-java-c-pyth-72nc/;;;=;==;=;=;

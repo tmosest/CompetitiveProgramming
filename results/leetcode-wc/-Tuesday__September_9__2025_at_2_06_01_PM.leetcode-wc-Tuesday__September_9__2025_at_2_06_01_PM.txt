@@ -1,0 +1,40 @@
+2382. Maximum Segment Sum After Removals;=;=Hard;=;=public long[] maximumSegmentSum(int[] nums, int[] removeQueries);=;=You are given two 0-indexed integer arrays nums and removeQueries, both of length n. For the ith query, the element in nums at the index removeQueries[i] is removed, splitting nums into different segments.
+
+A segment is a contiguous sequence of positive integers in nums. A segment sum is the sum of every element in a segment.
+
+Return an integer array answer, of length n, where answer[i] is the maximum segment sum after applying the ith removal.
+
+Note: The same index will not be removed more than once.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,5,6,1], removeQueries = [0,3,2,4,1]
+Output: [14,7,2,2,0]
+Explanation: Using 0 to indicate a removed element, the answer is as follows:
+Query 1: Remove the 0th element, nums becomes [0,2,5,6,1] and the maximum segment sum is 14 for segment [2,5,6,1].
+Query 2: Remove the 3rd element, nums becomes [0,2,5,0,1] and the maximum segment sum is 7 for segment [2,5].
+Query 3: Remove the 2nd element, nums becomes [0,2,0,0,1] and the maximum segment sum is 2 for segment [2]. 
+Query 4: Remove the 4th element, nums becomes [0,2,0,0,0] and the maximum segment sum is 2 for segment [2]. 
+Query 5: Remove the 1st element, nums becomes [0,0,0,0,0] and the maximum segment sum is 0, since there are no segments.
+Finally, we return [14,7,2,2,0].
+Example 2:
+
+Input: nums = [3,2,11,1], removeQueries = [3,2,1,0]
+Output: [16,5,3,0]
+Explanation: Using 0 to indicate a removed element, the answer is as follows:
+Query 1: Remove the 3rd element, nums becomes [3,2,11,0] and the maximum segment sum is 16 for segment [3,2,11].
+Query 2: Remove the 2nd element, nums becomes [3,2,0,0] and the maximum segment sum is 5 for segment [3,2].
+Query 3: Remove the 1st element, nums becomes [3,0,0,0] and the maximum segment sum is 3 for segment [3].
+Query 4: Remove the 0th element, nums becomes [0,0,0,0] and the maximum segment sum is 0, since there are no segments.
+Finally, we return [16,5,3,0].
+ 
+
+Constraints:
+
+n == nums.length == removeQueries.length
+1 <= n <= 105
+1 <= nums[i] <= 109
+0 <= removeQueries[i] < n
+All the values of removeQueries are unique.;=;=https://leetcode.com/problems/maximum-segment-sum-after-removals/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/3066942/java-6ms-on-time-space-arrays-only-by-sp-dxce/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2465271/very-easy-to-understand-java-only-treema-qftl/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2475116/java-2-ways-union-find-and-segment-tree-sc0jx/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2454850/java-clean-simple-union-find-by-palmas-lly3/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2462641/java-using-multiset-and-treeset-on-log-n-dxkq/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2454993/simple-java-solution-with-explanation-re-116m/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2455644/revere-union-find-java-explaination-by-p-2zs5/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2454413/simple-java-solution-using-prefixsum-tre-zefo/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/7055726/two-treesets-by-lilongxue-3u1d/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/6502983/path-compression-beats-100-7-ms-java-by-t1wzn/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/3929372/java-ordered-set-treemap-by-maybe_rz-0ous/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2803134/on-solution-using-union-find-by-aditya_4-iy6u/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2549943/100-simple-boundary-java-solution-with-j-wv6n/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2496365/segment-tree-by-java_programmer_ketan-xzbj/;;https://leetcode.com/problems/maximum-segment-sum-after-removals/solutions/2490353/java-javascript-c-solution-by-lachezarts-1rmy/;;;=;==;=;=;

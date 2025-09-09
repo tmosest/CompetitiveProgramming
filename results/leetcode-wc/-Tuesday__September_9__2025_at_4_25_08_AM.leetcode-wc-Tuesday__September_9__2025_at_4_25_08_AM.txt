@@ -1,0 +1,38 @@
+1096. Brace Expansion II;=;=Hard;=;=public List<String> braceExpansionII(String expression);=;=Under the grammar given below, strings can represent a set of lowercase words. Let R(expr) denote the set of words the expression represents.
+
+The grammar can best be understood through simple examples:
+
+Single letters represent a singleton set containing that word.
+R("a") = {"a"}
+R("w") = {"w"}
+When we take a comma-delimited list of two or more expressions, we take the union of possibilities.
+R("{a,b,c}") = {"a","b","c"}
+R("{{a,b},{b,c}}") = {"a","b","c"} (notice the final set only contains each word at most once)
+When we concatenate two expressions, we take the set of possible concatenations between two words where the first word comes from the first expression and the second word comes from the second expression.
+R("{a,b}{c,d}") = {"ac","ad","bc","bd"}
+R("a{b,c}{d,e}f{g,h}") = {"abdfg", "abdfh", "abefg", "abefh", "acdfg", "acdfh", "acefg", "acefh"}
+Formally, the three rules for our grammar:
+
+For every lowercase letter x, we have R(x) = {x}.
+For expressions e1, e2, ... , ek with k >= 2, we have R({e1, e2, ...}) = R(e1) ? R(e2) ? ...
+For expressions e1 and e2, we have R(e1 + e2) = {a + b for (a, b) in R(e1) * R(e2)}, where + denotes concatenation, and * denotes the cartesian product.
+Given an expression representing a set of words under the given grammar, return the sorted list of words that the expression represents.
+
+ 
+
+Example 1:
+
+Input: expression = "{a,b}{c,{d,e}}"
+Output: ["ac","ad","ae","bc","bd","be"]
+Example 2:
+
+Input: expression = "{{a,z},a{b,c},{ab,z}}"
+Output: ["a","ab","ac","z"]
+Explanation: Each distinct word is written only once in the final answer.
+ 
+
+Constraints:
+
+1 <= expression.length <= 60
+expression[i] consists of '{', '}', ','or lowercase English letters.
+The given expression represents a set of words based on the grammar given in the description.;=;=https://leetcode.com/problems/brace-expansion-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/brace-expansion-ii/solutions/2583555/java-10-ms-by-aditya_jain_2584550188-yg84/;;https://leetcode.com/problems/brace-expansion-ii/solutions/1871202/java-recursive-by-joseparente-knhk/;;https://leetcode.com/problems/brace-expansion-ii/solutions/2660145/simple-recursion-well-commented-java-96-yq3gf/;;https://leetcode.com/problems/brace-expansion-ii/solutions/2221111/shunting-yard-algorithm-java-by-student2-vm2v/;;https://leetcode.com/problems/brace-expansion-ii/solutions/1945534/java-recursive-by-devansh2805-mbhe/;;https://leetcode.com/problems/brace-expansion-ii/solutions/6077271/parse-expression-and-use-callcc-to-mater-whjn/;;https://leetcode.com/problems/brace-expansion-ii/solutions/6077385/parse-expr-and-recursively-expand-by-fre-fgjl/;;https://leetcode.com/problems/brace-expansion-ii/solutions/6026555/intuitive-java-solution-8ms-beats-100-by-nl2h/;;https://leetcode.com/problems/brace-expansion-ii/solutions/5948964/java-by-hassam_472-rk0v/;;https://leetcode.com/problems/brace-expansion-ii/solutions/5288523/java-dfs-based-solution-by-atulraju-quqx/;;https://leetcode.com/problems/brace-expansion-ii/solutions/5338951/java-recursive-descent-beats-100-time-by-x0qf/;;https://leetcode.com/problems/brace-expansion-ii/solutions/4022613/java-simple-solution-by-hiroland2011-wxc0/;;https://leetcode.com/problems/brace-expansion-ii/solutions/3739627/java-10ms-solution-by-aviraj2002-sgf8/;;https://leetcode.com/problems/brace-expansion-ii/solutions/3626962/14-ms-java-backtrack-solution-by-yangwud-r8pv/;;https://leetcode.com/problems/brace-expansion-ii/solutions/3392073/java-calculator-iii-framework-by-br4y-vlel/;;;=;==;=;=;

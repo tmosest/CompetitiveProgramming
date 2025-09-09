@@ -1,0 +1,36 @@
+782. Transform to Chessboard;=;=Hard;=;=public int movesToChessboard(int[][] board);=;=You are given an n x n binary grid board. In each move, you can swap any two rows with each other, or any two columns with each other.
+
+Return the minimum number of moves to transform the board into a chessboard board. If the task is impossible, return -1.
+
+A chessboard board is a board where no 0's and no 1's are 4-directionally adjacent.
+
+ 
+
+Example 1:
+
+
+Input: board = [[0,1,1,0],[0,1,1,0],[1,0,0,1],[1,0,0,1]]
+Output: 2
+Explanation: One potential sequence of moves is shown.
+The first move swaps the first and second column.
+The second move swaps the second and third row.
+Example 2:
+
+
+Input: board = [[0,1],[1,0]]
+Output: 0
+Explanation: Also note that the board with 0 in the top left corner, is also a valid chessboard.
+Example 3:
+
+
+Input: board = [[1,0],[1,0]]
+Output: -1
+Explanation: No matter what sequence of moves you make, you cannot end with a valid chessboard.
+ 
+
+Constraints:
+
+n == board.length
+n == board[i].length
+2 <= n <= 30
+board[i][j] is either 0 or 1.;=;=https://leetcode.com/problems/transform-to-chessboard/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/transform-to-chessboard/solutions/5204371/java-beats-100-by-deleted_user-p31v/;;https://leetcode.com/problems/transform-to-chessboard/solutions/1487132/java-counting-repeating-parts-by-samoyle-f2dx/;;https://leetcode.com/problems/transform-to-chessboard/solutions/992335/compress-rowscolumns-by-madno-i37t/;;https://leetcode.com/problems/transform-to-chessboard/solutions/3465684/solution-by-deleted_user-21as/;;https://leetcode.com/problems/transform-to-chessboard/solutions/1488687/java-easy-concise-by-rohitkumarsingh369-h904/;;https://leetcode.com/problems/transform-to-chessboard/solutions/4598486/proper-explanation-and-easy-code-time-on-f04p/;;https://leetcode.com/problems/transform-to-chessboard/solutions/3102973/java-working-wit-explanation-by-obose-eudz/;;https://leetcode.com/problems/transform-to-chessboard/solutions/1493909/java-exclude-impossible-cases-then-calcu-3ook/;;;=;==;=;=;

@@ -1,0 +1,46 @@
+3606. Coupon Code Validator;=;=Easy;=;=public List<String> validateCoupons(String[] code, String[] businessLine, boolean[] isActive);=;=You are given three arrays of length n that describe the properties of n coupons: code, businessLine, and isActive. The ith coupon has:
+
+code[i]: a string representing the coupon identifier.
+businessLine[i]: a string denoting the business category of the coupon.
+isActive[i]: a boolean indicating whether the coupon is currently active.
+A coupon is considered valid if all of the following conditions hold:
+
+code[i] is non-empty and consists only of alphanumeric characters (a-z, A-Z, 0-9) and underscores (_).
+businessLine[i] is one of the following four categories: "electronics", "grocery", "pharmacy", "restaurant".
+isActive[i] is true.
+Return an array of the codes of all valid coupons, sorted first by their businessLine in the order: "electronics", "grocery", "pharmacy", "restaurant", and then by code in lexicographical (ascending) order within each category.
+
+ 
+
+Example 1:
+
+Input: code = ["SAVE20","","PHARMA5","SAVE@20"], businessLine = ["restaurant","grocery","pharmacy","restaurant"], isActive = [true,true,true,true]
+
+Output: ["PHARMA5","SAVE20"]
+
+Explanation:
+
+First coupon is valid.
+Second coupon has empty code (invalid).
+Third coupon is valid.
+Fourth coupon has special character @ (invalid).
+Example 2:
+
+Input: code = ["GROCERY15","ELECTRONICS_50","DISCOUNT10"], businessLine = ["grocery","electronics","invalid"], isActive = [false,true,true]
+
+Output: ["ELECTRONICS_50"]
+
+Explanation:
+
+First coupon is inactive (invalid).
+Second coupon is valid.
+Third coupon has invalid business line (invalid).
+ 
+
+Constraints:
+
+n == code.length == businessLine.length == isActive.length
+1 <= n <= 100
+0 <= code[i].length, businessLine[i].length <= 100
+code[i] and businessLine[i] consist of printable ASCII characters.
+isActive[i] is either true or false.;=;=https://leetcode.com/problems/coupon-code-validator/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/coupon-code-validator/solutions/6926906/validate-and-sort-coupons-clean-code-beg-x1h5/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925907/super-easy-priority-queue-java-by-rishab-dgtl/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925761/beats-10000-simple-approach-step-by-step-kkup/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925738/best-approach-and-explaination-hash-map-va2ng/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925749/using-basic-lists-sets-and-string-manipu-wlpj/;;https://leetcode.com/problems/coupon-code-validator/solutions/6938820/sorting-easy-implementation-by-ankith_ku-vlul/;;https://leetcode.com/problems/coupon-code-validator/solutions/6948802/easy-solution-by-qddl3tbjhy-t53d/;;https://leetcode.com/problems/coupon-code-validator/solutions/6927496/valid-coupons-by-business-category-with-g5hi5/;;https://leetcode.com/problems/coupon-code-validator/solutions/7159005/java-code-by-peeyush23-r56l/;;https://leetcode.com/problems/coupon-code-validator/solutions/6937243/java-solution-by-dharmendersheshma-7zlm/;;https://leetcode.com/problems/coupon-code-validator/solutions/6936597/clean-code-by-smileysuneet-gj3m/;;https://leetcode.com/problems/coupon-code-validator/solutions/6926450/java-implementation-coding-interviews-co-uzgp/;;https://leetcode.com/problems/coupon-code-validator/solutions/6925730/java-solution-by-solved-8bie/;;https://leetcode.com/problems/coupon-code-validator/solutions/6937474/java-easy-solution-by-iamsd-iikj/;;https://leetcode.com/problems/coupon-code-validator/solutions/6927624/java-solution-regex-sorting-hashset-by-k-n4mv/;;;=;==;=;=;

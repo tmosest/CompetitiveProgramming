@@ -1,0 +1,27 @@
+2520. Count the Digits That Divide a Number;=;=Easy;=;=public int countDigits(int num);=;=Given an integer num, return the number of digits in num that divide num.
+
+An integer val divides nums if nums % val == 0.
+
+ 
+
+Example 1:
+
+Input: num = 7
+Output: 1
+Explanation: 7 divides itself, hence the answer is 1.
+Example 2:
+
+Input: num = 121
+Output: 2
+Explanation: 121 is divisible by 1, but not 2. Since 1 occurs twice as a digit, we return 2.
+Example 3:
+
+Input: num = 1248
+Output: 4
+Explanation: 1248 is divisible by all of its digits, hence the answer is 4.
+ 
+
+Constraints:
+
+1 <= num <= 109
+num does not contain 0 as one of its digits.;=;=https://leetcode.com/problems/count-the-digits-that-divide-a-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7151641/100-beats-solution-in-java-by-hitarthsha-c3wh/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7150997/my-solution-2025-by-waitskott-lpt3/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7118159/count-the-dividing-digits-0ms-and-100-be-q4gd/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7100021/easy-java-solution-beats-100-runtime-0ms-sbl0/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7133616/easy-code-for-solve-this-problem-by-4_k4-omi4/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7121939/2520-count-the-digits-that-divide-a-numb-5ztb/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7112531/easy-way-to-learn-the-problem-solution-b-k8d7/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7106257/iterative-digit-check-approach-by-7qhlvd-ms3c/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7076192/count-the-digits-that-divide-a-number-ja-udho/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/2984535/simple-and-concise-100-fast-by-sam022020-y30o/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7024679/simple-logic-beats-100-0ms-easy-to-under-j9w4/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7018188/100-beats-easy-for-beginners-by-strom-br-ws64/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7034953/easy-code-for-beginners-and-understandab-ztqu/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7049870/beats-100-0ms-solution-by-arshiya1731-6qqv/;;https://leetcode.com/problems/count-the-digits-that-divide-a-number/solutions/7019552/java-easy-solution-0ms-by-akashraj06-c3t9/;;;=;==;=;=;

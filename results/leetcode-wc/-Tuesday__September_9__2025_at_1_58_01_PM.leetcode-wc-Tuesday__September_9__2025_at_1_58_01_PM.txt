@@ -1,0 +1,32 @@
+810. Chalkboard XOR Game;=;=Hard;=;=public boolean xorGame(int[] nums);=;=You are given an array of integers nums represents the numbers written on a chalkboard.
+
+Alice and Bob take turns erasing exactly one number from the chalkboard, with Alice starting first. If erasing a number causes the bitwise XOR of all the elements of the chalkboard to become 0, then that player loses. The bitwise XOR of one element is that element itself, and the bitwise XOR of no elements is 0.
+
+Also, if any player starts their turn with the bitwise XOR of all the elements of the chalkboard equal to 0, then that player wins.
+
+Return true if and only if Alice wins the game, assuming both players play optimally.
+
+ 
+
+Example 1:
+
+Input: nums = [1,1,2]
+Output: false
+Explanation: 
+Alice has two choices: erase 1 or erase 2. 
+If she erases 1, the nums array becomes [1, 2]. The bitwise XOR of all the elements of the chalkboard is 1 XOR 2 = 3. Now Bob can remove any element he wants, because Alice will be the one to erase the last element and she will lose. 
+If Alice erases 2 first, now nums become [1, 1]. The bitwise XOR of all the elements of the chalkboard is 1 XOR 1 = 0. Alice will lose.
+Example 2:
+
+Input: nums = [0,1]
+Output: true
+Example 3:
+
+Input: nums = [1,2,3]
+Output: true
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+0 <= nums[i] < 216;=;=https://leetcode.com/problems/chalkboard-xor-game/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/chalkboard-xor-game/solutions/6909829/simple-explanation-by-techno_cratt-bj4w/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/6964729/0ms-solution-100-beat-zero-runtime-hack-r4ru2/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/6211464/optimal-strategy-for-winning-the-xor-gam-8i20/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/6830831/clean-code-by-smileysuneet-b602/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/7132461/810-chalkboard-xor-game-game-theory-by-k-dd8o/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/4876088/javaeasy100-by-nishantpri-rbxm/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/3477714/solution-by-deleted_user-u191/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/6952574/just-a-xor-single-line-simple-code-by-ab-brhf/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/1230919/java-on-solution-full-math-proof-for-bot-pu1v/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/4876047/easybeat100java-by-nishantpri-zclc/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/6963714/chalkboard-xor-game-by-jeeleej-l82e/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/7031442/super-easy-solution-by-8850934544-3v5w/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/6895147/beats-100-in-java-just-a-simple-techniqu-bp74/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/6464973/chalkboard-xor-game-beats-100-by-aarnesh-zv48/;;https://leetcode.com/problems/chalkboard-xor-game/solutions/5751821/simple-logic-for-beginers-with-0ms-solut-fevy/;;;=;==;=;=;

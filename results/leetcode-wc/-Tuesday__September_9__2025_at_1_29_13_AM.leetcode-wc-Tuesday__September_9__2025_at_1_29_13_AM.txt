@@ -1,0 +1,35 @@
+3492. Maximum Containers on a Ship;=;=Easy;=;=public int maxContainers(int n, int w, int maxWeight);=;=You are given a positive integer n representing an n x n cargo deck on a ship. Each cell on the deck can hold one container with a weight of exactly w.
+
+However, the total weight of all containers, if loaded onto the deck, must not exceed the ship's maximum weight capacity, maxWeight.
+
+Return the maximum number of containers that can be loaded onto the ship.
+
+ 
+
+Example 1:
+
+Input: n = 2, w = 3, maxWeight = 15
+
+Output: 4
+
+Explanation:
+
+The deck has 4 cells, and each container weighs 3. The total weight of loading all containers is 12, which does not exceed maxWeight.
+
+Example 2:
+
+Input: n = 3, w = 5, maxWeight = 20
+
+Output: 4
+
+Explanation:
+
+The deck has 9 cells, and each container weighs 5. The maximum number of containers that can be loaded without exceeding maxWeight is 4.
+
+ 
+
+Constraints:
+
+1 <= n <= 1000
+1 <= w <= 1000
+1 <= maxWeight <= 109;=;=https://leetcode.com/problems/maximum-containers-on-a-ship/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6568930/one-liner-o1-cjavapy3jseasy-solution-w-e-e8st/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/7096643/java-1-liner-by-arshiya1731-11q0/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6568603/easy-detailed-solution-step-by-step-expl-7we4/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6950536/beats-100-javac-c-python-beginner-by-cod-9mlo/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6633212/100-beats-one-line-of-code-by-kdhakal-lsnx/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6568616/java-solution-by-harsh__005-u8is/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6568840/beats-100-math-by-dheeraj_2602-pk0i/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6573063/python-elegant-short-math-by-kyrylo-ktl-ccq1/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6671645/1-line-100-and-97-beaten-by-testzzzibe-lwdx/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6568685/math-java-by-akshay_kadamm-5f75/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6568623/easy-solution-java-python-c-by-vermaansh-g5iq/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6640311/beats-10000-by-darwadenidhi174-h6tc/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6569621/simple-2-line-code-easily-understandable-vl3p/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6569360/maximum-containers-that-can-be-filled-by-5iqc/;;https://leetcode.com/problems/maximum-containers-on-a-ship/solutions/6568670/java-solution-time-complexity-on-by-shik-d4fr/;;;=;==;=;=;

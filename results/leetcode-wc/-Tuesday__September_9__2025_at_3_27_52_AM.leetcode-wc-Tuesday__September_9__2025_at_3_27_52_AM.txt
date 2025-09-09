@@ -1,0 +1,22 @@
+2455. Average Value of Even Numbers That Are Divisible by Three;=;=Easy;=;=public int averageValue(int[] nums);=;=Given an integer array nums of positive integers, return the average value of all even integers that are divisible by 3.
+
+Note that the average of n elements is the sum of the n elements divided by n and rounded down to the nearest integer.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,6,10,12,15]
+Output: 9
+Explanation: 6 and 12 are even numbers that are divisible by 3. (6 + 12) / 2 = 9.
+Example 2:
+
+Input: nums = [1,2,4,7,10]
+Output: 0
+Explanation: There is no single number that satisfies the requirement, so return 0.
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 1000;=;=https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/7118012/3-solution-different-with-100-beast-by-p-xv2c/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/7055645/beats-100-0ms-java-solution-by-arshiya17-4k2v/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/2759159/java-fastest-solution-100-big-on-by-dele-ri9h/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/2761690/java-runtime-100-1ms-big-on-by-yorqinjon-g1lv/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/6723512/average-value-of-even-numbers-that-are-d-wnwd/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/7126969/java-easy-method-simple-math-concept-by-1s1kk/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/6431053/clarity-by-kaamaasheekarthikeyan-rgqa/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/6684992/simple-add-all-the-values-and-divide-by-iheft/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/6621101/easy-solution-in-java-by-prajesh07-mx6q/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/6365483/easy-solution-using-iteration-approach-b-mplm/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/6346793/easy-cpp-and-java-solution-beginners-fri-zqgx/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/6152809/1ms-in-java-very-easy-code-by-galani_jen-ozdf/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/2758042/java-easy-solution-100-faster-on-by-sruj-5k5k/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/2760518/java-easy-understanding-brute-force-solu-b4i9/;;https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/solutions/4649064/faster-lesser-cpython3javacpythoncexplai-w5ku/;;;=;==;=;=;

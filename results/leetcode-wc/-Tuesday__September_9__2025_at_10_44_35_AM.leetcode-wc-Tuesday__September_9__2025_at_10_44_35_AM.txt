@@ -1,0 +1,30 @@
+1293. Shortest Path in a Grid with Obstacles Elimination;=;=Hard;=;=publicÊintÊshortestPath(int[][]Êgrid,ÊintÊk);=;=You are given an m x n integer matrix grid where each cell is either 0 (empty) or 1 (obstacle). You can move up, down, left, or right from and to an empty cell in one step.
+
+Return the minimum number of steps to walk from the upper left corner (0, 0) to the lower right corner (m - 1, n - 1) given that you can eliminate at most k obstacles. If it is not possible to find such walk return -1.
+
+Ê
+
+Example 1:
+
+
+Input: grid = [[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]], k = 1
+Output: 6
+Explanation: 
+The shortest path without eliminating any obstacle is 10.
+The shortest path with one obstacle elimination at position (3,2) is 6. Such path is (0,0) -> (0,1) -> (0,2) -> (1,2) -> (2,2) -> (3,2) -> (4,2).
+Example 2:
+
+
+Input: grid = [[0,1,1],[1,1,1],[1,0,0]], k = 1
+Output: -1
+Explanation: We need to eliminate at least two obstacles to find such a walk.
+Ê
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 40
+1 <= k <= m * n
+grid[i][j] is either 0 or 1.
+grid[0][0] == grid[m - 1][n - 1] == 0;=;=https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/6954439/shortest-path-in-grid-with-obstacles-eli-9o3x/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/1188835/java-clean-omnk-time-bfs-solution-compar-fft0/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/2758262/bfs-soln-java-easy-to-understand-by-aman-mr6b/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/2757828/two-java-dfs-solution-tc-tc-omn-sc-omnk-mxzxu/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/2355790/java-concise-and-clean-simplest-aa-star-fp2lw/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/7159596/beginner-code-by-vishva_9166-wlqg/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/5535537/easy-solution-omnk-optimised-by-veer1214-k5w0/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/4857571/java-easy-solution-using-bfs-92-by-ytcho-ei23/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/1979799/java-a-algorithm-a-star-algorithm-priori-ebhr/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/921400/my-java-solutions-with-comments-using-bf-8xq4/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/2760704/java-bfs-84-faster-easy-clean-code-by-te-o56s/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/7162808/simple-bfs-using-heap-by-lilongxue-lpe6/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/2613858/java-bfs-solution-with-an-explaination-y-l1r2/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/2480850/java-100-faster-solution-clean-bfs-code-37yhv/;;https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solutions/2758610/java-solutions-with-comments-dfs-with-me-ek8n/;;;=;==;=;=;

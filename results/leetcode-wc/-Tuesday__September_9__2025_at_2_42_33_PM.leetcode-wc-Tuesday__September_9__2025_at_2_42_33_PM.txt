@@ -1,0 +1,35 @@
+1675. Minimize Deviation in Array;=;=Hard;=;=public int minimumDeviation(int[] nums);=;=You are given an array nums of n positive integers.
+
+You can perform two types of operations on any element of the array any number of times:
+
+If the element is even, divide it by 2.
+For example, if the array is [1,2,3,4], then you can do this operation on the last element, and the array will be [1,2,3,2].
+If the element is odd, multiply it by 2.
+For example, if the array is [1,2,3,4], then you can do this operation on the first element, and the array will be [2,2,3,4].
+The deviation of the array is the maximum difference between any two elements in the array.
+
+Return the minimum deviation the array can have after performing some number of operations.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4]
+Output: 1
+Explanation: You can transform the array to [1,2,3,2], then to [2,2,3,2], then the deviation will be 3 - 2 = 1.
+Example 2:
+
+Input: nums = [4,1,5,20,3]
+Output: 3
+Explanation: You can transform the array after two operations to [4,2,5,5,3], then the deviation will be 5 - 2 = 3.
+Example 3:
+
+Input: nums = [2,10,8]
+Output: 3
+ 
+
+Constraints:
+
+n == nums.length
+2 <= n <= 5 * 104
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/minimize-deviation-in-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimize-deviation-in-array/solutions/3223541/day-55-priority_queue-easiest-beginner-f-yo4h/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/3223767/clean-codes-full-explanation-priority-qu-q9rp/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/3223829/java-easy-priority-queue-with-explanatio-kqf4/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/3223861/fast-java-solution-by-coding_menance-t0hc/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/1041702/java-solution-using-treeset-with-a-brief-popb/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/1782398/notagenius-thought-process-and-solution-y735u/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/5884058/simple-easy-to-understand-by-kdhakal-in19/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/3224278/2-easiest-java-solution-onlogn-explained-65lr/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/3224150/c-java-python-solution-in-on-logn-logmax-z1c3/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/1782183/java-explained-in-detail-priority-queue-ekihp/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/1781708/this-is-an-independent-solution-that-i-c-2d3g/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/3226817/java-priority-queue-13-lines-simple-by-j-mr0e/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/3225119/onlogn-solution-with-approach-by-code_ra-tf4h/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/1782818/c-easy-understanding-using-set-fully-exp-5aub/;;https://leetcode.com/problems/minimize-deviation-in-array/solutions/3223535/short-clean-explained-java-solution-by-h-zqja/;;;=;==;=;=;

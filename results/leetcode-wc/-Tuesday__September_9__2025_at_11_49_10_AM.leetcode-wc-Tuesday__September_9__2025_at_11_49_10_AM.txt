@@ -1,0 +1,44 @@
+1942. The Number of the Smallest Unoccupied Chair;=;=Medium;=;=public int smallestChair(int[][] times, int targetFriend);=;=There is a party where n friends numbered from 0 to n - 1 are attending. There is an infinite number of chairs in this party that are numbered from 0 to infinity. When a friend arrives at the party, they sit on the unoccupied chair with the smallest number.
+
+For example, if chairs 0, 1, and 5 are occupied when a friend comes, they will sit on chair number 2.
+When a friend leaves the party, their chair becomes unoccupied at the moment they leave. If another friend arrives at that same moment, they can sit in that chair.
+
+You are given a 0-indexed 2D integer array times where times[i] = [arrivali, leavingi], indicating the arrival and leaving times of the ith friend respectively, and an integer targetFriend. All arrival times are distinct.
+
+Return the chair number that the friend numbered targetFriend will sit on.
+
+ 
+
+Example 1:
+
+Input: times = [[1,4],[2,3],[4,6]], targetFriend = 1
+Output: 1
+Explanation: 
+- Friend 0 arrives at time 1 and sits on chair 0.
+- Friend 1 arrives at time 2 and sits on chair 1.
+- Friend 1 leaves at time 3 and chair 1 becomes empty.
+- Friend 0 leaves at time 4 and chair 0 becomes empty.
+- Friend 2 arrives at time 4 and sits on chair 0.
+Since friend 1 sat on chair 1, we return 1.
+Example 2:
+
+Input: times = [[3,10],[1,5],[2,6]], targetFriend = 0
+Output: 2
+Explanation: 
+- Friend 1 arrives at time 1 and sits on chair 0.
+- Friend 2 arrives at time 2 and sits on chair 1.
+- Friend 0 arrives at time 3 and sits on chair 2.
+- Friend 1 leaves at time 5 and chair 0 becomes empty.
+- Friend 2 leaves at time 6 and chair 1 becomes empty.
+- Friend 0 leaves at time 10 and chair 2 becomes empty.
+Since friend 0 sat on chair 2, we return 2.
+ 
+
+Constraints:
+
+n == times.length
+2 <= n <= 104
+times[i].length == 2
+1 <= arrivali < leavingi <= 105
+0 <= targetFriend <= n - 1
+Each arrivali time is distinct.;=;=https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5897455/python3-9-lines-two-heaps-ts-94-95-by-sp-d0zh/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/6983380/java-priority-queue-sweep-seat-picking-i-t6jw/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5897506/master-the-chair-problem-with-easy-steps-mrip/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5897650/two-priority-queue-simple-explanation-wi-umsy/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5900548/very-easy-clean-code-illustration-full-c-4b63/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/1359844/two-min-heaps-with-explanation-by-gnaby-6nw2/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/6980931/java-solution-by-dheerajpoojary-pntz/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5897423/sort-and-2-heap-solution-beats-98-by-les-d5by/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5899444/simulate-arrival-and-departure-of-friend-320x/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5899394/simple-java-solution-by-harsh__005-y9i7/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5898475/onlogn-easy-to-digest-stepwise-java-c-py-zlmd/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/6764304/easy-to-understand-java-code-by-hee_maan-jmwc/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/6397859/java-solution-using-priorityqueue-and-tr-zpyo/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5898256/faster-than-9966-of-c-and-java-code-simp-idg0/;;https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5897802/java-clean-solution-by-shree_govind_jee-y14k/;;;=;==;=;=;

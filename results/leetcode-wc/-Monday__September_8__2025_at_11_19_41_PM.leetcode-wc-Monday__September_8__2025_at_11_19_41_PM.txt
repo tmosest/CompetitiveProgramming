@@ -1,0 +1,36 @@
+3351. Sum of Good Subsequences;=;=Hard;=;=public int sumOfGoodSubsequences(int[] nums);=;=You are given an integer array nums. A good subsequence is defined as a subsequence of nums where the absolute difference between any two consecutive elements in the subsequence is exactly 1.
+
+Return the sum of all possible good subsequences of nums.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+Note that a subsequence of size 1 is considered good by definition.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,1]
+
+Output: 14
+
+Explanation:
+
+Good subsequences are: [1], [2], [1], [1,2], [2,1], [1,2,1].
+The sum of elements in these subsequences is 14.
+Example 2:
+
+Input: nums = [3,4,5]
+
+Output: 40
+
+Explanation:
+
+Good subsequences are: [3], [4], [5], [3,4], [4,5], [3,4,5].
+The sum of elements in these subsequences is 40.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 105;=;=https://leetcode.com/problems/sum-of-good-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-good-subsequences/solutions/6028686/javacpython-dp-by-lee215-rbtd/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6098144/python3-8-lines-iterate-and-count-ts-99-8kjdo/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6029863/beginner-friendly-guide-to-solving-good-fyg3l/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6030998/dp-java-on-by-sourav_maz-2bxz/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6028954/beats-100-java-solution-optimum-solution-kyxt/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6028813/javacpython-dp-record-ways-and-prefix-su-rb4r/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/7083783/on-java-by-darkenigma-2bot/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6196428/java-execution-code-by-sarayu_28-y9vs/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6061476/simple-java-solution-by-sakshikishore-iotp/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6029946/dp-by-stwik_back-l6dp/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6028964/count-k-reducible-number-beats-100-runti-k043/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6076826/dp-count-by-num-by-ruinan-pn2s/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6047695/dp-java-solution-by-tadakamalla-ffr1/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6047694/dp-java-solution-by-tadakamalla-82b5/;;https://leetcode.com/problems/sum-of-good-subsequences/solutions/6041437/java-dp-hashmap-time-on-space-on-by-zhan-efsw/;;;=;==;=;=;

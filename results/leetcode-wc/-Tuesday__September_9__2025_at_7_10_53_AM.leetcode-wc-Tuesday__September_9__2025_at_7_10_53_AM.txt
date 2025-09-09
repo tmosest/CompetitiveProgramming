@@ -1,0 +1,42 @@
+2458. Height of Binary Tree After Subtree Removal Queries;=;=Hard;=;=/ÊÊDefinitionÊforÊaÊbinaryÊtreeÊnode.ÊÊpublicÊÊTreeNodeÊÊÊÊÊÊÊintÊval;ÊÊÊÊÊÊTreeNodeÊleft;ÊÊÊÊÊÊTreeNodeÊright;ÊÊÊÊÊÊTreeNode()ÊÊÊÊÊÊÊTreeNode(intÊval)ÊÊthis.valÊ=Êval;ÊÊÊÊÊÊÊTreeNode(intÊval,ÊTreeNodeÊleft,ÊTreeNodeÊright)ÊÊÊÊÊÊÊÊÊÊÊthis.valÊ=Êval;ÊÊÊÊÊÊÊÊÊÊthis.leftÊ=Êleft;ÊÊÊÊÊÊÊÊÊÊthis.rightÊ=Êright;ÊÊÊÊÊÊÊÊÊclassÊÊÊÊÊÊpublicÊint[]ÊtreeQueries(TreeNodeÊroot,Êint[]Êqueries);=;=You are given the root of a binary tree with n nodes. Each node is assigned a unique value from 1 to n. You are also given an array queries of size m.
+
+You have to perform m independent queries on the tree where in the ith query you do the following:
+
+Remove the subtree rooted at the node with the value queries[i] from the tree. It is guaranteed that queries[i] will not be equal to the value of the root.
+Return an array answer of size m where answer[i] is the height of the tree after performing the ith query.
+
+Note:
+
+The queries are independent, so the tree returns to its initial state after each query.
+The height of a tree is the number of edges in the longest simple path from the root to some node in the tree.
+Ê
+
+Example 1:
+
+
+Input: root = [1,3,4,2,null,6,5,null,null,null,null,null,7], queries = [4]
+Output: [2]
+Explanation: The diagram above shows the tree after removing the subtree rooted at node with value 4.
+The height of the tree is 2 (The path 1 -> 3 -> 2).
+Example 2:
+
+
+Input: root = [5,8,9,2,1,3,7,4,6], queries = [3,2,4,8]
+Output: [3,2,3,2]
+Explanation: We have the following queries:
+- Removing the subtree rooted at node with value 3. The height of the tree becomes 3 (The path 5 -> 8 -> 2 -> 4).
+- Removing the subtree rooted at node with value 2. The height of the tree becomes 2 (The path 5 -> 8 -> 1).
+- Removing the subtree rooted at node with value 4. The height of the tree becomes 3 (The path 5 -> 8 -> 2 -> 6).
+- Removing the subtree rooted at node with value 8. The height of the tree becomes 2 (The path 5 -> 9 -> 3).
+Ê
+
+Constraints:
+
+The number of nodes in the tree is n.
+2 <= n <= 105
+1 <= Node.val <= n
+All the values in the tree are unique.
+m == queries.length
+1 <= m <= min(n, 104)
+1 <= queries[i] <= n
+queries[i] != root.val;=;=https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/5968836/explained-step-by-step-beats-100-working-gzl4/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/5968942/tutorial-from-the-problem-contributor-df-gq7o/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/5969005/less-code-beats-100-single-traversal-vis-792w/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/2758211/java-2-pass-dfs-with-hashmaps-by-zadeluc-o6ci/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/7058678/java-best-easy-solution-by-fkbhjqzjpe-fuc9/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/5969155/java-clean-solution-by-shree_govind_jee-o0dc/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/2759081/java-very-easy-dfs-memoization-100-faste-ps89/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/5969846/simple-dfs-by-kanna-naveen-2f77/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/5969446/java-and-c-solution-using-level-order-on-ciok/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/4920575/javasegment-treedfs-by-rkroy-t4nj/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/5970728/simple-java-solution-by-harsh__005-tgn5/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/6494190/simple-java-solution-by-sakshikishore-whxt/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/5971047/java-by-siyadhri-3lan/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/3078705/beats-100-0-ms-16-ms-by-user4256be-xcqd/;;https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/solutions/5969991/java-solution-for-height-of-binary-tree-p2xcr/;;;=;==;=;=;

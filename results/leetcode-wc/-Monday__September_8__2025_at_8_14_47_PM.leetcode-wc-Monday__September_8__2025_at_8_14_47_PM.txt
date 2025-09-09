@@ -1,0 +1,28 @@
+801. Minimum Swaps To Make Sequences Increasing;=;=Hard;=;=public int minSwap(int[] nums1, int[] nums2);=;=You are given two integer arrays of the same length nums1 and nums2. In one operation, you are allowed to swap nums1[i] with nums2[i].
+
+For example, if nums1 = [1,2,3,8], and nums2 = [5,6,7,4], you can swap the element at i = 3 to obtain nums1 = [1,2,3,4] and nums2 = [5,6,7,8].
+Return the minimum number of needed operations to make nums1 and nums2 strictly increasing. The test cases are generated so that the given input always makes it possible.
+
+An array arr is strictly increasing if and only if arr[0] < arr[1] < arr[2] < ... < arr[arr.length - 1].
+
+ 
+
+Example 1:
+
+Input: nums1 = [1,3,5,4], nums2 = [1,2,3,7]
+Output: 1
+Explanation: 
+Swap nums1[3] and nums2[3]. Then the sequences are:
+nums1 = [1, 3, 5, 7] and nums2 = [1, 2, 3, 4]
+which are both strictly increasing.
+Example 2:
+
+Input: nums1 = [0,3,5,8,9], nums2 = [2,1,4,6,9]
+Output: 1
+ 
+
+Constraints:
+
+2 <= nums1.length <= 105
+nums2.length == nums1.length
+0 <= nums1[i], nums2[i] <= 2 * 105;=;=https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/1849616/fully-explained-solution-for-beginner-re-bqwb/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/1277478/from-recursion-to-dp-4-solutions-java-by-jywc/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/6947809/java-solution-using-dynamic-programming-lpyfe/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/1564560/cjavapython-simple-dp-on-time-o1-space-w-q3ex/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/1596348/java-1d-dp-easy-understanding-by-6862win-ifbg/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/3976863/java-with-explanation-dfs-memoization-sc-eh6p/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/3471328/solution-by-deleted_user-9ezd/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/1826333/java-easy-dp-by-nicolas2lee-aubs/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/2586400/java-recursion-and-memoization-solution-8hy3v/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/1664998/java-dp-iterative-solution-by-ailyasov-z6lp/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/1259760/on-dp-solution-with-commented-explanatio-2qcp/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/6863232/clear-explanation-of-swaps-and-non-swaps-tuy0/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/6710773/top-down-dp-by-saketcodescribe-w68k/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/6064588/dp-intuitive-on-space-solution-by-brisin-oe51/;;https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/solutions/5646247/2d-dp-by-robertskonieczny-t6ll/;;;=;==;=;=;

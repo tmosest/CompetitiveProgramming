@@ -1,0 +1,61 @@
+3538. Merge Operations for Minimum Travel Time;=;=Hard;=;=publicÊintÊminTravelTime(intÊl,ÊintÊn,ÊintÊk,Êint[]Êposition,Êint[]Êtime);=;=You are given a straight road of length l km, an integer n, an integer k, and two integer arrays, position and time, each of length n.
+
+The array position lists the positions (in km) of signs in strictly increasing order (with position[0] = 0 and position[n - 1] = l).
+
+Each time[i] represents the time (in minutes) required to travel 1 km between position[i] and position[i + 1].
+
+You must perform exactly k merge operations. In one merge, you can choose any two adjacent signs at indices i and i + 1 (with i > 0 and i + 1 < n) and:
+
+Update the sign at index i + 1 so that its time becomes time[i] + time[i + 1].
+Remove the sign at index i.
+Return the minimum total travel time (in minutes) to travel from 0 to l after exactly k merges.
+
+Ê
+
+Example 1:
+
+Input: l = 10, n = 4, k = 1, position = [0,3,8,10], time = [5,8,3,6]
+
+Output: 62
+
+Explanation:
+
+Merge the signs at indices 1 and 2. Remove the sign at index 1, and change the time at index 2 to 8 + 3 = 11.
+
+After the merge:
+position array: [0, 8, 10]
+time array: [5, 11, 6]
+Segment	Distance (km)	Time per km (min)	Segment Travel Time (min)
+0 ? 8	8	5	8 * 5 = 40
+8 ? 10	2	11	2 * 11 = 22
+Total Travel Time: 40 + 22 = 62, which is the minimum possible time after exactly 1 merge.
+Example 2:
+
+Input: l = 5, n = 5, k = 1, position = [0,1,2,3,5], time = [8,3,9,3,3]
+
+Output: 34
+
+Explanation:
+
+Merge the signs at indices 1 and 2. Remove the sign at index 1, and change the time at index 2 to 3 + 9 = 12.
+After the merge:
+position array: [0, 2, 3, 5]
+time array: [8, 12, 3, 3]
+Segment	Distance (km)	Time per km (min)	Segment Travel Time (min)
+0 ? 2	2	8	2 * 8 = 16
+2 ? 3	1	12	1 * 12 = 12
+3 ? 5	2	3	2 * 3 = 6
+Total Travel Time: 16 + 12 + 6 = 34, which is the minimum possible time after exactly 1 merge.
+Ê
+
+Constraints:
+
+1 <= l <= 105
+2 <= n <= min(l + 1, 50)
+0 <= k <= min(n - 2, 10)
+position.length == n
+position[0] = 0 and position[n - 1] = l
+position is sorted in strictly increasing order.
+time.length == n
+1 <= time[i] <= 100?
+1 <= sum(time) <= 100??????;=;=https://leetcode.com/problems/merge-operations-for-minimum-travel-time/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6712444/3d-dp-recurion-memoization-partition-dp-soy7w/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6713350/dp-solution-with-explanation-and-diagram-gz78/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6712454/2d-dp-detailed-explanation-pythonjavac-b-10gh/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6714444/dp-java-solution-memoization-by-jayantsa-52g4/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6712464/beats-99-clean-intuitive-java-by-dishant-thdz/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6713503/dp-java-faster-than-86-by-abhi_ji_ji-4ekp/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6729754/picking-write-approach-by-punitpunde-z0yh/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6722149/java-solution-by-barakamon-lekc/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6712929/java-recursive-dp-by-vidu171-xx5s/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6716017/intuitive-and-very-easily-explained-3d-r-hkc7/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6713299/java-recursion-memoization-on-k-101-time-kew7/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6760808/3d-dp-solution-okn2-by-saketcodescribe-1zj2/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6717558/java-dp-solution-beats-100-by-fatalme-8qkg/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6770341/short-solution-with-comments-tc-ok2-cdot-gf7g/;;https://leetcode.com/problems/merge-operations-for-minimum-travel-time/solutions/6717336/3538-merge-operations-for-minimum-travel-6bge/;;;=;==;=;=;

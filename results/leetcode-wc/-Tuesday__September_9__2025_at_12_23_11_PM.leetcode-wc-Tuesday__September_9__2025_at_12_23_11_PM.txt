@@ -1,0 +1,28 @@
+2575. Find the Divisibility Array of a String;=;=Medium;=;=public int[] divisibilityArray(String word, int m);=;=You are given a 0-indexed string word of length n consisting of digits, and a positive integer m.
+
+The divisibility array div of word is an integer array of length n such that:
+
+div[i] = 1 if the numeric value of word[0,...,i] is divisible by m, or
+div[i] = 0 otherwise.
+Return the divisibility array of word.
+
+ 
+
+Example 1:
+
+Input: word = "998244353", m = 3
+Output: [1,1,0,0,0,1,1,0,0]
+Explanation: There are only 4 prefixes that are divisible by 3: "9", "99", "998244", and "9982443".
+Example 2:
+
+Input: word = "1010", m = 10
+Output: [0,1,0,1]
+Explanation: There are only 2 prefixes that are divisible by 10: "10", and "1010".
+ 
+
+Constraints:
+
+1 <= n <= 105
+word.length == n
+word consists of digits from 0 to 9
+1 <= m <= 109;=;=https://leetcode.com/problems/find-the-divisibility-array-of-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/7137571/beats-100-simple-java-program-on-solutio-we3q/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3230830/python3-c-java-easy-solution-by-abdullay-jtml/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3231135/detailed-explained-easy-java-solution-by-682v/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3230850/2575-find-the-divisibility-array-of-a-st-nqrk/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/7060213/java-by-soumya_699-e4ar/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/6919201/best-solution-in-java-mod-math-by-akhmad-38pp/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3230913/java-9-lines-on-simple-by-judgementdey-4n3n/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3231011/clean-short-java-by-himanshubhoir-42v9/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3236407/java-using-modular-operation-by-venkat08-tcx7/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3230808/java-by-kalinga-o34s/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3231020/one-pass-solution-easy-to-understand-by-nqny9/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3231339/simple-and-short-java-code-with-on-time-rh0w1/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3234895/java-ostringlength-time-and-ostringlengt-5kc4/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3251832/java-easy-simple-by-mahmud_s-z77a/;;https://leetcode.com/problems/find-the-divisibility-array-of-a-string/solutions/3231973/java-simple-solution-by-rohitmehta06-6elc/;;;=;==;=;=;

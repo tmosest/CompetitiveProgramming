@@ -1,0 +1,25 @@
+891. Sum of Subsequence Widths;=;=Hard;=;=public int sumSubseqWidths(int[] nums);=;=The width of a sequence is the difference between the maximum and minimum elements in the sequence.
+
+Given an array of integers nums, return the sum of the widths of all the non-empty subsequences of nums. Since the answer may be very large, return it modulo 109 + 7.
+
+A subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, [3,6,2,7] is a subsequence of the array [0,3,1,6,2,2,7].
+
+ 
+
+Example 1:
+
+Input: nums = [2,1,3]
+Output: 6
+Explanation: The subsequences are [1], [2], [3], [2,1], [2,3], [1,3], [2,1,3].
+The corresponding widths are 0, 0, 0, 1, 1, 2, 2.
+The sum of these widths is 6.
+Example 2:
+
+Input: nums = [2]
+Output: 0
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/sum-of-subsequence-widths/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-subsequence-widths/solutions/6559454/solution-in-java-by-yasl1-e40v/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/1708434/easy-explanation-with-example-java-onlog-mayd/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/3511726/solution-by-deleted_user-v1nm/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/3166228/easy-to-understand-solution-by-vitormaia-7oky/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/2357334/java-prefix-sum-onlogn-by-student2091-jwjw/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/6719436/java-by-code_with_rj-nlmu/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/6063457/100-on-solution-no-sorting-needed-prefix-ywxe/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/5946381/simple-java-solution-by-sakshikishore-oo5v/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/5841703/sort-and-use-dp-to-count-and-sum-all-pre-ya0f/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/4396231/retarded-mod-by-user3043sb-3y8b/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/4073740/easiest-solution-by-kunal7216-toiq/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/3866425/easy-to-understand-java-solution-by-vika-40e0/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/3184377/java-current-element-effect-by-sarthak21-kc2f/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/2912273/my-java-solution-by-user4301nk-uk0r/;;https://leetcode.com/problems/sum-of-subsequence-widths/solutions/2864499/beats-956-java-easy-solution-by-mukul_le-u105/;;;=;==;=;=;

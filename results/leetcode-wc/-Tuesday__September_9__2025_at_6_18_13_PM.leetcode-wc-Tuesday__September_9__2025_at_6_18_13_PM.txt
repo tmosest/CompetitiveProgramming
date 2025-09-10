@@ -1,0 +1,37 @@
+1244. Design A Leaderboard;=;=Medium;=;=Leaderboard     public Leaderboard()                     public void addScore(int playerId, int score)                     public int top(int K)                     public void reset(int playerId)             /  Your Leaderboard object will be instantiated and called as such:  Leaderboard obj = new Leaderboard();  obj.addScore(playerId,score);  int param_2 = obj.top(K);  obj.reset(playerId);;=;=Design a Leaderboard class, which has 3 functions:
+
+addScore(playerId, score): Update the leaderboard by adding score to the given player's score. If there is no player with such id in the leaderboard, add him to the leaderboard with the given score.
+top(K): Return the score sum of the top K players.
+reset(playerId): Reset the score of the player with the given id to 0 (in other words erase it from the leaderboard). It is guaranteed that the player was added to the leaderboard before calling this function.
+Initially, the leaderboard is empty.
+
+ 
+
+Example 1:
+
+Input: 
+["Leaderboard","addScore","addScore","addScore","addScore","addScore","top","reset","reset","addScore","top"]
+[[],[1,73],[2,56],[3,39],[4,51],[5,4],[1],[1],[2],[2,51],[3]]
+Output: 
+[null,null,null,null,null,null,73,null,null,null,141]
+
+Explanation: 
+Leaderboard leaderboard = new Leaderboard ();
+leaderboard.addScore(1,73);   // leaderboard = [[1,73]];
+leaderboard.addScore(2,56);   // leaderboard = [[1,73],[2,56]];
+leaderboard.addScore(3,39);   // leaderboard = [[1,73],[2,56],[3,39]];
+leaderboard.addScore(4,51);   // leaderboard = [[1,73],[2,56],[3,39],[4,51]];
+leaderboard.addScore(5,4);    // leaderboard = [[1,73],[2,56],[3,39],[4,51],[5,4]];
+leaderboard.top(1);           // returns 73;
+leaderboard.reset(1);         // leaderboard = [[2,56],[3,39],[4,51],[5,4]];
+leaderboard.reset(2);         // leaderboard = [[3,39],[4,51],[5,4]];
+leaderboard.addScore(2,51);   // leaderboard = [[2,51],[3,39],[4,51],[5,4]];
+leaderboard.top(3);           // returns 141 = 51 + 51 + 39;
+ 
+
+Constraints:
+
+1 <= playerId, K <= 10000
+It's guaranteed that K is less than or equal to the current number of players.
+1 <= score <= 100
+There will be at most 1000 function calls.;=;=https://leetcode.com/problems/design-a-leaderboard/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/design-a-leaderboard/solutions/1214603/java-beats-100-solution-double-linkedlis-orq1/;;https://leetcode.com/problems/design-a-leaderboard/solutions/6641574/java-simple-solution-with-heap-k-problem-p3tz/;;https://leetcode.com/problems/design-a-leaderboard/solutions/7128274/java-beats-100-by-jenjoy-uzqc/;;https://leetcode.com/problems/design-a-leaderboard/solutions/4831182/java-binary-indexed-tree-solution-ologn-39cnu/;;https://leetcode.com/problems/design-a-leaderboard/solutions/853045/java-solution-by-jianhuilin1124-a83b/;;https://leetcode.com/problems/design-a-leaderboard/solutions/4205030/simler-to-understand-java-solution-hashm-shv2/;;https://leetcode.com/problems/design-a-leaderboard/solutions/833623/java-hashmappriorityqueue-easy-to-unders-00vy/;;https://leetcode.com/problems/design-a-leaderboard/solutions/420467/java-9ms-solution-which-beats-100-with-h-y19y/;;https://leetcode.com/problems/design-a-leaderboard/solutions/1072010/funky-java-implementation-using-stream-b-1tlk/;;https://leetcode.com/problems/design-a-leaderboard/solutions/2371220/java-solution-hashmap-priorityqueue-by-r-deld/;;https://leetcode.com/problems/design-a-leaderboard/solutions/443503/java-treeset-map-solution-by-ayyild1z-kt6t/;;https://leetcode.com/problems/design-a-leaderboard/solutions/6476598/java-ok-top-o1-add-o1-reset-by-dropdb_il-5qhv/;;https://leetcode.com/problems/design-a-leaderboard/solutions/6746906/java-beats-9860-by-mlogn-82nr/;;https://leetcode.com/problems/design-a-leaderboard/solutions/6142526/java-solution-using-minheap-and-hashmap-r3km7/;;https://leetcode.com/problems/design-a-leaderboard/solutions/6114731/java-solution-with-explanation-by-shared-43r3/;;;=;==;=;=;

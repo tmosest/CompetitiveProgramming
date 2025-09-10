@@ -1,0 +1,49 @@
+2806. Account Balance After Rounded Purchase;=;=Easy;=;=public int accountBalanceAfterPurchase(int purchaseAmount);=;=Initially, you have a bank account balance of 100 dollars.
+
+You are given an integer purchaseAmount representing the amount you will spend on a purchase in dollars, in other words, its price.
+
+When making the purchase, first the purchaseAmount is rounded to the nearest multiple of 10. Let us call this value roundedAmount. Then, roundedAmount dollars are removed from your bank account.
+
+Return an integer denoting your final bank account balance after this purchase.
+
+Notes:
+
+0 is considered to be a multiple of 10 in this problem.
+When rounding, 5 is rounded upward (5 is rounded to 10, 15 is rounded to 20, 25 to 30, and so on).
+ 
+
+Example 1:
+
+Input: purchaseAmount = 9
+
+Output: 90
+
+Explanation:
+
+The nearest multiple of 10 to 9 is 10. So your account balance becomes 100 - 10 = 90.
+
+Example 2:
+
+Input: purchaseAmount = 15
+
+Output: 80
+
+Explanation:
+
+The nearest multiple of 10 to 15 is 20. So your account balance becomes 100 - 20 = 80.
+
+Example 3:
+
+Input: purchaseAmount = 10
+
+Output: 90
+
+Explanation:
+
+10 is a multiple of 10 itself. So your account balance becomes 100 - 10 = 90.
+
+ 
+
+Constraints:
+
+0 <= purchaseAmount <= 100;=;=https://leetcode.com/problems/account-balance-after-rounded-purchase/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/7162247/round-smart-spend-right-account-balance-c16ue/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/7153948/try-this-simple-one-line-java-by-sairang-35e3/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/3868763/python-3-1-line-div-as-round-ts-96-81-by-lvos/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/3868842/simple-java-code-with-easy-approach-beat-kz55/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/6557714/final-bank-balance-after-rounded-purchas-g47f/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/5759413/simplest-solution-easy-approach-beats-10-cetk/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/3878841/simple-java-solution-by-siddhant_1602-qgc4/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/6315442/0ms-1-line-java-by-galani_jenis-kcfi/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/6297830/single-line-java-code-beating-100-in-0ms-1b06/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/3868047/c-java-python-javascript-100-fast-by-sha-sr9j/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/3868487/simple-java-solution-o1-tc-sc-all-test-c-o4zy/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/5767551/easy-simple-math-o1-time-space-one-liner-ls8w/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/5761230/interview-prep-by-abinayaprakash-40l4/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/3892637/java-2-liner-make-it-1-if-you-like-wider-lpf0/;;https://leetcode.com/problems/account-balance-after-rounded-purchase/solutions/5304418/vin-solution-by-vinothkumar6381650856-xrgp/;;;=;==;=;=;

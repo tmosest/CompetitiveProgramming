@@ -1,0 +1,41 @@
+1798. Maximum Number of Consecutive Values You Can Make;=;=Medium;=;=public int getMaximumConsecutive(int[] coins);=;=You are given an integer array coins of length n which represents the n coins that you own. The value of the ith coin is coins[i]. You can make some value x if you can choose some of your n coins such that their values sum up to x.
+
+Return the maximum number of consecutive integer values that you can make with your coins starting from and including 0.
+
+Note that you may have multiple coins of the same value.
+
+ 
+
+Example 1:
+
+Input: coins = [1,3]
+Output: 2
+Explanation: You can make the following values:
+- 0: take []
+- 1: take [1]
+You can make 2 consecutive integer values starting from 0.
+Example 2:
+
+Input: coins = [1,1,1,4]
+Output: 8
+Explanation: You can make the following values:
+- 0: take []
+- 1: take [1]
+- 2: take [1,1]
+- 3: take [1,1,1]
+- 4: take [4]
+- 5: take [4,1]
+- 6: take [4,1,1]
+- 7: take [4,1,1,1]
+You can make 8 consecutive integer values starting from 0.
+Example 3:
+
+Input: coins = [1,4,10,3,1]
+Output: 20
+ 
+
+Constraints:
+
+coins.length == n
+1 <= n <= 4 * 104
+1 <= coins[i] <= 4 * 104;=;=https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/5076450/easy-java-solution-beats-100-by-ravikuma-n2ti/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/4606402/solution-by-shree_govind_jee-z5ql/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/1118929/greedy-solution-java-time-onlogn-and-spa-lay7/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/1212278/easy-java-onlogn-solution-by-jalwal-rn5a/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/1120842/java-solution-100-faster-without-using-a-h84y/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/3253272/java-simple-on-solution-by-y_v_naga_mani-gmwl/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/6569129/easy-java-solution-by-phani40-ao5z/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/5522597/onlogn-soln-by-ozzyozbourne-sba0/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/5326264/greedy-sorting-beats-9167-by-akhil_pathi-l3s0/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/5175507/set-tle-by-wangcai20-01if/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/4737477/submission-beats-100-of-other-submission-6471/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/4505192/easy-to-understand-java-by-chakribontha9-3ta0/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/3358492/java-solution-by-21arka2002-31cx/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/3330929/java-easy-solution-aasheesh-97th-day-by-0c295/;;https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/solutions/3316069/java-greedy-approach-with-explanation-by-udiq/;;;=;==;=;=;

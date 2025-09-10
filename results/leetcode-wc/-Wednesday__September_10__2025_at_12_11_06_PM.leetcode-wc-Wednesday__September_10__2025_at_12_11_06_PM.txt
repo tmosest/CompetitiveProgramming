@@ -1,0 +1,37 @@
+2006. Count Number of Pairs With Absolute Difference K;=;=Easy;=;=publicÊintÊcountKDifference(int[]Ênums,ÊintÊk);=;=Given an integer array nums and an integer k, return the number of pairs (i, j) where i < j such that |nums[i] - nums[j]| == k.
+
+The value of |x| is defined as:
+
+x if x >= 0.
+-x if x < 0.
+Ê
+
+Example 1:
+
+Input: nums = [1,2,2,1], k = 1
+Output: 4
+Explanation: The pairs with an absolute difference of 1 are:
+- [1,2,2,1]
+- [1,2,2,1]
+- [1,2,2,1]
+- [1,2,2,1]
+Example 2:
+
+Input: nums = [1,3], k = 3
+Output: 0
+Explanation: There are no pairs with an absolute difference of 3.
+Example 3:
+
+Input: nums = [3,2,1,5,4], k = 2
+Output: 3
+Explanation: The pairs with an absolute difference of 2 are:
+- [3,2,1,5,4]
+- [3,2,1,5,4]
+- [3,2,1,5,4]
+Ê
+
+Constraints:
+
+1 <= nums.length <= 200
+1 <= nums[i] <= 100
+1 <= k <= 99;=;=https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/7174309/efficient-on-solution-for-count-number-o-23cv/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/1501957/java-map-solution-beats-98-by-zeldox-5nbd/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/1647117/as-easy-as-123-or-not-from-n2-to-n-super-x6k2/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/6770099/java-best-solution-hashmap-by-aimlc_22b1-01hj/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/6883454/fast-and-clear-with-iterations-in-tables-bz88/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/1471093/java-straightforward-brute-force-sliding-1hjk/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/6679087/time-on2-on-two-approach-easy-solution-j-5rov/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/7012619/easy-java-solution-by-rajdeep001-49qc/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/5784599/easiestfaster-lesser-cpython3javacpython-sy29/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/6917158/hashmapval-vals-before-current-aj-by-axm-x9og/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/6925390/solution-count-number-of-pairs-with-abso-tb77/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/6871740/counting-valid-k-difference-pairs-in-on-tqjan/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/6665487/optimized-solution-to-count-pairs-with-d-gafu/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/2774949/java-short-map-solution-by-jugantar2020-6qfu/;;https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/solutions/6499641/simple-java-solution-using-hashmap-by-sw-l08g/;;;=;==;=;=;

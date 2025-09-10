@@ -1,0 +1,23 @@
+2148. Count Elements With Strictly Smaller and Greater Elements;=;=Easy;=;=public int countElements(int[] nums);=;=Given an integer array nums, return the number of elements that have both a strictly smaller and a strictly greater element appear in nums.
+
+ 
+
+Example 1:
+
+Input: nums = [11,7,2,15]
+Output: 2
+Explanation: The element 7 has the element 2 strictly smaller than it and the element 11 strictly greater than it.
+Element 11 has element 7 strictly smaller than it and element 15 strictly greater than it.
+In total there are 2 elements having both a strictly smaller and a strictly greater element appear in nums.
+Example 2:
+
+Input: nums = [-3,3,3,90]
+Output: 2
+Explanation: The element 3 has the element -3 strictly smaller than it and the element 90 strictly greater than it.
+Since there are two elements with the value 3, in total there are 2 elements having both a strictly smaller and a strictly greater element appear in nums.
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+-105 <= nums[i] <= 105;=;=https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/7082072/java-optimaleasy-by-kulkarnishreya04-q33a/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/7089606/simple-approach-try-with-max-and-min-of-phmzg/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/2523898/2-lines-of-code-java-with-comentary-by-i-61nt/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/6274823/java-easisest-solution-by-patilprajakta-p49f/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/6338865/java-easy-fast-running-fully-explained-i-76iz/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/1712586/java-one-pass-on-time-o1-space-100-effic-jsyy/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/6172515/count-elements-with-strictly-smaller-and-5p45/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/7173007/2148-count-elements-with-strictly-smalle-9a9q/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/7172995/count-elements-with-strictly-greater-or-s4jpz/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/7152680/too-beginner-friendly-by-anupkk-s9fu/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/7030039/bilabong-by-bilabong-1mpw/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/6544298/java-very-easy-0ms-beats-100-by-bobbadib-80at/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/1713871/java-easy-and-fast-solution-beat-0ms-by-k6ij1/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/1712822/java-on-time-100-efficient-and-simple-by-sjme/;;https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/solutions/4887687/easy-understandable-soln-by-sumo25-a1pi/;;;=;==;=;=;

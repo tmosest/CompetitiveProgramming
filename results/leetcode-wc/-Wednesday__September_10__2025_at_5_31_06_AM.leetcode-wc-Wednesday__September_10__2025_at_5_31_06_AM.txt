@@ -1,0 +1,31 @@
+702. Search in a Sorted Array of Unknown Size;=;=Medium;=;=/  // This is ArrayReader's API interface.  // You should not implement it, or speculate about its implementation  interface ArrayReader       public int get(int index)          public int search(ArrayReader reader, int target);=;=This is an interactive problem.
+
+You have a sorted array of unique elements and an unknown size. You do not have an access to the array but you can use the ArrayReader interface to access it. You can call ArrayReader.get(i) that:
+
+returns the value at the ith index (0-indexed) of the secret array (i.e., secret[i]), or
+returns 231 - 1 if the i is out of the boundary of the array.
+You are also given an integer target.
+
+Return the index k of the hidden array where secret[k] == target or return -1 otherwise.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+ 
+
+Example 1:
+
+Input: secret = [-1,0,3,5,9,12], target = 9
+Output: 4
+Explanation: 9 exists in secret and its index is 4.
+Example 2:
+
+Input: secret = [-1,0,3,5,9,12], target = 2
+Output: -1
+Explanation: 2 does not exist in secret so return -1.
+ 
+
+Constraints:
+
+1 <= secret.length <= 104
+-104 <= secret[i], target <= 104
+secret is sorted in a strictly increasing order.;=;=https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/6792628/beats-100-java-0ms-simple-solution-by-vi-bzra/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/1244342/2-different-approaches-with-explanation-4tssu/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/289792/only-using-basic-binary-search-with-an-e-eqyo/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/1418497/java-time-beats-100-reuse-lc-704-by-pras-nxs4/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/1801001/single-pass-binary-search-by-rathoregird-0b69/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/481698/java-binary-search-beat-100-by-luyao_jin-3ecf/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/4239125/java-solution-but-i-dont-understand-why-tivf5/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/4004612/java-solution-by-rimberse-231a/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/6532842/java-exponential-search-easy-solution-by-nz12/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/6444168/java-solution-beats-100-by-ndsjqwbbb-svre/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/6076225/binary-search-log-m-log-n-by-thedesertbo-tuju/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/6006080/efficiently-searching-an-unknown-sized-s-z0y4/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/5789180/binary-search-by-doubling-high-index-rec-zqbq/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/5559089/easy-solution-using-binary-search-by-rin-hd8l/;;https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/solutions/5472806/using-binary-search-find-target-in-an-un-utxz/;;;=;==;=;=;

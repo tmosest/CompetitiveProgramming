@@ -1,0 +1,34 @@
+757. Set Intersection Size At Least Two;=;=Hard;=;=public int intersectionSizeTwo(int[][] intervals);=;=You are given a 2D integer array intervals where intervals[i] = [starti, endi] represents all the integers from starti to endi inclusively.
+
+A containing set is an array nums where each interval from intervals has at least two integers in nums.
+
+For example, if intervals = [[1,3], [3,7], [8,9]], then [1,2,4,7,8,9] and [2,3,4,8,9] are containing sets.
+Return the minimum possible size of a containing set.
+
+ 
+
+Example 1:
+
+Input: intervals = [[1,3],[3,7],[8,9]]
+Output: 5
+Explanation: let nums = [2, 3, 4, 8, 9].
+It can be shown that there cannot be any containing array of size 4.
+Example 2:
+
+Input: intervals = [[1,3],[1,4],[2,5],[3,5]]
+Output: 3
+Explanation: let nums = [2, 3, 4].
+It can be shown that there cannot be any containing array of size 2.
+Example 3:
+
+Input: intervals = [[1,2],[2,3],[2,4],[4,5]]
+Output: 5
+Explanation: let nums = [1, 2, 3, 4, 5].
+It can be shown that there cannot be any containing array of size 4.
+ 
+
+Constraints:
+
+1 <= intervals.length <= 3000
+intervals[i].length == 2
+0 <= starti < endi <= 108;=;=https://leetcode.com/problems/set-intersection-size-at-least-two/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/4563503/java-code-simple-language-step-by-step-w-qlof/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/1050159/java-13-lines-of-code-based-on-sorting-t-rasc/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/1973256/my-java-solution-by-xcurrybar-o16k/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/3453195/solution-by-deleted_user-iz15/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/7087373/simple-solution-by-prince_kumar1-ifqo/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/3329673/greedy-using-treeset-by-yasmine-ya-5i7m/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/6782388/java-greedy-solution-by-monish1153-657j/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/6669402/java-solution-trick-is-to-think-about-so-b251/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/6517468/intuitive-explanation-with-diagram-onlog-ewbo/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/6213887/757-set-intersection-size-at-least-two-b-7q9z/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/4538923/sliding-window-with-runtime-of-9ms-with-ag2ym/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/4538879/greedy-approach-with-run-time-of-9ms-and-8nek/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/4375973/java-sort-easy-to-understand-by-vsai5120-a6bi/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/3068473/hashset-by-user8738zv-kx8r/;;https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/2417398/lazy-bitset-sol-add-a1-and-a1-1-by-stude-uwav/;;;=;==;=;=;

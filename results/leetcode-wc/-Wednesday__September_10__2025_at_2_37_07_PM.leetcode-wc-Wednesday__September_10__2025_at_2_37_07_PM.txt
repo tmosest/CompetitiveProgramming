@@ -1,0 +1,18 @@
+400. Nth Digit;=;=Medium;=;=public int findNthDigit(int n);=;=Given an integer n, return the nth digit of the infinite integer sequence [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...].
+
+ 
+
+Example 1:
+
+Input: n = 3
+Output: 3
+Example 2:
+
+Input: n = 11
+Output: 0
+Explanation: The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, which is part of the number 10.
+ 
+
+Constraints:
+
+1 <= n <= 231 - 1;=;=https://leetcode.com/problems/nth-digit/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/nth-digit/solutions/334907/just-wanted-to-share-my-java-solution-to-6vqo/;;https://leetcode.com/problems/nth-digit/solutions/5782525/solution-by-dare2solve-detailed-explanat-0ugq/;;https://leetcode.com/problems/nth-digit/solutions/4850387/easy-understandable-one-stop-explained-s-bsdh/;;https://leetcode.com/problems/nth-digit/solutions/4813210/beats-100-easy-to-understand-commented-b-v0b1/;;https://leetcode.com/problems/nth-digit/solutions/5416113/o1-solution-by-modiswayam24-g4pl/;;https://leetcode.com/problems/nth-digit/solutions/1746460/java-0ms-ologn-by-aashishjn-y9dz/;;https://leetcode.com/problems/nth-digit/solutions/4392208/joke-by-user3043sb-9fli/;;https://leetcode.com/problems/nth-digit/solutions/4912989/easy-java-solution-beats-100-by-rituparn-kjlh/;;https://leetcode.com/problems/nth-digit/solutions/7160887/easy-solution-0-ms-by-p1gehwysbr-6isz/;;https://leetcode.com/problems/nth-digit/solutions/7140459/java-solution-beats-100-tc-by-ndsjqwbbb-7nom/;;https://leetcode.com/problems/nth-digit/solutions/3471822/java-easy-0-ms-beats-100-by-manohar_07-gs0x/;;https://leetcode.com/problems/nth-digit/solutions/7151838/java-solution-by-gaurav0122-zmi7/;;https://leetcode.com/problems/nth-digit/solutions/1656107/java-0-ms-solution-using-math-by-otab-1yzd/;;https://leetcode.com/problems/nth-digit/solutions/1288979/well-explained-java-solution-by-vik1231-34ct/;;https://leetcode.com/problems/nth-digit/solutions/299090/java-0ms-simple-solution-by-shuangpan-rtn8/;;;=;==;=;=;

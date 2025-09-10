@@ -1,0 +1,24 @@
+968. Binary Tree Cameras;=;=Hard;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public int minCameraCover(TreeNode root);=;=You are given the root of a binary tree. We install cameras on the tree nodes where each camera at a node can monitor its parent, itself, and its immediate children.
+
+Return the minimum number of cameras needed to monitor all nodes of the tree.
+
+ 
+
+Example 1:
+
+
+Input: root = [0,0,null,0,0]
+Output: 1
+Explanation: One camera is enough to monitor all nodes if placed as shown.
+Example 2:
+
+
+Input: root = [0,0,null,0,null,0,null,null,0]
+Output: 2
+Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement.
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 1000].
+Node.val == 0;=;=https://leetcode.com/problems/binary-tree-cameras/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/binary-tree-cameras/solutions/2160360/visual-explanation-java-greedy-by-ciote-3nig/;;https://leetcode.com/problems/binary-tree-cameras/solutions/1211695/js-python-java-c-easy-recursive-dfs-solu-0u7k/;;https://leetcode.com/problems/binary-tree-cameras/solutions/7085244/easy-code-in-java-by-yasl1-b574/;;https://leetcode.com/problems/binary-tree-cameras/solutions/7073622/java-dfs-explanation-100-by-techrajdeep-tjhc/;;https://leetcode.com/problems/binary-tree-cameras/solutions/7077353/100-beats-easy-simple-java-solution-by-p-3oiq/;;https://leetcode.com/problems/binary-tree-cameras/solutions/7074202/beats-100-easy-and-simple-approach-by-ar-pb1m/;;https://leetcode.com/problems/binary-tree-cameras/solutions/6921874/easy-solution-dfs-beginner-friendly-beat-3u3z/;;https://leetcode.com/problems/binary-tree-cameras/solutions/6794507/easy-java-self-explanatory-code-by-krish-hvyi/;;https://leetcode.com/problems/binary-tree-cameras/solutions/6896458/java-code-using-object-based-return-valu-pun5/;;https://leetcode.com/problems/binary-tree-cameras/solutions/2160273/java-explained-by-karan_8082-ea86/;;https://leetcode.com/problems/binary-tree-cameras/solutions/6403919/easy-story-type-explanation-100-beats-ti-jc7t/;;https://leetcode.com/problems/binary-tree-cameras/solutions/465373/simple-java-post-order-traversal-solutio-qibf/;;https://leetcode.com/problems/binary-tree-cameras/solutions/3037651/cjavapython-brief-code-of-dynamic-progra-q3dc/;;https://leetcode.com/problems/binary-tree-cameras/solutions/7172829/simple-java-solution-by-d_anand_2005-aqlz/;;https://leetcode.com/problems/binary-tree-cameras/solutions/6461832/java-dfs-by-orzeszkol-94mm/;;;=;==;=;=;

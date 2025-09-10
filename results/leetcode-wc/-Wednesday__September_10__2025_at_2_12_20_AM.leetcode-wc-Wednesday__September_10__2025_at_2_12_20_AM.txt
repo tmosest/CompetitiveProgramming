@@ -1,0 +1,36 @@
+2640. Find the Score of All Prefixes of an Array;=;=Medium;=;=public long[] findPrefixScore(int[] nums);=;=We define the conversion array conver of an array arr as follows:
+
+conver[i] = arr[i] + max(arr[0..i]) where max(arr[0..i]) is the maximum value of arr[j] over 0 <= j <= i.
+We also define the score of an array arr as the sum of the values of the conversion array of arr.
+
+Given a 0-indexed integer array nums of length n, return an array ans of length n where ans[i] is the score of the prefix nums[0..i].
+
+ 
+
+Example 1:
+
+Input: nums = [2,3,7,5,10]
+Output: [4,10,24,36,56]
+Explanation: 
+For the prefix [2], the conversion array is [4] hence the score is 4
+For the prefix [2, 3], the conversion array is [4, 6] hence the score is 10
+For the prefix [2, 3, 7], the conversion array is [4, 6, 14] hence the score is 24
+For the prefix [2, 3, 7, 5], the conversion array is [4, 6, 14, 12] hence the score is 36
+For the prefix [2, 3, 7, 5, 10], the conversion array is [4, 6, 14, 12, 20] hence the score is 56
+Example 2:
+
+Input: nums = [1,1,2,4,8,16]
+Output: [2,4,8,16,32,64]
+Explanation: 
+For the prefix [1], the conversion array is [2] hence the score is 2
+For the prefix [1, 1], the conversion array is [2, 2] hence the score is 4
+For the prefix [1, 1, 2], the conversion array is [2, 2, 4] hence the score is 8
+For the prefix [1, 1, 2, 4], the conversion array is [2, 2, 4, 8] hence the score is 16
+For the prefix [1, 1, 2, 4, 8], the conversion array is [2, 2, 4, 8, 16] hence the score is 32
+For the prefix [1, 1, 2, 4, 8, 16], the conversion array is [2, 2, 4, 8, 16, 32] hence the score is 64
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/3420254/c-prefix-sum-easy-to-understand-superfas-qwb5/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/3420024/javapython-3-1-pass-codes-by-rock-ic5z/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/3420062/simple-java-solution-by-siddhant_1602-5kkp/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/6351444/easy-by-adding-only-by-madhiarasan-qu86/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/3420054/short-clean-java-solution-by-himanshubho-s5oq/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/3419972/c-java-python-intuition-with-explanation-7qfs/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/7172844/java-solution-on-by-kasojusaiteja-145s/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/7101955/java-by-soumya_699-84e4/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/6807031/simple-2-liner-code-java-c-by-rohansarab-l43m/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/6807029/simple-2-liner-code-java-c-by-rohansarab-r8a0/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/6374142/easy-java-solution-by-muskanchauhan296-t2py/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/4875436/java-prefix-sum-by-arjunsinghal77-e6dm/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/4716185/simple-solution-on-time-beats-8942-by-an-tmdm/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/5716405/straightforward-java-solution-____-by-ja-qx2b/;;https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/solutions/7111765/java-solution-by-ndsjqwbbb-lg39/;;;=;==;=;=;

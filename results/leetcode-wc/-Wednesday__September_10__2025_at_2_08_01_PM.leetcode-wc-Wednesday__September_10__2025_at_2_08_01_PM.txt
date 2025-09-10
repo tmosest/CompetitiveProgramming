@@ -1,0 +1,43 @@
+2242. Maximum Score of a Node Sequence;=;=Hard;=;=public int maximumScore(int[] scores, int[][] edges);=;=There is an undirected graph with n nodes, numbered from 0 to n - 1.
+
+You are given a 0-indexed integer array scores of length n where scores[i] denotes the score of node i. You are also given a 2D integer array edges where edges[i] = [ai, bi] denotes that there exists an undirected edge connecting nodes ai and bi.
+
+A node sequence is valid if it meets the following conditions:
+
+There is an edge connecting every pair of adjacent nodes in the sequence.
+No node appears more than once in the sequence.
+The score of a node sequence is defined as the sum of the scores of the nodes in the sequence.
+
+Return the maximum score of a valid node sequence with a length of 4. If no such sequence exists, return -1.
+
+ 
+
+Example 1:
+
+
+Input: scores = [5,2,9,8,4], edges = [[0,1],[1,2],[2,3],[0,2],[1,3],[2,4]]
+Output: 24
+Explanation: The figure above shows the graph and the chosen node sequence [0,1,2,3].
+The score of the node sequence is 5 + 2 + 9 + 8 = 24.
+It can be shown that no other node sequence has a score of more than 24.
+Note that the sequences [3,1,2,0] and [1,0,2,3] are also valid and have a score of 24.
+The sequence [0,3,2,4] is not valid since no edge connects nodes 0 and 3.
+Example 2:
+
+
+Input: scores = [9,20,6,4,11,12], edges = [[0,3],[5,3],[2,4],[1,3]]
+Output: -1
+Explanation: The figure above shows the graph.
+There are no valid node sequences of length 4, so we return -1.
+ 
+
+Constraints:
+
+n == scores.length
+4 <= n <= 5 * 104
+1 <= scores[i] <= 108
+0 <= edges.length <= 5 * 104
+edges[i].length == 2
+0 <= ai, bi <= n - 1
+ai != bi
+There are no duplicate edges.;=;=https://leetcode.com/problems/maximum-score-of-a-node-sequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/1953706/javapython-keep-3-biggest-neighbours-by-0r1qx/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/6997804/top-3-neighbors-solution-by-piyusha_7-mo68/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/6843249/explained-java-solution-by-codingndstuff-rk4o/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/5125153/easy-java-solution-priority-queue-by-rav-ekyx/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/2115209/java-on-easy-solution-with-comments-by-s-k6d2/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/2310762/java-pq-easy-to-understand-with-explanat-l9zn/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/1977607/java-beats-10000-memoryspeed-0ms-april-2-qhkn/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/2193581/java-priorityqueue-by-student2091-uw93/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/2163257/java-solution-by-vipfly-gmhw/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/1954325/java-solution-17ms-by-jasmine_zeng-jpbo/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/6480378/java-solution-graph-beats-82-commented-l-ahsr/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/6308897/on-9-keep-maximum-3-nodes-priorityqueue-n0kuf/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/2636059/java-sorting-preprocessing-by-itachi1697-jpv4/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/2349351/java-priority-queue-top-3-by-adityasharm-ve00/;;https://leetcode.com/problems/maximum-score-of-a-node-sequence/solutions/2002431/java-straightforward-easy-solution-on-by-fnxw/;;;=;==;=;=;

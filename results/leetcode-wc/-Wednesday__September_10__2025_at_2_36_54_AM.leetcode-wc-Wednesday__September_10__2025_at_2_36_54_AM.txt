@@ -1,0 +1,27 @@
+2485. Find the Pivot Integer;=;=Easy;=;=public int pivotInteger(int n);=;=Given a positive integer n, find the pivot integer x such that:
+
+The sum of all elements between 1 and x inclusively equals the sum of all elements between x and n inclusively.
+Return the pivot integer x. If no such integer exists, return -1. It is guaranteed that there will be at most one pivot index for the given input.
+
+ 
+
+Example 1:
+
+Input: n = 8
+Output: 6
+Explanation: 6 is the pivot integer since: 1 + 2 + 3 + 4 + 5 + 6 = 6 + 7 + 8 = 21.
+Example 2:
+
+Input: n = 1
+Output: 1
+Explanation: 1 is the pivot integer since: 1 = 1.
+Example 3:
+
+Input: n = 4
+Output: -1
+Explanation: It can be proved that no such integer exist.
+ 
+
+Constraints:
+
+1 <= n <= 1000;=;=https://leetcode.com/problems/find-the-pivot-integer/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-pivot-integer/solutions/4866663/maths-is-everywhere-you-cant-escape-it-a-ipq7/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/2851954/simple-maths-proof-with-picture-by-dines-b7qm/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/7094539/easiest-approach-beginner-friendly-0n-co-8nqj/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/4866557/easy-explanation-basic-math-beats-100-c-nk1qw/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/7121258/beats-100-by-divyansh_kaushik_sharma-fm9w/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/7053518/easy-code-for-beginners-and-understandab-nc3h/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/7112570/beats-100-o1-beginner-friendly-math-form-janc/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/4866942/binary-search-for-value-of-x-java-c-by-f-0e8x/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/7084979/easy-fast-java-solution-beats-100-runtim-55m0/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/6066715/python3-c-java-only-math-and-i-get-100-b-x9wq/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/4866501/beat-100-2-method-o1-cjavapython-with-ex-cjcx/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/2852044/javapython-3-from-on-to-ologn-compare-le-pac5/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/4866556/java-1-ms-2-different-approaches-easy-to-3nrp/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/2852423/javacpython-2-line-math-solution-o1-by-l-r3rj/;;https://leetcode.com/problems/find-the-pivot-integer/solutions/6425719/best-java-solution-by-brajeshprajapati00-7nkf/;;;=;==;=;=;

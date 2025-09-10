@@ -1,0 +1,23 @@
+665. Non-decreasing Array;=;=Medium;=;=public boolean checkPossibility(int[] nums);=;=Given an array nums with n integers, your task is to check if it could become non-decreasing by modifying at most one element.
+
+We define an array is non-decreasing if nums[i] <= nums[i + 1] holds for every i (0-based) such that (0 <= i <= n - 2).
+
+ 
+
+Example 1:
+
+Input: nums = [4,2,3]
+Output: true
+Explanation: You could modify the first 4 to 1 to get a non-decreasing array.
+Example 2:
+
+Input: nums = [4,2,1]
+Output: false
+Explanation: You cannot get a non-decreasing array by modifying at most one element.
+ 
+
+Constraints:
+
+n == nums.length
+1 <= n <= 104
+-105 <= nums[i] <= 105;=;=https://leetcode.com/problems/non-decreasing-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/non-decreasing-array/solutions/1190763/js-python-java-c-simple-solution-w-visua-0oes/;;https://leetcode.com/problems/non-decreasing-array/solutions/2193084/visual-explanation-java-greedy-by-ciote-4du4/;;https://leetcode.com/problems/non-decreasing-array/solutions/7089248/solution-using-java-by-aadithya_s_j-p538/;;https://leetcode.com/problems/non-decreasing-array/solutions/6902999/one-chance-to-fix-it-greedy-check-for-no-hd5m/;;https://leetcode.com/problems/non-decreasing-array/solutions/6697291/best-java-solution-easiest-by-vishwa_pra-hncl/;;https://leetcode.com/problems/non-decreasing-array/solutions/6916797/easy-solution-for-my-retard-brain-by-abd-dopo/;;https://leetcode.com/problems/non-decreasing-array/solutions/2193518/java-0ms-beats-100-in-time-simple-and-ea-4oke/;;https://leetcode.com/problems/non-decreasing-array/solutions/6334731/easy-logic-by-madhiarasan-arh7/;;https://leetcode.com/problems/non-decreasing-array/solutions/4446149/non-decreasing-array-beats-100java-easy-6mzui/;;https://leetcode.com/problems/non-decreasing-array/solutions/6372573/the-nikhils-approach-by-this_nikhill-5cyn/;;https://leetcode.com/problems/non-decreasing-array/solutions/5592877/how-to-quickly-find-if-array-can-be-non-xdgd4/;;https://leetcode.com/problems/non-decreasing-array/solutions/6284458/easy-to-understand-and-optimal-solution-cth9s/;;https://leetcode.com/problems/non-decreasing-array/solutions/342052/simple-readable-java-solution-1ms99-40mb-q5zd/;;https://leetcode.com/problems/non-decreasing-array/solutions/1221134/simple-java-solution-with-count-variable-x9vx/;;https://leetcode.com/problems/non-decreasing-array/solutions/1033247/java-solution-100-time-with-explaination-mlbd/;;;=;==;=;=;

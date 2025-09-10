@@ -1,0 +1,36 @@
+2053. Kth Distinct String in an Array;=;=Easy;=;=public String kthDistinct(String[] arr, int k);=;=A distinct string is a string that is present only once in an array.
+
+Given an array of strings arr, and an integer k, return the kth distinct string present in arr. If there are fewer than k distinct strings, return an empty string "".
+
+Note that the strings are considered in the order in which they appear in the array.
+
+ 
+
+Example 1:
+
+Input: arr = ["d","b","c","b","c","a"], k = 2
+Output: "a"
+Explanation:
+The only distinct strings in arr are "d" and "a".
+"d" appears 1st, so it is the 1st distinct string.
+"a" appears 2nd, so it is the 2nd distinct string.
+Since k == 2, "a" is returned. 
+Example 2:
+
+Input: arr = ["aaa","aa","a"], k = 1
+Output: "aaa"
+Explanation:
+All strings in arr are distinct, so the 1st string "aaa" is returned.
+Example 3:
+
+Input: arr = ["a","b","a"], k = 3
+Output: ""
+Explanation:
+The only distinct string is "b". Since there are fewer than 3 distinct strings, we return an empty string "".
+ 
+
+Constraints:
+
+1 <= k <= arr.length <= 1000
+1 <= arr[i].length <= 5
+arr[i] consists of lowercase English letters.;=;=https://leetcode.com/problems/kth-distinct-string-in-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/5588281/detailed-easy-java-python3-c-solution-5-l2f9r/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/7110555/easy-java-solution-beats-100-runtime-0ms-w4av/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/5567370/on-5-approach-beats-100-java-c-python-go-ug41/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/7107947/java-hashmap-by-ratna_madhav-e0nj/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/7105593/easy-solution-for-you-by-amyy_1256-y529/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/5588145/easy-solution-hashing-by-sachinonly-qjt3/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/7069515/easy-kth-distinct-string-in-an-array-jav-0duy/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/7030444/kth-distinct-string-in-an-array-here-you-m4z9/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/7030445/kth-distinct-string-in-an-array-here-you-s7m3/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/6935092/beats-89-using-linkedhashmap-by-alexande-0l3l/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/6880234/kth-distinct-string-by-kaviya045-e2b1/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/5588172/kth-distinct-string-in-an-arrayunique-so-z4xf/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/1549091/java-easy-to-understand-with-map-on-time-72lv/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/5588072/beats-94-fully-commented-code-self-expla-x4em/;;https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/6806118/hashmpa-by-avinash516-5q7i/;;;=;==;=;=;

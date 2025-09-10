@@ -1,20 +1,19 @@
 package com.tmosest.competitiveprogramming.leetcode;
 
-import com.tmosest.competitiveprogramming.utils.files.JavaFileBuilder;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
 public class LeetCodeAppleScriptResultConverter {
+
+  private static final String PROBLEM_DELIMETER = "=;=;=;";
 
   private static LeetCodeAppleScriptResultConverter instance = new LeetCodeAppleScriptResultConverter();
 
@@ -26,8 +25,6 @@ public class LeetCodeAppleScriptResultConverter {
   public static LeetCodeAppleScriptResultConverter instance() {
     return instance;
   }
-
-  private JavaFileBuilder javaFileBuilder = JavaFileBuilder.instance();
 
   private LeetCodeAppleScriptResultConverter() {
   }
@@ -84,12 +81,17 @@ public class LeetCodeAppleScriptResultConverter {
 
     for (Entry<String, String> content : contentMap.entrySet()) {
       // System.out.println(content);
-      String[] problems = content.getValue().split("=;=;=;");
+      String[] problems = content.getValue().split(PROBLEM_DELIMETER);
 
       for (String problem : problems) {
         String contest = content.getKey(); // Contests.wc459.name();
         
         LeetCodeProblemData leetCodeProblemData = new LeetCodeProblemDataAdapter(contest, problem).getProblemData(); 
+
+        if (null == leetCodeProblemData) {
+          System.out.println("Problem with " + problem);
+          continue;
+        }
 
         LeetCodeGenerator.instance().createNewProblem(leetCodeProblemData);
       }

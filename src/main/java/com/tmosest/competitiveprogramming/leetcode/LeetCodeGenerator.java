@@ -4,7 +4,9 @@ import com.tmosest.competitiveprogramming.general.ProblemType.Contests;
 import com.tmosest.competitiveprogramming.general.ProblemType.Difficulty;
 import com.tmosest.competitiveprogramming.general.ProblemType.Types;
 import com.tmosest.competitiveprogramming.utils.files.JavaFileBuilder;
+import com.tmosest.competitiveprogramming.utils.files.JavaFileData;
 import com.tmosest.competitiveprogramming.utils.files.JavaFileMethod;
+import com.tmosest.competitiveprogramming.utils.files.JavaMethodData;
 import com.tmosest.competitiveprogramming.utils.string.ClassNameUtil;
 
 import java.util.ArrayList;
@@ -41,15 +43,16 @@ public class LeetCodeGenerator {
    * @param functionDeclaration The function declaration.
    * @param difficulty          The difficulty of the question.
    */
-  public void createNewProblem(
-      LeetCodeProblemData leetCodeProblemData) {
+  public void createNewProblem(LeetCodeProblemData leetCodeProblemData) {
+    
+    JavaFileMethod javaFileMethod = JavaFileMethod.fromString(leetCodeProblemData.getFormattedFunctionDeclaration());
+    
+    JavaFileData.JavaFileDataBuilder builder = JavaFileData.builder()
+      .name(leetCodeProblemData.getName());
 
-    String[] names = leetCodeProblemData.formatIntoNumberAndName();
+    JavaFileData fileData = builder.build();
 
-    String fileName = ClassNameUtil.instance().convertToClassName(names[1].trim());
-
-    JavaFileMethod javaFileMethod = JavaFileMethod.fromString(leetCodeProblemData.getFunctionDeclaration());
-    javaFileBuilder.create(LeetCodeGenerator.class, fileName, javaFileMethod);
+    javaFileBuilder.create(LeetCodeGenerator.class, fileData.getFileName(), javaFileMethod);
 
     List<String> tags = new ArrayList<>(Arrays.asList(
         "Tag",
@@ -72,7 +75,7 @@ public class LeetCodeGenerator {
       vals.add(3, leetCodeProblemData.getContest());
     }
 
-    javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals, javaFileMethod, leetCodeProblemData.getLeetCodeExamples());
+    javaFileBuilder.createTest(LeetCodeGenerator.class, fileData.getFileName(), tags, vals, javaFileMethod, leetCodeProblemData.getLeetCodeExamples());
     LeetCodeOrganizer.instance.organizeProblemFiles();
   }
 

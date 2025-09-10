@@ -24,34 +24,39 @@ public class LeetCodeExample {
         return out;
     }
 
-    public String getParamters(List<String> parameters) {
+    public static String toPotentialListArrayValues(String out, String paramType) {
         
+        if (paramType.contains("List")) {
+            // TODO List<List< etc
+            out = out.replace("[", "").replace("]", "");
+            out = "List.of(" + out + ")";
+        } else if (paramType.contains("[]")) {
+            out = out.replace("[", "{").replace("]", "}");
+            out = "new " + paramType + " " + out ;
+        }
+        return out;
+    }
+
+    public String getParamters(List<String> parameters) {
+
         String in = getInput();
         Map<String, String> paramsMap = new HashMap<>();
 
-        for(String param : in.split(", ")) {
+        for (String param : in.split(", ")) {
             String[] keyVal = param.split("=");
             paramsMap.put(keyVal[0].trim(), keyVal[1].trim());
         }
 
         StringBuilder sb = new StringBuilder();
 
-        for(String param : parameters) {
+        for (String param : parameters) {
             String[] paramArr = param.split(" ");
             String paramType = paramArr[0].trim();
             String paramName = paramArr[1].trim();
 
             String mapValue = paramsMap.getOrDefault(paramName.trim(), paramName);
 
-            if (paramType.contains("[]")) {
-                mapValue = mapValue.replace("[", "").replace("]", "");
-                mapValue = "new " + paramType + " { " + mapValue + "}";
-            } else if (paramType.contains("List<")) {
-                mapValue = mapValue.replace("[", "").replace("]", "");
-                mapValue = "List.of(" + mapValue + ")";
-            }
-
-            sb.append(mapValue);
+            sb.append(LeetCodeExample.toPotentialListArrayValues(mapValue, paramType));
 
             sb.append(", ");
         }

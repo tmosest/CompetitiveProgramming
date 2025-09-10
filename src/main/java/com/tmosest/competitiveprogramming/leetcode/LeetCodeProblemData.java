@@ -25,9 +25,18 @@ public class LeetCodeProblemData {
     @Getter
     private String solutionUrls;
 
+    public String getFormattedFunctionDeclaration() {
+        return String.format("/* %s\n\n %s \n\n %s \n\n %s */%s", numberName, url, description, solutionUrls,
+                functionDeclaration);
+    }
+
     // Breaks down "111. Sample Problem Name" into ["111", "Sample Problem Name"]
     public String[] formatIntoNumberAndName() {
         return numberName.split("\\.");
+    }
+
+    public String getName() {
+        return formatIntoNumberAndName()[1].trim();
     }
 
     public List<LeetCodeExample> getLeetCodeExamples() {

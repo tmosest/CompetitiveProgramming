@@ -79,7 +79,7 @@ public class JavaFileMethod {
   }
 
   private JavaFileMethod(String content) {
-    System.out.println(content);
+    // System.out.println(content);
     if (content.contains("*/")) {
       // We have a comment.
       String[] commentsRaw = content.split("\\*/");

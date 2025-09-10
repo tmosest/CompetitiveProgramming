@@ -1,0 +1,35 @@
+2601. Prime Subtraction Operation;=;=Medium;=;=public boolean primeSubOperation(int[] nums);=;=You are given a 0-indexed integer array nums of length n.
+
+You can perform the following operation as many times as you want:
+
+Pick an index i that you haven’t picked before, and pick a prime p strictly less than nums[i], then subtract p from nums[i].
+Return true if you can make nums a strictly increasing array using the above operation and false otherwise.
+
+A strictly increasing array is an array whose each element is strictly greater than its preceding element.
+
+ 
+
+Example 1:
+
+Input: nums = [4,9,6,10]
+Output: true
+Explanation: In the first operation: Pick i = 0 and p = 3, and then subtract 3 from nums[0], so that nums becomes [1,9,6,10].
+In the second operation: i = 1, p = 7, subtract 7 from nums[1], so nums becomes equal to [1,2,6,10].
+After the second operation, nums is sorted in strictly increasing order, so the answer is true.
+Example 2:
+
+Input: nums = [6,8,11,12]
+Output: true
+Explanation: Initially nums is sorted in strictly increasing order, so we don't need to make any operations.
+Example 3:
+
+Input: nums = [5,8,3]
+Output: false
+Explanation: It can be proven that there is no way to perform operations to make nums sorted in strictly increasing order, so the answer is false.
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 1000
+nums.length == n;=;=https://leetcode.com/problems/prime-subtraction-operation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/prime-subtraction-operation/solutions/6031906/beats-100-video-best-explaining-greedy-s-5geo/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6032566/very-easy-reverse-traversed-beats-100-ja-rohm/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6033775/simple-and-easy-solution-100-beats-brute-yxks/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/3346044/day-361-greedy-approach-on-sqrtx-o1-dry-kkpvx/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6031974/prime-subtraction-operation-easy-explana-toqg/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6031911/easy-sieve-of-eratosthenes5-ms-_-by-suya-hp5x/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6031951/inline-explanation-0ms-faster-than-100-b-tzaz/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6032159/easy-to-understand-beats-100-runtime-jav-91cv/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6032568/super-simple-sieve-and-binary-search-sol-1cxp/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6032101/beats-10000-easy-and-step-by-step-explan-05uj/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6033783/beat-100-easy-approach-easy-to-understan-dqks/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6032784/easy-solution-beats-of-time-and-space-co-eyy9/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6034305/beats-super-easy-beginners-by-codewithsp-36lm/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/3342130/simple-easy-jugadu-solution-by-trippy-th-odyw/;;https://leetcode.com/problems/prime-subtraction-operation/solutions/6032681/simple-and-easy-solution-beats-100-java-v49nk/;;;=;==;=;=;

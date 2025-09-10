@@ -18,6 +18,7 @@
     <junit.jupiter.version>5.11.4</junit.jupiter.version>
     <junit.vintage.version>5.11.4</junit.vintage.version>
     <junit.platform.version>1.11.4</junit.platform.version>
+    <lombok.version>1.18.36</lombok.version>
   </properties>
 
   <build>
@@ -28,6 +29,13 @@
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
+           <annotationProcessorPaths>
+      <path>
+        <groupId>org.projectlombok</groupId>     
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+      </path>
+    </annotationProcessorPaths>
         </configuration>
       </plugin>
       <plugin>
@@ -99,6 +107,12 @@
   </build>
 
   <dependencies>
+  <dependency>
+      <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>${lombok.version}</version> <!-- Use the latest stable version -->
+    <scope>provided</scope>
+  </dependency>
     <dependency>
       <groupId>org.jfree</groupId>
       <artifactId>jfreechart</artifactId>
@@ -158,6 +172,7 @@
       <artifactId>guava</artifactId>
       <version>19.0</version>
     </dependency>
+
   </dependencies>
 
   <reporting>

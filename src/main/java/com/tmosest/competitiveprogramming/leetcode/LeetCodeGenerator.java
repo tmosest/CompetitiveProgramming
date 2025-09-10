@@ -29,8 +29,7 @@ public class LeetCodeGenerator {
   private LeetCodeGenerator() {
   }
 
-  public static class Params
-  {
+  public static class Params {
 
   }
 
@@ -43,41 +42,38 @@ public class LeetCodeGenerator {
    * @param difficulty          The difficulty of the question.
    */
   public void createNewProblem(
-      String numberName,
-      String functionDeclaration,
-      String difficulty,
-      List<String> types,
-      String contest,
-      List<LeetCodeExample> examples) {
-    String[] names = instance().formatIntoNumberAndName(numberName);
+      LeetCodeProblemData leetCodeProblemData) {
+
+    String[] names = leetCodeProblemData.formatIntoNumberAndName();
+
     String fileName = ClassNameUtil.instance().convertToClassName(names[1].trim());
-    JavaFileMethod javaFileMethod = JavaFileMethod.fromString(functionDeclaration);
+
+    JavaFileMethod javaFileMethod = JavaFileMethod.fromString(leetCodeProblemData.getFunctionDeclaration());
     javaFileBuilder.create(LeetCodeGenerator.class, fileName, javaFileMethod);
+
     List<String> tags = new ArrayList<>(Arrays.asList(
         "Tag",
         "Tag",
         "DisplayName"));
     List<String> vals = new ArrayList<>(Arrays.asList(
         "leetcode",
-        difficulty,
-        "LeetCode: " + numberName.replace("\n", "")));
-    if (types != null) {
-      for (String type : types) {
+        leetCodeProblemData.getDifficulty(),
+        "LeetCode: " + leetCodeProblemData.getNumberName().replace("\n", "")));
+
+    if (leetCodeProblemData.getTypes() != null) {
+      for (String type : leetCodeProblemData.getTypes()) {
         tags.add(2, "Tag");
         vals.add(2, type);
       }
     }
-    if (contest != null) {
-      tags.add(3, "Tag");
-      vals.add(3, contest);
-    }
-    javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals, javaFileMethod, examples);
-    LeetCodeOrganizer.instance.organizeProblemFiles();
-  }
 
-  // Breaks down "111. Sample Problem Name" into ["111", "Sample Problem Name"]
-  private String[] formatIntoNumberAndName(String numberName) {
-    return numberName.split("\\.");
+    if (leetCodeProblemData.getContest() != null) {
+      tags.add(3, "Tag");
+      vals.add(3, leetCodeProblemData.getContest());
+    }
+
+    javaFileBuilder.createTest(LeetCodeGenerator.class, fileName, tags, vals, javaFileMethod, leetCodeProblemData.getLeetCodeExamples());
+    LeetCodeOrganizer.instance.organizeProblemFiles();
   }
 
   /**
@@ -93,7 +89,14 @@ public class LeetCodeGenerator {
         Types.math.name());
     String contest = Contests.wc459.name();
 
-    instance().createNewProblem(name, functionDeclaration, difficulty, types, contest, new ArrayList<>());
+    LeetCodeProblemData problemData = LeetCodeProblemData.builder()
+      .numberName(name)
+      .functionDeclaration(functionDeclaration)
+      .difficulty(difficulty)
+      .types(types)
+      .contest(contest).build();
+
+    instance().createNewProblem(problemData);
     System.out.println(String.format("%s created.", name));
   }
 }

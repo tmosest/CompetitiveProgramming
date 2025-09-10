@@ -87,58 +87,11 @@ public class LeetCodeAppleScriptResultConverter {
       String[] problems = content.getValue().split("=;=;=;");
 
       for (String problem : problems) {
-        String[] problemData = problem.split(";=;=");
-
-        if (problemData.length < 4) {
-          continue;
-        }
-
-        String title = problemData[1];
-        String difficulty = problemData[2].toLowerCase();
-        String method = problemData[3].replaceAll("�", " ");
-        String description = problemData[4];
-        String url = problemData[5];
-        String solutionsUrl = problemData[6].replaceAll(";;", "\n");
-
-        System.out.println(
-            String.format("Title: %s, Diff: %s, Method: %s, Desc: %s",
-                title, difficulty, method, description));
-
-        List<String> types = Arrays.asList();
         String contest = content.getKey(); // Contests.wc459.name();
+        
+        LeetCodeProblemData leetCodeProblemData = new LeetCodeProblemDataAdapter(contest, problem).getProblemData(); 
 
-        System.out.println(method);
-
-        // Examples
-        String[] descriptionLines = description.split("\n");
-        List<LeetCodeExample> examples = new ArrayList<>();
-
-        for (String descriptionLine : descriptionLines) {
-
-          if (descriptionLine.startsWith("Example")) {
-            examples.add(new LeetCodeExample(descriptionLine));
-            continue;
-          }
-
-          if (descriptionLine.startsWith("Input:")) {
-            LeetCodeExample example = examples.getLast();
-            example.input = descriptionLine;
-            continue;
-          }
-
-          if (descriptionLine.startsWith("Output:")) {
-            LeetCodeExample example = examples.getLast();
-            example.output = descriptionLine;
-          }
-        }
-
-        LeetCodeGenerator.instance().createNewProblem(
-            title,
-            String.format("/* %s \n\n %s \n\n %s */%s", url, description, solutionsUrl, method),
-            difficulty,
-            types,
-            contest,
-            examples);
+        LeetCodeGenerator.instance().createNewProblem(leetCodeProblemData);
       }
     }
   }

@@ -1,0 +1,27 @@
+646. Maximum Length of Pair Chain;=;=Medium;=;=publicÊintÊfindLongestChain(int[][]Êpairs);=;=You are given an array of n pairs pairs where pairs[i] = [lefti, righti] and lefti < righti.
+
+A pair p2 = [c, d] follows a pair p1 = [a, b] if b < c. A chain of pairs can be formed in this fashion.
+
+Return the length longest chain which can be formed.
+
+You do not need to use up all the given intervals. You can select pairs in any order.
+
+Ê
+
+Example 1:
+
+Input: pairs = [[1,2],[2,3],[3,4]]
+Output: 2
+Explanation: The longest chain is [1,2] -> [3,4].
+Example 2:
+
+Input: pairs = [[1,2],[7,8],[4,5]]
+Output: 3
+Explanation: The longest chain is [1,2] -> [4,5] -> [7,8].
+Ê
+
+Constraints:
+
+n == pairs.length
+1 <= n <= 1000
+-1000 <= lefti < righti <= 1000;=;=https://leetcode.com/problems/maximum-length-of-pair-chain/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/6280315/video-solution-by-niits-658e/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/3960470/9817-2-approaches-greedy-dynamic-program-yjv0/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/3960577/2-methods-greedy-dp-similar-question-ver-9cpd/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/7066691/optimal-greedy-approach-by-shivam7307-ckbp/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/3960512/video-ex-amazon-explains-a-solution-with-ne5r/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/7009301/simple-and-easy-solution-by-raviravikuma-jyqc/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/5790778/lis-pattern-continuation-by-dixon_n-himc/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/745935/java-solution-recursion-memoziation-by-s-wksk/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/3964602/variation-of-lis-dp-recursion-memo-by-hr-td5v/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/6840364/easy-and-simple-approach-greedy-algorith-ibf1/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/6709705/easy-simple-onlogn-solution-by-aditya748-cp55/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/6670767/a-beginner-friendly-in-depth-step-by-ste-llw7/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/7172963/from-thought-process-to-code-brute-and-b-3l9g/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/7159513/on-time-complexity-beat-100-by-k3zbdeerw-5gfo/;;https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/7154998/video-ex-amazon-explains-a-solution-with-sepj/;;;=;==;=;=;

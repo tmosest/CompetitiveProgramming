@@ -1,0 +1,28 @@
+25. Reverse Nodes in k-Group;=;=Hard;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode(int x)  val = x;    class      public ListNode reverseLinkedList(ListNode head, int k)         // Reverse k nodes of the given linked list.        // This function assumes that the list contains        // atleast k nodes.        ListNode new_head = null;        ListNode ptr = head;        while (k > 0)             // Keep track of the next node to process in the            // original list            ListNode next_node = ptr.next;            // Insert the node pointed to by "ptr"            // at the beginning of the reversed list            ptr.next = new_head;            new_head = ptr;            // Move on to the next node            ptr = next_node;            // Decrement the count of nodes to be reversed by 1            k--;                // Return the head of the reversed list;=;=Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list.
+
+k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as it is.
+
+You may not alter the values in the list's nodes, only nodes themselves may be changed.
+
+ 
+
+Example 1:
+
+
+Input: head = [1,2,3,4,5], k = 2
+Output: [2,1,4,3,5]
+Example 2:
+
+
+Input: head = [1,2,3,4,5], k = 3
+Output: [3,2,1,4,5]
+ 
+
+Constraints:
+
+The number of nodes in the list is n.
+1 <= k <= n <= 5000
+0 <= Node.val <= 1000
+ 
+
+Follow-up: Can you solve the problem in O(1) extra memory space?;=;=https://leetcode.com/problems/reverse-nodes-in-k-group/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/6896538/recursive-pattern-bonus-coding-with-iter-qes5/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/7170832/reverse-nodes-in-k-group-iterative-solut-xr1u/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/7162127/100-beat-recursion-by-balrampatel-rqc5/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/7169348/beats-100-java-by-samrat1001-n9ja/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/7163450/easy-brute-force-accepted-by-atharva021-1u31/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/6402897/best-solution-for-arrays-in-c-python-and-3gb0/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/6073691/0-ms-runtime-beats-100-user-code-idea-al-wubx/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/7157974/0ms-python-solution-using-stack-brute-fo-tlo3/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/7144757/group-isolation-approach-by-soujitdas65-6xow/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/11423/short-but-recursive-java-code-with-comme-qefm/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/6899534/different-approach-eassyyyy-solution-ful-qe9a/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/4697777/100-with-java3-stepssimple-logiceasy-exp-fh8r/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/7151550/easy-and-concise-approach-by-anjanikhatr-bc7u/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/5623515/explained-with-illustrations-beats-100-b-9zh7/;;https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/11440/non-recursive-java-solution-and-idea-by-sigk0/;;;=;==;=;=;

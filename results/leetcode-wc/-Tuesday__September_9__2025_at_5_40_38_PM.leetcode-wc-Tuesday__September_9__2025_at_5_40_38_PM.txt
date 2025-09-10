@@ -1,0 +1,20 @@
+2605. Form Smallest Number From Two Digit Arrays;=;=Easy;=;=public int minNumber(int[] nums1, int[] nums2);=;=Given two arrays of unique digits nums1 and nums2, return the smallest number that contains at least one digit from each array.
+ 
+
+Example 1:
+
+Input: nums1 = [4,1,3], nums2 = [5,7]
+Output: 15
+Explanation: The number 15 contains the digit 1 from nums1 and the digit 5 from nums2. It can be proven that 15 is the smallest number we can have.
+Example 2:
+
+Input: nums1 = [3,5,2,6], nums2 = [3,1,7]
+Output: 3
+Explanation: The number 3 contains the digit 3 which exists in both arrays.
+ 
+
+Constraints:
+
+1 <= nums1.length, nums2.length <= 9
+1 <= nums1[i], nums2[i] <= 9
+All digits in each array are unique.;=;=https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/7122632/easy-java-try-this-by-sairangineeni-ipba/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/6800891/java-hashset-1ms-by-teja_1403-xxv8/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/6983485/pick-stitch-beats-100-0ms-by-code_with_k-5qv0/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/3366406/easy-short-clean-java-solution-by-himans-9wki/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/6489462/leetcodedaybyday-beats-100-with-c-100-wi-mg5t/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/5370581/java-easy-approach-by-rajragul005-xr8a/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/3366508/easy-java-solution-by-1asthakhushi1-1zxf/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/3366789/simple-solution-with-1won-extra-tip-to-r-dqjp/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/6297729/easiest-java-code-in-5-6-lines-beating-8-exwt/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/3366805/easiest-java-solution-by-codehunter01-8t6e/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/6284298/0ms-beats-100-proof-concise-code-java-be-z9m7/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/4263076/the-way-you-beat-100-of-users-by-nguyenl-t4g9/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/3391461/java-solution-by-wizard_ok-rtxn/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/3366706/java-hashset-explained-by-sourin_bruh-mnsl/;;https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/solutions/3382326/simple-approch-with-hashset-by-mahesh_ba-1adi/;;;=;==;=;=;

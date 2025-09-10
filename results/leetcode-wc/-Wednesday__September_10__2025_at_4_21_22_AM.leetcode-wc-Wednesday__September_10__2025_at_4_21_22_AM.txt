@@ -1,0 +1,28 @@
+2537. Count the Number of Good Subarrays;=;=Medium;=;=publicÊlongÊcountGood(int[]Ênums,ÊintÊk);=;=Given an integer array nums and an integer k, return the number of good subarrays of nums.
+
+A subarray arr is good if there are at least k pairs of indices (i, j) such that i < j and arr[i] == arr[j].
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,1,1,1,1], k = 10
+Output: 1
+Explanation: The only good subarray is the array nums itself.
+Example 2:
+
+Input: nums = [3,1,4,3,2,2,4], k = 2
+Output: 4
+Explanation: There are 4 different good subarrays:
+- [3,1,4,3,2,2] that has 2 pairs.
+- [3,1,4,3,2,2,4] that has 3 pairs.
+- [1,4,3,2,2,4] that has 2 pairs.
+- [4,3,2,2,4] that has 2 pairs.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i], k <= 109;=;=https://leetcode.com/problems/count-the-number-of-good-subarrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6654860/brute-force-sliding-window-with-images-e-fef9/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/7172396/optimized-sliding-window-solution-beats-cwz6s/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6656008/beats-super-easy-beginners-java-c-c-pyth-o5yy/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6654865/naruto-step-by-step-simple-easiest-expla-exsi/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6655441/efficient-sliding-window-frequency-map-s-ty5j/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6656089/beats-100-in-mosteasy-solution-usinghash-zxui/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6655160/easiest-solution-ever-beginner-friendly-6wd3s/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/7078012/simple-java-solution-beat-98-by-rohan_sh-ox2o/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6655205/easy-understandable-explain-code-beginne-82k4/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6656973/efficient-sliding-window-hashmap-using-a-uqo4/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/3052838/java-easy-sliding-window-using-hashmap-b-i8p6/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6656105/java-sliding-window-by-ayeshakhan7-bcl9/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6655183/one-piece-step-by-step-simplest-legendar-920h/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6655217/easy-to-understand-sliding-window-two-po-fodb/;;https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6656685/bruteforce-optimized-sliding-window-by-h-ubk1/;;;=;==;=;=;

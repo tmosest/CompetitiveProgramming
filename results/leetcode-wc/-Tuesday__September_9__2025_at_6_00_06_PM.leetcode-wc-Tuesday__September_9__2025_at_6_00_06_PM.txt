@@ -1,0 +1,36 @@
+3159. Find Occurrences of an Element in an Array;=;=Medium;=;=public int[] occurrencesOfElement(int[] nums, int[] queries, int x);=;=You are given an integer array nums, an integer array queries, and an integer x.
+
+For each queries[i], you need to find the index of the queries[i]th occurrence of x in the nums array. If there are fewer than queries[i] occurrences of x, the answer should be -1 for that query.
+
+Return an integer array answer containing the answers to all queries.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,1,7], queries = [1,3,2,4], x = 1
+
+Output: [0,-1,2,-1]
+
+Explanation:
+
+For the 1st query, the first occurrence of 1 is at index 0.
+For the 2nd query, there are only two occurrences of 1 in nums, so the answer is -1.
+For the 3rd query, the second occurrence of 1 is at index 2.
+For the 4th query, there are only two occurrences of 1 in nums, so the answer is -1.
+Example 2:
+
+Input: nums = [1,2,3], queries = [10], x = 5
+
+Output: [-1]
+
+Explanation:
+
+For the 1st query, 5 doesn't exist in nums, so the answer is -1.
+ 
+
+Constraints:
+
+1 <= nums.length, queries.length <= 105
+1 <= queries[i] <= 105
+1 <= nums[i], x <= 104;=;=https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5208055/finding-indexes-of-specific-occurrences-8m3tw/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/7087487/easy-to-understand-java-solution-beats-9-ck3f/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/7052363/k-th-occurrence-finder-tracking-element-4jvqe/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5206992/simple-java-solution-by-siddhant_1602-eudk/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5284338/beats-99-javac-solution-using-hashmap-ea-2qah/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5206918/easy-solution-contest-25052024-by-mangeu-vkfr/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5217393/beats-10000-of-users-with-java-by-kawinp-fbh9/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5206963/detailed-explanation-by-muhammadfarhankt-vpsb/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5209866/simple-storing-using-hashmap-by-satoru_g-09bv/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5207070/faster-lesser-cpython3javacpythonexplain-t8mu/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5208360/easiest-explanation-in-depth-step-by-ste-8g47/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5241032/simple-java-code-by-abhinandannaik1717-p2uo/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5207383/simple-java-solution-using-hashtable-by-j4qjp/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/5206965/simple-java-code-with-dry-run-by-shaswat-87f7/;;https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/solutions/6905617/find-super-fast-execution-with-easy-unde-glba/;;;=;==;=;=;

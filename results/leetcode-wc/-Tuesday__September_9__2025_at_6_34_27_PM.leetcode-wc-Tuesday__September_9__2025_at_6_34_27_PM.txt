@@ -1,0 +1,41 @@
+3478. Choose K Elements With Maximum Sum;=;=Medium;=;=public long[] findMaxSum(int[] nums1, int[] nums2, int k);=;=You are given two integer arrays, nums1 and nums2, both of length n, along with a positive integer k.
+
+For each index i from 0 to n - 1, perform the following:
+
+Find all indices j where nums1[j] is less than nums1[i].
+Choose at most k values of nums2[j] at these indices to maximize the total sum.
+Return an array answer of size n, where answer[i] represents the result for the corresponding index i.
+
+ 
+
+Example 1:
+
+Input: nums1 = [4,2,1,5,3], nums2 = [10,20,30,40,50], k = 2
+
+Output: [80,30,0,80,50]
+
+Explanation:
+
+For i = 0: Select the 2 largest values from nums2 at indices [1, 2, 4] where nums1[j] < nums1[0], resulting in 50 + 30 = 80.
+For i = 1: Select the 2 largest values from nums2 at index [2] where nums1[j] < nums1[1], resulting in 30.
+For i = 2: No indices satisfy nums1[j] < nums1[2], resulting in 0.
+For i = 3: Select the 2 largest values from nums2 at indices [0, 1, 2, 4] where nums1[j] < nums1[3], resulting in 50 + 30 = 80.
+For i = 4: Select the 2 largest values from nums2 at indices [1, 2] where nums1[j] < nums1[4], resulting in 30 + 20 = 50.
+Example 2:
+
+Input: nums1 = [2,2,2,2], nums2 = [3,1,2,3], k = 1
+
+Output: [0,0,0,0]
+
+Explanation:
+
+Since all elements in nums1 are equal, no indices satisfy the condition nums1[j] < nums1[i] for any i, resulting in 0 for all positions.
+
+ 
+
+Constraints:
+
+n == nums1.length == nums2.length
+1 <= n <= 105
+1 <= nums1[i], nums2[i] <= 106
+1 <= k <= n;=;=https://leetcode.com/problems/choose-k-elements-with-maximum-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6515913/very-intuitive-easy-to-understand-implem-lt9e/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6515550/simple-solution-by-siva_devireddy_0312-nc5f/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/7052317/sorting-heap-by-tentx-z7x5/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6515563/simple-code-with-explanation-tc-nlogn-by-bctz/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6515543/java-solution-by-harsh__005-r44q/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6658780/simple-approach-intuitive-beats-100-by-r-vs91/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6515609/easy-sorting-and-heap-based-solution-by-nvy84/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6516374/easy-simple-readable-code-priorityqueue-8gzus/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6532984/a-simple-intuitive-approach-minheap-c-ja-q4bv/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6515552/min-heap-by-ankith_kumar-6ykm/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6515549/easyheapssorting-by-eshwarvengala-15ms/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6531827/beats-95-of-the-user-simple-and-intuitiv-w1y8/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6517596/easy-to-understand-using-heappriorityque-fd08/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6515605/simple-use-of-sorting-based-on-value-and-xxtk/;;https://leetcode.com/problems/choose-k-elements-with-maximum-sum/solutions/6515568/java-solution-by-mohakharjani-bj35/;;;=;==;=;=;

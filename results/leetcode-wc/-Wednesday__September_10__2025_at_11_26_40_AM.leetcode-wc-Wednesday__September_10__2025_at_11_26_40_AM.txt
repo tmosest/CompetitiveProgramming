@@ -1,0 +1,61 @@
+3077. Maximum Strength of K Disjoint Subarrays;=;=Hard;=;=public long maximumStrength(int[] nums, int k);=;=You are given an array of integers nums with length n, and a positive odd integer k.
+
+Select exactly k disjoint subarrays sub1, sub2, ..., subk from nums such that the last element of subi appears before the first element of sub{i+1} for all 1 <= i <= k-1. The goal is to maximize their combined strength.
+
+The strength of the selected subarrays is defined as:
+
+strength = k * sum(sub1)- (k - 1) * sum(sub2) + (k - 2) * sum(sub3) - ... - 2 * sum(sub{k-1}) + sum(subk)
+
+where sum(subi) is the sum of the elements in the i-th subarray.
+
+Return the maximum possible strength that can be obtained from selecting exactly k disjoint subarrays from nums.
+
+Note that the chosen subarrays don't need to cover the entire array.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,-1,2], k = 3
+
+Output: 22
+
+Explanation:
+
+The best possible way to select 3 subarrays is: nums[0..2], nums[3..3], and nums[4..4]. The strength is calculated as follows:
+
+strength = 3 * (1 + 2 + 3) - 2 * (-1) + 2 = 22
+
+ 
+
+Example 2:
+
+Input: nums = [12,-2,-2,-2,-2], k = 5
+
+Output: 64
+
+Explanation:
+
+The only possible way to select 5 disjoint subarrays is: nums[0..0], nums[1..1], nums[2..2], nums[3..3], and nums[4..4]. The strength is calculated as follows:
+
+strength = 5 * 12 - 4 * (-2) + 3 * (-2) - 2 * (-2) + (-2) = 64
+
+Example 3:
+
+Input: nums = [-1,-2,-3], k = 1
+
+Output: -1
+
+Explanation:
+
+The best possible way to select 1 subarray is: nums[0..0]. The strength is -1.
+
+ 
+
+Constraints:
+
+1 <= n <= 104
+-109 <= nums[i] <= 109
+1 <= k <= n
+1 <= n * k <= 106
+k is odd.;=;=https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4851566/beats-100-using-dp-shortest-and-very-eas-kt4c/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4851359/dp-796801-tle-easy-to-understand-clean-c-21u2/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4851457/dp-on-k-time-on-k-space-by-tarptaeya-wvix/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4854326/java-on-k-bottom-up-dp-solution-by-nayan-odme/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4851477/java-multiple-clean-solution-by-shree_go-q63q/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4858141/java-100-dp-by-meringueee-ft1f/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4851376/python3-java-c-optimal-solution-dynamic-fd112/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4854418/java-topdown-dp-with-comments-by-gangjig-et0p/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4856150/dp-solution-by-andreashzz-h1pf/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4855197/java-dp-solution-in-onk-by-zeningc-1dv0/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4854325/java-on-k-bottom-up-dp-solution-by-nayan-agsy/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4852964/java-dp-by-mot882000-dli1/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4852864/onk-dp-solution-in-javascript-python-jav-by0k/;;https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/solutions/4852187/java-impl-with-dimension-reduction-dp-21-5d3x/;;;=;==;=;=;

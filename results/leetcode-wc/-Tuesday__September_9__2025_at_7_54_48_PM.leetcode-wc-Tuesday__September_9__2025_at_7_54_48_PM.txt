@@ -1,0 +1,24 @@
+829. Consecutive Numbers Sum;=;=Hard;=;=public int consecutiveNumbersSum(int n);=;=Given an integer n, return the number of ways you can write n as the sum of consecutive positive integers.
+
+ 
+
+Example 1:
+
+Input: n = 5
+Output: 2
+Explanation: 5 = 2 + 3
+Example 2:
+
+Input: n = 9
+Output: 3
+Explanation: 9 = 4 + 5 = 2 + 3 + 4
+Example 3:
+
+Input: n = 15
+Output: 4
+Explanation: 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5
+ 
+
+Constraints:
+
+1 <= n <= 109;=;=https://leetcode.com/problems/consecutive-numbers-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/consecutive-numbers-sum/solutions/1117669/mathematical-solution-by-himanshuchhikar-qyj6/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/6791430/a-3-liner-math-solution-by-sivani_257-pher/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/2301548/java-triangular-numbers-with-explanation-wq0r/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/6801405/consecutive-numbers-sum-by-triprakhar-9mdj/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/6801341/consecutive-numbers-sum-by-triprakhar-toui/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/6787152/a-3-liner-math-code-by-sivani_257-2268/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/809348/with-explanation-simple-solution-beats-9-wwmg/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/1508921/mathematical-solution-in-on05-with-expla-83zd/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/1483214/java-explanation-by-shubham242k-yqma/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/1682388/easy-java-solution-with-explanation-by-y-pihl/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/4710641/java-solution-beats-92-users-by-raghu369-s0s7/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/3484874/solution-by-deleted_user-ix58/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/1777109/java-simple-solution-by-softmahi-z4ui/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/7036931/consecutive-numbers-sum-by-ombarabhai-qldh/;;https://leetcode.com/problems/consecutive-numbers-sum/solutions/1663372/java-solution-by-hyng023-ntge/;;;=;==;=;=;

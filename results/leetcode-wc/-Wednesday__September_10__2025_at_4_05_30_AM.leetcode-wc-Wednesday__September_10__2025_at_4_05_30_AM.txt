@@ -1,0 +1,42 @@
+3381. Maximum Subarray Sum With Length Divisible by K;=;=Medium;=;=public long maxSubarraySum(int[] nums, int k);=;=You are given an array of integers nums and an integer k.
+
+Return the maximum sum of a subarray of nums, such that the size of the subarray is divisible by k.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2], k = 1
+
+Output: 3
+
+Explanation:
+
+The subarray [1, 2] with sum 3 has length equal to 2 which is divisible by 1.
+
+Example 2:
+
+Input: nums = [-1,-2,-3,-4,-5], k = 4
+
+Output: -10
+
+Explanation:
+
+The maximum sum subarray is [-1, -2, -3, -4] which has length equal to 4 which is divisible by 4.
+
+Example 3:
+
+Input: nums = [-5,1,2,-3,4], k = 2
+
+Output: 4
+
+Explanation:
+
+The maximum sum subarray is [1, 2, -3, 4] which has length equal to 4 which is divisible by 2.
+
+ 
+
+Constraints:
+
+1 <= k <= nums.length <= 2 * 105
+-109 <= nums[i] <= 109;=;=https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6124583/javacpython-best-time-to-buy-and-sell-st-u6fb/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6124580/beats-100-6-ms-prefix-sum-3-solutions-by-yj6u/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6124512/7ms-on-kadane-with-benefits-by-whoawhoaw-m9yu/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6125442/kadanes-algorithm-by-eskandar1-qhau/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6126198/concise-java-solution-with-explanation-b-zuui/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6125710/beats-100-simple-explanation-how-to-appr-6vpj/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6124588/java-hashmap-single-pass-beats-100-by-ne-78sf/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6187321/sliding-window-kadance-dp-by-leetgame-surg/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6125330/java-tc-100-sc-100-suffix-array-sliding-phldu/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6134522/beats-100-java-solution-optimum-solution-8abp/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6124543/easy-hashmap-100-beats-by-pune18-sxz0/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6126374/simple-dp-solution-using-long-2-array-me-5nc9/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6727890/simple-java-solution-prefixsum-hashmap-b-iwv9/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6855640/on-prefix-sum-hashmap-by-gitchuan-4v5q/;;https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/solutions/6124697/3381-maximum-subarray-sum-with-length-di-hi33/;;;=;==;=;=;

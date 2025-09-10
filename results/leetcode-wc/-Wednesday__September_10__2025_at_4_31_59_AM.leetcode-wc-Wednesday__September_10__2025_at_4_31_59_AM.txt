@@ -1,0 +1,34 @@
+1088. Confusing Number II;=;=Hard;=;=public int confusingNumberII(int n);=;=A confusing number is a number that when rotated 180 degrees becomes a different number with each digit valid.
+
+We can rotate digits of a number by 180 degrees to form new digits.
+
+When 0, 1, 6, 8, and 9 are rotated 180 degrees, they become 0, 1, 9, 8, and 6 respectively.
+When 2, 3, 4, 5, and 7 are rotated 180 degrees, they become invalid.
+Note that after rotating a number, we can ignore leading zeros.
+
+For example, after rotating 8000, we have 0008 which is considered as just 8.
+Given an integer n, return the number of confusing numbers in the inclusive range [1, n].
+
+ 
+
+Example 1:
+
+Input: n = 20
+Output: 6
+Explanation: The confusing numbers are [6,9,10,16,18,19].
+6 converts to 9.
+9 converts to 6.
+10 converts to 01 which is just 1.
+16 converts to 91.
+18 converts to 81.
+19 converts to 61.
+Example 2:
+
+Input: n = 100
+Output: 19
+Explanation: The confusing numbers are [6,9,10,16,18,19,60,61,66,68,80,81,86,89,90,91,98,99,100].
+ 
+
+Constraints:
+
+1 <= n <= 109;=;=https://leetcode.com/problems/confusing-number-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/confusing-number-ii/solutions/3085481/java-easy-to-understand-backtracking-sol-0v8g/;;https://leetcode.com/problems/confusing-number-ii/solutions/1117746/java-clean-dfs-solution-with-detailed-ex-u4v0/;;https://leetcode.com/problems/confusing-number-ii/solutions/1341908/java-recursive-solution-9-lines-of-code-il9ro/;;https://leetcode.com/problems/confusing-number-ii/solutions/3098752/java-2-solutions-by-conchwu-qenh/;;https://leetcode.com/problems/confusing-number-ii/solutions/3120293/java-beats-99-on-time-and-99-on-space-by-xqqu/;;https://leetcode.com/problems/confusing-number-ii/solutions/925890/java-simple-dfs-without-long-or-map-by-n-67xg/;;https://leetcode.com/problems/confusing-number-ii/solutions/1847737/java-simple-bfs-by-crazygeek-mrvk/;;https://leetcode.com/problems/confusing-number-ii/solutions/514698/instead-of-worrying-if-i-should-i-focuse-ghei/;;https://leetcode.com/problems/confusing-number-ii/solutions/6710771/simple-bfs-solution-by-saketcodescribe-d5hz/;;https://leetcode.com/problems/confusing-number-ii/solutions/5310017/java-backtracking-neat-solution-by-angel-iui0/;;https://leetcode.com/problems/confusing-number-ii/solutions/4495803/no-backtracking-number-system-bfs-on-len-67e8/;;https://leetcode.com/problems/confusing-number-ii/solutions/3551122/solution-by-deleted_user-zn46/;;https://leetcode.com/problems/confusing-number-ii/solutions/3102044/non-optimal-backtracking-by-ajesk-7deh/;;https://leetcode.com/problems/confusing-number-ii/solutions/3089960/java-concise-greedy-iterative-with-o1-sp-3ml3/;;https://leetcode.com/problems/confusing-number-ii/solutions/3088017/an-original-way-to-ask-a-backtrack-quest-z43c/;;;=;==;=;=;

@@ -1,0 +1,31 @@
+1183. Maximum Number of Ones;=;=Hard;=;=public int maximumNumberOfOnes(int width, int height, int sideLength, int maxOnes);=;=Consider a matrix M with dimensions width * height, such that every cell has value 0 or 1, and any square sub-matrix of M of size sideLength * sideLength has at most maxOnes ones.
+
+Return the maximum possible number of ones that the matrix M can have.
+
+ 
+
+Example 1:
+
+Input: width = 3, height = 3, sideLength = 2, maxOnes = 1
+Output: 4
+Explanation:
+In a 3*3 matrix, no 2*2 sub-matrix can have more than 1 one.
+The best solution that has 4 ones is:
+[1,0,1]
+[0,0,0]
+[1,0,1]
+Example 2:
+
+Input: width = 3, height = 3, sideLength = 2, maxOnes = 2
+Output: 6
+Explanation:
+[1,0,1]
+[1,0,1]
+[1,0,1]
+ 
+
+Constraints:
+
+1 <= width, height <= 100
+1 <= sideLength <= width, height
+0 <= maxOnes <= sideLength * sideLength;=;=https://leetcode.com/problems/maximum-number-of-ones/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-ones/solutions/1792682/dew-it-simple-greedy-java-by-i_am_the_se-16ak/;;https://leetcode.com/problems/maximum-number-of-ones/solutions/6421062/java-clean-code-with-explanation-and-com-9onc/;;https://leetcode.com/problems/maximum-number-of-ones/solutions/6059195/complete-step-by-step-explanation-with-v-37nj/;;https://leetcode.com/problems/maximum-number-of-ones/solutions/5200756/java-greedy-solution-by-lmvn-1ptm/;;https://leetcode.com/problems/maximum-number-of-ones/solutions/3575384/solution-by-deleted_user-ob6i/;;https://leetcode.com/problems/maximum-number-of-ones/solutions/3027086/cjavapython3-math-by-ye15-rcby/;;https://leetcode.com/problems/maximum-number-of-ones/solutions/2418545/java-translation-by-student2091-z7sp/;;;=;==;=;=;

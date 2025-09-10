@@ -1,0 +1,27 @@
+1913. Maximum Product Difference Between Two Pairs;=;=Easy;=;=public int maxProductDifference(int[] nums);=;=The product difference between two pairs (a, b) and (c, d) is defined as (a * b) - (c * d).
+
+For example, the product difference between (5, 6) and (2, 7) is (5 * 6) - (2 * 7) = 16.
+Given an integer array nums, choose four distinct indices w, x, y, and z such that the product difference between pairs (nums[w], nums[x]) and (nums[y], nums[z]) is maximized.
+
+Return the maximum such product difference.
+
+ 
+
+Example 1:
+
+Input: nums = [5,6,2,7,4]
+Output: 34
+Explanation: We can choose indices 1 and 3 for the first pair (6, 7) and indices 2 and 4 for the second pair (2, 4).
+The product difference is (6 * 7) - (2 * 4) = 34.
+Example 2:
+
+Input: nums = [4,2,5,9,7,4,8]
+Output: 64
+Explanation: We can choose indices 3 and 6 for the first pair (9, 8) and indices 1 and 5 for the second pair (2, 4).
+The product difference is (9 * 8) - (2 * 4) = 64.
+ 
+
+Constraints:
+
+4 <= nums.length <= 104
+1 <= nums[i] <= 104;=;=https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/4418493/beats-100-explained-with-video-largest-a-ex1t/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/4418270/video-give-me-5-minutes-how-we-think-abo-ysv6/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/1786754/easy-1ms-9988-on-solution-without-sortin-8l2p/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/6963812/two-big-two-small-one-big-differencefor-w6u7m/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/7014584/simple-java-solution-optimal-by-rajdeep0-kz66/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/4418141/cjavapythonjavascript-2-approaches-expla-yvvt/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/2084079/ccjavacjavascripttypescript-on-solutions-uw6o/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/6932048/beats-99-on-by-alexander_sergeev-rt20/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/6931769/beats-73-using-arrayssort-by-alexander_s-ezyw/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/4418824/simple-and-easy-code-to-understand-begin-6kjf/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/5285169/easiest-3-step-cpp-java-py-c-js-solution-xd73/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/6756791/easy-try-to-understand-it-fully-easy-way-c1re/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/6753895/easy-solution-beats-98-on-o1-by-sagar__2-2uxk/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/1348190/java-on-solution-by-purna135-xo0c/;;https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/3210639/easy-to-understand-on-solution-0-ms-beat-522n/;;;=;==;=;=;

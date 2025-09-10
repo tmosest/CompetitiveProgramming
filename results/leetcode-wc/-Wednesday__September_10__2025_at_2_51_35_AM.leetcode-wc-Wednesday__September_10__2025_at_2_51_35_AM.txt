@@ -1,0 +1,48 @@
+3272. Find the Count of Good Integers;=;=Hard;=;=public long countGoodIntegers(int n, int k);=;=You are given two positive integers n and k.
+
+An integer x is called k-palindromic if:
+
+x is a palindrome.
+x is divisible by k.
+An integer is called good if its digits can be rearranged to form a k-palindromic integer. For example, for k = 2, 2020 can be rearranged to form the k-palindromic integer 2002, whereas 1010 cannot be rearranged to form a k-palindromic integer.
+
+Return the count of good integers containing n digits.
+
+Note that any integer must not have leading zeros, neither before nor after rearrangement. For example, 1010 cannot be rearranged to form 101.
+
+ 
+
+Example 1:
+
+Input: n = 3, k = 5
+
+Output: 27
+
+Explanation:
+
+Some of the good integers are:
+
+551 because it can be rearranged to form 515.
+525 because it is already k-palindromic.
+Example 2:
+
+Input: n = 1, k = 4
+
+Output: 2
+
+Explanation:
+
+The two good integers are 4 and 8.
+
+Example 3:
+
+Input: n = 5, k = 6
+
+Output: 2468
+
+ 
+
+Constraints:
+
+1 <= n <= 10
+1 <= k <= 9;=;=https://leetcode.com/problems/find-the-count-of-good-integers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6641394/01-knapsack-dp-with-images-example-walkt-9rxt/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6641380/naruto-step-by-step-simple-easiest-expla-j7zi/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6641520/faang-secret-code-o1-time-space-by-hawk2-qchw/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6642087/beats-3-trials-super-easy-beginners-java-mhim/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6641795/k-divisible-palindromes-beats-95-by-venk-dkr4/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6641811/100-beat-prune-search-space-search-till-36aou/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6641618/classical-solution-easy-to-understand-en-xfa5/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6641621/beats-100-in-mosteasy-solution-usingcomb-nlqi/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6643203/0-ms-runtime-beats-100-untrivial-way-to-xnim7/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6642223/java-by-ayeshakhan7-cmpw/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6642569/solution-from-hell-c-java-python-any-lan-zza6/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6642042/easy-to-understand-math-combinatorics-de-72in/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6642644/reward-for-2-hrs-of-debugging-by-ajay_pr-ssay/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6643368/find-the-count-of-good-integers-by-deven-673q/;;https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6641562/java-solution-for-find-the-count-of-good-wxs0/;;;=;==;=;=;

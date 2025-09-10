@@ -1,0 +1,37 @@
+2279. Maximum Bags With Full Capacity of Rocks;=;=Medium;=;=public int maximumBags(int[] capacity, int[] rocks, int additionalRocks);=;=You have n bags numbered from 0 to n - 1. You are given two 0-indexed integer arrays capacity and rocks. The ith bag can hold a maximum of capacity[i] rocks and currently contains rocks[i] rocks. You are also given an integer additionalRocks, the number of additional rocks you can place in any of the bags.
+
+Return the maximum number of bags that could have full capacity after placing the additional rocks in some bags.
+
+ 
+
+Example 1:
+
+Input: capacity = [2,3,4,5], rocks = [1,2,4,4], additionalRocks = 2
+Output: 3
+Explanation:
+Place 1 rock in bag 0 and 1 rock in bag 1.
+The number of rocks in each bag are now [2,3,4,4].
+Bags 0, 1, and 2 have full capacity.
+There are 3 bags at full capacity, so we return 3.
+It can be shown that it is not possible to have more than 3 bags at full capacity.
+Note that there may be other ways of placing the rocks that result in an answer of 3.
+Example 2:
+
+Input: capacity = [10,2,2], rocks = [2,2,0], additionalRocks = 100
+Output: 3
+Explanation:
+Place 8 rocks in bag 0 and 2 rocks in bag 2.
+The number of rocks in each bag are now [10,2,2].
+Bags 0, 1, and 2 have full capacity.
+There are 3 bags at full capacity, so we return 3.
+It can be shown that it is not possible to have more than 3 bags at full capacity.
+Note that we did not use all of the additional rocks.
+ 
+
+Constraints:
+
+n == capacity.length == rocks.length
+1 <= n <= 5 * 104
+1 <= capacity[i] <= 109
+0 <= rocks[i] <= capacity[i]
+1 <= additionalRocks <= 109;=;=https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/2061949/greedy-intuition-o1-space-cjava-by-xxvvp-kb8k/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/7057828/solve-greedily-fill-greedily-by-utkarsh_-kdwi/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/2062185/cpython-greedy-solution-by-lee215-nvd9/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/6996897/fill-max-bags-with-greedy-rocks-allocati-vqxg/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/6958044/100-efficient-solution-fractional-knapsa-29x6/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/6985793/sort-by-who-needs-the-least-and-start-fi-778p/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/2061813/greedy-by-virendra115-60ze/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/2061793/java-basic-approach-on-log-n-time-on-spa-xyc4/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/7080102/greedy-o1-space-sort-by-xetanksieucap-fx4m/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/6034499/java-solution-with-commentsbeats-9500-by-0y2b/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/6578985/95beats-java-easy-to-understand-by-aryam-ug29/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/2061805/java-greedy-fill-the-smallest-left-bags-q1vbb/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/2958902/java-simple-video-explanation-by-sam0220-4gui/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/5062129/easy-java-solution-greedy-sorting-by-rav-0nk2/;;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/solutions/2958417/100-faster-easy-java-soln-by-wizmurmu07-43wx/;;;=;==;=;=;

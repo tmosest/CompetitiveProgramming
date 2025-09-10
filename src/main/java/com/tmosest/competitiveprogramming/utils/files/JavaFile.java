@@ -60,6 +60,10 @@ public class JavaFile {
   JavaFile(Class source, String className, JavaFileMethod functionDeclaration) {
     this.source = source;
     packge = source.getPackage().toString().replaceFirst("package", "");
+    addRawContent("import java.util.ArrayList;\n" + //
+            "import java.util.Arrays;\n" + //
+            "import java.util.Collections;\n" + //
+            "import java.util.List;");
     addRawContent("\t" + functionDeclaration.toString() + "\n");
     this.className = className;
   }

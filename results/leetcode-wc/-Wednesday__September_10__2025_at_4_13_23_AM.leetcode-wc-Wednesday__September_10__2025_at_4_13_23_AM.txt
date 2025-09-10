@@ -1,0 +1,33 @@
+2200. Find All K-Distant Indices in an Array;=;=Easy;=;=int dp[][][]; // idx, maxAmt, maxC    public int solve(int price[], int taste[], int maxAmt, int maxC, int idx)         if(idx >= price.length)             return 0;                if( dp[idx][maxAmt][maxC] != -1)             return dp[idx][maxAmt][maxC];                int t1 = solve(price, taste, maxAmt, maxC, idx+1);                int t2 = 0;        if(price[idx] <= maxAmt)             t2 = solve(price, taste, maxAmt - price[idx], maxC, idx+1) + taste[idx];                int t3 = 0;        if(maxC > 0 && price[idx] / 2 <= maxAmt)             t3 = solve(price, taste, maxAmt - (price[idx]/2), maxC - 1, idx+1) + taste[idx];                return dp[idx][maxAmt][maxC] = Math.max(t1, Math.max(t2, t3));        public int maxTastiness(int[] price, int[] tastiness, int maxAmount, int maxCoupons)         dp = new int[101][1001][6];        for(int a3[][] : dp)             for(int a2[] : a3);=;=You are given a 0-indexed integer array nums and two integers key and k. A k-distant index is an index i of nums for which there exists at least one index j such that |i - j| <= k and nums[j] == key.
+
+Return a list of all k-distant indices sorted in increasing order.
+
+ 
+
+Example 1:
+
+Input: nums = [3,4,9,1,3,9,5], key = 9, k = 1
+Output: [1,2,3,4,5,6]
+Explanation: Here, nums[2] == key and nums[5] == key.
+- For index 0, |0 - 2| > k and |0 - 5| > k, so there is no j where |0 - j| <= k and nums[j] == key. Thus, 0 is not a k-distant index.
+- For index 1, |1 - 2| <= k and nums[2] == key, so 1 is a k-distant index.
+- For index 2, |2 - 2| <= k and nums[2] == key, so 2 is a k-distant index.
+- For index 3, |3 - 2| <= k and nums[2] == key, so 3 is a k-distant index.
+- For index 4, |4 - 5| <= k and nums[5] == key, so 4 is a k-distant index.
+- For index 5, |5 - 5| <= k and nums[5] == key, so 5 is a k-distant index.
+- For index 6, |6 - 5| <= k and nums[5] == key, so 6 is a k-distant index.
+Thus, we return [1,2,3,4,5,6] which is sorted in increasing order. 
+Example 2:
+
+Input: nums = [2,2,2,2,2], key = 2, k = 2
+Output: [0,1,2,3,4]
+Explanation: For all indices i in nums, there exists some index j such that |i - j| <= k and nums[j] == key, so every index is a k-distant index. 
+Hence, we return [0,1,2,3,4].
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 1000
+key is an integer from the array nums.
+1 <= k <= nums.length;=;=https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6878201/are-you-within-k-distance-beats-100-expl-u6of/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6876832/beginner-freindlyjavacpythonjs-by-ashokv-k5rs/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6874072/2-approaches-cpp-java-python-go-100-beat-b772/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6878339/on-solution-with-easy-explanation-by-mee-dln1/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6881291/9725-java-find-all-k-distinct-indices-in-u29i/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6878157/two-pointer-most-optimal-solution-explai-zldy/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6878460/easy-solution-eng-hing-explained-beats-1-3cf2/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6879402/easy-code-must-try-beats-100-by-notadity-yyg2/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6879580/brute-to-optimize-to-prefix-sum-interval-2a3i/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6879429/time-100-space-7339-by-ruhaan_pathan-oo4o/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6879251/fast-and-clear-with-iterations-in-tables-kk5z/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6880802/java-solution-java-java-java-java-by-omb-9dhr/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6880108/efficient-on-solution-using-boolean-rang-hfkk/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6879135/brute-and-optimised-both-java-solution-b-kv3u/;;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6878650/optimized-java-solution-of-k-distant-ind-8dfx/;;;=;==;=;=;

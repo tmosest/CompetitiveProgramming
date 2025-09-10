@@ -1,0 +1,33 @@
+2187. Minimum Time to Complete Trips;=;=Medium;=;=public long minimumTime(int[] time, int totalTrips);=;=You are given an array time where time[i] denotes the time taken by the ith bus to complete one trip.
+
+Each bus can make multiple trips successively; that is, the next trip can start immediately after completing the current trip. Also, each bus operates independently; that is, the trips of one bus do not influence the trips of any other bus.
+
+You are also given an integer totalTrips, which denotes the number of trips all buses should make in total. Return the minimum time required for all buses to complete at least totalTrips trips.
+
+ 
+
+Example 1:
+
+Input: time = [1,2,3], totalTrips = 5
+Output: 3
+Explanation:
+- At time t = 1, the number of trips completed by each bus are [1,0,0]. 
+  The total number of trips completed is 1 + 0 + 0 = 1.
+- At time t = 2, the number of trips completed by each bus are [2,1,0]. 
+  The total number of trips completed is 2 + 1 + 0 = 3.
+- At time t = 3, the number of trips completed by each bus are [3,1,1]. 
+  The total number of trips completed is 3 + 1 + 1 = 5.
+So the minimum time needed for all buses to complete at least 5 trips is 3.
+Example 2:
+
+Input: time = [2], totalTrips = 1
+Output: 2
+Explanation:
+There is only one bus, and it will complete its first trip at t = 2.
+So the minimum time needed to complete 1 trip is 2.
+ 
+
+Constraints:
+
+1 <= time.length <= 105
+1 <= time[i], totalTrips <= 107;=;=https://leetcode.com/problems/minimum-time-to-complete-trips/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/3266855/all-binary-search-problems-by-kalinga-xsby/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/7166550/complete-binary-search-intuition-how-i-s-yxrf/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/7130506/java-binary-search-on-time-minimum-time-5o0io/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/3266586/java-easy-binary-search-on-answers-by-ka-45vy/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/1802415/python3-java-c-binary-search-1-liner-by-95nkf/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/3266714/clean-codes-full-explanation-binary-sear-mk3n/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/1802443/javapython-3-binary-search-w-similar-pro-izux/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/1802431/java-c-python-detailed-explanation-with-s1y4u/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/3267566/simple-bruteforce-to-crazy-binary-search-iiej/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/6766027/beginner-friendly-step-by-step-walkthrou-ey9n/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/6982992/easy-solution-java-beats-70-by-richa_231-lmk0/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/6643898/java-solutionbinary-search-by-aditya27ra-0the/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/3266483/simple-solution-based-on-similar-problem-w8fa/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/3266465/easy-solutions-in-java-python-and-c-look-nbgt/;;https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/1802466/java-binary-search-with-explanation-by-h-ls6v/;;;=;==;=;=;

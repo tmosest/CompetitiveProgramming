@@ -1,0 +1,31 @@
+2569. Handling Sum Queries After Update;=;=Hard;=;=public long[] handleQuery(int[] nums1, int[] nums2, int[][] queries);=;=You are given two 0-indexed arrays nums1 and nums2 and a 2D array queries of queries. There are three types of queries:
+
+For a query of type 1, queries[i] = [1, l, r]. Flip the values from 0 to 1 and from 1 to 0 in nums1 from index l to index r. Both l and r are 0-indexed.
+For a query of type 2, queries[i] = [2, p, 0]. For every index 0 <= i < n, set nums2[i] = nums2[i] + nums1[i] * p.
+For a query of type 3, queries[i] = [3, 0, 0]. Find the sum of the elements in nums2.
+Return an array containing all the answers to the third type queries.
+
+ 
+
+Example 1:
+
+Input: nums1 = [1,0,1], nums2 = [0,0,0], queries = [[1,1,1],[2,1,0],[3,0,0]]
+Output: [3]
+Explanation: After the first query nums1 becomes [1,1,1]. After the second query, nums2 becomes [1,1,1], so the answer to the third query is 3. Thus, [3] is returned.
+Example 2:
+
+Input: nums1 = [1], nums2 = [5], queries = [[2,0,0],[3,0,0]]
+Output: [5]
+Explanation: After the first query, nums2 remains [5], so the answer to the second query is 5. Thus, [5] is returned.
+ 
+
+Constraints:
+
+1 <= nums1.length,nums2.length <= 105
+nums1.length = nums2.length
+1 <= queries.length <= 105
+queries[i].length = 3
+0 <= l <= r <= nums1.length - 1
+0 <= p <= 106
+0 <= nums1[i] <= 1
+0 <= nums2[i] <= 109;=;=https://leetcode.com/problems/handling-sum-queries-after-update/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3201961/bitset-class-approach-no-lazy-propagatio-8k1o/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3201859/lazy-propagation-on-segment-tree-by-java-rioy/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3202069/java-segment-tree-with-lazy-propagation-p986k/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3203199/java-lazy-propagation-easy-solution-with-xfgc/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3202371/7275-test-cases-passed-can-someone-help-fnn1u/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3202905/why-using-brute-force-way-causes-7275-by-gte0/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/6753391/abstract-factory-java-by-ekamsinghahuja1-2vpy/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/4702866/a-by-user3043sb-e6vn/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3228138/c-java-by-javaee-i79o/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3227273/antarnab-easy-100-faster-by-arnab-chatte-i4ta/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3222191/2569-handling-sum-queries-after-update-j-dg2y/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3206458/segment-tree-to-get-number-of-ones-in-ra-w1y7/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3205230/sqrt-root-decomposition-with-lazy-update-mb1n/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3203524/explaination-on-bitset-class-flipfrom-to-73ci/;;https://leetcode.com/problems/handling-sum-queries-after-update/solutions/3202507/c-lazy-segment-tree-by-prateekgoel7248-yw3x/;;;=;==;=;=;

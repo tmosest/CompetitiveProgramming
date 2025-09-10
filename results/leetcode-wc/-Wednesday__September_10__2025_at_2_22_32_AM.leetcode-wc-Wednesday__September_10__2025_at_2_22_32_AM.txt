@@ -1,0 +1,23 @@
+2505. Bitwise OR of All Subsequence Sums;=;=Medium;=;=public long subsequenceSumOr(int[] nums);=;=Given an integer array nums, return the value of the bitwise OR of the sum of all possible subsequences in the array.
+
+A subsequence is a sequence that can be derived from another sequence by removing zero or more elements without changing the order of the remaining elements.
+
+ 
+
+Example 1:
+
+Input: nums = [2,1,0,3]
+Output: 7
+Explanation: All possible subsequence sums that we can have are: 0, 1, 2, 3, 4, 5, 6.
+And we have 0 OR 1 OR 2 OR 3 OR 4 OR 5 OR 6 = 7, so we return 7.
+Example 2:
+
+Input: nums = [0,0,0]
+Output: 0
+Explanation: 0 is the only possible subsequence sum we can have, so we return 0.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 109;=;=https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/solutions/2912919/cjavapython3-prefix-sum-by-ye15-6ueu/;;https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/solutions/2912829/java-on-time-o1-space-solution-with-proo-6spg/;;https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/solutions/5985956/java-100-faster-one-pass-solution-by-tbe-2rwx/;;https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/solutions/5115964/ad-hoc-solution-for-or-on-sum-of-group-c-kn3k/;;https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/solutions/5087095/easy-4-line-code-with-dry-run-using-pref-rxcm/;;https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/solutions/5086227/prefix-sum-java-1-ms-by-nirbhay221-1urw/;;https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/solutions/2912534/java-bitwise-ennumeration-method-on-by-s-nocp/;;;=;==;=;=;

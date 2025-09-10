@@ -1,0 +1,27 @@
+2357. Make Array Zero by Subtracting Equal Amounts;=;=Easy;=;=public int minimumOperations(int[] nums);=;=You are given a non-negative integer array nums. In one operation, you must:
+
+Choose a positive integer x such that x is less than or equal to the smallest non-zero element in nums.
+Subtract x from every positive element in nums.
+Return the minimum number of operations to make every element in nums equal to 0.
+
+ 
+
+Example 1:
+
+Input: nums = [1,5,0,3,5]
+Output: 3
+Explanation:
+In the first operation, choose x = 1. Now, nums = [0,4,0,2,4].
+In the second operation, choose x = 2. Now, nums = [0,2,0,0,2].
+In the third operation, choose x = 2. Now, nums = [0,0,0,0,0].
+Example 2:
+
+Input: nums = [0]
+Output: 0
+Explanation: Each element in nums is already 0 so no operations are needed.
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+0 <= nums[i] <= 100;=;=https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/7169965/minimum-operations-to-make-array-zero-ex-a57a/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/7149750/with-without-set-both-solutions-by-amyy_-ueqk/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/2357691/javacpython-number-of-different-positive-b6dr/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/7135225/make-array-zero-100-beat-java-by-daulat_-hgry/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/2357658/count-unique-needs-indirect-visualizatio-0607/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/7004224/java-solution-hashset-on-by-anshulsarath-ph7z/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/7082163/java-easy-solution-by-monish1153-vbaq/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/7037898/minimum-operations-to-reduce-array-to-ze-3ho1/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/6943477/easy-solution-set-by-adhi_m_s-5wkc/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/5628223/easiestfaster-lesser-cpython3javacpython-uk9a/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/2358941/java-1-liner-by-fllght-lofy/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/6330136/easy-by-its_gokhul-3wli/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/2357675/java-by-gaddarkumar7447-cnb1/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/2410729/java-short-solution-with-intuition-by-ju-648i/;;https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/solutions/6753125/a-solution-from-scratch-by-backtrackbuil-mer4/;;;=;==;=;=;

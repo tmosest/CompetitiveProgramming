@@ -1,0 +1,36 @@
+3222. Find the Winning Player in Coin Game;=;=Easy;=;=public String winningPlayer(int x, int y);=;=You are given two positive integers x and y, denoting the number of coins with values 75 and 10 respectively.
+
+Alice and Bob are playing a game. Each turn, starting with Alice, the player must pick up coins with a total value 115. If the player is unable to do so, they lose the game.
+
+Return the name of the player who wins the game if both players play optimally.
+
+ 
+
+Example 1:
+
+Input: x = 2, y = 7
+
+Output: "Alice"
+
+Explanation:
+
+The game ends in a single turn:
+
+Alice picks 1 coin with a value of 75 and 4 coins with a value of 10.
+Example 2:
+
+Input: x = 4, y = 11
+
+Output: "Bob"
+
+Explanation:
+
+The game ends in 2 turns:
+
+Alice picks 1 coin with a value of 75 and 4 coins with a value of 10.
+Bob picks 1 coin with a value of 75 and 4 coins with a value of 10.
+ 
+
+Constraints:
+
+1 <= x, y <= 100;=;=https://leetcode.com/problems/find-the-winning-player-in-coin-game/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/5506789/o1-iterative-recursive-solution-by-fahad-vpxm/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/5507672/o1-solution-beats-100-0-ms-java-python-c-7o06/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/7103905/beginners-code-2-line-java-code-beats-10-d0hl/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/6853902/one-line-fast-and-clear-with-iterations-3umpa/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/6449271/java-simple-approach-easy-to-understand-kuwoc/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/7042823/java-easy-solution-0ms-by-akashraj06-efme/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/6331796/javabeats-100easy-by-mani-26-iyfa/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/6449560/0-ms-100-beats-o1-time-complexity-100-be-g1x6/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/5506774/simple-but-detailed-explanation-100-beat-nqfq/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/5507052/simple-java-c-code-by-abhinandannaik1717-jg3f/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/5508761/100-java-c-easy-math-solution-with-o1-ti-jssq/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/5506814/effortlessly-dominate-100-with-beginner-w2a8s/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/5887846/simple-1-line-o1-solution-without-loop-s-3wmx/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/5507040/easy-solution-beats-100-simulation-by-ch-rev1/;;https://leetcode.com/problems/find-the-winning-player-in-coin-game/solutions/5506816/easy-beginner-solution-java-by-abhishekk-myxj/;;;=;==;=;=;

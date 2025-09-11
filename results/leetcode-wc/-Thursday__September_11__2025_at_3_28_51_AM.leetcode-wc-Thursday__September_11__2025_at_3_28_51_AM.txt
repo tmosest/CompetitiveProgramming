@@ -1,0 +1,35 @@
+2219. Maximum Sum Score of Array;=;=Medium;=;=public long maximumSumScore(int[] nums);=;=You are given a 0-indexed integer array nums of length n.
+
+The sum score of nums at an index i where 0 <= i < n is the maximum of:
+
+The sum of the first i + 1 elements of nums.
+The sum of the last n - i elements of nums.
+Return the maximum sum score of nums at any index.
+
+ 
+
+Example 1:
+
+Input: nums = [4,3,-2,5]
+Output: 10
+Explanation:
+The sum score at index 0 is max(4, 4 + 3 + -2 + 5) = max(4, 10) = 10.
+The sum score at index 1 is max(4 + 3, 3 + -2 + 5) = max(7, 6) = 7.
+The sum score at index 2 is max(4 + 3 + -2, -2 + 5) = max(5, 3) = 5.
+The sum score at index 3 is max(4 + 3 + -2 + 5, 5) = max(10, 5) = 10.
+The maximum sum score of nums is 10.
+Example 2:
+
+Input: nums = [-3,-5]
+Output: -3
+Explanation:
+The sum score at index 0 is max(-3, -3 + -5) = max(-3, -8) = -3.
+The sum score at index 1 is max(-3 + -5, -5) = max(-8, -5) = -5.
+The maximum sum score of nums is -3.
+ 
+
+Constraints:
+
+n == nums.length
+1 <= n <= 105
+-105 <= nums[i] <= 105;=;=https://leetcode.com/problems/maximum-sum-score-of-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-sum-score-of-array/solutions/3535202/java-consistently-beating-100-by-fubocd-16mq/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/1906236/java-on-o1-space-two-pointer-easy-by-her-uv1l/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/5604817/1-pass-2pointer-soln-by-vharshal1994-r1rz/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/5036438/java-on-100-faster-solution-by-tbekpro-k5mg/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/4665727/simple-java-solution-beat-100-of-java-us-cri9/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/4154565/java-prefixsum-beats-100-by-rahulcodes12-cryi/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/4016345/simple-java-solution-by-sakshikishore-3wy5/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/3764038/simple-and-straightforward-solution-in-j-lpd1/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/3157220/java-prefix-sum-by-kmp1084-voha/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/2557659/java-easy-solution-on-time-and-o1-space-nuuj5/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/2242887/java-solution-prefix-sum-by-__rainandcof-siwe/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/2240851/java-easy-peasy-by-47nk-y11z/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/2104468/java-easy-on-solution-using-prefix-sum-b-jrie/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/2027478/java-on-prefix-sum-solution-by-sycmtic-bw3n/;;https://leetcode.com/problems/maximum-sum-score-of-array/solutions/1985839/java-straightforward-solution-using-cumu-53o7/;;;=;==;=;=;

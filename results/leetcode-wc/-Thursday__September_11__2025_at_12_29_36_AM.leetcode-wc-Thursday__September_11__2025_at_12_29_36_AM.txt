@@ -1,0 +1,38 @@
+2588. Count the Number of Beautiful Subarrays;=;=Medium;=;=public long beautifulSubarrays(int[] nums);=;=You are given a 0-indexed integer array nums. In one operation, you can:
+
+Choose two different indices i and j such that 0 <= i, j < nums.length.
+Choose a non-negative integer k such that the kth bit (0-indexed) in the binary representation of nums[i] and nums[j] is 1.
+Subtract 2k from nums[i] and nums[j].
+A subarray is beautiful if it is possible to make all of its elements equal to 0 after applying the above operation any number of times (including zero).
+
+Return the number of beautiful subarrays in the array nums.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+Note: Subarrays where all elements are initially 0 are considered beautiful, as no operation is needed.
+
+ 
+
+Example 1:
+
+Input: nums = [4,3,1,2,4]
+Output: 2
+Explanation: There are 2 beautiful subarrays in nums: [4,3,1,2,4] and [4,3,1,2,4].
+- We can make all elements in the subarray [3,1,2] equal to 0 in the following way:
+  - Choose [3, 1, 2] and k = 1. Subtract 21 from both numbers. The subarray becomes [1, 1, 0].
+  - Choose [1, 1, 0] and k = 0. Subtract 20 from both numbers. The subarray becomes [0, 0, 0].
+- We can make all elements in the subarray [4,3,1,2,4] equal to 0 in the following way:
+  - Choose [4, 3, 1, 2, 4] and k = 2. Subtract 22 from both numbers. The subarray becomes [0, 3, 1, 2, 0].
+  - Choose [0, 3, 1, 2, 0] and k = 0. Subtract 20 from both numbers. The subarray becomes [0, 2, 0, 2, 0].
+  - Choose [0, 2, 0, 2, 0] and k = 1. Subtract 21 from both numbers. The subarray becomes [0, 0, 0, 0, 0].
+Example 2:
+
+Input: nums = [1,10,4]
+Output: 0
+Explanation: There are no beautiful subarrays in nums.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 106;=;=https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/3286372/javacpython-prefix-xor-by-lee215-uccb/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/6788073/java-beats-100-using-prefixxor-hashmap-e-7l4x/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/3286278/simple-java-solution-using-xor-operation-dkb3/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/3286250/java-subarraysum-xor-on-explained-by-coo-9ip3/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/3286779/java-xor-solution-with-comments-simple-a-7y3s/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/3634617/short-easy-java-and-python-solutions-by-6mzsv/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/6990440/java-by-yukta_jain-6kba/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/6902908/easy-java-soln-by-coderxyz14-en36/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/6679438/java-simple-solution-using-hashmap-by-ad-lbpe/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/6022252/easy-by-mthirumalai2905-7c8g/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/6162547/easy-and-intuitive-solution-by-oppenheim-plhc/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/6027072/hash-table-prefix-sum-bit-manipulation-b-y0jl/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/6021785/beats-100-java-by-kushalreddy777-03nw/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/6017972/java-solution-by-namrata_2023-a1mr/;;https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/solutions/5475078/100-beat-4-lines-of-code-prefix-xor-on-b-k3fk/;;;=;==;=;=;

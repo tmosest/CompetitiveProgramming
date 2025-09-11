@@ -1,0 +1,36 @@
+3527. Find the Most Common Response;=;=Medium;=;=public String findCommonResponse(List<List<String>> responses);=;=You are given a 2D string array responses where each responses[i] is an array of strings representing survey responses from the ith day.
+
+Return the most common response across all days after removing duplicate responses within each responses[i]. If there is a tie, return the lexicographically smallest response.
+
+ 
+
+Example 1:
+
+Input: responses = [["good","ok","good","ok"],["ok","bad","good","ok","ok"],["good"],["bad"]]
+
+Output: "good"
+
+Explanation:
+
+After removing duplicates within each list, responses = [["good", "ok"], ["ok", "bad", "good"], ["good"], ["bad"]].
+"good" appears 3 times, "ok" appears 2 times, and "bad" appears 2 times.
+Return "good" because it has the highest frequency.
+Example 2:
+
+Input: responses = [["good","ok","good"],["ok","bad"],["bad","notsure"],["great","good"]]
+
+Output: "bad"
+
+Explanation:
+
+After removing duplicates within each list we have responses = [["good", "ok"], ["ok", "bad"], ["bad", "notsure"], ["great", "good"]].
+"bad", "good", and "ok" each occur 2 times.
+The output is "bad" because it is the lexicographically smallest amongst the words with the highest frequency.
+ 
+
+Constraints:
+
+1 <= responses.length <= 1000
+1 <= responses[i].length <= 1000
+1 <= responses[i][j].length <= 10
+responses[i][j] consists of only lowercase English letters;=;=https://leetcode.com/problems/find-the-most-common-response/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-most-common-response/solutions/6694344/faster-lesser-cpython3javacpythoncexplai-nihu/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6957227/easy-solution-beats-90-best-use-of-hashm-dvht/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6689353/hashmap-by-ankith_kumar-akmz/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6791346/java-easy-100-solution-by-ytchouar-zx6n/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6749500/beats-9997-java-solution-using-hashmap-b-428y/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6713431/using-hashmap-and-keep-tracking-the-max-af1df/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6691112/most-common-response-using-set-and-map-b-tr5o/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6689357/easy-to-understand-java-solution-by-divi-b4sm/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6742237/clean-simple-java-solution-by-lc__cl-y733/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6689367/100-affective-java-code-by-anuragk2-ogae/;;https://leetcode.com/problems/find-the-most-common-response/solutions/7076602/java-hashmap-solution-by-basic_coderlear-erwu/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6879785/simple-solution-using-compareto-function-akdl/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6946176/beats-7-users-hashset-hashmap-strings-by-2hx9/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6697628/java-by-soumya_699-qbr2/;;https://leetcode.com/problems/find-the-most-common-response/solutions/6689360/easy-hashmaps-hashset-by-eshwarvengala-x2m4/;;;=;==;=;=;

@@ -1,0 +1,31 @@
+1007. Minimum Domino Rotations For Equal Row;=;=Medium;=;=public int minDominoRotations(int[] tops, int[] bottoms);=;=In a row of dominoes, tops[i] and bottoms[i] represent the top and bottom halves of the ith domino. (A domino is a tile with two numbers from 1 to 6 - one on each half of the tile.)
+
+We may rotate the ith domino, so that tops[i] and bottoms[i] swap values.
+
+Return the minimum number of rotations so that all the values in tops are the same, or all the values in bottoms are the same.
+
+If it cannot be done, return -1.
+
+ 
+
+Example 1:
+
+
+Input: tops = [2,1,2,4,2,2], bottoms = [5,2,6,2,3,2]
+Output: 2
+Explanation: 
+The first figure represents the dominoes as given by tops and bottoms: before we do any rotations.
+If we rotate the second and fourth dominoes, we can make every value in the top row equal to 2, as indicated by the second figure.
+Example 2:
+
+Input: tops = [3,5,1,2,3], bottoms = [3,6,3,3,4]
+Output: -1
+Explanation: 
+In this case, it is not possible to rotate the dominoes to make one row of values equal.
+ 
+
+Constraints:
+
+2 <= tops.length <= 2 * 104
+bottoms.length == tops.length
+1 <= tops[i], bottoms[i] <= 6;=;=https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6709013/brute-force-hashmap-with-images-example-5qwih/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6709418/100-efficient-minimum-domino-rotations-m-5tqa/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6709249/easiest-solution-detailed-explanation-on-0r47/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6709499/100-beat-single-pass-easy-friendly-code-e8gq2/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6710117/faster-and-intelligent-on-0-time-greedy-zlx0b/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/252633/javapython-3-one-pass-counting-oa-b-w-br-2t7l/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6709314/what-if-1topsin-real-on-approach-by-garv-pd13/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6711474/java-solution-for-minimum-domino-rotatio-g1ie/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6711890/beats-9999-easy-approach-for-beginners-c-ozk4/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6710877/very-simple-java-solution-easy-to-unders-yrdi/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6709509/minimum-rotations-by-avinash516-5ub2/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6709001/beats-100-java-solution-detailed-explana-b3av/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6709116/minimum-domino-rotations-for-equal-row-b-w6kc/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6709997/so-easyyyyyyyyyyy-just-use-a-count-array-hxyg/;;https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6711030/beat-this-code-by-abhay0_20-8pu2/;;;=;==;=;=;

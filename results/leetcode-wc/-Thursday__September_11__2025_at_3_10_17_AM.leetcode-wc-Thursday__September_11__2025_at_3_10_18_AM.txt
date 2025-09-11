@@ -1,0 +1,34 @@
+2598. Smallest Missing Non-negative Integer After Operations;=;=Medium;=;=public int findSmallestInteger(int[] nums, int value);=;=You are given a 0-indexed integer array nums and an integer value.
+
+In one operation, you can add or subtract value from any element of nums.
+
+For example, if nums = [1,2,3] and value = 2, you can choose to subtract value from nums[0] to make nums = [-1,2,3].
+The MEX (minimum excluded) of an array is the smallest missing non-negative integer in it.
+
+For example, the MEX of [-1,2,3] is 0 while the MEX of [1,0,3] is 2.
+Return the maximum MEX of nums after applying the mentioned operation any number of times.
+
+ 
+
+Example 1:
+
+Input: nums = [1,-10,7,13,6,8], value = 5
+Output: 4
+Explanation: One can achieve this result by applying the following operations:
+- Add value to nums[1] twice to make nums = [1,0,7,13,6,8]
+- Subtract value from nums[2] once to make nums = [1,0,2,13,6,8]
+- Subtract value from nums[3] twice to make nums = [1,0,2,3,6,8]
+The MEX of nums is 4. It can be shown that 4 is the maximum MEX we can achieve.
+Example 2:
+
+Input: nums = [1,-10,7,13,6,8], value = 7
+Output: 2
+Explanation: One can achieve this result by applying the following operation:
+- subtract value from nums[2] once to make nums = [1,-10,0,13,6,8]
+The MEX of nums is 2. It can be shown that 2 is the maximum MEX we can achieve.
+ 
+
+Constraints:
+
+1 <= nums.length, value <= 105
+-109 <= nums[i] <= 109;=;=https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3314226/javacpython-count-remainders-by-lee215-rp3t/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3314057/java-hashmap-count-mod-by-henryzhc-fjjr/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3314414/counting-linear-tc-and-sc-by-glitched-su-xdx3/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3314160/java-on-log-n-time-clean-code-beats-100-wpf7s/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3314698/simple-java-solution-explained-by-saswat-vygk/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3338078/java-using-only-given-array-by-tbekpro-iquq/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3745042/easy-to-understand-solution-by-crusher95-3y0h/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3327926/count-modulus-java-approach-by-shoryakum-4ach/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3314374/short-clean-java-by-himanshubhoir-nu3m/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3317967/java-using-hashmap-on-space-time-by-dush-h6qh/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/3317496/easy-simple-java-solution-by-abhinav_had-ymy5/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/6883131/begineer-friendlyyyyyy-by-patelcodede-a31b/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/6621040/on-optimised-and-easy-solution-by-abhina-og0d/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/5835213/java-by-abhiguptanitb-5wrj/;;https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/solutions/5835210/java-by-abhiguptanitb-l34u/;;;=;==;=;=;

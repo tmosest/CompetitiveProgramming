@@ -1,0 +1,32 @@
+2027. Minimum Moves to Convert String;=;=Easy;=;=publicÊintÊminimumMoves(StringÊs);=;=You are given a string s consisting of n characters which are either 'X' or 'O'.
+
+A move is defined as selecting three consecutive characters of s and converting them to 'O'. Note that if a move is applied to the character 'O', it will stay the same.
+
+Return the minimum number of moves required so that all the characters of s are converted to 'O'.
+
+Ê
+
+Example 1:
+
+Input: s = "XXX"
+Output: 1
+Explanation: XXX -> OOO
+We select all the 3 characters and convert them in one move.
+Example 2:
+
+Input: s = "XXOX"
+Output: 2
+Explanation: XXOX -> OOOX -> OOOO
+We select the first 3 characters in the first move, and convert them to 'O'.
+Then we select the last 3 characters and convert them so that the final string contains all 'O's.
+Example 3:
+
+Input: s = "OOOO"
+Output: 0
+Explanation: There are no 'X's in s to convert.
+Ê
+
+Constraints:
+
+3 <= s.length <= 1000
+s[i] is either 'X' or 'O'.;=;=https://leetcode.com/problems/minimum-moves-to-convert-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/1500315/java-on-greedy-with-explanation-how-to-c-gox8/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/6572315/easiest-solution-ever-by-johncarter11-tehg/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/6803107/minimummoves-by-avinash516-rm8z/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/6175232/easy-java-solution-on-time-complexity-by-irpj/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/1507200/java-on-easy-to-understand-important-poi-mu11/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/7139938/java-intermediate-solution-by-trevorkmci-id49/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/7137938/solution-by-dharshan_r-130h/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/6898989/minimum-moves-to-convert-string-by-jai8g-td6i/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/6479736/java-runtime-100-memory-74-by-mohanraj-r-cn8s/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/2582665/java-while-loop-simple-logic-by-divyansh-qu7c/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/4541346/simple-java-code-0-ms-beats-100-by-arobh-odjf/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/5843080/easy-solution-using-greedy-algorithm-wit-ijw6/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/4907485/simple-java-solution-using-greedy-on-tim-n7si/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/1761089/java-easy-efficient-fastest-solution-by-0ywk8/;;https://leetcode.com/problems/minimum-moves-to-convert-string/solutions/1883525/java-solution-by-solved-64ru/;;;=;==;=;=;

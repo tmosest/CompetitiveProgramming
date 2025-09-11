@@ -1,0 +1,26 @@
+2236. Root Equals Sum of Children;=;=Easy;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public boolean checkTree(TreeNode root);=;=You are given the root of a binary tree that consists of exactly 3 nodes: the root, its left child, and its right child.
+
+Return true if the value of the root is equal to the sum of the values of its two children, or false otherwise.
+
+ 
+
+Example 1:
+
+
+Input: root = [10,4,6]
+Output: true
+Explanation: The values of the root, its left child, and its right child are 10, 4, and 6, respectively.
+10 is equal to 4 + 6, so we return true.
+Example 2:
+
+
+Input: root = [5,3,1]
+Output: false
+Explanation: The values of the root, its left child, and its right child are 5, 3, and 1, respectively.
+5 is not equal to 3 + 1, so we return false.
+ 
+
+Constraints:
+
+The tree consists only of the root, its left child, and its right child.
+-100 <= Node.val <= 100;=;=https://leetcode.com/problems/root-equals-sum-of-children/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/root-equals-sum-of-children/solutions/6295151/easiest-one-liner-solution-in-all-langua-qvef/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/7130689/easy-simple-java-solution-by-prakhar-131-lrax/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/2775146/java-easy-1-liner-o1-solution-by-juganta-npsa/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/6957126/solution-by-deepakumar-developer-sdyn/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/7116514/one-line-solution-most-easiest-question-yhbts/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/6957093/easy-solution-java-100-by-kaviprasath-vs3m/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/6964681/pummy-beats-100-and-1ms-by-pummy0425-owrh/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/7104100/check-if-root-equals-sum-of-children-1li-j68a/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/3053858/easy-one-liner-javascript81ms-python11ms-b73l/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/6960023/check-if-root-equals-sum-of-children-by-3g3as/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/7037703/1-line-java-solution-beat-100-by-piku098-bywh/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/1977620/javacpython1line-ontimebeats-9997-memory-bxx6/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/6943046/leetcode-problem-2236-root-equals-sum-of-1xa1/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/6976194/o1-power-play-minimal-mighty-and-lightni-xna1/;;https://leetcode.com/problems/root-equals-sum-of-children/solutions/7037836/root-equals-sum-of-children-by-pranavdew-l4fe/;;;=;==;=;=;

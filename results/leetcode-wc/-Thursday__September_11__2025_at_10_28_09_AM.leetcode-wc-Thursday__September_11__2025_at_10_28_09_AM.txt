@@ -1,0 +1,21 @@
+2427. Number of Common Factors;=;=Easy;=;=public int commonFactors(int a, int b);=;=Given two positive integers a and b, return the number of common factors of a and b.
+
+An integer x is a common factor of a and b if x divides both a and b.
+
+ 
+
+Example 1:
+
+Input: a = 12, b = 6
+Output: 4
+Explanation: The common factors of 12 and 6 are 1, 2, 3, 6.
+Example 2:
+
+Input: a = 25, b = 30
+Output: 2
+Explanation: The common factors of 25 and 30 are 1, 5.
+ 
+
+Constraints:
+
+1 <= a, b <= 1000;=;=https://leetcode.com/problems/number-of-common-factors/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-common-factors/solutions/7154210/java-simple-and-easy-way-to-be-approched-uhcs/;;https://leetcode.com/problems/number-of-common-factors/solutions/6997259/java-easy-solution-1ms-by-akashraj06-pw1y/;;https://leetcode.com/problems/number-of-common-factors/solutions/6074082/beats-100-simple-and-easy-solution-by-ma-996c/;;https://leetcode.com/problems/number-of-common-factors/solutions/7065085/easy-java-solution-by-divyansh_kaushik_s-2ppj/;;https://leetcode.com/problems/number-of-common-factors/solutions/7062155/beats-100-0ms-solution-by-arshiya1731-66i7/;;https://leetcode.com/problems/number-of-common-factors/solutions/7028323/very-very-easy-solution-0ms-runtime-100-ovhwp/;;https://leetcode.com/problems/number-of-common-factors/solutions/6967781/2427-number-of-common-factors-fastest-so-maeq/;;https://leetcode.com/problems/number-of-common-factors/solutions/6734207/beats-100-java-simple-clean-naive-approa-qtu7/;;https://leetcode.com/problems/number-of-common-factors/solutions/5123944/easy-java-solution-for-beginners-by-raja-wkxw/;;https://leetcode.com/problems/number-of-common-factors/solutions/6824707/beats-100-java-simple-clean-naive-approa-amt0/;;https://leetcode.com/problems/number-of-common-factors/solutions/6767552/beats-100-easy-approach-by-sanikapatil-s7xt/;;https://leetcode.com/problems/number-of-common-factors/solutions/6635445/simple-arraylist-must-try-by-sairanginee-y9di/;;https://leetcode.com/problems/number-of-common-factors/solutions/2649592/java-1ms-solution-using-gcd-by-girlwhoco-8gl4/;;https://leetcode.com/problems/number-of-common-factors/solutions/7171168/100-in-time-9521-in-space-by-parmanandks-g8kq/;;https://leetcode.com/problems/number-of-common-factors/solutions/7152119/easy-lines-100-by-hari_cse_03-2awk/;;;=;==;=;=;

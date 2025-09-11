@@ -1,0 +1,43 @@
+2145. Count the Hidden Sequences;=;=Medium;=;=public int numberOfArrays(int[] differences, int lower, int upper);=;=You are given a 0-indexed array of n integers differences, which describes the differences between each pair of consecutive integers of a hidden sequence of length (n + 1). More formally, call the hidden sequence hidden, then we have that differences[i] = hidden[i + 1] - hidden[i].
+
+You are further given two integers lower and upper that describe the inclusive range of values [lower, upper] that the hidden sequence can contain.
+
+For example, given differences = [1, -3, 4], lower = 1, upper = 6, the hidden sequence is a sequence of length 4 whose elements are in between 1 and 6 (inclusive).
+[3, 4, 1, 5] and [4, 5, 2, 6] are possible hidden sequences.
+[5, 6, 3, 7] is not possible since it contains an element greater than 6.
+[1, 2, 3, 4] is not possible since the differences are not correct.
+Return the number of possible hidden sequences there are. If there are no possible sequences, return 0.
+
+ 
+
+Example 1:
+
+Input: differences = [1,-3,4], lower = 1, upper = 6
+Output: 2
+Explanation: The possible hidden sequences are:
+- [3, 4, 1, 5]
+- [4, 5, 2, 6]
+Thus, we return 2.
+Example 2:
+
+Input: differences = [3,-4,5,1,-2], lower = -4, upper = 5
+Output: 4
+Explanation: The possible hidden sequences are:
+- [-3, 0, -4, 1, 2, 0]
+- [-2, 1, -3, 2, 3, 1]
+- [-1, 2, -2, 3, 4, 2]
+- [0, 3, -1, 4, 5, 3]
+Thus, we return 4.
+Example 3:
+
+Input: differences = [4,-7,2], lower = 3, upper = 6
+Output: 0
+Explanation: There are no possible hidden sequences. Thus, we return 0.
+ 
+
+Constraints:
+
+n == differences.length
+1 <= n <= 105
+-105 <= differences[i] <= 105
+-105 <= lower <= upper <= 105;=;=https://leetcode.com/problems/count-the-hidden-sequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-hidden-sequences/solutions/6672358/prefix-sum-in-depth-with-images-example-dy6uy/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6672370/step-by-step-visualization-beginner-frei-1nzb/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/1709755/javacpython-straight-forward-solution-wi-ob1m/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6673310/simple-approach-by-arunk_leetcode-nrhm/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6672649/beats-92-most-optimized-easy-to-understa-lm7v/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6672646/100-beat-friendly-explain-code-solution-uca60/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6674919/java-solution-by-zzs0dcxla2-m9v4/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6674837/easy-code-must-try-beats-100-by-notadity-yxy4/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6673054/easy-to-understand-prefix-sum-super-deta-99ck/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/7036962/simple-on-solution-using-prefix-sums-jav-yvml/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6674678/java-solution-beats-100-proof-concise-co-4bgy/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6675251/4-ms-beats-9206-counting-the-number-of-v-7lsv/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6673460/beats-100-in-mosteasy-solution-usingpref-26dx/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/1709790/c-java-dry-run-steps-for-easy-understand-9xh8/;;https://leetcode.com/problems/count-the-hidden-sequences/solutions/6674682/easiest-solution-beginner-friendly-on-gr-ekrd/;;;=;==;=;=;

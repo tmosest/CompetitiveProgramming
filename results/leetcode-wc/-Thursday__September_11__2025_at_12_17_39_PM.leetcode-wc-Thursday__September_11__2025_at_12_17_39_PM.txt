@@ -1,0 +1,20 @@
+1215. Stepping Numbers;=;=Medium;=;=public List<Integer> countSteppingNumbers(int low, int high);=;=A stepping number is an integer such that all of its adjacent digits have an absolute difference of exactly 1.
+
+For example, 321 is a stepping number while 421 is not.
+Given two integers low and high, return a sorted list of all the stepping numbers in the inclusive range [low, high].
+
+ 
+
+Example 1:
+
+Input: low = 0, high = 21
+Output: [0,1,2,3,4,5,6,7,8,9,10,12,21]
+Example 2:
+
+Input: low = 10, high = 15
+Output: [10,12]
+ 
+
+Constraints:
+
+0 <= low <= high <= 2 * 109;=;=https://leetcode.com/problems/stepping-numbers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/stepping-numbers/solutions/1773147/java-time-o2log_10high-space-o2log_10hig-5etv/;;https://leetcode.com/problems/stepping-numbers/solutions/4925633/java-solution-bfs-by-ndsjqwbbb-3fvn/;;https://leetcode.com/problems/stepping-numbers/solutions/4074429/simple-java-solution-by-sakshikishore-6lzf/;;https://leetcode.com/problems/stepping-numbers/solutions/3575383/solution-by-deleted_user-1zq0/;;https://leetcode.com/problems/stepping-numbers/solutions/1773128/java-time-o2log_10high-space-o2log_10hig-1mrr/;;https://leetcode.com/problems/stepping-numbers/solutions/399238/java-simple-and-straightforward-recursiv-tbyw/;;https://leetcode.com/problems/stepping-numbers/solutions/398004/java-backtracking-no-sort-6ms-by-vovaz-ulpe/;;;=;==;=;=;

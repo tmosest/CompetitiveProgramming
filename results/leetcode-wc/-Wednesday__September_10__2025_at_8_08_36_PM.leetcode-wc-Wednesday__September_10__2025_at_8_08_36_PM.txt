@@ -1,0 +1,38 @@
+2525. Categorize Box According to Criteria;=;=Easy;=;=public String categorizeBox(int length, int width, int height, int mass);=;=Given four integers length, width, height, and mass, representing the dimensions and mass of a box, respectively, return a string representing the category of the box.
+
+The box is "Bulky" if:
+Any of the dimensions of the box is greater or equal to 104.
+Or, the volume of the box is greater or equal to 109.
+If the mass of the box is greater or equal to 100, it is "Heavy".
+If the box is both "Bulky" and "Heavy", then its category is "Both".
+If the box is neither "Bulky" nor "Heavy", then its category is "Neither".
+If the box is "Bulky" but not "Heavy", then its category is "Bulky".
+If the box is "Heavy" but not "Bulky", then its category is "Heavy".
+Note that the volume of the box is the product of its length, width and height.
+
+ 
+
+Example 1:
+
+Input: length = 1000, width = 35, height = 700, mass = 300
+Output: "Heavy"
+Explanation: 
+None of the dimensions of the box is greater or equal to 104. 
+Its volume = 24500000 <= 109. So it cannot be categorized as "Bulky".
+However mass >= 100, so the box is "Heavy".
+Since the box is not "Bulky" but "Heavy", we return "Heavy".
+Example 2:
+
+Input: length = 200, width = 50, height = 800, mass = 50
+Output: "Neither"
+Explanation: 
+None of the dimensions of the box is greater or equal to 104.
+Its volume = 8 * 106 <= 109. So it cannot be categorized as "Bulky".
+Its mass is also less than 100, so it cannot be categorized as "Heavy" either. 
+Since its neither of the two above categories, we return "Neither".
+ 
+
+Constraints:
+
+1 <= length, width, height <= 105
+1 <= mass <= 103;=;=https://leetcode.com/problems/categorize-box-according-to-criteria/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/7050601/categorize-box-according-to-criteria-by-kd7xj/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/6662933/categorize-the-box-based-on-size-weight-070zv/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/3015234/simple-java-beats-100-by-sam02202001-cok1/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/6979591/2525-categorize-box-according-to-criteri-5h7e/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/3015110/java-solution-short-simple-by-yaswanth01-enc8/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/3014976/cjavapython3-if-else-by-ye15-6v2q/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/6532752/easy-java-sollution-beats-100-o1-time-co-wfrc/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/6162246/categorize-box-according-to-criteria-100-0nmt/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/4652222/beats-100super-easy-cjavapython-solution-u4z1/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/3015211/java-just-conditional-statements-by-sour-xi3l/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/5735904/box-solution-beats-100-by-shivayan09-1esp/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/7110202/java-by-aryan13sinha-l274/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/3017267/100-fast-java-easy-to-understand-by-devl-42e4/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/3032827/java-0ms-100-1-statement-containing-arra-d4rk/;;https://leetcode.com/problems/categorize-box-according-to-criteria/solutions/4345398/beats-100-easiest-java-solution-by-shiva-7v8e/;;;=;==;=;=;

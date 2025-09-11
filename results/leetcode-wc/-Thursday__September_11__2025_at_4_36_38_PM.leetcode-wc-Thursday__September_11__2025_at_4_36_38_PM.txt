@@ -1,0 +1,31 @@
+809. Expressive Words;=;=Medium;=;=publicÊintÊexpressiveWords(StringÊs,ÊString[]Êwords);=;=Sometimes people repeat letters to represent extra feeling. For example:
+
+"hello" -> "heeellooo"
+"hi" -> "hiiii"
+In these strings like "heeellooo", we have groups of adjacent letters that are all the same: "h", "eee", "ll", "ooo".
+
+You are given a string s and an array of query strings words. A query word is stretchy if it can be made to be equal to s by any number of applications of the following extension operation: choose a group consisting of characters c, and add some number of characters c to the group so that the size of the group is three or more.
+
+For example, starting with "hello", we could do an extension on the group "o" to get "hellooo", but we cannot get "helloo" since the group "oo" has a size less than three. Also, we could do another extension like "ll" -> "lllll" to get "helllllooo". If s = "helllllooo", then the query word "hello" would be stretchy because of these two extension operations: query = "hello" -> "hellooo" -> "helllllooo" = s.
+Return the number of query strings that are stretchy.
+
+Ê
+
+Example 1:
+
+Input: s = "heeellooo", words = ["hello", "hi", "helo"]
+Output: 1
+Explanation: 
+We can extend "e" and "o" in the word "hello" to get "heeellooo".
+We can't extend "helo" to get "heeellooo" because the group "ll" is not size 3 or more.
+Example 2:
+
+Input: s = "zzzzzyyyyy", words = ["zzyy","zy","zyy"]
+Output: 3
+Ê
+
+Constraints:
+
+1 <= s.length, words.length <= 100
+1 <= words[i].length <= 100
+s and words[i] consist of lowercase letters.;=;=https://leetcode.com/problems/expressive-words/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/expressive-words/solutions/4729707/java-easy-100-solution-easy-to-understan-9zf2/;;https://leetcode.com/problems/expressive-words/solutions/1708608/interview-grade-fully-commented-readable-v1ed/;;https://leetcode.com/problems/expressive-words/solutions/1850024/java-solution-using-frequency-lists-by-b-w9ei/;;https://leetcode.com/problems/expressive-words/solutions/1702863/java-faster-than-99-two-pointers-by-_tav-o0sy/;;https://leetcode.com/problems/expressive-words/solutions/1334370/expressive-words-java-1ms-by-mitali_bhok-7477/;;https://leetcode.com/problems/expressive-words/solutions/711930/java-easy-understanding-solution-by-jian-ixv8/;;https://leetcode.com/problems/expressive-words/solutions/3477707/solution-by-deleted_user-awlz/;;https://leetcode.com/problems/expressive-words/solutions/7164654/java-by-soumya_699-5mch/;;https://leetcode.com/problems/expressive-words/solutions/2127221/java-easy-with-freqstring-by-adityasharm-jedy/;;https://leetcode.com/problems/expressive-words/solutions/7159422/java-on-solution-using-two-pointers-by-r-0qz6/;;https://leetcode.com/problems/expressive-words/solutions/1653570/java-solution-moduler-by-gauraang_khuran-rijh/;;https://leetcode.com/problems/expressive-words/solutions/7069823/how-to-not-solve-leetcode-questions-lol-s4bww/;;https://leetcode.com/problems/expressive-words/solutions/7019663/my-solution-by-sharathkumarka-aeir/;;https://leetcode.com/problems/expressive-words/solutions/2049549/java-two-pointers-short-code-on-by-moham-bivz/;;https://leetcode.com/problems/expressive-words/solutions/1760232/java-short-concise-by-dinesh8801-wkq4/;;;=;==;=;=;

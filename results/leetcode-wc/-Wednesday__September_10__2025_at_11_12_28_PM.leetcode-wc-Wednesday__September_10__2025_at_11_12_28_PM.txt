@@ -1,0 +1,33 @@
+2486. Append Characters to String to Make Subsequence;=;=Medium;=;=public int appendCharacters(String s, String t);=;=You are given two strings s and t consisting of only lowercase English letters.
+
+Return the minimum number of characters that need to be appended to the end of s so that t becomes a subsequence of s.
+
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+
+ 
+
+Example 1:
+
+Input: s = "coaching", t = "coding"
+Output: 4
+Explanation: Append the characters "ding" to the end of s so that s = "coachingding".
+Now, t is a subsequence of s ("coachingding").
+It can be shown that appending any 3 characters to the end of s will never make t a subsequence.
+Example 2:
+
+Input: s = "abcde", t = "a"
+Output: 0
+Explanation: t is already a subsequence of s ("abcde").
+Example 3:
+
+Input: s = "z", t = "abcde"
+Output: 5
+Explanation: Append the characters "abcde" to the end of s so that s = "zabcde".
+Now, t is a subsequence of s ("zabcde").
+It can be shown that appending any 4 characters to the end of s will never make t a subsequence.
+ 
+
+Constraints:
+
+1 <= s.length, t.length <= 105
+s and t consist only of lowercase English letters.;=;=https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5249501/beats-100-explained-with-video-cjavapyth-rf4k/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5249231/1-billion-visually-explained-by-hi-malik-zpza/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5249115/fasterless-memdetailed-approachtwo-point-w6fw/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5249383/daily-leetcoding-challenge-day-166-java-yhaam/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/2852101/javacpython-two-pointers-by-lee215-3f67/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5249213/easy-java-python3-c-solution-7-ms-_-by-s-qv8n/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5249398/java-beats-100-by-deleted_user-56re/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5251696/two-pointer-easy-to-understand-by-darsha-0vv4/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/6823132/easiest-java-solution-on-o1-by-sagar__26-6a93/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5250575/accepted-3-line-code-easy-java-code-shor-lnv7/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5249455/beats-9872-users-rely-on-this-code-for-a-xzjt/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/6286431/using-stack-by-chetan_chaudhary03-ehip/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5253910/easy-and-simple-solution-java-linear-tim-xisd/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5249458/2-pointer-while-loop-easy-ass69_beats_10-3qr3/;;https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/2852023/javapython-3-two-pointers-on-codes-w-bri-s6sp/;;;=;==;=;=;

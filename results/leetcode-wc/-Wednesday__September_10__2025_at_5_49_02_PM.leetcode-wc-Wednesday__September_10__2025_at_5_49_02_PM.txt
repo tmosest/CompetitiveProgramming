@@ -1,0 +1,41 @@
+3456. Find Special Substring of Length K;=;=Easy;=;=public boolean hasSpecialSubstring(String s, int k);=;=You are given a string s and an integer k.
+
+Determine if there exists a substring of length exactly k in s that satisfies the following conditions:
+
+The substring consists of only one distinct character (e.g., "aaa" or "bbb").
+If there is a character immediately before the substring, it must be different from the character in the substring.
+If there is a character immediately after the substring, it must also be different from the character in the substring.
+Return true if such a substring exists. Otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: s = "aaabaaa", k = 3
+
+Output: true
+
+Explanation:
+
+The substring s[4..6] == "aaa" satisfies the conditions.
+
+It has a length of 3.
+All characters are the same.
+The character before "aaa" is 'b', which is different from 'a'.
+There is no character after "aaa".
+Example 2:
+
+Input: s = "abc", k = 2
+
+Output: false
+
+Explanation:
+
+There is no substring of length 2 that consists of one distinct character and satisfies the conditions.
+
+ 
+
+Constraints:
+
+1 <= k <= s.length <= 100
+s consists of lowercase English letters only.;=;=https://leetcode.com/problems/find-special-substring-of-length-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427956/c-java-count-cont-occurrence-of-char-and-t0nq/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427941/sliding-window-on-clean-code-by-alexxpas-d4ny/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427687/super-simple-approch-100-beats-c-java-py-6ueq/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427792/unlock-the-secret-easy-approach-efficien-np4q/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427791/beats-100-proof-1-ms-easiest-solution-sl-97b3/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427757/beats-100-easy-beginner-friendly-approac-0ivk/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427700/java-solution-by-harsh__005-mvem/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6430597/easy-java-solution-by-surajsharma15-enjb/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6428401/using-stack-approach-by-wv8o56lkyk-q3r7/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/7136870/find-special-substring-of-length-k-java-ge3n6/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427946/intuitive-solution-by-hssrut-m00g/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427766/java-solution-100-beats-by-harshitha2006-nzg3/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427668/find-special-substring-of-length-k-by-ki-5guh/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427718/beats-100-java-by-naveenkumar7125-md95/;;https://leetcode.com/problems/find-special-substring-of-length-k/solutions/6427673/easy-java-solution-beats-10000-1ms-by-ve-ciqp/;;;=;==;=;=;

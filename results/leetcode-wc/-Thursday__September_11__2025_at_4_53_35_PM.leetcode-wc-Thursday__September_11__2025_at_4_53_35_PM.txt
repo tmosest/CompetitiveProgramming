@@ -1,0 +1,31 @@
+2309. Greatest English Letter in Upper and Lower Case;=;=Easy;=;=public String greatestLetter(String s);=;=Given a string of English letters s, return the greatest English letter which occurs as both a lowercase and uppercase letter in s. The returned letter should be in uppercase. If no such letter exists, return an empty string.
+
+An English letter b is greater than another letter a if b appears after a in the English alphabet.
+
+ 
+
+Example 1:
+
+Input: s = "lEeTcOdE"
+Output: "E"
+Explanation:
+The letter 'E' is the only letter to appear in both lower and upper case.
+Example 2:
+
+Input: s = "arRAzFif"
+Output: "R"
+Explanation:
+The letter 'R' is the greatest letter to appear in both lower and upper case.
+Note that 'A' and 'F' also appear in both lower and upper case, but 'R' is greater than 'F' or 'A'.
+Example 3:
+
+Input: s = "AbCdEfGhIjK"
+Output: ""
+Explanation:
+There is no letter that appears in both lower and upper case.
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s consists of lowercase and uppercase English letters.;=;=https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/2168123/java-hashset-by-aaveshk-cjyo/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/6982111/beats-100easy-to-understandusing-only-fo-ar0s/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/3906734/java-simple-beats-100-runtime-9617-memor-5wqe/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/6732064/using-hashset-easy-easy-easy-by-sairangi-wpwp/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/2168285/java-on-solution-by-virendra115-mx58/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/4923821/simple-and-easy-understand-solution-by-s-a90a/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/2178385/java-runtime-1ms-easy-solution-with-comm-soie/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/2168508/greatest-english-letter-in-upper-and-low-ypux/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/2919137/100-faster-java-no-hashmaphashsetarray-o-7am8/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/2614308/simple-java-solution-with-on-time-o1-spa-z5nd/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/3164522/3-line-java-solution-0-ms-100-faster-by-bmqfx/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/5728093/beats-100-best-solution-in-java-by-dawnc-ju2b/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/4745279/fasterlessercpython3javacpythoncexplaine-0lbk/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/3435269/java-counter-x-ascii-by-im_obid-enrs/;;https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/solutions/3101848/java-solution-fast-2-ms-87-simple-by-jam-51cc/;;;=;==;=;=;

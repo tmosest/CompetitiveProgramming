@@ -22,11 +22,12 @@ public class JavaFile {
       int openBracketIndex = annotation.indexOf('(');
       name = annotation.substring(1, openBracketIndex);
       int closeBracketIndex = annotation.indexOf(')', openBracketIndex);
-      val = annotation.substring(openBracketIndex + 1, closeBracketIndex).replace("\"","");
+      val = annotation.substring(openBracketIndex + 1, closeBracketIndex).replace("\"", "");
     }
 
     /**
      * Get the name of the annotation.
+     * 
      * @return The name of the annotation.
      */
     public String getName() {
@@ -35,6 +36,7 @@ public class JavaFile {
 
     /**
      * The value of the annotation.
+     * 
      * @return The value of the annotation.
      */
     public String getVal() {
@@ -60,16 +62,19 @@ public class JavaFile {
   JavaFile(Class source, String className, JavaFileMethod functionDeclaration) {
     this.source = source;
     packge = source.getPackage().toString().replaceFirst("package", "");
-    addRawContent("import java.util.ArrayList;\n" + //
-            "import java.util.Arrays;\n" + //
-            "import java.util.Collections;\n" + //
-            "import java.util.List;");
+    List<String> list = List.of("java.util.ArrayList", " java.util.Arrays", "java.util.Collections",
+        "import java.util.List");
+
+    for (String str : list)
+      addNewImport(str);
+
     addRawContent("\t" + functionDeclaration.toString() + "\n");
     this.className = className;
   }
 
   /**
    * Create a Java file from the absolute path of a file.
+   * 
    * @param absoluteFilePath The absolute path. /C/User/someone/JavaFile.java
    * @throws IOException If it cannot create from the file.
    */
@@ -98,7 +103,7 @@ public class JavaFile {
           annotations.add(annotation);
         }
       } else {
-        content.append( line + "\n");
+        content.append(line + "\n");
       }
     }
     int lastBracket = content.lastIndexOf("}");
@@ -152,6 +157,7 @@ public class JavaFile {
 
   /**
    * Get the annotations for the java file.
+   * 
    * @return the annotations.
    */
   public List<Annotation> getAnnotations() {
@@ -189,6 +195,7 @@ public class JavaFile {
 
   /**
    * Moves this JavaFile to another location.
+   * 
    * @param destination The destination folder.
    * @return True if it was able to move the file.
    * @throws IOException If it couldn't write or do other things to the file.

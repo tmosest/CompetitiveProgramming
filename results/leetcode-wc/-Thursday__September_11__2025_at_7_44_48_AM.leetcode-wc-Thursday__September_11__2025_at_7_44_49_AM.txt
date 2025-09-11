@@ -1,0 +1,40 @@
+2916. Subarrays Distinct Element Sum of Squares II;=;=Hard;=;=publicÊintÊsumCounts(int[]Ênums);=;=You are given a 0-indexed integer array nums.
+
+The distinct count of a subarray of nums is defined as:
+
+Let nums[i..j] be a subarray of nums consisting of all the indices from i to j such that 0 <= i <= j < nums.length. Then the number of distinct values in nums[i..j] is called the distinct count of nums[i..j].
+Return the sum of the squares of distinct counts of all subarrays of nums.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,2,1]
+Output: 15
+Explanation: Six possible subarrays are:
+[1]: 1 distinct value
+[2]: 1 distinct value
+[1]: 1 distinct value
+[1,2]: 2 distinct values
+[2,1]: 2 distinct values
+[1,2,1]: 2 distinct values
+The sum of the squares of the distinct counts in all subarrays is equal to 12 + 12 + 12 + 22 + 22 + 22 = 15.
+Example 2:
+
+Input: nums = [2,2]
+Output: 3
+Explanation: Three possible subarrays are:
+[2]: 1 distinct value
+[2]: 1 distinct value
+[2,2]: 1 distinct value
+The sum of the squares of the distinct counts in all subarrays is equal to 12 + 12 + 12 = 3.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/solutions/4218877/cjavapythonjavascript-beats-98-tree-expl-ylve/;;https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/solutions/6634122/bit-dp-solution-java-by-nickulman-89tv/;;https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/solutions/4220861/java-segment-tree-with-all-cases-by-rand-tdd3/;;https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/solutions/4231509/java-beat-100-easy-solution-by-kishan_sh-9dlc/;;https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/solutions/4228318/java-segment-tree-with-some-mathematics-o87yx/;;;=;==;=;=;

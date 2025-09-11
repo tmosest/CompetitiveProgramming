@@ -1,0 +1,28 @@
+1931. Painting a Grid With Three Different Colors;=;=Hard;=;=public int colorTheGrid(int m, int n);=;=You are given two integers m and n. Consider an m x n grid where each cell is initially white. You can paint each cell red, green, or blue. All cells must be painted.
+
+Return the number of ways to color the grid with no two adjacent cells having the same color. Since the answer can be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+
+Input: m = 1, n = 1
+Output: 3
+Explanation: The three possible colorings are shown in the image above.
+Example 2:
+
+
+Input: m = 1, n = 2
+Output: 6
+Explanation: The six possible colorings are shown in the image above.
+Example 3:
+
+Input: m = 5, n = 5
+Output: 580986
+ 
+
+Constraints:
+
+1 <= m <= 5
+1 <= n <= 1000;=;=https://leetcode.com/problems/painting-a-grid-with-three-different-colors/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6754794/dp-in-depth-with-images-example-walkthro-oapb/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6754881/optimized-solution-detail-explanation-on-1omk/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6754365/linear-time-constant-space-by-python_cha-gx9h/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6755090/optimal-solution-full-logic-explained-si-bxjw/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6754967/1ms-beats10000-java-by-baseer-s-0n84/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6955914/1931-painting-a-grid-with-three-differen-xmjh/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6755272/easy-code-must-try-code-in-java-by-ombha-ryhw/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6755400/easy-dp-solution-by-viraj_patil_092-qrp3/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6755503/grid-coloring-with-three-colors-dynamic-hqmnu/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6755135/easy-code-must-try-code-in-java-by-notad-dgg7/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6756019/easy-solution-step-by-step-appraoch-by-p-nvno/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6755758/java-easy-solution-by-heyysankalp-gfzb/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6754901/easy-solution-by-qddl3tbjhy-79ls/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6755559/dynamic-programming-approach-to-grid-col-643d/;;https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6768454/simple-top-down-dp-bitmask-solution-by-n-y0t3/;;;=;==;=;=;

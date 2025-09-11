@@ -1,0 +1,21 @@
+1016. Binary String With Substrings Representing 1 To N;=;=Medium;=;=public boolean queryString(String s, int n);=;=Given a binary string s and a positive integer n, return true if the binary representation of all the integers in the range [1, n] are substrings of s, or false otherwise.
+
+A substring is a contiguous sequence of characters within a string.
+
+ 
+
+Example 1:
+
+Input: s = "0110", n = 3
+Output: true
+Example 2:
+
+Input: s = "0110", n = 4
+Output: false
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s[i] is either '0' or '1'.
+1 <= n <= 109;=;=https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/4085309/easy-java-solution-by-ravikumar50-vpr8/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/1251157/java-easy-0ms-faster-100-by-amrdeveloper-bbnj/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/3547705/solution-by-deleted_user-18iv/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/967081/0ms-100-faster-java-solution-in-four-lin-0tln/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/507908/java-simple-3-lines-solution-beats-100-i-2yi6/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/799978/binary-to-decimal-conversion-function-by-txib/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/6971718/0-ms-beats-10000-please-upvote-by-rahult-z8mk/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/5643862/tc-onm-sc-o1-using-mod-operator-for-gett-mfxq/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/817397/trie-like-solution-without-using-stringc-m8v6/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/1830036/easy-java-solution-on-by-john123gautam-he8k/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/6850489/generate-1-to-n-binary-numbers-by-pal_ar-acjc/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/6419189/easy-solution-100-pass-by-klu2300090198-4rjw/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/6625313/solution-using-java-by-kushal_bharadwaj-p5fcn/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/6592401/solution-by-gautam1311-9hhr/;;https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/solutions/6150744/binary-string-with-substrings-repeating-f40jr/;;;=;==;=;=;

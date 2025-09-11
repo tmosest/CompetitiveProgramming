@@ -1,0 +1,34 @@
+3144. Minimum Substring Partition of Equal Character Frequency;=;=Medium;=;=public int minimumSubstringsInPartition(String s);=;=Given a string s, you need to partition it into one or more balanced substrings. For example, if s == "ababcc" then ("abab", "c", "c"), ("ab", "abc", "c"), and ("ababcc") are all valid partitions, but ("a", "bab", "cc"), ("aba", "bc", "c"), and ("ab", "abcc") are not. The unbalanced substrings are bolded.
+
+Return the minimum number of substrings that you can partition s into.
+
+Note: A balanced string is a string where each character in the string occurs the same number of times.
+
+ 
+
+Example 1:
+
+Input: s = "fabccddg"
+
+Output: 3
+
+Explanation:
+
+We can partition the string s into 3 substrings in one of the following ways: ("fab, "ccdd", "g"), or ("fabc", "cd", "dg").
+
+Example 2:
+
+Input: s = "abababaccddb"
+
+Output: 2
+
+Explanation:
+
+We can partition the string s into 2 substrings like so: ("abab", "abaccddb").
+
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s consists only of English lowercase letters.;=;=https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5144610/standard-dp-tabulation-c-java-python-jav-m7cm/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5143785/simple-java-solution-by-siddhant_1602-8x6t/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5144457/100-dynamic-programming-and-sliding-wind-gtir/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5143801/java-beats-99-dynamic-programming-nn-sol-sjeo/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/6375035/optimized-dp-approach-to-minimize-substr-ljnv/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5151434/java-decently-short-solution-using-dpbot-8sd5/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/6375033/optimized-dp-approach-to-minimize-substr-7h2e/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5143822/java-clean-solution-using-dpmemoization-xviqa/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5924471/dp-solution-in-java-by-bajwajas10-5t2r/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5151365/easy-java-solution-dynamic-programing-to-yic4/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5149668/100-fast-java-solution-easy-dp-by-ronak_-zs8n/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5147254/easy-to-understand-recur-memo-soln-by-it-3km9/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5143786/java-memo-code-causing-tle-help-by-sai_g-xeex/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/7071056/how-to-think-java-by-monalogue-64n4/;;https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/solutions/5143759/easy-java-code-partition-dp-by-the_winte-gspi/;;;=;==;=;=;

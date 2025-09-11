@@ -1,0 +1,30 @@
+1477. Find Two Non-overlapping Sub-arrays Each With Target Sum;=;=Medium;=;=public int minSumOfLengths(int[] arr, int target);=;=You are given an array of integers arr and an integer target.
+
+You have to find two non-overlapping sub-arrays of arr each with a sum equal target. There can be multiple answers so you have to find an answer where the sum of the lengths of the two sub-arrays is minimum.
+
+Return the minimum sum of the lengths of the two required sub-arrays, or return -1 if you cannot find such two sub-arrays.
+
+ 
+
+Example 1:
+
+Input: arr = [3,2,2,4,3], target = 3
+Output: 2
+Explanation: Only two sub-arrays have sum = 3 ([3] and [3]). The sum of their lengths is 2.
+Example 2:
+
+Input: arr = [7,3,4,7], target = 7
+Output: 2
+Explanation: Although we have three non-overlapping sub-arrays of sum = 7 ([7], [3,4] and [7]), but we will choose the first and third sub-arrays as the sum of their lengths is 2.
+Example 3:
+
+Input: arr = [4,3,2,6,2,3,4], target = 6
+Output: -1
+Explanation: We have only one sub-array of sum = 6.
+ 
+
+Constraints:
+
+1 <= arr.length <= 105
+1 <= arr[i] <= 1000
+1 <= target <= 108;=;=https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/687163/java-prefix-suffix-sum-by-miyamura-ek52/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/1787274/summary-for-3-ways-by-using-prefix-sum-o-nw9r/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/685916/java-one-pass-on-the-simplest-solution-w-wke4/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/7096709/just-look-at-it-by-akshatsinha0-vnxe/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/1305708/java-on-time-on-space-using-two-pointers-jftl/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/1936799/java-sliding-window-beat-90-solutions-on-883j/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/685466/java-using-treemap-to-find-the-minimum-i-q1c9/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/4046218/hashmap-using-prifixsum-approch-95beats-pobvx/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/685339/two-sliding-windows-by-masterbruce-hrj6/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/685452/java-left-and-right-prefix-sum-on-allow-v7u4h/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/1623090/java-slidingwindow-15ms-by-hiuchungchan-vi4v/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/6522748/find-two-non-overlapping-sub-arrays-each-vv9h/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/6516007/sliding-window-dp-by-awuxiaoqi-jgio/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/5573475/simple-java-solution-by-sakshikishore-f5q9/;;https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/solutions/5395755/sliding-window-and-dynamic-programming-b-demf/;;;=;==;=;=;

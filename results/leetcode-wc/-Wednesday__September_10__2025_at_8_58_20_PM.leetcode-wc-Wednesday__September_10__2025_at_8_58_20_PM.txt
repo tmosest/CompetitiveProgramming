@@ -1,0 +1,31 @@
+2663. Lexicographically Smallest Beautiful String;=;=Hard;=;=public String smallestBeautifulString(String s, int k);=;=A string is beautiful if:
+
+It consists of the first k letters of the English lowercase alphabet.
+It does not contain any substring of length 2 or more which is a palindrome.
+You are given a beautiful string s of length n and a positive integer k.
+
+Return the lexicographically smallest string of length n, which is larger than s and is beautiful. If there is no such string, return an empty string.
+
+A string a is lexicographically larger than a string b (of the same length) if in the first position where a and b differ, a has a character strictly larger than the corresponding character in b.
+
+For example, "abcd" is lexicographically larger than "abcc" because the first position they differ is at the fourth character, and d is greater than c.
+ 
+
+Example 1:
+
+Input: s = "abcz", k = 26
+Output: "abda"
+Explanation: The string "abda" is beautiful and lexicographically larger than the string "abcz".
+It can be proven that there is no string that is lexicographically larger than the string "abcz", beautiful, and lexicographically smaller than the string "abda".
+Example 2:
+
+Input: s = "dc", k = 4
+Output: ""
+Explanation: It can be proven that there is no string that is lexicographically larger than the string "dc" and is beautiful.
+ 
+
+Constraints:
+
+1 <= n == s.length <= 105
+4 <= k <= 26
+s is a beautiful string.;=;=https://leetcode.com/problems/lexicographically-smallest-beautiful-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3471015/java-easy-problem-once-intuition-is-clea-atwb/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3469881/day-395-100-0ms-pythonjavac-explained-ap-kf0x/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/6643185/java-solution-by-dheerajpoojary-kw5u/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3471589/java-solution-beats-100-veryveryeasy-by-ejrjg/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3532124/java-c-python-elegant-and-fast-by-wallan-fmgx/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/4059571/java-easy-lexicographically-smallest-by-mx2mq/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/6017797/java-soln-by-hinatashoyo23-pk93/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/5779975/java-solution-beats-8868-by-barakamon-tw17/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/5686101/simple-solution-by-risabhuchiha-tzfx/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/6121614/followed-the-hints-for-an-intuitive-ok-s-g5ir/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3822520/java-easy-solution-0sec-by-sadanandsidhu-4hh5/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3800400/simple-java-by-saran19-0w5b/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3617176/java-by-tetttet-3rq5/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3529659/r-to-l-on-simple-java-two-pass-o1-space-q71jr/;;https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3519165/2663-lexicographically-smallest-beautifu-4knl/;;;=;==;=;=;

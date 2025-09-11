@@ -1,0 +1,30 @@
+2457. Minimum Addition to Make Integer Beautiful;=;=Medium;=;=public long makeIntegerBeautiful(long n, int target);=;=You are given two positive integers n and target.
+
+An integer is considered beautiful if the sum of its digits is less than or equal to target.
+
+Return the minimum non-negative integer x such that n + x is beautiful. The input will be generated such that it is always possible to make n beautiful.
+
+ 
+
+Example 1:
+
+Input: n = 16, target = 6
+Output: 4
+Explanation: Initially n is 16 and its digit sum is 1 + 6 = 7. After adding 4, n becomes 20 and digit sum becomes 2 + 0 = 2. It can be shown that we can not make n beautiful with adding non-negative integer less than 4.
+Example 2:
+
+Input: n = 467, target = 6
+Output: 33
+Explanation: Initially n is 467 and its digit sum is 4 + 6 + 7 = 17. After adding 33, n becomes 500 and digit sum becomes 5 + 0 + 0 = 5. It can be shown that we can not make n beautiful with adding non-negative integer less than 33.
+Example 3:
+
+Input: n = 1, target = 1
+Output: 0
+Explanation: Initially n is 1 and its digit sum is 1, which is already smaller than or equal to target.
+ 
+
+Constraints:
+
+1 <= n <= 1012
+1 <= target <= 150
+The input will be generated such that it is always possible to make n beautiful.;=;=https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2758216/javacpython-straight-forward-solution-by-3162/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2758230/java-solution-with-explanation-and-examp-ybh3/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2758743/java-easy-by-sourin_bruh-q8q8/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2762616/java-on-simple-easy-idea-is-make-last-di-s3u8/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2758024/starting-from-right-make-each-digit-to-z-p17w/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2758575/easiest-approach-in-java-by-hashcoderz-ez5c/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2758736/pythonjsjavac-olog-n2-by-padding-recursi-z5sq/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2758182/java-heavily-commented-solution-easy-to-oi4nc/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2759602/math-try-till-you-get-it-java-by-jain201-qswj/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2758039/java-beautiful-by-akxhayxharma-vh46/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/3047826/javascript-easy-method-beginners-friendl-clvc/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2805892/java-solution-100-fast-by-sai_kumar_25-xnwj/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2757991/easy-solution-java-by-shubham5545-cspp/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/7102244/0-ms-beats-10000-minimum-addition-to-mak-q048/;;https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/solutions/2759871/java-one-of-easiest-solution-by-atul-cha-sdar/;;;=;==;=;=;

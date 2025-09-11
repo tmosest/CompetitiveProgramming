@@ -1,0 +1,37 @@
+3400. Maximum Number of Matching Indices After Right Shifts;=;=Medium;=;=public int maximumMatchingIndices(int[] nums1, int[] nums2);=;=You are given two integer arrays, nums1 and nums2, of the same length.
+
+An index i is considered matching if nums1[i] == nums2[i].
+
+Return the maximum number of matching indices after performing any number of right shifts on nums1.
+
+A right shift is defined as shifting the element at index i to index (i + 1) % n, for all indices.
+
+ 
+
+Example 1:
+
+Input: nums1 = [3,1,2,3,1,2], nums2 = [1,2,3,1,2,3]
+
+Output: 6
+
+Explanation:
+
+If we right shift nums1 2 times, it becomes [1, 2, 3, 1, 2, 3]. Every index matches, so the output is 6.
+
+Example 2:
+
+Input: nums1 = [1,4,2,5,3,1], nums2 = [2,3,1,2,4,6]
+
+Output: 3
+
+Explanation:
+
+If we right shift nums1 3 times, it becomes [5, 3, 1, 1, 4, 2]. Indices 1, 2, and 4 match, so the output is 3.
+
+ 
+
+Constraints:
+
+nums1.length == nums2.length
+1 <= nums1.length, nums2.length <= 3000
+1 <= nums1[i], nums2[i] <= 109;=;=https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/solutions/6594148/java-solution-by-user5978-0fld/;;https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/solutions/6198020/java-brute-force-solution-by-tbekpro-zhs8/;;https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/solutions/6191657/java-brute-force-by-arunras-vum1/;;https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/solutions/6190537/java-simple-brute-force-solution-on2-87m-2l4v/;;https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/solutions/6188901/on2-just-check-all-possible-shifts-by-va-uuwh/;;;=;==;=;=;

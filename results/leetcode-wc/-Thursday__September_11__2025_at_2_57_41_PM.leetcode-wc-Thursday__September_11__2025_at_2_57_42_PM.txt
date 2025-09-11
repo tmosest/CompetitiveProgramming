@@ -1,0 +1,37 @@
+1558. Minimum Numbers of Function Calls to Make Target Array;=;=Medium;=;=publicÊintÊminOperations(int[]Ênums);=;=You are given an integer array nums. You have an integer array arr of the same length with all values set to 0 initially. You also have the following modify function:
+
+
+You want to use the modify function to convert arr to nums using the minimum number of calls.
+
+Return the minimum number of function calls to make nums from arr.
+
+The test cases are generated so that the answer fits in a 32-bit signed integer.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,5]
+Output: 5
+Explanation: Increment by 1 (second element): [0, 0] to get [0, 1] (1 operation).
+Double all the elements: [0, 1] -> [0, 2] -> [0, 4] (2 operations).
+Increment by 1 (both elements)  [0, 4] -> [1, 4] -> [1, 5] (2 operations).
+Total of operations: 1 + 2 + 2 = 5.
+Example 2:
+
+Input: nums = [2,2]
+Output: 3
+Explanation: Increment by 1 (both elements) [0, 0] -> [0, 1] -> [1, 1] (2 operations).
+Double all the elements: [1, 1] -> [2, 2] (1 operation).
+Total of operations: 2 + 1 = 3.
+Example 3:
+
+Input: nums = [4,2,5]
+Output: 6
+Explanation: (initial)[0,0,0] -> [1,0,0] -> [1,0,1] -> [2,0,2] -> [2,1,2] -> [4,2,4] -> [4,2,5](nums).
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 109;=;=https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/7016447/elegant-bit-level-greedy-0ms-on-log-m-by-xhu5/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/807150/simple-java-greedy-by-priyanpaulraj-xd12/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/1621906/java-on-solution-by-mhorskaya-ez0t/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/806047/java-short-simple-by-miyamura-klej/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/862969/java-recursive-solution-by-2yangk23-8ngw/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/806371/java-easy-solution-well-commented-67-ms-hy8a5/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/848937/my-java-solution-with-my-thought-process-51fk/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/813727/java-counting-explained-by-gthor10-9w7q/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/805710/java-simple-recursive-solution-by-arealg-0dac/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/6677348/pure-simulation-cpp-java-py-code-by-pras-rzl5/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/6412476/simple-java-solution-by-sakshikishore-w77c/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/5833685/bitops-java-on-by-wangcai20-5gj6/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/5508378/easy-and-clean-solution-beats-100-in-spa-86yf/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/5135573/java-solution-by-devadharshini-7bi6/;;https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/solutions/4198812/java-brute-force-easy-to-understand-by-s-pfg9/;;;=;==;=;=;

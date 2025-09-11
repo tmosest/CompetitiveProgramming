@@ -1,0 +1,36 @@
+3040. Maximum Number of Operations With the Same Score II;=;=Medium;=;=public int maxOperations(int[] nums);=;=Given an array of integers called nums, you can perform any of the following operation while nums contains at least 2 elements:
+
+Choose the first two elements of nums and delete them.
+Choose the last two elements of nums and delete them.
+Choose the first and the last elements of nums and delete them.
+The score of the operation is the sum of the deleted elements.
+
+Your task is to find the maximum number of operations that can be performed, such that all operations have the same score.
+
+Return the maximum number of operations possible that satisfy the condition mentioned above.
+
+ 
+
+Example 1:
+
+Input: nums = [3,2,1,2,3,4]
+Output: 3
+Explanation: We perform the following operations:
+- Delete the first two elements, with score 3 + 2 = 5, nums = [1,2,3,4].
+- Delete the first and the last elements, with score 1 + 4 = 5, nums = [2,3].
+- Delete the first and the last elements, with score 2 + 3 = 5, nums = [].
+We are unable to perform any more operations as nums is empty.
+Example 2:
+
+Input: nums = [3,2,6,1,4]
+Output: 2
+Explanation: We perform the following operations:
+- Delete the first two elements, with score 3 + 2 = 5, nums = [6,1,4].
+- Delete the last two elements, with score 1 + 4 = 5, nums = [6].
+It can be proven that we can perform at most 2 operations.
+ 
+
+Constraints:
+
+2 <= nums.length <= 2000
+1 <= nums[i] <= 1000;=;=https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4742293/dp-memorization-easy-to-understand-reada-8ojg/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4742356/javapython-3-top-down-dp-dfs-cache-on-2-j0v8m/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4742906/beats-100top-down-approach-dp-with-memoi-19ew/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4742452/simple-java-dp-solution-bottom-up-tabula-tsr6/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/6496753/easy-to-understand-and-easy-approach-by-wegka/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/7171040/memo-o3n2-by-gitchuan-wuoa/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4742304/easy-choice-based-dp-by-_sajid-hgod/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4742318/top-down-hashmapmemo-by-abburisaikarthik-p7f2/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4750301/easy-javac-solution-beats-100-by-vritant-5cg6/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4783613/clean-memoization-solution-beats-90-by-d-dlha/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4749123/with-memoization-dp-java-beats-50-136ms-e0bt4/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4744113/concise-java-recursion-by-___lovesh1808-tk07/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4742750/javacpython-easy-to-understand-by-keshav-rdnw/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4742761/dp-memoization-in-java-by-s_u_04-2gv2/;;https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/solutions/4745567/simple-approach-by-ab__23-knav/;;;=;==;=;=;

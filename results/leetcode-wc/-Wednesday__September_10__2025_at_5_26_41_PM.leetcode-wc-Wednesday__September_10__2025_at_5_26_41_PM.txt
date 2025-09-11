@@ -1,0 +1,30 @@
+2316. Count Unreachable Pairs of Nodes in an Undirected Graph;=;=Medium;=;=public long countPairs(int n, int[][] edges);=;=You are given an integer n. There is an undirected graph with n nodes, numbered from 0 to n - 1. You are given a 2D integer array edges where edges[i] = [ai, bi] denotes that there exists an undirected edge connecting nodes ai and bi.
+
+Return the number of pairs of different nodes that are unreachable from each other.
+
+ 
+
+Example 1:
+
+
+Input: n = 3, edges = [[0,1],[0,2],[1,2]]
+Output: 0
+Explanation: There are no pairs of nodes that are unreachable from each other. Therefore, we return 0.
+Example 2:
+
+
+Input: n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]
+Output: 14
+Explanation: There are 14 pairs of nodes that are unreachable from each other:
+[[0,1],[0,3],[0,6],[1,2],[1,3],[1,4],[1,5],[2,3],[2,6],[3,4],[3,5],[3,6],[4,6],[5,6]].
+Therefore, we return 14.
+ 
+
+Constraints:
+
+1 <= n <= 105
+0 <= edges.length <= 2 * 105
+edges[i].length == 2
+0 <= ai, bi < n
+ai != bi
+There are no repeated edges.;=;=https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3337487/python-java-csimple-solution-easy-to-und-mu31/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3337574/image-explanation-3-approaches-dfs-cjava-5csg/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3337653/easy-solutions-with-exaplanation-in-java-sny5/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/6590495/dfs-clean-code-graph-java-by-s_a_m2003-wofm/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/2197179/java-easy-find-connected-component-size-sydyl/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3337954/java-easy-bfs-by-kalinga-lb4f/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3339777/image-explanation-from-tle-to-100-union-8x4nb/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/6907424/two-approach-beat-100-with-explaination-sb4el/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/2196117/javapython-3-union-find-w-comments-brief-abn8/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3338934/day-361-image-explaination-disjointset-d-4a1j/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3339038/java-easy-understanding-dfs-simple-by-sh-h3sa/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3337759/dfs-c-java-python-rust-by-nisaacdz-637e/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/2195995/union-find-or-dfs-faster-than-100-by-har-8sp9/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3338368/cjavapython-simple-solution-clean-code-b-5dnz/;;https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/6349853/100-beats-done-using-dsu-by-samman_varsh-i7w1/;;;=;==;=;=;

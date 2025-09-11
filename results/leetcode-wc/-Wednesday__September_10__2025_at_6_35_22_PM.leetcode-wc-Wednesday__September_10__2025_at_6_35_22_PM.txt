@@ -1,0 +1,43 @@
+3137. Minimum Number of Operations to Make Word K-Periodic;=;=Medium;=;=public int minimumOperationsToMakeKPeriodic(String word, int k);=;=You are given a string word of size n, and an integer k such that k divides n.
+
+In one operation, you can pick any two indices i and j, that are divisible by k, then replace the substring of length k starting at i with the substring of length k starting at j. That is, replace the substring word[i..i + k - 1] with the substring word[j..j + k - 1].
+
+Return the minimum number of operations required to make word k-periodic.
+
+We say that word is k-periodic if there is some string s of length k such that word can be obtained by concatenating s an arbitrary number of times. For example, if word == “ababab”, then word is 2-periodic for s = "ab".
+
+ 
+
+Example 1:
+
+Input: word = "leetcodeleet", k = 4
+
+Output: 1
+
+Explanation:
+
+We can obtain a 4-periodic string by picking i = 4 and j = 0. After this operation, word becomes equal to "leetleetleet".
+
+Example 2:
+
+Input: word = "leetcoleet", k = 2
+
+Output: 3
+
+Explanation:
+
+We can obtain a 2-periodic string by applying the operations in the table below.
+
+i	j	word
+0	2	etetcoleet
+4	0	etetetleet
+6	0	etetetetet
+ 
+ 
+
+Constraints:
+
+1 <= n == word.length <= 105
+1 <= k <= word.length
+k divides word.length.
+word consists only of lowercase English letters.;=;=https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5114551/c-java-7-lines-code-easy-solution-with-d-som1/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5113641/java-count-frequency-in-map-by-makubex74-34es/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5114181/very-easy-efficient-code-c-python-java-b-f391/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5115123/beats-100-easy-to-understand-5-line-code-nke1/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5114028/making-words-k-periodic-minimum-operatio-w2hr/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5113828/easiest-java-solution-by-1asthakhushi1-28go/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5114853/simple-as-sheet-by-abhishekkant135-77pw/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/6326573/java-easy-solution-map-beats-9880-by-nar-u2wg/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5113774/easy-java-solution-with-hashmap-by-nnnnn-y4q3/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5113837/java-hashmap-time-on-space-on-easy-expla-0qbp/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5113902/beat-100-java-easy-to-understand-by-ume_-whep/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5591883/beginner-friendly-intuition-by-hokteyash-dduq/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5113915/java-clean-solution-with-detail-explanat-aucs/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5113649/sliding-window-by-tentx-wrbb/;;https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/solutions/5113704/very-simple-logic-by-using-hashmap-to-re-xfoo/;;;=;==;=;=;

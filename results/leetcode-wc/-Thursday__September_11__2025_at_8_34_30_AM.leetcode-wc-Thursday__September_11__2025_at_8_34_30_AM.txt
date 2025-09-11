@@ -1,0 +1,32 @@
+2610. Convert an Array Into a 2D Array With Conditions;=;=Medium;=;=public List<List<Integer>> findMatrix(int[] nums);=;=You are given an integer array nums. You need to create a 2D array from nums satisfying the following conditions:
+
+The 2D array should contain only the elements of the array nums.
+Each row in the 2D array contains distinct integers.
+The number of rows in the 2D array should be minimal.
+Return the resulting array. If there are multiple answers, return any of them.
+
+Note that the 2D array can have a different number of elements on each row.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,4,1,2,3,1]
+Output: [[1,3,4,2],[1,3],[1]]
+Explanation: We can create a 2D array that contains the following rows:
+- 1,3,4,2
+- 1,3
+- 1
+All elements of nums were used, and each row of the 2D array contains distinct integers, so it is a valid answer.
+It can be shown that we cannot have less than 3 rows in a valid array.
+Example 2:
+
+Input: nums = [1,2,3,4]
+Output: [[4,3,2,1]]
+Explanation: All elements of the array are distinct, so we can keep all of them in the first row of the 2D array.
+ 
+
+Constraints:
+
+1 <= nums.length <= 200
+1 <= nums[i] <= nums.length;=;=https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/4489526/better-than-100-cjavapythonjavascript-2-35661/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/7162229/distribute-reduce-building-a-2d-array-fr-10kh/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/3368523/javacpython-maximum-frequence-by-lee215-5uh6/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/6901224/simple-approach-beats-100-all-language-c-urct/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/4489591/beats-100-users-c-java-python-javascript-xeqz/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/6777163/java-best-solution-by-aimlc_22b1531167-8vep/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/7037170/unique-rows-with-frequency-control-distr-lskl/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/4489676/easily-explained-optimized-solution-c-ja-2f0p/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/7023050/without-hash-maps-73-by-zabardastgamerz-pr8e/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/7008000/easy-java-solution-by-rajdeep001-fuvc/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/4490397/java-easy-solutionbeginner-friendlyany-d-7pk5/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/6527174/easy-and-new-approach-java-by-rajarshico-8swn/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/6835944/most-basic-approach-java-arraylist-by-an-svcf/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/3368386/convert-1d-to-2d-java-simple-approach-by-lho2/;;https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/solutions/4490932/easy-to-understand-using-maps-stepwise-e-al70/;;;=;==;=;=;

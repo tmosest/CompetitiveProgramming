@@ -1,0 +1,46 @@
+3518. Smallest Palindromic Rearrangement II;=;=Hard;=;=public String smallestPalindrome(String s, int k);=;=You are given a palindromic string s and an integer k.
+
+Return the k-th lexicographically smallest palindromic permutation of s. If there are fewer than k distinct palindromic permutations, return an empty string.
+
+Note: Different rearrangements that yield the same palindromic string are considered identical and are counted once.
+
+ 
+
+Example 1:
+
+Input: s = "abba", k = 2
+
+Output: "baab"
+
+Explanation:
+
+The two distinct palindromic rearrangements of "abba" are "abba" and "baab".
+Lexicographically, "abba" comes before "baab". Since k = 2, the output is "baab".
+Example 2:
+
+Input: s = "aa", k = 2
+
+Output: ""
+
+Explanation:
+
+There is only one palindromic rearrangement: "aa".
+The output is an empty string since k = 2 exceeds the number of possible rearrangements.
+Example 3:
+
+Input: s = "bacab", k = 1
+
+Output: "abcba"
+
+Explanation:
+
+The two distinct palindromic rearrangements of "bacab" are "abcba" and "bacab".
+Lexicographically, "abcba" comes before "bacab". Since k = 1, the output is "abcba".
+ 
+
+Constraints:
+
+1 <= s.length <= 104
+s consists of lowercase English letters.
+s is guaranteed to be palindromic.
+1 <= k <= 106;=;=https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6645006/multinomial-coeff-brutly-look-for-every-e73dv/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6645931/most-descriptive-solution-so-far-a-combi-ud2m/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6645159/intiutive-fast-java-solution-250ms-by-sr-m6jb/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6655721/clean-java-solution-by-1729karthik_d-8u2t/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6644824/java-biginteger-factorial-combinatorics-jjx80/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6646014/java-solution-tc-on-sc-o26-beats-100-by-caevl/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6646133/java-permutations-based-solution-by-pran-os2p/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6692738/on-solution-in-java-beats-93-by-fatalme-vbai/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6650637/3518-smallest-palindromic-rearrangement-dvgis/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6652563/java-solution-by-barakamon-nmvr/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6650638/3518-smallest-palindromic-rearrangement-fbpjp/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6646320/permutation-combinatorics-by-abhi5114-r4kp/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/6645846/java-greedy-math-on-time-on-space-by-san-dcni/;;;=;==;=;=;

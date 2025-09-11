@@ -1,0 +1,32 @@
+3663. Find The Least Frequent Digit;=;=Easy;=;=public int getLeastFrequentDigit(int n);=;=Given an integer n, find the digit that occurs least frequently in its decimal representation. If multiple digits have the same frequency, choose the smallest digit.
+
+Return the chosen digit as an integer.
+
+The frequency of a digit x is the number of times it appears in the decimal representation of n.
+ 
+
+Example 1:
+
+Input: n = 1553322
+
+Output: 1
+
+Explanation:
+
+The least frequent digit in n is 1, which appears only once. All other digits appear twice.
+
+Example 2:
+
+Input: n = 723344511
+
+Output: 2
+
+Explanation:
+
+The least frequent digits in n are 7, 2, and 5; each appears only once.
+
+ 
+
+Constraints:
+
+1 <= n <= 231??????? - 1;=;=https://leetcode.com/problems/find-the-least-frequent-digit/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7138901/hash-mapeasy-to-understand-beats-100-by-2ff4u/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7141407/get-least-frequent-digit-beats-100-runti-4avk/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7164333/java-easy-solution-single-for-loop-by-sh-rhrf/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7140311/clean-and-simple-solution-easy-explanati-9irv/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7139125/beginner-friendly-easy-to-understand-jav-al3p/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7140064/easy-solution-using-counting-sort-in-jav-vmr3/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7139196/stellars-clean-code-video-intuition-appr-f3z7/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7138930/priority-queue-easy-to-understand-by-naj-peeo/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7138946/easy-solution-in-java-using-hash-maps-by-urjh/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7138919/easy-to-understand-by-nikunj_saini-ivob/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7138900/easy-solution-by-dmitrynekrasov-7luv/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7152089/java-by-sumeetrayat-fcbo/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7149567/get-least-beats-100-runtime-96-memory-si-1upv/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7149418/very-easy-java-solution-by-sumo25-cwud/;;https://leetcode.com/problems/find-the-least-frequent-digit/solutions/7146911/java-cpp-and-python-code-by-dr_vancha_ma-u624/;;;=;==;=;=;

@@ -1,0 +1,35 @@
+2086. Minimum Number of Food Buckets to Feed the Hamsters;=;=Medium;=;=public int minimumBuckets(String hamsters);=;=You are given a 0-indexed string hamsters where hamsters[i] is either:
+
+'H' indicating that there is a hamster at index i, or
+'.' indicating that index i is empty.
+You will add some number of food buckets at the empty indices in order to feed the hamsters. A hamster can be fed if there is at least one food bucket to its left or to its right. More formally, a hamster at index i can be fed if you place a food bucket at index i - 1 and/or at index i + 1.
+
+Return the minimum number of food buckets you should place at empty indices to feed all the hamsters or -1 if it is impossible to feed all of them.
+
+ 
+
+Example 1:
+
+
+Input: hamsters = "H..H"
+Output: 2
+Explanation: We place two food buckets at indices 1 and 2.
+It can be shown that if we place only one food bucket, one of the hamsters will not be fed.
+Example 2:
+
+
+Input: hamsters = ".H.H."
+Output: 1
+Explanation: We place one food bucket at index 2.
+Example 3:
+
+
+Input: hamsters = ".HHH."
+Output: -1
+Explanation: If we place a food bucket at every empty index as shown, the hamster at index 2 will not be able to eat.
+ 
+
+Constraints:
+
+1 <= hamsters.length <= 105
+hamsters[i] is either'H' or '.'.;=;=https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/1598919/javapython-1-liner-solution-by-lee215-lq4b/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/1598973/easy-java-solution-for-average-students-ecvhw/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/5224557/java-solution-beats-100-by-angshul-gzf1/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/7165086/java-keeping-track-of-both-left-and-righ-4ofk/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/1599016/java-3-solutions-hashmap-o1-sc-string-mo-pm9m/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/2891900/easy-and-clean-solution-with-tc-on-by-sa-4bw3/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/2520392/java-greedy-approach-beats-100-by-iamvar-l9yj/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/2115470/java-solution-faster-than-100-simple-by-11fpy/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/1599032/java-on-with-explanation-by-hengjunlin11-xv3v/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/1911523/java-regex-solution-by-algoc13-xeb5/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/6727984/easy-solution-in-java-by-kumarakash-rlyi/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/2214020/20-ms-just-proceed-with-the-hints-by-sri-zkft/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/1633538/java-4-lines-11ms-by-crazy2-zxgp/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/6678970/easy-on-solution-explanation-by-olef0i39-ze1o/;;https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/solutions/5810397/though-one-but-still-got-it-by-roy_b-p2gw/;;;=;==;=;=;

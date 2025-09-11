@@ -1,0 +1,27 @@
+2469. Convert the Temperature;=;=Easy;=;=public double[] convertTemperature(double celsius);=;=You are given a non-negative floating point number rounded to two decimal places celsius, that denotes the temperature in Celsius.
+
+You should convert Celsius into Kelvin and Fahrenheit and return it as an array ans = [kelvin, fahrenheit].
+
+Return the array ans. Answers within 10-5 of the actual answer will be accepted.
+
+Note that:
+
+Kelvin = Celsius + 273.15
+Fahrenheit = Celsius * 1.80 + 32.00
+ 
+
+Example 1:
+
+Input: celsius = 36.50
+Output: [309.65000,97.70000]
+Explanation: Temperature at 36.50 Celsius converted in Kelvin is 309.65 and converted in Fahrenheit is 97.70.
+Example 2:
+
+Input: celsius = 122.11
+Output: [395.26000,251.79800]
+Explanation: Temperature at 122.11 Celsius converted in Kelvin is 395.26 and converted in Fahrenheit is 251.798.
+ 
+
+Constraints:
+
+0 <= celsius <= 1000;=;=https://leetcode.com/problems/convert-the-temperature/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/convert-the-temperature/solutions/7177301/java-easy-solution-0ms-by-akashraj06-mqlg/;;https://leetcode.com/problems/convert-the-temperature/solutions/7132918/2469-convert-the-temperature-simple-and-78be5/;;https://leetcode.com/problems/convert-the-temperature/solutions/6942205/2469-covert-the-temperature-0-ms-beats-1-b5pd/;;https://leetcode.com/problems/convert-the-temperature/solutions/7094024/convert-the-temperature-by-e_deepika24-mook/;;https://leetcode.com/problems/convert-the-temperature/solutions/6996208/0ms-100-faster-one-liner-temp-converter-prqvs/;;https://leetcode.com/problems/convert-the-temperature/solutions/7072093/easy-beats-100-by-divyansh_kaushik_sharm-84y2/;;https://leetcode.com/problems/convert-the-temperature/solutions/7063377/beats-100-easiest-java-solution-by-sinch-j45n/;;https://leetcode.com/problems/convert-the-temperature/solutions/7027328/java-one-liner-solution-beats-100-by-raj-ud32/;;https://leetcode.com/problems/convert-the-temperature/solutions/7022255/my-solution-by-codersquare-pdtk/;;https://leetcode.com/problems/convert-the-temperature/solutions/2808834/java-python-c-100-fast-easy-solution-wit-qqvf/;;https://leetcode.com/problems/convert-the-temperature/solutions/6910800/solution-that-100-beats-by-gokilaselvi-24xe/;;https://leetcode.com/problems/convert-the-temperature/solutions/6904954/easy-code-for-beginners-and-understandab-i0qw/;;https://leetcode.com/problems/convert-the-temperature/solutions/4996936/easiest-and-fastest-java-solution-for-be-dhgx/;;https://leetcode.com/problems/convert-the-temperature/solutions/6861783/java-solution-in-one-line-only-by-shubha-i8ar/;;https://leetcode.com/problems/convert-the-temperature/solutions/6280278/java-solution-beats-100-proof-concise-co-1o6m/;;;=;==;=;=;

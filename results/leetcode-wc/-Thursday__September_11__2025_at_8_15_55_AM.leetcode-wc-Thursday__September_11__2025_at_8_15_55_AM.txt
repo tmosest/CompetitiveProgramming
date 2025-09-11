@@ -1,0 +1,22 @@
+1216. Valid Palindrome III;=;=Hard;=;=public boolean isValidPalindrome(String s, int k);=;=Given a string s and an integer k, return true if s is a k-palindrome.
+
+A string is k-palindrome if it can be transformed into a palindrome by removing at most k characters from it.
+
+ 
+
+Example 1:
+
+Input: s = "abcdeca", k = 2
+Output: true
+Explanation: Remove 'b' and 'e' characters.
+Example 2:
+
+Input: s = "abbababa", k = 1
+Output: true
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s consists of only lowercase English letters.
+1 <= k <= s.length;=;=https://leetcode.com/problems/valid-palindrome-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/valid-palindrome-iii/solutions/6964040/java-beats-86-by-user9582mp-hsoc/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/2409089/java-from-brute-force-to-bottom-up-dp-ex-fkxc/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/6439649/java-simple-recursion-memo-by-modabasi-466d/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/6414996/easy-two-pointer-approach-with-memoizati-xwj3/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/5123194/concise-memoization-solution-in-java-by-z6vfu/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/4309292/java-memoization-explained-by-prashant40-jtvq/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/2149495/extremely-detailed-explanation-java-dp-s-k282/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/2859177/tc-on2total-no-of-statessc-on2total-no-o-6eof/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/2859192/java-4-solutions-by-conchwu-nls6/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/406098/java-dynamic-programming-clean-explained-k40e/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/6851300/java-simple-dp-by-rnotappl-ex9m/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/6545646/dp-bottom-up-approach-using-null-value-t-6kwj/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/6473854/valid-palindrome-123-similar-pattern-for-jrn1/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/6409665/java-longest-palindromic-subsequence-bas-yz03/;;https://leetcode.com/problems/valid-palindrome-iii/solutions/6321021/very-intuitive-solution-use-modulus-to-o-xy9g/;;;=;==;=;=;

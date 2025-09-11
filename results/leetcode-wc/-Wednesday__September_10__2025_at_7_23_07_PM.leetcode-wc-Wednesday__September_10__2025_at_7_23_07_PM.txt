@@ -1,0 +1,35 @@
+3325. Count Substrings With K-Frequency Characters I;=;=Medium;=;=public int numberOfSubstrings(String s, int k);=;=Given a string s and an integer k, return the total number of substrings of s where at least one character appears at least k times.
+
+ 
+
+Example 1:
+
+Input: s = "abacb", k = 2
+
+Output: 4
+
+Explanation:
+
+The valid substrings are:
+
+"aba" (character 'a' appears 2 times).
+"abac" (character 'a' appears 2 times).
+"abacb" (character 'a' appears 2 times).
+"bacb" (character 'b' appears 2 times).
+Example 2:
+
+Input: s = "abcde", k = 1
+
+Output: 15
+
+Explanation:
+
+All substrings are valid because every character appears at least once.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 3000
+1 <= k <= s.length
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5939947/javacpython-sliding-window-on-by-lee215-91da/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5939809/easiest-solution-sliding-window-beats-94-auol/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5939835/simple-java-solution-by-shubhamyadav3210-xvzu/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5941320/beats-10000-count-sub-strings-with-k-fre-h2l4/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5939812/simple-brute-force-by-_sxrthakk-zmwn/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5939803/intuitive-easy-solution-by-ramitgangwar-s0gi/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5939819/java-clean-solution-weekly-contest-by-sh-0kbe/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5941315/super-simple-sliding-window-count-javaon-81ub/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/7146655/beats-100-on-runtime-86-on-memory-becaus-m9gk/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5954295/sliding-window-on-java-solution-by-11abh-k020/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5940027/simple-brute-force-substring-by-harshsha-qatl/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5940228/sliding-window-approach-with-on-tc-and-o-ufxu/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5944554/hashmap-soln-on2-approach-easy-to-unders-nws8/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5941592/easiest-java-solution-by-creating-a-freq-kun1/;;https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/solutions/5940542/sliding-window-hashmap-by-himanshu_gahlo-t4jk/;;;=;==;=;=;

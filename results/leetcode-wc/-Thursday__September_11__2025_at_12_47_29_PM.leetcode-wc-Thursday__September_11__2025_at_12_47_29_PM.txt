@@ -1,0 +1,21 @@
+2710. Remove Trailing Zeros From a String;=;=Easy;=;=public String removeTrailingZeros(String num);=;=Given a positive integer num represented as a string, return the integer num without trailing zeros as a string.
+
+ 
+
+Example 1:
+
+Input: num = "51230100"
+Output: "512301"
+Explanation: Integer "51230100" has 2 trailing zeros, we remove them and return integer "512301".
+Example 2:
+
+Input: num = "123"
+Output: "123"
+Explanation: Integer "123" has no trailing zeros, we return integer "123".
+ 
+
+Constraints:
+
+1 <= num.length <= 1000
+num consists of only digits.
+num doesn't have any leading zeros.;=;=https://leetcode.com/problems/remove-trailing-zeros-from-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/7108998/easy-java-solution-beats-100-by-kiyotaka-q085/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/7111884/remove-trailing-zeros-from-a-string-by-e-tstx/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/3570271/javacpythonjs-1-line-strip-by-lee215-t3k0/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/6375455/solution-in-java-and-c-by-vickyy234-xdhs/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/6889861/java-beats-100-by-ratna_madhav-26js/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/3571035/java-simple-while-checking-charat-from-e-mc2x/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/6178608/java-by-sopheary-z7vx/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/7176748/starting-at-end-of-string-beats-100-by-a-nn8r/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/7149156/beats-100-easy-solution-by-immam-c5pg/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/6378821/100-beat-solution-simple-and-efficient-a-qfkv/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/6542349/simple-arraylist-way-by-sairangineeni-qprs/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/5495760/simple-code-easy-to-understand-beats-100-989j/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/3782099/java-beats-100-easiest-solution-by-jugan-dhk0/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/3570199/clean-short-java-solution-by-himanshubho-sx4w/;;https://leetcode.com/problems/remove-trailing-zeros-from-a-string/solutions/3589455/my-solution-for-java-javascript-by-ilham-n1k5/;;;=;==;=;=;

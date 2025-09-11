@@ -1,0 +1,28 @@
+2519. Count the Number of K-Big Indices;=;=Hard;=;=public int kBigIndices(int[] nums, int k);=;=You are given a 0-indexed integer array nums and a positive integer k.
+
+We call an index i k-big if the following conditions are satisfied:
+
+There exist at least k different indices idx1 such that idx1 < i and nums[idx1] < nums[i].
+There exist at least k different indices idx2 such that idx2 > i and nums[idx2] < nums[i].
+Return the number of k-big indices.
+
+ 
+
+Example 1:
+
+Input: nums = [2,3,6,5,2,3], k = 2
+Output: 2
+Explanation: There are only two 2-big indices in nums:
+- i = 2 --> There are two valid idx1: 0 and 1. There are three valid idx2: 2, 3, and 4.
+- i = 3 --> There are two valid idx1: 0 and 1. There are two valid idx2: 3 and 4.
+Example 2:
+
+Input: nums = [1,1,1], k = 3
+Output: 0
+Explanation: There are no 3-big indices in nums.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i], k <= nums.length;=;=https://leetcode.com/problems/count-the-number-of-k-big-indices/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/2964950/cjavapython3-priority-queue-by-ye15-3gl3/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/6801951/easy-fenwick-tree-solution-beats-98-perc-9tjh/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/3896938/brute-force-priority-queue-intuition-by-gjy0w/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/2970612/java-segment-tree-solution-by-chris___ya-2ajl/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/3664390/java-solution-merge-sort-by-jimcheung-8q7s/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/6723156/java-priorityqueue-time-space-on-by-dfgd-aata/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/5773124/two-heaps-approach-simple-java-solution-jndo0/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/5997558/onlogk-with-explanation-why-priority-que-1xie/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/5910220/easy-java-solution-with-explanation-beat-xjbv/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/5854285/simple-java-solution-onlogn-by-sakshikis-xtlk/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/5560428/easy-to-understand-solution-in-java-in-2-qfp0/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/5379992/priorityqueue-solution-by-pavvels-88rr/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/4903215/this-is-not-hard-question-java-intuitive-gfnk/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/4818778/java-solution-using-priority-queue-nlogn-63dj/;;https://leetcode.com/problems/count-the-number-of-k-big-indices/solutions/4645597/maintain-a-priorityqueue-with-k-size-for-r19k/;;;=;==;=;=;

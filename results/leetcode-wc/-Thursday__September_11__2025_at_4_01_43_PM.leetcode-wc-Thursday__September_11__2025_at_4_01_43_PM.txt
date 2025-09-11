@@ -1,0 +1,32 @@
+1243. Array Transformation;=;=Easy;=;=public List<Integer> transformArray(int[] arr);=;=Given an initial array arr, every day you produce a new array using the array of the previous day.
+
+On the i-th day, you do the following operations on the array of day i-1 to produce the array of day i:
+
+If an element is smaller than both its left neighbor and its right neighbor, then this element is incremented.
+If an element is bigger than both its left neighbor and its right neighbor, then this element is decremented.
+The first and last elements never change.
+After some days, the array does not change. Return that final array.
+
+ 
+
+Example 1:
+
+Input: arr = [6,2,3,4]
+Output: [6,3,3,4]
+Explanation: 
+On the first day, the array is changed from [6,2,3,4] to [6,3,3,4].
+No more operations can be done to this array.
+Example 2:
+
+Input: arr = [1,6,3,4,3,5]
+Output: [1,4,4,4,4,5]
+Explanation: 
+On the first day, the array is changed from [1,6,3,4,3,5] to [1,5,4,3,4,5].
+On the second day, the array is changed from [1,5,4,3,4,5] to [1,4,4,4,4,5].
+No more operations can be done to this array.
+ 
+
+Constraints:
+
+3 <= arr.length <= 100
+1 <= arr[i] <= 100;=;=https://leetcode.com/problems/array-transformation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/array-transformation/solutions/420102/java-simulation-1ms-explained-by-gthor10-dhm1/;;https://leetcode.com/problems/array-transformation/solutions/418921/java-solution-with-on-extra-space-by-man-kqv0/;;https://leetcode.com/problems/array-transformation/solutions/6742532/not-optimal-but-easy-to-understand-by-pr-7ni8/;;https://leetcode.com/problems/array-transformation/solutions/6389152/java-100-faster-solution-by-tbekpro-1dnn/;;https://leetcode.com/problems/array-transformation/solutions/5637423/javajsts-solution-jw-by-specter01wj-z9xr/;;https://leetcode.com/problems/array-transformation/solutions/4057646/simple-java-solution-by-shuohe_2022-ipnq/;;https://leetcode.com/problems/array-transformation/solutions/3959563/fast-and-efficient-java-solution-with-ex-7oqy/;;https://leetcode.com/problems/array-transformation/solutions/3880340/java-clean-and-understandable-solution-b-yl3r/;;https://leetcode.com/problems/array-transformation/solutions/3578872/solution-by-deleted_user-4ge8/;;https://leetcode.com/problems/array-transformation/solutions/3219589/java-100-faster-store-previous-for-effic-9bg1/;;https://leetcode.com/problems/array-transformation/solutions/1859119/java-simple-explained-by-prashant404-inxs/;;https://leetcode.com/problems/array-transformation/solutions/1203589/java-solution-100-by-jiaxichen-npj2/;;https://leetcode.com/problems/array-transformation/solutions/1183217/java-solution-by-rkxyiiyk2-htyu/;;https://leetcode.com/problems/array-transformation/solutions/418923/easy-java-solution-with-comments-by-melt-6vka/;;;=;==;=;=;

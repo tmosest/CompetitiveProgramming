@@ -1,0 +1,21 @@
+1067. Digit Count in Range;=;=Hard;=;=public int digitsCount(int d, int low, int high);=;=Given a single-digit integer d and two integers low and high, return the number of times that d occurs as a digit in all integers in the inclusive range [low, high].
+
+ 
+
+Example 1:
+
+Input: d = 1, low = 1, high = 13
+Output: 6
+Explanation: The digit d = 1 occurs 6 times in 1, 10, 11, 12, 13.
+Note that the digit d = 1 occurs twice in the number 11.
+Example 2:
+
+Input: d = 3, low = 100, high = 250
+Output: 35
+Explanation: The digit d = 3 occurs 35 times in 103,113,123,130,131,...,238,239,243.
+ 
+
+Constraints:
+
+0 <= d <= 9
+1 <= low <= high <= 2 * 108;=;=https://leetcode.com/problems/digit-count-in-range/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/digit-count-in-range/solutions/2446123/java-digit-dp-with-explanation-2ms-ologn-mbjs/;;https://leetcode.com/problems/digit-count-in-range/solutions/3260843/useful-algorithms-to-know-for-dynamic-pr-vsvd/;;https://leetcode.com/problems/digit-count-in-range/solutions/5553152/1-pass-digit-dp-beats-100-java-by-zephyr-mlij/;;https://leetcode.com/problems/digit-count-in-range/solutions/3547709/solution-by-deleted_user-qlgo/;;;=;==;=;=;

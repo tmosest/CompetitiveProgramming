@@ -1,0 +1,58 @@
+2296. Design a Text Editor;=;=Hard;=;=TextEditor     public TextEditor()                     public void addText(String text)                     public int deleteText(int k)                     public String cursorLeft(int k)                     public String cursorRight(int k)             /  Your TextEditor object will be instantiated and called as such:  TextEditor obj = new TextEditor();  obj.addText(text);  int param_2 = obj.deleteText(k);  String param_3 = obj.cursorLeft(k);  String param_4 = obj.cursorRight(k);;=;=Design a text editor with a cursor that can do the following:
+
+Add text to where the cursor is.
+Delete text from where the cursor is (simulating the backspace key).
+Move the cursor either left or right.
+When deleting text, only characters to the left of the cursor will be deleted. The cursor will also remain within the actual text and cannot be moved beyond it. More formally, we have that 0 <= cursor.position <= currentText.length always holds.
+
+Implement the TextEditor class:
+
+TextEditor() Initializes the object with empty text.
+void addText(string text) Appends text to where the cursor is. The cursor ends to the right of text.
+int deleteText(int k) Deletes k characters to the left of the cursor. Returns the number of characters actually deleted.
+string cursorLeft(int k) Moves the cursor to the left k times. Returns the last min(10, len) characters to the left of the cursor, where len is the number of characters to the left of the cursor.
+string cursorRight(int k) Moves the cursor to the right k times. Returns the last min(10, len) characters to the left of the cursor, where len is the number of characters to the left of the cursor.
+ 
+
+Example 1:
+
+Input
+["TextEditor", "addText", "deleteText", "addText", "cursorRight", "cursorLeft", "deleteText", "cursorLeft", "cursorRight"]
+[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]
+Output
+[null, null, 4, null, "etpractice", "leet", 4, "", "practi"]
+
+Explanation
+TextEditor textEditor = new TextEditor(); // The current text is "|". (The '|' character represents the cursor)
+textEditor.addText("leetcode"); // The current text is "leetcode|".
+textEditor.deleteText(4); // return 4
+                          // The current text is "leet|". 
+                          // 4 characters were deleted.
+textEditor.addText("practice"); // The current text is "leetpractice|". 
+textEditor.cursorRight(3); // return "etpractice"
+                           // The current text is "leetpractice|". 
+                           // The cursor cannot be moved beyond the actual text and thus did not move.
+                           // "etpractice" is the last 10 characters to the left of the cursor.
+textEditor.cursorLeft(8); // return "leet"
+                          // The current text is "leet|practice".
+                          // "leet" is the last min(10, 4) = 4 characters to the left of the cursor.
+textEditor.deleteText(10); // return 4
+                           // The current text is "|practice".
+                           // Only 4 characters were deleted.
+textEditor.cursorLeft(2); // return ""
+                          // The current text is "|practice".
+                          // The cursor cannot be moved beyond the actual text and thus did not move. 
+                          // "" is the last min(10, 0) = 0 characters to the left of the cursor.
+textEditor.cursorRight(6); // return "practi"
+                           // The current text is "practi|ce".
+                           // "practi" is the last min(10, 6) = 6 characters to the left of the cursor.
+ 
+
+Constraints:
+
+1 <= text.length, k <= 40
+text consists of lowercase English letters.
+At most 2 * 104 calls in total will be made to addText, deleteText, cursorLeft and cursorRight.
+ 
+
+Follow-up: Could you find a solution with time complexity of O(k) per call?;=;=https://leetcode.com/problems/design-a-text-editor/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/design-a-text-editor/solutions/2111909/java-my-simple-solution-by-virendra115-w2gg/;;https://leetcode.com/problems/design-a-text-editor/solutions/3045030/solution-by-deleted_user-kg0q/;;https://leetcode.com/problems/design-a-text-editor/solutions/6209015/python3-double-linked-list-detailed-expl-lq8s/;;https://leetcode.com/problems/design-a-text-editor/solutions/2111867/java-stringbuilder-easy-to-understand-by-thp1/;;https://leetcode.com/problems/design-a-text-editor/solutions/2112489/java-two-stacks-with-explanation-by-viso-zy5e/;;https://leetcode.com/problems/design-a-text-editor/solutions/2113264/javasimple-solutionstringbuilder-by-sidd-ihi3/;;https://leetcode.com/problems/design-a-text-editor/solutions/6194501/use-doubly-linked-list-with-each-char-as-7fyf/;;https://leetcode.com/problems/design-a-text-editor/solutions/4782779/java-easy-doublylinkedlist-solution-by-y-i50f/;;https://leetcode.com/problems/design-a-text-editor/solutions/2931516/java-based-on-linkedlist-simple-solution-rips/;;https://leetcode.com/problems/design-a-text-editor/solutions/5921337/easy-to-understand-dequeue-approach-immi-0dlt/;;https://leetcode.com/problems/design-a-text-editor/solutions/3716802/clean-java-code-doubly-linked-list-ok-by-g40e/;;https://leetcode.com/problems/design-a-text-editor/solutions/2112557/java-doubly-linkedlist-easy-contest-imo-sb029/;;https://leetcode.com/problems/design-a-text-editor/solutions/3411922/java-97-faster-doubly-linked-list-easy-a-rf6s/;;https://leetcode.com/problems/design-a-text-editor/solutions/4753627/java-solution-by-simulation-using-the-co-6slp/;;https://leetcode.com/problems/design-a-text-editor/solutions/3674175/java-using-stringbuilder-count-by-tbekpr-05ju/;;;=;==;=;=;

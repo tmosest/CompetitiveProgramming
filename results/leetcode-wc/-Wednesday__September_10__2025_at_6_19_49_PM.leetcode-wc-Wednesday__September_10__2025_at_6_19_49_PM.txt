@@ -1,0 +1,40 @@
+2527. Find Xor-Beauty of Array;=;=Medium;=;=public int xorBeauty(int[] nums);=;=You are given a 0-indexed integer array nums.
+
+The effective value of three indices i, j, and k is defined as ((nums[i] | nums[j]) & nums[k]).
+
+The xor-beauty of the array is the XORing of the effective values of all the possible triplets of indices (i, j, k) where 0 <= i, j, k < n.
+
+Return the xor-beauty of nums.
+
+Note that:
+
+val1 | val2 is bitwise OR of val1 and val2.
+val1 & val2 is bitwise AND of val1 and val2.
+ 
+
+Example 1:
+
+Input: nums = [1,4]
+Output: 5
+Explanation: 
+The triplets and their corresponding effective values are listed below:
+- (0,0,0) with effective value ((1 | 1) & 1) = 1
+- (0,0,1) with effective value ((1 | 1) & 4) = 0
+- (0,1,0) with effective value ((1 | 4) & 1) = 1
+- (0,1,1) with effective value ((1 | 4) & 4) = 4
+- (1,0,0) with effective value ((4 | 1) & 1) = 1
+- (1,0,1) with effective value ((4 | 1) & 4) = 4
+- (1,1,0) with effective value ((4 | 4) & 1) = 0
+- (1,1,1) with effective value ((4 | 4) & 4) = 4 
+Xor-beauty of array will be bitwise XOR of all beauties = 1 ^ 0 ^ 1 ^ 4 ^ 1 ^ 4 ^ 0 ^ 4 = 5.
+Example 2:
+
+Input: nums = [15,45,20,2,34,35,5,44,32,30]
+Output: 34
+Explanation: The xor-beauty of the given array is 34.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/find-xor-beauty-of-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3015014/why-just-xor-of-all-numbers-works-by-aru-2v4c/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3015549/3-lines-java-code-by-sam02202001-ybsf/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3015170/java-pen-and-paper-proof-by-sourin_bruh-kuei/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/5328651/4-line-solution-java-by-chandanmehra-wmen/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3016067/java-on-and-o1-beats-100-time-and-space-p9cwg/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3015563/java-easy-to-understand-simple-solution-f99zr/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3016629/3-liner-java-simple-beginner-friendly-10-9qdu/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3015017/cjavapython3-math-by-ye15-1m8p/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3411890/why-take-the-xor-of-the-array-pen-and-co-571r/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3016406/java-c-visualized-bruteforce-optimized-b-buuq/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3166735/java-iterative-solution-by-tbekpro-eb92/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3017361/vey-fast-and-easy-to-understand-java-sol-5reh/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/3016494/java-1ms-with-explanation-easy-understan-qv59/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/7001729/easy-on-time-solution-by-harlalkaharshit-trr4/;;https://leetcode.com/problems/find-xor-beauty-of-array/solutions/6345039/amazing-solution-to-the-problem-by-swapn-2lqr/;;;=;==;=;=;

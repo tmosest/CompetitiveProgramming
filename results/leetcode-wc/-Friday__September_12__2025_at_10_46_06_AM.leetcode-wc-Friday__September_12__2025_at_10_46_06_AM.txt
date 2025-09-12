@@ -1,0 +1,37 @@
+1786. Number of Restricted Paths From First to Last Node;=;=Medium;=;=public int countRestrictedPaths(int n, int[][] edges);=;=There is an undirected weighted connected graph. You are given a positive integer n which denotes that the graph has n nodes labeled from 1 to n, and an array edges where each edges[i] = [ui, vi, weighti] denotes that there is an edge between nodes ui and vi with weight equal to weighti.
+
+A path from node start to node end is a sequence of nodes [z0, z1, z2, ..., zk] such that z0 = start and zk = end and there is an edge between zi and zi+1 where 0 <= i <= k-1.
+
+The distance of a path is the sum of the weights on the edges of the path. Let distanceToLastNode(x) denote the shortest distance of a path between node n and node x. A restricted path is a path that also satisfies that distanceToLastNode(zi) > distanceToLastNode(zi+1) where 0 <= i <= k-1.
+
+Return the number of restricted paths from node 1 to node n. Since that number may be too large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+
+Input: n = 5, edges = [[1,2,3],[1,3,3],[2,3,1],[1,4,2],[5,2,2],[3,5,1],[5,4,10]]
+Output: 3
+Explanation: Each circle contains the node number in black and its distanceToLastNode value in blue. The three restricted paths are:
+1) 1 --> 2 --> 5
+2) 1 --> 2 --> 3 --> 5
+3) 1 --> 3 --> 5
+Example 2:
+
+
+Input: n = 7, edges = [[1,3,1],[4,1,2],[7,3,4],[2,5,3],[5,6,1],[6,7,2],[7,5,3],[2,6,4]]
+Output: 1
+Explanation: Each circle contains the node number in black and its distanceToLastNode value in blue. The only restricted path is 1 --> 3 --> 7.
+ 
+
+Constraints:
+
+1 <= n <= 2 * 104
+n - 1 <= edges.length <= 4 * 104
+edges[i].length == 3
+1 <= ui, vi <= n
+ui != vi
+1 <= weighti <= 105
+There is at most one edge between any two nodes.
+There is at least one path between any two nodes.;=;=https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/6937167/dj-memo-omlogm-nm-by-gitchuan-agwj/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/5336699/easy-one-pass-dijkstra-solution-no-dfs-d-ciuk/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/7178954/dp-on-treedijsktra-by-asmit-srivas0-j3uj/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/6403268/dynamic-programming-dijkstra-algorithm-b-ak0w/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/1097226/java-dijkshtra-memoization-by-valarmorgh-4w3w/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/4829897/bfs-dijkstra-topological-sort-java-solut-1vjb/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/3436096/dijkstra-dfs-approach-java-solution-clea-fz1y/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/1294549/java-dijkstra-dfs-solution-by-maddetecti-px22/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/1098560/java-dijkstra-dfs-with-memo-by-chipn13-kfuz/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/7088385/java-code-with-simple-description-and-in-kx4l/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/6984560/easiest-solution-ever-by-amyy_1256-cooi/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/6667506/java-dijkstra-cached-dfs-onlogn-time-sol-qhwo/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/6477429/dijkstras-algorithm-linear-dp-by-akash_s-0oda/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/6443533/very-easy-check-once-by-aniketb11-bsy4/;;https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/solutions/6244835/djikstras-dfs-till-test-case-4377-then-d-stmk/;;;=;==;=;=;

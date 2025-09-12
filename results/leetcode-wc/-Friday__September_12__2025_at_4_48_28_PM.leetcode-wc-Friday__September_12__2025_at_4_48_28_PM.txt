@@ -1,0 +1,43 @@
+3212. Count Submatrices With Equal Frequency of X and Y;=;=Medium;=;=public int numberOfSubmatrices(char[][] grid);=;=Given a 2D character matrix grid, where grid[i][j] is either 'X', 'Y', or '.', return the number of submatrices that contain:
+
+grid[0][0]
+an equal frequency of 'X' and 'Y'.
+at least one 'X'.
+ 
+
+Example 1:
+
+Input: grid = [["X","Y","."],["Y",".","."]]
+
+Output: 3
+
+Explanation:
+
+
+
+Example 2:
+
+Input: grid = [["X","X"],["X","Y"]]
+
+Output: 0
+
+Explanation:
+
+No submatrix has an equal frequency of 'X' and 'Y'.
+
+Example 3:
+
+Input: grid = [[".","."],[".","."]]
+
+Output: 0
+
+Explanation:
+
+No submatrix has at least one 'X'.
+
+ 
+
+Constraints:
+
+1 <= grid.length, grid[i].length <= 1000
+grid[i][j] is either 'X', 'Y', or '.'.;=;=https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431675/javacpython-dp-by-lee215-0b31/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431998/java-solution-by-cindertree-qlwx/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431750/easy-video-solution-how-to-in-interview-ytr3f/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5432001/dp-prefix-sum-array-easy-to-understand-c-jo5i/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431847/java-clean-solution-weekly-contest-07072-z91i/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5440426/intuition-and-code-tconm-sc-om-by-bhawes-y7x7/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431988/simple-iteration-must-see-java-c-python-wkdvz/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5435061/count-the-frequency-of-x-and-y-horizonta-zg4r/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5434020/easy-java-solution-by-ravikumar50-a2s7/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5432303/explained-thought-process-brute-better-c-qliu/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5431786/solution-by-dare2solve-detailed-explanat-nrpq/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5432898/store-previous-row-prefix-sum-technique-g0ask/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/5434417/easy-java-solution-by-vaibhav_goyal_18-nyqf/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/6940700/best-and-easiest-code-ever-for-begineers-883o/;;https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/6863739/prefix-sum-by-gitchuan-9myh/;;;=;==;=;=;

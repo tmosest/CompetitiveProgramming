@@ -1,0 +1,34 @@
+1909. Remove One Element to Make the Array Strictly Increasing;=;=Easy;=;=publicÊbooleanÊcanBeIncreasing(int[]Ênums);=;=Given a 0-indexed integer array nums, return true if it can be made strictly increasing after removing exactly one element, or false otherwise. If the array is already strictly increasing, return true.
+
+The array nums is strictly increasing if nums[i - 1] < nums[i] for each index (1 <= i < nums.length).
+
+Ê
+
+Example 1:
+
+Input: nums = [1,2,10,5,7]
+Output: true
+Explanation: By removing 10 at index 2 from nums, it becomes [1,2,5,7].
+[1,2,5,7] is strictly increasing, so return true.
+Example 2:
+
+Input: nums = [2,3,1,2]
+Output: false
+Explanation:
+[3,1,2] is the result of removing the element at index 0.
+[2,1,2] is the result of removing the element at index 1.
+[2,3,2] is the result of removing the element at index 2.
+[2,3,1] is the result of removing the element at index 3.
+No resulting array is strictly increasing, so return false.
+Example 3:
+
+Input: nums = [1,1,1]
+Output: false
+Explanation: The result of removing any element is [1,1].
+[1,1] is not strictly increasing, so return false.
+Ê
+
+Constraints:
+
+2 <= nums.length <= 1000
+1 <= nums[i] <= 1000;=;=https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/1387010/java-easy-to-understand-solution-well-ex-1emu/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/1734961/java-0-ms-explained-by-prashant404-t3xf/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/1808440/beginner-friendly-javajavascriptpython-s-dm8c/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/3337681/most-jugadu-solution-by-trippy-the-codde-ig3o/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/4564814/beats-10000-of-users-with-java-easy-solu-xwho/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/3565404/java-simple-solution-0-ms-100-beats-by-a-gze5/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/6092890/java-easy-100-solution-by-ytchouar-t4zy/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/4362691/java-easy-solution-100-faster-code-begin-5gvn/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/5062826/easy-java-solution-beginner-friendly-3-a-fu04/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/1705227/java-easy-and-efficient-solution-0ms-by-sxal9/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/5893963/simple-clear-easy-to-understand-on-by-kd-y969/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/2491809/java-1-ms-solution-by-im_krgs-sgej/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/3735653/beats-100-simple-easy-to-understand-solu-7scm/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/6085291/java-beats-100-brute-force-on-by-prabhus-fc0l/;;https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/solutions/5986448/java-on-by-rpmv-y61b/;;;=;==;=;=;

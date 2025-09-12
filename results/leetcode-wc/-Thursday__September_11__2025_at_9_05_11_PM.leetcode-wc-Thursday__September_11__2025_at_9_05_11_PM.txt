@@ -1,0 +1,31 @@
+2941. Maximum GCD-Sum of a Subarray;=;=Hard;=;=public long maxGcdSum(int[] nums, int k);=;=You are given an array of integers nums and an integer k.
+
+The gcd-sum of an array a is calculated as follows:
+
+Let s be the sum of all the elements of a.
+Let g be the greatest common divisor of all the elements of a.
+The gcd-sum of a is equal to s * g.
+Return the maximum gcd-sum of a subarray of nums with at least k elements.
+
+ 
+
+Example 1:
+
+Input: nums = [2,1,4,4,4,2], k = 2
+Output: 48
+Explanation: We take the subarray [4,4,4], the gcd-sum of this array is 4 * (4 + 4 + 4) = 48.
+It can be shown that we can not select any other subarray with a gcd-sum greater than 48.
+Example 2:
+
+Input: nums = [7,3,9,4], k = 1
+Output: 81
+Explanation: We take the subarray [9], the gcd-sum of this array is 9 * 9 = 81.
+It can be shown that we can not select any other subarray with a gcd-sum greater than 81.
+ 
+
+Constraints:
+
+n == nums.length
+1 <= n <= 105
+1 <= nums[i] <= 106
+1 <= k <= n;=;=https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/4318908/short-no-binary-search-no-sparse-table-b-z8j5/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/4318863/sparse-table-vs-gcd-list-by-votrubac-61c4/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/4318746/binary-search-sparse-table-by-cpcs-a9ad/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/4445826/use-hashmap-to-keep-track-of-all-the-sub-yi6x/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/4319032/distinct-gcds-at-each-point-is-20-at-max-kew0/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/4318808/java-rmq-binary-search-1079ms-by-silentw-xp2v/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/4318713/sparse-table-binary-search-by-betsymp-yx2k/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/6540544/python-sparse-table-math-binary-search-b-qgpc/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/6296949/beats-100-on-runtime-and-memory-explaine-g4ik/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/6080644/c-prefix-with-partial_sum-then-iteration-x3qo/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/6005361/hashtable-by-maxorgus-k2x9/;;https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/solutions/5917047/distinct-prefix-gcd-property-by-theabbie-fj5r/;;;=;==;=;=;

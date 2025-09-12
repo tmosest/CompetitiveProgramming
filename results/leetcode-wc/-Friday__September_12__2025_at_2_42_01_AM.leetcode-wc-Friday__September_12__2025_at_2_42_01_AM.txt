@@ -1,0 +1,27 @@
+1300. Sum of Mutated Array Closest to Target;=;=Medium;=;=public int findBestValue(int[] arr, int target);=;=Given an integer array arr and a target value target, return the integer value such that when we change all the integers larger than value in the given array to be equal to value, the sum of the array gets as close as possible (in absolute difference) to target.
+
+In case of a tie, return the minimum such integer.
+
+Notice that the answer is not neccesarilly a number from arr.
+
+ 
+
+Example 1:
+
+Input: arr = [4,9,3], target = 10
+Output: 3
+Explanation: When using 3 arr converts to [3, 3, 3] which sums 9 and that's the optimal answer.
+Example 2:
+
+Input: arr = [2,3,5], target = 10
+Output: 5
+Example 3:
+
+Input: arr = [60864,25176,27249,21296,20204], target = 56803
+Output: 11361
+ 
+
+Constraints:
+
+1 <= arr.length <= 104
+1 <= arr[i], target <= 105;=;=https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/1028857/java-easy-understand-binary-search-beats-aj88/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/3268479/easy-solutions-1300-in-java-python-and-c-pmy8/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/1991288/java-binary-search-by-fllght-qbu3/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/3359402/very-easy-java-solution-by-tabuopop-fyix/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/3163387/java-solution-1-ms-beats-100-by-abstract-gum4/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/2158495/java-binary-search-easy-to-understand-in-z9i1/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/2172759/java-simple-solution-by-zichengs-8e5y/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/3206677/java-binary-search-by-himanshurajput-zomy/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/463234/java-7ms-sorting-and-bruteforce-naive-so-bmyg/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/2450965/java-run-onlogn-space-on-by-hardy_hack-etum/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/1848331/binary-search-implementation-with-commen-hygj/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/6369864/simple-solution-by-madhu_five-f93a/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/6369868/simple-solution-in-java-by-madhu_five-9gvb/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/6369867/simple-solution-in-java-by-madhu_five-r1wr/;;https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/solutions/6226945/presum-binary-search-by-ruinan-w02e/;;;=;==;=;=;

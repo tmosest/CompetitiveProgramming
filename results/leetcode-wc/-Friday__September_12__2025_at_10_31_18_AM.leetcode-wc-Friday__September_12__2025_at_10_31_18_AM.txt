@@ -1,0 +1,45 @@
+3271. Hash Divided String;=;=Medium;=;=public String stringHash(String s, int k);=;=You are given a string s of length n and an integer k, where n is a multiple of k. Your task is to hash the string s into a new string called result, which has a length of n / k.
+
+First, divide s into n / k substrings, each with a length of k. Then, initialize result as an empty string.
+
+For each substring in order from the beginning:
+
+The hash value of a character is the index of that character in the English alphabet (e.g., 'a' ? 0, 'b' ? 1, ..., 'z' ? 25).
+Calculate the sum of all the hash values of the characters in the substring.
+Find the remainder of this sum when divided by 26, which is called hashedChar.
+Identify the character in the English lowercase alphabet that corresponds to hashedChar.
+Append that character to the end of result.
+Return result.
+
+ 
+
+Example 1:
+
+Input: s = "abcd", k = 2
+
+Output: "bf"
+
+Explanation:
+
+First substring: "ab", 0 + 1 = 1, 1 % 26 = 1, result[0] = 'b'.
+
+Second substring: "cd", 2 + 3 = 5, 5 % 26 = 5, result[1] = 'f'.
+
+Example 2:
+
+Input: s = "mxz", k = 3
+
+Output: "i"
+
+Explanation:
+
+The only substring: "mxz", 12 + 23 + 25 = 60, 60 % 26 = 8, result[0] = 'i'.
+
+ 
+
+Constraints:
+
+1 <= k <= 100
+k <= s.length <= 1000
+s.length is divisible by k.
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/hash-divided-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/hash-divided-string/solutions/5724915/simple-java-c-code-by-abhinandannaik1717-9t1x/;;https://leetcode.com/problems/hash-divided-string/solutions/6890559/java-solution-by-monish1153-kerp/;;https://leetcode.com/problems/hash-divided-string/solutions/6887222/simple-java-solution-by-shubhamxgupta-b1cx/;;https://leetcode.com/problems/hash-divided-string/solutions/6802589/simple-easy-solution-try-this-by-sairang-1udo/;;https://leetcode.com/problems/hash-divided-string/solutions/5759499/easy-to-understand-solution-by-devesh_v-f0s1/;;https://leetcode.com/problems/hash-divided-string/solutions/6741584/easy-solution-beats-100-by-sagar__26-evsj/;;https://leetcode.com/problems/hash-divided-string/solutions/7179749/my-fist-solution-by-jasper_savio-04jv/;;https://leetcode.com/problems/hash-divided-string/solutions/6423352/easy-java-solution-beats-100-of-java-use-0039/;;https://leetcode.com/problems/hash-divided-string/solutions/6194656/beats-9730-easy-fast-solution-explained-nxich/;;https://leetcode.com/problems/hash-divided-string/solutions/6356083/brute-force-solution-beginner-friendly-s-hrm7/;;https://leetcode.com/problems/hash-divided-string/solutions/5716878/very-easy-to-understand-by-bhavesh18-ka0a/;;https://leetcode.com/problems/hash-divided-string/solutions/5716764/efficient-string-hashing-by-dividing-and-h5sm/;;https://leetcode.com/problems/hash-divided-string/solutions/5719570/beats-100-easy-java-solution-by-priyansh-j9ne/;;https://leetcode.com/problems/hash-divided-string/solutions/5716040/beats-100-solution-java-by-shobit000-6emy/;;https://leetcode.com/problems/hash-divided-string/solutions/6069374/java-easy-100-solution-by-ytchouar-unut/;;;=;==;=;=;

@@ -1,0 +1,30 @@
+1510. Stone Game IV;=;=Hard;=;=publicÊbooleanÊwinnerSquareGame(intÊn);=;=Alice and Bob take turns playing a game, with Alice starting first.
+
+Initially, there are n stones in a pile. On each player's turn, that player makes a move consisting of removing any non-zero square number of stones in the pile.
+
+Also, if a player cannot make a move, he/she loses the game.
+
+Given a positive integer n, return true if and only if Alice wins the game otherwise return false, assuming both players play optimally.
+
+Ê
+
+Example 1:
+
+Input: n = 1
+Output: true
+Explanation: Alice can remove 1 stone winning the game because Bob doesn't have any moves.
+Example 2:
+
+Input: n = 2
+Output: false
+Explanation: Alice can only remove 1 stone, after that Bob removes the last one winning the game (2 -> 1 -> 0).
+Example 3:
+
+Input: n = 4
+Output: true
+Explanation: n is already a perfect square, Alice can win with one move, removing 4 stones (4 -> 0).
+Ê
+
+Constraints:
+
+1 <= n <= 105;=;=https://leetcode.com/problems/stone-game-iv/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/stone-game-iv/solutions/1708369/easy-explanation-you-will-definitely-gon-9g2i/;;https://leetcode.com/problems/stone-game-iv/solutions/6584083/dp-almost-95-beats-easy-to-understand-by-uag6/;;https://leetcode.com/problems/stone-game-iv/solutions/1708234/java-a-very-detailed-explanation-from-br-vi5y/;;https://leetcode.com/problems/stone-game-iv/solutions/4654011/java-recursive-tabulation-dynamic-progra-fte7/;;https://leetcode.com/problems/stone-game-iv/solutions/1569709/not-a-best-solution-like-others-but-bett-cg4c/;;https://leetcode.com/problems/stone-game-iv/solutions/7137824/1510-stone-game-iv-game-theory-by-kanish-91g3/;;https://leetcode.com/problems/stone-game-iv/solutions/730571/java-recursive-concise-solution-by-hydro-24n0/;;https://leetcode.com/problems/stone-game-iv/solutions/4547748/beats-100-dp-memoization-easy-by-priyans-kdau/;;https://leetcode.com/problems/stone-game-iv/solutions/1708440/java-dp-solution-by-piyushja1n-621p/;;https://leetcode.com/problems/stone-game-iv/solutions/909484/stone-game-iv-java-c-kotlin-dp-by-cygnus-xyo5/;;https://leetcode.com/problems/stone-game-iv/solutions/2611730/c-java-go-easy-simple-by-tamim447-yd31/;;https://leetcode.com/problems/stone-game-iv/solutions/1279365/java-simple-and-easy-dp-memoization-solu-gvj7/;;https://leetcode.com/problems/stone-game-iv/solutions/6445585/onsqrtnlognclogloglogn-by-nickulman-1ybi/;;https://leetcode.com/problems/stone-game-iv/solutions/1710126/detailed-explanation-with-examples-using-n4yn/;;https://leetcode.com/problems/stone-game-iv/solutions/834913/my-java-dp-solution-by-vrohith-de8i/;;;=;==;=;=;

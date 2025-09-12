@@ -1,0 +1,33 @@
+1490. Clone N-ary Tree;=;=Medium;=;=// Definition for a Node. Node     public int val;    public List<Node> children;        public Node()         children = new ArrayList<Node>();            public Node(int _val)         val = _val;        children = new ArrayList<Node>();            public Node(int _val,ArrayList<Node> _children)         val = _val;        children = _children;    ;class      public Node cloneTree(Node root);=;=Given a root of an N-ary tree, return a deep copy (clone) of the tree.
+
+Each node in the n-ary tree contains a val (int) and a list (List[Node]) of its children.
+
+class Node {
+    public int val;
+    public List<Node> children;
+}
+Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See examples).
+
+ 
+
+Example 1:
+
+
+
+Input: root = [1,null,3,2,4,null,5,6]
+Output: [1,null,3,2,4,null,5,6]
+Example 2:
+
+
+
+Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+Output: [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+ 
+
+Constraints:
+
+The depth of the n-ary tree is less than or equal to 1000.
+The total number of nodes is between [0, 104].
+ 
+
+Follow up: Can your solution work for the graph problem?;=;=https://leetcode.com/problems/clone-n-ary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/clone-n-ary-tree/solutions/851620/java-dfs-iterative-recursive-and-bfs-by-bdexb/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/730103/java-iterative-on-by-robsalcedo-am77/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/1174902/java-solution-in-4-lines-by-rkxyiiyk2-7hki/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/704446/java-0ms-dfs-by-shuangpan-wb0n/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/1826228/java-recursion-simple-as-simple-can-be-b-3hao/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/750956/4-line-java-solution-by-savehch-2h47/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/6008734/java-dfs-solution-beats-100-by-lakhansor-kn79/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/1729630/java-bfs-iterative-simple-only-keep-what-v6so/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/6456644/simple-bfs-by-beken-x538/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/5253028/java-recursion-solution-0ms-and-100-beat-do32/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/4680928/java-100-faster-dfs-solution-by-tbekpro-i71v/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/4568870/java-solution-bfs-by-ndsjqwbbb-4g2i/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/4344476/cute-dfs-solution-nothing-can-be-clearer-1v6b/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/3978753/java-straightforward-dfs-by-trex1928-gqyz/;;https://leetcode.com/problems/clone-n-ary-tree/solutions/3302768/java-bfs-and-dfs-by-user3811o-mr6z/;;;=;==;=;=;

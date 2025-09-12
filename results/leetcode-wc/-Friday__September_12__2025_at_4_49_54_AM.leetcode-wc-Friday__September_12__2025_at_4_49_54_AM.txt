@@ -1,0 +1,40 @@
+3250. Find the Count of Monotonic Pairs I;=;=Hard;=;=public int countOfPairs(int[] nums);=;=You are given an array of positive integers nums of length n.
+
+We call a pair of non-negative integer arrays (arr1, arr2) monotonic if:
+
+The lengths of both arrays are n.
+arr1 is monotonically non-decreasing, in other words, arr1[0] <= arr1[1] <= ... <= arr1[n - 1].
+arr2 is monotonically non-increasing, in other words, arr2[0] >= arr2[1] >= ... >= arr2[n - 1].
+arr1[i] + arr2[i] == nums[i] for all 0 <= i <= n - 1.
+Return the count of monotonic pairs.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: nums = [2,3,2]
+
+Output: 4
+
+Explanation:
+
+The good pairs are:
+
+([0, 1, 1], [2, 2, 1])
+([0, 1, 2], [2, 2, 0])
+([0, 2, 2], [2, 1, 0])
+([1, 2, 2], [1, 1, 0])
+Example 2:
+
+Input: nums = [5,5,5,5]
+
+Output: 126
+
+ 
+
+Constraints:
+
+1 <= n == nums.length <= 2000
+1 <= nums[i] <= 50;=;=https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5619383/javacpython-1d-dp-on-space-by-lee215-n5jj/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5619637/intuition-approach-using-memoization-pai-z2jq/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5619470/simple-java-memo-traditional-dp-striver-qpr2x/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5619433/java-clean-dp-memoization-solution-by-sh-s4p8/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5619544/dp-simple-memoization-beats-100-by-zaid5-b9u5/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5620720/java-3d-dp-approach-by-architava_bhattac-2a9i/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/6697606/java-dp-just-to-it-no-matter-how-weird-t-l5z8/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5642037/java-bottom-up-dp-solution-50-50-n-solut-0cut/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5628709/use-dp-easy-to-understand-java-3-ms-beat-udyv/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5627042/beats-100-in-time-complexity-by-kumarabh-j9gk/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5626399/76-ms-beats-100-by-kavyanlavti-kn4l/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5625506/using-tabulation-by-venkatarohit_p-l6j0/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5624318/using-3d-dp-by-venkatarohit_p-4rue/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5623795/java-2d-dp-by-sarvesh412-lx8j/;;https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/solutions/5623694/java-3d-dp-by-robertskonieczny-q30x/;;;=;==;=;=;

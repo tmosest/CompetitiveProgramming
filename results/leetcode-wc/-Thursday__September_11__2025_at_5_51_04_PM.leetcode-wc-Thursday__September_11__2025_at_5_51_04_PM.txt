@@ -1,0 +1,56 @@
+2167. Minimum Time to Remove All Cars Containing Illegal Goods;=;=Hard;=;=public int minimumTime(String s);=;=You are given a 0-indexed binary string s which represents a sequence of train cars. s[i] = '0' denotes that the ith car does not contain illegal goods and s[i] = '1' denotes that the ith car does contain illegal goods.
+
+As the train conductor, you would like to get rid of all the cars containing illegal goods. You can do any of the following three operations any number of times:
+
+Remove a train car from the left end (i.e., remove s[0]) which takes 1 unit of time.
+Remove a train car from the right end (i.e., remove s[s.length - 1]) which takes 1 unit of time.
+Remove a train car from anywhere in the sequence which takes 2 units of time.
+Return the minimum time to remove all the cars containing illegal goods.
+
+Note that an empty sequence of cars is considered to have no cars containing illegal goods.
+
+ 
+
+Example 1:
+
+Input: s = "1100101"
+Output: 5
+Explanation: 
+One way to remove all the cars containing illegal goods from the sequence is to
+- remove a car from the left end 2 times. Time taken is 2 * 1 = 2.
+- remove a car from the right end. Time taken is 1.
+- remove the car containing illegal goods found in the middle. Time taken is 2.
+This obtains a total time of 2 + 1 + 2 = 5. 
+
+An alternative way is to
+- remove a car from the left end 2 times. Time taken is 2 * 1 = 2.
+- remove a car from the right end 3 times. Time taken is 3 * 1 = 3.
+This also obtains a total time of 2 + 3 = 5.
+
+5 is the minimum time taken to remove all the cars containing illegal goods. 
+There are no other ways to remove them with less time.
+Example 2:
+
+Input: s = "0010"
+Output: 2
+Explanation:
+One way to remove all the cars containing illegal goods from the sequence is to
+- remove a car from the left end 3 times. Time taken is 3 * 1 = 3.
+This obtains a total time of 3.
+
+Another way to remove all the cars containing illegal goods from the sequence is to
+- remove the car containing illegal goods found in the middle. Time taken is 2.
+This obtains a total time of 2.
+
+Another way to remove all the cars containing illegal goods from the sequence is to 
+- remove a car from the right end 2 times. Time taken is 2 * 1 = 2. 
+This obtains a total time of 2.
+
+2 is the minimum time taken to remove all the cars containing illegal goods. 
+There are no other ways to remove them with less time.
+ 
+
+Constraints:
+
+1 <= s.length <= 2 * 105
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/1748704/javacpython-short-one-pass-o1-space-by-l-okl5/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/1748623/java-on-compute-left-compute-right-aggre-d4bb/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/5077979/simple-clean-solution-with-explanation-b-p3b9/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/1760832/java-recursive-and-memoization-implement-u6kx/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/1770154/java-prefix-sum-dp-by-aizen-beach-91xc/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/1751008/java-prefix-suffix-after-watching-3-vide-mg9m/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/1748873/java-2-side-dp-by-weishuzh-f5f4/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/1748591/java-prefix-sum-easy-solution-on-solutio-vq3f/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/6830263/2167-minimum-time-to-remove-all-cars-con-y3iq/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/5182685/java-dp-by-wendyhuhu-ub89/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/3696221/easiest-solution-with-best-thinking-appr-lgky/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/2410044/java-on-prefix-suffix-dp-by-zaidzack-k7xz/;;https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/solutions/1748835/java-100-tc-100-sc-on-dp-single-array-by-y1y1/;;;=;==;=;=;

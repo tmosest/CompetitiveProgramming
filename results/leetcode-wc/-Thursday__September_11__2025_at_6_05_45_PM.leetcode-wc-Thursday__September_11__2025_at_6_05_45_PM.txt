@@ -1,0 +1,40 @@
+3386. Button with Longest Push Time;=;=Easy;=;=public int buttonWithLongestTime(int[][] events);=;=You are given a 2D array events which represents a sequence of events where a child pushes a series of buttons on a keyboard.
+
+Each events[i] = [indexi, timei] indicates that the button at index indexi was pressed at time timei.
+
+The array is sorted in increasing order of time.
+The time taken to press a button is the difference in time between consecutive button presses. The time for the first button is simply the time at which it was pressed.
+Return the index of the button that took the longest time to push. If multiple buttons have the same longest time, return the button with the smallest index.
+
+ 
+
+Example 1:
+
+Input: events = [[1,2],[2,5],[3,9],[1,15]]
+
+Output: 1
+
+Explanation:
+
+Button with index 1 is pressed at time 2.
+Button with index 2 is pressed at time 5, so it took 5 - 2 = 3 units of time.
+Button with index 3 is pressed at time 9, so it took 9 - 5 = 4 units of time.
+Button with index 1 is pressed again at time 15, so it took 15 - 9 = 6 units of time.
+Example 2:
+
+Input: events = [[10,5],[1,7]]
+
+Output: 10
+
+Explanation:
+
+Button with index 10 is pressed at time 5.
+Button with index 1 is pressed at time 7, so it took 7 - 5 = 2 units of time.
+ 
+
+Constraints:
+
+1 <= events.length <= 1000
+events[i] == [indexi, timei]
+1 <= indexi, timei <= 105
+The input is generated such that events is sorted in increasing order of timei.;=;=https://leetcode.com/problems/button-with-longest-push-time/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/button-with-longest-push-time/solutions/7174172/button-with-longest-push-time-by-e_deepi-05iq/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6147732/easy-5-lines-code-100beats-by-shreyash_7-se2i/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6149870/python3-iteration-ts-0-ms-17-mb-by-spaul-luss/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6151636/c-java-simple-iterative-soluition-by-kre-kk76/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6147788/100-beats-easy-c-easy-java-beginner-frie-bcm6/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6148622/simple-simulation-solution-c-python-java-24yq/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6781424/java-easy-100-solution-by-ytchouar-7xxq/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6147790/simple-java-solution-by-harsh__005-4y6i/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6168487/beats-100-easiest-solution-in-java-by-da-3x28/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/7153211/simple-java-solution-time-complexity-on-96qhk/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6640509/time-on-and-space-o1-by-clifford_lebo-xge2/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6149156/beats-100-simple-iteration-by-satwikprem-ckek/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6147694/easy-and-clean-code-c-java-c-beats-100-b-ik17/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6163511/best-solution-by-ram_saketh-g3xt/;;https://leetcode.com/problems/button-with-longest-push-time/solutions/6153715/java-easy-solutuion-by-shinychakma-2dj3/;;;=;==;=;=;

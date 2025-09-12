@@ -1,0 +1,33 @@
+2436. Minimum Split Into Subarrays With GCD Greater Than One;=;=Medium;=;=public int minimumSplits(int[] nums);=;=You are given an array nums consisting of positive integers.
+
+Split the array into one or more disjoint subarrays such that:
+
+Each element of the array belongs to exactly one subarray, and
+The GCD of the elements of each subarray is strictly greater than 1.
+Return the minimum number of subarrays that can be obtained after the split.
+
+Note that:
+
+The GCD of a subarray is the largest positive integer that evenly divides all the elements of the subarray.
+A subarray is a contiguous part of the array.
+ 
+
+Example 1:
+
+Input: nums = [12,6,3,14,8]
+Output: 2
+Explanation: We can split the array into the subarrays: [12,6,3] and [14,8].
+- The GCD of 12, 6 and 3 is 3, which is strictly greater than 1.
+- The GCD of 14 and 8 is 2, which is strictly greater than 1.
+It can be shown that splitting the array into one subarray will make the GCD = 1.
+Example 2:
+
+Input: nums = [4,12,6,14]
+Output: 1
+Explanation: We can split the array into only one subarray, which is the whole array.
+ 
+
+Constraints:
+
+1 <= nums.length <= 2000
+2 <= nums[i] <= 109;=;=https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/6139281/java-onlogn-solution-by-tbekpro-7dsz/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/5218312/splitting-arrays-for-optimal-performance-3eyz/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/5043472/100-java-easy-to-understand-solution-by-c7vio/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/4626503/java-easy-and-concise-solution-by-wj4507-xakg/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/4377643/on-by-fllght-4w5h/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/4126498/dynamic-programming-on-time-and-o1-space-11nr/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/3878831/java-on-dynamic-programming-by-mangdelam-tgit/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/3610499/java-on-clear-code-greedy-by-robertg47-y5ib/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/3558049/100-performance-beat-minimum-split-into-h29wm/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/3441430/euclidean-solution-using-gcd-of-window-b-m1qn/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/3294750/java-solution-by-me2021-3ht1/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/3171465/beats-100-by-ozgrsvk-8z3k/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/2801632/java-simple-solution-by-r1745-a1dm/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/2744089/java-dp-solution-by-yangmao-cd61/;;https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/solutions/2692515/java-by-krudo7-fjhq/;;;=;==;=;=;

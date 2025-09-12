@@ -1,0 +1,54 @@
+1974. Minimum Time to Type Word Using Special Typewriter;=;=Easy;=;=public int minTimeToType(String word);=;=There is a special typewriter with lowercase English letters 'a' to 'z' arranged in a circle with a pointer. A character can only be typed if the pointer is pointing to that character. The pointer is initially pointing to the character 'a'.
+
+
+Each second, you may perform one of the following operations:
+
+Move the pointer one character counterclockwise or clockwise.
+Type the character the pointer is currently on.
+Given a string word, return the minimum number of seconds to type out the characters in word.
+
+ 
+
+Example 1:
+
+Input: word = "abc"
+Output: 5
+Explanation: 
+The characters are printed as follows:
+- Type the character 'a' in 1 second since the pointer is initially on 'a'.
+- Move the pointer clockwise to 'b' in 1 second.
+- Type the character 'b' in 1 second.
+- Move the pointer clockwise to 'c' in 1 second.
+- Type the character 'c' in 1 second.
+Example 2:
+
+Input: word = "bza"
+Output: 7
+Explanation:
+The characters are printed as follows:
+- Move the pointer clockwise to 'b' in 1 second.
+- Type the character 'b' in 1 second.
+- Move the pointer counterclockwise to 'z' in 2 seconds.
+- Type the character 'z' in 1 second.
+- Move the pointer clockwise to 'a' in 1 second.
+- Type the character 'a' in 1 second.
+Example 3:
+
+Input: word = "zjpc"
+Output: 34
+Explanation:
+The characters are printed as follows:
+- Move the pointer counterclockwise to 'z' in 1 second.
+- Type the character 'z' in 1 second.
+- Move the pointer clockwise to 'j' in 10 seconds.
+- Type the character 'j' in 1 second.
+- Move the pointer clockwise to 'p' in 6 seconds.
+- Type the character 'p' in 1 second.
+- Move the pointer counterclockwise to 'c' in 13 seconds.
+- Type the character 'c' in 1 second.
+ 
+
+Constraints:
+
+1 <= word.length <= 100
+word consists of lowercase English letters.;=;=https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/1417680/javapython-3-compute-the-shorter-distanc-iz1c/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/6599331/easiest-solution-beats-100-all-languages-6e5s/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/6781594/optimal-sol-by-avinash516-wgxu/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/6764475/java-beats-100-most-optimal-with-explana-bm1g/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/6790712/100-beats-java-by-aryaman123-fhty/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/6755542/very-easy-java-code-with-explanation-two-oh99/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/5984810/simple-easy-to-understand-100-beats-by-k-dpnw/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/1569882/java-easy-to-understand-solution-with-in-5oc6/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/6699355/beat-100-time-easy-java-solution-by-roha-b2yp/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/6592149/easy-solution-flawlessly-beats-100-begin-mwlu/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/6547780/python-beat-100-by-khcqtun9ld-tbsc/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/6560816/simple-java-code-easy-understanding-by-r-zosi/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/5064899/easy-java-solution-beginner-friendly-by-08ead/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/1853155/beginner-friendly-java-solution-by-himan-0u7o/;;https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/solutions/2550272/simple-on-complexity-solution-with-o1-sp-doas/;;;=;==;=;=;

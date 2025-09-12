@@ -1,0 +1,35 @@
+1775. Equal Sum Arrays With Minimum Number of Operations;=;=Medium;=;=public int minOperations(int[] nums1, int[] nums2);=;=You are given two arrays of integers nums1 and nums2, possibly of different lengths. The values in the arrays are between 1 and 6, inclusive.
+
+In one operation, you can change any integer's value in any of the arrays to any value between 1 and 6, inclusive.
+
+Return the minimum number of operations required to make the sum of values in nums1 equal to the sum of values in nums2. Return -1????? if it is not possible to make the sum of the two arrays equal.
+
+ 
+
+Example 1:
+
+Input: nums1 = [1,2,3,4,5,6], nums2 = [1,1,2,2,2,2]
+Output: 3
+Explanation: You can make the sums of nums1 and nums2 equal with 3 operations. All indices are 0-indexed.
+- Change nums2[0] to 6. nums1 = [1,2,3,4,5,6], nums2 = [6,1,2,2,2,2].
+- Change nums1[5] to 1. nums1 = [1,2,3,4,5,1], nums2 = [6,1,2,2,2,2].
+- Change nums1[2] to 2. nums1 = [1,2,2,4,5,1], nums2 = [6,1,2,2,2,2].
+Example 2:
+
+Input: nums1 = [1,1,1,1,1,1,1], nums2 = [6]
+Output: -1
+Explanation: There is no way to decrease the sum of nums1 or to increase the sum of nums2 to make them equal.
+Example 3:
+
+Input: nums1 = [6,6], nums2 = [1]
+Output: 3
+Explanation: You can make the sums of nums1 and nums2 equal with 3 operations. All indices are 0-indexed. 
+- Change nums1[0] to 2. nums1 = [2,6], nums2 = [1].
+- Change nums1[1] to 2. nums1 = [2,2], nums2 = [1].
+- Change nums2[0] to 4. nums1 = [2,2], nums2 = [4].
+ 
+
+Constraints:
+
+1 <= nums1.length, nums2.length <= 105
+1 <= nums1[i], nums2[i] <= 6;=;=https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/4289212/java-2-solutions-on-and-onlogn-with-tons-2m6n/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/1235526/java-clean-on-solution-by-xieyun95-ksfd/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/4458987/java-priority-queue-sort-by-decreasing-d-2nr4/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/1092228/straightforward-priorityqueue-java-by-pa-cy9v/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/7118421/sliding-window-on-sorting-onlogn-by-gitc-km29/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/1899414/on-solution-with-constant-space-by-nilav-j0ec/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/2065323/java-on-space-and-time-solution-100-fast-ob5l/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/6966555/simple-java-solution-by-sakshikishore-n6te/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/6659130/optimized-easy-solution-beats-100-by-anu-ts8z/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/6283603/unique-solution-binary-search-sorting-gr-xvh3/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/5887259/java-solution-by-barakamon-vfbh/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/5346982/well-described-3ms-java-solution-beats-1-d7wu/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/5025507/java-greedy-solution-by-abhyudaya01-abcs/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/4950015/extension-of-the-problem-to-equate-all-e-3p9x/;;https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/solutions/4788339/sort-priorityqueuejava-by-harish1758-v49g/;;;=;==;=;=;

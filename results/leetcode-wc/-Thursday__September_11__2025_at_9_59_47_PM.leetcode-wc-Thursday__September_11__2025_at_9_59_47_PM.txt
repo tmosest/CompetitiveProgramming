@@ -1,0 +1,29 @@
+2557. Maximum Number of Integers to Choose From a Range II;=;=Medium;=;=public int maxCount(int[] banned, int n, long maxSum);=;=You are given an integer array banned and two integers n and maxSum. You are choosing some number of integers following the below rules:
+
+The chosen integers have to be in the range [1, n].
+Each integer can be chosen at most once.
+The chosen integers should not be in the array banned.
+The sum of the chosen integers should not exceed maxSum.
+Return the maximum number of integers you can choose following the mentioned rules.
+
+ 
+
+Example 1:
+
+Input: banned = [1,4,6], n = 6, maxSum = 4
+Output: 1
+Explanation: You can choose the integer 3.
+3 is in the range [1, 6], and do not appear in banned. The sum of the chosen integers is 3, which does not exceed maxSum.
+Example 2:
+
+Input: banned = [4,3,5,6], n = 7, maxSum = 18
+Output: 3
+Explanation: You can choose the integers 1, 2, and 7.
+All these integers are in the range [1, 7], all do not appear in banned, and their sum is 10, which does not exceed maxSum.
+ 
+
+Constraints:
+
+1 <= banned.length <= 105
+1 <= banned[i] <= n <= 109
+1 <= maxSum <= 1015;=;=https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/solutions/3144370/cjavapython3-binary-search-by-ye15-mjat/;;https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/solutions/3143207/greedy-solution-explained-ob-linear-comp-6gdv/;;https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/solutions/3143453/on-logn-calculate-arithmetic-progression-rau7/;;https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/solutions/3142904/java-bs-greedy-biginteger-by-hardcracker-6dpp/;;https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/solutions/3160927/easy-java-sort-by-shukad333-4kpy/;;https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/solutions/3146053/solution-by-deleted_user-wih4/;;;=;==;=;=;

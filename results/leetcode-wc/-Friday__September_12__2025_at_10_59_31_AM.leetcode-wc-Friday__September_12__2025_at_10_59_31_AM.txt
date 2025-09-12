@@ -1,0 +1,35 @@
+2022. Convert 1D Array Into 2D Array;=;=Easy;=;=public int[][] construct2DArray(int[] original, int m, int n);=;=You are given a 0-indexed 1-dimensional (1D) integer array original, and two integers, m and n. You are tasked with creating a 2-dimensional (2D) array with  m rows and n columns using all the elements from original.
+
+The elements from indices 0 to n - 1 (inclusive) of original should form the first row of the constructed 2D array, the elements from indices n to 2 * n - 1 (inclusive) should form the second row of the constructed 2D array, and so on.
+
+Return an m x n 2D array constructed according to the above procedure, or an empty 2D array if it is impossible.
+
+ 
+
+Example 1:
+
+
+Input: original = [1,2,3,4], m = 2, n = 2
+Output: [[1,2],[3,4]]
+Explanation: The constructed 2D array should contain 2 rows and 2 columns.
+The first group of n=2 elements in original, [1,2], becomes the first row in the constructed 2D array.
+The second group of n=2 elements in original, [3,4], becomes the second row in the constructed 2D array.
+Example 2:
+
+Input: original = [1,2,3], m = 1, n = 3
+Output: [[1,2,3]]
+Explanation: The constructed 2D array should contain 1 row and 3 columns.
+Put all three elements in original into the first row of the constructed 2D array.
+Example 3:
+
+Input: original = [1,2], m = 1, n = 1
+Output: []
+Explanation: There are 2 elements in original.
+It is impossible to fit 2 elements in a 1x1 2D array, so return an empty 2D array.
+ 
+
+Constraints:
+
+1 <= original.length <= 5 * 104
+1 <= original[i] <= 105
+1 <= m, n <= 4 * 104;=;=https://leetcode.com/problems/convert-1d-array-into-2d-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/7149969/java-simple-simulation-983-faster-conver-407n/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5717773/o-m-n-solution-beats-100-in-all-language-0e4i/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/7048781/convert-1d-array-into-2d-matrix-preservi-mf4m/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5717945/easy-basic-c-java-py-js-solution-pen-pap-ql1z/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/7131988/easy-convert-1d-array-into-2d-array-in-j-mar7/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5717642/detailed-explanation2-approachessimple-s-hbuy/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/6986765/solution-by-deepakumar-developer-3hvw/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5717558/3-approach-1d-index-to-2d-index-by-cs_ii-ahb2/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/4016605/java-0n-2-solution-easy-by-saurabh_kumar-lc5w/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/1499102/javapython-3-straight-forward-code-by-ro-amv7/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5717885/beats-9910-c-java-py3-efficient-conversi-lfxh/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5717793/convert-1-d-array-into-2-d-easy-explanat-91hf/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5718669/java-9773-beats-by-sudhikshaghanathe-ps0n/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5717920/simple-linear-time-solution-97-beats-jav-98zs/;;https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5718358/1d-to-2d-by-mohitsinghrana369-9wob/;;;=;==;=;=;

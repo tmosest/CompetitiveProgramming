@@ -1,0 +1,45 @@
+3498. Reverse Degree of a String;=;=Easy;=;=public int reverseDegree(String s);=;=Given a string s, calculate its reverse degree.
+
+The reverse degree is calculated as follows:
+
+For each character, multiply its position in the reversed alphabet ('a' = 26, 'b' = 25, ..., 'z' = 1) with its position in the string (1-indexed).
+Sum these products for all characters in the string.
+Return the reverse degree of s.
+
+ 
+
+Example 1:
+
+Input: s = "abc"
+
+Output: 148
+
+Explanation:
+
+Letter	Index in Reversed Alphabet	Index in String	Product
+'a'	26	1	26
+'b'	25	2	50
+'c'	24	3	72
+The reversed degree is 26 + 50 + 72 = 148.
+
+Example 2:
+
+Input: s = "zaza"
+
+Output: 160
+
+Explanation:
+
+Letter	Index in Reversed Alphabet	Index in String	Product
+'z'	1	1	1
+'a'	26	2	52
+'z'	1	3	3
+'a'	26	4	104
+The reverse degree is 1 + 52 + 3 + 104 = 160.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s contains only lowercase English letters.;=;=https://leetcode.com/problems/reverse-degree-of-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/reverse-degree-of-a-string/solutions/7159168/reverse-degree-of-string-weighted-ascii-m62tu/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/7171170/one-liner-java-1ms-beats-100-by-ankit638-ol8t/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/7158627/easy-and-simple-for-beginners-by-younus0-tzzd/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/7147498/reverse-degree-of-a-string-by-bhavasree_-wcil/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/7018542/easy-java-solution-beats-100-by-rajdeep0-ho0b/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/6593254/python3-iteration-ts-99-90-by-spaulding-t2tb/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/7128671/reverse-degree-of-a-string-simple-on-jav-y60d/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/7082928/beats-100-by-divyansh_kaushik_sharma-d1ik/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/7067074/reverse-degree-of-a-string-java-python-s-b53n/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/6633166/100-beats-one-line-of-code-by-kdhakal-chxn/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/6593263/iterate-and-sum-by-kreakemp-6rsd/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/6593200/reverse-degree-calculation-beginner-frie-jx23/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/6596882/very-easy-detailed-solution-java-c-by-ch-ve0l/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/7005798/easy-code-for-beginners-and-understandab-w7zv/;;https://leetcode.com/problems/reverse-degree-of-a-string/solutions/6595658/faster-lesser-cpython3javacpythoncexplai-b7jo/;;;=;==;=;=;

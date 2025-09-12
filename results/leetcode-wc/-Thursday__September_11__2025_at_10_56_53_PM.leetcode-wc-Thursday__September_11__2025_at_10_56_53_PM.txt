@@ -1,0 +1,20 @@
+878. Nth Magical Number;=;=Hard;=;=public int nthMagicalNumber(int n, int a, int b);=;=A positive integer is magical if it is divisible by either a or b.
+
+Given the three integers n, a, and b, return the nth magical number. Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: n = 1, a = 2, b = 3
+Output: 2
+Example 2:
+
+Input: n = 4, a = 2, b = 3
+Output: 6
+ 
+
+Constraints:
+
+1 <= n <= 109
+2 <= a, b <= 4 * 104;=;=https://leetcode.com/problems/nth-magical-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/nth-magical-number/solutions/1622336/java-binary-search-detailed-explanation-8j918/;;https://leetcode.com/problems/nth-magical-number/solutions/6860536/understandable-solution-in-0msbeats-100-yzvjl/;;https://leetcode.com/problems/nth-magical-number/solutions/1622389/java-most-intuitive-approach-to-binary-s-4onx/;;https://leetcode.com/problems/nth-magical-number/solutions/6715102/beats-100-efficient-binary-search-for-fi-secv/;;https://leetcode.com/problems/nth-magical-number/solutions/5133884/java-binary-search-100-beat-in-time-comp-svr6/;;https://leetcode.com/problems/nth-magical-number/solutions/6293123/java-solution-by-dsuryaprakash89-0ou6/;;https://leetcode.com/problems/nth-magical-number/solutions/3503837/solution-by-deleted_user-047y/;;https://leetcode.com/problems/nth-magical-number/solutions/3317530/100-faster-binary-search-optimized-java-3cdm3/;;https://leetcode.com/problems/nth-magical-number/solutions/4571722/java-simple-solution-using-binary-search-9dob/;;https://leetcode.com/problems/nth-magical-number/solutions/7123694/java-by-sssanskarrr-lrk8/;;https://leetcode.com/problems/nth-magical-number/solutions/6647497/nth-magical-number-java-brute-force-bina-1kvl/;;https://leetcode.com/problems/nth-magical-number/solutions/7138203/nth-magical-number-using-binary-search-o-x2c0/;;https://leetcode.com/problems/nth-magical-number/solutions/1623143/java-binary-search-100-faster-and-98-les-jm1a/;;https://leetcode.com/problems/nth-magical-number/solutions/6732863/clean-easy-to-understand-solution-using-pcmid/;;https://leetcode.com/problems/nth-magical-number/solutions/6543271/beats-100-by-soubhagya_ranjan_sahoo-ws3h/;;;=;==;=;=;

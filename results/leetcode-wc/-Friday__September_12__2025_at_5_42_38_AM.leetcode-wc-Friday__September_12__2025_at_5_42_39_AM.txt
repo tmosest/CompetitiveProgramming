@@ -1,0 +1,30 @@
+1135. Connecting Cities With Minimum Cost;=;=Medium;=;=public int minimumCost(int n, int[][] connections);=;=There are n cities labeled from 1 to n. You are given the integer n and an array connections where connections[i] = [xi, yi, costi] indicates that the cost of connecting city xi and city yi (bidirectional connection) is costi.
+
+Return the minimum cost to connect all the n cities such that there is at least one path between each pair of cities. If it is impossible to connect all the n cities, return -1,
+
+The cost is the sum of the connections' costs used.
+
+ 
+
+Example 1:
+
+
+Input: n = 3, connections = [[1,2,5],[1,3,6],[2,3,1]]
+Output: 6
+Explanation: Choosing any 2 edges will connect all cities so we choose the minimum 2.
+Example 2:
+
+
+Input: n = 4, connections = [[1,2,3],[3,4,4]]
+Output: -1
+Explanation: There is no way to connect all cities even if all edges are used.
+ 
+
+Constraints:
+
+1 <= n <= 104
+1 <= connections.length <= 104
+connections[i].length == 3
+1 <= xi, yi <= n
+xi != yi
+0 <= costi <= 105;=;=https://leetcode.com/problems/connecting-cities-with-minimum-cost/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/1703461/java-minimum-spanning-tree-two-solutions-rlc7/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/5673390/simple-yet-elegant-solution-using-kruska-esi5/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/1131808/java-easy-prims-algo-by-chiragmantri-wcrt/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/964132/java-kruskals-union-find-prims-explained-xogy/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/582304/union-find-simplest-solution-by-mausami-jevu/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/1767127/java-prims-algorithm-best-solution-for-b-bgru/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/4237755/kruskals-mst-with-unionfind-by-humble9in-8o3u/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/422924/java-kruskals-algorithm-with-union-find-v743w/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/6833597/simple-kruskal-implementation-space-96-t-a88t/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/6070776/kruskals-algorithm-by-bobdong01-kg52/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/6070687/prims-algorithm-by-bobdong01-wvbv/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/6449879/using-a-minheap-explained-by-remedydev-xq1c/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/6197236/minimum-cost-of-connecting-cities-with-i-8rzv/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/5620982/prims-algorithm-java-by-rakesh__19-7g0f/;;https://leetcode.com/problems/connecting-cities-with-minimum-cost/solutions/5523539/simple-java-solution-beats-98-by-algonfr-3izz/;;;=;==;=;=;

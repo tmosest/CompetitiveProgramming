@@ -1,0 +1,26 @@
+1619. Mean of Array After Removing Some Elements;=;=Easy;=;=public double trimMean(int[] arr);=;=Given an integer array arr, return the mean of the remaining integers after removing the smallest 5% and the largest 5% of the elements.
+
+Answers within 10-5 of the actual answer will be considered accepted.
+
+ 
+
+Example 1:
+
+Input: arr = [1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3]
+Output: 2.00000
+Explanation: After erasing the minimum and the maximum values of this array, all elements are equal to 2, so the mean is 2.
+Example 2:
+
+Input: arr = [6,2,7,5,1,2,0,3,10,2,5,0,5,5,0,8,7,6,8,0]
+Output: 4.00000
+Example 3:
+
+Input: arr = [6,0,7,0,7,5,7,8,3,4,0,7,8,1,6,8,1,1,2,4,8,1,9,5,4,3,8,5,10,8,6,6,1,0,6,10,8,2,3,4]
+Output: 4.77778
+ 
+
+Constraints:
+
+20 <= arr.length <= 1000
+arr.length is a multiple of 20.
+0 <= arr[i] <= 105;=;=https://leetcode.com/problems/mean-of-array-after-removing-some-elements/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/6984789/java-solution-beats-100-by-rajdeep001-ed6t/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/6977638/100-easy-by-kathir9344853902-w0iz/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/6603111/beats-9877-by-alexander_sergeev-qi6w/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/7177284/mean-of-array-after-removing-some-elemen-tctz/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/899277/java-quickselect-on-by-vovaz-yc7v/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/4796526/begineer-friendly-expalanation-simple-so-5gbl/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/6445895/beginner-friendly-approach-by-sainathv-e43f/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/5611893/easiestfaster-lesser-cpython3javacpython-xr6f/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/6471508/easiest-and-optimal-solution-by-harshal-apo6s/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/3007354/easy-java-solution-by-avani_saxena-tdd7/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/5886735/mean-of-array-after-removing-some-elemen-eewr/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/5846201/very-easy-and-efficient-with-beats-98-by-su08/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/898977/my-java-solution-using-sorting-by-vrohit-wcqa/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/5186812/brute-force-c-solution-using-iterative-a-o9mw/;;https://leetcode.com/problems/mean-of-array-after-removing-some-elements/solutions/2440767/java-easy-and-simple-solution-for-logic-jpw1u/;;;=;==;=;=;

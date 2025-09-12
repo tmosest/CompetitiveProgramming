@@ -1,0 +1,29 @@
+291. Word Pattern II;=;=Medium;=;=publicÊbooleanÊwordPatternMatch(StringÊpattern,ÊStringÊs);=;=Given a pattern and a string s, return true if s matches the pattern.
+
+A string s matches a pattern if there is some bijective mapping of single characters to non-empty strings such that if each character in pattern is replaced by the string it maps to, then the resulting string is s. A bijective mapping means that no two characters map to the same string, and no character maps to two different strings.
+
+Ê
+
+Example 1:
+
+Input: pattern = "abab", s = "redblueredblue"
+Output: true
+Explanation: One possible mapping is as follows:
+'a' -> "red"
+'b' -> "blue"
+Example 2:
+
+Input: pattern = "aaaa", s = "asdasdasdasd"
+Output: true
+Explanation: One possible mapping is as follows:
+'a' -> "asd"
+Example 3:
+
+Input: pattern = "aabb", s = "xyzabcxzyabc"
+Output: false
+Ê
+
+Constraints:
+
+1 <= pattern.length, s.length <= 20
+pattern and s consist of only lowercase English letters.;=;=https://leetcode.com/problems/word-pattern-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/word-pattern-ii/solutions/73664/share-my-java-backtracking-solution-by-j-p89x/;;https://leetcode.com/problems/word-pattern-ii/solutions/73675/java-hashset-backtracking-2ms-beats-100-w5zy7/;;https://leetcode.com/problems/word-pattern-ii/solutions/2991643/easy-to-understand-java-4ms-by-abhineshp-j3xp/;;https://leetcode.com/problems/word-pattern-ii/solutions/1089061/java-1ms-96-backtrack-word-pattern-i-by-u480f/;;https://leetcode.com/problems/word-pattern-ii/solutions/4693198/beats-100-in-java-by-legtar-9jwg/;;https://leetcode.com/problems/word-pattern-ii/solutions/2316430/java-clear-solution-beats-90-by-code_far-qely/;;https://leetcode.com/problems/word-pattern-ii/solutions/1675195/java-backtracking-with-hashmap-by-yuroku-5d23/;;https://leetcode.com/problems/word-pattern-ii/solutions/1310430/java-backtracking-1ms-by-fatezai-zlos/;;https://leetcode.com/problems/word-pattern-ii/solutions/958649/java-backtracking-simple-solution-by-lsa-zj51/;;https://leetcode.com/problems/word-pattern-ii/solutions/6735646/rather-slow-working-see-description-by-a-kxbi/;;https://leetcode.com/problems/word-pattern-ii/solutions/73740/java-backtracking-solution-can-someone-h-jez1/;;https://leetcode.com/problems/word-pattern-ii/solutions/6215932/java-simple-solution-with-comments-by-sg-pkck/;;https://leetcode.com/problems/word-pattern-ii/solutions/5663487/java-backtracking-1ms-97-by-samiksha12-fcwc/;;https://leetcode.com/problems/word-pattern-ii/solutions/5202951/java-brute-force-by-venkim-ilsd/;;https://leetcode.com/problems/word-pattern-ii/solutions/5199614/simple-java-backtrack-by-n00bs404-e4h7/;;;=;==;=;=;

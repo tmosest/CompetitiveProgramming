@@ -1,0 +1,39 @@
+1106. Parsing A Boolean Expression;=;=Hard;=;=publicÊbooleanÊparseBoolExpr(StringÊexpression);=;=A boolean expression is an expression that evaluates to either true or false. It can be in one of the following shapes:
+
+'t' that evaluates to true.
+'f' that evaluates to false.
+'!(subExpr)' that evaluates to the logical NOT of the inner expression subExpr.
+'&(subExpr1, subExpr2, ..., subExprn)' that evaluates to the logical AND of the inner expressions subExpr1, subExpr2, ..., subExprn where n >= 1.
+'|(subExpr1, subExpr2, ..., subExprn)' that evaluates to the logical OR of the inner expressions subExpr1, subExpr2, ..., subExprn where n >= 1.
+Given a string expression that represents a boolean expression, return the evaluation of that expression.
+
+It is guaranteed that the given expression is valid and follows the given rules.
+
+Ê
+
+Example 1:
+
+Input: expression = "&(|(f))"
+Output: false
+Explanation: 
+First, evaluate |(f) --> f. The expression is now "&(f)".
+Then, evaluate &(f) --> f. The expression is now "f".
+Finally, return false.
+Example 2:
+
+Input: expression = "|(f,f,f,t)"
+Output: true
+Explanation: The evaluation of (false OR false OR false OR true) is true.
+Example 3:
+
+Input: expression = "!(&(f,t))"
+Output: true
+Explanation: 
+First, evaluate &(f,t) --> (false AND true) --> false --> f. The expression is now "!(f)".
+Then, evaluate !(f) --> NOT false --> true. We return true.
+Ê
+
+Constraints:
+
+1 <= expression.length <= 2 * 104
+expression[i] is one following characters: '(', ')', '&', '|', '!', 't', 'f', and ','.;=;=https://leetcode.com/problems/parsing-a-boolean-expression/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/parsing-a-boolean-expression/solutions/5939345/beats-100-optimized-solution-python-java-3tlv/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/5939362/beats-10000-stack-implementation-a-compr-pqyy/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/7094182/easy-java-solution-by-pragati_0904-n0qr/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/5939752/visualize-the-clear-steps-understand-onc-2x6q/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/6984879/parse-boolean-expression-stack-based-eva-6w13/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/5939326/beats-10000-step-by-step-breakdown-by-wi-uvwq/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/5188793/java-beats-100-by-deleted_user-9ou3/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/5939541/on-c-0ms-beats-10000-py3-11ms-beats-1000-asyz/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/5940203/100-optimized-solution-java-c-rust-javas-vsj0/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/6922104/recursion-0ms-beats-100-by-vithesh-ycrs/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/4727641/beats-100-time-complexity-intiutive-code-iit4/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/5942505/finite-automaton-single-stack-beating-10-ncy3/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/5940736/simple-pyjava-code-using-stack-explained-4s7p/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/6781606/simple-stack-solution-optimal-on-java-by-74fl/;;https://leetcode.com/problems/parsing-a-boolean-expression/solutions/6817365/stack-easiest-implementation-linear-time-ul9f/;;;=;==;=;=;

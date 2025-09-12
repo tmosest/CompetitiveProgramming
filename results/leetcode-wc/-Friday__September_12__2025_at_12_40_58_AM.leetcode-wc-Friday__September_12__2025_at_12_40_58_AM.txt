@@ -1,0 +1,29 @@
+2664. The Knight’s Tour;=;=Medium;=;=//create a node to store the freq of each element at that node Node    HashMap<Integer,Integer> count ;    //to insert a single element at leaf node    Node(int val)        count = new HashMap<Integer,Integer>();        count.put(val,1);        //non-leaf node is formed by combining two maps(left,right)    Node(HashMap<Integer,Integer> m1,HashMap<Integer,Integer> m2)        count = new HashMap<Integer,Integer>(m1);        m2.forEach((key,val)->            count.merge(key,val,Integer::sum)        );    class RangeFreqQuery     Node[] segTree ;    int n = 0;    void generateTree(int[] arr,int st,int end,int node)        //only single element is added at left node        if(st == end)            segTree[node] =new  Node(arr[st]);            return;                int mid = (st+end)/2;        generateTree(arr,st,mid,node2);        generateTree(arr,mid+1,end,node2+1);        //combine both left and right node to form current node        segTree[node] = new Node(segTree[node2].count,                                 segTree[node2+1].count);;=;=Given two positive integers m and n which are the height and width of a 0-indexed 2D-array board, a pair of positive integers (r, c) which is the starting position of the knight on the board.
+
+Your task is to find an order of movements for the knight, in a manner that every cell of the board gets visited exactly once (the starting cell is considered visited and you shouldn't visit it again).
+
+Return the array board in which the cells' values show the order of visiting the cell starting from 0 (the initial place of the knight).
+
+Note that a knight can move from cell (r1, c1) to cell (r2, c2) if 0 <= r2 <= m - 1 and 0 <= c2 <= n - 1 and min(abs(r1 - r2), abs(c1 - c2)) = 1 and max(abs(r1 - r2), abs(c1 - c2)) = 2.
+
+ 
+
+Example 1:
+
+Input: m = 1, n = 1, r = 0, c = 0
+Output: [[0]]
+Explanation: There is only 1 cell and the knight is initially on it so there is only a 0 inside the 1x1 grid.
+Example 2:
+
+Input: m = 3, n = 4, r = 0, c = 0
+Output: [[0,3,6,9],[11,8,1,4],[2,5,10,7]]
+Explanation: By the following order of movements we can visit the entire board.
+(0,0)->(1,2)->(2,0)->(0,1)->(1,3)->(2,1)->(0,2)->(2,3)->(1,1)->(0,3)->(2,2)->(1,0)
+ 
+
+Constraints:
+
+1 <= m, n <= 5
+0 <= r <= m - 1
+0 <= c <= n - 1
+The inputs will be generated such that there exists at least one possible order of movements with the given condition;=;=https://leetcode.com/problems/the-knights-tour/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/the-knights-tour/solutions/3485987/java-backtracking-solution-by-aranlucas-vhj5/;;https://leetcode.com/problems/the-knights-tour/solutions/5955944/python3-c-java-0ms-warnsdorffs-rule-cach-hf9q/;;https://leetcode.com/problems/the-knights-tour/solutions/3483552/cjavapython3-backtracking-by-ye15-rsds/;;https://leetcode.com/problems/the-knights-tour/solutions/5954610/100-dfs-time-o8nm-space-onm-by-rojas-1daf/;;https://leetcode.com/problems/the-knights-tour/solutions/6357263/java-solution-by-tbekpro-oreu/;;https://leetcode.com/problems/the-knights-tour/solutions/6095811/very-standard-backtracking-solution-in-j-gtcm/;;https://leetcode.com/problems/the-knights-tour/solutions/5955569/java-simplest-and-concise-backtracking-s-28pd/;;https://leetcode.com/problems/the-knights-tour/solutions/5951654/simple-backtracking-solution-beats-100-b-hv0j/;;https://leetcode.com/problems/the-knights-tour/solutions/5949902/java-backtrack-by-lxyustc-d0rv/;;https://leetcode.com/problems/the-knights-tour/solutions/5773963/simple-java-solution-by-sakshikishore-yo90/;;https://leetcode.com/problems/the-knights-tour/solutions/4944319/java-solution-backtracking-by-ndsjqwbbb-rp71/;;https://leetcode.com/problems/the-knights-tour/solutions/4636363/depth-first-search-backtracking-by-utsav-g42t/;;https://leetcode.com/problems/the-knights-tour/solutions/4509131/simple-backtracking-solution-by-user9971-iklw/;;https://leetcode.com/problems/the-knights-tour/solutions/4276769/java-backtracking-by-lacfo-tvvo/;;https://leetcode.com/problems/the-knights-tour/solutions/3493841/pythonjava-backtracking-by-akaghosting-24t6/;;;=;==;=;=;

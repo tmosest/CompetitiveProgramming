@@ -1,0 +1,30 @@
+44. Wildcard Matching;=;=Hard;=;=class node         int val;        node left, right;        public node(int val)             this.val = val;                class segmenttree         private node root;        private int size;        public segmenttree(int n)            root = create(0, n);            size = n;                public void update(int i, int v)             update(root, 0, size, i, v);                public int search(int i)             return search(0, i, 0, size, root);                public int search(int  i, int j, int s, int e, node root)             if(s >= i && j >= e)                 return root.val;                        if(s > j || e < i)                 return 0;;=;=Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*' where:
+
+'?' Matches any single character.
+'*' Matches any sequence of characters (including the empty sequence).
+The matching should cover the entire input string (not partial).
+
+ 
+
+Example 1:
+
+Input: s = "aa", p = "a"
+Output: false
+Explanation: "a" does not match the entire string "aa".
+Example 2:
+
+Input: s = "aa", p = "*"
+Output: true
+Explanation: '*' matches any sequence.
+Example 3:
+
+Input: s = "cb", p = "?a"
+Output: false
+Explanation: '?' matches 'c', but the second letter is 'a', which does not match 'b'.
+ 
+
+Constraints:
+
+0 <= s.length, p.length <= 2000
+s contains only lowercase English letters.
+p contains only lowercase English letters, '?' or '*'.;=;=https://leetcode.com/problems/wildcard-matching/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/wildcard-matching/solutions/6214136/easy-and-optimal-4-approaches-recursive-2o5b7/;;https://leetcode.com/problems/wildcard-matching/solutions/17812/my-java-dp-solution-using-2d-table-by-le-sq9y/;;https://leetcode.com/problems/wildcard-matching/solutions/6935811/greedy-backtrack-two-pointer-approach-by-k8yp/;;https://leetcode.com/problems/wildcard-matching/solutions/3402050/detailed-explaination-with-pictures-in-c-a5u8/;;https://leetcode.com/problems/wildcard-matching/solutions/7080931/wildcard-matching-dynamic-programming-vs-1zd7/;;https://leetcode.com/problems/wildcard-matching/solutions/6882212/wildcard-matching-by-nmaadiraj-jifb/;;https://leetcode.com/problems/wildcard-matching/solutions/6607944/dynammic-programming-wildcard-matching-b-56mu/;;https://leetcode.com/problems/wildcard-matching/solutions/4982658/tabulation-code-super-simple-by-sm__23-j9qg/;;https://leetcode.com/problems/wildcard-matching/solutions/5721479/intuition-to-space-optimized-by-dixon_n-67iw/;;https://leetcode.com/problems/wildcard-matching/solutions/5712352/all-three-approaches-by-dixon_n-s2mo/;;https://leetcode.com/problems/wildcard-matching/solutions/6768647/java-memoization-wildcard-matching-by-sp-760n/;;https://leetcode.com/problems/wildcard-matching/solutions/6570533/dp-on-strings-explained-in-detail-3-appr-0s9p/;;https://leetcode.com/problems/wildcard-matching/solutions/6942729/zoho-asked-best-dp-solution-by-antonypra-3bnl/;;https://leetcode.com/problems/wildcard-matching/solutions/2560759/java-easiest-solution-with-proper-commen-1id3/;;https://leetcode.com/problems/wildcard-matching/solutions/6200958/easy-and-intuitive-solution-greedy-appro-426z/;;;=;==;=;=;

@@ -1,0 +1,37 @@
+1869. Longer Contiguous Segments of Ones than Zeros;=;=Easy;=;=public boolean checkZeroOnes(String s);=;=Given a binary string s, return true if the longest contiguous segment of 1's is strictly longer than the longest contiguous segment of 0's in s, or return false otherwise.
+
+For example, in s = "110100010" the longest continuous segment of 1s has length 2, and the longest continuous segment of 0s has length 3.
+Note that if there are no 0's, then the longest continuous segment of 0's is considered to have a length 0. The same applies if there is no 1's.
+
+ 
+
+Example 1:
+
+Input: s = "1101"
+Output: true
+Explanation:
+The longest contiguous segment of 1s has length 2: "1101"
+The longest contiguous segment of 0s has length 1: "1101"
+The segment of 1s is longer, so return true.
+Example 2:
+
+Input: s = "111000"
+Output: false
+Explanation:
+The longest contiguous segment of 1s has length 3: "111000"
+The longest contiguous segment of 0s has length 3: "111000"
+The segment of 1s is not longer, so return false.
+Example 3:
+
+Input: s = "110100010"
+Output: false
+Explanation:
+The longest contiguous segment of 1s has length 2: "110100010"
+The longest contiguous segment of 0s has length 3: "110100010"
+The segment of 1s is not longer, so return false.
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/7129730/easy-java-solution-for-beginners-by-lega-4ecg/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/6854344/beats-75-by-alexander_sergeev-64n8/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/1231148/simple-java-on-by-trevor-akshay-y0o9/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/7127522/clean-java-solution-max-consecutive-1s-v-m2vu/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/7116381/easy-and-simple-code-to-be-understand-by-mmb4/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/7104345/my-approach-towards-the-question-by-dhru-3wjw/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/7086103/java-on-by-kevinrods36-o7dp/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/6264281/0ms-beats-100-proof-concise-code-java-be-l528/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/4525470/simple-java-code-1-ms-beats-87-by-arobh-k9nx/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/1755235/java-simple-explained-by-prashant404-s53e/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/7164730/easiest-solution-ever-beginner-friendly-qelws/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/3076351/java-on-solution-by-tbekpro-3z62/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/1239550/concise-java-solution-0-ms-by-rkxyiiyk2-33qc/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/2541354/java-easy-solution-by-annshu_8410-xe3c/;;https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/solutions/7106357/beats-100-java-solution-simple-and-easy-3rirk/;;;=;==;=;=;

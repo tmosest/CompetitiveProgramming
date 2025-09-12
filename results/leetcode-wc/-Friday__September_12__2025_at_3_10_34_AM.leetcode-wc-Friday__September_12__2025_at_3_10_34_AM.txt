@@ -1,0 +1,26 @@
+2514. Count Anagrams;=;=Hard;=;=public int countAnagrams(String s);=;=You are given a string s containing one or more words. Every consecutive pair of words is separated by a single space ' '.
+
+A string t is an anagram of string s if the ith word of t is a permutation of the ith word of s.
+
+For example, "acb dfe" is an anagram of "abc def", but "def cab" and "adc bef" are not.
+Return the number of distinct anagrams of s. Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: s = "too hot"
+Output: 18
+Explanation: Some of the anagrams of the given string are "too hot", "oot hot", "oto toh", "too toh", and "too oht".
+Example 2:
+
+Input: s = "aa"
+Output: 1
+Explanation: There is only one anagram possible for the given string.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of lowercase English letters and spaces ' '.
+There is single space between consecutive words.;=;=https://leetcode.com/problems/count-anagrams/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-anagrams/solutions/6922919/most-optimal-onk-solution-cpp-java-pytho-mkpj/;;https://leetcode.com/problems/count-anagrams/solutions/6258712/best-solution-for-arrays-dp-string-in-c-x87fw/;;https://leetcode.com/problems/count-anagrams/solutions/2946945/easy-to-understand-java-solution-permuta-7pdy/;;https://leetcode.com/problems/count-anagrams/solutions/2946876/java-multiply-anagrams-of-every-strings-qjdjy/;;https://leetcode.com/problems/count-anagrams/solutions/2946557/cjavapython3-multinomial-coefficients-by-ggo3/;;https://leetcode.com/problems/count-anagrams/solutions/2954462/java-build-in-method-to-calc-mod-inverse-kpud/;;https://leetcode.com/problems/count-anagrams/solutions/5007207/java-solution-count-anagrams-using-ferma-taup/;;https://leetcode.com/problems/count-anagrams/solutions/2946551/java-modulo-multiplicative-inverse-neat-82y93/;;https://leetcode.com/problems/count-anagrams/solutions/3148082/java-solve-by-feedwastfeed-1tj5/;;https://leetcode.com/problems/count-anagrams/solutions/5650075/count-anagrams-by-shaludroid-30a6/;;https://leetcode.com/problems/count-anagrams/solutions/5023070/java-solution-by-divyanshagrawal96-b9i4/;;https://leetcode.com/problems/count-anagrams/solutions/4687833/not-a-good-one-but-its-a-beginner-friend-7c66/;;https://leetcode.com/problems/count-anagrams/solutions/4431915/inverse-by-user3043sb-x4s6/;;https://leetcode.com/problems/count-anagrams/solutions/3682663/javacpython-math-image-explanation-90-fa-oxw3/;;https://leetcode.com/problems/count-anagrams/solutions/3003138/java-math-by-conchwu-5d5x/;;;=;==;=;=;

@@ -1,0 +1,26 @@
+2592. Maximize Greatness of an Array;=;=Medium;=;=publicÊintÊmaximizeGreatness(int[]Ênums);=;=You are given a 0-indexed integer array nums. You are allowed to permute nums into a new array perm of your choosing.
+
+We define the greatness of nums be the number of indices 0 <= i < nums.length for which perm[i] > nums[i].
+
+Return the maximum possible greatness you can achieve after permuting nums.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,3,5,2,1,3,1]
+Output: 4
+Explanation: One of the optimal rearrangements is perm = [2,5,1,3,3,1,1].
+At indices = 0, 1, 3, and 4, perm[i] > nums[i]. Hence, we return 4.
+Example 2:
+
+Input: nums = [1,2,3,4]
+Output: 3
+Explanation: We can prove the optimal perm is [2,3,4,1].
+At indices = 0, 1, and 2, perm[i] > nums[i]. Hence, we return 3.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 109;=;=https://leetcode.com/problems/maximize-greatness-of-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3312061/javacpython-easy-and-concise-on-by-lee21-y92l/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3312233/javapython-3-sort-then-2-pointers-by-roc-dnqd/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/6917628/maximize-greatness-of-an-array-java-solu-xoec/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3311993/easy-java-solution-by-1asthakhushi1-1hmy/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/7179321/maximize-greatness-of-an-array-solution-470gu/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/7178044/be-greedy-two-pointers-java-by-runlingli-kbmn/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/6684922/simple-3-line-on-solution-in-java-by-bet-1kf8/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3354150/day-363-100-explained-javacpython-one-pa-nxwg/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3311978/simple-java-solution-using-two-pointer-b-8xbe/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3312013/2-pointerz-java-by-kshitij_pandey-wznj/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3312009/short-clean-priority-queue-java-by-himan-u69m/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3313379/java-sorting-two-pointers-by-sourin_bruh-i4d0/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3312114/in-java-using-treemap-by-shiva1718-ex23/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/4355518/java-treemap-n-log-n-by-robertskonieczny-fbk9/;;https://leetcode.com/problems/maximize-greatness-of-an-array/solutions/3910952/java-treemap-solution-by-charliehpc-tuzb/;;;=;==;=;=;

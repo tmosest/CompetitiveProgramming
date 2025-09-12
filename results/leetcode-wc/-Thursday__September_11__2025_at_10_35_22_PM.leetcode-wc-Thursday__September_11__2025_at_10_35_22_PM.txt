@@ -1,0 +1,41 @@
+2580. Count Ways to Group Overlapping Ranges;=;=Medium;=;=public int countWays(int[][] ranges);=;=You are given a 2D integer array ranges where ranges[i] = [starti, endi] denotes that all integers between starti and endi (both inclusive) are contained in the ith range.
+
+You are to split ranges into two (possibly empty) groups such that:
+
+Each range belongs to exactly one group.
+Any two overlapping ranges must belong to the same group.
+Two ranges are said to be overlapping if there exists at least one integer that is present in both ranges.
+
+For example, [1, 3] and [2, 5] are overlapping because 2 and 3 occur in both ranges.
+Return the total number of ways to split ranges into two groups. Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: ranges = [[6,10],[5,15]]
+Output: 2
+Explanation: 
+The two ranges are overlapping, so they must be in the same group.
+Thus, there are two possible ways:
+- Put both the ranges together in group 1.
+- Put both the ranges together in group 2.
+Example 2:
+
+Input: ranges = [[1,3],[10,20],[2,5],[4,8]]
+Output: 4
+Explanation: 
+Ranges [1,3], and [2,5] are overlapping. So, they must be in the same group.
+Again, ranges [2,5] and [4,8] are also overlapping. So, they must also be in the same group. 
+Thus, there are four possible ways to group them:
+- All the ranges in group 1.
+- All the ranges in group 2.
+- Ranges [1,3], [2,5], and [4,8] in group 1 and [10,20] in group 2.
+- Ranges [1,3], [2,5], and [4,8] in group 2 and [10,20] in group 1.
+ 
+
+Constraints:
+
+1 <= ranges.length <= 105
+ranges[i].length == 2
+0 <= starti <= endi <= 109;=;=https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/3256371/javacpython-sort-solution-by-lee215-o3k1/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/3256146/javapython-3-count-non-overlapping-compo-67tm/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/3256406/solution-based-on-counting-overlap-not-o-rrr2/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/3256101/simple-java-solution-by-siddhant_1602-ok07/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/3256178/java-by-kalinga-yvlm/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/4750721/java-merge-intervals-using-priorityqueue-14e7/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/3256279/9-line-answer-easy-to-understand-c-solut-l9ta/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/6737202/simple-java-solution-by-sakshikishore-cnak/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/6177791/easy-solution-by-_jyoti_geek-uz05/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/6070760/easy-to-the-point-solution-by-aayushisha-r25z/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/6031875/on-log-n-soln-by-ozzyozbourne-9yhu/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/5962028/javamaxheapfastmodularexp-by-st4s_r-ghxe/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/5165220/java-merge-intervals-template-copy-by-ka-k1v3/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/5101318/sort-and-count-java-onlogn-o1-by-wangcai-attc/;;https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/solutions/5030901/java-sol-by-salonijain-2ovr/;;;=;==;=;=;

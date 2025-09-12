@@ -1,0 +1,35 @@
+1914. Cyclically Rotating a Grid;=;=Medium;=;=public int[][] rotateGrid(int[][] grid, int k);=;=You are given an m x n integer matrix grid???, where m and n are both even integers, and an integer k.
+
+The matrix is composed of several layers, which is shown in the below image, where each color is its own layer:
+
+
+
+A cyclic rotation of the matrix is done by cyclically rotating each layer in the matrix. To cyclically rotate a layer once, each element in the layer will take the place of the adjacent element in the counter-clockwise direction. An example rotation is shown below:
+
+
+Return the matrix after applying k cyclic rotations to it.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[40,10],[30,20]], k = 1
+Output: [[10,20],[40,30]]
+Explanation: The figures above represent the grid at every state.
+Example 2:
+
+  
+Input: grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], k = 2
+Output: [[3,4,8,12],[2,11,10,16],[1,7,6,15],[5,9,13,14]]
+Explanation: The figures above represent the grid at every state.
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+2 <= m, n <= 50
+Both m and n are even integers.
+1 <= grid[i][j] <= 5000
+1 <= k <= 109;=;=https://leetcode.com/problems/cyclically-rotating-a-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/1299543/java-solution-mocking-rotation-by-queue-zrmo8/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/1299516/only-solution-you-will-need-by-leetcoder-ii6c/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/1300462/simple-code-with-full-explanation-approa-bpq1/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/3175748/easy-solution-and-simple-traversing-by-l-rhpu/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/1875032/java-4-pointer-by-ask025-qh7c/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/1299733/idea-is-to-rotate-each-layer-kperimetero-x94r/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/1313385/java-2-easy-solutions-by-legit_123-7iz4/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/6757938/7-ms-beats-2500-by-sarthak_shishodia20-56yk/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/6710250/correct-approach-for-counter-clockwise-r-0dau/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/6219636/java-easy-solution-by-hello8-t0ic/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/6008192/onm-faster-than-100-clean-java-code-by-y-o5vp/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/5635455/the-easiest-most-detailed-solution-ever-hahws/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/5378438/on-m-runtime-and-o1-memory-in-place-by-m-pbts/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/4998195/5-ms-runtime-dequeue-approach-explained-85xta/;;https://leetcode.com/problems/cyclically-rotating-a-grid/solutions/4618684/omn-runtime-o1-space-by-macrohard-23p0/;;;=;==;=;=;

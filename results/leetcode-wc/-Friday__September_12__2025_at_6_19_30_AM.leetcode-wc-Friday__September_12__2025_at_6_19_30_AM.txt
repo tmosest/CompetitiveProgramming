@@ -1,0 +1,28 @@
+2233. Maximum Product After K Increments;=;=Medium;=;=public int maximumProduct(int[] nums, int k);=;=You are given an array of non-negative integers nums and an integer k. In one operation, you may choose any element from nums and increment it by 1.
+
+Return the maximum product of nums after at most k operations. Since the answer may be very large, return it modulo 109 + 7. Note that you should maximize the product before taking the modulo. 
+
+ 
+
+Example 1:
+
+Input: nums = [0,4], k = 5
+Output: 20
+Explanation: Increment the first number 5 times.
+Now nums = [5, 4], with a product of 5 * 4 = 20.
+It can be shown that 20 is maximum product possible, so we return 20.
+Note that there may be other ways to increment nums to have the maximum product.
+Example 2:
+
+Input: nums = [6,3,3,2], k = 2
+Output: 216
+Explanation: Increment the second number 1 time and increment the fourth number 1 time.
+Now nums = [6, 4, 3, 3], with a product of 6 * 4 * 3 * 3 = 216.
+It can be shown that 216 is maximum product possible, so we return 216.
+Note that there may be other ways to increment nums to have the maximum product.
+ 
+
+Constraints:
+
+1 <= nums.length, k <= 105
+0 <= nums[i] <= 106;=;=https://leetcode.com/problems/maximum-product-after-k-increments/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-product-after-k-increments/solutions/1931098/java-c-minheap-greedy-by-iamcoderrr-36lh/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/6704714/math-behind-the-intuition-explained-java-nef6/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/1930982/min-heap-explained-by-kamisamaaaa-5m33/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/4094475/video-c-java-python-javascript-by-user68-16yc/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/6338118/easy-priority-queue-used-approach-by-mad-qnwv/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/3184372/simple-java-heap-on-logn-by-yogeshop2003-q879/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/1931896/priorityqueue-easier-to-apply-by-aditya_-apzl/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/3979097/very-easy-c-c-java-min-heap-priority-que-71he/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/3530326/best-solution-ever-existed-beats-85-by-a-qnox/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/1932790/my-thinking-process-by-gocitadel-ltj1/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/2213120/java-heap-functional-programming-stream-3f3wz/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/1943459/java-greedy-min-heap-solution-by-maddete-6ptg/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/1933739/java-simple-solution-with-priorityqueue-a25s2/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/1930981/math-proof-isoperimetric-theorem-hyperre-o2hp/;;https://leetcode.com/problems/maximum-product-after-k-increments/solutions/1931889/please-help-me-understand-this-overflow-r0od9/;;;=;==;=;=;

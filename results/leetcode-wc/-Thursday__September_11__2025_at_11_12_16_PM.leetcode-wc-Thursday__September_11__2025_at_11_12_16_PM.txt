@@ -1,0 +1,39 @@
+2049. Count Nodes With the Highest Score;=;=Medium;=;=public int countHighestScoreNodes(int[] parents);=;=There is a binary tree rooted at 0 consisting of n nodes. The nodes are labeled from 0 to n - 1. You are given a 0-indexed integer array parents representing the tree, where parents[i] is the parent of node i. Since node 0 is the root, parents[0] == -1.
+
+Each node has a score. To find the score of a node, consider if the node and the edges connected to it were removed. The tree would become one or more non-empty subtrees. The size of a subtree is the number of the nodes in it. The score of the node is the product of the sizes of all those subtrees.
+
+Return the number of nodes that have the highest score.
+
+ 
+
+Example 1:
+
+
+Input: parents = [-1,2,0,2,0]
+Output: 3
+Explanation:
+- The score of node 0 is: 3 * 1 = 3
+- The score of node 1 is: 4 = 4
+- The score of node 2 is: 1 * 1 * 2 = 2
+- The score of node 3 is: 4 = 4
+- The score of node 4 is: 4 = 4
+The highest score is 4, and three nodes (node 1, node 3, and node 4) have the highest score.
+Example 2:
+
+
+Input: parents = [-1,2,0]
+Output: 2
+Explanation:
+- The score of node 0 is: 2 = 2
+- The score of node 1 is: 2 = 2
+- The score of node 2 is: 1 * 1 = 1
+The highest score is 2, and two nodes (node 0 and node 1) have the highest score.
+ 
+
+Constraints:
+
+n == parents.length
+2 <= n <= 105
+parents[0] == -1
+0 <= parents[i] <= n - 1 for i != 0
+parents represents a valid binary tree.;=;=https://leetcode.com/problems/count-nodes-with-the-highest-score/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/1537471/dfs-by-votrubac-y3r9/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/6771680/from-brute-force-to-optimized-code-by-sh-jeqw/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/1538415/java-on-dfs-concise-by-tyro-fupr/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/2751415/simple-java-solution-using-hashmap-by-ha-etxh/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/5193902/explaned-well-fully-commented-java-using-o1g7/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/4606172/java-with-comments-by-endlessjourney-0so6/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/2523803/java-solution-hashmap-dfs-dp-easy-to-und-3s2t/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/1537664/where-is-my-fault-in-this-post-order-dfs-fvxp/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/2207110/java-35ms-dfs-95-explanations-by-stefane-ad41/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/7088560/simply-make-the-tree-then-calculate-the-vn4re/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/7049496/java-intuitive-approach-on-time-and-spac-783z/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/6896493/java-sol-by-aditya_shrest-afnw/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/6798137/dfs-graph-search-by-nocturne1992-22vg/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/6622156/simple-java-solution-with-approach-and-p-l34g/;;https://leetcode.com/problems/count-nodes-with-the-highest-score/solutions/6622155/simple-java-solution-with-approach-and-p-8a57/;;;=;==;=;=;

@@ -1,0 +1,46 @@
+3407. Substring Matching Pattern;=;=Easy;=;=public boolean hasMatch(String s, String p);=;=You are given a string s and a pattern string p, where p contains exactly one '*' character.
+
+The '*' in p can be replaced with any sequence of zero or more characters.
+
+Return true if p can be made a substring of s, and false otherwise.
+
+ 
+
+Example 1:
+
+Input: s = "leetcode", p = "ee*e"
+
+Output: true
+
+Explanation:
+
+By replacing the '*' with "tcod", the substring "eetcode" matches the pattern.
+
+Example 2:
+
+Input: s = "car", p = "c*v"
+
+Output: false
+
+Explanation:
+
+There is no substring matching the pattern.
+
+Example 3:
+
+Input: s = "luck", p = "u*"
+
+Output: true
+
+Explanation:
+
+The substrings "u", "uc", and "uck" match the pattern.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 50
+1 <= p.length <= 50 
+s contains only lowercase English letters.
+p contains only lowercase English letters and exactly one '*';=;=https://leetcode.com/problems/substring-matching-pattern/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/substring-matching-pattern/solutions/6230068/simple-java-solution-beats-100-by-saurab-ria2/;;https://leetcode.com/problems/substring-matching-pattern/solutions/7016746/easy-code-for-beginners-and-understandab-2qzs/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6230891/python3-4-lines-find-rfind-ts-0-ms-18-mb-5k19/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6230054/simple-solution-by-siva_devireddy_0312-b35v/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6320567/easy-solution-java-by-mayankluthyagi-gyv2/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6230788/best-5-line-soln-beats-10000-by-ram_sake-dtux/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6625846/java-easy-solution-by-heyysankalp-nv95/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6230125/easiest-solution-100-java-on-by-kumar_an-fzci/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6230111/optimal-string-solution-in-javac-python-5xk8w/;;https://leetcode.com/problems/substring-matching-pattern/solutions/7178145/java-by-aditya_srivastava-t7nf/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6540211/java-easy-100-solution-by-ytchouar-ujkw/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6291964/easy-java-solution-beats-100-by-iam_spr-3lyw/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6234228/java-solution-best-solution-by-dheeraj_2-lzrf/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6489814/optimized-solution-in-java-by-ayushigoel-9ziv/;;https://leetcode.com/problems/substring-matching-pattern/solutions/6230075/1ms-beats-100-easy-to-understand-for-beg-citt/;;;=;==;=;=;

@@ -1,0 +1,39 @@
+2087. Minimum Cost Homecoming of a Robot in a Grid;=;=Medium;=;=publicÊintÊminCost(int[]ÊstartPos,Êint[]ÊhomePos,Êint[]ÊrowCosts,Êint[]ÊcolCosts);=;=There is an m x n grid, where (0, 0) is the top-left cell and (m - 1, n - 1) is the bottom-right cell. You are given an integer array startPos where startPos = [startrow, startcol] indicates that initially, a robot is at the cell (startrow, startcol). You are also given an integer array homePos where homePos = [homerow, homecol] indicates that its home is at the cell (homerow, homecol).
+
+The robot needs to go to its home. It can move one cell in four directions: left, right, up, or down, and it can not move outside the boundary. Every move incurs some cost. You are further given two 0-indexed integer arrays: rowCosts of length m and colCosts of length n.
+
+If the robot moves up or down into a cell whose row is r, then this move costs rowCosts[r].
+If the robot moves left or right into a cell whose column is c, then this move costs colCosts[c].
+Return the minimum total cost for this robot to return home.
+
+Ê
+
+Example 1:
+
+
+Input: startPos = [1, 0], homePos = [2, 3], rowCosts = [5, 4, 3], colCosts = [8, 2, 6, 7]
+Output: 18
+Explanation: One optimal path is that:
+Starting from (1, 0)
+-> It goes down to (2, 0). This move costs rowCosts[2] = 3.
+-> It goes right to (2, 1). This move costs colCosts[1] = 2.
+-> It goes right to (2, 2). This move costs colCosts[2] = 6.
+-> It goes right to (2, 3). This move costs colCosts[3] = 7.
+The total cost is 3 + 2 + 6 + 7 = 18
+Example 2:
+
+Input: startPos = [0, 0], homePos = [0, 0], rowCosts = [5], colCosts = [26]
+Output: 0
+Explanation: The robot is already at its home. Since no moves occur, the total cost is 0.
+Ê
+
+Constraints:
+
+m == rowCosts.length
+n == colCosts.length
+1 <= m, n <= 105
+0 <= rowCosts[r], colCosts[c] <= 104
+startPos.length == 2
+homePos.length == 2
+0 <= startrow, homerow < m
+0 <= startcol, homecol < n;=;=https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/7105319/leetcode-2087-minimum-cost-homecoming-of-mkcl/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/6470285/java-python-c-simple-straight-solution-o-83ce/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/6910043/2087-minimum-cost-homecoming-of-a-robot-irbfx/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/1598879/java-simple-straight-solution-o1-space-b-rwlp/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/2295539/easy-to-code-by-aditya_jain_2584550188-c3xh/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/3691011/java-linear-solution-with-greedy-approac-71om/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/1599086/java-o1-space-solution-full-elaborated-e-ypu1/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/1598950/java-bfs-solution-by-coder9029-0qhg/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/4190978/set-direction-and-traverse-by-nuvvula-5j96/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/1600223/java-simple-solution-by-abhijeetmallick2-d3z8/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/7100059/java-simple-solution-by-veenu22-h64d/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/6753773/java-javascript-typescript-c-c-kotlin-go-s50l/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/6726360/easy-solution-in-java-by-kumarakash-vgqw/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/6513259/minimum-cost-homecoming-of-a-robot-in-a-zj0ad/;;https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/solutions/6347839/why-this-problem-exisit-dijkstra-algo-re-jhjx/;;;=;==;=;=;

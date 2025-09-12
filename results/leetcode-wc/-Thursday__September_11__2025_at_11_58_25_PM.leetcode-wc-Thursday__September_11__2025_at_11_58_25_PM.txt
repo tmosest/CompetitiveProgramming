@@ -1,0 +1,26 @@
+2387. Median of a Row Wise Sorted Matrix;=;=Medium;=;=public int matrixMedian(int[][] grid);=;=Given an m x n matrix grid containing an odd number of integers where each row is sorted in non-decreasing order, return the median of the matrix.
+
+You must solve the problem in less than O(m * n) time complexity.
+
+ 
+
+Example 1:
+
+Input: grid = [[1,1,2],[2,3,3],[1,3,4]]
+Output: 2
+Explanation: The elements of the matrix in sorted order are 1,1,1,2,2,3,3,3,4. The median is 2.
+Example 2:
+
+Input: grid = [[1,1,3,3,4]]
+Output: 3
+Explanation: The elements of the matrix in sorted order are 1,1,3,3,4. The median is 3.
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 500
+m and n are both odd.
+1 <= grid[i][j] <= 106
+grid[i] is sorted in non-decreasing order.;=;=https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/6605956/binary-search-solution-with-explanation-6lcvi/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/4984829/java-m-logn-solution-by-stysler-emx0/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/4031617/intuitive-binary-search-approach-optimiz-d2w5/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/5132311/java-solution-using-list-by-amye-e173/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/5489954/java-clean-code-2ms-o1-space-by-it_is_ok-nhdz/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/4401923/mlogn-java-by-weill82-od6c/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/4094441/java-binary-search-3ms-by-tanya_b-e48x/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/3694589/easy-and-concise-java-solution-by-wj4507-0upn/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/3602491/java-solution-omlogn-by-liuhr726-c4hm/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/3221139/java-solution-merge-sort-inspired-by-udi-s8n6/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/2872389/java-mlogn-solution-by-arunprakashtpv-rjgm/;;https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/solutions/2559957/java-binary-search-easy-understanding-by-zabi/;;;=;==;=;=;

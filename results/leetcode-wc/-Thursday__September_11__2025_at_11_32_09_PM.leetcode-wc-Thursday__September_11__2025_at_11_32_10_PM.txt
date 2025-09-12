@@ -1,0 +1,48 @@
+1807. Evaluate the Bracket Pairs of a String;=;=Medium;=;=public String evaluate(String s, List<List<String>> knowledge);=;=You are given a string s that contains some bracket pairs, with each pair containing a non-empty key.
+
+For example, in the string "(name)is(age)yearsold", there are two bracket pairs that contain the keys "name" and "age".
+You know the values of a wide range of keys. This is represented by a 2D string array knowledge where each knowledge[i] = [keyi, valuei] indicates that key keyi has a value of valuei.
+
+You are tasked to evaluate all of the bracket pairs. When you evaluate a bracket pair that contains some key keyi, you will:
+
+Replace keyi and the bracket pair with the key's corresponding valuei.
+If you do not know the value of the key, you will replace keyi and the bracket pair with a question mark "?" (without the quotation marks).
+Each key will appear at most once in your knowledge. There will not be any nested brackets in s.
+
+Return the resulting string after evaluating all of the bracket pairs.
+
+ 
+
+Example 1:
+
+Input: s = "(name)is(age)yearsold", knowledge = [["name","bob"],["age","two"]]
+Output: "bobistwoyearsold"
+Explanation:
+The key "name" has a value of "bob", so replace "(name)" with "bob".
+The key "age" has a value of "two", so replace "(age)" with "two".
+Example 2:
+
+Input: s = "hi(name)", knowledge = [["a","b"]]
+Output: "hi?"
+Explanation: As you do not know the value of the key "name", replace "(name)" with "?".
+Example 3:
+
+Input: s = "(a)(a)(a)aaa", knowledge = [["a","yes"]]
+Output: "yesyesyesaaa"
+Explanation: The same key can appear multiple times.
+The key "a" has a value of "yes", so replace all occurrences of "(a)" with "yes".
+Notice that the "a"s not in a bracket pair are not evaluated.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+0 <= knowledge.length <= 105
+knowledge[i].length == 2
+1 <= keyi.length, valuei.length <= 10
+s consists of lowercase English letters and round brackets '(' and ')'.
+Every open bracket '(' in s will have a corresponding close bracket ')'.
+The key in each bracket pair of s will be non-empty.
+There will not be any nested bracket pairs in s.
+keyi and valuei consist of lowercase English letters.
+Each keyi in knowledge is unique.;=;=https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/7068695/simple-and-easy-solution-in-c-java-pytho-ypff/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/6393849/java-hashmap-solution-cf-by-mmohmedjasim-ffjv/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/6826918/beats-67-using-hashmap-and-stringbuilder-l47p/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/1130695/java-easy-solution-by-himanshuchhikara-cdxv/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/2804522/java-hashmap-easy-by-sourin_bruh-1dkn/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/6965490/easiest-to-understand-stack-usage-simple-gvvs/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/4038830/easy-hashmap-by-shadab_ahmad_khan-d3ro/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/1393591/java-map-stringbuilder-implementation-by-gffj/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/7127754/solution-using-java-by-kushal_bharadwaj-ike45/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/1130904/java-using-regex-only-tle-by-prashul-lyox/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/2112659/easy-java-solution-by-dqzhang2718-uaml/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/2121813/my-simple-java-solution-by-sneha0512-pss0/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/1722609/java-easy-and-fast-solution-using-hashma-ooit/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/1587314/easy-java-solution-with-hashmap-with-exp-792z/;;https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/1552553/simple-java-on-solution-by-ly2015cntj-uj5s/;;;=;==;=;=;

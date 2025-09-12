@@ -1,0 +1,37 @@
+3519. Count Numbers with Non-Decreasing Digits;=;=Hard;=;=public int countNumbers(String l, String r, int b);=;=You are given two integers, l and r, represented as strings, and an integer b. Return the count of integers in the inclusive range [l, r] whose digits are in non-decreasing order when represented in base b.
+
+An integer is considered to have non-decreasing digits if, when read from left to right (from the most significant digit to the least significant digit), each digit is greater than or equal to the previous one.
+
+Since the answer may be too large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: l = "23", r = "28", b = 8
+
+Output: 3
+
+Explanation:
+
+The numbers from 23 to 28 in base 8 are: 27, 30, 31, 32, 33, and 34.
+Out of these, 27, 33, and 34 have non-decreasing digits. Hence, the output is 3.
+Example 2:
+
+Input: l = "2", r = "7", b = 2
+
+Output: 2
+
+Explanation:
+
+The numbers from 2 to 7 in base 2 are: 10, 11, 100, 101, 110, and 111.
+Out of these, 11 and 111 have non-decreasing digits. Hence, the output is 2.
+ 
+
+Constraints:
+
+1 <= l.length <= r.length <= 100
+2 <= b <= 10
+l and r consist only of digits.
+The value represented by l is less than or equal to the value represented by r.
+l and r do not contain leading zeros.;=;=https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6645859/100-beat-simple-digit-3d-dp-convert-num-ib9u8/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6646263/most-descriptive-solution-so-far-a-digit-28fr/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6645010/digit-dp-easy-to-understand-pythonjava-b-zv70/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6647243/java-easy-30ms-solution-by-srknzl-45hn/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6672380/digit-dp-solution-by-codingem94-8sih/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6646313/java-digit-dp-memo-idx-last_digit-tight-01vcd/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6644813/java-digit-dp-by-nickulman-i9dp/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6799277/digit-dp-solution-by-saketcodescribe-d9h2/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6652582/java-solution-by-barakamon-ifr8/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6670210/java-math-dynamic-programing-dp-easy-way-v9zk/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6644878/easiest-solution-with-explanation-by-par-1ad5/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6644872/digit-dp-solution-by-harshwardhan063-9fpf/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6645471/shortest-java-solution-by-dailyggrind-3j6p/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6644926/beats-100-simple-enumeration-by-whoawhoa-82av/;;https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/solutions/6645517/java-memoization-solution-using-biginteg-506n/;;;=;==;=;=;

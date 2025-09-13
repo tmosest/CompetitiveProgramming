@@ -1,0 +1,31 @@
+2085. Count Common Words With One Occurrence;=;=Easy;=;=public int countWords(String[] words1, String[] words2);=;=Given two string arrays words1 and words2, return the number of strings that appear exactly once in each of the two arrays.
+
+ 
+
+Example 1:
+
+Input: words1 = ["leetcode","is","amazing","as","is"], words2 = ["amazing","leetcode","is"]
+Output: 2
+Explanation:
+- "leetcode" appears exactly once in each of the two arrays. We count this string.
+- "amazing" appears exactly once in each of the two arrays. We count this string.
+- "is" appears in each of the two arrays, but there are 2 occurrences of it in words1. We do not count this string.
+- "as" appears once in words1, but does not appear in words2. We do not count this string.
+Thus, there are 2 strings that appear exactly once in each of the two arrays.
+Example 2:
+
+Input: words1 = ["b","bb","bbb"], words2 = ["a","aa","aaa"]
+Output: 0
+Explanation: There are no strings that appear in each of the two arrays.
+Example 3:
+
+Input: words1 = ["a","ab"], words2 = ["a","a","a","ab"]
+Output: 1
+Explanation: The only string that appears exactly once in each of the two arrays is "ab".
+ 
+
+Constraints:
+
+1 <= words1.length, words2.length <= 1000
+1 <= words1[i].length, words2[j].length <= 30
+words1[i] and words2[j] consists only of lowercase English letters.;=;=https://leetcode.com/problems/count-common-words-with-one-occurrence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/7183812/java-easy-to-understand-beginner-friendl-jwpy/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/7087374/simplest-one-hashmap-approach-passes-all-oejw/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/7000365/detailed-easy-soltuion-hashing-by-koiser-x9j5/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/1598877/java-hashmap-easy-to-understand-by-aaves-ygbb/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/7030405/count-common-words-with-one-occurrence-t-aac6/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/1641859/java-simple-2-ways-faster-than-100-singl-d893/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/6794715/just-using-hashmap-in-java-by-nramana97-05ck/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/3588065/beginners-approach-by-bhaskarkumar07-myq6/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/1735225/java-solution-hashmap-4ms-90-faster-by-a-9vvw/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/6571040/easy-solution-hashmap-by-aryaman123-gwfa/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/6489888/single-hash-map-java-3ms-beats-100-by-an-okds/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/1717492/beginner-friendly-java-solution-by-himan-wp3w/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/5698952/interview-prep-by-abinayaprakash-boqg/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/1599506/java-on-optimize-hashmap-100-with-commen-eldb/;;https://leetcode.com/problems/count-common-words-with-one-occurrence/solutions/5801259/java-hashmap-solution-by-suraj2403-fpq2/;;;=;==;=;=;

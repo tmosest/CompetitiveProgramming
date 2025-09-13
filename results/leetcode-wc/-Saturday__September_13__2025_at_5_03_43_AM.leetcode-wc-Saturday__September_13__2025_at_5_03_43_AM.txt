@@ -1,0 +1,34 @@
+1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows;=;=Hard;=;=public int kthSmallest(int[][] mat, int k);=;=You are given an m x n matrix mat that has its rows sorted in non-decreasing order and an integer k.
+
+You are allowed to choose exactly one element from each row to form an array.
+
+Return the kth smallest array sum among all possible arrays.
+
+ 
+
+Example 1:
+
+Input: mat = [[1,3,11],[2,4,6]], k = 5
+Output: 7
+Explanation: Choosing one element from each row, the first k smallest sum are:
+[1,2], [1,4], [3,2], [3,4], [1,6]. Where the 5th sum is 7.
+Example 2:
+
+Input: mat = [[1,3,11],[2,4,6]], k = 9
+Output: 17
+Example 3:
+
+Input: mat = [[1,10,10],[1,4,5],[2,3,6]], k = 7
+Output: 9
+Explanation: Choosing one element from each row, the first k smallest sum are:
+[1,1,2], [1,1,3], [1,4,2], [1,4,3], [1,1,6], [1,5,2], [1,5,3]. Where the 7th sum is 9.  
+ 
+
+Constraints:
+
+m == mat.length
+n == mat.length[i]
+1 <= m, n <= 40
+1 <= mat[i][j] <= 5000
+1 <= k <= min(200, nm)
+mat[i] is a non-decreasing array.;=;=https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/609812/java-max-priority-queue-om-n-k-logk-by-c-m0tl/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/5198589/k-pattern-by-dixon_n-yh9o/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/6513000/a-crazy-binary-approach-using-dfs-100-be-6njm/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/2032495/java-priorityqueue-runtime-faster-than-8-9fzc/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/3821371/java-solution-priorityqueue-om-n-logk-by-kvoy/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/7163504/easy-java-solution-by-srujanjack-vgyq/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/2155609/java-two-problems-easy-solution-beat-by-90fp2/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/1160468/java-using-priorityqueue-java-by-rbhatma-7t6o/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/1990456/java-2ms-recursive-binary-search-solutio-5s9o/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/6402554/easy-java-solution-by-goutham03-o0c7/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/6345854/beginner-friendly-min-heap-priority-queu-wbck/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/6264852/simple-java-solution-by-sakshikishore-4tif/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/5815365/binary-search-solution-by-aryan_singh-mdvv/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/5697240/cjava-4ms-runtime-binary-search-dfs-to-f-swex/;;https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solutions/5492093/using-min-heap-by-akshay_gupta_7-nvd2/;;;=;==;=;=;

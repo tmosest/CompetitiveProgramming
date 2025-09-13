@@ -1,0 +1,29 @@
+1611. Minimum One Bit Operations to Make Integers Zero;=;=Hard;=;=publicÊintÊminimumOneBitOperations(intÊn);=;=Given an integer n, you must transform it into 0 using the following operations any number of times:
+
+Change the rightmost (0th) bit in the binary representation of n.
+Change the ith bit in the binary representation of n if the (i-1)th bit is set to 1 and the (i-2)th through 0th bits are set to 0.
+Return the minimum number of operations to transform n into 0.
+
+Ê
+
+Example 1:
+
+Input: n = 3
+Output: 2
+Explanation: The binary representation of 3 is "11".
+"11" -> "01" with the 2nd operation since the 0th bit is 1.
+"01" -> "00" with the 1st operation.
+Example 2:
+
+Input: n = 6
+Output: 4
+Explanation: The binary representation of 6 is "110".
+"110" -> "010" with the 2nd operation since the 1st bit is 1 and 0th through 0th bits are 0.
+"010" -> "011" with the 1st operation.
+"011" -> "001" with the 2nd operation since the 0th bit is 1.
+"001" -> "000" with the 1st operation.
+Ê
+
+Constraints:
+
+0 <= n <= 109;=;=https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4344637/c-python-java-explained-by-karan_8082-e0me/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4344660/beats-100-explained-with-video-fastest-r-ipri/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/6845975/java-inverse-gray-code-easy-explained-so-k1mh/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4345259/easy-video-explanation-with-logic-buildi-lgxk/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4346087/cjavapythonjavascript-4-approaches-beats-7bpc/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4345542/beats-100-c-user-easy-explanation-o1-tim-eob1/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/2583535/java-easiest-code-by-aditya_jain_2584550-tiga/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4734240/java-iterative-approach-by-aniruddha_sin-hgon/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4345067/beats-10000-of-users-with-java-by-prasha-sj1q/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4346429/faster-than-100-dp-solution-java-by-yous-psr0/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/877786/decimal-equivalent-of-gray-code-java-by-8xdrl/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4345805/beats-100-easy-explanation-cpp-java-pyth-nerg/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4344870/easy-explanation-beats-100-step-by-step-qeesg/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4345124/easy-java-solution-using-recurssion-by-y-yqb7/;;https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4346077/java-solution-explained-in-hindi-by-the_-4twu/;;;=;==;=;=;

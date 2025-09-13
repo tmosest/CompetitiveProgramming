@@ -1,0 +1,29 @@
+1773. Count Items Matching a Rule;=;=Easy;=;=public int countMatches(List<List<String>> items, String ruleKey, String ruleValue);=;=You are given an array items, where each items[i] = [typei, colori, namei] describes the type, color, and name of the ith item. You are also given a rule represented by two strings, ruleKey and ruleValue.
+
+The ith item is said to match the rule if one of the following is true:
+
+ruleKey == "type" and ruleValue == typei.
+ruleKey == "color" and ruleValue == colori.
+ruleKey == "name" and ruleValue == namei.
+Return the number of items that match the given rule.
+
+ 
+
+Example 1:
+
+Input: items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], ruleKey = "color", ruleValue = "silver"
+Output: 1
+Explanation: There is only one item matching the given rule, which is ["computer","silver","lenovo"].
+Example 2:
+
+Input: items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]], ruleKey = "type", ruleValue = "phone"
+Output: 2
+Explanation: There are only two items matching the given rule, which are ["phone","blue","pixel"] and ["phone","gold","iphone"]. Note that the item ["computer","silver","phone"] does not match.
+ 
+
+Constraints:
+
+1 <= items.length <= 104
+1 <= typei.length, colori.length, namei.length, ruleValue.length <= 10
+ruleKey is equal to either "type", "color", or "name".
+All strings consist only of lowercase letters.;=;=https://leetcode.com/problems/count-items-matching-a-rule/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-items-matching-a-rule/solutions/7128267/simple-java-solution-by-shubhamxgupta-c908/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/1093390/java-easy-and-short-100-memory-by-zeldox-p480/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/7137675/simple-java-by-sivaaleet-awk5/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/7145690/count-items-matching-a-rule-java-solutio-2jqb/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/7098303/easy-code-for-beginners-and-understandab-8vkb/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/6992316/easy-java-solution-simple-if-else-by-pra-p7am/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/6939200/easiest-solution-very-very-simple-approa-wvtx/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/5346000/straight-forward-approach-by-rajarshimit-vpvk/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/7014173/5-line-code-by-zabardastgamerz-9tvf/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/7012973/simple-java-solution-optimal-by-rajdeep0-0s7d/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/4286691/java-simple-solution-runtime-2ms-by-ahme-mkk7/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/6924355/simplest-solution-by-shivangi1515-lv5i/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/6363362/easy-solution-java-by-praveensuthar3016-6j2e/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/1443784/simple-java-solution-with-explanation-by-3e0w/;;https://leetcode.com/problems/count-items-matching-a-rule/solutions/6935262/index-mapping-and-linear-scan-by-lavina_-7sbm/;;;=;==;=;=;

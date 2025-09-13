@@ -1,0 +1,31 @@
+2596. Check Knight Tour Configuration;=;=Medium;=;=public boolean checkValidGrid(int[][] grid);=;=There is a knight on an n x n chessboard. In a valid configuration, the knight starts at the top-left cell of the board and visits every cell on the board exactly once.
+
+You are given an n x n integer matrix grid consisting of distinct integers from the range [0, n * n - 1] where grid[row][col] indicates that the cell (row, col) is the grid[row][col]th cell that the knight visited. The moves are 0-indexed.
+
+Return true if grid represents a valid configuration of the knight's movements or false otherwise.
+
+Note that a valid knight move consists of moving two squares vertically and one square horizontally, or two squares horizontally and one square vertically. The figure below illustrates all the possible eight moves of a knight from some cell.
+
+
+ 
+
+Example 1:
+
+
+Input: grid = [[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]
+Output: true
+Explanation: The above diagram represents the grid. It can be shown that it is a valid configuration.
+Example 2:
+
+
+Input: grid = [[0,3,6],[5,8,1],[2,7,4]]
+Output: false
+Explanation: The above diagram represents the grid. The 8th move of the knight is not valid considering its position after the 7th move.
+ 
+
+Constraints:
+
+n == grid.length == grid[i].length
+3 <= n <= 7
+0 <= grid[row][col] < n * n
+All integers in grid are unique.;=;=https://leetcode.com/problems/check-knight-tour-configuration/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-knight-tour-configuration/solutions/7177799/2-ms-beats-7408-with-indian-tadka-cppjav-xt3o/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/3314147/clean-short-recursion-java-by-himanshubh-dfgh/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/7016262/solution-using-recursive-backtracking-ap-pyzr/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/3314200/easy-peasy-knight-tour-by-sky09-5mrh/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/6896196/easy-java-solution-beginner-friendly-0ms-60xz/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/6740457/easy-step-by-step-solution-by-omkar_mema-fia7/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/6566205/simple-solution-using-dp-by-sushil-kumar-mozf/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/6685051/beats-85-java-solution-easy-to-understan-q6za/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/3314297/simple-traversal-and-easy-to-understand-hgxka/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/6684120/knights-tour-validation-ensuring-correct-gl4u/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/7181017/very-ease-kunal-java-easy-approach-by-di-sdqa/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/7171480/easy-solution-to-understand-dont-check-a-wwmo/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/7152409/knight-problem-solution-by-ayushman-pate-7ymu/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/6645367/java-by-vishall001-xem7/;;https://leetcode.com/problems/check-knight-tour-configuration/solutions/6612003/java-solution-beats-100-by-swapit-dvos/;;;=;==;=;=;

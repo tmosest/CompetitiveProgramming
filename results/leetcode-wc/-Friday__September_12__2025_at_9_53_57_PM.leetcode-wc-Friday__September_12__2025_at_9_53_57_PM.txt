@@ -1,0 +1,45 @@
+3097. Shortest Subarray With OR at Least K II;=;=Medium;=;=public int minimumSubarrayLength(int[] nums, int k);=;=You are given an array nums of non-negative integers and an integer k.
+
+An array is called special if the bitwise OR of all of its elements is at least k.
+
+Return the length of the shortest special non-empty subarray of nums, or return -1 if no special subarray exists.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3], k = 2
+
+Output: 1
+
+Explanation:
+
+The subarray [3] has OR value of 3. Hence, we return 1.
+
+Example 2:
+
+Input: nums = [2,1,8], k = 10
+
+Output: 3
+
+Explanation:
+
+The subarray [2,1,8] has OR value of 11. Hence, we return 3.
+
+Example 3:
+
+Input: nums = [1,2], k = 0
+
+Output: 1
+
+Explanation:
+
+The subarray [1] has OR value of 1. Hence, we return 1.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 2 * 105
+0 <= nums[i] <= 109
+0 <= k <= 109;=;=https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6028567/lets-understand-and-visualize-crystal-cl-mtcz/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6028459/easiest-solution-100-beats-brute-force-a-gz9f/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/4948082/c-java-python-2-approaches-sliding-windo-hysj/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6029382/beats-super-easy-beginners-by-codewithsp-9yeb/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6029013/solution-for-leetcode3097-by-samir023041-iwkl/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6028479/java-clean-solution-by-shree_govind_jee-y7h7/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6028747/very-simple-javac-solution-sliding-windo-x47s/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/5974659/beginner-friendly-solution-easy-and-deta-j7uu/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6028541/shortest-subarray-with-or-atleast-k-easy-c0d3/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/4991529/java-sliding-window-bit-frequency-table-5qgy7/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6028305/a-different-way-using-binary-search-bit-eix2p/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6029004/java-sliding-window-approach-runtime-28-4gk9p/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6028897/java-open-if-you-hate-bitmanipulation-pr-o1jh/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6028363/simple-sliding-window-with-bit-masking-b-fdzx/;;https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6031151/easiest-solution-with-explanation-by-sau-5wrn/;;;=;==;=;=;

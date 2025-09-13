@@ -1,0 +1,39 @@
+3146. Permutation Difference between Two Strings;=;=Easy;=;=public int findPermutationDifference(String s, String t);=;=You are given two strings s and t such that every character occurs at most once in s and t is a permutation of s.
+
+The permutation difference between s and t is defined as the sum of the absolute difference between the index of the occurrence of each character in s and the index of the occurrence of the same character in t.
+
+Return the permutation difference between s and t.
+
+ 
+
+Example 1:
+
+Input: s = "abc", t = "bac"
+
+Output: 2
+
+Explanation:
+
+For s = "abc" and t = "bac", the permutation difference of s and t is equal to the sum of:
+
+The absolute difference between the index of the occurrence of "a" in s and the index of the occurrence of "a" in t.
+The absolute difference between the index of the occurrence of "b" in s and the index of the occurrence of "b" in t.
+The absolute difference between the index of the occurrence of "c" in s and the index of the occurrence of "c" in t.
+That is, the permutation difference between s and t is equal to |0 - 1| + |1 - 0| + |2 - 2| = 2.
+
+Example 2:
+
+Input: s = "abcde", t = "edbac"
+
+Output: 12
+
+Explanation: The permutation difference between s and t is equal to |0 - 3| + |1 - 2| + |2 - 4| + |3 - 1| + |4 - 0| = 12.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 26
+Each character occurs at most once in s.
+t is a permutation of s.
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/permutation-difference-between-two-strings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/7147546/permutation-difference-between-two-strin-ru5d/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/7138120/the-shift-behind-the-shuffle-permutation-baq1/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/7128614/permutation-difference-between-two-strin-60xq/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/5145646/on-hashmap-by-fahad06-176c/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/7072310/simple-java-solution-beats-100-by-rajdee-a72u/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/5325505/easiest-java-solution-brute-force-4749-o-rjr5/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/7071002/easy-code-for-beginners-and-understandab-omnh/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/5145611/simple-java-solution-by-siddhant_1602-pnvj/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/5145738/the-best-explanationbeats-100-users-by-h-mswm/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/6942275/easy-solution-in-java-on-by-kumarakash-5vrw/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/5323611/for-absolute-beginner-beats-100-with-cpp-h06p/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/6793006/easiest-java-solution-to-find-the-differ-l6nw/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/5145669/faster-lesser-cpython3javacpythonexplain-y71o/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/6476095/java-solution-100-beat-time-complexity-o-ayb2/;;https://leetcode.com/problems/permutation-difference-between-two-strings/solutions/6713271/easy-solution-beats-100-code-for-beginne-aeh4/;;;=;==;=;=;

@@ -1,0 +1,44 @@
+2250. Count Number of Rectangles Containing Each Point;=;=Medium;=;=public int[] countRectangles(int[][] rectangles, int[][] points);=;=You are given a 2D integer array rectangles where rectangles[i] = [li, hi] indicates that ith rectangle has a length of li and a height of hi. You are also given a 2D integer array points where points[j] = [xj, yj] is a point with coordinates (xj, yj).
+
+The ith rectangle has its bottom-left corner point at the coordinates (0, 0) and its top-right corner point at (li, hi).
+
+Return an integer array count of length points.length where count[j] is the number of rectangles that contain the jth point.
+
+The ith rectangle contains the jth point if 0 <= xj <= li and 0 <= yj <= hi. Note that points that lie on the edges of a rectangle are also considered to be contained by that rectangle.
+
+ 
+
+Example 1:
+
+
+Input: rectangles = [[1,2],[2,3],[2,5]], points = [[2,1],[1,4]]
+Output: [2,1]
+Explanation: 
+The first rectangle contains no points.
+The second rectangle contains only the point (2, 1).
+The third rectangle contains the points (2, 1) and (1, 4).
+The number of rectangles that contain the point (2, 1) is 2.
+The number of rectangles that contain the point (1, 4) is 1.
+Therefore, we return [2, 1].
+Example 2:
+
+
+Input: rectangles = [[1,1],[2,2],[3,3]], points = [[1,3],[1,1]]
+Output: [1,3]
+Explanation:
+The first rectangle contains only the point (1, 1).
+The second rectangle contains only the point (1, 1).
+The third rectangle contains the points (1, 3) and (1, 1).
+The number of rectangles that contain the point (1, 3) is 1.
+The number of rectangles that contain the point (1, 1) is 3.
+Therefore, we return [1, 3].
+ 
+
+Constraints:
+
+1 <= rectangles.length, points.length <= 5 * 104
+rectangles[i].length == points[j].length == 2
+1 <= li, xj <= 109
+1 <= hi, yj <= 100
+All the rectangles are unique.
+All the points are unique.;=;=https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/1976843/java-solutin-using-treemap-and-binarysea-r7b6/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/1978078/java-solution-binary-search-with-explana-sck3/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/1979001/java-understanding-solution-from-uwi-wee-ps7w/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/1976822/java-binary-search-x-grouped-by-y-by-0x4-68ju/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/1977569/java-beats-10000-memoryspeed-0ms-april-2-osq2/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/3460561/java-binary-search-clean-code-by-swapnil-4kz4/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/1977363/java-onlogn-solution-binary-search-with-ahrrw/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/1977198/java-binary-search-on-list-by-miyamura-ese4/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/1977496/java-solution-by-deleted_user-4rez/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/7068535/simple-binary-search-on-length-and-map-o-3o6b/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/6115620/not-so-optmised-easy-to-understand-no-tl-kuk8/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/5332490/java-mergesort-by-luoth1900-l8oc/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/5342469/binary-search-java-onlogno101n-by-wangca-xqet/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/4311242/beats-100-by-takru-qm83/;;https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/solutions/3973602/very-easy-solution-approach-by-anonymous-eskz/;;;=;==;=;=;

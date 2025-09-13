@@ -1,0 +1,44 @@
+3300. Minimum Element After Replacement With Digit Sum;=;=Easy;=;=public int minElement(int[] nums);=;=You are given an integer array nums.
+
+You replace each element in nums with the sum of its digits.
+
+Return the minimum element in nums after all replacements.
+
+ 
+
+Example 1:
+
+Input: nums = [10,12,13,14]
+
+Output: 1
+
+Explanation:
+
+nums becomes [1, 3, 4, 5] after all replacements, with minimum element 1.
+
+Example 2:
+
+Input: nums = [1,2,3,4]
+
+Output: 1
+
+Explanation:
+
+nums becomes [1, 2, 3, 4] after all replacements, with minimum element 1.
+
+Example 3:
+
+Input: nums = [999,19,199]
+
+Output: 10
+
+Explanation:
+
+nums becomes [27, 10, 19] after all replacements, with minimum element 10.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 104;=;=https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/7155562/minimum-element-after-replacement-with-d-jwvv/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/7085022/beats-100ms-solution-by-arshiya1731-4tsg/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/7053480/easy-code-for-beginners-and-understandab-c3ap/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/5844334/minimum-digit-sum-finder-beats-100-by-sh-l9o7/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/7014551/easy-java-solution-beats-100-by-rajdeep0-t4pr/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/6539388/simple-100-beats-easy-to-understand-by-k-lbgp/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/7011634/easy-and-100-fast-and-clear-solution-wit-va2r/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/6717671/easy-solution-in-java-by-sathurnithy-9wtx/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/6027115/javas-tiny-treasure-hunt-min-element-mas-zggp/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/6198316/best-solution-by-lohieth-rvrl-383b/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/6754261/easy-code-java-by-rajarshicode-jjof/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/5844941/easiestfaster-lesser-cpython3javacpython-vahr/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/6735593/easy-solution-beats-100-for-beginners-by-0vse/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/7163706/java-solution-100-by-programmernightmare-2aef/;;https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/solutions/7120059/100-beat-java-c-c-by-uma_paluri_348-bt8e/;;;=;==;=;=;

@@ -1,0 +1,31 @@
+3491. Phone Number Prefix;=;=Easy;=;=public boolean phonePrefix(String[] numbers);=;=You are given a string array numbers that represents phone numbers. Return true if no phone number is a prefix of any other phone number; otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: numbers = ["1","2","4","3"]
+
+Output: true
+
+Explanation:
+
+No number is a prefix of another number, so the output is true.
+
+Example 2:
+
+Input: numbers = ["001","007","15","00153"]
+
+Output: false
+
+Explanation:
+
+The string "001" is a prefix of the string "00153". Thus, the output is false.
+
+ 
+
+Constraints:
+
+2 <= numbers.length <= 50
+1 <= numbers[i].length <= 50
+All numbers contain only digits '0' to '9'.;=;=https://leetcode.com/problems/phone-number-prefix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/phone-number-prefix/solutions/6548970/python3-by-spaulding-tasi/;;https://leetcode.com/problems/phone-number-prefix/solutions/6681312/trie-with-java-beats-100-time-and-space-3yrz4/;;https://leetcode.com/problems/phone-number-prefix/solutions/6673208/java-2-ms-beats-100-by-arti8190-qva9/;;https://leetcode.com/problems/phone-number-prefix/solutions/6724761/javajsts-solution-jw-by-specter01wj-rynx/;;https://leetcode.com/problems/phone-number-prefix/solutions/6578807/beats-100-simple-java-solution-by-sarn1-ekel/;;https://leetcode.com/problems/phone-number-prefix/solutions/6551321/java-2ms-solution-by-tbekpro-ka16/;;;=;==;=;=;

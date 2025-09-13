@@ -1,0 +1,25 @@
+805. Split Array With Same Average;=;=Hard;=;=public boolean splitArraySameAverage(int[] nums);=;=You are given an integer array nums.
+
+You should move each element of nums into one of the two arrays A and B such that A and B are non-empty, and average(A) == average(B).
+
+Return true if it is possible to achieve that and false otherwise.
+
+Note that for an array arr, average(arr) is the sum of all the elements of arr over the length of arr.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4,5,6,7,8]
+Output: true
+Explanation: We can split the array into [1,4,5,8] and [2,3,6,7], and both of them have an average of 4.5.
+Example 2:
+
+Input: nums = [3,1]
+Output: false
+ 
+
+Constraints:
+
+1 <= nums.length <= 30
+0 <= nums[i] <= 104;=;=https://leetcode.com/problems/split-array-with-same-average/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/split-array-with-same-average/solutions/6953193/java-solution-using-recursive-dp-with-me-csaa/;;https://leetcode.com/problems/split-array-with-same-average/solutions/6950298/im-offering-you-a-choice-meet-in-the-mid-h59k/;;https://leetcode.com/problems/split-array-with-same-average/solutions/1234381/javatop-down-intuitive-dp-solution-by-wa-tw7a/;;https://leetcode.com/problems/split-array-with-same-average/solutions/2306444/two-sum-45-ms-on2-2n2-similar-questions-2ov60/;;https://leetcode.com/problems/split-array-with-same-average/solutions/2126212/java-dp-top-down-explanation-by-om4ai-u1xw/;;https://leetcode.com/problems/split-array-with-same-average/solutions/1900278/java-detailed-explanation-dynamic-progra-gtzg/;;https://leetcode.com/problems/split-array-with-same-average/solutions/5762343/split-array-with-same-average-by-shaludr-u3i5/;;https://leetcode.com/problems/split-array-with-same-average/solutions/3471333/solution-by-deleted_user-9f1n/;;https://leetcode.com/problems/split-array-with-same-average/solutions/1997963/java-meet-in-middle-by-sid4leetcode-w1gd/;;https://leetcode.com/problems/split-array-with-same-average/solutions/4427496/solution-by-shree_govind_jee-c6h5/;;https://leetcode.com/problems/split-array-with-same-average/solutions/903382/recursion-memoization-by-hustleharder-8idj/;;https://leetcode.com/problems/split-array-with-same-average/solutions/6953194/java-solution-using-recursive-dp-with-me-gho8/;;https://leetcode.com/problems/split-array-with-same-average/solutions/6902770/backtracking-by-ljheee-5np4/;;https://leetcode.com/problems/split-array-with-same-average/solutions/6576397/on2-maxn2-sumwordsize-polynomial-in-n-so-ek9m/;;https://leetcode.com/problems/split-array-with-same-average/solutions/6300394/java-easy-solution-by-harshkumar_23-ivrr/;;;=;==;=;=;

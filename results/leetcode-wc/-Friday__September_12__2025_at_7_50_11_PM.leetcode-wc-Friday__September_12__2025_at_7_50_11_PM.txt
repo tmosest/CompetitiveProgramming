@@ -1,0 +1,41 @@
+3318. Find X-Sum of All K-Long Subarrays I;=;=Easy;=;=public int[] findXSum(int[] nums, int k, int x);=;=You are given an array nums of n integers and two integers k and x.
+
+The x-sum of an array is calculated by the following procedure:
+
+Count the occurrences of all elements in the array.
+Keep only the occurrences of the top x most frequent elements. If two elements have the same number of occurrences, the element with the bigger value is considered more frequent.
+Calculate the sum of the resulting array.
+Note that if an array has less than x distinct elements, its x-sum is the sum of the array.
+
+Return an integer array answer of length n - k + 1 where answer[i] is the x-sum of the subarray nums[i..i + k - 1].
+
+ 
+
+Example 1:
+
+Input: nums = [1,1,2,2,3,4,2,3], k = 6, x = 2
+
+Output: [6,10,12]
+
+Explanation:
+
+For subarray [1, 1, 2, 2, 3, 4], only elements 1 and 2 will be kept in the resulting array. Hence, answer[0] = 1 + 1 + 2 + 2.
+For subarray [1, 2, 2, 3, 4, 2], only elements 2 and 4 will be kept in the resulting array. Hence, answer[1] = 2 + 2 + 2 + 4. Note that 4 is kept in the array since it is bigger than 3 and 1 which occur the same number of times.
+For subarray [2, 2, 3, 4, 2, 3], only elements 2 and 3 are kept in the resulting array. Hence, answer[2] = 2 + 2 + 2 + 3 + 3.
+Example 2:
+
+Input: nums = [3,8,7,8,7,5], k = 2, x = 2
+
+Output: [11,15,15,15,12]
+
+Explanation:
+
+Since k == x, answer[i] is equal to the sum of the subarray nums[i..i + k - 1].
+
+ 
+
+Constraints:
+
+1 <= n == nums.length <= 50
+1 <= nums[i] <= 50
+1 <= x <= k <= nums.length;=;=https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905520/simple-java-solution-by-harsh__005-0eni/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/7039352/sum-of-top-x-frequent-elements-in-each-w-h5qn/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905546/brutal-brute-force-java-on-sliding-windo-vnin/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6644256/sliding-window-technique-by-yagnikbeladi-mgh4/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6721566/easy-java-solution-by-imbluegold-s8x8/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905418/100-beat-java-simple-solution-by-shree_g-7ug9/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905606/brute-force-using-priority-queue-and-has-o17n/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905533/java-sliding-window-sort-2d-array-by-cg1-ekbe/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6190311/find-x-sum-of-all-k-long-subarrays-i-sli-ctpn/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5905368/java-map-priority-queue-solution-by-solv-0ksv/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/5906236/beats-100-by-aniket_raut-2nql/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6110569/priorityqueue-min-heap-sliding-window-so-kzf6/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/7032610/dont-depend-on-heap-learn-bucket-sort-be-0ksd/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6834228/fast-java-solution-by-tydaljames-kk5p/;;https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/solutions/6483970/java-sliding-windows-for-large-n-by-user-ycjx/;;;=;==;=;=;

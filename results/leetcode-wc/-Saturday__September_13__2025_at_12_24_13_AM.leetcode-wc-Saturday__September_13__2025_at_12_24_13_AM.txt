@@ -1,0 +1,38 @@
+1799. Maximize Score After N Operations;=;=Hard;=;=public int maxScore(int[] nums);=;=You are given nums, an array of positive integers of size 2 * n. You must perform n operations on this array.
+
+In the ith operation (1-indexed), you will:
+
+Choose two elements, x and y.
+Receive a score of i * gcd(x, y).
+Remove x and y from nums.
+Return the maximum score you can receive after performing n operations.
+
+The function gcd(x, y) is the greatest common divisor of x and y.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2]
+Output: 1
+Explanation: The optimal choice of operations is:
+(1 * gcd(1, 2)) = 1
+Example 2:
+
+Input: nums = [3,4,6,8]
+Output: 11
+Explanation: The optimal choice of operations is:
+(1 * gcd(3, 6)) + (2 * gcd(4, 8)) = 3 + 8 = 11
+Example 3:
+
+Input: nums = [1,2,3,4,5,6]
+Output: 14
+Explanation: The optimal choice of operations is:
+(1 * gcd(1, 5)) + (2 * gcd(2, 4)) + (3 * gcd(3, 6)) = 1 + 4 + 9 = 14
+ 
+
+Constraints:
+
+1 <= n <= 7
+nums.length == 2 * n
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/maximize-score-after-n-operations/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximize-score-after-n-operations/solutions/1118875/java-bitmask-dp-explaination-by-cdhcs151-84d3/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3521561/pythonjavacsimple-solutioneasy-to-unders-6reg/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3521564/easy-cjava-code-step-by-step-explanation-te1a/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/1119006/wrong-solution-got-passed-by-himanshuchh-h9u2/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3522764/java-solution-without-bit-masking-by-ada-6b73/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3523772/day-409-recmemomemospacedpdpspace-100-py-1vf2/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3521654/dynamic-programming-bitmask-line-by-line-chu7/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3525170/bitmask-top-down-dp-by-hobiter-gqpr/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3523767/java-easy-code-bit-masking-dp-daily-chal-r6d7/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3524490/a-straightforward-solution-by-ak17btr-rg9t/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3523518/java-solution-for-maximize-score-after-n-kv4f/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3523900/java-easy-solution-by-anshuthakur_123-ssyi/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3521680/java-runtime-872-ms-beats-555-memory-501-gd2b/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3524951/java-solution-by-safo-samson-a1t6/;;https://leetcode.com/problems/maximize-score-after-n-operations/solutions/3526325/java-solution-recursive-memoization-usin-htxu/;;;=;==;=;=;

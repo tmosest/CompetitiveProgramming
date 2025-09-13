@@ -1,0 +1,41 @@
+3346. Maximum Frequency of an Element After Performing Operations I;=;=Medium;=;=public int maxFrequency(int[] nums, int k, int numOperations);=;=You are given an integer array nums and two integers k and numOperations.
+
+You must perform an operation numOperations times on nums, where in each operation you:
+
+Select an index i that was not selected in any previous operations.
+Add an integer in the range [-k, k] to nums[i].
+Return the maximum possible frequency of any element in nums after performing the operations.
+
+ 
+
+Example 1:
+
+Input: nums = [1,4,5], k = 1, numOperations = 2
+
+Output: 2
+
+Explanation:
+
+We can achieve a maximum frequency of two by:
+
+Adding 0 to nums[1]. nums becomes [1, 4, 5].
+Adding -1 to nums[2]. nums becomes [1, 4, 4].
+Example 2:
+
+Input: nums = [5,11,20,20], k = 5, numOperations = 1
+
+Output: 2
+
+Explanation:
+
+We can achieve a maximum frequency of two by:
+
+Adding 0 to nums[1].
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105
+0 <= k <= 105
+0 <= numOperations <= nums.length;=;=https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027196/simple-sliding-window-approach-by-thatsr-gbmo/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027282/javacpython-two-cases-by-lee215-p2a9/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027187/on-solution-easy-to-understand-by-jxt1nn-4wno/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6048366/python3cjava-sweep-line-detail-explanati-erey/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027150/java-clean-simple-tricky-solution-by-shr-gr0l/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027678/easy-range-concept-on-solution-beats-100-39ab/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027787/very-simple-treemap-solution-for-q2-and-lgndv/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6442168/java-simple-solution-faster-than-97-pref-s21k/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027384/java-beats-100-mlogn-binary-search-by-7b-qllf/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027132/sliding-windows-and-counting-by-0x4c0de-8qr8/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027165/simple-prefix-sum-solutions-for-both-b-a-vtn2/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027217/c-java-kotlin-simple-binary-search-solut-kb6v/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6040087/java-4ms-beats-100-on-space-and-time-usi-zfef/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6027291/beats-100-java-solution-optimum-solution-wl77/;;https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/solutions/6288157/java-solution-using-hashing-and-prefix-s-68i7/;;;=;==;=;=;

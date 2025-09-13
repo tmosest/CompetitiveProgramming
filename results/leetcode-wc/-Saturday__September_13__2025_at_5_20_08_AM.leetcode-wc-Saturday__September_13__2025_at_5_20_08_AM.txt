@@ -1,0 +1,27 @@
+1053. Previous Permutation With One Swap;=;=Medium;=;=public int[] prevPermOpt1(int[] arr);=;=Given an array of positive integers arr (not necessarily distinct), return the lexicographically largest permutation that is smaller than arr, that can be made with exactly one swap. If it cannot be done, then return the same array.
+
+Note that a swap exchanges the positions of two numbers arr[i] and arr[j]
+
+ 
+
+Example 1:
+
+Input: arr = [3,2,1]
+Output: [3,1,2]
+Explanation: Swapping 2 and 1.
+Example 2:
+
+Input: arr = [1,1,5]
+Output: [1,1,5]
+Explanation: This is already the smallest permutation.
+Example 3:
+
+Input: arr = [1,9,4,6,7]
+Output: [1,7,4,6,9]
+Explanation: Swapping 9 and 7.
+ 
+
+Constraints:
+
+1 <= arr.length <= 104
+1 <= arr[i] <= 104;=;=https://leetcode.com/problems/previous-permutation-with-one-swap/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/6995028/previous-permutation-logic-by-soujitdas6-kaw5/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/516381/pythonjavac-easy-to-understand-on-soluti-vy1y/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/2195852/java-0ms-100-by-user4360tv-hc5x/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/2146119/java-solution-0ms-runtime-by-aayushkumar-60hz/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/2079912/easy-beats-100-java-by-dhurka-pdk6/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/1318799/easy-to-understand-java-solution-beats-1-tpp7/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/1491590/java-detailed-explanation-runtime-0-ms-m-bz2q/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/695137/java-solution-on-100-faster-by-darpanjbo-8esz/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/3340990/java-100-faster-with-explaination-by-nik-p4rn/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/2518550/java-simple-solution-on-by-1005155946-abkk/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/747424/easy-java-solutions-with-explanation-by-6wzmh/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/6539316/java-easy-by-navalbihani15-uucj/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/6652000/simliler-to-the-nextpermutation-by-tharu-7t14/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/6188443/simple-brute-force-beats-100-by-darpan20-bh3c/;;https://leetcode.com/problems/previous-permutation-with-one-swap/solutions/5805740/java-greedy-algo-by-harshit0013-hvfn/;;;=;==;=;=;

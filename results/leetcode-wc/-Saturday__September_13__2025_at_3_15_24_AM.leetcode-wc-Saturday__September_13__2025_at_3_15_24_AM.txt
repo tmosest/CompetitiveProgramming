@@ -1,0 +1,27 @@
+1871. Jump Game VII;=;=Medium;=;=public boolean canReach(String s, int minJump, int maxJump);=;=You are given a 0-indexed binary string s and two integers minJump and maxJump. In the beginning, you are standing at index 0, which is equal to '0'. You can move from index i to index j if the following conditions are fulfilled:
+
+i + minJump <= j <= min(i + maxJump, s.length - 1), and
+s[j] == '0'.
+Return true if you can reach index s.length - 1 in s, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: s = "011010", minJump = 2, maxJump = 3
+Output: true
+Explanation:
+In the first step, move from index 0 to index 3. 
+In the second step, move from index 3 to index 5.
+Example 2:
+
+Input: s = "01101110", minJump = 2, maxJump = 3
+Output: false
+ 
+
+Constraints:
+
+2 <= s.length <= 105
+s[i] is either '0' or '1'.
+s[0] == '0'
+1 <= minJump <= maxJump < s.length;=;=https://leetcode.com/problems/jump-game-vii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/jump-game-vii/solutions/1236272/java-bfs-detailed-analysis-on-bfs-soluti-fnqg/;;https://leetcode.com/problems/jump-game-vii/solutions/6868809/easy-to-understand-explained-with-commen-jx5m/;;https://leetcode.com/problems/jump-game-vii/solutions/1622748/explained-java-solution-beat-100-dp-slid-m5bn/;;https://leetcode.com/problems/jump-game-vii/solutions/1343522/simple-java-solution-on-without-dp-by-hx-4ivm/;;https://leetcode.com/problems/jump-game-vii/solutions/6455138/java-solution-by-harsh123009-drxz/;;https://leetcode.com/problems/jump-game-vii/solutions/3723039/java-easy-solution-by-stefan__99-v5wc/;;https://leetcode.com/problems/jump-game-vii/solutions/3686960/java-easy-100-dynamic-programming-slidin-qcmx/;;https://leetcode.com/problems/jump-game-vii/solutions/4321033/java-dp-optimized-using-deque-on-by-doub-kvd8/;;https://leetcode.com/problems/jump-game-vii/solutions/2258172/java-all-jump-game-solutions-by-2000shiv-hlsm/;;https://leetcode.com/problems/jump-game-vii/solutions/1225328/java-sliding-window-2ms-and-simple-dp-8m-90me/;;https://leetcode.com/problems/jump-game-vii/solutions/2080362/java-bfs-solution-by-subham_09-hti6/;;https://leetcode.com/problems/jump-game-vii/solutions/1224793/simple-linear-scan-of-array-on-by-marist-1sde/;;https://leetcode.com/problems/jump-game-vii/solutions/3274449/c-java-bi-directional-bfs-on-by-purifish-nfv0/;;https://leetcode.com/problems/jump-game-vii/solutions/2639560/is-it-the-testcase-is-right-by-pavan2001-ihko/;;https://leetcode.com/problems/jump-game-vii/solutions/4257986/bfs-greedy-on-simple-java-solution-by-ga-bo8l/;;;=;==;=;=;

@@ -1,0 +1,28 @@
+1120. Maximum Average Subtree;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public double maximumAverageSubtree(TreeNode root);=;=Given the root of a binary tree, return the maximum average value of a subtree of that tree. Answers within 10-5 of the actual answer will be accepted.
+
+A subtree of a tree is any node of that tree plus all its descendants.
+
+The average value of a tree is the sum of its values, divided by the number of nodes.
+
+ 
+
+Example 1:
+
+
+Input: root = [5,6,1]
+Output: 6.00000
+Explanation: 
+For the node with value = 5 we have an average of (5 + 6 + 1) / 3 = 4.
+For the node with value = 6 we have an average of 6 / 1 = 6.
+For the node with value = 1 we have an average of 1 / 1 = 1.
+So the answer is 6 which is the maximum.
+Example 2:
+
+Input: root = [0,null,1]
+Output: 1.00000
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 104].
+0 <= Node.val <= 105;=;=https://leetcode.com/problems/maximum-average-subtree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-average-subtree/solutions/715694/java-0ms-simple-by-shuangpan-8pju/;;https://leetcode.com/problems/maximum-average-subtree/solutions/4239219/easy-and-understandable-code-by-using-df-tqj4/;;https://leetcode.com/problems/maximum-average-subtree/solutions/7153424/900012202-by-saikrishna_vemaraju-ugti/;;https://leetcode.com/problems/maximum-average-subtree/solutions/951340/clear-simple-dfs-by-limitless_f-b3lv/;;https://leetcode.com/problems/maximum-average-subtree/solutions/4387446/java-dfs-beats-100-of-the-runtime-by-pee-ep3d/;;https://leetcode.com/problems/maximum-average-subtree/solutions/653964/100-java-for-people-still-understanding-rnxoi/;;https://leetcode.com/problems/maximum-average-subtree/solutions/447568/java-easy-to-understand-using-double-arr-6r8n/;;https://leetcode.com/problems/maximum-average-subtree/solutions/812077/clean-code-100-by-3l33tc0d34-un07/;;https://leetcode.com/problems/maximum-average-subtree/solutions/6900604/max-avg-subtree-java-by-lc_sai_07-ofu1/;;https://leetcode.com/problems/maximum-average-subtree/solutions/5866100/easy-java-100-solution-by-dqzhang2718-61cz/;;https://leetcode.com/problems/maximum-average-subtree/solutions/5838236/simple-java-solution-by-sakshikishore-934g/;;https://leetcode.com/problems/maximum-average-subtree/solutions/5263346/beats-100-elegant-recursive-solution-by-u9p15/;;https://leetcode.com/problems/maximum-average-subtree/solutions/5341396/java-dfs-100-faster-solution-by-tbekpro-iag3/;;https://leetcode.com/problems/maximum-average-subtree/solutions/5239335/0-ms-and-100-beat-java-solution-by-codek-p7wd/;;https://leetcode.com/problems/maximum-average-subtree/solutions/4888691/beats-100-recursive-clean-easy-java-solu-whpk/;;;=;==;=;=;

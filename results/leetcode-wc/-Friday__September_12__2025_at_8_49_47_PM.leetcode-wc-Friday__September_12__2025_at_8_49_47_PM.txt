@@ -1,0 +1,36 @@
+2446. Determine if Two Events Have Conflict;=;=Easy;=;=public boolean haveConflict(String[] event1, String[] event2);=;=You are given two arrays of strings that represent two inclusive events that happened on the same day, event1 and event2, where:
+
+event1 = [startTime1, endTime1] and
+event2 = [startTime2, endTime2].
+Event times are valid 24 hours format in the form of HH:MM.
+
+A conflict happens when two events have some non-empty intersection (i.e., some moment is common to both events).
+
+Return true if there is a conflict between two events. Otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: event1 = ["01:15","02:00"], event2 = ["02:00","03:00"]
+Output: true
+Explanation: The two events intersect at time 2:00.
+Example 2:
+
+Input: event1 = ["01:00","02:00"], event2 = ["01:20","03:00"]
+Output: true
+Explanation: The two events intersect starting from 01:20 to 02:00.
+Example 3:
+
+Input: event1 = ["10:00","11:00"], event2 = ["14:00","15:00"]
+Output: false
+Explanation: The two events do not intersect.
+ 
+
+Constraints:
+
+event1.length == event2.length == 2
+event1[i].length == event2[i].length == 5
+startTime1 <= endTime1
+startTime2 <= endTime2
+All the event times follow the HH:MM format.;=;=https://leetcode.com/problems/determine-if-two-events-have-conflict/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/2734120/javacpython-easy-1-liner-solutions-by-le-sdar/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/2734207/java-1-liner-100-faster-by-ashish_prakas-hv91/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/7018263/very-easy-beats-100-by-by5z8xjsfw-reqd/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/6975906/easy-peasy-java-code-by-arunsainarla-s83n/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/6322220/3-lines-solution-100-beats-java-by-user8-mm03/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/6682351/in-one-line-compareto-easy-by-sairangine-vbk9/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/6540159/java-easy-100-solution-1-line-by-ytchoua-v8e0/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/6451731/beats-100-1-line-of-code-simple-and-easy-ykjg/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/6035731/java-solution-beats-10000-by-chandranshu-v9o8/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/5742554/javajsts-solution-jw-by-specter01wj-y6ay/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/6431717/simple-java-5-ms-by-dsuryaprakash89-gbau/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/2734247/java-easy-concept-for-all-time-questions-xfi4/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/2734280/java-easy-to-understand-100-faster-solut-hsh8/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/4386256/beats-100-java-solution-with-comments-by-in9h/;;https://leetcode.com/problems/determine-if-two-events-have-conflict/solutions/2734881/pythonjsjavac-simple-sol-for-beginner-w-f5q58/;;;=;==;=;=;

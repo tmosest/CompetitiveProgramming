@@ -1,0 +1,31 @@
+2311. Longest Binary Subsequence Less Than or Equal to K;=;=Medium;=;=public int longestSubsequence(String s, int k);=;=You are given a binary string s and a positive integer k.
+
+Return the length of the longest subsequence of s that makes up a binary number less than or equal to k.
+
+Note:
+
+The subsequence can contain leading zeroes.
+The empty string is considered to be equal to 0.
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+ 
+
+Example 1:
+
+Input: s = "1001010", k = 5
+Output: 5
+Explanation: The longest subsequence of s that makes up a binary number less than or equal to 5 is "00010", as this number is equal to 2 in decimal.
+Note that "00100" and "00101" are also possible, which are equal to 4 and 5 in decimal, respectively.
+The length of this subsequence is 5, so 5 is returned.
+Example 2:
+
+Input: s = "00101001", k = 1
+Output: 6
+Explanation: "000001" is the longest subsequence of s that makes up a binary number less than or equal to 1, as this number is equal to 1 in decimal.
+The length of this subsequence is 6, so 6 is returned.
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s[i] is either '0' or '1'.
+1 <= k <= 109;=;=https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6885164/beats-100-step-by-step-visualization-jav-pt6r/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6886036/greedy-but-smart-longest-binary-subseque-g4rm/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/2168423/on-by-votrubac-4xyz/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6885885/optimal-solution-greedy-approach-no-dp-b-b1ew/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6886617/cpp-java-python-go-greedy-100-beats-easy-fxyz/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6886654/simple-intuitive-solution-java-no-recuri-m2ss/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6887085/intuitive-code-beats-100-by-omkaarr_01-bavg/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6886451/easy-intutive-approach-by-aditya7483thak-kljd/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6886066/longest-binary-subsequence-less-than-or-063o6/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6886035/100-time-space-greedy-right-to-left-on-o-hxex/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6889027/detailed-observation-analysis-how-to-app-shr9/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6888505/longest-binary-subsequence-under-budget-hd303/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6885895/simple-greedy-approach-by-python_champ12-139f/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6886410/greedy-one-pass-beats-100-beginner-frien-p1m0/;;https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6886347/longest-binary-subsequence-k-greedy-appr-95i0/;;;=;==;=;=;

@@ -1,0 +1,43 @@
+3332. Maximum Points Tourist Can Earn;=;=Medium;=;=public int maxScore(int n, int k, int[][] stayScore, int[][] travelScore);=;=You are given two integers, n and k, along with two 2D integer arrays, stayScore and travelScore.
+
+A tourist is visiting a country with n cities, where each city is directly connected to every other city. The tourist's journey consists of exactly k 0-indexed days, and they can choose any city as their starting point.
+
+Each day, the tourist has two choices:
+
+Stay in the current city: If the tourist stays in their current city curr during day i, they will earn stayScore[i][curr] points.
+Move to another city: If the tourist moves from their current city curr to city dest, they will earn travelScore[curr][dest] points.
+Return the maximum possible points the tourist can earn.
+
+ 
+
+Example 1:
+
+Input: n = 2, k = 1, stayScore = [[2,3]], travelScore = [[0,2],[1,0]]
+
+Output: 3
+
+Explanation:
+
+The tourist earns the maximum number of points by starting in city 1 and staying in that city.
+
+Example 2:
+
+Input: n = 3, k = 2, stayScore = [[3,4,2],[2,1,2]], travelScore = [[0,2,1],[2,0,4],[3,2,0]]
+
+Output: 8
+
+Explanation:
+
+The tourist earns the maximum number of points by starting in city 1, staying in that city on day 0, and traveling to city 2 on day 1.
+
+ 
+
+Constraints:
+
+1 <= n <= 200
+1 <= k <= 200
+n == travelScore.length == travelScore[i].length == stayScore[i].length
+k == stayScore.length
+1 <= stayScore[i][j] <= 100
+0 <= travelScore[i][j] <= 100
+travelScore[i][i] == 0;=;=https://leetcode.com/problems/maximum-points-tourist-can-earn/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-points-tourist-can-earn/solutions/6063692/python3-8-lines-dp-ts-99-84-by-spaulding-usx3/;;https://leetcode.com/problems/maximum-points-tourist-can-earn/solutions/6228772/c-java-simple-dp-solution-by-kreakemp-ia8m/;;https://leetcode.com/problems/maximum-points-tourist-can-earn/solutions/5971246/java-dp-memo-2-states-time-100-space-100-o5jm/;;https://leetcode.com/problems/maximum-points-tourist-can-earn/solutions/6323600/dp-by-chuko-6ix6/;;https://leetcode.com/problems/maximum-points-tourist-can-earn/solutions/7167709/dp-okn-by-gitchuan-hc43/;;https://leetcode.com/problems/maximum-points-tourist-can-earn/solutions/6906706/maximum-points-tourist-can-earn-by-aakas-j5i9/;;https://leetcode.com/problems/maximum-points-tourist-can-earn/solutions/6275153/java-explained-quickest-dp-memo-solution-g1j0/;;;=;==;=;=;

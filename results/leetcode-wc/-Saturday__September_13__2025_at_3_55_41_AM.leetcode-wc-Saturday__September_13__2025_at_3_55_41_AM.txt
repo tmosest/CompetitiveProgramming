@@ -1,0 +1,44 @@
+2313. Minimum Flips in Binary Tree to Get Result;=;=Hard;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public int minimumFlips(TreeNode root, boolean result);=;=You are given the root of a binary tree with the following properties:
+
+Leaf nodes have either the value 0 or 1, representing false and true respectively.
+Non-leaf nodes have either the value 2, 3, 4, or 5, representing the boolean operations OR, AND, XOR, and NOT, respectively.
+You are also given a boolean result, which is the desired result of the evaluation of the root node.
+
+The evaluation of a node is as follows:
+
+If the node is a leaf node, the evaluation is the value of the node, i.e. true or false.
+Otherwise, evaluate the node's children and apply the boolean operation of its value with the children's evaluations.
+In one operation, you can flip a leaf node, which causes a false node to become true, and a true node to become false.
+
+Return the minimum number of operations that need to be performed such that the evaluation of root yields result. It can be shown that there is always a way to achieve result.
+
+A leaf node is a node that has zero children.
+
+Note: NOT nodes have either a left child or a right child, but other non-leaf nodes have both a left child and a right child.
+
+ 
+
+Example 1:
+
+
+Input: root = [3,5,4,2,null,1,1,1,0], result = true
+Output: 2
+Explanation:
+It can be shown that a minimum of 2 nodes have to be flipped to make the root of the tree
+evaluate to true. One way to achieve this is shown in the diagram above.
+Example 2:
+
+Input: root = [0], result = false
+Output: 0
+Explanation:
+The root of the tree already evaluates to false, so 0 nodes have to be flipped.
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 105].
+0 <= Node.val <= 5
+OR, AND, and XOR nodes have 2 children.
+NOT nodes have 1 child.
+Leaf nodes have a value of 0 or 1.
+Non-leaf nodes have a value of 2, 3, 4, or 5.;=;=https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/6432879/java-dfs-beat-100-detailed-introduction-45byq/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/6405393/java-on-solution-beats-100-by-ayushwant-fwdy/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/6070255/dfs-beats-97-by-ruinan-0nzm/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/5819036/easy-readable-java-code-by-murmur76-bbc7/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/5614225/clean-java-code-by-nsharma03-5klu/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/5068997/java-oop-simple-oop-solution-w-comments-df0v6/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/4866277/java-dfs-on-with-explanation-by-blath-8qv5/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/5327935/java-dfs-using-map-for-dp-on-time-comple-jcht/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/4468479/java-dfs-memo-easy-understand-solution-b-x2b9/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/4018739/simple-dfs-and-dp-by-aayush96-r74v/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/3925051/java-dp-by-sslel-l7jz/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/3048780/easy-java-on-solution-with-explanation-b-6clj/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/3048779/easy-java-on-solution-with-explanation-b-sk42/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/2256064/java-level-order-traversal-dynamic-progr-54vu/;;https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/solutions/2208811/java-readable-clean-solution-by-student2-w1gi/;;;=;==;=;=;

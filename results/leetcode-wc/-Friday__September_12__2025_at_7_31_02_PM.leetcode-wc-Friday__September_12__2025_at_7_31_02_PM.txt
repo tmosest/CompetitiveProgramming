@@ -1,0 +1,32 @@
+2743. Count Substrings Without Repeating Character;=;=Medium;=;=public int numberOfSpecialSubstrings(String s);=;=You are given a string s consisting only of lowercase English letters. We call a substring special if it contains no character which has occurred at least twice (in other words, it does not contain a repeating character). Your task is to count the number of special substrings. For example, in the string "pop", the substring "po" is a special substring, however, "pop" is not special (since 'p' has occurred twice).
+
+Return the number of special substrings.
+
+A substring is a contiguous sequence of characters within a string. For example, "abc" is a substring of "abcd", but "acd" is not.
+
+ 
+
+Example 1:
+
+Input: s = "abcd"
+Output: 10
+Explanation: Since each character occurs once, every substring is a special substring. We have 4 substrings of length one, 3 of length two, 2 of length three, and 1 substring of length four. So overall there are 4 + 3 + 2 + 1 = 10 special substrings.
+Example 2:
+
+Input: s = "ooo"
+Output: 3
+Explanation: Any substring with a length of at least two contains a repeating character. So we have to count the number of substrings of length one, which is 3.
+Example 3:
+
+Input: s = "abab"
+Output: 7
+Explanation: Special substrings are as follows (sorted by their start positions):
+Special substrings of length 1: "a", "b", "a", "b"
+Special substrings of length 2: "ab", "ba", "ab"
+And it can be shown that there are no special substrings with a length of at least three. So the answer would be 4 + 3 = 7.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of lowercase English letters;=;=https://leetcode.com/problems/count-substrings-without-repeating-character/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/3670652/cjavapython-sliding-window-w-detailed-ex-2u4p/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5356450/java-sliding-window-on-time-o1-space-by-3xs8t/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5803592/sliding-window-java-on-by-himanshu_s1394-df3e/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5350868/java-10ms-on-two-pointers-jump-the-left-miofi/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5235178/sliding-window-easy-to-understand-by-hua-bleu/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5061542/java-sliding-window-by-robertskonieczny-xlsy/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/4934144/simple-java-solution-using-2-pointers-be-au3o/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/4307014/sliding-window-by-gokulsreekumar2-v4eb/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5532699/sliding-window-java-by-nkvb-4ou5/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5479496/intuitive-easy-understanding-sliding-win-1n9v/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5350156/python-java-step-by-step-examples-o1-spa-mo1b/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5349959/sliding-window-solution-by-n00bs404-elys/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/5349388/java-easy-to-follow-sliding-window-by-bo-bv3p/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/4307010/sliding-window-by-gokulsreekumar2-lc8a/;;https://leetcode.com/problems/count-substrings-without-repeating-character/solutions/4012006/simple-java-solution-by-sakshikishore-pg60/;;;=;==;=;=;

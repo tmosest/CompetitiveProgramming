@@ -1,0 +1,41 @@
+3541. Find Most Frequent Vowel and Consonant;=;=Easy;=;=public int maxFreqSum(String s)         int[] vowelFreq = new int[26], consonantFreq = new int[26];                boolean[] isVowel = new boolean[26];        char[] vowels = 'a','e','i','o','u';        for (char v : vowels)             isVowel[v - 'a'] = true;                        for (char c : s.toCharArray())             int idx = c - 'a';            if (isVowel[idx])                 vowelFreq[idx]++;             else                 consonantFreq[idx]++;                                    int maxVowel = 0;        for (int freq : vowelFreq)             if (freq > maxVowel)                 maxVowel = freq;                                    int maxConsonant = 0;        for (int freq : consonantFreq)             if (freq > maxConsonant)                 maxConsonant = freq;                                    return maxVowel + maxConsonant;;=;=You are given a string s consisting of lowercase English letters ('a' to 'z').
+
+Your task is to:
+
+Find the vowel (one of 'a', 'e', 'i', 'o', or 'u') with the maximum frequency.
+Find the consonant (all other letters excluding vowels) with the maximum frequency.
+Return the sum of the two frequencies.
+
+Note: If multiple vowels or consonants have the same maximum frequency, you may choose any one of them. If there are no vowels or no consonants in the string, consider their frequency as 0.
+
+The frequency of a letter x is the number of times it occurs in the string.
+ 
+
+Example 1:
+
+Input: s = "successes"
+
+Output: 6
+
+Explanation:
+
+The vowels are: 'u' (frequency 1), 'e' (frequency 2). The maximum frequency is 2.
+The consonants are: 's' (frequency 4), 'c' (frequency 2). The maximum frequency is 4.
+The output is 2 + 4 = 6.
+Example 2:
+
+Input: s = "aeiaeia"
+
+Output: 3
+
+Explanation:
+
+The vowels are: 'a' (frequency 3), 'e' ( frequency 2), 'i' (frequency 2). The maximum frequency is 3.
+There are no consonants in s. Hence, maximum consonant frequency = 0.
+The output is 3 + 0 = 3.
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s consists of lowercase English letters only.;=;=https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/description/?envType=daily-question&envId=2025-09-13;=;=https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7183852/clean-explanation-implementation-example-kw7j/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7183835/simple-clean-100-beats-easy-explanation-1zygw/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7184072/single-pass-clean-code-and-explanation-e-07k3/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7185657/report-spammers-kedar-and-muthu-vrn-by-z-nxpb/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7184475/easy-c-java-python-solution-of-100-runti-g53s/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7183922/java-c-c-python-beats-100-most-effiecien-7vuy/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7183879/beats-100-javac-python-intutition-approa-dch1/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7184125/100-beat-freq-array-approach-by-vishal-s-1iva/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7186280/maximum-frequency-sum-of-vowel-and-conso-ptml/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7185399/easy-code-must-try-code-in-java-by-notad-tqdx/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7184981/100-easy-problem-with-easy-approach-with-bucc/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7184768/beats-100-super-easy-solution-java-c-pyt-53yv/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7184632/fast-and-clear-with-iterations-in-tables-ivoa/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7184163/easy-java-solution-beating-100-beginner-nhnd9/;;https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7184050/most-simple-and-easy-solution-unordered_-354k/;;;=;==;=;=;

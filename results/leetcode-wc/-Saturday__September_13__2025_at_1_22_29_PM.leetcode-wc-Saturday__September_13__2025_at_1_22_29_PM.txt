@@ -1,0 +1,24 @@
+1363. Largest Multiple of Three;=;=Hard;=;=public String largestMultipleOfThree(int[] digits);=;=Given an array of digits digits, return the largest multiple of three that can be formed by concatenating some of the given digits in any order. If there is no answer return an empty string.
+
+Since the answer may not fit in an integer data type, return the answer as a string. Note that the returning answer must not contain unnecessary leading zeros.
+
+ 
+
+Example 1:
+
+Input: digits = [8,1,9]
+Output: "981"
+Example 2:
+
+Input: digits = [8,6,7,1,0]
+Output: "8760"
+Example 3:
+
+Input: digits = [1]
+Output: ""
+ 
+
+Constraints:
+
+1 <= digits.length <= 104
+0 <= digits[i] <= 9;=;=https://leetcode.com/problems/largest-multiple-of-three/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-multiple-of-three/solutions/692837/java-beats-98-solutions-with-easy-to-und-6cx3/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/517986/java-onlogn-sort-bottom-up-dp-by-hdchen-bndk/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/4253659/accepted-java-code-beats-100-by-thilaknv-gldt/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/2999298/largest-multiple-of-three-solution-java-sqh69/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/1892039/java-easy-to-understand-math-logic-by-ra-vsiz/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/2295627/largest-multiple-of-three-java-trick-eas-ttqe/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/517814/java-easy-to-understand-solution-using-b-1f8l/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/6289209/best-approach-for-beginners-using-java-b-z0jd/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/5845599/simple-solution-by-ayush2375-7cju/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/5762384/largest-multiple-of-three-by-shaludroid-srxb/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/5762381/largest-multiple-of-three-by-shaludroid-8oaq/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/5408985/simple-java-solution-by-sakshikishore-m2wl/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/5197255/dynamic-programming-by-harshita_tyagi-wsyy/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/5197254/dynamic-programming-by-harshita_tyagi-mf5s/;;https://leetcode.com/problems/largest-multiple-of-three/solutions/4995343/greedy-approach-ts-onkok-runtime-5326-5-a0maq/;;;=;==;=;=;

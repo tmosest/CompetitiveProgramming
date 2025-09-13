@@ -1,0 +1,26 @@
+2652. Sum Multiples;=;=Easy;=;=public int sumOfMultiples(int n);=;=Given a positive integer n, find the sum of all integers in the range [1, n] inclusive that are divisible by 3, 5, or 7.
+
+Return an integer denoting the sum of all numbers in the given range satisfying the constraint.
+
+ 
+
+Example 1:
+
+Input: n = 7
+Output: 21
+Explanation: Numbers in the range [1, 7] that are divisible by 3, 5, or 7 are 3, 5, 6, 7. The sum of these numbers is 21.
+Example 2:
+
+Input: n = 10
+Output: 40
+Explanation: Numbers in the range [1, 10] that are divisible by 3, 5, or 7 are 3, 5, 6, 7, 9, 10. The sum of these numbers is 40.
+Example 3:
+
+Input: n = 9
+Output: 30
+Explanation: Numbers in the range [1, 9] that are divisible by 3, 5, or 7 are 3, 5, 6, 7, 9. The sum of these numbers is 30.
+ 
+
+Constraints:
+
+1 <= n <= 103;=;=https://leetcode.com/problems/sum-multiples/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-multiples/solutions/7184955/easy-code-for-solve-this-problem-by-4_k4-pt6u/;;https://leetcode.com/problems/sum-multiples/solutions/7175541/beginner-friendly-solution-in-java-by-hi-5olo/;;https://leetcode.com/problems/sum-multiples/solutions/7087646/100-beats-fast-and-clear-with-step-by-st-tkxu/;;https://leetcode.com/problems/sum-multiples/solutions/7105075/sum-multiples-by-e_deepika24-b1vt/;;https://leetcode.com/problems/sum-multiples/solutions/7085317/optimal-java-solution-beats-99-runtime-1-kaer/;;https://leetcode.com/problems/sum-multiples/solutions/7084974/sum-multiples-java-solution-by-g_agalya-zlwl/;;https://leetcode.com/problems/sum-multiples/solutions/7050129/easy-code-by-prajanthkumar-vx3b/;;https://leetcode.com/problems/sum-multiples/solutions/7050033/easy-code-for-beginners-and-understandab-13b7/;;https://leetcode.com/problems/sum-multiples/solutions/7026744/java-easy-solution-2ms-by-akashraj06-xyqj/;;https://leetcode.com/problems/sum-multiples/solutions/7024844/simple-logic-beats-9539-2ms-easy-java-co-y9ne/;;https://leetcode.com/problems/sum-multiples/solutions/6193939/beats-100-o1-in-time-and-space-complexit-f436/;;https://leetcode.com/problems/sum-multiples/solutions/3446052/leetcode-the-hard-way-explained-line-by-99rpn/;;https://leetcode.com/problems/sum-multiples/solutions/6866505/java-solution-by-shubhamxgupta-pqy3/;;https://leetcode.com/problems/sum-multiples/solutions/3445710/simple-java-solution-by-siddhant_1602-uyyj/;;https://leetcode.com/problems/sum-multiples/solutions/3445807/easy-solution-full-beginner-friendly-by-ms7wd/;;;=;==;=;=;

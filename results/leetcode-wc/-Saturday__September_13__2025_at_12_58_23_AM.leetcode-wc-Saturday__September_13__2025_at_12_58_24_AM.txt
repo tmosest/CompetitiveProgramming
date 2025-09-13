@@ -1,0 +1,45 @@
+2116. Check if a Parentheses String Can Be Valid;=;=Medium;=;=public boolean canBeValid(String s, String locked);=;=A parentheses string is a non-empty string consisting only of '(' and ')'. It is valid if any of the following conditions is true:
+
+It is ().
+It can be written as AB (A concatenated with B), where A and B are valid parentheses strings.
+It can be written as (A), where A is a valid parentheses string.
+You are given a parentheses string s and a string locked, both of length n. locked is a binary string consisting only of '0's and '1's. For each index i of locked,
+
+If locked[i] is '1', you cannot change s[i].
+But if locked[i] is '0', you can change s[i] to either '(' or ')'.
+Return true if you can make s a valid parentheses string. Otherwise, return false.
+
+ 
+
+Example 1:
+
+
+Input: s = "))()))", locked = "010100"
+Output: true
+Explanation: locked[1] == '1' and locked[3] == '1', so we cannot change s[1] or s[3].
+We change s[0] and s[4] to '(' while leaving s[2] and s[5] unchanged to make s valid.
+Example 2:
+
+Input: s = "()()", locked = "0000"
+Output: true
+Explanation: We do not need to make any changes because s is already valid.
+Example 3:
+
+Input: s = ")", locked = "0"
+Output: false
+Explanation: locked permits us to change s[0]. 
+Changing s[0] to either '(' or ')' will not make s valid.
+Example 4:
+
+Input: s = "(((())(((())", locked = "111111010111"
+Output: true
+Explanation: locked permits us to change s[6] and s[8]. 
+We change s[6] and s[8] to ')' to make s valid.
+ 
+
+Constraints:
+
+n == s.length == locked.length
+1 <= n <= 105
+s[i] is either '(' or ')'.
+locked[i] is either '0' or '1'.;=;=https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6267067/simple-two-loop-detailed-solution-by-sum-uiky/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/1646594/left-to-right-and-right-to-left-by-votru-7a05/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6267163/beats-99-3-unique-approaches-to-check-if-uhyp/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/1646582/python3-java-c-counting-brackets-on-by-t-ai0i/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6267399/beats-90-valid-parentheses-checker-effic-kqic/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6268280/optimal-solution-beats-100-c-java-python-28ca/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6268033/java-code-by-ayeshakhan7-3wlh/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6758142/simple-java-solution-counting-by-rohan_s-cga6/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6268236/best-solution-for-arrays-in-c-python-and-zrgv/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6269963/java2-pass-solutioneasy-by-mani-26-q6tc/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6268494/beats-super-easy-beginners-with-diagram-205cd/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6269765/simple-and-easy-way-by-yadav_akash-vaey/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6268497/problem-approach-explained-java-stack-on-qb4b/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/1646716/java-short-and-intuitive-solution-on-by-i02ax/;;https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/solutions/6270365/greedy-string-1-pass-beats-91-beginners-qfx8b/;;;=;==;=;=;

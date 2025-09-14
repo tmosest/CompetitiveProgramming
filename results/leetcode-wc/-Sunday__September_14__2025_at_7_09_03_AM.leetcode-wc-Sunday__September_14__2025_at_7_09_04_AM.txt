@@ -1,0 +1,36 @@
+2014. Longest Subsequence Repeated k Times;=;=Hard;=;=public String longestSubsequenceRepeatedK(String s, int k);=;=You are given a string s of length n, and an integer k. You are tasked to find the longest subsequence repeated k times in string s.
+
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+
+A subsequence seq is repeated k times in the string s if seq * k is a subsequence of s, where seq * k represents a string constructed by concatenating seq k times.
+
+For example, "bba" is repeated 2 times in the string "bababcba", because the string "bbabba", constructed by concatenating "bba" 2 times, is a subsequence of the string "bababcba".
+Return the longest subsequence repeated k times in string s. If multiple such subsequences are found, return the lexicographically largest one. If there is no such subsequence, return an empty string.
+
+ 
+
+Example 1:
+
+
+Input: s = "letsleetcode", k = 2
+Output: "let"
+Explanation: There are two longest subsequences repeated 2 times: "let" and "ete".
+"let" is the lexicographically largest one.
+Example 2:
+
+Input: s = "bb", k = 2
+Output: "b"
+Explanation: The longest subsequence repeated 2 times is "b".
+Example 3:
+
+Input: s = "ab", k = 2
+Output: ""
+Explanation: There is no subsequence repeated 2 times. Empty string is returned.
+ 
+
+Constraints:
+
+n == s.length
+2 <= k <= 2000
+2 <= n < min(2001, k * 8)
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/longest-subsequence-repeated-k-times/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6889095/beginner-freindlyjavacpythonjs-by-ashokv-0xy7/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890642/two-approach-with-example-walkthrough-ea-0jur/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890015/longest-subsequence-repeated-k-times-opt-i610/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890404/easy-solution-eng-hing-explained-beats-1-dcvk/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890725/most-efficient-solution-dfs-greedy-and-p-b5wd/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890024/s-by-shhh123-8nah/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6891300/97-beats-fast-and-clear-with-iterations-i928s/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890260/lets-understand-the-simple-intuition-wit-bwin/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890305/java-bottom-up-subsequence-construction-fw2hd/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6893005/beats-96-percent-by-srknzl-2qco/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890623/9057-java-longest-subsequence-repeated-k-dcsg/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6892193/2014longest-subsequence-by-shwetatech22-52as/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6889429/easiest-approach-beginner-friendly-beats-4027/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6891002/hard-with-easy-approach-5-languages-c-py-ttve/;;https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890825/leetcode-2014-longest-subsequence-repeat-goqi/;;;=;==;=;=;

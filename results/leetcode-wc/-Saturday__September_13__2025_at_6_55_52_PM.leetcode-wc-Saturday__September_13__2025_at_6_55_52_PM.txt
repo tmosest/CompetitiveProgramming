@@ -1,0 +1,40 @@
+2023. Number of Pairs of Strings With Concatenation Equal to Target;=;=Medium;=;=public int numOfPairs(String[] nums, String target);=;=Given an array of digit strings nums and a digit string target, return the number of pairs of indices (i, j) (where i != j) such that the concatenation of nums[i] + nums[j] equals target.
+
+ 
+
+Example 1:
+
+Input: nums = ["777","7","77","77"], target = "7777"
+Output: 4
+Explanation: Valid pairs are:
+- (0, 1): "777" + "7"
+- (1, 0): "7" + "777"
+- (2, 3): "77" + "77"
+- (3, 2): "77" + "77"
+Example 2:
+
+Input: nums = ["123","4","12","34"], target = "1234"
+Output: 2
+Explanation: Valid pairs are:
+- (0, 1): "123" + "4"
+- (2, 3): "12" + "34"
+Example 3:
+
+Input: nums = ["1","1","1"], target = "11"
+Output: 6
+Explanation: Valid pairs are:
+- (0, 1): "1" + "1"
+- (1, 0): "1" + "1"
+- (0, 2): "1" + "1"
+- (2, 0): "1" + "1"
+- (1, 2): "1" + "1"
+- (2, 1): "1" + "1"
+ 
+
+Constraints:
+
+2 <= nums.length <= 100
+1 <= nums[i].length <= 100
+2 <= target.length <= 100
+nums[i] and target consist of digits.
+nums[i] and target do not have leading zeros.;=;=https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/7081212/easy-peasy-by-amyy_1256-vuf2/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/1499081/javapython-3-one-pass-onm-hashtable-code-v9zs/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/7000278/count-valid-string-pairs-matching-target-gmwn/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/6956814/easy-solution-for-beginners-by-sagar__26-mjvy/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/1566610/java-on-beats-9941-concise-solution-hash-7ebk/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/6784478/simple-way-try-this-by-sairangineeni-m4y2/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/2508864/java-for-loop-solution-by-sulaymon-dev20-wepx/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/4713493/beginner-friendly-cjavapython-solution-w-jlk8/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/6474857/easy-beginner-friendly-approach-for-begi-53tq/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/5318311/simple-solution-100-working-verified-by-kjs7v/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/3505684/java-hashmap-by-da_arya-hcv6/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/1499246/java-simple-brute-force-solution-stringb-3qy7/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/2643482/java-prefixsuffix-counts-hashmap-by-iamv-3t9z/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/5315013/java-easy-100-solution-by-ytchouar-0ikp/;;https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/solutions/4235557/beginners-friendly-beats-65-by-yashrajsi-wbmv/;;;=;==;=;=;

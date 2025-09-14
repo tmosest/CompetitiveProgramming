@@ -1,0 +1,25 @@
+1228. Missing Number In Arithmetic Progression;=;=Easy;=;=public long maximumStrength(int[] nums, int k)         long[][] dp = new long[k + 1][nums.length + 1];        for (int i = 1; i <= k; i++)             long maxSum = Long.MIN_VALUE /2;            long curr = Long.MIN_VALUE/2;            long multiplier = (i % 2 == 1) ? (k + 1 - i) : (i - 1 - k);            for (int j = i - 1; j < nums.length; j++)                 curr = Math.max(curr + nums[j]  multiplier, dp[i - 1][j] + nums[j]  multiplier);                maxSum = Math.max(maxSum, curr);                dp[i][j + 1] = maxSum;                            return dp[k][nums.length];;=;=In some array arr, the values were in arithmetic progression: the values arr[i + 1] - arr[i] are all equal for every 0 <= i < arr.length - 1.
+
+A value from arr was removed that was not the first or last value in the array.
+
+Given arr, return the removed value.
+
+ 
+
+Example 1:
+
+Input: arr = [5,7,11,13]
+Output: 9
+Explanation: The previous array was [5,7,9,11,13].
+Example 2:
+
+Input: arr = [15,13,12]
+Output: 14
+Explanation: The previous array was [15,14,13,12].
+ 
+
+Constraints:
+
+3 <= arr.length <= 1000
+0 <= arr[i] <= 105
+The given array is guaranteed to be a valid array.;=;=https://leetcode.com/problems/missing-number-in-arithmetic-progression/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/6768302/one-liner-o1-space-by-python_champ123-o02x/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/998671/simple-java-solutionbeats-100-by-coderin-20rh/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/3762887/using-binary-search-by-zoolang1-63ws/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/6811832/java-binary-search-olog-n-beats-100-by-s-mxg5/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/687648/standard-java-solution-on-time-o-1-space-qtyx/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/6434558/java-solution-beats-100-by-user5849fi-tkgn/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/6618028/simple-beginner-friendly-solution-by-sar-vv63/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/6618035/simple-beginner-friendly-solution-by-sar-ulwa/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/6718630/check-the-gap-bw-subarrays-by-tea_lover-yztm/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/6799954/simple-easy-solution-arithmetic-progress-zw89/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/6002231/java-on-solution-by-tbekpro-rt57/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/5636978/javajsts-solution-jw-by-specter01wj-slz4/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/4734572/logn-solution-by-sk4share-haxg/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/4442110/missing-number-in-arithmetic-progression-0lvr/;;https://leetcode.com/problems/missing-number-in-arithmetic-progression/solutions/4066369/simple-java-beats-100-by-aeaydin-1erv/;;;=;==;=;=;

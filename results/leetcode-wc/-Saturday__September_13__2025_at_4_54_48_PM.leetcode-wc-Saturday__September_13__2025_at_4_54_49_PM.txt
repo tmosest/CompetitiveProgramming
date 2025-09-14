@@ -1,0 +1,39 @@
+1202. Smallest String With Swaps;=;=Medium;=;=public String smallestStringWithSwaps(String s, List<List<Integer>> pairs);=;=You are given a string s, and an array of pairs of indices in the string pairs where pairs[i] = [a, b] indicates 2 indices(0-indexed) of the string.
+
+You can swap the characters at any pair of indices in the given pairs any number of times.
+
+Return the lexicographically smallest string that s can be changed to after using the swaps.
+
+ 
+
+Example 1:
+
+Input: s = "dcab", pairs = [[0,3],[1,2]]
+Output: "bacd"
+Explaination: 
+Swap s[0] and s[3], s = "bcad"
+Swap s[1] and s[2], s = "bacd"
+Example 2:
+
+Input: s = "dcab", pairs = [[0,3],[1,2],[0,2]]
+Output: "abcd"
+Explaination: 
+Swap s[0] and s[3], s = "bcad"
+Swap s[0] and s[2], s = "acbd"
+Swap s[1] and s[2], s = "abcd"
+Example 3:
+
+Input: s = "cba", pairs = [[0,1],[1,2]]
+Output: "abc"
+Explaination: 
+Swap s[0] and s[1], s = "bca"
+Swap s[1] and s[2], s = "bac"
+Swap s[0] and s[1], s = "abc"
+ 
+
+Constraints:
+
+1 <= s.length <= 10^5
+0 <= pairs.length <= 10^5
+0 <= pairs[i][0], pairs[i][1] < s.length
+s only contains lower case English letters.;=;=https://leetcode.com/problems/smallest-string-with-swaps/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-string-with-swaps/solutions/7013214/simple-easy-to-understand-solution-using-tjla/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/1985192/java-easy-understanding-by-oye_suraj-da7n/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/387560/java-union-find-with-hashmap-of-priority-4ywq/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/3140242/java-union-find-disjoint-set-union-with-lxdjg/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/6534826/easy-approach-and-easy-to-understandbeat-z6yw/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/1986936/javacpythonjavascriptkotlinswiftontimebe-33bc/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/6398350/done-using-priorityqueuedsu-by-samman_va-9zh3/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/3481384/java-beats-9985-disjoint-set-and-optimis-nbe1/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/1985092/java-solution-99-faster-by-dashadhikary-ub4l/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/1986127/java-union-find-clean-by-fllght-zq7s/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/1505022/java-45ms-intuition-explanation-by-myste-xa2o/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/1986033/java-solution-connected-components-graph-uevm/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/7103956/java_solution-by-rishank1-u6wa/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/1986854/java-union-find-code-by-rajatag03-bedq/;;https://leetcode.com/problems/smallest-string-with-swaps/solutions/1699604/java-concise-solution-by-jai_bh2891-fagm/;;;=;==;=;=;

@@ -1,0 +1,26 @@
+2742. Painting the Walls;=;=Hard;=;=public int paintWalls(int[] cost, int[] time);=;=You are given two 0-indexed integer arrays, cost and time, of size n representing the costs and the time taken to paint n different walls respectively. There are two painters available:
+
+A paid painter that paints the ith wall in time[i] units of time and takes cost[i] units of money.
+A free painter that paints any wall in 1 unit of time at a cost of 0. But the free painter can only be used if the paid painter is already occupied.
+Return the minimum amount of money required to paint the n walls.
+
+ 
+
+Example 1:
+
+Input: cost = [1,2,3,2], time = [1,2,3,2]
+Output: 3
+Explanation: The walls at index 0 and 1 will be painted by the paid painter, and it will take 3 units of time; meanwhile, the free painter will paint the walls at index 2 and 3, free of cost in 2 units of time. Thus, the total cost is 1 + 2 = 3.
+Example 2:
+
+Input: cost = [2,3,4,2], time = [1,1,1,1]
+Output: 4
+Explanation: The walls at index 0 and 3 will be painted by the paid painter, and it will take 2 units of time; meanwhile, the free painter will paint the walls at index 1 and 2, free of cost in 2 units of time. Thus, the total cost is 2 + 2 = 4.
+ 
+
+Constraints:
+
+1 <= cost.length <= 500
+cost.length == time.length
+1 <= cost[i] <= 106
+1 <= time[i] <= 500;=;=https://leetcode.com/problems/painting-the-walls/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/painting-the-walls/solutions/3650707/javacpython-7-lines-knapsack-dp-by-lee21-rg1w/;;https://leetcode.com/problems/painting-the-walls/solutions/4166092/9744easy-solutiondynamic-programming-wit-k3qk/;;https://leetcode.com/problems/painting-the-walls/solutions/4166467/not-hard-video-solution-dynamic-programm-nivw/;;https://leetcode.com/problems/painting-the-walls/solutions/4166155/2-dp-bottom-up-approach-java-c-python-ja-nfvi/;;https://leetcode.com/problems/painting-the-walls/solutions/4166244/beats-9593-within-7-lines-easiest-soluti-g5zm/;;https://leetcode.com/problems/painting-the-walls/solutions/3650446/c-java-python3-top-down-dp-by-tojuna-wcfn/;;https://leetcode.com/problems/painting-the-walls/solutions/3650515/c-java-python-01-knapsack-problem-solve-iydfy/;;https://leetcode.com/problems/painting-the-walls/solutions/4166315/video-solution-dynamic-programming-by-je-wjn6/;;https://leetcode.com/problems/painting-the-walls/solutions/3650426/detailed-dp-in-c-java-python-by-cpcs-c6o1/;;https://leetcode.com/problems/painting-the-walls/solutions/6892403/easy-java-solution-not-beats-well-but-ea-8fa8/;;https://leetcode.com/problems/painting-the-walls/solutions/4166281/ccjavapythonjavascript-beats-100-3-appro-daza/;;https://leetcode.com/problems/painting-the-walls/solutions/6906667/beginner-friendly-intutive-by-ashu_6205-aela/;;https://leetcode.com/problems/painting-the-walls/solutions/3651186/01-knapsack-dp-c-java-by-ayushnemmaniwar-g6mr/;;https://leetcode.com/problems/painting-the-walls/solutions/3650989/java-highly-intuitive-top-down-approach-z6d9n/;;https://leetcode.com/problems/painting-the-walls/solutions/4168388/recursion-memoization-tabulation-by-shad-a8q5/;;;=;==;=;=;

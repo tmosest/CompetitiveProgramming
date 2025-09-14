@@ -1,0 +1,30 @@
+1574. Shortest Subarray to be Removed to Make Array Sorted;=;=Medium;=;=public int findLengthOfShortestSubarray(int[] arr);=;=Given an integer array arr, remove a subarray (can be empty) from arr such that the remaining elements in arr are non-decreasing.
+
+Return the length of the shortest subarray to remove.
+
+A subarray is a contiguous subsequence of the array.
+
+ 
+
+Example 1:
+
+Input: arr = [1,2,3,10,4,2,3,5]
+Output: 3
+Explanation: The shortest subarray we can remove is [10,4,2] of length 3. The remaining elements after that will be [1,2,3,3,5] which are sorted.
+Another correct solution is to remove the subarray [3,10,4].
+Example 2:
+
+Input: arr = [5,4,3,2,1]
+Output: 4
+Explanation: Since the array is strictly decreasing, we can only keep a single element. Therefore we need to remove a subarray of length 4, either [5,4,3,2] or [4,3,2,1].
+Example 3:
+
+Input: arr = [1,2,3]
+Output: 0
+Explanation: The array is already non-decreasing. We do not need to remove any elements.
+ 
+
+Constraints:
+
+1 <= arr.length <= 105
+0 <= arr[i] <= 109;=;=https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046262/beats-10000-easy-and-step-by-step-breakd-1zod/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6047100/beats-100-video-explained-step-by-step-2-aqkl/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046078/on-c-0ms-java-1ms-py3-6ms-beats-10000-tw-0sdj/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046585/easy-simple-approach-shortest-subarray-t-a1d4/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046567/easy-and-simple-solution-beats-100-prefi-n04k/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046938/super-simple-sliding-window-solution-jav-0ln1/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6903468/beginner-friendly-intutive-by-ashu_6205-5tay/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046871/easy-two-pointer-solution-with-explanati-my0x/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046911/shortest-subarray-to-be-removed-easy-sol-rhql/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046503/lets-understand-and-visualize-it-in-simp-u9a1/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046737/0-ms-beat-100-with-explanation-by-saurab-93ea/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046377/monotonic-stack-two-pointers-on-by-naren-j6mu/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6047431/c-java-kotlin-simple-binary-search-solut-dgbc/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6088966/simpill-super-easy-beginners-by-codewith-3j0s/;;https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6046028/1-ms-beats-100-by-ezsnippet_04-7f84/;;;=;==;=;=;

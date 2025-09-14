@@ -1,0 +1,36 @@
+2399. Check Distances Between Same Letters;=;=Easy;=;=publicÊbooleanÊcheckDistances(StringÊs,Êint[]Êdistance);=;=You are given a 0-indexed string s consisting of only lowercase English letters, where each letter in s appears exactly twice. You are also given a 0-indexed integer array distance of length 26.
+
+Each letter in the alphabet is numbered from 0 to 25 (i.e. 'a' -> 0, 'b' -> 1, 'c' -> 2, ... , 'z' -> 25).
+
+In a well-spaced string, the number of letters between the two occurrences of the ith letter is distance[i]. If the ith letter does not appear in s, then distance[i] can be ignored.
+
+Return true if s is a well-spaced string, otherwise return false.
+
+Ê
+
+Example 1:
+
+Input: s = "abaccb", distance = [1,3,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+Output: true
+Explanation:
+- 'a' appears at indices 0 and 2 so it satisfies distance[0] = 1.
+- 'b' appears at indices 1 and 5 so it satisfies distance[1] = 3.
+- 'c' appears at indices 3 and 4 so it satisfies distance[2] = 0.
+Note that distance[3] = 5, but since 'd' does not appear in s, it can be ignored.
+Return true because s is a well-spaced string.
+Example 2:
+
+Input: s = "aa", distance = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+Output: false
+Explanation:
+- 'a' appears at indices 0 and 1 so there are zero letters between them.
+Because distance[0] = 1, s is not a well-spaced string.
+Ê
+
+Constraints:
+
+2 <= s.length <= 52
+s consists only of lowercase English letters.
+Each letter appears in s exactly twice.
+distance.length == 26
+0 <= distance[i] <= 50;=;=https://leetcode.com/problems/check-distances-between-same-letters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-distances-between-same-letters/solutions/2527292/track-first-vs-check-second-by-votrubac-nud0/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/7089595/java-hashmap-easy-to-understand-beginner-sohj/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/6979525/letters-with-social-distancing-beats-100-wksm/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/5052889/3-methods-c-java-python-beginner-friendl-ha9v/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/2527329/hashmap-explained-beginner-friendly-by-c-yekc/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/2527370/last-position-cjava-by-xxvvpp-yh9g/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/7186346/think-twice-before-getting-into-the-solu-jc86/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/2555730/beginner-friendly-javajavascriptpython-s-nn5b/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/2527546/easy-java-solution-map-by-devkd-uxc7/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/2527299/simple-java-solution-by-siddhant_1602-qpsk/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/3793068/beats-in-runtime-beginner-friendly-solut-cubs/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/5925697/easy-java-solution-using-hashmap-beginne-4hm2/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/6991335/easy-to-understand-java-by-snaveenkgm-4trf/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/4189436/java-solution-beats-99-easy-explanation-d59ui/;;https://leetcode.com/problems/check-distances-between-same-letters/solutions/3479424/java-simple-on-solution-by-ytchouar-isrk/;;;=;==;=;=;

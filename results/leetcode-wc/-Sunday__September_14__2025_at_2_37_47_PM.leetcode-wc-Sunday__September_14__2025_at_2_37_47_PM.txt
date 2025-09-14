@@ -1,0 +1,35 @@
+2491. Divide Players Into Teams of Equal Skill;=;=Medium;=;=public long dividePlayers(int[] skill);=;=You are given a positive integer array skill of even length n where skill[i] denotes the skill of the ith player. Divide the players into n / 2 teams of size 2 such that the total skill of each team is equal.
+
+The chemistry of a team is equal to the product of the skills of the players on that team.
+
+Return the sum of the chemistry of all the teams, or return -1 if there is no way to divide the players into teams such that the total skill of each team is equal.
+
+ 
+
+Example 1:
+
+Input: skill = [3,2,5,1,3,4]
+Output: 22
+Explanation: 
+Divide the players into the following teams: (1, 5), (2, 4), (3, 3), where each team has a total skill of 6.
+The sum of the chemistry of all the teams is: 1 * 5 + 2 * 4 + 3 * 3 = 5 + 8 + 9 = 22.
+Example 2:
+
+Input: skill = [3,4]
+Output: 12
+Explanation: 
+The two players form a team with a total skill of 7.
+The chemistry of the team is 3 * 4 = 12.
+Example 3:
+
+Input: skill = [1,1,2,3]
+Output: -1
+Explanation: 
+There is no way to divide the players into teams such that the total skill of each team is equal.
+ 
+
+Constraints:
+
+2 <= skill.length <= 105
+skill.length is even.
+1 <= skill[i] <= 1000;=;=https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5866469/step-by-step-guide-to-divide-players-int-x05q/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5884770/simple-solution-with-explanation-by-tech-h06l/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5866532/efficient-but-brain-f69_beats_100easy-so-d37s/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5866490/why-complicate-things69_beats_100easy-so-e3ke/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5866736/interview-like-steps100-faster-sol-with-cbdkh/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/2874961/c-java-python-sort-and-check-by-harsh_ne-7sy1/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/6939444/java-solution-by-dheerajpoojary-ytrr/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5866950/daily-problem-04102024-sorting-by-sajalt-65qx/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/6424515/5-lines-solution-using-for-loop-beating-l1ojb/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/6868122/solution-in-java-and-c-by-vickyy234-ogay/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5866883/on-c-33ms-beats-9980-java-12ms-beats-921-5u15/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5866513/beats-100-working-04102024-explained-in-wpncj/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5869384/hashmap-and-two-pointers-intuitive-solut-kd2a/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5869481/easiestfaster-lesser-cpython3javacpython-s9b5/;;https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5869750/approach-to-divide-players-into-teams-of-0nyy/;;;=;==;=;=;

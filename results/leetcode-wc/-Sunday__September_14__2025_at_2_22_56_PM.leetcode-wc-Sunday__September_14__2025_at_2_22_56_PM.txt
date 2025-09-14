@@ -1,0 +1,23 @@
+152. Maximum Product Subarray;=;=Medium;=;=public int maxProduct(int[] nums);=;=Given an integer array nums, find a subarray that has the largest product, and return the product.
+
+The test cases are generated so that the answer will fit in a 32-bit integer.
+
+ 
+
+Example 1:
+
+Input: nums = [2,3,-2,4]
+Output: 6
+Explanation: [2,3] has the largest product 6.
+Example 2:
+
+Input: nums = [-2,0,-1]
+Output: 0
+Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
+ 
+
+Constraints:
+
+1 <= nums.length <= 2 * 104
+-10 <= nums[i] <= 10
+The product of any subarray of nums is guaranteed to fit in a 32-bit integer.;=;=https://leetcode.com/problems/maximum-product-subarray/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-product-subarray/solutions/6750676/video-keep-max-and-min-values-by-niits-mvpb/;;https://leetcode.com/problems/maximum-product-subarray/solutions/1608862/java-3-solutions-detailed-explanation-us-u8ma/;;https://leetcode.com/problems/maximum-product-subarray/solutions/7031575/beats-9042-easiest-explanation-and-code-2ohr5/;;https://leetcode.com/problems/maximum-product-subarray/solutions/3176155/solution-by-deleted_user-dm8z/;;https://leetcode.com/problems/maximum-product-subarray/solutions/7174135/easy-code-for-solve-this-problem-by-4_k4-mxtl/;;https://leetcode.com/problems/maximum-product-subarray/solutions/7016387/100-beats-with-loop-java-by-aadi_dayal08-ricu/;;https://leetcode.com/problems/maximum-product-subarray/solutions/7163193/java-optimal-solution-kandanes-algorithm-yokc/;;https://leetcode.com/problems/maximum-product-subarray/solutions/7132780/kadanes-algorithm-solution-beats-100-jav-87d3/;;https://leetcode.com/problems/maximum-product-subarray/solutions/6952922/beats-100-hinglish-explanation-dry-run-s-j8ea/;;https://leetcode.com/problems/maximum-product-subarray/solutions/7110888/max-product-subarray-with-dynamic-min-ma-4u53/;;https://leetcode.com/problems/maximum-product-subarray/solutions/48330/simple-java-code-by-chase1991-0fmw/;;https://leetcode.com/problems/maximum-product-subarray/solutions/7158105/damn-it-took-me-12-hrs-to-findafter-solv-tf3m/;;https://leetcode.com/problems/maximum-product-subarray/solutions/7151745/maximum-product-subarray-using-prefix-su-ozm7/;;https://leetcode.com/problems/maximum-product-subarray/solutions/3227249/c-on-time-and-o1-space-easiest-beginner-b4zkj/;;https://leetcode.com/problems/maximum-product-subarray/solutions/6927458/beats-100-java-by-mkarthick-by-tmkarthic-wfhj/;;;=;==;=;=;

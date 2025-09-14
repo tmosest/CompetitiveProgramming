@@ -1,0 +1,28 @@
+1703. Minimum Adjacent Swaps for K Consecutive Ones;=;=Hard;=;=public int minMoves(int[] nums, int k);=;=You are given an integer array, nums, and an integer k. nums comprises of only 0's and 1's. In one move, you can choose two adjacent indices and swap their values.
+
+Return the minimum number of moves required so that nums has k consecutive 1's.
+
+ 
+
+Example 1:
+
+Input: nums = [1,0,0,1,0,1], k = 2
+Output: 1
+Explanation: In 1 move, nums could be [1,0,0,0,1,1] and have 2 consecutive 1's.
+Example 2:
+
+Input: nums = [1,0,0,0,0,0,1,1], k = 3
+Output: 5
+Explanation: In 5 moves, the leftmost 1 can be shifted right until nums = [0,0,0,0,0,1,1,1].
+Example 3:
+
+Input: nums = [1,1,0,1], k = 2
+Output: 0
+Explanation: nums already has 2 consecutive 1's.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+nums[i] is 0 or 1.
+1 <= k <= sum(nums);=;=https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/3589576/java-easiest-approach-sliding-window-pre-02lr/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/3590178/java-code-for-greedy-approach-by-priyans-u3cr/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/988551/java-on-sliding-window-solution-by-kinga-e1sm/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/987317/javac-two-pointers-with-prefix-sums-by-r-szme/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/987772/gap-array-pitcher-pouring-by-madno-s3jc/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/7144240/segment-tree-solution-by-user1853o-4pl3/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/4511765/java-sliding-window-by-mot882000-9856/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/4407878/by-myself-by-user3043sb-9sg0/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/4084854/greedy-prefix-sum-sliding-window-linear-v4dje/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/3613479/greedy-sld-wind-pefix-sum-solution-82-fa-vkpx/;;https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/solutions/1061808/no-median-just-count-steps-faster-than-9-0aov/;;;=;==;=;=;

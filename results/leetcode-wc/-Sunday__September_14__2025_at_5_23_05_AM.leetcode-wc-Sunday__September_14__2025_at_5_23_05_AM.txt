@@ -1,0 +1,21 @@
+316. Remove Duplicate Letters;=;=Medium;=;=public String removeDuplicateLetters(String s);=;=Given a string s, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+
+ 
+
+Example 1:
+
+Input: s = "bcabc"
+Output: "abc"
+Example 2:
+
+Input: s = "cbacdcbc"
+Output: "acdb"
+ 
+
+Constraints:
+
+1 <= s.length <= 104
+s consists of lowercase English letters.
+ 
+
+Note: This question is the same as 1081: https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/;=;=https://leetcode.com/problems/remove-duplicate-letters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-duplicate-letters/solutions/6750657/video-how-we-think-about-a-solution-with-tnaa/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/1859410/javac-detailed-visually-explained-by-hi-cbsx4/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/4090711/9853-stack-and-greedy-by-vanamsen-56da/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/76768/a-short-on-recursive-greedy-solution-by-z4daq/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/76762/java-on-solution-using-stack-with-detail-z3nb/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/4091060/video-how-we-think-about-a-solution-with-xvn3/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/76766/easy-to-understand-iterative-java-soluti-bgeo/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/7074650/lexicographically-smallest-unique-string-ge1p/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/890511/remove-duplicate-letters-java-c-on-by-cy-fq7d/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/7059465/clean-solution-using-frequency-array-and-fskn/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/6798614/easy-and-100-fast-solution-with-detailed-j0jq/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/6484492/optimized-solution-remove-duplicate-lett-ef4k/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/6932688/easiest-solution-in-java-beats-9454-by-r-9oj7/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/6587779/problem-breakdown-intuition-explained-ja-wwdy/;;https://leetcode.com/problems/remove-duplicate-letters/solutions/5135049/java-beats-100-by-deleted_user-enes/;;;=;==;=;=;

@@ -1,0 +1,20 @@
+698. Partition to K Equal Sum Subsets;=;=Medium;=;=public boolean canPartitionKSubsets(int[] nums, int k);=;=Given an integer array nums and an integer k, return true if it is possible to divide this array into k non-empty subsets whose sums are all equal.
+
+ 
+
+Example 1:
+
+Input: nums = [4,3,2,3,5,2,1], k = 4
+Output: true
+Explanation: It is possible to divide it into 4 subsets (5), (1, 4), (2,3), (2,3) with equal sums.
+Example 2:
+
+Input: nums = [1,2,3,4], k = 3
+Output: false
+ 
+
+Constraints:
+
+1 <= k <= nums.length <= 16
+1 <= nums[i] <= 104
+The frequency of each element is in the range [1, 4].;=;=https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/1772704/java-solution-with-comments-100-faster-1-3x14/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/7005009/dp-bitmask-solution-by-leetvineet-9kic/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/7068500/java-2ms-soln-by-zerkxes7-v31s/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/6927296/java-solution-using-sorting-pruning-corr-lhrs/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/1174995/java-handle-new-tests-detailed-explanati-ae2y/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/5513780/one-of-the-best-problems-out-there-by-di-hjf6/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/5559337/crazy-best-problem-to-solve-must-solve-t-6ksg/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/6770384/inution-with-detailed-whys-explanation-b-uzc1/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/6888129/backtracking-optimization-sort-prune-ok-44nzr/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/1496224/java-0ms-100-dfs-with-backtracking-no-so-a6n3/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/7185281/raw-backtracking-without-dp-and-bitmaski-9vey/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/1351118/easy-backtracking-java-solution-93-faste-35j5/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/2327185/intuitive-backtracking-solution-with-com-iuje/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/1494944/easy-java-backtracking-pruning-code-by-l-xhg6/;;https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solutions/2130982/java-easiest-solution-using-partition-eq-bsd9/;;;=;==;=;=;

@@ -1,0 +1,45 @@
+2285. Maximum Total Importance of Roads;=;=Medium;=;=public long maximumImportance(int n, int[][] roads);=;=You are given an integer n denoting the number of cities in a country. The cities are numbered from 0 to n - 1.
+
+You are also given a 2D integer array roads where roads[i] = [ai, bi] denotes that there exists a bidirectional road connecting cities ai and bi.
+
+You need to assign each city with an integer value from 1 to n, where each value can only be used once. The importance of a road is then defined as the sum of the values of the two cities it connects.
+
+Return the maximum total importance of all roads possible after assigning the values optimally.
+
+ 
+
+Example 1:
+
+
+Input: n = 5, roads = [[0,1],[1,2],[2,3],[0,2],[1,3],[2,4]]
+Output: 43
+Explanation: The figure above shows the country and the assigned values of [2,4,5,3,1].
+- The road (0,1) has an importance of 2 + 4 = 6.
+- The road (1,2) has an importance of 4 + 5 = 9.
+- The road (2,3) has an importance of 5 + 3 = 8.
+- The road (0,2) has an importance of 2 + 5 = 7.
+- The road (1,3) has an importance of 4 + 3 = 7.
+- The road (2,4) has an importance of 5 + 1 = 6.
+The total importance of all roads is 6 + 9 + 8 + 7 + 7 + 6 = 43.
+It can be shown that we cannot obtain a greater total importance than 43.
+Example 2:
+
+
+Input: n = 5, roads = [[0,3],[2,4],[1,3]]
+Output: 20
+Explanation: The figure above shows the country and the assigned values of [4,3,2,5,1].
+- The road (0,3) has an importance of 4 + 5 = 9.
+- The road (2,4) has an importance of 2 + 1 = 3.
+- The road (1,3) has an importance of 3 + 5 = 8.
+The total importance of all roads is 9 + 3 + 8 = 20.
+It can be shown that we cannot obtain a greater total importance than 20.
+ 
+
+Constraints:
+
+2 <= n <= 5 * 104
+1 <= roads.length <= 5 * 104
+roads[i].length == 2
+0 <= ai, bi <= n - 1
+ai != bi
+There are no duplicate roads.;=;=https://leetcode.com/problems/maximum-total-importance-of-roads/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380283/beats-100-explained-with-video-cjavapyth-wm8y/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380397/easy-with-explanation-java-javascript-c-oj57j/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380137/beats-100-in-java-c-python3-easy-to-unde-9kyg/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/2083820/javac-easy-understanding-by-surajthapliy-e0nc/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380069/graph-greedy-tutorial-maximum-total-impo-j4tb/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380077/easy-peasy-javapython3c-by-raviparihar-dqij/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/6604504/simple-easy-to-understand-by-kdhakal-89t0/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380199/easy-java-python3-c-solution-8-ms-_-by-s-3jlq/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/6909980/64-ms-beats-4879-with-indian-tadka-cpp-j-e6fx/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5382200/java-solution-beats-10000-by-mohit-005-d3b2/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/6298108/simple-and-clean-solution-java-easy-unde-rkv1/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380279/2285-maximum-total-importance-of-roads-b-f9n0/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/6856311/most-simple-java-solution-easy-to-unders-divy/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380169/editorial-try-this-perfectly-crafted-sol-qnf4/;;https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380073/java-count-number-of-roads-per-city-sort-gljt/;;;=;==;=;=;

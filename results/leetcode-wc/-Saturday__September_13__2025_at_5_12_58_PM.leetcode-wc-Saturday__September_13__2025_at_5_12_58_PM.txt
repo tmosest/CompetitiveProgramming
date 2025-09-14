@@ -1,0 +1,40 @@
+2261. K Divisible Elements Subarrays;=;=Medium;=;=public int countDistinct(int[] nums, int k, int p);=;=Given an integer array nums and two integers k and p, return the number of distinct subarrays, which have at most k elements that are divisible by p.
+
+Two arrays nums1 and nums2 are said to be distinct if:
+
+They are of different lengths, or
+There exists at least one index i where nums1[i] != nums2[i].
+A subarray is defined as a non-empty contiguous sequence of elements in an array.
+
+ 
+
+Example 1:
+
+Input: nums = [2,3,3,2,2], k = 2, p = 2
+Output: 11
+Explanation:
+The elements at indices 0, 3, and 4 are divisible by p = 2.
+The 11 distinct subarrays which have at most k = 2 elements divisible by 2 are:
+[2], [2,3], [2,3,3], [2,3,3,2], [3], [3,3], [3,3,2], [3,3,2,2], [3,2], [3,2,2], and [2,2].
+Note that the subarrays [2] and [3] occur more than once in nums, but they should each be counted only once.
+The subarray [2,3,3,2,2] should not be counted because it has 3 elements that are divisible by 2.
+Example 2:
+
+Input: nums = [1,2,3,4], k = 4, p = 1
+Output: 10
+Explanation:
+All element of nums are divisible by p = 1.
+Also, every subarray of nums will have at most 4 elements that are divisible by 1.
+Since all subarrays are distinct, the total number of subarrays satisfying all the constraints is 10.
+ 
+
+Constraints:
+
+1 <= nums.length <= 200
+1 <= nums[i], p <= 200
+1 <= k <= nums.length
+ 
+
+Follow up:
+
+Can you solve this problem in O(n2) time complexity?;=;=https://leetcode.com/problems/k-divisible-elements-subarrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/2000201/three-solutions-trie-rabin-karp-set-lcp-q0ram/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/1996257/java-simple-hashset-solution-easy-to-und-x2x7/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/1996564/java-set-hashing-2-for-loops-clean-and-c-vqnj/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/2643761/java-solution-sliding-window-trie-runtim-5pm5/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/7162032/96-ms-beats-8713-by-sahilsh1-k7bx/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/5482926/java-trie-on-clean-solution-beats-86-at-jn6uc/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/1997912/java-solution-set-by-_sithcoder-6ws6/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/1998338/java-trie-vs-sliding-window-with-explana-rgnf/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/3073936/java-strict-on2-using-hashing-with-polyn-z3ag/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/1996491/java-sliding-window-trie-as-hash-86ms-be-9cw9/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/2639695/java-solution-on2-hashset-stringbuilder-vhlua/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/1999371/naive-brute-force-find-all-subarrays-cle-6c1y/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/2142535/java-trie-solution-hashset-solution-by-s-i29s/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/1996508/clean-java-by-rexue70-r574/;;https://leetcode.com/problems/k-divisible-elements-subarrays/solutions/1996200/java-slide-window-with-serial-array-by-0-xb8v/;;;=;==;=;=;

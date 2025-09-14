@@ -1,0 +1,66 @@
+3522. Calculate Score After Performing Instructions;=;=Medium;=;=public long calculateScore(String[] instructions, int[] values);=;=You are given two arrays, instructions and values, both of size n.
+
+You need to simulate a process based on the following rules:
+
+You start at the first instruction at index i = 0 with an initial score of 0.
+If instructions[i] is "add":
+Add values[i] to your score.
+Move to the next instruction (i + 1).
+If instructions[i] is "jump":
+Move to the instruction at index (i + values[i]) without modifying your score.
+The process ends when you either:
+
+Go out of bounds (i.e., i < 0 or i >= n), or
+Attempt to revisit an instruction that has been previously executed. The revisited instruction is not executed.
+Return your score at the end of the process.
+
+ 
+
+Example 1:
+
+Input: instructions = ["jump","add","add","jump","add","jump"], values = [2,1,3,1,-2,-3]
+
+Output: 1
+
+Explanation:
+
+Simulate the process starting at instruction 0:
+
+At index 0: Instruction is "jump", move to index 0 + 2 = 2.
+At index 2: Instruction is "add", add values[2] = 3 to your score and move to index 3. Your score becomes 3.
+At index 3: Instruction is "jump", move to index 3 + 1 = 4.
+At index 4: Instruction is "add", add values[4] = -2 to your score and move to index 5. Your score becomes 1.
+At index 5: Instruction is "jump", move to index 5 + (-3) = 2.
+At index 2: Already visited. The process ends.
+Example 2:
+
+Input: instructions = ["jump","add","add"], values = [3,1,1]
+
+Output: 0
+
+Explanation:
+
+Simulate the process starting at instruction 0:
+
+At index 0: Instruction is "jump", move to index 0 + 3 = 3.
+At index 3: Out of bounds. The process ends.
+Example 3:
+
+Input: instructions = ["jump"], values = [0]
+
+Output: 0
+
+Explanation:
+
+Simulate the process starting at instruction 0:
+
+At index 0: Instruction is "jump", move to index 0 + 0 = 0.
+At index 0: Already visited. The process ends.
+ 
+
+Constraints:
+
+n == instructions.length == values.length
+1 <= n <= 105
+instructions[i] is either "add" or "jump".
+-105 <= values[i] <= 105;=;=https://leetcode.com/problems/calculate-score-after-performing-instructions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6669009/beatscjavapy3js-easy-n-clean-explanation-y4iu/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6682803/faster-lesser-cpython3javacpythoncexplai-5t7z/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6671260/calculate-score-after-performing-instruc-1ahw/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6676196/easy-code-in-java-using-basic-implementa-76xx/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6668721/stimulation-by-ankith_kumar-386u/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6668663/100-affective-java-code-by-anuragk2-38bx/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6669858/java-solution-beats-100-proof-concise-co-xv0m/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6668709/easy-solution-java-python-c-beats-9865-b-4o8a/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6743625/easy-java-solution-while-loop-beats-75-b-bk97/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6669485/simple-java-solution-by-anayverma_1_17_1-vlqy/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6674877/java-beats-100-by-tanuj_keshattiwar-lwev/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6668680/easy-do-as-they-said-by-akshay_kadamm-6a9s/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6668741/easy-c-and-java-code-with-explaination-b-hpzn/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6669474/on2-on-in-java-by-devanshverma711-bvsm/;;https://leetcode.com/problems/calculate-score-after-performing-instructions/solutions/6668769/java-by-vishall001-n2i7/;;;=;==;=;=;

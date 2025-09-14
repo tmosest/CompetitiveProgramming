@@ -1,0 +1,29 @@
+2531. Make Number of Distinct Characters Equal;=;=Medium;=;=public boolean isItPossible(String word1, String word2);=;=You are given two 0-indexed strings word1 and word2.
+
+A move consists of choosing two indices i and j such that 0 <= i < word1.length and 0 <= j < word2.length and swapping word1[i] with word2[j].
+
+Return true if it is possible to get the number of distinct characters in word1 and word2 to be equal with exactly one move. Return false otherwise.
+
+ 
+
+Example 1:
+
+Input: word1 = "ac", word2 = "b"
+Output: false
+Explanation: Any pair of swaps would yield two distinct characters in the first string, and one in the second string.
+Example 2:
+
+Input: word1 = "abcc", word2 = "aab"
+Output: true
+Explanation: We swap index 2 of the first string with index 0 of the second string. The resulting strings are word1 = "abac" and word2 = "cab", which both have 3 distinct characters.
+Example 3:
+
+Input: word1 = "abcde", word2 = "fghij"
+Output: true
+Explanation: Both resulting strings will have 5 distinct characters, regardless of which indices we swap.
+ 
+
+Constraints:
+
+1 <= word1.length, word2.length <= 105
+word1 and word2 consist of only lowercase English letters.;=;=https://leetcode.com/problems/make-number-of-distinct-characters-equal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3016751/java-cpython-detailed-explanation-fully-s41es/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3016989/cjavapython3-freq-table-by-ye15-qv4c/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3020489/java-clear-explanations-efficient-simula-foza/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3016788/java-brute-force-o26-3-commented-by-sour-r5em/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3017542/easiest-java-solutions-by-rachit_3850-s1qq/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3017590/java-onm-fully-explained-by-nadaralp-3thl/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3017033/java-easy-solution-by-deepakkdkk-d9pv/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3016819/java-easy-by-shubham5545-0zgb/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3017718/accepted-o-26-26-java-by-ashmantak-72ed/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3020092/frequency-map-solution-java-solution-by-rqt7e/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/5350432/easy-java-solution-hashmap-by-ravikumar5-u3cc/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3016742/java-solution-by-solved-tam0/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3017232/brute-force-solution-with-hashmap-by-sir-nxf9/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3019284/easy-java-code-by-lil_toeturtle-h19g/;;https://leetcode.com/problems/make-number-of-distinct-characters-equal/solutions/3016925/o2626-fastest-java-solution-using-freque-haj0/;;;=;==;=;=;

@@ -1,0 +1,24 @@
+1551. Minimum Operations to Make Array Equal;=;=Medium;=;=public int minOperations(int n);=;=You have an array arr of length n where arr[i] = (2 * i) + 1 for all valid values of i (i.e., 0 <= i < n).
+
+In one operation, you can select two indices x and y where 0 <= x, y < n and subtract 1 from arr[x] and add 1 to arr[y] (i.e., perform arr[x] -=1 and arr[y] += 1). The goal is to make all the elements of the array equal. It is guaranteed that all the elements of the array can be made equal using some operations.
+
+Given an integer n, the length of the array, return the minimum number of operations needed to make all the elements of arr equal.
+
+ 
+
+Example 1:
+
+Input: n = 3
+Output: 2
+Explanation: arr = [1, 3, 5]
+First operation choose x = 2 and y = 0, this leads arr to be [2, 3, 4]
+In the second operation choose x = 2 and y = 0 again, thus arr = [3, 3, 3].
+Example 2:
+
+Input: n = 6
+Output: 9
+ 
+
+Constraints:
+
+1 <= n <= 104;=;=https://leetcode.com/problems/minimum-operations-to-make-array-equal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/1145020/js-python-java-c-easy-o1-1-liner-mathema-jnso/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/7103772/one-line-java-solution-beats-100-by-rajd-u2ty/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/7003032/simple-maths-by-zabardastgamerz-p67y/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/6795468/easy-one-line-solution-beats-100-o1-o1-b-hzqf/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/3087528/java-2-solutions-with-pictures-by-sourin-5sy1/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/1145756/java-simple-mathematics-by-himanshuchhik-3kp2/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/2398876/java-two-pointer-easy-solution-by-raghav-u93p/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/5669521/easiestfaster-lesser-cpython3javacpython-rcz8/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/5394619/beats-100simple-logic-cjavapython-soluti-z6hu/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/794330/java-solution-using-two-pointer-by-intro-r3uv/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/7157051/minimum-operations-to-make-array-equal-s-1bff/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/6977841/easiest-ever-by-sachinab-3mde/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/2223509/java-o1-tc-sc-simplest-easy-maths-by-sum-4sup/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/5490578/single-line-code-beats-100-in-time-by-sh-l6rx/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/2937875/java-1-line-code-0ms-by-aditi_sinha123-x9uf/;;;=;==;=;=;

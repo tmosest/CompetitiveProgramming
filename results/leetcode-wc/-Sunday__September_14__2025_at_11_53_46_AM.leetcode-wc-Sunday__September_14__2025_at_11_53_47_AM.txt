@@ -1,0 +1,37 @@
+1474. Delete N Nodes After M Nodes of a Linked List;=;=Easy;=;=/ÊÊDefinitionÊforÊsingly-linkedÊlist.ÊÊpublicÊÊListNodeÊÊÊÊÊÊÊintÊval;ÊÊÊÊÊÊListNodeÊnext;ÊÊÊÊÊÊListNode()ÊÊÊÊÊÊÊListNode(intÊval)ÊÊthis.valÊ=Êval;ÊÊÊÊÊÊÊListNode(intÊval,ÊListNodeÊnext)ÊÊthis.valÊ=Êval;Êthis.nextÊ=Ênext;ÊÊÊÊclassÊÊÊÊÊÊpublicÊListNodeÊdeleteNodes(ListNodeÊhead,ÊintÊm,ÊintÊn);=;=You are given the head of a linked list and two integers m and n.
+
+Traverse the linked list and remove some nodes in the following way:
+
+Start with the head as the current node.
+Keep the first m nodes starting with the current node.
+Remove the next n nodes
+Keep repeating steps 2 and 3 until you reach the end of the list.
+Return the head of the modified list after removing the mentioned nodes.
+
+Ê
+
+Example 1:
+
+
+Input: head = [1,2,3,4,5,6,7,8,9,10,11,12,13], m = 2, n = 3
+Output: [1,2,6,7,11,12]
+Explanation: Keep the first (m = 2) nodes starting from the head of the linked List  (1 ->2) show in black nodes.
+Delete the next (n = 3) nodes (3 -> 4 -> 5) show in read nodes.
+Continue with the same procedure until reaching the tail of the Linked List.
+Head of the linked list after removing nodes is returned.
+Example 2:
+
+
+Input: head = [1,2,3,4,5,6,7,8,9,10,11], m = 1, n = 3
+Output: [1,5,9]
+Explanation: Head of linked list after removing nodes is returned.
+Ê
+
+Constraints:
+
+The number of nodes in the list is in the range [1, 104].
+1 <= Node.val <= 106
+1 <= m, n <= 1000
+Ê
+
+Follow up: Could you solve this problem by modifying the list in-place?;=;=https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/3577438/beats-100-of-submissions-ghost_programme-40fv/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/681237/java-on-clean-solution-by-premiummango-o9x2/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/7122274/easy-java-solution-uses-both-recursion-a-42ad/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/4011697/beats-100-java-recursive-solution-by-aea-p8qw/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/4741395/single-loop-single-counter-by-poisonspea-ln6q/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/6791064/java-brute-force-using-loop-current-and-3la62/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/6796801/java-javascript-typescript-c-c-kotlin-go-imyh/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/6042304/on-time-complexity-solution-by-tejasvi14-j06n/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/6020221/java-simple-approach-for-iteration-by-se-4n11/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/5891429/easy-solution-by-dantericalderivera-tn5i/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/5876634/easy-java-solution-by-dqzhang2718-iwgf/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/5480154/java-in-place-solution-by-tbekpro-f27u/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/5152344/simple-java-solution-fastest-runtime-1-m-hso9/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/4900374/java-easy-100-solution-using-dummy-node-js2i3/;;https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/4738909/java-solution-easy-beats-100-users-by-ni-ssww/;;;=;==;=;=;

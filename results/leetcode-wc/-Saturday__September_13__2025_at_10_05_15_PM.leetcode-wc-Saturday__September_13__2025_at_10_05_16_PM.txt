@@ -1,0 +1,39 @@
+2269. Find the K-Beauty of a Number;=;=Easy;=;=public int divisorSubstrings(int num, int k);=;=The k-beauty of an integer num is defined as the number of substrings of num when it is read as a string that meet the following conditions:
+
+It has a length of k.
+It is a divisor of num.
+Given integers num and k, return the k-beauty of num.
+
+Note:
+
+Leading zeros are allowed.
+0 is not a divisor of any value.
+A substring is a contiguous sequence of characters in a string.
+
+ 
+
+Example 1:
+
+Input: num = 240, k = 2
+Output: 2
+Explanation: The following are the substrings of num of length k:
+- "24" from "240": 24 is a divisor of 240.
+- "40" from "240": 40 is a divisor of 240.
+Therefore, the k-beauty is 2.
+Example 2:
+
+Input: num = 430043, k = 2
+Output: 2
+Explanation: The following are the substrings of num of length k:
+- "43" from "430043": 43 is a divisor of 430043.
+- "30" from "430043": 30 is not a divisor of 430043.
+- "00" from "430043": 0 is not a divisor of 430043.
+- "04" from "430043": 4 is not a divisor of 430043.
+- "43" from "430043": 43 is a divisor of 430043.
+Therefore, the k-beauty is 2.
+ 
+
+Constraints:
+
+1 <= num <= 109
+1 <= k <= num.length (taking num as a string);=;=https://leetcode.com/problems/find-the-k-beauty-of-a-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/7184680/easy-code-for-solve-this-problem-by-4_k4-pod1/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/7048530/100-beats-for-easy-understading-to-begin-9tau/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/2038366/java-easy-solution-by-ritik25oct-vvft/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/6315387/0ms-100-beat-java-by-galani_jenis-c1fs/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/6755254/easy-solution-100-by-bhoomika_d-6ttx/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/6929941/count-the-number-of-k-digit-divisors-in-d5a3t/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/6887042/clean-java-count-k-length-substrings-div-rv7b/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/6832342/easy-and-100-fast-solution-using-sliding-otve/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/6788343/most-optimized-java-sliding-window-begin-nbd6/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/6764035/2269-find-the-k-beauty-of-a-number-by-sp-c3z1/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/7154850/java-by-sssanskarrr-1vkf/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/7067111/convert-to-string-so-that-it-can-be-iter-776q/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/7052019/it-beats-100-by-mr_sky_1910-rtvf/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/7021072/simple-solution-using-java-by-srinivasan-bfym/;;https://leetcode.com/problems/find-the-k-beauty-of-a-number/solutions/6994019/find-the-k-beauty-of-number-by-reena_sen-z6nx/;;;=;==;=;=;

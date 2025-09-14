@@ -1,0 +1,29 @@
+1359. Count All Valid Pickup and Delivery Options;=;=Hard;=;=public int countOrders(int n);=;=Given n orders, each order consists of a pickup and a delivery service.
+
+Count all valid pickup/delivery possible sequences such that delivery(i) is always after of pickup(i). 
+
+Since the answer may be too large, return it modulo 10^9 + 7.
+
+ 
+
+Example 1:
+
+Input: n = 1
+Output: 1
+Explanation: Unique order (P1, D1), Delivery 1 always is after of Pickup 1.
+Example 2:
+
+Input: n = 2
+Output: 6
+Explanation: All possible orders: 
+(P1,P2,D1,D2), (P1,P2,D2,D1), (P1,D1,P2,D2), (P2,P1,D1,D2), (P2,P1,D2,D1) and (P2,D2,P1,D1).
+This is an invalid order (P1,D2,P2,D1) because Pickup 2 is after of Delivery 2.
+Example 3:
+
+Input: n = 3
+Output: 90
+ 
+
+Constraints:
+
+1 <= n <= 500;=;=https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/7171163/java-dp-0ms-by-zerkxes7-6o3a/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4024280/9957-dp-math-recursion-by-vanamsen-qd4r/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4024311/beats-100-c-java-python-dp-recursive-ite-v0j8/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4025134/best-explanationconcise-with-annotations-kxr7/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4024842/video-easy-way-to-think-about-this-quest-57uu/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4026717/onn-approach-dp-very-easy-code-c-java-py-3iha/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/6940740/beats-10000-simple-maths-by-ojasvi_tripa-z1kb/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/6964731/0ms-solution-100-beat-zero-runtime-hack-85vzv/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4024287/simple-solution-beginner-friendly-easy-t-xd83/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4028131/simple-easy-java-solution-mathematics-dy-pd9y/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4024821/java-solution-dp-tabulation-on-n-by-soha-7vcp/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/522093/java-actually-a-simple-mathematical-prob-09kg/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4024365/9689-beats-chard-easy-easy-to-understand-old5/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/7182603/count-pickup-delivery-orders-dp-combinat-ht7y/;;https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4025728/pure-math-without-dp-by-kirti1211-n9ry/;;;=;==;=;=;

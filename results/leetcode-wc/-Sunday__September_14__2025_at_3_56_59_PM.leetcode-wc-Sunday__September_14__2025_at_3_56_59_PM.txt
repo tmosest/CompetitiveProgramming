@@ -1,0 +1,42 @@
+3334. Find the Maximum Factor Score of Array;=;=Medium;=;=public long maxScore(int[] nums);=;=You are given an integer array nums.
+
+The factor score of an array is defined as the product of the LCM and GCD of all elements of that array.
+
+Return the maximum factor score of nums after removing at most one element from it.
+
+Note that both the LCM and GCD of a single number are the number itself, and the factor score of an empty array is 0.
+
+ 
+
+Example 1:
+
+Input: nums = [2,4,8,16]
+
+Output: 64
+
+Explanation:
+
+On removing 2, the GCD of the rest of the elements is 4 while the LCM is 16, which gives a maximum factor score of 4 * 16 = 64.
+
+Example 2:
+
+Input: nums = [1,2,3,4,5]
+
+Output: 60
+
+Explanation:
+
+The maximum factor score of 60 can be obtained without removing any elements.
+
+Example 3:
+
+Input: nums = [3]
+
+Output: 9
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 30;=;=https://leetcode.com/problems/find-the-maximum-factor-score-of-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5972933/max-score-with-brute-force-gcd-and-lcm-s-iw2u/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5977250/easy-solution-explained-by-ramitgangwar-jt0s/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5973337/brute-force-prefix-and-suffix-array-by-z-m3g7/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5994908/java-easy-and-clearn-solution-explained-yvt7q/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5992060/what-if-constrains-were-1-numslength-105-tfha/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5973146/simple-easy-java-solution-by-shree_govin-wja6/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5972944/easiest-solution-by-sobhandevp2021-y66z/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5973167/beats-100-in-both-time-and-space-simples-1k7c/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5972931/brute-force-simple-solution-pythonjavac-f85l3/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5973268/beats-100-constant-space-by-amar_1-w4jr/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5973575/easy-peasy-lemon-squeezy-by-gopeesingh-jpv6/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5983198/brute-force-better-optimal-find-maximal-dz7n8/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/5972914/java-solution-by-solved-xcry/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/6081213/using-gcd-and-lcm-concept-by-risabhuchih-dbwj/;;https://leetcode.com/problems/find-the-maximum-factor-score-of-array/solutions/6025812/simple-and-easy-java-solution-brute-forc-v4qd/;;;=;==;=;=;

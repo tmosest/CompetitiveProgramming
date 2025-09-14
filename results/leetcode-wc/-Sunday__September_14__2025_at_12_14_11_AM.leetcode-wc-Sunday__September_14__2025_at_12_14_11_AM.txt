@@ -1,0 +1,31 @@
+154. Find Minimum in Rotated Sorted Array II;=;=Hard;=;=public int findMin(int[] nums);=;=Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,4,4,5,6,7] might become:
+
+[4,5,6,7,0,1,4] if it was rotated 4 times.
+[0,1,4,4,5,6,7] if it was rotated 7 times.
+Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
+
+Given the sorted rotated array nums that may contain duplicates, return the minimum element of this array.
+
+You must decrease the overall operation steps as much as possible.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,5]
+Output: 1
+Example 2:
+
+Input: nums = [2,2,2,0,1]
+Output: 0
+ 
+
+Constraints:
+
+n == nums.length
+1 <= n <= 5000
+-5000 <= nums[i] <= 5000
+nums is sorted and rotated between 1 and n times.
+ 
+
+Follow up: This problem is similar to Find Minimum in Rotated Sorted Array, but nums may contain duplicates. Would this affect the runtime complexity? How and why?;=;=https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/7171748/just-return-min-by-bhavasree_j_k-h8f8/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/7158305/4-line-simple-solution-although-with-an-4nqyz/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/7157901/easy-code-for-solve-this-problem-by-4_k4-5p13/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/1535534/beats-100-binary-search-with-clear-expla-hxvw/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/7135635/java-solution-beats-100-proof-concise-co-2vpe/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/4881165/100-0ms-8-liner-code-with-proof-easy-mah-36vw/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/7044858/binary-search-by-soujitdas65-f6xt/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/7022350/find-minimum-in-rotated-sorted-array-in-nyenb/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/7085755/100-beats-linear-search-minimum-element-klaec/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/6922353/easy-to-understand-hard-question-but-eas-ogff/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/5494705/interesting-easy-binary-search-pattern-b-m921/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/6983006/simple-java-runtime-0-ms-beats-100-by-jy-0pno/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/6959755/optimised-java-solution-using-binary-sea-fkse/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/7088541/binary-search-by-delbin_de_yohan-nezf/;;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/7084848/just-return-minimum-element-beats-100-0m-twl4/;;;=;==;=;=;

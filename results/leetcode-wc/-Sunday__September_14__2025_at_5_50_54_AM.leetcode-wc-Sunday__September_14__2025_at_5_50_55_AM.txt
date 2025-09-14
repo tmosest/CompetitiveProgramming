@@ -1,0 +1,26 @@
+1791. Find Center of Star Graph;=;=Easy;=;=public int findCenter(int[][] edges);=;=There is an undirected star graph consisting of n nodes labeled from 1 to n. A star graph is a graph where there is one center node and exactly n - 1 edges that connect the center node with every other node.
+
+You are given a 2D integer array edges where each edges[i] = [ui, vi] indicates that there is an edge between the nodes ui and vi. Return the center of the given star graph.
+
+ 
+
+Example 1:
+
+
+Input: edges = [[1,2],[2,3],[4,2]]
+Output: 2
+Explanation: As shown in the figure above, node 2 is connected to every other node, so 2 is the center.
+Example 2:
+
+Input: edges = [[1,2],[5,1],[1,3],[1,4]]
+Output: 1
+ 
+
+Constraints:
+
+3 <= n <= 105
+edges.length == n - 1
+edges[i].length == 2
+1 <= ui, vi <= n
+ui != vi
+The given edges represent a valid star graph.;=;=https://leetcode.com/problems/find-center-of-star-graph/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-center-of-star-graph/solutions/1108319/o1-1-liner-by-votrubac-4ekx/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/5374686/easy-java-python3-c-solution-0-ms-_-by-s-i3s1/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/7166198/0-ms-beats-10000-by-gunanshu_joshi-vezh/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/7143913/beats-100-o1-one-loc-by-hanyuuuuu-0ouz/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/5374953/easy-solution-in-all-lanuages-to-find-th-8pfn/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/7025400/most-optimal-one-liner-solution-100-beat-wjil/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/7106617/find-center-of-star-graph-easy-java-solu-b95e/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/7121332/best-approach-find-center-of-star-graph-ebjql/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/7075306/star-graph-mystery-unlocked-find-the-hid-lrra/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/5374904/graph-observation-tutorial-find-center-o-sv7k/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/5374935/1791-find-center-of-star-graph-by-doaaos-5l8b/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/5376922/simplest-solution-fastestefficient2appro-97d3/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/5374709/beats-almost-100-c-java-python-by-ravipa-u5vf/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/7020365/100-faster-find-center-of-star-graph-o1-7iis3/;;https://leetcode.com/problems/find-center-of-star-graph/solutions/7006792/easy-solution-by-adhi_m_s-y69p/;;;=;==;=;=;

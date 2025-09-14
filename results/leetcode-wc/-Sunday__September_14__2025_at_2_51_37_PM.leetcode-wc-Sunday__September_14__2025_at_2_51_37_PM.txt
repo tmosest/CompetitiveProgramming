@@ -1,0 +1,32 @@
+2571. Minimum Operations to Reduce an Integer to 0;=;=Medium;=;=publicÊintÊminOperations(intÊn);=;=You are given a positive integer n, you can do the following operation any number of times:
+
+Add or subtract a power of 2 from n.
+Return the minimum number of operations to make n equal to 0.
+
+A number x is power of 2 if x == 2iÊwhere i >= 0.
+
+Ê
+
+Example 1:
+
+Input: n = 39
+Output: 3
+Explanation: We can do the following operations:
+- Add 20 = 1 to n, so now n = 40.
+- Subtract 23 = 8 from n, so now n = 32.
+- Subtract 25 = 32 from n, so now n = 0.
+It can be shown that 3 is the minimum number of operations we need to make n equal to 0.
+Example 2:
+
+Input: n = 54
+Output: 3
+Explanation: We can do the following operations:
+- Add 21 = 2 to n, so now n = 56.
+- Add 23 = 8 to n, so now n = 64.
+- Subtract 26 = 64 from n, so now n = 0.
+So the minimum number of operations is 3.
+Ê
+
+Constraints:
+
+1 <= n <= 105;=;=https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3203994/javacpython-1-line-solution-by-lee215-04db/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/6789775/beats-100-java-0ms-dp-solution-by-vikran-jjut/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3203803/java-nearest-power-of-2-explained-faster-g6le/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3203724/simple-java-solution-by-siddhant_1602-su60/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3207208/recursive-one-liner-without-library-call-06p4/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3224068/java-easy-nearest-power-of-2-bit-manipul-ijxr/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3203852/java-fully-explained-recursive-easy-and-aoy6f/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3203990/java-brute-force-recursion-time-and-spac-gdfk/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3204040/easy-java-solution-100-faster-0ms-by-may-fgr7/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3204442/simple-java-binary-search-solution-100fa-7410/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3220776/java-using-treeset-easy-one-by-venkat089-hyrz/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3203962/java-simple-beats-100-5-lines-by-judgeme-b2k8/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3203879/best-java-solution-without-bit-manipulat-giua/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3205992/simple-java-solution-beats-100-by-paresh-osbd/;;https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3203738/2571-minimum-operations-to-reduce-an-int-p5us/;;;=;==;=;=;

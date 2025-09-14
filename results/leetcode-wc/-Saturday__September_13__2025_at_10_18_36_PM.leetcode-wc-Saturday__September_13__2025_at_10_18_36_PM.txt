@@ -1,0 +1,38 @@
+3191. Minimum Operations to Make Binary Array Elements Equal to One I;=;=Medium;=;=public int minOperations(int[] nums);=;=You are given a binary array nums.
+
+You can do the following operation on the array any number of times (possibly zero):
+
+Choose any 3 consecutive elements from the array and flip all of them.
+Flipping an element means changing its value from 0 to 1, and from 1 to 0.
+
+Return the minimum number of operations required to make all elements in nums equal to 1. If it is impossible, return -1.
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,1,1,0,0]
+
+Output: 3
+
+Explanation:
+We can do the following operations:
+
+Choose the elements at indices 0, 1 and 2. The resulting array is nums = [1,0,0,1,0,0].
+Choose the elements at indices 1, 2 and 3. The resulting array is nums = [1,1,1,0,0,0].
+Choose the elements at indices 3, 4 and 5. The resulting array is nums = [1,1,1,1,1,1].
+Example 2:
+
+Input: nums = [0,1,1,1]
+
+Output: -1
+
+Explanation:
+It is impossible to make all elements equal to 1.
+
+ 
+
+Constraints:
+
+3 <= nums.length <= 105
+0 <= nums[i] <= 1;=;=https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6553332/simple-greedy-python-c-by-otabek_kholmir-o1sc/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6553885/beats-super-easy-beginners-java-c-c-pyth-79i5/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/7146804/easy-greedy-approach-with-on-time-and-o1-7xgn/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/5352820/greedy-by-fahad06-lf9q/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6554299/java-on-bhojpuri-by-vivekkrg-mexf/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6553498/simple-and-beginner-friendly-solution-ja-nv27/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6938323/fast-and-clear-with-iterations-in-tables-64gk/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6553958/java-6ms-most-easiest-solution-by-mrunal-zum7/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6553438/one-pass-short-clear-c-python-java-go-ja-dgcn/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6553523/beats-100-bit-manipulation-solution-for-yuw7m/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6556908/java-solution-for-minimum-operations-to-bp5k3/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6426632/simple-solution-using-xor-by-goda6828020-d9f3/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6553551/easy-detailed-approch-greedy-approch-c-j-vpa8/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/5352828/easy-approach-by-ram_hanu108-4l9u/;;https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/5353262/python-3-5-lines-greedy-ts-90-72-by-spau-t5ca/;;;=;==;=;=;

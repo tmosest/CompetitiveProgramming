@@ -1,0 +1,29 @@
+1312. Minimum Insertion Steps to Make a String Palindrome;=;=Hard;=;=public int minInsertions(String s);=;=Given a string s. In one step you can insert any character at any index of the string.
+
+Return the minimum number of steps to make s palindrome.
+
+A Palindrome String is one that reads the same backward as well as forward.
+
+ 
+
+Example 1:
+
+Input: s = "zzazz"
+Output: 0
+Explanation: The string "zzazz" is already palindrome we do not need any insertions.
+Example 2:
+
+Input: s = "mbadm"
+Output: 2
+Explanation: String can be "mbdadbm" or "mdbabdm".
+Example 3:
+
+Input: s = "leetcode"
+Output: 5
+Explanation: Inserting 5 characters the string becomes "leetcodocteel".
+ 
+
+Constraints:
+
+1 <= s.length <= 500
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/7177516/java-easy-solution-13ms-by-akashraj06-xjj2/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/3442303/pythonjava-csimple-solutioneasy-to-under-dmr4/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/7106424/beats-10000-both-approach-brute-force-dp-pcn9/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/7099600/strsize-lcssize-lcs-cmn-ssqnstr-reverses-9qsw/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/6934645/dp-on-strings-java-by-laxitathakur-wa2j/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/6934646/dp-on-strings-java-by-laxitathakur-lwy0/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/7055045/simple-solution-not-beginner-friendly-be-7efa/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/3443028/easy-solutions-in-java-python-and-c-look-nft5/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/6937970/learnt-from-striver-covers-lcs-lps-using-o6pz/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/3442382/image-explanation-recursion-top-down-bot-3ywf/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/6749129/java-lcs-dp-minimum-insertions-to-make-p-ztlo/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/470709/javapython-3-dp-longest-common-subsequen-ea5a/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/6874636/minimum-insertion-steps-to-make-a-string-fuck/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/3314578/dp-simple-java-solution-longest-palindro-5vec/;;https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/6941451/best-and-easy-to-understand-for-beginner-ny1g/;;;=;==;=;=;

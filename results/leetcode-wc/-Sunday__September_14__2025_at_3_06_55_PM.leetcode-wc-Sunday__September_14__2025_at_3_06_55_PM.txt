@@ -1,0 +1,23 @@
+1198. Find Smallest Common Element in All Rows;=;=Medium;=;=public int smallestCommonElement(int[][] mat);=;=Given an m x n matrix mat where every row is sorted in strictly increasing order, return the smallest common element in all rows.
+
+If there is no common element, return -1.
+
+ 
+
+Example 1:
+
+Input: mat = [[1,2,3,4,5],[2,4,5,8,10],[3,5,7,9,11],[1,3,5,7,9]]
+Output: 5
+Example 2:
+
+Input: mat = [[1,2,3],[2,3,4],[2,3,5]]
+Output: 2
+ 
+
+Constraints:
+
+m == mat.length
+n == mat[i].length
+1 <= m, n <= 500
+1 <= mat[i][j] <= 104
+mat[i] is sorted in strictly increasing order.;=;=https://leetcode.com/problems/find-smallest-common-element-in-all-rows/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/2188841/simple-and-readable-java-solution-binary-v3io/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/2036313/java-hashmap-easy-solution-by-navaneetha-v0u7/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/2443669/simple-code-with-explanationcomments-by-huf8d/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/2189797/memory-efficient-better-than-84-percent-dbr1p/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/2136192/java-easy-to-understand-solution-using-h-9r95/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/2768889/java-concise-by-fatezai-kizd/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/1893830/hashmap-solution-easy-to-understand-by-v-sffd/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/7146466/circular-buffer-frontier-omn-solution-wi-qbsb/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/387002/0ms-java-simple-binary-search-by-jatinya-4znp/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/6648534/binary-search-on-each-row-1-for-numbers-v40bf/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/4749265/java-simple-easy-vanilla-binary-search-f-g3ed/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/4701953/java-100-faster-binary-search-by-tbekpro-3se1/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/4446015/java-hashset-binary-search-beats-80-time-6xpi/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/4359796/java-hashset-to-find-intersections-by-ev-tww2/;;https://leetcode.com/problems/find-smallest-common-element-in-all-rows/solutions/5290909/beats-10000-java-by-jenyjam-8t6r/;;;=;==;=;=;

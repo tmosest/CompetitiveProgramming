@@ -1,0 +1,22 @@
+245. Shortest Word Distance III;=;=Medium;=;=public int shortestWordDistance(String[] wordsDict, String word1, String word2);=;=Given an array of strings wordsDict and two strings that already exist in the array word1 and word2, return the shortest distance between the occurrence of these two words in the list.
+
+Note that word1 and word2 may be the same. It is guaranteed that they represent two individual words in the list.
+
+ 
+
+Example 1:
+
+Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "makes", word2 = "coding"
+Output: 1
+Example 2:
+
+Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "makes", word2 = "makes"
+Output: 3
+ 
+
+Constraints:
+
+1 <= wordsDict.length <= 105
+1 <= wordsDict[i].length <= 10
+wordsDict[i] consists of lowercase English letters.
+word1 and word2 are in wordsDict.;=;=https://leetcode.com/problems/shortest-word-distance-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-word-distance-iii/solutions/67097/12-16-lines-java-c-by-stefanpochmann-1ugo/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/67095/short-java-solution-10-lines-on-modified-8ifz/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/6964196/k-pointers-same-direction-by-axmxheoofx-6125/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/6964184/two-pointers-moving-the-smallest-by-axmx-bsfc/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/67150/do-we-prefer-cleaner-code-or-faster-solu-odml/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/3858851/java-two-pointers-onmaxword1length-word2-8ivm/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/1847777/alexs-optimized-solution-by-superlyz-hwwt/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/67129/clean-short-fast-java-solution-in-on-tim-ddwz/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/67146/simple-and-concise-solution-java-by-chin-dej3/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/6803288/java-simple-maths-by-rnotappl-stys/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/6751476/two-pointer-variants-for-samedifferent-w-gsta/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/67162/why-does-my-code-has-different-result-in-gpgl/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/5407544/java-by-vharshal1994-2ugr/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/6316941/simple-java-solution-on-by-user5849fi-3ws9/;;https://leetcode.com/problems/shortest-word-distance-iii/solutions/5960713/easy-solution-by-sajnani-j090/;;;=;==;=;=;

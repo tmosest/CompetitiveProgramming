@@ -1,0 +1,23 @@
+2248. Intersection of Multiple Arrays;=;=Easy;=;=publicÊList<Integer>Êintersection(int[][]Ênums);=;=Given a 2D integer array nums where nums[i] is a non-empty array of distinct positive integers, return the list of integers that are present in each array of nums sorted in ascending order.
+Ê
+
+Example 1:
+
+Input: nums = [[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]
+Output: [3,4]
+Explanation: 
+The only integers present in each of nums[0] = [3,1,2,4,5], nums[1] = [1,2,3,4], and nums[2] = [3,4,5,6] are 3 and 4, so we return [3,4].
+Example 2:
+
+Input: nums = [[1,2,3],[4,5,6]]
+Output: []
+Explanation: 
+There does not exist any integer present both in nums[0] and nums[1], so we return an empty list [].
+Ê
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= sum(nums[i].length) <= 1000
+1 <= nums[i][j] <= 1000
+All the values of nums[i] are unique.;=;=https://leetcode.com/problems/intersection-of-multiple-arrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/1976940/java-easy-solution-by-anukulsaini-dk6r/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/7075506/intersection-of-arrays-by-delbin_de_yoha-vmxl/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/7041105/intersection-of-multiple-arrays-java-pyt-obem/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/1977345/java-c-clean-short-by-fllght-wvd8/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/4293767/100-beat-java-easy-by-omjethva24-h7j9/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/6691556/solution-using-a-hashmap-and-frequency-l-77mx/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/6333882/java-running-easy-fast-hashmap-frequency-xgsz/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/6839705/solved-using-counting-time-complexity-on-29vw/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/1977585/java-3lines-beats-10000-memoryspeed-0ms-gxeov/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/6301186/2ms-beats-100-java-by-galani_jenis-nfjs/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/6716100/simple-solution-by-hemima_1-p7su/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/6688506/easy-java-solution-by-vermaanshul975-l1c8/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/6143867/java-solution-by-itsanuragpal-izn4/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/1981312/hashmap-accepted-solution-to-make-it-eas-q0wa/;;https://leetcode.com/problems/intersection-of-multiple-arrays/solutions/5882990/intersection-of-multiple-arrays-by-gokul-5rr6/;;;=;==;=;=;

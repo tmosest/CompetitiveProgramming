@@ -1,0 +1,35 @@
+1335. Minimum Difficulty of a Job Schedule;=;=Hard;=;=public int minDifficulty(int[] jobDifficulty, int d);=;=You want to schedule a list of jobs in d days. Jobs are dependent (i.e To work on the ith job, you have to finish all the jobs j where 0 <= j < i).
+
+You have to finish at least one task every day. The difficulty of a job schedule is the sum of difficulties of each day of the d days. The difficulty of a day is the maximum difficulty of a job done on that day.
+
+You are given an integer array jobDifficulty and an integer d. The difficulty of the ith job is jobDifficulty[i].
+
+Return the minimum difficulty of a job schedule. If you cannot find a schedule for the jobs return -1.
+
+ 
+
+Example 1:
+
+
+Input: jobDifficulty = [6,5,4,3,2,1], d = 2
+Output: 7
+Explanation: First day you can finish the first 5 jobs, total difficulty = 6.
+Second day you can finish the last job, total difficulty = 1.
+The difficulty of the schedule = 6 + 1 = 7 
+Example 2:
+
+Input: jobDifficulty = [9,9,9], d = 4
+Output: -1
+Explanation: If you finish a job per day you will still have a free day. you cannot find a schedule for the given jobs.
+Example 3:
+
+Input: jobDifficulty = [1,1,1], d = 3
+Output: 3
+Explanation: The schedule is one job per day. total difficulty will be 3.
+ 
+
+Constraints:
+
+1 <= jobDifficulty.length <= 300
+0 <= jobDifficulty[i] <= 1000
+1 <= d <= 10;=;=https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/4472516/beats-100-explained-with-video-recursion-0bc1/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/7151544/easy-java-solution-dprec-memo-beginner-f-j62f/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/4472328/beats-1st-9002-2nd-9904-users-dp-c-java-a2ni9/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/490460/java-bottom-up-dp-with-explanation-by-ul-5039/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/4472332/beats-100-users-cjavapythonjavascript-2-9s3vj/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/4472597/daily-problems-detailed-explanation-java-h7qi/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/4472586/daily-problem-easily-explained-optimized-uo8c/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/2708517/easy-soln-java-recursion-memoization-by-19kdx/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/5503106/revise-and-get-it-done-p-by-dixon_n-bte7/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/2707961/java-100-5ms-2d-dp-solution-w-video-expl-3o2j/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/4473187/recursion-memoization-dynamic-programmin-w6i1/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/4472890/easy-java-solution-by-sanjeev1903-r3ah/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/951222/java-dfspruningdp-with-complete-demo-exp-0wt1/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/7156481/partition-dp-memo-odn2-by-gitchuan-vj95/;;https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/7092619/java-by-yukta_jain-kyg0/;;;=;==;=;=;

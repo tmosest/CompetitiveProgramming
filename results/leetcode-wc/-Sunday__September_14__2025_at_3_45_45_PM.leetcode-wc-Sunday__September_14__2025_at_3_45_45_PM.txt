@@ -1,0 +1,24 @@
+2160. Minimum Sum of Four Digit Number After Splitting Digits;=;=Easy;=;=public int minimumSum(int num);=;=You are given a positive integer num consisting of exactly four digits. Split num into two new integers new1 and new2 by using the digits found in num. Leading zeros are allowed in new1 and new2, and all the digits found in num must be used.
+
+For example, given num = 2932, you have the following digits: two 2's, one 9 and one 3. Some of the possible pairs [new1, new2] are [22, 93], [23, 92], [223, 9] and [2, 329].
+Return the minimum possible sum of new1 and new2.
+
+ 
+
+Example 1:
+
+Input: num = 2932
+Output: 52
+Explanation: Some possible pairs [new1, new2] are [29, 23], [223, 9], etc.
+The minimum sum can be obtained by the pair [29, 23]: 29 + 23 = 52.
+Example 2:
+
+Input: num = 4009
+Output: 13
+Explanation: Some possible pairs [new1, new2] are [0, 49], [490, 0], etc. 
+The minimum sum can be obtained by the pair [4, 9]: 4 + 9 = 13.
+ 
+
+Constraints:
+
+1000 <= num <= 9999;=;=https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/7166241/easy-code-0ms-100-beats-by-sivaaleet-mbr3/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/1746997/java-straightforward-by-aaveshk-a5qz/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/7145565/simple-approach-using-sorting-in-java-by-lr34/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/7085245/easy-java-solution-beats-100-runtime-0ms-odp5/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/7066377/minimum-sum-of-four-digit-number-after-s-72vk/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/6387992/o1-solution-true-optimal-solution-beats-lwcbq/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/6995679/simplest-java-solution-beats-100-by-arsh-pqwt/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/2066048/cjavac-two-plus-two-sorted-straight-forw-n86q/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/6761089/easy-peasy-java-code-by-arunsainarla-ktd1/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/6932491/beats-100-javac-c-python-beginner-by-cod-qejn/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/1978071/easy-java-by-sakhib-mz64/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/6471584/simple-easy-to-understand-100-beats-by-k-1o8f/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/6935444/easy-and-100-fast-solution-with-brief-ex-vhd1/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/1747144/3-lines-java-by-kanna17vce-j9wt/;;https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/solutions/3429913/easy-detailed-and-fast-java-solution-by-1rodg/;;;=;==;=;=;

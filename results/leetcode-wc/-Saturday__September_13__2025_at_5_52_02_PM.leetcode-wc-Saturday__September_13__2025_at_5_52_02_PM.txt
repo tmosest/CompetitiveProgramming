@@ -1,0 +1,29 @@
+2507. Smallest Value After Replacing With Sum of Prime Factors;=;=Medium;=;=public int smallestValue(int n);=;=You are given a positive integer n.
+
+Continuously replace n with the sum of its prime factors.
+
+Note that if a prime factor divides n multiple times, it should be included in the sum as many times as it divides n.
+Return the smallest value n will take on.
+
+ 
+
+Example 1:
+
+Input: n = 15
+Output: 5
+Explanation: Initially, n = 15.
+15 = 3 * 5, so replace n with 3 + 5 = 8.
+8 = 2 * 2 * 2, so replace n with 2 + 2 + 2 = 6.
+6 = 2 * 3, so replace n with 2 + 3 = 5.
+5 is the smallest value n will take on.
+Example 2:
+
+Input: n = 3
+Output: 3
+Explanation: Initially, n = 3.
+3 is the smallest value n will take on.
+ 
+
+Constraints:
+
+2 <= n <= 105;=;=https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/7118021/smallest-value-after-prime-factor-sum-25-1acz/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2923847/simple-java-prime-factorization-by-flyro-mko9/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2923645/beginner-friendly-java-solution-by-himan-djph/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2923573/cjavapython3-simulation-by-ye15-b79g/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2923483/java-simplest-solution-beats-100-by-akxh-cj5p/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/6313099/java-time-complexity-olog-n-n-runtime-1m-qtdp/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2923486/simple-java-solution-by-siddhant_1602-w06r/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/3570881/java-solution-by-kthnode-b34e/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2933274/using-prime-factor-by-lavkush_173-ukuh/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/7111835/easy-coding-solution-in-java-ultimately-k56fb/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2925087/my-submission-java-by-pappuraj-815q/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2923736/java-simplest-and-shortest-by-sourin_bru-tj2s/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2923547/easy-java-solution-by-sgsumitgupta17-6r6f/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2923606/java-brute-force-by-henryzhc-wa0s/;;https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/solutions/2930617/simplest-recursion-by-vidhwanshak-bd95/;;;=;==;=;=;

@@ -1,0 +1,26 @@
+261. Graph Valid Tree;=;=Medium;=;=publicÊbooleanÊvalidTree(intÊn,Êint[][]Êedges);=;=You have a graph of n nodes labeled from 0 to n - 1. You are given an integer n and a list of edges where edges[i] = [ai, bi] indicates that there is an undirected edge between nodes ai and bi in the graph.
+
+Return true if the edges of the given graph make up a valid tree, and false otherwise.
+
+Ê
+
+Example 1:
+
+
+Input: n = 5, edges = [[0,1],[0,2],[0,3],[1,4]]
+Output: true
+Example 2:
+
+
+Input: n = 5, edges = [[0,1],[1,2],[2,3],[1,3],[1,4]]
+Output: false
+Ê
+
+Constraints:
+
+1 <= n <= 2000
+0 <= edges.length <= 5000
+edges[i].length == 2
+0 <= ai, bi < n
+ai != bi
+There are no self-loops or repeated edges.;=;=https://leetcode.com/problems/graph-valid-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/graph-valid-tree/solutions/69018/ac-java-union-find-solution-by-jeantimex-bpyw/;;https://leetcode.com/problems/graph-valid-tree/solutions/69042/ac-java-graph-dfs-solution-with-adjacenc-lfyb/;;https://leetcode.com/problems/graph-valid-tree/solutions/7009033/using-disjoint-set-by-anandhu-udayakumar-leg1/;;https://leetcode.com/problems/graph-valid-tree/solutions/6363965/bfs-solution-if-anyone-is-interested-by-ml6d8/;;https://leetcode.com/problems/graph-valid-tree/solutions/69110/java-bfs-solution-by-chase1991-7es1/;;https://leetcode.com/problems/graph-valid-tree/solutions/69118/java-simple-dfs-solution-by-anton15-duh0/;;https://leetcode.com/problems/graph-valid-tree/solutions/6353750/easy-dfs-solution-checking-for-a-cycle-b-244j/;;https://leetcode.com/problems/graph-valid-tree/solutions/6481817/c-java-easy-solution-by-wait_watch-90uw/;;https://leetcode.com/problems/graph-valid-tree/solutions/69080/simple-1ms-java-union-find-solution-by-r-tfx3/;;https://leetcode.com/problems/graph-valid-tree/solutions/2030600/java-union-find-bfs-dfs-by-wantrytao-9ukv/;;https://leetcode.com/problems/graph-valid-tree/solutions/1676323/java-solution-with-comments-by-ashbash19-utcb/;;https://leetcode.com/problems/graph-valid-tree/solutions/432937/java-union-find-0ms-beats-100-by-haleyys-nl76/;;https://leetcode.com/problems/graph-valid-tree/solutions/7144525/union-find-by-asyncy99-ue5o/;;https://leetcode.com/problems/graph-valid-tree/solutions/6997831/simple-bfs-check-if-edges-n-1-to-avoid-c-d1s4/;;https://leetcode.com/problems/graph-valid-tree/solutions/1088265/java-dfs-graph-theory-by-jsanchez78-r0wh/;;;=;==;=;=;

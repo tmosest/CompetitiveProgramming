@@ -1,0 +1,46 @@
+3305. Count of Substrings Containing Every Vowel and K Consonants I;=;=Medium;=;=public int countOfSubstrings(String word, int k);=;=You are given a string word and a non-negative integer k.
+
+Return the total number of substrings of word that contain every vowel ('a', 'e', 'i', 'o', and 'u') at least once and exactly k consonants.
+
+ 
+
+Example 1:
+
+Input: word = "aeioqq", k = 1
+
+Output: 0
+
+Explanation:
+
+There is no substring with every vowel.
+
+Example 2:
+
+Input: word = "aeiou", k = 0
+
+Output: 1
+
+Explanation:
+
+The only substring with every vowel and zero consonants is word[0..4], which is "aeiou".
+
+Example 3:
+
+Input: word = "ieaouqqieaouqq", k = 1
+
+Output: 3
+
+Explanation:
+
+The substrings with every vowel and one consonant are:
+
+word[0..5], which is "ieaouq".
+word[6..11], which is "qieaou".
+word[7..12], which is "ieaouq".
+ 
+
+Constraints:
+
+5 <= word.length <= 250
+word consists only of lowercase English letters.
+0 <= k <= word.length - 5;=;=https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846122/simple-brute-force-by-_sxrthakk-5x1m/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5847569/straight-forward-sliding-window-3305-330-2537/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5862631/python3-map-and-two-pointer-ts-91-96-by-po1eq/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846204/sliding-window-approach-by-prashasst-1e7z/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846101/brute-force-by-shubhamyadav32100-80k8/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5847383/easy-to-understand-and-fast-by-ram2310-pr9y/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846142/beats-100-and-easy-to-understand-by-anik-8xqx/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846071/java-simple-solution-by-shree_govind_jee-zbyy/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5850621/better-than-100-beginner-friendly-soluti-9rbn/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846109/my-code-in-java-by-guna_sai_kumar-rb5q/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846073/java-solution-by-ganesh_dandekar-nopy/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5847475/100-user-beat-java-solution-by-s_a_m2003-kfkx/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5847816/java-code-100-beats-but-1000ms-p-btw-eas-fvot/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846836/brute-force-easy-solution-with-intution-eumkw/;;https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/solutions/5846193/brute-force-solution-simple-early-stoppi-66zf/;;;=;==;=;=;

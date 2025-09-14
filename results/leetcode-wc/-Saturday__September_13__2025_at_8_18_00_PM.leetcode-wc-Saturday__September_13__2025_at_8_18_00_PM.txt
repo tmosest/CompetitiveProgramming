@@ -1,0 +1,40 @@
+3209. Number of Subarrays With AND Value of K;=;=Hard;=;=public long countSubarrays(int[] nums, int k);=;=Given an array of integers nums and an integer k, return the number of subarrays of nums where the bitwise AND of the elements of the subarray equals k.
+
+ 
+
+Example 1:
+
+Input: nums = [1,1,1], k = 1
+
+Output: 6
+
+Explanation:
+
+All subarrays contain only 1's.
+
+Example 2:
+
+Input: nums = [1,1,2], k = 1
+
+Output: 3
+
+Explanation:
+
+Subarrays having an AND value of 1 are: [1,1,2], [1,1,2], [1,1,2].
+
+Example 3:
+
+Input: nums = [1,2,3], k = 2
+
+Output: 2
+
+Explanation:
+
+Subarrays having an AND value of 2 are: [1,2,3], [1,2,3].
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i], k <= 109;=;=https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5428978/hashmap-soln-lc-898-by-vaibhav1701-5d8s/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5428966/java-clean-solution-biweekly-content-by-ll4x9/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/6620080/just-count-streaks-for-every-bit-simple-jauwl/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5429360/solution-by-dare2solve-detailed-explanat-mmf0/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5428838/sliding-window-with-explanation-by-visco-mjm9/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5458842/java-solution-using-sliding-window-by-ch-gasm/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/7076888/java-bit-manipulation-two-pointer-slidin-gwjw/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/6942621/easiest-solution-with-hashmap-without-bi-7q48/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/6942622/easiest-solution-with-hashmap-without-bi-6ahe/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5430725/sharing-my-solution-based-on-different-i-yrnc/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/6200251/java-using-map-and-bitwise-operation-by-cijd9/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5662715/simple-java-solution-by-sakshikishore-rp7v/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5530135/simplest-sliding-windows-no-bit-manipula-tir9/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5449831/easy-solution-to-better-understand-it-so-ydo6/;;https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/solutions/5430689/java-69-ms-on-time-o1-space-beats-100-sl-222a/;;;=;==;=;=;

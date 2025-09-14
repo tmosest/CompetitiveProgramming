@@ -1,0 +1,29 @@
+772. Basic Calculator III;=;=Hard;=;=public int calculate(String s);=;=Implement a basic calculator to evaluate a simple expression string.
+
+The expression string contains only non-negative integers, '+', '-', '*', '/' operators, and open '(' and closing parentheses ')'. The integer division should truncate toward zero.
+
+You may assume that the given expression is always valid. All intermediate results will be in the range of [-231, 231 - 1].
+
+Note: You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as eval().
+
+ 
+
+Example 1:
+
+Input: s = "1+1"
+Output: 2
+Example 2:
+
+Input: s = "6-4/2"
+Output: 4
+Example 3:
+
+Input: s = "2*(5+5*2)/3+(6/2+8)"
+Output: 21
+ 
+
+Constraints:
+
+1 <= s <= 104
+s consists of digits, '+', '-', '*', '/', '(', and ')'.
+s is a valid expression.;=;=https://leetcode.com/problems/basic-calculator-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/basic-calculator-iii/solutions/1727380/java-this-simple-template-can-be-used-fo-o9pq/;;https://leetcode.com/problems/basic-calculator-iii/solutions/344371/java-common-template-for-basic-calculato-4e2d/;;https://leetcode.com/problems/basic-calculator-iii/solutions/2163617/java-on-recursion-no-stackqueue-0ms-beat-v5xy/;;https://leetcode.com/problems/basic-calculator-iii/solutions/686492/optimal-generic-solution-for-basic-calcu-wwfp/;;https://leetcode.com/problems/basic-calculator-iii/solutions/7129229/straightforward-solution-by-caoqingmvp-3rqk/;;https://leetcode.com/problems/basic-calculator-iii/solutions/1098572/java-9994-1-ms-solution-easy-to-follow-b-7ql5/;;https://leetcode.com/problems/basic-calculator-iii/solutions/113831/java-two-stack-on-separate-num-and-opera-em24/;;https://leetcode.com/problems/basic-calculator-iii/solutions/3487763/very-clean-java-solution-using-two-stack-5yq9/;;https://leetcode.com/problems/basic-calculator-iii/solutions/520815/java-straightforward-recursive-solution-3hwyn/;;https://leetcode.com/problems/basic-calculator-iii/solutions/1878965/shunting-yard-algorithm-reverse-polish-n-biv6/;;https://leetcode.com/problems/basic-calculator-iii/solutions/6305355/easy-peasy-simple-solution-for-faang-int-23dz/;;https://leetcode.com/problems/basic-calculator-iii/solutions/1820771/simple-java-solution-without-stack-by-tr-44yh/;;https://leetcode.com/problems/basic-calculator-iii/solutions/2030197/java-stack-recursion-solution-with-comme-r16g/;;https://leetcode.com/problems/basic-calculator-iii/solutions/318332/java-iterative-by-ayyild1z-qpst/;;https://leetcode.com/problems/basic-calculator-iii/solutions/4282532/east-to-understand-generic-sol-for-basic-9apz/;;;=;==;=;=;

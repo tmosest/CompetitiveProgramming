@@ -1,0 +1,34 @@
+2054. Two Best Non-Overlapping Events;=;=Medium;=;=public int maxTwoEvents(int[][] events);=;=You are given a 0-indexed 2D integer array of events where events[i] = [startTimei, endTimei, valuei]. The ith event starts at startTimei and ends at endTimei, and if you attend this event, you will receive a value of valuei. You can choose at most two non-overlapping events to attend such that the sum of their values is maximized.
+
+Return this maximum sum.
+
+Note that the start time and end time is inclusive: that is, you cannot attend two events where one of them starts and the other ends at the same time. More specifically, if you attend an event with end time t, the next event must start at or after t + 1.
+
+ 
+
+Example 1:
+
+
+Input: events = [[1,3,2],[4,5,2],[2,4,3]]
+Output: 4
+Explanation: Choose the green events, 0 and 1 for a sum of 2 + 2 = 4.
+Example 2:
+
+
+Input: events = [[1,3,2],[4,5,2],[1,5,5]]
+Output: 5
+Explanation: Choose event 2 for a sum of 5.
+Example 3:
+
+
+Input: events = [[1,5,3],[1,5,1],[6,6,5]]
+Output: 8
+Explanation: Choose events 0 and 2 for a sum of 3 + 5 = 8.
+ 
+
+Constraints:
+
+2 <= events.length <= 105
+events[i].length == 3
+1 <= startTimei <= endTimei <= 109
+1 <= valuei <= 106;=;=https://leetcode.com/problems/two-best-non-overlapping-events/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6124334/100-beats-simple-binary-search-by-sumeet-ez91/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6124771/simple-solution-with-priority-queue-beat-a2b9/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6124464/easy-solution-onlogn-priority-queue-maxi-vqjf/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6125383/beats-super-easy-beginners-by-codewithsp-j06r/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6126392/binary-search-approach-by-arunk_leetcode-xnpr/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/2028285/java-sorting-priorityqueue-onlogn-by-chi-b9sb/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6124496/easy-to-understand-intuitive-approach-wi-7bfp/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6125008/two-best-non-overlapping-events-easy-sol-yxkl/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6126268/c-java-kotlin-simple-binary-search-solut-uv82/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6125022/pre-computation-binary-search-on-log-n-t-53kr/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/2475494/understanding-the-pattern-java-solution-ezq90/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/1667405/java-concise-with-explanation-by-adaltio-emxf/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6126552/binary-search-suffix-array-by-himanshu_1-xrzm/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6125926/simple-java-solution-by-harsh__005-bxcx/;;https://leetcode.com/problems/two-best-non-overlapping-events/solutions/6124417/java-best-solution-beats-100-by-aryan070-xpf6/;;;=;==;=;=;

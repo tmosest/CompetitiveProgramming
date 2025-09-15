@@ -1,0 +1,34 @@
+2083. Substrings That Begin and End With the Same Letter;=;=Medium;=;=public long numberOfSubstrings(String s);=;=You are given a 0-indexed string s consisting of only lowercase English letters. Return the number of substrings in s that begin and end with the same character.
+
+A substring is a contiguous non-empty sequence of characters within a string.
+
+ 
+
+Example 1:
+
+Input: s = "abcba"
+Output: 7
+Explanation:
+The substrings of length 1 that start and end with the same letter are: "a", "b", "c", "b", and "a".
+The substring of length 3 that starts and ends with the same letter is: "bcb".
+The substring of length 5 that starts and ends with the same letter is: "abcba".
+Example 2:
+
+Input: s = "abacad"
+Output: 9
+Explanation:
+The substrings of length 1 that start and end with the same letter are: "a", "b", "a", "c", "a", and "d".
+The substrings of length 3 that start and end with the same letter are: "aba" and "aca".
+The substring of length 5 that starts and ends with the same letter is: "abaca".
+Example 3:
+
+Input: s = "a"
+Output: 1
+Explanation:
+The substring of length 1 that starts and ends with the same letter is: "a".
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/1613641/java-count-freq-simple-combinatorial-mat-soi5/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/1669285/java-single-pass-with-constant-space-by-gal5b/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/3054755/simple-prefix-sum-by-avisingh-wulj/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5302771/java-3-ms-by-liavs-o7ro/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5307598/java-on-solution-short-code-by-pushti09-bxzo/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5294381/java-solution-using-map-and-nc2-by-amye-3zdy/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5286486/java-use-a-map-by-venkim-8w4t/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5286458/java-map-compute-by-matt_hackerman-7wyc/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5281593/runtime-optimized-with-explanations-java-ayej/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5280964/java-time-on-space-o1-by-ankit16190-ebxs/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5278195/simple-java-solution-by-n00bs404-48d9/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5129791/java-on-solution-by-tbekpro-8n62/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/5096279/java-javascript-typescript-c-c-kotlin-so-9ohy/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/3982416/simple-java-solution-by-sakshikishore-s2nw/;;https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/solutions/3043616/simple-java-on-count-solution-by-sycmtic-czuq/;;;=;==;=;=;

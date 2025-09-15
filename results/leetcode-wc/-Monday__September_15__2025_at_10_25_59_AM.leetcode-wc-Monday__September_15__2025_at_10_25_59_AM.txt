@@ -1,0 +1,34 @@
+995. Minimum Number of K Consecutive Bit Flips;=;=Hard;=;=publicÊintÊminKBitFlips(int[]Ênums,ÊintÊk);=;=You are given a binary array nums and an integer k.
+
+A k-bit flip is choosing a subarray of length k from nums and simultaneously changing every 0 in the subarray to 1, and every 1 in the subarray to 0.
+
+Return the minimum number of k-bit flips required so that there is no 0 in the array. If it is not possible, return -1.
+
+A subarray is a contiguous part of an array.
+
+Ê
+
+Example 1:
+
+Input: nums = [0,1,0], k = 1
+Output: 2
+Explanation: Flip nums[0], then flip nums[2].
+Example 2:
+
+Input: nums = [1,1,0], k = 2
+Output: -1
+Explanation: No matter how we flip subarrays of size 2, we cannot make the array become [1,1,1].
+Example 3:
+
+Input: nums = [0,0,0,1,0,1,1,0], k = 3
+Output: 3
+Explanation: 
+Flip nums[0],nums[1],nums[2]: nums becomes [1,1,1,1,0,1,1,0]
+Flip nums[4],nums[5],nums[6]: nums becomes [1,1,1,1,1,0,0,0]
+Flip nums[5],nums[6],nums[7]: nums becomes [1,1,1,1,1,1,1,1]
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= k <= nums.length;=;=https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5359610/beats-100-explained-with-video-cjavapyth-g4wu/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5360930/simplest-explanationfastestefficientdryr-wp0u/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5359515/on-o1-greedy-proof-line-sweep-tutorial-m-j0e7/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5359680/easy-java-python3-c-solution-4-ms-_-by-s-xdx3/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5362579/java-solution-explained-in-hindi2-approa-nvji/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5361193/java-solution-beats-10000-by-mohit-005-kczi/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5359612/code-perfect-without-errors-to-beat-othe-m3vi/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5359518/easy-peasy-javapython3c-by-raviparihar-syz8/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/6554497/on-time-complexity-100-beats-by-aryaman1-kchl/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/6554496/on-time-complexity-100-beats-by-aryaman1-emcg/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5360197/easy-java-solution-queue-beats-100-by-sh-ai8e/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5361815/java-dp-on-both-space-and-time-beginner-obce2/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5359475/beats-100-one-pass-solution-java-c-pytho-6gic/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/6556733/easy-sweep-line-algo-solution-java-by-he-y1fi/;;https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5363553/efficiently-flipping-k-consecutive-bits-xywd7/;;;=;==;=;=;

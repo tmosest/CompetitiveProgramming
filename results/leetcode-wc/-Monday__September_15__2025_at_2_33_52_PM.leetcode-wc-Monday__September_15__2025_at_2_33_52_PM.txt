@@ -1,0 +1,37 @@
+2641. Cousins in Binary Tree II;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public TreeNode replaceValueInTree(TreeNode root);=;=Given the root of a binary tree, replace the value of each node in the tree with the sum of all its cousins' values.
+
+Two nodes of a binary tree are cousins if they have the same depth with different parents.
+
+Return the root of the modified tree.
+
+Note that the depth of a node is the number of edges in the path from the root node to it.
+
+ 
+
+Example 1:
+
+
+Input: root = [5,4,9,1,10,null,7]
+Output: [0,0,0,7,7,null,11]
+Explanation: The diagram above shows the initial binary tree and the binary tree after changing the value of each node.
+- Node with value 5 does not have any cousins so its sum is 0.
+- Node with value 4 does not have any cousins so its sum is 0.
+- Node with value 9 does not have any cousins so its sum is 0.
+- Node with value 1 has a cousin with value 7 so its sum is 7.
+- Node with value 10 has a cousin with value 7 so its sum is 7.
+- Node with value 7 has cousins with values 1 and 10 so its sum is 11.
+Example 2:
+
+
+Input: root = [3,1,2]
+Output: [0,0,0]
+Explanation: The diagram above shows the initial binary tree and the binary tree after changing the value of each node.
+- Node with value 3 does not have any cousins so its sum is 0.
+- Node with value 1 does not have any cousins so its sum is 0.
+- Node with value 2 does not have any cousins so its sum is 0.
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 105].
+1 <= Node.val <= 104;=;=https://leetcode.com/problems/cousins-in-binary-tree-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5955106/beats-10000-explained-with-example-by-sr-b6eb/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5955395/single-pass-understand-once-simple-with-ce5xx/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5955377/explained-step-by-step-beats-100-working-5epu/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/3419993/javapython-3-dfs-and-bfs-w-brief-explana-uqvf/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5955965/beats-9755-2-level-order-traversal-by-b_-3yzx/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5955163/cousins-in-a-binary-tree-double-bfs-trav-8p0l/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5955184/clean-and-fully-explained-code-beats-100-ixi7/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5957389/tweaked-level-order-traversal-java-c-vid-w6cx/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5958121/simple-pyjava-code-with-explanationbfs-b-ds2b/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5955489/daily-question-231024-please-upvote-if-y-43iw/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5955590/java-solution-for-cousins-in-binary-tree-fv03/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5957528/very-simple-bfs-approach-by-kanna-naveen-0ed5/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5956506/beats-100-the-ultimate-bfs-approach-for-9fqt4/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/3420410/simply-the-bfs-way-by-sky09-u2vj/;;https://leetcode.com/problems/cousins-in-binary-tree-ii/solutions/5289561/java-solution-by-dixon_n-u44i/;;;=;==;=;=;

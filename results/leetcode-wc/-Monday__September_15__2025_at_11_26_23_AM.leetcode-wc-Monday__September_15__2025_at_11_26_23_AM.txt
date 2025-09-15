@@ -1,0 +1,21 @@
+870. Advantage Shuffle;=;=Medium;=;=public boolean sequenceReconstruction(int[] nums, List<List<Integer>> sequences)         // step 1: build graph        int n = nums.length;        List<Integer>[] graph = (List<Integer>[]) new List[n];        Arrays.setAll(graph, i -> new ArrayList<>());        int[] indegree = new int[n];        for (List<Integer> edges : sequences)             for (int i = 0; i < edges.size() - 1; i++)                 graph[edges.get(i) - 1].add(edges.get(i + 1) - 1);                indegree[edges.get(i + 1) - 1]++;                            // step 2: topology sort        Queue<Integer> queue = new LinkedList<>();        for (int i = 0; i < n; i++)            if (indegree[i] == 0) queue.offer(i);        for (int num : nums)             if (queue.size() != 1) return false;            int node = queue.poll();            if (node != num - 1) return false;            for (int next : graph[node])                 if (--indegree[next] == 0)                     queue.offer(next);                                            return true;;=;=You are given two integer arrays nums1 and nums2 both of the same length. The advantage of nums1 with respect to nums2 is the number of indices i for which nums1[i] > nums2[i].
+
+Return any permutation of nums1 that maximizes its advantage with respect to nums2.
+
+ 
+
+Example 1:
+
+Input: nums1 = [2,7,11,15], nums2 = [1,10,4,11]
+Output: [2,11,7,15]
+Example 2:
+
+Input: nums1 = [12,24,8,32], nums2 = [13,25,32,11]
+Output: [24,32,8,12]
+ 
+
+Constraints:
+
+1 <= nums1.length <= 105
+nums2.length == nums1.length
+0 <= nums1[i], nums2[i] <= 109;=;=https://leetcode.com/problems/advantage-shuffle/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/advantage-shuffle/solutions/1125217/js-python-java-c-short-solution-w-explan-i4s6/;;https://leetcode.com/problems/advantage-shuffle/solutions/3499371/solution-by-deleted_user-w014/;;https://leetcode.com/problems/advantage-shuffle/solutions/6635473/think-smart-not-hard-clean-greedy-for-ma-1mry/;;https://leetcode.com/problems/advantage-shuffle/solutions/1126314/java-simple-and-easy-to-understand-solut-vmr2/;;https://leetcode.com/problems/advantage-shuffle/solutions/7185953/easy-to-understand-tc-onlogn-minheap-by-gazxt/;;https://leetcode.com/problems/advantage-shuffle/solutions/1125511/greedy-two-pointers-sorting-java-by-hima-gleq/;;https://leetcode.com/problems/advantage-shuffle/solutions/4508474/java-clean-code-clear-explanations-by-st-e4o4/;;https://leetcode.com/problems/advantage-shuffle/solutions/1130646/java-treemap-bst-on-log-n-by-133c7-royv/;;https://leetcode.com/problems/advantage-shuffle/solutions/7178279/be-greedy-two-pointers-java-by-runlingli-jq9f/;;https://leetcode.com/problems/advantage-shuffle/solutions/1125788/java-simple-concise-solution-using-sorti-znif/;;https://leetcode.com/problems/advantage-shuffle/solutions/3036588/sorting-two-pointers-approach-java-simpl-hf35/;;https://leetcode.com/problems/advantage-shuffle/solutions/1672786/java-easy-solution-greedy-sorting-hashma-ce4q/;;https://leetcode.com/problems/advantage-shuffle/solutions/7058999/binary-serach-by-sumanish-crth/;;https://leetcode.com/problems/advantage-shuffle/solutions/1126524/java-easy-and-intuitive-by-mahm-h7m7/;;https://leetcode.com/problems/advantage-shuffle/solutions/815886/java-solution-87-by-idbasketball08-fn2p/;;;=;==;=;=;

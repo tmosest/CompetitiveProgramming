@@ -1,0 +1,42 @@
+2268. Minimum Number of Keypresses;=;=Medium;=;=public int minimumKeypresses(String s);=;=You have a keypad with 9 buttons, numbered from 1 to 9, each mapped to lowercase English letters. You can choose which characters each button is matched to as long as:
+
+All 26 lowercase English letters are mapped to.
+Each character is mapped to by exactly 1 button.
+Each button maps to at most 3 characters.
+To type the first character matched to a button, you press the button once. To type the second character, you press the button twice, and so on.
+
+Given a string s, return the minimum number of keypresses needed to type s using your keypad.
+
+Note that the characters mapped to by each button, and the order they are mapped in cannot be changed.
+
+ 
+
+Example 1:
+
+
+Input: s = "apple"
+Output: 5
+Explanation: One optimal way to setup your keypad is shown above.
+Type 'a' by pressing button 1 once.
+Type 'p' by pressing button 6 once.
+Type 'p' by pressing button 6 once.
+Type 'l' by pressing button 5 once.
+Type 'e' by pressing button 3 once.
+A total of 5 button presses are needed, so return 5.
+Example 2:
+
+
+Input: s = "abcdefghijkl"
+Output: 15
+Explanation: One optimal way to setup your keypad is shown above.
+The letters 'a' to 'i' can each be typed by pressing a button once.
+Type 'j' by pressing button 1 twice.
+Type 'k' by pressing button 2 twice.
+Type 'l' by pressing button 3 twice.
+A total of 15 button presses are needed, so return 15.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/minimum-number-of-keypresses/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-keypresses/solutions/2803956/easy-to-undertsand-intuitive-optimized-j-cace/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/2437106/java-short-solution-by-michaeljiang-ej00/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/5134816/simple-java-short-solution-by-ankitsinha-0myr/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/2661702/java-faster-than-100-mem-better-than-995-p49a/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/4553936/java-solution-by-lohith17-pv0o/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/2027447/java-6-lines-by-climberig-sgnw/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/4700929/on-in-java-by-sapg432-zqre/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/3794743/simple-detailed-explanaiton-by-swarathes-hdsl/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/6785630/greedy-reuse-lc-3041-by-prashant404-q0s8/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/5141575/java-shortest-solution-heap-priorityqueu-0o9v/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/2628375/java-straightforward-solution-timeon-by-5pdkm/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/2221939/easy-to-understand-simple-onlgn-solution-m2x8/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/6885479/java-by-reyhanehsalkhi-2gsd/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/6056030/simple-java-solution-by-aqibjaved-q3g1/;;https://leetcode.com/problems/minimum-number-of-keypresses/solutions/6049450/beats-100-3ms-sorting-on-time-complexity-a9er/;;;=;==;=;=;

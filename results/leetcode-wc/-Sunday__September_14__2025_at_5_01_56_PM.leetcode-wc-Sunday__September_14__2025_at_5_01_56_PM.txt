@@ -1,0 +1,52 @@
+3187. Peaks in Array;=;=Hard;=;=static class SegTree         private int size;        private int[] tree;        public SegTree(int size)             this.size = size;            this.tree = new int[4  size];                public void build(int[] peaks, int node, int start, int end)             if (start == end)                 tree[node] = peaks[start];             else                 int mid = (start + end) / 2;                build(peaks, 2  node + 1, start, mid);                build(peaks, 2  node + 2, mid + 1, end);                tree[node] = tree[2  node + 1] + tree[2  node + 2];                            public void update(int idx, int node, int start, int end, int val)             if (start == end)                 tree[node] = val;             else                 int mid = (start + end) / 2;                if (idx <= mid) update(idx, 2  node + 1, start, mid, val);                else update(idx, 2  node + 2, mid + 1, end, val);                                tree[node] = tree[2  node + 1] + tree[2  node + 2];;=;=A peak in an array arr is an element that is greater than its previous and next element in arr.
+
+You are given an integer array nums and a 2D integer array queries.
+
+You have to process queries of two types:
+
+queries[i] = [1, li, ri], determine the count of peak elements in the subarray nums[li..ri].
+queries[i] = [2, indexi, vali], change nums[indexi] to vali.
+Return an array answer containing the results of the queries of the first type in order.
+
+Notes:
+
+The first and the last element of an array or a subarray cannot be a peak.
+ 
+
+Example 1:
+
+Input: nums = [3,1,4,2,5], queries = [[2,3,4],[1,0,4]]
+
+Output: [0]
+
+Explanation:
+
+First query: We change nums[3] to 4 and nums becomes [3,1,4,4,5].
+
+Second query: The number of peaks in the [3,1,4,4,5] is 0.
+
+Example 2:
+
+Input: nums = [4,1,4,2,1,5], queries = [[2,2,4],[1,0,2],[1,0,4]]
+
+Output: [0,1]
+
+Explanation:
+
+First query: nums[2] should become 4, but it is already set to 4.
+
+Second query: The number of peaks in the [4,1,4] is 0.
+
+Third query: The second 4 is a peak in the [4,1,4,2,1].
+
+ 
+
+Constraints:
+
+3 <= nums.length <= 105
+1 <= nums[i] <= 105
+1 <= queries.length <= 105
+queries[i][0] == 1 or queries[i][0] == 2
+For all i that:
+queries[i][0] == 1: 0 <= queries[i][1] <= queries[i][2] <= nums.length - 1
+queries[i][0] == 2: 0 <= queries[i][1] <= nums.length - 1, 1 <= queries[i][2] <= 105;=;=https://leetcode.com/problems/peaks-in-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/peaks-in-array/solutions/5319870/segment-tree-solution-beat-1000-by-mysel-1181/;;https://leetcode.com/problems/peaks-in-array/solutions/6184659/easy-segment-tree-solution-by-viraj_pati-gcsu/;;https://leetcode.com/problems/peaks-in-array/solutions/5321237/java-yet-another-segment-tree-solution-b-1bt7/;;https://leetcode.com/problems/peaks-in-array/solutions/5320380/sqrt-decomposition-nsqrtn-by-ppwani-lnnw/;;https://leetcode.com/problems/peaks-in-array/solutions/5344380/segment-tree-by-irvifa-z3lk/;;https://leetcode.com/problems/peaks-in-array/solutions/5323230/counting-peaks-in-a-range-by-cregan_wolf-doco/;;https://leetcode.com/problems/peaks-in-array/solutions/7044629/fenwick-tree-java-simple-understand-code-t7z9/;;https://leetcode.com/problems/peaks-in-array/solutions/6993530/easy-java-fenwick-tree-solution-by-arham-bxxb/;;https://leetcode.com/problems/peaks-in-array/solutions/6946994/java-solution-using-segment-trees-by-deb-uxk7/;;https://leetcode.com/problems/peaks-in-array/solutions/5862002/java-solution-segment-tree-onlogn-by-har-djak/;;https://leetcode.com/problems/peaks-in-array/solutions/5496493/easy-to-understande-commented-step-by-st-eoiv/;;https://leetcode.com/problems/peaks-in-array/solutions/5328012/fenwick-tree-java-solution-by-mickey3d-wpfq/;;https://leetcode.com/problems/peaks-in-array/solutions/5324045/segment-tree-by-ravneet_b-d1j7/;;https://leetcode.com/problems/peaks-in-array/solutions/5321542/java-140ms-segtree-by-pavan_d_naik-mfjk/;;https://leetcode.com/problems/peaks-in-array/solutions/5321415/intuitive-segment-tree-solution-by-ashok-zeum/;;;=;==;=;=;

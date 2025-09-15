@@ -1,0 +1,43 @@
+3517. Smallest Palindromic Rearrangement I;=;=Medium;=;=public String smallestPalindrome(String s);=;=You are given a palindromic string s.
+
+Return the lexicographically smallest palindromic permutation of s.
+
+ 
+
+Example 1:
+
+Input: s = "z"
+
+Output: "z"
+
+Explanation:
+
+A string of only one character is already the lexicographically smallest palindrome.
+
+Example 2:
+
+Input: s = "babab"
+
+Output: "abbba"
+
+Explanation:
+
+Rearranging "babab" ? "abbba" gives the smallest lexicographic palindrome.
+
+Example 3:
+
+Input: s = "daccad"
+
+Output: "acddca"
+
+Explanation:
+
+Rearranging "daccad" ? "acddca" gives the smallest lexicographic palindrome.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of lowercase English letters.
+s is guaranteed to be palindromic.;=;=https://leetcode.com/problems/smallest-palindromic-rearrangement-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6644865/2-steps-simple-solution-clean-code-on-lo-ddgc/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6644831/cute-code-by-ajay_prabhu-7fgp/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/7024093/easiest-solution-with-hashmap-by-ashu_62-ij1i/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6650027/passed-easy-approach-by-y0geshthakur-5sac/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6644973/java-solution-by-harsh__005-zhzq/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6644848/just-sort-the-first-half-java-by-nickulm-0crr/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6645777/java-clean-on-counting-solution-by-torch-893i/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6644818/java-solution-solved-using-stringbuilder-6bho/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6644870/simple-easy-to-understand-greedy-by-hars-utni/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6645369/easy-solution-in-java-c-and-python-by-ni-q3e9/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6648881/best-and-easy-to-understand-solution-wit-eoep/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6662444/on-simple-approach-by-abukafq-xz95/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6660098/easy-frequency-count-with-explanation-on-a06p/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6649626/simply-store-the-frequency-of-each-digit-nh1r/;;https://leetcode.com/problems/smallest-palindromic-rearrangement-i/solutions/6646946/solution-with-ordered-map-tree-map-by-ri-ssmv/;;;=;==;=;=;

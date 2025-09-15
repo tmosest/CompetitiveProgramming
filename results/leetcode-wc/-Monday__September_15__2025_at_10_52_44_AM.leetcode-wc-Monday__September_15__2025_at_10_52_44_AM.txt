@@ -1,0 +1,32 @@
+1958. Check if Move is Legal;=;=Medium;=;=public boolean checkMove(char[][] board, int rMove, int cMove, char color);=;=You are given a 0-indexed 8 x 8 grid board, where board[r][c] represents the cell (r, c) on a game board. On the board, free cells are represented by '.', white cells are represented by 'W', and black cells are represented by 'B'.
+
+Each move in this game consists of choosing a free cell and changing it to the color you are playing as (either white or black). However, a move is only legal if, after changing it, the cell becomes the endpoint of a good line (horizontal, vertical, or diagonal).
+
+A good line is a line of three or more cells (including the endpoints) where the endpoints of the line are one color, and the remaining cells in the middle are the opposite color (no cells in the line are free). You can find examples for good lines in the figure below:
+
+
+Given two integers rMove and cMove and a character color representing the color you are playing as (white or black), return true if changing cell (rMove, cMove) to color color is a legal move, or false if it is not legal.
+
+ 
+
+Example 1:
+
+
+Input: board = [[".",".",".","B",".",".",".","."],[".",".",".","W",".",".",".","."],[".",".",".","W",".",".",".","."],[".",".",".","W",".",".",".","."],["W","B","B",".","W","W","W","B"],[".",".",".","B",".",".",".","."],[".",".",".","B",".",".",".","."],[".",".",".","W",".",".",".","."]], rMove = 4, cMove = 3, color = "B"
+Output: true
+Explanation: '.', 'W', and 'B' are represented by the colors blue, white, and black respectively, and cell (rMove, cMove) is marked with an 'X'.
+The two good lines with the chosen cell as an endpoint are annotated above with the red rectangles.
+Example 2:
+
+
+Input: board = [[".",".",".",".",".",".",".","."],[".","B",".",".","W",".",".","."],[".",".","W",".",".",".",".","."],[".",".",".","W","B",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".","B","W",".","."],[".",".",".",".",".",".","W","."],[".",".",".",".",".",".",".","B"]], rMove = 4, cMove = 4, color = "W"
+Output: false
+Explanation: While there are good lines with the chosen cell as a middle cell, there are no good lines with the chosen cell as an endpoint.
+ 
+
+Constraints:
+
+board.length == board[r].length == 8
+0 <= rMove, cMove < 8
+board[rMove][cMove] == '.'
+color is either 'B' or 'W'.;=;=https://leetcode.com/problems/check-if-move-is-legal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-move-is-legal/solutions/1389273/javapython-3check-8-directions-by-rock-uu4j/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/1389298/easy-java-solution-with-simple-explanati-hwa1/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/3920756/java-using-dfs-with-slight-modification-4uv7q/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/1389268/java-easy-to-understand-by-alan_black-gx7y/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/1389241/java-solution-easy-understanding-by-pgth-xmxp/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/3656871/dfs-2-ms-java-easy-code-by-youssef1998-xekj/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/2847265/easy-dfs-solution-in-graph-java-by-mohit-bsk7/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/7145997/easy-to-understand-beats-100-tc-ominm-n-cc05x/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/1401961/divided-solution-java-by-kotbi-ly0z/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/4941174/iterating-over-the-board-0ms-o1-beats-10-ct9t/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/1951875/java-commented-fast-0ms100-code-explaine-m207/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/2266584/easy-java-solution-traversing-all-8-dire-rguh/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/6992638/easy-java-solution-by-deepakcodespace-3u3s/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/5731188/simple-java-solution-by-sakshikishore-xcck/;;https://leetcode.com/problems/check-if-move-is-legal/solutions/5655293/simple-java-with-meme-by-arkadeepgr-ng41/;;;=;==;=;=;

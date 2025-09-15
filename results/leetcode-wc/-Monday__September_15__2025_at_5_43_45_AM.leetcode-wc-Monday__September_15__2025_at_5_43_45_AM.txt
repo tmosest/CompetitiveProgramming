@@ -1,0 +1,27 @@
+1922. Count Good Numbers;=;=Medium;=;=public int countGoodNumbers(long n);=;=A digit string is good if the digits (0-indexed) at even indices are even and the digits at odd indices are prime (2, 3, 5, or 7).
+
+For example, "2582" is good because the digits (2 and 8) at even positions are even and the digits (5 and 2) at odd positions are prime. However, "3245" is not good because 3 is at an even index but is not even.
+Given an integer n, return the total number of good digit strings of length n. Since the answer may be large, return it modulo 109 + 7.
+
+A digit string is a string consisting of digits 0 through 9 that may contain leading zeros.
+
+ 
+
+Example 1:
+
+Input: n = 1
+Output: 5
+Explanation: The good numbers of length 1 are "0", "2", "4", "6", "8".
+Example 2:
+
+Input: n = 4
+Output: 400
+Example 3:
+
+Input: n = 50
+Output: 564908303
+ 
+
+Constraints:
+
+1 <= n <= 1015;=;=https://leetcode.com/problems/count-good-numbers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-good-numbers/solutions/6644553/naruto-step-by-step-simple-easiest-expla-cc3d/;;https://leetcode.com/problems/count-good-numbers/solutions/6644566/powerful-math-solution-power-exponentiat-kmpq/;;https://leetcode.com/problems/count-good-numbers/solutions/6645467/beats-super-easy-beginners-java-c-c-pyth-qqu7/;;https://leetcode.com/problems/count-good-numbers/solutions/7177250/simple-java-solution-beats-100-in-ologn-m82jv/;;https://leetcode.com/problems/count-good-numbers/solutions/7149088/5-lines-of-code-recursive-code-easy-to-u-a3l7/;;https://leetcode.com/problems/count-good-numbers/solutions/7148613/leetcode-1922-count-good-numbers-java-so-2xfr/;;https://leetcode.com/problems/count-good-numbers/solutions/7165545/modular-exponentiation-approach-complete-e91n/;;https://leetcode.com/problems/count-good-numbers/solutions/3441676/java-100-faster-recursive-solution-step-690ok/;;https://leetcode.com/problems/count-good-numbers/solutions/7151244/recursive-approach-by-soujitdas65-fgmy/;;https://leetcode.com/problems/count-good-numbers/solutions/1317451/java-step-by-step-clear-explanation-with-a7an/;;https://leetcode.com/problems/count-good-numbers/solutions/7155859/best-solution-ologn-java-easy-pattern-ma-xm5j/;;https://leetcode.com/problems/count-good-numbers/solutions/7032687/beats-100-using-modular-exponentiation-b-7e08/;;https://leetcode.com/problems/count-good-numbers/solutions/6644507/7-hints-that-will-guide-you-to-the-solut-737w/;;https://leetcode.com/problems/count-good-numbers/solutions/6646505/efficient-modular-exponentiation-for-cou-ad3l/;;https://leetcode.com/problems/count-good-numbers/solutions/7141719/100-beats-easy-simple-java-solution-by-p-v24y/;;;=;==;=;=;

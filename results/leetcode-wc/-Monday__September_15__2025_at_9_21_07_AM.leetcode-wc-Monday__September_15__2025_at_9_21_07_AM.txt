@@ -1,0 +1,23 @@
+1447. Simplified Fractions;=;=Medium;=;=public List<String> simplifiedFractions(int n);=;=Given an integer n, return a list of all simplified fractions between 0 and 1 (exclusive) such that the denominator is less-than-or-equal-to n. You can return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: n = 2
+Output: ["1/2"]
+Explanation: "1/2" is the only unique fraction with a denominator less-than-or-equal-to 2.
+Example 2:
+
+Input: n = 3
+Output: ["1/2","1/3","2/3"]
+Example 3:
+
+Input: n = 4
+Output: ["1/2","1/3","1/4","2/3","3/4"]
+Explanation: "2/4" is not a simplified fraction because it can be simplified to "1/2".
+ 
+
+Constraints:
+
+1 <= n <= 100;=;=https://leetcode.com/problems/simplified-fractions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/simplified-fractions/solutions/7036245/simplified-fractions-collector-get-only-b43nw/;;https://leetcode.com/problems/simplified-fractions/solutions/6955322/java-solution-by-monish1153-utus/;;https://leetcode.com/problems/simplified-fractions/solutions/6868223/solution-in-java-by-vickyy234-w7e4/;;https://leetcode.com/problems/simplified-fractions/solutions/4866462/java-beats-98-of-users-gcd-samplest-code-vaq1/;;https://leetcode.com/problems/simplified-fractions/solutions/2954330/my-solution-easy-process-java-by-pappura-qldn/;;https://leetcode.com/problems/simplified-fractions/solutions/4283798/beats-94-easy-java-solution-by-priyanshu-hwl2/;;https://leetcode.com/problems/simplified-fractions/solutions/635889/easy-to-understand-using-set-java-10-lin-0cru/;;https://leetcode.com/problems/simplified-fractions/solutions/2216404/java-gcd-easy-by-kshitish007-zbmu/;;https://leetcode.com/problems/simplified-fractions/solutions/635551/java-100-using-gcd-by-onefineday01-kh36/;;https://leetcode.com/problems/simplified-fractions/solutions/6990359/easy-to-understand-solution-in-java-by-k-d9qz/;;https://leetcode.com/problems/simplified-fractions/solutions/669028/javagolang-95100-simple-gcd-solution-det-3imz/;;https://leetcode.com/problems/simplified-fractions/solutions/872972/my-java-solution-using-the-idea-of-gcd-w-2dp3/;;https://leetcode.com/problems/simplified-fractions/solutions/635406/ac-solution-java-no-set-by-joodar-jojw/;;https://leetcode.com/problems/simplified-fractions/solutions/6406691/simplified-fractions-by-sg1247682-1yqg/;;https://leetcode.com/problems/simplified-fractions/solutions/6710859/after-so-many-brain-storming-finally-sol-yuxx/;;;=;==;=;=;

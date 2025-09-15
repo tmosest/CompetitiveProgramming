@@ -1,0 +1,32 @@
+3557. Find Maximum Number of Non Intersecting Substrings;=;=Medium;=;=public int maxSubstrings(String word);=;=You are given a string word.
+
+Return the maximum number of non-intersecting substrings of word that are at least four characters long and start and end with the same letter.
+
+ 
+
+Example 1:
+
+Input: word = "abcdeafdef"
+
+Output: 2
+
+Explanation:
+
+The two substrings are "abcdea" and "fdef".
+
+Example 2:
+
+Input: word = "bcdaaaab"
+
+Output: 1
+
+Explanation:
+
+The only substring is "aaaa". Note that we cannot also choose "bcdaaaab" since it intersects with the other substring.
+
+ 
+
+Constraints:
+
+1 <= word.length <= 2 * 105
+word consists only of lowercase English letters.;=;=https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6777093/javacpython-dp-o1-space-by-lee215-hro5/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6777047/track-last-index-bitmask-on-c-python-by-gs16g/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6777148/python3-dp-simple-solution-by-dolong2110-wa3z/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6778031/easy-hashmap-solution-single-pass-by-anu-w2yi/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6777136/using-only-map-no-need-of-dp-by-harsh193-xd8v/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6778282/dp-knapsack-solution-on-by-ankith_kumar-2x07/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6777538/simple-greedy-and-linear-approach-in-jav-hs7s/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6777444/linear-solution-with-o1-time-complexity-mdhd3/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6832816/standard-dp-memo-java-easy-to-understand-g6ci/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6819141/easy-solution-by-qddl3tbjhy-uvku/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6777332/javac-dp-by-mayank-singh_chauhan-zbeu/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6786599/very-simple-solution-using-just-map-java-napb/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6777323/easy-solution-100-understandable-hashtab-p3v7/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6777066/easy-java-solution-on-by-zoro9-8yku/;;https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/solutions/6778658/solution-java-by-prafull_jain04-r08b/;;;=;==;=;=;

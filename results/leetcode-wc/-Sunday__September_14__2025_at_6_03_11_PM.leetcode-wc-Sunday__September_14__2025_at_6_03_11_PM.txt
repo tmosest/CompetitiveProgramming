@@ -1,0 +1,29 @@
+224. Basic Calculator;=;=Hard;=;=public int calculate(String s);=;=Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation.
+
+Note: You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as eval().
+
+ 
+
+Example 1:
+
+Input: s = "1 + 1"
+Output: 2
+Example 2:
+
+Input: s = " 2-1 + 2 "
+Output: 3
+Example 3:
+
+Input: s = "(1+(4+5+2)-3)+(6+8)"
+Output: 23
+ 
+
+Constraints:
+
+1 <= s.length <= 3 * 105
+s consists of digits, '+', '-', '(', ')', and ' '.
+s represents a valid expression.
+'+' is not used as a unary operation (i.e., "+1" and "+(2 + 3)" is invalid).
+'-' could be used as a unary operation (i.e., "-1" and "-(2 + 3)" is valid).
+There will be no two consecutive operators in the input.
+Every number and running calculation will fit in a signed 32-bit integer.;=;=https://leetcode.com/problems/basic-calculator/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/basic-calculator/solutions/62361/iterative-java-solution-with-stack-by-so-7qs7/;;https://leetcode.com/problems/basic-calculator/solutions/7177440/bruteforce-java-solution-by-sakshii_0659-4qrg/;;https://leetcode.com/problems/basic-calculator/solutions/7005812/basic-calculator-stack-approach-easy-by-150im/;;https://leetcode.com/problems/basic-calculator/solutions/6012858/simple-solution-with-diagrams-in-video-j-wdw3/;;https://leetcode.com/problems/basic-calculator/solutions/6944524/easy-and-understanding-by-rajshaswat001-72iu/;;https://leetcode.com/problems/basic-calculator/solutions/6453489/efficient-java-solution-for-leetcodes-ba-epxz/;;https://leetcode.com/problems/basic-calculator/solutions/2344042/java-2ms-100-recursion-easy-to-understan-iw3j/;;https://leetcode.com/problems/basic-calculator/solutions/6803156/simple-java-solution-by-tejassinkar24-0ory/;;https://leetcode.com/problems/basic-calculator/solutions/5566975/basic-calculator-easiest-explaination-yo-rugz/;;https://leetcode.com/problems/basic-calculator/solutions/5982318/java-iterative-stack-approach-by-purvabh-kad5/;;https://leetcode.com/problems/basic-calculator/solutions/2831476/java-solution-using-stack-with-on-by-sag-ygrk/;;https://leetcode.com/problems/basic-calculator/solutions/6939762/easy-solution-stack-by-adhi_m_s-ya1p/;;https://leetcode.com/problems/basic-calculator/solutions/4011331/beats-75-easy-java-solution-using-stack-lb2ot/;;https://leetcode.com/problems/basic-calculator/solutions/6660636/basic-calculator-i-handling-parentheses-1fxot/;;https://leetcode.com/problems/basic-calculator/solutions/5312292/finding-question-hard-here-is-the-easies-qkxy/;;;=;==;=;=;

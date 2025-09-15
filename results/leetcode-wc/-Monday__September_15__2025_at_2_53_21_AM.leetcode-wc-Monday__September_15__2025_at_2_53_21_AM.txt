@@ -1,0 +1,73 @@
+3593. Minimum Increments to Equalize Leaf Paths;=;=Medium;=;=public int minIncrease(int n, int[][] edges, int[] cost);=;=You are given an integer n and an undirected tree rooted at node 0 with n nodes numbered from 0 to n - 1. This is represented by a 2D array edges of length n - 1, where edges[i] = [ui, vi] indicates an edge from node ui to vi .
+
+Each node i has an associated cost given by cost[i], representing the cost to traverse that node.
+
+The score of a path is defined as the sum of the costs of all nodes along the path.
+
+Your goal is to make the scores of all root-to-leaf paths equal by increasing the cost of any number of nodes by any non-negative amount.
+
+Return the minimum number of nodes whose cost must be increased to make all root-to-leaf path scores equal.
+
+ 
+
+Example 1:
+
+Input: n = 3, edges = [[0,1],[0,2]], cost = [2,1,3]
+
+Output: 1
+
+Explanation:
+
+
+
+There are two root-to-leaf paths:
+
+Path 0 ? 1 has a score of 2 + 1 = 3.
+Path 0 ? 2 has a score of 2 + 3 = 5.
+To make all root-to-leaf path scores equal to 5, increase the cost of node 1 by 2.
+Only one node is increased, so the output is 1.
+
+Example 2:
+
+Input: n = 3, edges = [[0,1],[1,2]], cost = [5,1,4]
+
+Output: 0
+
+Explanation:
+
+
+
+There is only one root-to-leaf path:
+
+Path 0 ? 1 ? 2 has a score of 5 + 1 + 4 = 10.
+
+Since only one root-to-leaf path exists, all path costs are trivially equal, and the output is 0.
+
+Example 3:
+
+Input: n = 5, edges = [[0,4],[0,1],[1,2],[1,3]], cost = [3,4,1,1,7]
+
+Output: 1
+
+Explanation:
+
+
+
+There are three root-to-leaf paths:
+
+Path 0 ? 4 has a score of 3 + 7 = 10.
+Path 0 ? 1 ? 2 has a score of 3 + 4 + 1 = 8.
+Path 0 ? 1 ? 3 has a score of 3 + 4 + 1 = 8.
+To make all root-to-leaf path scores equal to 10, increase the cost of node 1 by 2. Thus, the output is 1.
+
+ 
+
+Constraints:
+
+2 <= n <= 105
+edges.length == n - 1
+edges[i] == [ui, vi]
+0 <= ui, vi < n
+cost.length == n
+1 <= cost[i] <= 109
+The input is generated such that edges represents a valid tree.;=;=https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6870785/explanation-with-example-optimal-easy-ap-vpbg/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6872018/beat-97-with-just-one-dfs-intuition-clea-anjn/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6870826/use-long-for-overflow-by-ajay_prabhu-km1e/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6872811/dfs-clean-code-on-by-ankith_kumar-a6py/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6881655/javacpython-bottom-up-dfs-sorting-you-wi-wh10/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6963566/easy-solution-by-qddl3tbjhy-gf6y/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6871218/intuitive-explanation-with-visualization-v12k/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6870812/simple-dfs-approach-on-by-odiusbull-zi4r/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6872312/lets-under-stand-in-simple-way-with-adde-otfp/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/7124873/java-dfs-solution-by-kamal492-507q/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6890802/minimum-node-increases-to-equalize-root-ltp25/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6874670/beats-100-percent-easy-solution-by-mitul-yrlu/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6872368/dfs-easily-understandable-code-by-ks8346-0n5v/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6903205/dfs-by-reetu-z2ec/;;https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/solutions/6878346/easy-intuitive-clean-java-dfs-by-prafull-gf2p/;;;=;==;=;=;

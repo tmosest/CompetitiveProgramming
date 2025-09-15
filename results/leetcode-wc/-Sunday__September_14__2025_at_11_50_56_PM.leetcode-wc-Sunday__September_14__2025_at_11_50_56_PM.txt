@@ -1,0 +1,33 @@
+2098. Subsequence of Size K With the Largest Even Sum;=;=Medium;=;=public long largestEvenSum(int[] nums, int k);=;=You are given an integer array nums and an integer k. Find the largest even sum of any subsequence of nums that has a length of k.
+
+Return this sum, or -1 if such a sum does not exist.
+
+A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
+
+ 
+
+Example 1:
+
+Input: nums = [4,1,5,3,1], k = 3
+Output: 12
+Explanation:
+The subsequence with the largest possible even sum is [4,5,3]. It has a sum of 4 + 5 + 3 = 12.
+Example 2:
+
+Input: nums = [4,6,2], k = 3
+Output: 12
+Explanation:
+The subsequence with the largest possible even sum is [4,6,2]. It has a sum of 4 + 6 + 2 = 12.
+Example 3:
+
+Input: nums = [1,3,5], k = 1
+Output: -1
+Explanation:
+No subsequence of nums with length 1 has an even sum.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 105
+1 <= k <= nums.length;=;=https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/solutions/1621427/java-onlogn-beats-100-simple-and-straigh-1hmw/;;https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/solutions/6253310/java-clean-code-with-comments-and-very-e-ynbp/;;https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/solutions/1659613/java-prefix-sum-just-10-lines-concise-an-vt9k/;;https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/solutions/5794251/simple-java-solution-by-sakshikishore-cgd6/;;https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/solutions/3249542/java-very-clean-solution-onlgn-get-the-f-ytif/;;;=;==;=;=;

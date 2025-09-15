@@ -1,0 +1,32 @@
+1531. String Compression II;=;=Hard;=;=public int getLengthOfOptimalCompression(String s, int k);=;=Run-length encoding is a string compression method that works by replacing consecutive identical characters (repeated 2 or more times) with the concatenation of the character and the number marking the count of the characters (length of the run). For example, to compress the string "aabccc" we replace "aa" by "a2" and replace "ccc" by "c3". Thus the compressed string becomes "a2bc3".
+
+Notice that in this problem, we are not adding '1' after single characters.
+
+Given a string s and an integer k. You need to delete at most k characters from s such that the run-length encoded version of s has minimum length.
+
+Find the minimum length of the run-length encoded version of s after deleting at most k characters.
+
+ 
+
+Example 1:
+
+Input: s = "aaabcccd", k = 2
+Output: 4
+Explanation: Compressing s without deleting anything will give us "a3bc3d" of length 6. Deleting any of the characters 'a' or 'c' would at most decrease the length of the compressed string to 5, for instance delete 2 'a' then we will have s = "abcccd" which compressed is abc3d. Therefore, the optimal way is to delete 'b' and 'd', then the compressed version of s will be "a3c3" of length 4.
+Example 2:
+
+Input: s = "aabbaa", k = 2
+Output: 2
+Explanation: If we delete both 'b' characters, the resulting compressed string would be "a4" of length 2.
+Example 3:
+
+Input: s = "aaaaaaaaaaa", k = 0
+Output: 3
+Explanation: Since k is zero, we cannot delete anything. The compressed string is "a11" of length 3.
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+0 <= k <= s.length
+s contains only lowercase English letters.;=;=https://leetcode.com/problems/string-compression-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/string-compression-ii/solutions/7175649/top-down-and-bottom-up-approaches-5-and-1yo1k/;;https://leetcode.com/problems/string-compression-ii/solutions/4468632/beats-100-users-cjavapythonjavascript-dp-yruq/;;https://leetcode.com/problems/string-compression-ii/solutions/4468651/beats-1st-9802-2nd-100-users-dp-c-java-p-ckki/;;https://leetcode.com/problems/string-compression-ii/solutions/4468931/leetcode-daily-problem-very-easily-expla-qq5p/;;https://leetcode.com/problems/string-compression-ii/solutions/757363/java-easy-and-fast-dp-solution-with-comm-nn4l/;;https://leetcode.com/problems/string-compression-ii/solutions/4469081/daily-problem-detailed-explanation-java-ls2kj/;;https://leetcode.com/problems/string-compression-ii/solutions/2704537/java-easy-solution-with-explanation-dyna-yfdz/;;https://leetcode.com/problems/string-compression-ii/solutions/4471061/4-d-memoization-2-d-memoization-codestor-x2jk/;;https://leetcode.com/problems/string-compression-ii/solutions/755991/java-recursive-solution-50ms-by-hydro_0-oo96/;;https://leetcode.com/problems/string-compression-ii/solutions/2704975/java-100-19ms-2d-dp-solution-w-video-exp-5x9j/;;https://leetcode.com/problems/string-compression-ii/solutions/4468981/video-solution-dp-java-c-python-by-jeeva-qxeh/;;https://leetcode.com/problems/string-compression-ii/solutions/4469055/2-dimensional-dp-c-java-python-javascrip-m39a/;;https://leetcode.com/problems/string-compression-ii/solutions/2704638/java-solution-w-comments-80-faster-by-_s-dsnd/;;https://leetcode.com/problems/string-compression-ii/solutions/2707473/dsa-simplified-explanation-how-to-approa-7tz5/;;https://leetcode.com/problems/string-compression-ii/solutions/2715769/java-recursion-with-memoization-by-ahuja-e9fl/;;;=;==;=;=;

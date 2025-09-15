@@ -1,0 +1,29 @@
+1977. Number of Ways to Separate Numbers;=;=Hard;=;=public int numberOfCombinations(String num);=;=You wrote down many positive integers in a string called num. However, you realized that you forgot to add commas to seperate the different numbers. You remember that the list of integers was non-decreasing and that no integer had leading zeros.
+
+Return the number of possible lists of integers that you could have written down to get the string num. Since the answer may be large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: num = "327"
+Output: 2
+Explanation: You could have written down the numbers:
+3, 27
+327
+Example 2:
+
+Input: num = "094"
+Output: 0
+Explanation: No numbers can have leading zeros and all numbers must be positive.
+Example 3:
+
+Input: num = "0"
+Output: 0
+Explanation: No numbers can have leading zeros and all numbers must be positive.
+ 
+
+Constraints:
+
+1 <= num.length <= 3500
+num consists of digits '0' through '9'.;=;=https://leetcode.com/problems/number-of-ways-to-separate-numbers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/1418347/java-two-solution-using-dp-and-suffix-ar-awxq/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/1665298/dew-it-java-code-with-comments-bucket-so-ojm1/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/3958012/how-i-passed-one-test-case-funniest-solu-u1rg/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/7084814/java-using-lcp-and-dp-to-get-on2-in-time-hx04/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/6354661/java-4-ms-beats-10000-by-karthi_saravana-c96a/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/6289418/1977-number-of-ways-to-separate-numbers-iuq6n/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/6264010/java-solution-by-barakamon-xn55/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/3947146/using-java-by-jaymin021-dvlm/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/3738542/java-recursive-memoization-solution-easy-93ke/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/3287426/explained-on2logn-dp-solution-using-hasi-h96t/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/3133026/solution-by-deleted_user-y1df/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/3097015/shorteasyreadable-java-code-by-ayush7865-u16o/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/2013958/java-simple-good-time-and-memory-by-okra-pkwk/;;https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/1717721/java-easy-dp-by-ankitkumarmahato-ns4p/;;;=;==;=;=;

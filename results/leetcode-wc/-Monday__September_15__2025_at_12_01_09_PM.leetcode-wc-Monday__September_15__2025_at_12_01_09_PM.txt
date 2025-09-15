@@ -1,0 +1,33 @@
+1944. Number of Visible People in a Queue;=;=Hard;=;=public int[] canSeePersonsCount(int[] heights);=;=There are n people standing in a queue, and they numbered from 0 to n - 1 in left to right order. You are given an array heights of distinct integers where heights[i] represents the height of the ith person.
+
+A person can see another person to their right in the queue if everybody in between is shorter than both of them. More formally, the ith person can see the jth person if i < j and min(heights[i], heights[j]) > max(heights[i+1], heights[i+2], ..., heights[j-1]).
+
+Return an array answer of length n where answer[i] is the number of people the ith person can see to their right in the queue.
+
+ 
+
+Example 1:
+
+
+
+Input: heights = [10,6,8,5,11,9]
+Output: [3,1,2,1,1,0]
+Explanation:
+Person 0 can see person 1, 2, and 4.
+Person 1 can see person 2.
+Person 2 can see person 3 and 4.
+Person 3 can see person 4.
+Person 4 can see person 5.
+Person 5 can see no one since nobody is to the right of them.
+Example 2:
+
+Input: heights = [5,1,2,3,10]
+Output: [4,1,1,1,0]
+ 
+
+Constraints:
+
+n == heights.length
+1 <= n <= 105
+1 <= heights[i] <= 105
+All the values of heights are unique.;=;=https://leetcode.com/problems/number-of-visible-people-in-a-queue/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/7185133/java-beats-9953-easy-solution-without-us-fsrx/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/7177575/java-easy-solution-by-akashraj06-rg4u/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/1359702/monostack-by-votrubac-xi2u/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/1359868/javapython-3-monotonic-stack-w-18-simila-n2iw/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/7120603/easy-java-solution-by-pragati_0904-pk3y/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/7066484/java-solution-beats-100-proof-beginner-f-bkr0/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/5772524/simple-code-easy-to-understand-beginner-xxwpi/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/7049665/solution-in-java-by-vickyy234-gjqp/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/6323525/simple-for-loop-easy-to-understand-begin-fbqu/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/6392503/best-simple-approach-monotonic-stack-by-93jou/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/7066431/solution-by-khushi73-c1h3/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/1897393/java-tcsc-on-approach-solution-tracing-e-hefy/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/6222855/counting-visible-people-in-a-queue-a-mon-jptp/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/1961776/number-of-visible-people-in-a-queue-by-s-eovk/;;https://leetcode.com/problems/number-of-visible-people-in-a-queue/solutions/4647117/java-stack-by-yykido-g9p8/;;;=;==;=;=;

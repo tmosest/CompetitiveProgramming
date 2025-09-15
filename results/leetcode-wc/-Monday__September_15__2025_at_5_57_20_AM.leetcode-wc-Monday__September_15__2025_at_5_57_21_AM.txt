@@ -1,0 +1,28 @@
+2470. Number of Subarrays With LCM Equal to K;=;=Medium;=;=public int subarrayLCM(int[] nums, int k);=;=Given an integer array nums and an integer k, return the number of subarrays of nums where the least common multiple of the subarray's elements is k.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+The least common multiple of an array is the smallest positive integer that is divisible by all the array elements.
+
+ 
+
+Example 1:
+
+Input: nums = [3,6,2,7,1], k = 6
+Output: 4
+Explanation: The subarrays of nums where 6 is the least common multiple of all the subarray's elements are:
+- [3,6,2,7,1]
+- [3,6,2,7,1]
+- [3,6,2,7,1]
+- [3,6,2,7,1]
+Example 2:
+
+Input: nums = [3], k = 2
+Output: 0
+Explanation: There are no subarrays of nums where 2 is the least common multiple of all the subarray's elements.
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i], k <= 1000;=;=https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2808830/simple-java-solution-by-siddhant_1602-a03i/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/7192792/simple-helpful-approach-by-samirsyntax-gqa4/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2808795/java-solution-by-shriyasankhyan-8d01/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2811855/java-easy-onk-time-o1-space-easy-to-unde-oxwf/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2808955/simple-java-solution-by-girlwhocode06-fb2v/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2810211/java-on2-100-faster-easy-solution-by-ane-1oym/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2808866/2470-number-of-subarrays-with-lcm-equal-19wi7/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/7031481/java-lcm-math-by-vishal_v_d-1ym8/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2808993/easy-100-java-solution-with-explanation-agzx5/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2808870/easy-java-solution-by-sumitk7970-zfmv/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/7062063/easy-coding-solution-in-java-ultimately-hpfv1/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2810544/java-solution-understandable-by-kshitij_-3p8z/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2809410/java-solution-by-tejasvi_18_08-v8v3/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2810469/java-2-solutions-by-sourin_bruh-u35j/;;https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/solutions/2808971/java-gcd-by-conchwu-nhsr/;;;=;==;=;=;

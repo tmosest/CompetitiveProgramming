@@ -1,0 +1,65 @@
+3316. Find Maximum Removals From Source String;=;=Medium;=;=public int maxRemovals(String source, String pattern, int[] targetIndices);=;=You are given a string source of size n, a string pattern that is a subsequence of source, and a sorted integer array targetIndices that contains distinct numbers in the range [0, n - 1].
+
+We define an operation as removing a character at an index idx from source such that:
+
+idx is an element of targetIndices.
+pattern remains a subsequence of source after removing the character.
+Performing an operation does not change the indices of the other characters in source. For example, if you remove 'c' from "acb", the character at index 2 would still be 'b'.
+
+Return the maximum number of operations that can be performed.
+
+ 
+
+Example 1:
+
+Input: source = "abbaa", pattern = "aba", targetIndices = [0,1,2]
+
+Output: 1
+
+Explanation:
+
+We can't remove source[0] but we can do either of these two operations:
+
+Remove source[1], so that source becomes "a_baa".
+Remove source[2], so that source becomes "ab_aa".
+Example 2:
+
+Input: source = "bcda", pattern = "d", targetIndices = [0,3]
+
+Output: 2
+
+Explanation:
+
+We can remove source[0] and source[3] in two operations.
+
+Example 3:
+
+Input: source = "dda", pattern = "dda", targetIndices = [0,1,2]
+
+Output: 0
+
+Explanation:
+
+We can't remove any character from source.
+
+Example 4:
+
+Input: source = "yeyeykyded", pattern = "yeyyd", targetIndices = [0,2,3,4]
+
+Output: 2
+
+Explanation:
+
+We can remove source[2] and source[3] in two operations.
+
+ 
+
+Constraints:
+
+1 <= n == source.length <= 3 * 103
+1 <= pattern.length <= n
+1 <= targetIndices.length <= n
+targetIndices is sorted in ascending order.
+The input is generated such that targetIndices contains distinct elements in the range [0, n - 1].
+source and pattern consist only of lowercase English letters.
+The input is generated such that pattern appears as a subsequence in source.;=;=https://leetcode.com/problems/find-maximum-removals-from-source-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5904277/javacpython-dp-by-lee215-vgko/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5904073/python3javac-knapsack-dp-top-down-bottom-2356/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5903798/similar-to-longest-common-subsequence-by-pyb9/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5903906/simple-pick-or-not-pick-logic-with-on-m-tk1zz/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5903733/java-clean-solution-by-shree_govind_jee-acrb/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5903997/2d-dp-memoized-approach-updated-by-dot_l-h6s6/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5963418/simple-2d-dp-kotlin-solution-by-dmitryne-5v9l/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5908982/dp-memo-java-lcs-variation-by-tunitx-fe94/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5906672/java-top-down-to-bottom-up-easy-solution-zjsg/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5919800/less-complex-java-code-recursionmemoizat-r9o0/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5919564/java-dp-0mn-tc-on-space-by-new_born2023-50cb/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5913014/100-beat-in-both-memory-and-time-by-aaqu-mzca/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5907586/java-onn-dp-solution-by-user3063c-2hrm/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5905963/beats-100-top-down-dp-by-sirpantsalot-95fr/;;https://leetcode.com/problems/find-maximum-removals-from-source-string/solutions/5905036/slightly-different-dp-by-macrohard-bpbh/;;;=;==;=;=;

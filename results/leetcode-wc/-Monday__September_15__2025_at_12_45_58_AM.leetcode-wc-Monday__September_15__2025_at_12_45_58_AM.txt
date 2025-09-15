@@ -1,0 +1,22 @@
+1781. Sum of Beauty of All Substrings;=;=Medium;=;=public int beautySum(String s);=;=The beauty of a string is the difference in frequencies between the most frequent and least frequent characters.
+
+For example, the beauty of "abaacc" is 3 - 1 = 2.
+Given a string s, return the sum of beauty of all of its substrings.
+
+ 
+
+Example 1:
+
+Input: s = "aabcb"
+Output: 5
+Explanation: The substrings with non-zero beauty are ["aab","aabc","aabcb","abcb","bcb"], each with beauty equal to 1.
+Example 2:
+
+Input: s = "aabcbaa"
+Output: 17
+ 
+
+Constraints:
+
+1 <= s.length <= 500
+s consists of only lowercase English letters.;=;=https://leetcode.com/problems/sum-of-beauty-of-all-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/5032157/wont-find-a-straight-forward-solution-by-ts8g/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/7109068/frequency-spread-by-soujitdas65-nz4a/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/7010438/java-solution-by-navya_jangala-di94/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/6945207/simple-java-solution-beginner-friendly-b-6vc2/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/6261217/simple-java-solution-with-explanation-be-pxcc/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/1096380/java-t-on2-s-o1-get-the-beauty-of-all-su-0j5b/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/3755248/java-brute-force-easy-approach-by-dipesh-flch/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/6733557/on2-time-complexity-with-comment-lines-f-fin5/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/5812516/clean-java-solution-by-ramitgangwar-fplc/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/2765412/java-optimal-easy-with-explanation-by-an-8rjj/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/6717547/only-thing-you-should-think-about-is-min-pdmm/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/7184833/simple-and-better-by-mansi8957-g4yr/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/6658775/java-solution-beats-88-by-chandranshu31-1n0i/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/6622099/my-naive-solution-help-me-optimize-this-2vzah/;;https://leetcode.com/problems/sum-of-beauty-of-all-substrings/solutions/6599583/sliding-window-approach-by-avinash516-1ero/;;;=;==;=;=;

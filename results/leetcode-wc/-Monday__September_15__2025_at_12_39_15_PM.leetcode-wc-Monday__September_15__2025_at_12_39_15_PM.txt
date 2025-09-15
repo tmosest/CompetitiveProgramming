@@ -1,0 +1,22 @@
+962. Maximum Width Ramp;=;=Medium;=;=public int maxWidthRamp(int[] nums);=;=A ramp in an integer array nums is a pair (i, j) for which i < j and nums[i] <= nums[j]. The width of such a ramp is j - i.
+
+Given an integer array nums, return the maximum width of a ramp in nums. If there is no ramp in nums, return 0.
+
+ 
+
+Example 1:
+
+Input: nums = [6,0,8,2,1,5]
+Output: 4
+Explanation: The maximum width ramp is achieved at (i, j) = (1, 5): nums[1] = 0 and nums[5] = 5.
+Example 2:
+
+Input: nums = [9,8,1,0,1,9,4,0,4,1]
+Output: 7
+Explanation: The maximum width ramp is achieved at (i, j) = (2, 9): nums[2] = 1 and nums[9] = 1.
+ 
+
+Constraints:
+
+2 <= nums.length <= 5 * 104
+0 <= nums[i] <= 5 * 104;=;=https://leetcode.com/problems/maximum-width-ramp/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-width-ramp/solutions/5893635/fastest-way-to-solve-maximum-width-ramp-f63qs/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5895427/brute-to-better-to-optimal-beginner-frie-c7gq/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5893942/a-different-faster-two-pointer-approach-u8zxs/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5893649/explained-step-by-step-on-working-101020-ryx4/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5893646/easy-stack-solution-python-java-c-on-on-22p2p/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5893671/step-by-step-guide-to-solve-with-best-ti-k9c0/;;https://leetcode.com/problems/maximum-width-ramp/solutions/6978142/java-monotonic-stack-easy-solution-by-ni-q162/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5894615/bring-some-order-in-this-case-descending-tqpv/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5895433/maximize-width-ramp-using-two-pointer-te-4lkq/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5893666/beats-100-most-optimized-python-java-c-b-dhd5/;;https://leetcode.com/problems/maximum-width-ramp/solutions/6850711/java-monotonic-stack-by-zerkxes7-nomp/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5894982/beginner-friendly-and-clean-code-in-cjav-1xkc/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5893853/hakkuna-mattata__hahaha-by-saquif_sohol-qv7h/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5895465/very-easy-detailed-solution-stack-and-ar-8v7t/;;https://leetcode.com/problems/maximum-width-ramp/solutions/5893908/java-solution-for-maximum-width-ramp-pro-b0l1/;;;=;==;=;=;

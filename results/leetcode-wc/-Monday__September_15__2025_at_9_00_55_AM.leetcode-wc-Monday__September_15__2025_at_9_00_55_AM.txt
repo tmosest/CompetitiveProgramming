@@ -1,0 +1,27 @@
+1248. Count Number of Nice Subarrays;=;=Medium;=;=publicÊintÊnumberOfSubarrays(int[]Ênums,ÊintÊk);=;=Given an array of integers nums and an integer k. A continuous subarray is called nice if there are k odd numbers on it.
+
+Return the number of nice sub-arrays.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,1,2,1,1], k = 3
+Output: 2
+Explanation: The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1].
+Example 2:
+
+Input: nums = [2,4,6], k = 1
+Output: 0
+Explanation: There are no odd numbers in the array.
+Example 3:
+
+Input: nums = [2,2,2,1,2,2,1,2,2,2], k = 2
+Output: 16
+Ê
+
+Constraints:
+
+1 <= nums.length <= 50000
+1 <= nums[i] <= 10^5
+1 <= k <= nums.length;=;=https://leetcode.com/problems/count-number-of-nice-subarrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/7192733/one-of-the-most-appropriate-solution-of-a3121/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/7188529/count-number-of-nice-subarrays-sliding-w-wfzc/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/5349360/beats-100-explained-with-video-cjavapyth-7ett/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/5349310/prefix-sum-sliding-window-tutorial-count-vll6/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/419545/deque-with-picture-by-votrubac-p9dz/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/7083918/beats-90-simple-sliding-window-technique-vlbm/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/5349330/detailed-explanation-one-pass-o1-space-c-odm5/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/6901589/5-ms-beats-7345-with-indian-tadka-cpp-ja-xtpy/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/5350619/easy-3-approaches-beats-98-hashing-and-t-mf1e/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/2500001/java-sliding-window-two-pinter-by-ankurj-3bhh/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/5349292/beats-100-variable-size-sliding-window-e-ourv/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/6838060/very-easy-to-understand-explained-with-c-6w4u/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/6922605/optimized-on-prefix-sum-for-nice-subarra-xzc5/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/6638145/number-of-subarrays-with-exactly-k-odd-n-lpqe/;;https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/6600838/hashmap-prefix-sum-approach-easiest-solu-3s7y/;;;=;==;=;=;

@@ -1,0 +1,41 @@
+2595. Number of Even and Odd Bits;=;=Easy;=;=public int[] evenOddBit(int n);=;=You are given a positive integer n.
+
+Let even denote the number of even indices in the binary representation of n with value 1.
+
+Let odd denote the number of odd indices in the binary representation of n with value 1.
+
+Note that bits are indexed from right to left in the binary representation of a number.
+
+Return the array [even, odd].
+
+ 
+
+Example 1:
+
+Input: n = 50
+
+Output: [1,2]
+
+Explanation:
+
+The binary representation of 50 is 110010.
+
+It contains 1 on indices 1, 4, and 5.
+
+Example 2:
+
+Input: n = 2
+
+Output: [0,1]
+
+Explanation:
+
+The binary representation of 2 is 10.
+
+It contains 1 only on index 1.
+
+ 
+
+Constraints:
+
+1 <= n <= 1000;=;=https://leetcode.com/problems/number-of-even-and-odd-bits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/3314042/one-liner-by-votrubac-lwl3/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/7031362/easy-code-for-beginners-and-understandab-tvsa/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/6701601/beats-100-simplest-solution-by-haze-srp-6r22/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/3316362/easy-and-clean-java-solution-using-bitwi-n6eo/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/6732156/easy-to-learn-and-slove-it-try-this-by-s-9ccv/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/7191782/java-by-devendran9993-a26q/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/3314556/detailed-explained-simple-java-solution-3yv17/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/6485196/leetcodedaybyday-beats-100-with-c-100-wi-ez2z/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/5701306/beats-100-easy-to-understand-explained-o-7yu7/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/3314221/simple-and-easy-to-understand-approach-b-o2lo/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/3314059/short-clean-java-by-himanshubhoir-8k5k/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/7166238/beats-100-and-1ms-solution-by-deepthi_m_-py8j/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/4700649/easy-java-solution-brute-force-by-sumo25-jmm1/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/3314820/beats-java-c-easiest-by-s_16-ixca/;;https://leetcode.com/problems/number-of-even-and-odd-bits/solutions/3314012/java-on-time-beats-100-by-judgementdey-yav7/;;;=;==;=;=;

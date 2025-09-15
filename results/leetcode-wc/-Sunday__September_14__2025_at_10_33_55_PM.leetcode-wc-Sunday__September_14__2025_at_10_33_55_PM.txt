@@ -1,0 +1,52 @@
+1861. Rotating the Box;=;=Medium;=;=public char[][] rotateTheBox(char[][] boxGrid);=;=You are given an m x n matrix of characters boxGrid representing a side-view of a box. Each cell of the box is one of the following:
+
+A stone '#'
+A stationary obstacle '*'
+Empty '.'
+The box is rotated 90 degrees clockwise, causing some of the stones to fall due to gravity. Each stone falls down until it lands on an obstacle, another stone, or the bottom of the box. Gravity does not affect the obstacles' positions, and the inertia from the box's rotation does not affect the stones' horizontal positions.
+
+It is guaranteed that each stone in boxGrid rests on an obstacle, another stone, or the bottom of the box.
+
+Return an n x m matrix representing the box after the rotation described above.
+
+ 
+
+Example 1:
+
+
+
+Input: boxGrid = [["#",".","#"]]
+Output: [["."],
+         ["#"],
+         ["#"]]
+Example 2:
+
+
+
+Input: boxGrid = [["#",".","*","."],
+              ["#","#","*","."]]
+Output: [["#","."],
+         ["#","#"],
+         ["*","*"],
+         [".","."]]
+Example 3:
+
+
+
+Input: boxGrid = [["#","#","*",".","*","."],
+              ["#","#","#","*",".","."],
+              ["#","#","#",".","#","."]]
+Output: [[".","#","#"],
+         [".","#","#"],
+         ["#","#","*"],
+         ["#","*","."],
+         ["#",".","*"],
+         ["#",".","."]]
+ 
+
+Constraints:
+
+m == boxGrid.length
+n == boxGrid[i].length
+1 <= m, n <= 500
+boxGrid[i][j] is either '#', '*', or '.'.;=;=https://leetcode.com/problems/rotating-the-box/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/rotating-the-box/solutions/7180060/java-easy-solution-by-shreyagarg63-k8xu/;;https://leetcode.com/problems/rotating-the-box/solutions/6073397/video-short-and-simple-by-piotr_maminski-30es/;;https://leetcode.com/problems/rotating-the-box/solutions/1210134/two-pointers-by-votrubac-9rzi/;;https://leetcode.com/problems/rotating-the-box/solutions/6074461/ultimate-diagram-explanation-beginner-re-w3za/;;https://leetcode.com/problems/rotating-the-box/solutions/6073932/simple-bruteforce-solution-beats-100-c-j-n4yb/;;https://leetcode.com/problems/rotating-the-box/solutions/6073741/rotate-the-box-matrix-rotation-gravity-s-636n/;;https://leetcode.com/problems/rotating-the-box/solutions/6073884/beats-100-devil-approach-beginner-friend-pnwo/;;https://leetcode.com/problems/rotating-the-box/solutions/6073604/python3-10-lines-iteration-ts-98-99-by-s-hd2t/;;https://leetcode.com/problems/rotating-the-box/solutions/1388005/two-simple-java-solutions-by-user4535o-t0py/;;https://leetcode.com/problems/rotating-the-box/solutions/1210118/java-interview-easy-to-come-up-by-leetco-m2ou/;;https://leetcode.com/problems/rotating-the-box/solutions/6073486/two-pointers-solution-for-leectcode1861-ur43e/;;https://leetcode.com/problems/rotating-the-box/solutions/6074564/simple-pyjava-code-explained-in-detail-b-e9jn/;;https://leetcode.com/problems/rotating-the-box/solutions/6073408/easy-video-solution-and-explanation-with-w060/;;https://leetcode.com/problems/rotating-the-box/solutions/3986474/simple-java-solution-by-siddhant_1602-kp92/;;https://leetcode.com/problems/rotating-the-box/solutions/6073589/rotating-the-box-easy-explanation-with-u-pfsf/;;;=;==;=;=;

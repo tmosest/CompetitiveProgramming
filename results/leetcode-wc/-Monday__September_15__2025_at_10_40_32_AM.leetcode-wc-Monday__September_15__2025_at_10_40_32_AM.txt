@@ -1,0 +1,28 @@
+2578. Split With Minimum Sum;=;=Easy;=;=public int splitNum(int num);=;=Given a positive integer num, split it into two non-negative integers num1 and num2 such that:
+
+The concatenation of num1 and num2 is a permutation of num.
+In other words, the sum of the number of occurrences of each digit in num1 and num2 is equal to the number of occurrences of that digit in num.
+num1 and num2 can contain leading zeros.
+Return the minimum possible sum of num1 and num2.
+
+Notes:
+
+It is guaranteed that num does not contain any leading zeros.
+The order of occurrence of the digits in num1 and num2 may differ from the order of occurrence of num.
+ 
+
+Example 1:
+
+Input: num = 4325
+Output: 59
+Explanation: We can split 4325 so that num1 is 24 and num2 is 35, giving a sum of 59. We can prove that 59 is indeed the minimal possible sum.
+Example 2:
+
+Input: num = 687
+Output: 75
+Explanation: We can split 687 so that num1 is 68 and num2 is 7, which would give an optimal sum of 75.
+ 
+
+Constraints:
+
+10 <= num <= 109;=;=https://leetcode.com/problems/split-with-minimum-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/split-with-minimum-sum/solutions/7162945/easy-java-try-this-by-sairangineeni-b0yz/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/7089880/step-by-step-approach-for-split-with-min-iohh/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/3256119/javapython-3-greedy-sort-then-concatenat-ohg2/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/3256071/java-by-kalinga-bned/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/7022080/java-solution-greedy-idea-by-kulkarnishr-y15q/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/6947524/beats-100-javac-c-python-beginner-by-cod-f4al/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/6594898/very-easy-java-solution-100-beats-by-b_n-ie9f/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/6811468/most-optimized-java-beginner-friendly-by-vlg3/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/3256081/simple-java-solution-by-siddhant_1602-c10j/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/7191778/java-by-devendran9993-fbkx/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/6473594/leetcodedaybyday-beats-100-with-c-100-wi-7kmq/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/6473593/leetcodedaybyday-beats-100-with-c-100-wi-pli6/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/3258487/0ms-java-100-faster-easy-solution-by-dip-vwc0/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/6421231/100-beats-split-conquer-smart-digit-spli-6yd4/;;https://leetcode.com/problems/split-with-minimum-sum/solutions/6238140/solution-in-java-and-c-by-muthuganesh13-1v0i/;;;=;==;=;=;

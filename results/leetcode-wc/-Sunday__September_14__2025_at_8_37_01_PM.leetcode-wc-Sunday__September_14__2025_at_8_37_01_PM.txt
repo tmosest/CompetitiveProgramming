@@ -1,0 +1,37 @@
+1434. Number of Ways to Wear Different Hats to Each Other;=;=Hard;=;=public int numberWays(List<List<Integer>> hats);=;=There are n people and 40 types of hats labeled from 1 to 40.
+
+Given a 2D integer array hats, where hats[i] is a list of all hats preferred by the ith person.
+
+Return the number of ways that n people can wear different hats from each other.
+
+Since the answer may be too large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: hats = [[3,4],[4,5],[5]]
+Output: 1
+Explanation: There is only one way to choose hats given the conditions. 
+First person choose hat 3, Second person choose hat 4 and last one hat 5.
+Example 2:
+
+Input: hats = [[3,5,1],[3,5]]
+Output: 4
+Explanation: There are 4 ways to choose hats:
+(3,5), (5,3), (1,3) and (1,5)
+Example 3:
+
+Input: hats = [[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]
+Output: 24
+Explanation: Each person can choose hats labeled from 1 to 4.
+Number of Permutations of (1,2,3,4) = 24.
+ 
+
+Constraints:
+
+n == hats.length
+1 <= n <= 10
+1 <= hats[i].length <= 40
+1 <= hats[i][j] <= 40
+hats[i] contains a list of unique integers.;=;=https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/3940438/beginner-friendly-dp-with-bitmasking-by-t26mx/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/6760991/java-easy-simple-approach-dpbitmask-by-o-plu0/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/2302063/java-1d-dp-22ms-2-codes-by-student2091-u2cx/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/6857786/java-simplified-solution-by-shastrii-zsqt/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/6696251/java-code-by-riya0106-yab4/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/6011197/4-ms-beats-10000-by-pribyte1-6mqw/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/5941662/number-of-ways-to-wear-different-hats-to-hy8h/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/5536796/4ms-java-solution-by-user5253in-p7yh/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/5357957/dp-bitmask-by-irvifa-qcsg/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/5231306/person-hats-to-hats-person-by-ankit45836-48i4/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/3916713/java-dp-bitmask-clean-by-jeckafedorov-dktb/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/3906151/java-recursive-to-top-down-dp-by-tiwaria-wdl4/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/2368828/faster-than-86-java-top-down-bit-masking-tn8z/;;https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solutions/1786473/java-backtracking-without-bitmask-by-log-umzr/;;;=;==;=;=;

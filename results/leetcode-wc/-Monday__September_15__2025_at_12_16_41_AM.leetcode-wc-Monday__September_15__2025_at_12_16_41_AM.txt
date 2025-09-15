@@ -1,0 +1,36 @@
+1947. Maximum Compatibility Score Sum;=;=Medium;=;=public int maxCompatibilitySum(int[][] students, int[][] mentors);=;=There is a survey that consists of n questions where each question's answer is either 0 (no) or 1 (yes).
+
+The survey was given to m students numbered from 0 to m - 1 and m mentors numbered from 0 to m - 1. The answers of the students are represented by a 2D integer array students where students[i] is an integer array that contains the answers of the ith student (0-indexed). The answers of the mentors are represented by a 2D integer array mentors where mentors[j] is an integer array that contains the answers of the jth mentor (0-indexed).
+
+Each student will be assigned to one mentor, and each mentor will have one student assigned to them. The compatibility score of a student-mentor pair is the number of answers that are the same for both the student and the mentor.
+
+For example, if the student's answers were [1, 0, 1] and the mentor's answers were [0, 0, 1], then their compatibility score is 2 because only the second and the third answers are the same.
+You are tasked with finding the optimal student-mentor pairings to maximize the sum of the compatibility scores.
+
+Given students and mentors, return the maximum compatibility score sum that can be achieved.
+
+ 
+
+Example 1:
+
+Input: students = [[1,1,0],[1,0,1],[0,0,1]], mentors = [[1,0,0],[0,0,1],[1,1,0]]
+Output: 8
+Explanation: We assign students to mentors in the following way:
+- student 0 to mentor 2 with a compatibility score of 3.
+- student 1 to mentor 0 with a compatibility score of 2.
+- student 2 to mentor 1 with a compatibility score of 3.
+The compatibility score sum is 3 + 2 + 3 = 8.
+Example 2:
+
+Input: students = [[0,0],[0,0],[0,0]], mentors = [[1,1],[1,1],[1,1]]
+Output: 0
+Explanation: The compatibility score of any student-mentor pair is 0.
+ 
+
+Constraints:
+
+m == students.length == mentors.length
+n == students[i].length == mentors[j].length
+1 <= m, n <= 8
+students[i][k] is either 0 or 1.
+mentors[j][k] is either 0 or 1.;=;=https://leetcode.com/problems/maximum-compatibility-score-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/1360853/java-backtracking-easy-to-understand-by-li3qd/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/4661097/backtracking-recursive-approach-with-det-6nbn/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/1360762/java-simple-dfs-check-all-permutations-b-tzlx/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/1361427/java-bitmask-dp-easy-to-understand-by-al-5gm3/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/7034306/max-compatibility-score-sum-java-by-lc_s-7tz3/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/6807342/hungarian-algorithm-1ms-optimal-matching-nid1/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/6614475/java-backtracking-by-k_aman02-ysqr/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/6635616/using-recursion-by-rachanikhilrnr-abwp/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/6646913/solution-using-java-by-kushal_bharadwaj-qkplz/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/6094721/backtracking-by-prachikumari-pnz2/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/6230953/simple-backtracking-approach-by-user2305-ll33/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/6094831/bitmasking-dp-95-by-prachikumari-0lqv/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/6077757/maximum-compatibility-score-sum-by-_jyot-v2b6/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/5946286/very-easy-approach-by-sudharsan3112-vmz4/;;https://leetcode.com/problems/maximum-compatibility-score-sum/solutions/5722791/java-bitmask-solution-beats-100-by-sirpa-qluz/;;;=;==;=;=;

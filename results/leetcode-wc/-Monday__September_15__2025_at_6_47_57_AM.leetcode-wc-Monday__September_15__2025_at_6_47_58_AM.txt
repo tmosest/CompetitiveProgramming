@@ -1,0 +1,33 @@
+1536. Minimum Swaps to Arrange a Binary Grid;=;=Medium;=;=public int minSwaps(int[][] grid);=;=Given an n x n binary grid, in one step you can choose two adjacent rows of the grid and swap them.
+
+A grid is said to be valid if all the cells above the main diagonal are zeros.
+
+Return the minimum number of steps needed to make the grid valid, or -1 if the grid cannot be valid.
+
+The main diagonal of a grid is the diagonal that starts at cell (1, 1) and ends at cell (n, n).
+
+ 
+
+Example 1:
+
+
+Input: grid = [[0,0,1],[1,1,0],[1,0,0]]
+Output: 3
+Example 2:
+
+
+Input: grid = [[0,1,1,0],[0,1,1,0],[0,1,1,0],[0,1,1,0]]
+Output: -1
+Explanation: All rows are similar, swaps have no effect on the grid.
+Example 3:
+
+
+Input: grid = [[1,0,0],[1,1,0],[1,1,1]]
+Output: 0
+ 
+
+Constraints:
+
+n == grid.length == grid[i].length
+1 <= n <= 200
+grid[i][j] is either 0 or 1;=;=https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/769090/java-count-trailing-zeros-greedy-solutio-jshd/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/771923/java-easy-solution-3ms-faster-than-10000-5fom/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/768352/converting-matrix-to-array-to-keep-count-9a7c/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/768008/java-simple-clean-code-with-explanation-nnx0r/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/6576340/minimum-swaps-to-arrange-a-binary-grid-b-9tpj/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/4980053/java-bubble-sort-explained-by-null_point-4m65/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/4885612/greedy-by-wangcai20-9ny0/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/4176135/java-easy-upvote-by-devshivamyadav207-aehz/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/3990227/java-count-swaps-clean-by-jeckafedorov-bbfb/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/1999181/java-from-top-to-bottom-comments-by-stud-v3fw/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/1635751/java-swap-on2-time-on-space-solution-by-hop2t/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/1399169/java-bubble-sort-hashset-on2-time-on-spa-cmhr/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/774007/greedy-approach-java-by-priyanpaulraj-tyqn/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/770091/java-simple-solution-with-comment-easy-t-43vs/;;https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/769321/java-easy-to-understand-5ms-solution-by-sgo2n/;;;=;==;=;=;

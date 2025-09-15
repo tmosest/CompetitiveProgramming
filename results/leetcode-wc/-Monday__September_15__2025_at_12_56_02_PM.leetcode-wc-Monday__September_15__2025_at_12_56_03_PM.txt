@@ -1,0 +1,37 @@
+1844. Replace All Digits with Characters;=;=Easy;=;=publicÊStringÊreplaceDigits(StringÊs);=;=You are given a 0-indexed string s that has lowercase English letters in its even indices and digits in its odd indices.
+
+You must perform an operation shift(c, x), where c is a character and x is a digit, that returns the xth character after c.
+
+For example, shift('a', 5) = 'f' and shift('x', 0) = 'x'.
+For every odd index i, you want to replace the digit s[i] with the result of the shift(s[i-1], s[i]) operation.
+
+Return s after replacing all digits. It is guaranteed that shift(s[i-1], s[i]) will never exceed 'z'.
+
+Note that shift(c, x) is not a preloaded function, but an operation to be implemented as part of the solution.
+
+Ê
+
+Example 1:
+
+Input: s = "a1c1e1"
+Output: "abcdef"
+Explanation: The digits are replaced as follows:
+- s[1] -> shift('a',1) = 'b'
+- s[3] -> shift('c',1) = 'd'
+- s[5] -> shift('e',1) = 'f'
+Example 2:
+
+Input: s = "a1b2c3d4e"
+Output: "abbdcfdhe"
+Explanation: The digits are replaced as follows:
+- s[1] -> shift('a',1) = 'b'
+- s[3] -> shift('b',2) = 'd'
+- s[5] -> shift('c',3) = 'f'
+- s[7] -> shift('d',4) = 'h'
+Ê
+
+Constraints:
+
+1 <= s.length <= 100
+s consists only of lowercase English letters and digits.
+shift(s[i-1], s[i]) <= 'z' for all odd indices i.;=;=https://leetcode.com/problems/replace-all-digits-with-characters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/replace-all-digits-with-characters/solutions/7132105/easy-code-for-solve-this-problem-by-4_k4-2ior/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/7073952/java-easy-solution-0ms-by-akashraj06-mjcz/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/7064660/single-pass-character-array-transformati-dgkm/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/6851301/beats-100-using-stringbuilder-by-alexand-yc5t/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/6837812/even-and-odd-index-way-easy-by-sairangin-ljr5/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/1186600/java-solution-100-fast-100-memory-with-e-t0z3/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/6811379/easy-solution-best-solution-for-java-on-x680i/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/3578710/easy-solution-in-java-0-ms-100-beats-by-ihy4i/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/6335500/0ms-java-by-galani_jenis-nzdd/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/6654255/shifting-characters-based-on-digits-a-cl-u9xt/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/5132474/easy-java-solution-0-ms-_-by-suyalneeraj-fs6a/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/5662946/a-simple-solution-by-jigar_2-0ej8/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/5104692/java-easy-solution-for-beginners-1ms-by-i2uqu/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/7192266/replace-all-digits-with-shifted-letters-ungwa/;;https://leetcode.com/problems/replace-all-digits-with-characters/solutions/7192062/simple-java-code-solution-for-this-probl-w3ut/;;;=;==;=;=;

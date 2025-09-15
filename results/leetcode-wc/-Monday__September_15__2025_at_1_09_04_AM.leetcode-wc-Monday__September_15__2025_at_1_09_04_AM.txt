@@ -1,0 +1,37 @@
+1239. Maximum Length of a Concatenated String with Unique Characters;=;=Medium;=;=public int maxLength(List<String> arr);=;=You are given an array of strings arr. A string s is formed by the concatenation of a subsequence of arr that has unique characters.
+
+Return the maximum possible length of s.
+
+A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
+
+ 
+
+Example 1:
+
+Input: arr = ["un","iq","ue"]
+Output: 4
+Explanation: All the valid concatenations are:
+- ""
+- "un"
+- "iq"
+- "ue"
+- "uniq" ("un" + "iq")
+- "ique" ("iq" + "ue")
+Maximum length is 4.
+Example 2:
+
+Input: arr = ["cha","r","act","ers"]
+Output: 6
+Explanation: Possible longest valid concatenations are "chaers" ("cha" + "ers") and "acters" ("act" + "ers").
+Example 3:
+
+Input: arr = ["abcdefghijklmnopqrstuvwxyz"]
+Output: 26
+Explanation: The only string in arr has all 26 characters.
+ 
+
+Constraints:
+
+1 <= arr.length <= 16
+1 <= arr[i].length <= 26
+arr[i] contains only lowercase English letters.;=;=https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/4611457/beats-100-2-approaches-cjavapythonjs-exp-z5sm/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/2737493/pythoncjavarust-0-ms-bit-set-operations-jho5r/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/4611319/beats-100-users-cjavapythonjavascript-2-vau6p/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/7134271/easy-and-efficient-solution-dfs-by-kgout-u57f/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/2737457/java-clean-easy-to-understand-backtracki-aa6o/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/7083667/solution-using-recursion-by-delbin_de_yo-ei5t/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/2737648/java-recursion-by-jain20131035-xkav/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/4613145/2-approaches-full-explained-javacjavascr-h1x2/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/6832577/easy-java-solution-beats-67-but-easy-dp-fotdw/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/6769235/beginner-friendly-step-by-step-walkthrou-i3xj/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/1950304/java-solution-81-faster-by-nanndy7007-zxrp/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/4612962/java-solution-explained-in-hindi-by-the_-qzm7/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/4611753/javaclean-solutiondaily-challenges-by-sh-luqr/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/4614417/recursion-set-by-rahul_1910-zzvu/;;https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/2738388/java-easy-to-read-code-explained-by-nada-4agt/;;;=;==;=;=;

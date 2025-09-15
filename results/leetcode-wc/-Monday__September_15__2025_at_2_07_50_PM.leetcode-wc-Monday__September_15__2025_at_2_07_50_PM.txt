@@ -1,0 +1,40 @@
+2321. Maximum Score Of Spliced Array;=;=Hard;=;=public int maximumsSplicedArray(int[] nums1, int[] nums2);=;=You are given two 0-indexed integer arrays nums1 and nums2, both of length n.
+
+You can choose two integers left and right where 0 <= left <= right < n and swap the subarray nums1[left...right] with the subarray nums2[left...right].
+
+For example, if nums1 = [1,2,3,4,5] and nums2 = [11,12,13,14,15] and you choose left = 1 and right = 2, nums1 becomes [1,12,13,4,5] and nums2 becomes [11,2,3,14,15].
+You may choose to apply the mentioned operation once or not do anything.
+
+The score of the arrays is the maximum of sum(nums1) and sum(nums2), where sum(arr) is the sum of all the elements in the array arr.
+
+Return the maximum possible score.
+
+A subarray is a contiguous sequence of elements within an array. arr[left...right] denotes the subarray that contains the elements of nums between indices left and right (inclusive).
+
+ 
+
+Example 1:
+
+Input: nums1 = [60,60,60], nums2 = [10,90,10]
+Output: 210
+Explanation: Choosing left = 1 and right = 1, we have nums1 = [60,90,60] and nums2 = [10,60,10].
+The score is max(sum(nums1), sum(nums2)) = max(210, 80) = 210.
+Example 2:
+
+Input: nums1 = [20,40,20,70,30], nums2 = [50,20,50,40,20]
+Output: 220
+Explanation: Choosing left = 3, right = 4, we have nums1 = [20,40,20,40,20] and nums2 = [50,20,50,70,30].
+The score is max(sum(nums1), sum(nums2)) = max(140, 220) = 220.
+Example 3:
+
+Input: nums1 = [7,11,13], nums2 = [1,1,1]
+Output: 31
+Explanation: We choose not to swap any subarray.
+The score is max(sum(nums1), sum(nums2)) = max(31, 3) = 31.
+ 
+
+Constraints:
+
+n == nums1.length == nums2.length
+1 <= n <= 105
+1 <= nums1[i], nums2[i] <= 104;=;=https://leetcode.com/problems/maximum-score-of-spliced-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/2199139/100-faster-most-detailed-solution-for-co-at5j/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/5255497/runtime-4-ms-beats-7937-of-users-with-ja-m2rw/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/7180726/easy-to-understand-1d-dp-by-hitomyan-z6cb/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/2198484/java-easy-to-understand-by-qihengwang-6tqk/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/2199332/java-sliding-window-easy-to-understand-b-2olu/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/2198656/prefix-sum-solution-by-avinder_singh-wyen/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/2200292/beginner-friendly-explanation-by-ishi_ku-zwvn/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/2309514/java-using-kadanes-algo-by-sachinsingh14-6uy6/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/6834091/dp-with-state-compression-on-by-gitchuan-amwl/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/6858770/maximum-score-of-spliced-array-time-on-s-b2g6/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/6417132/easy-approach-and-easy-to-understand-by-m8yp6/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/6339744/maximun-score-of-spliced-array-by-y6dcxr-rlqp/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/6291780/modified-kadanes-algorithm-by-jcseph-vanw/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/6342222/maximizing-the-sum-through-optimal-splic-bfp7/;;https://leetcode.com/problems/maximum-score-of-spliced-array/solutions/5746215/simplest-solution-ever-by-samyak_agarwal-jacv/;;;=;==;=;=;

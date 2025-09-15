@@ -1,0 +1,27 @@
+1897. Redistribute Characters to Make All Strings Equal;=;=Easy;=;=public boolean makeEqual(String[] words);=;=You are given an array of strings words (0-indexed).
+
+In one operation, pick two distinct indices i and j, where words[i] is a non-empty string, and move any character from words[i] to any position in words[j].
+
+Return true if you can make every string in words equal using any number of operations, and false otherwise.
+
+ 
+
+Example 1:
+
+Input: words = ["abc","aabc","bc"]
+Output: true
+Explanation: Move the first 'a' in words[1] to the front of words[2],
+to make words[1] = "abc" and words[2] = "abc".
+All the strings are now equal to "abc", so return true.
+Example 2:
+
+Input: words = ["ab","a"]
+Output: false
+Explanation: It is impossible to make all the strings equal using the operation.
+ 
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length <= 100
+words[i] consists of lowercase English letters.;=;=https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4476317/beats-100-explained-with-video-hash-tabl-6kf9/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4476049/beats-100-users-cjavapythonjavascript-2-ilgay/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4476218/proper-explanation-example-dry-run-c-jav-la30/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4476041/beats-100-users-c-java-python-javascript-pjdg/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4476223/beats-100-easy-to-understand-maps-cpp-ja-fsj7/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4476379/daily-problem-properly-explained-c-java-2uoon/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/6604677/easy-to-understand-beginner-friendly-app-t2g9/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4476798/easy-explanation-beat-100-counting-by-pr-ey5t/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4480804/soution-n0-time-complexity-100-beats-by-aib7f/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/6447010/simple-solution-in-java-by-sathurnithy-a08a/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/1268630/java-using-hashmap-easy-understanding-by-atv6/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/6550062/java-string-frequency-count-array-by-ayu-ke7w/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4477148/beats-100-short-but-sweet-one-just-give-1rcya/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/6818055/clean-code-by-smileysuneet-5ysm/;;https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/6777275/very-fast-java-solution-by-coder885-90ip/;;;=;==;=;=;

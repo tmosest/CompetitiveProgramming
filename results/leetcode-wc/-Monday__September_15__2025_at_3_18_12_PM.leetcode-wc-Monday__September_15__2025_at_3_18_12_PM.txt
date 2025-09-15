@@ -1,0 +1,25 @@
+1124. Longest Well-Performing Interval;=;=Medium;=;=public int longestWPI(int[] hours);=;=We are given hours, a list of the number of hours worked per day for a given employee.
+
+A day is considered to be a tiring day if and only if the number of hours worked is (strictly) greater than 8.
+
+A well-performing interval is an interval of days for which the number of tiring days is strictly larger than the number of non-tiring days.
+
+Return the length of the longest well-performing interval.
+
+ 
+
+Example 1:
+
+Input: hours = [9,9,6,0,6,6,9]
+Output: 3
+Explanation: The longest well-performing interval is [9,9,6].
+Example 2:
+
+Input: hours = [6,6,6]
+Output: 0
+ 
+
+Constraints:
+
+1 <= hours.length <= 104
+0 <= hours[i] <= 16;=;=https://leetcode.com/problems/longest-well-performing-interval/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-well-performing-interval/solutions/334635/java-hashmap-on-solution-with-explanatio-mcqk/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/336639/java-hashmap-solution-with-code-comments-9cse/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/5870075/simple-explanation-prefix-sum-by-davide_-krwj/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/1279625/java-with-explanation-on-by-swapnilghosh-sckg/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/1327424/java-hashmap-prefix-sum-simple-no-fancy-a16hd/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/1378868/easy-on-solution-python-and-java-by-akas-nwxb/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/6914440/java-solution-beats-9741-using-hashmap-b-xzpn/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/6914441/java-solution-beats-9741-using-hashmap-b-s3up/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/6865303/easy-java-solution-using-prefix-sum-by-d-gt3p/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/6855610/on-by-gitchuan-4rh1/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/6536282/easy-solution-by-owenwu4-q1ao/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/6414604/java-prefix-sum-by-kanak-ag-lglu/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/6413513/prefix-sum-solution-by-voduchuy542-k0ov/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/6265959/1124-longest-well-performing-interval-by-awhx/;;https://leetcode.com/problems/longest-well-performing-interval/solutions/6095874/prefixsum-intuition-by-fatj-8lf5/;;;=;==;=;=;

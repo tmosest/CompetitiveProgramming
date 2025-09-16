@@ -1,0 +1,33 @@
+1839. Longest Substring Of All Vowels in Order;=;=Medium;=;=public int longestBeautifulSubstring(String word);=;=A string is considered beautiful if it satisfies the following conditions:
+
+Each of the 5 English vowels ('a', 'e', 'i', 'o', 'u') must appear at least once in it.
+The letters must be sorted in alphabetical order (i.e. all 'a's before 'e's, all 'e's before 'i's, etc.).
+For example, strings "aeiou" and "aaaaaaeiiiioou" are considered beautiful, but "uaeio", "aeoiu", and "aaaeeeooo" are not beautiful.
+
+Given a string word consisting of English vowels, return the length of the longest beautiful substring of word. If no such substring exists, return 0.
+
+A substring is a contiguous sequence of characters in a string.
+
+ 
+
+Example 1:
+
+Input: word = "aeiaaioaaaaeiiiiouuuooaauuaeiu"
+Output: 13
+Explanation: The longest beautiful substring in word is "aaaaeiiiiouuu" of length 13.
+Example 2:
+
+Input: word = "aeeeiiiioooauuuaeiou"
+Output: 5
+Explanation: The longest beautiful substring in word is "aeiou" of length 5.
+Example 3:
+
+Input: word = "a"
+Output: 0
+Explanation: There is no beautiful substring, so return 0.
+ 
+
+Constraints:
+
+1 <= word.length <= 5 * 105
+word consists of characters 'a', 'e', 'i', 'o', and 'u'.;=;=https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/1175715/java-readable-code-constant-space-by-him-eip2/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/6622943/longest-beautiful-substring-c-solution-t-pzz2/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/6798204/sliding-window-easy-by-vivek011299-jv7q/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/7174864/easy-code-to-understand-in-java-by-mouli-58qp/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/5488499/easy-java-solution-readable-solution___-irmnh/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/1228324/java-on-solution-simple-to-understand-by-t0we/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/1175180/java-straight-forward-intuitive-solution-oh59/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/1182384/java-on-by-trevor-akshay-gtlv/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/3491877/very-easy-simple-solution-by-dipesh_12-y36h/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/5421650/when-fresher-writes-the-code-xd-on-beats-rf13/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/1356161/java-solution-by-rkxyiiyk2-1vo3/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/2736813/java-string-manipulationsliding-window-v-yumf/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/4685377/easy-understandable-sountion-in-java-wit-4tqs/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/4750661/fast-java-solution-by-seif_hamdy-6dg6/;;https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/solutions/2551193/easy-java-solutionwithout-window-sliding-ii3b/;;;=;==;=;=;

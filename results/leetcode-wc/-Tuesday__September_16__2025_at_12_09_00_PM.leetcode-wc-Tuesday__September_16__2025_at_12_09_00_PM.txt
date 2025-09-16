@@ -1,0 +1,31 @@
+2609. Find the Longest Balanced Substring of a Binary String;=;=Easy;=;=public int findTheLongestBalancedSubstring(String s);=;=You are given a binary string s consisting only of zeroes and ones.
+
+A substring of s is considered balanced if all zeroes are before ones and the number of zeroes is equal to the number of ones inside the substring. Notice that the empty substring is considered a balanced substring.
+
+Return the length of the longest balanced substring of s.
+
+A substring is a contiguous sequence of characters within a string.
+
+ 
+
+Example 1:
+
+Input: s = "01000111"
+Output: 6
+Explanation: The longest balanced substring is "000111", which has length 6.
+Example 2:
+
+Input: s = "00111"
+Output: 4
+Explanation: The longest balanced substring is "0011", which has length 4. 
+Example 3:
+
+Input: s = "111"
+Output: 0
+Explanation: There is no balanced substring except the empty substring, so the answer is 0.
+ 
+
+Constraints:
+
+1 <= s.length <= 50
+'0' <= s[i] <= '1';=;=https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3368279/python-java-c-implemetation-by-harsh_neg-8atb/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3368852/one-pass-100-hit-java-easy-solution-by-i-cow9/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/6914762/java-solution-by-monish1153-ikdv/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/4544159/short-and-simple-solution-every-beginer-t60jf/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3368413/short-easy-clean-java-solution-by-himans-zzmg/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3368254/simple-java-solution-by-siddhant_1602-e8a9/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/6494295/leetcodedaybyday-beats-100-with-c-100-wi-y9na/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3368404/soo-simple-by-glitched-sudhanshu-hi76/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3370068/weekly-contest-239-easy-java-solution-10-wit0/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3424179/java-2ms-beats-100-and-clear-exaplanatio-i7kn/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3370269/day-367-easy-explained-look-at-once-on-o-zjwf/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3368739/simplest-brute-force-by-kumarrounakjha-2om2/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3368709/java-solution-brute-force-by-negimags-3fxf/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/3368348/easy-java-solution-by-1asthakhushi1-xyh4/;;https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/solutions/4704905/simple-java-solution-by-sayalihborkar-ojxf/;;;=;==;=;=;

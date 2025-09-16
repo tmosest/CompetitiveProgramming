@@ -1,0 +1,38 @@
+2500. Delete Greatest Value in Each Row;=;=Easy;=;=public int deleteGreatestValue(int[][] grid);=;=You are given an m x n matrix grid consisting of positive integers.
+
+Perform the following operation until grid becomes empty:
+
+Delete the element with the greatest value from each row. If multiple such elements exist, delete any of them.
+Add the maximum of deleted elements to the answer.
+Note that the number of columns decreases by one after each operation.
+
+Return the answer after performing the operations described above.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[1,2,4],[3,3,1]]
+Output: 8
+Explanation: The diagram above shows the removed values in each step.
+- In the first operation, we remove 4 from the first row and 3 from the second row (notice that, there are two cells with value 3 and we can remove any of them). We add 4 to the answer.
+- In the second operation, we remove 2 from the first row and 3 from the second row. We add 3 to the answer.
+- In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer.
+The final answer = 4 + 3 + 1 = 8.
+Example 2:
+
+
+Input: grid = [[10]]
+Output: 10
+Explanation: The diagram above shows the removed values in each step.
+- In the first operation, we remove 10 from the first row. We add 10 to the answer.
+The final answer = 10.
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 50
+1 <= grid[i][j] <= 100;=;=https://leetcode.com/problems/delete-greatest-value-in-each-row/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/6775736/fast-and-clear-with-iterations-in-tables-8oxs/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/2899447/beginner-friendly-java-solution-by-himan-4s4r/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/3327896/java-maxheap-by-vishal_niet-qw2l/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/6953422/greedy-and-simulation-based-approach-929-7wwl/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/6306825/easy-simple-ahh-solution-beats-100-by-an-l3qy/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/5099304/java-easy-sorting-solution-by-ytchouar-zk34/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/3223800/easy-to-understand-java-solution-by-fxce-4h2t/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/7186299/2500-delete-greatest-value-in-each-row-b-0xva/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/7182653/java-solution-so-slow-they-did-not-let-m-gxql/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/6530883/java-heap-priorityqueue-to-solve-the-sol-0r0s/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/2914480/easy-java-solution-with-omn-time-complex-9jvo/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/4675405/simplest-approach-beats-8493-java-by-pra-rwyp/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/6438356/java-easiest-solution-by-shreyagarg63-rv8z/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/3118315/using-java-by-thevsoni-leal/;;https://leetcode.com/problems/delete-greatest-value-in-each-row/solutions/4209362/simple-solution-by-agarwalkrishnanshu-oqbg/;;;=;==;=;=;

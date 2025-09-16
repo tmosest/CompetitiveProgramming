@@ -1,0 +1,35 @@
+2181. Merge Nodes in Between Zeros;=;=Medium;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode()       ListNode(int val)  this.val = val;       ListNode(int val, ListNode next)  this.val = val; this.next = next;    class      public ListNode mergeNodes(ListNode head);=;=You are given the head of a linked list, which contains a series of integers separated by 0's. The beginning and end of the linked list will have Node.val == 0.
+
+For every two consecutive 0's, merge all the nodes lying in between them into a single node whose value is the sum of all the merged nodes. The modified list should not contain any 0's.
+
+Return the head of the modified linked list.
+
+ 
+
+Example 1:
+
+
+Input: head = [0,3,1,0,4,5,2,0]
+Output: [4,11]
+Explanation: 
+The above figure represents the given linked list. The modified list contains
+- The sum of the nodes marked in green: 3 + 1 = 4.
+- The sum of the nodes marked in red: 4 + 5 + 2 = 11.
+Example 2:
+
+
+Input: head = [0,1,0,3,0,2,2,0]
+Output: [1,3,4]
+Explanation: 
+The above figure represents the given linked list. The modified list contains
+- The sum of the nodes marked in green: 1 = 1.
+- The sum of the nodes marked in red: 3 = 3.
+- The sum of the nodes marked in yellow: 2 + 2 = 4.
+ 
+
+Constraints:
+
+The number of nodes in the list is in the range [3, 2 * 105].
+0 <= Node.val <= 1000
+There are no two consecutive nodes with Node.val == 0.
+The beginning and end of the linked list have Node.val == 0.;=;=https://leetcode.com/problems/merge-nodes-in-between-zeros/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/5412053/beats-100-explained-with-video-cjavapyth-usz3/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/5412133/easy-with-explanationno-dummybeats-100-i-j08t/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/5412432/detailed-easy-java-python3-c-solution-4-m4dse/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/5412084/linked-list-two-solutions-tutorial-merge-pi0o/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/7092690/easy-java-solution-beats-8024-by-rajdeep-iq5v/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/5412107/1-pass-with-2-pointers-without-memory-le-6nmr/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/7099408/merge-nodes-between-zeros-in-a-linked-li-5r62/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/6970292/zero-fusion-merge-nodes-between-zeros-in-raee/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/5412086/easiest-3-step-cpp-java-py-js-solution-n-lpek/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/5228772/faster-lesser-cpython3javacpythonexplain-25xs/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/7051695/easiest-solution-in-java-beats-9978-by-r-qkyy/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/6999937/java-clean-simple-stack-free-solution-me-vpf5/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/1784766/javapython-3-one-pass-two-pointers-copy-7olgv/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/6970176/zero-cruncher-merging-nodes-between-the-13agu/;;https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/5412103/detailed-explanationsimple-easy-to-under-0e89/;;;=;==;=;=;

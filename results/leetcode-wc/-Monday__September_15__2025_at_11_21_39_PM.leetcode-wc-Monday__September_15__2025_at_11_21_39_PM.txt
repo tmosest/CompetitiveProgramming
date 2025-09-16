@@ -1,0 +1,29 @@
+1758. Minimum Changes To Make Alternating Binary String;=;=Easy;=;=public int minOperations(String s);=;=You are given a string s consisting only of the characters '0' and '1'. In one operation, you can change any '0' to '1' or vice versa.
+
+The string is called alternating if no two adjacent characters are equal. For example, the string "010" is alternating, while the string "0100" is not.
+
+Return the minimum number of operations needed to make s alternating.
+
+ 
+
+Example 1:
+
+Input: s = "0100"
+Output: 1
+Explanation: If you change the last character to '1', s will be "0101", which is alternating.
+Example 2:
+
+Input: s = "10"
+Output: 0
+Explanation: s is already alternating.
+Example 3:
+
+Input: s = "1111"
+Output: 2
+Explanation: You need two operations to reach "0101" or "1010".
+ 
+
+Constraints:
+
+1 <= s.length <= 104
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4449097/beats-100-explained-with-video-cjavapyth-hu97/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4448978/beats-100-c-java-python-javascript-easie-1gon/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4449259/easiest-most-intuitive-solution-for-begi-4jfv/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/5665464/video-give-me-5-minutes-how-we-think-abo-s1r4/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4449189/daily-leetcode-problem-optimized-easy-ex-nhe5/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4449411/82-beats-easy-solution-space-complexity-fha56/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4449026/beats-100-cjavapythonjavascript-2-approa-sshr/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4449405/daily-problem-easy-solution-proper-expla-yr0q/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/1064537/javapython-3-check-2-alternating-strings-q6gn/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4450994/beats-100-0ms-fully-explained-time-savin-qjqw/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4449134/beats-100-well-explained-with-cp-approac-eqz0/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/7187449/not-optimal-4ms-beats7159-but-easy-to-un-6x2m/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/7158507/java-by-soumya_699-pmv0/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/7132897/easiest-optimal-interview-javapython-mic-7rbg/;;https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/6882736/java-using-on-by-vishalfromvirali-o5dd/;;;=;==;=;=;

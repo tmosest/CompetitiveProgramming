@@ -1,0 +1,49 @@
+3354. Make Array Elements Equal to Zero;=;=Easy;=;=publicÊintÊcountValidSelections(int[]Ênums);=;=You are given an integer array nums.
+
+Start by selecting a starting position curr such that nums[curr] == 0, and choose a movement direction ofÊeither left or right.
+
+After that, you repeat the following process:
+
+If curr is out of the range [0, n - 1], this process ends.
+If nums[curr] == 0, move in the current direction by incrementing curr if you are moving right, or decrementing curr if you are moving left.
+Else if nums[curr] > 0:
+Decrement nums[curr] by 1.
+ReverseÊyour movement direction (left becomes right and vice versa).
+Take a step in your new direction.
+A selection of the initial position curr and movement direction is considered valid if every element in nums becomes 0 by the end of the process.
+
+Return the number of possible valid selections.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,0,2,0,3]
+
+Output: 2
+
+Explanation:
+
+The only possible valid selections are the following:
+
+Choose curr = 3, and a movement direction to the left.
+[1,0,2,0,3] -> [1,0,2,0,3] -> [1,0,1,0,3] -> [1,0,1,0,3] -> [1,0,1,0,2] -> [1,0,1,0,2] -> [1,0,0,0,2] -> [1,0,0,0,2] -> [1,0,0,0,1] -> [1,0,0,0,1] -> [1,0,0,0,1] -> [1,0,0,0,1] -> [0,0,0,0,1] -> [0,0,0,0,1] -> [0,0,0,0,1] -> [0,0,0,0,1] -> [0,0,0,0,0].
+Choose curr = 3, and a movement direction to the right.
+[1,0,2,0,3] -> [1,0,2,0,3] -> [1,0,2,0,2] -> [1,0,2,0,2] -> [1,0,1,0,2] -> [1,0,1,0,2] -> [1,0,1,0,1] -> [1,0,1,0,1] -> [1,0,0,0,1] -> [1,0,0,0,1] -> [1,0,0,0,0] -> [1,0,0,0,0] -> [1,0,0,0,0] -> [1,0,0,0,0] -> [0,0,0,0,0].
+Example 2:
+
+Input: nums = [2,3,4,0,4,1,0]
+
+Output: 0
+
+Explanation:
+
+There are no possible valid selections.
+
+Ê
+
+Constraints:
+
+1 <= nums.length <= 100
+0 <= nums[i] <= 100
+There is at least one element i where nums[i] == 0.;=;=https://leetcode.com/problems/make-array-elements-equal-to-zero/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6054636/python3cjava-prefix-sum-detailed-explana-kt6q/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6053246/easy-and-clean-code-c-java-c-beats-100-b-9xjh/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6533122/100-beats-simple-easy-to-understand-by-k-x9zn/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6113188/pythonjava-elegant-short-prefix-suffix-s-vbbj/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6053279/java-solution-by-harsh__005-mdio/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6053421/beats-100-solution-java-1-ms-by-jishnuna-jk4y/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6055040/prefix-sum-on-solution-by-ruturaj_720-t0bh/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6053293/simple-simulation-java-by-deepanshu2202-ej8l/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6054161/on-o1-by-clcwcxfwf-l1p2/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/7009132/clean-solution-by-macrohard-goz9/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/7112853/easy-solution-in-java-on-by-kumarakash-lsdl/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6053248/java-list-solution-by-solved-8gwd/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/7075574/java-by-soumya_699-grh2/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/7007342/constant-space-o1-on-time-solution-by-co-s5js/;;https://leetcode.com/problems/make-array-elements-equal-to-zero/solutions/6623248/simulation-solution-in-java-by-n6fslqnnk-44bv/;;;=;==;=;=;

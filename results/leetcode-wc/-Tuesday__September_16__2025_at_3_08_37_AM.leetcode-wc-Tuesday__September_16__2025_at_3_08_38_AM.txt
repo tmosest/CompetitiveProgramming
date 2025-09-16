@@ -1,0 +1,40 @@
+2018. Check if Word Can Be Placed In Crossword;=;=Medium;=;=public boolean placeWordInCrossword(char[][] board, String word);=;=You are given an m x n matrix board, representing the current state of a crossword puzzle. The crossword contains lowercase English letters (from solved words), ' ' to represent any empty cells, and '#' to represent any blocked cells.
+
+A word can be placed horizontally (left to right or right to left) or vertically (top to bottom or bottom to top) in the board if:
+
+It does not occupy a cell containing the character '#'.
+The cell each letter is placed in must either be ' ' (empty) or match the letter already on the board.
+There must not be any empty cells ' ' or other lowercase letters directly left or right of the word if the word was placed horizontally.
+There must not be any empty cells ' ' or other lowercase letters directly above or below the word if the word was placed vertically.
+Given a string word, return true if word can be placed in board, or false otherwise.
+
+ 
+
+Example 1:
+
+
+Input: board = [["#", " ", "#"], [" ", " ", "#"], ["#", "c", " "]], word = "abc"
+Output: true
+Explanation: The word "abc" can be placed as shown above (top to bottom).
+Example 2:
+
+
+Input: board = [[" ", "#", "a"], [" ", "#", "c"], [" ", "#", "a"]], word = "ac"
+Output: false
+Explanation: It is impossible to place the word because there will always be a space/letter above or below it.
+Example 3:
+
+
+Input: board = [["#", " ", "#"], [" ", " ", "#"], ["#", " ", "c"]], word = "ca"
+Output: true
+Explanation: The word "ca" can be placed as shown above (right to left). 
+ 
+
+Constraints:
+
+m == board.length
+n == board[i].length
+1 <= m * n <= 2 * 105
+board[i][j] will be ' ', '#', or a lowercase English letter.
+1 <= word.length <= max(m, n)
+word will contain only lowercase English letters.;=;=https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/1486448/java-easy-to-understand-with-comments-by-1fh9/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/1737508/simple-easy-and-clean-solution-with-comm-j0cc/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/1487573/java-clean-and-easy-to-understand-trie-b-51yd/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/2287664/java-easy-solution-with-explanation-fast-2rym/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/1708246/java-80-faster-dfs-easy-and-clean-soluti-taop/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/5514563/java-easy-to-understand-approach-readabl-n3l8/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/3458588/easy-java-solution-by-architaggarwal023-xvrt/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/1989691/java-dfs-fast-clean-code-by-superman-qia-i0qw/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/1490011/java-dfs-100-runtime-by-yuhuiyingri-cd2v/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/6915777/java-solution-by-hopecheung-bsr4/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/6881724/trying-all-possible-cells-java-by-someus-owpk/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/6570315/java-solution-hash-map-beats-43-by-adars-k81n/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/6667296/java-solution-easy-to-understand-by-prat-ebqc/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/6123877/java-by-madh_k-0d7x/;;https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/solutions/6323411/simple-yet-fast-omnmn-by-yogeshkothari-hx1k/;;;=;==;=;=;

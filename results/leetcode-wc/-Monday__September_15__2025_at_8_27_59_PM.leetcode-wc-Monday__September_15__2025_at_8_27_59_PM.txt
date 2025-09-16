@@ -1,0 +1,36 @@
+2057. Smallest Index With Equal Value;=;=Easy;=;=public int smallestEqual(int[] nums);=;=Given a 0-indexed integer array nums, return the smallest index i of nums such that i mod 10 == nums[i], or -1 if such index does not exist.
+
+x mod y denotes the remainder when x is divided by y.
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,2]
+Output: 0
+Explanation: 
+i=0: 0 mod 10 = 0 == nums[0].
+i=1: 1 mod 10 = 1 == nums[1].
+i=2: 2 mod 10 = 2 == nums[2].
+All indices have i mod 10 == nums[i], so we return the smallest index 0.
+Example 2:
+
+Input: nums = [4,3,2,1]
+Output: 2
+Explanation: 
+i=0: 0 mod 10 = 0 != nums[0].
+i=1: 1 mod 10 = 1 != nums[1].
+i=2: 2 mod 10 = 2 == nums[2].
+i=3: 3 mod 10 = 3 != nums[3].
+2 is the only index which has i mod 10 == nums[i].
+Example 3:
+
+Input: nums = [1,2,3,4,5,6,7,8,9,0]
+Output: -1
+Explanation: No index satisfies i mod 10 == nums[i].
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+0 <= nums[i] <= 9;=;=https://leetcode.com/problems/smallest-index-with-equal-value/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6948704/leetcode-2057-by-sajalkandpal-jt24/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/5507416/easiestfaster-lesser-cpython3javacpython-lfab/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6837836/very-easy-way-check-this-out-by-sairangi-qjvw/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6735596/simplest-approach-by-ranvijay-kumar4-vb93/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6718654/short-by-nghiemngocduc07-m2jy/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6834674/2057-smallest-index-with-equal-value-run-u2zg/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6819220/simple-easy-to-understand-beats-100-by-s-2cjt/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6756609/2057-smallest-index-with-equal-value-by-o3mzh/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6392806/lotus-solution-by-thamaraiselvi05-58nn/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/5164572/smallest-index-with-equal-value-java-sol-dwea/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6317809/0ms-5-line-java-by-galani_jenis-nvj9/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/4165869/java-1000-beats-beginner-friendly-by-sau-4u66/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/6472595/100-beats-easy-and-optimal-approach-for-kvzx0/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/2769633/java-straight-forward-solution-by-jugant-8gg2/;;https://leetcode.com/problems/smallest-index-with-equal-value/solutions/4379426/1-line-solution-100-faster-code-beginner-uajs/;;;=;==;=;=;

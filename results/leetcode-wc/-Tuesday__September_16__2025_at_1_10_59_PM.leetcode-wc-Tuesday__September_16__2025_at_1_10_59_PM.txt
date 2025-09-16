@@ -1,0 +1,34 @@
+1483. Kth Ancestor of a Tree Node;=;=Hard;=;=TreeAncestor     public TreeAncestor(int n, int[] parent)                     public int getKthAncestor(int node, int k)             /  Your TreeAncestor object will be instantiated and called as such:  TreeAncestor obj = new TreeAncestor(n, parent);  int param_1 = obj.getKthAncestor(node,k);;=;=You are given a tree with n nodes numbered from 0 to n - 1 in the form of a parent array parent where parent[i] is the parent of ith node. The root of the tree is node 0. Find the kth ancestor of a given node.
+
+The kth ancestor of a tree node is the kth node in the path from that node to the root node.
+
+Implement the TreeAncestor class:
+
+TreeAncestor(int n, int[] parent) Initializes the object with the number of nodes in the tree and the parent array.
+int getKthAncestor(int node, int k) return the kth ancestor of the given node node. If there is no such ancestor, return -1.
+ 
+
+Example 1:
+
+
+Input
+["TreeAncestor", "getKthAncestor", "getKthAncestor", "getKthAncestor"]
+[[7, [-1, 0, 0, 1, 1, 2, 2]], [3, 1], [5, 2], [6, 3]]
+Output
+[null, 1, 0, -1]
+
+Explanation
+TreeAncestor treeAncestor = new TreeAncestor(7, [-1, 0, 0, 1, 1, 2, 2]);
+treeAncestor.getKthAncestor(3, 1); // returns 1 which is the parent of 3
+treeAncestor.getKthAncestor(5, 2); // returns 0 which is the grandparent of 5
+treeAncestor.getKthAncestor(6, 3); // returns -1 because there is no such ancestor
+ 
+
+Constraints:
+
+1 <= k <= n <= 5 * 104
+parent.length == n
+parent[0] == -1
+0 <= parent[i] < n for all 0 < i < n
+0 <= node < n
+There will be at most 5 * 104 queries.;=;=https://leetcode.com/problems/kth-ancestor-of-a-tree-node/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/7083666/beats-10000-passes-new-testcases-by-ojas-382n/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/5322118/java-code-running-by-vivekvardhan43862-chgn/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/5872299/levelorder-inorder-binary-search-heavily-3ct1/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/1298231/2-minute-read-easy-binary-lifting-by-dea-zoek/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/6437527/design-based-on-dfs-binary-search-qlogn-ilw8n/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/686361/java-100-runtime-simple-solution-by-arun-s5h0/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/5227743/binary-lifting-by-atulraju-9el3/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/2681891/simple-python-binary-lifting-by-prateekg-te8t/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/1237242/java-clean-binary-lifting-with-comments-dilmz/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/687323/java-simple-solution-with-comments-time-juxya/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/974850/java-onlogn-solution-by-universe89-9tf7/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/6852999/easy-binary-lifting-java-by-arham121-9qfo/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/6678858/simple-java-solution-by-mainoo18-678c/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/5648387/binary-lifting-solution-in-java-onlogn-q-tfo0/;;https://leetcode.com/problems/kth-ancestor-of-a-tree-node/solutions/5278274/java-by-abhiguptanitb-3idx/;;;=;==;=;=;

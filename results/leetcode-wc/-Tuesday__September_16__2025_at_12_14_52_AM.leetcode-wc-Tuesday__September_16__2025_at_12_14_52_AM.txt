@@ -1,0 +1,29 @@
+1881. Maximum Value after Insertion;=;=Medium;=;=public String maxValue(String n, int x);=;=You are given a very large integer n, represented as a string,?????? and an integer digit x. The digits in n and the digit x are in the inclusive range [1, 9], and n may represent a negative number.
+
+You want to maximize n's numerical value by inserting x anywhere in the decimal representation of n??????. You cannot insert x to the left of the negative sign.
+
+For example, if n = 73 and x = 6, it would be best to insert it between 7 and 3, making n = 763.
+If n = -55 and x = 2, it would be best to insert it before the first 5, making n = -255.
+Return a string representing the maximum value of n?????? after the insertion.
+
+ 
+
+Example 1:
+
+Input: n = "99", x = 9
+Output: "999"
+Explanation: The result is the same regardless of where you insert 9.
+Example 2:
+
+Input: n = "-13", x = 2
+Output: "-123"
+Explanation: You can make n one of {-213, -123, -132}, and the largest of those three is -123.
+ 
+
+Constraints:
+
+1 <= n.length <= 105
+1 <= x <= 9
+The digits in n??? are in the range [1, 9].
+n is a valid representation of an integer.
+In the case of a negative n,?????? it will begin with '-'.;=;=https://leetcode.com/problems/maximum-value-after-insertion/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-value-after-insertion/solutions/6990183/java-basic-by-abhi_bittu2525-rq7k/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/6603386/easy-java-solution-by-dsuryaprakash89-a4p9/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/6859310/beats-83-using-stringbuider-by-alexander-qdqw/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/6859341/beats-83-using-stringbuilder-by-alexande-krhr/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/7037308/simple-solution-based-on-isnegative-by-n-5eg8/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/1308381/simple-java-solution-by-ganesh_6-lvsb/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/3730030/java-simple-solution-by-ytchouar-eswx/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/1240100/5ms-easy-solution-with-explanation-faste-kf8f/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/4163940/best-java-solution-beats-90-by-ravikumar-h96p/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/1266373/java-solution-using-stringbuilder-by-rud-jdgh/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/4137348/beats-100-simple-java-solution-by-kanhac-3vrx/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/6923504/java-simple-solution-checking-for-next-s-28vk/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/3475173/easy-java-solution-by-milisingh-ixr1/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/1240955/my-java-solution-putting-x-before-char-o-8774/;;https://leetcode.com/problems/maximum-value-after-insertion/solutions/1240496/java-solution-with-explanation-by-sushan-q572/;;;=;==;=;=;

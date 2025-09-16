@@ -1,0 +1,40 @@
+3514. Number of Unique XOR Triplets II;=;=Medium;=;=public int uniqueXorTriplets(int[] nums);=;=You are given an integer array nums.
+
+A XOR triplet is defined as the XOR of three elements nums[i] XOR nums[j] XOR nums[k] where i <= j <= k.
+
+Return the number of unique XOR triplet values from all possible triplets (i, j, k).
+
+ 
+
+Example 1:
+
+Input: nums = [1,3]
+
+Output: 2
+
+Explanation:
+
+The possible XOR triplet values are:
+
+(0, 0, 0) ? 1 XOR 1 XOR 1 = 1
+(0, 0, 1) ? 1 XOR 1 XOR 3 = 3
+(0, 1, 1) ? 1 XOR 3 XOR 3 = 1
+(1, 1, 1) ? 3 XOR 3 XOR 3 = 3
+The unique XOR values are {1, 3}. Thus, the output is 2.
+
+Example 2:
+
+Input: nums = [6,7,8,9]
+
+Output: 4
+
+Explanation:
+
+The possible XOR triplet values are {6, 7, 8, 9}. Thus, the output is 4.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 1500
+1 <= nums[i] <= 1500;=;=https://leetcode.com/problems/number-of-unique-xor-triplets-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6643469/pre-calculate-all-i-j-xors-then-xor-thos-00rn/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6643499/javapython-3-build-pairs-set-then-triple-149f/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6644762/math-fast-walsh-hadamard-transform-solut-z3b0/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6643565/precomputation-easy-to-understand-by-res-w05n/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6645909/easy-code-in-java-using-dp-by-yasl1-atbk/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6649564/easy-c-java-simple-logic-solution-by-wai-hzan/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6644455/detailed-explanation-java-by-trinhminhtr-4a7p/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6643541/java-onn-5000n-solution-by-sarvjeet_sing-t3h8/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6645818/easiest-java-solution-by-ayushmaansingh0-i82t/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6707013/solutionjava-3514-number-of-unique-xor-t-fyu7/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6647471/java-hash-table-on2-by-kanak-ag-tx44/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6646166/java-solution-with-set-by-pchintan243-f37k/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6644543/2-pass-solution-by-punitpunde-ucg3/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6644329/java-dp-solution-by-nipungupta001-wcdc/;;https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/6643869/java-solution-for-tle-in-hashset-3514-by-i2y0/;;;=;==;=;=;

@@ -1,0 +1,33 @@
+3452. Sum of Good Numbers;=;=Easy;=;=public int sumOfGoodNumbers(int[] nums, int k);=;=Given an array of integers nums and an integer k, an element nums[i] is considered good if it is strictly greater than the elements at indices i - k and i + k (if those indices exist). If neither of these indices exists, nums[i] is still considered good.
+
+Return the sum of all the good elements in the array.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,2,1,5,4], k = 2
+
+Output: 12
+
+Explanation:
+
+The good numbers are nums[1] = 3, nums[4] = 5, and nums[5] = 4 because they are strictly greater than the numbers at indices i - k and i + k.
+
+Example 2:
+
+Input: nums = [2,1], k = 1
+
+Output: 2
+
+Explanation:
+
+The only good number is nums[0] = 2 because it is strictly greater than nums[1].
+
+ 
+
+Constraints:
+
+2 <= nums.length <= 100
+1 <= nums[i] <= 1000
+1 <= k <= floor(nums.length / 2);=;=https://leetcode.com/problems/sum-of-good-numbers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-good-numbers/solutions/7180506/easy-simple-fix-java-by-sairangineeni-iy0w/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6426310/beats-100-beginner-freindlyjavacpython-b-ob8m/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6432909/python-elegant-short-one-pass-on-by-kyry-tmte/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6454077/super-easy-code-c-c-java-python-by-kingz-dobn/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6466896/java-almost-100-beats-easy-to-understand-ekmm/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6426665/python3-three-segments-ts-0-ms-17-mb-by-mtwha/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6426871/java-solution-beats-100-proof-concise-co-o90o/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6666744/on-simple-java-solution-beats-100-by-dha-8bh6/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6666225/java-solution-by-nagasaiprasad_sudhani-xpxy/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6614677/0-ms-beats-10000-for-beginner-only-cpp-j-mjju/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6494898/java-beats-9999-by-ruslantsykaliak-dcz7/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6427619/java-conditional-statements-beats-100-by-xpus/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6509366/beats-100-of-code-by-artherbhion2004-dqhj/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6434006/easy-solution-in-java-by-nidhibaratam200-8y10/;;https://leetcode.com/problems/sum-of-good-numbers/solutions/6426158/efficient-java-solution-on-time-complexi-mpgu/;;;=;==;=;=;

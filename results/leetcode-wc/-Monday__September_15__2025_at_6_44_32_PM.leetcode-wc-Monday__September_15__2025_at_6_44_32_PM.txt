@@ -1,0 +1,30 @@
+2573. Find the String with LCP;=;=Hard;=;=public String findTheString(int[][] lcp);=;=We define the lcp matrix of any 0-indexed string word of n lowercase English letters as an n x n grid such that:
+
+lcp[i][j] is equal to the length of the longest common prefix between the substrings word[i,n-1] and word[j,n-1].
+Given an n x n matrix lcp, return the alphabetically smallest string word that corresponds to lcp. If there is no such string, return an empty string.
+
+A string a is lexicographically smaller than a string b (of the same length) if in the first position where a and b differ, string a has a letter that appears earlier in the alphabet than the corresponding letter in b. For example, "aabd" is lexicographically smaller than "aaca" because the first position they differ is at the third letter, and 'b' comes before 'c'.
+
+ 
+
+Example 1:
+
+Input: lcp = [[4,0,2,0],[0,3,0,1],[2,0,2,0],[0,1,0,1]]
+Output: "abab"
+Explanation: lcp corresponds to any 4 letter string with two alternating letters. The lexicographically smallest of them is "abab".
+Example 2:
+
+Input: lcp = [[4,3,2,1],[3,3,2,1],[2,2,2,1],[1,1,1,1]]
+Output: "aaaa"
+Explanation: lcp corresponds to any 4 letter string with a single distinct letter. The lexicographically smallest of them is "aaaa". 
+Example 3:
+
+Input: lcp = [[4,3,2,1],[3,3,2,1],[2,2,2,1],[1,1,1,3]]
+Output: ""
+Explanation: lcp[3][3] cannot be equal to 3 since word[3,...,3] consists of only a single letter; Thus, no answer exists.
+ 
+
+Constraints:
+
+1 <= n == lcp.length == lcp[i].length <= 1000
+0 <= lcp[i][j] <= n;=;=https://leetcode.com/problems/find-the-string-with-lcp/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-string-with-lcp/solutions/3203816/javacpython-check-same-characters-by-lee-nrl0/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3203712/java-solution-with-explanation-by-profch-tmed/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/4163308/java-union-find-by-jeckafedorov-6qxw/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3205468/javawith-detail-explaination-on2-on2-by-ihced/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/5424987/beats-9048-dp-java-solution-on2-by-nitin-5gya/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3289021/java-dsu-graph-full-explanation-by-mayan-p1q2/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3230656/collect-requirements-then-build-greedily-3k5o/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3214214/simple-and-intuitive-java-solution-using-0g4h/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3206371/easy-way-by-kumarraunak-0z2j/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3205469/javawith-detail-explaination-on2-on2-by-aysc0/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3205364/java-building-string-from-scratch-and-va-t3br/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3204372/antarnab-java-100-faster-easy-by-arnab-c-6eqf/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3203961/greedy-use-character-and-test-string-by-0ohw1/;;https://leetcode.com/problems/find-the-string-with-lcp/solutions/3203827/java-try-build-the-string-in-greedy-appr-i5jp/;;;=;==;=;=;

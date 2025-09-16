@@ -1,0 +1,33 @@
+3177. Find the Maximum Length of a Good Subsequence II;=;=Hard;=;=public int maximumLength(int[] nums, int k);=;=You are given an integer array nums and a non-negative integer k. A sequence of integers seq is called good if there are at most k indices i in the range [0, seq.length - 2] such that seq[i] != seq[i + 1].
+
+Return the maximum possible length of a good subsequence of nums.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,1,1,3], k = 2
+
+Output: 4
+
+Explanation:
+
+The maximum length subsequence is [1,2,1,1,3].
+
+Example 2:
+
+Input: nums = [1,2,3,4,5,1], k = 0
+
+Output: 2
+
+Explanation:
+
+The maximum length subsequence is [1,2,3,4,5,1].
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 5 * 103
+1 <= nums[i] <= 109
+0 <= k <= min(50, nums.length);=;=https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5280172/javacpython-dp-onk-by-lee215-i9ce/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5280089/on2k-recursion-optimized-to-onk-dp-by-_s-lehl/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/6525000/easy-transition-from-onnk-to-onk-by-sata-fht9/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5280181/java-dp-by-mot882000-cwqk/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5280159/solution-by-dare2solve-detailed-explanat-a2lf/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5280250/dponk-beats-100-simple-explaination-java-sad2/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5667282/dp-solution-time-okn-space-on-by-tracy12-ptfy/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5565094/succinct-code-by-singhanialokesh-tsm8/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5303990/without-using-heap-with-intuition-by-sou-tfpt/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5345932/most-space-optimized-approach-on-space-o-t6h8/;;https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/solutions/5281170/dp-onk-simple-explaination-java-c-python-ikhw/;;;=;==;=;=;

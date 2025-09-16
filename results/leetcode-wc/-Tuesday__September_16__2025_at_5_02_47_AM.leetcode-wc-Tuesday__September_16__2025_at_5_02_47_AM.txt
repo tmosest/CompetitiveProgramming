@@ -1,0 +1,33 @@
+2164. Sort Even and Odd Indices Independently;=;=Easy;=;=public int[] sortEvenOdd(int[] nums);=;=You are given a 0-indexed integer array nums. Rearrange the values of nums according to the following rules:
+
+Sort the values at odd indices of nums in non-increasing order.
+For example, if nums = [4,1,2,3] before this step, it becomes [4,3,2,1] after. The values at odd indices 1 and 3 are sorted in non-increasing order.
+Sort the values at even indices of nums in non-decreasing order.
+For example, if nums = [4,1,2,3] before this step, it becomes [2,1,4,3] after. The values at even indices 0 and 2 are sorted in non-decreasing order.
+Return the array formed after rearranging the values of nums.
+
+ 
+
+Example 1:
+
+Input: nums = [4,1,2,3]
+Output: [2,3,4,1]
+Explanation: 
+First, we sort the values present at odd indices (1 and 3) in non-increasing order.
+So, nums changes from [4,1,2,3] to [4,3,2,1].
+Next, we sort the values present at even indices (0 and 2) in non-decreasing order.
+So, nums changes from [4,1,2,3] to [2,3,4,1].
+Thus, the array formed after rearranging the values is [2,3,4,1].
+Example 2:
+
+Input: nums = [2,1]
+Output: [2,1]
+Explanation: 
+Since there is exactly one odd index and one even index, no rearrangement of values takes place.
+The resultant array formed is [2,1], which is the same as the initial array. 
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100;=;=https://leetcode.com/problems/sort-even-and-odd-indices-independently/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/7179227/fast-and-clear-with-iterations-in-tables-1gha/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/7194936/easy-java-code-1ms-by-sivaaleet-kuv3/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/7179242/easy-by-leetcoder2234-q6mq/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/7070576/sort-even-and-odd-indices-independently-clysn/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/1748447/heapon-log-n-and-counting-sorton-in-java-8hme/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/7074173/sort-even-and-odd-indices-independently-7n4pc/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/1748618/easy-java-solution-using-arraylists-by-a-ibd9/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/6443058/2164-sort-even-and-odd-indices-independe-ipim/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/6768960/sort-even-and-odd-indices-independently-35phx/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/6768730/1-ms-java-beginner-friendly-by-baseer-s-86yx/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/4365817/beginner-friednly-java-easy-solution-by-ofbwt/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/3882150/beginner-friendly-solution-fully-explain-qhk3/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/1765047/java-time-compelxity-onlogn-on-space-eas-ofrl/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/2881026/java-solution-by-janhvi__28-g4eg/;;https://leetcode.com/problems/sort-even-and-odd-indices-independently/solutions/6050244/a-clarified-solution-by-chandranshu31-m4e7/;;;=;==;=;=;

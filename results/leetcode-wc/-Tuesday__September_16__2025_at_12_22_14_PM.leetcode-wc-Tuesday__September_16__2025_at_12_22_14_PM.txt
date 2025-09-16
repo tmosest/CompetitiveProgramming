@@ -1,0 +1,30 @@
+1996. The Number of Weak Characters in the Game;=;=Medium;=;=publicÊintÊnumberOfWeakCharacters(int[][]Êproperties);=;=You are playing a game that contains multiple characters, and each of the characters has two main properties: attack and defense. You are given a 2D integer array properties where properties[i] = [attacki, defensei] represents the properties of the ith character in the game.
+
+A character is said to be weak if any other character has both attack and defense levels strictly greater than this character's attack and defense levels. More formally, a character i is said to be weak if there exists another character j where attackj > attacki and defensej > defensei.
+
+Return the number of weak characters.
+
+Ê
+
+Example 1:
+
+Input: properties = [[5,5],[6,3],[3,6]]
+Output: 0
+Explanation: No character has strictly greater attack and defense than the other.
+Example 2:
+
+Input: properties = [[2,2],[3,3]]
+Output: 1
+Explanation: The first character is weak because the second character has a strictly greater attack and defense.
+Example 3:
+
+Input: properties = [[1,5],[10,4],[4,3]]
+Output: 1
+Explanation: The third character is weak because the second character has a strictly greater attack and defense.
+Ê
+
+Constraints:
+
+2 <= properties.length <= 105
+properties[i].length == 2
+1 <= attacki, defensei <= 105;=;=https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2551895/java-easy-solution-with-explanation-93-f-jo2z/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/1445215/java-greedy-approach-o100002-time-comple-h3j8/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2551950/simple-and-concise-java-code-by-lil_toet-z1cs/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2552627/easy-understandable-sorting-approach-ful-x8g5/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2551824/beginner-friendly-javajavascriptpython-s-9954/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2551799/easy-java-solution-beginner-friendly-wit-slaj/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/1445272/java-concise-solution-sort-scan-by-abhij-r07f/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2553435/java-sorting-solution-with-detailed-comm-gafh/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/1445157/java-solution-greedy-approach-brute-appr-oo03/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/1510363/java-sorting-efficient-easy-to-understan-an0g/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2278023/easy-java-onlogn-with-explanation-by-dae-r24r/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2551718/java-90-faster-sorting-greedy-with-inlin-jfl6/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2553362/the-number-of-weak-characters-java-sorti-hswl/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2552403/java-solution-easy-to-understand-by-rahu-p3xj/;;https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/solutions/2551691/java-simple-solution-with-sort-by-luoyun-mq6i/;;;=;==;=;=;

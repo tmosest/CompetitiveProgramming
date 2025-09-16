@@ -1,0 +1,33 @@
+1402. Reducing Dishes;=;=Hard;=;=public int maxSatisfaction(int[] satisfaction);=;=A chef has collected data on the satisfaction level of his n dishes. Chef can cook any dish in 1 unit of time.
+
+Like-time coefficient of a dish is defined as the time taken to cook that dish including previous dishes multiplied by its satisfaction level i.e. time[i] * satisfaction[i].
+
+Return the maximum sum of like-time coefficient that the chef can obtain after preparing some amount of dishes.
+
+Dishes can be prepared in any order and the chef can discard some dishes to get this maximum value.
+
+ 
+
+Example 1:
+
+Input: satisfaction = [-1,-8,0,5,-9]
+Output: 14
+Explanation: After Removing the second and last dish, the maximum total like-time coefficient will be equal to (-1*1 + 0*2 + 5*3 = 14).
+Each dish is prepared in one unit of time.
+Example 2:
+
+Input: satisfaction = [4,3,2]
+Output: 20
+Explanation: Dishes can be prepared in any order, (2*1 + 3*2 + 4*3 = 20)
+Example 3:
+
+Input: satisfaction = [-1,-4,-5]
+Output: 0
+Explanation: People do not like the dishes. No dish is prepared.
+ 
+
+Constraints:
+
+n == satisfaction.length
+1 <= n <= 500
+-1000 <= satisfaction[i] <= 1000;=;=https://leetcode.com/problems/reducing-dishes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/reducing-dishes/solutions/3353418/pythonjava-csimple-solutioneasy-to-under-u51f/;;https://leetcode.com/problems/reducing-dishes/solutions/3354115/day-363-100-javacpython-explained-intuti-prpg/;;https://leetcode.com/problems/reducing-dishes/solutions/3355849/image-explanation-complete-intuition-gre-x4v1/;;https://leetcode.com/problems/reducing-dishes/solutions/5499329/reducing-dishes-easy-java-solution-using-1txf/;;https://leetcode.com/problems/reducing-dishes/solutions/3353617/java-python-and-ceasy-solutions-with-exa-af0s/;;https://leetcode.com/problems/reducing-dishes/solutions/6894135/easy-java-solution-dp-bottom-up-approach-x89k/;;https://leetcode.com/problems/reducing-dishes/solutions/3354845/4-best-java-approaches-recursion-memoriz-3w1k/;;https://leetcode.com/problems/reducing-dishes/solutions/5576587/good-to-go-by-dixon_n-grma/;;https://leetcode.com/problems/reducing-dishes/solutions/3354057/day-88-greedy-onlogn-time-and-o1-space-e-2pbs/;;https://leetcode.com/problems/reducing-dishes/solutions/3353511/java-easy-solution-95-faster-code-beginn-9bop/;;https://leetcode.com/problems/reducing-dishes/solutions/6391738/simple-and-beginner-friendly-by-sairangi-vo90/;;https://leetcode.com/problems/reducing-dishes/solutions/4796070/very-easy-java-solution-best-approach-by-ccbt/;;https://leetcode.com/problems/reducing-dishes/solutions/3353732/easy-solution-with-explanation-in-java-g-ox68/;;https://leetcode.com/problems/reducing-dishes/solutions/6327218/beats-100-two-approaches-java-optimized-mdjba/;;https://leetcode.com/problems/reducing-dishes/solutions/3353916/easiest-solution-by-code_ranvir25-6lwx/;;;=;==;=;=;

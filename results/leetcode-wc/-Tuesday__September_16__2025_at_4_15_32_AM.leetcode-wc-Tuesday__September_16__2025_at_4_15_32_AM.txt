@@ -1,0 +1,46 @@
+3237. Alt and Tab Simulation;=;=Medium;=;=public int[] simulationResult(int[] windows, int[] queries);=;=There are n windows open numbered from 1 to n, we want to simulate using alt + tab to navigate between the windows.
+
+You are given an array windows which contains the initial order of the windows (the first element is at the top and the last one is at the bottom).
+
+You are also given an array queries where for each query, the window queries[i] is brought to the top.
+
+Return the final state of the array windows.
+
+ 
+
+Example 1:
+
+Input: windows = [1,2,3], queries = [3,3,2]
+
+Output: [2,3,1]
+
+Explanation:
+
+Here is the window array after each query:
+
+Initial order: [1,2,3]
+After the first query: [3,1,2]
+After the second query: [3,1,2]
+After the last query: [2,3,1]
+Example 2:
+
+Input: windows = [1,4,2,3], queries = [4,1,3]
+
+Output: [3,1,4,2]
+
+Explanation:
+
+Here is the window array after each query:
+
+Initial order: [1,4,2,3]
+After the first query: [4,1,2,3]
+After the second query: [1,4,2,3]
+After the last query: [3,1,4,2]
+ 
+
+Constraints:
+
+1 <= n == windows.length <= 105
+windows is a permutation of [1, n].
+1 <= queries.length <= 105
+1 <= queries[i] <= n;=;=https://leetcode.com/problems/alt-and-tab-simulation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/alt-and-tab-simulation/solutions/5571204/java-hashset-queue-by-luozhengjiafei-7his/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/5567646/java-fast-by-chuko-e5jz/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/5890806/on-solution-use-hashset-to-keep-track-of-udqa/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/5775052/simple-java-solution-by-sakshikishore-z4y9/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/5579913/java-stack-set-solution-by-tbekpro-oql7/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/5573271/on-time-o1-space-by-macrohard-w8zd/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/5572404/simple-array-based-position-map-by-macro-6wpx/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/5569729/clean-java-solution-with-explanation-dou-k0kl/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/5566802/winners-option-by-jinlinyang-m60q/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/5564739/java-brute-force-on-12ms-by-jobhunting-6k58/;;https://leetcode.com/problems/alt-and-tab-simulation/solutions/6141611/java-solution-with-explanation-by-sepac-iex9/;;;=;==;=;=;

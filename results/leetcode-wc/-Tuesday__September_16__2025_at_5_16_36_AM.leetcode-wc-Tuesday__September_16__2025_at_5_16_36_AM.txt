@@ -1,0 +1,32 @@
+1177. Can Make Palindrome from Substring;=;=Medium;=;=public List<Boolean> canMakePaliQueries(String s, int[][] queries);=;=You are given a string s and array queries where queries[i] = [lefti, righti, ki]. We may rearrange the substring s[lefti...righti] for each query and then choose up to ki of them to replace with any lowercase English letter.
+
+If the substring is possible to be a palindrome string after the operations above, the result of the query is true. Otherwise, the result is false.
+
+Return a boolean array answer where answer[i] is the result of the ith query queries[i].
+
+Note that each letter is counted individually for replacement, so if, for example s[lefti...righti] = "aaa", and ki = 2, we can only replace two of the letters. Also, note that no query modifies the initial string s.
+
+ 
+
+Example :
+
+Input: s = "abcda", queries = [[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]
+Output: [true,false,false,true,true]
+Explanation:
+queries[0]: substring = "d", is palidrome.
+queries[1]: substring = "bc", is not palidrome.
+queries[2]: substring = "abcd", is not palidrome after replacing only 1 character.
+queries[3]: substring = "abcd", could be changed to "abba" which is palidrome. Also this can be changed to "baab" first rearrange it "bacd" then replace "cd" with "ab".
+queries[4]: substring = "abcda", could be changed to "abcba" which is palidrome.
+Example 2:
+
+Input: s = "lyb", queries = [[0,1,0],[2,2,1]]
+Output: [false,true]
+ 
+
+Constraints:
+
+1 <= s.length, queries.length <= 105
+0 <= lefti <= righti < s.length
+0 <= ki <= s.length
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/can-make-palindrome-from-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/373956/java-bit-vector-linear-clean-code-soluti-bujl/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/1733037/simple-java-answer-on-by-dheerajmakam-2lik/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/1550656/java-solution-using-prefix-array-with-ex-3b2d/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/3857316/java-solution-explaination-in-comments-b-5c95/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/3351227/easy-java-solution-prefix-readable-code-358uw/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/7171483/prefix-sum-bit-manipulation-by-runlingli-vbt0/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/683719/java-prefix-sum-by-masterbruce-rk9f/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/7133996/detailed-and-simple-solution-by-_sudheer-ng65/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/6695495/efficient-palindrome-transformation-chec-w5rr/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/6695497/efficient-palindrome-transformation-chec-2s7j/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/6714395/prefix-xor-bitmask-to-check-palindromic-7wg8v/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/6266265/1177-can-make-palindrome-from-substring-yc4im/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/5604769/simple-java-solution-by-sakshikishore-mhz0/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/5381418/prefix-sum-easy-java-by-n00bs404-4tms/;;https://leetcode.com/problems/can-make-palindrome-from-substring/solutions/5154892/simple-java-by-khansaadbinhasan-439v/;;;=;==;=;=;

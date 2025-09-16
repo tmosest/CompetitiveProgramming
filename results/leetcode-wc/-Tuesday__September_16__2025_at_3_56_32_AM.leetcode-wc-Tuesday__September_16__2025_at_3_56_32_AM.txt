@@ -1,0 +1,28 @@
+1245. Tree Diameter;=;=Medium;=;=public int treeDiameter(int[][] edges);=;=The diameter of a tree is the number of edges in the longest path in that tree.
+
+There is an undirected tree of n nodes labeled from 0 to n - 1. You are given a 2D array edges where edges.length == n - 1 and edges[i] = [ai, bi] indicates that there is an undirected edge between nodes ai and bi in the tree.
+
+Return the diameter of the tree.
+
+ 
+
+Example 1:
+
+
+Input: edges = [[0,1],[0,2]]
+Output: 2
+Explanation: The longest path of the tree is the path 1 - 0 - 2.
+Example 2:
+
+
+Input: edges = [[0,1],[1,2],[2,3],[1,4],[4,5]]
+Output: 4
+Explanation: The longest path of the tree is the path 3 - 2 - 1 - 4 - 5.
+ 
+
+Constraints:
+
+n == edges.length + 1
+1 <= n <= 104
+0 <= ai, bi < n
+ai != bi;=;=https://leetcode.com/problems/tree-diameter/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/tree-diameter/solutions/4769392/clear-solution-use-topological-sort-by-s-wrin/;;https://leetcode.com/problems/tree-diameter/solutions/703621/java-explanation-simple-dfs-5ms-faster-t-isbq/;;https://leetcode.com/problems/tree-diameter/solutions/1658069/java-two-pass-concise-dfs-not-bfs-by-stu-b70a/;;https://leetcode.com/problems/tree-diameter/solutions/424297/java-tree-diameter-dfs-beats-99-explaine-7tqp/;;https://leetcode.com/problems/tree-diameter/solutions/901441/java-simple-solution-using-level-bfs-by-pv7mc/;;https://leetcode.com/problems/tree-diameter/solutions/3064217/java-dfs-with-on-time-complexity-by-luck-2qaz/;;https://leetcode.com/problems/tree-diameter/solutions/6325795/java-bfs-based-approach-to-find-diameter-qzcc/;;https://leetcode.com/problems/tree-diameter/solutions/6099439/dfs-same-as-n-ary-trees-adjacency-list-b-uw3t/;;https://leetcode.com/problems/tree-diameter/solutions/5909296/easy-java-dfs-one-pass-solution-by-dqzha-6lwe/;;https://leetcode.com/problems/tree-diameter/solutions/5705797/java-a-bit-faster-solution-99-modeling-t-jb14/;;https://leetcode.com/problems/tree-diameter/solutions/5527757/dfs-by-irvifa-h8th/;;https://leetcode.com/problems/tree-diameter/solutions/4790507/java-solution-by-rimberse-32fk/;;https://leetcode.com/problems/tree-diameter/solutions/4765565/java-3ms-100-dfs-with-graph-in-arrays-by-fufl/;;https://leetcode.com/problems/tree-diameter/solutions/4764998/java-solution-with-dfs-9-ms-by-goldrushk-t9vf/;;https://leetcode.com/problems/tree-diameter/solutions/4668337/java-solution-bfs-by-ndsjqwbbb-t8nv/;;;=;==;=;=;

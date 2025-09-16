@@ -1,0 +1,55 @@
+3380. Maximum Area Rectangle With Point Constraints I;=;=Medium;=;=public int maxRectangleArea(int[][] points);=;=You are given an array points where points[i] = [xi, yi] represents the coordinates of a point on an infinite plane.
+
+Your task is to find the maximum area of a rectangle that:
+
+Can be formed using four of these points as its corners.
+Does not contain any other point inside or on its border.
+Has its edges parallel to the axes.
+Return the maximum area that you can obtain or -1 if no such rectangle is possible.
+
+ 
+
+Example 1:
+
+Input: points = [[1,1],[1,3],[3,1],[3,3]]
+
+Output: 4
+
+Explanation:
+
+
+
+We can make a rectangle with these 4 points as corners and there is no other point that lies inside or on the border. Hence, the maximum possible area would be 4.
+
+Example 2:
+
+Input: points = [[1,1],[1,3],[3,1],[3,3],[2,2]]
+
+Output: -1
+
+Explanation:
+
+
+
+There is only one rectangle possible is with points [1,1], [1,3], [3,1] and [3,3] but [2,2] will always lie inside it. Hence, returning -1.
+
+Example 3:
+
+Input: points = [[1,1],[1,3],[3,1],[3,3],[1,2],[3,2]]
+
+Output: 2
+
+Explanation:
+
+
+
+The maximum area rectangle is formed by the points [1,3], [1,2], [3,2], [3,3], which has an area of 2. Additionally, the points [1,1], [1,2], [3,1], [3,2] also form a valid rectangle with the same area.
+
+ 
+
+Constraints:
+
+1 <= points.length <= 10
+points[i].length == 2
+0 <= xi, yi <= 100
+All the given points are unique.;=;=https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6124577/maximum-area-rectangle-with-point-constr-cgl0/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6124575/easy-hashset-100-beats-by-pune18-oul9/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6319772/on2-approach-using-treemap-and-hashmap-b-hxh2/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6124594/approach-intuition-brute-force-tc-on4-by-pin1/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6125027/clean-java-solution-by-michaelwsd-3xmi/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6124571/java-solution-by-solved-0z0n/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6124692/maximal-rectangle-area-with-validation-o-7g3k/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6932943/iteration-based-solution-in-java-by-some-ydrk/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6124629/simple-brute-force-solution-by-risabhuch-t4kr/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6818070/intutuive-brute-force-solution-that-is-v-zsgi/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6391446/sort-points-then-find-all-rectangles-by-fvnm6/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6124986/simulation-based-java-by-user7683c-1u1z/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6124648/vertical-lines-map-soln-tc-on4-by-excels-xpnc/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6132837/simple-java-code-very-few-codes-easy-und-ffkj/;;https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/solutions/6129373/solution-java-hashset-by-ilamaranmagesh-9e3o/;;;=;==;=;=;

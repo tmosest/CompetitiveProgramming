@@ -1,0 +1,43 @@
+3411. Maximum Subarray With Equal Products;=;=Easy;=;=public int maxLength(int[] nums);=;=You are given an array of positive integers nums.
+
+An array arr is called product equivalent if prod(arr) == lcm(arr) * gcd(arr), where:
+
+prod(arr) is the product of all elements of arr.
+gcd(arr) is the GCD of all elements of arr.
+lcm(arr) is the LCM of all elements of arr.
+Return the length of the longest product equivalent subarray of nums.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,1,2,1,1,1]
+
+Output: 5
+
+Explanation: 
+
+The longest product equivalent subarray is [1, 2, 1, 1, 1], where prod([1, 2, 1, 1, 1]) = 2, gcd([1, 2, 1, 1, 1]) = 1, and lcm([1, 2, 1, 1, 1]) = 2.
+
+Example 2:
+
+Input: nums = [2,3,4,5,6]
+
+Output: 3
+
+Explanation: 
+
+The longest product equivalent subarray is [3, 4, 5].
+
+Example 3:
+
+Input: nums = [1,2,3,1,4,5,1]
+
+Output: 5
+
+ 
+
+Constraints:
+
+2 <= nums.length <= 100
+1 <= nums[i] <= 10;=;=https://leetcode.com/problems/maximum-subarray-with-equal-products/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6232221/simple-bruteforce-by-kreakemp-4a5d/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6232034/easy-using-map-and-stack-100-beats-by-sh-gzkn/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6232019/simple-solution-by-siva_devireddy_0312-2phd/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6240440/java-sliding-window-bit-on-solution-not-7r1d1/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6232533/brute-force-solution-in-javac-python-by-ee42t/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6239866/easy-brute-force-approach-beats-100-by-a-mac5/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6232779/java-solution-by-dsuryaprakash89-m8og/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6232065/java-solution-by-harsh__005-ywit/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6232251/simple-solution-pythonjava-by-cryandrich-yjmg/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6675925/beat-100-simple-java-solution-by-rohan_s-m7db/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6235513/simple-code-by-ruturaj_720-ym91/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6235868/best-solution-by-ram_saketh-bgvp/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6232950/beat-100-easy-to-understand-and-java-pyt-je0x/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6269409/easy-java-solution-by-rachitaa-9lcc/;;https://leetcode.com/problems/maximum-subarray-with-equal-products/solutions/6233200/max-possible-lcm-is-10-max-possible-gcd-1q3bc/;;;=;==;=;=;

@@ -1,0 +1,27 @@
+2543. Check if Point Is Reachable;=;=Hard;=;=publicÊbooleanÊisReachable(intÊtargetX,ÊintÊtargetY);=;=There exists an infinitely large grid. You are currently at point (1, 1), and you need to reach the point (targetX, targetY) using a finite number of steps.
+
+In one step, you can move from point (x, y) to any one of the following points:
+
+(x, y - x)
+(x - y, y)
+(2 * x, y)
+(x, 2 * y)
+Given two integers targetX and targetY representing the X-coordinate and Y-coordinate of your final position, return true if you can reach the point from (1, 1) using some number of steps, and false otherwise.
+
+Ê
+
+Example 1:
+
+Input: targetX = 6, targetY = 9
+Output: false
+Explanation: It is impossible to reach (6,9) from (1,1) using any sequence of moves, so false is returned.
+Example 2:
+
+Input: targetX = 4, targetY = 7
+Output: true
+Explanation: You can follow the path (1,1) -> (1,2) -> (1,4) -> (1,8) -> (1,7) -> (2,7) -> (4,7).
+Ê
+
+Constraints:
+
+1 <= targetX, targetYÊ<= 109;=;=https://leetcode.com/problems/check-if-point-is-reachable/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-point-is-reachable/solutions/3082073/javacpython-1-line-gcd-solution-by-lee21-p6t1/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3082147/c-java-python-gcd-by-tojuna-eokq/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3082013/javapython-3-check-if-the-gcd-has-only-f-n9d2/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3082462/java-gcd-explained-with-proof-by-xiangca-k5vv/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3082148/java-3-solutions-by-sourin_bruh-du7y/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3084638/you-cant-beat-this-o1-solution-xd-by-sun-adeh/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3263096/very-easy-java0-ms-by-akashnd33-io6f/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3089101/gcd-solution-need-help-with-the-proof-i-t9pge/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3087623/easy-solutionfully-explained-pmi-c-java-q8pau/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3084186/java-recursive-by-jasmine_zeng-egnk/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3083272/cjavapython3-gcd-by-ye15-tvm1/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/3082133/easy-solution-by-rushikesh29-c1qc/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/5949125/beats-100-runtime-1ms-java-by-clientapii-ptvc/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/5642376/easy-intution-approach-java-c-by-vivek__-jp5g/;;https://leetcode.com/problems/check-if-point-is-reachable/solutions/4424851/almost-by-user3043sb-mghf/;;;=;==;=;=;

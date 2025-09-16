@@ -1,0 +1,58 @@
+2943. Maximize Area of Square Hole in Grid;=;=Medium;=;=public int maximizeSquareHoleArea(int n, int m, int[] hBars, int[] vBars);=;=You are given the two integers, n and m and two integer arrays, hBars and vBars. The grid has n + 2 horizontal and m + 2 vertical bars, creating 1 x 1 unit cells. The bars are indexed starting from 1.
+
+You can remove some of the bars in hBars from horizontal bars and some of the bars in vBars from vertical bars. Note that other bars are fixed and cannot be removed.
+
+Return an integer denoting the maximum area of a square-shaped hole in the grid, after removing some bars (possibly none).
+
+ 
+
+Example 1:
+
+
+
+Input: n = 2, m = 1, hBars = [2,3], vBars = [2]
+
+Output: 4
+
+Explanation:
+
+The left image shows the initial grid formed by the bars. The horizontal bars are [1,2,3,4], and the vertical bars are [1,2,3].
+
+One way to get the maximum square-shaped hole is by removing horizontal bar 2 and vertical bar 2.
+
+Example 2:
+
+
+
+Input: n = 1, m = 1, hBars = [2], vBars = [2]
+
+Output: 4
+
+Explanation:
+
+To get the maximum square-shaped hole, we remove horizontal bar 2 and vertical bar 2.
+
+Example 3:
+
+
+
+Input: n = 2, m = 3, hBars = [2,3], vBars = [2,4]
+
+Output: 4
+
+Explanation:
+
+One way to get the maximum square-shaped hole is by removing horizontal bar 3, and vertical bar 4.
+
+ 
+
+Constraints:
+
+1 <= n <= 109
+1 <= m <= 109
+1 <= hBars.length <= 100
+2 <= hBars[i] <= n + 1
+1 <= vBars.length <= 100
+2 <= vBars[i] <= m + 1
+All values in hBars are distinct.
+All values in vBars are distinct.;=;=https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/4328787/explained-find-max-gap-very-simple-by-kr-7bgi/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/4329355/easy-video-solution-visualization-square-fpx7/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/4328964/cjavapythonjavascript-easy-approach-expl-stqb/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/4328768/java-easy-solution-by-maratkhakim-od5q/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/4328778/minimum-common-continuous-subarray-java-476kb/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/4328766/longest-continuous-bars-by-0x4c0de-q125/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/4329486/beats-100-of-peoples-easy-solution-by-ni-5ftl/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/4329460/java-sorting-solution-by-solved-mhbe/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/7112344/java-simple-onlogn-sort-and-count-beats-xucx6/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/4329146/simple-java-on-by-stay_hard-6yxg/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/6316443/maximize-area-of-square-hole-in-grid-sol-oxw3/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/6296889/maximize-area-of-square-hole-in-grid-by-zw4r7/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/5715051/simplest-java-solutiondetailed-explanati-q1fw/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/5557487/maximize-area-of-square-hole-in-grid-by-yk0x3/;;https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/5080840/easy-and-effective-code-of-java-by-___vk-rn6d/;;;=;==;=;=;

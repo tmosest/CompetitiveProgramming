@@ -1,0 +1,17 @@
+1556. Thousand Separator;=;=Easy;=;=public String thousandSeparator(int n);=;=Given an integer n, add a dot (".") as the thousands separator and return it in string format.
+
+ 
+
+Example 1:
+
+Input: n = 987
+Output: "987"
+Example 2:
+
+Input: n = 1234
+Output: "1.234"
+ 
+
+Constraints:
+
+0 <= n <= 231 - 1;=;=https://leetcode.com/problems/thousand-separator/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/thousand-separator/solutions/7178132/easy-code-for-solve-this-problem-by-4_k4-8nfd/;;https://leetcode.com/problems/thousand-separator/solutions/7151495/beginner-friendly-java-solution-thousand-ecdd/;;https://leetcode.com/problems/thousand-separator/solutions/7111453/easy-java-by-sairangineeni-5kin/;;https://leetcode.com/problems/thousand-separator/solutions/1381502/java-runtime-0-ms-faster-than-10000-of-j-xcsb/;;https://leetcode.com/problems/thousand-separator/solutions/6734272/simple-java-solution-on-solution-easy-to-5y5u/;;https://leetcode.com/problems/thousand-separator/solutions/7191622/java-by-devendran9993-romz/;;https://leetcode.com/problems/thousand-separator/solutions/7191618/java-by-devendran9993-7etl/;;https://leetcode.com/problems/thousand-separator/solutions/6583682/beats-100-by-alexander_sergeev-kvnv/;;https://leetcode.com/problems/thousand-separator/solutions/6552049/easy-to-understand-solution-by-octa23-bloq/;;https://leetcode.com/problems/thousand-separator/solutions/6268801/3ms-concise-code-java-beginner-freindly-t80r0/;;https://leetcode.com/problems/thousand-separator/solutions/863386/java-clean-simple-solution-by-shubham100-rh4s/;;https://leetcode.com/problems/thousand-separator/solutions/6297577/easy-to-understand-java-code-beating-100-gozp/;;https://leetcode.com/problems/thousand-separator/solutions/6200762/simple-java-solution-by-rachitaa-87uy/;;https://leetcode.com/problems/thousand-separator/solutions/7185745/thousand-separator-by-jyothsna_priya-2wj2/;;https://leetcode.com/problems/thousand-separator/solutions/3896022/easy-solution-using-java-by-manu_suresh-yicu/;;;=;==;=;=;

@@ -1,0 +1,32 @@
+1444. Number of Ways of Cutting a Pizza;=;=Hard;=;=public int ways(String[] pizza, int k);=;=Given a rectangular pizza represented as a rows x cols matrix containing the following characters: 'A' (an apple) and '.' (empty cell) and given the integer k. You have to cut the pizza into k pieces using k-1 cuts. 
+
+For each cut you choose the direction: vertical or horizontal, then you choose a cut position at the cell boundary and cut the pizza into two pieces. If you cut the pizza vertically, give the left part of the pizza to a person. If you cut the pizza horizontally, give the upper part of the pizza to a person. Give the last piece of pizza to the last person.
+
+Return the number of ways of cutting the pizza such that each piece contains at least one apple. Since the answer can be a huge number, return this modulo 10^9 + 7.
+
+ 
+
+Example 1:
+
+
+
+Input: pizza = ["A..","AAA","..."], k = 3
+Output: 3 
+Explanation: The figure above shows the three ways to cut the pizza. Note that pieces must contain at least one apple.
+Example 2:
+
+Input: pizza = ["A..","AA.","..."], k = 3
+Output: 1
+Example 3:
+
+Input: pizza = ["A..","A..","..."], k = 1
+Output: 1
+ 
+
+Constraints:
+
+1 <= rows, cols <= 50
+rows == pizza.length
+cols == pizza[i].length
+1 <= k <= 10
+pizza consists of characters 'A' and '.' only.;=;=https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3360907/image-explanation-dp-prefix-sum-cjavapyt-m32h/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3360798/pythonsimple-solutioneasy-to-understand-edm8a/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/6856568/cut-pizza-with-k-slices-dp-prefix-count-imemn/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3360831/java-easy-solution-using-dp-easy-to-unde-lhm4/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/2989612/clear-analysis-and-clean-code-1444-numbe-wpvx/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3360876/day-365-100-javacpython-explained-43-way-fudo/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3360951/clean-codes-full-explanation-dp-c-java-p-xffn/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3361694/java-100-explanation-all-approaches-recu-byqu/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3366093/java-very-easy-solution-with-explanation-4csu/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3362243/dp-by-avvesome-dnn1/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3362511/java-simple-explained-clear-nonoptimized-jskw/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3363351/basic-dp-using-horizontalvertical-techni-64mw/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3362178/java-easy-memoization-solution-by-zeusda-ib2x/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3366185/java-memoization-beats-98-with-comments-45820/;;https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/solutions/3362227/number-of-ways-of-cutting-a-pizza-java-s-gjhk/;;;=;==;=;=;

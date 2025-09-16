@@ -1,0 +1,32 @@
+927. Three Equal Parts;=;=Hard;=;=public int[] threeEqualParts(int[] arr);=;=You are given an array arr which consists of only zeros and ones, divide the array into three non-empty parts such that all of these parts represent the same binary value.
+
+If it is possible, return any [i, j] with i + 1 < j, such that:
+
+arr[0], arr[1], ..., arr[i] is the first part,
+arr[i + 1], arr[i + 2], ..., arr[j - 1] is the second part, and
+arr[j], arr[j + 1], ..., arr[arr.length - 1] is the third part.
+All three parts have equal binary values.
+If it is not possible, return [-1, -1].
+
+Note that the entire part is used when considering what binary value it represents. For example, [1,1,0] represents 6 in decimal, not 3. Also, leading zeros are allowed, so [0,1,1] and [1,1] represent the same value.
+
+ 
+
+Example 1:
+
+Input: arr = [1,0,1,0,1]
+Output: [0,3]
+Example 2:
+
+Input: arr = [1,1,0,1,1]
+Output: [-1,-1]
+Example 3:
+
+Input: arr = [1,1,0,0,1]
+Output: [0,2]
+ 
+
+Constraints:
+
+3 <= arr.length <= 3 * 104
+arr[i] is 0 or 1;=;=https://leetcode.com/problems/three-equal-parts/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/three-equal-parts/solutions/184059/three-equal-parts-by-leetcode-0aqt/;;https://leetcode.com/problems/three-equal-parts/solutions/7159728/string-hashing-solution-for-non-binary-a-zvs9/;;https://leetcode.com/problems/three-equal-parts/solutions/183922/c-on-time-o1-space-12-ms-with-explanatio-7mm9/;;https://leetcode.com/problems/three-equal-parts/solutions/1343665/python-on-fast-solution-explained-by-dba-hjkq/;;https://leetcode.com/problems/three-equal-parts/solutions/223886/java-on-simple-solution-dont-know-why-of-90y5/;;https://leetcode.com/problems/three-equal-parts/solutions/1343092/three-equal-parts-c-easy-solution-with-a-3627/;;https://leetcode.com/problems/three-equal-parts/solutions/7047044/c-count-ones-compare-beats-100-by-adisht-3ojp/;;https://leetcode.com/problems/three-equal-parts/solutions/250203/logical-thinking-by-gracemeng-tnae/;;https://leetcode.com/problems/three-equal-parts/solutions/1344101/c-on-commented-code-easy-to-understand-b-rzcg/;;https://leetcode.com/problems/three-equal-parts/solutions/677626/python-on-straightforward-solution-by-wt-ii7e/;;https://leetcode.com/problems/three-equal-parts/solutions/183991/c-on-time-on-space-40ms-14-lines-2-loops-vpus/;;https://leetcode.com/problems/three-equal-parts/solutions/1343709/2-clean-python-linear-solutions-by-cthlo-6u1m/;;https://leetcode.com/problems/three-equal-parts/solutions/5187702/three-equal-parts-easiest-approach-on-ti-pfj0/;;https://leetcode.com/problems/three-equal-parts/solutions/184040/python-easy-understand-solution-with-exp-ydrk/;;https://leetcode.com/problems/three-equal-parts/solutions/183902/java-on-solution-by-self_learner-a8hp/;;;=;==;=;=;

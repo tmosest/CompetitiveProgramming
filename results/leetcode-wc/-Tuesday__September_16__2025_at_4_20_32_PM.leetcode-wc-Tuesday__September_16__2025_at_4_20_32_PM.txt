@@ -1,0 +1,31 @@
+1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K;=;=Medium;=;=publicÊintÊfindMinFibonacciNumbers(intÊk);=;=Given an integerÊk, return the minimum number of Fibonacci numbers whose sum is equal to k. The same Fibonacci number can be used multiple times.
+
+The Fibonacci numbers are defined as:
+
+F1 = 1
+F2 = 1
+Fn = Fn-1 + Fn-2 for n > 2.
+It is guaranteed that for the given constraints we can always find such Fibonacci numbers that sum up to k.
+Ê
+
+Example 1:
+
+Input: k = 7
+Output: 2 
+Explanation: The Fibonacci numbers are: 1, 1, 2, 3, 5, 8, 13, ... 
+For k = 7 we can use 2 + 5 = 7.
+Example 2:
+
+Input: k = 10
+Output: 2 
+Explanation: For k = 10 we can use 2 + 8 = 10.
+Example 3:
+
+Input: k = 19
+Output: 3 
+Explanation: For k = 19 we can use 1 + 5 + 13 = 19.
+Ê
+
+Constraints:
+
+1 <= k <= 109;=;=https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/7149948/easy-java-code-by-aesdtfg-sr3h/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/7008071/100-efficient-solution-by-kgoutamkumar-6acz/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/5670895/simple-code-easy-to-understand-beats-100-1q7s/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/6573238/1414-find-the-minimum-number-of-fibonacc-5l9z/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/1171635/java-2ms-solution-by-rmanish0308-q5uh/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/7154880/java-solution-by-nitishk25-jizz/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/586309/java-greedy-reversed-list-explained-by-g-cnbe/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/607797/java-easy-faster-explained-with-comments-hs63/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/4203882/java-easy-by-emotional_ashish-mdyo/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/4112893/best-java-solution-beats-100-by-ravikuma-mxfv/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/3691590/beats-80-java-ok-time-complexity-by-chuk-1m3v/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/1433404/java-iterative-greedy-with-easiest-expla-7kf2/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/1901330/java-simpel-solution-by-sachinsingh1451-mrpv/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/1798791/barely-working-but-working-solution-in-j-ofae/;;https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solutions/905248/java-list-based-solution-east-to-underst-2juh/;;;=;==;=;=;

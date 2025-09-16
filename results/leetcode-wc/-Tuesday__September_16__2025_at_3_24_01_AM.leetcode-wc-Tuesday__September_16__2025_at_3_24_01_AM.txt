@@ -1,0 +1,23 @@
+689. Maximum Sum of 3 Non-Overlapping Subarrays;=;=Hard;=;=public int[] maxSumOfThreeSubarrays(int[] nums, int k);=;=Given an integer array nums and an integer k, find three non-overlapping subarrays of length k with maximum sum and return them.
+
+Return the result as a list of indices representing the starting position of each interval (0-indexed). If there are multiple answers, return the lexicographically smallest one.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,1,2,6,7,5,1], k = 2
+Output: [0,3,5]
+Explanation: Subarrays [1, 2], [2, 6], [7, 5] correspond to the starting indices [0, 3, 5].
+We could have also taken [2, 1], but an answer of [1, 3, 5] would be lexicographically larger.
+Example 2:
+
+Input: nums = [1,2,1,2,1,2,1,2,1], k = 2
+Output: [0,2,4]
+ 
+
+Constraints:
+
+1 <= nums.length <= 2 * 104
+1 <= nums[i] < 216
+1 <= k <= floor(nums.length / 3);=;=https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6195310/beats-73-proof-easy-code-java-beginner-f-7oq1/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6195634/fast-and-optimal-solution-beats-100-c-ja-xxlo/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/7123340/easy-to-understand-solution-dp-must-visi-w56c/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6195925/fasterrecursionmemoizationdynamic-progra-05ju/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6195771/beats-super-easy-beginners-by-codewithsp-eztq/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6195690/with-detailed-explanation-java-c-python-w9xt7/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6982212/3ms-sliding-window-greedy-indices-triple-gvnn/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6195672/beats-80-users-with-java-typescript-arra-kagi/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6197324/brute-to-optimal-solution-for-maximum-su-5b07/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6195474/java-bes-solution-beats-100-by-aryan0703-wfdp/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6197984/java-solution-simple-straight-forward-on-u80u/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6196325/solution-by-dmitrynekrasov-52cs/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6198552/on2-to-on-optimisation-using-dynamic-pro-9k5h/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6197999/beats-100-by-sanyog_sharma-3rvf/;;https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/solutions/6197829/java-solution-dp-by-cooldudeachyut-gv8d/;;;=;==;=;=;

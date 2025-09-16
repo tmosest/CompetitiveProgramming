@@ -1,0 +1,36 @@
+654. Maximum Binary Tree;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public TreeNode constructMaximumBinaryTree(int[] nums);=;=You are given an integer array nums with no duplicates. A maximum binary tree can be built recursively from nums using the following algorithm:
+
+Create a root node whose value is the maximum value in nums.
+Recursively build the left subtree on the subarray prefix to the left of the maximum value.
+Recursively build the right subtree on the subarray suffix to the right of the maximum value.
+Return the maximum binary tree built from nums.
+
+ 
+
+Example 1:
+
+
+Input: nums = [3,2,1,6,0,5]
+Output: [6,3,5,null,2,0,null,null,1]
+Explanation: The recursive calls are as follow:
+- The largest value in [3,2,1,6,0,5] is 6. Left prefix is [3,2,1] and right suffix is [0,5].
+    - The largest value in [3,2,1] is 3. Left prefix is [] and right suffix is [2,1].
+        - Empty array, so no child.
+        - The largest value in [2,1] is 2. Left prefix is [] and right suffix is [1].
+            - Empty array, so no child.
+            - Only one element, so child is a node with value 1.
+    - The largest value in [0,5] is 5. Left prefix is [0] and right suffix is [].
+        - Only one element, so child is a node with value 0.
+        - Empty array, so no child.
+Example 2:
+
+
+Input: nums = [3,2,1]
+Output: [3,null,2,null,1]
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+0 <= nums[i] <= 1000
+All integers in nums are unique.;=;=https://leetcode.com/problems/maximum-binary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-binary-tree/solutions/6958289/solution-by-deepakumar-developer-xqxd/;;https://leetcode.com/problems/maximum-binary-tree/solutions/7049773/solution-in-java-by-vickyy234-fh8m/;;https://leetcode.com/problems/maximum-binary-tree/solutions/6880650/fast-and-clear-with-iterations-in-tables-fx57/;;https://leetcode.com/problems/maximum-binary-tree/solutions/7032996/simple-java-recursion-divide-conquer-eas-fljm/;;https://leetcode.com/problems/maximum-binary-tree/solutions/7004750/easy-brute-force-by-uttam4439-q9v4/;;https://leetcode.com/problems/maximum-binary-tree/solutions/6807787/most-simple-solution-for-beginners-by-an-o7ad/;;https://leetcode.com/problems/maximum-binary-tree/solutions/6814310/java-on-monotonic-stack-solution-by-zerk-ka0o/;;https://leetcode.com/problems/maximum-binary-tree/solutions/6794654/100-beats-by-hitarthshah2211-h58l/;;https://leetcode.com/problems/maximum-binary-tree/solutions/4820616/searching-70-beats-java-by-shyam2626-xoxl/;;https://leetcode.com/problems/maximum-binary-tree/solutions/7192991/monotonic-stack-on-java-by-krobzh-nctu/;;https://leetcode.com/problems/maximum-binary-tree/solutions/7192307/solution-in-java-by-ptr2rtp-jy1z/;;https://leetcode.com/problems/maximum-binary-tree/solutions/7189714/java-recursion-find-the-maximum-element-y3wg8/;;https://leetcode.com/problems/maximum-binary-tree/solutions/1072835/two-solution-with-detail-explain-by-gcl2-5ge8/;;https://leetcode.com/problems/maximum-binary-tree/solutions/4987455/high-level-recursive-approach-try-to-und-b79j/;;https://leetcode.com/problems/maximum-binary-tree/solutions/2844235/java-solution-time-complexity-on-space-c-wzic/;;;=;==;=;=;

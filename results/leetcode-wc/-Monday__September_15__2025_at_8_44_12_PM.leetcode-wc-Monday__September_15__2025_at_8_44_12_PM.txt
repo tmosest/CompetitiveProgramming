@@ -1,0 +1,30 @@
+1886. Determine Whether Matrix Can Be Obtained By Rotation;=;=Easy;=;=public boolean findRotation(int[][] mat, int[][] target);=;=Given two n x n binary matrices mat and target, return true if it is possible to make mat equal to target by rotating mat in 90-degree increments, or false otherwise.
+
+ 
+
+Example 1:
+
+
+Input: mat = [[0,1],[1,0]], target = [[1,0],[0,1]]
+Output: true
+Explanation: We can rotate mat 90 degrees clockwise to make mat equal target.
+Example 2:
+
+
+Input: mat = [[0,1],[1,1]], target = [[1,0],[0,1]]
+Output: false
+Explanation: It is impossible to make mat equal to target by rotating mat.
+Example 3:
+
+
+Input: mat = [[0,0,0],[0,1,0],[1,1,1]], target = [[1,1,1],[0,1,0],[0,0,0]]
+Output: true
+Explanation: We can rotate mat 90 degrees clockwise two times to make mat equal target.
+ 
+
+Constraints:
+
+n == mat.length == target.length
+n == mat[i].length == target[i].length
+1 <= n <= 10
+mat[i][j] and target[i][j] are either 0 or 1.;=;=https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/3273931/java-100-fast-no-rotation-only-indexing-3dcx6/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/7154672/beats-100-by-pushpraj_7d-8cws/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/2739214/java-100-faster-simple-solution-with-exp-c60x/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/1661843/java-solution-by-guptap151-b1hy/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/1456800/java-easy-to-understand-solution-by-whj1-oxeb/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/6545588/java-solution-by-chandranshu31-u97p/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/6375334/solve-this-question-using-transpose-and-l86bn/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/6829336/on2-time-rotate-compare-matrix-to-target-9aou/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/1262637/java-easy-solution-space-o1-with-explana-ggl4/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/6673798/java-solution-without-transposing-only-b-gcvg/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/6572800/matrix-rotations-because-360deg-of-trial-ome2/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/4461985/java-solution-easy-to-understand-by-aron-xk0r/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/6668989/java-easy-matrix-problem-beats-100-by-sh-4t0t/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/1638669/java-100-faster-by-pagalpanda-bl4k/;;https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/2581440/java-intuitive-one-pass-with-one-lambda-lfvyw/;;;=;==;=;=;

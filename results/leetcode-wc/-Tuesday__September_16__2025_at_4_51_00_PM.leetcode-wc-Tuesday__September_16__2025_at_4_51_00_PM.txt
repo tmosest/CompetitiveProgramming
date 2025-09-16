@@ -1,0 +1,28 @@
+1835. Find XOR Sum of All Pairs Bitwise AND;=;=Hard;=;=public int getXORSum(int[] arr1, int[] arr2);=;=The XOR sum of a list is the bitwise XOR of all its elements. If the list only contains one element, then its XOR sum will be equal to this element.
+
+For example, the XOR sum of [1,2,3,4] is equal to 1 XOR 2 XOR 3 XOR 4 = 4, and the XOR sum of [3] is equal to 3.
+You are given two 0-indexed arrays arr1 and arr2 that consist only of non-negative integers.
+
+Consider the list containing the result of arr1[i] AND arr2[j] (bitwise AND) for every (i, j) pair where 0 <= i < arr1.length and 0 <= j < arr2.length.
+
+Return the XOR sum of the aforementioned list.
+
+ 
+
+Example 1:
+
+Input: arr1 = [1,2,3], arr2 = [6,5]
+Output: 0
+Explanation: The list = [1 AND 6, 1 AND 5, 2 AND 6, 2 AND 5, 3 AND 6, 3 AND 5] = [0,1,2,0,2,1].
+The XOR sum = 0 XOR 1 XOR 2 XOR 0 XOR 2 XOR 1 = 0.
+Example 2:
+
+Input: arr1 = [12], arr2 = [4]
+Output: 4
+Explanation: The list = [12 AND 4] = [4]. The XOR sum = 4.
+ 
+
+Constraints:
+
+1 <= arr1.length, arr2.length <= 105
+0 <= arr1[i], arr2[j] <= 109;=;=https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/6367261/100-beats-best-approach-by-sudeep_187-8spf/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/2499760/why-ab-ac-abc-proof-full-explanation-log-590v/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/7197231/leetcode-185-bitwise-operator-java-by-sa-et5g/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/1164798/java-on-by-himanshuchhikara-lx05/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/5372518/just-5-lines-of-solution-beats-more-than-7fb2/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/6367263/100-beats-best-approach-by-sudeep_187-kfm9/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/4465787/optimised-solution-for-bitwise-xorsum-by-v0sx/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/3175387/proof-using-binary-algebra-by-coda_209-xycd/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/1899316/java-1ms-100-in-omn-time-o1-space-with-s-lsne/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/2339912/java-on-by-pintusingh20-1gbm/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/1164367/general-insights-basic-algebra-and-proof-72t3/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/2590013/java-on-solution-by-yashsingla850-nf0v/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/2900446/easy-step-short-solution-java-by-pappura-6sbg/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/2417144/java-easy-o1-space-beats-95-by-gurkaran_-7d09/;;https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/solutions/2113443/easy-to-understand-java-solution-with-o1-f1jm/;;;=;==;=;=;

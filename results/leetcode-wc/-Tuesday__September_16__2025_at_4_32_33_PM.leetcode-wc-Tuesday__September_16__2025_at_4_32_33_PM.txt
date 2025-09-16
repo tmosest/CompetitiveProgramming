@@ -1,0 +1,22 @@
+795. Number of Subarrays with Bounded Maximum;=;=Medium;=;=publicÊintÊnumSubarrayBoundedMax(int[]Ênums,ÊintÊleft,ÊintÊright);=;=Given an integer array nums and two integers left and right, return the number of contiguous non-empty subarrays such that the value of the maximum array element in that subarray is in the range [left, right].
+
+The test cases are generated so that the answer will fit in a 32-bit integer.
+
+Ê
+
+Example 1:
+
+Input: nums = [2,1,4,3], left = 2, right = 3
+Output: 3
+Explanation: There are three subarrays that meet the requirements: [2], [2, 1], [3].
+Example 2:
+
+Input: nums = [2,9,2,5,6], left = 2, right = 8
+Output: 7
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 109
+0 <= left <= right <= 109;=;=https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/7171711/easy-code-by-aesdtfg-ntgo/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/1278426/js-python-java-c-easy-triangular-number-sciyf/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/6943112/easy-java-solution-in-on-time-complexity-lk4g/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/1117122/java-explained-solution-o1-space-2-point-yuzd/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/7000577/easy-code-in-java-using-inclusion-exclus-du45/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/6829568/beat-99-easy-to-understand-java-solution-jz18/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/1278427/on-with-easy-readable-comments-100-faste-r8jc/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/1279297/java-sliding-window-on-passes-100-runtim-vazp/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/3720929/java-beats-100-two-pointers-on-time-o1-s-wtxk/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/6339366/linear-time-complexity-well-explained-by-mkqs/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/3339724/java-solution-easy-to-understand-by-gau5-0bgt/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/2305621/java-100-fast-solution-with-comments-two-ljoa/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/2244488/java-easy-sliding-window-on-by-soyebsark-44bt/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/5513264/simple-best-explanation-on-by-mridul__si-kd28/;;https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/solutions/1279317/java-on2-to-on-optimization-intuition-by-f9tl/;;;=;==;=;=;

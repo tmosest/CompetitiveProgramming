@@ -1,0 +1,37 @@
+936. Stamping The Sequence;=;=Hard;=;=public int[] movesToStamp(String stamp, String target);=;=You are given two strings stamp and target. Initially, there is a string s of length target.length with all s[i] == '?'.
+
+In one turn, you can place stamp over s and replace every letter in the s with the corresponding letter from stamp.
+
+For example, if stamp = "abc" and target = "abcba", then s is "?????" initially. In one turn you can:
+place stamp at index 0 of s to obtain "abc??",
+place stamp at index 1 of s to obtain "?abc?", or
+place stamp at index 2 of s to obtain "??abc".
+Note that stamp must be fully contained in the boundaries of s in order to stamp (i.e., you cannot place stamp at index 3 of s).
+We want to convert s to target using at most 10 * target.length turns.
+
+Return an array of the index of the left-most letter being stamped at each turn. If we cannot obtain target from s within 10 * target.length turns, return an empty array.
+
+ 
+
+Example 1:
+
+Input: stamp = "abc", target = "ababc"
+Output: [0,2]
+Explanation: Initially s = "?????".
+- Place stamp at index 0 to get "abc??".
+- Place stamp at index 2 to get "ababc".
+[1,0,2] would also be accepted as an answer, as well as some other answers.
+Example 2:
+
+Input: stamp = "abca", target = "aabcaca"
+Output: [3,0,1]
+Explanation: Initially s = "???????".
+- Place stamp at index 3 to get "???abca".
+- Place stamp at index 0 to get "abcabca".
+- Place stamp at index 1 to get "aabcaca".
+ 
+
+Constraints:
+
+1 <= stamp.length <= target.length <= 1000
+stamp and target consist of lowercase English letters.;=;=https://leetcode.com/problems/stamping-the-sequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/stamping-the-sequence/solutions/1135739/js-python-java-c-easy-reverse-matching-s-igwq/;;https://leetcode.com/problems/stamping-the-sequence/solutions/2458107/java-solution-with-explanation-must-read-6clo/;;https://leetcode.com/problems/stamping-the-sequence/solutions/2459609/java-fully-explained-with-line-by-line-i-t1dw/;;https://leetcode.com/problems/stamping-the-sequence/solutions/2456963/3ms-java-solution-beats-100-w-video-expl-0m6q/;;https://leetcode.com/problems/stamping-the-sequence/solutions/1137090/java-simple-and-easy-to-understand-greed-gmih/;;https://leetcode.com/problems/stamping-the-sequence/solutions/2460104/easy-solution-understandable-to-any-noob-huua/;;https://leetcode.com/problems/stamping-the-sequence/solutions/3521769/solution-by-deleted_user-jgi5/;;https://leetcode.com/problems/stamping-the-sequence/solutions/2459400/java-sliding-window-question-always-sque-1ahf/;;https://leetcode.com/problems/stamping-the-sequence/solutions/2458063/java-solution-6ms-runtime-with-brief-des-59iz/;;https://leetcode.com/problems/stamping-the-sequence/solutions/2456914/6ms-java-updated-solutioneasy-to-underst-ptuc/;;https://leetcode.com/problems/stamping-the-sequence/solutions/7132854/string-pattern-matching-by-namandeept-hgy6/;;https://leetcode.com/problems/stamping-the-sequence/solutions/6625225/java-beats-97-by-daanishsumkesula-s1hu/;;https://leetcode.com/problems/stamping-the-sequence/solutions/6807395/100-by-durgaprasadd-ik1t/;;https://leetcode.com/problems/stamping-the-sequence/solutions/6301959/java-beats-100-simple-approach-by-ankits-edgo/;;https://leetcode.com/problems/stamping-the-sequence/solutions/4708601/java-onlogm-solution-with-rabin-carp-by-zoiv5/;;;=;==;=;=;

@@ -1,0 +1,32 @@
+927. Three Equal Parts;=;=Hard;=;=public static boolean rightrotate(int[][] mat , int[][] target)        int n = mat.length;                int[][] arr = new int[n][n];        for(int i = 0; i<n ; i++)            for(int j = 0; j<n ; j++)                arr[j][i] = mat[i][j];                            for(int i = 0; i<n ; i++)           int left = 0;           int right = n-1;           while(left<right)            int temp = arr[i][left];            arr[i][left] = arr[i][right];            arr[i][right] = temp;            left++;            right--;                           for(int i = 0; i<n ; i++)            for(int j = 0; j<n ; j++)                mat[i][j] = arr[i][j];                            for(int i = 0; i<n ; i++)            for(int j = 0; j<n ; j++)                if(arr[i][j] != target[i][j])                    return false;;=;=You are given an array arr which consists of only zeros and ones, divide the array into three non-empty parts such that all of these parts represent the same binary value.
+
+If it is possible, return any [i, j] with i + 1 < j, such that:
+
+arr[0], arr[1], ..., arr[i] is the first part,
+arr[i + 1], arr[i + 2], ..., arr[j - 1] is the second part, and
+arr[j], arr[j + 1], ..., arr[arr.length - 1] is the third part.
+All three parts have equal binary values.
+If it is not possible, return [-1, -1].
+
+Note that the entire part is used when considering what binary value it represents. For example, [1,1,0] represents 6 in decimal, not 3. Also, leading zeros are allowed, so [0,1,1] and [1,1] represent the same value.
+
+ 
+
+Example 1:
+
+Input: arr = [1,0,1,0,1]
+Output: [0,3]
+Example 2:
+
+Input: arr = [1,1,0,1,1]
+Output: [-1,-1]
+Example 3:
+
+Input: arr = [1,1,0,0,1]
+Output: [0,2]
+ 
+
+Constraints:
+
+3 <= arr.length <= 3 * 104
+arr[i] is 0 or 1;=;=https://leetcode.com/problems/three-equal-parts/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/three-equal-parts/solutions/223886/java-on-simple-solution-dont-know-why-of-90y5/;;https://leetcode.com/problems/three-equal-parts/solutions/1344503/three-equal-parts-java-easy-to-understan-0b8m/;;https://leetcode.com/problems/three-equal-parts/solutions/1343907/java-solution-with-detailed-comments-exa-7ruf/;;https://leetcode.com/problems/three-equal-parts/solutions/1344172/easy-java-on-100-fast-1-ms-time-count-ha-gbyp/;;https://leetcode.com/problems/three-equal-parts/solutions/1343622/on-java-runtime-2-ms-faster-than-8750-of-1ucl/;;https://leetcode.com/problems/three-equal-parts/solutions/3521758/solution-by-deleted_user-nudy/;;https://leetcode.com/problems/three-equal-parts/solutions/1343905/pretty-short-java-solution15-lines-expla-lpty/;;https://leetcode.com/problems/three-equal-parts/solutions/6627397/simple-java-solution-by-sakshikishore-yn5s/;;https://leetcode.com/problems/three-equal-parts/solutions/5565200/three-equal-parts-by-shaludroid-qujo/;;https://leetcode.com/problems/three-equal-parts/solutions/5284829/my-java-2ms-solution-by-raghavrathore741-ktku/;;https://leetcode.com/problems/three-equal-parts/solutions/4945016/best-solution-in-java-by-nivedita-m-n-4g5s/;;https://leetcode.com/problems/three-equal-parts/solutions/4703509/java-on-clear-explanations-by-stefanelst-cxj7/;;https://leetcode.com/problems/three-equal-parts/solutions/4167536/easiest-solution-by-kunal7216-8dg3/;;https://leetcode.com/problems/three-equal-parts/solutions/3221561/java-two-pointers-easy-solution-by-freak-ehjq/;;https://leetcode.com/problems/three-equal-parts/solutions/3014991/easy-java-solution-by-aakash1408-s0af/;;;=;==;=;=;

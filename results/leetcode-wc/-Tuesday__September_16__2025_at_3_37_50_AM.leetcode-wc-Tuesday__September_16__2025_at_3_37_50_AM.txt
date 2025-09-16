@@ -1,0 +1,40 @@
+2171. Removing Minimum Number of Magic Beans;=;=Medium;=;=public long minimumRemoval(int[] beans);=;=You are given an array of positive integers beans, where each integer represents the number of magic beans found in a particular magic bag.
+
+Remove any number of beans (possibly none) from each bag such that the number of beans in each remaining non-empty bag (still containing at least one bean) is equal. Once a bean has been removed from a bag, you are not allowed to return it to any of the bags.
+
+Return the minimum number of magic beans that you have to remove.
+
+ 
+
+Example 1:
+
+Input: beans = [4,1,6,5]
+Output: 4
+Explanation: 
+- We remove 1 bean from the bag with only 1 bean.
+  This results in the remaining bags: [4,0,6,5]
+- Then we remove 2 beans from the bag with 6 beans.
+  This results in the remaining bags: [4,0,4,5]
+- Then we remove 1 bean from the bag with 5 beans.
+  This results in the remaining bags: [4,0,4,4]
+We removed a total of 1 + 2 + 1 = 4 beans to make the remaining non-empty bags have an equal number of beans.
+There are no other solutions that remove 4 beans or fewer.
+Example 2:
+
+Input: beans = [2,10,3,2]
+Output: 7
+Explanation:
+- We remove 2 beans from one of the bags with 2 beans.
+  This results in the remaining bags: [0,10,3,2]
+- Then we remove 2 beans from the other bag with 2 beans.
+  This results in the remaining bags: [0,10,3,0]
+- Then we remove 3 beans from the bag with 3 beans. 
+  This results in the remaining bags: [0,10,0,0]
+We removed a total of 2 + 2 + 3 = 7 beans to make the remaining non-empty bags have an equal number of beans.
+There are no other solutions that removes 7 beans or fewer.
+ 
+
+Constraints:
+
+1 <= beans.length <= 105
+1 <= beans[i] <= 105;=;=https://leetcode.com/problems/removing-minimum-number-of-magic-beans/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/1766868/simple-java-solution-using-sort-by-4ppl3-4t30/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/1766795/javapython-3-sort-then-1-pass-find-max-r-zphf/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/1766749/java-sorting-simple-explanation-by-gnaby-c41w/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/2304302/easysimple-math-by-aditya_jain_258455018-cvsz/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/1766949/simple-java-solution-o1-space-by-mokshte-rdnz/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/1792019/java-prefix-sum-approach-simple-and-easy-vbvz/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/2316036/100-0ms-java-by-devampanchasara-q6dg/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/1767959/javasolution-with-png-explanation-by-gau-s368/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/1768943/java-code-with-assumption-by-xinweiwalt-7fey/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/7025944/first-submit-first-accept-solution-easy-kpi3w/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/6947797/if-an-idiot-like-me-can-solve-it-so-can-jus46/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/6131710/easy-by-bhagya_patel_01-1mab/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/6094278/java-solution-prefixsum-by-ap1601-0x8k/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/5847542/simple-and-easy-java-solution-greedy-app-uvu5/;;https://leetcode.com/problems/removing-minimum-number-of-magic-beans/solutions/5811404/concise-and-simple-solution-by-aayushish-jkxn/;;;=;==;=;=;

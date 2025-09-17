@@ -1,0 +1,25 @@
+862. Shortest Subarray with Sum at Least K;=;=Hard;=;=publicÊintÊshortestSubarray(int[]Ênums,ÊintÊk);=;=Given an integer array nums and an integer k, return the length of the shortest non-empty subarray of nums with a sum of at least k. If there is no such subarray, return -1.
+
+A subarray is a contiguous part of an array.
+
+Ê
+
+Example 1:
+
+Input: nums = [1], k = 1
+Output: 1
+Example 2:
+
+Input: nums = [1,2], k = 4
+Output: -1
+Example 3:
+
+Input: nums = [2,-1,2], k = 3
+Output: 3
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+-105 <= nums[i] <= 105
+1 <= k <= 109;=;=https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/143726/cjavapython-on-using-deque-by-lee215-7h44/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6052938/video-full-explanation-beats-100-sliding-tpab/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6053102/beats-10000-easy-and-step-by-step-breakd-no5m/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/1502252/java-deque-monotone-queue-intuition-expl-xcgx/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6052946/sliding-window-prefix-sum-deque-c-java-p-cflm/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6054683/optimized-sliding-window-solution-with-m-iftj/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/2733740/c-on-from-basic-brute-force-then-optimiz-mzkf/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6053342/shortest-subarray-with-sum-atleast-k-eas-mlj5/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6054068/deque-implementation-in-c-and-solution-i-jx57/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6054007/solution-using-array-in-java-by-pchandra-y1po/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6053344/beats-9891-c-easy-code-by-b_i_t-gyac/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/5223402/sliding-window-two-pointer-monotonic-sta-uoty/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6517101/easy-solution-dry-run-in-the-code-by-sum-yt77/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/1126225/java-clean-on-monotonic-deque-solution-w-ikq6/;;https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/solutions/6054318/easy-to-understand-intuitive-approach-ja-pbgy/;;;=;==;=;=;

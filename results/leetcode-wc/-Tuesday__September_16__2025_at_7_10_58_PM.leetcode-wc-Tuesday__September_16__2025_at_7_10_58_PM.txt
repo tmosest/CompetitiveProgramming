@@ -1,0 +1,33 @@
+3211. Generate Binary Strings Without Adjacent Zeros;=;=Medium;=;=public List<String> validStrings(int n);=;=You are given a positive integer n.
+
+A binary string x is valid if all substrings of x of length 2 contain at least one "1".
+
+Return all valid strings with length n, in any order.
+
+ 
+
+Example 1:
+
+Input: n = 3
+
+Output: ["010","011","101","110","111"]
+
+Explanation:
+
+The valid strings of length 3 are: "010", "011", "101", "110", and "111".
+
+Example 2:
+
+Input: n = 1
+
+Output: ["0","1"]
+
+Explanation:
+
+The valid strings of length 1 are: "0" and "1".
+
+ 
+
+Constraints:
+
+1 <= n <= 18;=;=https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/7148023/100-efficient-solution-by-kgoutamkumar-mngt/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/5432107/pick-not-pick-with-condition-by-fahad06-x92g/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/7154016/backtracking-approach-by-soujitdas65-6zdz/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/7043339/recursive-approach-easy-by-komalsathvik-n74t/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/5431898/beats-100-backtrack-as-it-is-easy-commen-fblf/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6843444/java-backtracking-solution-92-by-zerkxes-qeoj/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/7029384/100-beats-solution-1ms-back-tracking-by-ih7aj/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6983169/brute-force-java-by-nitingangwar71-dv0t/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/5431673/effortlessly-dominate-100-with-beginner-m1xw6/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/5433954/easy-java-solution-by-ravikumar50-kwqu/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6383663/java-backtracking-solution-by-mmohmedjas-mri8/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6614978/simple-beginner-friendly-by-nithin_2305-gwfn/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6474883/java-dfs-easy-to-understand-by-kdhakal-uzxf/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/6810132/backtracking-solution-to-tackle-the-prob-du26/;;https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/solutions/5431799/easy-video-solution-with-2-approaches-ho-k3p9/;;;=;==;=;=;

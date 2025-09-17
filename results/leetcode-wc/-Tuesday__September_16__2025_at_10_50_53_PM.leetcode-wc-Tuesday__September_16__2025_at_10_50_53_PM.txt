@@ -1,0 +1,51 @@
+3365. Rearrange K Substrings to Form Target String;=;=Medium;=;=public boolean isPossibleToRearrange(String s, String t, int k);=;=You are given two strings s and t, both of which are anagrams of each other, and an integer k.
+
+Your task is to determine whether it is possible to split the string s into k equal-sized substrings, rearrange the substrings, and concatenate them in any order to create a new string that matches the given string t.
+
+Return true if this is possible, otherwise, return false.
+
+An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.
+
+A substring is a contiguous non-empty sequence of characters within a string.
+
+ 
+
+Example 1:
+
+Input: s = "abcd", t = "cdab", k = 2
+
+Output: true
+
+Explanation:
+
+Split s into 2 substrings of length 2: ["ab", "cd"].
+Rearranging these substrings as ["cd", "ab"], and then concatenating them results in "cdab", which matches t.
+Example 2:
+
+Input: s = "aabbcc", t = "bbaacc", k = 3
+
+Output: true
+
+Explanation:
+
+Split s into 3 substrings of length 2: ["aa", "bb", "cc"].
+Rearranging these substrings as ["bb", "aa", "cc"], and then concatenating them results in "bbaacc", which matches t.
+Example 3:
+
+Input: s = "aabbcc", t = "bbaacc", k = 2
+
+Output: false
+
+Explanation:
+
+Split s into 2 substrings of length 3: ["aab", "bcc"].
+These substrings cannot be rearranged to form t = "bbaacc", so the output is false.
+ 
+
+Constraints:
+
+1 <= s.length == t.length <= 2 * 105
+1 <= k <= s.length
+s.length is divisible by k.
+s and t consist only of lowercase English letters.
+The input is generated such that s and t are anagrams of each other.;=;=https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6077209/simple-java-solution-by-harsh__005-c6u4/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6947604/java-solution-by-dheerajpoojary-93xm/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6523796/using-hashmap-by-sandhish-0t27/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6077410/simplest-approach-by-rudra_rajawat-bueg/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6077189/easy-on-solution-using-hashmap-by-be_fig-85qj/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6124934/easy-to-understand-clear-code-hashmap-by-ndhf/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6078123/tc-and-sc-on-100-by-user7563ur-r2aq/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6077196/beats-33-hashmap-java-simple-solution-by-hxbh/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6085098/best-java-solution-hashmap-beats-95-by-s-c4h5/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6081773/java-trie-solution-by-meringueee-vuef/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6323689/anagram-substring-matching-by-chuko-28v6/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6081051/java-counter-of-substring-by-biolearning-i3qm/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6080029/hashmap-based-solution-by-bruxx-6hza/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6079261/beginner-friendly-java-solution-map-appr-93xw/;;https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/solutions/6079216/3365-rearrange-k-substrings-to-form-targ-m83n/;;;=;==;=;=;

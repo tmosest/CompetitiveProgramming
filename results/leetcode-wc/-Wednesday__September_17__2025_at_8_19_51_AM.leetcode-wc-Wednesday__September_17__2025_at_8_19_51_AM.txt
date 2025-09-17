@@ -1,0 +1,23 @@
+673. Number of Longest Increasing Subsequence;=;=Medium;=;=public int findNumberOfLIS(int[] nums);=;=Given an integer array nums, return the number of longest increasing subsequences.
+
+Notice that the sequence has to be strictly increasing.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,5,4,7]
+Output: 2
+Explanation: The two longest increasing subsequences are [1, 3, 4, 7] and [1, 3, 5, 7].
+Example 2:
+
+Input: nums = [2,2,2,2,2]
+Output: 5
+Explanation: The length of the longest increasing subsequence is 1, and there are 5 increasing subsequences of length 1, so output 5.
+ 
+
+Constraints:
+
+1 <= nums.length <= 2000
+-106 <= nums[i] <= 106
+The answer is guaranteed to fit inside a 32-bit integer.;=;=https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/7154986/efficient-dp-solution-lis-beats-984-by-a-lab9/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/3794723/efficient-dp-solution-lis-beats-984-by-a-pic5/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/3794724/lis-beats-99-co-with-single-array-easy-t-4ewh/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/3795760/recursion-memoization-easy-to-understand-rbv7/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/6999811/easy-and-understandable-approach-using-d-9nvv/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/3795913/0-1-knapsack-dp-memoization-java-clean-c-9wbf/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/6357003/java-beats-97-details-explanations-by-da-o8nh/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/3794936/video-solution-java-c-python-by-jeevanku-ikrl/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/6862423/evolution-of-lis-by-hirensolanki9697-yxoc/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/3798081/ex-amazon-explains-a-solution-with-a-vid-zfk9/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/6856829/number-of-longest-increasing-subsequence-re9j/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/2470089/java-7ms-beats-9983-tc-onlogn-scon-dpbin-t5wv/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/6775141/simple-dp-solution-java-by-mugeshv-qc9i/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/1740365/java-easy-and-clean-code-with-comments-b-ugvc/;;https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/1367666/simple-solution-by-keerthy0212-nlqt/;;;=;==;=;=;

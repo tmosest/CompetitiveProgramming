@@ -1,0 +1,29 @@
+2320. Count Number of Ways to Place Houses;=;=Medium;=;=public int countHousePlacements(int n);=;=There is a street with n * 2 plots, where there are n plots on each side of the street. The plots on each side are numbered from 1 to n. On each plot, a house can be placed.
+
+Return the number of ways houses can be placed such that no two houses are adjacent to each other on the same side of the street. Since the answer may be very large, return it modulo 109 + 7.
+
+Note that if a house is placed on the ith plot on one side of the street, a house can also be placed on the ith plot on the other side of the street.
+
+ 
+
+Example 1:
+
+Input: n = 1
+Output: 4
+Explanation: 
+Possible arrangements:
+1. All plots are empty.
+2. A house is placed on one side of the street.
+3. A house is placed on the other side of the street.
+4. Two houses are placed, one on each side of the street.
+Example 2:
+
+
+Input: n = 2
+Output: 9
+Explanation: The 9 possible arrangements are shown in the diagram above.
+ 
+
+Constraints:
+
+1 <= n <= 104;=;=https://leetcode.com/problems/count-number-of-ways-to-place-houses/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2198269/javacpython-fibo-sequence-ologn-by-lee21-no1m/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2198206/count-number-of-ways-to-place-houses-jav-wvpn/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2198157/easy-dp-solution-fibonacci-pattern-java-h4vze/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/5820100/java-dp-memoization-solution-by-shaikmou-6eit/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2209805/recurrence-relation-notebook-explanation-cn3n/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2198266/simple-java-solution-by-siddhant_1602-dn5e/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2198132/java-solution-using-fibonacci-sequence-b-aub9/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2198491/beats-100-java-solution-by-lethobenthos-9usi/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2198338/easy-java-backtracking-memoization-solut-r396/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2198695/java-dp-simple-solution-by-ezbuckeye-07xe/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2198987/java-simple-dp-solution-by-bimal97-mqcz/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/7108060/simplest-java-solution-with-simplest-exp-qkuo/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2210385/java-solution-using-dp-fibonacci-series-a841e/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2199039/simple-dp-solution-in-java-by-tech-nomad-qg57/;;https://leetcode.com/problems/count-number-of-ways-to-place-houses/solutions/2596813/java-easy-dp-tabulation-by-avneetsingh20-d3ht/;;;=;==;=;=;

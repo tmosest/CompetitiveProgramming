@@ -1,0 +1,36 @@
+1253. Reconstruct a 2-Row Binary Matrix;=;=Medium;=;=public List<List<Integer>> reconstructMatrix(int upper, int lower, int[] colsum);=;=Given the following details of a matrix with n columns and 2 rows :
+
+The matrix is a binary matrix, which means each element in the matrix can be 0 or 1.
+The sum of elements of the 0-th(upper) row is given as upper.
+The sum of elements of the 1-st(lower) row is given as lower.
+The sum of elements in the i-th column(0-indexed) is colsum[i], where colsum is given as an integer array with length n.
+Your task is to reconstruct the matrix with upper, lower and colsum.
+
+Return it as a 2-D integer array.
+
+If there are more than one valid solution, any of them will be accepted.
+
+If no valid solution exists, return an empty 2-D array.
+
+ 
+
+Example 1:
+
+Input: upper = 2, lower = 1, colsum = [1,1,1]
+Output: [[1,1,0],[0,0,1]]
+Explanation: [[1,0,1],[0,1,0]], and [[0,1,1],[1,0,0]] are also correct answers.
+Example 2:
+
+Input: upper = 2, lower = 3, colsum = [2,2,1,1]
+Output: []
+Example 3:
+
+Input: upper = 5, lower = 5, colsum = [2,1,2,0,1,0,1,2,0,1]
+Output: [[1,1,1,0,1,0,0,1,0,0],[1,0,1,0,0,0,1,1,0,1]]
+ 
+
+Constraints:
+
+1 <= colsum.length <= 10^5
+0 <= upper, lower <= colsum.length
+0 <= colsum[i] <= 2;=;=https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/7002034/1-ms-beats-8462-with-indian-tadka-cppjav-uk6q/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/4816867/java-100-beats-simple-explanation-by-rob-emo6/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/4724032/beats-9372easiest-cjavapython-solution-w-iz2s/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/7006400/clean-code-modular-solution-with-seperat-pvab/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/441215/java-greedy-solution-by-ayyild1z-eh5b/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/426023/java-counting-greedy-beats-100-explained-cujf/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/991977/easy-to-understand-java-solution-by-nir1-ex3c/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/425106/java-simple-solution-by-nandathantsin-7b9r/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/4049985/easy-to-understand-java-solution-by-prk3-ghhc/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/7046662/solution-using-java-by-kushal_bharadwaj-c1cl7/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/1330020/java-solution-by-rkxyiiyk2-93g1/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/6532487/intuitive-java-solution-by-taehyunkim023-5ej4/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/734425/java-easy-and-clean-solution-by-ahmadsae-ai5m/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/425194/java-easy-solution-count-number-of-1s-an-x216/;;https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/solutions/6362837/beats-100-brute-to-optimal-java-solution-z0md/;;;=;==;=;=;

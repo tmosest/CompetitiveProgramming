@@ -1,0 +1,32 @@
+2089. Find Target Indices After Sorting Array;=;=Easy;=;=public List<Integer> targetIndices(int[] nums, int target);=;=You are given a 0-indexed integer array nums and a target element target.
+
+A target index is an index i such that nums[i] == target.
+
+Return a list of the target indices of nums after sorting nums in non-decreasing order. If there are no target indices, return an empty list. The returned list must be sorted in increasing order.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,5,2,3], target = 2
+Output: [1,2]
+Explanation: After sorting, nums is [1,2,2,3,5].
+The indices where nums[i] == 2 are 1 and 2.
+Example 2:
+
+Input: nums = [1,2,5,2,3], target = 3
+Output: [3]
+Explanation: After sorting, nums is [1,2,2,3,5].
+The index where nums[i] == 3 is 3.
+Example 3:
+
+Input: nums = [1,2,5,2,3], target = 5
+Output: [4]
+Explanation: After sorting, nums is [1,2,2,3,5].
+The index where nums[i] == 5 is 4.
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i], target <= 100;=;=https://leetcode.com/problems/find-target-indices-after-sorting-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/6981726/simple-search-after-sort-c-java-python3-lrk3t/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/1600903/concisesimple-beats-100-explained-both-o-4070/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/7135950/easy-code-for-solve-this-problem-by-4_k4-eabh/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/7067963/2089-find-target-indices-after-sorting-j-omfn/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/7119669/easy-code-by-prajanthkumar-182m/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/7127844/100-beats-solution-without-sorting-by-pa-29s6/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/7109213/easy-code-for-beginners-and-understandab-yfjc/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/7101342/target-indices-without-sorting-on-beats-net6u/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/7053668/dont-need-to-sort-by-satyasas-vhe2/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/6796553/beats-100-java-simple-solution-by-vikran-rb35/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/6853787/efficient-java-solution-sorting-and-line-bcrb/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/6338777/easy-solution-in-java-beating-space-and-sq05p/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/6875082/5-lines-solution-by-hitarthshah2211-0f4r/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/6722123/full-explain-step-by-step-simple-and-opt-absx/;;https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/6964682/find-target-indices-after-sorting-array-7y5io/;;;=;==;=;=;

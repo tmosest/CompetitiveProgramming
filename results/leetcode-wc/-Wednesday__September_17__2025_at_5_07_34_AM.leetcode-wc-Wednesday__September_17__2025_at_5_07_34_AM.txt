@@ -1,0 +1,27 @@
+2405. Optimal Partition of String;=;=Medium;=;=public int partitionString(String s);=;=Given a string s, partition the string into one or more substrings such that the characters in each substring are unique. That is, no letter appears in a single substring more than once.
+
+Return the minimum number of substrings in such a partition.
+
+Note that each character should belong to exactly one substring in a partition.
+
+ 
+
+Example 1:
+
+Input: s = "abacaba"
+Output: 4
+Explanation:
+Two possible partitions are ("a","ba","cab","a") and ("ab","a","ca","ba").
+It can be shown that 4 is the minimum number of substrings needed.
+Example 2:
+
+Input: s = "ssssss"
+Output: 6
+Explanation:
+The only valid partition is ("s","s","s","s","s","s").
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of only English lowercase letters.;=;=https://leetcode.com/problems/optimal-partition-of-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/optimal-partition-of-string/solutions/3376693/image-explanation-3-approaches-o1-space-mme9b/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/3376662/easy-solutions-in-java-python-and-c-look-v53q/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/3376981/python3cjavabeats-9983-greedybit-manipul-bfmn/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/3376720/image-explanation-set-is-all-you-need-in-a6w3/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/2560159/greedy-by-votrubac-xuwh/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/3376536/pythonjavacsimple-solutioneasy-to-unders-h3b3/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/2560023/java-c-solution-beginner-friendly-with-c-nfsm/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/6561051/java-window-sliding-extremely-easy-to-un-7e90/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/6989095/partition-string-into-unique-character-s-xwpv/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/5585202/the-bitmask-approach-you-never-considere-kfk5/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/3376595/easy-solutiong-with-hashing-by-deleted_u-mdcw/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/6844217/hashset-try-this-way-by-sairangineeni-3lhq/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/6569796/sliding-window-java-python-c-by-vermaans-rwze/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/6884184/simple-java-solution-by-arunjunanvenkate-svhu/;;https://leetcode.com/problems/optimal-partition-of-string/solutions/3377167/java-easy-solution-explained-with-hashse-oph4/;;;=;==;=;=;

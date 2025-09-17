@@ -1,0 +1,34 @@
+2970. Count the Number of Incremovable Subarrays I;=;=Easy;=;=public int incremovableSubarrayCount(int[] nums);=;=You are given a 0-indexed array of positive integers nums.
+
+A subarray of nums is called incremovable if nums becomes strictly increasing on removing the subarray. For example, the subarray [3, 4] is an incremovable subarray of [5, 3, 4, 6, 7] because removing this subarray changes the array [5, 3, 4, 6, 7] to [5, 6, 7] which is strictly increasing.
+
+Return the total number of incremovable subarrays of nums.
+
+Note that an empty array is considered strictly increasing.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4]
+Output: 10
+Explanation: The 10 incremovable subarrays are: [1], [2], [3], [4], [1,2], [2,3], [3,4], [1,2,3], [2,3,4], and [1,2,3,4], because on removing any one of these subarrays nums becomes strictly increasing. Note that you cannot select an empty subarray.
+Example 2:
+
+Input: nums = [6,5,7,8]
+Output: 7
+Explanation: The 7 incremovable subarrays are: [5], [6], [5,7], [6,5], [5,7,8], [6,5,7] and [6,5,7,8].
+It can be shown that there are only 7 incremovable subarrays in nums.
+Example 3:
+
+Input: nums = [8,7,6,6]
+Output: 3
+Explanation: The 3 incremovable subarrays are: [8,7,6], [7,6,6], and [8,7,6,6]. Note that [8,7] is not an incremovable subarray because after removing [8,7] nums becomes [6,6], which is sorted in ascending order but not strictly increasing.
+ 
+
+Constraints:
+
+1 <= nums.length <= 50
+1 <= nums[i] <= 50;=;=https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/4447376/beats-100-cjavapythonjavascript-easiest-qvwun/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/4447708/optimal-solution-beats-100-users-by-cs_i-gysu/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/4447258/simple-java-solution-by-siddhant_1602-8yee/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/4447327/easy-beginner-heavily-commented-code-by-anv6i/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/4452278/java-beats-100-tc-on-full-explanation-pr-ff9s/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/4495666/simple-java-code-2-ms-beats-93-by-arobh-kxo6/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/6339327/0ms-java-by-galani_jenis-5t5c/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/4450464/everyones-code-is-almost-same-but-i-have-vaq4/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/4447314/java-solution-brute-force-solution-by-vi-245s/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/4447671/cjavapython3cjs-beginner-friendly-approa-dj88/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/6981751/java-maximum-count-of-positive-integer-a-ef0m/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/6927243/monotonicity-by-ljheee-5kdf/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/6717587/easy-solution-in-java-by-shaileshlodhi56-irz9/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/6213713/2970-count-the-number-of-incremovable-su-m45e/;;https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/solutions/6563912/count-the-number-of-incremovable-subarra-zqyp/;;;=;==;=;=;

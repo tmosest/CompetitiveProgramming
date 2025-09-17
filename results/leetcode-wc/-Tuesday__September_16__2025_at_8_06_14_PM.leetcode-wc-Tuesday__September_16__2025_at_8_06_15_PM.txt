@@ -1,0 +1,31 @@
+1028. Recover a Tree From Preorder Traversal;=;=Hard;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public TreeNode recoverFromPreorder(String traversal);=;=We run a preorder depth-first search (DFS) on the root of a binary tree.
+
+At each node in this traversal, we output D dashes (where D is the depth of this node), then we output the value of this node.  If the depth of a node is D, the depth of its immediate child is D + 1.  The depth of the root node is 0.
+
+If a node has only one child, that child is guaranteed to be the left child.
+
+Given the output traversal of this traversal, recover the tree and return its root.
+
+ 
+
+Example 1:
+
+
+Input: traversal = "1-2--3--4-5--6--7"
+Output: [1,2,5,3,4,6,7]
+Example 2:
+
+
+Input: traversal = "1-2--3---4-5--6---7"
+Output: [1,2,5,3,null,6,null,4,null,7]
+Example 3:
+
+
+Input: traversal = "1-401--349---90--88"
+Output: [1,401,null,349,88,90]
+ 
+
+Constraints:
+
+The number of nodes in the original tree is in the range [1, 1000].
+1 <= Node.val <= 109;=;=https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453706/beats-100-recover-binary-tree-from-preor-sd9r/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6455308/beats-super-easy-beginners-java-c-c-pyth-7zb8/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453688/easy-to-understand-stack-solution-by-aru-tgj3/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453806/tree-covery-mission-digging-up-the-preor-7ywq/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6455233/beginner-friendly-iterative-solution-eas-byy5/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453308/easy-solutionbeats-100-in-mostwith-proof-0za2/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453190/easiest-solution-beginner-friendly-dfs-s-feyl/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453654/done-using-hashing-and-dfs-by-samman_var-r4jg/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453581/easy-code-must-try-in-java-by-notaditya0-obml/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6458326/java-solution-beats-100-proof-concise-co-yi8m/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6456722/java-solution-for-recover-a-tree-from-pr-ip69/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453953/easiest-solution-without-recursion-by-ni-hyj9/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453100/tree-reconstruction-java-recursion-by-ml-2ywg/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6453240/non-recursive-approach-on-time-solution-qtwpo/;;https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6454990/readable-code-single-pass-onon-by-ankith-c2dd/;;;=;==;=;=;

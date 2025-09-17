@@ -1,0 +1,39 @@
+2078. Two Furthest Houses With Different Colors;=;=Easy;=;=public int maxDistance(int[] colors);=;=There are n houses evenly lined up on the street, and each house is beautifully painted. You are given a 0-indexed integer array colors of length n, where colors[i] represents the color of the ith house.
+
+Return the maximum distance between two houses with different colors.
+
+The distance between the ith and jth houses is abs(i - j), where abs(x) is the absolute value of x.
+
+ 
+
+Example 1:
+
+
+Input: colors = [1,1,1,6,1,1,1]
+Output: 3
+Explanation: In the above image, color 1 is blue, and color 6 is red.
+The furthest two houses with different colors are house 0 and house 3.
+House 0 has color 1, and house 3 has color 6. The distance between them is abs(0 - 3) = 3.
+Note that houses 3 and 6 can also produce the optimal answer.
+Example 2:
+
+
+Input: colors = [1,8,3,8,3]
+Output: 4
+Explanation: In the above image, color 1 is blue, color 8 is yellow, and color 3 is green.
+The furthest two houses with different colors are house 0 and house 4.
+House 0 has color 1, and house 4 has color 3. The distance between them is abs(0 - 4) = 4.
+Example 3:
+
+Input: colors = [0,1]
+Output: 1
+Explanation: The furthest two houses with different colors are house 0 and house 1.
+House 0 has color 0, and house 1 has color 1. The distance between them is abs(0 - 1) = 1.
+ 
+
+Constraints:
+
+n == colors.length
+2 <= n <= 100
+0 <= colors[i] <= 100
+Test data are generated such that at least two houses have different colors.;=;=https://leetcode.com/problems/two-furthest-houses-with-different-colors/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/1589029/constant-space-by-votrubac-doe4/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/6867190/iteration-by-d_t_s-ngg0/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/6849665/beats-100-java-simple-solution-by-vikran-al2h/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/5082736/beginners-friendly-java-solution-100-0ms-y9zf/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/7168818/two-for-loops-accepted-solution-by-prash-31po/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/5411268/beat-by-100-easiest-way-to-solve-by-vish-l6vd/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/2596331/java-beats-100-simple-by-gowtham491-m2z9/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/6422197/easy-solution-using-for-loops-beating-10-4nno/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/6104984/two-furthest-houses-with-different-color-naht/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/3228880/easy-java-solution-time-complexity-on-by-4ivd/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/1725518/beginner-friendly-java-solution-by-himan-qk51/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/1779719/java-1ms-very-fast-and-easy-solution-by-txy5y/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/3453056/fastest-solution-with-java-0ms-by-amin_a-o5o7/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/5850774/java-answer-simple-by-sairangineeni-jz55/;;https://leetcode.com/problems/two-furthest-houses-with-different-colors/solutions/5947666/shoorver-1-by-y_v_singh-aaum/;;;=;==;=;=;

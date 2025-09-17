@@ -1,0 +1,48 @@
+1090. Largest Values From Labels;=;=Medium;=;=public int largestValsFromLabels(int[] values, int[] labels, int numWanted, int useLimit);=;=You are given n item's value and label as two integer arrays values and labels. You are also given two integers numWanted and useLimit.
+
+Your task is to find a subset of items with the maximum sum of their values such that:
+
+The number of items is at most numWanted.
+The number of items with the same label is at most useLimit.
+Return the maximum sum.
+
+ 
+
+Example 1:
+
+Input: values = [5,4,3,2,1], labels = [1,1,2,2,3], numWanted = 3, useLimit = 1
+
+Output: 9
+
+Explanation:
+
+The subset chosen is the first, third, and fifth items with the sum of values 5 + 3 + 1.
+
+Example 2:
+
+Input: values = [5,4,3,2,1], labels = [1,3,3,3,2], numWanted = 3, useLimit = 2
+
+Output: 12
+
+Explanation:
+
+The subset chosen is the first, second, and third items with the sum of values 5 + 4 + 3.
+
+Example 3:
+
+Input: values = [9,8,8,7,6], labels = [0,0,0,1,1], numWanted = 3, useLimit = 1
+
+Output: 16
+
+Explanation:
+
+The subset chosen is the first and fourth items with the sum of values 9 + 7.
+
+ 
+
+Constraints:
+
+n == values.length == labels.length
+1 <= n <= 2 * 104
+0 <= values[i], labels[i] <= 2 * 104
+1 <= numWanted, useLimit <= n;=;=https://leetcode.com/problems/largest-values-from-labels/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-values-from-labels/solutions/4343911/best-java-solution-sorting-beats-90-by-r-prhk/;;https://leetcode.com/problems/largest-values-from-labels/solutions/1789133/simple-java-solution-by-raghu6306766-udzv/;;https://leetcode.com/problems/largest-values-from-labels/solutions/2792431/java-solution-using-priority-queue-intui-d63e/;;https://leetcode.com/problems/largest-values-from-labels/solutions/1483578/easy-to-understand-java-solution-sorting-9qqr/;;https://leetcode.com/problems/largest-values-from-labels/solutions/1144253/java-using-priority-queue-and-greedy-sol-ekly/;;https://leetcode.com/problems/largest-values-from-labels/solutions/745192/simple-java-solution-by-arpitsingal6098-bly1/;;https://leetcode.com/problems/largest-values-from-labels/solutions/7041489/greedy-use-or-without-use-heap-by-wbcnsk-85td/;;https://leetcode.com/problems/largest-values-from-labels/solutions/6866496/solution-using-java-by-kushal_bharadwaj-9ng33/;;https://leetcode.com/problems/largest-values-from-labels/solutions/6880135/java-solution-easy-by-prizag-rmiu/;;https://leetcode.com/problems/largest-values-from-labels/solutions/6825558/see-the-hint1-by-2manas1-3irt/;;https://leetcode.com/problems/largest-values-from-labels/solutions/6666964/maximize-sum-with-label-constraints-usin-1fer/;;https://leetcode.com/problems/largest-values-from-labels/solutions/6472806/clean-code-hashmap-approach-by-anton_vas-8fh9/;;https://leetcode.com/problems/largest-values-from-labels/solutions/6292462/easy-mapping-solution-java-by-dpasala-6v5x/;;https://leetcode.com/problems/largest-values-from-labels/solutions/5790926/accepted-by-iialphaii-zzp8/;;https://leetcode.com/problems/largest-values-from-labels/solutions/5291109/short-by-traychev-fiak/;;;=;==;=;=;

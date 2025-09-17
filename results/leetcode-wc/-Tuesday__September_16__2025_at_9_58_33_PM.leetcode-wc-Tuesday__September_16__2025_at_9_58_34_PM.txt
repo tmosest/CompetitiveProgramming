@@ -1,0 +1,33 @@
+2096. Step-By-Step Directions From a Binary Tree Node to Another;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public String getDirections(TreeNode root, int startValue, int destValue);=;=You are given the root of a binary tree with n nodes. Each node is uniquely assigned a value from 1 to n. You are also given an integer startValue representing the value of the start node s, and a different integer destValue representing the value of the destination node t.
+
+Find the shortest path starting from node s and ending at node t. Generate step-by-step directions of such path as a string consisting of only the uppercase letters 'L', 'R', and 'U'. Each letter indicates a specific direction:
+
+'L' means to go from a node to its left child node.
+'R' means to go from a node to its right child node.
+'U' means to go from a node to its parent node.
+Return the step-by-step directions of the shortest path from node s to node t.
+
+ 
+
+Example 1:
+
+
+Input: root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6
+Output: "UURL"
+Explanation: The shortest path is: 3 ? 1 ? 5 ? 2 ? 6.
+Example 2:
+
+
+Input: root = [2,1], startValue = 2, destValue = 1
+Output: "L"
+Explanation: The shortest path is: 2 ? 1.
+ 
+
+Constraints:
+
+The number of nodes in the tree is n.
+2 <= n <= 105
+1 <= Node.val <= n
+All the values in the tree are unique.
+1 <= startValue, destValue <= n
+startValue != destValue;=;=https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/1612105/3-steps-by-votrubac-z5lz/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5483149/detailed-easy-java-python3-c-solution-19-6j4k/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5484090/explanations-no-one-will-give-you2-detai-iq2p/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5483109/no-one-can-build-this-code-beats-97-user-2ojq/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5483297/ultimate-9ms-solution-beats-100-java-c-p-erub/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/1781093/java-dfs-solution-on-solution-easy-to-un-7ikd/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5485182/better-than-editorials-tc-on-sc-on-by-sa-1owy/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5482986/dfs-lca-tutorial-step-by-step-directions-ovda/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5484243/solution-with-linear-complexity-lca-dfs-nj1hu/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5483449/besteasiest-java-solution-by-thepriyansh-jw2y/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5484772/java-solution-explained-in-hindi2-approa-8qkl/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/1922867/simple-java-lca-and-dfs-pathfinding-by-d-1i9e/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/6612907/beats-100-separated-into-small-functions-erfu/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5483422/java-simple-tree-traversal-solution-by-s-ow4l/;;https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5484118/make-parent-links-and-start-the-journey-xynab/;;;=;==;=;=;

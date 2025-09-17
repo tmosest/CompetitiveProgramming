@@ -1,0 +1,38 @@
+2062. Count Vowel Substrings of a String;=;=Easy;=;=public int countVowelSubstrings(String word);=;=A substring is a contiguous (non-empty) sequence of characters within a string.
+
+A vowel substring is a substring that only consists of vowels ('a', 'e', 'i', 'o', and 'u') and has all five vowels present in it.
+
+Given a string word, return the number of vowel substrings in word.
+
+ 
+
+Example 1:
+
+Input: word = "aeiouu"
+Output: 2
+Explanation: The vowel substrings of word are as follows (underlined):
+- "aeiouu"
+- "aeiouu"
+Example 2:
+
+Input: word = "unicornarihan"
+Output: 0
+Explanation: Not all 5 vowels are present, so there are no vowel substrings.
+Example 3:
+
+Input: word = "cuaieuouac"
+Output: 7
+Explanation: The vowel substrings of word are as follows (underlined):
+- "cuaieuouac"
+- "cuaieuouac"
+- "cuaieuouac"
+- "cuaieuouac"
+- "cuaieuouac"
+- "cuaieuouac"
+- "cuaieuouac"
+ 
+
+Constraints:
+
+1 <= word.length <= 100
+word consists of lowercase English letters only.;=;=https://leetcode.com/problems/count-vowel-substrings-of-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/1563906/java-brute-force-hashset-8ms-easy-to-und-1jvw/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/7058536/easy-using-helper-method-java-by-sairang-yhqr/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/7016617/java-beats-100-explained-by-deadvikash-i6s5/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/1564009/java-16-lines-on-solution-without-using-v7g3t/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/6931938/java-optimized-brute-force-hashset-by-te-7pkp/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/6838656/using-set-by-d_t_s-6c95/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/5181809/pattern-3-of-sliding-window-and-two-poin-w9or/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/6813741/beginner-friendly-by-rohan_shelke-7x64/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/2617418/java-solution-brute-force-and-optimal-so-mgxq/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/3714749/java-sliding-window-explained-by-prashan-lao6/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/5086715/very-straightforward-java-solution-with-ziyo7/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/6576522/easiest-solution-ever-two-pointer-approa-ydzy/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/6186797/count-vowel-substrings-of-a-string-by-co-e0z7/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/1626092/java-2-solutions-similar-to-1358-number-0zi4o/;;https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/1795513/count-vowel-substrings-of-a-string-by-lo-2fk2/;;;=;==;=;=;

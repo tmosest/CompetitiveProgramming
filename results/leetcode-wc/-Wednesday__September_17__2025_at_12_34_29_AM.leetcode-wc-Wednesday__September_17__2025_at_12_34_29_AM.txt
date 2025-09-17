@@ -1,0 +1,33 @@
+1755. Closest Subsequence Sum;=;=Hard;=;=public int minAbsDifference(int[] nums, int goal);=;=You are given an integer array nums and an integer goal.
+
+You want to choose a subsequence of nums such that the sum of its elements is the closest possible to goal. That is, if the sum of the subsequence's elements is sum, then you want to minimize the absolute difference abs(sum - goal).
+
+Return the minimum possible value of abs(sum - goal).
+
+Note that a subsequence of an array is an array formed by removing some elements (possibly all or none) of the original array.
+
+ 
+
+Example 1:
+
+Input: nums = [5,-7,3,5], goal = 6
+Output: 0
+Explanation: Choose the whole array as a subsequence, with a sum of 6.
+This is equal to the goal, so the absolute difference is 0.
+Example 2:
+
+Input: nums = [7,-9,15,-2], goal = -5
+Output: 1
+Explanation: Choose the subsequence [7,-9,-2], with a sum of -4.
+The absolute difference is abs(-4 - (-5)) = abs(1) = 1, which is the minimum.
+Example 3:
+
+Input: nums = [1,2,3], goal = -7
+Output: 7
+ 
+
+Constraints:
+
+1 <= nums.length <= 40
+-107 <= nums[i] <= 107
+-109 <= goal <= 109;=;=https://leetcode.com/problems/closest-subsequence-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/closest-subsequence-sum/solutions/1053751/java-detailed-explanation-comments-meet-v8jui/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/1876240/java-full-explanation-by-baishali2502-o0yg/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/1968610/java-solution-with-explaination-easy-to-6ma7g/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/1054445/simple-java-solutioneasy-understanding-b-ygmi/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/4056494/fully-optimised-java-code-with-complete-vwhil/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/4377750/binary-search-with-subsets-by-namandeept-cge8/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/1053804/java-two-parts-dfs-and-binary-search-by-j44v8/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/3055382/simple-java-solution-by-kumarraunak-8udz/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/6808590/two-pointer-vey-easy-and-clean-code-by-k-j4cl/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/6228638/closest-subsequence-sum-solution-by-t22h-gsjx/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/6195833/java-100-beats-by-kaswan01-wltp/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/5891117/meet-in-the-middle-by-fronzypie-96dx/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/5629105/meet-in-middle-by-piyusha_7-q26i/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/5063383/1755-closest-subsequence-sum-by-zhihuiji-hrxc/;;https://leetcode.com/problems/closest-subsequence-sum/solutions/5063382/1755-closest-subsequence-sum-by-zhihuiji-a1td/;;;=;==;=;=;

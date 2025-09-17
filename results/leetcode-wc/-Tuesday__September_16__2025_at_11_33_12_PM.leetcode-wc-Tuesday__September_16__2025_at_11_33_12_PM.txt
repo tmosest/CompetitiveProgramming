@@ -1,0 +1,24 @@
+1576. Replace All ?'s to Avoid Consecutive Repeating Characters;=;=Easy;=;=public String modifyString(String s);=;=Given a string s containing only lowercase English letters and the '?' character, convert all the '?' characters into lowercase letters such that the final string does not contain any consecutive repeating characters. You cannot modify the non '?' characters.
+
+It is guaranteed that there are no consecutive repeating characters in the given string except for '?'.
+
+Return the final string after all the conversions (possibly zero) have been made. If there is more than one solution, return any of them. It can be shown that an answer is always possible with the given constraints.
+
+ 
+
+Example 1:
+
+Input: s = "?zs"
+Output: "azs"
+Explanation: There are 25 solutions for this problem. From "azs" to "yzs", all are valid. Only "z" is an invalid modification as the string will consist of consecutive repeating characters in "zzs".
+Example 2:
+
+Input: s = "ubv?w"
+Output: "ubvaw"
+Explanation: There are 24 solutions for this problem. Only "v" and "w" are invalid modifications as the strings will consist of consecutive repeating characters in "ubvvw" and "ubvww".
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s consist of lowercase English letters and '?'.;=;=https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/6557994/beats-100cjavapy3js-easy-n-clean-explana-blry/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/832010/super-easy-solution-on-beats-100-by-eaim-44wt/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/1078998/java-a-b-c-solution-beats-100-comment-ex-1xpc/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/3087254/java-easy-solution-by-sourin_bruh-6pj7/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/1106990/easy-java-code-by-190030664-peiy/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/4922200/simple-java-code-1-ms-beats-100-42-mb-be-rhyc/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/4675107/easy-simple-c-c-java-dry-run-beats-100-i-kovd/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/4706932/easy-to-understand-solution-by-pratik_pa-eghl/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/5596260/beats-100-time-complexity-on-single-loop-pk83/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/3529259/java-on-100-by-im_obid-3k2e/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/2485233/java-solution-runtime-2ms-by-harsh_kode-quiu/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/852849/java-linear-compare-left-right-chars-exp-ka5h/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/842419/my-java-solution-by-vrohith-twys/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/1963135/java-easy-to-understand-by-pratham_18-zos6/;;https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/solutions/1047087/java-simple-solution-on-by-yurokusa-u7qc/;;;=;==;=;=;

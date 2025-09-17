@@ -1,0 +1,33 @@
+1409. Queries on a Permutation With Key;=;=Medium;=;=public int[] processQueries(int[] queries, int m);=;=Given the array queries of positive integers between 1 and m, you have to process all queries[i] (from i=0 to i=queries.length-1) according to the following rules:
+
+In the beginning, you have the permutation P=[1,2,3,...,m].
+For the current i, find the position of queries[i] in the permutation P (indexing from 0) and then move this at the beginning of the permutation P. Notice that the position of queries[i] in P is the result for queries[i].
+Return an array containing the result for the given queries.
+
+ 
+
+Example 1:
+
+Input: queries = [3,1,2,1], m = 5
+Output: [2,1,2,1] 
+Explanation: The queries are processed as follow: 
+For i=0: queries[i]=3, P=[1,2,3,4,5], position of 3 in P is 2, then we move 3 to the beginning of P resulting in P=[3,1,2,4,5]. 
+For i=1: queries[i]=1, P=[3,1,2,4,5], position of 1 in P is 1, then we move 1 to the beginning of P resulting in P=[1,3,2,4,5]. 
+For i=2: queries[i]=2, P=[1,3,2,4,5], position of 2 in P is 2, then we move 2 to the beginning of P resulting in P=[2,1,3,4,5]. 
+For i=3: queries[i]=1, P=[2,1,3,4,5], position of 1 in P is 1, then we move 1 to the beginning of P resulting in P=[1,2,3,4,5]. 
+Therefore, the array containing the result is [2,1,2,1].  
+Example 2:
+
+Input: queries = [4,1,2,2], m = 4
+Output: [3,1,2,0]
+Example 3:
+
+Input: queries = [7,5,5,8,3], m = 8
+Output: [6,5,0,7,5]
+ 
+
+Constraints:
+
+1 <= m <= 10^3
+1 <= queries.length <= m
+1 <= queries[i] <= m;=;=https://leetcode.com/problems/queries-on-a-permutation-with-key/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/6820245/simple-to-understand-by-dummy_nick-7edr/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/1148357/java1ms-om-lognm-solution-binary-indexed-qdb9/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/2085049/simple-java-solution-arraylist-by-subzer-0bod/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/957215/java-simple-by-rmanish0308-uyjr/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/3826743/java-easy-solution-beats-9947-by-laziz_5-rqt1/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/3983387/easy-java-solution-with-explanation-self-dcu8/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/3325331/easiest-solution-step-wise-explanation-j-i399/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/7034133/queries-on-a-permutation-by-prabhas_shar-mcm0/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/3194753/java-solution-using-arraylist-on-17ms-by-3oxy/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/4177403/java-array-brute-force-solution-by-letsl-55mv/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/3143038/linked-list-fenwick-tree-binary-indexed-lebjp/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/2474138/super-easy-by-hrugved001-26uf/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/2226543/simple-java-solution-beats-96-runtime-3m-64p3/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/6961449/java-om2-solution-by-aadityavikram-dckd/;;https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/1265320/java-linked-list-98-faster-by-shashank_t-46bg/;;;=;==;=;=;

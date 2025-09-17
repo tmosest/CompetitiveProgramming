@@ -1,0 +1,31 @@
+3064. Guess the Number Using Bitwise Questions I;=;=Medium;=;=/   Definition of commonSetBits API (defined in the parent  Problem).  int commonSetBits(int num); public class  extends Problem     public int findNumber();=;=There is a number n that you have to find.
+
+There is also a pre-defined API int commonSetBits(int num), which returns the number of bits where both n and num are 1 in that position of their binary representation. In other words, it returns the number of set bits in n & num, where & is the bitwise AND operator.
+
+Return the number n.
+
+ 
+
+Example 1:
+
+Input: n = 31
+
+Output: 31
+
+Explanation: It can be proven that it's possible to find 31 using the provided API.
+
+Example 2:
+
+Input: n = 33
+
+Output: 33
+
+Explanation: It can be proven that it's possible to find 33 using the provided API.
+
+ 
+
+Constraints:
+
+1 <= n <= 230 - 1
+0 <= num <= 230 - 1
+If you ask for some num out of the given range, the output wouldn't be reliable.;=;=https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/solutions/5919132/java-1ms-beats-100-test-each-binary-plac-vjvj/;;https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/solutions/5807561/simple-java-solution-by-sakshikishore-0sc3/;;https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/solutions/5018672/java-basic-intuitive-solution-by-sf_mukt-d6bv/;;https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/solutions/4799973/java-ologn-solution-by-tbekpro-xkhv/;;https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/solutions/4796685/java-simple-solution-by-gangjig-51uo/;;https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/solutions/4813411/beats-10000-of-users-with-java-by-raheel-rci2/;;https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/solutions/4802129/simple-java-solution-with-bit-shift-by-c-n02y/;;https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/solutions/4800513/java-beginners-solution-comments-by-_vel-76ci/;;;=;==;=;=;

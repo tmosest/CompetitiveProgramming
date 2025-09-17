@@ -1,0 +1,24 @@
+1092. Shortest Common Supersequence;=;=Hard;=;=public String shortestCommonSupersequence(String str1, String str2);=;=Given two strings str1 and str2, return the shortest string that has both str1 and str2 as subsequences. If there are multiple valid strings, return any of them.
+
+A string s is a subsequence of string t if deleting some number of characters from t (possibly 0) results in the string s.
+
+ 
+
+Example 1:
+
+Input: str1 = "abac", str2 = "cab"
+Output: "cabac"
+Explanation: 
+str1 = "abac" is a subsequence of "cabac" because we can delete the first "c".
+str2 = "cab" is a subsequence of "cabac" because we can delete the last "ac".
+The answer provided is the shortest such string that satisfies these properties.
+Example 2:
+
+Input: str1 = "aaaaaaaa", str2 = "aaaaaaaa"
+Output: "aaaaaaaa"
+ 
+
+Constraints:
+
+1 <= str1.length, str2.length <= 1000
+str1 and str2 consist of lowercase English letters.;=;=https://leetcode.com/problems/shortest-common-supersequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-common-supersequence/solutions/6475874/dp-find-the-lcs-by-otabek_kholmirzaev-evti/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/7193423/easy-java-solution-by-kiran_sai_raghava_-b0n4/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/7193416/easy-java-solution-by-kiransairaghava-tpwy/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/6476374/dynamic-programming-shortest-common-supe-6wxq/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/7110844/what-you-are-thinkg-for-direct-3-line-so-ssvf/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/6476208/dogesh-bhai-guaranteed-beats-100easy-app-u1ou/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/6477364/shortest-common-supersequence-finding-th-xzxc/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/3501177/day-403-easy-lcs-0ms-100-pythonjavac-exp-rn77/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/312757/javapython-3-space-omn-clean-dp-code-w-p-m7fv/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/7093660/easy-java-solution-beats-98-of-java-user-97tq/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/6206909/beats-100-solution-dynamic-programming-t-7o6i/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/7067716/naive-recursion-to-lcs-wizardry-java-by-86yw5/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/6755671/java-lcs-build-result-beginner-friendly-a9mb9/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/6985640/solution-with-some-minor-changes-in-lcs-jzpzh/;;https://leetcode.com/problems/shortest-common-supersequence/solutions/6843759/shortest-common-supersequence-by-pranavd-btdd/;;;=;==;=;=;

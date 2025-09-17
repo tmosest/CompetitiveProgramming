@@ -1,0 +1,29 @@
+1507. Reformat Date;=;=Easy;=;=public String reformatDate(String date);=;=Given a date string in the form Day Month Year, where:
+
+Day is in the set {"1st", "2nd", "3rd", "4th", ..., "30th", "31st"}.
+Month is in the set {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}.
+Year is in the range [1900, 2100].
+Convert the date string to the format YYYY-MM-DD, where:
+
+YYYY denotes the 4 digit year.
+MM denotes the 2 digit month.
+DD denotes the 2 digit day.
+ 
+
+Example 1:
+
+Input: date = "20th Oct 2052"
+Output: "2052-10-20"
+Example 2:
+
+Input: date = "6th Jun 1933"
+Output: "1933-06-06"
+Example 3:
+
+Input: date = "26th May 1960"
+Output: "1960-05-26"
+ 
+
+Constraints:
+
+The given dates are guaranteed to be valid, so no error handling is necessary.;=;=https://leetcode.com/problems/reformat-date/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/reformat-date/solutions/7116733/simple-java-solution-by-shubhamxgupta-o879/;;https://leetcode.com/problems/reformat-date/solutions/7073387/easy-trim-java-by-sairangineeni-n0yg/;;https://leetcode.com/problems/reformat-date/solutions/6900897/java-no-split-beats-100-by-teja_1403-mhs1/;;https://leetcode.com/problems/reformat-date/solutions/1749824/easy-java-solution-using-hashmap-and-str-8iwv/;;https://leetcode.com/problems/reformat-date/solutions/1826871/java-3-liner-explained-by-prashant404-va93/;;https://leetcode.com/problems/reformat-date/solutions/6677143/clean-java-solution-using-hashmap-string-a4xb/;;https://leetcode.com/problems/reformat-date/solutions/7191777/simple-java-code-solution-for-this-probl-5urc/;;https://leetcode.com/problems/reformat-date/solutions/7191585/java-by-devendran9993-z3l2/;;https://leetcode.com/problems/reformat-date/solutions/5796700/simple-solution-using-hashmap-by-shoaibk-3j5c/;;https://leetcode.com/problems/reformat-date/solutions/5245657/intuitive-solution-with-map-and-string-m-4xr4/;;https://leetcode.com/problems/reformat-date/solutions/3109278/no-loop-100-faster-java-by-im_obid-vtji/;;https://leetcode.com/problems/reformat-date/solutions/7192295/easy-way-to-learn-java-100-2-ms-by-haris-ipa7/;;https://leetcode.com/problems/reformat-date/solutions/2893335/java-2-ms-solution-by-tbekpro-55g5/;;https://leetcode.com/problems/reformat-date/solutions/730596/java-lengthy-code-can-it-be-better-by-le-ahon/;;https://leetcode.com/problems/reformat-date/solutions/5146541/java-fun-with-regex-by-bassbonestones-kfqo/;;;=;==;=;=;

@@ -1,0 +1,21 @@
+1952. Three Divisors;=;=Easy;=;=public boolean isThree(int n);=;=Given an integer n, return true if n has exactly three positive divisors. Otherwise, return false.
+
+An integer m is a divisor of n if there exists an integer k such that n = k * m.
+
+ 
+
+Example 1:
+
+Input: n = 2
+Output: false
+Explantion: 2 has only two divisors: 1 and 2.
+Example 2:
+
+Input: n = 4
+Output: true
+Explantion: 4 has three divisors: 1, 2, and 4.
+ 
+
+Constraints:
+
+1 <= n <= 104;=;=https://leetcode.com/problems/three-divisors/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/three-divisors/solutions/7178209/easy-code-for-beginners-and-understandab-8i59/;;https://leetcode.com/problems/three-divisors/solutions/7178208/easy-code-by-prajanthkumar-aag6/;;https://leetcode.com/problems/three-divisors/solutions/7175625/easy-for-beginners-in-java-with-pure-log-d2ir/;;https://leetcode.com/problems/three-divisors/solutions/7102886/beginner-friendly-java-code-simple-logic-dbao/;;https://leetcode.com/problems/three-divisors/solutions/7019490/java-easy-solution-1ms-by-akashraj06-rd16/;;https://leetcode.com/problems/three-divisors/solutions/1375464/simple-java-on-14-time-solution-by-sashi-hqze/;;https://leetcode.com/problems/three-divisors/solutions/6854616/easy-java-solution-in-on-by-johana_codes-wf88/;;https://leetcode.com/problems/three-divisors/solutions/6737999/three-divisors-simple-java-solution-by-a-8qve/;;https://leetcode.com/problems/three-divisors/solutions/6095000/simplest-solution-in-java-beats-100-user-x02u/;;https://leetcode.com/problems/three-divisors/solutions/7191691/java-by-devendran9993-mzmh/;;https://leetcode.com/problems/three-divisors/solutions/7178107/easy-and-simple-code-by-manojnavaraj2004-zrfx/;;https://leetcode.com/problems/three-divisors/solutions/7145647/java-solution-by-mihirshrestha4-9nbx/;;https://leetcode.com/problems/three-divisors/solutions/7076597/easy-java-solution-in-java-by-tharshana_-z293/;;https://leetcode.com/problems/three-divisors/solutions/4354069/friendly-for-bignner-green-beat-by-pintu-384y/;;https://leetcode.com/problems/three-divisors/solutions/6407757/simple-by-hle0mpwjhw-nbor/;;;=;==;=;=;

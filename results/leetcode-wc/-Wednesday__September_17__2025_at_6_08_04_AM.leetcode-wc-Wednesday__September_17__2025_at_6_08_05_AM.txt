@@ -1,0 +1,34 @@
+2684. Maximum Number of Moves in a Grid;=;=Medium;=;=publicÊintÊmaxMoves(int[][]Êgrid);=;=You are given a 0-indexed m x n matrix grid consisting of positive integers.
+
+You can start at any cell in the first column of the matrix, and traverse the grid in the following way:
+
+From a cell (row, col), you can move to any of the cells: (row - 1, col + 1), (row, col + 1) and (row + 1, col + 1) such that the value of the cell you move to, should be strictly bigger than the value of the current cell.
+Return the maximum number of moves that you can perform.
+
+Ê
+
+Example 1:
+
+
+Input: grid = [[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]
+Output: 3
+Explanation: We can start at the cell (0, 0) and make the following moves:
+- (0, 0) -> (0, 1).
+- (0, 1) -> (1, 2).
+- (1, 2) -> (2, 3).
+It can be shown that it is the maximum number of moves that can be made.
+Example 2:
+
+
+Input: grid = [[3,2,4],[2,1,9],[1,1,7]]
+Output: 0
+Explanation: Starting from any cell in the first column we cannot perform any moves.
+Ê
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+2 <= m, n <= 1000
+4 <= m * n <= 105
+1 <= grid[i][j] <= 106;=;=https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5980453/list-most-common-interview-matrix-beats-ibse2/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/3521869/c-java-python3-top-down-dp-by-tojuna-yhkp/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5982158/3-approaches-detailed-and-simple-must-se-ymne/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5980491/beats-6154-step-by-step-breakdown-by-wit-3hgx/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5982570/dynamic-programming-on-grid-to-maximize-l2e4d/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/3522745/java-easy-bfs-without-dp-by-kalinga-8azg/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5981424/beats-100-4-solutions-by-b_i_t-i70c/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/6060207/java-dfs-memoization-based-approach-by-c-7ksk/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5980770/using-dpusing-unordered_set-beginner-fri-ni12/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5985242/java-easy-100-dfs-dp-by-user6791fw-gxn1/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5982718/hop-skip-win-conquer-the-grid-with-maxim-t3m6/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/3522762/simple-java-bottom-up-dp-by-hobiter-x5jr/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5982994/memoization-solution-by-yogesh__jswl-a63o/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5980776/easy-explanation-step-by-step-explanatio-09mh/;;https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/solutions/5981903/5ms-100-beats-using-dfs-dp-by-eshwarapra-6088/;;;=;==;=;=;

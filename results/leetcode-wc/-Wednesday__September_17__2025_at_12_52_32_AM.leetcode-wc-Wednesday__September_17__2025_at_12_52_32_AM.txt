@@ -1,0 +1,38 @@
+2048. Next Greater Numerically Balanced Number;=;=Medium;=;=public int nextBeautifulNumber(int n);=;=An integer x is numerically balanced if for every digit d in the number x, there are exactly d occurrences of that digit in x.
+
+Given an integer n, return the smallest numerically balanced number strictly greater than n.
+
+ 
+
+Example 1:
+
+Input: n = 1
+Output: 22
+Explanation: 
+22 is numerically balanced since:
+- The digit 2 occurs 2 times. 
+It is also the smallest numerically balanced number strictly greater than 1.
+Example 2:
+
+Input: n = 1000
+Output: 1333
+Explanation: 
+1333 is numerically balanced since:
+- The digit 1 occurs 1 time.
+- The digit 3 occurs 3 times. 
+It is also the smallest numerically balanced number strictly greater than 1000.
+Note that 1022 cannot be the answer because 0 appeared more than 0 times.
+Example 3:
+
+Input: n = 3000
+Output: 3133
+Explanation: 
+3133 is numerically balanced since:
+- The digit 1 occurs 1 time.
+- The digit 3 occurs 3 times.
+It is also the smallest numerically balanced number strictly greater than 3000.
+ 
+
+Constraints:
+
+0 <= n <= 106;=;=https://leetcode.com/problems/next-greater-numerically-balanced-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/6971071/a-backtracking-solution-thats-actually-f-y5x8/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/3688107/easy-java-solution-3-ms-100-working-by-g-8tk1/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/1537523/java-o7-by-z123k3-1o9x/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/2246137/very-easy-java-solution-speed-100-memory-izeh/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/1537516/java-solution-easy-to-understand-recursi-84zx/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/1538628/easy-code-with-comments-by-ayushdevrani-k5rm/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/1537587/java-exhaustive-list-of-beautiful-number-mxo6/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/1537565/simple-java-solution-interesting-one-by-tn6yv/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/1538747/java-next-greater-numerically-balanced-n-jngt/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/1537543/java-easy-solution-using-map-by-theninja-pofu/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/7055042/easy-to-understand-solution-in-java-by-k-ezaz/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/1537520/java-naive-map-solution-no-hard-coded-va-r219/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/5629908/easy-not-the-best-but-just-works-by-rahu-sn8o/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/4935161/java-solution-brute-force-by-ndsjqwbbb-4ahc/;;https://leetcode.com/problems/next-greater-numerically-balanced-number/solutions/4522347/java-code-by-kritikamalhotra153-995x/;;;=;==;=;=;

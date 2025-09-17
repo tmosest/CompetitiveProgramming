@@ -1,0 +1,53 @@
+3362. Zero Array Transformation III;=;=Medium;=;=public int maxRemoval(int[] nums, int[][] queries);=;=You are given an integer array nums of length n and a 2D array queries where queries[i] = [li, ri].
+
+Each queries[i] represents the following action on nums:
+
+Decrement the value at each index in the range [li, ri] in nums by at most 1.
+The amount by which the value is decremented can be chosen independently for each index.
+A Zero Array is an array with all its elements equal to 0.
+
+Return the maximum number of elements that can be removed from queries, such that nums can still be converted to a zero array using the remaining queries. If it is not possible to convert nums to a zero array, return -1.
+
+ 
+
+Example 1:
+
+Input: nums = [2,0,2], queries = [[0,2],[0,2],[1,1]]
+
+Output: 1
+
+Explanation:
+
+After removing queries[2], nums can still be converted to a zero array.
+
+Using queries[0], decrement nums[0] and nums[2] by 1 and nums[1] by 0.
+Using queries[1], decrement nums[0] and nums[2] by 1 and nums[1] by 0.
+Example 2:
+
+Input: nums = [1,1,1,1], queries = [[1,3],[0,2],[1,3],[1,2]]
+
+Output: 2
+
+Explanation:
+
+We can remove queries[2] and queries[3].
+
+Example 3:
+
+Input: nums = [1,2,3,4], queries = [[0,3]]
+
+Output: -1
+
+Explanation:
+
+nums cannot be converted to a zero array even after using all the queries.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 105
+1 <= queries.length <= 105
+queries[i].length == 2
+0 <= li <= ri < nums.length;=;=https://leetcode.com/problems/zero-array-transformation-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/zero-array-transformation-iii/solutions/6768535/priority-queues-in-depth-with-images-exa-54ta/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6075702/javacpython-take-the-query-ending-latest-1uqb/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6768557/cpp-java-greedy-100-beats-easy-to-unders-hnzb/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6768363/python-solution-explained-by-python_cham-s4os/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6768548/easiest-solution-detail-explanation-on-l-cqu3/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6768607/cjavapythonjs-beats-100-optimal-greedy-h-wzfd/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6770400/minimum-deletions-to-make-a-string-palin-27cu/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6768362/zero-array-transformation-iii-priority-q-xcjo/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6768481/java-solution-by-pothuruaneesh-gyfi/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6769313/easy-code-must-try-code-in-java-by-notad-86cg/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6769460/zero-array-transformation-iii-greedy-wit-cu3d/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6768416/zero-array-transformation-iii-by-nmaadir-ioiy/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6778528/4-way-full-logic-explained-simple-approa-nfnb/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6768421/no-binary-search-greedy-heap-by-jaylalsj-ad7t/;;https://leetcode.com/problems/zero-array-transformation-iii/solutions/6770267/java-easy-solution-by-heyysankalp-viqg/;;;=;==;=;=;

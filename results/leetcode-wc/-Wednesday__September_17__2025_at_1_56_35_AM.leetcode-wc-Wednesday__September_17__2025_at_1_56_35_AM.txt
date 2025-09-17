@@ -1,0 +1,50 @@
+3597. Partition String;=;=Medium;=;=public List<String> partitionString(String s);=;=Given a string s, partition it into unique segments according to the following procedure:
+
+Start building a segment beginning at index 0.
+Continue extending the current segment character by character until the current segment has not been seen before.
+Once the segment is unique, add it to your list of segments, mark it as seen, and begin a new segment from the next index.
+Repeat until you reach the end of s.
+Return an array of strings segments, where segments[i] is the ith segment created.
+
+ 
+
+Example 1:
+
+Input: s = "abbccccd"
+
+Output: ["a","b","bc","c","cc","d"]
+
+Explanation:
+
+Index	Segment After Adding	Seen Segments	Current Segment Seen Before?	New Segment	Updated Seen Segments
+0	"a"	[]	No	""	["a"]
+1	"b"	["a"]	No	""	["a", "b"]
+2	"b"	["a", "b"]	Yes	"b"	["a", "b"]
+3	"bc"	["a", "b"]	No	""	["a", "b", "bc"]
+4	"c"	["a", "b", "bc"]	No	""	["a", "b", "bc", "c"]
+5	"c"	["a", "b", "bc", "c"]	Yes	"c"	["a", "b", "bc", "c"]
+6	"cc"	["a", "b", "bc", "c"]	No	""	["a", "b", "bc", "c", "cc"]
+7	"d"	["a", "b", "bc", "c", "cc"]	No	""	["a", "b", "bc", "c", "cc", "d"]
+Hence, the final output is ["a", "b", "bc", "c", "cc", "d"].
+
+Example 2:
+
+Input: s = "aaaa"
+
+Output: ["a","aa"]
+
+Explanation:
+
+Index	Segment After Adding	Seen Segments	Current Segment Seen Before?	New Segment	Updated Seen Segments
+0	"a"	[]	No	""	["a"]
+1	"a"	["a"]	Yes	"a"	["a"]
+2	"aa"	["a"]	No	""	["a", "aa"]
+3	"a"	["a", "aa"]	Yes	"a"	["a", "aa"]
+Hence, the final output is ["a", "aa"].
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s contains only lowercase English letters.;=;=https://leetcode.com/problems/partition-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/partition-string/solutions/6897458/easiest-code-with-example-walkthrough-by-8431/;;https://leetcode.com/problems/partition-string/solutions/6897443/easy-optimal-approach-beats-100-cjavapyt-fldr/;;https://leetcode.com/problems/partition-string/solutions/6898146/easy-contest-solution-clean-code-beginne-d8k6/;;https://leetcode.com/problems/partition-string/solutions/6898270/3597-partition-string-cpp-java-python3-s-bus4/;;https://leetcode.com/problems/partition-string/solutions/6934370/classical-trie-usage-demonstration-by-an-15bt/;;https://leetcode.com/problems/partition-string/solutions/6897604/one-pass-by-ajay_prabhu-nqfj/;;https://leetcode.com/problems/partition-string/solutions/6898957/brute-force-method-using-hashset-by-jakk-3ag6/;;https://leetcode.com/problems/partition-string/solutions/6900461/easy-approach-by-v4glhbqcjt-ibwh/;;https://leetcode.com/problems/partition-string/solutions/6897474/java-easy-to-grasp-hasmap-by-sjain8078-0ihi/;;https://leetcode.com/problems/partition-string/solutions/6897670/use-set-and-keep-on-adding-by-chaotic100-8cuf/;;https://leetcode.com/problems/partition-string/solutions/6897683/java-80ms-rolling-hashing-beats-9800-by-ddzma/;;https://leetcode.com/problems/partition-string/solutions/6902182/simple-java-on-solution-for-beginners-ea-cri7/;;https://leetcode.com/problems/partition-string/solutions/6898728/simple-solu-using-hashset-java-by-harshs-utmy/;;https://leetcode.com/problems/partition-string/solutions/6902174/simple-one-pass-solution-beats-100-expla-mcxg/;;https://leetcode.com/problems/partition-string/solutions/6897520/hashset-easy-code-by-ankith_kumar-ah3g/;;;=;==;=;=;

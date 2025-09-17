@@ -1,0 +1,248 @@
+<div class="w-full"><div class="flex min-w-0 flex-col gap-3"><div class="text-[22px] font-medium leading-8 [overflow-wrap:anywhere] text-lc-text-primary dark:text-dark-lc-text-primary">Easiest Code with Example Walkthrough</div><div class="flex items-center gap-4"><div data-state="closed"><a target="_blank" rel="noopener noreferrer" class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate h-8 min-h-[32px] w-8 min-w-[32px] block" href="/u/_sxrthakk/"><img alt="" class="rounded-1/2 object-cover h-full w-full rounded-full" src="https://assets.leetcode.com/users/avatars/avatar_1707214189.png"></a></div><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2"><div class="flex items-center gap-1 truncate" translate="no"><a target="_blank" rel="noopener noreferrer" class="no-underline text-sm overflow-hidden max-w-[100px] md:max-w-[200px] truncate hover:text-blue-s dark:hover:text-dark-blue-s font-normal text-text-primary dark:text-text-primary" href="/u/_sxrthakk/">Sarthak Mishra</a><div class="h-3.5 w-3.5" data-state="closed"><img alt="200 Days Badge 2025" class="h-full w-full" src="https://assets.leetcode.com/static_assets/others/lg200.png"></div></div></div><div class="flex items-center gap-3"><div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M1.104 12.444a1 1 0 010-.888c.13-.26.37-.693.722-1.241A18.85 18.85 0 013.88 7.652C6.184 5.176 8.896 3.667 12 3.667s5.816 1.509 8.119 3.985c.79.85 1.475 1.756 2.055 2.663.352.548.593.98.722 1.24a1 1 0 010 .89c-.13.26-.37.692-.722 1.24a18.848 18.848 0 01-2.055 2.663c-2.303 2.476-5.015 3.985-8.119 3.985s-5.816-1.509-8.119-3.985a18.846 18.846 0 01-2.055-2.663c-.352-.548-.593-.98-.722-1.24zm2.406.162a16.87 16.87 0 001.836 2.38c1.959 2.106 4.19 3.347 6.654 3.347 2.465 0 4.695-1.24 6.654-3.347A16.87 16.87 0 0020.86 12a16.871 16.871 0 00-2.206-2.986C16.695 6.908 14.464 5.667 12 5.667c-2.465 0-4.695 1.24-6.654 3.347A16.87 16.87 0 003.14 12c.108.188.232.391.37.607zM12 15.75c-2.06 0-3.727-1.68-3.727-3.75 0-2.07 1.667-3.75 3.727-3.75 2.06 0 3.727 1.68 3.727 3.75 0 2.07-1.667 3.75-3.727 3.75zm0-2c.952 0 1.727-.782 1.727-1.75s-.775-1.75-1.727-1.75c-.952 0-1.727.782-1.727 1.75s.775 1.75 1.727 1.75z" clip-rule="evenodd"></path></svg><div class="text-xs dark:text-sd-gray-500 text-sd-gray-400">1993</div></div><div class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M19 11.063V7h-2v1a1 1 0 11-2 0V7H9v1a1 1 0 01-2 0V7H5v4.063h14zm0 2H5V19h14v-5.938zM9 5h6V4a1 1 0 112 0v1h2a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2V4a1 1 0 012 0v1z" clip-rule="evenodd"></path></svg><div class="min-w-max text-xs dark:text-sd-gray-500 text-sd-gray-400"><span class="" data-state="closed">Jun 28, 2025</span></div></div></div></div></div><div class="flex flex-grow flex-nowrap items-center gap-2 overflow-hidden my-1"><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Hash Table</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Python</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">C++</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Java</div></div></div></div><div class="break-words"><div><div class="flex flex-col w-full" style="position: relative;"><div><div class="mYe_l WRmCx"><h1 id="intuition">Intuition</h1>
+<ul>
+<li>Start by inserting the first character s[0] as the first segment and mark it as seen using a map.</li>
+<li>Iterate through the rest of the string and keep building the current segment in string a.</li>
+<li>If the segment a is not in the map (i.e., it’s unique), push it into the answer, mark it seen, and reset a to start a new segment.</li>
+<li>Repeat this until the end of the string, collecting all unique segments.</li>
+<li>Finally, return the list of collected segments.</li>
+</ul>
+<h1 id="approach">Approach</h1>
+<ol>
+<li data-length="1"><strong>Initialize the First Segment</strong></li>
+</ol>
+<ul>
+<li>Start by taking the first character of the string.</li>
+<li>Treat it as the first segment.</li>
+<li>Store it in the answer list.</li>
+<li>Mark it as seen using a map to ensure future segments don’t repeat.</li>
+</ul>
+<ol start="2">
+<li data-length="1"><strong>Prepare for Building Next Segment</strong></li>
+</ol>
+<ul>
+<li>Create an empty temporary string to build upcoming segments.</li>
+<li>Begin iterating from the second character (index 1).</li>
+</ul>
+<ol start="3">
+<li data-length="1"><strong>Build Segment Character by Character</strong></li>
+</ol>
+<ul>
+<li>
+<h4 id="for-each-character-in-the-remaining-string">For each character in the remaining string:</h4>
+<div class="font-menlo mb-6 rounded-lg px-3 py-2.5 text-sm bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-csharp" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span>  Append it to the temporary </span><span class="token" style="color: rgb(86, 156, 214);">string</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>
+</span></span><span>
+</span><span><span>  This temporary </span><span class="token" style="color: rgb(86, 156, 214);">string</span><span> keeps growing </span><span class="token" style="color: rgb(86, 156, 214);">as</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">you</span><span> keep adding characters</span><span class="token" style="color: rgb(212, 212, 212);">.</span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div>
+</li>
+</ul>
+<ol start="4">
+<li data-length="1"><strong>Check If the Segment Is Unique</strong><br>
+After each addition, check if this temporary string (current segment) has been seen before using the map:</li>
+</ol>
+<h3 id="if-not-seen">If not seen:</h3>
+<ul>
+<li>It means this segment is unique.</li>
+<li>Add it to the answer list.</li>
+<li>Mark it as seen in the map.</li>
+<li>Reset the temporary string to empty so you can begin forming a new segment.</li>
+</ul>
+<h3 id="if-already-seen">If already seen:</h3>
+<ul>
+<li>Continue adding more characters to the temporary string and checking again.</li>
+</ul>
+<ol start="5">
+<li data-length="1"><strong>Repeat Until the End of the String</strong></li>
+</ol>
+<ul>
+<li>Keep repeating the above steps until you reach the end of the string.</li>
+<li>Each time a new unseen segment is formed, it's added to the result.</li>
+</ul>
+<h1 id="example-walkthrough">Example Walkthrough</h1>
+<h3 id="initial-setup">Initial Setup</h3>
+<ul>
+<li>ans (final answer list): ["a"]</li>
+<li>map of seen segments: { "a": 1 }</li>
+<li>Index i = 1</li>
+<li>Temporary string a = ""</li>
+</ul>
+<h3 id="step-by-step-processing">Step-by-step Processing</h3>
+<h2 id="1--i--1--s1--b">1.  i = 1 ? s[1] = 'b'</h2>
+<ul>
+<li>a = "b"</li>
+<li>"b" is not in map ? it’s unique</li>
+<li>Add "b" to ans ? ans = ["a", "b"]</li>
+<li>Mark "b" as seen ? map becomes { "a":1, "b":1 }</li>
+<li>Reset a = ""</li>
+</ul>
+<h2 id="2--i--2--s2--b">2.  i = 2 ? s[2] = 'b'</h2>
+<ul>
+<li>a = "b"</li>
+<li>"b" is already in map ? it's duplicate</li>
+<li>So we keep building: a = "b"</li>
+<li>Move to next character</li>
+</ul>
+<h2 id="3--i--3--s3--c">3.  i = 3 ? s[3] = 'c'</h2>
+<ul>
+<li>a = "bc"</li>
+<li>"bc" is not in map ? it’s unique</li>
+<li>Add "bc" to ans ? ans = ["a", "b", "bc"]</li>
+<li>Mark "bc" as seen ? map becomes { "a":1, "b":1, "bc":1 }</li>
+<li>Reset a = ""</li>
+</ul>
+<h2 id="4--i--4--s4--c">4.  i = 4 ? s[4] = 'c'</h2>
+<ul>
+<li>a = "c"</li>
+<li>"c" is not in map ? unique</li>
+<li>Add "c" to ans ? ans = ["a", "b", "bc", "c"]</li>
+<li>Mark "c" as seen ? map = { ..., "c":1 }</li>
+<li>Reset a = ""</li>
+</ul>
+<h2 id="5--i--5--s5--c">5.  i = 5 ? s[5] = 'c'</h2>
+<ul>
+<li>a = "c"</li>
+<li>"c" is already in map ? duplicate</li>
+<li>Continue to next char</li>
+</ul>
+<h2 id="6--i--6--s6--c">6.  i = 6 ? s[6] = 'c'</h2>
+<ul>
+<li>a = "cc"</li>
+<li>"cc" is not in map ? unique</li>
+<li>Add "cc" to ans ? ans = ["a", "b", "bc", "c", "cc"]</li>
+<li>Mark "cc" as seen</li>
+<li>Reset a = ""</li>
+</ul>
+<h2 id="7--i--7--s7--d">7.  i = 7 ? s[7] = 'd'</h2>
+<ul>
+<li>a = "d"</li>
+<li>"d" is not in map ? unique</li>
+<li>Add "d" to ans ? ans = ["a", "b", "bc", "c", "cc", "d"]</li>
+</ul>
+<h1 id="code">Code</h1>
+<div class="border-gray-3 dark:border-dark-gray-3 mb-6 overflow-hidden rounded-lg border text-sm"><div class="flex select-none overflow-x-auto bg-layer-2 dark:bg-dark-layer-2"><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-1 dark:text-dark-label-1 d8276">C++</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Java</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Python</div></div><div class="px-3 py-2.5 bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-cpp" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span>    vector</span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span>string</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">partitionString</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>string s</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>        unordered_map</span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span>string</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span class="token" style="color: rgb(86, 156, 214);">int</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> m</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        vector</span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span>string</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> ans</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        ans</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">push_back</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(220, 220, 170);">string</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        m</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(220, 220, 170);">string</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">=</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">int</span><span> i</span><span class="token" style="color: rgb(212, 212, 212);">=</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        string a</span><span class="token" style="color: rgb(212, 212, 212);">=</span><span class="token" style="color: rgb(206, 145, 120);">""</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">while</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>i</span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">size</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>            a</span><span class="token" style="color: rgb(212, 212, 212);">+=</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>i</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span>
+</span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>m</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>a</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">==</span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>                ans</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">push_back</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>a</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                m</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>a</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">++</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                a</span><span class="token" style="color: rgb(212, 212, 212);">=</span><span class="token" style="color: rgb(206, 145, 120);">""</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>   
+</span></span><span><span>            </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span>
+</span><span><span>            i</span><span class="token" style="color: rgb(212, 212, 212);">++</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span>        
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> ans</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(212, 212, 212);">}</span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div></div></div></div><span style="font-size: 0px; line-height: 0;">&nbsp;</span></div></div></div><div class="group/ads flex w-full items-start justify-start"><div class="group-hover/ads:bg-sd-muted relative overflow-hidden transition-colors group-hover/ads:before:text-sd-muted-foreground/50 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:text-transparent before:transition-colors before:content-['Advertisement']"><a href="https://leetcode.com/student/?utm_campaign=BTS2025&amp;utm_medium=site&amp;utm_source=site&amp;gio_link_id=QRekq32o" style="width: 468px; height: 60px;"><img width="468" height="60" alt="" src="https://assets.leetcode.com/users/images/158b8add-efb4-493b-b90c-7619b1b049f1_1757310862.5160654.png"></a></div></div><div class="flex justify-between gap-4"><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/partition-string/solutions/6897834/trie-vs-unordered-set-103ms-beats-99-79/"><div class="flex h-full items-center order-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M5.414 11H21a1 1 0 110 2H5.414L12 19.586A1 1 0 0110.586 21l-8.293-8.293a.997.997 0 01.003-1.417L10.586 3A1 1 0 1112 4.414L5.414 11z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-2"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-right">Previous</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-right">Trie vs unordered_set||103ms beats 99.79%</div></div></a><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/partition-string/solutions/6897443/easy-optimal-approach-beats-100-c-java-python/"><div class="flex h-full items-center order-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M18.586 13H3a1 1 0 110-2h15.586L12 4.414A1 1 0 0113.414 3l8.293 8.293a.997.997 0 01-.003 1.417L13.414 21A1 1 0 0112 19.586L18.586 13z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-1"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-left">Next</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-left">easy || optimal Approach || beats 100%|| c++||java||python </div></div></a></div><div class="w-full"><div class="flex min-w-0 flex-col gap-3"><div class="text-[22px] font-medium leading-8 [overflow-wrap:anywhere] text-lc-text-primary dark:text-dark-lc-text-primary">easy || optimal Approach || beats 100%|| c++||java||python </div><div class="flex items-center gap-4"><div data-state="closed"><a target="_blank" rel="noopener noreferrer" class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate h-8 min-h-[32px] w-8 min-w-[32px] block" href="/u/sumitksr/"><img alt="" class="rounded-1/2 object-cover h-full w-full rounded-full" src="https://assets.leetcode.com/users/sumitksr/avatar_1750177815.png"></a></div><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2"><div class="flex items-center gap-1 truncate" translate="no"><a target="_blank" rel="noopener noreferrer" class="no-underline text-sm overflow-hidden max-w-[100px] md:max-w-[200px] truncate hover:text-blue-s dark:hover:text-dark-blue-s font-normal text-text-primary dark:text-text-primary" href="/u/sumitksr/">Sumit kumar</a></div></div><div class="flex items-center gap-3"><div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M1.104 12.444a1 1 0 010-.888c.13-.26.37-.693.722-1.241A18.85 18.85 0 013.88 7.652C6.184 5.176 8.896 3.667 12 3.667s5.816 1.509 8.119 3.985c.79.85 1.475 1.756 2.055 2.663.352.548.593.98.722 1.24a1 1 0 010 .89c-.13.26-.37.692-.722 1.24a18.848 18.848 0 01-2.055 2.663c-2.303 2.476-5.015 3.985-8.119 3.985s-5.816-1.509-8.119-3.985a18.846 18.846 0 01-2.055-2.663c-.352-.548-.593-.98-.722-1.24zm2.406.162a16.87 16.87 0 001.836 2.38c1.959 2.106 4.19 3.347 6.654 3.347 2.465 0 4.695-1.24 6.654-3.347A16.87 16.87 0 0020.86 12a16.871 16.871 0 00-2.206-2.986C16.695 6.908 14.464 5.667 12 5.667c-2.465 0-4.695 1.24-6.654 3.347A16.87 16.87 0 003.14 12c.108.188.232.391.37.607zM12 15.75c-2.06 0-3.727-1.68-3.727-3.75 0-2.07 1.667-3.75 3.727-3.75 2.06 0 3.727 1.68 3.727 3.75 0 2.07-1.667 3.75-3.727 3.75zm0-2c.952 0 1.727-.782 1.727-1.75s-.775-1.75-1.727-1.75c-.952 0-1.727.782-1.727 1.75s.775 1.75 1.727 1.75z" clip-rule="evenodd"></path></svg><div class="text-xs dark:text-sd-gray-500 text-sd-gray-400">1434</div></div><div class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M19 11.063V7h-2v1a1 1 0 11-2 0V7H9v1a1 1 0 01-2 0V7H5v4.063h14zm0 2H5V19h14v-5.938zM9 5h6V4a1 1 0 112 0v1h2a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2V4a1 1 0 012 0v1z" clip-rule="evenodd"></path></svg><div class="min-w-max text-xs dark:text-sd-gray-500 text-sd-gray-400"><span class="" data-state="closed">Jun 28, 2025</span></div></div></div></div></div><div class="flex flex-grow flex-nowrap items-center gap-2 overflow-hidden my-1"><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Python</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">C++</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Java</div></div></div></div><div class="break-words"><div><div class="flex flex-col w-full" style="position: relative;"><div><div class="mYe_l WRmCx"><h1 id="leetcode-solution-partition-unique-substrings">LeetCode Solution: Partition Unique Substrings</h1>
+<h2 id="problem">Problem</h2>
+<p>Given a string <code>s</code>, you are to partition it into substrings such that each substring hasn't appeared before as a whole. You should return these unique substrings in order.</p>
+<p><strong>Example:</strong></p>
+<div class="font-menlo mb-6 rounded-lg px-3 py-2.5 text-sm bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-javascript" style="white-space: pre; color: rgb(156, 220, 254); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span class="token literal-property" style="color: rgb(156, 220, 254);">Input</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> s </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">"abbccccd"</span><span>
+</span></span><span><span></span><span class="token literal-property" style="color: rgb(156, 220, 254);">Output</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(206, 145, 120);">"a"</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span class="token" style="color: rgb(206, 145, 120);">"b"</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span class="token" style="color: rgb(206, 145, 120);">"bc"</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span class="token" style="color: rgb(206, 145, 120);">"c"</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span class="token" style="color: rgb(206, 145, 120);">"cc"</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span class="token" style="color: rgb(206, 145, 120);">"d"</span><span class="token" style="color: rgb(212, 212, 212);">]</span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div>
+<hr>
+<h2 id="intuition">Intuition</h2>
+<p>We want to partition the string into segments such that:</p>
+<ul>
+<li>Each segment is a new substring (hasn’t occurred previously).</li>
+<li>Substrings can be of any length but must be <strong>unique so far</strong>.</li>
+</ul>
+<p>The greedy approach is to always find the <strong>smallest possible substring starting at current index</strong> that hasn't occurred before, add it to the result, and move forward.</p>
+<hr>
+<h2 id="approach">Approach</h2>
+<ol>
+<li data-length="1">Use a <code>set</code> to store all previously seen substrings.</li>
+<li data-length="1">Start from index <code>i = 0</code>.</li>
+<li data-length="1">For every position <code>j</code> starting from <code>i</code>, keep appending characters to form <code>cur = s[i..j]</code>.</li>
+<li data-length="1">If this <code>cur</code> hasn’t been seen before, add it to the result list, insert into the set, move <code>i</code> to <code>j + 1</code>, and break.</li>
+<li data-length="1">Repeat until <code>i &lt; n</code>.</li>
+<li data-length="1">If no new segment is found, stop.</li>
+</ol>
+<hr>
+<h2 id="-found-this-helpful">? Found this helpful?</h2>
+<h1 id="give-it-an-upvote">Give it an upvote!</h1>
+<h2 id=""><img alt="Upvote" src="https://assets.leetcode.com/users/images/5b732ef6-d5b8-47b5-9fe5-c601a9f88154_1751091712.005807.gif"></h2>
+<h2 id="code">Code</h2>
+<div class="border-gray-3 dark:border-dark-gray-3 mb-6 overflow-hidden rounded-lg border text-sm"><div class="flex select-none overflow-x-auto bg-layer-2 dark:bg-dark-layer-2"><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-1 dark:text-dark-label-1 d8276">C++</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Python</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Java</div></div><div class="px-3 py-2.5 bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-cpp" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span class="token" style="color: rgb(86, 156, 214);">class</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">Solution</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span></span><span class="token" style="color: rgb(86, 156, 214);">public</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>    vector</span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span>string</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">partitionString</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>string s</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">int</span><span> n </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">size</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        vector</span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span>string</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> segments</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        unordered_set</span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span>string</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> seen</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span> </span><span class="token" style="color: rgb(106, 153, 85);">// to track already used substrings</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">int</span><span> i </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">while</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>i </span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span> n</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">bool</span><span> found </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">false</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>            string cur</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(86, 156, 214);">int</span><span> j </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> i</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span> j </span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span> n</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span> j</span><span class="token" style="color: rgb(212, 212, 212);">++</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>                cur</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">push_back</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>j</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>seen</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">count</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>cur</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">==</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>                    </span><span class="token" style="color: rgb(106, 153, 85);">// If the current substring hasn't been seen</span><span>
+</span></span><span><span>                    found </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">true</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                    segments</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">push_back</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>cur</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                    seen</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">insert</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>cur</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                    i </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> j </span><span class="token" style="color: rgb(212, 212, 212);">+</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                    </span><span class="token" style="color: rgb(86, 156, 214);">break</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span> </span><span class="token" style="color: rgb(106, 153, 85);">// break as soon as a unique substring is found</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">!</span><span>found</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">break</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span> </span><span class="token" style="color: rgb(106, 153, 85);">// No more unique substrings can be formed</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> segments</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span><span></span><span class="token" style="color: rgb(212, 212, 212);">}</span><span class="token" style="color: rgb(212, 212, 212);">;</span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div></div>
+<hr>
+<h2 id="explanation-with-example">Explanation with Example</h2>
+<p><strong>Input:</strong> <code>s = "abbccccd"</code></p>
+<h3 id="step-by-step">Step-by-step:</h3>
+<ol>
+<li data-length="1">Start at index <code>i=0</code>:
+<ul>
+<li>Try <code>"a"</code> ? not seen ? add ? <code>segments = ["a"]</code></li>
+</ul>
+</li>
+<li data-length="1">Now <code>i=1</code>:
+<ul>
+<li>Try <code>"b"</code> ? not seen ? add ? <code>segments = ["a", "b"]</code></li>
+</ul>
+</li>
+<li data-length="1">Now <code>i=2</code>:
+<ul>
+<li>Try <code>"b"</code> ? already seen</li>
+<li>Try <code>"bc"</code> ? not seen ? add ? <code>segments = ["a", "b", "bc"]</code></li>
+</ul>
+</li>
+<li data-length="1">Now <code>i=4</code>:
+<ul>
+<li>Try <code>"c"</code> ? not seen ? add ? <code>segments = ["a", "b", "bc", "c"]</code></li>
+</ul>
+</li>
+<li data-length="1">Now <code>i=5</code>:
+<ul>
+<li>Try <code>"c"</code> ? already seen</li>
+<li>Try <code>"cc"</code> ? not seen ? add ? <code>segments = ["a", "b", "bc", "c", "cc"]</code></li>
+</ul>
+</li>
+<li data-length="1">Now <code>i=7</code>:
+<ul>
+<li>Try <code>"d"</code> ? not seen ? add ? <code>segments = ["a", "b", "bc", "c", "cc", "d"]</code></li>
+</ul>
+</li>
+</ol>
+<p><strong>Output:</strong> <code>['a', 'b', 'bc', 'c', 'cc', 'd']</code></p>
+<hr>
+<h2 id="time-complexity">Time Complexity</h2>
+<ul>
+<li>Worst Case: <strong>O(n^2)</strong> — nested loop when substrings grow in length.</li>
+</ul>
+<h2 id="space-complexity">Space Complexity</h2>
+<ul>
+<li><strong>O(n)</strong> for storing the segments and seen substrings.</li>
+</ul>
+<h1 id="-found-this-helpful-1">? Found this helpful?</h1>
+<h1 id="give-it-an-upvote-1">Give it an upvote!</h1>
+<h2 id="-1"><img alt="Upvote" src="https://img.shields.io/badge/LeetCode-Upvote-orange?style=for-the-badge&amp;logo=leetcode"></h2></div></div><span style="font-size: 0px; line-height: 0;">&nbsp;</span></div></div></div><div class="group/ads flex w-full items-start justify-start"><div class="group-hover/ads:bg-sd-muted relative overflow-hidden transition-colors group-hover/ads:before:text-sd-muted-foreground/50 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:text-transparent before:transition-colors before:content-['Advertisement']"><a href="https://leetcode.com/student/?utm_campaign=BTS2025&amp;utm_medium=site&amp;utm_source=site&amp;gio_link_id=QRekq32o" style="width: 468px; height: 60px;"><img width="468" height="60" alt="" src="https://assets.leetcode.com/users/images/158b8add-efb4-493b-b90c-7619b1b049f1_1757310862.5160654.png"></a></div></div><div class="flex justify-between gap-4"><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/partition-string/solutions/6897458/easiest-code-with-example-walkthrough/"><div class="flex h-full items-center order-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M5.414 11H21a1 1 0 110 2H5.414L12 19.586A1 1 0 0110.586 21l-8.293-8.293a.997.997 0 01.003-1.417L10.586 3A1 1 0 1112 4.414L5.414 11z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-2"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-right">Previous</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-right">Easiest Code with Example Walkthrough</div></div></a><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/partition-string/solutions/7148868/aaaaaaaaaaaaaaaaaaaaaaaaaa/"><div class="flex h-full items-center order-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M18.586 13H3a1 1 0 110-2h15.586L12 4.414A1 1 0 0113.414 3l8.293 8.293a.997.997 0 01-.003 1.417L13.414 21A1 1 0 0112 19.586L18.586 13z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-1"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-left">Next</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-left">AAAAAAAAAAAAAAAAAAAAAAAAAA</div></div></a></div>

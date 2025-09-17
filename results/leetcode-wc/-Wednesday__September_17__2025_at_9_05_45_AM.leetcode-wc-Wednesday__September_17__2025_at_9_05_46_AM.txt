@@ -1,0 +1,49 @@
+2746. Decremental String Concatenation;=;=Medium;=;=public int minimizeConcatenatedLength(String[] words);=;=You are given a 0-indexed array words containing n strings.
+
+Let's define a join operation join(x, y) between two strings x and y as concatenating them into xy. However, if the last character of x is equal to the first character of y, one of them is deleted.
+
+For example join("ab", "ba") = "aba" and join("ab", "cde") = "abcde".
+
+You are to perform n - 1 join operations. Let str0 = words[0]. Starting from i = 1 up to i = n - 1, for the ith operation, you can do one of the following:
+
+Make stri = join(stri - 1, words[i])
+Make stri = join(words[i], stri - 1)
+Your task is to minimize the length of strn - 1.
+
+Return an integer denoting the minimum possible length of strn - 1.
+
+ 
+
+Example 1:
+
+Input: words = ["aa","ab","bc"]
+Output: 4
+Explanation: In this example, we can perform join operations in the following order to minimize the length of str2: 
+str0 = "aa"
+str1 = join(str0, "ab") = "aab"
+str2 = join(str1, "bc") = "aabc" 
+It can be shown that the minimum possible length of str2 is 4.
+Example 2:
+
+Input: words = ["ab","b"]
+Output: 2
+Explanation: In this example, str0 = "ab", there are two ways to get str1: 
+join(str0, "b") = "ab" or join("b", str0) = "bab". 
+The first string, "ab", has the minimum length. Hence, the answer is 2.
+Example 3:
+
+Input: words = ["aaa","c","aba"]
+Output: 6
+Explanation: In this example, we can perform join operations in the following order to minimize the length of str2: 
+str0 = "aaa"
+str1 = join(str0, "c") = "aaac"
+str2 = join("aba", str1) = "abaaac"
+It can be shown that the minimum possible length of str2 is 6.
+ 
+ 
+
+Constraints:
+
+1 <= words.length <= 1000
+1 <= words[i].length <= 50
+Each character in words[i] is an English lowercase letter;=;=https://leetcode.com/problems/decremental-string-concatenation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/decremental-string-concatenation/solutions/3677998/java-dp-approach-for-everyone-by-user804-es6q/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/3678173/easy-peasy-by-sky09-k8cx/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/3677492/dynamic-programming-bottom-up-with-expla-t6c1/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/3677744/dp-memorization-java-by-abhipriya19134-0vdd/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/3677630/java-solution-by-deveshpatel11-elqe/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/5821935/though-string-memoization-solution-by-ro-1bfi/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/5641609/beats-8039-easy-java-unique-solution-by-zbkhw/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/4791287/standard-dp-with-memo-3d-dp-java-by-lins-6zd3/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/4790846/simple-java-solution-by-sakshikishore-deyh/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/4366687/java-3-d-dp-by-crack_leet97-cmpz/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/3763314/java-dp-solution-memoization-by-yash_nay-w3ty/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/3756443/tree-diagram-explanation-with-image-by-k-v57q/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/3734337/easy-to-understand-and-self-explanatory-ach4k/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/3716493/easy-java-solution-dynamic-programming-f-xx53/;;https://leetcode.com/problems/decremental-string-concatenation/solutions/3712111/java-simple-dp-memoization-by-ankush19-jta3/;;;=;==;=;=;

@@ -1,0 +1,36 @@
+2262. Total Appeal of A String;=;=Hard;=;=public long appealSum(String s);=;=The appeal of a string is the number of distinct characters found in the string.
+
+For example, the appeal of "abbca" is 3 because it has 3 distinct characters: 'a', 'b', and 'c'.
+Given a string s, return the total appeal of all of its substrings.
+
+A substring is a contiguous sequence of characters within a string.
+
+ 
+
+Example 1:
+
+Input: s = "abbca"
+Output: 28
+Explanation: The following are the substrings of "abbca":
+- Substrings of length 1: "a", "b", "b", "c", "a" have an appeal of 1, 1, 1, 1, and 1 respectively. The sum is 5.
+- Substrings of length 2: "ab", "bb", "bc", "ca" have an appeal of 2, 1, 2, and 2 respectively. The sum is 7.
+- Substrings of length 3: "abb", "bbc", "bca" have an appeal of 2, 2, and 3 respectively. The sum is 7.
+- Substrings of length 4: "abbc", "bbca" have an appeal of 3 and 3 respectively. The sum is 6.
+- Substrings of length 5: "abbca" has an appeal of 3. The sum is 3.
+The total sum is 5 + 7 + 7 + 6 + 3 = 28.
+Example 2:
+
+Input: s = "code"
+Output: 20
+Explanation: The following are the substrings of "code":
+- Substrings of length 1: "c", "o", "d", "e" have an appeal of 1, 1, 1, and 1 respectively. The sum is 4.
+- Substrings of length 2: "co", "od", "de" have an appeal of 2, 2, and 2 respectively. The sum is 6.
+- Substrings of length 3: "cod", "ode" have an appeal of 3 and 3 respectively. The sum is 6.
+- Substrings of length 4: "code" has an appeal of 4. The sum is 4.
+The total sum is 4 + 6 + 6 + 4 = 20.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/total-appeal-of-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/total-appeal-of-a-string/solutions/1996203/dp-by-votrubac-5zmz/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/1996390/javacpython-easy-and-concise-with-explan-mt5n/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/7015499/java-explained-by-deadvikash-d1p3/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/1996625/java-on-concise-solution-with-explanatio-3zr1/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/6579873/count-based-on-contribution-by-naveen_gu-1j1b/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/1996269/java-on-track-previous-index-of-each-cha-y7yf/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/6309798/very-easy-to-understand-java-solution-us-8uir/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/6309797/very-easy-to-understand-java-solution-us-wzw1/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/1996219/java-simple-quick-sliding-window-solutio-jfiz/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/6269596/dp-approach-with-on-runtime-and-o1-space-t7o4/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/1996969/java-count-characters-by-aditya_jain_258-cqig/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/7088161/2262-total-appeal-of-a-string-by-aarthis-et68/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/1998398/java-dp-vs-sliding-window-with-explanati-lnaw/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/1996230/on-time-and-o1-space-solution-with-expla-ilyy/;;https://leetcode.com/problems/total-appeal-of-a-string/solutions/3453209/java-on-time-by-nishant7372-tdcj/;;;=;==;=;=;

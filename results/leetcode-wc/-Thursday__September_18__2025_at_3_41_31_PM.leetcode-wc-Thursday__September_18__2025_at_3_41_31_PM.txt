@@ -1,0 +1,25 @@
+1144. Decrease Elements To Make Array Zigzag;=;=Medium;=;=publicÊintÊmovesToMakeZigzag(int[]Ênums);=;=Given an array nums of integers, a moveÊconsists of choosing any element and decreasing it by 1.
+
+An array A is aÊzigzag arrayÊif either:
+
+Every even-indexed element is greater than adjacent elements, ie.ÊA[0] > A[1] < A[2] > A[3] < A[4] > ...
+OR, every odd-indexed element is greater than adjacent elements, ie.ÊA[0] < A[1] > A[2] < A[3] > A[4] < ...
+Return the minimum number of moves to transform the given array nums into a zigzag array.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,2,3]
+Output: 2
+Explanation: We can decrease 2 to 0 or 3 to 1.
+Example 2:
+
+Input: nums = [9,6,1,6,2]
+Output: 4
+Ê
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 1000;=;=https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/6928172/100-efficient-solution-by-kgoutamkumar-javr/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/1734780/simple-java-greedy-solution-with-explain-bpc9/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/4415827/beats-100pc-by-captsully-txcv/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/3657347/best-and-easy-solution-on-and-o1-solutio-tv1o/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/2777973/java-on-solution-by-shivam__kumar00-f7fr/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/355802/java-one-pass-constant-space-beats-100-b-756v/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/596829/easy-to-understand-java-solution-1-pass-3n5ak/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/6266129/1144-decrease-elements-to-make-array-zig-krce/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/5952163/simple-java-solution-by-inception_0205-jv6v/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/5725320/easy-and-simple-solution-by-aayushisharm-60x8/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/5711003/simple-and-easy-java-solution-using-gree-0z32/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/5699602/movestomakezigzag-by-priyankadastidar-d9uu/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/5501649/simple-java-solution-by-probwiz-rkt6/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/5160455/runtime-0-ms-beats-10000-of-users-with-j-kxq5/;;https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/solutions/4873801/simple-java-solution-by-sakshikishore-6j7k/;;;=;==;=;=;

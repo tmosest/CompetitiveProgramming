@@ -1,0 +1,37 @@
+3669. Balanced K-Factor Decomposition;=;=Medium;=;=public int[] minDifference(int n, int k);=;=Given two integers n and k, split the number n into exactly k positive integers such that the product of these integers is equal to n.
+
+Return any one split in which the maximum difference between any two numbers is minimized. You may return the result in any order.
+
+ 
+
+Example 1:
+
+Input: n = 100, k = 2
+
+Output: [10,10]
+
+Explanation:
+
+The split [10, 10] yields 10 * 10 = 100 and a max-min difference of 0, which is minimal.
+
+Example 2:
+
+Input: n = 44, k = 3
+
+Output: [2,2,11]
+
+Explanation:
+
+Split [1, 1, 44] yields a difference of 43
+Split [1, 2, 22] yields a difference of 21
+Split [1, 4, 11] yields a difference of 10
+Split [2, 2, 11] yields a difference of 9
+Therefore, [2, 2, 11] is the optimal split with the smallest difference 9.
+
+ 
+
+Constraints:
+
+4 <= n <= 105
+2 <= k <= 5
+k is strictly less than the total number of positive divisors of n.;=;=https://leetcode.com/problems/balanced-k-factor-decomposition/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7140187/easy-solution-in-java-using-recursion-an-d7na/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7140245/dfsmemoization-by-shanmuka_prasanth_redd-4zvu/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7140273/easy-best-solution-by-amvsaex4ln-zg24/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7144771/easy-java-solution-recursion-backtrackin-fq38/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7160186/authors-approach-what-i-had-in-mind-when-b728/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7147392/3669-balanced-k-factor-deco-heres-a-back-nynu/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7140638/minimizing-divisor-differences-a-recursi-saul/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7142824/easiest-recursion-video-intuition-approa-wqje/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7140212/beats-10000-no-dp-pure-recursion-by-ojas-v4as/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7143840/bottom-up-dp-14ms-in-depth-explanation-b-ou5l/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7171219/java-dfs-with-key-hint-for-time-limit-on-6o60/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7140190/java-recursive-solution-by-abascus-lji0/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7175390/easy-solution-using-java-recursion-by-ha-x2z9/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7140954/recursive-solution-by-kishan963-uqo4/;;https://leetcode.com/problems/balanced-k-factor-decomposition/solutions/7163097/java-beats-9999-of-the-solutions-by-luck-vq8z/;;;=;==;=;=;

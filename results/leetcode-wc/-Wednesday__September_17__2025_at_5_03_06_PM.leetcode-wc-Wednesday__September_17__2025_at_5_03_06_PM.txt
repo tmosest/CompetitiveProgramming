@@ -1,0 +1,24 @@
+2414. Length of the Longest Alphabetical Continuous Substring;=;=Medium;=;=public int longestContinuousSubstring(String s);=;=An alphabetical continuous string is a string consisting of consecutive letters in the alphabet. In other words, it is any substring of the string "abcdefghijklmnopqrstuvwxyz".
+
+For example, "abc" is an alphabetical continuous string, while "acb" and "za" are not.
+Given a string s consisting of lowercase letters only, return the length of the longest alphabetical continuous substring.
+
+ 
+
+Example 1:
+
+Input: s = "abacaba"
+Output: 2
+Explanation: There are 4 distinct continuous substrings: "a", "b", "c" and "ab".
+"ab" is the longest continuous substring.
+Example 2:
+
+Input: s = "abcde"
+Output: 5
+Explanation: "abcde" is the longest continuous substring.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of only English lowercase letters.;=;=https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/7143997/easy-solution-for-beginners-longest-cont-djtc/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/7098998/easy-100-beats-java-string-solution-by-m-fmv6/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/7108355/java-code-easy-to-understand-by-diya_moh-5kcv/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/2590079/two-pointers-by-votrubac-pek6/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/2590113/add-to-length-or-restart-java-by-clasiqh-utah/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/2591028/java-simplest-on-solution-intuition-expl-qp3c/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/6630505/simple-and-optimal-solution-by-harshal-0-qafs/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/7147274/optimistic-solution-by-mithun_ravi-jbzv/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/7104266/better-approach-with-less-complexcity-by-w4xk/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/7098780/easy-to-understand-the-code-in-java-by-m-bdf3/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/6914855/java-by-soumya_699-i8nk/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/6878287/java-solution-by-abhi_276-860v/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/6776633/java-solution-by-backtrackbuilt-wshp/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/6566321/easy-java-solution-by-vermaanshul975-q8mr/;;https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/solutions/6338801/easy-by-madhiarasan-lutp/;;;=;==;=;=;

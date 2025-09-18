@@ -1,0 +1,31 @@
+3190. Find Minimum Operations to Make All Elements Divisible by Three;=;=Easy;=;=public int minimumOperations(int[] nums);=;=You are given an integer array nums. In one operation, you can add or subtract 1 from any element of nums.
+
+Return the minimum number of operations to make all elements of nums divisible by 3.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4]
+
+Output: 3
+
+Explanation:
+
+All array elements can be made divisible by 3 using 3 operations:
+
+Subtract 1 from 1.
+Add 1 to 2.
+Subtract 1 from 4.
+Example 2:
+
+Input: nums = [3,6,9]
+
+Output: 0
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 50
+1 <= nums[i] <= 50;=;=https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7183599/0-ms-beats-10000-java-simple-solution-by-n66o/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7165947/a-simple-and-clear-approach-by-sudhan_sh-qh8d/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/5352878/on-math-by-fahad06-hxph/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7128425/minimum-operations-to-make-array-divisib-jnlq/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7027620/java-easy-solution-0ms-by-akashraj06-jquz/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7080692/beats-100-by-divyansh_kaushik_sharma-61i9/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/6810095/greedy-approach-minimum-operations-0-ms-rard4/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7042076/easy-code-by-prajanthkumar-rntd/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/6888741/100-beats-by-dima853-sx9y/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7042029/easy-code-for-beginners-and-understandab-yorl/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/6889621/java-solution-constant-space-linear-time-pvyx/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/6866355/beats-100-simple-logic-by-leela_338-b62a/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7044080/easy-java-solution-100-beat-by-dharshana-tudg/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7045571/simple-java-code-by-brindhadevi_78-ypsh/;;https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/solutions/7022274/my-solution-by-codersquare-bgur/;;;=;==;=;=;

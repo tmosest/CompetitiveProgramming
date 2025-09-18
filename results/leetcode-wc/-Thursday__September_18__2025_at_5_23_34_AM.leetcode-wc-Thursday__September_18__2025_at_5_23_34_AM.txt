@@ -1,0 +1,27 @@
+745. Prefix and Suffix Search;=;=Hard;=;=WordFilter     public WordFilter(String[] words)                     public int f(String pref, String suff)             /  Your WordFilter object will be instantiated and called as such:  WordFilter obj = new WordFilter(words);  int param_1 = obj.f(pref,suff);;=;=Design a special dictionary that searches the words in it by a prefix and a suffix.
+
+Implement the WordFilter class:
+
+WordFilter(string[] words) Initializes the object with the words in the dictionary.
+f(string pref, string suff) Returns the index of the word in the dictionary, which has the prefix pref and the suffix suff. If there is more than one valid index, return the largest of them. If there is no such word in the dictionary, return -1.
+ 
+
+Example 1:
+
+Input
+["WordFilter", "f"]
+[[["apple"]], ["a", "e"]]
+Output
+[null, 0]
+Explanation
+WordFilter wordFilter = new WordFilter(["apple"]);
+wordFilter.f("a", "e"); // return 0, because the word at index 0 has prefix = "a" and suffix = "e".
+ 
+
+Constraints:
+
+1 <= words.length <= 104
+1 <= words[i].length <= 7
+1 <= pref.length, suff.length <= 7
+words[i], pref and suff consist of lowercase English letters only.
+At most 104 calls will be made to the function f.;=;=https://leetcode.com/problems/prefix-and-suffix-search/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/prefix-and-suffix-search/solutions/2164117/visual-explanation-double-trie-java-by-c-143x/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/6708447/using-trie-by-shresta-voruganti-bskl/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/1185480/js-python-java-c-double-trie-solution-w-gbmlm/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/6358349/simple-solution-with-detail-explanation-zdsbm/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/2164224/prefix-and-suffix-search-by-abdullmenem_-lezp/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/7195364/with-trie-implementation-by-durgaprasadd-qzg6/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/7187464/754-prefix-and-suffix-search-java-by-lc_-gcyq/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/3449955/solution-by-deleted_user-it52/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/1185206/prefix-suffix-search-java-by-tukaibat-ynjd/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/1186521/java-clean-concise-optimal-code-trie-or-ombvo/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/1187690/java-simple-and-easy-to-understand-solut-uwj3/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/4986279/java-easy-100-solution-using-2-trie-tree-19lj/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/2165330/java-no-trie-map-solution-simple-to-unde-afvq/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/2167705/java-trie-faster-than-91-by-funingteng-7xw5/;;https://leetcode.com/problems/prefix-and-suffix-search/solutions/2164884/java-c-easy-hash-solution-commented-by-z-91k4/;;;=;==;=;=;

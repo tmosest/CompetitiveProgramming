@@ -1,0 +1,31 @@
+1049. Last Stone Weight II;=;=Medium;=;=public int lastStoneWeightII(int[] stones);=;=You are given an array of integers stones where stones[i] is the weight of the ith stone.
+
+We are playing a game with the stones. On each turn, we choose any two stones and smash them together. Suppose the stones have weights x and y with x <= y. The result of this smash is:
+
+If x == y, both stones are destroyed, and
+If x != y, the stone of weight x is destroyed, and the stone of weight y has new weight y - x.
+At the end of the game, there is at most one stone left.
+
+Return the smallest possible weight of the left stone. If there are no stones left, return 0.
+
+ 
+
+Example 1:
+
+Input: stones = [2,7,4,1,8,1]
+Output: 1
+Explanation:
+We can combine 2 and 4 to get 2, so the array converts to [2,7,1,8,1] then,
+we can combine 7 and 8 to get 1, so the array converts to [2,1,1,1] then,
+we can combine 2 and 1 to get 1, so the array converts to [1,1,1] then,
+we can combine 1 and 1 to get 0, so the array converts to [1], then that's the optimal value.
+Example 2:
+
+Input: stones = [31,26,33,21,40]
+Output: 5
+ 
+
+Constraints:
+
+1 <= stones.length <= 30
+1 <= stones[i] <= 100;=;=https://leetcode.com/problems/last-stone-weight-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/last-stone-weight-ii/solutions/7074361/last-stone-weight-ii-by-pranavdewangan22-vt22/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/6703781/3-ways-1d-and-2d-tabulation-and-recursiv-6wbl/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/6825505/very-very-easy-solution-just-go-and-run-q76ct/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/1272897/simple-java-implementation-knapsack-by-p-yuov/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/979653/java-clear-explanation-dp-by-caligula-odvu/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/6452058/intuition-explained-memoization-by-insta-843t/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/5676593/simple-java-beats-94-recursion-memoizati-0d7j/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/1938051/java-recursion-memoisation-intuitive-sol-8r7p/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/1162871/java-01-knapsack-dp-coin-change-explanat-8vio/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/3638604/beats-100-java-by-chenkuklin-ufg5/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/5931714/most-easy-solution-using-tabulation-by-s-nc8c/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/5807205/recursionmemo-with-detailed-explanation-dyndt/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/971999/easy-to-understand-code-java-by-harin_me-88wo/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/4593602/simple-java-1ms-dp-10ms-hashset-solution-1jo2/;;https://leetcode.com/problems/last-stone-weight-ii/solutions/3968890/knapsack-problem-minimum-subset-sum-diff-6g7o/;;;=;==;=;=;

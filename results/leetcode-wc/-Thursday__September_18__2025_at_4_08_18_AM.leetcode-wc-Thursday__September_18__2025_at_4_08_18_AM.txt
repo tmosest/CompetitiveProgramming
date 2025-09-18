@@ -1,0 +1,20 @@
+1784. Check if Binary String Has at Most One Segment of Ones;=;=Easy;=;=public boolean checkOnesSegment(String s);=;=Given a binary string s ?????without leading zeros, return true??? if s contains at most one contiguous segment of ones. Otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: s = "1001"
+Output: false
+Explanation: The ones do not form a contiguous segment.
+Example 2:
+
+Input: s = "110"
+Output: true
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s[i]???? is either '0' or '1'.
+s[0] is '1'.;=;=https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/7128272/simple-java-solution-by-shubhamxgupta-ok9o/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/7106986/most-easy-one-line-solution-for-the-ques-578d/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/1428062/c-c-python-java-go-c-js-ruby-kotlin-scal-4xyq/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/6814326/check-if-binary-string-has-at-most-one-s-pcbx/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/4163578/one-liner-solution-easy-java-solution-by-5k2d/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/6790178/beats-100-by-alexander_sergeev-vnwc/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/6790197/oneliner-beats-100-by-alexander_sergeev-w5qm/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/6608570/o1-beats-100-by-dummy_nick-x4kp/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/1097891/java-simple-code-with-using-xor-by-micha-xv3r/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/6591624/easy-java-solution-by-chandranshu31-z1bw/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/6392254/python3-and-java-solution-with-question-k6h74/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/4413559/fastest-solution-that-you-can-find-by-ab-i7ar/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/6310555/0ms-1-line-code-java-by-galani_jenis-9ydx/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/6168787/quick-and-easy-approach-beat-100-by-g5bk-8v0v/;;https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/1688323/java-1-line-simple-check-by-user0363cx-lyac/;;;=;==;=;=;

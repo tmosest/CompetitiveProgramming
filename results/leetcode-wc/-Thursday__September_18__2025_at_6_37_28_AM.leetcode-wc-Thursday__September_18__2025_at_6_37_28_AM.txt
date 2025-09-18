@@ -1,0 +1,52 @@
+3248. Snake in Matrix;=;=Easy;=;=public int finalPositionOfSnake(int n, List<String> commands);=;=There is a snake in an n x n matrix grid and can move in four possible directions. Each cell in the grid is identified by the position: grid[i][j] = (i * n) + j.
+
+The snake starts at cell 0 and follows a sequence of commands.
+
+You are given an integer n representing the size of the grid and an array of strings commands where each command[i] is either "UP", "RIGHT", "DOWN", and "LEFT". It's guaranteed that the snake will remain within the grid boundaries throughout its movement.
+
+Return the position of the final cell where the snake ends up after executing commands.
+
+ 
+
+Example 1:
+
+Input: n = 2, commands = ["RIGHT","DOWN"]
+
+Output: 3
+
+Explanation:
+
+0	1
+2	3
+0	1
+2	3
+0	1
+2	3
+Example 2:
+
+Input: n = 3, commands = ["DOWN","RIGHT","UP"]
+
+Output: 1
+
+Explanation:
+
+0	1	2
+3	4	5
+6	7	8
+0	1	2
+3	4	5
+6	7	8
+0	1	2
+3	4	5
+6	7	8
+0	1	2
+3	4	5
+6	7	8
+ 
+
+Constraints:
+
+2 <= n <= 10
+1 <= commands.length <= 100
+commands consists only of "UP", "RIGHT", "DOWN", and "LEFT".
+The input is generated such the snake will not move outside of the boundaries.;=;=https://leetcode.com/problems/snake-in-matrix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/snake-in-matrix/solutions/5619418/brute-force-by-fahad06-zq4w/;;https://leetcode.com/problems/snake-in-matrix/solutions/5666781/simple-code-easy-to-understand-beats-100-da3p/;;https://leetcode.com/problems/snake-in-matrix/solutions/5620362/beats-100-easy-solution-in-java-by-kalya-f9ib/;;https://leetcode.com/problems/snake-in-matrix/solutions/5619454/easy-video-solution-how-to-in-interview-bbuv6/;;https://leetcode.com/problems/snake-in-matrix/solutions/6745185/simple-highly-efficient-solution-beats-1-0adw/;;https://leetcode.com/problems/snake-in-matrix/solutions/5620098/java-simple-beginners-solution-simple-it-to4p/;;https://leetcode.com/problems/snake-in-matrix/solutions/5733757/simple-java-easy-to-understand-by-kdhaka-ckjn/;;https://leetcode.com/problems/snake-in-matrix/solutions/6671369/final-position-of-snake-on-a-grid-best-j-4cza/;;https://leetcode.com/problems/snake-in-matrix/solutions/5619642/easiestfaster-lesser-cpython3javacpython-1ny7/;;https://leetcode.com/problems/snake-in-matrix/solutions/7122874/java-ok-beats-91-simple-concise-explanat-l080/;;https://leetcode.com/problems/snake-in-matrix/solutions/6791601/clean-code-by-smileysuneet-zmum/;;https://leetcode.com/problems/snake-in-matrix/solutions/5621732/simple-java-c-code-by-abhinandannaik1717-2l91/;;https://leetcode.com/problems/snake-in-matrix/solutions/6360183/easiest-solution-in-java-by-sathurnithy-r8m8/;;https://leetcode.com/problems/snake-in-matrix/solutions/6151675/javas-easy-peasy-by-shreyagarg63-7hcm/;;https://leetcode.com/problems/snake-in-matrix/solutions/5619475/explanations-no-one-will-give-youvery-de-f5ch/;;;=;==;=;=;

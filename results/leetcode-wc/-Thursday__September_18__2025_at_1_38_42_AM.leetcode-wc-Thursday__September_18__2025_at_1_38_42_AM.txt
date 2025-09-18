@@ -1,0 +1,30 @@
+2395. Find Subarrays With Equal Sum;=;=Easy;=;=public boolean findSubarrays(int[] nums);=;=Given a 0-indexed integer array nums, determine whether there exist two subarrays of length 2 with equal sum. Note that the two subarrays must begin at different indices.
+
+Return true if these subarrays exist, and false otherwise.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+ 
+
+Example 1:
+
+Input: nums = [4,2,4]
+Output: true
+Explanation: The subarrays with elements [4,2] and [2,4] have the same sum of 6.
+Example 2:
+
+Input: nums = [1,2,3,4,5]
+Output: false
+Explanation: No two subarrays of size 2 have the same sum.
+Example 3:
+
+Input: nums = [0,0,0]
+Output: true
+Explanation: The subarrays [nums[0],nums[1]] and [nums[1],nums[2]] have the same sum of 0. 
+Note that even though the subarrays have the same content, the two subarrays are considered different because they are in different positions in the original array.
+ 
+
+Constraints:
+
+2 <= nums.length <= 1000
+-109 <= nums[i] <= 109;=;=https://leetcode.com/problems/find-subarrays-with-equal-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/7089114/100-beats-easy-and-beginner-friendly-has-hudn/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/7025023/java-hashset-on-time-on-space-simple-cle-odem/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/5829840/brute-and-optimized-by-dixon_n-o9s8/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/5500193/beats-9999-by-vibishraj-7nc0/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/2752712/simple-hashset-java-by-zeldox-5pzo/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/6626574/easy-to-understand-by-dummy_nick-f9e3/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/5177816/simple-easy-to-understand-java-code-beat-bm8h/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/2525034/beginner-friendly-explained-1ms-by-coder-q8g0/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/6301784/1ms-beats-100-7-line-code-java-by-galani-kr3h/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/2524703/java-hashset-by-kanojiyakaran-n5vv/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/5917231/simple-hashmap-solution-java100-by-rajna-apee/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/6625750/easy-java-soln-by-cgmbsf6kpt-13t5/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/6154015/easy-java-solution-brute-force-approach-19j05/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/2528111/easy-java-super-fast-set-concise-by-lil_-co42/;;https://leetcode.com/problems/find-subarrays-with-equal-sum/solutions/2525149/java-solution-by-siddhant_1602-oo2k/;;;=;==;=;=;

@@ -1,0 +1,45 @@
+1166. Design File System;=;=Medium;=;=FileSystem     public FileSystem()                     public boolean createPath(String path, int value)                     public int get(String path)             /  Your FileSystem object will be instantiated and called as such:  FileSystem obj = new FileSystem();  boolean param_1 = obj.createPath(path,value);  int param_2 = obj.get(path);;=;=You are asked to design a file system that allows you to create new paths and associate them with different values.
+
+The format of a path is one or more concatenated strings of the form: / followed by one or more lowercase English letters. For example, "/leetcode" and "/leetcode/problems" are valid paths while an empty string "" and "/" are not.
+
+Implement the FileSystem class:
+
+bool createPath(string path, int value) Creates a new path and associates a value to it if possible and returns true. Returns false if the path already exists or its parent path doesn't exist.
+int get(string path) Returns the value associated with path or returns -1 if the path doesn't exist.
+ 
+
+Example 1:
+
+Input: 
+["FileSystem","createPath","get"]
+[[],["/a",1],["/a"]]
+Output: 
+[null,true,1]
+Explanation: 
+FileSystem fileSystem = new FileSystem();
+
+fileSystem.createPath("/a", 1); // return true
+fileSystem.get("/a"); // return 1
+Example 2:
+
+Input: 
+["FileSystem","createPath","createPath","get","createPath","get"]
+[[],["/leet",1],["/leet/code",2],["/leet/code"],["/c/d",1],["/c"]]
+Output: 
+[null,true,true,2,false,-1]
+Explanation: 
+FileSystem fileSystem = new FileSystem();
+
+fileSystem.createPath("/leet", 1); // return true
+fileSystem.createPath("/leet/code", 2); // return true
+fileSystem.get("/leet/code"); // return 2
+fileSystem.createPath("/c/d", 1); // return false because the parent path "/c" doesn't exist.
+fileSystem.get("/c"); // return -1 because this path doesn't exist.
+ 
+
+Constraints:
+
+2 <= path.length <= 100
+1 <= value <= 109
+Each path is valid and consists of lowercase English letters and '/'.
+At most 104 calls in total will be made to createPath and get.;=;=https://leetcode.com/problems/design-file-system/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/design-file-system/solutions/5744253/java-solution-sdds-interview-acceptable-ervwq/;;https://leetcode.com/problems/design-file-system/solutions/4227949/trie-java-by-whr2021-djl8/;;https://leetcode.com/problems/design-file-system/solutions/4419233/java-trie-by-bwanave-fu4z/;;https://leetcode.com/problems/design-file-system/solutions/3558249/trie-data-structure-design-file-system-b-kvss/;;https://leetcode.com/problems/design-file-system/solutions/6964741/file-system-with-hashmap-by-chinmayabv-dj9y/;;https://leetcode.com/problems/design-file-system/solutions/6964739/file-system-with-hashmap-by-chinmayabv-kdz6/;;https://leetcode.com/problems/design-file-system/solutions/6859470/simple-java-solution-using-hashmap-by-ak-wne8/;;https://leetcode.com/problems/design-file-system/solutions/6674916/java-solution-by-mlogn-qxg7/;;https://leetcode.com/problems/design-file-system/solutions/6365058/hashmap-split-parent-index-by-dhuynh205-wh3t/;;https://leetcode.com/problems/design-file-system/solutions/6318872/java-trie-by-zesj-20c2/;;https://leetcode.com/problems/design-file-system/solutions/6098634/solution-using-hashmap-beats-100-by-gaur-qeae/;;https://leetcode.com/problems/design-file-system/solutions/6070118/java-easy-100-solution-by-ytchouar-hax3/;;https://leetcode.com/problems/design-file-system/solutions/6070113/java-easy-solution-with-map-by-ytchouar-697g/;;https://leetcode.com/problems/design-file-system/solutions/5896296/java-hashmap-solution-by-krishnateja007-xo06/;;https://leetcode.com/problems/design-file-system/solutions/4957168/java-hashmap-by-tbekpro-8zpr/;;;=;==;=;=;

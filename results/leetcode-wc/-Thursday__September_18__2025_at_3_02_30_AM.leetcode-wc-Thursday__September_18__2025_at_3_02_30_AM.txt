@@ -1,0 +1,31 @@
+2275. Largest Combination With Bitwise AND Greater Than Zero;=;=Medium;=;=publicÊintÊlargestCombination(int[]Êcandidates);=;=The bitwise AND of an array nums is the bitwise AND of all integers in nums.
+
+For example, for nums = [1, 5, 3], the bitwise AND is equal to 1 & 5 & 3 = 1.
+Also, for nums = [7], the bitwise AND is 7.
+You are given an array of positive integers candidates. Compute the bitwise AND for all possible combinations of elements in the candidates array.
+
+Return the size of the largest combination of candidates with a bitwise AND greater than 0.
+
+Ê
+
+Example 1:
+
+Input: candidates = [16,17,71,62,12,24,14]
+Output: 4
+Explanation: The combination [16,17,62,24] has a bitwise AND of 16 & 17 & 62 & 24 = 16 > 0.
+The size of the combination is 4.
+It can be shown that no combination with a size greater than 4 has a bitwise AND greater than 0.
+Note that more than one combination may have the largest size.
+For example, the combination [62,12,24,14] has a bitwise AND of 62 & 12 & 24 & 14 = 8 > 0.
+Example 2:
+
+Input: candidates = [8,8]
+Output: 2
+Explanation: The largest combination [8,8] has a bitwise AND of 8 & 8 = 8 > 0.
+The size of the combination is 2, so we return 2.
+Ê
+
+Constraints:
+
+1 <= candidates.length <= 105
+1 <= candidates[i] <= 107;=;=https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017268/easiest-solution-beats-100-c-java-python-8qht/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017206/beats-100-explained-step-by-step-most-co-n73j/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/2039903/javacpython-bit-solution-by-lee215-ioae/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017296/lets-understand-in-simple-way-o1-space-o-k80q/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017386/array-beats-9524-two-approaches-solution-8fkp/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/2039813/javapython-3-bit-manipulation-w-explanat-cwei/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017231/clean-and-fully-explained-code-step-by-s-3wm9/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017643/easy-solution-o1-space-simple-explanatio-5l7l/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6020009/simple-pyjava-explained-hash-counting-by-ffnf/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017548/bit-by-bit-finding-the-biggest-combo-by-th71q/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017295/largest-combination-with-bitwise-and-gre-k18w/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6018910/bitwise-and-meets-optimization-efficient-bgbp/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017267/easy-solution-beats-100-check-each-bit-s-zwl4/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017407/simple-and-easy-solution-largest-combina-echh/;;https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6017970/very-easy-detailed-solution-on-bitmanipu-5t68/;;;=;==;=;=;

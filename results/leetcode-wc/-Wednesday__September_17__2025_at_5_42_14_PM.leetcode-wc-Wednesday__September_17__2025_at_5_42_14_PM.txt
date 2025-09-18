@@ -1,0 +1,23 @@
+1314. Matrix Block Sum;=;=Medium;=;=public int[][] matrixBlockSum(int[][] mat, int k);=;=Given a m x n matrix mat and an integer k, return a matrix answer where each answer[i][j] is the sum of all elements mat[r][c] for:
+
+i - k <= r <= i + k,
+j - k <= c <= j + k, and
+(r, c) is a valid position in the matrix.
+ 
+
+Example 1:
+
+Input: mat = [[1,2,3],[4,5,6],[7,8,9]], k = 1
+Output: [[12,21,16],[27,45,33],[24,39,28]]
+Example 2:
+
+Input: mat = [[1,2,3],[4,5,6],[7,8,9]], k = 2
+Output: [[45,45,45],[45,45,45],[45,45,45]]
+ 
+
+Constraints:
+
+m == mat.length
+n == mat[i].length
+1 <= m, n, k <= 100
+1 <= mat[i][j] <= 100;=;=https://leetcode.com/problems/matrix-block-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/matrix-block-sum/solutions/561884/java-dp-solution-clean-code-omn-by-dipar-27ij/;;https://leetcode.com/problems/matrix-block-sum/solutions/1484196/java-fast-solution-omn-by-zihaohan-uev0/;;https://leetcode.com/problems/matrix-block-sum/solutions/3996810/easy-solution-prefix-sum-range-sum-2d-lo-fo66/;;https://leetcode.com/problems/matrix-block-sum/solutions/4488101/easy-java-solution-based-on-prefix-sum-b-a1vw/;;https://leetcode.com/problems/matrix-block-sum/solutions/838172/java-prefix-sum-by-aksharkashyap-x7sd/;;https://leetcode.com/problems/matrix-block-sum/solutions/3515360/java-easy-solution-by-dipesh_12-nxwp/;;https://leetcode.com/problems/matrix-block-sum/solutions/3160155/java-solution-1-ms-beats-100-by-abstract-e0ae/;;https://leetcode.com/problems/matrix-block-sum/solutions/2645671/java-solution-with-hard-code-loop-array-a6w1c/;;https://leetcode.com/problems/matrix-block-sum/solutions/4676300/java-explained-2d-prefix-sum-concept-in-rw4zr/;;https://leetcode.com/problems/matrix-block-sum/solutions/3456842/java-solution-easy-to-understand-by-neel-qmgj/;;https://leetcode.com/problems/matrix-block-sum/solutions/1257786/java-prefix-sum-with-explanation-by-pras-vh2x/;;https://leetcode.com/problems/matrix-block-sum/solutions/1437029/prefix-sum-java-by-jatin1408-xaeo/;;https://leetcode.com/problems/matrix-block-sum/solutions/2651950/brute-force-matrix-block-sum-better-than-qpsx/;;https://leetcode.com/problems/matrix-block-sum/solutions/482820/matrix-block-sum-in-java-by-nid_95-bx0y/;;https://leetcode.com/problems/matrix-block-sum/solutions/2292090/my-java-solution-by-yxp5-h6ig/;;;=;==;=;=;

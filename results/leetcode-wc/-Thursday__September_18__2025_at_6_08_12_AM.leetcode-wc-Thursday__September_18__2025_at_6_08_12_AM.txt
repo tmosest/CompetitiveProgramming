@@ -1,0 +1,49 @@
+3291. Minimum Number of Valid Strings to Form Target I;=;=Medium;=;=public int minValidStrings(String[] words, String target);=;=You are given an array of strings words and a string target.
+
+A string x is called valid if x is a prefix of any string in words.
+
+Return the minimum number of valid strings that can be concatenated to form target. If it is not possible to form target, return -1.
+
+ 
+
+Example 1:
+
+Input: words = ["abc","aaaaa","bcdef"], target = "aabcdabc"
+
+Output: 3
+
+Explanation:
+
+The target string can be formed by concatenating:
+
+Prefix of length 2 of words[1], i.e. "aa".
+Prefix of length 3 of words[2], i.e. "bcd".
+Prefix of length 3 of words[0], i.e. "abc".
+Example 2:
+
+Input: words = ["abababab","ab"], target = "ababaababa"
+
+Output: 2
+
+Explanation:
+
+The target string can be formed by concatenating:
+
+Prefix of length 5 of words[0], i.e. "ababa".
+Prefix of length 5 of words[0], i.e. "ababa".
+Example 3:
+
+Input: words = ["abcdef"], target = "xyz"
+
+Output: -1
+
+ 
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length <= 5 * 103
+The input is generated such that sum(words[i].length) <= 105.
+words[i] consists only of lowercase English letters.
+1 <= target.length <= 5 * 103
+target consists only of lowercase English letters.;=;=https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5789298/easy-video-solution-critical-thinking-ho-f71v/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5788559/simple-java-solution-by-ram4366-lxqs/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5788357/java-clean-trie-solution-by-shree_govind-qdfl/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5790407/the-description-should-clarify-that-it-i-rwv0/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5788581/minimum-number-of-valid-strings-to-form-7vcpw/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6729848/java-triedp-by-shashankmore47-l8sf/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6693576/java-trie-greedy-approach-by-cheercode-8ufm/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6671647/kmp-java-beats-90-by-ivakhnenko-zb0z/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6625369/java-solution-using-trie-by-senareddy-xv13/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/6528455/simple-java-solution-by-sakshikishore-7pwa/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5881127/simple-and-easy-java-solution-using-trie-0hkr/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5881120/simple-and-easy-java-solution-using-trie-6ak5/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5831506/java-solution-trie-dp-memo-tabulation-bo-e3sa/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5814985/java-dp-tle-educational-by-muddassirzfr-57ak/;;https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/solutions/5811056/easy-java-solution-by-danish_jamil-p0up/;;;=;==;=;=;

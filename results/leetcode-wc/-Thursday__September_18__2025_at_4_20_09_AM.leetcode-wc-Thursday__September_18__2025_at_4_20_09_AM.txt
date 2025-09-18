@@ -1,0 +1,30 @@
+2546. Apply Bitwise Operations to Make Strings Equal;=;=Medium;=;=public boolean makeStringsEqual(String s, String target);=;=You are given two 0-indexed binary strings s and target of the same length n. You can do the following operation on s any number of times:
+
+Choose two different indices i and j where 0 <= i, j < n.
+Simultaneously, replace s[i] with (s[i] OR s[j]) and s[j] with (s[i] XOR s[j]).
+For example, if s = "0110", you can choose i = 0 and j = 2, then simultaneously replace s[0] with (s[0] OR s[2] = 0 OR 1 = 1), and s[2] with (s[0] XOR s[2] = 0 XOR 1 = 1), so we will have s = "1110".
+
+Return true if you can make the string s equal to target, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: s = "1010", target = "0110"
+Output: true
+Explanation: We can do the following operations:
+- Choose i = 2 and j = 0. We have now s = "0010".
+- Choose i = 2 and j = 1. We have now s = "0110".
+Since we can make s equal to target, we return true.
+Example 2:
+
+Input: s = "11", target = "00"
+Output: false
+Explanation: It is not possible to make s equal to target with any number of operations.
+ 
+
+Constraints:
+
+n == s.length == target.length
+2 <= n <= 105
+s and target consist of only the digits 0 and 1.;=;=https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3083831/javacpython-1-line-check-1-by-lee215-sc2u/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3084076/java-easy-bit-manipulation-with-explanat-ko37/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3083931/javapython-3-analysis-results-short-code-hbmf/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3083887/java-solution-check-if-only-0-or-1-in-st-28f1/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3084277/easy-java-solution-by-husanboy1223-lzxx/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3085893/java-2-solutions-by-sourin_bruh-9qdp/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3083985/my-simple-java-solution-by-rudy_mentary-0boq/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3084298/java-count-approach-easiest-ac-by-amanag-u33s/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3093965/java-easy-sol-1ms-by-himanshu_gupta-27mc/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/3085651/java-easy-to-understand-bitwise-operatio-nsr9/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/6538904/greedy-java-solution-by-chiragnayak10-whio/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/6418010/one-line-solutioin-by-egu0-evzg/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/5397342/so-simple-java-code-100-by-karthikeya112-aroi/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/5295740/logic-java-on-o1-by-wangcai20-4elg/;;https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/solutions/4870388/apply-bitwise-operations-to-make-strings-napp/;;;=;==;=;=;

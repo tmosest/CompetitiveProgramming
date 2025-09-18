@@ -1,0 +1,27 @@
+2133. Check if Every Row and Column Contains All Numbers;=;=Easy;=;=public boolean checkValid(int[][] matrix);=;=An n x n matrix is valid if every row and every column contains all the integers from 1 to n (inclusive).
+
+Given an n x n integer matrix matrix, return true if the matrix is valid. Otherwise, return false.
+
+ 
+
+Example 1:
+
+
+Input: matrix = [[1,2,3],[3,1,2],[2,3,1]]
+Output: true
+Explanation: In this case, n = 3, and every row and column contains the numbers 1, 2, and 3.
+Hence, we return true.
+Example 2:
+
+
+Input: matrix = [[1,1,1],[1,2,3],[1,2,3]]
+Output: false
+Explanation: In this case, n = 3, but the first row and the first column do not contain the numbers 2 or 3.
+Hence, we return false.
+ 
+
+Constraints:
+
+n == matrix.length == matrix[i].length
+1 <= n <= 100
+1 <= matrix[i][j] <= n;=;=https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/1677019/javapython-3-two-codes-w-brief-analysis-igo5d/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/7138044/2d-hashmap-simulation-for-matrix-validat-fc5e/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/7137511/easy-java-solution-check-if-every-row-an-c2gh/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/2513380/easy-java-solutionhashsetbeginner-friend-5gs7/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/6499481/beats-100-no-hashsets-and-extra-spaces-o-dt32/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/1677209/using-hashset-in-java-by-vallimahitha-tmof/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/6878919/beats-90-beginner-friendly-no-set-only-f-tnha/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/6314733/easyv-solution-in-java-by-sathurnithy-11wl/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/6638339/brute-simple-readable-by-dhanusubramanir-jbp0/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/2536700/java-5-liner-solution-using-set-by-im_kr-gvr2/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/5247339/easy-to-understand-in-depth-by-abhishekk-jgbp/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/2648171/java-simple-array-by-asia95-u1je/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/6254223/heres-the-simple-java-solution-by-jagank-see7/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/2499373/easy-fast-solution-by-hurshidbek-o8w5/;;https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/1690841/simple-java-code-for-beginners-to-unders-wgms/;;;=;==;=;=;

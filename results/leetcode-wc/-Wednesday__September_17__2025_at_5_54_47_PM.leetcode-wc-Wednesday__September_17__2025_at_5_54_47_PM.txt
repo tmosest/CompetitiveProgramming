@@ -1,0 +1,38 @@
+3149. Find the Minimum Cost Array Permutation;=;=Hard;=;=public int[] findPermutation(int[] nums);=;=You are given an array nums which is a permutation of [0, 1, 2, ..., n - 1]. The score of any permutation of [0, 1, 2, ..., n - 1] named perm is defined as:
+
+score(perm) = |perm[0] - nums[perm[1]]| + |perm[1] - nums[perm[2]]| + ... + |perm[n - 1] - nums[perm[0]]|
+
+Return the permutation perm which has the minimum possible score. If multiple permutations exist with this score, return the one that is lexicographically smallest among them.
+
+ 
+
+Example 1:
+
+Input: nums = [1,0,2]
+
+Output: [0,1,2]
+
+Explanation:
+
+
+
+The lexicographically smallest permutation with minimum cost is [0,1,2]. The cost of this permutation is |0 - 0| + |1 - 2| + |2 - 1| = 2.
+
+Example 2:
+
+Input: nums = [0,2,1]
+
+Output: [0,2,1]
+
+Explanation:
+
+
+
+The lexicographically smallest permutation with minimum cost is [0,2,1]. The cost of this permutation is |0 - 1| + |2 - 2| + |1 - 0| = 2.
+
+ 
+
+Constraints:
+
+2 <= n == nums.length <= 14
+nums is a permutation of [0, 1, 2, ..., n - 1].;=;=https://leetcode.com/problems/find-the-minimum-cost-array-permutation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-minimum-cost-array-permutation/solutions/5145934/java-python-solution-with-full-explanati-tyqb/;;https://leetcode.com/problems/find-the-minimum-cost-array-permutation/solutions/5145581/bitset-dp-by-jeffreyhu8-2mih/;;https://leetcode.com/problems/find-the-minimum-cost-array-permutation/solutions/5149529/simple-java-solution-beats-100using-simp-ag42/;;https://leetcode.com/problems/find-the-minimum-cost-array-permutation/solutions/5246564/java-solution-bitmask-dp-by-ritwik-kapoo-83z7/;;https://leetcode.com/problems/find-the-minimum-cost-array-permutation/solutions/5149305/simple-backtracking-solution-java-by-chi-wm5k/;;https://leetcode.com/problems/find-the-minimum-cost-array-permutation/solutions/5145863/find-the-minimum-cost-array-permutation-vyjy4/;;https://leetcode.com/problems/find-the-minimum-cost-array-permutation/solutions/5145806/java-clean-solution-weekly-contest-hard-l52ia/;;;=;==;=;=;

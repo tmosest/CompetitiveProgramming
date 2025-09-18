@@ -1,0 +1,26 @@
+1776. Car Fleet II;=;=Hard;=;=public double[] getCollisionTimes(int[][] cars);=;=There are n cars traveling at different speeds in the same direction along a one-lane road. You are given an array cars of length n, where cars[i] = [positioni, speedi] represents:
+
+positioni is the distance between the ith car and the beginning of the road in meters. It is guaranteed that positioni < positioni+1.
+speedi is the initial speed of the ith car in meters per second.
+For simplicity, cars can be considered as points moving along the number line. Two cars collide when they occupy the same position. Once a car collides with another car, they unite and form a single car fleet. The cars in the formed fleet will have the same position and the same speed, which is the initial speed of the slowest car in the fleet.
+
+Return an array answer, where answer[i] is the time, in seconds, at which the ith car collides with the next car, or -1 if the car does not collide with the next car. Answers within 10-5 of the actual answers are accepted.
+
+ 
+
+Example 1:
+
+Input: cars = [[1,2],[2,1],[4,3],[7,2]]
+Output: [1.00000,-1.00000,3.00000,-1.00000]
+Explanation: After exactly one second, the first car will collide with the second car, and form a car fleet with speed 1 m/s. After exactly 3 seconds, the third car will collide with the fourth car, and form a car fleet with speed 2 m/s.
+Example 2:
+
+Input: cars = [[3,4],[5,4],[6,3],[9,1]]
+Output: [2.00000,1.00000,1.50000,-1.00000]
+ 
+
+Constraints:
+
+1 <= cars.length <= 105
+1 <= positioni, speedi <= 106
+positioni < positioni+1;=;=https://leetcode.com/problems/car-fleet-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/car-fleet-ii/solutions/1105620/java-clean-on-monotonic-stack-solution-d-0km5/;;https://leetcode.com/problems/car-fleet-ii/solutions/1085910/java-onlgn-priorityqueue-detailed-though-gkxf/;;https://leetcode.com/problems/car-fleet-ii/solutions/1288777/very-easy-to-understand-java-solution-wi-2s9i/;;https://leetcode.com/problems/car-fleet-ii/solutions/3953457/based-on-concept-of-car-fleet-1-intuitio-3ekb/;;https://leetcode.com/problems/car-fleet-ii/solutions/2376003/simple-java-solution-with-explanation-pr-439o/;;https://leetcode.com/problems/car-fleet-ii/solutions/1391663/java-simple-stack-solution-by-darkrwe-dr0b/;;https://leetcode.com/problems/car-fleet-ii/solutions/6684123/java-solution-stack-implemented-using-qu-e7lj/;;https://leetcode.com/problems/car-fleet-ii/solutions/6101574/java-monotonic-stack-by-atulraju-xm8y/;;https://leetcode.com/problems/car-fleet-ii/solutions/6101571/monotonic-stack-by-atulraju-qody/;;https://leetcode.com/problems/car-fleet-ii/solutions/6104887/simplest-java-code-by-rohan4518-3trx/;;https://leetcode.com/problems/car-fleet-ii/solutions/5577890/monostack-soln-by-vharshal1994-urnr/;;https://leetcode.com/problems/car-fleet-ii/solutions/4661895/java-easy-solution-in-on-time-using-stac-1bqf/;;https://leetcode.com/problems/car-fleet-ii/solutions/5185295/java-easy-to-understand-solution-by-sart-unyz/;;https://leetcode.com/problems/car-fleet-ii/solutions/4248630/java-on-by-code_786-6e7t/;;https://leetcode.com/problems/car-fleet-ii/solutions/3910341/java-solution-using-stack-by-subodhhalpa-vz7j/;;;=;==;=;=;

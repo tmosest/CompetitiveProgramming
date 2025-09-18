@@ -1,0 +1,19 @@
+1163. Last Substring in Lexicographical Order;=;=Hard;=;=public String lastSubstring(String s);=;=Given a string s, return the last substring of s in lexicographical order.
+
+ 
+
+Example 1:
+
+Input: s = "abab"
+Output: "bab"
+Explanation: The substrings are ["a", "ab", "aba", "abab", "b", "ba", "bab"]. The lexicographically maximum substring is "bab".
+Example 2:
+
+Input: s = "leetcode"
+Output: "tcode"
+ 
+
+Constraints:
+
+1 <= s.length <= 4 * 105
+s contains only lowercase English letters.;=;=https://leetcode.com/problems/last-substring-in-lexicographical-order/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/6817396/guaranteed-understanding-most-easy-way-t-98tr/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/5188777/java-beats-100-by-deleted_user-7xjy/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/1964848/java-beats-10000-memoryspeed-0ms-april-2-n5bl/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/1549342/easy-java-solution-by-raghu6306766-fgep/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/632575/java-solution-simple-code-by-dingningpei-9ms1/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/822722/easy-to-understand-java-solution-by-vdb2-w5s3/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/1027880/java-solution-with-explanation-by-knight-hjj6/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/824177/accepted-on2-solution-with-explanation-2-kun4/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/6545633/optimal-java-solution-by-endisnotdestiny-9bfk/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/6521115/intuitive-on-solution-with-explanation-l-wput/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/6307999/beats-9737-two-pointer-approach-last-sub-afk2/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/6307998/beats-9737-two-pointer-approach-last-sub-4d3w/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/5935185/last-substring-in-lexicographical-order-4gi9q/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/5380250/onlogn-time-suffix-array-in-java-by-corv-rqxz/;;https://leetcode.com/problems/last-substring-in-lexicographical-order/solutions/5141560/java-easy-solution-by-palak_gaur-tj3v/;;;=;==;=;=;

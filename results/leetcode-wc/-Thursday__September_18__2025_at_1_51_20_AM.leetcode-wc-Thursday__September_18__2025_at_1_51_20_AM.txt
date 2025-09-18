@@ -1,0 +1,27 @@
+1301. Number of Paths with Max Score;=;=Hard;=;=public int[] pathsWithMaxScore(List<String> board);=;=You are given a square board of characters. You can move on the board starting at the bottom right square marked with the character 'S'.
+
+You need to reach the top left square marked with the character 'E'. The rest of the squares are labeled either with a numeric character 1, 2, ..., 9 or with an obstacle 'X'. In one move you can go up, left or up-left (diagonally) only if there is no obstacle there.
+
+Return a list of two integers: the first integer is the maximum sum of numeric characters you can collect, and the second is the number of such paths that you can take to get that maximum sum, taken modulo 10^9 + 7.
+
+In case there is no path, return [0, 0].
+
+ 
+
+Example 1:
+
+Input: board = ["E23","2X2","12S"]
+Output: [7,1]
+Example 2:
+
+Input: board = ["E12","1X1","21S"]
+Output: [4,2]
+Example 3:
+
+Input: board = ["E11","XXX","11S"]
+Output: [0,0]
+ 
+
+Constraints:
+
+2 <= board.length == board[i].length <= 100;=;=https://leetcode.com/problems/number-of-paths-with-max-score/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-paths-with-max-score/solutions/7086592/bfs-dp-java-by-ashutosh_prajapati1205-29cu/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/6885884/3d-dp-on2-by-gitchuan-hfsf/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/3281924/simple-java-memoization-solution-omn-bea-8z12/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/5492355/tabular-dp-in-java-by-vamshichanda-sj76/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/1061031/dp-on-memory-by-madno-td8c/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/3784194/1732-ms-bfs-java-dp-by-yash_nayak03-fvar/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/6982386/tried-bottom-up-approach-for-this-questi-5zjo/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/6935537/java-beats-100-dynamic-programming-on2-b-e1sr/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/6925219/number-of-paths-with-max-scoren-x-m-by-p-c6pq/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/6549069/dynamic-programming-java-by-desi1997-iqjw/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/6240141/on2-solution-100-effecient-by-deepakpate-1m40/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/6223692/simple-java-solution-by-sakshikishore-xe03/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/6023474/java-dp-solution-by-precel332-wsbw/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/5819238/number-of-path-with-max-score-simplified-frn2/;;https://leetcode.com/problems/number-of-paths-with-max-score/solutions/5456261/normal-dp-solution-by-akshay_gupta_7-nlhp/;;;=;==;=;=;

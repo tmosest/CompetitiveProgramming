@@ -1,0 +1,39 @@
+295. Find Median from Data Stream;=;=Hard;=;=MedianFinder     public MedianFinder()                     public void addNum(int num)                     public double findMedian()             /  Your MedianFinder object will be instantiated and called as such:  MedianFinder obj = new MedianFinder();  obj.addNum(num);  double param_2 = obj.findMedian();;=;=The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.
+
+For example, for arr = [2,3,4], the median is 3.
+For example, for arr = [2,3], the median is (2 + 3) / 2 = 2.5.
+Implement the MedianFinder class:
+
+MedianFinder() initializes the MedianFinder object.
+void addNum(int num) adds the integer num from the data stream to the data structure.
+double findMedian() returns the median of all elements so far. Answers within 10-5 of the actual answer will be accepted.
+ 
+
+Example 1:
+
+Input
+["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"]
+[[], [1], [2], [], [3], []]
+Output
+[null, null, null, 1.5, null, 2.0]
+
+Explanation
+MedianFinder medianFinder = new MedianFinder();
+medianFinder.addNum(1);    // arr = [1]
+medianFinder.addNum(2);    // arr = [1, 2]
+medianFinder.findMedian(); // return 1.5 (i.e., (1 + 2) / 2)
+medianFinder.addNum(3);    // arr[1, 2, 3]
+medianFinder.findMedian(); // return 2.0
+ 
+
+Constraints:
+
+-105 <= num <= 105
+There will be at least one element in the data structure before calling findMedian.
+At most 5 * 104 calls will be made to addNum and findMedian.
+ 
+
+Follow up:
+
+If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
+If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?;=;=https://leetcode.com/problems/find-median-from-data-stream/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-median-from-data-stream/solutions/74047/javapython-two-heap-solution-olog-n-add-gh8zw/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/6893447/beats-9920-simply-explained-optimal-solu-8qlu/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/7169689/very-easy-java-solution-using-two-heaps-4s2ny/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/7079263/beginner-friendly-solution-by-navneeth_k-4u87/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/7154301/java-priority-queue-solution-by-shreyaga-dsj0/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/74049/share-my-java-solution-logn-to-insert-o1-n324/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/7033639/easy-java-code-using-priority-queue-beat-f1en/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/7139744/easy-code-in-java-using-heappriority-que-k12d/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/6250159/interview-follow-ups-by-shruti_goyal-ux9d/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/6897981/find-median-from-data-stream-two-heaps-m-0zdj/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/6192753/easiest-explanation-best-solution-priori-qd8j/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/1506078/java-detailed-code-solutions-for-follow-5lb70/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/2805899/java-easy-solution-using-for-loop-arrayl-cyvb/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/6268409/single-multiset-track-the-median-using-i-ihet/;;https://leetcode.com/problems/find-median-from-data-stream/solutions/6089194/simple-solution-with-diagrams-in-video-j-w0se/;;;=;==;=;=;

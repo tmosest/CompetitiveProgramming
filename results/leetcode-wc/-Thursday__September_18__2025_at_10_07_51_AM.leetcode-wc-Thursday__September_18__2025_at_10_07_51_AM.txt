@@ -1,0 +1,30 @@
+1590. Make Sum Divisible by P;=;=Medium;=;=public int minSubarray(int[] nums, int p);=;=Given an array of positive integers nums, remove the smallest subarray (possibly empty) such that the sum of the remaining elements is divisible by p. It is not allowed to remove the whole array.
+
+Return the length of the smallest subarray that you need to remove, or -1 if it's impossible.
+
+A subarray is defined as a contiguous block of elements in the array.
+
+ 
+
+Example 1:
+
+Input: nums = [3,1,4,2], p = 6
+Output: 1
+Explanation: The sum of the elements in nums is 10, which is not divisible by 6. We can remove the subarray [4], and the sum of the remaining elements is 6, which is divisible by 6.
+Example 2:
+
+Input: nums = [6,3,5,2], p = 9
+Output: 2
+Explanation: We cannot remove a single element to get a sum divisible by 9. The best way is to remove the subarray [5,2], leaving us with [6,3] with sum 9.
+Example 3:
+
+Input: nums = [1,2,3], p = 3
+Output: 0
+Explanation: Here the sum is 6. which is already divisible by 3. Thus we do not need to remove anything.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109
+1 <= p <= 109;=;=https://leetcode.com/problems/make-sum-divisible-by-p/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5862793/fastest-way-to-make-sum-divisible-by-p-i-czuw/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5862950/interview-like-explanation-understand-on-ps1b/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5862777/simple-and-easy-to-understand-beats-93-p-ybq2/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/6913561/minimum-subarray-removal-to-make-sum-div-6ax9/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5863728/solution-by-dare2solve-detailed-explanat-ahby/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5863099/on-c77ms-beats-10000-java-python-prefix-dmcvi/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/1413318/java-simple-on-on-solution-by-akandak-1jh2/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5863180/java-clean-solution-by-shree_govind_jee-r3bb/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/2282512/java-prefix-sum-and-hashmap-with-comment-7pdd/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5863668/beats-super-easy-beginners-by-codewithsp-nwhk/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/6560658/hashmap-approach-beats-95-by-chonyx-16op/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5103390/java-solution-by-mantosh_kumar04-aycv/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5862909/make-sum-divisible-by-p-easy-explanation-f2nt/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5863491/using-hashmap-by-narendra_sai-fh4z/;;https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5862997/java-solution-for-make-sum-divisible-by-uufbe/;;;=;==;=;=;

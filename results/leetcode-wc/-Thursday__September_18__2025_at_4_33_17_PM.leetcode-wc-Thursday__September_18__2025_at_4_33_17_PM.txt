@@ -1,0 +1,37 @@
+305. Number of Islands II;=;=Hard;=;=public List<Integer> numIslands2(int m, int n, int[][] positions);=;=You are given an empty 2D binary grid grid of size m x n. The grid represents a map where 0's represent water and 1's represent land. Initially, all the cells of grid are water cells (i.e., all the cells are 0's).
+
+We may perform an add land operation which turns the water at position into a land. You are given an array positions where positions[i] = [ri, ci] is the position (ri, ci) at which we should operate the ith operation.
+
+Return an array of integers answer where answer[i] is the number of islands after turning the cell (ri, ci) into a land.
+
+An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+
+ 
+
+Example 1:
+
+
+Input: m = 3, n = 3, positions = [[0,0],[0,1],[1,2],[2,1]]
+Output: [1,1,2,3]
+Explanation:
+Initially, the 2d grid is filled with water.
+- Operation #1: addLand(0, 0) turns the water at grid[0][0] into a land. We have 1 island.
+- Operation #2: addLand(0, 1) turns the water at grid[0][1] into a land. We still have 1 island.
+- Operation #3: addLand(1, 2) turns the water at grid[1][2] into a land. We have 2 islands.
+- Operation #4: addLand(2, 1) turns the water at grid[2][1] into a land. We have 3 islands.
+Example 2:
+
+Input: m = 1, n = 1, positions = [[0,0]]
+Output: [1]
+ 
+
+Constraints:
+
+1 <= m, n, positions.length <= 104
+1 <= m * n <= 104
+positions[i].length == 2
+0 <= ri < m
+0 <= ci < n
+ 
+
+Follow up: Could you solve it in time complexity O(k log(mn)), where k == positions.length?;=;=https://leetcode.com/problems/number-of-islands-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-islands-ii/solutions/75470/easiest-java-solution-with-explanations-pwl9g/;;https://leetcode.com/problems/number-of-islands-ii/solutions/75459/javapython-clear-solution-with-unionfind-2sq5/;;https://leetcode.com/problems/number-of-islands-ii/solutions/75545/share-my-java-union-find-solution-by-jea-jw8x/;;https://leetcode.com/problems/number-of-islands-ii/solutions/2906941/java-straightforward-dfs-without-tle-ol-fabio/;;https://leetcode.com/problems/number-of-islands-ii/solutions/75497/java-union-find-with-rank-beats-98-easy-n6e0c/;;https://leetcode.com/problems/number-of-islands-ii/solutions/1124694/union-find-for-dummies-like-me-85-faster-rla4/;;https://leetcode.com/problems/number-of-islands-ii/solutions/479693/intuitive-disjoint-set-union-find-in-jav-78d1/;;https://leetcode.com/problems/number-of-islands-ii/solutions/75517/java-simple-union-find-solution-beating-cmtko/;;https://leetcode.com/problems/number-of-islands-ii/solutions/3315075/solution-by-deleted_user-7mii/;;https://leetcode.com/problems/number-of-islands-ii/solutions/1387996/java-union-find-clean-easy-to-understand-9lib/;;https://leetcode.com/problems/number-of-islands-ii/solutions/4597738/python-solution-according-to-editorial-t-pkc4/;;https://leetcode.com/problems/number-of-islands-ii/solutions/2816463/java-simple-solution-by-prasantb-upql/;;https://leetcode.com/problems/number-of-islands-ii/solutions/1900629/java-union-find-clean-code-with-comments-2029/;;https://leetcode.com/problems/number-of-islands-ii/solutions/75519/share-my-union-find-solution-based-on-we-12xd/;;https://leetcode.com/problems/number-of-islands-ii/solutions/75555/java-non-union-find-solution-involved-ma-6z0z/;;;=;==;=;=;

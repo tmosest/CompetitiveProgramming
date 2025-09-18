@@ -1,0 +1,30 @@
+2801. Count Stepping Numbers in Range;=;=Hard;=;=public int countSteppingNumbers(String low, String high);=;=Given two positive integers low and high represented as strings, find the count of stepping numbers in the inclusive range [low, high].
+
+A stepping number is an integer such that all of its adjacent digits have an absolute difference of exactly 1.
+
+Return an integer denoting the count of stepping numbers in the inclusive range [low, high].
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+Note: A stepping number should not have a leading zero.
+
+ 
+
+Example 1:
+
+Input: low = "1", high = "11"
+Output: 10
+Explanation: The stepping numbers in the range [1,11] are 1, 2, 3, 4, 5, 6, 7, 8, 9 and 10. There are a total of 10 stepping numbers in the range. Hence, the output is 10.
+Example 2:
+
+Input: low = "90", high = "101"
+Output: 2
+Explanation: The stepping numbers in the range [90,101] are 98 and 101. There are a total of 2 stepping numbers in the range. Hence, the output is 2. 
+ 
+
+Constraints:
+
+1 <= int(low) <= int(high) < 10100
+1 <= low.length, high.length <= 100
+low and high consist of only digits.
+low and high don't have any leading zeros.;=;=https://leetcode.com/problems/count-stepping-numbers-in-range/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/7109257/if-you-still-dont-understand-quit-leetco-lkcl/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3836353/digit-dp-solution-easy-to-understand-by-pj7zg/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3836469/javacpppython-digits-dp-self-explanatory-02v8/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3839285/complete-contest-video-solution-c-java-b-akxc/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3836664/java-by-adityapandey1-43v8/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3850158/digit-dp-java-by-melxin618-48cc/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/5472325/4d-dp-how-do-i-find-a-number-stepping-nu-jyu9/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/6942332/java-dp-solution-by-precel332-tzb7/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/4672522/clearly-explained-digit-dp-top-down-java-06ei/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/4026619/java-simple-solution-by-prasantb-lyus/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3953722/digit-dp-solution-by-chhota_bheem-yjiy/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3874584/3d-dp-tabulation-on-time-complexity-by-s-c4fv/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3844297/simple-dp-with-inclusion-exclusion-by-sh-2und/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3839949/java-beats-100-memory-by-huanli01008-n0t9/;;https://leetcode.com/problems/count-stepping-numbers-in-range/solutions/3838397/dp-solution-with-explanation-java-100-fa-e6kw/;;;=;==;=;=;

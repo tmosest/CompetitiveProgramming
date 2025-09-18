@@ -1,0 +1,31 @@
+2855. Minimum Right Shifts to Sort the Array;=;=Easy;=;=public int minimumRightShifts(List<Integer> nums);=;=You are given a 0-indexed array nums of length n containing distinct positive integers. Return the minimum number of right shifts required to sort nums and -1 if this is not possible.
+
+A right shift is defined as shifting the element at index i to index (i + 1) % n, for all indices.
+
+ 
+
+Example 1:
+
+Input: nums = [3,4,5,1,2]
+Output: 2
+Explanation: 
+After the first right shift, nums = [2,3,4,5,1].
+After the second right shift, nums = [1,2,3,4,5].
+Now nums is sorted; therefore the answer is 2.
+Example 2:
+
+Input: nums = [1,3,5]
+Output: 0
+Explanation: nums is already sorted therefore, the answer is 0.
+Example 3:
+
+Input: nums = [2,1,4]
+Output: -1
+Explanation: It's impossible to sort the array using right shifts.
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100
+nums contains distinct integers.;=;=https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4052102/simple-easy-java-solution-with-explanati-fwwp/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/6940657/easy-way-java-try-this-by-sairangineeni-jygw/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4055007/java-easy-by-ydvaaman-wfzs/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4052096/simple-approach-get-min-rotate-the-array-rpc6/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4896031/easy-brute-force-soln-by-sumo25-o5ty/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4053017/beginner-level-solution-used-collections-kqe9/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4052861/simple-first-thought-one-pass-on-by-gaur-9nef/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4135502/simple-java-solution-with-fewer-lines-an-waeh/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4052558/java-find-correct-position-in-sorted-arr-bcxp/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4059216/minimum-right-shifts-to-sort-the-array-b-eszt/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4058783/simple-java-approach-by-saiganeshdarni-y2w2/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/4052614/easy-solutioncjava-by-apurvjain7827-04z9/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/7120854/10-min-for-thinking-10-for-coding-thats-qj5zf/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/7051284/simple-solution-using-java-by-srinivasan-jgo0/;;https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/solutions/6863992/java-new-and-easy-to-understand-the-code-xq0d/;;;=;==;=;=;

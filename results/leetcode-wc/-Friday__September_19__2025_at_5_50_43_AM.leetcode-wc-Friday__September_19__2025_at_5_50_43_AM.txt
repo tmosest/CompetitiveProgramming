@@ -1,0 +1,21 @@
+1121. Divide Array Into Increasing Sequences;=;=Hard;=;=public boolean canDivideIntoSubsequences(int[] nums, int k);=;=Given an integer array nums sorted in non-decreasing order and an integer k, return true if this array can be divided into one or more disjoint increasing subsequences of length at least k, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,2,3,3,4,4], k = 3
+Output: true
+Explanation: The array can be divided into two subsequences [1,2,3,4] and [2,3,4] with lengths at least 3 each.
+Example 2:
+
+Input: nums = [5,6,6,7,8], k = 3
+Output: false
+Explanation: There is no way to divide the array using the conditions required.
+ 
+
+Constraints:
+
+1 <= k <= nums.length <= 105
+1 <= nums[i] <= 105
+nums is sorted in non-decreasing order.;=;=https://leetcode.com/problems/divide-array-into-increasing-sequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/divide-array-into-increasing-sequences/solutions/4302107/easy-intuitive-java-solution-by-goyalaka-t50l/;;https://leetcode.com/problems/divide-array-into-increasing-sequences/solutions/3987342/simple-java-solution-by-sakshikishore-1gdv/;;https://leetcode.com/problems/divide-array-into-increasing-sequences/solutions/3564165/solution-by-deleted_user-w22g/;;;=;==;=;=;

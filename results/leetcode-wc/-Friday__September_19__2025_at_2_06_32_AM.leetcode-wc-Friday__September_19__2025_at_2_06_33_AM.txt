@@ -1,0 +1,27 @@
+2645. Minimum Additions to Make Valid String;=;=Medium;=;=public int addMinimum(String word);=;=Given a string word to which you can insert letters "a", "b" or "c" anywhere and any number of times, return the minimum number of letters that must be inserted so that word becomes valid.
+
+A string is called valid if it can be formed by concatenating the string "abc" several times.
+
+ 
+
+Example 1:
+
+Input: word = "b"
+Output: 2
+Explanation: Insert the letter "a" right before "b", and the letter "c" right next to "b" to obtain the valid string "abc".
+Example 2:
+
+Input: word = "aaa"
+Output: 6
+Explanation: Insert letters "b" and "c" next to each "a" to obtain the valid string "abcabcabc".
+Example 3:
+
+Input: word = "abc"
+Output: 0
+Explanation: word is already valid. No modifications are needed. 
+ 
+
+Constraints:
+
+1 <= word.length <= 50
+word consists of letters "a", "b" and "c" only.;=;=https://leetcode.com/problems/minimum-additions-to-make-valid-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3421831/javacpython-easy-and-concise-with-explan-bj9h/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3421709/c-java-python-on-greedy-solution-easy-to-p8dg/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3421989/circular-matching-constant-space-by-xxvv-yoi3/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/6469147/optimized-solution-using-two-pointers-ja-vb94/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3421694/simple-java-solution-by-siddhant_1602-78ey/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/7198915/java-solution-by-codernoobie111-elvt/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3421739/java-c-python-simple-and-fastest-solutio-v9ai/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/4640514/easy10-line-code-java-solution-on-beats-jtpdq/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3421996/java-on-solution-by-mohithaakash-ub95/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3422456/easy-8-line-code-2-approaches-by-shubhi4-5mr7/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3423089/java-simple-and-best-solution-by-kashi_2-7m5i/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/4544060/simple-java-solution-with-beats-1ms-code-ymu4/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3429950/java-solution-easy-to-understand-by-roha-ymdb/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3421723/java-two-pointers-on-by-nishant7372-g8tb/;;https://leetcode.com/problems/minimum-additions-to-make-valid-string/solutions/3553528/faster-than-light-10-line-java-code-fast-fi4o/;;;=;==;=;=;

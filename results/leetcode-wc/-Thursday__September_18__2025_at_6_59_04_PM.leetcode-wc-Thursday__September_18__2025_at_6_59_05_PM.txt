@@ -1,0 +1,25 @@
+2165. Smallest Value of the Rearranged Number;=;=Medium;=;=public long smallestNumber(long num);=;=You are given an integer num. Rearrange the digits of num such that its value is minimized and it does not contain any leading zeros.
+
+Return the rearranged number with minimal value.
+
+Note that the sign of the number does not change after rearranging the digits.
+
+ 
+
+Example 1:
+
+Input: num = 310
+Output: 103
+Explanation: The possible arrangements for the digits of 310 are 013, 031, 103, 130, 301, 310. 
+The arrangement with the smallest value that does not contain any leading zeros is 103.
+Example 2:
+
+Input: num = -7605
+Output: -7650
+Explanation: Some possible arrangements for the digits of -7605 are -7650, -6705, -5076, -0567.
+The arrangement with the smallest value that does not contain any leading zeros is -7650.
+ 
+
+Constraints:
+
+-1015 <= num <= 1015;=;=https://leetcode.com/problems/smallest-value-of-the-rearranged-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/7052373/smallest-number-rearrangement-minimize-b-m1dr/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/1748635/java-easy-to-understand-by-hengjunlin112-ikpj/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/6769069/smallest-value-of-the-rearranged-number-vcx2b/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/1748778/java-solution-using-count-array-explaine-h8qe/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/7190826/easy-java-solution-by-just-sort-and-swap-xed5/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/5803076/easy-to-understand-java-solution-with-so-k6pu/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/2484081/java-easy-intuitive-solution-by-ritabrat-z4i4/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/1758544/frequency-array-java-beats-99-by-clasiqh-oqpa/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/3440878/beats-100-java-easy-to-understand-on-log-0hmf/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/1748443/java-by-aaveshk-qhg9/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/1748532/new-to-coding-need-help-with-this-dirty-m6a1a/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/2504956/java-solution-sorting-by-sourin_bruh-yn20/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/1850308/java-by-jstm2022-vrkj/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/1748570/solve-by-first-creating-an-array-of-all-s4wk5/;;https://leetcode.com/problems/smallest-value-of-the-rearranged-number/solutions/1750419/java-too-much-code-inside-by-abhishek_11-witn/;;;=;==;=;=;

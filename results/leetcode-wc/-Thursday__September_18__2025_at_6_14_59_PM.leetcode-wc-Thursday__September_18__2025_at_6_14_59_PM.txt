@@ -1,0 +1,39 @@
+1622. Fancy Sequence;=;=Hard;=;=FancyÊÊÊÊÊpublicÊFancy()ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊvoidÊappend(intÊval)ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊvoidÊaddAll(intÊinc)ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊvoidÊmultAll(intÊm)ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊintÊgetIndex(intÊidx)ÊÊÊÊÊÊÊÊÊÊÊÊÊ/ÊÊYourÊFancyÊobjectÊwillÊbeÊinstantiatedÊandÊcalledÊasÊsuch:ÊÊFancyÊobjÊ=ÊnewÊFancy();ÊÊobj.append(val);ÊÊobj.addAll(inc);ÊÊobj.multAll(m);ÊÊintÊparam_4Ê=Êobj.getIndex(idx);;=;=Write an API that generates fancy sequences using the append, addAll, and multAll operations.
+
+Implement the Fancy class:
+
+Fancy() Initializes the object with an empty sequence.
+void append(val) Appends an integer val to the end of the sequence.
+void addAll(inc) Increments all existing values in the sequence by an integer inc.
+void multAll(m) Multiplies all existing values in the sequence by an integer m.
+int getIndex(idx) Gets the current value at index idx (0-indexed) of the sequence modulo 109 + 7. If the index is greater or equal than the length of the sequence, return -1.
+Ê
+
+Example 1:
+
+Input
+["Fancy", "append", "addAll", "append", "multAll", "getIndex", "addAll", "append", "multAll", "getIndex", "getIndex", "getIndex"]
+[[], [2], [3], [7], [2], [0], [3], [10], [2], [0], [1], [2]]
+Output
+[null, null, null, null, null, 10, null, null, null, 26, 34, 20]
+
+Explanation
+Fancy fancy = new Fancy();
+fancy.append(2);   // fancy sequence: [2]
+fancy.addAll(3);   // fancy sequence: [2+3] -> [5]
+fancy.append(7);   // fancy sequence: [5, 7]
+fancy.multAll(2);  // fancy sequence: [5*2, 7*2] -> [10, 14]
+fancy.getIndex(0); // return 10
+fancy.addAll(3);   // fancy sequence: [10+3, 14+3] -> [13, 17]
+fancy.append(10);  // fancy sequence: [13, 17, 10]
+fancy.multAll(2);  // fancy sequence: [13*2, 17*2, 10*2] -> [26, 34, 20]
+fancy.getIndex(0); // return 26
+fancy.getIndex(1); // return 34
+fancy.getIndex(2); // return 20
+Ê
+
+Constraints:
+
+1 <= val, inc, m <= 100
+0 <= idx <= 105
+At most 105 calls total will be made to append, addAll, multAll, and getIndex.;=;=https://leetcode.com/problems/fancy-sequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/fancy-sequence/solutions/5302105/java-code-running-by-vivekvardhan43862-qpm9/;;https://leetcode.com/problems/fancy-sequence/solutions/898906/java-solution-by-devwithin-5ado/;;https://leetcode.com/problems/fancy-sequence/solutions/1662540/java-cache-the-operations-runtime-116ms-p19is/;;https://leetcode.com/problems/fancy-sequence/solutions/3884928/simple-java-solution-by-sakshikishore-mo05/;;https://leetcode.com/problems/fancy-sequence/solutions/2309293/0ms1liner100fastest-solution-explained-o-sefv/;;https://leetcode.com/problems/fancy-sequence/solutions/7095046/record-operations-and-cache-results-by-l-6g15/;;https://leetcode.com/problems/fancy-sequence/solutions/6354581/java-by-karthi_saravanan_t-zy29/;;https://leetcode.com/problems/fancy-sequence/solutions/6279188/1622-fancy-sequence-by-g8xd0qpqty-dmub/;;https://leetcode.com/problems/fancy-sequence/solutions/3630530/fancy-sequence-with-binary-indexed-tree-sq7i6/;;https://leetcode.com/problems/fancy-sequence/solutions/3125283/difficulty-as-hard-but-easy-solution-by-q0l3h/;;;=;==;=;=;

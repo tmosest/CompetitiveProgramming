@@ -1,0 +1,44 @@
+3260. Find the Largest Palindrome Divisible by K;=;=Hard;=;=public String largestPalindrome(int n, int k);=;=You are given two positive integers n and k.
+
+An integer x is called k-palindromic if:
+
+x is a palindrome.
+x is divisible by k.
+Return the largest integer having n digits (as a string) that is k-palindromic.
+
+Note that the integer must not have leading zeros.
+
+ 
+
+Example 1:
+
+Input: n = 3, k = 5
+
+Output: "595"
+
+Explanation:
+
+595 is the largest k-palindromic integer with 3 digits.
+
+Example 2:
+
+Input: n = 1, k = 4
+
+Output: "8"
+
+Explanation:
+
+4 and 8 are the only k-palindromic integers with 1 digit.
+
+Example 3:
+
+Input: n = 5, k = 6
+
+Output: "89898"
+
+ 
+
+Constraints:
+
+1 <= n <= 105
+1 <= k <= 9;=;=https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5657358/very-simple-java-solutionbrute-force-by-bmh6d/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5653396/simple-math-based-solution-with-explanat-l3p6/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5732877/onk10-solution-digit-dp-beats-100-by-its-atka/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5669989/java-easy-dp-solution-by-kartikeysemwal-smuu/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5654497/simple-solution-no-dp-beats-100-by-umarm-zscu/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/6166956/pure-mathematics-by-s_u_04-fmq9/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/6055772/brute-force-solution-by-risabhuchiha-f4di/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5724986/cook-by-v9pt-sqmb/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5683095/java-solution-using-digit-dp-by-java_pro-o4op/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5676934/find-the-largest-palindrome-divisible-by-6qhe/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5675303/java-solution-by-charlie-tej-123-qbci/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5667719/crafting-the-perfect-palindrome-the-art-wbowz/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5662341/java-solution-no-used-dp-by-keshavkr_cod-f5x4/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5660566/seriously-by-nbkflab-m3x8/;;https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/solutions/5657271/problem-3-by-anubhav_bajpai-166x/;;;=;==;=;=;

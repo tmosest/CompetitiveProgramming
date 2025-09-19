@@ -1,0 +1,32 @@
+2549. Count Distinct Numbers on Board;=;=Easy;=;=public int distinctIntegers(int n);=;=You are given a positive integer n, that is initially placed on a board. Every day, for 109 days, you perform the following procedure:
+
+For each number x present on the board, find all numbers 1 <= i <= n such that x % i == 1.
+Then, place those numbers on the board.
+Return the number of distinct integers present on the board after 109 days have elapsed.
+
+Note:
+
+Once a number is placed on the board, it will remain on it until the end.
+% stands for the modulo operation. For example, 14 % 3 is 2.
+ 
+
+Example 1:
+
+Input: n = 5
+Output: 4
+Explanation: Initially, 5 is present on the board. 
+The next day, 2 and 4 will be added since 5 % 2 == 1 and 5 % 4 == 1. 
+After that day, 3 will be added to the board because 4 % 3 == 1. 
+At the end of a billion days, the distinct numbers on the board will be 2, 3, 4, and 5. 
+Example 2:
+
+Input: n = 3
+Output: 2
+Explanation: 
+Since 3 % 2 == 1, 2 will be added to the board. 
+After a billion days, the only two distinct numbers on the board are 2 and 3. 
+ 
+
+Constraints:
+
+1 <= n <= 100;=;=https://leetcode.com/problems/count-distinct-numbers-on-board/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/7184984/easy-code-for-solve-this-problem-by-4_k4-zfqt/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/3111651/javacpython-return-n-1-by-lee215-nrhy/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/3111679/1-liner-straight-forward-by-byegates-brnf/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/6764364/optimized-count-of-reachable-numbers-via-1clw/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/3111637/java-explained-by-sourin_bruh-xdm6/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/6445789/leetcodedaybyday-1-line-beats-100-with-c-oam7/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/6786194/fastest-and-most-efficient-solution-beat-24je/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/7201571/single-line-java-solution-0-ms-by-harish-hppb/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/7195195/easy-by-_dhaksha-01-rz1l/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/7195191/easy-2-line-solution-by-devendran9993-2jbr/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/7195184/1-line-java-code-easy-100-0ms-by-devast2-99lt/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/7146084/2549-by-ashiqmohamed-cv7m/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/5579497/java-solution-distinct-integers-daily-ds-mcld/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/3111941/simple-java-o1-one-line-code-easy-beginn-h1zj/;;https://leetcode.com/problems/count-distinct-numbers-on-board/solutions/6367028/easy-2-line-solution-in-java-and-c-beati-n33h/;;;=;==;=;=;

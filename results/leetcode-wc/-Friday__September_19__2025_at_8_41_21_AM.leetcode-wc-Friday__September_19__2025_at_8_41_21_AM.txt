@@ -1,0 +1,34 @@
+1545. Find Kth Bit in Nth Binary String;=;=Medium;=;=publicÊcharÊfindKthBit(intÊn,ÊintÊk);=;=Given two positive integers n and k, the binary string Sn is formed as follows:
+
+S1 = "0"
+Si = Si - 1 + "1" + reverse(invert(Si - 1)) for i > 1
+Where + denotes the concatenation operation, reverse(x) returns the reversed string x, and invert(x) inverts all the bits in x (0 changes to 1 and 1 changes to 0).
+
+For example, the first four strings in the above sequence are:
+
+S1 = "0"
+S2 = "011"
+S3 = "0111001"
+S4 = "011100110110001"
+Return the kth bit in Sn. It is guaranteed that k is valid for the given n.
+
+Ê
+
+Example 1:
+
+Input: n = 3, k = 1
+Output: "0"
+Explanation: S3 is "0111001".
+The 1st bit is "0".
+Example 2:
+
+Input: n = 4, k = 11
+Output: "1"
+Explanation: S4 is "011100110110001".
+The 11th bit is "1".
+Ê
+
+Constraints:
+
+1 <= n <= 20
+1 <= k <= 2n - 1;=;=https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5934232/beats-10000-step-by-step-breakdown-by-wi-8lro/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/7185564/beats-100-by-satyam_sagar-q90y/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5934300/fbi-open-up-binary-search-69_beats_100ea-dh9l/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5934497/interveiwers-expect-iterative-approach-w-qm3r/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5935189/very-detailed-illustration-explained-ful-7lzl/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/7029253/simple-recursion-approach-by-kshivhare-o4jr/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/2494211/java-simple-recursive-solution-with-deta-lri2/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5935879/on-c-java-py3-0ms-beats-10000-easy-solut-f4is/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5934622/easy-solution-daily-question-191024-by-l-smm5/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5934420/simple-pyjava-using-iteration-and-simula-pk78/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5934547/from-naive-to-optimal-solutions-finding-o44t3/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/6522958/lengthy-but-easy-to-understand-using-rec-t9my/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/6800149/basic-recursive-way-to-solve-the-problem-ih0l/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5934549/find-k-th-bit-in-n-th-binary-string-easy-ycg3/;;https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/5934787/100-beats-recursive-simulation-approach-fnvx2/;;;=;==;=;=;

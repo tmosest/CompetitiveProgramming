@@ -1,0 +1,46 @@
+3591. Check if Any Element Has Prime Frequency;=;=Easy;=;=public boolean checkPrimeFrequency(int[] nums);=;=You are given an integer array nums.
+
+Return true if the frequency of any element of the array is prime, otherwise, return false.
+
+The frequency of an element x is the number of times it occurs in the array.
+
+A prime number is a natural number greater than 1 with only two factors, 1 and itself.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4,5,4]
+
+Output: true
+
+Explanation:
+
+4 has a frequency of two, which is a prime number.
+
+Example 2:
+
+Input: nums = [1,2,3,4,5]
+
+Output: false
+
+Explanation:
+
+All elements have a frequency of one.
+
+Example 3:
+
+Input: nums = [2,2,2,4,4]
+
+Output: true
+
+Explanation:
+
+Both 2 and 4 have a prime frequency.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+0 <= nums[i] <= 100;=;=https://leetcode.com/problems/check-if-any-element-has-prime-frequency/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6871930/javacpython-easy-and-concise-2357-by-lee-78iu/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/7169730/easy-code-by-sivaaleet-dlqp/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6871716/contest-solution-beginner-friendly-hashm-wcda/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6881199/faster-lesser-cpython3javacpythoncexplai-q8c4/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6886747/check-if-any-element-frequency-is-prime-7v86a/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/7072236/easy-has-prime-in-any-elements-java-100-d151i/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/7007135/check-if-any-element-has-prime-freq-on-t-uh4y/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6873014/beats-100-sieve-hashmap-on-solution-c-an-li6i/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6872126/simple-java-solution-using-arraylist-in-3v8tb/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6870819/seive-to-calculate-primes-easy-intuition-r4bk/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6872739/3591-check-if-any-element-has-prime-freq-g4yr/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6872697/using-hashmap-to-count-frequencies-and-c-net2/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6893179/check-if-any-element-has-prime-frequency-qhh7/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6875840/simple-explanation-easy-approach-beats-1-rpyx/;;https://leetcode.com/problems/check-if-any-element-has-prime-frequency/solutions/6888683/simple-beginner-friendly-java-hasharray-jvymf/;;;=;==;=;=;

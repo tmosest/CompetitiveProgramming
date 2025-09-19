@@ -1,0 +1,31 @@
+1805. Number of Different Integers in a String;=;=Easy;=;=public int numDifferentIntegers(String word);=;=You are given a string word that consists of digits and lowercase English letters.
+
+You will replace every non-digit character with a space. For example, "a123bc34d8ef34" will become " 123  34 8  34". Notice that you are left with some integers that are separated by at least one space: "123", "34", "8", and "34".
+
+Return the number of different integers after performing the replacement operations on word.
+
+Two integers are considered different if their decimal representations without any leading zeros are different.
+
+ 
+
+Example 1:
+
+Input: word = "a123bc34d8ef34"
+Output: 3
+Explanation: The three different integers are "123", "34", and "8". Notice that "34" is only counted once.
+Example 2:
+
+Input: word = "leet1234code234"
+Output: 2
+Example 3:
+
+Input: word = "a1b01c001"
+Output: 1
+Explanation: The three integers "1", "01", and "001" all represent the same integer because
+the leading zeros are ignored when comparing their decimal values.
+ 
+
+Constraints:
+
+1 <= word.length <= 1000
+word consists of digits and lowercase English letters.;=;=https://leetcode.com/problems/number-of-different-integers-in-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/7023278/fast-and-clear-with-iterations-in-tables-tnoo/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/1142964/java-set-and-regex-100-by-elulcao-1b58/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/6790548/beats-82-by-alexander_sergeev-aw9q/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/1211685/java-solution-by-jiaxichen-yy3p/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/7141340/splitregex-stream-setbiginteger-8ms-by-u-wxeb/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/4884063/4-ways-to-solve-in-java-beats-9446-runti-dd9o/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/6587304/slow-but-simple-by-dummy_nick-73ib/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/5790413/simple-solution-java-regex-replacefirst-cbtea/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/6264730/1ms-beats-100-proof-concise-code-java-be-lx44/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/3352357/simple-java-solution-kavinprashad_s-by-k-jicb/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/1372664/java-simple-solution-by-tunato-2ggw/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/3259214/java-set-and-regex-by-anjali_1502-cdzf/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/4888635/java-solution-by-thewolverinereturns-npck/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/1131001/java-solution-hashset-stringbuilder-bigi-qb2p/;;https://leetcode.com/problems/number-of-different-integers-in-a-string/solutions/4561941/simple-java-code-1-ms-beats-100-by-arobh-ds2x/;;;=;==;=;=;

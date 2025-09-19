@@ -1,0 +1,36 @@
+2128. Remove All Ones With Row and Column Flips;=;=Medium;=;=public boolean removeOnes(int[][] grid);=;=You are given an m x n binary matrix grid.
+
+In one operation, you can choose any row or column and flip each value in that row or column (i.e., changing all 0's to 1's, and all 1's to 0's).
+
+Return true if it is possible to remove all 1's from grid using any number of operations or false otherwise.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[0,1,0],[1,0,1],[0,1,0]]
+Output: true
+Explanation: One possible way to remove all 1's from grid is to:
+- Flip the middle row
+- Flip the middle column
+Example 2:
+
+
+Input: grid = [[1,1,0],[0,0,0],[0,0,0]]
+Output: false
+Explanation: It is impossible to remove all 1's from grid.
+Example 3:
+
+
+Input: grid = [[0]]
+Output: true
+Explanation: There are no 1's in grid.
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 300
+grid[i][j] is either 0 or 1.;=;=https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/1698026/java-solution-with-explanation-by-rkxyii-zyv6/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/1725536/java-simple-4-lines-explained-by-student-2u9d/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/1907860/demonstration-with-full-explanation-good-e52j/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/2089283/detailed-explanation-of-logic-with-code-ssn0g/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/2176908/java-3-line-logic-beats-99-by-alreadytak-4ism/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/1954383/java-simple-pattern-solution-by-acpierc3-datk/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/2448600/java-3-liner-by-bwanave-hnel/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/2251324/simple-java-solution-with-explanation-by-tqh5/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/2044018/java-easy-7-line-solution-with-explanati-347p/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/1729788/java-simple-solution-1-ms-pass-by-luthra-4zgr/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/1724085/java-simple-solution-by-rohittayal595-at8j/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/2280589/java-solution-with-approach-by-kshitiz3-t5e0/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/1877501/0ms-java-easy-understand-by-jacftlight-ke22/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/1857131/java-0ms-by-aps105-5662/;;https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/solutions/1708172/java-simple-approach-w-explanation-by-sh-x9hq/;;;=;==;=;=;

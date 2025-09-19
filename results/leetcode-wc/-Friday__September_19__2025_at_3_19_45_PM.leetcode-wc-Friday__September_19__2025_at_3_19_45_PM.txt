@@ -1,0 +1,26 @@
+2423. Remove Letter To Equalize Frequency;=;=Easy;=;=public boolean equalFrequency(String word);=;=You are given a 0-indexed string word, consisting of lowercase English letters. You need to select one index and remove the letter at that index from word so that the frequency of every letter present in word is equal.
+
+Return true if it is possible to remove one letter so that the frequency of all letters in word are equal, and false otherwise.
+
+Note:
+
+The frequency of a letter x is the number of times it occurs in the string.
+You must remove exactly one letter and cannot choose to do nothing.
+ 
+
+Example 1:
+
+Input: word = "abcc"
+Output: true
+Explanation: Select index 3 and delete it: word becomes "abc" and each character has a frequency of 1.
+Example 2:
+
+Input: word = "aazz"
+Output: false
+Explanation: We must delete a character, so either the frequency of "a" is 1 and the frequency of "z" is 2, or vice versa. It is impossible to make all present letters have equal frequency.
+ 
+
+Constraints:
+
+2 <= word.length <= 100
+word consists of lowercase English letters only.;=;=https://leetcode.com/problems/remove-letter-to-equalize-frequency/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/7173568/greedy-frequency-validation-by-yashkamba-l9v7/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/2646851/easy-to-understand-python-by-nomadac_cod-kxwo/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/2646998/java-faster-than-100-tc-on-sc-o1-easy-to-r9qe/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/5702124/simple-readable-solution-in-java-with-dr-lxqy/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/6209702/optimal-solution-with-0-ms-bruteforce-is-prvc/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/2646497/java-explaination-by-rj0711-exia/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/6739119/java-easy-100-solution-by-ytchouar-nzeg/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/4253046/java-c-python-100-0ms-on-10-lines-with-s-u696/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/6512528/logic-to-be-noted-by-enuguru_akshay-xods/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/6497106/frequencies-of-frequencies-by-doublebluf-ndhh/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/2646737/java-easy-to-understand-on-time-o1-space-2x96/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/2648059/java-fast-100-on-short-and-simple-soluti-bmad/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/2646718/java-easy-to-understandfixed-by-conchwu-gz6g/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/6330001/very-easy-to-solve-by-madhiarasan-f4v1/;;https://leetcode.com/problems/remove-letter-to-equalize-frequency/solutions/5076213/simple-java-solution-and-easy-to-underst-aiki/;;;=;==;=;=;

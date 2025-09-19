@@ -1,0 +1,36 @@
+1976. Number of Ways to Arrive at Destination;=;=Medium;=;=public int countPaths(int n, int[][] roads);=;=You are in a city that consists of n intersections numbered from 0 to n - 1 with bi-directional roads between some intersections. The inputs are generated such that you can reach any intersection from any other intersection and that there is at most one road between any two intersections.
+
+You are given an integer n and a 2D integer array roads where roads[i] = [ui, vi, timei] means that there is a road between intersections ui and vi that takes timei minutes to travel. You want to know in how many ways you can travel from intersection 0 to intersection n - 1 in the shortest amount of time.
+
+Return the number of ways you can arrive at your destination in the shortest amount of time. Since the answer may be large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+
+Input: n = 7, roads = [[0,6,7],[0,1,2],[1,2,3],[1,3,3],[6,3,3],[3,5,1],[6,5,1],[2,5,1],[0,4,5],[4,6,2]]
+Output: 4
+Explanation: The shortest amount of time it takes to go from intersection 0 to intersection 6 is 7 minutes.
+The four ways to get there in 7 minutes are:
+- 0 ? 6
+- 0 ? 4 ? 6
+- 0 ? 1 ? 2 ? 5 ? 6
+- 0 ? 1 ? 3 ? 5 ? 6
+Example 2:
+
+Input: n = 2, roads = [[1,0,10]]
+Output: 1
+Explanation: There is only one way to go from intersection 0 to intersection 1, and it takes 10 minutes.
+ 
+
+Constraints:
+
+1 <= n <= 200
+n - 1 <= roads.length <= n * (n - 1) / 2
+roads[i].length == 3
+0 <= ui, vi <= n - 1
+1 <= timei <= 109
+ui != vi
+There is at most one road connecting any two intersections.
+You can reach any intersection from any other intersection.;=;=https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6568355/dp-shortest-path-python-by-otabek_kholmi-9eb0/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6568432/easy-dijkstragraphfriendly-with-explain-94f5j/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/3979418/java-step-by-step-explained-simplest-sol-hw9c/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6569673/optimizing-shortest-paths-efficient-rout-wxq3/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/7112659/java-solution-using-dijkstra-with-explan-9ulk/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/7089800/number-of-ways-to-arrive-at-destination-u0azg/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6897158/java-dijkstras-algorithm-count-paths-cle-h0ui/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6983805/number-of-ways-to-arrive-at-destination-xm0y2/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6364228/beat-995-well-explained-java-solution-wi-hnl6/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6569937/dijkstra-n-logn-greedy-logic-by-1_b3-d7p6/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/5329609/dijkstra-pattern-by-dixon_n-b8co/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6568906/easy-code-must-try-by-notaditya09-ebvs/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6568971/java-solution-using-dijisktras-algo-by-d-o97i/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6539996/strivers-java-code-that-passes-all-testc-pjq9/;;https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6569166/simple-and-intuitive-explanation-using-d-qkht/;;;=;==;=;=;

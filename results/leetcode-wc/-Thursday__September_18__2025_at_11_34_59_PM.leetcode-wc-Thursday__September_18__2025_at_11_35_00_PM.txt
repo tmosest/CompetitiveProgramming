@@ -1,0 +1,24 @@
+2996. Smallest Missing Integer Greater Than Sequential Prefix Sum;=;=Easy;=;=public int missingInteger(int[] nums);=;=You are given a 0-indexed array of integers nums.
+
+A prefix nums[0..i] is sequential if, for all 1 <= j <= i, nums[j] = nums[j - 1] + 1. In particular, the prefix consisting only of nums[0] is sequential.
+
+Return the smallest integer x missing from nums such that x is greater than or equal to the sum of the longest sequential prefix.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,2,5]
+Output: 6
+Explanation: The longest sequential prefix of nums is [1,2,3] with a sum of 6. 6 is not in the array, therefore 6 is the smallest missing integer greater than or equal to the sum of the longest sequential prefix.
+Example 2:
+
+Input: nums = [3,4,5,1,12,14,13]
+Output: 15
+Explanation: The longest sequential prefix of nums is [3,4,5] with a sum of 12. 12, 13, and 14 belong to the array while 15 does not. Therefore 15 is the smallest missing integer greater than or equal to the sum of the longest sequential prefix.
+ 
+
+Constraints:
+
+1 <= nums.length <= 50
+1 <= nums[i] <= 50;=;=https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/4519104/easy-video-explanation-prefix-sum-sortin-m1yi/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/6948794/clean-and-beginner-friendly-logic-with-n-pzp8/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/6774002/easy-java-solution-by-aliyakhan26-ypj3/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/4522168/java-on-hashset-by-hobiter-5yao/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/4700232/simplest-way-to-solve-by-ambivert111-24da/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/5863103/simple-easy-to-understand-set-by-kdhakal-yet9/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/6747047/easy-java-solution-beats-100-by-tharu_21-r5pd/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/6601143/java-code-for-smallest-missing-integer-g-5y7y/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/7060743/0ms-boolean-lookup-explicit-by-user6181n-kdv1/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/6699992/beats-100-java-by-_rashad-r4o2/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/4518410/prefix-sum-sorting-by-hridoy100-xqzl/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/5279119/easy-brute-force-approach-in-java-by-cha-g7pk/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/4519206/beats-100-percent-user-and-also-very-eas-c9j5/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/6302615/easy-solution-in-java-by-sathurnithy-1l76/;;https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/5102333/easy-to-understandable-code-java-by-mant-n0u6/;;;=;==;=;=;

@@ -1,0 +1,34 @@
+2126. Destroying Asteroids;=;=Medium;=;=public boolean asteroidsDestroyed(int mass, int[] asteroids);=;=You are given an integer mass, which represents the original mass of a planet. You are further given an integer array asteroids, where asteroids[i] is the mass of the ith asteroid.
+
+You can arrange for the planet to collide with the asteroids in any arbitrary order. If the mass of the planet is greater than or equal to the mass of the asteroid, the asteroid is destroyed and the planet gains the mass of the asteroid. Otherwise, the planet is destroyed.
+
+Return true if all asteroids can be destroyed. Otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: mass = 10, asteroids = [3,9,19,5,21]
+Output: true
+Explanation: One way to order the asteroids is [9,19,5,3,21]:
+- The planet collides with the asteroid with a mass of 9. New planet mass: 10 + 9 = 19
+- The planet collides with the asteroid with a mass of 19. New planet mass: 19 + 19 = 38
+- The planet collides with the asteroid with a mass of 5. New planet mass: 38 + 5 = 43
+- The planet collides with the asteroid with a mass of 3. New planet mass: 43 + 3 = 46
+- The planet collides with the asteroid with a mass of 21. New planet mass: 46 + 21 = 67
+All asteroids are destroyed.
+Example 2:
+
+Input: mass = 5, asteroids = [4,9,23,4]
+Output: false
+Explanation: 
+The planet cannot ever gain enough mass to destroy the asteroid with a mass of 23.
+After the planet destroys the other asteroids, it will have a mass of 5 + 4 + 9 + 4 = 22.
+This is less than 23, so a collision would not destroy the last asteroid.
+ 
+
+Constraints:
+
+1 <= mass <= 105
+1 <= asteroids.length <= 105
+1 <= asteroids[i] <= 105;=;=https://leetcode.com/problems/destroying-asteroids/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/destroying-asteroids/solutions/7026917/beats-100-beginner-friendly-explanation-b3stp/;;https://leetcode.com/problems/destroying-asteroids/solutions/6619763/sorting-step-by-step-explained-c-by-lead-x63n/;;https://leetcode.com/problems/destroying-asteroids/solutions/1661044/javapython-3-sort-then-apply-greedy-algo-zur4/;;https://leetcode.com/problems/destroying-asteroids/solutions/6982201/on-runtime-solution-by-prathmesh00007-5mwl/;;https://leetcode.com/problems/destroying-asteroids/solutions/4494347/onlogn-on-full-explained-beats-100-javac-95pn/;;https://leetcode.com/problems/destroying-asteroids/solutions/7145430/java-solution-beats-70-using-sorting-on-ob0vt/;;https://leetcode.com/problems/destroying-asteroids/solutions/7122393/beats-69-using-arrayssort-by-alexander_s-r2cd/;;https://leetcode.com/problems/destroying-asteroids/solutions/7099835/java-simple-solution-sorting-summing-by-kftwq/;;https://leetcode.com/problems/destroying-asteroids/solutions/5435055/wana-destroy-asteroids-in-a-simple-way-b-gkni/;;https://leetcode.com/problems/destroying-asteroids/solutions/6764252/simple-greedy-sorting-passed-all-edge-ca-v51g/;;https://leetcode.com/problems/destroying-asteroids/solutions/1661107/java-sort-and-check-them-1-by-1-by-admin-o1g9/;;https://leetcode.com/problems/destroying-asteroids/solutions/4195146/simplest-ever-solution-by-manohar_001-ityt/;;https://leetcode.com/problems/destroying-asteroids/solutions/2295532/greedy-approch-by-aditya_jain_2584550188-cqcc/;;https://leetcode.com/problems/destroying-asteroids/solutions/2310138/easy-solutions-using-two-heaps-by-sricha-ondf/;;https://leetcode.com/problems/destroying-asteroids/solutions/1816956/self-explanatory-java-solution-by-arya_a-xu17/;;;=;==;=;=;

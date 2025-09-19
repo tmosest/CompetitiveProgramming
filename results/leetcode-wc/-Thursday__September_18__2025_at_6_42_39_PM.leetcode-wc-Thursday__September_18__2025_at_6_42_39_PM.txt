@@ -1,0 +1,23 @@
+1941. Check if All Characters Have Equal Number of Occurrences;=;=Easy;=;=public boolean areOccurrencesEqual(String s);=;=Given a string s, return true if s is a good string, or false otherwise.
+
+A string s is good if all the characters that appear in s have the same number of occurrences (i.e., the same frequency).
+
+ 
+
+Example 1:
+
+Input: s = "abacbc"
+Output: true
+Explanation: The characters that appear in s are 'a', 'b', and 'c'. All characters occur 2 times in s.
+Example 2:
+
+Input: s = "aaabb"
+Output: false
+Explanation: The characters that appear in s are 'a' and 'b'.
+'a' occurs 3 times while 'b' occurs 2 times, which is not the same number of times.
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/7128737/easy-code-for-solve-this-problem-by-4_k4-ehqz/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/1359946/commented-java-solution-100-faster-time-1mo5n/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/1407800/c-c-java-js-python-1-liner-simple-and-sh-66i2/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6231431/1941-check-if-all-characters-have-equal-ifoer/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6193282/easiest-solution-handling-all-edge-cases-jp0n/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6768582/hashmap-by-avinash516-ej17/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6773201/java-easy-solution-by-aryaman123-mt3b/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6700246/do-it-using-hashmap-and-hashset-very-eas-hgsh/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6824759/1941-check-if-all-characters-have-equal-of66y/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/1361147/my-java-solution-using-hashmap-can-also-uiw4w/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6347058/efficient-solution-using-hash-table-by-p-e23l/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6192049/very-easiest-code-in-java-for-beginners-p0pzm/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/7198965/using-frequency-array-of-26-length-by-pr-j8ge/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6651521/java-code-using-counting-frequencies-sim-f761/;;https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/solutions/6478074/easy-java-solution-flawlessly-beats-good-oxj0/;;;=;==;=;=;

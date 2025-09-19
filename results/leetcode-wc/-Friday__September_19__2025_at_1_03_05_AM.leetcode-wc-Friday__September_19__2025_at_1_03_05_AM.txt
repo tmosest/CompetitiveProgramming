@@ -1,0 +1,20 @@
+1133. Largest Unique Number;=;=Easy;=;=public int largestUniqueNumber(int[] nums);=;=Given an integer array nums, return the largest integer that only occurs once. If no integer occurs once, return -1.
+
+ 
+
+Example 1:
+
+Input: nums = [5,7,3,9,4,9,8,3,1]
+Output: 8
+Explanation: The maximum integer in the array is 9 but it is repeated. The number 8 occurs only once, so it is the answer.
+Example 2:
+
+Input: nums = [9,9,8,8]
+Output: -1
+Explanation: There is no number that occurs only once.
+ 
+
+Constraints:
+
+1 <= nums.length <= 2000
+0 <= nums[i] <= 1000;=;=https://leetcode.com/problems/largest-unique-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-unique-number/solutions/7197907/using-hashmap-and-counting-in-python-jav-lfaz/;;https://leetcode.com/problems/largest-unique-number/solutions/5857473/java-1ms-by-zxca183p-mmei/;;https://leetcode.com/problems/largest-unique-number/solutions/4037277/hashmap-solution-with-step-by-step-solut-rae8/;;https://leetcode.com/problems/largest-unique-number/solutions/7180643/java-on-time-hint-count-the-frequency-of-dao8/;;https://leetcode.com/problems/largest-unique-number/solutions/417025/java-on-time-o1-space-simple-explained-b-8xnj/;;https://leetcode.com/problems/largest-unique-number/solutions/7174614/java-solution-on-using-map-by-darakshan1-noh4/;;https://leetcode.com/problems/largest-unique-number/solutions/3675441/java-counting-sort-solution-by-fish12345-bow1/;;https://leetcode.com/problems/largest-unique-number/solutions/3533099/java-beat-100-with-o1-space-on-time-by-b-d6zq/;;https://leetcode.com/problems/largest-unique-number/solutions/838950/java-simple-solution-using-hash-map-by-c-ha3l/;;https://leetcode.com/problems/largest-unique-number/solutions/6668873/easy-to-understand-runtime-2ms-beats8797-bldv/;;https://leetcode.com/problems/largest-unique-number/solutions/5797232/easy-java-solution-by-mahmud202-dr1j/;;https://leetcode.com/problems/largest-unique-number/solutions/5706841/java-solution-using-hashmatcounting-meth-f4lq/;;https://leetcode.com/problems/largest-unique-number/solutions/5968286/accepted-java-solution-with-count-array-ub77b/;;https://leetcode.com/problems/largest-unique-number/solutions/6251023/simple-java-solution-on-by-user5849fi-g772/;;https://leetcode.com/problems/largest-unique-number/solutions/5875165/simple-java-solution-with-hashmap-by-sre-ge6l/;;;=;==;=;=;

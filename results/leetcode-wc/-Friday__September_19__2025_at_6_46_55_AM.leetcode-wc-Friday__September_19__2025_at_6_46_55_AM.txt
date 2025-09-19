@@ -1,0 +1,24 @@
+2651. Calculate Delayed Arrival Time;=;=Easy;=;=public int findDelayedArrivalTime(int arrivalTime, int delayedTime);=;=You are given a positive integer arrivalTime denoting the arrival time of a train in hours, and another positive integer delayedTime denoting the amount of delay in hours.
+
+Return the time when the train will arrive at the station.
+
+Note that the time in this problem is in 24-hours format.
+
+ 
+
+Example 1:
+
+Input: arrivalTime = 15, delayedTime = 5 
+Output: 20 
+Explanation: Arrival time of the train was 15:00 hours. It is delayed by 5 hours. Now it will reach at 15+5 = 20 (20:00 hours).
+Example 2:
+
+Input: arrivalTime = 13, delayedTime = 11
+Output: 0
+Explanation: Arrival time of the train was 13:00 hours. It is delayed by 11 hours. Now it will reach at 13+11=24 (Which is denoted by 00:00 in 24 hours format so return 0).
+ 
+
+Constraints:
+
+1 <= arrivaltime < 24
+1 <= delayedTime <= 24;=;=https://leetcode.com/problems/calculate-delayed-arrival-time/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/7137318/simple-java-solution-by-shubhamxgupta-qe8e/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/6285023/2651calculate-delayed-arrival-time-time-3imj3/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/7033250/java-beginner-beat-100-by-alagarsamy_r-6lz0/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/7032637/beats-100-0ms-simple-java-code-by-manoha-fv2k/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/3445952/easiest-best-solution-in-3-lines-time-o1-vmch/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/6910661/100-beat-java-solution-by-gokilaselvi-v444/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/3446040/leetcode-the-hard-way-one-line-by-tr1nit-kgiu/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/6793625/beats-100-javac-c-python-beginner-by-abh-stux/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/5114636/easiest-java-solution-100-0ms-by-rajarsh-tjqr/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/3445669/simple-java-solution-by-siddhant_1602-9xtz/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/7191958/java-by-devendran9993-q3vr/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/7182722/easy-by-sebasmusk-uuiy/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/7182715/club-algoritmia-1-by-alejogomez40-xo1c/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/6656203/easy-java-solution-by-bharanidharankumar-rjag/;;https://leetcode.com/problems/calculate-delayed-arrival-time/solutions/6510835/first-add-if-24-then-24-by-sairangineeni-hqna/;;;=;==;=;=;

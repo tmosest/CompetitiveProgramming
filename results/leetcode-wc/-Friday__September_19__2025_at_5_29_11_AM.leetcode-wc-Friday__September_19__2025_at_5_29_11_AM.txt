@@ -1,0 +1,32 @@
+115. Distinct Subsequences;=;=Hard;=;=public int numDistinct(String s, String t);=;=Given two strings s and t, return the number of distinct subsequences of s which equals t.
+
+The test cases are generated so that the answer fits on a 32-bit signed integer.
+
+ 
+
+Example 1:
+
+Input: s = "rabbbit", t = "rabbit"
+Output: 3
+Explanation:
+As shown below, there are 3 ways you can generate "rabbit" from s.
+rabbbit
+rabbbit
+rabbbit
+Example 2:
+
+Input: s = "babgbag", t = "bag"
+Output: 5
+Explanation:
+As shown below, there are 5 ways you can generate "bag" from s.
+babgbag
+babgbag
+babgbag
+babgbag
+babgbag
+ 
+
+Constraints:
+
+1 <= s.length, t.length <= 1000
+s and t consist of English letters.;=;=https://leetcode.com/problems/distinct-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/distinct-subsequences/solutions/37327/easy-to-understand-dp-in-java-by-balint-907o/;;https://leetcode.com/problems/distinct-subsequences/solutions/7185706/counting-distinct-subsequences-top-down-rgdiw/;;https://leetcode.com/problems/distinct-subsequences/solutions/7162745/easy-simple-java-solution-by-prakhar-131-377c/;;https://leetcode.com/problems/distinct-subsequences/solutions/7107326/overflow-fix-memorized-and-tabulated-sol-h226/;;https://leetcode.com/problems/distinct-subsequences/solutions/7109795/detailed-explanation-step-by-step-unders-jndm/;;https://leetcode.com/problems/distinct-subsequences/solutions/4177156/optimizing-string-subsequence-counting-a-0hru/;;https://leetcode.com/problems/distinct-subsequences/solutions/7080115/simple-java-insert-merge-easy-to-underst-7qc8/;;https://leetcode.com/problems/distinct-subsequences/solutions/7056260/recursive-memoization-tabulation-easy-to-ukm6/;;https://leetcode.com/problems/distinct-subsequences/solutions/37387/a-dp-solution-with-clarification-and-exp-oxpb/;;https://leetcode.com/problems/distinct-subsequences/solutions/7008002/simplest-java-code-by-harsh_raj-007-1e3k/;;https://leetcode.com/problems/distinct-subsequences/solutions/6986660/count-all-ways-distinct-subsequences-bea-6u2n/;;https://leetcode.com/problems/distinct-subsequences/solutions/6146114/1d-dp-solution-with-explanation-of-intri-r0x7/;;https://leetcode.com/problems/distinct-subsequences/solutions/6900496/similar-to-finite-coin-change-problem-dp-s40w/;;https://leetcode.com/problems/distinct-subsequences/solutions/5780041/lord-striver-easy-beginner-in-depth-expl-v8ua/;;https://leetcode.com/problems/distinct-subsequences/solutions/2738744/recursion-to-dp-optimise-easy-understand-2m36/;;;=;==;=;=;

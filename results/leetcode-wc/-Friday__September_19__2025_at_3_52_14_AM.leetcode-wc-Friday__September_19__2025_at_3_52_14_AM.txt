@@ -1,0 +1,28 @@
+2521. Distinct Prime Factors of Product of Array;=;=Medium;=;=public int distinctPrimeFactors(int[] nums);=;=Given an array of positive integers nums, return the number of distinct prime factors in the product of the elements of nums.
+
+Note that:
+
+A number greater than 1 is called prime if it is divisible by only 1 and itself.
+An integer val1 is a factor of another integer val2 if val2 / val1 is an integer.
+ 
+
+Example 1:
+
+Input: nums = [2,4,3,7,10,6]
+Output: 4
+Explanation:
+The product of all the elements in nums is: 2 * 4 * 3 * 7 * 10 * 6 = 10080 = 25 * 32 * 5 * 7.
+There are 4 distinct prime factors so we return 4.
+Example 2:
+
+Input: nums = [2,4,8,16]
+Output: 1
+Explanation:
+The product of all the elements in nums is: 2 * 4 * 8 * 16 = 1024 = 210.
+There is 1 distinct prime factor so we return 1.
+ 
+
+Constraints:
+
+1 <= nums.length <= 104
+2 <= nums[i] <= 1000;=;=https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/7115462/simple-java-solution-easy-to-understand-r5qdc/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/2977354/java-optimized-solution-by-beingatushar-78xu/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/2994472/java-8ms-optimized-by-byegates-5u5u/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/7204680/brute-force-approach-to-solve-distinct-p-hzrs/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/6219926/sieve-of-eratosthenes-by-sanchit1417-404c/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/6453833/solution-in-java-by-sathurnithy-qr8x/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/2978775/new-approach-100-efficient-and-unique-ap-71sd/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/2977829/java-brute-force-easy-by-sourin_bruh-ksto/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/3808215/simple-o168n-solution-solution-very-fast-zcix/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/2977488/java-solution-with-comments-easy-beats-1-36b9/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/2977624/simple-java-code-run-time-15-ms-beats-10-k8pf/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/3245965/java-beats-100-on-time-sol-by-nilavo-b75u/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/2977961/java-one-of-the-easiest-solution-with-ex-ye7d/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/2977340/2521-distinct-prime-factors-of-product-o-0q5p/;;https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/solutions/2977301/java-hashset-by-asd92-c3lr/;;;=;==;=;=;

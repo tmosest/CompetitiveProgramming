@@ -1,0 +1,45 @@
+2201. Count Artifacts That Can Be Extracted;=;=Medium;=;=public int digArtifacts(int n, int[][] artifacts, int[][] dig);=;=There is an n x n 0-indexed grid with some artifacts buried in it. You are given the integer n and a 0-indexed 2D integer array artifacts describing the positions of the rectangular artifacts where artifacts[i] = [r1i, c1i, r2i, c2i] denotes that the ith artifact is buried in the subgrid where:
+
+(r1i, c1i) is the coordinate of the top-left cell of the ith artifact and
+(r2i, c2i) is the coordinate of the bottom-right cell of the ith artifact.
+You will excavate some cells of the grid and remove all the mud from them. If the cell has a part of an artifact buried underneath, it will be uncovered. If all the parts of an artifact are uncovered, you can extract it.
+
+Given a 0-indexed 2D integer array dig where dig[i] = [ri, ci] indicates that you will excavate the cell (ri, ci), return the number of artifacts that you can extract.
+
+The test cases are generated such that:
+
+No two artifacts overlap.
+Each artifact only covers at most 4 cells.
+The entries of dig are unique.
+ 
+
+Example 1:
+
+
+Input: n = 2, artifacts = [[0,0,0,0],[0,1,1,1]], dig = [[0,0],[0,1]]
+Output: 1
+Explanation: 
+The different colors represent different artifacts. Excavated cells are labeled with a 'D' in the grid.
+There is 1 artifact that can be extracted, namely the red artifact.
+The blue artifact has one part in cell (1,1) which remains uncovered, so we cannot extract it.
+Thus, we return 1.
+Example 2:
+
+
+Input: n = 2, artifacts = [[0,0,0,0],[0,1,1,1]], dig = [[0,0],[0,1],[1,1]]
+Output: 2
+Explanation: Both the red and blue artifacts have all parts uncovered (labeled with a 'D') and can be extracted, so we return 2. 
+ 
+
+Constraints:
+
+1 <= n <= 1000
+1 <= artifacts.length, dig.length <= min(n2, 105)
+artifacts[i].length == 4
+dig[i].length == 2
+0 <= r1i, c1i, r2i, c2i, ri, ci <= n - 1
+r1i <= r2i
+c1i <= c2i
+No two artifacts will overlap.
+The number of cells covered by an artifact is at most 4.
+The entries of dig are unique.;=;=https://leetcode.com/problems/count-artifacts-that-can-be-extracted/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/1844551/java-easy_to_understand-by-iamcoderrr-kz15/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/1844309/java-clean-code-linear-by-akshay3213-lqqf/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/5444950/java-solution-by-danish_jamil-9exz/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/1844438/java-easy-clean-concise-readbale-code-si-w0xu/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/1845031/java-solution-using-bruteforce-by-amrita-j0f2/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/1845091/100-faster-solution-java-clean-code-by-c-ti7w/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/6357166/easy-simulation-based-solution-by-pui-pu-0pnb/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/6319803/java-hashset-by-zhang_jiabo-438d/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/5987307/set-java-onon-by-wangcai20-qwav/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/4417515/create-n-x-n-matrix-and-mark-the-digs-by-my8f/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/4245686/java-solution-hashset-pair-by-ndsjqwbbb-fxyf/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/4110378/java-beats-98-easy-solution-by-aayushila-cbof/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/3763780/only-array-usage-neat-explanationw-img-b-cuya/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/3601981/java-clean-and-clear-solution-by-stefane-q8lr/;;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/solutions/3599452/java-hashset-by-sumanshu03-mka7/;;;=;==;=;=;

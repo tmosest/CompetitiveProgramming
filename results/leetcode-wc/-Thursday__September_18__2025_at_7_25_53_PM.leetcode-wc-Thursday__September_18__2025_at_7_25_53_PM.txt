@@ -1,0 +1,32 @@
+2440. Create Components With Same Value;=;=Hard;=;=public int componentValue(int[] nums, int[][] edges);=;=There is an undirected tree with n nodes labeled from 0 to n - 1.
+
+You are given a 0-indexed integer array nums of length n where nums[i] represents the value of the ith node. You are also given a 2D integer array edges of length n - 1 where edges[i] = [ai, bi] indicates that there is an edge between nodes ai and bi in the tree.
+
+You are allowed to delete some edges, splitting the tree into multiple connected components. Let the value of a component be the sum of all nums[i] for which node i is in the component.
+
+Return the maximum number of edges you can delete, such that every connected component in the tree has the same value.
+
+ 
+
+Example 1:
+
+
+Input: nums = [6,2,2,2,6], edges = [[0,1],[1,2],[1,3],[3,4]] 
+Output: 2 
+Explanation: The above figure shows how we can delete the edges [0,1] and [3,4]. The created components are nodes [0], [1,2,3] and [4]. The sum of the values in each component equals 6. It can be proven that no better deletion exists, so the answer is 2.
+Example 2:
+
+Input: nums = [2], edges = []
+Output: 0
+Explanation: There are no edges to be deleted.
+ 
+
+Constraints:
+
+1 <= n <= 2 * 104
+nums.length == n
+1 <= nums[i] <= 50
+edges.length == n - 1
+edges[i].length == 2
+0 <= edges[i][0], edges[i][1] <= n - 1
+edges represents a valid tree.;=;=https://leetcode.com/problems/create-components-with-same-value/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/create-components-with-same-value/solutions/7073956/in-depth-explanation-factorization-brute-3sxx/;;https://leetcode.com/problems/create-components-with-same-value/solutions/2707267/easy-java-solution-by-sumitk7970-1qah/;;https://leetcode.com/problems/create-components-with-same-value/solutions/3253972/java-100-faster-easy-solution-no-recursi-10da/;;https://leetcode.com/problems/create-components-with-same-value/solutions/2725968/java-dfs-by-conchwu-x1pe/;;https://leetcode.com/problems/create-components-with-same-value/solutions/6328898/java-solution-by-nishaanth2696-flxl/;;https://leetcode.com/problems/create-components-with-same-value/solutions/6170332/easy-java-dfs-solution-by-debrup7703-4guo/;;https://leetcode.com/problems/create-components-with-same-value/solutions/6170263/intuitive-understandable-code-java-by-el-uqrv/;;https://leetcode.com/problems/create-components-with-same-value/solutions/5452323/java-solution-by-danish_jamil-mt1s/;;https://leetcode.com/problems/create-components-with-same-value/solutions/5351250/easy-java-dfs-by-gadepalli_keerthana-8j94/;;https://leetcode.com/problems/create-components-with-same-value/solutions/4996715/java-solution-topological-sort-by-ndsjqw-w9h9/;;https://leetcode.com/problems/create-components-with-same-value/solutions/4199441/java-by-gadmo-lkbm/;;https://leetcode.com/problems/create-components-with-same-value/solutions/4125574/javaeasy-to-understand-by-sanchit_jain-ncnr/;;https://leetcode.com/problems/create-components-with-same-value/solutions/2937512/java-optimal-solution-by-multi-thread-tp5m/;;https://leetcode.com/problems/create-components-with-same-value/solutions/2745103/simple-java-solution-by-piyushkumar2000-gt6c/;;https://leetcode.com/problems/create-components-with-same-value/solutions/2729344/java-complex-bfs-solution-commented-by-z-nwjn/;;;=;==;=;=;

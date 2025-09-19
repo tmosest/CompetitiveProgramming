@@ -1,0 +1,33 @@
+691. Stickers to Spell Word;=;=Hard;=;=public int minStickers(String[] stickers, String target);=;=We are given n different types of stickers. Each sticker has a lowercase English word on it.
+
+You would like to spell out the given string target by cutting individual letters from your collection of stickers and rearranging them. You can use each sticker more than once if you want, and you have infinite quantities of each sticker.
+
+Return the minimum number of stickers that you need to spell out target. If the task is impossible, return -1.
+
+Note: In all test cases, all words were chosen randomly from the 1000 most common US English words, and target was chosen as a concatenation of two random words.
+
+ 
+
+Example 1:
+
+Input: stickers = ["with","example","science"], target = "thehat"
+Output: 3
+Explanation:
+We can use 2 "with" stickers, and 1 "example" sticker.
+After cutting and rearrange the letters of those stickers, we can form the target "thehat".
+Also, this is the minimum number of stickers necessary to form the target string.
+Example 2:
+
+Input: stickers = ["notice","possible"], target = "basicbasic"
+Output: -1
+Explanation:
+We cannot form the target "basicbasic" from cutting letters from the given stickers.
+ 
+
+Constraints:
+
+n == stickers.length
+1 <= n <= 50
+1 <= stickers[i].length <= 10
+1 <= target.length <= 15
+stickers[i] and target consist of lowercase English letters.;=;=https://leetcode.com/problems/stickers-to-spell-word/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/stickers-to-spell-word/solutions/4024071/java-bfs-solution-by-gangjig-ow4v/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/5088354/java-bfs-with-frequency-match-by-suryawa-kpqo/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/962702/java-4-ms-100-bfs-explanation-and-comple-etfm/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/1804316/java-backtracking-memorization-faster-th-qg25/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/5437569/min-stepsstickers-means-bfs-by-user5299-glqg/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/6307308/recursive-memoization-diff-from-editoria-w25a/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/5609619/java-dfs-with-memoization-heavily-commen-lr60/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/5519650/intuitive-bfs-approach-by-swanseafc-cxzz/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/3434751/solution-by-deleted_user-yboq/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/2947860/simple-java-solution-by-budbob-fnja/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/1358240/java-bitmask-dp-by-rezwan4029-at8d/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/5167965/java-bfs-by-jing0616-vz3g/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/4978946/dfs-with-memoization-by-user5866lp-r7dx/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/3089607/java-solution-backtracking-optimization-2lab0/;;https://leetcode.com/problems/stickers-to-spell-word/solutions/7142517/7-ms-java-solution-by-lgvcunha-p4v5/;;;=;==;=;=;

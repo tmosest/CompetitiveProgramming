@@ -1,0 +1,40 @@
+1986. Minimum Number of Work Sessions to Finish the Tasks;=;=Medium;=;=public int minSessions(int[] tasks, int sessionTime);=;=There are n tasks assigned to you. The task times are represented as an integer array tasks of length n, where the ith task takes tasks[i] hours to finish. A work session is when you work for at most sessionTime consecutive hours and then take a break.
+
+You should finish the given tasks in a way that satisfies the following conditions:
+
+If you start a task in a work session, you must complete it in the same work session.
+You can start a new task immediately after finishing the previous one.
+You may complete the tasks in any order.
+Given tasks and sessionTime, return the minimum number of work sessions needed to finish all the tasks following the conditions above.
+
+The tests are generated such that sessionTime is greater than or equal to the maximum element in tasks[i].
+
+ 
+
+Example 1:
+
+Input: tasks = [1,2,3], sessionTime = 3
+Output: 2
+Explanation: You can finish the tasks in two work sessions.
+- First work session: finish the first and the second tasks in 1 + 2 = 3 hours.
+- Second work session: finish the third task in 3 hours.
+Example 2:
+
+Input: tasks = [3,1,3,1,1], sessionTime = 8
+Output: 2
+Explanation: You can finish the tasks in two work sessions.
+- First work session: finish all the tasks except the last one in 3 + 1 + 3 + 1 = 8 hours.
+- Second work session: finish the last task in 1 hour.
+Example 3:
+
+Input: tasks = [1,2,3,4,5], sessionTime = 15
+Output: 1
+Explanation: You can finish all the tasks in one work session.
+ 
+
+Constraints:
+
+n == tasks.length
+1 <= n <= 14
+1 <= tasks[i] <= 10
+max(tasks[i]) <= sessionTime <= 15;=;=https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/1431820/c-java-bitmask-dp-with-explanation-time-ac0yu/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/5702578/tricky-question-leetcode-well-written-an-tigv/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/3704096/java-beats-9937-1ms-binary-search-backtr-j1dg/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/2775164/backtracking-solution-java-simpler-to-un-ragy/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/1490309/java-bitmasking-dp-recursively-by-asppan-rpze/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/1432094/java-1-ms-optimize-backtracking-solution-wpb7/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/1694260/java-share-my-simple-dfs-backtracking-so-h896/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/1433227/java-solution-backtrack-recursion-memoiz-smn1/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/2357248/java-space-o2n-bottom-up-1d-dp-by-studen-y4nb/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/1434979/java-1ms-bitmask-backtracking-recursion-6ubr9/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/1788881/java-recursion-to-memoization-bitmask-by-rmro/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/6713699/simple-by-anaymas_25-hosu/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/6696672/solution-bitmasking-dynamic-programming-2tq5e/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/6511104/bitmap-dp-by-awuxiaoqi-svkh/;;https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/solutions/6200978/java-solution-using-backtracking-dp-bitm-fyqy/;;;=;==;=;=;

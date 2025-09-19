@@ -1,0 +1,31 @@
+1534. Count Good Triplets;=;=Easy;=;=public int countGoodTriplets(int[] arr, int a, int b, int c);=;=Given an array of integers arr, and three integers a, b and c. You need to find the number of good triplets.
+
+A triplet (arr[i], arr[j], arr[k]) is good if the following conditions are true:
+
+0 <= i < j < k < arr.length
+|arr[i] - arr[j]| <= a
+|arr[j] - arr[k]| <= b
+|arr[i] - arr[k]| <= c
+Where |x| denotes the absolute value of x.
+
+Return the number of good triplets.
+
+ 
+
+Example 1:
+
+Input: arr = [3,0,1,1,9,7], a = 7, b = 2, c = 3
+Output: 4
+Explanation: There are 4 good triplets: [(3,0,1), (3,0,1), (3,1,1), (0,1,1)].
+Example 2:
+
+Input: arr = [1,1,2,2,3], a = 0, b = 0, c = 1
+Output: 0
+Explanation: No triplet satisfies all conditions.
+ 
+
+Constraints:
+
+3 <= arr.length <= 100
+0 <= arr[i] <= 1000
+0 <= a, b, c <= 1000;=;=https://leetcode.com/problems/count-good-triplets/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-good-triplets/solutions/6648390/naruto-rock-lee-step-by-step-simple-easi-a99r/;;https://leetcode.com/problems/count-good-triplets/solutions/7195211/easy-code-by-sivaaleet-0o11/;;https://leetcode.com/problems/count-good-triplets/solutions/6648208/optimized-enum-with-images-example-walkt-4z2c/;;https://leetcode.com/problems/count-good-triplets/solutions/6649020/efficient-count-of-good-triplets-using-p-utir/;;https://leetcode.com/problems/count-good-triplets/solutions/6648975/beats-super-easy-beginners-java-c-c-pyth-33pe/;;https://leetcode.com/problems/count-good-triplets/solutions/7174592/easy-java-solution-beginner-level-beats-refpm/;;https://leetcode.com/problems/count-good-triplets/solutions/6648358/step-by-step-visualization-beginner-frei-0x6o/;;https://leetcode.com/problems/count-good-triplets/solutions/6651110/python3-10-lines-on-2-log-n-ts-99-86-by-4d9xx/;;https://leetcode.com/problems/count-good-triplets/solutions/6648320/beats-100-in-mosteasy-solution-usingarra-ckga/;;https://leetcode.com/problems/count-good-triplets/solutions/6648380/one-piece-episode-easy-beginner-friendly-c98d/;;https://leetcode.com/problems/count-good-triplets/solutions/6648700/optimized-approach-on2-100-beats-detaile-cuwr/;;https://leetcode.com/problems/count-good-triplets/solutions/6649423/beginner-friendly-easy-brute-force-optim-w9zk/;;https://leetcode.com/problems/count-good-triplets/solutions/6551559/simple-almost-99-beats-easy-to-understan-28c3/;;https://leetcode.com/problems/count-good-triplets/solutions/6648437/java-by-vishall001-ievh/;;https://leetcode.com/problems/count-good-triplets/solutions/6649505/easy-code-must-try-beats-50-by-notaditya-94y4/;;;=;==;=;=;

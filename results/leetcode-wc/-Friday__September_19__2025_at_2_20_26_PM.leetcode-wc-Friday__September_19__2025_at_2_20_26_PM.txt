@@ -1,0 +1,35 @@
+1383. Maximum Performance of a Team;=;=Hard;=;=public int maxPerformance(int n, int[] speed, int[] efficiency, int k);=;=You are given two integers n and k and two integer arrays speed and efficiency both of length n. There are n engineers numbered from 1 to n. speed[i] and efficiency[i] represent the speed and efficiency of the ith engineer respectively.
+
+Choose at most k different engineers out of the n engineers to form a team with the maximum performance.
+
+The performance of a team is the sum of its engineers' speeds multiplied by the minimum efficiency among its engineers.
+
+Return the maximum performance of this team. Since the answer can be a huge number, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 2
+Output: 60
+Explanation: 
+We have the maximum performance of the team by selecting engineer 2 (with speed=10 and efficiency=4) and engineer 5 (with speed=5 and efficiency=7). That is, performance = (10 + 5) * min(4, 7) = 60.
+Example 2:
+
+Input: n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 3
+Output: 68
+Explanation:
+This is the same example as the first but k = 3. We can select engineer 1, engineer 2 and engineer 5 to get the maximum performance of the team. That is, performance = (2 + 10 + 5) * min(5, 4, 7) = 68.
+Example 3:
+
+Input: n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 4
+Output: 72
+ 
+
+Constraints:
+
+1 <= k <= n <= 105
+speed.length == n
+efficiency.length == n
+1 <= speed[i] <= 105
+1 <= efficiency[i] <= 108;=;=https://leetcode.com/problems/maximum-performance-of-a-team/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-performance-of-a-team/solutions/2559857/java-easy-solution-with-explanation-99-f-3wul/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/1252316/js-python-java-c-easy-priority-queue-sol-aa78/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/2562547/java-commented-by-sourin_bruh-718l/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/2559945/cjavapython-priority-queue-by-divyamrai-rahy/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/1252634/readable-java-code-with-explanation-by-l-nz20/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/5596854/java-solution-for-max-performance-with-p-jta6/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/2563128/priority-queue-java-code-by-priyankan_23-j3cq/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/2561478/simple-concise-java-solution-by-lil_toet-zug3/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/2561472/java-solution-with-explanation-faster-th-zg6s/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/5295375/clean-java-beats-98-heap-by-vaibhav1701-g31l/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/595185/faster-than-88-using-pq-java-by-dvvalabs-rnou/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/1252411/max-performance-java-explained-beats-80-9d5pj/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/2560599/5-steps-10-locs-java-solution-with-expla-r0cf/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/2560579/java-and-python-solution-with-explanatio-od38/;;https://leetcode.com/problems/maximum-performance-of-a-team/solutions/6650759/easy-java-solution-beats-100-by-hsgreat-kfh9/;;;=;==;=;=;

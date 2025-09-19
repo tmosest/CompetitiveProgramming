@@ -1,0 +1,31 @@
+3490. Count Beautiful Numbers;=;=Hard;=;=public int beautifulNumbers(int l, int r);=;=You are given two positive integers, l and r. A positive integer is called beautiful if the product of its digits is divisible by the sum of its digits.
+
+Return the count of beautiful numbers between l and r, inclusive.
+
+ 
+
+Example 1:
+
+Input: l = 10, r = 20
+
+Output: 2
+
+Explanation:
+
+The beautiful numbers in the range are 10 and 20.
+
+Example 2:
+
+Input: l = 1, r = 15
+
+Output: 10
+
+Explanation:
+
+The beautiful numbers in the range are 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10.
+
+ 
+
+Constraints:
+
+1 <= l <= r < 109;=;=https://leetcode.com/problems/count-beautiful-numbers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-beautiful-numbers/solutions/6541432/digit-dp-detailed-explanation-easy-to-un-syza/;;https://leetcode.com/problems/count-beautiful-numbers/solutions/6546681/digit-dp-java-easy-to-understand-easiest-zxg0/;;https://leetcode.com/problems/count-beautiful-numbers/solutions/6541830/java-digit-dp-using-hashmap-for-large-pr-8dfa/;;https://leetcode.com/problems/count-beautiful-numbers/solutions/6542119/java-solution-by-barakamon-zlks/;;https://leetcode.com/problems/count-beautiful-numbers/solutions/6541525/3490-count-beautiful-numbers-by-g8xd0qpq-x1wq/;;;=;==;=;=;

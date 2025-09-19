@@ -1,0 +1,41 @@
+3165. Maximum Sum of Subsequence With Non-adjacent Elements;=;=Hard;=;=public int maximumSumSubsequence(int[] nums, int[][] queries);=;=You are given an array nums consisting of integers. You are also given a 2D array queries, where queries[i] = [posi, xi].
+
+For query i, we first set nums[posi] equal to xi, then we calculate the answer to query i which is the maximum sum of a subsequence of nums where no two adjacent elements are selected.
+
+Return the sum of the answers to all queries.
+
+Since the final answer may be very large, return it modulo 109 + 7.
+
+A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
+
+ 
+
+Example 1:
+
+Input: nums = [3,5,9], queries = [[1,-2],[0,-3]]
+
+Output: 21
+
+Explanation:
+After the 1st query, nums = [3,-2,9] and the maximum sum of a subsequence with non-adjacent elements is 3 + 9 = 12.
+After the 2nd query, nums = [-3,-2,9] and the maximum sum of a subsequence with non-adjacent elements is 9.
+
+Example 2:
+
+Input: nums = [0,-1], queries = [[0,-5]]
+
+Output: 0
+
+Explanation:
+After the 1st query, nums = [-5,-1] and the maximum sum of a subsequence with non-adjacent elements is 0 (choosing an empty subsequence).
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 5 * 104
+-105 <= nums[i] <= 105
+1 <= queries.length <= 5 * 104
+queries[i] == [posi, xi]
+0 <= posi <= nums.length - 1
+-105 <= xi <= 105;=;=https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5209928/beats-10000-easy-to-understand-by-decode-pz75/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5209044/simple-java-solution-by-siddhant_1602-upcj/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5208992/simple-approach-constant-space-by-swifto-3bte/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5208913/same-as-house-robber-with-one-optimizati-gfkg/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5209466/please-help-me-why-this-is-tle-by-himv19-ctdw/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5209068/java-solution-brute-force-by-viper_01-lr1d/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5366879/easy-java-solution-segment-trees-oqlogn-e4cn2/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5209022/very-easy-solution-without-dp-by-amit780-yd2m/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5209484/dynamic-programming-solution-house-robbe-guqt/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5208961/java-clean-solution-using-dptabulation-a-u643/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5209301/dp-isnt-suppose-to-work-here-segment-tre-judo/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5209103/java-solution-100-without-dp-or-segment-upznx/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5223234/segment-tree-oop-onlogn-qlogn-by-karthik-2l40/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5210012/simple-and-easy-java-solution-by-triyaam-jh9f/;;https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/solutions/5209091/efficient-approach-for-handling-queries-w8oby/;;;=;==;=;=;

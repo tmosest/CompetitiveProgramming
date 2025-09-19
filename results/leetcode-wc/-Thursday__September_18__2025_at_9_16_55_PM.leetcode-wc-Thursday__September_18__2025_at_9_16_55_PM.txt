@@ -1,0 +1,31 @@
+688. Knight Probability in Chessboard;=;=Medium;=;=public double knightProbability(int n, int k, int row, int column);=;=On an n x n chessboard, a knight starts at the cell (row, column) and attempts to make exactly k moves. The rows and columns are 0-indexed, so the top-left cell is (0, 0), and the bottom-right cell is (n - 1, n - 1).
+
+A chess knight has eight possible moves it can make, as illustrated below. Each move is two cells in a cardinal direction, then one cell in an orthogonal direction.
+
+
+Each time the knight is to move, it chooses one of eight possible moves uniformly at random (even if the piece would go off the chessboard) and moves there.
+
+The knight continues moving until it has made exactly k moves or has moved off the chessboard.
+
+Return the probability that the knight remains on the board after it has stopped moving.
+
+ 
+
+Example 1:
+
+Input: n = 3, k = 2, row = 0, column = 0
+Output: 0.06250
+Explanation: There are two moves (to (1,2), (2,1)) that will keep the knight on the board.
+From each of those positions, there are also two moves that will keep the knight on the board.
+The total probability the knight stays on the board is 0.0625.
+Example 2:
+
+Input: n = 1, k = 0, row = 0, column = 0
+Output: 1.00000
+ 
+
+Constraints:
+
+1 <= n <= 25
+0 <= k <= 100
+0 <= row, column <= n - 1;=;=https://leetcode.com/problems/knight-probability-in-chessboard/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3800461/easy-to-understand-dp-with-explanation-b-gee8/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/7056784/knight-probability-with-dp-688q-by-seenu-t8md/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3798820/very-easy-to-understand-video-c-java-pyt-nf6d/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3799617/ex-amazon-explains-a-solution-with-a-vid-t7mo/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3799019/simple-java-solution-by-siddhant_1602-6ybe/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3798975/beats-100-2-appproach-java-c-with-explan-ggwd/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3800762/very-easy-100-fully-explained-java-c-by-9xfzq/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3802914/image-solution-recursion-memoization-by-8kwl5/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/6693143/memorization-by-ankith_kumar-odnp/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/824236/java-memoization-easy-to-understand-by-h-mwb6/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3798902/video-solution-java-c-python-by-jeevanku-h5e5/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/6540479/java-dp-solution-time-complexity-on2-k-b-cmf4/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3804672/beginner-friendly-code-explanation-for-e-lqpk/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3800243/java-recursion-memoization-by-iamvineett-5k7v/;;https://leetcode.com/problems/knight-probability-in-chessboard/solutions/6175539/recursion-memoize-by-thunderbeast99-z3me/;;;=;==;=;=;

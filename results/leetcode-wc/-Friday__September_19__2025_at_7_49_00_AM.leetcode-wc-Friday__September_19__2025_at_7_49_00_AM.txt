@@ -1,0 +1,41 @@
+1643. Kth Smallest Instructions;=;=Hard;=;=public String kthSmallestPath(int[] destination, int k);=;=Bob is standing at cell (0, 0), and he wants to reach destination: (row, column). He can only travel right and down. You are going to help Bob by providing instructions for him to reach destination.
+
+The instructions are represented as a string, where each character is either:
+
+'H', meaning move horizontally (go right), or
+'V', meaning move vertically (go down).
+Multiple instructions will lead Bob to destination. For example, if destination is (2, 3), both "HHHVV" and "HVHVH" are valid instructions.
+
+However, Bob is very picky. Bob has a lucky number k, and he wants the kth lexicographically smallest instructions that will lead him to destination. k is 1-indexed.
+
+Given an integer array destination and an integer k, return the kth lexicographically smallest instructions that will take Bob to destination.
+
+ 
+
+Example 1:
+
+
+
+Input: destination = [2,3], k = 1
+Output: "HHHVV"
+Explanation: All the instructions that reach (2, 3) in lexicographic order are as follows:
+["HHHVV", "HHVHV", "HHVVH", "HVHHV", "HVHVH", "HVVHH", "VHHHV", "VHHVH", "VHVHH", "VVHHH"].
+Example 2:
+
+
+
+Input: destination = [2,3], k = 2
+Output: "HHVHV"
+Example 3:
+
+
+
+Input: destination = [2,3], k = 3
+Output: "HHVVH"
+ 
+
+Constraints:
+
+destination.length == 2
+1 <= row, column <= 15
+1 <= k <= nCr(row + column, row), where nCr(a, b) denotes a choose b?????.;=;=https://leetcode.com/problems/kth-smallest-instructions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/kth-smallest-instructions/solutions/2976648/pythonjava-walking-through-example-with-3ftad/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/5994468/java-beats-10000-by-hassam_472-cf6q/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/3377464/solution-by-deleted_user-ipim/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/3725596/optimal-greedy-combinatorics-orclogmod-t-1ofr/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/5560854/fast-java-by-blackzlq-0qk6/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/5348731/kth-smallest-instructions-java-by-kenbin-n0jc/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/4791048/first-ever-hard-problem-100-in-time-java-h45s/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/4528872/easy-solution-by-ashutoshpainuly-vmst/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/4429933/ct-fletcher-by-user3043sb-0i9x/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/4007090/java-solution-100-faster-with-explanatio-6net/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/3664146/runtime-only-1ms-and-beats-100-by-parvmu-mc97/;;https://leetcode.com/problems/kth-smallest-instructions/solutions/3639684/on2-time-complexity-solution-java-by-fun-70ld/;;;=;==;=;=;

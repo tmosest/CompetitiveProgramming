@@ -1,0 +1,34 @@
+1999. Smallest Greater Multiple Made of Two Digits;=;=Medium;=;=public int findInteger(int k, int digit1, int digit2);=;=Given three integers, k, digit1, and digit2, you want to find the smallest integer that is:
+
+Larger than k,
+A multiple of k, and
+Comprised of only the digits digit1 and/or digit2.
+Return the smallest such integer. If no such integer exists or the integer exceeds the limit of a signed 32-bit integer (231 - 1), return -1.
+
+ 
+
+Example 1:
+
+Input: k = 2, digit1 = 0, digit2 = 2
+Output: 20
+Explanation:
+20 is the first integer larger than 2, a multiple of 2, and comprised of only the digits 0 and/or 2.
+Example 2:
+
+Input: k = 3, digit1 = 4, digit2 = 2
+Output: 24
+Explanation:
+24 is the first integer larger than 3, a multiple of 3, and comprised of only the digits 4 and/or 2.
+Example 3:
+
+Input: k = 2, digit1 = 0, digit2 = 0
+Output: -1
+Explanation:
+No integer meets the requirements so return -1.
+ 
+
+Constraints:
+
+1 <= k <= 1000
+0 <= digit1 <= 9
+0 <= digit2 <= 9;=;=https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/solutions/6152483/java-recursive-solution-by-tbekpro-tcxc/;;https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/solutions/6121007/java-simple-100-dfs-approach-by-priyamga-kpm6/;;https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/solutions/5680766/runtime-0-ms-beats-10000-by-vallabh16199-sc8d/;;https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/solutions/5615262/convert-to-binary-by-macrohard-96wx/;;https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/solutions/3055507/solution-by-deleted_user-x1e7/;;;=;==;=;=;

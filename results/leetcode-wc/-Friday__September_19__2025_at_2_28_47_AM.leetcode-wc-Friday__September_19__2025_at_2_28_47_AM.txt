@@ -1,0 +1,31 @@
+1702. Maximum Binary String After Change;=;=Medium;=;=publicÊStringÊmaximumBinaryString(StringÊbinary);=;=You are given a binary string binary consisting of only 0's or 1's. You can apply each of the following operations any number of times:
+
+Operation 1: If the number contains the substring "00", you can replace it with "10".
+For example, "00010" -> "10010"
+Operation 2: If the number contains the substring "10", you can replace it with "01".
+For example, "00010" -> "00001"
+Return the maximum binary string you can obtain after any number of operations. Binary string x is greater than binary string y if x's decimal representation is greater than y's decimal representation.
+
+Ê
+
+Example 1:
+
+Input: binary = "000110"
+Output: "111011"
+Explanation: A valid transformation sequence can be:
+"000110" -> "000101" 
+"000101" -> "100101" 
+"100101" -> "110101" 
+"110101" -> "110011" 
+"110011" -> "111011"
+Example 2:
+
+Input: binary = "01"
+Output: "01"
+Explanation:Ê"01" cannot be transformed any further.
+Ê
+
+Constraints:
+
+1 <= binary.length <= 105
+binary consist of '0' and '1'.;=;=https://leetcode.com/problems/maximum-binary-string-after-change/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-binary-string-after-change/solutions/5558416/just-count-ones-by-distructfruct-l3ok/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/4141337/best-java-solution-beats-95-by-ravikumar-xbmi/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/2416753/java-greedy-solution-time-complexity-on-tt5wy/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/7167446/identify-the-pattern-by-saiichegondi-7ojr/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/5448335/in-java-by-ranjithgopinath-k1ck/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/4768285/greedy-intuitive-solution-java-on-by-cha-dsjq/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/3626768/simplest-java-code-single-pass-on-faster-0htx/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/3333893/easy-faster-efficient-java-soln-by-devan-j04a/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/3170957/simple-explained-solution-by-darian-cata-7p3g/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/2788550/java-max-binary-string-after-change-by-v-ov84/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/2488685/java-logic-by-ritabrata_1080-lswr/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/2188446/java-greedy-using-bruteforce-by-sachinsi-iwer/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/1990932/find-the-first-zero-zero-count-java-conc-6mb6/;;https://leetcode.com/problems/maximum-binary-string-after-change/solutions/987509/my-java-solution-by-counting-the-zero-wi-ab7x/;;;=;==;=;=;

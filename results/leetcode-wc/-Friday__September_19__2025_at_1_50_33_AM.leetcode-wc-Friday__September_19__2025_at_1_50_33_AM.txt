@@ -1,0 +1,33 @@
+2002. Maximum Product of the Length of Two Palindromic Subsequences;=;=Medium;=;=public int maxProduct(String s);=;=Given a string s, find two disjoint palindromic subsequences of s such that the product of their lengths is maximized. The two subsequences are disjoint if they do not both pick a character at the same index.
+
+Return the maximum possible product of the lengths of the two palindromic subsequences.
+
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters. A string is palindromic if it reads the same forward and backward.
+
+ 
+
+Example 1:
+
+
+Input: s = "leetcodecom"
+Output: 9
+Explanation: An optimal solution is to choose "ete" for the 1st subsequence and "cdc" for the 2nd subsequence.
+The product of their lengths is: 3 * 3 = 9.
+Example 2:
+
+Input: s = "bb"
+Output: 1
+Explanation: An optimal solution is to choose "b" (the first character) for the 1st subsequence and "b" (the second character) for the 2nd subsequence.
+The product of their lengths is: 1 * 1 = 1.
+Example 3:
+
+Input: s = "accbcaxxcxx"
+Output: 25
+Explanation: An optimal solution is to choose "accca" for the 1st subsequence and "xxcxx" for the 2nd subsequence.
+The product of their lengths is: 5 * 5 = 25.
+ 
+
+Constraints:
+
+2 <= s.length <= 12
+s consists of lowercase English letters only.;=;=https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/7131510/easy-to-understand-solution-by-kgoutamku-lcdp/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/1458289/mask-dp-by-votrubac-6q82/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/1458329/java-simple-recursion-by-shreyash1-oh8i/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/3392433/easy-understand-simple-method-java-pytho-mde0/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/1458602/java-backtracking-solution-by-abhijeetma-3bod/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/5735139/java-solution-with-explanation-by-goals_-zfmp/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/3077259/java-memoization-optimal-solution-easy-s-pjnd/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/3422048/java-dp-with-clear-explanation-on2n-beat-gxqd/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/1458660/simple-bitmasking-smart-bruteforce-75ms-2vx3p/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/2624729/java-bitmask-hashmap-solution-by-aasthas-fqi3/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/1458555/java-solution-standard-recursion-and-bac-j3h1/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/1491954/my-java-solution-using-recursion-by-vroh-5m59/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/1490331/java-simple-backtracking-by-pagalpanda-9xpp/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/3969604/two-bad-approaches-very-easy-python3-bac-j050/;;https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/solutions/1467275/java-easy-recusrsion-solution-by-shantan-b4e1/;;;=;==;=;=;

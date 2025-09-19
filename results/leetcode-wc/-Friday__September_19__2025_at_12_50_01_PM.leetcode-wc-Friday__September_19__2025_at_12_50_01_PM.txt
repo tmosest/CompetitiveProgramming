@@ -1,0 +1,45 @@
+1210. Minimum Moves to Reach Target with Rotations;=;=Hard;=;=public int minimumMoves(int[][] grid);=;=In an n*n grid, there is a snake that spans 2 cells and starts moving from the top left corner at (0, 0) and (0, 1). The grid has empty cells represented by zeros and blocked cells represented by ones. The snake wants to reach the lower right corner at (n-1, n-2) and (n-1, n-1).
+
+In one move the snake can:
+
+Move one cell to the right if there are no blocked cells there. This move keeps the horizontal/vertical position of the snake as it is.
+Move down one cell if there are no blocked cells there. This move keeps the horizontal/vertical position of the snake as it is.
+Rotate clockwise if it's in a horizontal position and the two cells under it are both empty. In that case the snake moves from (r, c) and (r, c+1) to (r, c) and (r+1, c).
+
+Rotate counterclockwise if it's in a vertical position and the two cells to its right are both empty. In that case the snake moves from (r, c) and (r+1, c) to (r, c) and (r, c+1).
+
+Return the minimum number of moves to reach the target.
+
+If there is no way to reach the target, return -1.
+
+ 
+
+Example 1:
+
+
+
+Input: grid = [[0,0,0,0,0,1],
+               [1,1,0,0,1,0],
+               [0,0,0,0,1,1],
+               [0,0,1,0,1,0],
+               [0,1,1,0,0,0],
+               [0,1,1,0,0,0]]
+Output: 11
+Explanation:
+One possible solution is [right, right, rotate clockwise, right, down, down, down, down, rotate counterclockwise, right, down].
+Example 2:
+
+Input: grid = [[0,0,1,1,1,1],
+               [0,0,0,0,1,1],
+               [1,1,0,0,0,1],
+               [1,1,1,0,0,1],
+               [1,1,1,0,0,1],
+               [1,1,1,0,0,0]]
+Output: 9
+ 
+
+Constraints:
+
+2 <= n <= 100
+0 <= grid[i][j] <= 1
+It is guaranteed that the snake starts at empty cells.;=;=https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/392904/java-bfs-solution-very-clean-code-easy-t-etct/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/1247505/java-dynamic-programing-13-ms-faster-tha-09ox/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/5668719/messy-bfs-by-mdsrrkhan-2uoy/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/3973547/breadth-first-search-onm-faster-than-50-sa8c2/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/2517340/java-bfs-soln-by-amandubeyy-39ca/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/7163012/java-bfs-solution-long-code-but-easy-to-st6s0/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/6877843/my-solution-by-watercyb-2hk3/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/6927941/bfs-java-by-ashutosh_prajapati1205-flca/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/6083702/java-bfs-based-on-snake-position-by-anik-f7x8/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/5020292/hehe-by-archer009-zup2/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/5313813/for-people-trying-to-understand-why-it-f-t1kl/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/4895907/java-bfs-solution-with-exploring-all-6-c-b1v7/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/1454307/java-bfs-extremely-straightforward-and-e-uy9h/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/1104561/easy-bfs-by-bhadr3-g84h/;;https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/solutions/792222/java-bfs-solution-with-3-dimentional-vis-b4ej/;;;=;==;=;=;

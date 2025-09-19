@@ -1,0 +1,40 @@
+1559. Detect Cycles in 2D Grid;=;=Medium;=;=publicÊbooleanÊcontainsCycle(char[][]Êgrid);=;=Given a 2D array of characters grid of size m x n, you need to find if there exists any cycle consisting of the same value in grid.
+
+A cycle is a path of length 4 or more in the grid that starts and ends at the same cell. From a given cell, you can move to one of the cells adjacent to it - in one of the four directions (up, down, left, or right), if it has the same value of the current cell.
+
+Also, you cannot move to the cell that you visited in your last move. For example, the cycle (1, 1) -> (1, 2) -> (1, 1) is invalid because from (1, 2) we visited (1, 1) which was the last visited cell.
+
+Return true if any cycle of the same value exists in grid, otherwise, return false.
+
+Ê
+
+Example 1:
+
+
+
+Input: grid = [["a","a","a","a"],["a","b","b","a"],["a","b","b","a"],["a","a","a","a"]]
+Output: true
+Explanation: There are two valid cycles shown in different colors in the image below:
+
+Example 2:
+
+
+
+Input: grid = [["c","c","c","a"],["c","d","c","c"],["c","c","e","c"],["f","c","c","c"]]
+Output: true
+Explanation: There is only one valid cycle highlighted in the image below:
+
+Example 3:
+
+
+
+Input: grid = [["a","b","b"],["b","z","b"],["b","b","a"]]
+Output: false
+Ê
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 500
+grid consists only of lowercase English letters.;=;=https://leetcode.com/problems/detect-cycles-in-2d-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/7128069/cycle-detection-in-a-grid-using-bfs-by-y-vttw/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/6901844/dfs-explained-by-prashant404-0tyh/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/6714583/using-union-find-depth-first-search-in-j-7xh6/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/6433904/dfs-java-by-dsuryaprakash89-yvi5/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/1234761/java-clean-union-find-by-sakshi_wos-6sep/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/814850/java-simple-dfs-solution-97-runtime-by-s-2kau/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/808917/true-simple-and-concise-implementation-o-9c5b/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/6446270/easy-approach-and-easy-to-understand100-vx274/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/1665360/java-simple-solution-using-dfs-by-madhav-oql1/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/6311955/bfs-solution-by-ilhbqgglvs-55j4/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/4557074/java-solution-beats-70-users-by-sajaltiw-yzet/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/4360423/easy-java-solution-dfs-by-ravikumar50-nyf1/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/1163139/java-straightforward-solution-using-unio-0uul/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/4270989/simple-dfs-calls-by-robertskonieczny-hgt4/;;https://leetcode.com/problems/detect-cycles-in-2d-grid/solutions/1667217/dfs-java-most-simplest-easy-to-understan-47bm/;;;=;==;=;=;

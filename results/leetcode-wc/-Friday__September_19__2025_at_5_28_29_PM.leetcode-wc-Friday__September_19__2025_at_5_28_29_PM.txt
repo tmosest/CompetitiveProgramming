@@ -1,0 +1,19 @@
+247. Strobogrammatic Number II;=;=Medium;=;=public List<String> findStrobogrammatic(int n);=;=Given an integer n, return all the strobogrammatic numbers that are of length n. You may return the answer in any order.
+
+A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+
+ 
+
+Example 1:
+
+Input: n = 2
+Output: ["11","69","88","96"]
+Example 2:
+
+Input: n = 1
+Output: ["0","1","8"]
+ 
+
+Constraints:
+
+1 <= n <= 14;=;=https://leetcode.com/problems/strobogrammatic-number-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/strobogrammatic-number-ii/solutions/67280/ac-clean-java-solution-by-jeantimex-ke61/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/67288/simple-java-solution-without-recursion-b-ne0t/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/67338/accepted-java-solution-using-recursion-b-lbae/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/1117755/java-clean-backtracking-solution-with-co-8xgl/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/733036/clean-java-bfs-using-queue-similar-to-le-cmec/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/418620/awesome-algorithm-with-easy-and-detailed-wnvz/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/1830239/java-simple-explained-by-prashant404-dvcx/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/67307/my-concise-iterative-java-code-by-pengzh-deyw/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/1077667/java-alternative-solution-with-recursion-r5av/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/742364/java-recursion-easy-to-remember-by-nifn-0374/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/1049523/java-recursion-simple-by-xbe-vr4h/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/270594/simple-java-backtrack-easy-understanding-szbh/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/576775/java-easy-to-understand-whats-the-time-c-vfdl/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/67330/java-fast-char-array-two-pointer-solutio-s7hr/;;https://leetcode.com/problems/strobogrammatic-number-ii/solutions/6770436/beat-80-with-trackback-by-martin7890-44q9/;;;=;==;=;=;

@@ -1,0 +1,36 @@
+1561. Maximum Number of Coins You Can Get;=;=Medium;=;=public int maxCoins(int[] piles);=;=There are 3n piles of coins of varying size, you and your friends will take piles of coins as follows:
+
+In each step, you will choose any 3 piles of coins (not necessarily consecutive).
+Of your choice, Alice will pick the pile with the maximum number of coins.
+You will pick the next pile with the maximum number of coins.
+Your friend Bob will pick the last pile.
+Repeat until there are no more piles of coins.
+Given an array of integers piles where piles[i] is the number of coins in the ith pile.
+
+Return the maximum number of coins that you can have.
+
+ 
+
+Example 1:
+
+Input: piles = [2,4,1,2,7,8]
+Output: 9
+Explanation: Choose the triplet (2, 7, 8), Alice Pick the pile with 8 coins, you the pile with 7 coins and Bob the last one.
+Choose the triplet (1, 2, 4), Alice Pick the pile with 4 coins, you the pile with 2 coins and Bob the last one.
+The maximum number of coins which you can have are: 7 + 2 = 9.
+On the other hand if we choose this arrangement (1, 2, 8), (2, 4, 7) you only get 2 + 4 = 6 coins which is not optimal.
+Example 2:
+
+Input: piles = [2,4,5]
+Output: 4
+Example 3:
+
+Input: piles = [9,8,7,6,5,1,2,3,4]
+Output: 18
+ 
+
+Constraints:
+
+3 <= piles.length <= 105
+piles.length % 3 == 0
+1 <= piles[i] <= 104;=;=https://leetcode.com/problems/maximum-number-of-coins-you-can-get/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/4322618/beats-100-explained-with-video-modified-8w5na/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/4322719/beginner-friendly-easy-to-understand-no-vog5z/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/4322538/video-give-me-4-minutes-how-we-think-abo-e6sq/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/7094992/beats-95-simplest-2-line-java-solution-b-ohuq/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/4323797/easy-code-to-understand-by-me_avi-9q4k/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/7076865/easy-to-understand-java-solution-beats-9-p6th/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/5175301/video-sorting-solution-by-niits-ex1o/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/6800408/easiest-solution-in-java-by-hitarthshah2-zwc6/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/4322634/cjava-frequency-count-onm-vs-python-sort-2346/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/5063601/video-sorting-solution-by-niits-bhl4/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/6726060/easy-solution-for-beginners-olog-n-o1-by-1rii/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/6744121/easy-arraylist-way-try-this-is-very-easy-rq1q/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/825562/java-on-log-n-clear-with-explanation-by-qqjaz/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/4322862/simple-java-solution-brute-force-on-11ms-a55v/;;https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/4322780/beats-98-detailed-explaination-c-java-py-dzz7/;;;=;==;=;=;

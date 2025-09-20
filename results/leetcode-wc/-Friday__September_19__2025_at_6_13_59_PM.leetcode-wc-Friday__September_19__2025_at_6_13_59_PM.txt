@@ -1,0 +1,22 @@
+894. All Possible Full Binary Trees;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;         class      public List<TreeNode> allPossibleFBT(int n);=;=Given an integer n, return a list of all possible full binary trees with n nodes. Each node of each tree in the answer must have Node.val == 0.
+
+Each element of the answer is the root node of one possible tree. You may return the final list of trees in any order.
+
+A full binary tree is a binary tree where each node has exactly 0 or 2 children.
+
+ 
+
+Example 1:
+
+
+Input: n = 7
+Output: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]
+Example 2:
+
+Input: n = 3
+Output: [[0,0,0]]
+ 
+
+Constraints:
+
+1 <= n <= 20;=;=https://leetcode.com/problems/all-possible-full-binary-trees/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/all-possible-full-binary-trees/solutions/167402/ccjavapython-recursive-and-iterative-sol-rhwa/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3804265/runtime-1ms-beats-987-recursion-memoizat-xtb9/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3803320/recursiondpvideo-explanation-in-depth-ve-6lsr/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3806554/ex-amazon-explains-a-solution-with-a-vid-oie4/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/1556987/simple-java-dfsmemoization-solution-by-r-f4y5/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3803263/video-master-full-binary-trees-step-by-s-xowr/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3803922/java-solution-described-properly-the-app-yedo/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/2029995/java-recursion-intution-explained-easy-u-2gw3/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/5289580/my-java-accepted-java-solution-and-patte-7coj/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3804800/clean-code-recursion-memoization-by-hrid-lev5/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/1101124/java-recursive-solution-without-intercon-qteg/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/4854155/99-runtime-beats-using-hashmap-recursive-0bwg/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3803374/easy-java-solution-recursion-memoization-ld1q/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3804787/easy-java-memo-solution-beats-99-online-9q7wa/;;https://leetcode.com/problems/all-possible-full-binary-trees/solutions/325304/java-recursive-solution-by-jasperjoe-3myx/;;;=;==;=;=;

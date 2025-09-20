@@ -1,0 +1,25 @@
+301. Remove Invalid Parentheses;=;=Hard;=;=public List<String> removeInvalidParentheses(String s);=;=Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
+
+Return a list of unique strings that are valid with the minimum number of removals. You may return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: s = "()())()"
+Output: ["(())()","()()()"]
+Example 2:
+
+Input: s = "(a)())()"
+Output: ["(a())()","(a)()()"]
+Example 3:
+
+Input: s = ")("
+Output: [""]
+ 
+
+Constraints:
+
+1 <= s.length <= 25
+s consists of lowercase English letters and parentheses '(' and ')'.
+There will be at most 20 parentheses in s.;=;=https://leetcode.com/problems/remove-invalid-parentheses/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-invalid-parentheses/solutions/75027/easy-short-concise-and-fast-java-dfs-3-m-pbz9/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/75032/share-my-java-bfs-solution-by-jeantimex-xeww/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/75034/easiest-9ms-java-solution-by-yavinci-4wnn/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/7151546/java-recursive-solution-beats-80-of-the-jpj4n/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/75041/java-bfs-solution-16ms-avoid-generating-hel4g/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/1620475/java-optimized-backtracking-solution-eas-pb39/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/75095/java-optimized-dfs-solution-3-ms-by-whj4-t68u/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/5305306/have-fun-solving-this-easy-problem-by-di-lo6u/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/5114041/java-bfs-by-deleted_user-uk3y/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/6740058/beat-100-simple-easy-to-understand-java-ddsam/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/7190475/dfshui-su-suan-fa-by-99woodyxin-xep9/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/7155250/dumb-java-check-everything-greedy-purgin-cq8l/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/6680076/java-best-solution-by-heyysankalp-desr/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/1524742/easy-to-understand-recursive-java-soluti-ck7s/;;https://leetcode.com/problems/remove-invalid-parentheses/solutions/4984786/asked-in-a-internship-interview-solving-rvrgo/;;;=;==;=;=;

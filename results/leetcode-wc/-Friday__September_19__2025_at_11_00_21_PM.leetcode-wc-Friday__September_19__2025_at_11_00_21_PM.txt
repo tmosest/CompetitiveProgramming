@@ -1,0 +1,35 @@
+1095. Find in Mountain Array;=;=Hard;=;=/ÊÊ//ÊThisÊisÊMountainArray'sÊAPIÊinterface.ÊÊ//ÊYouÊshouldÊnotÊimplementÊit,ÊorÊspeculateÊaboutÊitsÊimplementationÊÊinterfaceÊMountainArrayÊÊÊÊÊÊÊpublicÊintÊget(intÊindex)ÊÊÊÊÊÊÊpublicÊintÊlength()ÊÊÊÊÊÊÊÊÊÊÊpublicÊintÊfindInMountainArray(intÊtarget,ÊMountainArrayÊmountainArr);=;=(This problem is an interactive problem.)
+
+You may recall that an array arr is a mountain array if and only if:
+
+arr.length >= 3
+There exists some i with 0 < i < arr.length - 1 such that:
+arr[0] < arr[1] < ... < arr[i - 1] < arr[i]
+arr[i] > arr[i + 1] > ... > arr[arr.length - 1]
+Given a mountain array mountainArr, return the minimum index such that mountainArr.get(index) == target. If such an index does not exist, return -1.
+
+You cannot access the mountain array directly. You may only access the array using a MountainArray interface:
+
+MountainArray.get(k) returns the element of the array at index k (0-indexed).
+MountainArray.length() returns the length of the array.
+Submissions making more than 100 calls to MountainArray.get will be judged Wrong Answer. Also, any solutions that attempt to circumvent the judge will result in disqualification.
+
+Ê
+
+Example 1:
+
+Input: mountainArr = [1,2,3,4,5,3,1], target = 3
+Output: 2
+Explanation: 3 exists in the array, at index=2 and index=5. Return the minimum index, which is 2.
+Example 2:
+
+Input: mountainArr = [0,1,2,4,2,1], target = 3
+Output: -1
+Explanation: 3 does not exist in the array, so we return -1.
+Ê
+
+Constraints:
+
+3 <= mountainArr.length() <= 104
+0 <= target <= 109
+0 <= mountainArr.get(index) <= 109;=;=https://leetcode.com/problems/find-in-mountain-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-in-mountain-array/solutions/6280052/video-give-me-10-minutes-how-we-think-ab-r10a/;;https://leetcode.com/problems/find-in-mountain-array/solutions/4159000/100-binary-search-explained-intuition-by-1gun/;;https://leetcode.com/problems/find-in-mountain-array/solutions/7184865/beats100-binary-search-approach-by-pushp-hkd8/;;https://leetcode.com/problems/find-in-mountain-array/solutions/4159293/video-give-me-10-minutes-how-we-think-ab-b582/;;https://leetcode.com/problems/find-in-mountain-array/solutions/7156302/0-ms-java-code-simple-binary-search-by-a-gn61/;;https://leetcode.com/problems/find-in-mountain-array/solutions/7151180/java-solution-0-ms-target-in-style-100-f-isz7/;;https://leetcode.com/problems/find-in-mountain-array/solutions/6436560/beats-100-java-solution-by-khushalgarg22-sl3r/;;https://leetcode.com/problems/find-in-mountain-array/solutions/4158983/simple-solution-beginner-friendly-easy-t-i895/;;https://leetcode.com/problems/find-in-mountain-array/solutions/7004643/beginners-complete-solution-hintsdetaile-6juy/;;https://leetcode.com/problems/find-in-mountain-array/solutions/6673560/java-solutioneasy-method100-will-work-by-ukqm/;;https://leetcode.com/problems/find-in-mountain-array/solutions/6543684/100-0ms-binary-search-searching-an-eleme-9clq/;;https://leetcode.com/problems/find-in-mountain-array/solutions/4159020/brute-force-to-efficient-method-100-beat-brrl/;;https://leetcode.com/problems/find-in-mountain-array/solutions/6970875/simple-and-easy-solution-in-java-beats-1-99t6/;;https://leetcode.com/problems/find-in-mountain-array/solutions/5264134/easy-java-python3-c-solution-0-ms-_-by-s-ln1c/;;https://leetcode.com/problems/find-in-mountain-array/solutions/6673555/beats-100-by-harish_16_04-ek7e/;;;=;==;=;=;

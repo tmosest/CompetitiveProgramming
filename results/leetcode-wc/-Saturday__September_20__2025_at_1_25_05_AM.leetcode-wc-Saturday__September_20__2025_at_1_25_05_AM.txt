@@ -1,0 +1,34 @@
+3162. Find the Number of Good Pairs I;=;=Easy;=;=publicÊintÊnumberOfPairs(int[]Ênums1,Êint[]Ênums2,ÊintÊk);=;=You are given 2 integer arrays nums1 and nums2 of lengths n and m respectively. You are also given a positive integer k.
+
+A pair (i, j) is called good if nums1[i] is divisible by nums2[j] * k (0 <= i <= n - 1, 0 <= j <= m - 1).
+
+Return the total number of good pairs.
+
+Ê
+
+Example 1:
+
+Input: nums1 = [1,3,4], nums2 = [1,3,4], k = 1
+
+Output: 5
+
+Explanation:
+
+The 5 good pairs are (0, 0), (1, 0), (1, 1), (2, 0), and (2, 2).
+Example 2:
+
+Input: nums1 = [1,2,4,12], nums2 = [2,4], k = 3
+
+Output: 2
+
+Explanation:
+
+The 2 good pairs are (3, 0) and (3, 1).
+
+Ê
+
+Constraints:
+
+1 <= n, m <= 50
+1 <= nums1[i], nums2[j] <= 50
+1 <= k <= 50;=;=https://leetcode.com/problems/find-the-number-of-good-pairs-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/7207194/java-easy-solution-1ms-by-akashraj06-om3z/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/7112691/easy-wat-to-understand-the-comparing-of-m8m9k/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/7138161/counting-good-pairs-with-divisibility-31-r3u6/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/7127615/simplest-solution-by-geddada_lavanya-g1j9/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/5227248/java-easy-solution-for-beginners-9996-1m-e36v/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/6770093/java-best-solution-hashmap-by-aimlc_22b1-gcii/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/7036382/beats-100-by-divyansh_kaushik_sharma-u57b/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/7010854/easy-java-solution-beats-100-by-rajdeep0-bzs2/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/5209027/simple-java-solution-by-siddhant_1602-heag/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/6734873/no-tricks-needed-clean-double-loop-for-c-a2b9/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/7082429/find-the-numbers-of-good-pairs-1-100-by-z886l/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/7071922/brute-force-by-umesh02-pqsv/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/5213556/beats-100-users-dominate-others-with-thi-cy66/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/5279252/solution-by-dare2solve-detail-explanatio-lgwz/;;https://leetcode.com/problems/find-the-number-of-good-pairs-i/solutions/5223534/simple-java-solution-by-ankitbi1713-duil/;;;=;==;=;=;

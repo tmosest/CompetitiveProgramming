@@ -1,0 +1,62 @@
+3337. Total Characters in String After Transformations II;=;=Hard;=;=public int lengthAfterTransformations(String s, int t, List<Integer> nums);=;=You are given a string s consisting of lowercase English letters, an integer t representing the number of transformations to perform, and an array nums of size 26. In one transformation, every character in s is replaced according to the following rules:
+
+Replace s[i] with the next nums[s[i] - 'a'] consecutive characters in the alphabet. For example, if s[i] = 'a' and nums[0] = 3, the character 'a' transforms into the next 3 consecutive characters ahead of it, which results in "bcd".
+The transformation wraps around the alphabet if it exceeds 'z'. For example, if s[i] = 'y' and nums[24] = 3, the character 'y' transforms into the next 3 consecutive characters ahead of it, which results in "zab".
+Return the length of the resulting string after exactly t transformations.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: s = "abcyy", t = 2, nums = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]
+
+Output: 7
+
+Explanation:
+
+First Transformation (t = 1):
+
+'a' becomes 'b' as nums[0] == 1
+'b' becomes 'c' as nums[1] == 1
+'c' becomes 'd' as nums[2] == 1
+'y' becomes 'z' as nums[24] == 1
+'y' becomes 'z' as nums[24] == 1
+String after the first transformation: "bcdzz"
+Second Transformation (t = 2):
+
+'b' becomes 'c' as nums[1] == 1
+'c' becomes 'd' as nums[2] == 1
+'d' becomes 'e' as nums[3] == 1
+'z' becomes 'ab' as nums[25] == 2
+'z' becomes 'ab' as nums[25] == 2
+String after the second transformation: "cdeabab"
+Final Length of the string: The string is "cdeabab", which has 7 characters.
+
+Example 2:
+
+Input: s = "azbk", t = 1, nums = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
+
+Output: 8
+
+Explanation:
+
+First Transformation (t = 1):
+
+'a' becomes 'bc' as nums[0] == 2
+'z' becomes 'ab' as nums[25] == 2
+'b' becomes 'cd' as nums[1] == 2
+'k' becomes 'lm' as nums[10] == 2
+String after the first transformation: "bcabcdlm"
+Final Length of the string: The string is "bcabcdlm", which has 8 characters.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists only of lowercase English letters.
+1 <= t <= 109
+nums.length == 26
+1 <= nums[i] <= 25;=;=https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742258/matrix-exponentation-explained-step-wise-0r1a/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742827/beats-super-easy-beginners-java-c-c-pyth-gbb0/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742692/complete-walkthrough-matrix-exponentiati-eiuw/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742825/complete-handwritten-detailed-explanatio-w1kd/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742314/optimized-solution-detail-explanation-ol-vgpr/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742167/solved-using-matrix-multiplication-by-vi-0v43/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742124/python-solution-by-python_champ123-8vjn/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/7030048/total-characters-in-string-after-transfo-swrt/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742411/total-characters-in-string-after-transfo-yxcl/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742244/easy-code-must-try-code-in-java-by-notad-fsg8/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6761232/simple-matrix-binary-exponentiation-java-lje1/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742409/no-tle-java-easy-to-understand-explained-lj0x/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6743416/optimum-solution-with-detailed-explanati-z4vt/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6743902/3337-total-characters-in-string-after-tr-h2vo/;;https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6742900/advanced-character-transformations-matri-evuy/;;;=;==;=;=;

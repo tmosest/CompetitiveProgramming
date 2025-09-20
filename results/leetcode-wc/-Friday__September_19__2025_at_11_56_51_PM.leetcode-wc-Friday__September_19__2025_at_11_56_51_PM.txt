@@ -1,0 +1,54 @@
+3242. Design Neighbor Sum Service;=;=Easy;=;=NeighborSum     public NeighborSum(int[][] grid)                     public int adjacentSum(int value)                     public int diagonalSum(int value)             /  Your NeighborSum object will be instantiated and called as such:  NeighborSum obj = new NeighborSum(grid);  int param_1 = obj.adjacentSum(value);  int param_2 = obj.diagonalSum(value);;=;=You are given a n x n 2D array grid containing distinct elements in the range [0, n2 - 1].
+
+Implement the NeighborSum class:
+
+NeighborSum(int [][]grid) initializes the object.
+int adjacentSum(int value) returns the sum of elements which are adjacent neighbors of value, that is either to the top, left, right, or bottom of value in grid.
+int diagonalSum(int value) returns the sum of elements which are diagonal neighbors of value, that is either to the top-left, top-right, bottom-left, or bottom-right of value in grid.
+
+
+ 
+
+Example 1:
+
+Input:
+
+["NeighborSum", "adjacentSum", "adjacentSum", "diagonalSum", "diagonalSum"]
+
+[[[[0, 1, 2], [3, 4, 5], [6, 7, 8]]], [1], [4], [4], [8]]
+
+Output: [null, 6, 16, 16, 4]
+
+Explanation:
+
+
+
+The adjacent neighbors of 1 are 0, 2, and 4.
+The adjacent neighbors of 4 are 1, 3, 5, and 7.
+The diagonal neighbors of 4 are 0, 2, 6, and 8.
+The diagonal neighbor of 8 is 4.
+Example 2:
+
+Input:
+
+["NeighborSum", "adjacentSum", "diagonalSum"]
+
+[[[[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]]], [15], [9]]
+
+Output: [null, 23, 45]
+
+Explanation:
+
+
+
+The adjacent neighbors of 15 are 0, 10, 7, and 6.
+The diagonal neighbors of 9 are 4, 12, 14, and 15.
+ 
+
+Constraints:
+
+3 <= n == grid.length == grid[0].length <= 10
+0 <= grid[i][j] <= n2 - 1
+All grid[i][j] are distinct.
+value in adjacentSum and diagonalSum will be in the range [0, n2 - 1].
+At most 2 * n2 calls will be made to adjacentSum and diagonalSum.;=;=https://leetcode.com/problems/design-neighbor-sum-service/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/design-neighbor-sum-service/solutions/5583228/java-1liner-clean-solution-by-shree_govi-im0b/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5584708/simple-java-code-by-abhinandannaik1717-9alt/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6849078/simple-java-solution-hashtable-by-rohan_-p1si/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5656443/fastest-java-solution-pure-o1-by-im_obid-hn2b/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6774289/java-easy-100-solution-by-ytchouar-5dxc/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5583231/hash-map-easy-and-clean-code-c-java-c-be-38wv/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5583325/hashmap-of-value-index-pairs-dont-search-q8rs/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5586160/beginner-friendly-solution-in-depth-solu-kgn7/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5589379/java-solution-by-ashuuy-q1u2/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5587146/easy-java-solution-simple-explanation-by-iigm/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6719059/used-map-to-store-index-of-each-value-ja-hxjs/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/5583287/beats-100-javacc-solution-for-leectcode3-ipux/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6467839/ultimate-modular-code-for-machine-coding-x2gu/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6671433/reusable-design-java-by-happy_coderr-9ece/;;https://leetcode.com/problems/design-neighbor-sum-service/solutions/6772954/easy-solution-by-lokeshambarapu-ylgz/;;;=;==;=;=;

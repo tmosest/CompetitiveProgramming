@@ -1,0 +1,39 @@
+2095. Delete the Middle Node of a Linked List;=;=Medium;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode()       ListNode(int val)  this.val = val;       ListNode(int val, ListNode next)  this.val = val; this.next = next;    class      public ListNode deleteMiddle(ListNode head);=;=You are given the head of a linked list. Delete the middle node, and return the head of the modified linked list.
+
+The middle node of a linked list of size n is the ?n / 2?th node from the start using 0-based indexing, where ?x? denotes the largest integer less than or equal to x.
+
+For n = 1, 2, 3, 4, and 5, the middle nodes are 0, 1, 1, 2, and 2, respectively.
+ 
+
+Example 1:
+
+
+Input: head = [1,3,4,7,1,2,6]
+Output: [1,3,4,1,2,6]
+Explanation:
+The above figure represents the given linked list. The indices of the nodes are written below.
+Since n = 7, node 3 with value 7 is the middle node, which is marked in red.
+We return the new list after removing this node. 
+Example 2:
+
+
+Input: head = [1,2,3,4]
+Output: [1,2,4]
+Explanation:
+The above figure represents the given linked list.
+For n = 4, node 2 with value 3 is the middle node, which is marked in red.
+Example 3:
+
+
+Input: head = [2,1]
+Output: [2]
+Explanation:
+The above figure represents the given linked list.
+For n = 2, node 1 with value 1 is the middle node, which is marked in red.
+Node 0 with value 2 is the only node remaining after removing node 1.
+ 
+
+Constraints:
+
+The number of nodes in the list is in the range [1, 105].
+1 <= Node.val <= 105;=;=https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/6515498/beats-100-smart-solution-notes-javacpyth-pvfx/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/7193288/java-solution-simple-beginner-friendly-e-vrrr/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/4705282/simple-beginner-friendly-dry-run-two-poi-0jlf/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/6994671/simple-explanation-by-harshita_114-n30h/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/7185205/simple-java-solution-two-pointers-on-tim-tb4q/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/6274447/simple-beginner-friendly-two-pointer-app-3rbl/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/6793731/fast-and-clear-with-iterations-in-tables-tzdn/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/7175467/very-very-easy-solution-with-oo-time-com-obo6/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/7145802/easy-java-code-using-2-pointers-beats-us-4drn/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/7162533/beats-9965-best-and-easy-solution-hare-a-wfu0/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/7153454/delete-the-middle-element-of-a-linked-li-2lcz/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/1611982/javapython3-slow-and-fast-pointers-w-bri-mfpg/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/7147559/2-approach-beats-100-java-cpp-python-js-06bue/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/7110410/9969-beats-easiest-sol-slow-fast-approac-4g9y/;;https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/7129807/remove-middle-by-fast-and-slow-pointers-lpbz0/;;;=;==;=;=;

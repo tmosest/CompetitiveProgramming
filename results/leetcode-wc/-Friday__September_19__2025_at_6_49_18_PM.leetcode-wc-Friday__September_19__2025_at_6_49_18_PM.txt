@@ -1,0 +1,32 @@
+2452. Words Within Two Edits of Dictionary;=;=Medium;=;=public List<String> twoEditWords(String[] queries, String[] dictionary);=;=You are given two string arrays, queries and dictionary. All words in each array comprise of lowercase English letters and have the same length.
+
+In one edit you can take a word from queries, and change any letter in it to any other letter. Find all words from queries that, after a maximum of two edits, equal some word from dictionary.
+
+Return a list of all words from queries, that match with some word from dictionary after a maximum of two edits. Return the words in the same order they appear in queries.
+
+ 
+
+Example 1:
+
+Input: queries = ["word","note","ants","wood"], dictionary = ["wood","joke","moat"]
+Output: ["word","note","wood"]
+Explanation:
+- Changing the 'r' in "word" to 'o' allows it to equal the dictionary word "wood".
+- Changing the 'n' to 'j' and the 't' to 'k' in "note" changes it to "joke".
+- It would take more than 2 edits for "ants" to equal a dictionary word.
+- "wood" can remain unchanged (0 edits) and match the corresponding dictionary word.
+Thus, we return ["word","note","wood"].
+Example 2:
+
+Input: queries = ["yes"], dictionary = ["not"]
+Output: []
+Explanation:
+Applying any two edits to "yes" cannot make it equal to "not". Thus, we return an empty array.
+ 
+
+Constraints:
+
+1 <= queries.length, dictionary.length <= 100
+n == queries[i].length == dictionary[j].length
+1 <= n <= 100
+All queries[i] and dictionary[j] are composed of lowercase English letters.;=;=https://leetcode.com/problems/words-within-two-edits-of-dictionary/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2757049/two-approach-java-solution-brute-force-u-nsou/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2756540/javapython-3-bruteforce-code-by-rock-aq01/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/6556277/easy-solution-by-brute-forcing-java-by-r-qkcz/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2756786/simple-java-please-upvote-if-it-helps-by-bq1t/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/6491641/java-easy-trie-solution-by-ytchouar-q1nr/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2756469/brute-force-simple-java-solution-by-sidd-eelx/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2757012/java-brute-force-easy-by-sourin_bruh-aj9q/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2756798/java-easy-solution-brute-force-7ms-by-ra-31qc/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2757018/java-15-ms-brute-force-approach-by-aditi-n2kt/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2756437/java-simple-array-solution-by-dhananjayy-7zpe/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2773215/java-slow-but-understandable-solution-by-hb1o/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2767316/easy-solution-by-anishkumar127-3kx5/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2756531/java-easy-but-brute-force-by-rudy_mentar-vitm/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2756534/beginners-approach-easy-to-understand-by-g5kz/;;https://leetcode.com/problems/words-within-two-edits-of-dictionary/solutions/2762249/java-words-within-two-edits-of-dictionar-7itz/;;;=;==;=;=;

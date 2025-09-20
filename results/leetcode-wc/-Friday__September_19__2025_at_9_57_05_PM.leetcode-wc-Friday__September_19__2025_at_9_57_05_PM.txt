@@ -1,0 +1,30 @@
+2384. Largest Palindromic Number;=;=Medium;=;=public String largestPalindromic(String num);=;=You are given a string num consisting of digits only.
+
+Return the largest palindromic integer (in the form of a string) that can be formed using digits taken from num. It should not contain leading zeroes.
+
+Notes:
+
+You do not need to use all the digits of num, but you must use at least one digit.
+The digits can be reordered.
+ 
+
+Example 1:
+
+Input: num = "444947137"
+Output: "7449447"
+Explanation: 
+Use the digits "4449477" from "444947137" to form the palindromic integer "7449447".
+It can be shown that "7449447" is the largest palindromic integer that can be formed.
+Example 2:
+
+Input: num = "00009"
+Output: "9"
+Explanation: 
+It can be shown that "9" is the largest palindromic integer that can be formed.
+Note that the integer returned should not contain leading zeroes.
+ 
+
+Constraints:
+
+1 <= num.length <= 105
+num consists of digits.;=;=https://leetcode.com/problems/largest-palindromic-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-palindromic-number/solutions/2456626/cpp-java-greedy-on-space-on-time-by-amir-7i37/;;https://leetcode.com/problems/largest-palindromic-number/solutions/4617477/on-easy-java-solution-beginner-friendly-kuwsr/;;https://leetcode.com/problems/largest-palindromic-number/solutions/6903479/greedy-greedy-solution-beats-90-i-promis-7ybb/;;https://leetcode.com/problems/largest-palindromic-number/solutions/6625476/build-the-biggest-palindrome-using-high-l4590/;;https://leetcode.com/problems/largest-palindromic-number/solutions/6847647/java-best-solution-by-heyysankalp-m6gw/;;https://leetcode.com/problems/largest-palindromic-number/solutions/2456668/java-easy-to-understand-solution-using-a-ipb6/;;https://leetcode.com/problems/largest-palindromic-number/solutions/2456726/hashmap-solution-by-princearya23-uou9/;;https://leetcode.com/problems/largest-palindromic-number/solutions/4930653/straightforward-java-solution-by-rainbow-dzru/;;https://leetcode.com/problems/largest-palindromic-number/solutions/4882085/java-easy-solution-by-acthyy-vn55/;;https://leetcode.com/problems/largest-palindromic-number/solutions/2457320/java-simple-hash-table-and-greedy-soluti-cpcd/;;https://leetcode.com/problems/largest-palindromic-number/solutions/2793436/java-most-possible-solution-by-janhvi__2-kh2u/;;https://leetcode.com/problems/largest-palindromic-number/solutions/2462796/java-solution-using-array-easiest-by-utk-xeij/;;https://leetcode.com/problems/largest-palindromic-number/solutions/2752128/easy-to-understand-with-comments-by-2020-1yf9/;;https://leetcode.com/problems/largest-palindromic-number/solutions/2456714/java-solution-by-deborupsinha-hym2/;;https://leetcode.com/problems/largest-palindromic-number/solutions/2457003/java-solution-18ms-100-faster-by-aditya0-58w8/;;;=;==;=;=;

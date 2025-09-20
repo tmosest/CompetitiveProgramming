@@ -1,0 +1,33 @@
+750. Number Of Corner Rectangles;=;=Medium;=;=public int countCornerRectangles(int[][] grid);=;=Given an m x n integer matrix grid where each entry is only 0 or 1, return the number of corner rectangles.
+
+A corner rectangle is four distinct 1's on the grid that forms an axis-aligned rectangle. Note that only the corners need to have the value 1. Also, all four 1's used must be distinct.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[1,0,0,1,0],[0,0,1,0,1],[0,0,0,1,0],[1,0,1,0,1]]
+Output: 1
+Explanation: There is only one corner rectangle, with corners grid[1][2], grid[1][4], grid[3][2], grid[3][4].
+Example 2:
+
+
+Input: grid = [[1,1,1],[1,1,1],[1,1,1]]
+Output: 9
+Explanation: There are four 2x2 rectangles, four 2x3 and 3x2 rectangles, and one 3x3 rectangle.
+Example 3:
+
+
+Input: grid = [[1,1,1,1]]
+Output: 0
+Explanation: Rectangles must have four distinct corners.
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 200
+grid[i][j] is either 0 or 1.
+The number of 1's in the grid is in the range [1, 6000].;=;=https://leetcode.com/problems/number-of-corner-rectangles/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-corner-rectangles/solutions/1527239/java-tc-omaxmnminmn2-space-optimized-spa-asa5/;;https://leetcode.com/problems/number-of-corner-rectangles/solutions/835575/easy-to-understand-solution-time-or2-c-s-1dqh/;;https://leetcode.com/problems/number-of-corner-rectangles/solutions/503005/java-brute-force-by-rajatag03-b8zr/;;https://leetcode.com/problems/number-of-corner-rectangles/solutions/5637121/solution-using-on3-time-o1-space-15-line-wre6/;;https://leetcode.com/problems/number-of-corner-rectangles/solutions/5835813/simple-java-solution-by-sakshikishore-6ke2/;;https://leetcode.com/problems/number-of-corner-rectangles/solutions/5628992/java-set-solution-by-ulyx-z4b7/;;https://leetcode.com/problems/number-of-corner-rectangles/solutions/4312369/java-2-d-dp-solution-by-awuxiaoqi-qogx/;;https://leetcode.com/problems/number-of-corner-rectangles/solutions/3453186/solution-by-deleted_user-trzq/;;https://leetcode.com/problems/number-of-corner-rectangles/solutions/2094896/java-dp-tc-omn2-sc-on2-by-funingteng-siw4/;;https://leetcode.com/problems/number-of-corner-rectangles/solutions/503298/java-array-for-mapping-beats-95-explaine-2ih2/;;;=;==;=;=;

@@ -1,0 +1,49 @@
+2689. Extract Kth Character From The Rope Tree;=;=Easy;=;=/ÊÊDefinitionÊforÊaÊropeÊtreeÊnode.ÊÊÊRopeTreeNodeÊÊÊÊÊÊÊintÊlen;ÊÊÊÊÊÊStringÊval;ÊÊÊÊÊÊRopeTreeNodeÊleft;ÊÊÊÊÊÊRopeTreeNodeÊright;ÊÊÊÊÊÊRopeTreeNode()ÊÊÊÊÊÊÊRopeTreeNode(StringÊval)ÊÊÊÊÊÊÊÊÊÊÊthis.lenÊ=Ê0;ÊÊÊÊÊÊÊÊÊÊthis.valÊ=Êval;ÊÊÊÊÊÊÊÊÊÊÊÊRopeTreeNode(intÊlen)ÊÊÊÊÊÊÊÊÊÊÊthis.lenÊ=Êlen;ÊÊÊÊÊÊÊÊÊÊthis.valÊ=Ê"";ÊÊÊÊÊÊÊÊÊÊÊÊRopeTreeNode(intÊlen,ÊRopeTreeNodeÊleft,ÊRopeTreeNodeÊright)ÊÊÊÊÊÊÊÊÊÊÊthis.lenÊ=Êlen;ÊÊÊÊÊÊÊÊÊÊthis.valÊ=Ê"";ÊÊÊÊÊÊÊÊÊÊthis.leftÊ=Êleft;ÊÊÊÊÊÊÊÊÊÊthis.rightÊ=Êright;ÊÊÊÊÊÊÊÊÊclassÊÊÊÊÊÊpublicÊcharÊgetKthCharacter(RopeTreeNodeÊroot,ÊintÊk);=;=You are given the root of a binary tree and an integer k. Besides the left and right children, every node of this tree has two other properties, a string node.val containing only lowercase English letters (possibly empty) and a non-negative integer node.len. There are two types of nodes in this tree:
+
+Leaf: These nodes have no children, node.len = 0, and node.val is some non-empty string.
+Internal: These nodes have at least one child (also at most two children), node.len > 0, and node.val is an empty string.
+The tree described above is called a Rope binary tree. Now we define S[node] recursively as follows:
+
+If node is some leaf node, S[node] = node.val,
+Otherwise if node is some internal node, S[node] = concat(S[node.left], S[node.right]) and S[node].length = node.len.
+Return k-th character of the string S[root].
+
+Note: If s and p are two strings, concat(s, p) is a string obtained by concatenating p to s. For example, concat("ab", "zz") = "abzz".
+
+Ê
+
+Example 1:
+
+Input: root = [10,4,"abcpoe","g","rta"], k = 6
+Output: "b"
+Explanation: In the picture below, we put an integer on internal nodes that represents node.len, and a string on leaf nodes that represents node.val.
+You can see that S[root] = concat(concat("g", "rta"), "abcpoe") = "grtaabcpoe". So S[root][5], which represents 6th character of it, is equal to "b".
+
+
+Example 2:
+
+Input: root = [12,6,6,"abc","efg","hij","klm"], k = 3
+Output: "c"
+Explanation: In the picture below, we put an integer on internal nodes that represents node.len, and a string on leaf nodes that represents node.val.
+You can see that S[root] = concat(concat("abc", "efg"), concat("hij", "klm")) = "abcefghijklm". So S[root][2], which represents the 3rd character of it, is equal to "c".
+
+
+Example 3:
+
+Input: root = ["ropetree"], k = 8
+Output: "e"
+Explanation: In the picture below, we put an integer on internal nodes that represents node.len, and a string on leaf nodes that represents node.val.
+You can see that S[root] = "ropetree". So S[root][7], which represents 8th character of it, is equal to "e".
+
+
+Ê
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 103]
+node.val contains only lowercase English letters
+0 <= node.val.length <= 50
+0 <= node.len <= 104
+for leaf nodes, node.len = 0 and node.val is non-empty
+for internal nodes, node.len > 0 and node.val is empty
+1 <= k <= S[root].length;=;=https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/6787030/one-shot-one-char-the-rope-tree-dfs-that-e2xo/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/3536050/recursion-solutions-for-c-java-python-by-qktz/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/3536070/non-recursion-solutions-for-c-java-pytho-c32h/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/3744038/java-recursion-olog-n-by-code_with_rj-8808/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/3545678/java-100-faster-solution-by-coder_lalit-go32/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/6329726/java-solution-dfs-by-ndsjqwbbb-9h5d/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/6693239/preorder-clean-by-prashant404-dcm4/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/6828700/java-100-beat-time-and-space-0logn-compl-7doo/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/6527245/dp-on-by-awuxiaoqi-efc4/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/4927462/java-binary-search-tree-by-anilbhat-of3j/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/4925022/post-order-java-solution-beats-80-by-soh-8coi/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/4900164/java-easy-100-java-solution-with-dfs-oh-3nsre/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/4657088/java-easy-pre-order-traversal-by-gaurigu-iy16/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/4679519/beats-100-java-submissions-by-aman38-q0zj/;;https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/solutions/4459125/java-100-pass-with-time-and-space-comple-en5k/;;;=;==;=;=;

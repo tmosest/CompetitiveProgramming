@@ -1,0 +1,39 @@
+3274. Check if Two Chessboard Squares Have the Same Color;=;=Easy;=;=public boolean checkTwoChessboards(String coordinate1, String coordinate2);=;=You are given two strings, coordinate1 and coordinate2, representing the coordinates of a square on an 8 x 8 chessboard.
+
+Below is the chessboard for reference.
+
+
+
+Return true if these two squares have the same color and false otherwise.
+
+The coordinate will always represent a valid chessboard square. The coordinate will always have the letter first (indicating its column), and the number second (indicating its row).
+
+ 
+
+Example 1:
+
+Input: coordinate1 = "a1", coordinate2 = "c3"
+
+Output: true
+
+Explanation:
+
+Both squares are black.
+
+Example 2:
+
+Input: coordinate1 = "a1", coordinate2 = "h3"
+
+Output: false
+
+Explanation:
+
+Square "a1" is black and "h3" is white.
+
+ 
+
+Constraints:
+
+coordinate1.length == coordinate2.length == 2
+'a' <= coordinate1[0], coordinate2[0] <= 'h'
+'1' <= coordinate1[1], coordinate2[1] <= '8';=;=https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/7136955/clean-and-simple-3-line-code-easy-explan-u2be/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/7027718/java-easy-solution-0ms-by-akashraj06-xjaa/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5732832/ts-o1-3-liner-math-solution-by-ashwanide-03c1/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5718177/easy-video-solution-5-liners-how-to-in-i-t17s/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5718345/100-beat-3-lines-code-super-easy-tc-sc-o-ucye/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5718006/simple-trick-detailed-explanation-with-i-su8p/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/6914810/java-solution-by-monish1153-w9kg/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5725010/simple-java-c-code-by-abhinandannaik1717-aw96/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5718031/java-solution-by-harsh__005-rfdp/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5885208/easiestfaster-lesser-cpython3javacpython-6s9k/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/6637994/check-if-two-chessboard-squares-have-the-2a1r/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5755917/simple-code4-lines-beats-100-by-waheed_6-j2e1/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/5722821/simple-easy-to-understand-clean-logic-by-i9cp/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/7201739/100easy-by-aldrinsamuel-57bd/;;https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/solutions/7179167/beats-100-using-if-else-please-upvote-by-s39v/;;;=;==;=;=;

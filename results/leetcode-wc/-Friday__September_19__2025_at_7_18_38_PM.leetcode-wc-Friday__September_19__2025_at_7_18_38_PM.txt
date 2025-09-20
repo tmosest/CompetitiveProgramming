@@ -1,0 +1,47 @@
+3258. Count Substrings That Satisfy K-Constraint I;=;=Easy;=;=public int countKConstraintSubstrings(String s, int k);=;=You are given a binary string s and an integer k.
+
+A binary string satisfies the k-constraint if either of the following conditions holds:
+
+The number of 0's in the string is at most k.
+The number of 1's in the string is at most k.
+Return an integer denoting the number of substrings of s that satisfy the k-constraint.
+
+ 
+
+Example 1:
+
+Input: s = "10101", k = 1
+
+Output: 12
+
+Explanation:
+
+Every substring of s except the substrings "1010", "10101", and "0101" satisfies the k-constraint.
+
+Example 2:
+
+Input: s = "1010101", k = 2
+
+Output: 25
+
+Explanation:
+
+Every substring of s except the substrings with a length greater than 5 satisfies the k-constraint.
+
+Example 3:
+
+Input: s = "11111", k = 1
+
+Output: 15
+
+Explanation:
+
+All substrings of s satisfy the k-constraint.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 50 
+1 <= k <= s.length
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/7206494/beginner-friendly-guide-counting-k-const-2obt/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5653203/easy-video-solution-how-to-in-interview-7p8bm/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/6901971/simple-java-solution-by-adityaralhan-yheq/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5654029/sliding-window-approach-to-count-substri-61gj/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5656907/concise-sliding-window-solution-c-python-b5js/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5660344/simple-java-c-code-by-abhinandannaik1717-s3os/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/6760975/easy-substrings-check-this-out-simple-fo-uezx/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5654801/java-solution-by-harsh__005-8dra/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5653099/solution-in-java-c-prefix-sum-by-yeuhoah-387m/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5654879/easiestfaster-lesser-cpython3javacpython-8ut6/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/7170610/count-substrings-that-satisfy-k-constrai-47b7/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5653064/java-linear-solution-by-shree_govind_jee-0m0d/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5979669/java-solution-by-khushi_1502-l0ng/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/5653270/sliding-window-on-by-iknownothingaboutco-8tek/;;https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/solutions/6216470/java-brute-force-approach-by-ritabrata_1-bn9l/;;;=;==;=;=;

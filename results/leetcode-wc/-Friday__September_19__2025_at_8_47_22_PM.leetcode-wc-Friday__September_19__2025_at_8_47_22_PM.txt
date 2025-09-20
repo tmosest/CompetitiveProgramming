@@ -1,0 +1,23 @@
+1437. Check If All 1's Are at Least Length K Places Away;=;=Easy;=;=public boolean kLengthApart(int[] nums, int k);=;=Given an binary array nums and an integer k, return true if all 1's are at least k places away from each other, otherwise return false.
+
+ 
+
+Example 1:
+
+
+Input: nums = [1,0,0,0,1,0,0,1], k = 2
+Output: true
+Explanation: Each of the 1s are at least 2 places away from each other.
+Example 2:
+
+
+Input: nums = [1,0,0,1,0,1], k = 2
+Output: false
+Explanation: The second 1 and third 1 are only one apart from each other.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= k <= nums.length
+nums[i] is 0 or 1;=;=https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/7161115/100-beats-check-if-all-1s-are-at-least-k-2qb3/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/5090516/easy-solutionbeats-100binary-spacing-val-07on/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/6909986/easy-using-java-by-sambhav__shrey-apcs/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/5272943/simple-easy-to-understand-java-code-beat-a0tc/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/6745642/1s-apart-or-its-gonna-be-a-binary-explos-7j2z/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/6636900/easy-java-solution-by-vermaanshul975-1fc6/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/7056267/java-beats-100-by-c0s-xbgu/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/6943305/check-if-all-1s-are-at-least-length-k-pl-khqm/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/6417065/maintaining-k-distance-between-1s-by-aru-iais/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/2556791/java-arrays-faster-than-100-java-submiss-ygki/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/3217769/java-on-100-faster-solution-by-tbekpro-zan4/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/3669588/100-beats-java-easy-solution-by-hemuuu-xkcr/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/5719799/easiest-java-c-solution-with-approach-by-0rbx/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/2737963/simple-java-solution-beats-100-by-abhi12-xyrc/;;https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/6388725/java-100-solution-by-bat5738-986x/;;;=;==;=;=;

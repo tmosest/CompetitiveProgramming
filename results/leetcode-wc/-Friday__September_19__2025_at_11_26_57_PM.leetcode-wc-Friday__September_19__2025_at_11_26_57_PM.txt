@@ -1,0 +1,53 @@
+2734. Lexicographically Smallest String After Substring Operation;=;=Medium;=;=public String smallestString(String s);=;=Given a string s consisting of lowercase English letters. Perform the following operation:
+
+Select any non-empty substring then replace every letter of the substring with the preceding letter of the English alphabet. For example, 'b' is converted to 'a', and 'a' is converted to 'z'.
+Return the lexicographically smallest string after performing the operation.
+
+ 
+
+Example 1:
+
+Input: s = "cbabc"
+
+Output: "baabc"
+
+Explanation:
+
+Perform the operation on the substring starting at index 0, and ending at index 1 inclusive.
+
+Example 2:
+
+Input: s = "aa"
+
+Output: "az"
+
+Explanation:
+
+Perform the operation on the last letter.
+
+Example 3:
+
+Input: s = "acbbc"
+
+Output: "abaab"
+
+Explanation:
+
+Perform the operation on the substring starting at index 1, and ending at index 4 inclusive.
+
+Example 4:
+
+Input: s = "leetcode"
+
+Output: "kddsbncd"
+
+Explanation:
+
+Perform the operation on the entire string.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 3 * 105
+s consists of lowercase English letters;=;=https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/7143767/solutionsimple-clear-optimal-greedy-stri-2ble/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3623911/javacpython-straight-forward-solution-by-ntjy/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/6916664/explanation-easy-to-understand-great-sol-rjy5/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3626810/javacpython-with-easy-explanation-by-adi-5bfc/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3623779/java-easy-by-neel_diyora-hmdd/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/5566113/easy-java-code-on-solution-beats-95-by-v-i7jx/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3623778/java-easy-solution-by-judgementdey-68ov/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/4042377/java-solution-on-easy-solution-by-pandur-802v/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3624126/brute-force-with-explanation-java-by-ans-nubb/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3623811/easy-java-by-deveshpatel11-x1c3/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3623818/simple-java-solution-index-of-first-non-5tdjv/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3624233/easy-thought-process-easy-to-understand-5cuzn/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3624027/image-representation-steps-explained-beg-z9hw/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/4199014/java-simple-linear-solution-using-setbui-6neh/;;https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/solutions/3624649/java-80-beats-easy-understanding-explana-qr1h/;;;=;==;=;=;

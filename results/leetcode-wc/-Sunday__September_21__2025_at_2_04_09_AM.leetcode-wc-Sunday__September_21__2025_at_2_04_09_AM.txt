@@ -1,0 +1,27 @@
+1087. Brace Expansion;=;=Medium;=;=public String[] expand(String s);=;=You are given a string s representing a list of words. Each letter in the word has one or more options.
+
+If there is one option, the letter is represented as is.
+If there is more than one option, then curly braces delimit the options. For example, "{a,b,c}" represents options ["a", "b", "c"].
+For example, if s = "a{b,c}", the first character is always 'a', but the second character can be 'b' or 'c'. The original list is ["ab", "ac"].
+
+Return all words that can be formed in this manner, sorted in lexicographical order.
+
+ 
+
+Example 1:
+
+Input: s = "{a,b}c{d,e}f"
+Output: ["acdf","acef","bcdf","bcef"]
+Example 2:
+
+Input: s = "abcd"
+Output: ["abcd"]
+ 
+
+Constraints:
+
+1 <= s.length <= 50
+s consists of curly brackets '{}', commas ',', and lowercase English letters.
+s is guaranteed to be a valid input.
+There are no nested curly brackets.
+All characters inside a pair of consecutive opening and ending curly brackets are different.;=;=https://leetcode.com/problems/brace-expansion/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/brace-expansion/solutions/6078372/easy-to-understand-recursive-solution-by-b7rp/;;https://leetcode.com/problems/brace-expansion/solutions/6784531/backtracking-solution-by-1sara2-twez/;;https://leetcode.com/problems/brace-expansion/solutions/428381/easy-java-solution-with-comments-beat-99-59qd/;;https://leetcode.com/problems/brace-expansion/solutions/3969277/java-back-tracking-solution-by-sarahassa-enz3/;;https://leetcode.com/problems/brace-expansion/solutions/3358751/100-beats-backtracking-easy-solution-by-7t5k0/;;https://leetcode.com/problems/brace-expansion/solutions/3445289/java-backtracking-sorting-100-by-dragsco-506k/;;https://leetcode.com/problems/brace-expansion/solutions/454343/java-solution-backtracking-by-anupkmr03-x8jl/;;https://leetcode.com/problems/brace-expansion/solutions/1911997/java-clean-dfs-solution-with-preprocessi-qhw3/;;https://leetcode.com/problems/brace-expansion/solutions/6571484/parsing-string-then-backtracking-by-yyy0-01p4/;;https://leetcode.com/problems/brace-expansion/solutions/6394874/backtracking-solution-java-by-someuser_i-5fwa/;;https://leetcode.com/problems/brace-expansion/solutions/6527282/java-backtracking-by-golden_fish-4ew7/;;https://leetcode.com/problems/brace-expansion/solutions/6207155/easy-to-understand-java-solution-with-co-5115/;;https://leetcode.com/problems/brace-expansion/solutions/6464381/bfs-inefficient-but-works-by-dks2021-srrs/;;https://leetcode.com/problems/brace-expansion/solutions/5792508/simple-java-solution-by-sakshikishore-xkqw/;;https://leetcode.com/problems/brace-expansion/solutions/5360647/recursive-solution-by-n00bs404-j502/;;;=;==;=;=;

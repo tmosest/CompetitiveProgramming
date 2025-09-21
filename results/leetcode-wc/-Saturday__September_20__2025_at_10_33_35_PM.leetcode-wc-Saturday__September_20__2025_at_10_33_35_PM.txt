@@ -1,0 +1,22 @@
+1837. Sum of Digits in Base K;=;=Easy;=;=publicÊintÊsumBase(intÊn,ÊintÊk);=;=Given an integer n (in base 10) and a base k, return the sum of the digits of n after converting n from base 10 to base k.
+
+After converting, each digit should be interpreted as a base 10 number, and the sum should be returned in base 10.
+
+Ê
+
+Example 1:
+
+Input: n = 34, k = 6
+Output: 9
+Explanation: 34 (base 10) expressed in base 6 is 54. 5 + 4 = 9.
+Example 2:
+
+Input: n = 10, k = 10
+Output: 1
+Explanation: n is already in base 10. 1 + 0 = 1.
+Ê
+
+Constraints:
+
+1 <= n <= 100
+2 <= k <= 10;=;=https://leetcode.com/problems/sum-of-digits-in-base-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/7146909/ologn-solution-by-manish_v007-xyr4/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/7096575/beats-100-0ms-solution-by-arshiya1731-84zf/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/7040240/easy-to-understandbeginer-friendlyonly-f-9oip/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/6950992/1837-sum-of-digits-in-base-k-single-loop-rz27/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/7000595/easy-java-solution-inbuilt-function-by-p-pp27/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/6833993/easy-simple-way-try-this-by-sairangineen-fyph/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/6850902/beats-100-by-alexander_sergeev-ss2y/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/7200053/sum-of-digits-in-base-k-by-shrayanka_m-4179/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/7049827/simple-solution-using-java-by-srinivasan-omtq/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/6366800/easy-c-and-java-solution-beating-100-in-rej8w/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/6641410/java-easy-solution-beats-100-by-shikharg-37d8/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/6429743/simple-approach-for-beginners-by-sainath-jtca/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/4827723/fast-100-beats-and-memory-100-beats-too-3hhoe/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/5517853/clear-concise-and-effective-solution-by-ix32o/;;https://leetcode.com/problems/sum-of-digits-in-base-k/solutions/5273938/100-beats-easy-code-by-pugazhmara-p0wj/;;;=;==;=;=;

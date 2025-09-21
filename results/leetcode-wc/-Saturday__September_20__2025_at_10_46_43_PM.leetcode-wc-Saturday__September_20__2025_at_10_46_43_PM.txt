@@ -1,0 +1,33 @@
+1838. Frequency of the Most Frequent Element;=;=Medium;=;=public int maxFrequency(int[] nums, int k);=;=The frequency of an element is the number of times it occurs in an array.
+
+You are given an integer array nums and an integer k. In one operation, you can choose an index of nums and increment the element at that index by 1.
+
+Return the maximum possible frequency of an element after performing at most k operations.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,4], k = 5
+Output: 3
+Explanation: Increment the first element three times and the second element two times to make nums = [4,4,4].
+4 has a frequency of 3.
+Example 2:
+
+Input: nums = [1,4,8,13], k = 5
+Output: 2
+Explanation: There are multiple optimal solutions:
+- Increment the first element three times to make nums = [4,4,8,13]. 4 has a frequency of 2.
+- Increment the second element four times to make nums = [1,8,8,13]. 8 has a frequency of 2.
+- Increment the third element five times to make nums = [1,4,13,13]. 13 has a frequency of 2.
+Example 3:
+
+Input: nums = [3,9,6], k = 2
+Output: 1
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105
+1 <= k <= 105;=;=https://leetcode.com/problems/frequency-of-the-most-frequent-element/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/5513173/video-sliding-window-solution-by-niits-j4zy/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/4300738/more-than-one-waydetail-explanation-java-rg2k/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1533899/sliding-window-visualisation-by-donchakk-4abo/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/4300895/video-give-me-10-minutes-how-we-think-ab-cvlv/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/7139271/90-beats-easy-simple-java-solution-by-pr-0ag8/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/5208112/understanding-sliding-window-and-two-poi-hx08/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/6809062/java-solution-brute-force-optimal-soluti-8qdg/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/7016883/best-java-solution-beats-90-of-submissio-is4l/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/4211528/cjavapythonjavascript-3-approaches-expla-8tev/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1489948/java-easy-solution-95-faster-by-omar_207-xjgc/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/2596103/most-simple-sliding-window-binary-search-y19t/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/7184527/sliding-window-java-by-runlingli-k95u/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/6715797/maximum-frequency-with-k-operations-slid-qnuy/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/6711447/simple-java-solution-by-tejassinkar24-kmi0/;;https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/4661541/simplest-sliding-window-approach-using-j-wxg5/;;;=;==;=;=;

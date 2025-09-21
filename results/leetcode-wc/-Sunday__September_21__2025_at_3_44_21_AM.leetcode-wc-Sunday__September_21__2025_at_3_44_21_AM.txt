@@ -1,0 +1,26 @@
+1162. As Far from Land as Possible;=;=Medium;=;=public int maxDistance(int[][] grid);=;=Given an n x n grid containing only values 0 and 1, where 0 represents water and 1 represents land, find a water cell such that its distance to the nearest land cell is maximized, and return the distance. If no land or water exists in the grid, return -1.
+
+The distance used in this problem is the Manhattan distance: the distance between two cells (x0, y0) and (x1, y1) is |x0 - x1| + |y0 - y1|.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[1,0,1],[0,0,0],[1,0,1]]
+Output: 2
+Explanation: The cell (1, 1) is as far as possible from all the land with distance 2.
+Example 2:
+
+
+Input: grid = [[1,0,0],[0,0,0],[0,0,0]]
+Output: 4
+Explanation: The cell (2, 2) is as far as possible from all the land with distance 4.
+ 
+
+Constraints:
+
+n == grid.length
+n == grid[i].length
+1 <= n <= 100
+grid[i][j] is 0 or 1;=;=https://leetcode.com/problems/as-far-from-land-as-possible/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3166138/day-41-c-bfs-easiest-beginner-friendly-a-z1ms/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3166441/fast-java-solution-by-coding_menance-cwtf/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3166461/clean-codes-full-explanation-breadth-fir-sg7f/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/6148189/cpython3javacpython3cgoexplained-beats-1-ydsu/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/1399776/java-easy-bfs-solution-by-darkrwe-z8m9/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3167150/java-easy-bfs-using-queue-graph-by-kalin-2893/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3641722/easy-solution-in-java-by-niketh_1234-tyxz/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3167147/java-multi-source-bfs-detailed-solution-nbjzt/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/2617947/java-easy-bfs-solution-using-queue-by-vi-chbi/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/1642774/java-solution-bfs-2-approaches-by-silver-88l9/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3167854/beats-100-using-bfs-easy-solution-java-b-khth/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3168129/easy-to-understand-by-kumarnitesh88441-mk6u/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3166470/java-easy-to-understand-bfs-by-vittalupa-cgkz/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/1836545/java-bfs-by-harshalvermaaaaa-a0k2/;;https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3166378/c-java-concise-bfs-solution-beats-100-ru-3ral/;;;=;==;=;=;

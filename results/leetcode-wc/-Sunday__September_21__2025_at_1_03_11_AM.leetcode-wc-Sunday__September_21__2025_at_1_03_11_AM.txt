@@ -1,0 +1,29 @@
+1190. Reverse Substrings Between Each Pair of Parentheses;=;=Medium;=;=public String reverseParentheses(String s);=;=You are given a string s that consists of lower case English letters and brackets.
+
+Reverse the strings in each pair of matching parentheses, starting from the innermost one.
+
+Your result should not contain any brackets.
+
+ 
+
+Example 1:
+
+Input: s = "(abcd)"
+Output: "dcba"
+Example 2:
+
+Input: s = "(u(love)i)"
+Output: "iloveu"
+Explanation: The substring "love" is reversed first, then the whole string is reversed.
+Example 3:
+
+Input: s = "(ed(et(oc))el)"
+Output: "leetcode"
+Explanation: First, we reverse the substring "oc", then "etco", and finally, the whole string.
+ 
+
+Constraints:
+
+1 <= s.length <= 2000
+s only contains lower case English characters and parentheses.
+It is guaranteed that all parentheses are balanced.;=;=https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5458638/explanations-no-one-will-give-you2-detai-kq7r/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5457550/beats-100-explained-with-video-cjavapyth-n2y5/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5457433/beats-100-easy-solution-with-explanation-3x8l/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5458414/easiest-and-optimal-stack-solution-beats-d7f8/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5457253/simulation-stack-tutorial-reverse-substr-kqbh/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5458050/detailed-explanation-java-c-python-by-ab-etzb/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5458683/1190-detailed-solution-no-inbuilt-revers-9xyv/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/6659556/recursive-approach-to-solve-it-by-vishal-kxme/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5722735/intuitive-to-something-new-by-dixon_n-vy2g/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/6974509/stack-based-reversal-of-substrings-betwe-79zq/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/3010219/java-using-stackcharacter-by-fllght-2m60/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/6768173/reverse-substring-between-each-pair-of-p-4f9n/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/6827731/reverse-substrings-between-each-pair-of-nn09f/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/1055548/java-stack-3ms-by-trevor-akshay-qguu/;;https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5457644/java-easiest-beats-100-by-wankhedeayush9-qsck/;;;=;==;=;=;

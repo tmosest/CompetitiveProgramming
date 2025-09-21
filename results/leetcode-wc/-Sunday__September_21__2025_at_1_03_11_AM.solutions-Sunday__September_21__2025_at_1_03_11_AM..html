@@ -1,0 +1,439 @@
+<div class="w-full"><div class="flex min-w-0 flex-col gap-3"><div class="text-[22px] font-medium leading-8 [overflow-wrap:anywhere] text-lc-text-primary dark:text-dark-lc-text-primary">???Explanations No One Will Give You??2 Detailed Approaches??Extremely Simple And Effective?</div><div class="flex items-center gap-4"><div data-state="closed"><a target="_blank" rel="noopener noreferrer" class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate h-8 min-h-[32px] w-8 min-w-[32px] block" href="/u/heir-of-god/"><img alt="" class="rounded-1/2 object-cover h-full w-full rounded-full" src="https://assets.leetcode.com/users/heir-of-god/avatar_1721986740.png"></a></div><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2"><div class="flex items-center gap-1 truncate" translate="no"><a target="_blank" rel="noopener noreferrer" class="no-underline text-sm overflow-hidden max-w-[100px] md:max-w-[200px] truncate hover:text-blue-s dark:hover:text-dark-blue-s font-normal text-text-primary dark:text-text-primary" href="/u/heir-of-god/">Heir of God</a></div></div><div class="flex items-center gap-3"><div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M1.104 12.444a1 1 0 010-.888c.13-.26.37-.693.722-1.241A18.85 18.85 0 013.88 7.652C6.184 5.176 8.896 3.667 12 3.667s5.816 1.509 8.119 3.985c.79.85 1.475 1.756 2.055 2.663.352.548.593.98.722 1.24a1 1 0 010 .89c-.13.26-.37.692-.722 1.24a18.848 18.848 0 01-2.055 2.663c-2.303 2.476-5.015 3.985-8.119 3.985s-5.816-1.509-8.119-3.985a18.846 18.846 0 01-2.055-2.663c-.352-.548-.593-.98-.722-1.24zm2.406.162a16.87 16.87 0 001.836 2.38c1.959 2.106 4.19 3.347 6.654 3.347 2.465 0 4.695-1.24 6.654-3.347A16.87 16.87 0 0020.86 12a16.871 16.871 0 00-2.206-2.986C16.695 6.908 14.464 5.667 12 5.667c-2.465 0-4.695 1.24-6.654 3.347A16.87 16.87 0 003.14 12c.108.188.232.391.37.607zM12 15.75c-2.06 0-3.727-1.68-3.727-3.75 0-2.07 1.667-3.75 3.727-3.75 2.06 0 3.727 1.68 3.727 3.75 0 2.07-1.667 3.75-3.727 3.75zm0-2c.952 0 1.727-.782 1.727-1.75s-.775-1.75-1.727-1.75c-.952 0-1.727.782-1.727 1.75s.775 1.75 1.727 1.75z" clip-rule="evenodd"></path></svg><div class="text-xs dark:text-sd-gray-500 text-sd-gray-400">26424</div></div><div class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M19 11.063V7h-2v1a1 1 0 11-2 0V7H9v1a1 1 0 01-2 0V7H5v4.063h14zm0 2H5V19h14v-5.938zM9 5h6V4a1 1 0 112 0v1h2a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2V4a1 1 0 012 0v1z" clip-rule="evenodd"></path></svg><div class="min-w-max text-xs dark:text-sd-gray-500 text-sd-gray-400"><span class="" data-state="closed">Jul 10, 2024</span></div></div></div></div></div><div class="flex flex-grow flex-nowrap items-center gap-2 overflow-hidden my-1"><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Array</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">String</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Stack</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Queue</div><button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r3a:" data-state="closed" class=""><span><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">6+</div></span></button></div></div></div><div class="break-words"><div><div class="flex flex-col w-full" style="position: relative;"><div><div class="mYe_l WRmCx"><blockquote>
+        <p>
+            <b>
+                Stay afraid, but do it anyway. What's important is the action. You don’t have to wait to be confident. Just do it and eventually the confidence will follow.
+            </b>        
+        </p>
+        <p>
+            --- Carrie Fisher ---
+        </p>
+</blockquote>
+<h1 id="problem-explanation-and-understanding">?Problem Explanation and Understanding:</h1>
+<h2 id="-problem-description">? Problem Description</h2>
+<p>You are given a string <code>s</code> which consists only of lower-case letters and parentheses. It's guaranteed that parentheses are balanced. You need to reverse this string such that girst you reverse the innermost part of string, then pre-innermost etc.</p>
+<h2 id="?-input">??? Input:</h2>
+<ul>
+<li>String <code>s</code></li>
+</ul>
+<h2 id="?-output">??? Output:</h2>
+<p>The result string after reversing</p>
+<hr>
+<h1 id="1??-approach-1-stack-and-brute-force-reverse">1??? Approach 1: Stack And Brute Force Reverse</h1>
+<h1 id="-intuition">? Intuition</h1>
+<p>It took time for me to come up even with this approach, so don't worry if something seems hard, I'll try my best so after my explanations you can write code by yourself.</p>
+<ul>
+<li>Let's say we iterate through <code>s</code> and we found <code>)</code>. What does this mean for us? Well, this means that we want to know the pair to which match this bracket and then reverse string from that bracket to this. How'd we know? Common data structure related to problems with parentheses - stack. Because if brackets are balanced than you can match them like this:
+<ul>
+<li>If you encountered <code>)</code> then the matching open bracket is the one last in the stack - this is the last bracket we found which is still unmatched with any close bracket.</li>
+</ul>
+</li>
+<li>So, all we want to do - create stack and keep track of indeces of open brackets. Each time we find close bracket we match it to the last unmatched open bracket and <code>reverse</code> string beetween them.</li>
+<li>This approach guarantee that we first reverse innermost parts and only then reverse them one more time on the next layer.</li>
+</ul>
+<h3 id="dry-run">Dry Run</h3>
+<p>The last post someone was needed dry run, so here it is:<br>
+<code>s = "b(na)ana"</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Step</th><th>char</th><th>ind_stack</th><th>res</th><th>Action</th></tr></thead><tbody><tr><td>1</td><td>b</td><td>[]</td><td>['b']</td><td>Append 'b' to <code>res</code></td></tr><tr><td>2</td><td>(</td><td>[1]</td><td>['b']</td><td>Push index 1 to <code>ind_stack</code></td></tr><tr><td>3</td><td>n</td><td>[1]</td><td>['b', 'n']</td><td>Append 'n' to <code>res</code></td></tr><tr><td>4</td><td>a</td><td>[1]</td><td>['b', 'n', 'a']</td><td>Append 'a' to <code>res</code></td></tr><tr><td>5</td><td>)</td><td>[]</td><td>['b', 'a', 'n']</td><td>Pop index 1 from <code>ind_stack</code> and reverse substring <code>['n', 'a']</code></td></tr><tr><td>6</td><td>a</td><td>[]</td><td>['b', 'a', 'n', 'a']</td><td>Append 'a' to <code>res</code></td></tr><tr><td>7</td><td>n</td><td>[]</td><td>['b', 'a', 'n', 'a', 'n']</td><td>Append 'n' to <code>res</code></td></tr><tr><td>8</td><td>a</td><td>[]</td><td>['b', 'a', 'n', 'a', 'n', 'a']</td><td>Append 'a' to <code>res</code></td></tr></tbody></table>
+<p>Final result: <code>"banana"</code></p>
+<h1 id="-coding">??? Coding</h1>
+<ul>
+<li>Initialize an empty stack <code>ind_stack</code> to store indices of opening parentheses.</li>
+<li>Initialize an empty list <code>res</code> to build the result string.</li>
+<li>Iterate over each character <code>char</code> in the input string <code>s</code>:
+<ul>
+<li>If the character is an opening parenthesis <code>"("</code>:
+<ul>
+<li>Append the current length of <code>res</code> to <code>ind_stack</code>, indicating the start of a new substring to be reversed later.</li>
+</ul>
+</li>
+<li>If the character is a closing parenthesis <code>")"</code>:
+<ul>
+<li>Pop the last index from <code>ind_stack</code>, which marks the start of the substring to be reversed.</li>
+<li>Reverse the substring in <code>res</code> starting from the popped index to the current end of <code>res</code>.</li>
+</ul>
+</li>
+<li>If the character is neither <code>"("</code> nor <code>")"</code>:
+<ul>
+<li>Append the character to <code>res</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>After processing all characters, join the list <code>res</code> into a string and return it.</li>
+</ul>
+<h1 id="-complexity-analysis">? Complexity Analysis</h1>
+<ul>
+<li>? Time complexity: O(n^2), since we iterate through whole <code>s</code> and every time we encounter <code>)</code> we reverse substring so in worst case we will have O(n) * O(n) = O(n^2)</li>
+<li>? Space complexity: O(n), since we use array <code>ind_stack</code> with size up to <code>n / 2</code> -&gt; O(n)</li>
+</ul>
+<h1 id="-code">? Code</h1>
+<div class="border-gray-3 dark:border-dark-gray-3 mb-6 overflow-hidden rounded-lg border text-sm"><div class="flex select-none overflow-x-auto bg-layer-2 dark:bg-dark-layer-2"><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-1 dark:text-dark-label-1 d8276">Python</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C++</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">JavaScript</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Java</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C</div></div><div class="px-3 py-2.5 bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-python" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span class="token" style="color: rgb(86, 156, 214);">class</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">Solution</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(86, 156, 214);">def</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">reverseParentheses</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>self</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">str</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">str</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>        ind_stack</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> deque</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(206, 145, 120);">int</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> deque</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>        res</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">list</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(206, 145, 120);">str</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> char </span><span class="token" style="color: rgb(86, 156, 214);">in</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> char </span><span class="token" style="color: rgb(212, 212, 212);">==</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">"("</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># start new string we need to reverse first</span><span>
+</span></span><span><span>                ind_stack</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>append</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(206, 145, 120);">len</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>res</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># string starts on next index</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">elif</span><span> char </span><span class="token" style="color: rgb(212, 212, 212);">==</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">")"</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># reverse string from last added start index</span><span>
+</span></span><span><span>                start_ind</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">int</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> ind_stack</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>pop</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>                res</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>start_ind</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> res</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>start_ind</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">else</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                res</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>append</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>char</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">""</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>join</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>res</span><span class="token" style="color: rgb(212, 212, 212);">)</span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div></div>
+<h1 id="2??-approach-2-wormhole-teleportation-or-wt---what-the-hell-is-this">2??? Approach 2: Wormhole Teleportation (or WT - what the HELL IS THIS)</h1>
+<h1 id="-intuition-1">? Intuition</h1>
+<p>I've guessed this approach after I looked at some examples, but after writing very messy code with 50+ lines I've given up and observe code of others.</p>
+<ul>
+<li>I think there's no way to normally explain this approach so let's better look at some examples with my comment along them.</li>
+<li>My first thought when I see this question was that if part of the string is nested even number of times then it will be in normal order in the result and if odd - it will be reversed</li>
+</ul>
+<p><img alt="image.png" src="https://assets.leetcode.com/users/images/f6e6e349-2932-441f-930c-9804ccbca89c_1720679299.5830288.png"></p>
+<ul>
+<li>Here NR means <code>not reversed</code> and R <code>reversed</code>. This logic can be applied in the other way. Let's think about direction in which we read every part of string:</li>
+</ul>
+<p><img alt="image.png" src="https://assets.leetcode.com/users/images/50d689d5-6846-44e1-9769-4abf39b3e10d_1720679327.9780543.png"></p>
+<ul>
+<li>This logic brought me to the optimal solution. As you can see you like "Jump" from bracket to bracket with changing the direction. If you ever found <code>(</code> and jumped to <code>)</code> it matching you'll always return to this <code>(</code> and then jump one more time to <code>)</code> but with another direction which means you escape from this pair of brackets. I draw some examples for you to understand this better:</li>
+</ul>
+<p><img alt="image.png" src="https://assets.leetcode.com/users/images/388a51a8-4d8d-4dce-b87f-3409c93e0e79_1720679346.1019084.png"></p>
+<p><img alt="image.png" src="https://assets.leetcode.com/users/images/60df785c-fabf-4b02-8c68-84052042006f_1720679358.1889184.png"></p>
+<h1 id="-coding-1">??? Coding</h1>
+<ul>
+<li>Initialize a list <code>index_pairs</code> of length <code>n</code> with all elements set to 0. This list will store the matching indices of the parentheses.</li>
+<li>Initialize an empty deque <code>stack_start_ind</code> to store indices of opening parentheses.</li>
+<li>Iterate over each character index <code>char_ind</code> in the range of <code>n</code>:
+<ul>
+<li>Retrieve the character <code>char</code> at index <code>char_ind</code> from <code>s</code>.</li>
+<li>If the character is an opening parenthesis <code>"("</code>:
+<ul>
+<li>Append the current index <code>char_ind</code> to <code>stack_start_ind</code>.</li>
+</ul>
+</li>
+<li>If the character is a closing parenthesis <code>")"</code>:
+<ul>
+<li>Pop the last index from <code>stack_start_ind</code>, which marks the start of the matching opening parenthesis.</li>
+<li>Set the <code>index_pairs</code> at the current index <code>char_ind</code> to the popped index.</li>
+<li>Set the <code>index_pairs</code> at the popped index to the current index <code>char_ind</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Initialize an empty list <code>res</code> to build the result string.</li>
+<li>Initialize an integer <code>cur_ind</code> to 0, representing the current index in the string.</li>
+<li>Initialize an integer <code>cur_dir</code> to 1, representing the current direction of traversal (1 for forward, -1 for backward).</li>
+<li>While <code>cur_ind</code> is within the range of <code>n</code> (as you saw we always reached the end of the string):
+<ul>
+<li>Retrieve the character <code>char</code> at index <code>cur_ind</code> from <code>s</code>.</li>
+<li>If the character is an opening or closing parenthesis <code>"("</code> or <code>")"</code>:
+<ul>
+<li>Update <code>cur_ind</code> to the corresponding index from <code>index_pairs</code>.</li>
+<li>Reverse the direction by multiplying <code>cur_dir</code> by -1.</li>
+</ul>
+</li>
+<li>Otherwise:
+<ul>
+<li>Append the character <code>char</code> to <code>res</code>.</li>
+</ul>
+</li>
+<li>Update <code>cur_ind</code> by adding <code>cur_dir</code>.</li>
+</ul>
+</li>
+<li>After processing all characters, join the list <code>res</code> into a string and return it.</li>
+</ul>
+<h1 id="-complexity-analysis-1">? Complexity Analysis</h1>
+<ul>
+<li>? Time complexity: O(n), since we ho through each character of <code>s</code> twice which is still O(n)</li>
+<li>? Space complexity: O(n), since we use <code>stack_start_ind</code> of size up to <code>n / 2</code> and <code>index_pairs</code> of size <code>n</code> which is O(n)</li>
+</ul>
+<h1 id="-code-1">? Code</h1>
+<div class="border-gray-3 dark:border-dark-gray-3 mb-6 overflow-hidden rounded-lg border text-sm"><div class="flex select-none overflow-x-auto bg-layer-2 dark:bg-dark-layer-2"><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-1 dark:text-dark-label-1 d8276">Python</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C++</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">JavaScript</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Java</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C</div></div><div class="px-3 py-2.5 bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-python" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span class="token" style="color: rgb(86, 156, 214);">class</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">Solution</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(86, 156, 214);">def</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">reverseParentheses</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>self</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">str</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">str</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>        n</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">int</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">len</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>        index_pairs</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">list</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(206, 145, 120);">int</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(181, 206, 168);">0</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> _ </span><span class="token" style="color: rgb(86, 156, 214);">in</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">range</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>n</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span>
+</span></span><span><span>        stack_start_ind</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> deque</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(206, 145, 120);">int</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> deque</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> char_ind </span><span class="token" style="color: rgb(86, 156, 214);">in</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">range</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>n</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>            char </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>char_ind</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> char </span><span class="token" style="color: rgb(212, 212, 212);">==</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">"("</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                stack_start_ind</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>append</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>char_ind</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">elif</span><span> char </span><span class="token" style="color: rgb(212, 212, 212);">==</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">")"</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                start_ind</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">int</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> stack_start_ind</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>pop</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>                index_pairs</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>char_ind</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> start_ind
+</span></span><span><span>                index_pairs</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>start_ind</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> char_ind
+</span></span><span>
+</span><span><span>        res </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span>
+</span></span><span><span>        cur_ind </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span>
+</span></span><span><span>        cur_dir </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">while</span><span> cur_ind </span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span> n</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>            char </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>cur_ind</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> char </span><span class="token" style="color: rgb(86, 156, 214);">in</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">"()"</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                cur_ind</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">int</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> index_pairs</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>cur_ind</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span>
+</span></span><span><span>                cur_dir </span><span class="token" style="color: rgb(212, 212, 212);">*=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">else</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                res</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>append</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>cur_ind</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>            cur_ind </span><span class="token" style="color: rgb(212, 212, 212);">+=</span><span> cur_dir
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">""</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>join</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>res</span><span class="token" style="color: rgb(212, 212, 212);">)</span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div></div>
+<h2 id="i-encourage-you-to-check-out-my-profile-and-project-s-project-for-detailed-explanations-and-code-for-different-problems-not-only-leetcode-happy-coding-and-learning">???I encourage you to check out <a href="https://leetcode.com/heir-of-god/" target="_blank">my profile</a> and <a href="https://github.com/Heir-of-God/Project-S" target="_blank">Project-S</a> project for detailed explanations and code for different problems (not only Leetcode). Happy coding and learning!?</h2>
+<h3 id="please-consider-upvote???-because-i-try-really-hard-not-just-to-put-here-my-code-and-rewrite-testcase-to-show-that-it-works-but-explain-you-why-it-works-and-how-thank-you?">Please consider <em>upvote</em>?????? because I try really hard not just to put here my code and rewrite testcase to show that it works but explain you WHY it works and HOW. Thank you??</h3>
+<h2 id="if-you-have-any-doubts-or-questions-feel-free-to-ask-them-in-comments-i-will-be-glad-to-help-you-with-understanding???">If you have any doubts or questions feel free to ask them in comments. I will be glad to help you with understanding??????</h2>
+<p><img alt="There is image for upvote" src="https://assets.leetcode.com/users/images/fde74702-a4f6-4b9f-95f2-65fa9aa79c48_1716995431.3239644.png"></p></div></div><span style="font-size: 0px; line-height: 0;">&nbsp;</span></div></div></div><div class="group/ads flex w-full items-start justify-start"><div class="group-hover/ads:bg-sd-muted relative overflow-hidden transition-colors group-hover/ads:before:text-sd-muted-foreground/50 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:text-transparent before:transition-colors before:content-['Advertisement']"><a href="https://leetcode.com/student/?utm_campaign=BTS2025&amp;utm_medium=site&amp;utm_source=site&amp;gio_link_id=QRekq32o" style="width: 468px; height: 60px;"><img width="468" height="60" alt="" src="https://assets.leetcode.com/users/images/158b8add-efb4-493b-b90c-7619b1b049f1_1757310862.5160654.png"></a></div></div><div class="flex justify-between gap-4"><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/7194056/aaaaaaaaaaaaaaaaaaaaaaaaaa/"><div class="flex h-full items-center order-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M5.414 11H21a1 1 0 110 2H5.414L12 19.586A1 1 0 0110.586 21l-8.293-8.293a.997.997 0 01.003-1.417L10.586 3A1 1 0 1112 4.414L5.414 11z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-2"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-right">Previous</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-right">AAAAAAAAAAAAAAAAAAAAAAAAAA</div></div></a><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5457550/beats-100-explained-with-video-c-java-python-recursion-o-n/"><div class="flex h-full items-center order-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M18.586 13H3a1 1 0 110-2h15.586L12 4.414A1 1 0 0113.414 3l8.293 8.293a.997.997 0 01-.003 1.417L13.414 21A1 1 0 0112 19.586L18.586 13z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-1"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-left">Next</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-left">?Beats 100% -Explained with [ Video ] -C++/Java/Python - Recursion - O(N)</div></div></a></div><div class="w-full"><div class="flex min-w-0 flex-col gap-3"><div class="text-[22px] font-medium leading-8 [overflow-wrap:anywhere] text-lc-text-primary dark:text-dark-lc-text-primary">?Beats 100% -Explained with [ Video ] -C++/Java/Python - Recursion - O(N)</div><div class="flex items-center gap-4"><div data-state="closed"><a target="_blank" rel="noopener noreferrer" class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate h-8 min-h-[32px] w-8 min-w-[32px] block" href="/u/lancertech6/"><img alt="" class="rounded-1/2 object-cover h-full w-full rounded-full" src="https://assets.leetcode.com/users/avatars/avatar_1682654752.png"></a></div><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2"><div class="flex items-center gap-1 truncate" translate="no"><a target="_blank" rel="noopener noreferrer" class="no-underline text-sm overflow-hidden max-w-[100px] md:max-w-[200px] truncate hover:text-blue-s dark:hover:text-dark-blue-s font-normal text-text-primary dark:text-text-primary" href="/u/lancertech6/">lancertech6</a><div class="h-3.5 w-3.5" data-state="closed"><img alt="Oct LeetCoding Challenge" class="h-full w-full" src="/static/images/badges/dcc-2023-10.png"></div></div></div><div class="flex items-center gap-3"><div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M1.104 12.444a1 1 0 010-.888c.13-.26.37-.693.722-1.241A18.85 18.85 0 013.88 7.652C6.184 5.176 8.896 3.667 12 3.667s5.816 1.509 8.119 3.985c.79.85 1.475 1.756 2.055 2.663.352.548.593.98.722 1.24a1 1 0 010 .89c-.13.26-.37.692-.722 1.24a18.848 18.848 0 01-2.055 2.663c-2.303 2.476-5.015 3.985-8.119 3.985s-5.816-1.509-8.119-3.985a18.846 18.846 0 01-2.055-2.663c-.352-.548-.593-.98-.722-1.24zm2.406.162a16.87 16.87 0 001.836 2.38c1.959 2.106 4.19 3.347 6.654 3.347 2.465 0 4.695-1.24 6.654-3.347A16.87 16.87 0 0020.86 12a16.871 16.871 0 00-2.206-2.986C16.695 6.908 14.464 5.667 12 5.667c-2.465 0-4.695 1.24-6.654 3.347A16.87 16.87 0 003.14 12c.108.188.232.391.37.607zM12 15.75c-2.06 0-3.727-1.68-3.727-3.75 0-2.07 1.667-3.75 3.727-3.75 2.06 0 3.727 1.68 3.727 3.75 0 2.07-1.667 3.75-3.727 3.75zm0-2c.952 0 1.727-.782 1.727-1.75s-.775-1.75-1.727-1.75c-.952 0-1.727.782-1.727 1.75s.775 1.75 1.727 1.75z" clip-rule="evenodd"></path></svg><div class="text-xs dark:text-sd-gray-500 text-sd-gray-400">24881</div></div><div class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M19 11.063V7h-2v1a1 1 0 11-2 0V7H9v1a1 1 0 01-2 0V7H5v4.063h14zm0 2H5V19h14v-5.938zM9 5h6V4a1 1 0 112 0v1h2a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2V4a1 1 0 012 0v1z" clip-rule="evenodd"></path></svg><div class="min-w-max text-xs dark:text-sd-gray-500 text-sd-gray-400"><span class="" data-state="closed">Jul 10, 2024</span></div></div></div></div></div><div class="flex flex-grow flex-nowrap items-center gap-2 overflow-hidden my-1"><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">String</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Stack</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Recursion</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Python</div><button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r3a:" data-state="closed" class=""><span><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">2+</div></span></button></div></div></div><div class="break-words"><div><div class="flex flex-col w-full" style="position: relative;"><div><div class="mYe_l WRmCx"><p><img alt="Screenshot 2024-07-11 080950.png" src="https://assets.leetcode.com/users/images/502f4d40-2a8e-429b-9522-cf32e1b7bc91_1720665883.7442427.png"></p>
+<h1 id="youtube-video-explanation">YouTube Video Explanation:</h1>
+<h3 id="to-watch-the-video-please-click-on-watch-on-youtube-option--available-the-left-bottom-corner-of-the-thumbnail">To watch the video please click on "Watch On Youtube" option  available the left bottom corner of the thumbnail.</h3>
+
+<p><a href="https://youtu.be/5HwJj5Qzjp0" target="_blank"><iframe src="//www.youtube.com/embed/5HwJj5Qzjp0" allowfullscreen="" width="560" height="315" translate="no"></iframe></a></p>
+<p><strong>? Please like, share, and subscribe to support our channel's mission of making complex concepts easy to understand.</strong></p>
+<p>Subscribe Link: <a href="https://www.youtube.com/@leetlogics/?sub_confirmation=1" target="_blank">https://www.youtube.com/@leetlogics/?sub_confirmation=1</a></p>
+<p><em>Subscribe Goal: 2600 Subscribers</em><br>
+<em>Current Subscribers: 2554</em></p>
+<p>Follow me on Instagram : <a href="https://www.instagram.com/divyansh.nishad/" target="_blank">https://www.instagram.com/divyansh.nishad/</a></p>
+<hr>
+<h1 id="intuition">Intuition</h1>
+
+<p>The given problem is to reverse substrings enclosed within parentheses, starting from the innermost ones. The nested nature of parentheses suggests using a recursive approach or a stack-based approach to handle the reversals in the correct order. The idea is to treat the problem by breaking it down recursively: whenever we encounter an opening parenthesis, we recursively solve for the substring until the corresponding closing parenthesis, reverse the substring, and then continue.</p>
+<h1 id="approach">Approach</h1>
+
+<ol>
+<li data-length="1"><strong>Initialization</strong>: Convert the string <code>s</code> into a character array for easy manipulation. Initialize a helper function that will perform the recursive operations.</li>
+<li data-length="1"><strong>Recursive Helper Function</strong>:
+<ul>
+<li>Use a <code>StringBuilder</code> to construct the result string.</li>
+<li>Iterate through the characters of the string:
+<ul>
+<li>If a closing parenthesis <code>)</code> is encountered, reverse the constructed string and return it to the previous level of recursion.</li>
+<li>If an opening parenthesis <code>(</code> is encountered, increment the index and recursively call the helper function to process the substring inside the parentheses. Append the reversed substring to the current <code>StringBuilder</code>.</li>
+<li>For any other character, simply append it to the <code>StringBuilder</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-length="1"><strong>Return the Result</strong>: After processing the entire string, return the result as a string.</li>
+</ol>
+<h1 id="complexity">Complexity</h1>
+<ul>
+<li>Time complexity: <code>O(n)</code>, where n is the length of the string. Each character is processed once, and reversing the substrings is linear in the total number of characters processed.</li>
+</ul>
+
+<ul>
+<li>Space complexity: <code>O(n)</code> for the recursion stack in the worst case of fully nested parentheses and for the <code>StringBuilder</code> used to construct the result.</li>
+</ul>
+
+<h1 id="step-by-step-explanation">Step By Step Explanation</h1>
+<h3 id="example">Example</h3>
+<p><strong>Input:</strong> <code>(u(love)i)</code><br>
+<strong>Output:</strong> <code>iloveu</code><br>
+<strong>Explanation:</strong></p>
+<ol>
+<li data-length="1">Reverse the substring "love" to "evol".</li>
+<li data-length="1">The string becomes <code>(uevoli)</code>.</li>
+<li data-length="1">Reverse the entire string inside the parentheses to get <code>iloveu</code>.</li>
+</ol>
+<h3 id="steps-to-solve">Steps to Solve</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Step</th><th>Index</th><th>Current Character</th><th>Action</th><th>Current Substring</th><th>Depth</th><th>Result</th></tr></thead><tbody><tr><td>1</td><td>0</td><td><code>(</code></td><td>Start new recursion</td><td></td><td>1</td><td></td></tr><tr><td>2</td><td>1</td><td><code>u</code></td><td>Append <code>u</code></td><td><code>u</code></td><td>1</td><td></td></tr><tr><td>3</td><td>2</td><td><code>(</code></td><td>Start new recursion</td><td><code>u</code></td><td>2</td><td></td></tr><tr><td>4</td><td>3</td><td><code>l</code></td><td>Append <code>l</code></td><td><code>l</code></td><td>2</td><td></td></tr><tr><td>5</td><td>4</td><td><code>o</code></td><td>Append <code>o</code></td><td><code>lo</code></td><td>2</td><td></td></tr><tr><td>6</td><td>5</td><td><code>v</code></td><td>Append <code>v</code></td><td><code>lov</code></td><td>2</td><td></td></tr><tr><td>7</td><td>6</td><td><code>e</code></td><td>Append <code>e</code></td><td><code>love</code></td><td>2</td><td></td></tr><tr><td>8</td><td>7</td><td><code>)</code></td><td>End recursion, reverse</td><td><code>evol</code></td><td>1</td><td><code>u</code> + <code>evol</code></td></tr><tr><td>9</td><td>8</td><td><code>i</code></td><td>Append <code>i</code></td><td><code>uevoli</code></td><td>1</td><td></td></tr><tr><td>10</td><td>9</td><td><code>)</code></td><td>End recursion, reverse</td><td><code>iloveu</code></td><td>0</td><td></td></tr></tbody></table>
+<h4 id="final-result">Final Result</h4>
+<p>After completing the traversal and reversing at the appropriate steps, the final result is <code>iloveu</code>.</p>
+<hr>
+<h1 id="code">Code</h1>
+<div class="border-gray-3 dark:border-dark-gray-3 mb-6 overflow-hidden rounded-lg border text-sm"><div class="flex select-none overflow-x-auto bg-layer-2 dark:bg-dark-layer-2"><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-1 dark:text-dark-label-1 d8276">Java</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C++</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Python</div></div><div class="px-3 py-2.5 bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-java" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span class="token" style="color: rgb(86, 156, 214);">class</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">Solution</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(86, 156, 214);">int</span><span> i </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(86, 156, 214);">public</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">String</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">reverseParentheses</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(78, 201, 176);">String</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">char</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> ar </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">toCharArray</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">helper</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>ar</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span>
+</span><span><span>    </span><span class="token" style="color: rgb(86, 156, 214);">public</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">String</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">helper</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(86, 156, 214);">char</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(78, 201, 176);">StringBuilder</span><span> sb </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">new</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">StringBuilder</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">while</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>i </span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>length</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>i</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">==</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">')'</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>                i</span><span class="token" style="color: rgb(212, 212, 212);">++</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> sb</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">reverse</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">toString</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span class="token" style="color: rgb(86, 156, 214);">else</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>i</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">==</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">'('</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>                i</span><span class="token" style="color: rgb(212, 212, 212);">++</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(78, 201, 176);">String</span><span> st  </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">helper</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                sb</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">append</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>st</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span class="token" style="color: rgb(86, 156, 214);">else</span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>                sb</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">append</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>s</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>i</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>                i</span><span class="token" style="color: rgb(212, 212, 212);">++</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> sb</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">toString</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span>
+</span><span><span>    </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span><span></span><span class="token" style="color: rgb(212, 212, 212);">}</span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div></div>
+<p><img alt="upvote.png" src="https://assets.leetcode.com/users/images/09b64641-1258-46f6-8e7f-e7f60787630a_1720665822.4016337.png"></p></div></div><span style="font-size: 0px; line-height: 0;">&nbsp;</span></div></div></div><div class="group/ads flex w-full items-start justify-start"><div class="group-hover/ads:bg-sd-muted relative overflow-hidden transition-colors group-hover/ads:before:text-sd-muted-foreground/50 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:text-transparent before:transition-colors before:content-['Advertisement']"><a href="https://leetcode.com/student/?utm_campaign=BTS2025&amp;utm_medium=site&amp;utm_source=site&amp;gio_link_id=QRekq32o" style="width: 468px; height: 60px;"><img width="468" height="60" alt="" src="https://assets.leetcode.com/users/images/158b8add-efb4-493b-b90c-7619b1b049f1_1757310862.5160654.png"></a></div></div><div class="flex justify-between gap-4"><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5458638/explanations-no-one-will-give-you-2-detailed-approaches-extremely-simple-and-effective/"><div class="flex h-full items-center order-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M5.414 11H21a1 1 0 110 2H5.414L12 19.586A1 1 0 0110.586 21l-8.293-8.293a.997.997 0 01.003-1.417L10.586 3A1 1 0 1112 4.414L5.414 11z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-2"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-right">Previous</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-right">???Explanations No One Will Give You??2 Detailed Approaches??Extremely Simple And Effective?</div></div></a><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/7154458/simple-python-solution-beats-100/"><div class="flex h-full items-center order-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M18.586 13H3a1 1 0 110-2h15.586L12 4.414A1 1 0 0113.414 3l8.293 8.293a.997.997 0 01-.003 1.417L13.414 21A1 1 0 0112 19.586L18.586 13z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-1"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-left">Next</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-left">Simple Python Solution - Beats 100%</div></div></a></div>

@@ -1,0 +1,48 @@
+2365. Task Scheduler II;=;=Medium;=;=public long taskSchedulerII(int[] tasks, int space);=;=You are given a 0-indexed array of positive integers tasks, representing tasks that need to be completed in order, where tasks[i] represents the type of the ith task.
+
+You are also given a positive integer space, which represents the minimum number of days that must pass after the completion of a task before another task of the same type can be performed.
+
+Each day, until all tasks have been completed, you must either:
+
+Complete the next task from tasks, or
+Take a break.
+Return the minimum number of days needed to complete all tasks.
+
+ 
+
+Example 1:
+
+Input: tasks = [1,2,1,2,3,1], space = 3
+Output: 9
+Explanation:
+One way to complete all tasks in 9 days is as follows:
+Day 1: Complete the 0th task.
+Day 2: Complete the 1st task.
+Day 3: Take a break.
+Day 4: Take a break.
+Day 5: Complete the 2nd task.
+Day 6: Complete the 3rd task.
+Day 7: Take a break.
+Day 8: Complete the 4th task.
+Day 9: Complete the 5th task.
+It can be shown that the tasks cannot be completed in less than 9 days.
+Example 2:
+
+Input: tasks = [5,8,8,5], space = 2
+Output: 6
+Explanation:
+One way to complete all tasks in 6 days is as follows:
+Day 1: Complete the 0th task.
+Day 2: Complete the 1st task.
+Day 3: Take a break.
+Day 4: Take a break.
+Day 5: Complete the 2nd task.
+Day 6: Complete the 3rd task.
+It can be shown that the tasks cannot be completed in less than 6 days.
+ 
+
+Constraints:
+
+1 <= tasks.length <= 105
+1 <= tasks[i] <= 109
+1 <= space <= tasks.length;=;=https://leetcode.com/problems/task-scheduler-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/task-scheduler-ii/solutions/2388301/javacpython-hashmap-by-lee215-3ymn/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2388164/javapython-3-use-hashmap-to-store-task-a-pq6r/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2389035/java-hashmap-for-nextday-explained-with-1dxbf/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2388331/java-clean-simple-hashmap-by-palmas-ffro/;;https://leetcode.com/problems/task-scheduler-ii/solutions/5314934/javac-java-28ms-beats-100-efficient-cach-dopl/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2388153/java-simple-solution-map-by-mokshteng-2o33/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2388403/simple-solution-easy-to-understand-by-pu-ggv9/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2388549/java-ez-2-understand-by-ab06ayush-mijm/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2388551/task-scheduler-ii-java-hashmap-lc-biweek-k3o1/;;https://leetcode.com/problems/task-scheduler-ii/solutions/4698311/use-hashmapdcitionary-to-calculate-the-e-8zdu/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2388481/java-only-using-hashmap-on-by-mohit-288-zqml/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2437055/java-clean-and-easy-to-understand-soluti-ubv8/;;https://leetcode.com/problems/task-scheduler-ii/solutions/2389847/how-is-this-question-not-wrong-where-and-x2ea/;;https://leetcode.com/problems/task-scheduler-ii/solutions/6957190/greedy-task-scheduler-using-hashmap-to-t-edy2/;;https://leetcode.com/problems/task-scheduler-ii/solutions/6270368/super-simple-hashmap-approach-by-beken-6hdd/;;;=;==;=;=;

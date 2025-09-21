@@ -1,0 +1,37 @@
+3648. Minimum Sensors to Cover Grid;=;=Medium;=;=public int minSensors(int n, int m, int k);=;=You are given n * m grid and an integer k.
+
+A sensor placed on cell (r, c) covers all cells whose Chebyshev distance from (r, c) is at most k.
+
+The Chebyshev distance between two cells (r1, c1) and (r2, c2) is max(|r1 - r2|,|c1 - c2|).
+
+Your task is to return the minimum number of sensors required to cover every cell of the grid.
+
+ 
+
+Example 1:
+
+Input: n = 5, m = 5, k = 1
+
+Output: 4
+
+Explanation:
+
+Placing sensors at positions (0, 3), (1, 0), (3, 3), and (4, 1) ensures every cell in the grid is covered. Thus, the answer is 4.
+
+Example 2:
+
+Input: n = 2, m = 2, k = 2
+
+Output: 1
+
+Explanation:
+
+With k = 2, a single sensor can cover the entire 2 * 2 grid regardless of its position. Thus, the answer is 1.
+
+ 
+
+Constraints:
+
+1 <= n <= 103
+1 <= m <= 103
+0 <= k <= 103;=;=https://leetcode.com/problems/minimum-sensors-to-cover-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7089391/kotlin-java-c-python-simple-math-solutio-q826/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7089319/simple-java-solution-by-fk3tv5uwka-czw9/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7090335/most-beginner-friendly-in-depth-solution-nb8c/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7089820/detailed-explanations-with-example-deduc-lcku/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7127513/beats-100-solutions-by-dheeraj_2602-y31l/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7090019/easy-sol-optimal-user-friendly-cpp-java-qc920/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7089574/beats-100-one-line-answer-o1-complexity-ud4oc/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7089348/easy-java-solution-by-nipungupta001-kaqs/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7089623/easy-java-solution-o1-beats-100-of-java-fsgfl/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7089713/simple-math-solution-explained-in-detail-zs11/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7201211/simple-java-solution-by-sakshikishore-926r/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7089431/minimum-sensors-to-cover-grid-by-ajendra-74yb/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7090087/java-math-solution-simple-beginners-solu-twxp/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7099584/beginner-friendly-solution-by-akash_pand-qu00/;;https://leetcode.com/problems/minimum-sensors-to-cover-grid/solutions/7093487/simple-solution-beats-100-o1-java-by-sj7-877n/;;;=;==;=;=;

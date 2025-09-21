@@ -1,0 +1,57 @@
+3208. Alternating Groups II;=;=Medium;=;=public int numberOfAlternatingGroups(int[] colors, int k);=;=There is a circle of red and blue tiles. You are given an array of integers colors and an integer k. The color of tile i is represented by colors[i]:
+
+colors[i] == 0 means that tile i is red.
+colors[i] == 1 means that tile i is blue.
+An alternating group is every k contiguous tiles in the circle with alternating colors (each tile in the group except the first and last one has a different color from its left and right tiles).
+
+Return the number of alternating groups.
+
+Note that since colors represents a circle, the first and the last tiles are considered to be next to each other.
+
+ 
+
+Example 1:
+
+Input: colors = [0,1,0,1,0], k = 3
+
+Output: 3
+
+Explanation:
+
+
+
+Alternating groups:
+
+
+
+Example 2:
+
+Input: colors = [0,1,0,0,1,0,1], k = 6
+
+Output: 2
+
+Explanation:
+
+
+
+Alternating groups:
+
+
+
+Example 3:
+
+Input: colors = [1,1,0,1], k = 4
+
+Output: 0
+
+Explanation:
+
+
+
+ 
+
+Constraints:
+
+3 <= colors.length <= 105
+0 <= colors[i] <= 1
+3 <= k <= colors.length;=;=https://leetcode.com/problems/alternating-groups-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/alternating-groups-ii/solutions/6515222/sliding-window-python-by-otabek_kholmirz-7pg5/;;https://leetcode.com/problems/alternating-groups-ii/solutions/6515350/sliding-window-cyclic-comparison-visuali-ux6m/;;https://leetcode.com/problems/alternating-groups-ii/solutions/5428918/solution-by-dare2solve-detailed-explanat-bpvk/;;https://leetcode.com/problems/alternating-groups-ii/solutions/6516258/beats-super-easy-beginners-java-c-c-pyth-t7i0/;;https://leetcode.com/problems/alternating-groups-ii/solutions/7129992/sliding-window-two-pointer-easiest-sol-e-7iv4/;;https://leetcode.com/problems/alternating-groups-ii/solutions/6515231/1-pass-o2n-o1-c-easy-2-methods-by-iitian-wu29/;;https://leetcode.com/problems/alternating-groups-ii/solutions/5428905/javapython-3-sliding-window-1-pass-on-co-2c0r/;;https://leetcode.com/problems/alternating-groups-ii/solutions/6516338/java-5ms-simplest-solution-by-devansh_ya-x5tr/;;https://leetcode.com/problems/alternating-groups-ii/solutions/5428826/beats-100-short-code-with-detailed-expla-40l1/;;https://leetcode.com/problems/alternating-groups-ii/solutions/6516638/sliding-window-java-by-ayeshakhan7-si10/;;https://leetcode.com/problems/alternating-groups-ii/solutions/6517803/beats-100-easy-approach-c-java-by-panvis-7t9e/;;https://leetcode.com/problems/alternating-groups-ii/solutions/6515354/ts-pmo-icl-but-simple-ahh-sliding-window-v02s/;;https://leetcode.com/problems/alternating-groups-ii/solutions/7019809/simple-java-solution-sliding-window-by-r-301m/;;https://leetcode.com/problems/alternating-groups-ii/solutions/6516977/2ms-98-beats-beginner-friendly-just-sing-yhnr/;;https://leetcode.com/problems/alternating-groups-ii/solutions/6518307/java-solution-by-shreyagarg63-x80e/;;;=;==;=;=;

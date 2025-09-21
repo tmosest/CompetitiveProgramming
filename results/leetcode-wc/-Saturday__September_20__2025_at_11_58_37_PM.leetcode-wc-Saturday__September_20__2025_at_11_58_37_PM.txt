@@ -1,0 +1,22 @@
+1131. Maximum of Absolute Value Expression;=;=Medium;=;=public int maxAbsValExpr(int[] arr1, int[] arr2);=;=Given two arrays of integers with equal lengths, return the maximum value of:
+
+|arr1[i] - arr1[j]| + |arr2[i] - arr2[j]| + |i - j|
+
+where the maximum is taken over all 0 <= i, j < arr1.length.
+
+ 
+
+Example 1:
+
+Input: arr1 = [1,2,3,4], arr2 = [-1,4,5,6]
+Output: 13
+Example 2:
+
+Input: arr1 = [1,-2,-5,0,10], arr2 = [0,-2,-1,-7,-4]
+Output: 20
+ 
+
+Constraints:
+
+2 <= arr1.length == arr2.length <= 40000
+-10^6 <= arr1[i], arr2[i] <= 10^6;=;=https://leetcode.com/problems/maximum-of-absolute-value-expression/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/1809390/java-solution-in-on-time-complexity-by-a-ikhk/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/2329284/java-absolute-maximum-value-using-exp-by-f2n9/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/1010450/java-c-with-explanation-on-by-coderpen-v48z/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/958258/clean-n-concise-java-solution-by-harin_m-6gdh/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/1687908/java-solution-by-akshatmathur23-ya5z/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/341746/java-brute-force-solution-by-jasperjoe-fe1u/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/2447527/java-on2-to-on-solution-by-durgesh7656-m0c1/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/2002920/java-my-take-by-student2091-hsjx/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/691513/java-solution-on-by-pmtotheam-mdo2/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/3074400/on-tc-solution-link-in-comment-provided-emkn4/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/7048741/java-sol-by-inshabano-pyzn/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/6896624/easy-java-solution-by-shednatn56-rx4t/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/6799273/clean-easy-to-understand-solution-beats-q9kj7/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/6482443/solution-in-java-by-vishalkannan_070-jnr5/;;https://leetcode.com/problems/maximum-of-absolute-value-expression/solutions/6266047/1131-maximum-of-absolute-value-expressio-cfhs/;;;=;==;=;=;

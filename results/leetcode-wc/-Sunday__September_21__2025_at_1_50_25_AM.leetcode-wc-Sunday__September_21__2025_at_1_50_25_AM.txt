@@ -1,0 +1,36 @@
+3523. Make Array Non-decreasing;=;=Medium;=;=public int maximumPossibleSize(int[] nums);=;=You are given an integer array nums. In one operation, you can select a subarray and replace it with a single element equal to its maximum value.
+
+Return the maximum possible size of the array after performing zero or more operations such that the resulting array is non-decreasing.
+
+ 
+
+Example 1:
+
+Input: nums = [4,2,5,3,5]
+
+Output: 3
+
+Explanation:
+
+One way to achieve the maximum size is:
+
+Replace subarray nums[1..2] = [2, 5] with 5 ? [4, 5, 3, 5].
+Replace subarray nums[2..3] = [3, 5] with 5 ? [4, 5, 5].
+The final array [4, 5, 5] is non-decreasing with size 3.
+
+Example 2:
+
+Input: nums = [1,2,3]
+
+Output: 3
+
+Explanation:
+
+No operation is needed as the array [1,2,3] is already non-decreasing.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 2 * 105
+1 <= nums[i] <= 2 * 105;=;=https://leetcode.com/problems/make-array-non-decreasing/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-array-non-decreasing/solutions/6668653/do-we-really-need-operations-to-perform-j5vu6/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6668751/javacpython-what-does-not-kill-me-makes-ndrz2/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6669362/1-liner-super-simple-solution-beats-cjav-qjk8/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/7158089/3-liner-solution-o1-space-complexity-by-1npyw/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/7042104/java-solution-beats-100-by-2021uee1350-pce6/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6670391/explained-easy-solution-java-python-c-c-o2lea/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6668728/easy-solution-ono1-by-ankith_kumar-3crb/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6668714/easy-fast-best-maximumpossiblesize-by-va-4a0l/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6682873/faster-lesser-cpython3javacpythoncexplai-xo8r/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6671270/doraemon-and-the-non-decreasing-array-ga-2tlo/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6671083/merge-maximize-clean-java-python-solutio-qjvp/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6930364/maximum-possible-size-after-one-removal-m13dc/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6668690/easy-solution-java-deque-by-vermaanshul9-aqqq/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6930360/easy-solution-stack-by-adhi_m_s-1kqj/;;https://leetcode.com/problems/make-array-non-decreasing/solutions/6830034/time-complexity-on-maximum-size-of-non-d-fgk1/;;;=;==;=;=;

@@ -1,0 +1,28 @@
+1682. Longest Palindromic Subsequence II;=;=Medium;=;=public int longestPalindromeSubseq(String s);=;=A subsequence of a string s is considered a good palindromic subsequence if:
+
+It is a subsequence of s.
+It is a palindrome (has the same value if reversed).
+It has an even length.
+No two consecutive characters are equal, except the two middle ones.
+For example, if s = "abcabcabb", then "abba" is considered a good palindromic subsequence, while "bcb" (not even length) and "bbbb" (has equal consecutive characters) are not.
+
+Given a string s, return the length of the longest good palindromic subsequence in s.
+
+ 
+
+Example 1:
+
+Input: s = "bbabab"
+Output: 4
+Explanation: The longest good palindromic subsequence of s is "baab".
+Example 2:
+
+Input: s = "dcbccacdb"
+Output: 4
+Explanation: The longest good palindromic subsequence of s is "dccd".
+ 
+
+Constraints:
+
+1 <= s.length <= 250
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/longest-palindromic-subsequence-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-palindromic-subsequence-ii/solutions/967437/java-dp-o26-n2-iterative-by-ycj28c-xz7v/;;https://leetcode.com/problems/longest-palindromic-subsequence-ii/solutions/1918291/java-simple-dp-7ms-by-yeelimtse-gpjk/;;https://leetcode.com/problems/longest-palindromic-subsequence-ii/solutions/1670428/java-2d-dp-with-comments-2-solutions-by-u75cv/;;https://leetcode.com/problems/longest-palindromic-subsequence-ii/solutions/4705296/simple-java-solution-with-dp-added-later-8tr1/;;https://leetcode.com/problems/longest-palindromic-subsequence-ii/solutions/4574480/classic-dp-by-hidanie-we9f/;;https://leetcode.com/problems/longest-palindromic-subsequence-ii/solutions/4047991/java-solution-by-pejmantheory-0wxj/;;https://leetcode.com/problems/longest-palindromic-subsequence-ii/solutions/3201721/a-on-space-approach-to-palindromic-subse-eg7m/;;;=;==;=;=;

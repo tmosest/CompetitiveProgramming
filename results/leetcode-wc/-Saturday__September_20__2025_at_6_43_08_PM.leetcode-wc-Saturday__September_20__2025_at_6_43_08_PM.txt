@@ -1,0 +1,28 @@
+1876. Substrings of Size Three with Distinct Characters;=;=Easy;=;=public int countGoodSubstrings(String s);=;=A string is good if there are no repeated characters.
+
+Given a string s?????, return the number of good substrings of length three in s??????.
+
+Note that if there are multiple occurrences of the same substring, every occurrence should be counted.
+
+A substring is a contiguous sequence of characters in a string.
+
+ 
+
+Example 1:
+
+Input: s = "xyzzaz"
+Output: 1
+Explanation: There are 4 substrings of size 3: "xyz", "yzz", "zza", and "zaz". 
+The only good substring of length 3 is "xyz".
+Example 2:
+
+Input: s = "aababcabc"
+Output: 4
+Explanation: There are 7 substrings of size 3: "aab", "aba", "bab", "abc", "bca", "cab", and "abc".
+The good substrings are "abc", "bca", "cab", and "abc".
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s?????? consists of lowercase English letters.;=;=https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/7208619/using-sliding-window-of-size-3-approach-7l960/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/7197039/easy-simple-approach-sliding-wondow-by-x-ezge/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/7036365/00-efficient-and-easy-solution-with-a-si-hyxd/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/7058974/java-2-approaches-by-shreyagarg63-g8re/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/7130596/easy-code-solve-this-problem-by-4_k4thir-oh5u/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/7094003/most-simple-java-solution-beginner-frien-309t/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/3155417/java-beats-90-sliding-window-with-detail-5ksi/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/1429825/java-simple-on-100-by-zeldox-3wvd/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/6913128/easy-java-approach-by-yaseen17-otvl/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/3971421/java-10000-beats-0n-2-solution-hashset-p-qs87/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/6981626/problem-no-1876-by-santanuksm23-a1nh/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/1238676/sliding-window-by-votrubac-hkoh/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/5809528/easiestfaster-lesser-cpython3javacpython-w605/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/6687768/100-beats-in-java-by-hitarthshah2211-tojj/;;https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/solutions/6854481/beats-100-by-alexander_sergeev-86nz/;;;=;==;=;=;

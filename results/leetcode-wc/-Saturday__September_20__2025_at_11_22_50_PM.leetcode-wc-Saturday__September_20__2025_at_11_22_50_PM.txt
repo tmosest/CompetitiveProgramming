@@ -1,0 +1,44 @@
+2730. Find the Longest Semi-Repetitive Substring;=;=Medium;=;=public int longestSemiRepetitiveSubstring(String s);=;=You are given a digit string s that consists of digits from 0 to 9.
+
+A string is called semi-repetitive if there is at most one adjacent pair of the same digit. For example, "0010", "002020", "0123", "2002", and "54944" are semi-repetitive while the following are not: "00101022" (adjacent same digit pairs are 00 and 22), and "1101234883" (adjacent same digit pairs are 11 and 88).
+
+Return the length of the longest semi-repetitive substring of s.
+
+ 
+
+Example 1:
+
+Input: s = "52233"
+
+Output: 4
+
+Explanation:
+
+The longest semi-repetitive substring is "5223". Picking the whole string "52233" has two adjacent same digit pairs 22 and 33, but at most one is allowed.
+
+Example 2:
+
+Input: s = "5494"
+
+Output: 4
+
+Explanation:
+
+s is a semi-repetitive string.
+
+Example 3:
+
+Input: s = "1111111"
+
+Output: 2
+
+Explanation:
+
+The longest semi-repetitive substring is "11". Picking the substring "111" has two adjacent same digit pairs, but at most one is allowed.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 50
+'0' <= s[i] <= '9';=;=https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3629621/javacpython-sliding-window-by-lee215-wp1u/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/7183098/sliding-window-java-by-runlingli-cmnq/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3622784/stack-easy-java-with-explanation-by-ansh-avzj/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3622317/slidingwindow-easy-implementation-java-b-ydtq/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3622304/easy-two-pointer-with-explanation-by-rup-7y2w/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3622703/java-sliding-window-concise-by-nishant73-heb0/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3622633/storing-the-repetitive-index-in-the-list-evv3/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3622843/java-sliding-window-approach-easy-to-und-qeoe/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3623050/java-beats-100-simple-explaination-by-ak-k0fe/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3622565/java-sliding-window-approach-w-detailed-ri1o5/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/4646552/simple-java-code-5-ms-beats-100-by-arobh-xepw/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3883424/sliding-window-java-solution-complete-ex-cqcp/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3622389/simple-solution-sliding-window-java-by-p-8yie/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/3623193/java-easy-solution-by-ydvaaman-5ctc/;;https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/solutions/6812179/33-ms-beats-321-brute-force-approach-as-4moaw/;;;=;==;=;=;

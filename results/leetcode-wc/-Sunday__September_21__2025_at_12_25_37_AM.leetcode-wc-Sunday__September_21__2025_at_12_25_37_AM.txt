@@ -1,0 +1,42 @@
+1509. Minimum Difference Between Largest and Smallest Value in Three Moves;=;=Medium;=;=public int minDifference(int[] nums);=;=You are given an integer array nums.
+
+In one move, you can choose one element of nums and change it to any value.
+
+Return the minimum difference between the largest and smallest value of nums after performing at most three moves.
+
+ 
+
+Example 1:
+
+Input: nums = [5,3,2,4]
+Output: 0
+Explanation: We can make at most 3 moves.
+In the first move, change 2 to 3. nums becomes [5,3,3,4].
+In the second move, change 4 to 3. nums becomes [5,3,3,3].
+In the third move, change 5 to 3. nums becomes [3,3,3,3].
+After performing 3 moves, the difference between the minimum and maximum is 3 - 3 = 0.
+Example 2:
+
+Input: nums = [1,5,0,10,14]
+Output: 1
+Explanation: We can make at most 3 moves.
+In the first move, change 5 to 0. nums becomes [1,0,0,10,14].
+In the second move, change 10 to 0. nums becomes [1,0,0,0,14].
+In the third move, change 14 to 1. nums becomes [1,0,0,0,1].
+After performing 3 moves, the difference between the minimum and maximum is 1 - 0 = 1.
+It can be shown that there is no way to make the difference 0 in 3 moves.
+Example 3:
+
+Input: nums = [3,100,20]
+Output: 0
+Explanation: We can make at most 3 moves.
+In the first move, change 100 to 7. nums becomes [3,7,20].
+In the second move, change 20 to 7. nums becomes [3,7,7].
+In the third move, change 3 to 7. nums becomes [7,7,7].
+After performing 3 moves, the difference between the minimum and maximum is 7 - 7 = 0.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+-109 <= nums[i] <= 109;=;=https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5406010/3-solutions-tutorial-on-included-minimum-co78/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5406102/easiest-3-step-cpp-java-py-js-solution-b-ihkh/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5407971/nth_element-and-single-pass-c-11-ms-100-rzkhp/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5407456/full-detailed-explanation-by-shivakumar1-sitd/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5406293/detailed-easy-java-python3-c-solution-15-hro1/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/6935684/easy-and-simple-solution-by-kgoutamkumar-nd6n/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5409730/explanations-no-one-will-give-you2-detai-38vk/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5408289/java-solution-explained-in-hindi2-approa-hyx0/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/6840043/easy-to-understand-solution-beats-98-of-81zlg/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/6968305/simple-java-code-by-prakhar-1310-2szp/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5406455/simple-approach-java-by-sukritisinha0717-0opf/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5412445/beats-9606-simple-array-6-to-7-line-code-1hh8/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5409871/easy-way-by-layan_am-3yrb/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/1506954/java-greedy-easy-solution-by-rishabh255-6rri/;;https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/6669136/easy-java-solution-sorting-by-rohan_shel-tpk4/;;;=;==;=;=;

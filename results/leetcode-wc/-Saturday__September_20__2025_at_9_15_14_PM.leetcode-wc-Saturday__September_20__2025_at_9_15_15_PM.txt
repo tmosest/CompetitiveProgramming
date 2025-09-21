@@ -1,0 +1,23 @@
+1012. Numbers With Repeated Digits;=;=Hard;=;=publicÊintÊnumDupDigitsAtMostN(intÊn);=;=Given an integer n, return the number of positive integers in the range [1, n] that have at least one repeated digit.
+
+Ê
+
+Example 1:
+
+Input: n = 20
+Output: 1
+Explanation: The only positive number (<= 20) with at least 1 repeated digit is 11.
+Example 2:
+
+Input: n = 100
+Output: 10
+Explanation: The positive numbers (<= 100) with atleast 1 repeated digit are 11, 22, 33, 44, 55, 66, 77, 88, 99, and 100.
+Example 3:
+
+Input: n = 1000
+Output: 262
+Ê
+
+Constraints:
+
+1 <= n <= 109;=;=https://leetcode.com/problems/numbers-with-repeated-digits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/numbers-with-repeated-digits/solutions/3544075/solution-by-deleted_user-ejr2/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/256725/javapython-count-the-number-without-repe-t5eq/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/6711934/combinatorial-more-optimal-than-dp-by-py-9i2c/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/1228724/java-clean-solution-with-detailed-explan-pgvc/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/5520639/beats-100-0ms-java-combinatorial-solutio-cph4/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/3603261/java-easy-to-understanddigit-dp-bit-mani-j73l/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/2310889/am-i-the-only-one-who-misunderstand-the-z5g61/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/1555833/java-for-if-else-lovers-by-_rodeo-tr05/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/3339775/recursion-counting-digits-until-decimal-ilden/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/7029026/1ms-java-solution-by-msharma_iitk-qe22/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/6492249/numbers-with-repeated-digits-by-ujju27-1owc/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/6665028/digit-dp-approach-by-kumarnis89-814r/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/5662118/numbers-with-repeated-digits-by-shaludro-g6hg/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/4414219/java-by-ogyrchik14479-a5gs/;;https://leetcode.com/problems/numbers-with-repeated-digits/solutions/4265954/java-digit-dp-by-vsai5120-9i5t/;;;=;==;=;=;

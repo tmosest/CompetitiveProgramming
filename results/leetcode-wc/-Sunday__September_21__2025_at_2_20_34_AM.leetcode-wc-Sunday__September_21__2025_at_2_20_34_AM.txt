@@ -1,0 +1,36 @@
+3228. Maximum Number of Operations to Move Ones to the End;=;=Medium;=;=public int maxOperations(String s);=;=You are given a binary string s.
+
+You can perform the following operation on the string any number of times:
+
+Choose any index i from the string where i + 1 < s.length such that s[i] == '1' and s[i + 1] == '0'.
+Move the character s[i] to the right until it reaches the end of the string or another '1'. For example, for s = "010010", if we choose i = 1, the resulting string will be s = "000110".
+Return the maximum number of operations that you can perform.
+
+ 
+
+Example 1:
+
+Input: s = "1001101"
+
+Output: 4
+
+Explanation:
+
+We can perform the following operations:
+
+Choose index i = 0. The resulting string is s = "0011101".
+Choose index i = 4. The resulting string is s = "0011011".
+Choose index i = 3. The resulting string is s = "0010111".
+Choose index i = 2. The resulting string is s = "0001111".
+Example 2:
+
+Input: s = "00111"
+
+Output: 0
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/7209519/one-pass-on-by-gitchuan-04w8/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5508962/greedy-by-fahad06-gbw2/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/7182105/here-the-100-beats-simple-java-program-b-8vng/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509454/beats-100-explained-with-video-cjavapyth-ry7k/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509105/intuition-approach-tc-on-sc-o1-by-bhawes-zscz/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509007/javacpython-count-ones-by-lee215-fouu/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5510787/explanations-no-one-will-give-youvery-de-ci52/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/6712260/solution-with-counting-by-chickendje02-vsef/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509078/effortlessly-dominate-100-with-beginner-w2awp/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/6664269/pending-total-by-795-2im4/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509048/java-solution-by-harsh__005-t9q4/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5510067/easy-code-beats-100-by-satyam_mishra_1-drkh/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509155/java-clean-simple-solution-21072024-by-s-4384/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509637/implementation-using-stack-by-alwayssant-84mo/;;https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/solutions/5509069/easy-java-solution-prefix-sum-by-21a31a0-87x5/;;;=;==;=;=;

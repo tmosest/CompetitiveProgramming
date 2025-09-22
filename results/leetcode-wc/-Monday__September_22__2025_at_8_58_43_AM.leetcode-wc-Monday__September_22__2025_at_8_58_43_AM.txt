@@ -1,0 +1,34 @@
+1284. Minimum Number of Flips to Convert Binary Matrix to Zero Matrix;=;=Hard;=;=public int minFlips(int[][] mat);=;=Given a m x n binary matrix mat. In one step, you can choose one cell and flip it and all the four neighbors of it if they exist (Flip is changing 1 to 0 and 0 to 1). A pair of cells are called neighbors if they share one edge.
+
+Return the minimum number of steps required to convert mat to a zero matrix or -1 if you cannot.
+
+A binary matrix is a matrix with all cells equal to 0 or 1 only.
+
+A zero matrix is a matrix with all cells equal to 0.
+
+ 
+
+Example 1:
+
+
+Input: mat = [[0,0],[0,1]]
+Output: 3
+Explanation: One possible solution is to flip (1, 0) then (0, 1) and finally (1, 1) as shown.
+Example 2:
+
+Input: mat = [[0]]
+Output: 0
+Explanation: Given matrix is a zero matrix. We do not need to change it.
+Example 3:
+
+Input: mat = [[1,0,0],[1,0,0]]
+Output: -1
+Explanation: Given matrix cannot be a zero matrix.
+ 
+
+Constraints:
+
+m == mat.length
+n == mat[i].length
+1 <= m, n <= 3
+mat[i][j] is either 0 or 1.;=;=https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/5239601/beats-100-easy-java-solution-by-priyansh-86jf/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/6299568/c-java-kotlin-simple-bfs-solution-conver-tf2v/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/1001973/java-3-approaches-bfs-2-ways-make-each-r-quw8/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/4043726/java-solution-by-h_rshsingh-k048/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/4984372/very-easy-to-understand-for-begginers-by-6h78/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/4617027/java-represent-matrix-as-integer-bfs-by-mckly/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/3915284/java-flipping-matrix-by-abhyudaya01-9iwu/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/1023277/java-classic-bfs-with-a-simple-way-to-se-j8ex/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/6085925/beats-100-by-faisal12193-uptw/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/1970784/java-bfs-with-bitmask-by-darkbird12-w00q/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/1635428/java-bitwise-bfs-90-speed-explained-by-s-nxdw/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/796759/java-bfs-solution-with-hashset-string-by-6aq0/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/453432/java-bfs-solution-2ms-100-memory-by-nata-3aun/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/451100/bfs-solution-explained-by-returnstr-y5z0/;;https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solutions/446352/java-dfs-with-memoization-and-incode-wit-ryfr/;;;=;==;=;=;

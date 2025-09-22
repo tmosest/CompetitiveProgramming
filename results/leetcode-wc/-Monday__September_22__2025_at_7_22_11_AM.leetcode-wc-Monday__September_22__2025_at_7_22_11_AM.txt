@@ -1,0 +1,27 @@
+2599. Make the Prefix Sum Non-negative;=;=Medium;=;=public int makePrefSumNonNegative(int[] nums);=;=You are given a 0-indexed integer array nums. You can apply the following operation any number of times:
+
+Pick any element from nums and put it at the end of nums.
+The prefix sum array of nums is an array prefix of the same length as nums such that prefix[i] is the sum of all the integers nums[j] where j is in the inclusive range [0, i].
+
+Return the minimum number of operations such that the prefix sum array does not contain negative integers. The test cases are generated such that it is always possible to make the prefix sum array non-negative.
+
+ 
+
+Example 1:
+
+Input: nums = [2,3,-5,4]
+Output: 0
+Explanation: we do not need to do any operations.
+The array is [2,3,-5,4]. The prefix sum array is [2, 5, 0, 4].
+Example 2:
+
+Input: nums = [3,-5,-2,6]
+Output: 1
+Explanation: we can do one operation on index 1.
+The array after the operation is [3,-2,6,-5]. The prefix sum array is [3, 1, 7, 2].
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+-109 <= nums[i] <= 109;=;=https://leetcode.com/problems/make-the-prefix-sum-non-negative/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/4239640/java-min-heap-by-lacfo-o9lq/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/6423381/insane-aura-approach-priority-queue-9999-bwf5/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/6417299/c-java-python3-solution-greedy-with-prio-9ubl/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/6395310/priority-queue-by-lyu_le-gn1e/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/3336935/java-priorityqueue-easy-to-understand-by-meza/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/3330890/cjavapython3-prefix-sum-priority-queue-b-xjhn/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/6419977/java-priority-queue-by-tilak-h56n/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/6395201/priority-queue-10-ms-beats-4902-by-songs-bj3x/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/6446053/java-javascript-typescript-c-c-kotlin-go-k3qq/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/5255508/java-onlgn-by-lilongxue-m9hh/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/4312495/java-priority-queue-by-ppanday-s0hn/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/3943902/share-my-solution-using-pq-by-cautious_c-dgx8/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/3770708/simple-java-priority-queue-solution-beat-fzz1/;;https://leetcode.com/problems/make-the-prefix-sum-non-negative/solutions/3330494/pythonjava-heap-by-akaghosting-uvgt/;;;=;==;=;=;

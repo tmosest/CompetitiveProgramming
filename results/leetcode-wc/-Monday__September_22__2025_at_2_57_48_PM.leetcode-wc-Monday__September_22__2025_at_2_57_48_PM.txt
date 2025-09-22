@@ -1,0 +1,22 @@
+2928. Distribute Candies Among Children I;=;=Easy;=;=public int distributeCandies(int n, int limit);=;=You are given two positive integers n and limit.
+
+Return the total number of ways to distribute n candies among 3 children such that no child gets more than limit candies.
+
+ 
+
+Example 1:
+
+Input: n = 5, limit = 2
+Output: 3
+Explanation: There are 3 ways to distribute 5 candies such that no child gets more than 2 candies: (1, 2, 2), (2, 1, 2) and (2, 2, 1).
+Example 2:
+
+Input: n = 3, limit = 3
+Output: 10
+Explanation: There are 10 ways to distribute 3 candies such that no child gets more than 3 candies: (0, 0, 3), (0, 1, 2), (0, 2, 1), (0, 3, 0), (1, 0, 2), (1, 1, 1), (1, 2, 0), (2, 0, 1), (2, 1, 0) and (3, 0, 0).
+ 
+
+Constraints:
+
+1 <= n <= 50
+1 <= limit <= 50;=;=https://leetcode.com/problems/distribute-candies-among-children-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/distribute-candies-among-children-i/solutions/6801630/maths-solution-beginner-friendly-explana-7zg1/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/6452995/java-solution-explained-in-detail-o1-tim-8qx3/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/7144497/distribute-candies-among-children-i-olim-8a4y/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/7098045/java-solution-by-monish1153-r91v/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4276837/on-easy-to-understand-how-to-reduce-the-kv0pp/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4276642/beginner-friendly-full-explanation-recur-qplc/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4276822/cjavapythonjavascript-beats-100-explaine-91hw/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4277381/dp-solution-with-step-by-step-explanatio-m3jz/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4276703/detailed-explanation-java-c-python-o1-by-alqi/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/6800868/easy-to-understand-multiple-approaches-t-nids/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4320293/java-easy-solution-by-iamsd-jou8/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4276653/100-beats-java-solution-by-jaiminpatel34-hu5x/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4282465/for-math-lovers-you-can-also-calculate-t-d9wx/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4700490/simple-java-code-0-ms-beats-100-by-arobh-9pq9/;;https://leetcode.com/problems/distribute-candies-among-children-i/solutions/4498489/java-15ms-solution-easy-to-understand-hi-dz98/;;;=;==;=;=;

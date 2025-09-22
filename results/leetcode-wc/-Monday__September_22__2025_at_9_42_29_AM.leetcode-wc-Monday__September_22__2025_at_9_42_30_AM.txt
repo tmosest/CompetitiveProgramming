@@ -1,0 +1,36 @@
+2323. Find Minimum Time to Finish All Jobs II;=;=Medium;=;=public int minimumTime(int[] jobs, int[] workers);=;=You are given two 0-indexed integer arrays jobs and workers of equal length, where jobs[i] is the amount of time needed to complete the ith job, and workers[j] is the amount of time the jth worker can work each day.
+
+Each job should be assigned to exactly one worker, such that each worker completes exactly one job.
+
+Return the minimum number of days needed to complete all the jobs after assignment.
+
+ 
+
+Example 1:
+
+Input: jobs = [5,2,4], workers = [1,7,5]
+Output: 2
+Explanation:
+- Assign the 2nd worker to the 0th job. It takes them 1 day to finish the job.
+- Assign the 0th worker to the 1st job. It takes them 2 days to finish the job.
+- Assign the 1st worker to the 2nd job. It takes them 1 day to finish the job.
+It takes 2 days for all the jobs to be completed, so return 2.
+It can be proven that 2 days is the minimum number of days needed.
+Example 2:
+
+Input: jobs = [3,18,15,9], workers = [6,5,1,3]
+Output: 3
+Explanation:
+- Assign the 2nd worker to the 0th job. It takes them 3 days to finish the job.
+- Assign the 0th worker to the 1st job. It takes them 3 days to finish the job.
+- Assign the 1st worker to the 2nd job. It takes them 3 days to finish the job.
+- Assign the 3rd worker to the 3rd job. It takes them 3 days to finish the job.
+It takes 3 days for all the jobs to be completed, so return 3.
+It can be proven that 3 days is the minimum number of days needed.
+ 
+
+Constraints:
+
+n == jobs.length == workers.length
+1 <= n <= 105
+1 <= jobs[i], workers[i] <= 105;=;=https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/2215406/java-longest-task-fastest-person-explain-y1ru/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/2220256/java-sort-by-iamslash-5g2r/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/7042703/easy-sorting-solution-java-by-felixfelic-hps8/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/6621362/easy-java-solution-formula-explanation-i-ybez/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/2246875/java-easiest-solution-to-understand-by-p-csyy/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/6891346/java-simple-solution-with-division-on-by-2t9o/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/6283509/sorting-by-lemonpepper-9urk/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/6315118/java-onlogn-solution-by-tbekpro-85lq/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/5870913/java-solution-by-usamah99-8yqc/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/5936710/super-simple-solution-onlogn-by-pawelwar-6e37/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/5936698/super-simple-on-x-logn-by-pawelwar-rn7k/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/5763029/simple-java-solution-by-narasimhaarun07-id74/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/5558310/easy-solution-using-sorting-by-tuhinac-vjuc/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/5508576/java-beginner-sorting-onlogn-by-animesh_-wia1/;;https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/solutions/5308227/greedy-by-lily19881219-7b2l/;;;=;==;=;=;

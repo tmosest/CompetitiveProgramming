@@ -1,0 +1,30 @@
+2412. Minimum Money Required Before Transactions;=;=Hard;=;=publicÊlongÊminimumMoney(int[][]Êtransactions);=;=You are given a 0-indexed 2D integer array transactions, where transactions[i] = [costi, cashbacki].
+
+The array describes transactions, where each transaction must be completed exactly once in some order. At any given moment, you have a certain amount of money. In order to complete transaction i, money >= costi must hold true. After performing a transaction, money becomes money - costi + cashbacki.
+
+Return the minimum amount of money required before any transaction so that all of the transactions can be completed regardless of the order of the transactions.
+
+Ê
+
+Example 1:
+
+Input: transactions = [[2,1],[5,0],[4,2]]
+Output: 10
+Explanation:
+Starting with money = 10, the transactions can be performed in any order.
+It can be shown that starting with money < 10 will fail to complete all transactions in some order.
+Example 2:
+
+Input: transactions = [[3,0],[0,3]]
+Output: 3
+Explanation:
+- If transactions are in the order [[3,0],[0,3]], the minimum money required to complete the transactions is 3.
+- If transactions are in the order [[0,3],[3,0]], the minimum money required to complete the transactions is 0.
+Thus, starting with money = 3, the transactions can be performed in any order.
+Ê
+
+Constraints:
+
+1 <= transactions.length <= 105
+transactions[i].length == 2
+0 <= costi, cashbacki <= 109;=;=https://leetcode.com/problems/minimum-money-required-before-transactions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/2588034/javacpython-easy-and-coincise-by-lee215-4b7d/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/2587984/easiest-hard-tag-question-brute-force-to-oji1/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/6656871/easiest-way-to-solve-by-lucky_137-p660/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/5856129/java-solution-mastering-minimum-money-re-wq86/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/2588464/if-you-still-struggled-to-understand-aft-f62n/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/2594155/java-solution-linear-runtime-no-sorting-01n1l/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/6111212/java-easy-100-solution-by-ytchouar-uxi7/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/5945184/easy-solution-with-most-examples-and-edg-r9uh/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/5831123/minimum-money-required-before-transactio-cs0d/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/5008214/java-100-beat-very-easy-to-understand-wi-kvhw/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/3718548/greedy-java-explained-in-details-by-ahty-e95q/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/3507136/java-beats-100-easy-on-by-jeckafedorov-jpyb/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/2598841/java-two-solutions-sorting-versus-greedy-8va9/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/2596936/java-time-on-space-o1-by-conchwu-v3so/;;https://leetcode.com/problems/minimum-money-required-before-transactions/solutions/2592962/minimum-money-required-before-transactio-h4nt/;;;=;==;=;=;

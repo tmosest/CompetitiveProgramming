@@ -1,0 +1,29 @@
+1401. Circle and Rectangle Overlapping;=;=Medium;=;=public boolean checkOverlap(int radius, int xCenter, int yCenter, int x1, int y1, int x2, int y2);=;=You are given a circle represented as (radius, xCenter, yCenter) and an axis-aligned rectangle represented as (x1, y1, x2, y2), where (x1, y1) are the coordinates of the bottom-left corner, and (x2, y2) are the coordinates of the top-right corner of the rectangle.
+
+Return true if the circle and rectangle are overlapped otherwise return false. In other words, check if there is any point (xi, yi) that belongs to the circle and the rectangle at the same time.
+
+ 
+
+Example 1:
+
+
+Input: radius = 1, xCenter = 0, yCenter = 0, x1 = 1, y1 = -1, x2 = 3, y2 = 1
+Output: true
+Explanation: Circle and rectangle share the point (1,0).
+Example 2:
+
+Input: radius = 1, xCenter = 1, yCenter = 1, x1 = 1, y1 = -3, x2 = 2, y2 = -1
+Output: false
+Example 3:
+
+
+Input: radius = 1, xCenter = 0, yCenter = 0, x1 = -1, y1 = 0, x2 = 0, y2 = 1
+Output: true
+ 
+
+Constraints:
+
+1 <= radius <= 2000
+-104 <= xCenter, yCenter <= 104
+-104 <= x1 < x2 <= 104
+-104 <= y1 < y2 <= 104;=;=https://leetcode.com/problems/circle-and-rectangle-overlapping/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/6225597/detailed-explanation-with-diagram-beginn-bqxq/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/7161222/minimum-distance-from-point-to-rectangle-96vk/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/4523344/trying-to-explain-with-diagram-by-ankit1-f8jx/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/6209934/java-100-by-harshit_122-5gco/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/3882948/solution-for-leetcode-problem-1401-circl-hb3v/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/563572/java-detailed-explanation-with-graphs-by-fz72/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/7182655/best-solution-0-ms-math-geometry-by-saks-pe62/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/4411022/java-easy-beats-100-by-copainbig-t8oz/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/868820/my-java-solution-with-comments-by-vrohit-uufg/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/563450/java-o1-solution-with-line-by-line-expla-3d0o/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/6225925/crazy-by-kaustubharora082-kurm/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/6815552/1401-circle-and-rectangle-overlapping-by-ko4h/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/6682038/circle-and-rectangle-overlapping-by-rjbh-oapi/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/6423667/circle-and-rectangle-overlapping-by-pran-0wiq/;;https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/6349894/super-easy-solution-time-and-space-o1-by-faeo/;;;=;==;=;=;

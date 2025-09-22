@@ -1,0 +1,42 @@
+3469. Find Minimum Cost to Remove Array Elements;=;=Medium;=;=public int minCost(int[] nums);=;=You are given an integer array nums. Your task is to remove all elements from the array by performing one of the following operations at each step until nums is empty:
+
+Choose any two elements from the first three elements of nums and remove them. The cost of this operation is the maximum of the two elements removed.
+If fewer than three elements remain in nums, remove all the remaining elements in a single operation. The cost of this operation is the maximum of the remaining elements.
+Return the minimum cost required to remove all the elements.
+
+ 
+
+Example 1:
+
+Input: nums = [6,2,8,4]
+
+Output: 12
+
+Explanation:
+
+Initially, nums = [6, 2, 8, 4].
+
+In the first operation, remove nums[0] = 6 and nums[2] = 8 with a cost of max(6, 8) = 8. Now, nums = [2, 4].
+In the second operation, remove the remaining elements with a cost of max(2, 4) = 4.
+The cost to remove all elements is 8 + 4 = 12. This is the minimum cost to remove all elements in nums. Hence, the output is 12.
+
+Example 2:
+
+Input: nums = [2,1,3,3]
+
+Output: 5
+
+Explanation:
+
+Initially, nums = [2, 1, 3, 3].
+
+In the first operation, remove nums[0] = 2 and nums[1] = 1 with a cost of max(2, 1) = 2. Now, nums = [3, 3].
+In the second operation remove the remaining elements with a cost of max(3, 3) = 3.
+The cost to remove all elements is 2 + 3 = 5. This is the minimum cost to remove all elements in nums. Hence, the output is 5.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6482075/c-simple-memoization-by-mrigyank_roy-hqaw/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6482114/pick-all-three-possible-way-dp-and-memo-fuo8n/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6482257/simple-dp-solution-with-explanantion-rec-k12g/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6484315/java-memo-tabul-space-optimised-4codes-b-f79r/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6482255/easy-100-beatsexplain-for-beginners-java-7y2p/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6483166/java-dp-memo-tabulation-100-by-himanshuk-p0pj/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6490317/easy-to-understand-using-recmemo-code-dy-gh84/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6482281/java-time-on2-space-on2-by-prem_duvvapu-sdkh/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6525944/dp-bottom-up-and-top-down-solutions-c-by-h423/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6483145/easy-to-understand-solution-dp-memoizati-dyno/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6483047/100-beats-done-using-recursion-and-memoi-cxud/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/7104400/medium-solution-in-java-by-shaileshlodhi-xsvg/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6993264/java-solution-with-remaining-element-min-ugzz/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6904706/java-24ms9752-with-dp-by-meringueee-96dq/;;https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/solutions/6542944/iterative-dp-solution-java-by-priyanshu0-irbo/;;;=;==;=;=;

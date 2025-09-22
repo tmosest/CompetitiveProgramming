@@ -1,0 +1,40 @@
+3259. Maximum Energy Boost From Two Drinks;=;=Medium;=;=public long maxEnergyBoost(int[] energyDrinkA, int[] energyDrinkB);=;=You are given two integer arrays energyDrinkA and energyDrinkB of the same length n by a futuristic sports scientist. These arrays represent the energy boosts per hour provided by two different energy drinks, A and B, respectively.
+
+You want to maximize your total energy boost by drinking one energy drink per hour. However, if you want to switch from consuming one energy drink to the other, you need to wait for one hour to cleanse your system (meaning you won't get any energy boost in that hour).
+
+Return the maximum total energy boost you can gain in the next n hours.
+
+Note that you can start consuming either of the two energy drinks.
+
+ 
+
+Example 1:
+
+Input: energyDrinkA = [1,3,1], energyDrinkB = [3,1,1]
+
+Output: 5
+
+Explanation:
+
+To gain an energy boost of 5, drink only the energy drink A (or only B).
+
+Example 2:
+
+Input: energyDrinkA = [4,1,1], energyDrinkB = [1,1,3]
+
+Output: 7
+
+Explanation:
+
+To gain an energy boost of 7:
+
+Drink the energy drink A for the first hour.
+Switch to the energy drink B and we lose the energy boost of the second hour.
+Gain the energy boost of the drink B in the third hour.
+ 
+
+Constraints:
+
+n == energyDrinkA.length == energyDrinkB.length
+3 <= n <= 105
+1 <= energyDrinkA[i], energyDrinkB[i] <= 105;=;=https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653184/dp-o1-space-by-fahad06-3nc3/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653075/recursion-top-down-bottom-up-dp-easy-to-5hvse/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653182/easy-video-solution-how-to-in-interview-ot1lo/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653077/java-clean-simple-solution-without-dp-by-fcph/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5655786/detailed-easy-java-python3-c-solution-0m-0fqc/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653061/linear-dp-o1-space-by-jay_1410-lyy5/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653142/simple-java-dp-by-harshsharma08-d3i0/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5653310/beats-100-best-solution-using-java-by-_d-iyes/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5672387/very-easy-solution-by-vansh0123-led9/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/7156893/memo-o2n-by-gitchuan-s0gc/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/7085189/first-attempt-clear-decision-tree-helped-7hde/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5772198/must-watcheasiest-approach-with-beginner-xa8o/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5654168/maximum-energy-boost-from-two-drinks-usi-qh5g/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5654285/easy-to-understand-memoization-using-2d-xrlu8/;;https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/solutions/5657350/dp-clean-tabulation-by-vikasseervi357-8a5i/;;;=;==;=;=;

@@ -1,0 +1,36 @@
+3686. Number of Stable Subsequences;=;=Hard;=;=public int countStableSubsequences(int[] nums);=;=You are given an integer array nums.
+
+A subsequence is stable if it does not contain three consecutive elements with the same parity when the subsequence is read in order (i.e., consecutive inside the subsequence).
+
+Return the number of stable subsequences.
+
+Since the answer may be too large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,5]
+
+Output: 6
+
+Explanation:
+
+Stable subsequences are [1], [3], [5], [1, 3], [1, 5], and [3, 5].
+Subsequence [1, 3, 5] is not stable because it contains three consecutive odd numbers. Thus, the answer is 6.
+Example 2:
+
+Input: nums = [2,3,4,2]
+
+Output: 14
+
+Explanation:
+
+The only subsequence that is not stable is [2, 4, 2], which contains three consecutive even numbers.
+All other subsequences are stable. Thus, the answer is 14.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 10???????5;=;=https://leetcode.com/problems/number-of-stable-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187666/javacpython-dp-by-lee215-d2ry/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187650/easy-c-solution-by-r7rdmpvi0f-edln/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187823/100-beat-solution-easy-explanation-count-3lbq/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7202428/java-dp-memoization-count-stable-subsequ-opn3/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187708/100-beats-easy-to-understand-count-stabl-1fi0/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187657/status-dp-memo-o23n-by-gitchuan-mraj/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7196098/easy-dp-java-by-abhi_ji_ji-mldh/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7189572/dynamic-programming-3d-dp-with-consecuti-zdeo/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7188501/easy-just-maintain-last-2-parities-by-sa-3me0/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187738/dp-solution-beats-100-in-time-complexity-ccw9/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187640/easy-solution-in-java-by-user4769vd-a4h5/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187697/beats-100-on-complexity-very-easy-approa-ueom/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187712/from-brute-force-to-constant-space-dp-by-6zkk/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7187641/easy-solution-in-java-by-nidhibaratam200-qeyt/;;https://leetcode.com/problems/number-of-stable-subsequences/solutions/7188432/java-memoization-by-aneesh1201-dnkp/;;;=;==;=;=;

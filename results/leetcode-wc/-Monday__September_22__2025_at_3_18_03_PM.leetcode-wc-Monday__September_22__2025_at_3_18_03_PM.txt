@@ -1,0 +1,37 @@
+2291. Maximum Profit From Trading Stocks;=;=Medium;=;=public int maximumProfit(int[] present, int[] future, int budget);=;=You are given two 0-indexed integer arrays of the same length present and future where present[i] is the current price of the ith stock and future[i] is the price of the ith stock a year in the future. You may buy each stock at most once. You are also given an integer budget representing the amount of money you currently have.
+
+Return the maximum amount of profit you can make.
+
+ 
+
+Example 1:
+
+Input: present = [5,4,6,2,3], future = [8,5,4,3,5], budget = 10
+Output: 6
+Explanation: One possible way to maximize your profit is to:
+Buy the 0th, 3rd, and 4th stocks for a total of 5 + 2 + 3 = 10.
+Next year, sell all three stocks for a total of 8 + 3 + 5 = 16.
+The profit you made is 16 - 10 = 6.
+It can be shown that the maximum profit you can make is 6.
+Example 2:
+
+Input: present = [2,2,5], future = [3,4,10], budget = 6
+Output: 5
+Explanation: The only possible way to maximize your profit is to:
+Buy the 2nd stock, and make a profit of 10 - 5 = 5.
+It can be shown that the maximum profit you can make is 5.
+Example 3:
+
+Input: present = [3,3,12], future = [0,3,15], budget = 10
+Output: 0
+Explanation: One possible way to maximize your profit is to:
+Buy the 1st stock, and make a profit of 3 - 3 = 0.
+It can be shown that the maximum profit you can make is 0.
+ 
+
+Constraints:
+
+n == present.length == future.length
+1 <= n <= 1000
+0 <= present[i], future[i] <= 100
+0 <= budget <= 1000;=;=https://leetcode.com/problems/maximum-profit-from-trading-stocks/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/2095843/java-bottom-up-1d-dp-buy-or-not-buy-by-s-n11k/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/2157208/java-dynamic-programming-simple-and-read-i7y5/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/4621543/java-solution-using-the-concept-of-01-kn-76ur/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/2137486/java-from-memoization-2d-dp-1d-dp-with-c-ookq/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/6795143/java-simple-dp-by-rnotappl-169d/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/6746163/knapsack-simple-by-prashant404-c7ap/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/6368992/dp-based-solution-in-java-by-someuser_id-v1mg/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/6223758/simple-1d-array-beats-99-by-aginton3-3u54/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/5889155/java-solution-with-doc-bottom-up-dp-1d-2-i4v2/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/5833744/can-we-use-dfs-memo-instead-of-dp-direct-e5kk/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/5806225/bitwise-manipulation-by-trunkunala-jqbn/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/5449968/01-knapsack-problem-java-by-vkrks-1uv8/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/5122621/java-dp-backpack-like-solution-by-ulyx-gcpp/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/4613122/simple-solution-readable-dp-by-apakg-yg0r/;;https://leetcode.com/problems/maximum-profit-from-trading-stocks/solutions/4367550/simple-javakotlin-one-dimensional-dp-bea-pmbx/;;;=;==;=;=;

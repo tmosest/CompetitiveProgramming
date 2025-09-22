@@ -1,0 +1,39 @@
+2969. Minimum Number of Coins for Fruits II;=;=Hard;=;=public int minimumCoins(int[] prices);=;=You are at a fruit market with different types of exotic fruits on display.
+
+You are given a 1-indexed array prices, where prices[i] denotes the number of coins needed to purchase the ith fruit.
+
+The fruit market has the following offer:
+
+If you purchase the ith fruit at prices[i] coins, you can get the next i fruits for free.
+Note that even if you can take fruit j for free, you can still purchase it for prices[j] coins to receive a new offer.
+
+Return the minimum number of coins needed to acquire all the fruits.
+
+ 
+
+Example 1:
+
+Input: prices = [3,1,2]
+Output: 4
+Explanation: You can acquire the fruits as follows:
+- Purchase the 1st fruit with 3 coins, and you are allowed to take the 2nd fruit for free.
+- Purchase the 2nd fruit with 1 coin, and you are allowed to take the 3rd fruit for free.
+- Take the 3rd fruit for free.
+Note that even though you were allowed to take the 2nd fruit for free, you purchased it because it is more optimal.
+It can be proven that 4 is the minimum number of coins needed to acquire all the fruits.
+Example 2:
+
+Input: prices = [1,10,1,1]
+Output: 2
+Explanation: You can acquire the fruits as follows:
+- Purchase the 1st fruit with 1 coin, and you are allowed to take the 2nd fruit for free.
+- Take the 2nd fruit for free.
+- Purchase the 3rd fruit for 1 coin, and you are allowed to take the 4th fruit for free.
+- Take the 4th fruit for free.
+It can be proven that 2 is the minimum number of coins needed to acquire all the fruits.
+ 
+
+Constraints:
+
+1 <= prices.length <= 105
+1 <= prices[i] <= 105;=;=https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/solutions/4432069/linear-time-dp-in-c-java-python-by-cpcs-eixp/;;https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/solutions/6346221/runtime-21ms-beats-8889-explained-by-r9n-vh14/;;https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/solutions/5615549/java-montonic-queue-on-simple-code-by-av-41vz/;;https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/solutions/4432231/java-linear-dp-monotonic-deque-optimizat-a1v0/;;https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/solutions/4431859/java-dp-priorityqueue-by-zy15662-558x/;;;=;==;=;=;

@@ -1,0 +1,31 @@
+2437. Number of Valid Clock Times;=;=Easy;=;=public int countTime(String time);=;=You are given a string of length 5 called time, representing the current time on a digital clock in the format "hh:mm". The earliest possible time is "00:00" and the latest possible time is "23:59".
+
+In the string time, the digits represented by the ? symbol are unknown, and must be replaced with a digit from 0 to 9.
+
+Return an integer answer, the number of valid clock times that can be created by replacing every ? with a digit from 0 to 9.
+
+ 
+
+Example 1:
+
+Input: time = "?5:00"
+Output: 2
+Explanation: We can replace the ? with either a 0 or 1, producing "05:00" or "15:00". Note that we cannot replace it with a 2, since the time "25:00" is invalid. In total, we have two choices.
+Example 2:
+
+Input: time = "0?:0?"
+Output: 100
+Explanation: Each ? can be replaced by any digit from 0 to 9, so we have 100 total choices.
+Example 3:
+
+Input: time = "??:??"
+Output: 1440
+Explanation: There are 24 possible choices for the hours, and 60 possible choices for the minutes. In total, we have 24 * 60 = 1440 choices.
+ 
+
+Constraints:
+
+time is a valid string of length 5 in the format "hh:mm".
+"00" <= hh <= "23"
+"00" <= mm <= "59"
+Some of the digits might be replaced with '?' and need to be replaced with digits from 0 to 9.;=;=https://leetcode.com/problems/number-of-valid-clock-times/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-valid-clock-times/solutions/7177587/java-solution-by-monish1153-4471/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2706437/java-easy-to-understand-by-conchwu-ggvw/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2713672/readability-conciseness-balance-by-fllgh-z57l/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/6713776/easy-and-100-fast-solution-in-constant-t-2jkb/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2706366/simple-java-solution-10-lines-code-by-vc-94cl/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/4885646/java-solution-beats-0ms-beats-100-with-c-wtpg/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2799275/javacpy-100-0-ms-faster-simple-time-spac-r62a/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2854781/java-easy-solution-beats-100-by-shubham-8zdnj/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2706410/java-brainless-condition-check-by-henryz-7e1n/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2706904/java-easy-to-understand-simple-by-gnaby-0p6o/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2706590/java-2-approaches-same-logic-dirty-clean-c52h/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2706919/java-solution-by-phyllis817-0cy0/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/4655144/simple-java-code-0-ms-beats-100-by-arobh-h5ku/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2711588/simple-solution-java-understandable-by-k-jalz/;;https://leetcode.com/problems/number-of-valid-clock-times/solutions/2706574/java-beginner-friendly-by-tangobee-j3ef/;;;=;==;=;=;

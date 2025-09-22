@@ -1,0 +1,30 @@
+1524. Number of Sub-arrays With Odd Sum;=;=Medium;=;=public int numOfSubarrays(int[] arr);=;=Given an array of integers arr, return the number of subarrays with an odd sum.
+
+Since the answer can be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: arr = [1,3,5]
+Output: 4
+Explanation: All subarrays are [[1],[1,3],[1,3,5],[3],[3,5],[5]]
+All sub-arrays sum are [1,4,9,3,8,5].
+Odd sums are [1,9,3,5] so the answer is 4.
+Example 2:
+
+Input: arr = [2,4,6]
+Output: 0
+Explanation: All subarrays are [[2],[2,4],[2,4,6],[4],[4,6],[6]]
+All sub-arrays sum are [2,6,12,4,10,6].
+All sub-arrays have even sum and the answer is 0.
+Example 3:
+
+Input: arr = [1,2,3,4,5,6,7]
+Output: 16
+ 
+
+Constraints:
+
+1 <= arr.length <= 105
+1 <= arr[i] <= 100;=;=https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6464951/beats-100-number-of-sub-arrays-with-odd-7wf1w/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6464377/3-methods-java-beginner-freindlycpython-lar9y/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6465188/beats-super-easy-beginners-java-c-c-pyth-82jl/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/7172140/highly-optimized-perfect-combination-by-lwruu/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6464749/three-approaches-in-three-languages-pref-zuir/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6464681/short-simple-approch-prefix-sum-c-java-p-ouqf/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6464520/lets-understand-simple-prefix-sum-simple-itri/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/1779146/godp-super-detailed-explanation-step-by-5a00m/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6464522/easiest-solution-datailed-explaination-p-q7gs/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6467384/beats-100-easy-for-beginners-3-approache-qpdc/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6466091/easy-to-understand-array-prefix-sum-dp-d-xnwu/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6465425/beats-100-6-line-code-easy-explaination-fwzp2/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6937688/number-of-sub-arrays-with-odd-sum-by-yas-ss8s/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6464805/easy-solution-tc-on-sc-o1-by-aishwaryakk-l3nr/;;https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6464656/simple-intutive-solution-on-greedy-prefi-bhqw/;;;=;==;=;=;

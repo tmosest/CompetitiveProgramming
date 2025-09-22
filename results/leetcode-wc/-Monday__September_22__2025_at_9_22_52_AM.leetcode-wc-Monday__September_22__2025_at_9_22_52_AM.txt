@@ -1,0 +1,48 @@
+2065. Maximum Path Quality of a Graph;=;=Hard;=;=publicÊintÊmaximalPathQuality(int[]Êvalues,Êint[][]Êedges,ÊintÊmaxTime);=;=There is an undirected graph with n nodes numbered from 0 to n - 1 (inclusive). You are given a 0-indexed integer array values where values[i] is the value of the ith node. You are also given a 0-indexed 2D integer array edges, where each edges[j] = [uj, vj, timej] indicates that there is an undirected edge between the nodes uj and vj, and it takes timej seconds to travel between the two nodes. Finally, you are given an integer maxTime.
+
+A valid path in the graph is any path that starts at node 0, ends at node 0, and takes at most maxTime seconds to complete. You may visit the same node multiple times. The quality of a valid path is the sum of the values of the unique nodes visited in the path (each node's value is added at most once to the sum).
+
+Return the maximum quality of a valid path.
+
+Note: There are at most four edges connected to each node.
+
+Ê
+
+Example 1:
+
+
+Input: values = [0,32,10,43], edges = [[0,1,10],[1,2,15],[0,3,10]], maxTime = 49
+Output: 75
+Explanation:
+One possible path is 0 -> 1 -> 0 -> 3 -> 0. The total time taken is 10 + 10 + 10 + 10 = 40 <= 49.
+The nodes visited are 0, 1, and 3, giving a maximal path quality of 0 + 32 + 43 = 75.
+Example 2:
+
+
+Input: values = [5,10,15,20], edges = [[0,1,10],[1,2,10],[0,3,10]], maxTime = 30
+Output: 25
+Explanation:
+One possible path is 0 -> 3 -> 0. The total time taken is 10 + 10 = 20 <= 30.
+The nodes visited are 0 and 3, giving a maximal path quality of 5 + 20 = 25.
+Example 3:
+
+
+Input: values = [1,2,3,4], edges = [[0,1,10],[1,2,11],[2,3,12],[1,3,13]], maxTime = 50
+Output: 7
+Explanation:
+One possible path is 0 -> 1 -> 3 -> 1 -> 0. The total time taken is 10 + 13 + 13 + 10 = 46 <= 50.
+The nodes visited are 0, 1, and 3, giving a maximal path quality of 1 + 2 + 4 = 7.
+Ê
+
+Constraints:
+
+n == values.length
+1 <= n <= 1000
+0 <= values[i] <= 108
+0 <= edges.length <= 2000
+edges[j].length == 3 
+0 <= uj < vj <= n - 1
+10 <= timej, maxTime <= 100
+All the pairs [uj, vj] are unique.
+There are at most four edges connected to each node.
+The graph may not be connected.;=;=https://leetcode.com/problems/maximum-path-quality-of-a-graph/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/1564001/java-dfs-o220-with-explanation-by-hdchen-saon/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/1581232/java-dfs-by-pagalpanda-ooa6/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/3052101/simple-java-backtracking-solution-by-syc-0esl/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/1564000/java-backtracking-concise-o410-by-tyro-e4nz/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/1564017/java-clean-dfs-graph-by-flyoceans-ujte/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/7031359/java-solution-dfs-countvisit-by-ndsjqwbb-g7vn/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/2446519/easy-faster-90-efficient-java-soln-simpl-e2vm/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/6576677/java-dfs-key-is-to-flip-the-newvisit-by-bus82/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/6156685/java-dfs-just-dont-add-cycle-check-that-i270z/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/6127311/dijskra-beat-95-by-fredzqm-uddt/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/6043493/maximum-path-quality-of-a-graph-java-sol-m2g9/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/5805292/java-bfs-with-dp-by-shandlikamal248-mqcx/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/5762443/maximum-path-quality-of-a-graph-by-shalu-prc1/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/5223209/reason-of-int-visited-and-not-boolean-df-a9d5/;;https://leetcode.com/problems/maximum-path-quality-of-a-graph/solutions/4968563/dfsmemorize-by-hidanie-b3nm/;;;=;==;=;=;

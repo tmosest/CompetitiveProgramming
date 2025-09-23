@@ -1,0 +1,41 @@
+3229. Minimum Operations to Make Array Equal to Target;=;=Hard;=;=public long minimumOperations(int[] nums, int[] target);=;=You are given two positive integer arrays nums and target, of the same length.
+
+In a single operation, you can select any subarray of nums and increment each element within that subarray by 1 or decrement each element within that subarray by 1.
+
+Return the minimum number of operations required to make nums equal to the array target.
+
+ 
+
+Example 1:
+
+Input: nums = [3,5,1,2], target = [4,6,2,4]
+
+Output: 2
+
+Explanation:
+
+We will perform the following operations to make nums equal to target:
+- Increment nums[0..3] by 1, nums = [4,6,2,3].
+- Increment nums[3..3] by 1, nums = [4,6,2,4].
+
+Example 2:
+
+Input: nums = [1,3,2], target = [2,1,4]
+
+Output: 5
+
+Explanation:
+
+We will perform the following operations to make nums equal to target:
+- Increment nums[0..0] by 1, nums = [2,3,2].
+- Decrement nums[1..1] by 1, nums = [2,2,2].
+- Decrement nums[1..1] by 1, nums = [2,1,2].
+- Increment nums[2..2] by 1, nums = [2,1,3].
+- Increment nums[2..2] by 1, nums = [2,1,4].
+
+ 
+
+Constraints:
+
+1 <= nums.length == target.length <= 105
+1 <= nums[i], target[i] <= 108;=;=https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5508919/on-keep-track-of-how-many-increments-dec-9ucn/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509031/javacpython-just-sum-up-increments-by-le-999d/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509532/beats-100-explained-with-video-cjavapyth-ef7w/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509182/difference-array-tutorial-minimum-operat-vzvx/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509070/python3cjava-greedy-monotonic-stack-idea-bgbb/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5508938/javacpythongojavascript-on-divide-and-co-iwrr/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5514799/easiest-approach-beats-100-must-watch-by-nnvw/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5511158/weekly-contest-409-by-sajaltiwari007-vq13/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5676857/easy-greedy-no-dp-on-by-abhishekkant135-tmsk/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509138/solution-by-dare2solve-detailed-explanat-xvf1/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5509029/effortlessly-dominate-100-with-beginner-6bjun/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/5508988/java-solution-by-harsh__005-ocp8/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/7093715/different-explanation-intuitive-explanat-r48m/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/6918577/easy-java-solution-greedy-by-nikitaaa-j97h/;;https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/solutions/6673485/reduce-to-lc1526-by-torchcc-imv7/;;;=;==;=;=;

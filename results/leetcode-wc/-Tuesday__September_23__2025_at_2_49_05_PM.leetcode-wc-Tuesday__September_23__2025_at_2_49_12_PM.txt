@@ -1,0 +1,32 @@
+1475. Final Prices With a Special Discount in a Shop;=;=Easy;=;=publicÊint[]ÊfinalPrices(int[]Êprices);=;=You are given an integer array prices where prices[i] is the price of the ith item in a shop.
+
+There is a special discount for items in the shop. If you buy the ith item, then you will receive a discount equivalent to prices[j] where j is the minimum index such that j > i and prices[j] <= prices[i]. Otherwise, you will not receive any discount at all.
+
+Return an integer array answer where answer[i] is the final price you will pay for the ith item of the shop, considering the special discount.
+
+Ê
+
+Example 1:
+
+Input: prices = [8,4,6,2,3]
+Output: [4,2,4,2,3]
+Explanation: 
+For item 0 with price[0]=8 you will receive a discount equivalent to prices[1]=4, therefore, the final price you will pay is 8 - 4 = 4.
+For item 1 with price[1]=4 you will receive a discount equivalent to prices[3]=2, therefore, the final price you will pay is 4 - 2 = 2.
+For item 2 with price[2]=6 you will receive a discount equivalent to prices[3]=2, therefore, the final price you will pay is 6 - 2 = 4.
+For items 3 and 4 you will not receive any discount at all.
+Example 2:
+
+Input: prices = [1,2,3,4,5]
+Output: [1,2,3,4,5]
+Explanation: In this case, for all items, you will not receive any discount at all.
+Example 3:
+
+Input: prices = [10,1,1,6]
+Output: [9,0,1,6]
+Ê
+
+Constraints:
+
+1 <= prices.length <= 500
+1 <= prices[i] <= 1000;=;=https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/7204604/easy-code-for-beginners-and-understandab-wb0y/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/7201674/easy-and-simple-method-for-beginners-by-rnknf/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/7201656/easy-and-simple-by-younus07-jtg4/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/6157936/beats-100-monotonic-stack-solution-for-l-gs3c/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/6157942/100-beats-simple-looping-solution-multi-jiosf/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/6501253/beats-9854-leetcoders-easy-java-by-patil-bfcl/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/6206010/2-simple-solutions-using-stack-and-array-yk32/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/6158446/beats-100-on-solution-next-smaller-eleme-63un/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/7068458/array-concept-java-code-simple-logic-by-r4w3d/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/5090857/easy-solutionefficient-discount-calculat-2fnz/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/1717276/my-simple-java-solution-on-using-stack-w-j1a5/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/6158215/simple-solution-beginner-friendly-easy-a-b5u9/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/6158737/brute-force-solution-beats-100-by-bijoys-0sqc/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/7026588/final-prices-with-a-special-discount-mon-mzim/;;https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/solutions/6753703/final-prices-with-a-special-discount-bru-um40/;;;=;==;=;=;

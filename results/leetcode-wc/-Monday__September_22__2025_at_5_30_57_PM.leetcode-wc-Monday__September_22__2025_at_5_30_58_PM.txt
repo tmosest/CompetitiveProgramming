@@ -1,0 +1,25 @@
+945. Minimum Increment to Make Array Unique;=;=Medium;=;=public int minIncrementForUnique(int[] nums);=;=You are given an integer array nums. In one move, you can pick an index i where 0 <= i < nums.length and increment nums[i] by 1.
+
+Return the minimum number of moves to make every value in nums unique.
+
+The test cases are generated so that the answer fits in a 32-bit integer.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,2]
+Output: 1
+Explanation: After 1 move, the array could be [1, 2, 3].
+Example 2:
+
+Input: nums = [3,2,1,2,1,7]
+Output: 6
+Explanation: After 6 moves, the array could be [3, 4, 1, 2, 5, 7].
+It can be shown that it is impossible for the array to have all unique values with 5 or less moves.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 105;=;=https://leetcode.com/problems/minimum-increment-to-make-array-unique/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5310028/why-sorting-visualize-sorting-algorithm-3kqna/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5309935/easy-to-understand-fastest-sorting-by-bh-jusj/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/7158020/easy-solution-in-java-in-hindi-as-well-a-5rn8/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5311984/best-solution-most-efficient-2-approache-ggco/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5309958/greedy-formal-proof-tutorial-minimum-inc-ml9a/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/7008812/easy-simple-java-solution-by-prakhar-131-efqg/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/7035773/easy-code-in-java-by-yasl1-w4z0/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/6978339/company-list-included-java-solution-opti-on6z/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5311094/easy-to-understand-counting-greedy-2-poi-i1tg/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5310094/easy-java-solution-sorting-beats-100-by-6a5p9/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5312524/counting-and-adding-remainder-c-35-ms100-u0so/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5310471/literally-beats-inbuilt-sort-69_beats_10-oyqh/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/3252392/easy-to-understand-java-solution-by-abin-ykxv/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5310164/easy-java-solution-286-ms-_-by-suyalneer-e3eh/;;https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5312403/java-solution-explained-in-hindi2-approa-s66s/;;;=;==;=;=;

@@ -1,0 +1,49 @@
+165. Compare Version Numbers;=;=Medium;=;=public int compareVersion(String version1, String version2)         String[] nums1 = version1.split("\\.");        String[] nums2 = version2.split("\\.");        int n1 = nums1.length, n2 = nums2.length;        // compare versions        int i1, i2;        for (int i = 0; i < Math.max(n1, n2); ++i)             i1 = i < n1 ? Integer.parseInt(nums1[i]) : 0;            i2 = i < n2 ? Integer.parseInt(nums2[i]) : 0;            if (i1 != i2)                 return i1 > i2 ? 1 : -1;                            //The versions are equal        return 0;;=;=Given two version strings, version1 and version2, compare them. A version string consists of revisions separated by dots '.'. The value of the revision is its integer conversion ignoring leading zeros.
+
+To compare version strings, compare their revision values in left-to-right order. If one of the version strings has fewer revisions, treat the missing revision values as 0.
+
+Return the following:
+
+If version1 < version2, return -1.
+If version1 > version2, return 1.
+Otherwise, return 0.
+ 
+
+Example 1:
+
+Input: version1 = "1.2", version2 = "1.10"
+
+Output: -1
+
+Explanation:
+
+version1's second revision is "2" and version2's second revision is "10": 2 < 10, so version1 < version2.
+
+Example 2:
+
+Input: version1 = "1.01", version2 = "1.001"
+
+Output: 0
+
+Explanation:
+
+Ignoring leading zeroes, both "01" and "001" represent the same integer "1".
+
+Example 3:
+
+Input: version1 = "1.0", version2 = "1.0.0.0"
+
+Output: 0
+
+Explanation:
+
+version1 has less revisions, which means every missing revision are treated as "0".
+
+ 
+
+Constraints:
+
+1 <= version1.length, version2.length <= 500
+version1 and version2 only contain digits and '.'.
+version1 and version2 are valid version numbers.
+All the given revisions in version1 and version2 can be stored in a 32-bit integer.;=;=https://leetcode.com/problems/compare-version-numbers/description/?envType=daily-question&envId=2025-09-23;=;=https://leetcode.com/problems/compare-version-numbers/solutions/7142865/beats-10000-of-users-simple-easy-explain-w7yd/;;https://leetcode.com/problems/compare-version-numbers/solutions/5104397/beats-10000-of-users-with-java2-methods-2dyv2/;;https://leetcode.com/problems/compare-version-numbers/solutions/5104082/detailed-explanation-no-extra-space-line-ah8b/;;https://leetcode.com/problems/compare-version-numbers/solutions/7178229/easy-code-by-aesdtfg-jztj/;;https://leetcode.com/problems/compare-version-numbers/solutions/6974385/beats-10000-simple-intuition-by-rankstar-x9g4/;;https://leetcode.com/problems/compare-version-numbers/solutions/6789647/fast-and-clear-with-iterations-in-tables-m9a6/;;https://leetcode.com/problems/compare-version-numbers/solutions/7051379/no-regex-layman-explanation-clean-code-b-tc61/;;https://leetcode.com/problems/compare-version-numbers/solutions/5103837/java-on-time-8-lines-clean-code-by-judge-25qt/;;https://leetcode.com/problems/compare-version-numbers/solutions/50788/my-java-solution-without-split-by-lucife-0yk4/;;https://leetcode.com/problems/compare-version-numbers/solutions/5105462/easiest-cjavapython3-code-highly-underst-8mz2/;;https://leetcode.com/problems/compare-version-numbers/solutions/5105816/beats-10000-with-java-oms-2pointer-simpl-ule2/;;https://leetcode.com/problems/compare-version-numbers/solutions/6901808/easy-iterative-solution-on-explained-wit-d8j7/;;https://leetcode.com/problems/compare-version-numbers/solutions/5105384/faster-lesser-cpython3javacpythoncexplai-egrb/;;https://leetcode.com/problems/compare-version-numbers/solutions/1797472/java-concise-solution-by-dhiru634-qwde/;;https://leetcode.com/problems/compare-version-numbers/solutions/837997/8-line-simple-java-solution100-without-s-11tt/;;;=;==;=;=;

@@ -1,0 +1,43 @@
+2166. Design Bitset;=;=Medium;=;=Bitset     public Bitset(int size)                     public void fix(int idx)                     public void unfix(int idx);=;=A Bitset is a data structure that compactly stores bits.
+
+Implement the Bitset class:
+
+Bitset(int size) Initializes the Bitset with size bits, all of which are 0.
+void fix(int idx) Updates the value of the bit at the index idx to 1. If the value was already 1, no change occurs.
+void unfix(int idx) Updates the value of the bit at the index idx to 0. If the value was already 0, no change occurs.
+void flip() Flips the values of each bit in the Bitset. In other words, all bits with value 0 will now have value 1 and vice versa.
+boolean all() Checks if the value of each bit in the Bitset is 1. Returns true if it satisfies the condition, false otherwise.
+boolean one() Checks if there is at least one bit in the Bitset with value 1. Returns true if it satisfies the condition, false otherwise.
+int count() Returns the total number of bits in the Bitset which have value 1.
+String toString() Returns the current composition of the Bitset. Note that in the resultant string, the character at the ith index should coincide with the value at the ith bit of the Bitset.
+ 
+
+Example 1:
+
+Input
+["Bitset", "fix", "fix", "flip", "all", "unfix", "flip", "one", "unfix", "count", "toString"]
+[[5], [3], [1], [], [], [0], [], [], [0], [], []]
+Output
+[null, null, null, null, false, null, null, true, null, 2, "01010"]
+
+Explanation
+Bitset bs = new Bitset(5); // bitset = "00000".
+bs.fix(3);     // the value at idx = 3 is updated to 1, so bitset = "00010".
+bs.fix(1);     // the value at idx = 1 is updated to 1, so bitset = "01010". 
+bs.flip();     // the value of each bit is flipped, so bitset = "10101". 
+bs.all();      // return False, as not all values of the bitset are 1.
+bs.unfix(0);   // the value at idx = 0 is updated to 0, so bitset = "00101".
+bs.flip();     // the value of each bit is flipped, so bitset = "11010". 
+bs.one();      // return True, as there is at least 1 index with value 1.
+bs.unfix(0);   // the value at idx = 0 is updated to 0, so bitset = "01010".
+bs.count();    // return 2, as there are 2 bits with value 1.
+bs.toString(); // return "01010", which is the composition of bitset.
+ 
+
+Constraints:
+
+1 <= size <= 105
+0 <= idx <= size - 1
+At most 105 calls will be made in total to fix, unfix, flip, all, one, count, and toString.
+At least one call will be made to all, one, count, or toString.
+At most 5 calls will be made to toString.;=;=https://leetcode.com/problems/design-bitset/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/design-bitset/solutions/1748448/o1-all-java-hashset-except-tostring-by-s-npk4/;;https://leetcode.com/problems/design-bitset/solutions/1748431/python3-java-c-all-operations-o1-flipped-r7m0/;;https://leetcode.com/problems/design-bitset/solutions/1748508/javapython-3-boolean-array-time-o1-excep-c63h/;;https://leetcode.com/problems/design-bitset/solutions/1748495/java-simple-2-arrays-by-gaurav_maheshwar-zqjd/;;https://leetcode.com/problems/design-bitset/solutions/1748822/java-single-array-boolean-flip-100-38-ms-94h3/;;https://leetcode.com/problems/design-bitset/solutions/3696018/java-solution-with-only-one-array-o1-by-l4sk1/;;https://leetcode.com/problems/design-bitset/solutions/1748694/java-o1-solution-two-arrays-by-revengeco-roag/;;https://leetcode.com/problems/design-bitset/solutions/4684895/o1-simple-java-solution-by-varaprasadkad-j1yd/;;https://leetcode.com/problems/design-bitset/solutions/2410972/flipped-flag-by-fllght-vdqc/;;https://leetcode.com/problems/design-bitset/solutions/1751785/java-char-array-easy-peasy-by-trevor-aks-fkm6/;;https://leetcode.com/problems/design-bitset/solutions/1748588/java-o1-methods-implementation-by-akezhr-mj2w/;;https://leetcode.com/problems/design-bitset/solutions/1750558/java-long-array-bit-manipulation-solutio-u6tb/;;https://leetcode.com/problems/design-bitset/solutions/3854694/simple-java-solution-with-1-set-by-vinit-291a/;;https://leetcode.com/problems/design-bitset/solutions/1757579/on-for-tostring-o1-for-other-operations-3pgsh/;;https://leetcode.com/problems/design-bitset/solutions/1748552/can-anyone-tell-me-why-i-am-getting-tle-suf00/;;;=;==;=;=;

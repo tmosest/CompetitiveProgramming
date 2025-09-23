@@ -1,0 +1,47 @@
+3371. Identify the Largest Outlier in an Array;=;=Medium;=;=publicÊintÊgetLargestOutlier(int[]Ênums);=;=You are given an integer array nums. This array contains n elements, where exactly n - 2 elements are special numbers. One of the remaining two elements is the sum of these special numbers, and the other is an outlier.
+
+An outlier is defined as a number that is neither one of the original special numbers nor the element representing the sum of those numbers.
+
+Note that special numbers, the sum element, and the outlier must have distinct indices, but may share the same value.
+
+Return the largest potential outlier in nums.
+
+Ê
+
+Example 1:
+
+Input: nums = [2,3,5,10]
+
+Output: 10
+
+Explanation:
+
+The special numbers could be 2 and 3, thus making their sum 5 and the outlier 10.
+
+Example 2:
+
+Input: nums = [-2,-1,-3,-6,4]
+
+Output: 4
+
+Explanation:
+
+The special numbers could be -2, -1, and -3, thus making their sum -6 and the outlier 4.
+
+Example 3:
+
+Input: nums = [1,1,1,1,1,5,5]
+
+Output: 5
+
+Explanation:
+
+The special numbers could be 1, 1, 1, 1, and 1, thus making their sum 5 and the other 5 as the outlier.
+
+Ê
+
+Constraints:
+
+3 <= nums.length <= 105
+-1000 <= nums[i] <= 1000
+The input is generated such that at least one potential outlier exists in nums.;=;=https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6098878/javacpython-hashmap-by-lee215-9npa/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6098939/python3-6-lines-sort-and-check-ts-1350-m-dfg3/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6098980/beats-100-on-and-o1-2-solutions-explaine-kd3u/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6102890/find-the-largest-outlier-in-an-array-by-hn2ar/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6099667/binary-search-solution-to-find-out-speci-k0y0/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6612086/beats-100freq-array-by-srirammente-a9p0/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6099294/easy-hashmap-based-solution-by-pui-pui-b-exfd/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6099203/simple-java-solution-by-harsh__005-k1ju/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6196216/most-intuitive-solution-easy-to-understa-dre3/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6112097/two-pointers-detailed-explanation-by-shi-ztdx/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6098933/easy-intutive-solution-on-by-harsh1937-m9v6/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6113318/best-solution-best-explanation-most-opti-fgj5/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6105076/detailed-solution-hashmap-prefix-sum-on-lnpvx/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/7144994/hashmap-java-by-runlingli-2imn/;;https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/solutions/6725749/counting-array-enumerate-sum-of-special-3uybj/;;;=;==;=;=;

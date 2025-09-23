@@ -1,0 +1,25 @@
+1283. Find the Smallest Divisor Given a Threshold;=;=Medium;=;=public int smallestDivisor(int[] nums, int threshold);=;=Given an array of integers nums and an integer threshold, we will choose a positive integer divisor, divide all the array by it, and sum the division's result. Find the smallest divisor such that the result mentioned above is less than or equal to threshold.
+
+Each result of the division is rounded to the nearest integer greater than or equal to that element. (For example: 7/3 = 3 and 10/2 = 5).
+
+The test cases are generated so that there will be an answer.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,5,9], threshold = 6
+Output: 5
+Explanation: We can get a sum to 17 (1+2+5+9) if the divisor is 1. 
+If the divisor is 4 we can get a sum of 7 (1+1+2+3) and if the divisor is 5 the sum will be 5 (1+1+1+2). 
+Example 2:
+
+Input: nums = [44,22,33,11,1], threshold = 5
+Output: 44
+ 
+
+Constraints:
+
+1 <= nums.length <= 5 * 104
+1 <= nums[i] <= 106
+nums.length <= threshold <= 106;=;=https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/7155167/java-binary-search-easy-solution-explain-hapd/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/7151030/to-avoid-tle-use-this-logic-by-dhruv_gil-zzrp/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/7142236/very-easy-and-most-optimal-approach-beat-ht0y/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/6685996/understanding-the-optimal-way-java-pytho-ev2a/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/7067635/find-the-smallest-divisor-given-a-thresh-2ote/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/7106339/optimal-binary-search-by-samruddhi_khila-tmas/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/7105096/find-the-smallest-division-using-binary-nxnbw/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/7060258/1-to-max-binary-search-by-soujitdas65-yynh/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/6857157/easiest-solution-binary-search-approach-exyxq/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/7059876/to-avoid-tle-for-threshold-100000-use-th-evhu/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/7034561/check-the-intuition-by-abhishek1331975-0ih9/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/6816964/easy-java-solution-smallest-divisor-usin-3dad/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/6923577/beats-10000-both-approach-brute-force-op-a540/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/6305867/very-easy-detailed-solution-java-c-beats-m4jy/;;https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/solutions/6906867/optimal-solution-binary-search-by-sayand-avo0/;;;=;==;=;=;

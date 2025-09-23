@@ -1,0 +1,24 @@
+1153. String Transforms Into Another String;=;=Hard;=;=public boolean canConvert(String str1, String str2);=;=Given two strings str1 and str2 of the same length, determine whether you can transform str1 into str2 by doing zero or more conversions.
+
+In one conversion you can convert all occurrences of one character in str1 to any other lowercase English character.
+
+Return true if and only if you can transform str1 into str2.
+
+ 
+
+Example 1:
+
+Input: str1 = "aabcc", str2 = "ccdee"
+Output: true
+Explanation: Convert 'c' to 'e' then 'b' to 'd' then 'a' to 'c'. Note that the order of conversions matter.
+Example 2:
+
+Input: str1 = "leetcode", str2 = "codeleet"
+Output: false
+Explanation: There is no way to transform str1 to str2.
+ 
+
+Constraints:
+
+1 <= str1.length == str2.length <= 104
+str1 and str2 contain only lowercase English letters.;=;=https://leetcode.com/problems/string-transforms-into-another-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/string-transforms-into-another-string/solutions/670547/java-beats-100-complexity-and-space-by-1-tvu8/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/497530/java-mapping-and-used-char-count-explain-qste/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/617151/java-solution-by-saurabh_9-wcjg/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/710673/java-solution-easy-to-understand-with-ex-xxwj/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/542078/java-with-explaination-by-idleft-i6ua/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/5284686/hashmap-to-keep-mapping-of-chars-from-st-iaal/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/4307883/1153-string-transforms-into-another-stri-gq3v/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/3784340/java-simple-solution-using-arrays-by-iam-ga83/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/3784339/java-simple-solution-using-arrays-by-iam-09dm/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/3567382/solution-by-deleted_user-dkk3/;;https://leetcode.com/problems/string-transforms-into-another-string/solutions/1648001/java-clean-explained-by-prashant404-m3hi/;;;=;==;=;=;

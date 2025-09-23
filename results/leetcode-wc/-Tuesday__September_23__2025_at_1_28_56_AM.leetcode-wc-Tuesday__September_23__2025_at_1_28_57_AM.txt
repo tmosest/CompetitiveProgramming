@@ -1,0 +1,41 @@
+1970. Last Day Where You Can Still Cross;=;=Hard;=;=public int latestDayToCross(int row, int col, int[][] cells);=;=There is a 1-based binary matrix where 0 represents land and 1 represents water. You are given integers row and col representing the number of rows and columns in the matrix, respectively.
+
+Initially on day 0, the entire matrix is land. However, each day a new cell becomes flooded with water. You are given a 1-based 2D array cells, where cells[i] = [ri, ci] represents that on the ith day, the cell on the rith row and cith column (1-based coordinates) will be covered with water (i.e., changed to 1).
+
+You want to find the last day that it is possible to walk from the top to the bottom by only walking on land cells. You can start from any cell in the top row and end at any cell in the bottom row. You can only travel in the four cardinal directions (left, right, up, and down).
+
+Return the last day where it is possible to walk from the top to the bottom by only walking on land cells.
+
+ 
+
+Example 1:
+
+
+Input: row = 2, col = 2, cells = [[1,1],[2,1],[1,2],[2,2]]
+Output: 2
+Explanation: The above image depicts how the matrix changes each day starting from day 0.
+The last day where it is possible to cross from top to bottom is on day 2.
+Example 2:
+
+
+Input: row = 2, col = 2, cells = [[1,1],[1,2],[2,1],[2,2]]
+Output: 1
+Explanation: The above image depicts how the matrix changes each day starting from day 0.
+The last day where it is possible to cross from top to bottom is on day 1.
+Example 3:
+
+
+Input: row = 3, col = 3, cells = [[1,2],[2,1],[3,3],[2,2],[1,1],[1,3],[2,3],[3,2],[3,1]]
+Output: 3
+Explanation: The above image depicts how the matrix changes each day starting from day 0.
+The last day where it is possible to cross from top to bottom is on day 3.
+ 
+
+Constraints:
+
+2 <= row, col <= 2 * 104
+4 <= row * col <= 2 * 104
+cells.length == row * col
+1 <= ri <= row
+1 <= ci <= col
+All the values of cells are unique.;=;=https://leetcode.com/problems/last-day-where-you-can-still-cross/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/7206729/bs-dfs-onmlognm-by-gitchuan-inyr/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3698498/bs-bfs-c-java-python-beginner-friendly-b-uu4f/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/6998270/easy-and-efficient-disjoint-set-approach-1526/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3699012/c-java-union-find-efficient-connectivity-h9ec/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3698570/dfs-bs-video-solution-java-c-python-by-j-tc7w/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/6219800/basic-java-under-standable-code-using-si-5jzp/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3700435/python-java-c-binary-search-by-niketh_12-g05h/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3699715/java-4ms-100-union-find-on-water-convert-d0q2/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/6219929/binary-search-approach-by-tushar0sharma-q9qe/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3699211/easy-java-dfs-solution-by-viraj_patil_09-yvt1/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3698497/easy-but-not-fast-by-shashwat1712-7tgp/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3754924/union-find-beats-70-java-by-youssef1998-sph7/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/7191709/straightforward-binary-search-bfs-soluti-9tmy/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3699906/java-union-find-percolation-by-c1bulka-1rif/;;https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3699697/java-bfs-binary-search-graphs-by-da_arya-2wp8/;;;=;==;=;=;

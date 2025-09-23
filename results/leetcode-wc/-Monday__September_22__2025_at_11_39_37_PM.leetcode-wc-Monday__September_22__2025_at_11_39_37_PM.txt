@@ -1,0 +1,29 @@
+2840. Check if Strings Can be Made Equal With Operations II;=;=Medium;=;=public boolean checkStrings(String s1, String s2);=;=You are given two strings s1 and s2, both of length n, consisting of lowercase English letters.
+
+You can apply the following operation on any of the two strings any number of times:
+
+Choose any two indices i and j such that i < j and the difference j - i is even, then swap the two characters at those indices in the string.
+Return true if you can make the strings s1 and s2 equal, and false otherwise.
+
+ 
+
+Example 1:
+
+Input: s1 = "abcdba", s2 = "cabdab"
+Output: true
+Explanation: We can apply the following operations on s1:
+- Choose the indices i = 0, j = 2. The resulting string is s1 = "cbadba".
+- Choose the indices i = 2, j = 4. The resulting string is s1 = "cbbdaa".
+- Choose the indices i = 1, j = 5. The resulting string is s1 = "cabdab" = s2.
+Example 2:
+
+Input: s1 = "abe", s2 = "bea"
+Output: false
+Explanation: It is not possible to make the two strings equal.
+ 
+
+Constraints:
+
+n == s1.length == s2.length
+1 <= n <= 105
+s1 and s2 consist only of lowercase English letters.;=;=https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/3992947/c-java-on-solution-match-odd-even-places-qk92/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/3993165/hand-written-notes-on-time-space-just-co-coky/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/3992938/100-beats-easy-solution-tc-on-sc-o1-by-p-ugmv/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/3992912/easy-java-solution-by-shoryasharda028-jplk/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/6609932/simple-easy-solution-without-hashtable-b-8wq5/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/3995827/fastest-and-easiest-approach-by-enigmani-kn1t/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/3993236/simple-approach-with-count-array-on-o26-b0etc/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/3993007/java-easy-solution-by-vishesht27-y4dt/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/6960338/dont-waste-time-just-read-my-code-in-jav-tzjs/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/3995697/sorted-answer-nlogn-i-know-im-noob-v_v-b-xso7/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/3992922/easy-hashmap-solution-by-jayanth_thunga_-oqev/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/6777152/on-solution-by-sakshee19-3pbp/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/6663045/easy-solution-in-java-by-kumarakash-7byl/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/6458091/easy-codes-in-c-java-python-2-methods-so-m9kw/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/solutions/5888494/check-if-strings-can-be-made-equal-with-hk3fh/;;;=;==;=;=;

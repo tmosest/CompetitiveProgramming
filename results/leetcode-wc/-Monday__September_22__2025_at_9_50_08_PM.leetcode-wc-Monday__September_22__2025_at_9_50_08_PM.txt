@@ -1,0 +1,30 @@
+1147. Longest Chunked Palindrome Decomposition;=;=Hard;=;=public int longestDecomposition(String text);=;=You are given a string text. You should split it to k substrings (subtext1, subtext2, ..., subtextk) such that:
+
+subtexti is a non-empty string.
+The concatenation of all the substrings is equal to text (i.e., subtext1 + subtext2 + ... + subtextk == text).
+subtexti == subtextk - i + 1 for all valid values of i (i.e., 1 <= i <= k).
+Return the largest possible value of k.
+
+ 
+
+Example 1:
+
+Input: text = "ghiabcdefhelloadamhelloabcdefghi"
+Output: 7
+Explanation: We can split the string on "(ghi)(abcdef)(hello)(adam)(hello)(abcdef)(ghi)".
+Example 2:
+
+Input: text = "merchant"
+Output: 1
+Explanation: We can split the string on "(merchant)".
+Example 3:
+
+Input: text = "antaprezatepzapreanta"
+Output: 11
+Explanation: We can split the string on "(a)(nt)(a)(pre)(za)(tep)(za)(pre)(a)(nt)(a)".
+ 
+
+Constraints:
+
+1 <= text.length <= 1000
+text consists only of lowercase English characters.;=;=https://leetcode.com/problems/longest-chunked-palindrome-decomposition/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/350762/java-0ms-concise-beats-100-both-time-and-pl1v/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/7101896/beginner-friendly-solution-by-amyy_1256-p2en/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/6253836/most-easiest-approach-without-dp-and-rol-dl6y/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/4530877/pretty-fast-java-soln-easy-to-understand-ch82/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/2416709/java-two-pointers-by-agniva_029-u2ns/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/355702/beat-100-java-rolling-hash-by-fengw7-l61f/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/7079988/learn-about-rolling-hash-by-monalogue-zd3l/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/7100605/recursive-solution-with-zindex-by-akshay-x7vp/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/7032076/3-step-by-rvza0m08wn-rvxc/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/6771037/greedy-by-lemonpepper-2rav/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/6285235/longest-decomposition-palindrome-problem-k9u4/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/5949011/java-1-ms-beats-9072-by-hassam_472-6chb/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/5941622/java-rolling-hash-by-sub_sa-7ipd/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/5697450/1-ms-beats-9308-by-pribyte1-sgw4/;;https://leetcode.com/problems/longest-chunked-palindrome-decomposition/solutions/5678118/java-solution-easy-to-understand-by-neel-td8q/;;;=;==;=;=;

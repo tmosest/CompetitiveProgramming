@@ -1,0 +1,32 @@
+2496. Maximum Value of a String in an Array;=;=Easy;=;=public int maximumValue(String[] strs);=;=The value of an alphanumeric string can be defined as:
+
+The numeric representation of the string in base 10, if it comprises of digits only.
+The length of the string, otherwise.
+Given an array strs of alphanumeric strings, return the maximum value of any string in strs.
+
+ 
+
+Example 1:
+
+Input: strs = ["alic3","bob","3","4","00000"]
+Output: 5
+Explanation: 
+- "alic3" consists of both letters and digits, so its value is its length, i.e. 5.
+- "bob" consists only of letters, so its value is also its length, i.e. 3.
+- "3" consists only of digits, so its value is its numeric equivalent, i.e. 3.
+- "4" also consists only of digits, so its value is 4.
+- "00000" consists only of digits, so its value is 0.
+Hence, the maximum value is 5, of "alic3".
+Example 2:
+
+Input: strs = ["1","01","001","0001"]
+Output: 1
+Explanation: 
+Each string in the array has value 1. Hence, we return 1.
+ 
+
+Constraints:
+
+1 <= strs.length <= 100
+1 <= strs[i].length <= 9
+strs[i] consists of only lowercase English letters and digits.;=;=https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/7153049/simple-and-easy-solution-runtime-1ms-by-nufbo/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/2921696/java-easy-solution-by-janhvi__28-9u85/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/2899727/short-java-try-catch-no-condition-check-riiwh/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/6717129/short-and-easy-answer-by-nghiemngocduc07-cw3l/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/6670764/2496-maximum-value-of-a-string-in-an-arr-3xmg/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/5062158/very-easy-to-understand-java-solution-be-hb0s/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/5573206/easiestfaster-lesser-cpython3javacpython-82ez/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/2897928/single-pass-by-xxvvpp-661q/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/2897889/easy-java-solution-by-siddhant_1602-kd0a/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/2898058/java-2-solutions-clean-by-sourin_bruh-hxig/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/4399911/java-beginner-solution-100-beats-time-co-dujm/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/3067892/1-ms-easy-java-by-ritik1937-4dod/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/5717635/simple-solution-easily-understandable-by-kfnh/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/3133321/simple-solution-by-brtn-mh2u/;;https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/solutions/2898042/easy-short-java-solution-by-himanshubhoi-yksk/;;;=;==;=;=;

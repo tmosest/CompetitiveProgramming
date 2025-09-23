@@ -1,0 +1,26 @@
+839. Similar String Groups;=;=Hard;=;=public int numSimilarGroups(String[] strs);=;=Two strings, X and Y, are considered similar if either they are identical or we can make them equivalent by swapping at most two letters (in distinct positions) within the string X.
+
+For example, "tars" and "rats" are similar (swapping at positions 0 and 2), and "rats" and "arts" are similar, but "star" is not similar to "tars", "rats", or "arts".
+
+Together, these form two connected groups by similarity: {"tars", "rats", "arts"} and {"star"}.  Notice that "tars" and "arts" are in the same group even though they are not similar.  Formally, each group is such that a word is in the group if and only if it is similar to at least one other word in the group.
+
+We are given a list strs of strings where every string in strs is an anagram of every other string in strs. How many groups are there?
+
+ 
+
+Example 1:
+
+Input: strs = ["tars","rats","arts","star"]
+Output: 2
+Example 2:
+
+Input: strs = ["omv","ovm"]
+Output: 1
+ 
+
+Constraints:
+
+1 <= strs.length <= 300
+1 <= strs[i].length <= 300
+strs[i] consists of lowercase letters only.
+All words in strs have the same length and are anagrams of each other.;=;=https://leetcode.com/problems/similar-string-groups/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/similar-string-groups/solutions/3462133/image-explanation-easy-to-understand-con-fspm/;;https://leetcode.com/problems/similar-string-groups/solutions/3462086/easy-java-solution-with-proper-explanati-ra39/;;https://leetcode.com/problems/similar-string-groups/solutions/3463786/easy-solution-of-java-dfs-easy-to-unders-49wj/;;https://leetcode.com/problems/similar-string-groups/solutions/3462832/java-solution-with-complete-explanation-l5x60/;;https://leetcode.com/problems/similar-string-groups/solutions/2490008/java-solution-dsu-union-find-by-nidhishg-w2yw/;;https://leetcode.com/problems/similar-string-groups/solutions/578061/java-union-find-beats-98-time-and-100-me-u8w4/;;https://leetcode.com/problems/similar-string-groups/solutions/3991600/short-code-by-lil_toeturtle-wkra/;;https://leetcode.com/problems/similar-string-groups/solutions/2289850/java-graph-disjoint-set-by-manishen-e4ez/;;https://leetcode.com/problems/similar-string-groups/solutions/3463094/cjava-859-buddy-strings-200-no-of-island-xioj/;;https://leetcode.com/problems/similar-string-groups/solutions/3463370/java-graphs-dfs-bfs-by-da_arya-vrva/;;https://leetcode.com/problems/similar-string-groups/solutions/3463008/my-java-solution-using-union-find-by-rag-eer1/;;https://leetcode.com/problems/similar-string-groups/solutions/3462311/java-runtime-27-ms-beats-50-memory-426-m-hh4q/;;https://leetcode.com/problems/similar-string-groups/solutions/3463849/java-solution-union-find-100-by-semotpan-5ax0/;;https://leetcode.com/problems/similar-string-groups/solutions/991741/java-solution-using-undirected-graph-dfs-36xx/;;https://leetcode.com/problems/similar-string-groups/solutions/3464461/very-easy-and-clean-solution-java-graph-mc727/;;;=;==;=;=;

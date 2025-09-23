@@ -1,0 +1,25 @@
+1371. Find the Longest Substring Containing Vowels in Even Counts;=;=Medium;=;=public int findTheLongestSubstring(String s);=;=Given the string s, return the size of the longest substring containing each vowel an even number of times. That is, 'a', 'e', 'i', 'o', and 'u' must appear an even number of times.
+
+ 
+
+Example 1:
+
+Input: s = "eleetminicoworoep"
+Output: 13
+Explanation: The longest substring is "leetminicowor" which contains two each of the vowels: e, i and o and zero of the vowels: a and u.
+Example 2:
+
+Input: s = "leetcodeisgreat"
+Output: 5
+Explanation: The longest substring is "leetc" which contains two e's.
+Example 3:
+
+Input: s = "bcbcbc"
+Output: 6
+Explanation: In this case, the given string "bcbcbc" is the longest because all vowels: a, e, i, o and u appear zero times.
+ 
+
+Constraints:
+
+1 <= s.length <= 5 x 10^5
+s contains only lowercase English letters.;=;=https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5784707/effortless-bitmasking-solution-on-o1-by-9kqms/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5789065/really-me-accha-question-chalo-padhe-con-7nyn/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5788167/easiest-approach-fully-explained-must-wa-v4oo/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5788036/simple-and-easy-beats-all-with-explanati-s5uz/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5781478/easy-solution-java-c-by-raghavagarwal28-f9av/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5790952/bitmasking-by-dixon_n-wsx9/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5788020/easy-solution-beats-99-by-mohd_sajjadzak-3ej9/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5788785/bit-mask-solution-with-o1-space-complexi-25ot/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5789182/beats-super-easy-and-simple-by-codewiths-oi7d/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5789701/java-sorry-your-tier-level-allows-only-u-rq37/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5789341/solution-by-dare2solve-detailed-explanat-luo6/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5789189/using-bitmask-by-eshwaraprasad-p7xk/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5789982/java-code-by-shubhamyadav32100-pxuj/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/4885345/easy-3-step-detail-explanation-same-as-5-5wep/;;https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5794870/most-beginner-friendly-and-short-by-sura-rdl7/;;;=;==;=;=;

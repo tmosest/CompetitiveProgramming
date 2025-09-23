@@ -1,0 +1,26 @@
+2964. Number of Divisible Triplet Sums;=;=Medium;=;=publicÊintÊdivisibleTripletCount(int[]Ênums,ÊintÊd);=;=Given a 0-indexed integer array nums and an integer d, return the number of triplets (i, j, k) such that i < j < k and (nums[i] + nums[j] + nums[k]) % d == 0.
+Ê
+
+Example 1:
+
+Input: nums = [3,3,4,7,8], d = 5
+Output: 3
+Explanation: The triplets which are divisible by 5 are: (0, 1, 2), (0, 2, 4), (1, 2, 4).
+It can be shown that no other triplet is divisible by 5. Hence, the answer is 3.
+Example 2:
+
+Input: nums = [3,3,3,3], d = 3
+Output: 4
+Explanation: Any triplet chosen here has a sum of 9, which is divisible by 3. Hence, the answer is the total number of triplets which is 4.
+Example 3:
+
+Input: nums = [3,3,3,3], d = 6
+Output: 0
+Explanation: Any triplet chosen here has a sum of 9, which is not divisible by 6. Hence, the answer is 0.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 109
+1 <= d <= 109;=;=https://leetcode.com/problems/number-of-divisible-triplet-sums/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-divisible-triplet-sums/solutions/4402894/rustpythoncjava-intuitive-n2-hash-table-u13nt/;;https://leetcode.com/problems/number-of-divisible-triplet-sums/solutions/4401460/straightforward-on2-solution-by-abattle-5yjf/;;https://leetcode.com/problems/number-of-divisible-triplet-sums/solutions/4828871/java-beat-100-by-ulyx-e0pm/;;https://leetcode.com/problems/number-of-divisible-triplet-sums/solutions/4709957/java-hashmap-on2-by-luozhengjiafei-lb5l/;;https://leetcode.com/problems/number-of-divisible-triplet-sums/solutions/6007516/java-easy-brute-force-and-optimized-appr-hbo6/;;https://leetcode.com/problems/number-of-divisible-triplet-sums/solutions/6736836/hashmap-with-on2-java-by-krobzh-0192/;;https://leetcode.com/problems/number-of-divisible-triplet-sums/solutions/6175292/simple-logical-by-richardleee-bieg/;;https://leetcode.com/problems/number-of-divisible-triplet-sums/solutions/5760515/simple-java-solution-by-sakshikishore-6dz4/;;https://leetcode.com/problems/number-of-divisible-triplet-sums/solutions/4680887/ond-by-macrohard-637h/;;;=;==;=;=;

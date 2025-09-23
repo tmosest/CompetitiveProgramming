@@ -1,0 +1,28 @@
+1763. Longest Nice Substring;=;=Easy;=;=public String longestNiceSubstring(String s);=;=A string s is nice if, for every letter of the alphabet that s contains, it appears both in uppercase and lowercase. For example, "abABB" is nice because 'A' and 'a' appear, and 'B' and 'b' appear. However, "abA" is not because 'b' appears, but 'B' does not.
+
+Given a string s, return the longest substring of s that is nice. If there are multiple, return the substring of the earliest occurrence. If there are none, return an empty string.
+
+ 
+
+Example 1:
+
+Input: s = "YazaAay"
+Output: "aAa"
+Explanation: "aAa" is a nice string because 'A/a' is the only letter of the alphabet in s, and both 'A' and 'a' appear.
+"aAa" is the longest nice substring.
+Example 2:
+
+Input: s = "Bb"
+Output: "Bb"
+Explanation: "Bb" is a nice string because both 'B' and 'b' appear. The whole string is a substring.
+Example 3:
+
+Input: s = "c"
+Output: ""
+Explanation: There are no nice substrings.
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s consists of uppercase and lowercase English letters.;=;=https://leetcode.com/problems/longest-nice-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-nice-substring/solutions/7171292/recursion-divide-and-conquer-method-begi-81yv/;;https://leetcode.com/problems/longest-nice-substring/solutions/1645774/java-why-divide-conquer-explained-by-pra-zlqt/;;https://leetcode.com/problems/longest-nice-substring/solutions/6697400/longest-nice-substring-beats-100-easy-to-ej3v/;;https://leetcode.com/problems/longest-nice-substring/solutions/6998834/brute-recursion-sliding-window-full-jour-q797/;;https://leetcode.com/problems/longest-nice-substring/solutions/1075274/java-solution-with-set-comment-explanati-17h5/;;https://leetcode.com/problems/longest-nice-substring/solutions/1328541/java-easy-to-understand-solution-by-2018-q99x/;;https://leetcode.com/problems/longest-nice-substring/solutions/1083676/java-0ms-100-convert-chars-to-bit-masks-4yp56/;;https://leetcode.com/problems/longest-nice-substring/solutions/5535953/bruteforce-java-solution-on3-by-andgvoz-sz01/;;https://leetcode.com/problems/longest-nice-substring/solutions/5827475/easy-solution-and-easily-understandable-6ulyb/;;https://leetcode.com/problems/longest-nice-substring/solutions/5165372/longest-nice-substring-solution-using-sl-8pmu/;;https://leetcode.com/problems/longest-nice-substring/solutions/1074763/my-java-solution-by-vrohith-t0hu/;;https://leetcode.com/problems/longest-nice-substring/solutions/1081871/java-using-xor-by-aimrcn-vk4w/;;https://leetcode.com/problems/longest-nice-substring/solutions/2328367/java-easy-recursion-solution-by-tarun836-quvh/;;https://leetcode.com/problems/longest-nice-substring/solutions/3381676/java-nice-solution-by-abbos99-dfoa/;;https://leetcode.com/problems/longest-nice-substring/solutions/2106326/java-brute-force-by-anant1008-qwwc/;;;=;==;=;=;

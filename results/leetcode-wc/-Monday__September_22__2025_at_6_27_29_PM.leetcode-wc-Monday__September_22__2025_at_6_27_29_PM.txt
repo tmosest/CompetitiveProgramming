@@ -1,0 +1,48 @@
+3234. Count the Number of Substrings With Dominant Ones;=;=Medium;=;=public int numberOfSubstrings(String s);=;=You are given a binary string s.
+
+Return the number of substrings with dominant ones.
+
+A string has dominant ones if the number of ones in the string is greater than or equal to the square of the number of zeros in the string.
+
+ 
+
+Example 1:
+
+Input: s = "00011"
+
+Output: 5
+
+Explanation:
+
+The substrings with dominant ones are shown in the table below.
+
+i	j	s[i..j]	Number of Zeros	Number of Ones
+3	3	1	0	1
+4	4	1	0	1
+2	3	01	1	1
+3	4	11	0	2
+2	4	011	1	2
+Example 2:
+
+Input: s = "101101"
+
+Output: 16
+
+Explanation:
+
+The substrings with non-dominant ones are shown in the table below.
+
+Since there are 21 substrings total and 5 of them have non-dominant ones, it follows that there are 16 substrings with dominant ones.
+
+i	j	s[i..j]	Number of Zeros	Number of Ones
+1	1	0	1	0
+4	4	0	1	0
+1	4	0110	2	2
+0	4	10110	2	3
+1	5	01101	2	3
+ 
+
+Constraints:
+
+1 <= s.length <= 4 * 104
+s consists only of characters '0' and '1'.;=;=https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5548547/well-explained-very-easy-java-by-px_07-q1sh/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5546415/easiest-solution-and-simple-understandin-e5pb/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5547005/sliding-window-java-osqrt-of-nn-by-suraj-node/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5560298/cppjavapython-onn-solution-clear-explain-erzd/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5717751/a-different-approach-heavily-commented-c-6sp6/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5547763/beats-dart-java-javascript-python-c-by-c-soko/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5550735/java-solution-hashmap-prefix-sum-dp-by-n-l6g7/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/6409874/on-java-by-zachmcd09-q1gn/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5607068/java-solution-this-is-hard-not-medium-by-zr6j/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5588077/iterate-by-zero-count-by-macrohard-r3dp/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5585931/30-lines-short-java-by-chenyuanqin826-hcad/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5557109/simple-prefix-sum-approach-by-priyansh_k-n75c/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5554045/easy-java-solution-by-danish_jamil-kgur/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5552938/tc-on2-scn-learn-from-brute_force-by-sy1-hl5o/;;https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/5549888/java-solution-n-sqrtn-by-realstar-h6mz/;;;=;==;=;=;

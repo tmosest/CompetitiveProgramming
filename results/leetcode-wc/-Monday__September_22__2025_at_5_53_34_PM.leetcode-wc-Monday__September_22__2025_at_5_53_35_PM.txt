@@ -1,0 +1,41 @@
+1846. Maximum Element After Decreasing and Rearranging;=;=Medium;=;=public int maximumElementAfterDecrementingAndRearranging(int[] arr);=;=You are given an array of positive integers arr. Perform some operations (possibly none) on arr so that it satisfies these conditions:
+
+The value of the first element in arr must be 1.
+The absolute difference between any 2 adjacent elements must be less than or equal to 1. In other words, abs(arr[i] - arr[i - 1]) <= 1 for each i where 1 <= i < arr.length (0-indexed). abs(x) is the absolute value of x.
+There are 2 types of operations that you can perform any number of times:
+
+Decrease the value of any element of arr to a smaller positive integer.
+Rearrange the elements of arr to be in any order.
+Return the maximum possible value of an element in arr after performing the operations to satisfy the conditions.
+
+ 
+
+Example 1:
+
+Input: arr = [2,2,1,2,1]
+Output: 2
+Explanation: 
+We can satisfy the conditions by rearranging arr so it becomes [1,2,2,2,1].
+The largest element in arr is 2.
+Example 2:
+
+Input: arr = [100,1,1000]
+Output: 3
+Explanation: 
+One possible way to satisfy the conditions is by doing the following:
+1. Rearrange arr so it becomes [1,100,1000].
+2. Decrease the value of the second element to 2.
+3. Decrease the value of the third element to 3.
+Now arr = [1,2,3], which satisfies the conditions.
+The largest element in arr is 3.
+Example 3:
+
+Input: arr = [1,2,3,4,5]
+Output: 5
+Explanation: The array already satisfies the conditions, and the largest element is 5.
+ 
+
+Constraints:
+
+1 <= arr.length <= 105
+1 <= arr[i] <= 109;=;=https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4290299/video-give-me-5-minutes-how-we-think-abo-vdmf/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4289180/easy-to-understand-pseudo-code-diagram-h-3cxo/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4288986/c-python-java-explained-by-karan_8082-pqnr/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/7074043/maximum-element-after-decrementing-rearr-md0e/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4290671/count-sorting-blazing-fast-100-in-c-24-m-j4b0/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/5067998/video-give-me-5-minutes-how-we-think-abo-hk7z/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4289638/simple-java-solution-by-siddhant_1602-2o9e/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4290878/cjavapythonjavascript-3-approaches-expla-zdqj/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/7111881/onlogn-by-gitchuan-2a9n/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/1185875/java-sorting-and-one-pass-by-trevor-aksh-nxsq/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4299648/just-comparing-by-ravishankar03-zew3/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4289254/video-solution-explanation-with-drawings-w36y/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4289068/best-java-solution-beats-90-sorting-by-r-cijv/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4291597/java-by-adityapandey1-oqmk/;;https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4289085/simple-straight-forward-solution-by-sort-g7xz/;;;=;==;=;=;

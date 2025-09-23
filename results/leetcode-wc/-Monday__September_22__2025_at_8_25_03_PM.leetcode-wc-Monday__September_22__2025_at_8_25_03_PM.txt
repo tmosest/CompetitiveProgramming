@@ -1,0 +1,31 @@
+2600. K Items With the Maximum Sum;=;=Easy;=;=public int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k);=;=There is a bag that consists of items, each item has a number 1, 0, or -1 written on it.
+
+You are given four non-negative integers numOnes, numZeros, numNegOnes, and k.
+
+The bag initially contains:
+
+numOnes items with 1s written on them.
+numZeroes items with 0s written on them.
+numNegOnes items with -1s written on them.
+We want to pick exactly k items among the available items. Return the maximum possible sum of numbers written on the items.
+
+ 
+
+Example 1:
+
+Input: numOnes = 3, numZeros = 2, numNegOnes = 0, k = 2
+Output: 2
+Explanation: We have a bag of items with numbers written on them {1, 1, 1, 0, 0}. We take 2 items with 1 written on them and get a sum in a total of 2.
+It can be proven that 2 is the maximum possible sum.
+Example 2:
+
+Input: numOnes = 3, numZeros = 2, numNegOnes = 0, k = 4
+Output: 3
+Explanation: We have a bag of items with numbers written on them {1, 1, 1, 0, 0}. We take 3 items with 1 written on them, and 1 item with 0 written on it, and get a sum in a total of 3.
+It can be proven that 3 is the maximum possible sum.
+ 
+
+Constraints:
+
+0 <= numOnes, numZeros, numNegOnes <= 50
+0 <= k <= numOnes + numZeros + numNegOnes;=;=https://leetcode.com/problems/k-items-with-the-maximum-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/7152999/3-lines-code-beats-100-by-raviravikumar6-05iq/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/3342114/one-line-solution-by-trippy-ek-line-ka-j-03d9/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/3344630/java-100-faster-step-by-step-explained-b-kkf5/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/5078493/java-easy-solution-for-beginners-8256-1m-9nvz/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/6301492/simple-solution-by-topsyturvy09-4hnl/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/3341881/simple-java-solution-by-siddhant_1602-f9d8/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/6658528/optimized-item-selection-a-greedy-approa-263y/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/6489401/leetcodedaybyday-beats-100-with-c-100-wi-hfz4/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/6407181/solution-beating-9141-in-1ms-by-arshi_ba-p539/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/3341929/java-simple-math-by-judgementdey-hbwr/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/3341973/short-clean-o1-java-solution-by-himanshu-xy44/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/3347526/day-361-100-0ms-faster-easy-concise-clea-vmmx/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/4999017/easy-to-understand-by-diegotco-nj8i/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/4836643/easiest-java-soln-by-sumo25-xu44/;;https://leetcode.com/problems/k-items-with-the-maximum-sum/solutions/4539758/simple-solution-beats-98-by-vishnu_mm-6d0n/;;;=;==;=;=;

@@ -1,0 +1,23 @@
+564. Find the Closest Palindrome;=;=Hard;=;=public String nearestPalindromic(String n);=;=Given a string n representing an integer, return the closest integer (not including itself), which is a palindrome. If there is a tie, return the smaller one.
+
+The closest is defined as the absolute difference minimized between two integers.
+
+ 
+
+Example 1:
+
+Input: n = "123"
+Output: "121"
+Example 2:
+
+Input: n = "1"
+Output: "0"
+Explanation: 0 and 2 are the closest palindromes but we return the smallest which is 0.
+ 
+
+Constraints:
+
+1 <= n.length <= 18
+n consists of only digits.
+n does not have leading zeros.
+n is representing an integer in the range [1, 1018 - 1].;=;=https://leetcode.com/problems/find-the-closest-palindrome/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-closest-palindrome/solutions/5675172/o1-beats-100-c-java-python-go-rust-javas-8nm5/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/5681828/100-runtime-on-c-java-explanation-by-pri-dj0l/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/960052/find-previous-and-next-palindromes-detai-5bqr/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/5682350/done-with-o1-time-and-space-python-c-and-7ey3/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/5684521/optimized-o1-solution-executes-in-26ms-a-tvot/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/6895588/simplest-algorithm-with-easiest-explanat-79st/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/5681924/find-the-closest-palindrome-easy-explana-y24w/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/5685871/maths-solution-by-btwitsrohit-7s3q/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/5682028/java-clean-solution-24092024-by-shree_go-m349/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/5681845/c-0ms-beats-10000-on-java-py3-efficient-7ukwi/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/102400/concise-java-solution-by-lixx2100-w4ee/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/5682633/easy-java-solution-time-complexity-ok-99-ue6g/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/4726071/java-simple-solution-by-aniruddha_sinha0-zze7/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/5685336/beats-98-java-easy-beginner-by-abhishekk-pbv9/;;https://leetcode.com/problems/find-the-closest-palindrome/solutions/1959372/java-beats-10000-memoryspeed-0ms-april-2-2rmi/;;;=;==;=;=;

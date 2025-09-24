@@ -1,0 +1,31 @@
+1717. Maximum Score From Removing Substrings;=;=Medium;=;=public int maximumGain(String s, int x, int y);=;=You are given a string s and two integers x and y. You can perform two types of operations any number of times.
+
+Remove substring "ab" and gain x points.
+For example, when removing "ab" from "cabxbae" it becomes "cxbae".
+Remove substring "ba" and gain y points.
+For example, when removing "ba" from "cabxbae" it becomes "cabxe".
+Return the maximum points you can gain after applying the above operations on s.
+
+ 
+
+Example 1:
+
+Input: s = "cdbcbbaaabab", x = 4, y = 5
+Output: 19
+Explanation:
+- Remove the "ba" underlined in "cdbcbbaaabab". Now, s = "cdbcbbaaab" and 5 points are added to the score.
+- Remove the "ab" underlined in "cdbcbbaaab". Now, s = "cdbcbbaa" and 4 points are added to the score.
+- Remove the "ba" underlined in "cdbcbbaa". Now, s = "cdbcba" and 5 points are added to the score.
+- Remove the "ba" underlined in "cdbcba". Now, s = "cdbc" and 5 points are added to the score.
+Total score = 5 + 4 + 5 + 5 = 19.
+Example 2:
+
+Input: s = "aabbaaxybbaabb", x = 5, y = 4
+Output: 20
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+1 <= x, y <= 104
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/maximum-score-from-removing-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6992558/maximum-score-from-removing-substrings-b-hu26/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/5464043/explanations-no-one-will-give-you2-detai-0zws/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/5463282/beats-100-explained-with-video-cjavapyth-2535/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6992626/greedy-two-pass-stack-cjavapythonjs-on-e-topx/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6993914/100-beats-fast-and-clear-with-iterations-ivnq/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6994562/top-class-dry-run-in-detail-how-we-came-mc857/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6992877/easy-solution-eng-hing-explained-beats-9-fb2g/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6992615/lets-understand-it-to-solve-just-by-simp-7v0t/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6992819/simple-greedy-approach-stack-c-java-pyth-suyy/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6999232/maximize-gain-by-greedily-removing-ab-or-q1yr/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6993333/greedy-orderly-remove-substrings-by-ivii-8dfj/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6995643/maximum-score-from-removing-substrings-b-xgis/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6993495/greedy-max-points-substring-remove-first-d3i3/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6994352/simple-solution-for-beginners-by-harshit-b05z/;;https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6992731/greedy-stack-approach-with-easy-code-py-jmufm/;;;=;==;=;=;

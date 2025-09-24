@@ -1,0 +1,21 @@
+1214. Two Sum BSTs;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=Given the roots of two binary search trees, root1 and root2, return true if and only if there is a node in the first tree and a node in the second tree whose values sum up to a given integer target.
+
+ 
+
+Example 1:
+
+
+Input: root1 = [2,1,4], root2 = [1,0,3], target = 5
+Output: true
+Explanation: 2 and 3 sum up to 5.
+Example 2:
+
+
+Input: root1 = [0,-10,10], root2 = [5,1,7,0,2], target = 18
+Output: false
+ 
+
+Constraints:
+
+The number of nodes in each tree is in the range [1, 5000].
+-109 <= Node.val, target <= 109;=;=https://leetcode.com/problems/two-sum-bsts/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/two-sum-bsts/solutions/6084637/using-hashset-and-recursion-by-wandering-ey21/;;https://leetcode.com/problems/two-sum-bsts/solutions/518545/java-simple-dfs-solution-100-100-by-jeev-8nlb/;;https://leetcode.com/problems/two-sum-bsts/solutions/3671391/easy-java-solution-with-explanation-beat-rw27/;;https://leetcode.com/problems/two-sum-bsts/solutions/7069463/java-very-simple-solution-by-mike98846-iqer/;;https://leetcode.com/problems/two-sum-bsts/solutions/658258/java-9158-time-by-robsalcedo-w42e/;;https://leetcode.com/problems/two-sum-bsts/solutions/397614/two-traversal-methods-for-iterating-tree-4zcl/;;https://leetcode.com/problems/two-sum-bsts/solutions/6084635/using-hashset-and-recursion-by-wandering-2i7i/;;https://leetcode.com/problems/two-sum-bsts/solutions/5976850/two-pointer-solution-by-gautam-2603-yvnw/;;https://leetcode.com/problems/two-sum-bsts/solutions/6084609/simple-java-solution-by-wanderingsoul-urcl/;;https://leetcode.com/problems/two-sum-bsts/solutions/6197970/recursion-and-binary-search-solution-by-rf5bc/;;https://leetcode.com/problems/two-sum-bsts/solutions/5418226/implement-you-own-tree-iterator-by-iknow-tlbd/;;https://leetcode.com/problems/two-sum-bsts/solutions/6055816/using-binary-search-by-aqibjaved-06rd/;;https://leetcode.com/problems/two-sum-bsts/solutions/5026494/java-dfs-hashset-2ms-solution-by-tbekpro-nh1i/;;https://leetcode.com/problems/two-sum-bsts/solutions/4785385/easiest-java-solution-one-set-traversal-varl5/;;https://leetcode.com/problems/two-sum-bsts/solutions/4656471/java-easy-and-concise-solution-by-wj4507-fwhk/;;;=;==;=;=;

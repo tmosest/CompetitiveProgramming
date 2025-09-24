@@ -1,0 +1,34 @@
+3360. Stone Removal Game;=;=Easy;=;=public boolean canAliceWin(int n);=;=Alice and Bob are playing a game where they take turns removing stones from a pile, with Alice going first.
+
+Alice starts by removing exactly 10 stones on her first turn.
+For each subsequent turn, each player removes exactly 1 fewer stone than the previous opponent.
+The player who cannot make a move loses the game.
+
+Given a positive integer n, return true if Alice wins the game and false otherwise.
+
+ 
+
+Example 1:
+
+Input: n = 12
+
+Output: true
+
+Explanation:
+
+Alice removes 10 stones on her first turn, leaving 2 stones for Bob.
+Bob cannot remove 9 stones, so Alice wins.
+Example 2:
+
+Input: n = 1
+
+Output: false
+
+Explanation:
+
+Alice cannot remove 10 stones, so Alice loses.
+ 
+
+Constraints:
+
+1 <= n <= 50;=;=https://leetcode.com/problems/stone-removal-game/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/stone-removal-game/solutions/7201183/easy-code-by-aesdtfg-832s/;;https://leetcode.com/problems/stone-removal-game/solutions/7171043/stone-removal-game-by-e_deepika24-z9qo/;;https://leetcode.com/problems/stone-removal-game/solutions/6076267/python3-4-lines-with-explanation-ts-99-9-e3iu/;;https://leetcode.com/problems/stone-removal-game/solutions/6586175/faster-lesser-cpython3javacpythoncexplai-gv58/;;https://leetcode.com/problems/stone-removal-game/solutions/6076435/simple-and-easy-solution-beats-100-brute-l8f3/;;https://leetcode.com/problems/stone-removal-game/solutions/6107233/java-100-greedy-solution-easy-understand-9d6y/;;https://leetcode.com/problems/stone-removal-game/solutions/6075746/python3-simple-game-theory-by-dolong2110-dima/;;https://leetcode.com/problems/stone-removal-game/solutions/6082264/beats-100-of-users-very-easy-solution-by-alx8/;;https://leetcode.com/problems/stone-removal-game/solutions/6764484/simulating-turns-with-decreasing-moves-c-tkvz/;;https://leetcode.com/problems/stone-removal-game/solutions/7210886/simple-using-boolean-method-by-sri_sai-1-vx4g/;;https://leetcode.com/problems/stone-removal-game/solutions/7194917/easy-problem-with-java-solution-100-ms-b-oshw/;;https://leetcode.com/problems/stone-removal-game/solutions/6530158/easiest-java-solution-for-beginners-by-h-mh56/;;https://leetcode.com/problems/stone-removal-game/solutions/6487188/simple-easy-solution-beats-100-brute-for-xmgm/;;https://leetcode.com/problems/stone-removal-game/solutions/6282459/very-easy-broute-force-100-beast-by-suma-waxe/;;https://leetcode.com/problems/stone-removal-game/solutions/6174322/c-java-python-simple-simulation-beats-10-6hqi/;;;=;==;=;=;

@@ -1,0 +1,41 @@
+2245. Maximum Trailing Zeros in a Cornered Path;=;=Medium;=;=public int maxTrailingZeros(int[][] grid);=;=You are given a 2D integer array grid of size m x n, where each cell contains a positive integer.
+
+A cornered path is defined as a set of adjacent cells with at most one turn. More specifically, the path should exclusively move either horizontally or vertically up to the turn (if there is one), without returning to a previously visited cell. After the turn, the path will then move exclusively in the alternate direction: move vertically if it moved horizontally, and vice versa, also without returning to a previously visited cell.
+
+The product of a path is defined as the product of all the values in the path.
+
+Return the maximum number of trailing zeros in the product of a cornered path found in grid.
+
+Note:
+
+Horizontal movement means moving in either the left or right direction.
+Vertical movement means moving in either the up or down direction.
+ 
+
+Example 1:
+
+
+Input: grid = [[23,17,15,3,20],[8,1,20,27,11],[9,4,6,2,21],[40,9,1,10,6],[22,7,4,5,3]]
+Output: 3
+Explanation: The grid on the left shows a valid cornered path.
+It has a product of 15 * 20 * 6 * 1 * 10 = 18000 which has 3 trailing zeros.
+It can be shown that this is the maximum trailing zeros in the product of a cornered path.
+
+The grid in the middle is not a cornered path as it has more than one turn.
+The grid on the right is not a cornered path as it requires a return to a previously visited cell.
+Example 2:
+
+
+Input: grid = [[4,3,2],[7,6,1],[8,8,8]]
+Output: 0
+Explanation: The grid is shown in the figure above.
+There are no cornered paths in the grid that result in a product with a trailing zero.
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 105
+1 <= m * n <= 105
+1 <= grid[i][j] <= 1000;=;=https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1955868/java-prefix-sum-solution-by-tank2023-8f8r/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1956582/java-easy-to-understand-dp-100-time-and-umrzp/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1955748/java-rotate-3-times-by-student2091-o42y/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1955534/java-dp-prefix-sum-2-5-factor-nums-by-he-q76b/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1955665/prefix-sum-java-omn-beat-100-by-zhoupeng-6cj1/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/2891663/java-simple-solution-by-architjain121-4ph1/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1958591/javapython3-clear-java-presum-code-beat-2ksbw/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1958502/java-prefix-sum-100-faster-clean-code-by-c8wo/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1958456/java-easy-to-read-prefix-sum-100-by-xmia-5mh8/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1957124/java-prefix-and-suffix-sum-of-factors-of-y56i/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1956461/java-prefix-suffix-solution-by-ryanranau-ylmp/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1956160/javafaster-than-100less-memory-than-100-62ykw/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1955959/java-prefix-sum-with-clear-explanation-a-ie59/;;https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/solutions/1955634/java-prefix-sum-solution-count-5s-2s-by-lmpar/;;;=;==;=;=;

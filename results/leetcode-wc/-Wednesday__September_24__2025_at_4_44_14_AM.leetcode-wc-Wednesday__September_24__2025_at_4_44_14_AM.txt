@@ -1,0 +1,27 @@
+1400. Construct K Palindrome Strings;=;=Medium;=;=public boolean canConstruct(String s, int k);=;=Given a string s and an integer k, return true if you can use all the characters in s to construct non-empty k palindrome strings or false otherwise.
+
+ 
+
+Example 1:
+
+Input: s = "annabelle", k = 2
+Output: true
+Explanation: You can construct two palindromes using all characters in s.
+Some possible constructions "anna" + "elble", "anbna" + "elle", "anellena" + "b"
+Example 2:
+
+Input: s = "leetcode", k = 3
+Output: false
+Explanation: It is impossible to construct 3 palindromes using all the characters of s.
+Example 3:
+
+Input: s = "true", k = 4
+Output: true
+Explanation: The only possible solution is to put each character in a separate string.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of lowercase English letters.
+1 <= k <= 105;=;=https://leetcode.com/problems/construct-k-palindrome-strings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262264/beats-99-3-unique-approaches-to-construc-yi9j/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6263561/easy-solutionswith-proofbeats-100-in-mos-4cp0/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262751/easy-by-sumeet_sharma-1-a5qb/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262030/beats-100-proofconcise-codejava-beginner-k96r/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262540/beats-100-efficient-palindrome-building-54bpx/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262618/most-optimized-solution-beats-100-c-java-2p5w/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262538/fastestsimple-java-code-by-kundan_laksha-spho/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262307/solution-without-hashtable-java-c-by-dsu-m9kf/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6263678/java-approach-string-counting-runtime-4-gnkbn/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262056/counting-string-solution-for-leetcode140-w5qq/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262786/simple-and-efficient-java-solution-well-8m853/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6266306/best-brute-force-approach-by-paliwalshiv-khw3/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6262135/easy-java-solution-counting-singles-by-a-a8ba/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6266249/simple-hashmap-solution-by-medhakumari06-u2xu/;;https://leetcode.com/problems/construct-k-palindrome-strings/solutions/6267797/best-solution-for-arrays-in-c-python-and-ra0k/;;;=;==;=;=;

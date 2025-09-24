@@ -1,0 +1,38 @@
+3388. Count Beautiful Splits in an Array;=;=Medium;=;=publicÊintÊbeautifulSplits(int[]Ênums);=;=You are given an array nums.
+
+A split of an array nums is beautiful if:
+
+The array nums is split into three subarrays: nums1, nums2, and nums3, such that nums can be formed by concatenating nums1, nums2, and nums3 in that order.
+The subarray nums1 is a prefix of nums2 OR nums2 is a prefix of nums3.
+Return the number of ways you can make this split.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,1,2,1]
+
+Output: 2
+
+Explanation:
+
+The beautiful splits are:
+
+A split with nums1 = [1], nums2 = [1,2], nums3 = [1].
+A split with nums1 = [1], nums2 = [1], nums3 = [2,1].
+Example 2:
+
+Input: nums = [1,2,3,4]
+
+Output: 0
+
+Explanation:
+
+There are 0 beautiful splits.
+
+Ê
+
+Constraints:
+
+1 <= nums.length <= 5000
+0 <= nums[i] <= 50;=;=https://leetcode.com/problems/count-beautiful-splits-in-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6147791/beats-100-prefix-hashing-rolling-hash-2-ss4n2/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6147870/beats-100-java-solution-optimum-solution-w4vn/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6816087/count-beautiful-splits-in-an-array-by-ba-vjb7/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6782608/code-with-rahul-provide-simple-solution-jbj88/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6295666/dp-approach-full-explained-by-prachikuma-aexu/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6260228/beats-100-dynamic-programming-beautiful-3as6r/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6167827/easiest-java-solution-by-mayankbisht8630-7f9r/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6151530/beats-100-for-beginners-z-array-by-mnnit-sfmt/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6149831/using-hashing-by-mnnit1prakharg-ldlf/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6149635/java-solution-by-barakamon-95t0/;;https://leetcode.com/problems/count-beautiful-splits-in-an-array/solutions/6147783/you-need-to-check-for-prefix-in-o1-z-fun-4hpc/;;;=;==;=;=;

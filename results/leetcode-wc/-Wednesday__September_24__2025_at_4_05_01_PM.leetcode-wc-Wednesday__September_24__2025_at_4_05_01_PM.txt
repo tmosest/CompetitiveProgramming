@@ -1,0 +1,33 @@
+1901. Find a Peak Element II;=;=Medium;=;=public int[] findPeakGrid(int[][] mat);=;=A peak element in a 2D grid is an element that is strictly greater than all of its adjacent neighbors to the left, right, top, and bottom.
+
+Given a 0-indexed m x n matrix mat where no two adjacent cells are equal, find any peak element mat[i][j] and return the length 2 array [i,j].
+
+You may assume that the entire matrix is surrounded by an outer perimeter with the value -1 in each cell.
+
+You must write an algorithm that runs in O(m log(n)) or O(n log(m)) time.
+
+ 
+
+Example 1:
+
+
+
+Input: mat = [[1,4],[3,2]]
+Output: [0,1]
+Explanation: Both 3 and 4 are peak elements so [1,0] and [0,1] are both acceptable answers.
+Example 2:
+
+
+
+Input: mat = [[10,20,15],[21,30,14],[7,16,32]]
+Output: [1,1]
+Explanation: Both 30 and 32 are peak elements so [1,1] and [2,2] are both acceptable answers.
+ 
+
+Constraints:
+
+m == mat.length
+n == mat[i].length
+1 <= m, n <= 500
+1 <= mat[i][j] <= 105
+No two adjacent cells are equal.;=;=https://leetcode.com/problems/find-a-peak-element-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-a-peak-element-ii/solutions/1276556/javapythonc-clear-explanation-with-image-au16/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7193323/100-simple-hill-climbing-greedy-by-himan-c3ry/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7196950/find-a-peak-element-ii-detailed-explanat-xg6k/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7184999/find-a-peak-element-ii-binary-search-on-p4ywk/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7134888/binary-search-by-delbin_de_yohan-f4ph/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7083606/binary-search-of-max-of-columns-by-souji-uiwp/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7090637/two-approaches-to-find-a-peak-element-in-g77q/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/6924588/same-as-peak-element-i-optimal-2d-binary-0x6d/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/6706169/understanding-the-optimal-way-problem-pa-62qm/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7164106/very-easy-and-most-optimal-solution-beat-j9ma/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7050480/best-solution-beginners-friendly-read-fu-m7vw/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7093386/peak-greatest-from-a-matrix-tc-onm-by-sa-alkr/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/6996259/java-2-approaches-beats-100-greedy-appro-h7z5/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7093503/100-beats-peak-element-matrix-binary-sea-1dm8/;;https://leetcode.com/problems/find-a-peak-element-ii/solutions/7073905/easy-java-solution-om-logn-tc-0ms-runtim-0ldm/;;;=;==;=;=;

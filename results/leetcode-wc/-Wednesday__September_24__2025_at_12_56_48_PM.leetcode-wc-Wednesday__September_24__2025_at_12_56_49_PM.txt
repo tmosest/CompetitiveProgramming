@@ -1,0 +1,23 @@
+481. Magical String;=;=Medium;=;=public int magicalString(int n);=;=A magical string s consists of only '1' and '2' and obeys the following rules:
+
+The string s is magical because concatenating the number of contiguous occurrences of characters '1' and '2' generates the string s itself.
+The first few elements of s is s = "1221121221221121122……". If we group the consecutive 1's and 2's in s, it will be "1 22 11 2 1 22 1 22 11 2 11 22 ......" and the occurrences of 1's or 2's in each group are "1 2 2 1 1 2 1 2 2 1 2 2 ......". You can see that the occurrence sequence is s itself.
+
+Given an integer n, return the number of 1's in the first n number in the magical string s.
+
+ 
+
+Example 1:
+
+Input: n = 6
+Output: 3
+Explanation: The first 6 elements of magical string s is "122112" and it contains three 1's, so return 3.
+Example 2:
+
+Input: n = 1
+Output: 1
+ 
+
+Constraints:
+
+1 <= n <= 105;=;=https://leetcode.com/problems/magical-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/magical-string/solutions/7121147/simple-solution-in-java-using-string-fun-o6vj/;;https://leetcode.com/problems/magical-string/solutions/7174710/easy-code-by-aesdtfg-qh69/;;https://leetcode.com/problems/magical-string/solutions/6928710/java-solution-by-dheerajpoojary-vtc2/;;https://leetcode.com/problems/magical-string/solutions/5934887/easiest-beats-java-beginner-counting-1s-ktu4g/;;https://leetcode.com/problems/magical-string/solutions/1719536/a-modest-solution-by-gregboardman-ilt3/;;https://leetcode.com/problems/magical-string/solutions/4054344/481-magical-string-by-shakilurehman-8gjt/;;https://leetcode.com/problems/magical-string/solutions/2560327/very-easy-java-solution-by-maahi_10001-qbvu/;;https://leetcode.com/problems/magical-string/solutions/3373539/solution-by-deleted_user-yf60/;;https://leetcode.com/problems/magical-string/solutions/7120474/java-by-soumya_699-c3y7/;;https://leetcode.com/problems/magical-string/solutions/7054978/magical-string-by-rajsri_kamal_shree-w53h/;;https://leetcode.com/problems/magical-string/solutions/6931889/easy-peesy-by-mandloipravar-0341/;;https://leetcode.com/problems/magical-string/solutions/6583687/magical-string-java-solution-by-madhavag-3trp/;;https://leetcode.com/problems/magical-string/solutions/6411004/magical-string-by-pranavdewangan22-apnj/;;https://leetcode.com/problems/magical-string/solutions/6327990/simple-java-solution-using-linkedlist-by-vw00/;;https://leetcode.com/problems/magical-string/solutions/6146365/simple-brute-force-solution-by-risabhuch-eb4t/;;;=;==;=;=;

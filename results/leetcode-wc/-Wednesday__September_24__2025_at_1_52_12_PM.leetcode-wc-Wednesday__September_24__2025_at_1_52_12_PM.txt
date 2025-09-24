@@ -1,0 +1,37 @@
+3152. Special Array II;=;=Medium;=;=public boolean[] isArraySpecial(int[] nums, int[][] queries);=;=An array is considered special if every pair of its adjacent elements contains two numbers with different parity.
+
+You are given an array of integer nums and a 2D integer matrix queries, where for queries[i] = [fromi, toi] your task is to check that subarray nums[fromi..toi] is special or not.
+
+Return an array of booleans answer such that answer[i] is true if nums[fromi..toi] is special.
+
+ 
+
+Example 1:
+
+Input: nums = [3,4,1,2,6], queries = [[0,4]]
+
+Output: [false]
+
+Explanation:
+
+The subarray is [3,4,1,2,6]. 2 and 6 are both even.
+
+Example 2:
+
+Input: nums = [4,3,1,6], queries = [[0,2],[2,3]]
+
+Output: [false,true]
+
+Explanation:
+
+The subarray is [4,3,1]. 3 and 1 are both odd. So the answer to this query is false.
+The subarray is [1,6]. There is only one pair: (1,6) and it contains numbers with different parity. So the answer to this query is true.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105
+1 <= queries.length <= 105
+queries[i].length == 2
+0 <= queries[i][0] <= queries[i][1] <= nums.length - 1;=;=https://leetcode.com/problems/special-array-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/special-array-ii/solutions/6127355/simple-prefix-solution-100-beats-by-sume-5k5z/;;https://leetcode.com/problems/special-array-ii/solutions/5185399/beats-10000-of-users-with-javafastestsim-ouom/;;https://leetcode.com/problems/special-array-ii/solutions/5177338/simple-java-solution-beats-100-prefix-su-26ks/;;https://leetcode.com/problems/special-array-ii/solutions/6127774/easy-brute-force-approach-by-arunk_leetc-07ju/;;https://leetcode.com/problems/special-array-ii/solutions/5177515/oq-logn-oq-c-python-java-javascript-by-j-hbb1/;;https://leetcode.com/problems/special-array-ii/solutions/6127831/simple-solution-with-prefix-sum-beats-10-qkob/;;https://leetcode.com/problems/special-array-ii/solutions/6127401/prefix-sum-solution-for-leetcode3152-by-lh7cb/;;https://leetcode.com/problems/special-array-ii/solutions/6127553/100-easy-to-understand-prefix-sum-detail-3v8m/;;https://leetcode.com/problems/special-array-ii/solutions/6127754/special-array-ii-nice-explanation-easy-s-5vn4/;;https://leetcode.com/problems/special-array-ii/solutions/5180021/simple-java-solution-by-siddhant_1602-tqm2/;;https://leetcode.com/problems/special-array-ii/solutions/5177111/java-solution-by-harsh__005-p2dp/;;https://leetcode.com/problems/special-array-ii/solutions/6128594/python3cjava-prefix-sum-true-detailed-ex-yv9b/;;https://leetcode.com/problems/special-array-ii/solutions/6130470/3152-special-array-ii-2-ms-beats-10000-j-g2ut/;;https://leetcode.com/problems/special-array-ii/solutions/6127724/efficient-subarray-checks-special-array-twfuc/;;https://leetcode.com/problems/special-array-ii/solutions/5177078/java-clean-solution-weekly-contest-by-sh-1tzm/;;;=;==;=;=;

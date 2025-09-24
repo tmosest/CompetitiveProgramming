@@ -1,0 +1,28 @@
+1893. Check if All the Integers in a Range Are Covered;=;=Easy;=;=publicÊbooleanÊisCovered(int[][]Êranges,ÊintÊleft,ÊintÊright);=;=You are given a 2D integer array ranges and two integers left and right. Each ranges[i] = [starti, endi] represents an inclusive interval between starti and endi.
+
+Return true if each integer in the inclusive range [left, right] is covered by at least one interval in ranges. Return false otherwise.
+
+An integer x is covered by an interval ranges[i] = [starti, endi] if starti <= x <= endi.
+
+Ê
+
+Example 1:
+
+Input: ranges = [[1,2],[3,4],[5,6]], left = 2, right = 5
+Output: true
+Explanation: Every integer between 2 and 5 is covered:
+- 2 is covered by the first range.
+- 3 and 4 are covered by the second range.
+- 5 is covered by the third range.
+Example 2:
+
+Input: ranges = [[1,10],[10,20]], left = 21, right = 21
+Output: false
+Explanation: 21 is not covered by any range.
+Ê
+
+Constraints:
+
+1 <= ranges.length <= 50
+1 <= starti <= endi <= 50
+1 <= left <= right <= 50;=;=https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/1267923/line-sweep-on-m-by-votrubac-h4vd/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/7109522/beats-100-o51-prefix-sum-sweep-diff-arra-zcz5/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/6912644/beats-100-by-alexander_sergeev-cqk5/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/1284570/simple-java-solution-by-mediocre-coder-kxls/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/4167436/best-java-solution-beats-100-by-ravikuma-iuhw/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/5408845/easy-solution-in-java-by-janakimalapati-d41t/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/3035837/beats-100-java-beginner-friendly-solutio-alae/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/2731315/java-solution-using-set-by-rahulchaudhar-msg8/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/5118867/100-beat-by-cs_2201640100153-nxyr/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/1269231/100better-in-space-and-time-java-by-kann-ar0x/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/1592647/100-java-code-using-difference-array-met-ijs5/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/6731784/simple-and-easy-java-solution-with-a-dee-cjxo/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/2851902/three-different-java-solutions-with-expl-jvz7/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/1267385/java-boolean-flag-logic-by-anushka1201-yurg/;;https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/1267751/java-sort-and-check-for-ranges-by-vinsin-aya9/;;;=;==;=;=;

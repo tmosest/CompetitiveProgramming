@@ -1,0 +1,23 @@
+1732. Find the Highest Altitude;=;=Easy;=;=publicÊintÊlargestAltitude(int[]Êgain);=;=There is a biker going on a road trip. The road trip consists of n + 1 points at different altitudes. The biker starts his trip on point 0 with altitude equal 0.
+
+You are given an integer array gain of length n where gain[i] is the net gain in altitude between points i?????? and i + 1 for all (0 <= i < n). Return the highest altitude of a point.
+
+Ê
+
+Example 1:
+
+Input: gain = [-5,1,5,0,-7]
+Output: 1
+Explanation: The altitudes are [0,-5,-4,1,1,-6]. The highest is 1.
+Example 2:
+
+Input: gain = [-4,-3,-2,-1,4,3,2]
+Output: 0
+Explanation: The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0.
+Ê
+
+Constraints:
+
+n == gain.length
+1 <= n <= 100
+-100 <= gain[i] <= 100;=;=https://leetcode.com/problems/find-the-highest-altitude/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-highest-altitude/solutions/3654693/beats-100-c-java-python-beginner-friendl-yawk/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7191707/easy-code-by-prajanthkumar-1p40/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7184090/0ms-100-beats-java-python-c-solution-fin-ke70/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7178306/0ms-by-_chetansugandhi-sppz/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7168993/keep-a-running-total-complete-guide-mult-67lb/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7150959/simple-and-easy-method-for-beginners-by-tsxs5/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/6707070/fast-and-clear-with-line-by-line-explana-5llk/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/6909172/solution-find-the-highest-altitude-time-rck68/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7106582/beats-100-by-divyansh_kaushik_sharma-zbap/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7087163/simple-and-easy-solution-by-shubneet09-0ih0/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7109094/beats-100-on-using-prefix-sum-single-sca-vvqz/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/1031436/java-c-python-self-explanatory-by-rajat_-d472/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7051225/easy-solution-solve-like-a-pro-100-beats-7jhx/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/1246734/runtime-0-ms-faster-than-10000-of-java-o-f26x/;;https://leetcode.com/problems/find-the-highest-altitude/solutions/7047455/prefix-sum-optimized-find-the-highest-al-ckme/;;;=;==;=;=;

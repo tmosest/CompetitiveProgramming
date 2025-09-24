@@ -1,0 +1,32 @@
+2681. Power of Heroes;=;=Hard;=;=public int sumOfPower(int[] nums);=;=You are given a 0-indexed integer array nums representing the strength of some heroes. The power of a group of heroes is defined as follows:
+
+Let i0, i1, ... ,ik be the indices of the heroes in a group. Then, the power of this group is max(nums[i0], nums[i1], ... ,nums[ik])2 * min(nums[i0], nums[i1], ... ,nums[ik]).
+Return the sum of the power of all non-empty groups of heroes possible. Since the sum could be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: nums = [2,1,4]
+Output: 141
+Explanation: 
+1st group: [2] has power = 22 * 2 = 8.
+2nd group: [1] has power = 12 * 1 = 1. 
+3rd group: [4] has power = 42 * 4 = 64. 
+4th group: [2,1] has power = 22 * 1 = 4. 
+5th group: [2,4] has power = 42 * 2 = 32. 
+6th group: [1,4] has power = 42 * 1 = 16. 
+???????7th group: [2,1,4] has power = 42??????? * 1 = 16. 
+The sum of powers of all groups is 8 + 1 + 64 + 4 + 32 + 16 + 16 = 141.
+
+Example 2:
+
+Input: nums = [1,1,1]
+Output: 7
+Explanation: A total of 7 groups are possible, and the power of each group will be 1. Therefore, the sum of the powers of all groups is 7.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/power-of-heroes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/power-of-heroes/solutions/3520233/cjavapython-sort-and-enumerate-each-maxi-g02i/;;https://leetcode.com/problems/power-of-heroes/solutions/3520202/c-java-python3-explanation-and-stepping-ggds3/;;https://leetcode.com/problems/power-of-heroes/solutions/3520260/c-java-python-sorting-fix-2-then-count-t-qchy/;;https://leetcode.com/problems/power-of-heroes/solutions/3520241/onlogn-in-c-java-python3-by-cpcs-sdom/;;https://leetcode.com/problems/power-of-heroes/solutions/3521447/java-onlogn-1-loop-by-hobiter-vvu3/;;https://leetcode.com/problems/power-of-heroes/solutions/3677048/easy-approach-6-lines-well-explained-pre-j492/;;https://leetcode.com/problems/power-of-heroes/solutions/3529909/beats-100-java-c-python-deeply-explained-qunv/;;https://leetcode.com/problems/power-of-heroes/solutions/3520223/java-easy-to-understand-by-vidhiguptaa-zn8k/;;https://leetcode.com/problems/power-of-heroes/solutions/4767610/java-sorting-prefixsum-by-mot882000-1h9e/;;https://leetcode.com/problems/power-of-heroes/solutions/3520530/easy-to-understand-timeonlogn-space-on-b-3mkv/;;https://leetcode.com/problems/power-of-heroes/solutions/3520387/subset-min-max-concept-solved-just-after-vi47/;;https://leetcode.com/problems/power-of-heroes/solutions/6975362/simple-java-solution-by-amit_sawant-jok7/;;https://leetcode.com/problems/power-of-heroes/solutions/4709464/pattern-make-then-more-easy-solution-by-x3pnr/;;https://leetcode.com/problems/power-of-heroes/solutions/4357937/yup-by-user3043sb-kj4n/;;https://leetcode.com/problems/power-of-heroes/solutions/4188202/java-by-gadmo-h2fk/;;;=;==;=;=;

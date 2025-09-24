@@ -1,0 +1,37 @@
+3434. Maximum Frequency After Subarray Operation;=;=Medium;=;=public int maxFrequency(int[] nums, int k);=;=You are given an array nums of length n. You are also given an integer k.
+
+You perform the following operation on nums once:
+
+Select a subarray nums[i..j] where 0 <= i <= j <= n - 1.
+Select an integer x and add x to all the elements in nums[i..j].
+Find the maximum frequency of the value k after the operation.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4,5,6], k = 1
+
+Output: 2
+
+Explanation:
+
+After adding -5 to nums[2..5], 1 has a frequency of 2 in [1, 2, -2, -1, 0, 1].
+
+Example 2:
+
+Input: nums = [10,2,3,4,5,5,4,3,2,2], k = 10
+
+Output: 4
+
+Explanation:
+
+After adding 8 to nums[1..9], 10 has a frequency of 4 in [10, 10, 11, 12, 13, 13, 12, 11, 10, 10].
+
+ 
+
+Constraints:
+
+1 <= n == nums.length <= 105
+1 <= nums[i] <= 50
+1 <= k <= 50;=;=https://leetcode.com/problems/maximum-frequency-after-subarray-operation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6329937/javacpython-kadane-by-lee215-xzfq/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6329949/100beat-using-hashmap-counting-freq-by-a-wqww/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6958026/using-set-and-kadanes-algorithm-by-shubh-ogdf/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6329886/using-hashmap-to-try-all-numbers-by-minh-y18a/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6348967/contest-434-queu-3-by-sajaltiwari007-0ifx/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6351380/java-beats-100-by-samyu1997-tcd6/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6387021/easy-to-understand-by-enigmaler-ewfc/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6330017/beats-100-java-by-alansuncomet2-06jv/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6330147/simple-solution-kadanes-easy-to-understa-11zd/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6329953/best-solution-beats-100why-kadane-algori-rbk3/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6330125/easy-beginner-friendly-java-python-c-by-7g5ax/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6330217/java-simple-linear-time-100-prefixcount-bu9zl/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6331428/simple-solution-by-prince_kumar1-9am7/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/7089174/solution-by-pkyriakou23-76kf/;;https://leetcode.com/problems/maximum-frequency-after-subarray-operation/solutions/6865939/soluchan-with-intuchan-by-dolo-solo-a7xl/;;;=;==;=;=;

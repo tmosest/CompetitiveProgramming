@@ -1,0 +1,32 @@
+2535. Difference Between Element Sum and Digit Sum of an Array;=;=Easy;=;=public int differenceOfSum(int[] nums);=;=You are given a positive integer array nums.
+
+The element sum is the sum of all the elements in nums.
+The digit sum is the sum of all the digits (not necessarily distinct) that appear in nums.
+Return the absolute difference between the element sum and digit sum of nums.
+
+Note that the absolute difference between two integers x and y is defined as |x - y|.
+
+ 
+
+Example 1:
+
+Input: nums = [1,15,6,3]
+Output: 9
+Explanation: 
+The element sum of nums is 1 + 15 + 6 + 3 = 25.
+The digit sum of nums is 1 + 1 + 5 + 6 + 3 = 16.
+The absolute difference between the element sum and digit sum is |25 - 16| = 9.
+Example 2:
+
+Input: nums = [1,2,3,4]
+Output: 0
+Explanation:
+The element sum of nums is 1 + 2 + 3 + 4 = 10.
+The digit sum of nums is 1 + 2 + 3 + 4 = 10.
+The absolute difference between the element sum and digit sum is |10 - 10| = 0.
+ 
+
+Constraints:
+
+1 <= nums.length <= 2000
+1 <= nums[i] <= 2000;=;=https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7188531/easy-code-for-solve-this-problem-by-4_k4-u9iu/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7172501/beats-99-by-arshiya1731-txxp/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7166193/easy-code-by-sivaaleet-6hai/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7099155/difference-between-element-sum-and-digit-usg2/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7099154/difference-between-element-sum-and-digit-1y6y/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/3053953/python3-2-lines-strings-ts-90-61-by-spau-g4xx/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7076223/difference-between-element-sum-and-digit-2mct/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7024789/optimal-solution-beats-100-1ms-easy-java-n44s/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7053449/easy-code-for-beginners-and-understandab-lf85/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/6687992/easy-java-solution-by-dsuryaprakash89-8fgz/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7024768/easy-java-codes-beats-9819-2ms-simple-lo-wvct/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/3140386/java-fast-3-lines-solution-by-dmkyr20-l7io/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/6993426/java-easy-solution-2ms-by-akashraj06-g4oe/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/7012517/easy-java-solution-beats-100-by-rajdeep0-odyk/;;https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/solutions/6986589/java-easy-solution-by-kulkarnishreya04-05nr/;;;=;==;=;=;

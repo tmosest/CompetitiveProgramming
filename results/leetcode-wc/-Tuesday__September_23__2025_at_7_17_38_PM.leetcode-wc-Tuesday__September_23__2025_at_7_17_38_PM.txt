@@ -1,0 +1,43 @@
+3643. Flip Square Submatrix Vertically;=;=Easy;=;=public int[][] reverseSubmatrix(int[][] grid, int x, int y, int k);=;=You are given an m x n integer matrix grid, and three integers x, y, and k.
+
+The integers x and y represent the row and column indices of the top-left corner of a square submatrix and the integer k represents the size (side length) of the square submatrix.
+
+Your task is to flip the submatrix by reversing the order of its rows vertically.
+
+Return the updated matrix.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], x = 1, y = 0, k = 3
+
+Output: [[1,2,3,4],[13,14,15,8],[9,10,11,12],[5,6,7,16]]
+
+Explanation:
+
+The diagram above shows the grid before and after the transformation.
+
+Example 2:
+
+???????
+Input: grid = [[3,4,2,3],[2,3,4,2]], x = 0, y = 2, k = 2
+
+Output: [[3,4,4,2],[2,3,2,3]]
+
+Explanation:
+
+The diagram above shows the grid before and after the transformation.
+
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 50
+1 <= grid[i][j] <= 100
+0 <= x < m
+0 <= y < n
+1 <= k <= min(m - x, n - y);=;=https://leetcode.com/problems/flip-square-submatrix-vertically/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7062862/beats-100-simple-easy-solution-beginner-ekibz/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7062846/flip-square-submatrix-vertically-java-co-e2oz/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7063664/flip-like-a-pro-runtime-0-ms-beats-100-j-24px/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7063380/clean-in-place-solution-c-python-java-10-0nm7/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7063255/vertical-flip-trick-turn-your-submatrix-iq1yg/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7134960/most-efficient-solution-beat-everyone-ja-pg3z/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7101984/easy-peasy-by-its_gokhul-dmdy/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7066997/beats-100-everystep-explained-by-aadi_da-c943/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7084738/java-beats-100-okk-easy-code-by-tewaripi-85a3/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7079390/100-beats-by-dtmbxu7uh3-b9tq/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7063556/beats-100-3643-flip-square-submatrix-ver-omjh/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7074392/flip-square-submatrix-vertically-by-e_de-9w7b/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7062893/in-place-vertical-flip-of-a-square-subma-2t8e/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7062829/java-solution-weekly-contest-462-by-iamc-9cpl/;;https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7063445/java-beginners-friendly-2d-matrix-by-abh-ahcn/;;;=;==;=;=;

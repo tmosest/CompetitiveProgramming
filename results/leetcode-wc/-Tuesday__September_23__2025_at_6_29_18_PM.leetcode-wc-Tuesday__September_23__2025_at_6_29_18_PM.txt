@@ -1,0 +1,35 @@
+2545. Sort the Students by Their Kth Score;=;=Medium;=;=public int[][] sortTheStudents(int[][] score, int k);=;=There is a class with m students and n exams. You are given a 0-indexed m x n integer matrix score, where each row represents one student and score[i][j] denotes the score the ith student got in the jth exam. The matrix score contains distinct integers only.
+
+You are also given an integer k. Sort the students (i.e., the rows of the matrix) by their scores in the kth (0-indexed) exam from the highest to the lowest.
+
+Return the matrix after sorting it.
+
+ 
+
+Example 1:
+
+
+Input: score = [[10,6,9,1],[7,5,11,2],[4,8,3,15]], k = 2
+Output: [[7,5,11,2],[10,6,9,1],[4,8,3,15]]
+Explanation: In the above diagram, S denotes the student, while E denotes the exam.
+- The student with index 1 scored 11 in exam 2, which is the highest score, so they got first place.
+- The student with index 0 scored 9 in exam 2, which is the second highest score, so they got second place.
+- The student with index 2 scored 3 in exam 2, which is the lowest score, so they got third place.
+Example 2:
+
+
+Input: score = [[3,4],[5,6]], k = 0
+Output: [[5,6],[3,4]]
+Explanation: In the above diagram, S denotes the student, while E denotes the exam.
+- The student with index 1 scored 5 in exam 0, which is the highest score, so they got first place.
+- The student with index 0 scored 3 in exam 0, which is the lowest score, so they got second place.
+ 
+
+Constraints:
+
+m == score.length
+n == score[i].length
+1 <= m, n <= 250
+1 <= score[i][j] <= 105
+score consists of distinct integers.
+0 <= k < n;=;=https://leetcode.com/problems/sort-the-students-by-their-kth-score/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/3083946/javacpython-sort-by-lee215-ptsz/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/7172458/best-solution-java-by-yogesh_kumar697-5oyu/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/7129830/java-easy-solution-by-akashraj06-e7ap/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/7127823/two-solutions-bubble-sort-and-inbuilt-fu-qidh/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/7118324/java-code-easy-to-understand-by-diya_moh-gta5/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/7096006/1-liner-beats-98-java-solution-by-arshiy-hiaj/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/7025070/easy-java-solution-beats-96-runtime-2ms-4f7v4/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/3084013/java-custom-sort-easy-by-_krishna_singh-fbb5/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/3083914/javapython-3-short-codes-sort-by-the-kth-n5pl/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/3084329/java1-liner-2-approaches-sortingcustom-c-tf6m/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/3087362/python3-and-c-java-one-liner-sort-with-k-s2ig/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/3084796/just-sort-1-liner-by-byegates-bo75/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/3189963/2ms-java-solution-with-explaination-easy-bpq6/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/6797467/easiest-solution-with-91-beats-by-hitart-gi1y/;;https://leetcode.com/problems/sort-the-students-by-their-kth-score/solutions/6776040/selection-sort-method-beats-100-all-lang-w6sn/;;;=;==;=;=;

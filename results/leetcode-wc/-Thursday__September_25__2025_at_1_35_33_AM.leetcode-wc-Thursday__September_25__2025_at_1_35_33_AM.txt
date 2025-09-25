@@ -1,0 +1,60 @@
+3113. Find the Number of Subarrays Where Boundary Elements Are Maximum;=;=Hard;=;=public long numberOfSubarrays(int[] nums);=;=You are given an array of positive integers nums.
+
+Return the number of subarrays of nums, where the first and the last elements of the subarray are equal to the largest element in the subarray.
+
+ 
+
+Example 1:
+
+Input: nums = [1,4,3,3,2]
+
+Output: 6
+
+Explanation:
+
+There are 6 subarrays which have the first and the last elements equal to the largest element of the subarray:
+
+subarray [1,4,3,3,2], with its largest element 1. The first element is 1 and the last element is also 1.
+subarray [1,4,3,3,2], with its largest element 4. The first element is 4 and the last element is also 4.
+subarray [1,4,3,3,2], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [1,4,3,3,2], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [1,4,3,3,2], with its largest element 2. The first element is 2 and the last element is also 2.
+subarray [1,4,3,3,2], with its largest element 3. The first element is 3 and the last element is also 3.
+Hence, we return 6.
+
+Example 2:
+
+Input: nums = [3,3,3]
+
+Output: 6
+
+Explanation:
+
+There are 6 subarrays which have the first and the last elements equal to the largest element of the subarray:
+
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+Hence, we return 6.
+
+Example 3:
+
+Input: nums = [1]
+
+Output: 1
+
+Explanation:
+
+There is a single subarray of nums which is [1], with its largest element 1. The first element is 1 and the last element is also 1.
+
+Hence, we return 1.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017056/javacpython-stack-on-by-lee215-6l22/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017085/enzhong-wen-monotonic-stack-dan-diao-zha-l25z/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017190/c-java-python-2-approaches-monotonic-sta-vkw3/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017212/java-python-3-monotonic-decreasing-stack-iort/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017057/easy-count-monotonic-stack-explained-on-8t0si/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/6697866/simple-and-straight-forward-approach-by-qmtz7/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/6697845/this-mark-my-500th-problem-on-leetcode-b-4ts7/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017891/beats-100-easy-java-solution-by-ravi_kum-8z3s/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017294/java-solution-based-on-stack-with-on-tim-yw0h/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017524/simple-stack-solution-by-vikasseervi357-13kg/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5035544/easy-java-solution-stack-previous-smalle-ydnk/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5018580/java-1-pass-with-monotonic-stack-and-has-w2gx/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017633/easy-to-understand-solution-tc-on-sc-on-6tdwo/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017627/shortest-and-easiest-to-understand-java-t3yys/;;https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/solutions/5017600/creating-a-new-class-stack-easy-to-under-bbi1/;;;=;==;=;=;

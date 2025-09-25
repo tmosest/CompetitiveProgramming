@@ -1,0 +1,44 @@
+3688. Bitwise OR of Even Numbers in an Array;=;=Easy;=;=publicÊintÊevenNumberBitwiseORs(int[]Ênums);=;=You are given an integer array nums.
+
+Return the bitwise OR of all even numbers in the array.
+
+If there are no even numbers in nums, return 0.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,2,3,4,5,6]
+
+Output: 6
+
+Explanation:
+
+The even numbers are 2, 4, and 6. Their bitwise OR equals 6.
+
+Example 2:
+
+Input: nums = [7,9,11]
+
+Output: 0
+
+Explanation:
+
+There are no even numbers, so the result is 0.
+
+Example 3:
+
+Input: nums = [1,8,16]
+
+Output: 24
+
+Explanation:
+
+The even numbers are 8 and 16. Their bitwise OR equals 24.
+
+Ê
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100;=;=https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7209953/solution-by-la_castille-ycou/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7209597/clean-easy-5-lines-beats-100-easy-explan-w9qu/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7214687/easy-code-by-sivaaleet-cilw/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7209675/bitwise-or-of-even-numbers-unleashing-th-k5ry/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7211448/easy-approach-beats-100-bitwise-or-by-ra-8ehx/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7211287/3688-bitwise-or-of-even-numbers-in-an-ar-axqg/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7210306/super-simple-just-5-lines-runs-fast-easy-569v/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7210856/clean-code-by-harshit_rathr3-9tkr/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7210574/java-easy-to-understand-solution-100-bea-sd46/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7209726/one-line-solution-java-solution-you-neve-a9n2/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7209646/easy-solution-bitwise-or-of-even-numbers-puzq/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7220736/java-solution-by-nishantkumar123-zvwo/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7220553/0-ms-java-solution-by-developersusername-seuq/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7219340/bitwise-or-of-all-even-numbers-in-an-arr-rl64/;;https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/solutions/7219091/optimal-solution-with-0ms-runtime-by-vxr-b671/;;;=;==;=;=;

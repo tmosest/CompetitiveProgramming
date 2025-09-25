@@ -1,0 +1,31 @@
+2319. Check if Matrix Is X-Matrix;=;=Easy;=;=public boolean checkXMatrix(int[][] grid);=;=A square matrix is said to be an X-Matrix if both of the following conditions hold:
+
+All the elements in the diagonals of the matrix are non-zero.
+All other elements are 0.
+Given a 2D integer array grid of size n x n representing a square matrix, return true if grid is an X-Matrix. Otherwise, return false.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]]
+Output: true
+Explanation: Refer to the diagram above. 
+An X-Matrix should have the green elements (diagonals) be non-zero and the red elements be 0.
+Thus, grid is an X-Matrix.
+Example 2:
+
+
+Input: grid = [[5,7,0],[0,3,1],[0,5,0]]
+Output: false
+Explanation: Refer to the diagram above.
+An X-Matrix should have the green elements (diagonals) be non-zero and the red elements be 0.
+Thus, grid is not an X-Matrix.
+ 
+
+Constraints:
+
+n == grid.length == grid[i].length
+3 <= n <= 100
+0 <= grid[i][j] <= 105;=;=https://leetcode.com/problems/check-if-matrix-is-x-matrix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/6999347/one-pass-beats-100-of-users-java-c-pytho-nyl0/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/2198123/python-java-c-by-harsh_negi_07-5i96/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/6953688/simple-approach-beginner-friendly-soluti-x2pa/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/6399616/simple-java-solution-by-chandranshu31-8c43/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/2198175/check-if-matrix-is-x-matrix-java-solutio-wkz4/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/5899898/simple-matrix-search-solurionjava100-by-ry151/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/6566865/easy-to-understand-with-added-comments-b-gj3d/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/2198349/very-easy-java-solution-by-10vaibhavsing-xngs/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/5130022/easy-java-solution-beats-100-by-ravikuma-p3w0/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/6378634/solution-in-java-and-c-by-vickyy234-ikjf/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/2776373/java-most-trivial-solution-by-jugantar20-3ctr/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/2216375/java-easy-simple-3ms-by-ash990-8h7k/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/5745465/easy-solution-by-swaythak-6kt3/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/2198162/java-solution-easy-to-understand-by-abhi-xrvh/;;https://leetcode.com/problems/check-if-matrix-is-x-matrix/solutions/2665632/simple-java-solution-easy-to-understand-hqsmb/;;;=;==;=;=;

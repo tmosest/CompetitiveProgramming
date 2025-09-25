@@ -1,0 +1,37 @@
+1803. Count Pairs With XOR in a Range;=;=Hard;=;=publicÊintÊcountPairs(int[]Ênums,ÊintÊlow,ÊintÊhigh);=;=Given a (0-indexed) integer array nums and two integers low and high, return the number of nice pairs.
+
+A nice pair is a pair (i, j) where 0 <= i < j < nums.length and low <= (nums[i] XOR nums[j]) <= high.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,4,2,7], low = 2, high = 6
+Output: 6
+Explanation: All nice pairs (i, j) are as follows:
+    - (0, 1): nums[0] XOR nums[1] = 5 
+    - (0, 2): nums[0] XOR nums[2] = 3
+    - (0, 3): nums[0] XOR nums[3] = 6
+    - (1, 2): nums[1] XOR nums[2] = 6
+    - (1, 3): nums[1] XOR nums[3] = 3
+    - (2, 3): nums[2] XOR nums[3] = 5
+Example 2:
+
+Input: nums = [9,8,4,2,1], low = 5, high = 14
+Output: 8
+Explanation: All nice pairs (i, j) are as follows:
+?????    - (0, 2): nums[0] XOR nums[2] = 13
+Ê   - (0, 3): nums[0] XOR nums[3] = 11
+Ê   - (0, 4): nums[0] XOR nums[4] = 8
+Ê   - (1, 2): nums[1] XOR nums[2] = 12
+Ê   - (1, 3): nums[1] XOR nums[3] = 10
+Ê   - (1, 4): nums[1] XOR nums[4] = 9
+Ê   - (2, 3): nums[2] XOR nums[3] = 6
+Ê   - (2, 4): nums[2] XOR nums[4] = 5
+Ê
+
+Constraints:
+
+1 <= nums.length <= 2 * 104
+1 <= nums[i] <= 2 * 104
+1 <= low <= high <= 2 * 104;=;=https://leetcode.com/problems/count-pairs-with-xor-in-a-range/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/4016191/java-solution-with-explaination-by-yashc-5ho6/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/4714157/solution-with-optimalusing-map-to-brutef-ljwj/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/2357009/binary-tree-trie-on-java-explained-by-st-j2mm/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/3004726/c-python-java-brief-code-without-explici-gdrx/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/6721342/very-optimized-7ms-java-beats-100-next-b-4ryx/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/5378674/here-you-go-lads-easy-solution-for-the-p-6fej/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/5371240/trie-solution-easy-by-tuhinac-099e/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/4355259/java-trie-by-jeckafedorov-duex/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/3991508/simple-clean-trie-production-ready-code-qwmqf/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/3975273/java-solution-by-pejmantheory-xoq0/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/3104460/java-trie-bit-mask-by-sarthak2119-lxo1/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/2375754/trie-java-solution-by-sonam_negi-koez/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/2272386/java-trie-and-bit-manipulation-by-mrando-yyz9/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/1879883/java-trie-o15n-solution-using-recursion-swt2h/;;https://leetcode.com/problems/count-pairs-with-xor-in-a-range/solutions/1687605/trie-approach-with-recursion-by-tyfoon-6c82/;;;=;==;=;=;

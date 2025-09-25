@@ -1,0 +1,29 @@
+2539. Count the Number of Good Subsequences;=;=Medium;=;=public int countGoodSubsequences(String s);=;=A subsequence of a string is good if it is not empty and the frequency of each one of its characters is the same.
+
+Given a string s, return the number of good subsequences of s. Since the answer may be too large, return it modulo 109 + 7.
+
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+
+ 
+
+Example 1:
+
+Input: s = "aabb"
+Output: 11
+Explanation: The total number of subsequences is 24. There are five subsequences which are not good: "aabb", "aabb", "aabb", "aabb", and the empty subsequence. Hence, the number of good subsequences is 24-5 = 11.
+Example 2:
+
+Input: s = "leet"
+Output: 12
+Explanation: There are four subsequences which are not good: "leet", "leet", "leet", and the empty subsequence. Hence, the number of good subsequences is 24-4 = 12.
+Example 3:
+
+Input: s = "abcd"
+Output: 15
+Explanation: All of the non-empty subsequences are good subsequences. Hence, the number of good subsequences is 24-1 = 15.
+ 
+
+Constraints:
+
+1 <= s.length <= 104
+s consists of only lowercase English letters.;=;=https://leetcode.com/problems/count-the-number-of-good-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-the-number-of-good-subsequences/solutions/3071056/cjavapython3-strictly-on-solution-via-bi-mqs7/;;https://leetcode.com/problems/count-the-number-of-good-subsequences/solutions/4358082/java-easy-to-understand-by-noturproblem-dgwj/;;https://leetcode.com/problems/count-the-number-of-good-subsequences/solutions/5862556/build-up-combinations-with-dp-without-mo-nrsj/;;https://leetcode.com/problems/count-the-number-of-good-subsequences/solutions/4073899/java-intuitive-solution-needs-speed-impr-mx7q/;;https://leetcode.com/problems/count-the-number-of-good-subsequences/solutions/3072573/solution-by-deleted_user-ohwb/;;;=;==;=;=;

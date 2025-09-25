@@ -1,0 +1,28 @@
+2574. Left and Right Sum Differences;=;=Easy;=;=public int[] leftRightDifference(int[] nums);=;=You are given a 0-indexed integer array nums of size n.
+
+Define two arrays leftSum and rightSum where:
+
+leftSum[i] is the sum of elements to the left of the index i in the array nums. If there is no such element, leftSum[i] = 0.
+rightSum[i] is the sum of elements to the right of the index i in the array nums. If there is no such element, rightSum[i] = 0.
+Return an integer array answer of size n where answer[i] = |leftSum[i] - rightSum[i]|.
+
+ 
+
+Example 1:
+
+Input: nums = [10,4,8,3]
+Output: [15,1,11,22]
+Explanation: The array leftSum is [0,10,14,22] and the array rightSum is [15,11,3,0].
+The array answer is [|0 - 15|,|10 - 11|,|14 - 3|,|22 - 0|] = [15,1,11,22].
+Example 2:
+
+Input: nums = [1]
+Output: [0]
+Explanation: The array leftSum is [0] and the array rightSum is [0].
+The array answer is [|0 - 0|] = [0].
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/left-and-right-sum-differences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/left-and-right-sum-differences/solutions/7209806/simple-approach-in-java-solution-2ms-by-0dlzv/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/7207246/java-easy-solution-by-akashraj06-jz9z/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/7191600/easy-code-by-prajanthkumar-kxbv/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/7176395/98-beats-easy-simple-java-solution-by-pr-9yrk/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/3233427/java-actual-constant-space-solution-by-e-dnwz/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/7042207/optimized-prefix-sum-left-right-differen-mn7l/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/6882024/beats-9844-runtime-easy-to-understand-so-gct6/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/3230781/python3-c-java-prevsum-o1-by-abdullayev_-99hu/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/7097631/java-solution-easy-by-kulkarnishreya04-qqbk/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/7104221/left-and-right-sum-differences-by-e_deep-5r1x/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/6827126/java-best-solution-by-aimlc_22b1531167-5604/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/6802603/simple-solution-with-prefix-sums-by-irc-okrw0/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/7029028/beats-98-for-beginners-by-mohamad_sadhiq-detf/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/4783064/beats-9927easiest-prefixsum-cjavapython-t8jvd/;;https://leetcode.com/problems/left-and-right-sum-differences/solutions/7007666/easiest-solution-prefix-sum-java-by-goku-ri6u/;;;=;==;=;=;

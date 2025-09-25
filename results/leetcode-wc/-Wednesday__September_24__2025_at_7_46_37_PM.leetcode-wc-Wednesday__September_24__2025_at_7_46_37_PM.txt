@@ -1,0 +1,59 @@
+3310. Remove Methods From Project;=;=Medium;=;=public List<Integer> remainingMethods(int n, int k, int[][] invocations)         Set<Integer> suspiciousMethods = new HashSet<>();        suspiciousMethods.add(k);        boolean hasChanged = true;        while (hasChanged)             hasChanged = false;            for (int[] invocation : invocations)                 int a = invocation[0];                int b = invocation[1];                if (suspiciousMethods.contains(a) && !suspiciousMethods.contains(b));=;=You are maintaining a project that has n methods numbered from 0 to n - 1.
+
+You are given two integers n and k, and a 2D integer array invocations, where invocations[i] = [ai, bi] indicates that method ai invokes method bi.
+
+There is a known bug in method k. Method k, along with any method invoked by it, either directly or indirectly, are considered suspicious and we aim to remove them.
+
+A group of methods can only be removed if no method outside the group invokes any methods within it.
+
+Return an array containing all the remaining methods after removing all the suspicious methods. You may return the answer in any order. If it is not possible to remove all the suspicious methods, none should be removed.
+
+ 
+
+Example 1:
+
+Input: n = 4, k = 1, invocations = [[1,2],[0,1],[3,2]]
+
+Output: [0,1,2,3]
+
+Explanation:
+
+
+
+Method 2 and method 1 are suspicious, but they are directly invoked by methods 3 and 0, which are not suspicious. We return all elements without removing anything.
+
+Example 2:
+
+Input: n = 5, k = 0, invocations = [[1,2],[0,2],[0,1],[3,4]]
+
+Output: [3,4]
+
+Explanation:
+
+
+
+Methods 0, 1, and 2 are suspicious and they are not directly invoked by any other method. We can remove them.
+
+Example 3:
+
+Input: n = 3, k = 2, invocations = [[1,2],[0,1],[2,0]]
+
+Output: []
+
+Explanation:
+
+
+
+All methods are suspicious. We can remove them.
+
+ 
+
+Constraints:
+
+1 <= n <= 105
+0 <= k <= n - 1
+0 <= invocations.length <= 2 * 105
+invocations[i] == [ai, bi]
+0 <= ai, bi <= n - 1
+ai != bi
+invocations[i] != invocations[j];=;=https://leetcode.com/problems/remove-methods-from-project/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-methods-from-project/solutions/5875719/java-code-with-explanation-by-shubhamyad-nz7l/;;https://leetcode.com/problems/remove-methods-from-project/solutions/7080419/easy-solution-in-java-ove-by-kumarakash-3gxl/;;https://leetcode.com/problems/remove-methods-from-project/solutions/7063503/java-solution-by-dheerajpoojary-ipj9/;;https://leetcode.com/problems/remove-methods-from-project/solutions/5875676/java-simple-solution-weekly-contest-by-s-216w/;;https://leetcode.com/problems/remove-methods-from-project/solutions/6587770/intuition-explained-java-by-dsuryaprakas-4py1/;;https://leetcode.com/problems/remove-methods-from-project/solutions/5877248/simplebeginner-friendly-explanation-step-74dl/;;https://leetcode.com/problems/remove-methods-from-project/solutions/5875765/simple-java-solution-by-harsh__005-7nbb/;;https://leetcode.com/problems/remove-methods-from-project/solutions/5875721/simple-dfs-easy-to-understand-by-harshsh-gso1/;;https://leetcode.com/problems/remove-methods-from-project/solutions/5877031/java-simple-graph-theory-with-diagram-bf-cby8/;;https://leetcode.com/problems/remove-methods-from-project/solutions/5875677/java-dfs-solution-by-solved-xvan/;;https://leetcode.com/problems/remove-methods-from-project/solutions/5876500/easiest-java-soln-onm-well-commented-by-2aytn/;;https://leetcode.com/problems/remove-methods-from-project/solutions/5876308/java-dfs-union-find-fastest-solution-by-hoq6n/;;https://leetcode.com/problems/remove-methods-from-project/solutions/5877104/java-bfs-hashset-by-ssingh3856-qlj4/;;https://leetcode.com/problems/remove-methods-from-project/solutions/6576676/reverse-edge-and-dfs-by-awuxiaoqi-gl52/;;https://leetcode.com/problems/remove-methods-from-project/solutions/6193537/90-dfs-approach-by-prachikumari-slxd/;;;=;==;=;=;

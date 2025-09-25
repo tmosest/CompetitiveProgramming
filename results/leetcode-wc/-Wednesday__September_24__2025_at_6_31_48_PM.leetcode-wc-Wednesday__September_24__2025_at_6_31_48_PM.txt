@@ -1,0 +1,44 @@
+2585. Number of Ways to Earn Points;=;=Hard;=;=public int waysToReachTarget(int target, int[][] types);=;=There is a test that has n types of questions. You are given an integer target and a 0-indexed 2D integer array types where types[i] = [counti, marksi] indicates that there are counti questions of the ith type, and each one of them is worth marksi points.
+
+Return the number of ways you can earn exactly target points in the exam. Since the answer may be too large, return it modulo 109 + 7.
+
+Note that questions of the same type are indistinguishable.
+
+For example, if there are 3 questions of the same type, then solving the 1st and 2nd questions is the same as solving the 1st and 3rd questions, or the 2nd and 3rd questions.
+ 
+
+Example 1:
+
+Input: target = 6, types = [[6,1],[3,2],[2,3]]
+Output: 7
+Explanation: You can earn 6 points in one of the seven ways:
+- Solve 6 questions of the 0th type: 1 + 1 + 1 + 1 + 1 + 1 = 6
+- Solve 4 questions of the 0th type and 1 question of the 1st type: 1 + 1 + 1 + 1 + 2 = 6
+- Solve 2 questions of the 0th type and 2 questions of the 1st type: 1 + 1 + 2 + 2 = 6
+- Solve 3 questions of the 0th type and 1 question of the 2nd type: 1 + 1 + 1 + 3 = 6
+- Solve 1 question of the 0th type, 1 question of the 1st type and 1 question of the 2nd type: 1 + 2 + 3 = 6
+- Solve 3 questions of the 1st type: 2 + 2 + 2 = 6
+- Solve 2 questions of the 2nd type: 3 + 3 = 6
+Example 2:
+
+Input: target = 5, types = [[50,1],[50,2],[50,5]]
+Output: 4
+Explanation: You can earn 5 points in one of the four ways:
+- Solve 5 questions of the 0th type: 1 + 1 + 1 + 1 + 1 = 5
+- Solve 3 questions of the 0th type and 1 question of the 1st type: 1 + 1 + 1 + 2 = 5
+- Solve 1 questions of the 0th type and 2 questions of the 1st type: 1 + 2 + 2 = 5
+- Solve 1 question of the 2nd type: 5
+Example 3:
+
+Input: target = 18, types = [[6,1],[3,2],[2,3]]
+Output: 1
+Explanation: You can only earn 18 points by answering all questions.
+ 
+
+Constraints:
+
+1 <= target <= 1000
+n == types.length
+1 <= n <= 50
+types[i].length == 2
+1 <= counti, marksi <= 50;=;=https://leetcode.com/problems/number-of-ways-to-earn-points/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/3258120/javacpython-knapsack-dp-by-lee215-lofy/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/3258089/c-java-python3-short-top-down-dp-explain-1hxe/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/3258126/6310-number-of-ways-to-earn-points-java-daflj/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/3258188/java-using-backtracking-memoization-by-s-438u/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/3315887/simple-recursion-and-memoization-with-co-j0z3/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/3585829/easy-to-understand-java-dp-solution-by-u-brie/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/3260267/memoized-solution-in-java-by-karanlakhwa-o2yy/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/6723620/recursion-memoization-dp-java-by-adityak-lrtb/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/6004023/multiple-bounded-knapsack-java-onmkom-by-anru/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/5989925/using-3d-dp-by-risabhuchiha-o5of/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/5950843/number-of-ways-to-earn-points-java-solut-5s2m/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/5498216/java-dp-tabulation-bottom-up-by-zephyrya-qkyi/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/4554829/on-count-target-top-down-dp-approach-cle-3bmj/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/3638404/way-to-raech-target-usin-java-by-yps1001-uy8c/;;https://leetcode.com/problems/number-of-ways-to-earn-points/solutions/3551456/java-recursive-memoization-commented-eas-bd03/;;;=;==;=;=;

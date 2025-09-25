@@ -1,0 +1,31 @@
+1812. Determine Color of a Chessboard Square;=;=Easy;=;=public boolean squareIsWhite(String coordinates);=;=You are given coordinates, a string that represents the coordinates of a square of the chessboard. Below is a chessboard for your reference.
+
+
+
+Return true if the square is white, and false if the square is black.
+
+The coordinate will always represent a valid chessboard square. The coordinate will always have the letter first, and the number second.
+
+ 
+
+Example 1:
+
+Input: coordinates = "a1"
+Output: false
+Explanation: From the chessboard above, the square with coordinates "a1" is black, so return false.
+Example 2:
+
+Input: coordinates = "h3"
+Output: true
+Explanation: From the chessboard above, the square with coordinates "h3" is white, so return true.
+Example 3:
+
+Input: coordinates = "c7"
+Output: false
+ 
+
+Constraints:
+
+coordinates.length == 2
+'a' <= coordinates[0] <= 'h'
+'1' <= coordinates[1] <= '8';=;=https://leetcode.com/problems/determine-color-of-a-chessboard-square/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/7143339/simple-and-clean-solution-easy-explanati-gnrc/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/7196652/easy-and-simple-for-beginners-by-younus0-z6qt/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/6322746/one-line-solution-beats-100-runtime-and-gdlyb/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/7097252/use-if-else-by-gokilaselvi-zdnq/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/7056573/100-beats-solution-using-hashmap-by-hita-6wkm/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/7027549/java-easy-solution-0ms-by-akashraj06-0h9c/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/6322786/fire-solution-with-100-beats-by-chathur_-bct0/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/6877824/solution-with-ascii-of-letters-and-numbe-f7g6/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/6935188/simple-java-code-beats-100-by-deepuchary-anf2/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/6827011/beats-100-oneliner-by-alexander_sergeev-me42/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/6939884/java-code-beats-100-by-mailapraveen-g11e/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/6863315/easy-solution-beats-100-best-solution-to-hm2g/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/1140737/java-simple-and-easy-to-understand-solut-h06a/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/6935171/simple-java-code-beats-100-by-deepuchary-u8sz/;;https://leetcode.com/problems/determine-color-of-a-chessboard-square/solutions/6914790/java-easy-solution-by-monish1153-ayaq/;;;=;==;=;=;

@@ -1,0 +1,31 @@
+959. Regions Cut By Slashes;=;=Medium;=;=public int regionsBySlashes(String[] grid);=;=An n x n grid is composed of 1 x 1 squares where each 1 x 1 square consists of a '/', '\', or blank space ' '. These characters divide the square into contiguous regions.
+
+Given the grid grid represented as a string array, return the number of regions.
+
+Note that backslash characters are escaped, so a '\' is represented as '\\'.
+
+ 
+
+Example 1:
+
+
+Input: grid = [" /","/ "]
+Output: 2
+Example 2:
+
+
+Input: grid = [" /","  "]
+Output: 1
+Example 3:
+
+
+Input: grid = ["/\\","\\/"]
+Output: 5
+Explanation: Recall that because \ characters are escaped, "\\/" refers to \/, and "/\\" refers to /\.
+ 
+
+Constraints:
+
+n == grid.length == grid[i].length
+1 <= n <= 30
+grid[i][j] is either '/', '\', or ' '.;=;=https://leetcode.com/problems/regions-cut-by-slashes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/regions-cut-by-slashes/solutions/205674/dfs-on-upscaled-grid-by-votrubac-5nsg/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/5614698/beats-100-explained-with-video-cjavapyth-b511/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/5615002/java-clean-solution-using-dfsrecursion-b-wixa/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/5614957/solving-the-slashes-conundrum-in-multipl-tpci/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/6985824/java-easy-solution-by-heyysankalp-qwf8/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/5615728/beats-dsu-by-b_i_t-37te/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/5614771/dcc-10-aug-2024-dsu-by-sajaltiwari007-5a73/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/2612600/java-graph-union-find-with-comments-by-j-i39h/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/7206957/dfs-on2-by-gitchuan-gp40/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/5618482/easiestfaster-lesser-cpython3javacpython-n3i0/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/5614859/not-pro-layman-solution-by-_meowmeow-lro2/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/1125589/simple-java-dfs-solution-with-explanatio-nk74/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/5616969/clean-code-using-dfs-by-ruturaj_720-otn7/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/6394888/convert-and-as-3x3-grid-each-and-the-use-3r52/;;https://leetcode.com/problems/regions-cut-by-slashes/solutions/5616023/beginner-friendly-basic-approach-easy-to-wkjd/;;;=;==;=;=;

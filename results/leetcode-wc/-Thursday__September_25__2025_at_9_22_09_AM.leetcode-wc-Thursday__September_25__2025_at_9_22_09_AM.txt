@@ -1,0 +1,37 @@
+710. Random Pick with Blacklist;=;=Hard;=;=public Solution(int n, int[] blacklist)                     public int pick()             /  Your Solution object will be instantiated and called as such:  Solution obj = new Solution(n, blacklist);;=;=You are given an integer n and an array of unique integers blacklist. Design an algorithm to pick a random integer in the range [0, n - 1] that is not in blacklist. Any integer that is in the mentioned range and not in blacklist should be equally likely to be returned.
+
+Optimize your algorithm such that it minimizes the number of calls to the built-in random function of your language.
+
+Implement the Solution class:
+
+Solution(int n, int[] blacklist) Initializes the object with the integer n and the blacklisted integers blacklist.
+int pick() Returns a random integer in the range [0, n - 1] and not in blacklist.
+ 
+
+Example 1:
+
+Input
+["Solution", "pick", "pick", "pick", "pick", "pick", "pick", "pick"]
+[[7, [2, 3, 5]], [], [], [], [], [], [], []]
+Output
+[null, 0, 4, 1, 6, 1, 0, 4]
+
+Explanation
+Solution solution = new Solution(7, [2, 3, 5]);
+solution.pick(); // return 0, any integer from [0,1,4,6] should be ok. Note that for every call of pick,
+                 // 0, 1, 4, and 6 must be equally likely to be returned (i.e., with probability 1/4).
+solution.pick(); // return 4
+solution.pick(); // return 1
+solution.pick(); // return 6
+solution.pick(); // return 1
+solution.pick(); // return 0
+solution.pick(); // return 4
+ 
+
+Constraints:
+
+1 <= n <= 109
+0 <= blacklist.length <= min(105, n - 1)
+0 <= blacklist[i] < n
+All the values of blacklist are unique.
+At most 2 * 104 calls will be made to pick.;=;=https://leetcode.com/problems/random-pick-with-blacklist/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/random-pick-with-blacklist/solutions/6459117/simple-o1-design-with-detailed-explanati-g9yk/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/4296646/java-39ms-beats-99-randomly-pick-up-numb-uln4/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/1992074/java-solution-using-weighted-intervals-b-lryq/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/3702065/java-from-two-pointer-to-mle-to-remappin-430k/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/3708686/java-by-gadmo-w7xd/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/3499357/solution-by-deleted_user-05el/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/3286663/java-solution-using-a-hashmap-by-momosun-ypsc/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/2311051/java-hashmap-random-set-by-xiandong127-2m3l/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/1899816/java-solution-using-hashmap-by-vk25-f6sz/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/988088/java-easy-hashmap-beats-98-by-vinsinin-n3n4/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/6900790/3-methods-simple-by-prashant404-9ofz/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/6762703/code-with-rahul-provide-simple-solution-2glv6/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/5722020/dynamic-pre-filter-with-a-single-pick-an-mqko/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/6180188/mapping-to-whitelisted-in-o1-by-vedanshs-ec86/;;https://leetcode.com/problems/random-pick-with-blacklist/solutions/6164775/java-solution-hashmap-by-akanksha1111-1i1u/;;;=;==;=;=;

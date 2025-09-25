@@ -1,0 +1,55 @@
+3621. Number of Integers With Popcount-Depth Equal to K I;=;=Hard;=;=publicÊlongÊpopcountDepth(longÊn,ÊintÊk);=;=You are given two integers n and k.
+
+For any positive integer x, define the following sequence:
+
+p0 = x
+pi+1 = popcount(pi) for all i >= 0, where popcount(y) is the number of set bits (1's) in the binary representation of y.
+This sequence will eventually reach the value 1.
+
+The popcount-depth of x is defined as the smallest integer d >= 0 such that pd = 1.
+
+For example, if x = 7 (binary representation "111"). Then, the sequence is: 7 ? 3 ? 2 ? 1, so the popcount-depth of 7 is 3.
+
+Your task is to determine the number of integers in the range [1, n] whose popcount-depth is exactly equal to k.
+
+Return the number of such integers.
+
+Ê
+
+Example 1:
+
+Input: n = 4, k = 1
+
+Output: 2
+
+Explanation:
+
+The following integers in the range [1, 4] have popcount-depth exactly equal to 1:
+
+x	Binary	Sequence
+2	"10"	2 ? 1
+4	"100"	4 ? 1
+Thus, the answer is 2.
+
+Example 2:
+
+Input: n = 7, k = 2
+
+Output: 3
+
+Explanation:
+
+The following integers in the range [1, 7] have popcount-depth exactly equal to 2:
+
+x	Binary	Sequence
+3	"11"	3 ? 2 ? 1
+5	"101"	5 ? 2 ? 1
+6	"110"	6 ? 2 ? 1
+Thus, the answer is 3.
+
+Ê
+
+Constraints:
+
+1 <= n <= 1015
+0 <= k <= 5;=;=https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/solutions/6978911/clean-digit-dp-solution-for-beginners-di-6emx/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/solutions/6979004/counting-numbers-by-popcount-depth-by-kd-4h5m/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/solutions/7005004/stellars-clean-code-video-intuition-appr-b054/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/solutions/6979860/java-solution-using-combinatorics-14ms-r-pvla/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/solutions/6996592/my-solution-by-watercyb-sk0z/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/solutions/7004487/combinatoric-approach-by-tuanminh1412-i4l0/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/solutions/6984576/easy-solution-using-digit-dp-by-arham121-nk4d/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/solutions/6989364/easy-double-dp-by-selvaragavan_c-n9ua/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/solutions/7001683/java-6ms-solution-with-o1-time-complexit-a3ki/;;;=;==;=;=;

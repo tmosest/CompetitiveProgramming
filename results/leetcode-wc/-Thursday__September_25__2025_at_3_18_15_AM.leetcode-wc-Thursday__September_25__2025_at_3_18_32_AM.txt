@@ -1,0 +1,27 @@
+730. Count Different Palindromic Subsequences;=;=Hard;=;=public int countPalindromicSubsequences(String s);=;=Given a string s, return the number of different non-empty palindromic subsequences in s. Since the answer may be very large, return it modulo 109 + 7.
+
+A subsequence of a string is obtained by deleting zero or more characters from the string.
+
+A sequence is palindromic if it is equal to the sequence reversed.
+
+Two sequences a1, a2, ... and b1, b2, ... are different if there is some i for which ai != bi.
+
+ 
+
+Example 1:
+
+Input: s = "bccb"
+Output: 6
+Explanation: The 6 different non-empty palindromic subsequences are 'b', 'c', 'bb', 'cc', 'bcb', 'bccb'.
+Note that 'bcb' is counted only once, even though it occurs twice.
+Example 2:
+
+Input: s = "abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba"
+Output: 104860361
+Explanation: There are 3104860382 different non-empty palindromic subsequences, which is 104860361 modulo 109 + 7.
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s[i] is either 'a', 'b', 'c', or 'd'.;=;=https://leetcode.com/problems/count-different-palindromic-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/7197818/java-2d-dp-intuitive-solution-53ms-solut-vxbw/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/2006142/java-dp-with-detailed-explanation-by-yeo-2k7a/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/4904876/dp-memoization-with-detail-explanation-b-155p/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/7113146/code-explanation-top-down-bottom-up-both-dn2o/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/2285816/simple-detailed-explanation-intuitive-ja-uf9y/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/5194599/java-solution-on2-time-and-space-by-vlad-7sg1/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/1535647/java-on2-solution-using-dp-tabulautaion-3puoq/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/601561/java-non-dp-solution-on2-time-o1-space-b-wsbm/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/2324157/similar-to-940-distinct-subsequences-ii-yswq8/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/2285221/java-73-ms-dp-solution-with-detailed-exp-rv5w/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/1442593/java-clean-and-detailed-solution-using-t-80cc/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/1668642/although-wont-work-for-large-strings-but-mwro/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/5825340/super-detailed-explanation-in-the-code-b-52i9/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/5183530/java-solution-by-raghu3696-xywg/;;https://leetcode.com/problems/count-different-palindromic-subsequences/solutions/5141275/16ms-java-solution-by-user5253in-67c2/;;;=;==;=;=;

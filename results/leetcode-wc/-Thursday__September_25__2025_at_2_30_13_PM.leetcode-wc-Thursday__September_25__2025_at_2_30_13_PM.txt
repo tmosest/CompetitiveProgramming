@@ -1,0 +1,35 @@
+2439. Minimize Maximum of Array;=;=Medium;=;=public int minimizeArrayValue(int[] nums);=;=You are given a 0-indexed array nums comprising of n non-negative integers.
+
+In one operation, you must:
+
+Choose an integer i such that 1 <= i < n and nums[i] > 0.
+Decrease nums[i] by 1.
+Increase nums[i - 1] by 1.
+Return the minimum possible value of the maximum integer of nums after performing any number of operations.
+
+ 
+
+Example 1:
+
+Input: nums = [3,7,1,6]
+Output: 5
+Explanation:
+One set of optimal operations is as follows:
+1. Choose i = 1, and nums becomes [4,6,1,6].
+2. Choose i = 3, and nums becomes [4,6,2,5].
+3. Choose i = 1, and nums becomes [5,5,2,5].
+The maximum integer of nums is 5. It can be shown that the maximum number cannot be less than 5.
+Therefore, we return 5.
+Example 2:
+
+Input: nums = [10,1]
+Output: 10
+Explanation:
+It is optimal to leave nums as is, and since 10 is the maximum value, we return 10.
+ 
+
+Constraints:
+
+n == nums.length
+2 <= n <= 105
+0 <= nums[i] <= 109;=;=https://leetcode.com/problems/minimize-maximum-of-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimize-maximum-of-array/solutions/2706521/javacpython-prefix-sum-average-on-by-lee-ohs4/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/3381323/image-explanation-brute-better-onlogm-op-7b5k/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/3381227/pythonjavacsimple-solutioneasy-to-unders-79a2/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/2706375/binary-search-with-explanation-by-surajt-o5gl/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/3381375/easy-solutions-in-java-python-and-c-look-a0g2/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/2706472/average-by-votrubac-mxqc/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/6839876/beats-9855-easiest-explanation-and-code-vygcn/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/7175849/binary-search-by-ojasvi_tripathi-bm1l/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/3381551/python3cjava-prefix-sum-average-on-look-uvjgi/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/3382849/java-simple-explained-clear-and-detailed-314v/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/3381606/day-370-javacpython-explained-intuition-x7iw1/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/2706352/greedy-java-binary-search-by-abdulazizms-10v9/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/3381704/java-average-without-using-ceil-function-od4z/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/3384802/math-explained-ceil-and-prefix-sum-expla-yxyi/;;https://leetcode.com/problems/minimize-maximum-of-array/solutions/3381472/day-95-on-time-and-o1-space-easiest-begi-ezgf/;;;=;==;=;=;

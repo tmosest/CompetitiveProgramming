@@ -1,0 +1,50 @@
+3303. Find the Occurrence of First Almost Equal Substring;=;=Hard;=;=public int minStartingIndex(String s, String pattern);=;=You are given two strings s and pattern.
+
+A string x is called almost equal to y if you can change at most one character in x to make it identical to y.
+
+Return the smallest starting index of a substring in s that is almost equal to pattern. If no such index exists, return -1.
+
+A substring is a contiguous non-empty sequence of characters within a string.
+ 
+
+Example 1:
+
+Input: s = "abcdefg", pattern = "bcdffg"
+
+Output: 1
+
+Explanation:
+
+The substring s[1..6] == "bcdefg" can be converted to "bcdffg" by changing s[4] to "f".
+
+Example 2:
+
+Input: s = "ababbababa", pattern = "bacaba"
+
+Output: 4
+
+Explanation:
+
+The substring s[4..9] == "bababa" can be converted to "bacaba" by changing s[6] to "c".
+
+Example 3:
+
+Input: s = "abcd", pattern = "dba"
+
+Output: -1
+
+Example 4:
+
+Input: s = "dde", pattern = "d"
+
+Output: 0
+
+ 
+
+Constraints:
+
+1 <= pattern.length < s.length <= 105
+s and pattern consist only of lowercase English letters.
+ 
+
+Follow-up: Could you solve the problem if at most k consecutive characters can be changed?;=;=https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5844897/javacpython-z-function-by-lee215-66qu/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5844408/finding-minimum-starting-index-of-patter-ay8n/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5853154/z-function-detailed-explanation-with-vis-86ek/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5847928/java-solution-using-rabin-karp-by-debarg-1uz3/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5847106/simple-java-solution-by-nithin_1217-v5of/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5846964/beats-super-easy-beginners-by-codewithsp-pvwk/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/6968100/easy-to-understand-through-comments-java-o0j3/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/6233056/java-solution-by-barakamon-dw2k/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5982596/c-java-python3-by-deviant25-6phk/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5864594/most-logical-solution-by-risabhuchiha-dwn8/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5857961/java-z-algo-tc-with-detailed-explanation-judt/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5856296/java-beats-98-z_function-by-shaurya_malh-fobo/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5854028/java-749ms-ac-ed-o26n-brute-force-or-49m-poxw/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5847661/3303-find-the-occurrence-of-first-almost-3mb7/;;https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/solutions/5844866/c-solution-os-pattern-z-function-by-tdkk-ttpc/;;;=;==;=;=;

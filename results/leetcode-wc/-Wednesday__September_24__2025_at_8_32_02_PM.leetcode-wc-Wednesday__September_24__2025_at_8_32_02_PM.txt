@@ -1,0 +1,27 @@
+2119. A Number After a Double Reversal;=;=Easy;=;=public boolean isSameAfterReversals(int num);=;=Reversing an integer means to reverse all its digits.
+
+For example, reversing 2021 gives 1202. Reversing 12300 gives 321 as the leading zeros are not retained.
+Given an integer num, reverse num to get reversed1, then reverse reversed1 to get reversed2. Return true if reversed2 equals num. Otherwise return false.
+
+ 
+
+Example 1:
+
+Input: num = 526
+Output: true
+Explanation: Reverse num to get 625, then reverse 625 to get 526, which equals num.
+Example 2:
+
+Input: num = 1800
+Output: false
+Explanation: Reverse num to get 81, then reverse 81 to get 18, which does not equal num.
+Example 3:
+
+Input: num = 0
+Output: true
+Explanation: Reverse num to get 0, then reverse 0 to get 0, which equals num.
+ 
+
+Constraints:
+
+0 <= num <= 106;=;=https://leetcode.com/problems/a-number-after-a-double-reversal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7214160/easy-java-c-c-python-solution-by-lokesht-jv8g/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7199505/100-beat-constant-time-solution-by-visha-zza5/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7191738/easy-code-for-beginners-and-understandab-86bo/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7188571/easy-code-for-solve-this-problem-by-4_k4-yxlp/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/6768013/fast-and-clear-with-iterations-in-tables-ck76/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7063346/a-number-after-a-double-reversal-by-e_de-ix8u/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7063533/a-number-after-a-double-reversal-0ms-bea-dlmk/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7088652/my-solution-2025-by-waitskott-th5c/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7080341/one-line-code-most-opitimized-approarch-cpafz/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/1647570/pythonjavac-1-liner-num-0-or-num-10-expl-oo2r/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/6322866/na-thanda-leo-leo-dasss-by-mohammed_haar-5bzd/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7058126/beats-100-just-2line-solution-by-deva_ts-d55d/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7030292/java-easy-string-by-kulkarnishreya04-2it6/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/6956900/just-use-modulo-operator-by-gokilaselvi-jttu/;;https://leetcode.com/problems/a-number-after-a-double-reversal/solutions/7020225/simple-logic-beats-100-0ms-3-line-java-c-mofs/;;;=;==;=;=;

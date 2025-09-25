@@ -1,0 +1,32 @@
+2657. Find the Prefix Common Array of Two Arrays;=;=Medium;=;=public int[] findThePrefixCommonArray(int[] A, int[] B);=;=You are given two 0-indexed integer permutations A and B of length n.
+
+A prefix common array of A and B is an array C such that C[i] is equal to the count of numbers that are present at or before the index i in both A and B.
+
+Return the prefix common array of A and B.
+
+A sequence of n integers is called a permutation if it contains all integers from 1 to n exactly once.
+
+ 
+
+Example 1:
+
+Input: A = [1,3,2,4], B = [3,1,2,4]
+Output: [0,2,3,4]
+Explanation: At i = 0: no number is common, so C[0] = 0.
+At i = 1: 1 and 3 are common in A and B, so C[1] = 2.
+At i = 2: 1, 2, and 3 are common in A and B, so C[2] = 3.
+At i = 3: 1, 2, 3, and 4 are common in A and B, so C[3] = 4.
+Example 2:
+
+Input: A = [2,3,1], B = [3,1,2]
+Output: [0,1,3]
+Explanation: At i = 0: no number is common, so C[0] = 0.
+At i = 1: only 3 is common in A and B, so C[1] = 1.
+At i = 2: 1, 2, and 3 are common in A and B, so C[2] = 3.
+ 
+
+Constraints:
+
+1 <= A.length == B.length == n <= 50
+1 <= A[i], B[i] <= n
+It is guaranteed that A and B are both a permutation of n integers.;=;=https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6276375/beats-100-find-the-prefix-common-array-b-4i3s/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/3466857/day-394-brute-optimal-one-pass-100-0ms-p-kc1z/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/3466962/javacpython-one-pass-by-lee215-0ils/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6276883/beats-100-most-optimal-approach-c-java-p-83hg/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/7087752/easy-java-solution-beats-9296-by-rajdeep-rcet/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6276652/javas-best-solution-with-an-easy-explana-4dh9/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6276260/on-c-py3-0ms-java-1ms-js-4ms-beats-10000-wd9r/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6280768/best-solution-beats-100-bitmaskingcjavap-ossq/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6276173/array-counting-solution-for-leetcode2657-o4ky/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6276305/simple-pair-of-bool-map-detailed-solutio-76bw/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6277422/easy-understandable-approach-by-arunk_le-9ny2/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6960825/using-1-frequency-array-by-arshiya1731-el7j/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/7037073/compute-prefix-wise-count-of-common-elem-w3tm/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6276909/easy-solution-by-ishwaryaice-s0bp/;;https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6277080/constant-time-in-n-length-array-java-sol-4jk7/;;;=;==;=;=;

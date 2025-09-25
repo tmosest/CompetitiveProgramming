@@ -1,0 +1,31 @@
+120. Triangle;=;=Medium;=;=public int minimumTotal(List<List<Integer>> triangle);=;=Given a triangle array, return the minimum path sum from top to bottom.
+
+For each step, you may move to an adjacent number of the row below. More formally, if you are on index i on the current row, you may move to either index i or index i + 1 on the next row.
+
+ 
+
+Example 1:
+
+Input: triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]
+Output: 11
+Explanation: The triangle looks like:
+   2
+  3 4
+ 6 5 7
+4 1 8 3
+The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above).
+Example 2:
+
+Input: triangle = [[-10]]
+Output: -10
+ 
+
+Constraints:
+
+1 <= triangle.length <= 200
+triangle[0].length == 1
+triangle[i].length == triangle[i - 1].length + 1
+-104 <= triangle[i][j] <= 104
+ 
+
+Follow up: Could you do this using only O(n) extra space, where n is the total number of rows in the triangle?;=;=https://leetcode.com/problems/triangle/description/?envType=daily-question&envId=2025-09-25;=;=https://leetcode.com/problems/triangle/solutions/7219849/java-solution-100-beats-by-tarunarora11-78um/;;https://leetcode.com/problems/triangle/solutions/6097942/video-explanation-by-niits-d8vr/;;https://leetcode.com/problems/triangle/solutions/7172406/easy-code-in-java-by-yasl1-j8km/;;https://leetcode.com/problems/triangle/solutions/2144980/from-memoization-to-dp-java-explanation-3ff8t/;;https://leetcode.com/problems/triangle/solutions/7093458/ohhdamn-it-took-me-12-hrs-to-find-answer-crm5/;;https://leetcode.com/problems/triangle/solutions/7175008/one-of-the-most-detailed-solution-with-m-p8gi/;;https://leetcode.com/problems/triangle/solutions/5443378/2-ways-easy-beginner-friendly-java-c-pyt-ani7/;;https://leetcode.com/problems/triangle/solutions/6770665/99-user-beat-1ms-dp-spaceopt-tabulation-v18ar/;;https://leetcode.com/problems/triangle/solutions/38732/my-8-line-dp-java-code4-meaningful-lines-25im/;;https://leetcode.com/problems/triangle/solutions/5373148/video-explanation-by-niits-qlji/;;https://leetcode.com/problems/triangle/solutions/7087345/minimum-path-sum-in-triangle-top-down-dp-36z7/;;https://leetcode.com/problems/triangle/solutions/6827883/beats-99-in-runtime-step-by-step-easy-so-8bff/;;https://leetcode.com/problems/triangle/solutions/7089145/simple-dp-memory-optimization-idea-by-dy-7yqr/;;https://leetcode.com/problems/triangle/solutions/7066439/easy-peasy-java-code-by-arunsainarla-ahod/;;https://leetcode.com/problems/triangle/solutions/6605286/simple-easy-to-understand-dp-by-kdhakal-wen9/;;;=;==;=;=;

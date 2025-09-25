@@ -1,0 +1,41 @@
+2773. Height of Special Binary Tree;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=You are given a root, which is the root of a special binary tree with n nodes. The nodes of the special binary tree are numbered from 1 to n. Suppose the tree has k leaves in the following order: b1 < b2 < ... < bk.
+
+The leaves of this tree have a special property! That is, for every leaf bi, the following conditions hold:
+
+The right child of bi is bi + 1 if i < k, and b1 otherwise.
+The left child of bi is bi - 1 if i > 1, and bk otherwise.
+Return the height of the given tree.
+
+Note: The height of a binary tree is the length of the longest path from the root to any other node.
+
+ 
+
+Example 1:
+
+Input: root = [1,2,3,null,null,4,5]
+Output: 2
+Explanation: The given tree is shown in the following picture. Each leaf's left child is the leaf to its left (shown with the blue edges). Each leaf's right child is the leaf to its right (shown with the red edges). We can see that the graph has a height of 2.
+
+
+Example 2:
+
+Input: root = [1,2]
+Output: 1
+Explanation: The given tree is shown in the following picture. There is only one leaf, so it doesn't have any left or right child. We can see that the graph has a height of 1.
+
+
+Example 3:
+
+Input: root = [1,2,3,null,null,4,null,5,6]
+Output: 3
+Explanation: The given tree is shown in the following picture. Each leaf's left child is the leaf to its left (shown with the blue edges). Each leaf's right child is the leaf to its right (shown with the red edges). We can see that the graph has a height of 3.
+
+
+ 
+
+Constraints:
+
+n == number of nodes in the tree
+2 <= n <= 104
+1 <= node.val <= n
+The input is generated such that each node.val is unique.;=;=https://leetcode.com/problems/height-of-special-binary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/height-of-special-binary-tree/solutions/4754018/java-easy-effective-solution-by-f77-952l/;;https://leetcode.com/problems/height-of-special-binary-tree/solutions/6550298/find-leaves-and-get-depth-by-awuxiaoqi-cb3w/;;https://leetcode.com/problems/height-of-special-binary-tree/solutions/5194741/java-postorder-solution-by-ulyx-ii3t/;;https://leetcode.com/problems/height-of-special-binary-tree/solutions/4928089/short-dfs-solution-by-acmmisha-w2f3/;;https://leetcode.com/problems/height-of-special-binary-tree/solutions/5038497/java-solution-by-ndsjqwbbb-k6tl/;;https://leetcode.com/problems/height-of-special-binary-tree/solutions/3756901/simple-dfs-implementations-in-c-java-pyt-8eio/;;;=;==;=;=;

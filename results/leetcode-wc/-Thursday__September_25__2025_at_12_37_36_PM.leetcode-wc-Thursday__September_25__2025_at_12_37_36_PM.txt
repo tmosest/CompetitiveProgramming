@@ -1,0 +1,37 @@
+707. Design Linked List;=;=Medium;=;=MyLinkedListÊÊÊÊÊpublicÊMyLinkedList()ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊintÊget(intÊindex)ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊvoidÊaddAtHead(intÊval);=;=Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
+A node in a singly linked list should have two attributes: val and next. val is the value of the current node, and next is a pointer/reference to the next node.
+If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. Assume all nodes in the linked list are 0-indexed.
+
+Implement the MyLinkedList class:
+
+MyLinkedList() Initializes the MyLinkedList object.
+int get(int index) Get the value of the indexth node in the linked list. If the index is invalid, return -1.
+void addAtHead(int val) Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
+void addAtTail(int val) Append a node of value val as the last element of the linked list.
+void addAtIndex(int index, int val) Add a node of value val before the indexth node in the linked list. If index equals the length of the linked list, the node will be appended to the end of the linked list. If index is greater than the length, the node will not be inserted.
+void deleteAtIndex(int index) Delete the indexth node in the linked list, if the index is valid.
+Ê
+
+Example 1:
+
+Input
+["MyLinkedList", "addAtHead", "addAtTail", "addAtIndex", "get", "deleteAtIndex", "get"]
+[[], [1], [3], [1, 2], [1], [1], [1]]
+Output
+[null, null, null, null, 2, null, 3]
+
+Explanation
+MyLinkedList myLinkedList = new MyLinkedList();
+myLinkedList.addAtHead(1);
+myLinkedList.addAtTail(3);
+myLinkedList.addAtIndex(1, 2);    // linked list becomes 1->2->3
+myLinkedList.get(1);              // return 2
+myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
+myLinkedList.get(1);              // return 3
+Ê
+
+Constraints:
+
+0 <= index, val <= 1000
+Please do not use the built-in LinkedList library.
+At most 2000 calls will be made to get, addAtHead, addAtTail, addAtIndex and deleteAtIndex.;=;=https://leetcode.com/problems/design-linked-list/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/design-linked-list/solutions/7201345/design-linked-list-singly-linked-list-wi-cjfj/;;https://leetcode.com/problems/design-linked-list/solutions/5329230/up-easy-to-understand-best-solution-beat-29lz/;;https://leetcode.com/problems/design-linked-list/solutions/7172659/custom-singly-linked-list-clean-java-imp-u2jq/;;https://leetcode.com/problems/design-linked-list/solutions/6962746/simple-java-solution-by-aryan2803-jquo/;;https://leetcode.com/problems/design-linked-list/solutions/1762118/java-clean-and-detailed-solution-using-s-n5i9/;;https://leetcode.com/problems/design-linked-list/solutions/7103484/linked-list-by-krish_gupta111-tr78/;;https://leetcode.com/problems/design-linked-list/solutions/6600617/design-a-singly-linked-list-beats-99-by-jzo83/;;https://leetcode.com/problems/design-linked-list/solutions/7005885/two-ways-to-design-linked-list-arraylist-dhwm/;;https://leetcode.com/problems/design-linked-list/solutions/5189631/easy-to-understand-beginner-friendly-jav-pqt5/;;https://leetcode.com/problems/design-linked-list/solutions/6796220/beats-9931-in-runtime-and-9588-in-memory-xtmw/;;https://leetcode.com/problems/design-linked-list/solutions/6020038/easiest-implementation-with-comments-by-fdmw4/;;https://leetcode.com/problems/design-linked-list/solutions/6914904/implementing-a-singly-linked-list-from-s-ao1l/;;https://leetcode.com/problems/design-linked-list/solutions/6852995/simple-java-code-with-explanation-by-pat-juvt/;;https://leetcode.com/problems/design-linked-list/solutions/6910266/design-singly-linked-list-by-niti009-kb4b/;;https://leetcode.com/problems/design-linked-list/solutions/6820116/java-doubly-linkedlist-beats-993-runtime-nnfc/;;;=;==;=;=;

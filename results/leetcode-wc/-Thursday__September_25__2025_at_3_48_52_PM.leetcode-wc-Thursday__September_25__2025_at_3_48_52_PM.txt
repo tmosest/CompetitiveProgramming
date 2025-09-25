@@ -1,0 +1,56 @@
+3471. Find the Largest Almost Missing Integer;=;=Easy;=;=publicÊintÊlargestInteger(int[]Ênums,ÊintÊk);=;=You are given an integer array nums and an integer k.
+
+An integer x is almost missing from nums if x appears in exactly one subarray of size k within nums.
+
+Return the largest almost missing integer from nums. If no such integer exists, return -1.
+
+A subarray is a contiguous sequence of elements within an array.
+Ê
+
+Example 1:
+
+Input: nums = [3,9,2,1,7], k = 3
+
+Output: 7
+
+Explanation:
+
+1 appears in 2 subarrays of size 3: [9, 2, 1] and [2, 1, 7].
+2 appears in 3 subarrays of size 3: [3, 9, 2], [9, 2, 1], [2, 1, 7].
+3 appears in 1 subarray of size 3: [3, 9, 2].
+7 appears in 1 subarray of size 3: [2, 1, 7].
+9 appears in 2 subarrays of size 3: [3, 9, 2], and [9, 2, 1].
+We return 7 since it is the largest integer that appears in exactly one subarray of size k.
+
+Example 2:
+
+Input: nums = [3,9,7,2,1,7], k = 4
+
+Output: 3
+
+Explanation:
+
+1 appears in 2 subarrays of size 4: [9, 7, 2, 1], [7, 2, 1, 7].
+2 appears in 3 subarrays of size 4: [3, 9, 7, 2], [9, 7, 2, 1], [7, 2, 1, 7].
+3 appears in 1 subarray of size 4: [3, 9, 7, 2].
+7 appears in 3 subarrays of size 4: [3, 9, 7, 2], [9, 7, 2, 1], [7, 2, 1, 7].
+9 appears in 2 subarrays of size 4: [3, 9, 7, 2], [9, 7, 2, 1].
+We return 3 since it is the largest and only integer that appears in exactly one subarray of size k.
+
+Example 3:
+
+Input: nums = [0,0], k = 1
+
+Output: -1
+
+Explanation:
+
+There is no integer that appears in only one subarray of size 1.
+
+Ê
+
+Constraints:
+
+1 <= nums.length <= 50
+0 <= nums[i] <= 50
+1 <= k <= nums.length;=;=https://leetcode.com/problems/find-the-largest-almost-missing-integer/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6485946/hash-table-python-by-otabek_kholmirzaev-8tf9/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/7063532/java-solution-beats-100-by-2021uee1350-1qj2/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/7182984/did-it-in-one-go-beats-100-java-by-bunny-190v/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6996613/keep-it-simple-easy-to-read-and-efficien-m5id/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6483977/simple-solution-by-siva_devireddy_0312-pyt6/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6483981/explore-all-k-len-subarray-and-update-pr-70kl/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6488812/contest-solution-weekly-contest-439-simp-8gh6/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6483962/easy-java-solution-beats-100-5ms-hashmap-o5pa/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6484853/simple-solution-using-hashmap-beats-100-fq3wg/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6487240/beats-100-in-both-time-and-space-on-solu-rln5/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6485172/all-you-need-to-test-for-is-k-1-really-b-cotl/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6493353/java-solution-hash-tables-by-dheeraj_260-k3g3/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6496808/easy-on-solution-using-maps-by-vansh-gup-3nd1/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6484303/not-gpt-solution-by-kolhesatish-hkow/;;https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/6487194/straight-forward-approach-by-ayushi-mish-e1ir/;;;=;==;=;=;

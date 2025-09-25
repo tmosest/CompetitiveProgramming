@@ -1,0 +1,54 @@
+3312. Sorted GCD Pair Queries;=;=Hard;=;=public int[] gcdValues(int[] nums, long[] queries);=;=You are given an integer array nums of length n and an integer array queries.
+
+Let gcdPairs denote an array obtained by calculating the GCD of all possible pairs (nums[i], nums[j]), where 0 <= i < j < n, and then sorting these values in ascending order.
+
+For each query queries[i], you need to find the element at index queries[i] in gcdPairs.
+
+Return an integer array answer, where answer[i] is the value at gcdPairs[queries[i]] for each query.
+
+The term gcd(a, b) denotes the greatest common divisor of a and b.
+
+ 
+
+Example 1:
+
+Input: nums = [2,3,4], queries = [0,2,2]
+
+Output: [1,2,2]
+
+Explanation:
+
+gcdPairs = [gcd(nums[0], nums[1]), gcd(nums[0], nums[2]), gcd(nums[1], nums[2])] = [1, 2, 1].
+
+After sorting in ascending order, gcdPairs = [1, 1, 2].
+
+So, the answer is [gcdPairs[queries[0]], gcdPairs[queries[1]], gcdPairs[queries[2]]] = [1, 2, 2].
+
+Example 2:
+
+Input: nums = [4,4,2,1], queries = [5,3,1,0]
+
+Output: [4,2,1,1]
+
+Explanation:
+
+gcdPairs sorted in ascending order is [1, 1, 1, 2, 2, 4].
+
+Example 3:
+
+Input: nums = [2,2], queries = [0,0]
+
+Output: [2,2]
+
+Explanation:
+
+gcdPairs = [2].
+
+ 
+
+Constraints:
+
+2 <= n == nums.length <= 105
+1 <= nums[i] <= 5 * 104
+1 <= queries.length <= 105
+0 <= queries[i] < n * (n - 1) / 2;=;=https://leetcode.com/problems/sorted-gcd-pair-queries/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5875815/java-code-by-shubhamyadav32100-1fyk/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5882106/javacpython-sieve-by-lee215-ndaz/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5876090/java-solution-by-shree_govind_jee-zc4h/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5875832/java-30ms-fast-gcd-precomputation-by-who-2tll/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5877410/count-number-of-pairs-for-all-possible-g-293s/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5877458/java-with-hindi-comments-to-better-under-h0v0/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5879096/easy-java-solution-100-beats-by-shaurya_-c9bp/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5879962/java-with-concise-inline-comments-by-tot-9avo/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5891196/easy-to-understand-solution-by-krrishnic-win7/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5880441/inclusion-exclusion-principle-binary-sea-k5l9/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5879199/java-beats-100-simplest-code-by-jai_hanu-8d8y/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5877224/3312-sorted-gcd-pair-queries-by-leetcode-kd4w/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5876723/java-inclusion-exclusion-binary-search-s-jtws/;;https://leetcode.com/problems/sorted-gcd-pair-queries/solutions/5875975/your-last-submission-beat-100-of-other-s-67rb/;;;=;==;=;=;

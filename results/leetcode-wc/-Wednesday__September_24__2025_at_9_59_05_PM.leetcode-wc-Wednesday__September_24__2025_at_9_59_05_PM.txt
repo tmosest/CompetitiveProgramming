@@ -1,0 +1,32 @@
+2001. Number of Pairs of Interchangeable Rectangles;=;=Medium;=;=public long interchangeableRectangles(int[][] rectangles);=;=You are given n rectangles represented by a 0-indexed 2D integer array rectangles, where rectangles[i] = [widthi, heighti] denotes the width and height of the ith rectangle.
+
+Two rectangles i and j (i < j) are considered interchangeable if they have the same width-to-height ratio. More formally, two rectangles are interchangeable if widthi/heighti == widthj/heightj (using decimal division, not integer division).
+
+Return the number of pairs of interchangeable rectangles in rectangles.
+
+ 
+
+Example 1:
+
+Input: rectangles = [[4,8],[3,6],[10,20],[15,30]]
+Output: 6
+Explanation: The following are the interchangeable pairs of rectangles by index (0-indexed):
+- Rectangle 0 with rectangle 1: 4/8 == 3/6.
+- Rectangle 0 with rectangle 2: 4/8 == 10/20.
+- Rectangle 0 with rectangle 3: 4/8 == 15/30.
+- Rectangle 1 with rectangle 2: 3/6 == 10/20.
+- Rectangle 1 with rectangle 3: 3/6 == 15/30.
+- Rectangle 2 with rectangle 3: 10/20 == 15/30.
+Example 2:
+
+Input: rectangles = [[4,5],[7,8]]
+Output: 0
+Explanation: There are no interchangeable pairs of rectangles.
+ 
+
+Constraints:
+
+n == rectangles.length
+1 <= n <= 105
+rectangles[i].length == 2
+1 <= widthi, heighti <= 105;=;=https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/7016400/very-good-problem-hashing-precision-conc-02bi/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/6954025/beats-100-in-runtime-and-9888-in-memory-1r5cu/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/6932659/beats-97-by-alexander_sergeev-te4h/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/3048098/simple-java-solution-hashmap-on-by-yoges-kxl6/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/1458303/java-solution-simple-hashmap-by-pgthebig-ji5q/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/6018293/optimized-solution-using-hash-map-by-jay-vx6k/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/5703292/three-line-java-solution-with-time-compl-egxb/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/1880270/simple-java-solution-using-hashmap-97-by-m8zw/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/1458462/java-hash-map-simple-on-by-shubham242k-viqr/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/3252009/using-maps-and-counting-by-rajsiddi-b1sn/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/1458414/java-use-gcd-to-avoid-double-precision-l-9y8u/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/1458977/simple-solution-combination-formula-java-8sph/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/1458452/java-simple-solution-using-hashmap-on-by-l695/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/1458698/explanation-easy-for-beginner-using-hash-7eyf/;;https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/7144587/hashmap-java-by-runlingli-ahfk/;;;=;==;=;=;

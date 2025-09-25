@@ -1,0 +1,34 @@
+2055. Plates Between Candles;=;=Medium;=;=public int[] platesBetweenCandles(String s, int[][] queries);=;=There is a long table with a line of plates and candles arranged on top of it. You are given a 0-indexed string s consisting of characters '*' and '|' only, where a '*' represents a plate and a '|' represents a candle.
+
+You are also given a 0-indexed 2D integer array queries where queries[i] = [lefti, righti] denotes the substring s[lefti...righti] (inclusive). For each query, you need to find the number of plates between candles that are in the substring. A plate is considered between candles if there is at least one candle to its left and at least one candle to its right in the substring.
+
+For example, s = "||**||**|*", and a query [3, 8] denotes the substring "*||**|". The number of plates between candles in this substring is 2, as each of the two plates has at least one candle in the substring to its left and right.
+Return an integer array answer where answer[i] is the answer to the ith query.
+
+ 
+
+Example 1:
+
+
+Input: s = "**|**|***|", queries = [[2,5],[5,9]]
+Output: [2,3]
+Explanation:
+- queries[0] has two plates between candles.
+- queries[1] has three plates between candles.
+Example 2:
+
+
+Input: s = "***|**|*****|**||**|*", queries = [[1,17],[4,5],[14,17],[5,11],[15,16]]
+Output: [9,0,0,0,0]
+Explanation:
+- queries[0] has nine plates between candles.
+- The other queries have zero plates between candles.
+ 
+
+Constraints:
+
+3 <= s.length <= 105
+s consists of '*' and '|' characters.
+1 <= queries.length <= 105
+queries[i].length == 2
+0 <= lefti <= righti < s.length;=;=https://leetcode.com/problems/plates-between-candles/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/plates-between-candles/solutions/1549223/binary-search-vs-prefix-sum-by-votrubac-9qnt/;;https://leetcode.com/problems/plates-between-candles/solutions/7150663/simple-binary-search-and-prefixsum-by-su-3jdh/;;https://leetcode.com/problems/plates-between-candles/solutions/5260302/easy-java-on-8ms-runtime-memory-beats-95-1bxg/;;https://leetcode.com/problems/plates-between-candles/solutions/6836020/plates-between-candles-by-pranavdewangan-aknk/;;https://leetcode.com/problems/plates-between-candles/solutions/2057259/java-3-solutions-prefix-sum-binary-searc-zztd/;;https://leetcode.com/problems/plates-between-candles/solutions/5124787/easy-java-solution-using-prefix-sum-and-0l937/;;https://leetcode.com/problems/plates-between-candles/solutions/6835673/plates-between-candles-by-pranavdewangan-6c86/;;https://leetcode.com/problems/plates-between-candles/solutions/4149660/clear-solution-by-shadab_ahmad_khan-3y8k/;;https://leetcode.com/problems/plates-between-candles/solutions/7130717/solution-by-dharshan_r-bhbr/;;https://leetcode.com/problems/plates-between-candles/solutions/2483886/treeset-java-easy-and-concise-by-capmarv-natj/;;https://leetcode.com/problems/plates-between-candles/solutions/1773161/java-on-simple-solution-using-prefix-sum-qthy/;;https://leetcode.com/problems/plates-between-candles/solutions/5534532/simple-java-code-easy-to-understand-begi-9n4g/;;https://leetcode.com/problems/plates-between-candles/solutions/1551005/java-treemap-easy-solution-by-aravindsys-v8hl/;;https://leetcode.com/problems/plates-between-candles/solutions/7094339/prefix-sum-by-yukta_jain-0q9v/;;https://leetcode.com/problems/plates-between-candles/solutions/4850196/simple-java-solution-without-binary-sear-844q/;;;=;==;=;=;

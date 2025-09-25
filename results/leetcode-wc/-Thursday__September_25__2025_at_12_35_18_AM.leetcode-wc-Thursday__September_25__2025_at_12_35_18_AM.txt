@@ -1,0 +1,41 @@
+3370. Smallest Number With All Set Bits;=;=Easy;=;=public int smallestNumber(int n);=;=You are given a positive number n.
+
+Return the smallest number x greater than or equal to n, such that the binary representation of x contains only set bits
+
+ 
+
+Example 1:
+
+Input: n = 5
+
+Output: 7
+
+Explanation:
+
+The binary representation of 7 is "111".
+
+Example 2:
+
+Input: n = 10
+
+Output: 15
+
+Explanation:
+
+The binary representation of 15 is "1111".
+
+Example 3:
+
+Input: n = 3
+
+Output: 3
+
+Explanation:
+
+The binary representation of 3 is "11".
+
+ 
+
+Constraints:
+
+1 <= n <= 1000;=;=https://leetcode.com/problems/smallest-number-with-all-set-bits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/7204593/easy-code-by-prajanthkumar-l68m/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/7198661/smallest-number-with-all-set-bits-binary-7al5/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6098860/javacpython-different-ideas-by-lee215-6qce/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6102920/find-the-smallest-number-with-only-set-b-8jef/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6098873/python3-1-line-count-the-bits-ts-99-59-b-8rgf/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6099019/intuition-approach-power-of-2-tc-ologn-b-i4y6/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/7035299/one-approarch-3-leetcode-problem-solve-1-1e1c/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6100094/python-java-c-rust-elegant-short-o1-powe-ki9y/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6947871/easy-way-java-by-sairangineeni-ti08/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6099097/beats-100-easiest-solution-o1-and-on-bit-j5ty/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6103201/very-easy-detailed-solution-beats-100-tw-svn4/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6556291/easiest-solution-100-beats-by-aryaman123-8nan/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6851528/c-ts-js-by-jdvxtpzxkd-j3ag/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6099226/simple-and-easy-solution-beats-100-c-jav-e5td/;;https://leetcode.com/problems/smallest-number-with-all-set-bits/solutions/6099196/simple-java-solution-by-harsh__005-57wt/;;;=;==;=;=;

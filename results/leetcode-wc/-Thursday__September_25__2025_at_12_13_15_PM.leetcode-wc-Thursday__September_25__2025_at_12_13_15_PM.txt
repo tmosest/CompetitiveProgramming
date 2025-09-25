@@ -1,0 +1,38 @@
+1485. Clone Binary Tree With Random Pointer;=;=Medium;=;=/  Definition for Node.  public  Node       int val;      Node left;      Node right;      Node random;      Node()       Node(int val)  this.val = val;       Node(int val, Node left, Node right, Node random)           this.val = val;          this.left = left;          this.right = right;          this.random = random;;=;=A binary tree is given such that each node contains an additional random pointer which could point to any node in the tree or null.
+
+Return a deep copy of the tree.
+
+The tree is represented in the same input/output way as normal binary trees where each node is represented as a pair of [val, random_index] where:
+
+val: an integer representing Node.val
+random_index: the index of the node (in the input) where the random pointer points to, or null if it does not point to any node.
+You will be given the tree in class Node and you should return the cloned tree in class NodeCopy. NodeCopy class is just a clone of Node class with the same attributes and constructors.
+
+ 
+
+Example 1:
+
+
+Input: root = [[1,null],null,[4,3],[7,0]]
+Output: [[1,null],null,[4,3],[7,0]]
+Explanation: The original binary tree is [1,null,4,7].
+The random pointer of node one is null, so it is represented as [1, null].
+The random pointer of node 4 is node 7, so it is represented as [4, 3] where 3 is the index of node 7 in the array representing the tree.
+The random pointer of node 7 is node 1, so it is represented as [7, 0] where 0 is the index of node 1 in the array representing the tree.
+Example 2:
+
+
+Input: root = [[1,4],null,[1,0],null,[1,5],[1,5]]
+Output: [[1,4],null,[1,0],null,[1,5],[1,5]]
+Explanation: The random pointer of a node can be the node itself.
+Example 3:
+
+
+Input: root = [[1,6],[2,5],[3,4],[4,3],[5,2],[6,1],[7,0]]
+Output: [[1,6],[2,5],[3,4],[4,3],[5,2],[6,1],[7,0]]
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [0, 1000].
+1 <= Node.val <= 106;=;=https://leetcode.com/problems/clone-binary-tree-with-random-pointer/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/699562/java-easy-to-understand-by-leetcode07051-j8jy/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/814172/java-with-some-comments-bfs-hashmap-by-h-igob/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/7139770/on-m-solution-with-java-using-hashmap-by-7jvk/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/983359/easy-to-understand-2-pass-java-solution-67zjs/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/6456628/simple-bfs-by-beken-88ea/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/6703458/2-pass-dfs-dont-think-complex-by-darkrwe-xxqi/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/6703456/simple-2-pass-dfs-dont-think-complex-by-7uy0b/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/5524890/easy-intuitive-beginner-friendly-dfs-bea-jvtm/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/4573686/java-solution-by-ndsjqwbbb-r2ro/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/4814319/solution-generated-whilst-eating-biryani-bt0u/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/4762512/java-dfs-on-solution-by-tbekpro-jeut/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/4689288/java-easy-and-concise-solution-by-wj4507-rokb/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/4279949/simple-recursive-solution-java-beats-99-oeogg/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/3322633/simple-java-solution-with-hashmap-on-tim-j3ip/;;https://leetcode.com/problems/clone-binary-tree-with-random-pointer/solutions/3306556/java-deepcopy-treenode-by-map-by-bigani-jl8o/;;;=;==;=;=;

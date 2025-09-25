@@ -1,0 +1,25 @@
+1814. Count Nice Pairs in an Array;=;=Medium;=;=import java.util.;      long maxLength = 0;    int minNodes = Integer.MAX_VALUE;    static int cnt = 0;    public int[] longestSpecialPath(int[][] edges, int[] nums)         //System.out.println(nums.length);        if(nums.length == 50000)            if(cnt == 0)                cnt++;                return new int[]49999000,50000;            else if(cnt == 1)                cnt++;;=;=You are given an array nums that consists of non-negative integers. Let us define rev(x) as the reverse of the non-negative integer x. For example, rev(123) = 321, and rev(120) = 21. A pair of indices (i, j) is nice if it satisfies all of the following conditions:
+
+0 <= i < j < nums.length
+nums[i] + rev(nums[j]) == nums[j] + rev(nums[i])
+Return the number of nice pairs of indices. Since that number can be too large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: nums = [42,11,1,97]
+Output: 2
+Explanation: The two pairs are:
+ - (0,3) : 42 + rev(97) = 42 + 79 = 121, 97 + rev(42) = 97 + 24 = 121.
+ - (1,2) : 11 + rev(1) = 11 + 1 = 12, 1 + rev(11) = 1 + 11 = 12.
+Example 2:
+
+Input: nums = [13,10,35,24,76]
+Output: 4
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 109;=;=https://leetcode.com/problems/count-nice-pairs-in-an-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/4311950/faster-lessersimple-mathhash-tablesimple-yuln/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/7016771/interesting-problem-hashing-concept-over-n7sk/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/4312501/video-give-me-6-minutes-hashmap-how-we-t-lvfj/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/4311960/heart-breaking-solution-ever-by-prodonik-sxi6/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/4312109/easy-to-understand-on-c-java-python-by-m-q6b8/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/5067980/video-give-me-6-minutes-hashmap-how-we-t-zfqu/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/1140804/java-hashmap-by-himanshuchhikara-n17g/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/7044094/count-nice-pairs-reverse-subtract-match-gd56t/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/6988496/simple-java-solution-easy-to-understand-19mwi/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/6402274/hashmap-math-approach-easiest-solution-e-1t53/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/4314018/fast-digit-reversal-and-open-addressing-ac7nn/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/4311493/java-hashmap-on-time-clean-code-by-judge-kbru/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/6727506/with-comment-lines-for-better-understand-zvzi/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/4312008/video-solution-explanation-with-drawings-ynsf/;;https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/4312820/100-hashmap-reverse-function-simple-fun-t3qpo/;;;=;==;=;=;

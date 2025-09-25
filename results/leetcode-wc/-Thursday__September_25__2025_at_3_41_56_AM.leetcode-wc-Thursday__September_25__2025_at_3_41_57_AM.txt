@@ -1,0 +1,33 @@
+1306. Jump Game III;=;=Medium;=;=publicÊbooleanÊcanReach(int[]Êarr,ÊintÊstart);=;=Given an array of non-negative integers arr, you are initially positioned at startÊindex of the array. When you are at index i, you can jumpÊto i + arr[i] or i - arr[i], check if you can reachÊany index with value 0.
+
+Notice that you can not jump outside of the array at any time.
+
+Ê
+
+Example 1:
+
+Input: arr = [4,2,3,0,3,1,2], start = 5
+Output: true
+Explanation: 
+All possible ways to reach at index 3 with value 0 are: 
+index 5 -> index 4 -> index 1 -> index 3 
+index 5 -> index 6 -> index 4 -> index 1 -> index 3 
+Example 2:
+
+Input: arr = [4,2,3,0,3,1,2], start = 0
+Output: true 
+Explanation: 
+One possible way to reach at index 3 with value 0 is: 
+index 0 -> index 4 -> index 1 -> index 3
+Example 3:
+
+Input: arr = [3,0,2,1,2], start = 2
+Output: false
+Explanation: There is no way to reach at index 1 with value 0.
+Ê
+
+Constraints:
+
+1 <= arr.length <= 5 * 104
+0 <= arr[i] <Êarr.length
+0 <= start < arr.length;=;=https://leetcode.com/problems/jump-game-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/jump-game-iii/solutions/7135741/clean-java-code-by-faiz_ullah_khan-9dq0/;;https://leetcode.com/problems/jump-game-iii/solutions/1618905/javac-dfs-bfs-detailed-explanation-by-ch-n24q/;;https://leetcode.com/problems/jump-game-iii/solutions/6846556/jump-game-3-easy-code-99-by-abhi-0804-hd5v/;;https://leetcode.com/problems/jump-game-iii/solutions/1619067/javacpythonsimple-dfs-by-abhi9720-vbi2/;;https://leetcode.com/problems/jump-game-iii/solutions/953558/java-dfs-and-bfs-detailed-steps-1-liner-e6try/;;https://leetcode.com/problems/jump-game-iii/solutions/6453560/java-solution-using-queue-by-harsh123009-jlop/;;https://leetcode.com/problems/jump-game-iii/solutions/4517408/jump-game-iii-by-riya1202-1h6d/;;https://leetcode.com/problems/jump-game-iii/solutions/1103673/java-simple-recursive-soln-and-as-easy-a-24lm/;;https://leetcode.com/problems/jump-game-iii/solutions/7217067/java-on-by-bharadwajdaya-re74/;;https://leetcode.com/problems/jump-game-iii/solutions/7211628/simple-java-with-recursion-by-chauhanman-qqgk/;;https://leetcode.com/problems/jump-game-iii/solutions/3206594/compact-fast-and-easy-to-read-by-shashwa-p5p3/;;https://leetcode.com/problems/jump-game-iii/solutions/5904879/simple-approach-dfs-by-chetankumar191-q3bj/;;https://leetcode.com/problems/jump-game-iii/solutions/2233552/no-dp-try-bfs-by-abhay-k-93zo/;;https://leetcode.com/problems/jump-game-iii/solutions/7157981/solution-in-java-by-ptr2rtp-tk1w/;;https://leetcode.com/problems/jump-game-iii/solutions/1619589/java-solution-by-taniyafaisal-kdt5/;;;=;==;=;=;

@@ -1,0 +1,26 @@
+940. Distinct Subsequences II;=;=Hard;=;=public int distinctSubseqII(String s);=;=Given a string s, return the number of distinct non-empty subsequences of s. Since the answer may be very large, return it modulo 109 + 7.
+
+A subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not.
+ 
+
+Example 1:
+
+Input: s = "abc"
+Output: 7
+Explanation: The 7 distinct subsequences are "a", "b", "c", "ab", "ac", "bc", and "abc".
+Example 2:
+
+Input: s = "aba"
+Output: 6
+Explanation: The 6 distinct subsequences are "a", "b", "ab", "aa", "ba", and "aba".
+Example 3:
+
+Input: s = "aaa"
+Output: 3
+Explanation: The 3 distinct subsequences are "a", "aa" and "aaa".
+ 
+
+Constraints:
+
+1 <= s.length <= 2000
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/distinct-subsequences-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/distinct-subsequences-ii/solutions/4899641/java-clean-solution-with-detail-explanat-u35t/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/4120969/java-on-time-complexity-optimal-solution-nxmz/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/2016999/distinct-subsequences-ii-dynamic-program-0tet/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/1309073/java-solution-with-approach-on-time-and-bw7vw/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/2888119/java-simple-solution-using-recursion-mem-zdxn/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/3525291/solution-by-deleted_user-9vho/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/2284530/javasimple-easywith-commentsexplanationo-wury/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/1618820/java-time-on-dp-easy-solution-by-achyuta-oogv/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/2331000/java-fast-do-on-solution-by-avneetsingh2-t4mm/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/2395259/can-anyone-optimize-this-recursive-code-tccv2/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/7079836/thinking-process-language-agnostic-by-mo-916h/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/1463309/java-10-lines-5ms-o1-space-hashmap-by-ri-p2il/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/6250073/by-kgoutamkumar-a1on/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/6066375/java-with-dp-with-dry-run-by-aggarwalshu-7tj3/;;https://leetcode.com/problems/distinct-subsequences-ii/solutions/5965489/java-beginner-friendly-dynamic-programmi-yk8d/;;;=;==;=;=;

@@ -1,0 +1,24 @@
+32. Longest Valid Parentheses;=;=Hard;=;=public int longestValidParentheses(String s);=;=Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses substring.
+
+ 
+
+Example 1:
+
+Input: s = "(()"
+Output: 2
+Explanation: The longest valid parentheses substring is "()".
+Example 2:
+
+Input: s = ")()())"
+Output: 4
+Explanation: The longest valid parentheses substring is "()()".
+Example 3:
+
+Input: s = ""
+Output: 0
+ 
+
+Constraints:
+
+0 <= s.length <= 3 * 104
+s[i] is '(', or ')'.;=;=https://leetcode.com/problems/longest-valid-parentheses/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-valid-parentheses/solutions/5373015/stack-solution-video-explanation-by-niit-x3ct/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/7211721/32-longest-valid-parentheses-using-stack-i4u0/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/7178789/simple-java-solution-by-tejassinkar24-8p6b/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/6116188/0-ms-runtime-beats-100-user-code-idea-al-tr2n/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/5895691/simple-solution-with-explanation-by-tech-p4r6/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/3401956/100-detailed-explaination-with-pictures-xc4yq/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/7110512/java-c-beats-100-no-dp-still-optimal-on-ftcu1/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/6830763/easy-to-understand-simple-solution-using-eoao/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/14167/simple-java-solution-on-time-one-stack-b-wtqd/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/14278/two-java-solutions-with-explanation-stac-jaob/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/7145972/longest-parenthesis-easy-explained-by-ab-vob4/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/7048620/java-on-time-o1-space-easy-to-understand-c9sz/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/6806378/stack-based-solution-for-longest-valid-p-ceu2/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/6678346/super-easybeats-dp-stack-by-vikalptyagi-5x7g/;;https://leetcode.com/problems/longest-valid-parentheses/solutions/6903431/match-pop-win-elegant-stack-based-parent-hhl4/;;;=;==;=;=;

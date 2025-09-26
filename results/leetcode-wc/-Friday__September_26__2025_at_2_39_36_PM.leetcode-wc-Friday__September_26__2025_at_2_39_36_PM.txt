@@ -1,0 +1,41 @@
+726. Number of Atoms;=;=Hard;=;=public String countOfAtoms(String formula);=;=Given a string formula representing a chemical formula, return the count of each atom.
+
+The atomic element always starts with an uppercase character, then zero or more lowercase letters, representing the name.
+
+One or more digits representing that element's count may follow if the count is greater than 1. If the count is 1, no digits will follow.
+
+For example, "H2O" and "H2O2" are possible, but "H1O2" is impossible.
+Two formulas are concatenated together to produce another formula.
+
+For example, "H2O2He3Mg4" is also a formula.
+A formula placed in parentheses, and a count (optionally added) is also a formula.
+
+For example, "(H2O2)" and "(H2O2)3" are formulas.
+Return the count of all elements as a string in the following form: the first name (in sorted order), followed by its count (if that count is more than 1), followed by the second name (in sorted order), followed by its count (if that count is more than 1), and so on.
+
+The test cases are generated so that all the values in the output fit in a 32-bit integer.
+
+ 
+
+Example 1:
+
+Input: formula = "H2O"
+Output: "H2O"
+Explanation: The count of elements are {'H': 2, 'O': 1}.
+Example 2:
+
+Input: formula = "Mg(OH)2"
+Output: "H2MgO2"
+Explanation: The count of elements are {'H': 2, 'Mg': 1, 'O': 2}.
+Example 3:
+
+Input: formula = "K4(ON(SO3)2)2"
+Output: "K4N2O14S4"
+Explanation: The count of elements are {'K': 4, 'N': 2, 'O': 14, 'S': 4}.
+ 
+
+Constraints:
+
+1 <= formula.length <= 1000
+formula consists of English letters, digits, '(', and ')'.
+formula is always valid.;=;=https://leetcode.com/problems/number-of-atoms/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-atoms/solutions/5474227/explanations-no-one-will-give-youvery-de-vvnb/;;https://leetcode.com/problems/number-of-atoms/solutions/5472874/beats-100-easy-solution-with-explanation-2frr/;;https://leetcode.com/problems/number-of-atoms/solutions/5472883/bests-987-users-brutally-by-aim_high_212-t2n7/;;https://leetcode.com/problems/number-of-atoms/solutions/5472783/heave-implementation-stack-tutorial-numb-p8d3/;;https://leetcode.com/problems/number-of-atoms/solutions/5473970/0-ms-easy-beginner-friendly-and-recursiv-i611/;;https://leetcode.com/problems/number-of-atoms/solutions/5472856/detailed-easy-java-python3-c-solution-3-rp9w5/;;https://leetcode.com/problems/number-of-atoms/solutions/5472866/beast-100-in-deth-explanantion-java-c-py-x189/;;https://leetcode.com/problems/number-of-atoms/solutions/5473050/beats-100-java-python-by-kartikdevsharma-9srs/;;https://leetcode.com/problems/number-of-atoms/solutions/5473398/beats-100-easy-detailed-solution-with-ex-las2/;;https://leetcode.com/problems/number-of-atoms/solutions/880874/java-easy-no-stack-of-map-by-ducks_in_gr-fyo2/;;https://leetcode.com/problems/number-of-atoms/solutions/5473894/simple-java-code-by-abhinandannaik1717-91cp/;;https://leetcode.com/problems/number-of-atoms/solutions/5473303/java-clean-solution-with-detail-explanat-oooq/;;https://leetcode.com/problems/number-of-atoms/solutions/5477346/simple-explanation-by-aayushbharti-80og/;;https://leetcode.com/problems/number-of-atoms/solutions/5476519/simple-java-solution-using-stack-clear-c-t2bs/;;https://leetcode.com/problems/number-of-atoms/solutions/2243388/java-5ms-parsing-backwards-onlogn-by-stu-xq46/;;;=;==;=;=;

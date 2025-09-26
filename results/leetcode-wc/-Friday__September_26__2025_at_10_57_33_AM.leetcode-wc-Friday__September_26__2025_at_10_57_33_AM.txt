@@ -1,0 +1,44 @@
+3399. Smallest Substring With Identical Characters II;=;=Hard;=;=public int minLength(String s, int numOps);=;=You are given a binary string s of length n and an integer numOps.
+
+You are allowed to perform the following operation on s at most numOps times:
+
+Select any index i (where 0 <= i < n) and flip s[i]. If s[i] == '1', change s[i] to '0' and vice versa.
+You need to minimize the length of the longest substring of s such that all the characters in the substring are identical.
+
+Return the minimum length after the operations.
+
+ 
+
+Example 1:
+
+Input: s = "000001", numOps = 1
+
+Output: 2
+
+Explanation: 
+
+By changing s[2] to '1', s becomes "001001". The longest substrings with identical characters are s[0..1] and s[3..4].
+
+Example 2:
+
+Input: s = "0000", numOps = 2
+
+Output: 1
+
+Explanation: 
+
+By changing s[0] and s[2] to '1', s becomes "1010".
+
+Example 3:
+
+Input: s = "0101", numOps = 0
+
+Output: 1
+
+ 
+
+Constraints:
+
+1 <= n == s.length <= 105
+s consists only of '0' and '1'.
+0 <= numOps <= n;=;=https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/solutions/6177357/explained-java-100-faster-time-complexit-ft20/;;https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/solutions/6173242/binary-search-on-answer-onlogn-explained-639s/;;https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/solutions/6173139/java-implementation-accepted-beats-100-i-vksa/;;https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/solutions/6172692/on-logn-beats-100-think-inversed-by-whoa-5qgr/;;https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/solutions/6203620/using-binary-search-by-risabhuchiha-amq9/;;https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/solutions/6187509/javascript-java-binary-search-by-anna-hc-9hit/;;https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/solutions/6176550/java-binary-search-onlogn-by-aryonbe-ehgd/;;https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/solutions/6172774/beats-100-java-solution-optimum-solution-hqmp/;;;=;==;=;=;

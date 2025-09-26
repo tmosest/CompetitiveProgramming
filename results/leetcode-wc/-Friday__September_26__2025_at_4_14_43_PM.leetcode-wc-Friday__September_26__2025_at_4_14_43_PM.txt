@@ -1,0 +1,32 @@
+2326. Spiral Matrix IV;=;=Medium;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode()       ListNode(int val)  this.val = val;       ListNode(int val, ListNode next)  this.val = val; this.next = next;    class      public int[][] spiralMatrix(int m, int n, ListNode head);=;=You are given two integers m and n, which represent the dimensions of a matrix.
+
+You are also given the head of a linked list of integers.
+
+Generate an m x n matrix that contains the integers in the linked list presented in spiral order (clockwise), starting from the top-left of the matrix. If there are remaining empty spaces, fill them with -1.
+
+Return the generated matrix.
+
+ 
+
+Example 1:
+
+
+Input: m = 3, n = 5, head = [3,0,2,6,8,1,7,9,4,2,5,5,0]
+Output: [[3,0,2,6,8],[5,0,-1,-1,1],[5,2,4,9,7]]
+Explanation: The diagram above shows how the values are printed in the matrix.
+Note that the remaining spaces in the matrix are filled with -1.
+Example 2:
+
+
+Input: m = 1, n = 4, head = [0,1,2]
+Output: [[0,1,2,-1]]
+Explanation: The diagram above shows how the values are printed from left to right in the matrix.
+The last space in the matrix is set to -1.
+ 
+
+Constraints:
+
+1 <= m, n <= 105
+1 <= m * n <= 105
+The number of nodes in the list is in the range [1, m * n].
+0 <= Node.val <= 1000;=;=https://leetcode.com/problems/spiral-matrix-iv/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/spiral-matrix-iv/solutions/5758107/beats-100-explained-with-video-cjavapyth-f42b/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5759284/beats-98-best-easy-approach-for-all-lang-shkj/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5762045/easiestfaster-lesser-cpython3javacpython-az49/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/2309660/java-solution-runtime-8-ms-faster-than-9-t0fn/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5758747/simulate-the-spiral-filling-of-matrix-ja-41zj/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/6505895/simple-easy-to-understand-by-kdhakal-dn5n/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5759177/simple-solution-java-by-eshwaraprasad-f89s/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5758524/simple-java-c-code-by-abhinandannaik1717-g5e8/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5759358/efficient-solution-spiral-matrix-c-java-xyaxg/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/6795889/easy-solution-code-for-beginners-by-saga-i42v/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5772598/simple-code-easy-to-understand-beats-100-3o8z/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5761703/java-on2-beats-90-2d-matrix-logic-for-1-nsip1/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5758547/break-outer-by-mdsrrkhan-j4p3/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5759337/simple-java-solution-with-explanation-by-rbam/;;https://leetcode.com/problems/spiral-matrix-iv/solutions/5758256/dcc-992024-spiral-matrix-by-sajaltiwari0-ne1w/;;;=;==;=;=;

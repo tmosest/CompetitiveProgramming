@@ -1,0 +1,27 @@
+2442. Count Number of Distinct Integers After Reverse Operations;=;=Medium;=;=publicÊintÊcountDistinctIntegers(int[]Ênums);=;=You are given an array nums consisting of positive integers.
+
+You have to take each integer in the array, reverse its digits, and add it to the end of the array. You should apply this operation to the original integers in nums.
+
+Return the number of distinct integers in the final array.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,13,10,12,31]
+Output: 6
+Explanation: After including the reverse of each number, the resulting array is [1,13,10,12,31,1,31,1,21,13].
+The reversed integers that were added to the end of the array are underlined. Note that for the integer 10, after reversing it, it becomes 01 which is just 1.
+The number of distinct integers in this array is 6 (The numbers 1, 10, 12, 13, 21, and 31).
+Example 2:
+
+Input: nums = [2,2,2]
+Output: 1
+Explanation: After including the reverse of each number, the resulting array is [2,2,2,2,2,2].
+The number of distinct integers in this array is 1 (The number 2).
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/7188602/easy-code-for-solve-this-problem-by-4_k4-lh1a/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/7052846/count-number-of-distinct-integers-after-cjsi9/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/7104452/easy-java-solution-time-on-log-n-by-rajd-que7/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/7144226/4-line-code-by-vishalbhagat185-bclb/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/2708140/put-number-reverse-by-xxvvpp-sh2c/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/6830661/easiest-way-to-solve-problem-by-lucky_13-wd6y/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/6426947/easy-java-solution-for-beginners-by-arya-17p5/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/5565257/simple-code-easy-to-understand-beginner-tjosp/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/5353360/easytounderstand-by-therollno1-txkt/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/6745805/using-hashset-very-easy-try-this-most-si-zvzl/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/7218304/50ms-runtime-96-beats-on-complexity-java-mivv/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/7160902/beginner-friendlyeasy-to-understand-in-j-k5y6/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/7093226/solution-by-techxeno-lfzl/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/7034478/easy-solution-beginner-friendly-java-usi-kv4p/;;https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/solutions/5050841/no-need-of-array-modification-medium-aka-cq6x/;;;=;==;=;=;

@@ -1,0 +1,36 @@
+2565. Subsequence With the Minimum Score;=;=Hard;=;=public int minimumScore(String s, String t);=;=You are given two strings s and t.
+
+You are allowed to remove any number of characters from the string t.
+
+The score of the string is 0 if no characters are removed from the string t, otherwise:
+
+Let left be the minimum index among all removed characters.
+Let right be the maximum index among all removed characters.
+Then the score of the string is right - left + 1.
+
+Return the minimum possible score to make t a subsequence of s.
+
+A subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
+
+ 
+
+Example 1:
+
+Input: s = "abacaba", t = "bzaa"
+Output: 1
+Explanation: In this example, we remove the character "z" at index 1 (0-indexed).
+The string t becomes "baa" which is a subsequence of the string "abacaba" and the score is 1 - 1 + 1 = 1.
+It can be proven that 1 is the minimum score that we can achieve.
+Example 2:
+
+Input: s = "cde", t = "xyz"
+Output: 3
+Explanation: In this example, we remove characters "x", "y" and "z" at indices 0, 1, and 2 (0-indexed).
+The string t becomes "" which is a subsequence of the string "cde" and the score is 2 - 0 + 1 = 3.
+It can be proven that 3 is the minimum score that we can achieve.
+ 
+
+Constraints:
+
+1 <= s.length, t.length <= 105
+s and t consist of only lowercase English letters.;=;=https://leetcode.com/problems/subsequence-with-the-minimum-score/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3174041/right-and-left-on-by-votrubac-iu8t/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3174570/simple-prefix-and-suffix-by-virendra115-zfub/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3174256/java-clean-greedy-binary-search-solution-856o/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3176109/java-prefixsuffix-array-by-urbanturban-totk/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3174178/c-java-python3-binary-search-in-value-ra-wjdo/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3247392/java-left-right-by-lei38-rxjk/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/7105515/subsequence-with-the-minimum-score-by-ht-hvoo/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3195169/java-on-on-2-passes-by-yjianghong-4j8z/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/7125998/easy-solution-beats-almost-everyone-on-b-wi22/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/6627902/on-java-solution-matching-from-prefix-an-rwvp/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/5898114/subsequence-with-the-minimum-score-java-h1lt1/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3987054/greedy-largest-prefix-and-suffix-11ms-by-o4sj/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3216782/java-solution-using-binary-search-by-ris-3w0h/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3195115/two-pass-string-s-greedy-by-leegooo-bebv/;;https://leetcode.com/problems/subsequence-with-the-minimum-score/solutions/3181462/java-easy-explained-votrubacs-solution-e-anic/;;;=;==;=;=;

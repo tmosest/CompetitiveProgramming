@@ -1,0 +1,32 @@
+163. Missing Ranges;=;=Easy;=;=public List<List<Integer>> findMissingRanges(int[] nums, int lower, int upper);=;=You are given an inclusive range [lower, upper] and a sorted unique integer array nums, where all elements are within the inclusive range.
+
+A number x is considered missing if x is in the range [lower, upper] and x is not in nums.
+
+Return the shortest sorted list of ranges that exactly covers all the missing numbers. That is, no element of nums is included in any of the ranges, and each missing number is covered by one of the ranges.
+
+ 
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,3,50,75], lower = 0, upper = 99
+Output: [[2,2],[4,49],[51,74],[76,99]]
+Explanation: The ranges are:
+[2,2]
+[4,49]
+[51,74]
+[76,99]
+Example 2:
+
+Input: nums = [-1], lower = -1, upper = -1
+Output: []
+Explanation: There are no missing ranges since there are no missing numbers.
+ 
+
+Constraints:
+
+-109 <= lower <= upper <= 109
+0 <= nums.length <= 100
+lower <= nums[i] <= upper
+All the values of nums are unique.;=;=https://leetcode.com/problems/missing-ranges/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/missing-ranges/solutions/50476/accepted-java-solution-with-explanation-a08yv/;;https://leetcode.com/problems/missing-ranges/solutions/50475/my-concise-java-accepted-solution-by-jcc-xs14/;;https://leetcode.com/problems/missing-ranges/solutions/7218583/straightforward-solution-by-caoqingmvp-h0wv/;;https://leetcode.com/problems/missing-ranges/solutions/6031308/java-generic-approach-it-is-not-easy-any-k1pw/;;https://leetcode.com/problems/missing-ranges/solutions/3454025/simplest-java-beats-100-by-edwinjm-ztrz/;;https://leetcode.com/problems/missing-ranges/solutions/3400964/very-clear-100-java-solution-by-yangwudi-y4a7/;;https://leetcode.com/problems/missing-ranges/solutions/700444/java-simple-and-easy-to-implement-for-in-fi8n/;;https://leetcode.com/problems/missing-ranges/solutions/3646217/cjava-elegant-c-java-solutions-by-xiangc-e1zv/;;https://leetcode.com/problems/missing-ranges/solutions/5576242/java-easy-solution-by-ulyx-e5ip/;;https://leetcode.com/problems/missing-ranges/solutions/4374100/java-simple-beats-100-0-ms-with-explanat-zwz7/;;https://leetcode.com/problems/missing-ranges/solutions/50523/java-passed-all-testcase-using-long-by-s-yyh4/;;https://leetcode.com/problems/missing-ranges/solutions/7126125/time-efficience-close-to-0-ms-by-ramkoll-5ktg/;;https://leetcode.com/problems/missing-ranges/solutions/50481/java-short-and-easy-to-understand-with-s-crsm/;;https://leetcode.com/problems/missing-ranges/solutions/621426/generic-solution-100-for-missing-ranges-fy1vb/;;https://leetcode.com/problems/missing-ranges/solutions/6345931/simple-java-wo-helper-functions-by-dmgco-g414/;;;=;==;=;=;

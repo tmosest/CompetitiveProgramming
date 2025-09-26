@@ -1,0 +1,26 @@
+1582. Special Positions in a Binary Matrix;=;=Easy;=;=public int numSpecial(int[][] mat);=;=Given an m x n binary matrix mat, return the number of special positions in mat.
+
+A position (i, j) is called special if mat[i][j] == 1 and all other elements in row i and column j are 0 (rows and columns are 0-indexed).
+
+ 
+
+Example 1:
+
+
+Input: mat = [[1,0,0],[0,0,1],[1,0,0]]
+Output: 1
+Explanation: (1, 2) is a special position because mat[1][2] == 1 and all other elements in row 1 and column 2 are 0.
+Example 2:
+
+
+Input: mat = [[1,0,0],[0,1,0],[0,0,1]]
+Output: 3
+Explanation: (0, 0), (1, 1) and (2, 2) are special positions.
+ 
+
+Constraints:
+
+m == mat.length
+n == mat[i].length
+1 <= m, n <= 100
+mat[i][j] is either 0 or 1.;=;=https://leetcode.com/problems/special-positions-in-a-binary-matrix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4397677/beats-100-explained-with-video-check-row-0jq6/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4397604/video-give-me-5-minutes-how-we-think-abo-hrkz/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4397475/cjavapythonjavascript-2-approaches-expla-73ag/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4398071/faster-lesser2-methodsbrute-forcehashing-ibmj/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4397449/easy-solution-ever-java-c-python-js-c-ru-apwg/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4398011/100-beats-users-by-tc-java-c-python-rust-4e29/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/6959413/beats-93-by-alexander_sergeev-2mqd/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4397623/java-simple-clean-code-by-judgementdey-vts7/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4397712/beats-95-easy-to-understand-fully-explai-wc0a/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/6599555/easy-to-understand-solution-beginner-fri-wryl/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4398010/storing-each-row-and-col-sum-well-explai-nz5m/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/7212536/java-by-durgeshmusale80-v1fx/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4400246/java-approachbeginners-friendly-by-hithe-dpxs/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4397529/easy-beginner-by-abhishekkant135-tdi9/;;https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4398733/row-and-column-sums-java-c-by-fly_ing__r-xcrb/;;;=;==;=;=;

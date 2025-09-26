@@ -1,0 +1,47 @@
+3513. Number of Unique XOR Triplets I;=;=Medium;=;=publicÊintÊuniqueXorTriplets(int[]Ênums);=;=You are given an integer array nums of length n, where nums is a permutation of the numbers in the range [1, n].
+
+A XOR triplet is defined as the XOR of three elements nums[i] XOR nums[j] XOR nums[k] where i <= j <= k.
+
+Return the number of unique XOR triplet values from all possible triplets (i, j, k).
+
+Ê
+
+Example 1:
+
+Input: nums = [1,2]
+
+Output: 2
+
+Explanation:
+
+The possible XOR triplet values are:
+
+(0, 0, 0) ? 1 XOR 1 XOR 1 = 1
+(0, 0, 1) ? 1 XOR 1 XOR 2 = 2
+(0, 1, 1) ? 1 XOR 2 XOR 2 = 1
+(1, 1, 1) ? 2 XOR 2 XOR 2 = 2
+The unique XOR values are {1, 2}, so the output is 2.
+
+Example 2:
+
+Input: nums = [3,1,2]
+
+Output: 4
+
+Explanation:
+
+The possible XOR triplet values include:
+
+(0, 0, 0) ? 3 XOR 3 XOR 3 = 3
+(0, 0, 1) ? 3 XOR 3 XOR 1 = 1
+(0, 0, 2) ? 3 XOR 3 XOR 2 = 2
+(0, 1, 2) ? 3 XOR 1 XOR 2 = 0
+The unique XOR values are {0, 1, 2, 3}, so the output is 4.
+
+Ê
+
+Constraints:
+
+1 <= n == nums.length <= 105
+1 <= nums[i] <= n
+nums is a permutation of integers from 1 to n.;=;=https://leetcode.com/problems/number-of-unique-xor-triplets-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6643459/c-simple-bit-manipulation-math-by-mrigya-6dgd/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6643486/simple-math-o1-ans-2-nbase2-1-by-priyans-58pf/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6643735/python3-3-lines-bit_length-ts-99-99-by-s-y6rx/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6643510/javapython-3-2-liners-by-rock-ybet/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6643686/bitwise-or-beginner-friendly-better-than-6zds/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6644867/title-count-unique-xor-triplet-values-ma-9m8g/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6644580/simple-o1-solution-in-java-by-yaswanthke-q1zt/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6648621/100-beats-done-using-simple-observation-d2rib/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6646097/easy-yet-optimal-solution-please-do-upvo-1j88/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6644747/just-return-answer-math-bit-manipulation-miy8/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6646230/simple-bitmanipulation-beats-100-easy-to-1s00/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6645899/easy-code-in-java-using-basic-trick-by-y-me53/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6643494/100-affective-code-in-java-by-anuragk2-u93e/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6766043/java-3-lines-bit_length-ts-99-99-by-2e6q-99hz/;;https://leetcode.com/problems/number-of-unique-xor-triplets-i/solutions/6643537/simple-intution-based-on-2s-power-by-md5-zy7u/;;;=;==;=;=;

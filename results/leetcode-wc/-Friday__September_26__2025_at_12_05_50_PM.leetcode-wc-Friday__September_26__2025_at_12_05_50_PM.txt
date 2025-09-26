@@ -1,0 +1,26 @@
+1808. Maximize Number of Nice Divisors;=;=Hard;=;=public int maxNiceDivisors(int primeFactors);=;=You are given a positive integer primeFactors. You are asked to construct a positive integer n that satisfies the following conditions:
+
+The number of prime factors of n (not necessarily distinct) is at most primeFactors.
+The number of nice divisors of n is maximized. Note that a divisor of n is nice if it is divisible by every prime factor of n. For example, if n = 12, then its prime factors are [2,2,3], then 6 and 12 are nice divisors, while 3 and 4 are not.
+Return the number of nice divisors of n. Since that number can be too large, return it modulo 109 + 7.
+
+Note that a prime number is a natural number greater than 1 that is not a product of two smaller natural numbers. The prime factors of a number n is a list of prime numbers such that their product equals n.
+
+ 
+
+Example 1:
+
+Input: primeFactors = 5
+Output: 6
+Explanation: 200 is a valid value of n.
+It has 5 prime factors: [2,2,2,5,5], and it has 6 nice divisors: [10,20,40,50,100,200].
+There is not other value of n that has at most 5 prime factors and more nice divisors.
+Example 2:
+
+Input: primeFactors = 8
+Output: 18
+ 
+
+Constraints:
+
+1 <= primeFactors <= 109;=;=https://leetcode.com/problems/maximize-number-of-nice-divisors/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/7064545/java-solution-beats-100-easy-solution-by-c48w/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/1130980/java-simple-and-easy-to-understand-solut-kudv/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/4138727/accepted-java-code-beats-100-by-thilaknv-ltql/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/4791860/best-solution-logic-explained-beats-100-7dhx4/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/4541186/solution-beats-100-java-users-by-archive-yusw/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/3998737/beats-100-java-sol-by-gurkamal_brar-tirr/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/2425563/simple-java-solution-with-olog-n-by-2020-vbwy/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/5155492/java-100-3-is-the-modt-efficient-number-3whaw/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/4424505/wee-by-user3043sb-8lcm/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/4136548/optimize-solution-100-beats-by-shree_gov-8459/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/4041779/simple-java-solution-beats-100-by-tej-41-s9lb/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/3045168/solution-by-deleted_user-mxvh/;;https://leetcode.com/problems/maximize-number-of-nice-divisors/solutions/2718178/java-math-solution-maximize-number-of-ni-0zw8/;;;=;==;=;=;

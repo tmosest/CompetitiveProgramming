@@ -1,0 +1,31 @@
+1975. Maximum Matrix Sum;=;=Medium;=;=public long maxMatrixSum(int[][] matrix);=;=You are given an n x n integer matrix. You can do the following operation any number of times:
+
+Choose any two adjacent elements of matrix and multiply each of them by -1.
+Two elements are considered adjacent if and only if they share a border.
+
+Your goal is to maximize the summation of the matrix's elements. Return the maximum sum of the matrix's elements using the operation mentioned above.
+
+ 
+
+Example 1:
+
+
+Input: matrix = [[1,-1],[-1,1]]
+Output: 4
+Explanation: We can follow the following steps to reach sum equals 4:
+- Multiply the 2 elements in the first row by -1.
+- Multiply the 2 elements in the first column by -1.
+Example 2:
+
+
+Input: matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]
+Output: 16
+Explanation: We can follow the following step to reach sum equals 16:
+- Multiply the 2 last elements in the second row by -1.
+ 
+
+Constraints:
+
+n == matrix.length == matrix[i].length
+2 <= n <= 250
+-105 <= matrix[i][j] <= 105;=;=https://leetcode.com/problems/maximum-matrix-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-matrix-sum/solutions/6076882/very-simple-visualization-of-problem-wit-iw9u/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6728677/fast-and-clear-by-dima853-0xjg/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6077594/intution-observation-code-conversion-ide-jlx4/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6077090/simple-and-easy-solution-beats-100-c-jav-pe09/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6077014/maximize-matrix-sum-mathematical-optimiz-6a0x/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6078091/very-simple-beginner-friendly-simulation-jkj4/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6076869/oddeven-ve-check-solution-for-leetcode19-3v5k/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6076914/simple-pyjava-code-explained-mathgreedym-vrsy/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6077253/java-solution-by-saurav840963-f2ue/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6078003/handling-matrices-with-mixed-values-in-j-q7yg/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6077001/maximize-matrix-sum-with-optimal-sign-fl-ey2z/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6079111/java-beats-9919-by-mani-26-swer/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/1419035/java-explanation-simple-easy-and-concise-j2qk/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6078417/count-negative-numbers-only-by-samir04-gqo7/;;https://leetcode.com/problems/maximum-matrix-sum/solutions/6079475/java-solution-for-maximum-matrix-sum-pro-okz6/;;;=;==;=;=;

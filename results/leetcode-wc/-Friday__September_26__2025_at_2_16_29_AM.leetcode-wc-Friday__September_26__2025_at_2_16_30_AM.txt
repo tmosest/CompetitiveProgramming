@@ -1,0 +1,31 @@
+1231. Divide Chocolate;=;=Hard;=;=public int maximizeSweetness(int[] sweetness, int k);=;=You have one chocolate bar that consists of some chunks. Each chunk has its own sweetness given by the array sweetness.
+
+You want to share the chocolate with your k friends so you start cutting the chocolate bar into k + 1 pieces using k cuts, each piece consists of some consecutive chunks.
+
+Being generous, you will eat the piece with the minimum total sweetness and give the other pieces to your friends.
+
+Find the maximum total sweetness of the piece you can get by cutting the chocolate bar optimally.
+
+ 
+
+Example 1:
+
+Input: sweetness = [1,2,3,4,5,6,7,8,9], k = 5
+Output: 6
+Explanation: You can divide the chocolate to [1,2,3], [4,5], [6], [7], [8], [9]
+Example 2:
+
+Input: sweetness = [5,6,7,8,9,1,2,3,4], k = 8
+Output: 1
+Explanation: There is only one way to cut the bar into 9 pieces.
+Example 3:
+
+Input: sweetness = [1,2,2,1,2,2,1,2,2], k = 2
+Output: 5
+Explanation: You can divide the chocolate to [1,2,2], [1,2,2], [1,2,2]
+ 
+
+Constraints:
+
+0 <= k < sweetness.length <= 104
+1 <= sweetness[i] <= 105;=;=https://leetcode.com/problems/divide-chocolate/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/divide-chocolate/solutions/6859627/occurrence-bs-search-for-optimal-solutio-8mu5/;;https://leetcode.com/problems/divide-chocolate/solutions/3648036/java-binary-search-beats-100-by-ajp-jiaa-hnsw/;;https://leetcode.com/problems/divide-chocolate/solutions/1554392/java-simple-clean-solution-w-explanation-wvmb/;;https://leetcode.com/problems/divide-chocolate/solutions/1655650/bs-template-without-taking-care-of-left-tegj2/;;https://leetcode.com/problems/divide-chocolate/solutions/1658195/java-almost-identical-to-410-1011-just-b-t4qr/;;https://leetcode.com/problems/divide-chocolate/solutions/413310/java-2ms-short-binary-search-solution-by-yavi/;;https://leetcode.com/problems/divide-chocolate/solutions/1559638/java-binary-search-by-log2030-v81f/;;https://leetcode.com/problems/divide-chocolate/solutions/6900471/binary-search-on-answer-range-explained-duehg/;;https://leetcode.com/problems/divide-chocolate/solutions/1562702/simple-java-bs-by-kukumbr-xj8y/;;https://leetcode.com/problems/divide-chocolate/solutions/6726431/java-solution-by-complex42267-1man/;;https://leetcode.com/problems/divide-chocolate/solutions/6723253/solution-using-binary-search-java-by-dav-ul46/;;https://leetcode.com/problems/divide-chocolate/solutions/5541769/java-binary-search-onlogn-by-surajthapli-v0x8/;;https://leetcode.com/problems/divide-chocolate/solutions/6157147/easy-java-solution-by-ezaz_nitd-q4p0/;;https://leetcode.com/problems/divide-chocolate/solutions/5852111/simple-java-solution-by-sakshikishore-fwbf/;;https://leetcode.com/problems/divide-chocolate/solutions/5393311/binary-search-by-sherlyh-pkwn/;;;=;==;=;=;

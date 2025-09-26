@@ -1,0 +1,24 @@
+2674. Split a Circular Linked List;=;=Medium;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode()       ListNode(int val)  this.val = val;       ListNode(int val, ListNode next)  this.val = val; this.next = next;    class      public ListNode[] splitCircularLinkedList(ListNode list);=;=Given a circular linked list list of positive integers, your task is to split it into 2 circular linked lists so that the first one contains the first half of the nodes in list (exactly ceil(list.length / 2) nodes) in the same order they appeared in list, and the second one contains the rest of the nodes in list in the same order they appeared in list.
+
+Return an array answer of length 2 in which the first element is a circular linked list representing the first half and the second element is a circular linked list representing the second half.
+
+A circular linked list is a normal linked list with the only difference being that the last node's next node, is the first node.
+ 
+
+Example 1:
+
+Input: nums = [1,5,7]
+Output: [[1,5],[7]]
+Explanation: The initial list has 3 nodes so the first half would be the first 2 elements since ceil(3 / 2) = 2 and the rest which is 1 node is in the second half.
+Example 2:
+
+Input: nums = [2,6,1,5]
+Output: [[2,6],[1,5]]
+Explanation: The initial list has 4 nodes so the first half would be the first 2 elements since ceil(4 / 2) = 2 and the rest which is 2 nodes are in the second half.
+ 
+
+Constraints:
+
+The number of nodes in list is in the range [2, 105]
+0 <= Node.val <= 109
+LastNode.next = FirstNode where LastNode is the last node of the list and FirstNode is the first one;=;=https://leetcode.com/problems/split-a-circular-linked-list/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/split-a-circular-linked-list/solutions/3509475/linear-scan-c-java-python3-by-cpcs-tybd/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/3972992/simple-java-solution-with-detailed-expla-beq3/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/3581509/simple-java-solution-beats-100-by-rahulv-8e1b/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/3509592/one-pass-slow-and-fast-pointers-by-qiuwu-1k6f/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/6179722/fast-and-slow-by-juzerali-y299/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/6080745/java-easy-100-solution-by-ytchouar-1474/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/6341925/java-solution-beats-100-by-puneet545-300r/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/5754547/two-pointer-solution-for-beginners-beats-xo6t/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/5423911/simple-java-solution-that-beats-100-by-l-yodo/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/4907959/use-fast-and-slow-pointer-java-by-nirbha-7bcp/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/4751862/java-on-solution-by-tbekpro-y4v7/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/4280376/java-slow-and-fast-pointers-by-lacfo-sn7r/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/4061714/java-python3-c-solution-two-pass-by-rusl-m8tv/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/4020725/java-2ms-beats-8947-uses-slow-and-fast-p-kgl4/;;https://leetcode.com/problems/split-a-circular-linked-list/solutions/4012062/simple-java-solution-by-sakshikishore-b12j/;;;=;==;=;=;

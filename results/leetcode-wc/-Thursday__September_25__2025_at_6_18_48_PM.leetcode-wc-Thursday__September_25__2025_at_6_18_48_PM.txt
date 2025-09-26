@@ -1,0 +1,30 @@
+952. Largest Component Size by Common Factor;=;=Hard;=;=public int largestComponentSize(int[] nums);=;=You are given an integer array of unique positive integers nums. Consider the following graph:
+
+There are nums.length nodes, labeled nums[0] to nums[nums.length - 1],
+There is an undirected edge between nums[i] and nums[j] if nums[i] and nums[j] share a common factor greater than 1.
+Return the size of the largest connected component in the graph.
+
+ 
+
+Example 1:
+
+
+Input: nums = [4,6,15,35]
+Output: 4
+Example 2:
+
+
+Input: nums = [20,50,9,63]
+Output: 2
+Example 3:
+
+
+Input: nums = [2,3,6,7,4,12,21,39]
+Output: 8
+ 
+
+Constraints:
+
+1 <= nums.length <= 2 * 104
+1 <= nums[i] <= 105
+All the values of nums are unique.;=;=https://leetcode.com/problems/largest-component-size-by-common-factor/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/1592773/java-solution-using-disjoint-set-union-h-8or6/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/7204763/largest-component-size-by-common-factor-t1yjx/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/6532567/easy-approach-and-easy-to-understand90-b-wkhv/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/6408647/absolute-beginner-level-solution-java-so-2l4q/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/3529307/solution-by-deleted_user-7xf5/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/2645270/union-by-size-prime-factorization-by-kou-wx9h/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/3728944/java-optimized-solution-disjoint-set-uni-1s7q/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/1598090/java-using-union-find-on-sqrtm-by-feysel-f39d/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/821306/easy-java-implementation-by-anu1234-pu72/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/1593177/java-simple-solution-by-abhijeetmallick2-n8q9/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/6495032/graph-prime-factors-by-erwinschrodinger-kqhy/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/5894650/largest-component-size-by-common-factor-3p3fy/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/5728806/comically-slow-but-100-beat-on-memory-ds-8000/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/5069598/union-find-dsu-hash-java-by-akhil_pathiv-tcnm/;;https://leetcode.com/problems/largest-component-size-by-common-factor/solutions/4357924/my-java-53ms-solution-93-faster-by-ragha-y37j/;;;=;==;=;=;

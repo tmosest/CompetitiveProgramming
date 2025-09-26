@@ -1,0 +1,38 @@
+1955. Count Number of Special Subsequences;=;=Hard;=;=public int countSpecialSubsequences(int[] nums);=;=A sequence is special if it consists of a positive number of 0s, followed by a positive number of 1s, then a positive number of 2s.
+
+For example, [0,1,2] and [0,0,1,1,1,2] are special.
+In contrast, [2,1,0], [1], and [0,1,2,0] are not special.
+Given an array nums (consisting of only integers 0, 1, and 2), return the number of different subsequences that are special. Since the answer may be very large, return it modulo 109 + 7.
+
+A subsequence of an array is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements. Two subsequences are different if the set of indices chosen are different.
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,2,2]
+Output: 3
+Explanation: The special subsequences are bolded [0,1,2,2], [0,1,2,2], and [0,1,2,2].
+Example 2:
+
+Input: nums = [2,2,0,0]
+Output: 0
+Explanation: There are no special subsequences in [2,2,0,0].
+Example 3:
+
+Input: nums = [0,1,2,0,1,2]
+Output: 7
+Explanation: The special subsequences are bolded:
+- [0,1,2,0,1,2]
+- [0,1,2,0,1,2]
+- [0,1,2,0,1,2]
+- [0,1,2,0,1,2]
+- [0,1,2,0,1,2]
+- [0,1,2,0,1,2]
+- [0,1,2,0,1,2]
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 2;=;=https://leetcode.com/problems/count-number-of-special-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-number-of-special-subsequences/solutions/1376601/simple-solution-explained-on-by-akshay04-07ip/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/6303437/dp-solution-with-detailed-approach-java-ptfzc/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/3680150/pick-or-not-pick-solutionjava-by-abhinay-mgrk/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/1375513/java-recursive-dp-solution-by-legit_123-i5ww/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/1519152/easy-java-on-solution-fully-explained-by-56t8/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/1630846/java-on-dp-solution-by-shivambhilarkar-yde3/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/3358350/easy-dp-solution-by-anubhav_chauhan_3086-njih/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/4878771/can-anybody-convert-my-solution-to-top-d-njpp/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/4993434/java-on-with-more-detailed-explanation-b-waoy/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/4589013/too-busy-to-optimise-by-user3043sb-zppy/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/4350184/accepted-java-code-beats-90-by-thilaknv-gd10/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/4085733/java-by-gadmo-vfil/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/3150627/my-solution-will-clear-your-conceptsdp-b-spa7/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/3150622/my-solution-will-clear-your-conceptsdp-b-ubm9/;;https://leetcode.com/problems/count-number-of-special-subsequences/solutions/1498328/simple-easy-to-understand-java-solution-4pgkd/;;;=;==;=;=;

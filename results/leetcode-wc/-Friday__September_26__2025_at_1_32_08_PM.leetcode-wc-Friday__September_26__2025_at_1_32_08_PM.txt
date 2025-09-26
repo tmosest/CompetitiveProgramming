@@ -1,0 +1,57 @@
+2856. Minimum Array Length After Pair Removals;=;=Medium;=;=public int minLengthAfterRemovals(List<Integer> nums);=;=Given an integer array num sorted in non-decreasing order.
+
+You can perform the following operation any number of times:
+
+Choose two indices, i and j, where nums[i] < nums[j].
+Then, remove the elements at indices i and j from nums. The remaining elements retain their original order, and the array is re-indexed.
+Return the minimum length of nums after applying the operation zero or more times.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4]
+
+Output: 0
+
+Explanation:
+
+
+
+Example 2:
+
+Input: nums = [1,1,2,2,3,3]
+
+Output: 0
+
+Explanation:
+
+
+
+Example 3:
+
+Input: nums = [1000000000,1000000000]
+
+Output: 2
+
+Explanation:
+
+Since both numbers are equal, they cannot be removed.
+
+Example 4:
+
+Input: nums = [2,3,4,4,4]
+
+Output: 1
+
+Explanation:
+
+
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109
+nums is sorted in non-decreasing order.;=;=https://leetcode.com/problems/minimum-array-length-after-pair-removals/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4052177/two-pointer-approach-easy-solution-by-an-ckv6/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4052067/easy-priority-queue-by-harshitmaurya-35ld/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4059768/c-java-python-two-pointer-approach-by-ma-anol/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4053053/thought-process-with-drawing-on-o1-by-_s-a1gr/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/7214503/easycode-iiii-by-abhisheksingh13052004-tkcz/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4052208/on-time-no-extra-space-simple-explanatio-8wjz/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4052643/easy-solutioncjava-by-apurvjain7827-ihy6/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4052648/easiest-and-best-method-java-beginner-fr-kfuj/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4055120/java-2-pointer-approach-by-breaking-nums-le4s/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4059341/java-priorityqueue-frequency-based-appro-l2sx/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4052884/best-method-java-full-explanation-beginn-i9bp/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4052074/pythonjava-two-pointers-by-akaghosting-j2op/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4052255/intuition-simple-java-solution-by-theary-dcqs/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/4134880/accepted-java-code-on-by-thilaknv-q0fv/;;https://leetcode.com/problems/minimum-array-length-after-pair-removals/solutions/6680848/java_solution-by-rishank1-uv3x/;;;=;==;=;=;

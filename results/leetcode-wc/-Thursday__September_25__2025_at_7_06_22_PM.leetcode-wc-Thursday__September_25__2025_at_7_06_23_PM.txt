@@ -1,0 +1,20 @@
+1044. Longest Duplicate Substring;=;=Hard;=;=public String longestDupSubstring(String s);=;=Given a string s, consider all duplicated substrings: (contiguous) substrings of s that occur 2 or more times. The occurrences may overlap.
+
+Return any duplicated substring that has the longest possible length. If s does not have a duplicated substring, the answer is "".
+
+ 
+
+Example 1:
+
+Input: s = "banana"
+Output: "ana"
+Example 2:
+
+Input: s = "abcd"
+Output: ""
+ 
+
+Constraints:
+
+2 <= s.length <= 3 * 104
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/longest-duplicate-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-duplicate-substring/solutions/695419/java-on-log-n-rabin-karp-binary-search-b-347u/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/1132925/java-solution-by-himanshuchhikara-010t/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/5044194/faster-binary-search-rabin-karp-rolling-d5gqt/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/1548642/java-18ms-100-outdated-now-tle-no-binary-h47e/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/695214/java-binary-search-on-log-n-average-with-shzm/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/1287103/java-dp-rolling-hash-binary-search-by-pr-jbry/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/1548136/java-2-not-accepted-solutions-dp-binary-ljc98/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/1548016/java-hashset-solution-by-adityasahay14-bi2n/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/1549469/java-binary-search-rabin-karp-string-mat-y639/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/695003/super-simple-using-suffix-array-java-pyt-vbtv/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/409941/suffix-trie-inspired-java-solution-that-5hodq/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/700731/java-suffix-array-implementation-memory-yqgqm/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/2753902/java-solution-binary-search-rabin-karp-o-e62e/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/2005281/longest-duplicate-substring-java-rolling-kxn3/;;https://leetcode.com/problems/longest-duplicate-substring/solutions/700700/java-brute-force-simple-to-understand-tl-tv3j/;;;=;==;=;=;

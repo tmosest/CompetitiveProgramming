@@ -1,0 +1,27 @@
+1156. Swap For Longest Repeated Character Substring;=;=Medium;=;=public int maxRepOpt1(String text);=;=You are given a string text. You can swap two of the characters in the text.
+
+Return the length of the longest substring with repeated characters.
+
+ 
+
+Example 1:
+
+Input: text = "ababa"
+Output: 3
+Explanation: We can swap the first 'b' with the last 'a', or the last 'b' with the first 'a'. Then, the longest repeated character substring is "aaa" with length 3.
+Example 2:
+
+Input: text = "aaabaaa"
+Output: 6
+Explanation: Swap 'b' with the last 'a' (or the first 'a'), and we get longest repeated character substring "aaaaaa" with length 6.
+Example 3:
+
+Input: text = "aaaaa"
+Output: 5
+Explanation: No need to swap, longest repeated character substring is "aaaaa" with length is 5.
+ 
+
+Constraints:
+
+1 <= text.length <= 2 * 104
+text consist of lowercase English characters only.;=;=https://leetcode.com/problems/swap-for-longest-repeated-character-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/7098799/most-intitutive-approach-by-amyy_1256-65b1/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/6367436/java-optimised-by-dsuryaprakash89-d40j/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/357714/simple-java-solution-similar-to-424-usin-ceby/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/1252650/easy-to-understand-on-begineer-friendly-fglpu/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/4964671/java-solution-04022024-beats-8922-by-wol-f1ky/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/3112505/hashmap-two-pointers-by-irving09-hyx1/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/5932647/sliding-window-technique-by-hokteyash-5u0h/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/912864/concise-java-solution-on-via-sliding-win-n7vj/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/1307386/java-on-suffixstreak-technique-by-000pri-yywj/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/5193238/simple-java-solution-by-sakshikishore-ofoy/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/762022/java-recursive-solution-runtime-4-ms-fas-ygdz/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/6747845/most-intuitive-and-simple-explaination-b-d3es/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/6445545/using-hashmap-by-lavishsheth127-bztj/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/6290477/easy-and-short-java-solution-time-on-spa-3yid/;;https://leetcode.com/problems/swap-for-longest-repeated-character-substring/solutions/6266179/1156-swap-for-longest-repeated-character-d8fh/;;;=;==;=;=;

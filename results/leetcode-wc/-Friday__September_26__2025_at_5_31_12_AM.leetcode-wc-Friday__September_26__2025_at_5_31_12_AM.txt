@@ -1,0 +1,51 @@
+3529. Count Cells in Overlapping Horizontal and Vertical Substrings;=;=Medium;=;=public int countCells(char[][] grid, String pattern);=;=You are given an m x n matrix grid consisting of characters and a string pattern.
+
+A horizontal substring is a contiguous sequence of characters read from left to right. If the end of a row is reached before the substring is complete, it wraps to the first column of the next row and continues as needed. You do not wrap from the bottom row back to the top.
+
+A vertical substring is a contiguous sequence of characters read from top to bottom. If the bottom of a column is reached before the substring is complete, it wraps to the first row of the next column and continues as needed. You do not wrap from the last column back to the first.
+
+Count the number of cells in the matrix that satisfy the following condition:
+
+The cell must be part of at least one horizontal substring and at least one vertical substring, where both substrings are equal to the given pattern.
+Return the count of these cells.
+
+ 
+
+Example 1:
+
+
+Input: grid = [["a","a","c","c"],["b","b","b","c"],["a","a","b","a"],["c","a","a","c"],["a","a","b","a"]], pattern = "abaca"
+
+Output: 1
+
+Explanation:
+
+The pattern "abaca" appears once as a horizontal substring (colored blue) and once as a vertical substring (colored red), intersecting at one cell (colored purple).
+
+Example 2:
+
+
+Input: grid = [["c","a","a","a"],["a","a","b","a"],["b","b","a","a"],["a","a","b","a"]], pattern = "aba"
+
+Output: 4
+
+Explanation:
+
+The cells colored above are all part of at least one horizontal and one vertical substring matching the pattern "aba".
+
+Example 3:
+
+Input: grid = [["a"]], pattern = "a"
+
+Output: 1
+
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 1000
+1 <= m * n <= 105
+1 <= pattern.length <= m * n
+grid and pattern consist of only lowercase English letters.;=;=https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6689452/robin-karp-o-n-m-by-ankith_kumar-a8up/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6707096/kmp-based-pattern-intersection-detection-jm8q/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6690920/simple-java-solutionbeats-100-users-by-a-cmwp/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6689349/double-vertical-and-horizontal-kmp-by-ni-2yit/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6689632/easy-to-understand-java-kmp-counting-omn-3hi3/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6689659/z-algorithm-c-by-jay_1410-xb4a/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/7085355/beats-96-kmp-difference-array-by-flash-fu1w/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6690899/beats-100-by-madhukumarlingudu-w7jf/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6769761/kmp-by-vignatus-2hds/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6713116/share-my-java-solution-use-z-algorithm-a-bi5o/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6774124/kmp-sweep-line-omnp-by-saketcodescribe-40nt/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6710984/kmp-java-onm-by-ivakhnenko-foj8/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6709280/kmp-algorithm-after-that-just-matching-b-x3zo/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6709279/kmp-algorithm-after-that-just-matching-b-5v30/;;https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/solutions/6702858/java-solution-intuitive-clean-code-kmp-a-u6nj/;;;=;==;=;=;

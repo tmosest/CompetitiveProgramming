@@ -1,0 +1,27 @@
+2516. Take K of Each Character From Left and Right;=;=Medium;=;=public int takeCharacters(String s, int k);=;=You are given a string s consisting of the characters 'a', 'b', and 'c' and a non-negative integer k. Each minute, you may take either the leftmost character of s, or the rightmost character of s.
+
+Return the minimum number of minutes needed for you to take at least k of each character, or return -1 if it is not possible to take k of each character.
+
+ 
+
+Example 1:
+
+Input: s = "aabaaaacaabc", k = 2
+Output: 8
+Explanation: 
+Take three characters from the left of s. You now have two 'a' characters, and one 'b' character.
+Take five characters from the right of s. You now have four 'a' characters, two 'b' characters, and two 'c' characters.
+A total of 3 + 5 = 8 minutes is needed.
+It can be proven that 8 is the minimum number of minutes needed.
+Example 2:
+
+Input: s = "a", k = 1
+Output: -1
+Explanation: It is not possible to take one 'b' or 'c' so return -1.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of only the letters 'a', 'b', and 'c'.
+0 <= k <= s.length;=;=https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6063845/beats-100-video-full-explain-list-most-c-empk/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6064203/easy-solution-beats-100-two-pointer-c-ja-im5r/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6066514/recursion-to-optimal-sliding-window-begi-5b1i/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6064627/easy-sliding-window-solution-in-javac-on-z8n5/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/2948012/easy-to-understand-java-solution-sliding-fyrj/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6064600/java-sliding-window-easy-solution-by-hit-pa7q/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6931850/java-hashmap-fixed-array-explained-by-te-6qus/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6064691/java-solution-by-mani-26-wgeb/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6101288/simpill-super-easy-beginners-by-codewith-5fng/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6064063/simple-java-solution-by-harsh__005-jydv/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6064645/sliding-window-sliding-window-frequency-1c2xq/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6064234/java-solution-for-take-k-of-each-charact-wwsb/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6261332/simple-intuitive-by-richardleee-ilk5/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6064001/java-sliding-window-easy-to-understand-d-r90h/;;https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/solutions/6065284/easy-java-solution-by-narendra_sai-3kse/;;;=;==;=;=;

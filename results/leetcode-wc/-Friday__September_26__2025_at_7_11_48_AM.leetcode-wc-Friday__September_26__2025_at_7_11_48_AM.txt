@@ -1,0 +1,36 @@
+3063. Linked List Frequency;=;=Easy;=;=/ÊÊDefinitionÊforÊsingly-linkedÊlist.ÊÊpublicÊÊListNodeÊÊÊÊÊÊÊintÊval;ÊÊÊÊÊÊListNodeÊnext;ÊÊÊÊÊÊListNode()ÊÊÊÊÊÊÊListNode(intÊval)ÊÊthis.valÊ=Êval;ÊÊÊÊÊÊÊListNode(intÊval,ÊListNodeÊnext)ÊÊthis.valÊ=Êval;Êthis.nextÊ=Ênext;ÊÊÊÊclassÊÊÊÊÊÊpublicÊListNodeÊfrequenciesOfElements(ListNodeÊhead);=;=Given the head of a linked list containing k distinct elements, return the head to a linked list of length k containing the frequency of each distinct element in the given linked list in any order.
+
+Ê
+
+Example 1:
+
+Input: head = [1,1,2,1,2,3]
+
+Output: [3,2,1]
+
+Explanation: There are 3 distinct elements in the list. The frequency of 1 is 3, the frequency of 2 is 2 and the frequency of 3 is 1. Hence, we return 3 -> 2 -> 1.
+
+Note that 1 -> 2 -> 3, 1 -> 3 -> 2, 2 -> 1 -> 3, 2 -> 3 -> 1, and 3 -> 1 -> 2 are also valid answers.
+
+Example 2:
+
+Input: head = [1,1,2,2,2]
+
+Output: [2,3]
+
+Explanation: There are 2 distinct elements in the list. The frequency of 1 is 2 and the frequency of 2 is 3. Hence, we return 2 -> 3.
+
+Example 3:
+
+Input: head = [6,5,4,3,2,1]
+
+Output: [1,1,1,1,1,1]
+
+Explanation: There are 6 distinct elements in the list. The frequency of each of them is 1. Hence, we return 1 -> 1 -> 1 -> 1 -> 1 -> 1.
+
+Ê
+
+Constraints:
+
+The number of nodes in the list is in the range [1, 105].
+1 <= Node.val <= 105;=;=https://leetcode.com/problems/linked-list-frequency/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/linked-list-frequency/solutions/4805285/java-on-hashmap-100-faster-solution-by-t-ltxi/;;https://leetcode.com/problems/linked-list-frequency/solutions/4856190/java-javascript-typescript-c-c-solution-326hp/;;https://leetcode.com/problems/linked-list-frequency/solutions/4798147/pythonjava-easy-to-understand-by-akaghos-rqfp/;;https://leetcode.com/problems/linked-list-frequency/solutions/6681589/hash-map-simple-by-prashant404-515r/;;https://leetcode.com/problems/linked-list-frequency/solutions/6241913/straightforward-java-solution-using-hash-lc77/;;https://leetcode.com/problems/linked-list-frequency/solutions/5764554/java-easy-to-understand-solution-by-devl-lybx/;;https://leetcode.com/problems/linked-list-frequency/solutions/5763257/simple-java-solution-by-sakshikishore-e1sf/;;https://leetcode.com/problems/linked-list-frequency/solutions/5623300/java-using-key-value-pair-by-getthatmone-9mwe/;;https://leetcode.com/problems/linked-list-frequency/solutions/4912541/quick-solution-using-hashmap-by-shravani-d7rq/;;https://leetcode.com/problems/linked-list-frequency/solutions/4907854/easiest-solution-using-hashmap-by-oz7-84lh/;;https://leetcode.com/problems/linked-list-frequency/solutions/4900304/java-easy-100-solution-using-dummy-node-u6j5l/;;https://leetcode.com/problems/linked-list-frequency/solutions/4870015/easy-and-clean-java-solution-by-pelmegov-xqib/;;https://leetcode.com/problems/linked-list-frequency/solutions/4859744/java-solution-by-rimberse-9mr9/;;https://leetcode.com/problems/linked-list-frequency/solutions/4853417/java-3ms-on-100-no-hashmap-by-dudeandcat-zi3t/;;https://leetcode.com/problems/linked-list-frequency/solutions/4849161/java-solution-with-hashmap-35-ms-by-gold-7lr6/;;;=;==;=;=;

@@ -1,0 +1,44 @@
+3623. Count Number of Trapezoids I;=;=Medium;=;=public int countTrapezoids(int[][] points);=;=You are given a 2D integer array points, where points[i] = [xi, yi] represents the coordinates of the ith point on the Cartesian plane.
+
+A horizontal trapezoid is a convex quadrilateral with at least one pair of horizontal sides (i.e. parallel to the x-axis). Two lines are parallel if and only if they have the same slope.
+
+Return the number of unique horizontal trapezoids that can be formed by choosing any four distinct points from points.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: points = [[1,0],[2,0],[3,0],[2,2],[3,2]]
+
+Output: 3
+
+Explanation:
+
+
+
+There are three distinct ways to pick four points that form a horizontal trapezoid:
+
+Using points [1,0], [2,0], [3,2], and [2,2].
+Using points [2,0], [3,0], [3,2], and [2,2].
+Using points [1,0], [3,0], [3,2], and [2,2].
+Example 2:
+
+Input: points = [[0,0],[1,0],[0,1],[2,1]]
+
+Output: 1
+
+Explanation:
+
+
+
+There is only one horizontal trapezoid that can be formed.
+
+ 
+
+Constraints:
+
+4 <= points.length <= 105
+–108 <= xi, yi <= 108
+All points are pairwise distinct.;=;=https://leetcode.com/problems/count-number-of-trapezoids-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980311/on-solution-using-hashmap-c-python-java-8p00z/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980353/prefix-sum-efficient-solution-c-by-himan-d9d5/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980339/hashmap-on-by-gitchuan-zvz8/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980697/100-accepted-beginner-friendle-java-fast-wzxc/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980404/pure-maths-easiest-explanation-java-by-p-d2sk/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6983528/count-trapezoids-approaches-explained-br-m7wk/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/7002756/approach-onk-hashmap-thought-process-exp-0t3c/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980516/java-beats-100-by-ritik-roushan-rtmu/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6982520/simple-java-code-on-beats-100-by-harsh_r-d326/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980783/easy-approach-with-prefix-sum-by-v-a-i-b-d3a5/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6999641/easy-and-very-much-intuitive-solution-be-vx6d/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980547/simplest-solution-that-beats-100-in-time-9mgo/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/7000161/let-use-math-efficient-on-solution-by-3a-oz4c/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6983250/simple-and-easy-use-of-hashmap-100-beats-klws/;;https://leetcode.com/problems/count-number-of-trapezoids-i/solutions/6980319/combinations-easy-straight-forward-by-pa-dznm/;;;=;==;=;=;

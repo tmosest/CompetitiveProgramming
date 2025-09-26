@@ -1,0 +1,64 @@
+3548. Equal Sum Grid Partition II;=;=Hard;=;=public boolean canPartitionGrid(int[][] grid);=;=You are given an m x n matrix grid of positive integers. Your task is to determine if it is possible to make either one horizontal or one vertical cut on the grid such that:
+
+Each of the two resulting sections formed by the cut is non-empty.
+The sum of elements in both sections is equal, or can be made equal by discounting at most one single cell in total (from either section).
+If a cell is discounted, the rest of the section must remain connected.
+Return true if such a partition exists; otherwise, return false.
+
+Note: A section is connected if every cell in it can be reached from any other cell by moving up, down, left, or right through other cells in the section.
+
+ 
+
+Example 1:
+
+Input: grid = [[1,4],[2,3]]
+
+Output: true
+
+Explanation:
+
+
+
+A horizontal cut after the first row gives sums 1 + 4 = 5 and 2 + 3 = 5, which are equal. Thus, the answer is true.
+Example 2:
+
+Input: grid = [[1,2],[3,4]]
+
+Output: true
+
+Explanation:
+
+
+
+A vertical cut after the first column gives sums 1 + 3 = 4 and 2 + 4 = 6.
+By discounting 2 from the right section (6 - 2 = 4), both sections have equal sums and remain connected. Thus, the answer is true.
+Example 3:
+
+Input: grid = [[1,2,4],[2,3,5]]
+
+Output: false
+
+Explanation:
+
+
+
+A horizontal cut after the first row gives 1 + 2 + 4 = 7 and 2 + 3 + 5 = 10.
+By discounting 3 from the bottom section (10 - 3 = 7), both sections have equal sums, but they do not remain connected as it splits the bottom section into two parts ([2] and [5]). Thus, the answer is false.
+Example 4:
+
+Input: grid = [[4,1,8],[3,2,6]]
+
+Output: false
+
+Explanation:
+
+No valid cut exists, so the answer is false.
+
+ 
+
+Constraints:
+
+1 <= m == grid.length <= 105
+1 <= n == grid[i].length <= 105
+2 <= m * n <= 105
+1 <= grid[i][j] <= 105;=;=https://leetcode.com/problems/equal-sum-grid-partition-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6732662/omn-store-every-elem-min-and-max-rowcol-pjle8/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6732748/lengthy-code-prefix-sumhashmap-by-shanmu-ay18/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6732961/drawing-explanation-hashmap-prefix-sum-j-yz8r/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6733113/simple-soln-using-hashset-java-by-sartha-9oca/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6732475/simple-java-solution-by-sakshikishore-ear2/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6753506/dp-map-treeset-solutionomn-logmn-by-sake-ha5a/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6754470/short-commented-solution-tc-omn-sc-omn-j-0m0n/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6742229/row-wise-and-column-wise-traversal-by-pu-gp3u/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6735922/java-om-n-solution-by-fatalme-pg3a/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6733337/java-solution-by-amol_13-o9br/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6736826/beats-100-by-deep-gajjar-g8cc/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6734103/easy-java-solution-by-sahu147-bral/;;https://leetcode.com/problems/equal-sum-grid-partition-ii/solutions/6734832/java-solution-using-hashmap-by-jisustudy-iw5n/;;;=;==;=;=;

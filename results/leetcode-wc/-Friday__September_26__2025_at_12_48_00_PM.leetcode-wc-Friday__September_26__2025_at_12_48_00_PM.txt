@@ -1,0 +1,32 @@
+779. K-th Symbol in Grammar;=;=Medium;=;=public int kthGrammar(int n, int k);=;=We build a table of n rows (1-indexed). We start by writing 0 in the 1st row. Now in every subsequent row, we look at the previous row and replace each occurrence of 0 with 01, and each occurrence of 1 with 10.
+
+For example, for n = 3, the 1st row is 0, the 2nd row is 01, and the 3rd row is 0110.
+Given two integer n and k, return the kth (1-indexed) symbol in the nth row of a table of n rows.
+
+ 
+
+Example 1:
+
+Input: n = 1, k = 1
+Output: 0
+Explanation: row 1: 0
+Example 2:
+
+Input: n = 2, k = 1
+Output: 0
+Explanation: 
+row 1: 0
+row 2: 01
+Example 3:
+
+Input: n = 2, k = 2
+Output: 1
+Explanation: 
+row 1: 0
+row 2: 01
+ 
+
+Constraints:
+
+1 <= n <= 30
+1 <= k <= 2n - 1;=;=https://leetcode.com/problems/k-th-symbol-in-grammar/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/4205730/100-easy-iterative-approach-explained-in-r04m/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/4205266/100-recursive-bit-count-by-vanamsen-ctv2/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/7051395/aditya-verma-approach-by-tanisha1907-fbru/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/7120559/kth-symbol-in-grammar-on-time-space-effi-bb5r/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/7185775/beats-100-by-satyam_sagar-xkcs/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/1151025/java-easy-to-understand-solution-by-repi-ke80/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/4205721/video-give-me-8-minutes-how-we-think-abo-4k1m/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/4205567/how-to-answer-in-interview-fastest-beats-4ax3/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/7106692/only-observation-based-by-uttam4439-yvoh/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/4205649/beats-100-recursive-approach-beginner-fr-tz2x/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/6729022/understanding-the-optimal-way-problem-pa-9te0/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/6729016/understanding-the-optimal-way-problem-pa-df2c/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/6554879/optimized-recursive-solution-for-k-th-sy-04kh/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/630113/pythonjsjavagoc-by-math-w-comment-by-bri-qszd/;;https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/1293958/java-easy-to-understand-recursive-soluti-zne5/;;;=;==;=;=;

@@ -1,0 +1,41 @@
+1588. Sum of All Odd Length Subarrays;=;=Easy;=;=public int sumOddLengthSubarrays(int[] arr);=;=Given an array of positive integers arr, return the sum of all possible odd-length subarrays of arr.
+
+A subarray is a contiguous subsequence of the array.
+
+ 
+
+Example 1:
+
+Input: arr = [1,4,2,5,3]
+Output: 58
+Explanation: The odd-length subarrays of arr and their sums are:
+[1] = 1
+[4] = 4
+[2] = 2
+[5] = 5
+[3] = 3
+[1,4,2] = 7
+[4,2,5] = 11
+[2,5,3] = 10
+[1,4,2,5,3] = 15
+If we add all these together we get 1 + 4 + 2 + 5 + 3 + 7 + 11 + 10 + 15 = 58
+Example 2:
+
+Input: arr = [1,2]
+Output: 3
+Explanation: There are only 2 subarrays of odd length, [1] and [2]. Their sum is 3.
+Example 3:
+
+Input: arr = [10,11,12]
+Output: 66
+ 
+
+Constraints:
+
+1 <= arr.length <= 100
+1 <= arr[i] <= 1000
+ 
+
+Follow up:
+
+Could you solve this problem in O(n) time complexity?;=;=https://leetcode.com/problems/sum-of-all-odd-length-subarrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/7184713/easy-code-for-beginners-and-undedrstanda-6qrc/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/7201714/beginner-friendly-sum-of-odd-length-suba-t04w/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/7109034/beats-100-on2-on-one-pass-contribution-t-smcf/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/2341230/easy-c-on-soln-faang-interview-optimized-ho4d/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/7096284/easy-code-for-solve-this-problem-by-4_k4-zcrv/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/7150138/easy-java-by-sivaaleet-v9rt/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/880091/java-100-0ms-on-4-statements-explanation-1xrz/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/6704533/dont-you-understand-youll-understand-now-k9d3/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/981968/java-easy-solution-with-proper-explanati-b26n/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/7094876/optimized-java-solution-beats-100-time-o-vw8u/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/7055144/easy-java-solution-by-priyadarsan2509-m5mh/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/993429/java-3-methods-sliding-window-by-prashan-np0t/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/2780813/100-fast-no-formulae-on-solution-java-by-hhpq/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/7028278/sum-of-oddlengthsubarrays-by-mayank-123-etkv/;;https://leetcode.com/problems/sum-of-all-odd-length-subarrays/solutions/3181017/on-java-solution-with-easy-explanation-b-3v8y/;;;=;==;=;=;

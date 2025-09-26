@@ -1,0 +1,31 @@
+1557. Minimum Number of Vertices to Reach All Nodes;=;=Medium;=;=public List<Integer> findSmallestSetOfVertices(int n, List<List<Integer>> edges);=;=Given a directed acyclic graph, with n vertices numbered from 0 to n-1, and an array edges where edges[i] = [fromi, toi] represents a directed edge from node fromi to node toi.
+
+Find the smallest set of vertices from which all nodes in the graph are reachable. It's guaranteed that a unique solution exists.
+
+Notice that you can return the vertices in any order.
+
+ 
+
+Example 1:
+
+
+
+Input: n = 6, edges = [[0,1],[0,2],[2,5],[3,4],[4,2]]
+Output: [0,3]
+Explanation: It's not possible to reach all the nodes from a single vertex. From 0 we can reach [0,1,2,5]. From 3 we can reach [3,4,2,5]. So we output [0,3].
+Example 2:
+
+
+
+Input: n = 5, edges = [[0,1],[2,1],[3,1],[1,4],[2,4]]
+Output: [0,2,3]
+Explanation: Notice that vertices 0, 3 and 2 are not reachable from any other node, so we must include them. Also any of these vertices can reach nodes 1 and 4.
+ 
+
+Constraints:
+
+2 <= n <= 10^5
+1 <= edges.length <= min(10^5, n * (n - 1) / 2)
+edges[i].length == 2
+0 <= fromi, toi < n
+All pairs (fromi, toi) are distinct.;=;=https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/3536357/image-explanation-easy-concise-zero-inde-q4ry/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/7120951/simple-solution-with-detailed-explanatio-5yqx/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/3536274/pythonjavacsimple-solutioneasy-to-unders-knqj/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/7018421/minimum-number-of-vertices-to-reach-all-t4jie/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/3536375/easy-solution-of-java-using-arraylistbeg-34ri/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/810214/java-graph-in-degree-explained-by-gthor1-9sx1/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/3536290/beats-100-only-3-lines-code-diagram-imag-0vvd/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/6736110/simple-logic-using-in-degree-explained-i-xk4i/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/1137337/java-simple-and-easy-solution-19-ms-fast-4s5m/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/3536478/easily-understandable-java-code-with-app-vulj/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/7110420/easy-java-solution-by-akshadg_369-ww00/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/6459654/easy-java-explanation-with-intuition-tc-x35fp/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/6193740/think-of-in-degree-0-simple-java-code-by-7x5p/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/6607355/find-nodes-with-no-incoming-edges-8-ms-9-bc6v/;;https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/6349662/easy-to-do-by-paliwalshivam321-rm1e/;;;=;==;=;=;

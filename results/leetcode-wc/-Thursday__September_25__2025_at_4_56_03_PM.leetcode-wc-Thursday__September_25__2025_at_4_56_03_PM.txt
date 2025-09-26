@@ -1,0 +1,45 @@
+3445. Maximum Difference Between Even and Odd Frequency II;=;=Hard;=;=public int maxDifference(String s, int k);=;=You are given a string s and an integer k. Your task is to find the maximum difference between the frequency of two characters, freq[a] - freq[b], in a substring subs of s, such that:
+
+subs has a size of at least k.
+Character a has an odd frequency in subs.
+Character b has a non-zero even frequency in subs.
+Return the maximum difference.
+
+Note that subs can contain more than 2 distinct characters.
+
+ 
+
+Example 1:
+
+Input: s = "12233", k = 4
+
+Output: -1
+
+Explanation:
+
+For the substring "12233", the frequency of '1' is 1 and the frequency of '3' is 2. The difference is 1 - 2 = -1.
+
+Example 2:
+
+Input: s = "1122211", k = 3
+
+Output: 1
+
+Explanation:
+
+For the substring "11222", the frequency of '2' is 3 and the frequency of '1' is 2. The difference is 3 - 2 = 1.
+
+Example 3:
+
+Input: s = "110", k = 3
+
+Output: -1
+
+ 
+
+Constraints:
+
+3 <= s.length <= 3 * 104
+s consists only of digits '0' to '4'.
+The input is generated that at least one substring has a character with an even frequency and a character with an odd frequency.
+1 <= k <= s.length;=;=https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6831146/easy-to-understand-explanation-for-edito-0bca/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6831340/easiest-solution-detail-explanation-on-d-f67u/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6832947/best-possible-step-by-step-explanation-b-i1og/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6831134/1st-javascript-solution-binary-index-fen-we5l/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6845198/solution-by-daulat_309-vby5/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6831662/beats-c-9487-python3-8448-java-100-js-10-hfy1/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6831138/not-so-easy-working-solution-by-python_c-kn04/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6831288/maximum-difference-after-constraints-exp-8e54/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6831422/all-language-solutions0msbeat-100all-in-0f88h/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6831583/19-java-maximum-difference-between-even-n58r4/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6834019/java-two-approaches-brute-force-optimize-smu8/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6831516/java-solution-for-difference-between-eve-ejag/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6833011/easy-code-must-try-code-in-java-by-notad-s7i4/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6833230/100-efficient-by-kgoutamkumar-6g21/;;https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6881451/beats-8988-java-simple-solution-prefix-s-a50x/;;;=;==;=;=;

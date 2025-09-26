@@ -1,0 +1,44 @@
+3438. Find Valid Pair of Adjacent Digits in String;=;=Easy;=;=public String findValidPair(String s);=;=You are given a string s consisting only of digits. A valid pair is defined as two adjacent digits in s such that:
+
+The first digit is not equal to the second.
+Each digit in the pair appears in s exactly as many times as its numeric value.
+Return the first valid pair found in the string s when traversing from left to right. If no valid pair exists, return an empty string.
+
+ 
+
+Example 1:
+
+Input: s = "2523533"
+
+Output: "23"
+
+Explanation:
+
+Digit '2' appears 2 times and digit '3' appears 3 times. Each digit in the pair "23" appears in s exactly as many times as its numeric value. Hence, the output is "23".
+
+Example 2:
+
+Input: s = "221"
+
+Output: "21"
+
+Explanation:
+
+Digit '2' appears 2 times and digit '1' appears 1 time. Hence, the output is "21".
+
+Example 3:
+
+Input: s = "22"
+
+Output: ""
+
+Explanation:
+
+There are no valid adjacent pairs.
+
+ 
+
+Constraints:
+
+2 <= s.length <= 100
+s only consists of digits from '1' to '9'.;=;=https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6357816/python3cjavago-brute-force-simple-soluti-p1w4/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6358360/python3-7-lines-freq-counting-ts-0-ms-17-92sp/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6357999/evaluate-frequency-array-and-then-check-s0sji/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6357856/java-solution-by-dsuryaprakash89-bnww/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6361604/faster-lesser-cpython3javacpythoncexplai-mcnk/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6754232/simplest-solution-in-on-time-o1-space-co-q1d9/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6731156/simple-count-approach-beats-100-by-samir-d5ae/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6365924/java-solution-by-barakamon-bgme/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6357838/easy-java-solution-beats-100-of-java-use-56dv/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6357892/using-frequency-arrays-a-simple-elegant-hcdck/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6358313/beat-100easy-explaination-by-runningfalc-eyb4/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6357754/java-complexity-on-by-shikhargupta0645-q8sx/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/6365533/java-solution-strings-by-dheeraj_2602-3lty/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/7100087/1-ms-java-using-array-by-david-coding-s7ec/;;https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/solutions/7135895/beats-using-arrays-by-mujfchtzfn-ihwq/;;;=;==;=;=;

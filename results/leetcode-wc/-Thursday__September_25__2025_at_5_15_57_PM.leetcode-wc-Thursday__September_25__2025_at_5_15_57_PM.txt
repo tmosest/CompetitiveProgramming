@@ -1,0 +1,22 @@
+611. Valid Triangle Number;=;=Medium;=;=publicÊintÊtriangleNumber(int[]Ênums);=;=Given an integer array nums, return the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.
+
+Ê
+
+Example 1:
+
+Input: nums = [2,2,3,4]
+Output: 3
+Explanation: Valid combinations are: 
+2,3,4 (using the first 2)
+2,3,4 (using the second 2)
+2,2,3
+Example 2:
+
+Input: nums = [4,2,3,4]
+Output: 4
+Ê
+
+Constraints:
+
+1 <= nums.length <= 1000
+0 <= nums[i] <= 1000;=;=https://leetcode.com/problems/valid-triangle-number/description/?envType=daily-question&envId=2025-09-26;=;=https://leetcode.com/problems/valid-triangle-number/solutions/7224231/simple-code-in-js-c-java-python-by-ayesh-yexp/;;https://leetcode.com/problems/valid-triangle-number/solutions/7108655/valid-triangle-number-by-ridha11-ni0q/;;https://leetcode.com/problems/valid-triangle-number/solutions/7153287/java-simple-solution-runtime-999-very-ea-a10l/;;https://leetcode.com/problems/valid-triangle-number/solutions/5545753/simple-code-easy-to-understand-beats-97-h1b21/;;https://leetcode.com/problems/valid-triangle-number/solutions/4729739/two-pointers-approach-explained-beats-96-vbof/;;https://leetcode.com/problems/valid-triangle-number/solutions/6938985/easy-understanding-by-uttam4439-ddho/;;https://leetcode.com/problems/valid-triangle-number/solutions/6880718/triangle-triplets-count-the-valid-ones-2-4pd4/;;https://leetcode.com/problems/valid-triangle-number/solutions/6861610/order-trick-two-pointers-of-i-j-2-sum-la-9ht9/;;https://leetcode.com/problems/valid-triangle-number/solutions/6453220/for-loopsssssssssssssssssssss-by-sairang-6i15/;;https://leetcode.com/problems/valid-triangle-number/solutions/4385756/fast-easy-solution-by-purandhar999-vziu/;;https://leetcode.com/problems/valid-triangle-number/solutions/6432291/two-pointer-approach-in-java-beats-92-by-9d5y/;;https://leetcode.com/problems/valid-triangle-number/solutions/5816761/valid-triangle-number-by-tejdekiwadiya-1zxi/;;https://leetcode.com/problems/valid-triangle-number/solutions/6246852/java-c-solution-by-dsuryaprakash89-l7zv/;;https://leetcode.com/problems/valid-triangle-number/solutions/7197101/brute-force-solution-java-very-easy-by-p-011c/;;https://leetcode.com/problems/valid-triangle-number/solutions/4746317/brute-better-optimal-beats-9913-java-c-e-1y5o/;;;=;==;=;=;

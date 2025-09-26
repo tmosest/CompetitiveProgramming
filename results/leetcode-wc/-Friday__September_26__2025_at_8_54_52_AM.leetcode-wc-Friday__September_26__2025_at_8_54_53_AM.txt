@@ -1,0 +1,35 @@
+3281. Maximize Score of Numbers in Ranges;=;=Medium;=;=public int maxPossibleScore(int[] start, int d);=;=You are given an array of integers start and an integer d, representing n intervals [start[i], start[i] + d].
+
+You are asked to choose n integers where the ith integer must belong to the ith interval. The score of the chosen integers is defined as the minimum absolute difference between any two integers that have been chosen.
+
+Return the maximum possible score of the chosen integers.
+
+ 
+
+Example 1:
+
+Input: start = [6,0,3], d = 2
+
+Output: 4
+
+Explanation:
+
+The maximum possible score can be obtained by choosing integers: 8, 0, and 4. The score of these chosen integers is min(|8 - 0|, |8 - 4|, |0 - 4|) which equals 4.
+
+Example 2:
+
+Input: start = [2,6,13,13], d = 5
+
+Output: 5
+
+Explanation:
+
+The maximum possible score can be obtained by choosing integers: 2, 7, 13, and 18. The score of these chosen integers is min(|2 - 7|, |2 - 13|, |2 - 18|, |7 - 13|, |7 - 18|, |13 - 18|) which equals 5.
+
+ 
+
+Constraints:
+
+2 <= start.length <= 105
+0 <= start[i] <= 109
+0 <= d <= 109;=;=https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5755595/detailed-explanation-binary-search-java-u7s15/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5753350/javacpython-sorting-and-binary-search-nl-dhgd/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5753559/binary-search-very-easy-solution-for-beg-95dx/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5753413/binary-searchefficient-score-calculation-yqo4/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5754698/easy-video-explanation-beats-100-easy-to-q9ji/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5757574/beginner-friendly-detailed-explanation-w-7fbc/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5753470/java-beats-100-users-easy-best-by-dhruvb-heon/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5754601/simple-binary-search-on-intervals-by-har-kq35/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5776324/binary-search-code-by-amriteshwar_rao7-xe80/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5759090/java-solution-binary-search-by-neel_diyo-07ml/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5758881/easy-java-solution-by-danish_jamil-0djy/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5757049/100-binary-search-by-abhi5114-jqd7/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5755671/beats-100-by-sachinab-xjft/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5754582/3281-maximize-score-of-numbers-in-ranges-2q6y/;;https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/solutions/5754335/runtime-46ms-beat-100-by-minhphamduy-qswv/;;;=;==;=;=;

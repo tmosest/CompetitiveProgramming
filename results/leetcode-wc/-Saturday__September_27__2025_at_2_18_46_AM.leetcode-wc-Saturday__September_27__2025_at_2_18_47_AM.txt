@@ -1,0 +1,29 @@
+2274. Maximum Consecutive Floors Without Special Floors;=;=Medium;=;=public int maxConsecutive(int bottom, int top, int[] special);=;=Alice manages a company and has rented some floors of a building as office space. Alice has decided some of these floors should be special floors, used for relaxation only.
+
+You are given two integers bottom and top, which denote that Alice has rented all the floors from bottom to top (inclusive). You are also given the integer array special, where special[i] denotes a special floor that Alice has designated for relaxation.
+
+Return the maximum number of consecutive floors without a special floor.
+
+ 
+
+Example 1:
+
+Input: bottom = 2, top = 9, special = [4,6]
+Output: 3
+Explanation: The following are the ranges (inclusive) of consecutive floors without a special floor:
+- (2, 3) with a total amount of 2 floors.
+- (5, 5) with a total amount of 1 floor.
+- (7, 9) with a total amount of 3 floors.
+Therefore, we return the maximum number which is 3 floors.
+Example 2:
+
+Input: bottom = 6, top = 8, special = [7,6,8]
+Output: 0
+Explanation: Every floor rented is a special floor, so we return 0.
+ 
+
+Constraints:
+
+1 <= special.length <= 105
+1 <= bottom <= special[i] <= top <= 109
+All the values of special are unique.;=;=https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2040152/javacpython-sort-by-lee215-z0ki/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2041134/java-easiest-solution-with-comments-by-n-akkl/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2043977/simple-java-solution-by-aditya_jain_2584-bdsy/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2098273/java-python-100-easy-by-karan_8082-acb2/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2042189/java-naive-optmized-easy-simple-sorting-tqtjh/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/7149013/easy-solution-ever-by-mohammed_asan-4ah5/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/4169194/sort-and-math-by-smedise-jgig/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2039716/java-simple-and-straight-forward-solutio-53je/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2899825/java-solution-short-clean-code-by-pandur-azge/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2239021/funny-timeout-solution-by-tuanbieber-lcdk/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2129361/java-solution-by-surajpatel786-eu0y/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2239029/golang-sort-the-special-onlogn-beats-98-gpurw/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2094369/easy-and-detailed-solution-in-java-by-16-0ey3/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2040676/java-solution-using-priorityqueue-heap-b-o7vz/;;https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/solutions/2062274/easy-java-solution-beginner-friendly-onl-z3xb/;;;=;==;=;=;

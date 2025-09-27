@@ -1,0 +1,21 @@
+812. Largest Triangle Area;=;=Easy;=;=public double largestTriangleArea(int[][] points);=;=Given an array of points on the X-Y plane points where points[i] = [xi, yi], return the area of the largest triangle that can be formed by any three different points. Answers within 10-5 of the actual answer will be accepted.
+
+ 
+
+Example 1:
+
+
+Input: points = [[0,0],[0,1],[1,0],[0,2],[2,0]]
+Output: 2.00000
+Explanation: The five points are shown in the above figure. The red triangle is the largest.
+Example 2:
+
+Input: points = [[1,0],[0,0],[0,1]]
+Output: 0.50000
+ 
+
+Constraints:
+
+3 <= points.length <= 50
+-50 <= xi, yi <= 50
+All the given points are unique.;=;=https://leetcode.com/problems/largest-triangle-area/description/?envType=daily-question&envId=2025-09-27;=;=https://leetcode.com/problems/largest-triangle-area/solutions/7194124/shoelace-formula-trick-intuitive-java-im-6hnm/;;https://leetcode.com/problems/largest-triangle-area/solutions/4747995/gauss-formula-by-manohar_001-x3p2/;;https://leetcode.com/problems/largest-triangle-area/solutions/7071213/easy-and-100-fast-solution-using-maths-b-8137/;;https://leetcode.com/problems/largest-triangle-area/solutions/7070067/shoelace-formula-by-avinash516-oiui/;;https://leetcode.com/problems/largest-triangle-area/solutions/6942842/class-12-formula-required-only-by-uttam4-n4lz/;;https://leetcode.com/problems/largest-triangle-area/solutions/2918415/0ms-solution-2-different-solutions-java-fiabl/;;https://leetcode.com/problems/largest-triangle-area/solutions/7224247/my-note-by-energeticninjha-feuh/;;https://leetcode.com/problems/largest-triangle-area/solutions/3210808/beats-100-of-java-sol-3ms-brute-force-si-2wl2/;;https://leetcode.com/problems/largest-triangle-area/solutions/182897/easy-java-solution-beats-9977-by-kirj-26hm/;;https://leetcode.com/problems/largest-triangle-area/solutions/4032908/best-java-solution-beats-96-by-ravikumar-t8cn/;;https://leetcode.com/problems/largest-triangle-area/solutions/7221238/easy-java-solution-by-zouari_omar-a1wf/;;https://leetcode.com/problems/largest-triangle-area/solutions/5962137/on3-approach-to-solve-the-problem-intuit-k0ur/;;https://leetcode.com/problems/largest-triangle-area/solutions/5909169/largest-area-with-three-points-java-by-a-eho8/;;https://leetcode.com/problems/largest-triangle-area/solutions/2700009/java-brute-force-using-function-mathemat-qbt4/;;https://leetcode.com/problems/largest-triangle-area/solutions/5704028/java-solution-by-shreyagarg63-tkvk/;;;=;==;=;=;

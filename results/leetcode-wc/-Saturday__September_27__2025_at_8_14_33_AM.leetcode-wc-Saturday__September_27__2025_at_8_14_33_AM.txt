@@ -1,0 +1,36 @@
+1612. Check If Two Expression Trees are Equivalent;=;=Medium;=;=/  Definition for a binary tree node.   Node       char val;      Node left;      Node right;      Node() this.val = ' ';      Node(char val)  this.val = val;       Node(char val, Node left, Node right)           this.val = val;          this.left = left;          this.right = right;;=;=A binary expression tree is a kind of binary tree used to represent arithmetic expressions. Each node of a binary expression tree has either zero or two children. Leaf nodes (nodes with 0 children) correspond to operands (variables), and internal nodes (nodes with two children) correspond to the operators. In this problem, we only consider the '+' operator (i.e. addition).
+
+You are given the roots of two binary expression trees, root1 and root2. Return true if the two binary expression trees are equivalent. Otherwise, return false.
+
+Two binary expression trees are equivalent if they evaluate to the same value regardless of what the variables are set to.
+
+ 
+
+Example 1:
+
+Input: root1 = [x], root2 = [x]
+Output: true
+Example 2:
+
+
+
+Input: root1 = [+,a,+,null,null,b,c], root2 = [+,+,a,b,c]
+Output: true
+Explanation: a + (b + c) == (b + c) + a
+Example 3:
+
+
+
+Input: root1 = [+,a,+,null,null,b,c], root2 = [+,+,a,b,d]
+Output: false
+Explanation: a + (b + c) != (b + d) + a
+ 
+
+Constraints:
+
+The number of nodes in both trees are equal, odd and, in the range [1, 4999].
+Node.val is '+' or a lower-case English letter.
+It's guaranteed that the tree given is a valid binary expression tree.
+ 
+
+Follow up: What will you change in your solution if the tree also supports the '-' operator (i.e. subtraction)?;=;=https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/solutions/1727361/java-easy-dfs-recursive-solution-by-movs-orfy/;;https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/solutions/6582417/java-simple-solution-using-single-map-by-m3tp/;;https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/solutions/6391193/dfs-and-map-based-solution-java-by-someu-afla/;;https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/solutions/5864177/java-hashmap-dfs-solution-by-tbekpro-8v4e/;;https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/solutions/5167464/java-solution-and-follow-up-on-time-o26-y99kg/;;https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/solutions/4615777/java-solution-dfs-by-ndsjqwbbb-eaym/;;https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/solutions/4334638/dfs-map-java-by-shuabro888-lff4/;;https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/solutions/3500697/java-easy-and-optimised-solution-tc-on-s-00wl/;;https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/solutions/1198399/java-easy-solution-by-shubhi23-qt5b/;;;=;==;=;=;

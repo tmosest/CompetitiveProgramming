@@ -1,0 +1,23 @@
+1227. Airplane Seat Assignment Probability;=;=Medium;=;=public double nthPersonGetsNthSeat(int n);=;=n passengers board an airplane with exactly n seats. The first passenger has lost the ticket and picks a seat randomly. But after that, the rest of the passengers will:
+
+Take their own seat if it is still available, and
+Pick other seats randomly when they find their seat occupied
+Return the probability that the nth person gets his own seat.
+
+ 
+
+Example 1:
+
+Input: n = 1
+Output: 1.00000
+Explanation: The first person can only get the first seat.
+Example 2:
+
+Input: n = 2
+Output: 0.50000
+Explanation: The second person has a probability of 0.5 to get the second seat (when first person gets the first seat).
+ 
+
+Constraints:
+
+1 <= n <= 105;=;=https://leetcode.com/problems/airplane-seat-assignment-probability/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/3002794/easy-2-line-soln-well-explained-microsof-mkim/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/4253889/simple-intuitive-explanation-non-rigorou-7rig/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/6539951/in-one-line-simple-by-sairangineeni-5xhu/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/5555457/1-line-code-o1-tc-easy-to-understand-bea-bogf/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/3029938/java-solution-0ms-100-faster-code-by-bes-5q95/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/4500460/easy-and-best-solution-beats-100-java-by-x6cl/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/1978095/java-2-solutionsdynamic-programming-solu-j9eq/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/3099320/well-detailed-explaination-in-java-faste-qjm7/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/4477277/beats-100-1-line-math-with-explanation-b-yw9z/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/3029904/java-solution-fast-0-ms-100-optimal-easy-wujo/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/727327/simple-java-brain-teaser-solution-with-e-h62t/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/6250389/easiest-one-liner-solution-by-harsh_d6-wn0t/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/4843677/100-beats-one-line-code-simple-probabili-pco2/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/4497945/optimised-solution-in-java-by-dharmaraj_-e1i4/;;https://leetcode.com/problems/airplane-seat-assignment-probability/solutions/640434/100-time-and-100-memory-very-simple-if-e-vgb6/;;;=;==;=;=;

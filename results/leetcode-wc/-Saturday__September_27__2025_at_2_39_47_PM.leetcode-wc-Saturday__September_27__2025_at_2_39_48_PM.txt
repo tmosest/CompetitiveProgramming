@@ -1,0 +1,28 @@
+1229. Meeting Scheduler;=;=Medium;=;=public List<Integer> minAvailableDuration(int[][] slots1, int[][] slots2, int duration);=;=Given the availability time slots arrays slots1 and slots2 of two people and a meeting duration duration, return the earliest time slot that works for both of them and is of duration duration.
+
+If there is no common time slot that satisfies the requirements, return an empty array.
+
+The format of a time slot is an array of two elements [start, end] representing an inclusive time range from start to end.
+
+It is guaranteed that no two availability slots of the same person intersect with each other. That is, for any two time slots [start1, end1] and [start2, end2] of the same person, either start1 > end2 or start2 > end1.
+
+ 
+
+Example 1:
+
+Input: slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]], duration = 8
+Output: [60,68]
+Example 2:
+
+Input: slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]], duration = 12
+Output: []
+ 
+
+Constraints:
+
+1 <= slots1.length, slots2.length <= 104
+slots1[i].length, slots2[i].length == 2
+slots1[i][0] < slots1[i][1]
+slots2[i][0] < slots2[i][1]
+0 <= slots1[i][j], slots2[i][j] <= 109
+1 <= duration <= 106;=;=https://leetcode.com/problems/meeting-scheduler/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/meeting-scheduler/solutions/409835/java-two-pointers-beats-100-explained-by-jdlb/;;https://leetcode.com/problems/meeting-scheduler/solutions/625689/java-solution-using-two-pointer-with-exp-gr3d/;;https://leetcode.com/problems/meeting-scheduler/solutions/1492278/java-treemaptimeline-solution-can-be-app-il7y/;;https://leetcode.com/problems/meeting-scheduler/solutions/2182177/java-heap-explained-by-prashant404-3hlg/;;https://leetcode.com/problems/meeting-scheduler/solutions/759711/java-simple-solution-easy-to-understand-gudim/;;https://leetcode.com/problems/meeting-scheduler/solutions/408508/version-of-merege-interval-56-by-sendasy-n6xr/;;https://leetcode.com/problems/meeting-scheduler/solutions/413088/java-clean-solution-by-ayyild1z-4rff/;;https://leetcode.com/problems/meeting-scheduler/solutions/6486238/very-clear-java-solution-by-dhivya6613-n95p/;;https://leetcode.com/problems/meeting-scheduler/solutions/6486239/very-clear-java-solution-by-dhivya6613-jbh2/;;https://leetcode.com/problems/meeting-scheduler/solutions/409497/java-on-simple-optimal-soln-by-premzoom-ko62/;;https://leetcode.com/problems/meeting-scheduler/solutions/6675403/heap-beat-97-by-labao-18aq/;;https://leetcode.com/problems/meeting-scheduler/solutions/6674970/sort-hashmap-by-labao-l1b0/;;https://leetcode.com/problems/meeting-scheduler/solutions/5761397/2-pointers-java-by-n00bs404-d3e0/;;https://leetcode.com/problems/meeting-scheduler/solutions/6216765/java-simple-solution-by-rushikak-tbh8/;;https://leetcode.com/problems/meeting-scheduler/solutions/6213945/java-15-line-clean-code-2-pointers-by-go-wq9m/;;;=;==;=;=;

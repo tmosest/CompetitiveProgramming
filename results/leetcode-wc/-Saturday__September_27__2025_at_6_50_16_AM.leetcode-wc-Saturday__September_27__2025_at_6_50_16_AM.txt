@@ -1,0 +1,36 @@
+1816. Truncate Sentence;=;=Easy;=;=public String truncateSentence(String s, int k);=;=A sentence is a list of words that are separated by a single space with no leading or trailing spaces. Each of the words consists of only uppercase and lowercase English letters (no punctuation).
+
+For example, "Hello World", "HELLO", and "hello world hello world" are all sentences.
+You are given a sentence s?????? and an integer k??????. You want to truncate s?????? such that it contains only the first k?????? words. Return s?????? after truncating it.
+
+ 
+
+Example 1:
+
+Input: s = "Hello how are you Contestant", k = 4
+Output: "Hello how are you"
+Explanation:
+The words in s are ["Hello", "how" "are", "you", "Contestant"].
+The first 4 words are ["Hello", "how", "are", "you"].
+Hence, you should return "Hello how are you".
+Example 2:
+
+Input: s = "What is the solution to this problem", k = 4
+Output: "What is the solution"
+Explanation:
+The words in s are ["What", "is" "the", "solution", "to", "this", "problem"].
+The first 4 words are ["What", "is", "the", "solution"].
+Hence, you should return "What is the solution".
+Example 3:
+
+Input: s = "chopper is not a tanuki", k = 5
+Output: "chopper is not a tanuki"
+ 
+
+Constraints:
+
+1 <= s.length <= 500
+k is in the range [1, the number of words in s].
+s consist of only lowercase and uppercase English letters and spaces.
+The words in s are separated by a single space.
+There are no leading or trailing spaces.;=;=https://leetcode.com/problems/truncate-sentence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/truncate-sentence/solutions/7188717/truncate-sentence-by-e_deepika24-3f8x/;;https://leetcode.com/problems/truncate-sentence/solutions/7180925/easy-code-for-solve-this-problem-by-4_k4-vz9x/;;https://leetcode.com/problems/truncate-sentence/solutions/7104981/simple-java-runtime-0-ms-beats-100-by-jy-imha/;;https://leetcode.com/problems/truncate-sentence/solutions/1141430/java-2-solution-split-without-split-by-h-0z44/;;https://leetcode.com/problems/truncate-sentence/solutions/7105238/java-easy-solution-by-akashraj06-ku4m/;;https://leetcode.com/problems/truncate-sentence/solutions/7087061/beats-100-by-divyansh_kaushik_sharma-sbx7/;;https://leetcode.com/problems/truncate-sentence/solutions/6862477/approach-without-string-builder-java-by-a2smc/;;https://leetcode.com/problems/truncate-sentence/solutions/5543874/simple-java-c-code-by-abhinandannaik1717-17vn/;;https://leetcode.com/problems/truncate-sentence/solutions/7006071/easy-code-for-beginners-and-understandab-3zb3/;;https://leetcode.com/problems/truncate-sentence/solutions/7014451/easiest-solution-in-java-by-hitarthshah2-rvqs/;;https://leetcode.com/problems/truncate-sentence/solutions/7007532/simple-java-solution-by-rajdeep001-n7wc/;;https://leetcode.com/problems/truncate-sentence/solutions/1607058/java-100-time-99-space-simple-short-and-xbon1/;;https://leetcode.com/problems/truncate-sentence/solutions/6941107/java-easy-solution-by-nilesh-chhabra05-nnye/;;https://leetcode.com/problems/truncate-sentence/solutions/6827098/oneliner-beats-44-by-alexander_sergeev-q5wd/;;https://leetcode.com/problems/truncate-sentence/solutions/6827117/beats-77-using-systemarraycopy-stringjoi-19go/;;;=;==;=;=;

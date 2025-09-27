@@ -1,0 +1,23 @@
+2278. Percentage of Letter in String;=;=Easy;=;=public int percentageLetter(String s, char letter);=;=Given a string s and a character letter, return the percentage of characters in s that equal letter rounded down to the nearest whole percent.
+
+ 
+
+Example 1:
+
+Input: s = "foobar", letter = "o"
+Output: 33
+Explanation:
+The percentage of characters in s that equal the letter 'o' is 2 / 6 * 100% = 33% when rounded down, so we return 33.
+Example 2:
+
+Input: s = "jjjj", letter = "k"
+Output: 0
+Explanation:
+The percentage of characters in s that equal the letter 'k' is 0%, so we return 0.
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s consists of lowercase English letters.
+letter is a lowercase English letter.;=;=https://leetcode.com/problems/percentage-of-letter-in-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/percentage-of-letter-in-string/solutions/7201125/easy-code-for-solve-this-problem-by-4_k4-h5rv/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/7151484/beginner-friendly-java-solution-percenta-4a0z/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/6992390/100-beats-java-code-by-prakhar-1310-6jzy/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/6838661/the-easiest-one-by-d_t_s-zufb/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/5485359/easy-solution-by-pratik_pathak_05-f4od/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/2066611/java-clean-well-commented-explanation-by-q6m6/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/6651579/simple-code-by-sairangineeni-ylde/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/7206437/easy-optimal-solution-in-python-java-c-b-fnno/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/7191723/java-by-devendran9993-tm41/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/7161563/easiest-solution-for-easiest-question-be-b898/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/7156522/betas-100-by-alexander_sergeev-dmio/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/7128694/java-code-by-gokilaselvi-iqlt/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/7112289/simple-java-program-0ms-by-k_jayanth-k4gx/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/7104316/java-by-aryan13sinha-xswa/;;https://leetcode.com/problems/percentage-of-letter-in-string/solutions/6980565/simple-java-solution-by-sairaj_thakar-r0un/;;;=;==;=;=;

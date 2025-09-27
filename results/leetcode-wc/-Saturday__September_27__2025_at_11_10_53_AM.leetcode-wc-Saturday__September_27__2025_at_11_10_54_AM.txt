@@ -1,0 +1,59 @@
+3244. Shortest Distance After Road Addition Queries II;=;=Hard;=;=public int[] shortestDistanceAfterQueries(int n, int[][] queries);=;=You are given an integer n and a 2D integer array queries.
+
+There are n cities numbered from 0 to n - 1. Initially, there is a unidirectional road from city i to city i + 1 for all 0 <= i < n - 1.
+
+queries[i] = [ui, vi] represents the addition of a new unidirectional road from city ui to city vi. After each query, you need to find the length of the shortest path from city 0 to city n - 1.
+
+There are no two queries such that queries[i][0] < queries[j][0] < queries[i][1] < queries[j][1].
+
+Return an array answer where for each i in the range [0, queries.length - 1], answer[i] is the length of the shortest path from city 0 to city n - 1 after processing the first i + 1 queries.
+
+ 
+
+Example 1:
+
+Input: n = 5, queries = [[2,4],[0,2],[0,4]]
+
+Output: [3,2,1]
+
+Explanation:
+
+
+
+After the addition of the road from 2 to 4, the length of the shortest path from 0 to 4 is 3.
+
+
+
+After the addition of the road from 0 to 2, the length of the shortest path from 0 to 4 is 2.
+
+
+
+After the addition of the road from 0 to 4, the length of the shortest path from 0 to 4 is 1.
+
+Example 2:
+
+Input: n = 4, queries = [[0,3],[0,2]]
+
+Output: [1,1]
+
+Explanation:
+
+
+
+After the addition of the road from 0 to 3, the length of the shortest path from 0 to 3 is 1.
+
+
+
+After the addition of the road from 0 to 2, the length of the shortest path remains 1.
+
+ 
+
+Constraints:
+
+3 <= n <= 105
+1 <= queries.length <= 105
+queries[i].length == 2
+0 <= queries[i][0] < queries[i][1] < n
+1 < queries[i][1] - queries[i][0]
+There are no repeated roads among the queries.
+There are no two queries such that i != j and queries[i][0] < queries[j][0] < queries[i][1] < queries[j][1].;=;=https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5583267/simple-solution-with-only-unordered-map-3ejzf/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5586020/javacpython-linked-list-on-solution-by-l-oskb/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5585223/using-hashmap-beats-1000-by-ravi_kumar67-vqf1/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5584347/java-solution-no-need-of-graph-traversal-ktz0/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/6088874/simple-hashmap-solution-by-risabhuchiha-lge8/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5600064/java-treeset-by-extremania-nawz/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5589706/java-solution-with-lower-and-upper-bound-6odj/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5588266/simple-linked-list-solution-by-phanthehu-0xk9/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5587657/on-time-complexity-beats-100-using-just-jsq3m/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5587624/easy-java-solution-treeset-by-ravikumar5-ni7v/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5586047/beats-100-java-solution-just-treemap-imp-7efu/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5585706/4ms-beats-100-java-onm-detailed-comments-bzbe/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5584215/java-memoization-hash-table-by-mot882000-71ay/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5584066/concurrentskiplistset-solution-by-hiandh-zk6x/;;https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/solutions/5583954/can-bet-easiest-approach-by-harsh_3002-nday/;;;=;==;=;=;

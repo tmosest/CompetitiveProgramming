@@ -1,0 +1,34 @@
+1849. Splitting a String Into Descending Consecutive Values;=;=Medium;=;=public boolean splitString(String s);=;=You are given a string s that consists of only digits.
+
+Check if we can split s into two or more non-empty substrings such that the numerical values of the substrings are in descending order and the difference between numerical values of every two adjacent substrings is equal to 1.
+
+For example, the string s = "0090089" can be split into ["0090", "089"] with numerical values [90,89]. The values are in descending order and adjacent values differ by 1, so this way is valid.
+Another example, the string s = "001" can be split into ["0", "01"], ["00", "1"], or ["0", "0", "1"]. However all the ways are invalid because they have numerical values [0,1], [0,1], and [0,0,1] respectively, all of which are not in descending order.
+Return true if it is possible to split s?????? as described above, or false otherwise.
+
+A substring is a contiguous sequence of characters in a string.
+
+ 
+
+Example 1:
+
+Input: s = "1234"
+Output: false
+Explanation: There is no valid way to split s.
+Example 2:
+
+Input: s = "050043"
+Output: true
+Explanation: s can be split into ["05", "004", "3"] with numerical values [5,4,3].
+The values are in descending order with adjacent values differing by 1.
+Example 3:
+
+Input: s = "9080701"
+Output: false
+Explanation: There is no valid way to split s.
+ 
+
+Constraints:
+
+1 <= s.length <= 20
+s only consists of digits.;=;=https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/1186896/java-brute-force-recursion-step-by-step-l4pqf/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/1186812/java-backtracking-100-runtime-by-prashul-3vvt/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/2923088/java-runtime-0-ms-beats-100-easy-to-unde-f2vk/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/1720660/java-post-my-one-pass-dfs-solution-with-4ggsh/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/1256113/cjavapython-easy-and-clean-backtracking-9ugr3/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/3026296/java-dfs-with-comments-by-leetcode1014-fz2b/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/1327432/simple-backtracking-solution-by-yogeshak-mpy0/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/6637912/good-example-for-dfs-with-return-value-b-vpfd/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/6765490/java-backtrack-beat-100-runtime-by-littl-l2ra/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/6397501/solution-using-java-by-kushal_bharadwaj-2hb6l/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/6284389/1849-splitting-a-string-into-descending-af91l/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/6186436/beat-100-by-arun_chaudhary01-spte/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/5601367/backtrack-with-return-value-by-styx1992-cld6/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/5524973/2-pointer-by-macrohard-fuez/;;https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/solutions/5322513/easiest-solution-ever-beginner-friendly-02caf/;;;=;==;=;=;

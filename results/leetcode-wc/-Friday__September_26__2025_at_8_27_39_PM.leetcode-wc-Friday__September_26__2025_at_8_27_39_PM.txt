@@ -1,0 +1,19 @@
+1139. Largest 1-Bordered Square;=;=Medium;=;=public int largest1BorderedSquare(int[][] grid);=;=Given a 2D grid of 0s and 1s, return the number of elements in the largest square subgrid that has all 1s on its border, or 0 if such a subgrid doesn't exist in the grid.
+
+ 
+
+Example 1:
+
+Input: grid = [[1,1,1],[1,0,1],[1,1,1]]
+Output: 9
+Example 2:
+
+Input: grid = [[1,1,0,0]]
+Output: 1
+ 
+
+Constraints:
+
+1 <= grid.length <= 100
+1 <= grid[0].length <= 100
+grid[i][j] is 0 or 1;=;=https://leetcode.com/problems/largest-1-bordered-square/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-1-bordered-square/solutions/345574/java-dp-solution-with-videos-explained-b-qynn/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/6445935/java-code-recursionbacktracking-by-anike-oyay/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/5080708/java-prefix-sum-clean-code-clean-explana-0ofm/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/345474/java-dp-solution-beats-100both-time-and-j7bgv/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/1912158/java-kind-of-dp-by-crackitsean-yihh/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/1170100/simple-java-solution-4ms-faster-than-73-s8g64/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/6937678/easiest-solution-beats-100-in-time-intut-w3xm/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/6266095/1139-largest-1-bordered-square-by-g8xd0q-vrgh/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/5821307/dp-prefix-sum-row-and-col-java-on3on2-by-tzgf/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/5567758/simple-java-sol-beats-98-explanation-by-0xsay/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/5242587/dynamic-programming-by-priyankshah25-gabf/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/5057168/1139-largest-1-bordered-square-by-zhihui-ym45/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/4908870/easy-to-under-simple-java-solution-by-vs-vua1/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/4612238/solution-using-dptabulation-by-shree_gov-7mic/;;https://leetcode.com/problems/largest-1-bordered-square/solutions/4483368/java-easy-loop-through-matrix-by-vsai512-337r/;;;=;==;=;=;

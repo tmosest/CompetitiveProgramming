@@ -1,0 +1,50 @@
+3142. Check if Grid Satisfies Conditions;=;=Easy;=;=public boolean satisfiesConditions(int[][] grid);=;=You are given a 2D matrix grid of size m x n. You need to check if each cell grid[i][j] is:
+
+Equal to the cell below it, i.e. grid[i][j] == grid[i + 1][j] (if it exists).
+Different from the cell to its right, i.e. grid[i][j] != grid[i][j + 1] (if it exists).
+Return true if all the cells satisfy these conditions, otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: grid = [[1,0,2],[1,0,2]]
+
+Output: true
+
+Explanation:
+
+
+
+All the cells in the grid satisfy the conditions.
+
+Example 2:
+
+Input: grid = [[1,1,1],[0,0,0]]
+
+Output: false
+
+Explanation:
+
+
+
+All cells in the first row are equal.
+
+Example 3:
+
+Input: grid = [[1],[2],[3]]
+
+Output: false
+
+Explanation:
+
+
+
+Cells in the first column have different values.
+
+ 
+
+Constraints:
+
+1 <= n, m <= 10
+0 <= grid[i][j] <= 9;=;=https://leetcode.com/problems/check-if-grid-satisfies-conditions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/6803493/fast-and-clear-with-iterations-in-tables-ytma/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/5143788/easy-solution-contest-11052024-by-mangeu-rzb6/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/5143754/simple-java-solution-by-siddhant_1602-qqzq/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/6977436/very-very-easy-and-beginner-friendly-sol-jkse/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/6635285/very-simple-solution-beats-100-by-dhanus-vccv/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/6229800/1ms-in-java-very-easiest-code-by-galani_-ujdj/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/7160699/optimized-simple-solution-beats-9127-by-e4mnv/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/7153823/java-simple-array-check-beats-91-by-btch-be8h/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/5143895/java-simple-clean-solution-biweekly-cont-xd29/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/5149936/check-all-cells-c-python-java-by-not_yl3-tfa5/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/6371792/easy-solution-in-java-by-nidhibaratam200-tvli/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/5740141/check-if-grid-satisfies-conditions-by-te-60f9/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/5144753/very-easy-and-beginner-friendly-solution-m1iy/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/5143827/java-beats-100-time-on-m-space-o1-easy-e-eqog/;;https://leetcode.com/problems/check-if-grid-satisfies-conditions/solutions/6805066/simple-solution-on2-time-and-o1-space-by-libh/;;;=;==;=;=;

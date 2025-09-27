@@ -1,0 +1,25 @@
+229. Majority Element II;=;=Medium;=;=class Solution     public int minNumberOfHours(int initialEnergy, int initialExperience, int[] energy, int[] experience)         int hours = 0;        int totalEnergy = 0;           for (int i = 0 ; i < experience.length; i++)             // calculate total energy            totalEnergy += energy[i];            // train to gain just enough experience to win the next challenge.            if(initialExperience <= experience[i])                     int temp = (experience[i] - initialExperience) + 1;                    hours+=temp;;=;=Given an integer array of size n, find all elements that appear more than ? n/3 ? times.
+
+ 
+
+Example 1:
+
+Input: nums = [3,2,3]
+Output: [3]
+Example 2:
+
+Input: nums = [1]
+Output: [1]
+Example 3:
+
+Input: nums = [1,2]
+Output: [1,2]
+ 
+
+Constraints:
+
+1 <= nums.length <= 5 * 104
+-109 <= nums[i] <= 109
+ 
+
+Follow up: Could you solve the problem in linear time and in O(1) space?;=;=https://leetcode.com/problems/majority-element-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/majority-element-ii/solutions/4131226/997-hashmap-boyer-moore-majority-voting-kchc9/;;https://leetcode.com/problems/majority-element-ii/solutions/6750650/video-how-we-think-about-a-solution-boye-8mop/;;https://leetcode.com/problems/majority-element-ii/solutions/7220050/by-hashmap-by-pushpraj_7d-4szo/;;https://leetcode.com/problems/majority-element-ii/solutions/7204422/0ms-100-beats-majority-element-ii-moores-d47e/;;https://leetcode.com/problems/majority-element-ii/solutions/7196437/simple-and-easy-to-unerstand-sort-based-e7oa8/;;https://leetcode.com/problems/majority-element-ii/solutions/7216986/majority-element-ii-solution-in-java-i-h-ifp8/;;https://leetcode.com/problems/majority-element-ii/solutions/5931576/video-how-we-think-about-a-solution-boye-pbg3/;;https://leetcode.com/problems/majority-element-ii/solutions/7208911/java-majority-element-ii-by-aravindhango-32ep/;;https://leetcode.com/problems/majority-element-ii/solutions/4131146/easy-solution-with-explaination-by-vishn-3n5n/;;https://leetcode.com/problems/majority-element-ii/solutions/1098995/explanation-about-boyer-moore-vote-by-pa-hs0r/;;https://leetcode.com/problems/majority-element-ii/solutions/7131597/java-best-solution-by-aimlc_22b1531167-2xya/;;https://leetcode.com/problems/majority-element-ii/solutions/4131138/9299-boyer-moore-voting-algorithm-by-van-7pu8/;;https://leetcode.com/problems/majority-element-ii/solutions/4131879/faster-lesser5-methodssimple-countinghas-w4n5/;;https://leetcode.com/problems/majority-element-ii/solutions/7129779/optimal-approachusing-hashmap-by-shivam7-a0y9/;;https://leetcode.com/problems/majority-element-ii/solutions/5821444/video-how-we-think-about-a-solution-boye-cpi1/;;;=;==;=;=;

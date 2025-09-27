@@ -1,0 +1,30 @@
+2218. Maximum Value of K Coins From Piles;=;=Hard;=;=public int maxValueOfCoins(List<List<Integer>> piles, int k);=;=There are n piles of coins on a table. Each pile consists of a positive number of coins of assorted denominations.
+
+In one move, you can choose any coin on top of any pile, remove it, and add it to your wallet.
+
+Given a list piles, where piles[i] is a list of integers denoting the composition of the ith pile from top to bottom, and a positive integer k, return the maximum total value of coins you can have in your wallet if you choose exactly k coins optimally.
+
+ 
+
+Example 1:
+
+
+Input: piles = [[1,100,3],[7,8,9]], k = 2
+Output: 101
+Explanation:
+The above diagram shows the different ways we can choose k coins.
+The maximum total we can obtain is 101.
+Example 2:
+
+Input: piles = [[100],[100],[100],[100],[100],[100],[1,1,1,1,1,1,700]], k = 7
+Output: 706
+Explanation:
+The maximum total can be obtained if we choose all coins from the last pile.
+ 
+
+Constraints:
+
+n == piles.length
+1 <= n <= 1000
+1 <= piles[i][j] <= 105
+1 <= k <= sum(piles[i].length) <= 2000;=;=https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1887010/javacpython-top-down-dp-solution-by-lee2-qk4e/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/3417959/image-explanation-top-down-dp-easy-conci-iutw/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/3418129/easy-solutions-in-java-python-and-c-look-er9k/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/3418438/easy-dp-solutionapproach-explained-begin-xyxl/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1886987/java-bottom-up-dp-with-clear-explanation-53n5/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/7012349/dynamic-programming-optimal-coin-collect-ws7z/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/3417924/java-easy-solution-dp-by-shivrastogi-aegf/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/3418160/basic-approach-java-dp-by-may51936-23oc/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1886922/java-bottom-up-dp-by-nihalanim9-ei1k/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/3419223/easy-java-solution-dynamic-programming-b-mm7v/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1887025/java-top-down-dp-by-crimsonalien17-qc4u/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/2059614/java-knapsack-variation-dynammic-program-k676/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1901374/recursion-to-space-optimized-dp-java-exp-tvjm/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/1977616/javacpythonontimebeats-9997-memoryspeed-c411b/;;https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/3419107/simple-solution-using-recursion-and-memo-pgd2/;;;=;==;=;=;

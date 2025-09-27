@@ -1,0 +1,20 @@
+1316. Distinct Echo Substrings;=;=Hard;=;=public int distinctEchoSubstrings(String text);=;=Return the number of distinct non-empty substrings of text that can be written as the concatenation of some string with itself (i.e. it can be written as a + a where a is some string).
+
+ 
+
+Example 1:
+
+Input: text = "abcabcabc"
+Output: 3
+Explanation: The 3 substrings are "abcabc", "bcabca" and "cabcab".
+Example 2:
+
+Input: text = "leetcodeleetcode"
+Output: 2
+Explanation: The 2 substrings are "ee" and "leetcodeleetcode".
+ 
+
+Constraints:
+
+1 <= text.length <= 2000
+text has only lowercase English letters.;=;=https://leetcode.com/problems/distinct-echo-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/distinct-echo-substrings/solutions/1181698/java-clean-on2-rolling-hash-dynamic-prog-7kmx/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/1616142/java-solution-by-mayank357000-pbwb/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/477137/another-java-solution-by-gyarish-on7k/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/5421618/java-solution-by-danish_jamil-wach/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/4654588/reducing-search-space-unique-solution-by-f082/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/4548814/e-by-user3043sb-cq3y/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/3604220/solution-by-deleted_user-qumg/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/3339776/distinct-echo-substrings-solution-java-b-j92v/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/3114158/brute-force-java-solution-by-ayush7865-m9af/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/3018168/rolling-hash-by-sarthak2119-5jik/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/2844529/solution-using-sliding-window-for-for-al-5amq/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/2569065/java-faster-than-97-hash-code-of-substri-2ryt/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/2467581/clean-java-sliding-window-by-student2091-i1kc/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/2316787/java-simple-working-solution-with-commen-kv3a/;;https://leetcode.com/problems/distinct-echo-substrings/solutions/1293621/java-easy-solution-by-samiudeen-kyiu/;;;=;==;=;=;

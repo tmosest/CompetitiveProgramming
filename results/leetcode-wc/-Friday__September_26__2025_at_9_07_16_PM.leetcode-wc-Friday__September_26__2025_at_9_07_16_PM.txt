@@ -1,0 +1,53 @@
+3417. Zigzag Grid Traversal With Skip;=;=Easy;=;=public List<Integer> zigzagTraversal(int[][] grid);=;=You are given an m x n 2D array grid of positive integers.
+
+Your task is to traverse grid in a zigzag pattern while skipping every alternate cell.
+
+Zigzag pattern traversal is defined as following the below actions:
+
+Start at the top-left cell (0, 0).
+Move right within a row until the end of the row is reached.
+Drop down to the next row, then traverse left until the beginning of the row is reached.
+Continue alternating between right and left traversal until every row has been traversed.
+Note that you must skip every alternate cell during the traversal.
+
+Return an array of integers result containing, in order, the value of the cells visited during the zigzag traversal with skips.
+
+ 
+
+Example 1:
+
+Input: grid = [[1,2],[3,4]]
+
+Output: [1,4]
+
+Explanation:
+
+
+
+Example 2:
+
+Input: grid = [[2,1],[2,1],[2,1]]
+
+Output: [2,1,2]
+
+Explanation:
+
+
+
+Example 3:
+
+Input: grid = [[1,2,3],[4,5,6],[7,8,9]]
+
+Output: [1,3,5,7,9]
+
+Explanation:
+
+
+
+ 
+
+Constraints:
+
+2 <= n == grid.length <= 50
+2 <= m == grid[i].length <= 50
+1 <= grid[i][j] <= 2500;=;=https://leetcode.com/problems/zigzag-grid-traversal-with-skip/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6269982/python3-2-lines-reverse-chain-ts-0-ms-18-tcmw/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6268099/easy-and-straightforward-approach-beats-6b5gj/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6268343/faster-lesser-cpython3javacpythoncexplai-66g9/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6947484/zigzag-diagonal-traversal-of-a-2d-grid-b-jiwg/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6267318/java-solution-by-harsh__005-ufmi/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6267626/simple-java-solution-by-sakshikishore-9s5w/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6267439/java-easy-to-understand-beginner-friendl-9ary/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6267300/3417-zigzag-grid-traversal-with-skip-by-97r29/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6267790/simplest-approach-using-java-beats-100-b-84pe/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6273297/easy-approach-beats-100-java-solution-wi-40p2/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6267909/easy-approachbeats-100-in-java-by-madhan-8er6/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6328088/java-solution-beats-100-by-sanika_jain-rzwh/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6267496/beats-100-master-zigzag-grid-traversal-w-8k5b/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6267283/simple-by-0x4c0de-3rth/;;https://leetcode.com/problems/zigzag-grid-traversal-with-skip/solutions/6268064/zigzag-traversal-beats-10000-simple-appr-6fx3/;;;=;==;=;=;

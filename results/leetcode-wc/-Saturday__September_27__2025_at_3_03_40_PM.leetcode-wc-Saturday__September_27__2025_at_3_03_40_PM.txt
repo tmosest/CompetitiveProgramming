@@ -1,0 +1,33 @@
+1522. Diameter of N-Ary Tree;=;=Medium;=;=// Definition for a Node. Node     public int val;    public List<Node> children;        public Node()         children = new ArrayList<Node>();            public Node(int _val)         val = _val;        children = new ArrayList<Node>();;=;=Given a root of an N-ary tree, you need to compute the length of the diameter of the tree.
+
+The diameter of an N-ary tree is the length of the longest path between any two nodes in the tree. This path may or may not pass through the root.
+
+(Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value.)
+
+ 
+
+Example 1:
+
+
+
+Input: root = [1,null,3,2,4,null,5,6]
+Output: 3
+Explanation: Diameter is shown in red color.
+Example 2:
+
+
+
+Input: root = [1,null,2,null,3,4,null,5,null,6]
+Output: 4
+Example 3:
+
+
+
+Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+Output: 7
+ 
+
+Constraints:
+
+The depth of the n-ary tree is less than or equal to 1000.
+The total number of nodes is between [1, 104].;=;=https://leetcode.com/problems/diameter-of-n-ary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/1578828/java-simple-clean-solution-w-explanation-jjqj/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/1657661/general-solution-for-undirected-acyclic-94lxf/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/1147696/java-dfs-0ms-by-ffbit-khul/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/1835552/java-1ms-with-picture-step-by-step-dry-r-fs5y/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/750646/java-recursion-0ms-on-very-simple-by-rob-j2cy/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/6745115/using-a-max-heap-by-agilebluefish-5jfr/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/6790487/very-simple-intuitive-solution-beats-100-7tcc/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/6671757/simple-java-beats-100-by-mlogn-r4q6/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/6610146/fully-iterative-java-solutionaccepted-by-2fsb/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/6542445/java-solution-using-dfs-post-order-trave-acbx/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/6329173/very-simple-solution-10-lines-beats-100-uyksj/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/5634712/java-simple-dfs-0ms-100-by-samiksha12-2uf4/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/5241305/java-best-solution-dfs-by-park05218-i8yt/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/4787531/java-solution-with-dfs-0-ms-by-goldrushk-63cb/;;https://leetcode.com/problems/diameter-of-n-ary-tree/solutions/4859398/java-dfs-100-faster-by-tbekpro-9lz8/;;;=;==;=;=;

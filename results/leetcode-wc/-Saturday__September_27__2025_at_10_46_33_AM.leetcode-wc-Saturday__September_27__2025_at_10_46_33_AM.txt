@@ -1,0 +1,30 @@
+2475. Number of Unequal Triplets in Array;=;=Easy;=;=public int unequalTriplets(int[] A)         int trips = 0, pairs = 0, count[] = new int[1001];        for (int i = 0; i < A.length; ++i)             trips += pairs - count[A[i]]  (i - count[A[i]]);            pairs += i - count[A[i]];            count[A[i]] += 1;                return trips;;=;=You are given a 0-indexed array of positive integers nums. Find the number of triplets (i, j, k) that meet the following conditions:
+
+0 <= i < j < k < nums.length
+nums[i], nums[j], and nums[k] are pairwise distinct.
+In other words, nums[i] != nums[j], nums[i] != nums[k], and nums[j] != nums[k].
+Return the number of triplets that meet the conditions.
+
+ 
+
+Example 1:
+
+Input: nums = [4,4,2,4,3]
+Output: 3
+Explanation: The following triplets meet the conditions:
+- (0, 2, 4) because 4 != 2 != 3
+- (1, 2, 4) because 4 != 2 != 3
+- (2, 3, 4) because 2 != 4 != 3
+Since there are 3 triplets, we return 3.
+Note that (2, 0, 4) is not a valid triplet because 2 > 0.
+Example 2:
+
+Input: nums = [1,1,1,1,1]
+Output: 0
+Explanation: No triplets meet the conditions so we return 0.
+ 
+
+Constraints:
+
+3 <= nums.length <= 100
+1 <= nums[i] <= 1000;=;=https://leetcode.com/problems/number-of-unequal-triplets-in-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/2833367/javacpython-one-pass-on-by-lee215-g9mi/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/2833105/the-fastest-on-solution-math-combination-gpbv/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/6587786/on3-on-solution-explained-java-by-dsurya-ft4s/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/7053302/easy-triple-forloop-java-by-sairangineen-3zju/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/6778390/fastest-c-java-solution-beats-100-studen-exxo/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/2831674/java-triple-loop-solution-brute-force-by-wok9/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/6714171/easiest-solution-by-shreyagarg63-jslb/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/2832709/java-soltuion-on-by-garethbale11-dfrw/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/5538953/easiestfaster-lesser-cpython3javacpython-hnzg/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/5341531/easy-solution-brute-force-python-c-java-ogo57/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/3973333/java-three-pointers-by-ritabrata_1080-l7vw/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/2831682/javacpython-brute-force-by-krush_r_sonwa-uzxn/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/2832899/java-2-solutions-by-conchwu-jbyn/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/4667672/simple-solution-with-on3-in-java-beats-7-l9ny/;;https://leetcode.com/problems/number-of-unequal-triplets-in-array/solutions/7191760/java-by-devendran9993-dkf9/;;;=;==;=;=;

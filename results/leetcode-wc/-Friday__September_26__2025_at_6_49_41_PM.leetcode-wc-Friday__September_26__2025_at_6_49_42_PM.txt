@@ -1,0 +1,40 @@
+3138. Minimum Length of Anagram Concatenation;=;=Medium;=;=public int minAnagramLength(String s);=;=You are given a string s, which is known to be a concatenation of anagrams of some string t.
+
+Return the minimum possible length of the string t.
+
+An anagram is formed by rearranging the letters of a string. For example, "aab", "aba", and, "baa" are anagrams of "aab".
+
+ 
+
+Example 1:
+
+Input: s = "abba"
+
+Output: 2
+
+Explanation:
+
+One possible string t could be "ba".
+
+Example 2:
+
+Input: s = "cdef"
+
+Output: 4
+
+Explanation:
+
+One possible string t could be "cdef", notice that t can be equal to s.
+
+Example 2:
+
+Input: s = "abcbcacabbaccba"
+
+Output: 3
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consist only of lowercase English letters.;=;=https://leetcode.com/problems/minimum-length-of-anagram-concatenation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5113718/easy-video-solution-how-to-in-interview-njgl0/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5114671/gcd-is-working-but-wrong-correct-solutio-3k1q/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5113642/easy-java-solution-with-detailed-explana-tmva/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5113900/java-gcd-by-deleted_user-7hjo/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5114118/java-int-array-or-map-count-matching-by-ei5e5/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5113888/java-solution-beginner-friendly-for-mini-su8u/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/6259257/java-16ms-94-count-letters-divisibility-ujfc3/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5113715/faster-c-javapython-soution-by-himanshuy-o3es/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5116082/java-easy-to-understood-by-rain0102-7zf3/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5191554/simple-solution-by-rntongo-6bl1/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5114851/easy-to-understand-divisors-sorting-c-py-70h4/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5113742/javapython-clean-solution-weekly-contest-pybm/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5118273/easy-solution-gcd-works-on-this-problem-5eysv/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5113634/java-solution-gcd-by-nirupam_sur-fepv/;;https://leetcode.com/problems/minimum-length-of-anagram-concatenation/solutions/5114042/new-best-explaination-by-itsyeshu-beats-cqks5/;;;=;==;=;=;

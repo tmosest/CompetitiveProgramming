@@ -1,0 +1,31 @@
+302. Smallest Rectangle Enclosing Black Pixels;=;=Hard;=;=public int minArea(char[][] image, int x, int y);=;=You are given an m x n binary matrix image where 0 represents a white pixel and 1 represents a black pixel.
+
+The black pixels are connected (i.e., there is only one black region). Pixels are connected horizontally and vertically.
+
+Given two integers x and y that represents the location of one of the black pixels, return the area of the smallest (axis-aligned) rectangle that encloses all black pixels.
+
+You must write an algorithm with less than O(mn) runtime complexity
+
+ 
+
+Example 1:
+
+
+Input: image = [["0","0","1","0"],["0","1","1","0"],["0","1","0","0"]], x = 0, y = 2
+Output: 6
+Example 2:
+
+Input: image = [["1"]], x = 0, y = 0
+Output: 1
+ 
+
+Constraints:
+
+m == image.length
+n == image[i].length
+1 <= m, n <= 100
+image[i][j] is either '0' or '1'.
+0 <= x < m
+0 <= y < n
+image[x][y] == '1'.
+The black pixels in the image only form one component.;=;=https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/75127/cjavapython-binary-search-solution-with-a2c4t/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/75128/1ms-concise-java-binary-search-dfs-is-4m-jk8u/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/6831790/using-4-occurrence-binary-search-to-find-izom/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/75173/java-dfs-solution-and-seeking-for-a-bina-fbj0/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/1057973/two-solutions-in-java-dfs-and-binary-sea-ipx4/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/877325/java-simple-clear-binary-search-solution-ekx1/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/75139/why-we-need-binary-search-or-dfs-by-yibi-lvvp/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/6697945/java-javascript-typescript-c-c-kotlin-go-rdgp/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/640913/java-binary-search-intuitive-without-too-60mj/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/6678118/java-easy-bfs-solution-by-nowheresly-vz3e/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/75171/short-java-solution-13-ms-by-cygnuss-10ge/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/75170/simple-and-clean-java-dfs-solution-fast-tiv07/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/75165/dumb-question-but-i-couldnt-figure-out-w-zb0w/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/6485749/beats-100-0-ms-python-java-onlogm-mlogn-kmu8b/;;https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/solutions/5856432/simple-java-solution-by-sakshikishore-ux8p/;;;=;==;=;=;

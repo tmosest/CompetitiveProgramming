@@ -1,0 +1,63 @@
+722. Remove Comments;=;=Medium;=;=public List<String> removeComments(String[] source);=;=Given a C++ program, remove comments from it. The program source is an array of strings source where source[i] is the ith line of the source code. This represents the result of splitting the original source code string by the newline character '\n'.
+
+In C++, there are two types of comments, line comments, and block comments.
+
+The string "//" denotes a line comment, which represents that it and the rest of the characters to the right of it in the same line should be ignored.
+The string "/*" denotes a block comment, which represents that all characters until the next (non-overlapping) occurrence of "*/" should be ignored. (Here, occurrences happen in reading order: line by line from left to right.) To be clear, the string "/*/" does not yet end the block comment, as the ending would be overlapping the beginning.
+The first effective comment takes precedence over others.
+
+For example, if the string "//" occurs in a block comment, it is ignored.
+Similarly, if the string "/*" occurs in a line or block comment, it is also ignored.
+If a certain line of code is empty after removing comments, you must not output that line: each string in the answer list will be non-empty.
+
+There will be no control characters, single quote, or double quote characters.
+
+For example, source = "string s = "/* Not a comment. */";" will not be a test case.
+Also, nothing else such as defines or macros will interfere with the comments.
+
+It is guaranteed that every open block comment will eventually be closed, so "/*" outside of a line or block comment always starts a new comment.
+
+Finally, implicit newline characters can be deleted by block comments. Please see the examples below for details.
+
+After removing the comments from the source code, return the source code in the same format.
+
+ 
+
+Example 1:
+
+Input: source = ["/*Test program */", "int main()", "{ ", "  // variable declaration ", "int a, b, c;", "/* This is a test", "   multiline  ", "   comment for ", "   testing */", "a = b + c;", "}"]
+Output: ["int main()","{ ","  ","int a, b, c;","a = b + c;","}"]
+Explanation: The line by line code is visualized as below:
+/*Test program */
+int main()
+{ 
+  // variable declaration 
+int a, b, c;
+/* This is a test
+   multiline  
+   comment for 
+   testing */
+a = b + c;
+}
+The string /* denotes a block comment, including line 1 and lines 6-9. The string // denotes line 4 as comments.
+The line by line output code is visualized as below:
+int main()
+{ 
+  
+int a, b, c;
+a = b + c;
+}
+Example 2:
+
+Input: source = ["a/*comment", "line", "more_comment*/b"]
+Output: ["ab"]
+Explanation: The original source string is "a/*comment\nline\nmore_comment*/b", where we have bolded the newline characters.  After deletion, the implicit newline characters are deleted, leaving the string "ab", which when delimited by newline characters becomes ["ab"].
+ 
+
+Constraints:
+
+1 <= source.length <= 100
+0 <= source[i].length <= 80
+source[i] consists of printable ASCII characters.
+Every open block comment is eventually closed.
+There are no single-quote or double-quote in the input.;=;=https://leetcode.com/problems/remove-comments/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-comments/solutions/1184461/simple-java-solution-with-detailed-comme-0cg7/;;https://leetcode.com/problems/remove-comments/solutions/1691561/java-intuituve-easy-and-with-comments-by-6mog/;;https://leetcode.com/problems/remove-comments/solutions/1998755/java-regex-by-matblockgreninja-ptvx/;;https://leetcode.com/problems/remove-comments/solutions/3946813/easiest-solution-by-kunal7216-9ucm/;;https://leetcode.com/problems/remove-comments/solutions/519173/java-easy-to-read-understand-fast-soluti-lgx7/;;https://leetcode.com/problems/remove-comments/solutions/3440607/solution-by-deleted_user-27nu/;;https://leetcode.com/problems/remove-comments/solutions/1683732/java-one-pass-solution-explained-with-co-qrlm/;;https://leetcode.com/problems/remove-comments/solutions/1948296/java-if-else-by-crackitsean-dq45/;;https://leetcode.com/problems/remove-comments/solutions/262631/java-1ms-solution-by-taozitaozi-3z6w/;;https://leetcode.com/problems/remove-comments/solutions/7065257/java-solution-beats-100ms-by-deepika_ag-o1bh/;;https://leetcode.com/problems/remove-comments/solutions/6466912/easy-by-sivakumarp132003-38jo/;;https://leetcode.com/problems/remove-comments/solutions/6260818/722-remove-comments-by-g8xd0qpqty-at61/;;https://leetcode.com/problems/remove-comments/solutions/5962060/0-ms-top-most-easy-program-by-prasad_630-nsrj/;;https://leetcode.com/problems/remove-comments/solutions/5954587/solution-beats-100-detailed-explanation-ptn0o/;;https://leetcode.com/problems/remove-comments/solutions/5874523/java-100-percent-beats-using-string-buil-zr7a/;;;=;==;=;=;

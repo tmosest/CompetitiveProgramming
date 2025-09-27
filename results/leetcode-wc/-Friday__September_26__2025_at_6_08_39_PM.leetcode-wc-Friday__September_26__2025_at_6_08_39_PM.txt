@@ -1,0 +1,31 @@
+1566. Detect Pattern of Length M Repeated K or More Times;=;=Easy;=;=public boolean containsPattern(int[] arr, int m, int k);=;=Given an array of positive integers arr, find a pattern of length m that is repeated k or more times.
+
+A pattern is a subarray (consecutive sub-sequence) that consists of one or more values, repeated multiple times consecutively without overlapping. A pattern is defined by its length and the number of repetitions.
+
+Return true if there exists a pattern of length m that is repeated k or more times, otherwise return false.
+
+ 
+
+Example 1:
+
+Input: arr = [1,2,4,4,4,4], m = 1, k = 3
+Output: true
+Explanation: The pattern (4) of length 1 is repeated 4 consecutive times. Notice that pattern can be repeated k or more times but not less.
+Example 2:
+
+Input: arr = [1,2,1,2,1,1,1,3], m = 2, k = 2
+Output: true
+Explanation: The pattern (1,2) of length 2 is repeated 2 consecutive times. Another valid pattern (2,1) is also repeated 2 times.
+Example 3:
+
+Input: arr = [1,2,1,2,1,3], m = 2, k = 3
+Output: false
+Explanation: The pattern (1,2) is of length 2 but is repeated only 2 times. There is no pattern of length 2 that is repeated 3 or more times.
+ 
+
+Constraints:
+
+2 <= arr.length <= 100
+1 <= arr[i] <= 100
+1 <= m <= 100
+2 <= k <= 100;=;=https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/1047148/java-faster-than-100-on-by-yurokusa-t7a4/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/1618963/detailed-description-java-solution-0-ms-eihel/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/2292520/java-clear-one-pass-solution-by-maddetec-tbyd/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/2283096/java-simple-explained-by-prashant404-s82z/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/5289429/simple-easy-to-understand-java-code-100-4zyzv/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/7204876/100-java-code-by-devast2005-pzyz/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/1409784/easy-java-solution-0-ms-faster-than-1000-98ih/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/4705926/easy-to-understand-solution-by-pratik_pa-rqsk/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/1559389/java-on-100-fast-by-ahmed_abdelfatah-p5cg/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/819314/java-straightforward-iteratively-by-area-cafa/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/6843856/clean-code-by-smileysuneet-eiyo/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/7038229/not-optimal-0ms-beats10000-but-easy-to-u-vuvn/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/1146281/java-0ms-100-fastest-easy-by-rmanish0308-4l9c/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/6980546/on-m-k-solution-by-gelzintvidaure-qrf2/;;https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/solutions/6851790/onn-in-worst-case-java-simple-by-adayal2-iebp/;;;=;==;=;=;

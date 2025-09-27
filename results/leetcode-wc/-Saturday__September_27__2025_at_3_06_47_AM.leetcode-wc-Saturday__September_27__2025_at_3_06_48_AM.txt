@@ -1,0 +1,37 @@
+1985. Find the Kth Largest Integer in the Array;=;=Medium;=;=publicÊStringÊkthLargestNumber(String[]Ênums,ÊintÊk);=;=You are given an array of strings nums and an integer k. Each string in nums represents an integer without leading zeros.
+
+Return the string that represents the kth largest integer in nums.
+
+Note: Duplicate numbers should be counted distinctly. For example, if nums is ["1","2","2"], "2" is the first largest integer, "2" is the second-largest integer, and "1" is the third-largest integer.
+
+Ê
+
+Example 1:
+
+Input: nums = ["3","6","7","10"], k = 4
+Output: "3"
+Explanation:
+The numbers in nums sorted in non-decreasing order are ["3","6","7","10"].
+The 4th largest integer in nums is "3".
+Example 2:
+
+Input: nums = ["2","21","12","1"], k = 3
+Output: "2"
+Explanation:
+The numbers in nums sorted in non-decreasing order are ["1","2","12","21"].
+The 3rd largest integer in nums is "2".
+Example 3:
+
+Input: nums = ["0","0"], k = 2
+Output: "0"
+Explanation:
+The numbers in nums sorted in non-decreasing order are ["0","0"].
+The 2nd largest integer in nums is "0".
+Ê
+
+Constraints:
+
+1 <= k <= nums.length <= 104
+1 <= nums[i].length <= 100
+nums[i] consists of only digits.
+nums[i] will not have any leading zeros.;=;=https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/6733828/crack-the-code-k-th-largest-number-from-v77e2/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/7164362/simple-by-_mausam_kumari-m8vx/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/7090579/java-by-chahandini-kyjx/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/6956671/java-k-th-largest-number-java-max-heap-w-u6u2/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/3434615/3-approach-java-beginner-friendly-easyyy-4vzb/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/2010349/time-onlogn-space-o1-sorting-comparator-gf02d/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/6897716/priority-queue-solution-very-original-by-6ven/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/1433521/my-java-solution-using-priorityqueue-nlo-m3jt/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/7196701/minheap-by-yukta_jain-ghit/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/3843193/detailed-solution-comments-explanation-b-jk7h/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/6419048/string-pq-comparator-kth-largest-java-by-rjli/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/6334435/using-biginteger-by-madhiarasan-5gvl/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/4923883/simplest-solution-in-java-for-beginners-1rmq1/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/1528397/java-2-simple-solution-sort-priority-que-6egl/;;https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/solutions/2997280/java-biginteger-min-heap-priority-queue-0sb42/;;;=;==;=;=;

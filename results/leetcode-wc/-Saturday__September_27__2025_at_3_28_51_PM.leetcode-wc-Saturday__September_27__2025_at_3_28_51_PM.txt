@@ -1,0 +1,29 @@
+2404. Most Frequent Even Element;=;=Easy;=;=public int mostFrequentEven(int[] nums);=;=Given an integer array nums, return the most frequent even element.
+
+If there is a tie, return the smallest one. If there is no such element, return -1.
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,2,2,4,4,1]
+Output: 2
+Explanation:
+The even elements are 0, 2, and 4. Of these, 2 and 4 appear the most.
+We return the smallest one, which is 2.
+Example 2:
+
+Input: nums = [4,4,4,9,2,4]
+Output: 4
+Explanation: 4 is the even element appears the most.
+Example 3:
+
+Input: nums = [29,47,21,41,13,37,25,7]
+Output: -1
+Explanation: There is no even element.
+ 
+
+Constraints:
+
+1 <= nums.length <= 2000
+0 <= nums[i] <= 105;=;=https://leetcode.com/problems/most-frequent-even-element/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/most-frequent-even-element/solutions/7198096/clean-java-solution-hashmap-on-most-freq-mb95/;;https://leetcode.com/problems/most-frequent-even-element/solutions/7047862/beginner-friendly-100-optimized-by-dtmbx-m7en/;;https://leetcode.com/problems/most-frequent-even-element/solutions/2560064/single-pass-with-comments-cjavapython-by-rxl1/;;https://leetcode.com/problems/most-frequent-even-element/solutions/6996173/easy-solution-using-hashmap-by-koisereni-i222/;;https://leetcode.com/problems/most-frequent-even-element/solutions/6979598/no-maps-allowed-beats-100-5ms-by-code_wi-4081/;;https://leetcode.com/problems/most-frequent-even-element/solutions/2561204/c-java-use-hashmap-easy-approach-by-ayus-vwki/;;https://leetcode.com/problems/most-frequent-even-element/solutions/5302075/easy-to-understand-beginner-friendly-usi-nlo2/;;https://leetcode.com/problems/most-frequent-even-element/solutions/6646317/space-optimised-java-by-dsuryaprakash89-fzv2/;;https://leetcode.com/problems/most-frequent-even-element/solutions/2560659/java-simple-hashmap-by-kanojiyakaran-yko0/;;https://leetcode.com/problems/most-frequent-even-element/solutions/4076816/java-hashmap-solution-by-ameya-kawade-sarl/;;https://leetcode.com/problems/most-frequent-even-element/solutions/6295705/two-approaches-hashset-and-freq-array-ro-4d25/;;https://leetcode.com/problems/most-frequent-even-element/solutions/7200174/solution-using-java-by-kumkumsahu1505-4n2i/;;https://leetcode.com/problems/most-frequent-even-element/solutions/7196709/best-for-learning-hashmap-simple-usage-o-2m0k/;;https://leetcode.com/problems/most-frequent-even-element/solutions/2611296/100-on-easy-short-fast-solution-by-hursh-9p6e/;;https://leetcode.com/problems/most-frequent-even-element/solutions/4897890/easy-java-solution-without-hashmaps-by-h-sj4f/;;;=;==;=;=;

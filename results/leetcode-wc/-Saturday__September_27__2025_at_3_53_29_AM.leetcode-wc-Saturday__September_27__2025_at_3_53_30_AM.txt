@@ -1,0 +1,36 @@
+1034. Coloring A Border;=;=Medium;=;=public int[][] colorBorder(int[][] grid, int row, int col, int color);=;=You are given an m x n integer matrix grid, and three integers row, col, and color. Each value in the grid represents the color of the grid square at that location.
+
+Two squares are called adjacent if they are next to each other in any of the 4 directions.
+
+Two squares belong to the same connected component if they have the same color and they are adjacent.
+
+The border of a connected component is all the squares in the connected component that are either adjacent to (at least) a square not in the component, or on the boundary of the grid (the first or last row or column).
+
+You should color the border of the connected component that contains the square grid[row][col] with color.
+
+Return the final grid.
+
+ 
+
+Example 1:
+
+Input: grid = [[1,1],[1,2]], row = 0, col = 0, color = 3
+Output: [[3,3],[3,2]]
+Example 2:
+
+Input: grid = [[1,2,2],[2,3,2]], row = 0, col = 1, color = 3
+Output: [[1,3,3],[2,3,3]]
+Example 3:
+
+Input: grid = [[1,1,1],[1,1,1],[1,1,1]], row = 1, col = 1, color = 2
+Output: [[2,2,2],[2,1,2],[2,2,2]]
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 50
+1 <= grid[i][j], color <= 1000
+0 <= row < m
+0 <= col < n;=;=https://leetcode.com/problems/coloring-a-border/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/coloring-a-border/solutions/693958/java-recursive-dfs-beats-100-time-easy-s-o0kw/;;https://leetcode.com/problems/coloring-a-border/solutions/284935/java-dfs-easy-to-understand-by-makubex74-z5eb/;;https://leetcode.com/problems/coloring-a-border/solutions/4614721/simple-soln-java-100-beats-by-shyam2626-53h0/;;https://leetcode.com/problems/coloring-a-border/solutions/1274806/java-0ms-dfs-faster-than-100-by-sirpawan-pn1e/;;https://leetcode.com/problems/coloring-a-border/solutions/2862569/java-solution-bfs-easy-to-understand-by-n2e4f/;;https://leetcode.com/problems/coloring-a-border/solutions/2648186/2ms-java-ac-solution-in-o1-space-dfs-gra-tpzh/;;https://leetcode.com/problems/coloring-a-border/solutions/1313469/java-dfs-simple-and-easy-to-understand-s-z2fp/;;https://leetcode.com/problems/coloring-a-border/solutions/1850221/java-dfs-recursion-2-passes-by-daynarftw-nryf/;;https://leetcode.com/problems/coloring-a-border/solutions/1602546/java-easy-and-clean-dfs-solution-1ms-run-zwik/;;https://leetcode.com/problems/coloring-a-border/solutions/1256359/java-1ms-solution-by-abhishekgusain2705-owwr/;;https://leetcode.com/problems/coloring-a-border/solutions/1150961/java-0ms-runtime-100-faster-by-sollc-l5sc/;;https://leetcode.com/problems/coloring-a-border/solutions/7027047/dfs-omn-by-gitchuan-seiw/;;https://leetcode.com/problems/coloring-a-border/solutions/7081042/14825-by-triyaambak-2p07/;;https://leetcode.com/problems/coloring-a-border/solutions/7044303/java-sol-bfs-intuition-for-calculating-b-dh0y/;;https://leetcode.com/problems/coloring-a-border/solutions/7058566/dfs-approach-intuition-to-implementation-yqw3/;;;=;==;=;=;

@@ -1,0 +1,29 @@
+2472. Maximum Number of Non-overlapping Palindrome Substrings;=;=Hard;=;=public int maxPalindromes(String s, int k);=;=You are given a string s and a positive integer k.
+
+Select a set of non-overlapping substrings from the string s that satisfy the following conditions:
+
+The length of each substring is at least k.
+Each substring is a palindrome.
+Return the maximum number of substrings in an optimal selection.
+
+A substring is a contiguous sequence of characters within a string.
+
+ 
+
+Example 1:
+
+Input: s = "abaccdbbd", k = 3
+Output: 2
+Explanation: We can select the substrings underlined in s = "abaccdbbd". Both "aba" and "dbbd" are palindromes and have a length of at least k = 3.
+It can be shown that we cannot find a selection with more than two valid substrings.
+Example 2:
+
+Input: s = "adbcda", k = 2
+Output: 0
+Explanation: There is no palindrome substring of length at least 2 in the string.
+ 
+
+Constraints:
+
+1 <= k <= s.length <= 2000
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/2808805/c-java-python3-palindromic-substrings-no-r0a6/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/2811056/simplest-solution-no-dp-why-only-k1-by-h-rtkn/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/2808800/java-greedy-approach-by-zadeluca-c0g5/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/2808992/java-on-solution-dp-manachers-algorithm-cf7gg/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/2811420/java-1-dimension-dp-explained-by-nadaral-3y8o/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/2808821/easy-java-solution-by-sumitk7970-d9sr/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/5404123/javac-clean-easy-solution-with-detail-de-4qxe/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/6323987/java-easy-to-understand-beats-100-by-dea-9soa/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/2808934/easy-dp-solution-using-java-by-devkd-d2nj/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/3166035/easy-to-understand-solution-in-java-usin-x9ua/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/6808626/two-pointer-100-clean-and-easy-explanati-gv0n/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/2808826/java-solution-by-solved-8fz1/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/7206409/easy-to-understand-java-dp-by-hitomyan-313z/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/4159157/java-easy-solution-with-explanation-bett-30qm/;;https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/solutions/2809048/longest-palindromic-substring-easy-to-un-b2qd/;;;=;==;=;=;

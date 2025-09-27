@@ -1,0 +1,20 @@
+267. Palindrome Permutation II;=;=Medium;=;=public List<String> generatePalindromes(String s);=;=Given a string s, return all the palindromic permutations (without duplicates) of it.
+
+You may return the answer in any order. If s has no palindromic permutation, return an empty list.
+
+ 
+
+Example 1:
+
+Input: s = "aabb"
+Output: ["abba","baab"]
+Example 2:
+
+Input: s = "abc"
+Output: []
+ 
+
+Constraints:
+
+1 <= s.length <= 16
+s consists of only lowercase English letters.;=;=https://leetcode.com/problems/palindrome-permutation-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/palindrome-permutation-ii/solutions/69696/ac-java-solution-with-explanation-by-jea-lrpt/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/69698/short-backtracking-solution-in-java-3-ms-eybc/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/272478/java-simple-backtracking-using-only-a-ma-okw4/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/4732751/easy-java-solution-to-understand-backtra-oizl/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/4525485/easy-to-understand-backtracking-by-lust4-t1ri/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/69704/java-1ms-beats-9967-by-joebluesky-0woa/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/1323722/simple-backtrack-with-comments-100-by-ra-xty8/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/1921053/java-easy-understanding-backtracking-sol-xqke/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/2040528/java-javascript-c-solution-by-lachezarts-qpnc/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/1527948/java-tc-onn2-sc-on-optimal-backtracking-vbeb5/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/1048851/a-simple-java-ac-solution-with-explanati-5ci7/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/654290/easy-to-understand-java-backtracking-sol-ekss/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/69712/short-java-ac-solution-by-swapping-permu-hy5t/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/4269094/java-smartly-build-a-char-array-and-conv-r0ym/;;https://leetcode.com/problems/palindrome-permutation-ii/solutions/69737/2ms-super-easy-to-understand-java-soluti-ma2a/;;;=;==;=;=;

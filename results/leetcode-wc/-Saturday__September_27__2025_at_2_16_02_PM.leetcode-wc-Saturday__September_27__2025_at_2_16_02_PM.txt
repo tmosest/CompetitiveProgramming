@@ -1,0 +1,33 @@
+126. Word Ladder II;=;=Hard;=;=public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList);=;=A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence of words beginWord -> s1 -> s2 -> ... -> sk such that:
+
+Every adjacent pair of words differs by a single letter.
+Every si for 1 <= i <= k is in wordList. Note that beginWord does not need to be in wordList.
+sk == endWord
+Given two words, beginWord and endWord, and a dictionary wordList, return all the shortest transformation sequences from beginWord to endWord, or an empty list if no such sequence exists. Each sequence should be returned as a list of the words [beginWord, s1, s2, ..., sk].
+
+ 
+
+Example 1:
+
+Input: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
+Output: [["hit","hot","dot","dog","cog"],["hit","hot","lot","log","cog"]]
+Explanation: There are 2 shortest transformation sequences:
+"hit" -> "hot" -> "dot" -> "dog" -> "cog"
+"hit" -> "hot" -> "lot" -> "log" -> "cog"
+Example 2:
+
+Input: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]
+Output: []
+Explanation: The endWord "cog" is not in wordList, therefore there is no valid transformation sequence.
+ 
+
+Constraints:
+
+1 <= beginWord.length <= 5
+endWord.length == beginWord.length
+1 <= wordList.length <= 500
+wordList[i].length == beginWord.length
+beginWord, endWord, and wordList[i] consist of lowercase English letters.
+beginWord != endWord
+All the words in wordList are unique.
+The sum of all shortest transformation sequences does not exceed 105.;=;=https://leetcode.com/problems/word-ladder-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/word-ladder-ii/solutions/6319954/i-spent-3-hours-developing-this-fastest-kbze3/;;https://leetcode.com/problems/word-ladder-ii/solutions/7121152/easy-solution-bfs-dfs-onm-cpp-java-pytho-eqkh/;;https://leetcode.com/problems/word-ladder-ii/solutions/2424910/explanation-with-animation-accepted-with-zlxi/;;https://leetcode.com/problems/word-ladder-ii/solutions/7149150/best-easy-solution-using-bfs-and-dfs-wit-229t/;;https://leetcode.com/problems/word-ladder-ii/solutions/2421907/java-easy-explanation-commented-by-jaska-k8n5/;;https://leetcode.com/problems/word-ladder-ii/solutions/40447/share-two-similar-java-solution-that-acc-jbu8/;;https://leetcode.com/problems/word-ladder-ii/solutions/40477/super-fast-java-solution-two-end-bfs-by-6p645/;;https://leetcode.com/problems/word-ladder-ii/solutions/2425494/java-solution-88-ms-by-adarsh-mishra27-jv9v/;;https://leetcode.com/problems/word-ladder-ii/solutions/1223138/java-bfs-simple-clear-solution-algo-expl-zmam/;;https://leetcode.com/problems/word-ladder-ii/solutions/5743986/java-solution-beats-98-with-intuition-by-85ab/;;https://leetcode.com/problems/word-ladder-ii/solutions/2424809/java-efficient-solutionupdated-by-vaibha-prb7/;;https://leetcode.com/problems/word-ladder-ii/solutions/6923016/bfs-and-dfs-required-by-jaidamani42-0m94/;;https://leetcode.com/problems/word-ladder-ii/solutions/6784351/126-word-ladder-ii-by-listen443_aditya-tg0f/;;https://leetcode.com/problems/word-ladder-ii/solutions/5907095/understand-code-from-striver-graph-serie-thum/;;https://leetcode.com/problems/word-ladder-ii/solutions/2424089/java-graph-bfs-shortest-path-image-expla-stlb/;;;=;==;=;=;

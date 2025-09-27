@@ -1,0 +1,40 @@
+1449. Form Largest Integer With Digits That Add up to Target;=;=Hard;=;=publicÊStringÊlargestNumber(int[]Êcost,ÊintÊtarget);=;=Given an array of integers cost and an integer target, return the maximum integer you can paint under the following rules:
+
+The cost of painting a digit (i + 1) is given by cost[i] (0-indexed).
+The total cost used must be equal to target.
+The integer does not have 0 digits.
+Since the answer may be very large, return it as a string. If there is no way to paint any integer given the condition, return "0".
+
+Ê
+
+Example 1:
+
+Input: cost = [4,3,2,5,6,7,2,5,5], target = 9
+Output: "7772"
+Explanation: The cost to paint the digit '7' is 2, and the digit '2' is 3. Then cost("7772") = 2*3+ 3*1 = 9. You could also paint "977", but "7772" is the largest number.
+Digit    cost
+  1  ->   4
+  2  ->   3
+  3  ->   2
+  4  ->   5
+  5  ->   6
+  6  ->   7
+  7  ->   2
+  8  ->   5
+  9  ->   5
+Example 2:
+
+Input: cost = [7,6,5,5,5,6,8,7,8], target = 12
+Output: "85"
+Explanation: The cost to paint the digit '8' is 7, and the digit '5' is 5. Then cost("85") = 7 + 5 = 12.
+Example 3:
+
+Input: cost = [2,4,6,2,4,6,4,4,4], target = 5
+Output: "0"
+Explanation: It is impossible to paint any integer with total cost equal to target.
+Ê
+
+Constraints:
+
+cost.length == 9
+1 <= cost[i], target <= 5000;=;=https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/5377088/java-solution-linear-dp-memoization-by-n-4cmw/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/2225928/java-dp-is-easy-10-mins-read-easy-unders-x32p/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/6229084/memoization-java-solution-by-avenger30-6hel/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/5885920/beats-93-users-best-understandable-solut-0nah/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/5596616/is-code-understandable-please-comment-by-kne2/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/5596608/provide-your-thoughts-if-code-is-clean-a-g35d/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/5480526/java-recursion-with-memoisation-by-000pr-us1l/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/3034807/simple-java-solution-by-user5723so-0qqp/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/2983612/java-dp-solution-by-aravindsys-ufek/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/2206114/bottom-up-apprach-dp-java-solution-detai-qzei/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/1383454/javahelphow-to-memoize-my-solution-by-sm-6lu0/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/638539/java-average-case-otarget-dp-solution-de-8r2x/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/635336/intuitive-top-down-dp-java-by-rohittt-ykou/;;https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solutions/635276/java-bottom-up-dp-o81target-by-theprasoo-kz6n/;;;=;==;=;=;

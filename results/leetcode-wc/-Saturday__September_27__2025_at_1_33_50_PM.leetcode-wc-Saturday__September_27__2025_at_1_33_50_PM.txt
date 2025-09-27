@@ -1,0 +1,33 @@
+1157. Online Majority Element In Subarray;=;=Hard;=;=MajorityChecker     public MajorityChecker(int[] arr)                     public int query(int left, int right, int threshold)             /  Your MajorityChecker object will be instantiated and called as such:  MajorityChecker obj = new MajorityChecker(arr);;=;=Design a data structure that efficiently finds the majority element of a given subarray.
+
+The majority element of a subarray is an element that occurs threshold times or more in the subarray.
+
+Implementing the MajorityChecker class:
+
+MajorityChecker(int[] arr) Initializes the instance of the class with the given array arr.
+int query(int left, int right, int threshold) returns the element in the subarray arr[left...right] that occurs at least threshold times, or -1 if no such element exists.
+ 
+
+Example 1:
+
+Input
+["MajorityChecker", "query", "query", "query"]
+[[[1, 1, 2, 2, 1, 1]], [0, 5, 4], [0, 3, 3], [2, 3, 2]]
+Output
+[null, 1, -1, 2]
+
+Explanation
+MajorityChecker majorityChecker = new MajorityChecker([1, 1, 2, 2, 1, 1]);
+majorityChecker.query(0, 5, 4); // return 1
+majorityChecker.query(0, 3, 3); // return -1
+majorityChecker.query(2, 3, 2); // return 2
+ 
+
+Constraints:
+
+1 <= arr.length <= 2 * 104
+1 <= arr[i] <= 2 * 104
+0 <= left <= right < arr.length
+threshold <= right - left + 1
+2 * threshold > right - left + 1
+At most 104 calls will be made to query.;=;=https://leetcode.com/problems/online-majority-element-in-subarray/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/online-majority-element-in-subarray/solutions/5188773/java-beats-100-by-deleted_user-dl9p/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/617295/java-ologn-for-each-query-with-bit-manip-bpuu/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/355908/bias-against-python-again-by-leetcoder28-gxa7/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/6005591/simple-rmq-solution-beats-100-by-dmitryn-0u8w/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/4292145/dedicated-to-wisdompeak-by-user3043sb-w411/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/1964843/java-beats-10000-memoryspeed-0ms-april-2-5roo/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/6682577/efficient-range-majority-queries-using-s-1wo3/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/6071455/78-ms-beats-9167-by-pribyte1-3esr/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/5752728/easy-java-solution-beats-74-by-ezaz_nitd-7j3q/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/3187001/moores-voting-segtree-binary-search-by-g-b0iz/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/1724764/dew-it-non-probabilistic-solution-onlog-4il2q/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/588818/can-anyone-help-what-is-logical-error-in-c76w/;;https://leetcode.com/problems/online-majority-element-in-subarray/solutions/356007/simple-java-solution-based-on-voting-alg-w72y/;;;=;==;=;=;

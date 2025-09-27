@@ -1,0 +1,37 @@
+2149. Rearrange Array Elements by Sign;=;=Medium;=;=public int[] rearrangeArray(int[] nums);=;=You are given a 0-indexed integer array nums of even length consisting of an equal number of positive and negative integers.
+
+You should return the array of nums such that the the array follows the given conditions:
+
+Every consecutive pair of integers have opposite signs.
+For all integers with the same sign, the order in which they were present in nums is preserved.
+The rearranged array begins with a positive integer.
+Return the modified array after rearranging the elements to satisfy the aforementioned conditions.
+
+ 
+
+Example 1:
+
+Input: nums = [3,1,-2,-5,2,-4]
+Output: [3,-2,1,-5,2,-4]
+Explanation:
+The positive integers in nums are [3,1,2]. The negative integers are [-2,-5,-4].
+The only possible way to rearrange them such that they satisfy all conditions is [3,-2,1,-5,2,-4].
+Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions.  
+Example 2:
+
+Input: nums = [-1,1]
+Output: [1,-1]
+Explanation:
+1 is the only positive integer and -1 the only negative integer in nums.
+So nums is rearranged to [1,-1].
+ 
+
+Constraints:
+
+2 <= nums.length <= 2 * 105
+nums.length is even
+1 <= |nums[i]| <= 105
+nums consists of equal number of positive and negative integers.
+ 
+
+It is not required to do the modifications in-place.;=;=https://leetcode.com/problems/rearrange-array-elements-by-sign/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/6563706/video-do-you-know-this-python-code-see-b-om9j/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/4723628/beats-100-users-cjavapythonjavascript-2-pamj5/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/4723827/interview-approach-follow-up-question-by-8z34/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/7197882/rearrange-array-by-sign-optimal-linear-s-w7s9/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/7177233/rearrange-the-array-element-java-code-by-7e7q/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/7202040/very-simple-and-easy-to-understand-by-_m-kcni/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/7151969/beats-100-java-code-easy-to-understand-b-4ntq/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/4724318/easily-explained-in-conversation-format-aphi8/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/7101661/clean-java-on-solution-100-runtime-easy-932o2/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/4723738/3ms-solutoion-beats-100-java-solution-wi-mzd7/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/7119592/easy-code-for-solve-this-problem-by-4_k4-3opj/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/7079023/beginner-friendly-easy-approach-java-sol-fv8t/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/7143192/two-pointer-approach-with-explanation-by-zdcw/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/4723549/java-two-pointers-12-lines-clean-code-by-emp3/;;https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/6825028/very-easy-java-solution-easy-to-understa-koxi/;;;=;==;=;=;

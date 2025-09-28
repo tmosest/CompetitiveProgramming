@@ -1,0 +1,28 @@
+320. Generalized Abbreviation;=;=Medium;=;=public List<String> generateAbbreviations(String word);=;=A word's generalized abbreviation can be constructed by taking any number of non-overlapping and non-adjacent substrings and replacing them with their respective lengths.
+
+For example, "abcde" can be abbreviated into:
+"a3e" ("bcd" turned into "3")
+"1bcd1" ("a" and "e" both turned into "1")
+"5" ("abcde" turned into "5")
+"abcde" (no substrings replaced)
+However, these abbreviations are invalid:
+"23" ("ab" turned into "2" and "cde" turned into "3") is invalid as the substrings chosen are adjacent.
+"22de" ("ab" turned into "2" and "bc" turned into "2") is invalid as the substring chosen overlap.
+Given a string word, return a list of all the possible generalized abbreviations of word. Return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: word = "word"
+Output: ["4","3d","2r1","2rd","1o2","1o1d","1or1","1ord","w3","w2d","w1r1","w1rd","wo2","wo1d","wor1","word"]
+Example 2:
+
+Input: word = "a"
+Output: ["1","a"]
+ 
+
+Constraints:
+
+1 <= word.length <= 15
+word consists of only lowercase English letters.;=;=https://leetcode.com/problems/generalized-abbreviation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/generalized-abbreviation/solutions/77190/java-backtracking-solution-by-soymuybien-16cp/;;https://leetcode.com/problems/generalized-abbreviation/solutions/77218/java-14ms-beats-100-by-yavinci-kyzt/;;https://leetcode.com/problems/generalized-abbreviation/solutions/77183/meet-in-google-interview-solution-with-c-5kwh/;;https://leetcode.com/problems/generalized-abbreviation/solutions/1416580/java-backtracking-explained-by-prashant4-h32j/;;https://leetcode.com/problems/generalized-abbreviation/solutions/77232/6ms-fast-java-solutionbeats-100-by-qiyid-icmf/;;https://leetcode.com/problems/generalized-abbreviation/solutions/77235/straightforward-recursive-solution-by-sa-t6io/;;https://leetcode.com/problems/generalized-abbreviation/solutions/77269/36ms-o2n-n-bitmask-with-explanation-by-k-7k73/;;https://leetcode.com/problems/generalized-abbreviation/solutions/1299098/java-backtracking-with-intuition-comment-3d10/;;https://leetcode.com/problems/generalized-abbreviation/solutions/1044533/java-backtracking-100-time-4ms-easy-expl-6jdo/;;https://leetcode.com/problems/generalized-abbreviation/solutions/765897/2n-proof-java-whiteboarding-by-foodcoma-c3i5/;;https://leetcode.com/problems/generalized-abbreviation/solutions/5676762/java-recursion-easy-to-follow-with-diagr-pcbg/;;https://leetcode.com/problems/generalized-abbreviation/solutions/5683679/backtrack-java-by-lxyustc-pype/;;https://leetcode.com/problems/generalized-abbreviation/solutions/4921081/java-solution-backtracking-by-ndsjqwbbb-33fs/;;https://leetcode.com/problems/generalized-abbreviation/solutions/4373715/backtracking-with-for-loop-window-by-eug-f2ar/;;https://leetcode.com/problems/generalized-abbreviation/solutions/4291447/intuitive-implementation-by-majidforwebw-eruv/;;;=;==;=;=;

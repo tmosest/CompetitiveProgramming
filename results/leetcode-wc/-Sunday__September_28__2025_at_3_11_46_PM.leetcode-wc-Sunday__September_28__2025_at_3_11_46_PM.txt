@@ -1,0 +1,25 @@
+3294. Convert Doubly Linked List to Array II;=;=Medium;=;=// Definition for a Node. Node     public int val;    public Node prev;    public Node next;;class      public int[] toArray(Node node);=;=You are given an arbitrary node from a doubly linked list, which contains nodes that have a next pointer and a previous pointer.
+
+Return an integer array which contains the elements of the linked list in order.
+
+ 
+
+Example 1:
+
+Input: head = [1,2,3,4,5], node = 5
+
+Output: [1,2,3,4,5]
+
+Example 2:
+
+Input: head = [4,5,6,7,8], node = 8
+
+Output: [4,5,6,7,8]
+
+ 
+
+Constraints:
+
+The number of nodes in the given list is in the range [1, 500].
+1 <= Node.val <= 1000
+All nodes have unique Node.val.;=;=https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/6693661/easy-beats-100-by-sandeepmaharjan34-lkjh/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/6626376/simple-easy-to-understan-solution-by-ana-ufbw/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/6557981/java-brute-force-using-loop-by-amye-itd8/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/6067719/java-easy-solution-by-ytchouar-kif9/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/5883542/java-solution-using-queue-and-stack-by-a-3sgx/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/5878323/fp-style-laconic-by-eleev-xtx8/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/6395171/implementation-using-forward-and-backwar-d4vr/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/5811706/java-solution-by-tbekpro-kqxe/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/5807441/simple-java-solution-by-sakshikishore-9te5/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/solutions/5807009/straight-forward-java-solution-using-dou-lh9z/;;;=;==;=;=;

@@ -1,0 +1,27 @@
+765. Couples Holding Hands;=;=Hard;=;=public int minSwapsCouples(int[] row);=;=There are n couples sitting in 2n seats arranged in a row and want to hold hands.
+
+The people and seats are represented by an integer array row where row[i] is the ID of the person sitting in the ith seat. The couples are numbered in order, the first couple being (0, 1), the second couple being (2, 3), and so on with the last couple being (2n - 2, 2n - 1).
+
+Return the minimum number of swaps so that every couple is sitting side by side. A swap consists of choosing any two people, then they stand up and switch seats.
+
+ 
+
+Example 1:
+
+Input: row = [0,2,1,3]
+Output: 1
+Explanation: We only need to swap the second (row[1]) and third (row[2]) person.
+Example 2:
+
+Input: row = [3,2,0,1]
+Output: 0
+Explanation: All couples are already seated side by side.
+ 
+
+Constraints:
+
+2n == row.length
+2 <= n <= 30
+n is even.
+0 <= row[i] < 2n
+All the elements of row are unique.;=;=https://leetcode.com/problems/couples-holding-hands/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/couples-holding-hands/solutions/6966129/easy-explanation-using-arrays-cyclic-sor-xrkb/;;https://leetcode.com/problems/couples-holding-hands/solutions/7037275/greedy-solution-using-map-by-ashu_6205-hdd0/;;https://leetcode.com/problems/couples-holding-hands/solutions/6607308/brute-force-dsu-java-explaination-by-shr-ek1m/;;https://leetcode.com/problems/couples-holding-hands/solutions/600607/java-union-find-solution-with-explanatio-k2mc/;;https://leetcode.com/problems/couples-holding-hands/solutions/6164092/super-intuitive-greedy-java-by-tusharkad-7yyl/;;https://leetcode.com/problems/couples-holding-hands/solutions/7227723/finding-loops-to-seat-couples-correctly-8001m/;;https://leetcode.com/problems/couples-holding-hands/solutions/6693018/couple-holding-hands-0ms-solution-easy-a-afr1/;;https://leetcode.com/problems/couples-holding-hands/solutions/6724790/beats-100-efficient-optimized-by-anupamk-0o20/;;https://leetcode.com/problems/couples-holding-hands/solutions/6393604/100-beats-done-using-union-and-find-turn-gx4u/;;https://leetcode.com/problems/couples-holding-hands/solutions/4688551/min-swaps-to-seat-couples-by-kashish101-qiqu/;;https://leetcode.com/problems/couples-holding-hands/solutions/1484649/hashmap-easy-to-understand-by-rpg115-l4g6/;;https://leetcode.com/problems/couples-holding-hands/solutions/463613/java-solution-100-time-and-memory-by-wzh-fyxo/;;https://leetcode.com/problems/couples-holding-hands/solutions/3458895/solution-by-deleted_user-v4mn/;;https://leetcode.com/problems/couples-holding-hands/solutions/2230497/java-easy-solution-by-rahul516-612d/;;https://leetcode.com/problems/couples-holding-hands/solutions/2504404/greedy-on-by-jainakshat425-hqjt/;;;=;==;=;=;

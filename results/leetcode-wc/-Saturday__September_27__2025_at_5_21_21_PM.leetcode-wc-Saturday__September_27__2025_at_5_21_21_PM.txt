@@ -1,0 +1,24 @@
+976. Largest Perimeter Triangle;=;=Easy;=;=public int largestPerimeter(int[] nums);=;=Given an integer array nums, return the largest perimeter of a triangle with a non-zero area, formed from three of these lengths. If it is impossible to form any triangle of a non-zero area, return 0.
+
+ 
+
+Example 1:
+
+Input: nums = [2,1,2]
+Output: 5
+Explanation: You can form a triangle with three side lengths: 1, 2, and 2.
+Example 2:
+
+Input: nums = [1,2,1,10]
+Output: 0
+Explanation: 
+You cannot use the side lengths 1, 1, and 2 to form a triangle.
+You cannot use the side lengths 1, 1, and 10 to form a triangle.
+You cannot use the side lengths 1, 2, and 10 to form a triangle.
+As we cannot use any three side lengths to form a triangle of non-zero area, we return 0.
+ 
+
+Constraints:
+
+3 <= nums.length <= 104
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/largest-perimeter-triangle/description/?envType=daily-question&envId=2025-09-28;=;=https://leetcode.com/problems/largest-perimeter-triangle/solutions/7221643/optimal-by-avinash516-fj82/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/7219810/easy-beats-99-java-by-serhii_shnaider-3251/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/2692643/java-onlogn-easy-to-understand-simple-so-8fyn/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/7076606/simple-solution-using-for-loop-beginner-0e3rd/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/7018179/99-beats-in-java-by-hitarthshah2211-5gdf/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/6997333/java-easy-understanding-by-akashraj06-casd/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/6953311/simplest-approach-easy-explanation-by-de-w62o/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/2693512/triangle-basic-property-by-fllght-rkq2/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/2423042/java-easy-solution-faster-than-9957-by-j-jfoj/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/6298307/2-lines-code-in-java-beating-9935-in-7ms-0xap/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/2692917/java-easy-solution-beginner-friendly-98-76k88/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/6759263/java-solution-by-navneetksingh-vzye/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/7228093/976-largest-perimeter-triangle-tc-onlogn-u1ca/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/7227684/simple-approach-with-explanation-by-mani-0kxu/;;https://leetcode.com/problems/largest-perimeter-triangle/solutions/7216059/easy-java-solution-beats-9952-by-pratik_-max0/;;;=;==;=;=;

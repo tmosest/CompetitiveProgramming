@@ -1,0 +1,43 @@
+3333. Find the Original Typed String II;=;=Hard;=;=public int possibleStringCount(String word, int k);=;=Alice is attempting to type a specific string on her computer. However, she tends to be clumsy and may press a key for too long, resulting in a character being typed multiple times.
+
+You are given a string word, which represents the final output displayed on Alice's screen. You are also given a positive integer k.
+
+Return the total number of possible original strings that Alice might have intended to type, if she was trying to type a string of size at least k.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: word = "aabbccdd", k = 7
+
+Output: 5
+
+Explanation:
+
+The possible strings are: "aabbccdd", "aabbccd", "aabbcdd", "aabccdd", and "abbccdd".
+
+Example 2:
+
+Input: word = "aabbccdd", k = 8
+
+Output: 1
+
+Explanation:
+
+The only possible string is "aabbccdd".
+
+Example 3:
+
+Input: word = "aaabbb", k = 3
+
+Output: 8
+
+ 
+
+Constraints:
+
+1 <= word.length <= 5 * 105
+word consists only of lowercase English letters.
+1 <= k <= 2000;=;=https://leetcode.com/problems/find-the-original-typed-string-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6908532/beginner-freindlyjavacpythonjs-by-ashokv-20nj/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6909438/group-karlo-multiply-karlo-dp-se-minus-k-a5it/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6909316/beginner-freindly-group-counting-dp-java-dbpz/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6909091/most-efficient-solution-explained-dynami-plwp/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6909434/easy-solution-eng-hing-explained-beats-8-vprx/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6910890/5-step-optimization-recursion-memo-tabul-g97f/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6909437/beginner-freindly-group-counting-dp-by-h-x0gh/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6910393/100-hard-problem-with-easy-approach-5-la-kaam/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6909484/beginner-friendly-group-counting-subset-cb3jk/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6912082/let-us-understand-dp-on-string-concept-b-2yda/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6909524/3056-java-find-the-original-typed-string-5gsq/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6909167/simple-and-understandable-java-solution-0sqov/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6909160/easy-to-understand-python-solution-by-py-yxst/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6910014/find-the-original-typed-string-ii-by-tri-me6r/;;https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6911902/beats-100-in-3333-find-the-original-type-650g/;;;=;==;=;=;

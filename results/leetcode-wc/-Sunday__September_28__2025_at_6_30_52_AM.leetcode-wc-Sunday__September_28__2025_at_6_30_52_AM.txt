@@ -1,0 +1,47 @@
+2074. Reverse Nodes in Even Length Groups;=;=Medium;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode()       ListNode(int val)  this.val = val;       ListNode(int val, ListNode next)  this.val = val; this.next = next;    class      public ListNode reverseEvenLengthGroups(ListNode head);=;=You are given the head of a linked list.
+
+The nodes in the linked list are sequentially assigned to non-empty groups whose lengths form the sequence of the natural numbers (1, 2, 3, 4, ...). The length of a group is the number of nodes assigned to it. In other words,
+
+The 1st node is assigned to the first group.
+The 2nd and the 3rd nodes are assigned to the second group.
+The 4th, 5th, and 6th nodes are assigned to the third group, and so on.
+Note that the length of the last group may be less than or equal to 1 + the length of the second to last group.
+
+Reverse the nodes in each group with an even length, and return the head of the modified linked list.
+
+ 
+
+Example 1:
+
+
+Input: head = [5,2,6,3,9,1,7,3,8,4]
+Output: [5,6,2,3,9,1,4,8,3,7]
+Explanation:
+- The length of the first group is 1, which is odd, hence no reversal occurs.
+- The length of the second group is 2, which is even, hence the nodes are reversed.
+- The length of the third group is 3, which is odd, hence no reversal occurs.
+- The length of the last group is 4, which is even, hence the nodes are reversed.
+Example 2:
+
+
+Input: head = [1,1,0,6]
+Output: [1,0,1,6]
+Explanation:
+- The length of the first group is 1. No reversal occurs.
+- The length of the second group is 2. The nodes are reversed.
+- The length of the last group is 1. No reversal occurs.
+Example 3:
+
+
+Input: head = [1,1,0,6,5]
+Output: [1,0,1,5,6]
+Explanation:
+- The length of the first group is 1. No reversal occurs.
+- The length of the second group is 2. The nodes are reversed.
+- The length of the last group is 2. The nodes are reversed.
+ 
+
+Constraints:
+
+The number of nodes in the list is in the range [1, 105].
+0 <= Node.val <= 105;=;=https://leetcode.com/problems/reverse-nodes-in-even-length-groups/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/3746598/java-c-on-solution-readable-code-illustr-wtys/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/6881020/reverse-even-groups-in-linked-list-smart-3b9s/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/6493261/even-length-by-rasitha7-uvl7/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/1577265/java-easy-code-by-thinagaran-xx2b/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/6504406/easy-solution-in-java-by-sathurnithy-a0cy/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/6411911/java-easy-solution-linkedlist-by-narendr-fn5f/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/4517404/java-counting-skipping-on-o1-space-by-us-qccx/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/5363092/based-on-the-solution-for-the-task-rever-0eqj/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/3143164/on-java-solutions-beats-97-by-raythebae-7go9/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/3029986/easy-java-code-using-stack-by-tanmoymaha-n9e5/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/2534967/java-solution-with-comments-for-better-u-g20f/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/4721003/solution-with-detail-explanation-faang-i-v9lj/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/4236020/detailed-explaination-silver-city-king-b-93dx/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/4055037/java-solution-using-arraylist-by-ravikum-hopq/;;https://leetcode.com/problems/reverse-nodes-in-even-length-groups/solutions/2809531/java-solution-by-aerohp-q308/;;;=;==;=;=;

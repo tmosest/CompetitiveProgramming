@@ -1,0 +1,49 @@
+3135. Equalize Strings by Adding or Removing Characters at Ends;=;=Medium;=;=public int minOperations(String initial, String target);=;=Given two strings initial and target, your task is to modify initial by performing a series of operations to make it equal to target.
+
+In one operation, you can add or remove one character only at the beginning or the end of the string initial.
+
+Return the minimum number of operations required to transform initial into target.
+
+ 
+
+Example 1:
+
+Input: initial = "abcde", target = "cdef"
+
+Output: 3
+
+Explanation:
+
+Remove 'a' and 'b' from the beginning of initial, then add 'f' to the end.
+
+Example 2:
+
+Input: initial = "axxy", target = "yabx"
+
+Output: 6
+
+Explanation:
+
+Operation	Resulting String
+Add 'y' to the beginning	"yaxxy"
+Remove from end	"yaxx"
+Remove from end	"yax"
+Remove from end	"ya"
+Add 'b' to the end	"yab"
+Add 'x' to the end	"yabx"
+Example 3:
+
+Input: initial = "xyz", target = "xyz"
+
+Output: 0
+
+Explanation:
+
+No operations are needed as the strings are already equal.
+
+ 
+
+Constraints:
+
+1 <= initial.length, target.length <= 1000
+initial and target consist only of lowercase English letters.;=;=https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/solutions/5110040/java-bottomup-dp-onm-ominn-m-beats-100-c-0p5t/;;https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/solutions/5103957/java-suffix-automaton-by-reed_w-m4fi/;;https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/solutions/6912157/my-solution-by-watercyb-apd5/;;https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/solutions/6258545/using-dp-longest-common-substring-by-ree-y63e/;;;=;==;=;=;

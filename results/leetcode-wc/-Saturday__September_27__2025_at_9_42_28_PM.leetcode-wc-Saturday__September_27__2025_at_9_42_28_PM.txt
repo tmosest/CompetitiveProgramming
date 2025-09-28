@@ -1,0 +1,17 @@
+233. Number of Digit One;=;=Hard;=;=public int countDigitOne(int n);=;=Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
+
+ 
+
+Example 1:
+
+Input: n = 13
+Output: 6
+Example 2:
+
+Input: n = 0
+Output: 0
+ 
+
+Constraints:
+
+0 <= n <= 109;=;=https://leetcode.com/problems/number-of-digit-one/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-digit-one/solutions/2997009/solution-by-deleted_user-wrda/;;https://leetcode.com/problems/number-of-digit-one/solutions/7223611/java-simple-solution-runtime-100-space-9-9ech/;;https://leetcode.com/problems/number-of-digit-one/solutions/64381/4-lines-olog-n-cjavapython-by-stefanpoch-ujg0/;;https://leetcode.com/problems/number-of-digit-one/solutions/7188586/easy-code-for-beginners-and-understandab-8r4d/;;https://leetcode.com/problems/number-of-digit-one/solutions/64382/javapython-one-pass-solution-easy-to-und-9og3/;;https://leetcode.com/problems/number-of-digit-one/solutions/64390/ac-short-java-solution-by-jeantimex-g7n0/;;https://leetcode.com/problems/number-of-digit-one/solutions/7007798/digit-dp-solution-for-number-of-digit-on-up63/;;https://leetcode.com/problems/number-of-digit-one/solutions/6747482/javapython3c-intuitive-and-beginner-frie-9tt8/;;https://leetcode.com/problems/number-of-digit-one/solutions/6955210/simple-digit-dp-for-beginners-by-unstbl-4z7k/;;https://leetcode.com/problems/number-of-digit-one/solutions/6191337/basic-java-solution-beats-100-maths-easy-gtlo/;;https://leetcode.com/problems/number-of-digit-one/solutions/6855127/simple-and-optimised-brute-force-apprach-1x84/;;https://leetcode.com/problems/number-of-digit-one/solutions/64383/my-simple-and-understandable-java-soluti-dery/;;https://leetcode.com/problems/number-of-digit-one/solutions/4541742/0ms-ologn-mathematic-sol-clearly-explain-fkxu/;;https://leetcode.com/problems/number-of-digit-one/solutions/2073606/dynamic-programming-solution-overview-di-dw5q/;;https://leetcode.com/problems/number-of-digit-one/solutions/5121207/intuition-based-solution-pure-math-witho-8sap/;;;=;==;=;=;

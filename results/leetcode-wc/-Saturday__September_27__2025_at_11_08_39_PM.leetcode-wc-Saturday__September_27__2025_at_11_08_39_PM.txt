@@ -1,0 +1,28 @@
+3041. Maximize Consecutive Elements in an Array After Modification;=;=Hard;=;=public int maxSelectedElements(int[] nums);=;=You are given a 0-indexed array nums consisting of positive integers.
+
+Initially, you can increase the value of any element in the array by at most 1.
+
+After that, you need to select one or more elements from the final array such that those elements are consecutive when sorted in increasing order. For example, the elements [3, 4, 5] are consecutive while [3, 4, 6] and [1, 1, 2, 3] are not.
+
+Return the maximum number of elements that you can select.
+
+ 
+
+Example 1:
+
+Input: nums = [2,1,5,1,1]
+Output: 3
+Explanation: We can increase the elements at indices 0 and 3. The resulting array is nums = [3,1,5,2,1].
+We select the elements [3,1,5,2,1] and we sort them to obtain [1,2,3], which are consecutive.
+It can be shown that we cannot select more than 3 consecutive elements.
+Example 2:
+
+Input: nums = [1,4,7,10]
+Output: 1
+Explanation: The maximum consecutive elements that we can select is 1.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4742395/javacpython-dp-by-lee215-fyxy/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4742271/very-easy-dp-transition-by-_sajid-2l7m/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4742687/beats-100-java-solution-by-cs_iitian-rmdq/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4742283/java-dp-bottom-up-with-a-lot-comments-o1-3ek0/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4742280/java-explained-dynamic-programming-solut-vvmu/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4742935/java-easy-explanation-by-shivakumar1-70be/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4742286/sort-iterative-beats-100-by-abburisaikar-96h0/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/7191936/java-easy-to-understand-on-by-cm4-egif/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4743147/bottom-up-dynamic-programming-with-2-sta-if4c/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4746803/java-memoization-causing-tle-by-sai_govi-l3gq/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4746158/easy-java-solution-100-by-mk183-ei0h/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4747930/beats-100tc-clean-and-concise-code-dp-ta-cqty/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4744463/java-by-dilkhush04-wrmz/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/4743345/easiest-java-solution-tabulation-dp-by-s-ayem/;;https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/5385750/java-solution-by-danish_jamil-8cu5/;;;=;==;=;=;

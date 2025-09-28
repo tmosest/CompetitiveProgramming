@@ -1,0 +1,25 @@
+99. Recover Binary Search Tree;=;=Medium;=;=/ÊÊDefinitionÊforÊaÊbinaryÊtreeÊnode.ÊÊpublicÊÊTreeNodeÊÊÊÊÊÊÊintÊval;ÊÊÊÊÊÊTreeNodeÊleft;ÊÊÊÊÊÊTreeNodeÊright;ÊÊÊÊÊÊTreeNode()ÊÊÊÊÊÊÊTreeNode(intÊval)ÊÊthis.valÊ=Êval;ÊÊÊÊÊÊÊTreeNode(intÊval,ÊTreeNodeÊleft,ÊTreeNodeÊright)ÊÊÊÊÊÊÊÊÊÊÊthis.valÊ=Êval;ÊÊÊÊÊÊÊÊÊÊthis.leftÊ=Êleft;ÊÊÊÊÊÊÊÊÊÊthis.rightÊ=Êright;;=;=You are given the root of a binary search tree (BST), where the values of exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
+
+Ê
+
+Example 1:
+
+
+Input: root = [1,3,null,null,2]
+Output: [3,1,null,null,2]
+Explanation: 3 cannot be a left child of 1 because 3 > 1. Swapping 1 and 3 makes the BST valid.
+Example 2:
+
+
+Input: root = [3,1,4,null,null,2]
+Output: [2,1,4,null,null,3]
+Explanation: 2 cannot be in the right subtree of 3 because 2 < 3. Swapping 2 and 3 makes the BST valid.
+Ê
+
+Constraints:
+
+The number of nodes in the tree is in the range [2, 1000].
+-231 <= Node.val <= 231 - 1
+Ê
+
+Follow up: A solution using O(n) space is pretty straight-forward. Could you devise a constant O(1) space solution?;=;=https://leetcode.com/problems/recover-binary-search-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/recover-binary-search-tree/solutions/7021623/beats-100-beginner-friendly-explanation-gjz5a/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/1962981/idea-inorder-traversal-easy-to-understan-alrj/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/6219212/easy-beginner-friendly-solution-detailed-zi9o/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/7180139/100-beats-easy-simple-java-solution-by-p-437p/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/1962833/beginner-level-illustration-11-line-solu-5y01/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/7152765/easy-code-in-java-by-yasl1-5gh6/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/1274892/java-easy-inorder-traversal-soln-faster-6er94/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/6815867/recover-bst-using-inorder-sorting-java-e-wz66/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/7126664/java-morris-traversal-inorder-on-time-o1-upmx/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/7109731/recover-bst-iterative-in-order-java-by-s-08qu/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/1962276/clear-n-easy-to-understand-code-_-by-hi-k7voq/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/7039910/recover-binary-search-tree-by-identifyin-c0w2/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/6637687/strivers-solution-c-easy-to-understand-b-tbfl/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/1450119/intuitive-solution-explained-images-by-y-ppyc/;;https://leetcode.com/problems/recover-binary-search-tree/solutions/4850123/1ms-100-runtime-beats-java-using-morris-k2n2y/;;;=;==;=;=;

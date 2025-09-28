@@ -1,0 +1,45 @@
+1730. Shortest Path to Get Food;=;=Medium;=;=public int getFood(char[][] grid);=;=You are starving and you want to eat food as quickly as possible. You want to find the shortest path to arrive at any food cell.
+
+You are given an m x n character matrix, grid, of these different types of cells:
+
+'*' is your location. There is exactly one '*' cell.
+'#' is a food cell. There may be multiple food cells.
+'O' is free space, and you can travel through these cells.
+'X' is an obstacle, and you cannot travel through these cells.
+You can travel to any adjacent cell north, east, south, or west of your current location if there is not an obstacle.
+
+Return the length of the shortest path for you to reach any food cell. If there is no path for you to reach food, return -1.
+
+ 
+
+Example 1:
+
+
+Input: grid = [["X","X","X","X","X","X"],["X","*","O","O","O","X"],["X","O","O","#","O","X"],["X","X","X","X","X","X"]]
+Output: 3
+Explanation: It takes 3 steps to reach the food.
+Example 2:
+
+
+Input: grid = [["X","X","X","X","X"],["X","*","X","O","X"],["X","O","X","#","X"],["X","X","X","X","X"]]
+Output: -1
+Explanation: It is not possible to reach the food.
+Example 3:
+
+
+Input: grid = [["X","X","X","X","X","X","X","X"],["X","*","O","X","O","#","O","X"],["X","O","O","X","O","O","X","X"],["X","O","O","O","O","#","O","X"],["X","X","X","X","X","X","X","X"]]
+Output: 6
+Explanation: There can be multiple food cells. It only takes 6 steps to reach the bottom food.
+Example 4:
+
+Input: grid = [["X","X","X","X","X","X","X","X"],["X","*","O","X","O","#","O","X"],["X","O","O","X","O","O","X","X"],["X","O","O","O","O","#","O","X"],["O","O","O","O","O","O","O","O"]]
+Output: 5
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 200
+grid[row][col] is '*', 'X', 'O', or '#'.
+The grid contains exactly one '*'.;=;=https://leetcode.com/problems/shortest-path-to-get-food/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-path-to-get-food/solutions/1215655/java-simple-bfs-solution-by-muhammad-bah-aops/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/1421109/java-clean-concise-optimal-code-breadth-ymkfe/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/2460700/java-solution-using-bfs-by-abhinandan198-pox6/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/5041323/bfs-solution-by-n00bs404-zdno/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/1665734/wtf-so-stupid-the-standard-bfs-got-tle-f-e544/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/1956748/java-bfs-explanation-about-time-space-co-tivs/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/6299445/why-did-my-code-get-tle-please-help-debu-5lwj/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/1769655/java-template-to-follow-by-dowens-7nz4/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/2643041/java-bfs-clean-by-palizza-0nar/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/1030440/java-clean-bfs-100-by-sgpvr-iehw/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/2555553/java-bfs-by-nothingyq-8z0l/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/2206179/java-bfs-solution-by-mollishrees-80zs/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/2009339/java-double-bfs-beats-80-with-comments-b-zbl5/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/2252987/java-easy-bfs-solution-by-thecodeleeter-zy53/;;https://leetcode.com/problems/shortest-path-to-get-food/solutions/1498268/why-is-this-bfs-solution-time-limit-exce-gs8n/;;;=;==;=;=;

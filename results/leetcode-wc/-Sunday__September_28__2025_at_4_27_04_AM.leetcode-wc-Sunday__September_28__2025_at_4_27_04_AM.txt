@@ -1,0 +1,27 @@
+2376. Count Special Integers;=;=Hard;=;=public int countSpecialNumbers(int n);=;=We call a positive integer special if all of its digits are distinct.
+
+Given a positive integer n, return the number of special integers that belong to the interval [1, n].
+
+ 
+
+Example 1:
+
+Input: n = 20
+Output: 19
+Explanation: All the integers from 1 to 20, except 11, are special. Thus, there are 19 special integers.
+Example 2:
+
+Input: n = 5
+Output: 5
+Explanation: All the integers from 1 to 5 are special.
+Example 3:
+
+Input: n = 135
+Output: 110
+Explanation: There are 110 integers from 1 to 135 that are special.
+Some of the integers that are not special are: 22, 114, and 131.
+ 
+
+Constraints:
+
+1 <= n <= 2 * 109;=;=https://leetcode.com/problems/count-special-integers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-special-integers/solutions/2425271/javapython-math-by-lee215-q6tw/;;https://leetcode.com/problems/count-special-integers/solutions/6955213/simple-digit-dp-bitmaks-for-beginners-by-ho77/;;https://leetcode.com/problems/count-special-integers/solutions/2422762/bitmask-memoziation-java-o210-10-by-prad-yrx5/;;https://leetcode.com/problems/count-special-integers/solutions/2425857/java-50-time-67-memory-ologn-explained-b-uku6/;;https://leetcode.com/problems/count-special-integers/solutions/2422424/java-bottom-up-short-digit-dp-some-expla-fttc/;;https://leetcode.com/problems/count-special-integers/solutions/3600883/java-digit-dp-solution-by-user8040co-t0wx/;;https://leetcode.com/problems/count-special-integers/solutions/2422775/java-math-onum-of-digits-by-hdchen-n8fh/;;https://leetcode.com/problems/count-special-integers/solutions/2422119/java-simple-dfs-with-static-cache-static-u3p4/;;https://leetcode.com/problems/count-special-integers/solutions/2617651/java-math-by-conchwu-z5rh/;;https://leetcode.com/problems/count-special-integers/solutions/7171154/easy-java-dp-solution-top-down-approach-hl1cz/;;https://leetcode.com/problems/count-special-integers/solutions/2491317/simple-java-solution-using-digit-dp-by-p-dhy0/;;https://leetcode.com/problems/count-special-integers/solutions/6670056/digit-dp-solution-by-kumarnis89-zeqt/;;https://leetcode.com/problems/count-special-integers/solutions/6608169/2376-count-special-integers-by-saranyasu-q7nr/;;https://leetcode.com/problems/count-special-integers/solutions/6530468/readable-and-modular-solution-by-akshay_-g4a7/;;https://leetcode.com/problems/count-special-integers/solutions/5664257/count-of-special-integer-by-shaludroid-76jj/;;;=;==;=;=;

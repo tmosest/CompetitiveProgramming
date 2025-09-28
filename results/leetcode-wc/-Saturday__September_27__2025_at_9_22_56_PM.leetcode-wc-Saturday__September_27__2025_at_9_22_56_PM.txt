@@ -1,0 +1,40 @@
+1660. Correct a Binary Tree;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=You have a binary tree with a small defect. There is exactly one invalid node where its right child incorrectly points to another node at the same depth but to the invalid node's right.
+
+Given the root of the binary tree with this defect, root, return the root of the binary tree after removing this invalid node and every node underneath it (minus the node it incorrectly points to).
+
+Custom testing:
+
+The test input is read as 3 lines:
+
+TreeNode root
+int fromNode (not available to correctBinaryTree)
+int toNode (not available to correctBinaryTree)
+After the binary tree rooted at root is parsed, the TreeNode with value of fromNode will have its right child pointer pointing to the TreeNode with a value of toNode. Then, root is passed to correctBinaryTree.
+
+ 
+
+Example 1:
+
+
+
+Input: root = [1,2,3], fromNode = 2, toNode = 3
+Output: [1,null,3]
+Explanation: The node with value 2 is invalid, so remove it.
+Example 2:
+
+
+
+Input: root = [8,3,1,7,null,9,4,2,null,null,null,5,6], fromNode = 7, toNode = 4
+Output: [8,3,1,null,null,9,4,null,null,5,6]
+Explanation: The node with value 7 is invalid, so remove it and the node underneath it, node 2.
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [3, 104].
+-109 <= Node.val <= 109
+All Node.val are unique.
+fromNode != toNode
+fromNode and toNode will exist in the tree and will be on the same depth.
+toNode is to the right of fromNode.
+fromNode.right is null in the initial tree from the test data.;=;=https://leetcode.com/problems/correct-a-binary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/correct-a-binary-tree/solutions/940769/java-hashset-one-pass-short-by-o_inari-684h/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/1062844/java-traverse-recursive-setinteger-by-el-h776/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/2727557/java-easy-bfs-level-order-traversal-by-p-p854/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/1475484/java-iterative-solution-by-nouga2000-beu4/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/4606116/java-solution-dfs-by-ndsjqwbbb-zny3/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/4471903/iterative-approach-by-mahoraga_jjk-gy0y/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/4731831/java-on-dfs-solution-by-tbekpro-ddpb/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/4220165/java-bfs-explained-by-prashant404-igyn/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/4205501/java-solution-2-times-inorder-traversal-s6qc3/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/4200566/java-bfs-from-right-by-kkzeng-nhn6/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/3702537/java-one-pass-single-function-using-hash-2iw1/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/3027342/java-bfs-without-visited-set-by-l33tc0de-1o7b/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/2334076/bfs-java-deque-hashset-by-hashmap94-ct0v/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/2020766/java-bfs-with-hashset-storing-discovered-x30e/;;https://leetcode.com/problems/correct-a-binary-tree/solutions/1670324/java-on-dfs-hashmap-by-heapspray-uv08/;;;=;==;=;=;

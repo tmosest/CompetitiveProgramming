@@ -1,0 +1,44 @@
+3670. Maximum Product of Two Integers With No Common Bits;=;=Medium;=;=public long maxProduct(int[] nums);=;=You are given an integer array nums.
+
+Your task is to find two distinct indices i and j such that the product nums[i] * nums[j] is maximized, and the binary representations of nums[i] and nums[j] do not share any common set bits.
+
+Return the maximum possible product of such a pair. If no such pair exists, return 0.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4,5,6,7]
+
+Output: 12
+
+Explanation:
+
+The best pair is 3 (011) and 4 (100). They share no set bits and 3 * 4 = 12.
+
+Example 2:
+
+Input: nums = [5,6,4]
+
+Output: 0
+
+Explanation:
+
+Every pair of numbers has at least one common set bit. Hence, the answer is 0.
+
+Example 3:
+
+Input: nums = [64,8,32]
+
+Output: 2048
+
+Explanation:
+
+No pair of numbers share a common bit, so the answer is the product of the two maximum elements, 64 and 32 (64 * 32 = 2048).
+
+ 
+
+Constraints:
+
+2 <= nums.length <= 105
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7140228/pythonjavac-bit-complement-by-lee215-9nja/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7141088/beginner-friendly-maximum-product-with-n-ngbw/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7149431/dp-java-by-ashutosh_prajapati1205-malt/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7142653/some-change-to-the-hinit-to-make-it-more-ruvv/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7142285/accepted-early-return-trie-solution-java-lp44/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7141482/simple-solution-sos-dp-disjoint-masks-co-51a5/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7145699/explanation-with-java-code-3-approaches-wo80b/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7162779/my-solution-by-watercyb-o83f/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7162750/sos-dp-concept-which-is-very-new-to-me-b-0mts/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7141337/trie-in-java-by-k_l_sri_harsha-fq1p/;;https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/solutions/7140219/sos-dp-tle-fix-by-ojasvi_tripathi-vcmg/;;;=;==;=;=;

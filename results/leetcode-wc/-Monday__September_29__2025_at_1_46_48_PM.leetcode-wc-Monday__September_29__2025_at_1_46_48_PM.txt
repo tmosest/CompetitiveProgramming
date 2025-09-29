@@ -1,0 +1,28 @@
+2358. Maximum Number of Groups Entering a Competition;=;=Medium;=;=public int maximumGroups(int[] grades);=;=You are given a positive integer array grades which represents the grades of students in a university. You would like to enter all these students into a competition in ordered non-empty groups, such that the ordering meets the following conditions:
+
+The sum of the grades of students in the ith group is less than the sum of the grades of students in the (i + 1)th group, for all groups (except the last).
+The total number of students in the ith group is less than the total number of students in the (i + 1)th group, for all groups (except the last).
+Return the maximum number of groups that can be formed.
+
+ 
+
+Example 1:
+
+Input: grades = [10,6,12,7,3,5]
+Output: 3
+Explanation: The following is a possible way to form 3 groups of students:
+- 1st group has the students with grades = [12]. Sum of grades: 12. Student count: 1
+- 2nd group has the students with grades = [6,7]. Sum of grades: 6 + 7 = 13. Student count: 2
+- 3rd group has the students with grades = [10,3,5]. Sum of grades: 10 + 3 + 5 = 18. Student count: 3
+It can be shown that it is not possible to form more than 3 groups.
+Example 2:
+
+Input: grades = [8,8]
+Output: 1
+Explanation: We can only form 1 group, since forming 2 groups would lead to an equal number of students in both groups.
+ 
+
+Constraints:
+
+1 <= grades.length <= 105
+1 <= grades[i] <= 105;=;=https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/2357789/javacpython-one-line-o1-by-lee215-mzjt/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/2358236/explanation-of-formula-with-proof-and-im-gn0w/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/7121133/greedy-20-ms-beats-2698-with-indian-tadk-0zzr/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/2357892/its-just-maths-o1-cpythonjava-solution-o-4fzr/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/7198905/easy-coding-solution-in-java-ultimately-s53af/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/2357874/0ms-100-fastest-java-solution-using-deri-sj2i/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/6108449/maximum-groups-simple-elegant-solution-b-paf6/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/4595985/plain-binary-search-in-java-by-rhythmd18-3lxo/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/2357731/java-by-gaddarkumar7447-su4f/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/2377426/simple-java-solution-by-siddhant_1602-zz0g/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/2357811/java-clean-simple-triangle-number-by-pal-nkwt/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/5313149/math-java-on-by-wangcai20-w4ue/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/2430795/java-o1-mathematical-formula-by-pd_1234-hyoq/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/7212154/one-line-by-gitchuan-kdjt/;;https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/solutions/2357645/java-greedy-quadratic-formula-summation-jtoi7/;;;=;==;=;=;

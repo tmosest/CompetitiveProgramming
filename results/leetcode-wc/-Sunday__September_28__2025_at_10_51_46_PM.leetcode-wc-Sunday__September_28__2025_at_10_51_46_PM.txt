@@ -1,0 +1,28 @@
+1552. Magnetic Force Between Two Balls;=;=Medium;=;=public int maxDistance(int[] position, int m);=;=In the universe Earth C-137, Rick discovered a special form of magnetic force between two balls if they are put in his new invented basket. Rick has n empty baskets, the ith basket is at position[i], Morty has m balls and needs to distribute the balls into the baskets such that the minimum magnetic force between any two balls is maximum.
+
+Rick stated that magnetic force between two different balls at positions x and y is |x - y|.
+
+Given the integer array position and the integer m. Return the required force.
+
+ 
+
+Example 1:
+
+
+Input: position = [1,2,3,4,7], m = 3
+Output: 3
+Explanation: Distributing the 3 balls into baskets 1, 4 and 7 will make the magnetic force between ball pairs [3, 3, 6]. The minimum magnetic force is 3. We cannot achieve a larger minimum magnetic force than 3.
+Example 2:
+
+Input: position = [5,4,3,2,1,1000000000], m = 2
+Output: 999999999
+Explanation: We can use baskets 1 and 1000000000.
+ 
+
+Constraints:
+
+n == position.length
+2 <= n <= 105
+1 <= position[i] <= 109
+All integers in position are distinct.
+2 <= m <= position.length;=;=https://leetcode.com/problems/magnetic-force-between-two-balls/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/5339212/beats-100-explained-with-video-cjavapyth-0zts/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/5339191/binary-search-on-answer-tutorial-magneti-zioj/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/5341193/fastest-efficient-simplest-explanationbi-bke8/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/6941290/explanation-with-example-optimal-easy-so-g2v1/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/7113196/binary-search-by-delbin_de_yohan-qu8n/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/3277149/java-binary-search-on-answers-with-expla-zpiw/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/7063995/binary-search-on-answers-by-soujitdas65-jves/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/5339378/daily-leetcoding-challenge-day-183-java-zpam7/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/7042230/same-as-aggressive-cows-problem-by-abhis-hytd/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/6921816/maximize-minimum-distance-between-balls-hrmm5/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/6685607/binary-search-to-maximize-minimum-distan-hmeb/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/6445892/clean-code-beats-100-easy-explanation-by-ilb1/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/5339180/easy-java-python3-c-solution-40-ms-_-by-tq2aw/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/5341263/java-solution-beats-10000-by-mohit-005-vrq1/;;https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/5339294/less-memory-beats-easy-simple-solution-c-ygrp/;;;=;==;=;=;

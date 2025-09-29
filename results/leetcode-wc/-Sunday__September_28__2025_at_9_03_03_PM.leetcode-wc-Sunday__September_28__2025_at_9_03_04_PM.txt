@@ -1,0 +1,45 @@
+3697. Compute Decimal Representation;=;=Easy;=;=public int[] decimalRepresentation(int n);=;=You are given a positive integer n.
+
+A positive integer is a base-10 component if it is the product of a single digit from 1 to 9 and a non-negative power of 10. For example, 500, 30, and 7 are base-10 components, while 537, 102, and 11 are not.
+
+Express n as a sum of only base-10 components, using the fewest base-10 components possible.
+
+Return an array containing these base-10 components in descending order.
+
+ 
+
+Example 1:
+
+Input: n = 537
+
+Output: [500,30,7]
+
+Explanation:
+
+We can express 537 as 500 + 30 + 7. It is impossible to express 537 as a sum using fewer than 3 base-10 components.
+
+Example 2:
+
+Input: n = 102
+
+Output: [100,2]
+
+Explanation:
+
+We can express 102 as 100 + 2. 102 is not a base-10 component, which means 2 base-10 components are needed.
+
+Example 3:
+
+Input: n = 6
+
+Output: [6]
+
+Explanation:
+
+6 is a base-10 component.
+
+ 
+
+Constraints:
+
+1 <= n <= 109;=;=https://leetcode.com/problems/compute-decimal-representation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/compute-decimal-representation/solutions/7229841/simple-solution-by-fk3tv5uwka-tmk3/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7230850/digit-burst-by-d_t_s-k0un/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7229997/simple-solution-by-younus07-580r/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7229901/compute-decimal-representation-beats-100-av63/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7229836/easy-solution-in-java-by-nidhibaratam200-3ujd/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7232364/java-easy-and-concise-soltuion-by-wj4507-vzwx/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7232079/easy-java-by-adayal22-afyz/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7231716/clean-code-by-smileysuneet-7fap/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7231086/simple-approach-by-abhi_2210014-7479/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7230967/java-simple-clean-solution-decimal-repre-ln1d/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7230618/simple-easy-to-understand-beats-100-by-s-f76y/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7230429/java-good-solution-by-nilay_thakkar-gjo8/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7230051/100-beats-java-explanation-simple-soluti-01ug/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7230012/for-beginners-in-java-easy-to-understand-dfg6/;;https://leetcode.com/problems/compute-decimal-representation/solutions/7229969/java-solution-by-raviee_dk-ot7f/;;;=;==;=;=;

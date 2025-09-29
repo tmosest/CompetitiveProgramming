@@ -1,0 +1,40 @@
+2040. Kth Smallest Product of Two Sorted Arrays;=;=Hard;=;=public long kthSmallestProduct(int[] nums1, int[] nums2, long k);=;=Given two sorted 0-indexed integer arrays nums1 and nums2 as well as an integer k, return the kth (1-based) smallest product of nums1[i] * nums2[j] where 0 <= i < nums1.length and 0 <= j < nums2.length.
+ 
+
+Example 1:
+
+Input: nums1 = [2,5], nums2 = [3,4], k = 2
+Output: 8
+Explanation: The 2 smallest products are:
+- nums1[0] * nums2[0] = 2 * 3 = 6
+- nums1[0] * nums2[1] = 2 * 4 = 8
+The 2nd smallest product is 8.
+Example 2:
+
+Input: nums1 = [-4,-2,0,3], nums2 = [2,4], k = 6
+Output: 0
+Explanation: The 6 smallest products are:
+- nums1[0] * nums2[1] = (-4) * 4 = -16
+- nums1[0] * nums2[0] = (-4) * 2 = -8
+- nums1[1] * nums2[1] = (-2) * 4 = -8
+- nums1[1] * nums2[0] = (-2) * 2 = -4
+- nums1[2] * nums2[0] = 0 * 2 = 0
+- nums1[2] * nums2[1] = 0 * 4 = 0
+The 6th smallest product is 0.
+Example 3:
+
+Input: nums1 = [-2,-1,0,1,2], nums2 = [-3,-1,2,4,5], k = 3
+Output: -6
+Explanation: The 3 smallest products are:
+- nums1[0] * nums2[4] = (-2) * 5 = -10
+- nums1[0] * nums2[3] = (-2) * 4 = -8
+- nums1[4] * nums2[0] = 2 * (-3) = -6
+The 3rd smallest product is -6.
+ 
+
+Constraints:
+
+1 <= nums1.length, nums2.length <= 5 * 104
+-105 <= nums1[i], nums2[j] <= 105
+1 <= k <= nums1.length * nums2.length
+nums1 and nums2 are sorted.;=;=https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6881305/beginner-freindlyjavacpythonjs-by-ashokv-t5q0/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6882340/can-you-find-the-kth-smallest-product-be-4rvt/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6882686/easy-solution-eng-hing-explained-beats-9-06rk/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6882243/optimal-solution-binary-search-beats-100-ojl6/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6882324/most-efficient-solution-i-could-come-up-bd3jh/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6883396/fast-and-clear-with-iterations-in-tables-a83s/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6885263/necessary-dry-runs-to-get-why-we-using-b-h91d/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6882723/easy-explanation-binary-search-python-ja-g81q/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6878575/opitmal-solution-easy-apprach-binary-sea-zk5a/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/7159074/easy-explanation-java-binary-search-by-p-swra/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6882326/most-efficient-solution-i-could-come-up-qzdhw/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/1524349/java-double-binary-search-olog1010-x-mlo-p074/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6882758/java-solution-for-kth-smallest-product-o-6mck/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6885101/easy-code-must-try-code-in-java-by-notad-enl3/;;https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/solutions/6882675/kth-smallest-product-of-two-sorted-array-81pv/;;;=;==;=;=;

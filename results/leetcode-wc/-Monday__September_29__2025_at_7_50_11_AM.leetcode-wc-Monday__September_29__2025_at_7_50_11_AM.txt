@@ -1,0 +1,30 @@
+1905. Count Sub Islands;=;=Medium;=;=public int countSubIslands(int[][] grid1, int[][] grid2);=;=You are given two m x n binary matrices grid1 and grid2 containing only 0's (representing water) and 1's (representing land). An island is a group of 1's connected 4-directionally (horizontal or vertical). Any cells outside of the grid are considered water cells.
+
+An island in grid2 is considered a sub-island if there is an island in grid1 that contains all the cells that make up this island in grid2.
+
+Return the number of islands in grid2 that are considered sub-islands.
+
+ 
+
+Example 1:
+
+
+Input: grid1 = [[1,1,1,0,0],[0,1,1,1,1],[0,0,0,0,0],[1,0,0,0,0],[1,1,0,1,1]], grid2 = [[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]
+Output: 3
+Explanation: In the picture above, the grid on the left is grid1 and the grid on the right is grid2.
+The 1s colored red in grid2 are those considered to be part of a sub-island. There are three sub-islands.
+Example 2:
+
+
+Input: grid1 = [[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]], grid2 = [[0,0,0,0,0],[1,1,1,1,1],[0,1,0,1,0],[0,1,0,1,0],[1,0,0,0,1]]
+Output: 2 
+Explanation: In the picture above, the grid on the left is grid1 and the grid on the right is grid2.
+The 1s colored red in grid2 are those considered to be part of a sub-island. There are two sub-islands.
+ 
+
+Constraints:
+
+m == grid1.length == grid2.length
+n == grid1[i].length == grid2[i].length
+1 <= m, n <= 500
+grid1[i][j] and grid2[i][j] are either 0 or 1.;=;=https://leetcode.com/problems/count-sub-islands/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-sub-islands/solutions/5695643/om-n-union-find-java-c-python-go-rust-ja-ne9o/;;https://leetcode.com/problems/count-sub-islands/solutions/5700306/beats-98-super-easy-solution-java-98-c-1-0j8n/;;https://leetcode.com/problems/count-sub-islands/solutions/7074763/java-simple-code-using-dfs-visited-array-i6tr/;;https://leetcode.com/problems/count-sub-islands/solutions/6977347/count-sub-islands-by-shibin_1125-2k95/;;https://leetcode.com/problems/count-sub-islands/solutions/5093139/dfs-super-easy-lots-of-fun-clean-code-be-bzzv/;;https://leetcode.com/problems/count-sub-islands/solutions/5701469/dfs-9907-beats-java-by-eshwaraprasad-nv00/;;https://leetcode.com/problems/count-sub-islands/solutions/5700696/first-eliminate-non-sub-islands-java-c-v-w1w4/;;https://leetcode.com/problems/count-sub-islands/solutions/1325964/java-easy-solution-dfs-on-second-and-che-nc35/;;https://leetcode.com/problems/count-sub-islands/solutions/6959048/count-sub-islands-bfs-visited-matrix-jav-tcnt/;;https://leetcode.com/problems/count-sub-islands/solutions/5700464/java-clean-solution-2882024-by-shree_gov-m72v/;;https://leetcode.com/problems/count-sub-islands/solutions/6686028/count-sub-islands-dfs-approach-by-kavipr-c1ax/;;https://leetcode.com/problems/count-sub-islands/solutions/5700204/dcc-28-august-2024-dfs-by-sajaltiwari007-s21k/;;https://leetcode.com/problems/count-sub-islands/solutions/1284370/java-bfs-dfs-similar-to-number-of-island-stlc/;;https://leetcode.com/problems/count-sub-islands/solutions/5700230/count-subislands-easy-and-unique-explana-hrl4/;;https://leetcode.com/problems/count-sub-islands/solutions/5700759/efficient-dfs-solution-for-count-sub-isl-vtgl/;;;=;==;=;=;

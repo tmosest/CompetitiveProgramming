@@ -1,0 +1,34 @@
+2379. Minimum Recolors to Get K Consecutive Black Blocks;=;=Easy;=;=public int minimumRecolors(String blocks, int k);=;=You are given a 0-indexed string blocks of length n, where blocks[i] is either 'W' or 'B', representing the color of the ith block. The characters 'W' and 'B' denote the colors white and black, respectively.
+
+You are also given an integer k, which is the desired number of consecutive black blocks.
+
+In one operation, you can recolor a white block such that it becomes a black block.
+
+Return the minimum number of operations needed such that there is at least one occurrence of k consecutive black blocks.
+
+ 
+
+Example 1:
+
+Input: blocks = "WBBWWBBWBW", k = 7
+Output: 3
+Explanation:
+One way to achieve 7 consecutive black blocks is to recolor the 0th, 3rd, and 4th blocks
+so that blocks = "BBBBBBBWBW". 
+It can be shown that there is no way to achieve 7 consecutive black blocks in less than 3 operations.
+Therefore, we return 3.
+Example 2:
+
+Input: blocks = "WBWBBBW", k = 2
+Output: 0
+Explanation:
+No changes need to be made, since 2 consecutive black blocks already exist.
+Therefore, we return 0.
+ 
+
+Constraints:
+
+n == blocks.length
+1 <= n <= 100
+blocks[i] is either 'W' or 'B'.
+1 <= k <= n;=;=https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6510952/beats-100-2-methods-javacpython3-by-varm-aj37/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/7201996/easy-simple-sliding-window-cleary-explai-r8ea/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6512104/beats-super-easy-beginners-java-c-c-pyth-u90y/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6513871/easy-solution-with-intuition-beginner-fr-cv5b/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6510918/beats-9210-two-pointers-solution-for-lee-bxeg/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6511487/easy-cjavapython-solution-and-beat-100tc-fq3a/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6510981/branchless-0-ms-beats-10000-by-nodeforce-7bss/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/2454254/javapython-3-sliding-window-t-on-s-o1-w-t0ql9/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6511685/beats-100-easiest-solution-sliding-windo-5y6q/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6511044/ghisltaa-khiddkii-sliding-window-by-ajay-gvoc/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/2454833/cjavapython-beginner-friendly-sliding-wi-955z/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6510876/beats-100-exp-fixed-size-window-2-pointe-7hox/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6511372/sliding-window-on-c-java-python-by-bansa-dv7m/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6512510/beats-100-easy-visual-explaination-slidi-ycpc/;;https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6514000/beats-100-easy-sliding-window-approach-c-j6j1/;;;=;==;=;=;

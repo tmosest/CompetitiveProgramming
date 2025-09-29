@@ -1,0 +1,55 @@
+3460. Longest Common Prefix After at Most One Removal;=;=Medium;=;=public int longestCommonPrefix(String s, String t);=;=You are given two strings s and t.
+
+Return the length of the longest common prefix between s and t after removing at most one character from s.
+
+Note: s can be left without any removal.
+
+ 
+
+Example 1:
+
+Input: s = "madxa", t = "madam"
+
+Output: 4
+
+Explanation:
+
+Removing s[3] from s results in "mada", which has a longest common prefix of length 4 with t.
+
+Example 2:
+
+Input: s = "leetcode", t = "eetcode"
+
+Output: 7
+
+Explanation:
+
+Removing s[0] from s results in "eetcode", which matches t.
+
+Example 3:
+
+Input: s = "one", t = "one"
+
+Output: 3
+
+Explanation:
+
+No removal is needed.
+
+Example 4:
+
+Input: s = "a", t = "b"
+
+Output: 0
+
+Explanation:
+
+s and t cannot have a common prefix.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+1 <= t.length <= 105
+s and t contain only lowercase English letters.;=;=https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/solutions/6435303/easy-to-understand-java-solution-with-de-0gs9/;;https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/solutions/6466458/java-2-pointers-solution-by-am_pm-dnb0/;;https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/solutions/6463957/java-javascript-typescript-c-c-kotlin-go-735e/;;https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/solutions/6437646/java-on-solution-by-tbekpro-o491/;;;=;==;=;=;

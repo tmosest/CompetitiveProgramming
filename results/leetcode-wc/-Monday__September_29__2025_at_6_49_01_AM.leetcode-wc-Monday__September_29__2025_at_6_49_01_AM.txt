@@ -1,0 +1,43 @@
+3678. Smallest Absent Positive Greater Than Average;=;=Easy;=;=public int smallestAbsent(int[] nums);=;=You are given an integer array nums.
+
+Return the smallest absent positive integer in nums such that it is strictly greater than the average of all elements in nums.
+
+The average of an array is defined as the sum of all its elements divided by the number of elements.
+ 
+
+Example 1:
+
+Input: nums = [3,5]
+
+Output: 6
+
+Explanation:
+
+The average of nums is (3 + 5) / 2 = 8 / 2 = 4.
+The smallest absent positive integer greater than 4 is 6.
+Example 2:
+
+Input: nums = [-1,1,2]
+
+Output: 3
+
+Explanation:
+
+???????The average of nums is (-1 + 1 + 2) / 3 = 2 / 3 = 0.667.
+The smallest absent positive integer greater than 0.667 is 3.
+Example 3:
+
+Input: nums = [4,-1]
+
+Output: 2
+
+Explanation:
+
+The average of nums is (4 + (-1)) / 2 = 3 / 2 = 1.50.
+The smallest absent positive integer greater than 1.50 is 2.
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+-100 <= nums[i] <= 100???????;=;=https://leetcode.com/problems/smallest-absent-positive-greater-than-average/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7187103/one-liner-on-very-simple-solution-detail-pubg/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7187593/clean-simple-easy-explanation-100-beats-84ozw/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7221581/easy-simple-java-by-sairangineeni-vj8r/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7187231/beats-100-simple-java-solution-by-greatb-ckuy/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7186877/simple-java-solution-beats-100-by-aditya-asxk/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7186573/easy-solution-in-java-by-user4769vd-4h4u/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7202141/easy-to-understand-w-solutions-by-himank-96hy/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7188220/java-solution-by-strawhat23-lnat/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7186929/100-easy-explanation-in-java-by-zabardas-qe5j/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7193139/intuitive-easy-explanation-java-c-python-4jp0/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7192208/easy-and-simple-method-for-beginners-by-465s7/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7188762/java-easy-solution-by-shreyagarg63-8v2w/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7186510/easy-solution-in-java-by-nidhibaratam200-m4fl/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7187257/easy-approach-beats-100-beginner-friendl-z528/;;https://leetcode.com/problems/smallest-absent-positive-greater-than-average/solutions/7186516/easy-java-solution-by-utkarhsingh23-qlhb/;;;=;==;=;=;

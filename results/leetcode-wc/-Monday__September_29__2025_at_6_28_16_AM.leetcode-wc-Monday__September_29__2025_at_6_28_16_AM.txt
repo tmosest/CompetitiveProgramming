@@ -1,0 +1,25 @@
+1150. Check If a Number Is Majority Element in a Sorted Array;=;=Easy;=;=publicÊbooleanÊisMajorityElement(int[]Ênums,ÊintÊtarget);=;=Given an integer array nums sorted in non-decreasing order and an integer target, return true if target is a majority element, or false otherwise.
+
+A majority element in an array nums is an element that appears more than nums.length / 2 times in the array.
+
+Ê
+
+Example 1:
+
+Input: nums = [2,4,5,5,5,5,5,6,6], target = 5
+Output: true
+Explanation: The value 5 appears 5 times and the length of the array is 9.
+Thus, 5 is a majority element because 5 > 9/2 is true.
+Example 2:
+
+Input: nums = [10,100,101,101], target = 101
+Output: false
+Explanation: The value 101 appears 2 times and the length of the array is 4.
+Thus, 101 is not a majority element because 2 > 4/2 is false.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i], target <= 109
+nums is sorted in non-decreasing order.;=;=https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/7211690/java-solution-on-time-and-o1-space-by-mp-2ziq/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/871468/java-100-space-and-time-by-vamsigurram-tpxo/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/948788/java-100-faster-and-100-memory-efficient-g1jh/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/1096895/java-concise-solution-100-by-sid_2596-fyvj/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/7194653/java-straight-forward-solution-by-venkim-kgsn/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/427592/java-binarysearch-while-loop-to-get-the-i7gm9/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/2933720/0ms-binary-search-solution-by-yusenpeng-3ur5/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/462589/java-o1-time-and-space-solution-beating-d6rpi/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/1835189/java-simple-one-pass-on-solution-by-zwan-cvl3/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/710607/java-100-two-approaches-on-and-ologn-by-2s3zt/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/5913609/java-solution-with-on-by-csplrj-lu2n/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/6924094/short-solution-with-comments-tc-ologn-sc-1vpo/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/439779/java-0ms-100-time-100-space-o1-solution-gg3df/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/5613263/javajsts-solution-jw-by-specter01wj-9q3w/;;https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solutions/5890856/java-hashmap-solution-by-tbekpro-mrbg/;;;=;==;=;=;

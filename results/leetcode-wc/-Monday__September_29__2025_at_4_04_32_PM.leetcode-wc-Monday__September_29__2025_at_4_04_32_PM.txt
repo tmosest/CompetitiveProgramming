@@ -1,0 +1,57 @@
+3455. Shortest Matching Substring;=;=Hard;=;=public int shortestMatchingSubstring(String s, String p);=;=You are given a string s and a pattern string p, where p contains exactly two '*' characters.
+
+The '*' in p matches any sequence of zero or more characters.
+
+Return the length of the shortest substring in s that matches p. If there is no such substring, return -1.
+
+Note: The empty substring is considered valid.
+ 
+
+Example 1:
+
+Input: s = "abaacbaecebce", p = "ba*c*ce"
+
+Output: 8
+
+Explanation:
+
+The shortest matching substring of p in s is "baecebce".
+
+Example 2:
+
+Input: s = "baccbaadbc", p = "cc*baa*adb"
+
+Output: -1
+
+Explanation:
+
+There is no matching substring in s.
+
+Example 3:
+
+Input: s = "a", p = "**"
+
+Output: 0
+
+Explanation:
+
+The empty substring is the shortest matching substring.
+
+Example 4:
+
+Input: s = "madlogic", p = "*adlogi*"
+
+Output: 6
+
+Explanation:
+
+The shortest matching substring of p in s is "adlogi".
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+2 <= p.length <= 105
+s contains only lowercase English letters.
+p contains only lowercase English letters and exactly two '*'.;=;=https://leetcode.com/problems/shortest-matching-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-matching-substring/solutions/6428676/java-solution-using-kmp-and-3-pointer-by-gxbr/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6452274/java-beats-96-generic-solution-for-k-sta-g6hd/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6429266/kmp-binary-search-easy-solution-by-itsye-d8fl/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6426978/kmp-binary-search-by-akash_sonar-j8o9/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6557110/beats-90-can-work-dynamically-with-n-num-8gzj/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6556630/java-kmp-solution-beats-95-in-time-compl-pav2/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6455720/kmp-and-3-pointer-java-solution-time-com-y3kv/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6453605/easy-java-solution-kmp-binary-search-by-idyyk/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6432216/beat-100-ms-shortest-matching-substring-easw2/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6432215/beat-100-ms-shortest-matching-substring-diy1y/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6432011/java-solution-by-barakamon-appv/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6431124/kmpbs100-java-solution-by-shubbu-184-guui/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6430935/simple-java-approach-without-advanced-st-267k/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6429381/elaborated-kmp-solution-for-beginners-ja-r582/;;https://leetcode.com/problems/shortest-matching-substring/solutions/6426775/shortest-matching-substring-by-shahdhruv-3rhr/;;;=;==;=;=;

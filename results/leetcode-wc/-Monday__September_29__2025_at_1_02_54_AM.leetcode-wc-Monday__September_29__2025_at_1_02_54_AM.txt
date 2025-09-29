@@ -1,0 +1,32 @@
+1458. Max Dot Product of Two Subsequences;=;=Hard;=;=public int maxDotProduct(int[] nums1, int[] nums2);=;=Given two arrays nums1 and nums2.
+
+Return the maximum dot product between non-empty subsequences of nums1 and nums2 with the same length.
+
+A subsequence of a array is a new array which is formed from the original array by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, [2,3,5] is a subsequence of [1,2,3,4,5] while [1,5,3] is not).
+
+ 
+
+Example 1:
+
+Input: nums1 = [2,1,-2,5], nums2 = [3,0,-6]
+Output: 18
+Explanation: Take subsequence [2,-2] from nums1 and subsequence [3,-6] from nums2.
+Their dot product is (2*3 + (-2)*(-6)) = 18.
+Example 2:
+
+Input: nums1 = [3,-2], nums2 = [2,-6,7]
+Output: 21
+Explanation: Take subsequence [3] from nums1 and subsequence [7] from nums2.
+Their dot product is (3*7) = 21.
+Example 3:
+
+Input: nums1 = [-1,-1], nums2 = [1,1]
+Output: -1
+Explanation: Take subsequence [-1] from nums1 and subsequence [1] from nums2.
+Their dot product is -1.
+ 
+
+Constraints:
+
+1 <= nums1.length, nums2.length <= 500
+-1000 <= nums1[i], nums2[i] <= 1000;=;=https://leetcode.com/problems/max-dot-product-of-two-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4143612/9014-dynamic-programming-optimized-by-va-1968/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4143693/9214-dp-recursive-iterative-explained-in-l0h7/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4143796/video-give-me-10-minutes-how-we-think-ab-jei0/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4143896/java-dynamic-programming-optimised-faste-c1qp/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/6884311/hackers-solution-guys-5-line-code-beats-wu21r/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4144618/easy-java-solution-dp-memoization-by-sub-b0pg/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/7225725/top-down-and-bottom-up-dp-for-max-dot-pr-bbit/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4144453/9832-dp-approach-with-explanation-and-vi-k26z/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4144128/easy-to-understand-lcs-5-line-code-by-me-7g0n/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4144964/java-easy-solution-by-ziddiraj-xeyi/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4144012/java-easy-recursion-memoization-by-vishe-6ve2/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4182422/java-by-lancertechnew-z571/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4148109/optimized-java-program-by-anushdubey01-lsqv/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4145849/java-solution-best-solution-beginners-fr-zatf/;;https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4146852/ccjavapythonjavascript-dp-recursion-expl-bcyo/;;;=;==;=;=;

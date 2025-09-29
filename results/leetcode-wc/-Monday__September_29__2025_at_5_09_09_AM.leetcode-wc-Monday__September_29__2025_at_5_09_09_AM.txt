@@ -1,0 +1,31 @@
+1273. Delete Tree Nodes;=;=Medium;=;=public int deleteTreeNodes(int nodes, int[] parent, int[] value);=;=A tree rooted at node 0 is given as follows:
+
+The number of nodes is nodes;
+The value of the ith node is value[i];
+The parent of the ith node is parent[i].
+Remove every subtree whose sum of values of nodes is zero.
+
+Return the number of the remaining nodes in the tree.
+
+ 
+
+Example 1:
+
+
+Input: nodes = 7, parent = [-1,0,0,1,2,2,2], value = [1,-2,4,0,-2,-1,-1]
+Output: 2
+Example 2:
+
+Input: nodes = 7, parent = [-1,0,0,1,2,2,2], value = [1,-2,4,0,-2,-1,-2]
+Output: 6
+ 
+
+Constraints:
+
+1 <= nodes <= 104
+parent.length == nodes
+0 <= parent[i] <= nodes - 1
+parent[0] == -1 which indicates that 0 is the root.
+value.length == nodes
+-105 <= value[i] <= 105
+The given input is guaranteed to represent a valid tree.;=;=https://leetcode.com/problems/delete-tree-nodes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/delete-tree-nodes/solutions/1627971/java-dfs-by-bo29-pr8q/;;https://leetcode.com/problems/delete-tree-nodes/solutions/6220995/dfs-1-pass-by-ruinan-k8tz/;;https://leetcode.com/problems/delete-tree-nodes/solutions/4683506/java-solution-dfs-by-ndsjqwbbb-wyw9/;;https://leetcode.com/problems/delete-tree-nodes/solutions/4581980/java-dfs-by-robertskonieczny-medy/;;https://leetcode.com/problems/delete-tree-nodes/solutions/3591455/solution-by-deleted_user-6rb1/;;https://leetcode.com/problems/delete-tree-nodes/solutions/3573266/solution-based-on-adj-tracking-java-by-s-u3b1/;;https://leetcode.com/problems/delete-tree-nodes/solutions/1628277/java-build-tree-and-dfs-99-faster-by-bao-n979/;;https://leetcode.com/problems/delete-tree-nodes/solutions/1081912/java-dfs-solution-by-ysz951-vsm9/;;https://leetcode.com/problems/delete-tree-nodes/solutions/1024973/java-100-faster-with-comments-by-zsnovak-7aj9/;;https://leetcode.com/problems/delete-tree-nodes/solutions/472263/java-easy-to-understand-bfs-solution-con-blrw/;;;=;==;=;=;

@@ -1,0 +1,32 @@
+1209. Remove All Adjacent Duplicates in String II;=;=Medium;=;=public String removeDuplicates(String s, int k);=;=You are given a string s and an integer k, a k duplicate removal consists of choosing k adjacent and equal letters from s and removing them, causing the left and the right side of the deleted substring to concatenate together.
+
+We repeatedly make k duplicate removals on s until we no longer can.
+
+Return the final string after all such duplicate removals have been made. It is guaranteed that the answer is unique.
+
+ 
+
+Example 1:
+
+Input: s = "abcd", k = 2
+Output: "abcd"
+Explanation: There's nothing to delete.
+Example 2:
+
+Input: s = "deeedbbcccbdaa", k = 3
+Output: "aa"
+Explanation: 
+First delete "eee" and "ccc", get "ddbbbdaa"
+Then delete "bbb", get "dddaa"
+Finally delete "ddd", get "aa"
+Example 3:
+
+Input: s = "pbbcggttciiippooaais", k = 2
+Output: "ps"
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+2 <= k <= 104
+s only contains lowercase English letters.;=;=https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/7195564/fast-and-clear-with-iterations-in-tables-32ar/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/392939/pythoncjava-stack-based-solution-clean-c-3xk5/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/1161097/java-stack-easy-by-himanshuchhikara-f923/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/1490956/java-tc-on-sc-on-clean-concise-solution-q5hg3/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/7045329/remove-all-adjacent-duplicates-in-string-i0n4/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/7036161/k-fold-cleanser-remove-adjacent-k-duplic-2brt/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/2012383/java-stack-solution-onon-by-derek-y-xjoi/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/7014122/java-beats-8798-by-user9582mp-94ot/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/1161314/js-python-java-c-easy-in-place-stack-sol-k6hs/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/5565055/how-to-quickly-remove-all-adjacent-dupli-2h6i/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/1663120/java-stack-explained-with-pictures-by-no-4sf4/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/5172210/stack-solution-pattern-by-dixon_n-hvrr/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/6751135/remove-all-adjacent-duplicates-in-string-18da/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/6582275/easy-solution-in-java-using-stack-by-yas-9qkj/;;https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/solutions/2799261/java-solution-stack-oop-clean-and-simple-j8h4/;;;=;==;=;=;

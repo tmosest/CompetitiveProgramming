@@ -1,0 +1,39 @@
+2134. Minimum Swaps to Group All 1's Together II;=;=Medium;=;=public int minSwaps(int[] nums);=;=A swap is defined as taking two distinct positions in an array and swapping the values in them.
+
+A circular array is defined as an array where we consider the first element and the last element to be adjacent.
+
+Given a binary circular array nums, return the minimum number of swaps required to group all 1's present in the array together at any location.
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,0,1,1,0,0]
+Output: 1
+Explanation: Here are a few of the ways to group all the 1's together:
+[0,0,1,1,1,0,0] using 1 swap.
+[0,1,1,1,0,0,0] using 1 swap.
+[1,1,0,0,0,0,1] using 2 swaps (using the circular property of the array).
+There is no way to group all 1's together with 0 swaps.
+Thus, the minimum number of swaps required is 1.
+Example 2:
+
+Input: nums = [0,1,1,1,0,0,1,1,0]
+Output: 2
+Explanation: Here are a few of the ways to group all the 1's together:
+[1,1,1,0,0,0,0,1,1] using 2 swaps (using the circular property of the array).
+[1,1,1,1,1,0,0,0,0] using 2 swaps.
+There is no way to group all 1's together with 0 or 1 swaps.
+Thus, the minimum number of swaps required is 2.
+Example 3:
+
+Input: nums = [1,1,0,0,1]
+Output: 0
+Explanation: All the 1's are already grouped together due to the circular property of the array.
+Thus, the minimum number of swaps required is 0.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+nums[i] is either 0 or 1.;=;=https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5571652/same-concept-of-sliding-window-on-in-3-l-ms67/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/1676865/python3-java-c-easy-sliding-window-on-by-eyf1/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5572247/on-sliding-window-2-ms-beats-100-java-c-r0xy5/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/1676874/sliding-window-by-votrubac-b335/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5571833/easy-solution-beats-100-by-sachinonly-rcnf/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5573127/simple-code-easy-to-understand-beats-100-7ugx/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5571647/on-easy-explained-java-c-python-by-abhis-91dk/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/7068357/easy-solution-java-by-rajan_singh01-qpiq/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5572584/use-silding-window-and-find-the-window-n-xube/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/1677166/java-sliding-window-on-easy-understandin-6w4z/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5571669/best-approach-in-easy-words-javascript-c-hg0l/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5269475/fixed-sliding-window-by-dixon_n-tw3j/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5571846/best-for-beginners-by-ratneshh-rm8t/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/6793346/easy-java-solution-by-hee_maan_shee-28ot/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5574496/full-explanationimage-easy-8-line-with-b-47oc/;;;=;==;=;=;

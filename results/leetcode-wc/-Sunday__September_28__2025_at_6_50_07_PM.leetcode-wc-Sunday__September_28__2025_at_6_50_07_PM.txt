@@ -1,0 +1,33 @@
+1460. Make Two Arrays Equal by Reversing Subarrays;=;=Easy;=;=public boolean canBeEqual(int[] target, int[] arr);=;=You are given two integer arrays of equal length target and arr. In one step, you can select any non-empty subarray of arr and reverse it. You are allowed to make any number of steps.
+
+Return true if you can make arr equal to target or false otherwise.
+
+ 
+
+Example 1:
+
+Input: target = [1,2,3,4], arr = [2,4,1,3]
+Output: true
+Explanation: You can follow the next steps to convert arr to target:
+1- Reverse subarray [2,4,1], arr becomes [1,4,2,3]
+2- Reverse subarray [4,2], arr becomes [1,2,4,3]
+3- Reverse subarray [4,3], arr becomes [1,2,3,4]
+There are multiple ways to convert arr to target, this is not the only way to do so.
+Example 2:
+
+Input: target = [7], arr = [7]
+Output: true
+Explanation: arr is equal to target without any reverses.
+Example 3:
+
+Input: target = [3,7,9], arr = [3,7,11]
+Output: false
+Explanation: arr does not have value 9 and it can never be converted to target.
+ 
+
+Constraints:
+
+target.length == arr.length
+1 <= target.length <= 1000
+1 <= target[i] <= 1000
+1 <= arr[i] <= 1000;=;=https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/7213486/1ms-simple-approach-java-on-by-vijayarag-miqc/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5564948/on-counting-sort-hashmap-beats-100-java-brx79/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/7204544/easy-code-for-solve-this-problem-by-4_k4-qdfk/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/661521/java-on-time-and-space-by-hobiter-wcea/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5576686/java-simple-4-lines-clean-code-by-judgem-fij9/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/825198/java-on-solution-with-explanation-by-cha-ea28/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5576639/on-time-comp-beats-100-6-lang-simple-cod-vlvb/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5578415/ultimate-guide-to-array-equality-sorting-l6db/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5577440/reversing-subarrays-made-simple-by-witha-qtyy/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5576856/easy-solution-beats-everyone-by-sachinon-w3ks/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5577395/dcc-03082024-sorting-by-sajaltiwari007-ibpa/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5577184/beats-100-two-approaches-code-in-c-java-rfuvl/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/660528/javapython-3-count-the-arrays-and-compar-u11q/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5578711/simple-java-c-code-by-abhinandannaik1717-ukpg/;;https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/2877522/java-two-line-code-9812-faster-by-sharfo-0zo3/;;;=;==;=;=;

@@ -1,0 +1,26 @@
+1161. Maximum Level Sum of a Binary Tree;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=Given the root of a binary tree, the level of its root is 1, the level of its children is 2, and so on.
+
+Return the smallest level x such that the sum of all the values of nodes at level x is maximal.
+
+ 
+
+Example 1:
+
+
+Input: root = [1,7,0,7,-8,null,null]
+Output: 2
+Explanation: 
+Level 1 sum = 1.
+Level 2 sum = 7 + 0 = 7.
+Level 3 sum = 7 + -8 = -1.
+So we return the level with the maximum sum which is level 2.
+Example 2:
+
+Input: root = [989,null,10250,98693,-89388,null,null,null,-32127]
+Output: 2
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 104].
+-105 <= Node.val <= 105;=;=https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/7093440/breadth-first-search-easiest-code-java-j-kww9/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/360968/javapython-3-two-codes-language-bfs-leve-73ad/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/3641496/pythonjavacsimple-solutioneasy-to-unders-huak/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/7108680/easy-beats-proof-java-beginner-friendly-07dlh/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/6946106/simplest-solution-using-java-by-sss2803-72t6/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/7064398/easy-bfs-approach-by-faiz_ullah_khan-45qa/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/6057048/easy-98-beats-proof-java-beginner-friend-e7be/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/6924962/1161-maximum-level-sum-of-a-binary-tree-7yaf3/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/7093507/easy-code-in-java-by-yasl1-9nqa/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/7027109/efficient-solution-using-bfs-by-achiever-fzl7/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/7080989/simple-bfs-solution-by-sundaramtiwari-xxun/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/7000364/optimized-bfs-maximum-level-sum-in-binar-cvxl/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/3639045/easy-solution-video-java-c-python-by-jee-awce/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/5416483/java-brute-force-solution-by-chaitanya_9-em8l/;;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/6284991/beginner-friendly-easy-soln-must-check-b-ntnc/;;;=;==;=;=;

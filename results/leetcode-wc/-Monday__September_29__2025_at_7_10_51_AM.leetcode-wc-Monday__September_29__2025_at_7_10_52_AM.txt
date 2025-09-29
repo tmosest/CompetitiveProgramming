@@ -1,0 +1,35 @@
+3233. Find the Count of Numbers Which Are Not Special;=;=Medium;=;=public int nonSpecialCount(int l, int r);=;=You are given 2 positive integers l and r. For any number x, all positive divisors of x except x are called the proper divisors of x.
+
+A number is called special if it has exactly 2 proper divisors. For example:
+
+The number 4 is special because it has proper divisors 1 and 2.
+The number 6 is not special because it has proper divisors 1, 2, and 3.
+Return the count of numbers in the range [l, r] that are not special.
+
+ 
+
+Example 1:
+
+Input: l = 5, r = 7
+
+Output: 3
+
+Explanation:
+
+There are no special numbers in the range [5, 7].
+
+Example 2:
+
+Input: l = 4, r = 16
+
+Output: 11
+
+Explanation:
+
+The special numbers in the range [4, 16] are 4 and 9.
+
+ 
+
+Constraints:
+
+1 <= l <= r <= 109;=;=https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5546339/sieve-of-eratosthenes-by-fahad06-nxsi/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5546629/see-intuitionapproach-check-primes-easy-d4i8t/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/7055814/easiest-java-solution-without-sieve-by-a-3io0/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5546384/java-easy-approach-by-abhayrana00018-j6lx/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/7032535/striver-approach-sieve-of-eratosthenes-e-rech/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5546386/java-solution-by-harsh__005-452f/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5679345/beats-99-in-tc-beginner-friendly-by-vans-dtpw/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5546661/detail-explained-solution-by-kieubaduong-fbbj/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5547021/detailed-easy-java-python3-c-solution-0m-6xdo/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5546382/simple-maths-seives-algorithm-beats-100-u3ejt/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5546322/simplest-approach-by-enigmanishant-f3o7/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5547533/java-solution-4ms-seive-and-treemap-by-v-qiy2/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5547637/beats-prime-numbers-by-codewithsparsh-zj52/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5546774/java-solution-basing-on-prime-count-by-h-cw2x/;;https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/solutions/5546975/sieve-of-eratosthenes-modified-space-opt-tg4c/;;;=;==;=;=;

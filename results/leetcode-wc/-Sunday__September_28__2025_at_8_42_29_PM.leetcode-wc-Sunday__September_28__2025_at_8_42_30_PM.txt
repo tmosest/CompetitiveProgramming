@@ -1,0 +1,27 @@
+483. Smallest Good Base;=;=Hard;=;=publicÊStringÊsmallestGoodBase(StringÊn);=;=Given an integer n represented as a string, return the smallest good base of n.
+
+We call k >= 2 a good base of n, if all digits of n base k are 1's.
+
+Ê
+
+Example 1:
+
+Input: n = "13"
+Output: "3"
+Explanation: 13 base 3 is 111.
+Example 2:
+
+Input: n = "4681"
+Output: "8"
+Explanation: 4681 base 8 is 11111.
+Example 3:
+
+Input: n = "1000000000000000000"
+Output: "999999999999999999"
+Explanation: 1000000000000000000 base 999999999999999999 is 11.
+Ê
+
+Constraints:
+
+n is an integer in the range [3, 1018].
+n does not contain any leading zeros.;=;=https://leetcode.com/problems/smallest-good-base/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-good-base/solutions/3004597/solution-by-deleted_user-7za7/;;https://leetcode.com/problems/smallest-good-base/solutions/3787685/binary-search-100-faster-in-both-java-an-4ghb/;;https://leetcode.com/problems/smallest-good-base/solutions/625034/easy-to-understand-java-solution-without-sjoj/;;https://leetcode.com/problems/smallest-good-base/solutions/7052505/java-solution-by-shednatn56-eh64/;;https://leetcode.com/problems/smallest-good-base/solutions/6405562/483-smallest-good-base-in-java-100-works-kn1h/;;https://leetcode.com/problems/smallest-good-base/solutions/5669759/solution-in-java-100-by-ashimasingh0610-vjq8/;;https://leetcode.com/problems/smallest-good-base/solutions/5131246/best-java-solution-by-raghu3696-3nsx/;;https://leetcode.com/problems/smallest-good-base/solutions/5073388/solution-for-this-problem-by-crazyycoder-wizz/;;https://leetcode.com/problems/smallest-good-base/solutions/5037457/best-java-solution-with-2ms-of-runtime-b-26om/;;https://leetcode.com/problems/smallest-good-base/solutions/4400807/the-easiest-solution-by-legtar-0ity/;;https://leetcode.com/problems/smallest-good-base/solutions/4038799/java-solution-explanation-for-all-by-tej-oczv/;;https://leetcode.com/problems/smallest-good-base/solutions/3358761/easy-to-understand-solution-of-smallest-y3htz/;;https://leetcode.com/problems/smallest-good-base/solutions/2419976/java-binary-search-simple-clean-code-by-ijdq8/;;;=;==;=;=;

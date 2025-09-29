@@ -1,0 +1,26 @@
+921. Minimum Add to Make Parentheses Valid;=;=Medium;=;=public int minAddToMakeValid(String s);=;=A parentheses string is valid if and only if:
+
+It is the empty string,
+It can be written as AB (A concatenated with B), where A and B are valid strings, or
+It can be written as (A), where A is a valid string.
+You are given a parentheses string s. In one move, you can insert a parenthesis at any position of the string.
+
+For example, if s = "()))", you can insert an opening parenthesis to be "(()))" or a closing parenthesis to be "())))".
+Return the minimum number of moves required to make s valid.
+
+ 
+
+Example 1:
+
+Input: s = "())"
+Output: 1
+Example 2:
+
+Input: s = "((("
+Output: 3
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s[i] is either '(' or ')'.;=;=https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/5889059/beats-100-easy-self-explanatory-code-3-a-afqw/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/7139256/easy-java-solution-beats-100-by-kiyotaka-ek0u/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/5888834/super-simple-approach-beats-100-o1-space-mm78/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/7200017/easy-solution-stack-java-by-praveensutha-f25n/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/5888626/easy-solution-no-stack-python-java-c-c-c-5dv8/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/7085489/easy-java-solution-with-simple-explanati-ojij/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/7175813/minimum-add-to-make-parentheses-valid-by-ruo3/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/7170141/minimum-additions-to-make-parentheses-va-81xo/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/5888639/python3-10-lines-track-s-ts-99-54-by-spa-m31j/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/7017530/using-java-stack-mathematical-approach-s-p1t0/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/5889104/on-c-0ms-beats-10000-easy-solution-py3-2-lzsb/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/5890325/lets-form-couples-part-ii-very-easy-expl-htr6/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/5888644/basic-if-else-statement-69_beats_100easy-629h/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/7070961/the-most-easiest-java-solutions-in-your-c0ttt/;;https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/6455127/beats-100-2-solutions-brute-optimized-be-yyrc/;;;=;==;=;=;

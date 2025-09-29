@@ -1,0 +1,33 @@
+2551. Put Marbles in Bags;=;=Hard;=;=public long putMarbles(int[] weights, int k);=;=You have k bags. You are given a 0-indexed integer array weights where weights[i] is the weight of the ith marble. You are also given the integer k.
+
+Divide the marbles into the k bags according to the following rules:
+
+No bag is empty.
+If the ith marble and jth marble are in a bag, then all marbles with an index between the ith and jth indices should also be in that same bag.
+If a bag consists of all the marbles with an index from i to j inclusively, then the cost of the bag is weights[i] + weights[j].
+The score after distributing the marbles is the sum of the costs of all the k bags.
+
+Return the difference between the maximum and minimum scores among marble distributions.
+
+ 
+
+Example 1:
+
+Input: weights = [1,3,5,1], k = 2
+Output: 4
+Explanation: 
+The distribution [1],[3,5,1] results in the minimal score of (1+1) + (3+1) = 6. 
+The distribution [1,3],[5,1], results in the maximal score of (1+3) + (5+1) = 10. 
+Thus, we return their difference 10 - 6 = 4.
+Example 2:
+
+Input: weights = [1, 3], k = 2
+Output: 0
+Explanation: The only distribution possible is [1],[3]. 
+Since both the maximal and minimal score are the same, we return 0.
+ 
+
+Constraints:
+
+1 <= k <= weights.length <= 105
+1 <= weights[i] <= 109;=;=https://leetcode.com/problems/put-marbles-in-bags/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/put-marbles-in-bags/solutions/6598045/easy-sorting-python-c-java-js-c-go-by-ot-uoee/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/6598048/hints-that-will-guide-you-to-the-solutio-792f/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/6598915/beats-super-easy-beginners-java-c-c-pyth-39dy/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/3111736/javacpython-3-approachs-best-on-by-lee21-ag8d/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/6598328/simple-8-lines-of-code-sort-list-of-adja-qklp/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/6599140/super-short-10-lines-cjavapy4js-easy-sol-r8bh/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/3734172/2-aprroaches-easy-to-understand-code-exp-akaf/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/3734432/java-sorting-easy-solution-by-saitama_27-ouad/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/3111862/nlogn-straight-forward-3-java-solutions-r8kwp/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/6598521/easy-solutionbeats-100-in-mostwith-proof-lvi5/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/6598788/find-edges-that-include-the-highest-numb-rymd/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/6598362/2-approches-easy-greedysortingheap-expla-0pa2/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/3734284/sort-video-solution-by-jeevankumar159-uega/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/3111723/java-sorting-explained-by-sourin_bruh-5o0s/;;https://leetcode.com/problems/put-marbles-in-bags/solutions/6598268/2551-put-marbles-in-bags-by-therollno1-65td/;;;=;==;=;=;

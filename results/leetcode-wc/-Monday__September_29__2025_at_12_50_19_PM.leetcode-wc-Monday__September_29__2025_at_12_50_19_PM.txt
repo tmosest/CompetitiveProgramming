@@ -1,0 +1,32 @@
+2169. Count Operations to Obtain Zero;=;=Easy;=;=publicÊintÊcountOperations(intÊnum1,ÊintÊnum2);=;=You are given two non-negative integers num1 and num2.
+
+In one operation, if num1 >= num2, you must subtract num2 from num1, otherwise subtract num1 from num2.
+
+For example, if num1 = 5 and num2 = 4, subtract num2 from num1, thus obtaining num1 = 1 and num2 = 4. However, if num1 = 4 and num2 = 5, after one operation, num1 = 4 and num2 = 1.
+Return the number of operations required to make either num1 = 0 or num2 = 0.
+
+Ê
+
+Example 1:
+
+Input: num1 = 2, num2 = 3
+Output: 3
+Explanation: 
+- Operation 1: num1 = 2, num2 = 3. Since num1 < num2, we subtract num1 from num2 and get num1 = 2, num2 = 3 - 2 = 1.
+- Operation 2: num1 = 2, num2 = 1. Since num1 > num2, we subtract num2 from num1.
+- Operation 3: num1 = 1, num2 = 1. Since num1 == num2, we subtract num2 from num1.
+Now num1 = 0 and num2 = 1. Since num1 == 0, we do not need to perform any further operations.
+So the total number of operations required is 3.
+Example 2:
+
+Input: num1 = 10, num2 = 10
+Output: 1
+Explanation: 
+- Operation 1: num1 = 10, num2 = 10. Since num1 == num2, we subtract num2 from num1 and get num1 = 10 - 10 = 0.
+Now num1 = 0 and num2 = 10. Since num1 == 0, we are done.
+So the total number of operations required is 1.
+Ê
+
+Constraints:
+
+0 <= num1, num2 <= 105;=;=https://leetcode.com/problems/count-operations-to-obtain-zero/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7200403/easy-while-loop-beats-100-by-kunj_2803-u0dn/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7184728/easy-code-for-solve-this-problem-by-4_k4-7bkg/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/6334303/count-operations-to-make-two-numbers-zer-7txz/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7019516/java-easy-solution-1ms-by-akashraj06-51ul/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/6964126/easy-while-loop-java-by-sairangineeni-gtpn/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/6805471/java-code-easy-to-understand-with-optima-4kdg/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/6697667/minimum-subtraction-operations-to-make-a-a35b/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/1852620/java-beats-100-by-abanoubcs-bu6g/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7224189/easy-solution-in-python-java-c-c-c-types-dsa3/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7210052/simple-program-using-while-loop-by-kamal-vnnd/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7155263/count-operations-to-sum-zero-easy-to-app-7dkx/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7142250/java-by-sssanskarrr-qomm/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7140642/using-while-loop-easy-code-by-24itr171_i-g2bh/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7125225/beats-93-by-alexander_sergeev-1pfi/;;https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/6809342/2169-count-operations-to-obtain-zero-by-vq0ib/;;;=;==;=;=;

@@ -1,0 +1,38 @@
+2107. Number of Unique Flavors After Sharing K Candies;=;=Medium;=;=public int shareCandies(int[] candies, int k);=;=You are given a 0-indexed integer array candies, where candies[i] represents the flavor of the ith candy. Your mom wants you to share these candies with your little sister by giving her k consecutive candies, but you want to keep as many flavors of candies as possible.
+
+Return the maximum number of unique flavors of candy you can keep after sharing with your sister.
+
+ 
+
+Example 1:
+
+Input: candies = [1,2,2,3,4,3], k = 3
+Output: 3
+Explanation: 
+Give the candies in the range [1, 3] (inclusive) with flavors [2,2,3].
+You can eat candies with flavors [1,4,3].
+There are 3 unique flavors, so return 3.
+Example 2:
+
+Input: candies = [2,2,2,2,3,3], k = 2
+Output: 2
+Explanation: 
+Give the candies in the range [3, 4] (inclusive) with flavors [2,3].
+You can eat candies with flavors [2,2,2,3].
+There are 2 unique flavors, so return 2.
+Note that you can also share the candies with flavors [2,2] and eat the candies with flavors [2,2,3,3].
+Example 3:
+
+Input: candies = [2,4,5], k = 0
+Output: 3
+Explanation: 
+You do not have to give any candies.
+You can eat the candies with flavors [2,4,5].
+There are 3 unique flavors, so return 3.
+ 
+
+Constraints:
+
+0 <= candies.length <= 105
+1 <= candies[i] <= 105
+0 <= k <= candies.length;=;=https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/1642103/java-sliding-window-on-by-vkvasov-h2ik/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/6065312/java-unusual-sliding-window-by-tbekpro-dnft/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/5733165/on-on-by-liiiiiiii-muu3/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/6410553/java-solution-sliding-window-hashmap-tim-8t8c/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/6257358/simple-intuitive-by-richardleee-15wt/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/6057365/precomputation-and-sliding-window-approa-90r1/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/6055920/java-javascript-typescript-c-c-kotlin-go-5htj/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/6047829/c-java-kotlin-simple-hashmap-solution-de-i2ud/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/5556154/sliding-window-technique-for-this-proble-savm/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/4968482/clean-and-simple-java-solution-by-sourav-whss/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/4968481/clean-and-simple-java-solution-by-sourav-xom2/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/4965101/use-a-deque-as-a-window-by-ztsophia123-0vdo/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/4829496/java-sliding-window-by-gauriguptacodes-risk/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/4739513/sliding-window-and-maps-by-wxs2204-kiz5/;;https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/solutions/4169126/java-solution-easy-to-understand-beginne-1r67/;;;=;==;=;=;

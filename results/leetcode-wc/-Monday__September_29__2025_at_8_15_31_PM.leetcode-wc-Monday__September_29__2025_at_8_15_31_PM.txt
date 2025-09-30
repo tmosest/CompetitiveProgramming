@@ -1,0 +1,43 @@
+3366. Minimum Array Sum;=;=Medium;=;=public int minArraySum(int[] nums, int k, int op1, int op2);=;=You are given an integer array nums and three integers k, op1, and op2.
+
+You can perform the following operations on nums:
+
+Operation 1: Choose an index i and divide nums[i] by 2, rounding up to the nearest whole number. You can perform this operation at most op1 times, and not more than once per index.
+Operation 2: Choose an index i and subtract k from nums[i], but only if nums[i] is greater than or equal to k. You can perform this operation at most op2 times, and not more than once per index.
+Note: Both operations can be applied to the same index, but at most once each.
+
+Return the minimum possible sum of all elements in nums after performing any number of operations.
+
+ 
+
+Example 1:
+
+Input: nums = [2,8,3,19,3], k = 3, op1 = 1, op2 = 1
+
+Output: 23
+
+Explanation:
+
+Apply Operation 2 to nums[1] = 8, making nums[1] = 5.
+Apply Operation 1 to nums[3] = 19, making nums[3] = 10.
+The resulting array becomes [2, 5, 3, 10, 3], which has the minimum possible sum of 23 after applying the operations.
+Example 2:
+
+Input: nums = [2,4,3], k = 3, op1 = 2, op2 = 1
+
+Output: 3
+
+Explanation:
+
+Apply Operation 1 to nums[0] = 2, making nums[0] = 1.
+Apply Operation 1 to nums[1] = 4, making nums[1] = 2.
+Apply Operation 2 to nums[2] = 3, making nums[2] = 0.
+The resulting array becomes [1, 2, 0], which has the minimum possible sum of 3 after applying the operations.
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+0 <= nums[i] <= 105
+0 <= k <= 105
+0 <= op1, op2 <= nums.length;=;=https://leetcode.com/problems/minimum-array-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-array-sum/solutions/6077183/simply-explore-all-possibilities-recursi-140p/;;https://leetcode.com/problems/minimum-array-sum/solutions/6078002/on-log-n-greedy-by-zsq007-qvwk/;;https://leetcode.com/problems/minimum-array-sum/solutions/6077165/java-3d-dp-on-operations-and-index-by-wh-a7j4/;;https://leetcode.com/problems/minimum-array-sum/solutions/6077627/bottom-up-3-d-dp-approach-with-code-expl-g839/;;https://leetcode.com/problems/minimum-array-sum/solutions/6079052/simple-approaches-recursion-3d-dp-java-b-6gv6/;;https://leetcode.com/problems/minimum-array-sum/solutions/6260067/very-easy-java-solution-by-sdflaskjdfj43-oaim/;;https://leetcode.com/problems/minimum-array-sum/solutions/6077848/dp-beats-100-by-dipankarsethi3012-t730/;;https://leetcode.com/problems/minimum-array-sum/solutions/6077203/on3-memoization-solution-java-by-mirzaba-togf/;;https://leetcode.com/problems/minimum-array-sum/solutions/6123853/java-dp-solution-nop1op2-easy-to-underst-j9df/;;https://leetcode.com/problems/minimum-array-sum/solutions/6269524/javac-simple-dp-by-vritant-goyal-o3ff/;;https://leetcode.com/problems/minimum-array-sum/solutions/6114372/3d-dp-is-such-a-pain-by-ndsjqwbbb-wd45/;;https://leetcode.com/problems/minimum-array-sum/solutions/6454182/java-solution-with-intution-by-mayankpat-6dcv/;;https://leetcode.com/problems/minimum-array-sum/solutions/6144592/dfs-all-possible-operations-with-memoriz-v76e/;;https://leetcode.com/problems/minimum-array-sum/solutions/6123859/java-recurision-with-memory-by-xuemanmu1-jxw6/;;https://leetcode.com/problems/minimum-array-sum/solutions/6098278/simple-dp-solution-by-risabhuchiha-1ewn/;;;=;==;=;=;

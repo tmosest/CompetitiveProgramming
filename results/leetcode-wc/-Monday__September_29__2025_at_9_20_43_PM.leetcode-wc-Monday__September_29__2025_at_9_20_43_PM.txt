@@ -1,0 +1,34 @@
+2012. Sum of Beauty in the Array;=;=Medium;=;=publicÊintÊsumOfBeauties(int[]Ênums);=;=You are given a 0-indexed integer array nums. For each index i (1 <= i <= nums.length - 2) the beauty of nums[i] equals:
+
+2, if nums[j] < nums[i] < nums[k], for all 0 <= j < i and for all i < k <= nums.length - 1.
+1, if nums[i - 1] < nums[i] < nums[i + 1], and the previous condition is not satisfied.
+0, if none of the previous conditions holds.
+Return the sum of beauty of all nums[i] where 1 <= i <= nums.length - 2.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,2,3]
+Output: 2
+Explanation: For each index i in the range 1 <= i <= 1:
+- The beauty of nums[1] equals 2.
+Example 2:
+
+Input: nums = [2,4,6,4]
+Output: 1
+Explanation: For each index i in the range 1 <= i <= 2:
+- The beauty of nums[1] equals 1.
+- The beauty of nums[2] equals 0.
+Example 3:
+
+Input: nums = [3,2,1]
+Output: 0
+Explanation: For each index i in the range 1 <= i <= 1:
+- The beauty of nums[1] equals 0.
+Ê
+
+Constraints:
+
+3 <= nums.length <= 105
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/sum-of-beauty-in-the-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/1471916/simple-solution-with-reasoning-c-java-by-szmd/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/6925919/2012-sum-of-beauty-in-the-array-solution-nkjx/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/6600318/sum-of-beauty-in-the-array-by-mansha_19-uglg/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/1472057/very-simple-java-solution-using-boolean-5kad9/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/6619238/java-suffix-array-problem-time-complexit-dkv0/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/6616153/fast-clean-java-on-two-pass-solution-bea-8oo0/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/4907650/simple-java-solution-beats-98-on-time-an-vtc3/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/3054784/java-easy-solution-using-stack-by-hd145-1yk7/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/3054779/easy-java-solution-using-stack-nearest-g-u79z/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/2193631/java-prefix-suffix-array-time-on-space-o-go2x/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/2575635/java-array-easy-to-understand-by-conchwu-yc72/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/2201123/java-solution-by-deborupsinha-g05d/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/7143469/java-solution-by-abhi_276-azwr/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/1484755/simple-java-2-sweep-with-boolean-array-b-z068/;;https://leetcode.com/problems/sum-of-beauty-in-the-array/solutions/1472715/100-java-on-solution-easy-understand-by-ex0li/;;;=;==;=;=;

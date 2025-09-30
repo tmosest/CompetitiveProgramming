@@ -1,0 +1,35 @@
+3467. Transform Array by Parity;=;=Easy;=;=public int[] transformArray(int[] nums);=;=You are given an integer array nums. Transform nums by performing the following operations in the exact order specified:
+
+Replace each even number with 0.
+Replace each odd numbers with 1.
+Sort the modified array in non-decreasing order.
+Return the resulting array after performing these operations.
+
+ 
+
+Example 1:
+
+Input: nums = [4,3,2,1]
+
+Output: [0,0,1,1]
+
+Explanation:
+
+Replace the even numbers (4 and 2) with 0 and the odd numbers (3 and 1) with 1. Now, nums = [0, 1, 0, 1].
+After sorting nums in non-descending order, nums = [0, 0, 1, 1].
+Example 2:
+
+Input: nums = [1,5,1,4,2]
+
+Output: [0,0,1,1,1]
+
+Explanation:
+
+Replace the even numbers (4 and 2) with 0 and the odd numbers (1, 5 and 1) with 1. Now, nums = [1, 1, 1, 0, 0].
+After sorting nums in non-descending order, nums = [0, 0, 1, 1, 1].
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 1000;=;=https://leetcode.com/problems/transform-array-by-parity/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/transform-array-by-parity/solutions/7224563/clean-simple-easy-explanation-beats-100-s4yrx/;;https://leetcode.com/problems/transform-array-by-parity/solutions/7203531/efficient-solution-with-o1-space-complex-c4yh/;;https://leetcode.com/problems/transform-array-by-parity/solutions/7203540/100-and-0ms-surelly-by-vsoopbd95t-oc5l/;;https://leetcode.com/problems/transform-array-by-parity/solutions/6482282/2-methods-javacpython3beginnerfriendly-b-s0p4/;;https://leetcode.com/problems/transform-array-by-parity/solutions/6482658/beats-100-two-pointer-on-c-by-bansalhars-138o/;;https://leetcode.com/problems/transform-array-by-parity/solutions/6482301/python3-constant-space-ts-0-ms-18-mb-by-pb0z6/;;https://leetcode.com/problems/transform-array-by-parity/solutions/7129841/java-easy-solution-1ms-by-akashraj06-jwch/;;https://leetcode.com/problems/transform-array-by-parity/solutions/6939845/dont-sort-just-use-two-pointers-efficien-iyau/;;https://leetcode.com/problems/transform-array-by-parity/solutions/7128317/transform-array-to-binary-on-one-pass-10-2vzz/;;https://leetcode.com/problems/transform-array-by-parity/solutions/7080599/easy-java-solution-by-divyansh_kaushik_s-9ihs/;;https://leetcode.com/problems/transform-array-by-parity/solutions/6976367/easy-code-for-beginners-and-understandab-2j4i/;;https://leetcode.com/problems/transform-array-by-parity/solutions/7018137/2-method-count-based-inplace-replacing-s-if14/;;https://leetcode.com/problems/transform-array-by-parity/solutions/6977268/easy-code-by-prajanthkumar-ukp8/;;https://leetcode.com/problems/transform-array-by-parity/solutions/6539372/simple-100-beats-easy-to-understand-by-k-lp4n/;;https://leetcode.com/problems/transform-array-by-parity/solutions/6996738/efficient-on-solution-without-sorting-1m-88te/;;;=;==;=;=;

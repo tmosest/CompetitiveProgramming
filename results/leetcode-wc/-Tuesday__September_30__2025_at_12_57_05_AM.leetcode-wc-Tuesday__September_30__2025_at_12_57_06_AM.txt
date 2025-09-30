@@ -1,0 +1,30 @@
+3263. Convert Doubly Linked List to Array I;=;=Easy;=;=// Definition for a Node. Node     public int val;    public Node prev;    public Node next;;class      public int[] toArray(Node head);=;=You are given the head of a doubly linked list, which contains nodes that have a next pointer and a previous pointer.
+
+Return an integer array which contains the elements of the linked list in order.
+
+ 
+
+Example 1:
+
+Input: head = [1,2,3,4,3,2,1]
+
+Output: [1,2,3,4,3,2,1]
+
+Example 2:
+
+Input: head = [2,2,2,2,2]
+
+Output: [2,2,2,2,2]
+
+Example 3:
+
+Input: head = [3,2,3,2,3,2]
+
+Output: [3,2,3,2,3,2]
+
+ 
+
+Constraints:
+
+The number of nodes in the given list is in the range [1, 50].
+1 <= Node.val <= 50;=;=https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/5671050/linear-traversal-in-java-by-finraell-ynff/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/7181065/node-by-shuabro888-zmzd/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/6885930/recursive-conversion-of-a-doubly-linked-iiv36/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/6064492/java-brute-force-using-loop-by-amye-ipud/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/5725271/java-100-faster-on-solution-by-tbekpro-h0ww/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/5676860/simple-two-step-approach-in-java-by-roma-l1qv/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/6681592/iterative-simple-by-prashant404-2xl0/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/6614873/easy-peasy-solution-beats-99-java-beginn-t6lr/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/6558074/javajsts-solution-jw-by-specter01wj-nhfq/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/6455145/java-super-fast-and-super-efficient-fast-xkl5/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/6341981/java-solution-using-simple-loops-by-pune-3so8/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/5883513/java-1ms-faster-than-9972-by-anuraganand-fhmo/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/5771046/two-pass-traversal-on-ll-by-mindfuleng19-s9r6/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/6130824/beats-100-by-abdummm-y9ed/;;https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/solutions/6273262/very-easy-java-solution-by-annon20-2inh/;;;=;==;=;=;

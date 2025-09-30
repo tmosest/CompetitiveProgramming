@@ -1,0 +1,47 @@
+1882. Process Tasks Using Servers;=;=Medium;=;=public int[] assignTasks(int[] servers, int[] tasks);=;=You are given two 0-indexed integer arrays servers and tasks of lengths n?????? and m?????? respectively. servers[i] is the weight of the i??????th???? server, and tasks[j] is the time needed to process the j??????th???? task in seconds.
+
+Tasks are assigned to the servers using a task queue. Initially, all servers are free, and the queue is empty.
+
+At second j, the jth task is inserted into the queue (starting with the 0th task being inserted at second 0). As long as there are free servers and the queue is not empty, the task in the front of the queue will be assigned to a free server with the smallest weight, and in case of a tie, it is assigned to a free server with the smallest index.
+
+If there are no free servers and the queue is not empty, we wait until a server becomes free and immediately assign the next task. If multiple servers become free at the same time, then multiple tasks from the queue will be assigned in order of insertion following the weight and index priorities above.
+
+A server that is assigned task j at second t will be free again at second t + tasks[j].
+
+Build an array ans???? of length m, where ans[j] is the index of the server the j??????th task will be assigned to.
+
+Return the array ans????.
+
+ 
+
+Example 1:
+
+Input: servers = [3,3,2], tasks = [1,2,3,2,1,2]
+Output: [2,2,0,2,1,2]
+Explanation: Events in chronological order go as follows:
+- At second 0, task 0 is added and processed using server 2 until second 1.
+- At second 1, server 2 becomes free. Task 1 is added and processed using server 2 until second 3.
+- At second 2, task 2 is added and processed using server 0 until second 5.
+- At second 3, server 2 becomes free. Task 3 is added and processed using server 2 until second 5.
+- At second 4, task 4 is added and processed using server 1 until second 5.
+- At second 5, all servers become free. Task 5 is added and processed using server 2 until second 7.
+Example 2:
+
+Input: servers = [5,1,4,3,2], tasks = [2,1,2,4,5,2,1]
+Output: [1,4,1,4,1,3,2]
+Explanation: Events in chronological order go as follows: 
+- At second 0, task 0 is added and processed using server 1 until second 2.
+- At second 1, task 1 is added and processed using server 4 until second 2.
+- At second 2, servers 1 and 4 become free. Task 2 is added and processed using server 1 until second 4. 
+- At second 3, task 3 is added and processed using server 4 until second 7.
+- At second 4, server 1 becomes free. Task 4 is added and processed using server 1 until second 9. 
+- At second 5, task 5 is added and processed using server 3 until second 7.
+- At second 6, task 6 is added and processed using server 2 until second 7.
+ 
+
+Constraints:
+
+servers.length == n
+tasks.length == m
+1 <= n, m <= 2 * 105
+1 <= servers[i], tasks[j] <= 2 * 105;=;=https://leetcode.com/problems/process-tasks-using-servers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/process-tasks-using-servers/solutions/7200990/classic-task-scheduling-pattern-java-sol-b2sq/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/7109279/java-two-heaps-beats-98-easy-to-understa-eqp3/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/6951036/java-optimal-heap-beginner-friendly-by-d-zl5k/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/1635716/java-heap-solution-interview-code-with-c-uurs/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/1255089/java-simple-and-easy-to-understand-solut-suud/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/1245655/easy-readable-code-using-heap-by-legit_1-erg1/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/5963480/java-easy-100-solution-with-2-heaps-by-y-z5ab/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/1240191/clean-readable-easy-to-understand-java-s-y5fp/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/7222064/beginner-friendly-solution-java-easily-u-88l7/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/2283867/java-two-heaps-with-detailed-explanation-tokg/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/1355104/two-heaps-and-a-queue-simple-java-soluti-tred/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/1240135/java-solution-using-two-heaps-by-ajithde-drxw/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/1272973/java-very-clean-ologn-m-n-solution-with-tuq1i/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/7118527/java-by-nikki1706-j3ar/;;https://leetcode.com/problems/process-tasks-using-servers/solutions/7084008/priority_queue-java-by-darkenigma-qphx/;;;=;==;=;=;

@@ -1,0 +1,29 @@
+2678. Number of Senior Citizens;=;=Easy;=;=public int countSeniors(String[] details);=;=You are given a 0-indexed array of strings details. Each element of details provides information about a given passenger compressed into a string of length 15. The system is such that:
+
+The first ten characters consist of the phone number of passengers.
+The next character denotes the gender of the person.
+The following two characters are used to indicate the age of the person.
+The last two characters determine the seat allotted to that person.
+Return the number of passengers who are strictly more than 60 years old.
+
+ 
+
+Example 1:
+
+Input: details = ["7868190130M7522","5303914400F9211","9273338290F4010"]
+Output: 2
+Explanation: The passengers at indices 0, 1, and 2 have ages 75, 92, and 40. Thus, there are 2 people who are over 60 years old.
+Example 2:
+
+Input: details = ["1313579440F2036","2921522980M5644"]
+Output: 0
+Explanation: None of the passengers are older than 60.
+ 
+
+Constraints:
+
+1 <= details.length <= 100
+details[i].length == 15
+details[i] consists of digits from '0' to '9'.
+details[i][10] is either 'M' or 'F' or 'O'.
+The phone numbers and seat numbers of the passengers are distinct.;=;=https://leetcode.com/problems/number-of-senior-citizens/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-senior-citizens/solutions/7224528/easy-code-by-sivaaleet-c3cc/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5565731/well-built-code-for-3-languages-with-mar-n1nt/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5564704/on-beats-100-java-c-python-go-rust-javas-fydq/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5565931/detailed-easy-java-python3-c-solution-0-3duw8/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/6280863/cjavapythonjs-beats-easy-solution-with-e-khxs/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/7046963/two-ways-in-java-and-i-way-in-python-by-llnye/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/7014722/easy-java-solution-beats-80-by-rajdeep00-8ylm/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5566061/0ms-100-javacpython-detailed-explained-b-8kkt/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/3520297/easy-java-solution-0-ms-by-shyamswaran-wwxe/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5567036/detailed-easy-java-solution-beginner-fri-ktg3/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5570511/simple-code-easy-to-understand-beats-100-ow9a/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5567703/simple-and-easy-solution-with-explanatio-zld8/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5566387/java-simple-clean-solution-daily-challen-jn5u/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5566338/detailed-solution-in-c-java-python-javas-mo89/;;https://leetcode.com/problems/number-of-senior-citizens/solutions/5566238/simple-java-c-code-by-abhinandannaik1717-tswa/;;;=;==;=;=;

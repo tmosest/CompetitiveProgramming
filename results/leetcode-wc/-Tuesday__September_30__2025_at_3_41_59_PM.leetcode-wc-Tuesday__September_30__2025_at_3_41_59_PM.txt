@@ -1,0 +1,30 @@
+1866. Number of Ways to Rearrange Sticks With K Sticks Visible;=;=Hard;=;=public int rearrangeSticks(int n, int k);=;=There are n uniquely-sized sticks whose lengths are integers from 1 to n. You want to arrange the sticks such that exactly k sticks are visible from the left. A stick is visible from the left if there are no longer sticks to the left of it.
+
+For example, if the sticks are arranged [1,3,2,5,4], then the sticks with lengths 1, 3, and 5 are visible from the left.
+Given n and k, return the number of such arrangements. Since the answer may be large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: n = 3, k = 2
+Output: 3
+Explanation: [1,3,2], [2,3,1], and [2,1,3] are the only arrangements such that exactly 2 sticks are visible.
+The visible sticks are underlined.
+Example 2:
+
+Input: n = 5, k = 5
+Output: 1
+Explanation: [1,2,3,4,5] is the only arrangement such that all 5 sticks are visible.
+The visible sticks are underlined.
+Example 3:
+
+Input: n = 20, k = 11
+Output: 647427950
+Explanation: There are 647427950 (mod 109 + 7) ways to rearrange the sticks such that exactly 11 sticks are visible.
+ 
+
+Constraints:
+
+1 <= n <= 1000
+1 <= k <= n;=;=https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/1211104/java-dp-with-explanation-onk-by-quantumi-4dp3/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/1211355/my-java-solution-with-some-understanding-wawf/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/3436196/tabulation-dp-by-cuber12-e2f2/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/1259290/java-simple-and-easy-mathematical-memoiz-5ute/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/6458983/clean-dp-code-with-detailed-explanation-1y78n/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/4441187/5-hours-you-gotta-be-crazy-by-user3043sb-wsx2/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/4424894/java-code-please-upvote-me-by-vivekvardh-32xq/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/4301263/dp-recursive-solution-by-shree_govind_je-d29g/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/4043603/java-simple-and-easy-with-intuition-expl-7l64/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/4006645/java-simple-solution-onk-by-prasantb-ufun/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/3964901/bottom-up-dp-java-on-k-time-ok-space-by-e4sl9/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/3539423/one-sentence-intuition-of-dp-by-harperji-3n9c/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/3293289/dynamic-programing-sequences-of-max-peak-lvlo/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/2265489/java-dp-1d-bottom-up-by-student2091-desr/;;https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/solutions/1878690/java-dp-solution-by-zaidzack-79uw/;;;=;==;=;=;

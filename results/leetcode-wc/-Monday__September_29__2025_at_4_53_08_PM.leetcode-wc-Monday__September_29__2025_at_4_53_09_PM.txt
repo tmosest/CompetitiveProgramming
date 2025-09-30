@@ -1,0 +1,35 @@
+2380. Time Needed to Rearrange a Binary String;=;=Medium;=;=public int secondsToRemoveOccurrences(String s);=;=You are given a binary string s. In one second, all occurrences of "01" are simultaneously replaced with "10". This process repeats until no occurrences of "01" exist.
+
+Return the number of seconds needed to complete this process.
+
+ 
+
+Example 1:
+
+Input: s = "0110101"
+Output: 4
+Explanation: 
+After one second, s becomes "1011010".
+After another second, s becomes "1101100".
+After the third second, s becomes "1110100".
+After the fourth second, s becomes "1111000".
+No occurrence of "01" exists any longer, and the process needed 4 seconds to complete,
+so we return 4.
+Example 2:
+
+Input: s = "11100"
+Output: 0
+Explanation:
+No occurrence of "01" exists in s, and the processes needed 0 seconds to complete,
+so we return 0.
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s[i] is either '0' or '1'.
+ 
+
+Follow up:
+
+Can you solve this problem in O(n) time complexity?;=;=https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/2454262/dp-vs-brute-force-by-votrubac-h7qu/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/2454526/java-3-lines-easy-solution-by-rathoregir-nfbg/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/5834109/brute-and-optimized-solution-by-dixon_n-cxx9/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/5575807/tc-on-n-brute-force-solution-with-explan-rc6y/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/6580799/count-the-zeros-simple-way-by-sairangine-kdd2/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/5572038/5-line-easy-solution-in-java-by-vansh_ag-e6xi/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/2488547/java-easy-to-understand-by-vaibhavnirmal-8ep4/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/2454264/simple-java-solution-by-siddhant_1602-lgul/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/5897820/java-simple-and-clear-solution-by-abbos9-576s/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/2585925/java-no-dp-on-time-o1-space-easy-to-unde-ggdn/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/2458535/python-cjava-beginner-level-as-simple-as-d4xy/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/2457959/3-lines-of-code-easy-and-simple-c-java-b-wa81/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/2455308/cpp-java-python-dp-brute-force-tc-0n2-on-5wyu/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/3032709/queue-solution-by-gasimov-vhz7/;;https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/solutions/2455850/easy-approach-c-no-dp-simple-solution-be-h1ni/;;;=;==;=;=;

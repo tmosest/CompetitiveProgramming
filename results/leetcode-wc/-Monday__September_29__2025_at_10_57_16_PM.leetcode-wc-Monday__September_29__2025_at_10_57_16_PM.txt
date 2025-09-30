@@ -1,0 +1,37 @@
+2478. Number of Beautiful Partitions;=;=Hard;=;=public int beautifulPartitions(String s, int k, int minLength);=;=You are given a string s that consists of the digits '1' to '9' and two integers k and minLength.
+
+A partition of s is called beautiful if:
+
+s is partitioned into k non-intersecting substrings.
+Each substring has a length of at least minLength.
+Each substring starts with a prime digit and ends with a non-prime digit. Prime digits are '2', '3', '5', and '7', and the rest of the digits are non-prime.
+Return the number of beautiful partitions of s. Since the answer may be very large, return it modulo 109 + 7.
+
+A substring is a contiguous sequence of characters within a string.
+
+ 
+
+Example 1:
+
+Input: s = "23542185131", k = 3, minLength = 2
+Output: 3
+Explanation: There exists three ways to create a beautiful partition:
+"2354 | 218 | 5131"
+"2354 | 21851 | 31"
+"2354218 | 51 | 31"
+Example 2:
+
+Input: s = "23542185131", k = 3, minLength = 3
+Output: 1
+Explanation: There exists one way to create a beautiful partition: "2354 | 218 | 5131".
+Example 3:
+
+Input: s = "3312958", k = 3, minLength = 1
+Output: 1
+Explanation: There exists one way to create a beautiful partition: "331 | 29 | 58".
+ 
+
+Constraints:
+
+1 <= k, minLength <= s.length <= 1000
+s consists of the digits '1' to '9'.;=;=https://leetcode.com/problems/number-of-beautiful-partitions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-beautiful-partitions/solutions/2834170/16ms-100dpeasy-to-understand-dfsmemojava-satj/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/2833135/simple-dp-explained-by-nadaralp-gzge/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/2832638/java-dp-60ms-100-time-oslength-k-easily-u1wbt/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/2834663/java-onk-solution-26-ms-beats-100-by-hdc-mfj5/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/2831782/2d-dp-onk-by-teacher-six-5n0q/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/2834110/java-python-3-c-iterative-1d-dp-easy-to-8swdb/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/2832054/java-dfs-memo-clean-code-by-ikws4-0c6f/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/2831901/simple-dp-memoization-problem-by-sgsumit-xuow/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/2831865/java-simple-2d-dp-by-jjeeffff-0637/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/6966113/easy-top-down-memoization-java-by-ashuto-pwll/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/6884383/aditya-verma-type-approach-simple-and-in-y1ms/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/6138018/number-of-beatiful-partitions-by-naeem_a-4b01/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/6331402/java-dynamic-programming-solution-by-loc-3n06/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/4676052/java-recursive-easy-solution-by-alwaysad-cc3k/;;https://leetcode.com/problems/number-of-beautiful-partitions/solutions/4209308/not-good-by-flame_x0-h2an/;;;=;==;=;=;

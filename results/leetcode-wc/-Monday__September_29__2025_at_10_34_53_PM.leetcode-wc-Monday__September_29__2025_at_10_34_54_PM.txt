@@ -1,0 +1,48 @@
+3558. Number of Ways to Assign Edge Weights I;=;=Medium;=;=public int assignEdgeWeights(int[][] edges);=;=There is an undirected tree with n nodes labeled from 1 to n, rooted at node 1. The tree is represented by a 2D integer array edges of length n - 1, where edges[i] = [ui, vi] indicates that there is an edge between nodes ui and vi.
+
+Initially, all edges have a weight of 0. You must assign each edge a weight of either 1 or 2.
+
+The cost of a path between any two nodes u and v is the total weight of all edges in the path connecting them.
+
+Select any one node x at the maximum depth. Return the number of ways to assign edge weights in the path from node 1 to x such that its total cost is odd.
+
+Since the answer may be large, return it modulo 109 + 7.
+
+Note: Ignore all edges not in the path from node 1 to x.
+
+ 
+
+Example 1:
+
+
+
+Input: edges = [[1,2]]
+
+Output: 1
+
+Explanation:
+
+The path from Node 1 to Node 2 consists of one edge (1 ? 2).
+Assigning weight 1 makes the cost odd, while 2 makes it even. Thus, the number of valid assignments is 1.
+Example 2:
+
+
+
+Input: edges = [[1,2],[1,3],[3,4],[3,5]]
+
+Output: 2
+
+Explanation:
+
+The maximum depth is 2, with nodes 4 and 5 at the same depth. Either node can be selected for processing.
+For example, the path from Node 1 to Node 4 consists of two edges (1 ? 3 and 3 ? 4).
+Assigning weights (1,2) or (2,1) results in an odd cost. Thus, the number of valid assignments is 2.
+ 
+
+Constraints:
+
+2 <= n <= 105
+edges.length == n - 1
+edges[i] == [ui, vi]
+1 <= ui, vi <= n
+edges represents a valid tree.;=;=https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6777172/python3-math-simple-solution-by-dolong21-3huw/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6777937/easiest-solution-proof-of-2height-1-c-ja-xme1/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6787681/easy-solutionwith-explaination-in-cpytho-pn2p/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6783553/dfs-dp-on-by-ankith_kumar-qv4f/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6780339/bfs-binary-exponentiation-by-pringles-caj2/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6779592/simple-solution-using-1d-dp-java-python-vgbpz/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6777305/easy-java-solution-using-bfs-and-then-dp-gjve/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6777377/simple-ncr-by-sarthak_kharka-lmxz/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/7060437/easy-beginner-friendly-logic-by-_adarsh-1psb/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6781340/interview-trick-power-of-2-without-pow-o-3g0h/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6777061/easy-to-understand-solution-by-shumontop-wpg8/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6777096/bfs-solution-by-purav123-0g4k/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6777293/bfs-dynamic-programming-constant-space-s-826a/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6778270/simple-java-solution-by-sakshikishore-6ygy/;;https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/solutions/6777395/easy-solution-just-bfs-simple-math-by-an-83st/;;;=;==;=;=;

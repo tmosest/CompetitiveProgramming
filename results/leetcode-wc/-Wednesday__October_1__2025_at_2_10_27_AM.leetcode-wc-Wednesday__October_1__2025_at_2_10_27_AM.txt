@@ -1,0 +1,63 @@
+3128. Right Triangles;=;=Medium;=;=public int numberOfRightTriangles(int[][] grid)         int rows = grid.length;        int cols = grid[0].length;        int[] rowCounts = new int[rows];        int[] colCounts = new int[cols];        Arrays.fill(rowCounts, 0);        Arrays.fill(colCounts, 0);        for (int r = 0; r < rows; ++r)             for (int c = 0; c < cols; ++c)                 if (grid[r][c] == 1)                     rowCounts[r]++;                    colCounts[c]++;;=;=You are given a 2D boolean matrix grid.
+
+A collection of 3 elements of grid is a right triangle if one of its elements is in the same row with another element and in the same column with the third element. The 3 elements may not be next to each other.
+
+Return an integer that is the number of right triangles that can be made with 3 elements of grid such that all of them have a value of 1.
+
+ 
+
+Example 1:
+
+0	1	0
+0	1	1
+0	1	0
+0	1	0
+0	1	1
+0	1	0
+0	1	0
+0	1	1
+0	1	0
+Input: grid = [[0,1,0],[0,1,1],[0,1,0]]
+
+Output: 2
+
+Explanation:
+
+There are two right triangles with elements of the value 1. Notice that the blue ones do not form a right triangle because the 3 elements are in the same column.
+
+Example 2:
+
+1	0	0	0
+0	1	0	1
+1	0	0	0
+Input: grid = [[1,0,0,0],[0,1,0,1],[1,0,0,0]]
+
+Output: 0
+
+Explanation:
+
+There are no right triangles with elements of the value 1.  Notice that the blue ones do not form a right triangle.
+
+Example 3:
+
+1	0	1
+1	0	0
+1	0	0
+1	0	1
+1	0	0
+1	0	0
+Input: grid = [[1,0,1],[1,0,0],[1,0,0]]
+
+Output: 2
+
+Explanation:
+
+There are two right triangles with elements of the value 1.
+
+ 
+
+Constraints:
+
+1 <= grid.length <= 1000
+1 <= grid[i].length <= 1000
+0 <= grid[i][j] <= 1;=;=https://leetcode.com/problems/right-triangles/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/right-triangles/solutions/5080160/easy-solution-with-explanation-27042024-i6p1r/;;https://leetcode.com/problems/right-triangles/solutions/5080109/simple-java-solution-by-siddhant_1602-ke8z/;;https://leetcode.com/problems/right-triangles/solutions/5080296/easiest-c-python3javasolution-beats-cont-xik1/;;https://leetcode.com/problems/right-triangles/solutions/7237121/video-right-triangles-java-easy-by-amqiy-wtsa/;;https://leetcode.com/problems/right-triangles/solutions/5080177/java-clean-solution-biweekly-contest-by-0x5m9/;;https://leetcode.com/problems/right-triangles/solutions/6549595/simple-and-easy-to-understand-by-reddy_p-o0y8/;;https://leetcode.com/problems/right-triangles/solutions/6474183/easy-approach-and-easy-to-understandbeat-sx29/;;https://leetcode.com/problems/right-triangles/solutions/5080232/java-pictorial-explanation-prefix-suffix-9c11/;;https://leetcode.com/problems/right-triangles/solutions/5080190/java-by-deleted_user-bp25/;;https://leetcode.com/problems/right-triangles/solutions/5080961/simple-java-counting-and-multiplication-w95u2/;;https://leetcode.com/problems/right-triangles/solutions/5607973/vanilla-solution-by-mdsrrkhan-szs0/;;https://leetcode.com/problems/right-triangles/solutions/5080472/easy-java-explained-dp-array-by-syedaqib-ax1c/;;https://leetcode.com/problems/right-triangles/solutions/5080162/100-faster-java-efficient-by-himanshuyad-iply/;;https://leetcode.com/problems/right-triangles/solutions/7193718/java-onm-by-bharadwajdaya-eogw/;;https://leetcode.com/problems/right-triangles/solutions/6714164/ez-math-counting-soln-java-code-by-piyus-jy8i/;;;=;==;=;=;

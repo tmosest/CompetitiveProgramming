@@ -1,0 +1,38 @@
+3507. Minimum Pair Removal to Sort Array I;=;=Easy;=;=public int minimumPairRemoval(int[] nums);=;=Given an array nums, you can perform the following operation any number of times:
+
+Select the adjacent pair with the minimum sum in nums. If multiple such pairs exist, choose the leftmost one.
+Replace the pair with their sum.
+Return the minimum number of operations needed to make the array non-decreasing.
+
+An array is said to be non-decreasing if each element is greater than or equal to its previous element (if it exists).
+
+ 
+
+Example 1:
+
+Input: nums = [5,2,3,1]
+
+Output: 2
+
+Explanation:
+
+The pair (3,1) has the minimum sum of 4. After replacement, nums = [5,2,4].
+The pair (2,4) has the minimum sum of 6. After replacement, nums = [5,6].
+The array nums became non-decreasing in two operations.
+
+Example 2:
+
+Input: nums = [1,2,2]
+
+Output: 0
+
+Explanation:
+
+The array nums is already sorted.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 50
+-1000 <= nums[i] <= 1000;=;=https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/7167664/java-easy-100-solution-by-ytchouar-b84n/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6620871/a-different-brute-force-method-in-java-w-5lkn/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6654264/100-beats-easy-to-understand-simple-brut-ovxi/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6629151/simplest-java-solution-by-ex-googler-by-2ysl6/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6626273/using-arraylist-simple-brute-force-begin-cyic/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/7066829/brute-force-method-easy-to-understand-10-x9pt/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6994730/easiest-python-c-java-solution-with-full-cnuj/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6789311/java-solution-intuitive-beginner-friendl-jvg8/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6753740/java-solution-using-a-boolean-flag-and-c-3e2c/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6627388/modifying-input-array-o1-space-compelxit-vkui/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6620604/easy-java-solution-by-vermaanshul975-8h65/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6625398/easy-java-solution-beats-100-by-ruch21-ea7c/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6624794/java-brute-force-by-pranav_1817-s0im/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6621763/java-solution-by-barakamon-xg6k/;;https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/6621924/100-percent-affective-code-by-anuragk2-n8in/;;;=;==;=;=;

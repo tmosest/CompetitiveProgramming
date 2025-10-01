@@ -1,0 +1,37 @@
+228. Summary Ranges;=;=Easy;=;=publicÊList<String>ÊsummaryRanges(int[]Ênums);=;=You are given a sorted unique integer array nums.
+
+A range [a,b] is the set of all integers from a to b (inclusive).
+
+Return the smallest sorted list of ranges that cover all the numbers in the array exactly. That is, each element of nums is covered by exactly one of the ranges, and there is no integer x such that x is in one of the ranges but not in nums.
+
+Each range [a,b] in the list should be output as:
+
+"a->b" if a != b
+"a" if a == b
+Ê
+
+Example 1:
+
+Input: nums = [0,1,2,4,5,7]
+Output: ["0->2","4->5","7"]
+Explanation: The ranges are:
+[0,2] --> "0->2"
+[4,5] --> "4->5"
+[7,7] --> "7"
+Example 2:
+
+Input: nums = [0,2,3,4,6,8,9]
+Output: ["0","2->4","6","8->9"]
+Explanation: The ranges are:
+[0,0] --> "0"
+[2,4] --> "2->4"
+[6,6] --> "6"
+[8,9] --> "8->9"
+Ê
+
+Constraints:
+
+0 <= nums.length <= 20
+-231 <= nums[i] <= 231 - 1
+All the values of nums are unique.
+nums is sorted in ascending order.;=;=https://leetcode.com/problems/summary-ranges/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/summary-ranges/solutions/7171642/beats-100-two-pointers-explanation-java-wd2lw/;;https://leetcode.com/problems/summary-ranges/solutions/6116130/0-ms-runtime-beats-100-user-code-idea-al-tctz/;;https://leetcode.com/problems/summary-ranges/solutions/1805391/concise-solution-in-0n-with-approach-exp-ongs/;;https://leetcode.com/problems/summary-ranges/solutions/3627119/pythonjavacsimple-solutioneasy-to-unders-cmig/;;https://leetcode.com/problems/summary-ranges/solutions/7177838/clean-easy-to-understand-java-solution-o-pieg/;;https://leetcode.com/problems/summary-ranges/solutions/7172029/easy-summary-ranges-in-java-by-fmeza-qj5d/;;https://leetcode.com/problems/summary-ranges/solutions/6865576/easy-explanation-beats-100-by-meetkavad-oq3d/;;https://leetcode.com/problems/summary-ranges/solutions/7089971/clean-two-pointer-approach-in-one-pass-b-fdjp/;;https://leetcode.com/problems/summary-ranges/solutions/7128409/summary-ranges-on-beats-100-by-user8120t-5zmn/;;https://leetcode.com/problems/summary-ranges/solutions/7032065/easy-beats-83-java-by-serhii_shnaider-rzdx/;;https://leetcode.com/problems/summary-ranges/solutions/6836676/simple-linear-scan-to-detect-consecutive-t30n/;;https://leetcode.com/problems/summary-ranges/solutions/6974372/java-clean-two-pointer-solution-on-time-x2a8n/;;https://leetcode.com/problems/summary-ranges/solutions/6279248/100-efficent-100-easy-by-0uuxyfxq4g-5wj9/;;https://leetcode.com/problems/summary-ranges/solutions/7113319/summary-ranges-optimal-on-solution-easy-d4gp2/;;https://leetcode.com/problems/summary-ranges/solutions/2467583/very-easy-100-fully-explained-java-c-pyt-kqcl/;;;=;==;=;=;

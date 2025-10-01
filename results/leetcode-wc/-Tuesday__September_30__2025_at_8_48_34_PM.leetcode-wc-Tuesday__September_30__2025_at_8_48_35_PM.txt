@@ -1,0 +1,30 @@
+1858. Longest Word With All Prefixes;=;=Medium;=;=public String longestWord(String[] words);=;=Given an array of strings words, find the longest string in words such that every prefix of it is also in words.
+
+For example, let words = ["a", "app", "ap"]. The string "app" has prefixes "ap" and "a", all of which are in words.
+Return the string described above. If there is more than one string with the same length, return the lexicographically smallest one, and if no string exists, return "".
+
+ 
+
+Example 1:
+
+Input: words = ["k","ki","kir","kira", "kiran"]
+Output: "kiran"
+Explanation: "kiran" has prefixes "kira", "kir", "ki", and "k", and all of them appear in words.
+Example 2:
+
+Input: words = ["a", "banana", "app", "appl", "ap", "apply", "apple"]
+Output: "apple"
+Explanation: Both "apple" and "apply" have all their prefixes in words.
+However, "apple" is lexicographically smaller, so we return that.
+Example 3:
+
+Input: words = ["abc", "bc", "ab", "qwe"]
+Output: ""
+ 
+
+Constraints:
+
+1 <= words.length <= 105
+1 <= words[i].length <= 105
+1 <= sum(words[i].length) <= 105
+words[i] consists only of lowercase English letters.;=;=https://leetcode.com/problems/longest-word-with-all-prefixes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/3231355/two-java-solutions-trie-and-hashset-base-dg4t/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/1214847/java-using-map-and-set-simple-solution-m-re8r/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/5827178/java-solution-using-greedy-and-set-by-am-bftr/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/5983659/longest-word-with-trie-data-structure-ja-qrl7/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/5836427/java-trie-by-mandyadb1-bx0s/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/5819423/java-trie-clean-solution-90-faster-by-lx-4921/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/5100889/java-straightforward-solution-by-tbekpro-hrex/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/5051154/trie-based-easy-solution-by-georgian3590-61wx/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/4913598/trie-bfs-java-clean-by-gupta97540-0x23/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/4905398/java-trie-beats-95-by-abhisheksingh16-huk6/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/4741934/java-javascript-c-c-solution-by-lachezar-vk03/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/4626723/java-solution-trie-dfs-by-ndsjqwbbb-6l14/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/4273075/easy-solution-with-detailed-comments-bea-wuis/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/4124925/trie-with-dfs-java-by-robertskonieczny-qy1i/;;https://leetcode.com/problems/longest-word-with-all-prefixes/solutions/3908669/java-trie-easy-to-understand-upvote-by-s-67wl/;;;=;==;=;=;

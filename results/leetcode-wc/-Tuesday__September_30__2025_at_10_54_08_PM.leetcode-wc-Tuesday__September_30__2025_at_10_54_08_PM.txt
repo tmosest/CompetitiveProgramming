@@ -1,0 +1,31 @@
+2643. Row With Maximum Ones;=;=Easy;=;=public int[] rowAndMaximumOnes(int[][] mat);=;=Given a m x n binary matrix mat, find the 0-indexed position of the row that contains the maximum count of ones, and the number of ones in that row.
+
+In case there are multiple rows that have the maximum count of ones, the row with the smallest row number should be selected.
+
+Return an array containing the index of the row, and the number of ones in it.
+
+ 
+
+Example 1:
+
+Input: mat = [[0,1],[1,0]]
+Output: [0,1]
+Explanation: Both rows have the same number of 1's. So we return the index of the smaller row, 0, and the maximum count of ones (1). So, the answer is [0,1]. 
+Example 2:
+
+Input: mat = [[0,0,0],[0,1,1]]
+Output: [1,2]
+Explanation: The row indexed 1 has the maximum count of ones (2). So we return its index, 1, and the count. So, the answer is [1,2].
+Example 3:
+
+Input: mat = [[0,0],[1,1],[0,0]]
+Output: [1,2]
+Explanation: The row indexed 1 has the maximum count of ones (2). So the answer is [1,2].
+ 
+
+Constraints:
+
+m == mat.length 
+n == mat[i].length 
+1 <= m, n <= 100 
+mat[i][j] is either 0 or 1.;=;=https://leetcode.com/problems/row-with-maximum-ones/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/row-with-maximum-ones/solutions/7131002/using-matrix-by-delbin_de_yohan-02uz/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/7097219/simplest-solution-only-once-travel-on-ma-cfwr/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/7093545/0ms-100-beats-iteration-counting-by-samr-t3c7/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/3421712/simple-java-solution-by-siddhant_1602-wfui/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/6554877/leetcodedaybyday-beats-100-c-5647-python-69od/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/5128881/java-easy-solution-for-beginners-100-1ms-xf3w/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/6937753/java-easy-solution-by-monish1153-pqn6/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/5807319/beats-100-in-java-by-saiswaroop1234-vue2/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/6884399/easy-solution-java-beats-76-by-kumar_dhe-3z66/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/6283836/4ms-beats-80-proof-concise-code-java-beg-wks6/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/3421881/simple-java-easy-explanation-by-vinaypaw-fnbs/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/6565462/row-with-maximum-1s-in-binary-matrix-bea-k3im/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/6527462/simple-count-by-sairangineeni-92b3/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/3421675/easy-java-solution-by-1asthakhushi1-8zzh/;;https://leetcode.com/problems/row-with-maximum-ones/solutions/5164232/faster-lesser-cpython3javacpythonexplain-otmc/;;;=;==;=;=;

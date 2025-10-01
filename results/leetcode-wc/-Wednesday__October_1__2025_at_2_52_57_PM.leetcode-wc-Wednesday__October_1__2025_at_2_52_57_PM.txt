@@ -1,0 +1,47 @@
+3545. Minimum Deletions for At Most K Distinct Characters;=;=Easy;=;=public int minDeletion(String s, int k);=;=You are given a string s consisting of lowercase English letters, and an integer k.
+
+Your task is to delete some (possibly none) of the characters in the string so that the number of distinct characters in the resulting string is at most k.
+
+Return the minimum number of deletions required to achieve this.
+
+ 
+
+Example 1:
+
+Input: s = "abc", k = 2
+
+Output: 1
+
+Explanation:
+
+s has three distinct characters: 'a', 'b' and 'c', each with a frequency of 1.
+Since we can have at most k = 2 distinct characters, remove all occurrences of any one character from the string.
+For example, removing all occurrences of 'c' results in at most k distinct characters. Thus, the answer is 1.
+Example 2:
+
+Input: s = "aabb", k = 2
+
+Output: 0
+
+Explanation:
+
+s has two distinct characters ('a' and 'b') with frequencies of 2 and 2, respectively.
+Since we can have at most k = 2 distinct characters, no deletions are required. Thus, the answer is 0.
+Example 3:
+
+Input: s = "yyyzz", k = 1
+
+Output: 2
+
+Explanation:
+
+s has two distinct characters ('y' and 'z') with frequencies of 3 and 2, respectively.
+Since we can have at most k = 1 distinct character, remove all occurrences of any one character from the string.
+Removing all 'z' results in at most k distinct characters. Thus, the answer is 2.
+ 
+
+Constraints:
+
+1 <= s.length <= 16
+1 <= k <= 16
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6732446/simple-solution-by-mystery0-tzjf/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6733004/counting-sorting-on-by-ankith_kumar-drqu/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6739941/faster-lesser-cpython3javacpythoncexplai-toaw/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6739535/easy-solution-by-qddl3tbjhy-ct9z/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6769617/why-people-are-sharing-so-lengthy-soluti-eu4h/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6733939/java-easy-solution-time-complexity-on-by-f8dn/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/7210867/java-by-najmamd-qrrq/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/7144410/java-by-aditya_srivastava-pscb/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6733028/easy-solution-priorityqueue-and-hashmap-w7584/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6732490/minheap-java-by-akshay_kadamm-wgdx/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6732540/simple-java-solution-beginner-friendly-w-9wu0/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6732491/java-solution-beats-100-proof-concise-co-dv1b/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/7222641/easy-solution-by-karthikeyan_ashokkumar-oqnp/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6751199/java-time-complexity-on-beats-98-by-bitw-f92w/;;https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/solutions/6735402/the-easiest-solution-for-beginners-betas-mcm1/;;;=;==;=;=;

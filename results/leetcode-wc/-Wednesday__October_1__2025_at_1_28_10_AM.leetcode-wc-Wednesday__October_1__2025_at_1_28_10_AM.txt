@@ -1,0 +1,35 @@
+2193. Minimum Number of Moves to Make Palindrome;=;=Hard;=;=publicÊintÊminMovesToMakePalindrome(StringÊs);=;=You are given a string s consisting only of lowercase English letters.
+
+In one move, you can select any two adjacent characters of s and swap them.
+
+Return the minimum number of moves needed to make s a palindrome.
+
+Note that the input will be generated such that s can always be converted to a palindrome.
+
+Ê
+
+Example 1:
+
+Input: s = "aabb"
+Output: 2
+Explanation:
+We can obtain two palindromes from s, "abba" and "baab". 
+- We can obtain "abba" from s in 2 moves: "aabb" -> "abab" -> "abba".
+- We can obtain "baab" from s in 2 moves: "aabb" -> "abab" -> "baab".
+Thus, the minimum number of moves needed to make s a palindrome is 2.
+Example 2:
+
+Input: s = "letelt"
+Output: 2
+Explanation:
+One of the palindromes we can obtain from s in 2 moves is "lettel".
+One of the ways we can obtain it is "letelt" -> "letetl" -> "lettel".
+Other palindromes such as "tleelt" can also be obtained in 2 moves.
+It can be shown that it is not possible to obtain a palindrome in less than 2 moves.
+Ê
+
+Constraints:
+
+1 <= s.length <= 2000
+s consists only of lowercase English letters.
+s can be converted to a palindrome using a finite number of moves.;=;=https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/1823173/java-c-2-pointers-step-by-step-dry-run-f-bahk/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/1821950/java-solution-using-greedy-by-hss15-g4oy/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/2466919/clean-java-code-with-explanation-by-subh-xb84/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/1880549/java-easy-explanation-two-pointer-by-bha-sybs/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/6103281/simple-two-pointer-approach-edge-case-ex-vqb7/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/2453981/java-solution-string-builder-greedy-two-jc525/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/1822337/explanation-logical-proof-why-greedy-wor-rz8e/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/4684296/java-optimize-solution-with-some-minute-0fes2/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/1827875/java-greedy-two-pointers-by-pratham_ghul-69sl/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/2657441/java-easy-solution-w-comments-using-two-nkr4w/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/2603132/java-solution-by-mrvishal_27-7xpc/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/2399882/java-onlogn-harder-variant-of-1505-by-st-ylrk/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/5468860/java-simple-solution-by-rats91-t7qz/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/7109791/beginner-friendly-solution-by-hassanhuza-4v19/;;https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/solutions/6738020/two-pointer-clean-solution-by-kkg99-d2ax/;;;=;==;=;=;

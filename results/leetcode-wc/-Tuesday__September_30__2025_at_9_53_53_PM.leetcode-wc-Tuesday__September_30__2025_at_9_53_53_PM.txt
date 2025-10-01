@@ -1,0 +1,34 @@
+1048. Longest String Chain;=;=Medium;=;=public int longestAwesome(String s)         int n = s.length() ;         int rs = 0 ;         int len = (1<<10) ;         char[] chars = s.toCharArray() ;         int[] mask = new int[len] ;        for( int i=0 ; i<len ; ++i )            mask[i] = n ;                 int curr = 0 ;         for( int i=0 ; i<n ; ++i )            int num = chars[i] - '0' ;             curr ^= ( 1 << num ) ;;=;=You are given an array of words where each word consists of lowercase English letters.
+
+wordA is a predecessor of wordB if and only if we can insert exactly one letter anywhere in wordA without changing the order of the other characters to make it equal to wordB.
+
+For example, "abc" is a predecessor of "abac", while "cba" is not a predecessor of "bcad".
+A word chain is a sequence of words [word1, word2, ..., wordk] with k >= 1, where word1 is a predecessor of word2, word2 is a predecessor of word3, and so on. A single word is trivially a word chain with k == 1.
+
+Return the length of the longest possible word chain with words chosen from the given list of words.
+
+ 
+
+Example 1:
+
+Input: words = ["a","b","ba","bca","bda","bdca"]
+Output: 4
+Explanation: One of the longest word chains is ["a","ba","bda","bdca"].
+Example 2:
+
+Input: words = ["xbc","pcxbcf","xb","cxbc","pcxbc"]
+Output: 5
+Explanation: All the words can be put in a word chain ["xb", "xbc", "cxbc", "pcxbc", "pcxbcf"].
+Example 3:
+
+Input: words = ["abcd","dbqca"]
+Output: 1
+Explanation: The trivial word chain ["abcd"] is one of the longest word chains.
+["abcd","dbqca"] is not a valid word chain because the ordering of the letters is changed.
+ 
+
+Constraints:
+
+1 <= words.length <= 1000
+1 <= words[i].length <= 16
+words[i] only consists of lowercase English letters.;=;=https://leetcode.com/problems/longest-string-chain/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-string-chain/solutions/6280185/video-how-we-think-about-a-solution-beat-y92g/;;https://leetcode.com/problems/longest-string-chain/solutions/7231855/longest-string-chain-dp-with-predecessor-km0h/;;https://leetcode.com/problems/longest-string-chain/solutions/4078579/9546-dp-memo-by-vanamsen-vc19/;;https://leetcode.com/problems/longest-string-chain/solutions/7210603/easy-code-by-aesdtfg-1w96/;;https://leetcode.com/problems/longest-string-chain/solutions/2153004/explaining-three-approaches-java-by-ciot-vgbv/;;https://leetcode.com/problems/longest-string-chain/solutions/4079040/9750-dp-recursive-iterative-commented-co-z3et/;;https://leetcode.com/problems/longest-string-chain/solutions/4080044/video-how-we-think-about-a-solution-beat-bnil/;;https://leetcode.com/problems/longest-string-chain/solutions/1213855/js-python-java-c-fast-set-dp-map-solutio-5v14/;;https://leetcode.com/problems/longest-string-chain/solutions/2152874/c-explained-by-karan_8082-4x30/;;https://leetcode.com/problems/longest-string-chain/solutions/2152870/java-explained-by-karan_8082-tz0z/;;https://leetcode.com/problems/longest-string-chain/solutions/4079115/c-java-python-javascript-by-user6845r-q6lm/;;https://leetcode.com/problems/longest-string-chain/solutions/2154190/graph-topological-sort-by-java_programme-xy9a/;;https://leetcode.com/problems/longest-string-chain/solutions/6837133/java-solution-dp-comparison-beginner-fri-t163/;;https://leetcode.com/problems/longest-string-chain/solutions/6599050/without-string-dp-same-code-as-lis-with-7al6t/;;https://leetcode.com/problems/longest-string-chain/solutions/6774955/sort-correctly-and-then-do-dp-for-soluti-ausr/;;;=;==;=;=;

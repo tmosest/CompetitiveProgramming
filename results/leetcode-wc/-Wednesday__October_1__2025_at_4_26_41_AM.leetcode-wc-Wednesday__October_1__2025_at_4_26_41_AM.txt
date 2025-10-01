@@ -1,0 +1,37 @@
+1578. Minimum Time to Make Rope Colorful;=;=Medium;=;=public int minCost(String colors, int[] neededTime);=;=Alice has n balloons arranged on a rope. You are given a 0-indexed string colors where colors[i] is the color of the ith balloon.
+
+Alice wants the rope to be colorful. She does not want two consecutive balloons to be of the same color, so she asks Bob for help. Bob can remove some balloons from the rope to make it colorful. You are given a 0-indexed integer array neededTime where neededTime[i] is the time (in seconds) that Bob needs to remove the ith balloon from the rope.
+
+Return the minimum time Bob needs to make the rope colorful.
+
+ 
+
+Example 1:
+
+
+Input: colors = "abaac", neededTime = [1,2,3,4,5]
+Output: 3
+Explanation: In the above image, 'a' is blue, 'b' is red, and 'c' is green.
+Bob can remove the blue balloon at index 2. This takes 3 seconds.
+There are no longer two consecutive balloons of the same color. Total time = 3.
+Example 2:
+
+
+Input: colors = "abc", neededTime = [1,2,3]
+Output: 0
+Explanation: The rope is already colorful. Bob does not need to remove any balloons from the rope.
+Example 3:
+
+
+Input: colors = "aabaa", neededTime = [1,2,3,4,1]
+Output: 2
+Explanation: Bob will remove the balloons at indices 0 and 4. Each balloons takes 1 second to remove.
+There are no longer two consecutive balloons of the same color. Total time = 1 + 1 = 2.
+ 
+
+Constraints:
+
+n == colors.length == neededTime.length
+1 <= n <= 105
+1 <= neededTime[i] <= 104
+colors contains only lowercase English letters.;=;=https://leetcode.com/problems/minimum-time-to-make-rope-colorful/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4463216/beats-100-users-cjavapythonjavascript-ea-61tw/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/841690/my-java-solution-on-by-vrohith-0a4s/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4463221/beats-100-dp-c-java-python-javascript-ea-68yv/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4463311/leetcode-daily-problem-proper-easy-expla-szgd/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/2654909/leetcode-the-hard-way-explained-line-by-76q0w/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4463486/video-solution-simple-java-c-python-by-j-pjey/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/5665474/video-give-me-5-minutes-how-we-think-abo-8c9c/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4463975/simple-java-solution-by-siddhant_1602-gsiu/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4463927/why-greedy-easy-video-explanation-with-p-9pr5/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4467218/java-c-on-simple-easy-solution-step-by-s-5bw7/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4463888/no-dp-no-recursion-beats-95-easiest-solu-71mg/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/5539730/most-intuitive-problem-easy-accepted-by-qc5vd/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4463514/easy-solution-by-vivek_bhurke-6u17/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/831521/javapython-3-1-pass-accumulate-the-costs-urnc/;;https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4467043/beats-100-82ms-just-visit-once-by-sanket-aoyt/;;;=;==;=;=;

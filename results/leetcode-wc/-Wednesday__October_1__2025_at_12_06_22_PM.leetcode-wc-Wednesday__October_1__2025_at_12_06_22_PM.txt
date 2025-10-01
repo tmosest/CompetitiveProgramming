@@ -1,0 +1,45 @@
+980. Unique Paths III;=;=Hard;=;=public int uniquePathsIII(int[][] grid);=;=You are given an m x n integer array grid where grid[i][j] could be:
+
+1 representing the starting square. There is exactly one starting square.
+2 representing the ending square. There is exactly one ending square.
+0 representing empty squares we can walk over.
+-1 representing obstacles that we cannot walk over.
+Return the number of 4-directional walks from the starting square to the ending square, that walk over every non-obstacle square exactly once.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[1,0,0,0],[0,0,0,0],[0,0,2,-1]]
+Output: 2
+Explanation: We have the following two paths: 
+1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2)
+2. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2)
+Example 2:
+
+
+Input: grid = [[1,0,0,0],[0,0,0,0],[0,0,0,2]]
+Output: 4
+Explanation: We have the following four paths: 
+1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2),(2,3)
+2. (0,0),(0,1),(1,1),(1,0),(2,0),(2,1),(2,2),(1,2),(0,2),(0,3),(1,3),(2,3)
+3. (0,0),(1,0),(2,0),(2,1),(2,2),(1,2),(1,1),(0,1),(0,2),(0,3),(1,3),(2,3)
+4. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2),(2,3)
+Example 3:
+
+
+Input: grid = [[0,1],[2,0]]
+Output: 0
+Explanation: There is no path that walks over every empty square exactly once.
+Note that the starting and ending square can be anywhere in the grid.
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 20
+1 <= m * n <= 20
+-1 <= grid[i][j] <= 2
+There is exactly one starting cell and one ending cell.;=;=https://leetcode.com/problems/unique-paths-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/unique-paths-iii/solutions/2973622/java-code-with-dfs-and-backtracking100-f-dmgw/;;https://leetcode.com/problems/unique-paths-iii/solutions/1553873/java-easy-solution-dfs-backtracking-expl-172e/;;https://leetcode.com/problems/unique-paths-iii/solutions/6943111/beat-100-easy-solution-in-java-using-bac-ys32/;;https://leetcode.com/problems/unique-paths-iii/solutions/7142468/java-dfs-backtracking-with-explanation-b-xgo2/;;https://leetcode.com/problems/unique-paths-iii/solutions/1554601/java-simple-and-readable-solution-dfs-ba-i6x4/;;https://leetcode.com/problems/unique-paths-iii/solutions/6954277/beats-100-unique-paths-iii-java-dynamic-m3gy4/;;https://leetcode.com/problems/unique-paths-iii/solutions/6464322/java-100-beats-easy-to-understand-by-kdh-tmjo/;;https://leetcode.com/problems/unique-paths-iii/solutions/6992278/0ms-unique-paths-iii-backtracking-dfs-cl-osv7/;;https://leetcode.com/problems/unique-paths-iii/solutions/6999161/easy-solution-beats-100-by-sagar__26-3yzv/;;https://leetcode.com/problems/unique-paths-iii/solutions/6204986/god_mode-by-mymymy3-8u2z/;;https://leetcode.com/problems/unique-paths-iii/solutions/1513906/java-tc-o3rc-sc-orc-simple-dfs-solution-ceqnd/;;https://leetcode.com/problems/unique-paths-iii/solutions/5855624/simple-to-follow-by-nehasinghal032415-e650/;;https://leetcode.com/problems/unique-paths-iii/solutions/6795204/beats-100-dfs-backtracking-by-yashkambar-dkzo/;;https://leetcode.com/problems/unique-paths-iii/solutions/6761728/unique-paths-iii-beats-10000-by-deepak_j-pi7b/;;https://leetcode.com/problems/unique-paths-iii/solutions/6655090/walk-every-square-exactly-once-dfs-backt-4qgf/;;;=;==;=;=;

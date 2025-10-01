@@ -1,0 +1,35 @@
+2249. Count Lattice Points Inside a Circle;=;=Medium;=;=public int countLatticePoints(int[][] circles);=;=Given a 2D integer array circles where circles[i] = [xi, yi, ri] represents the center (xi, yi) and radius ri of the ith circle drawn on a grid, return the number of lattice points that are present inside at least one circle.
+
+Note:
+
+A lattice point is a point with integer coordinates.
+Points that lie on the circumference of a circle are also considered to be inside it.
+ 
+
+Example 1:
+
+
+Input: circles = [[2,2,1]]
+Output: 5
+Explanation:
+The figure above shows the given circle.
+The lattice points present inside the circle are (1, 2), (2, 1), (2, 2), (2, 3), and (3, 2) and are shown in green.
+Other points such as (1, 1) and (1, 3), which are shown in red, are not considered inside the circle.
+Hence, the number of lattice points present inside at least one circle is 5.
+Example 2:
+
+
+Input: circles = [[2,2,2],[3,4,1]]
+Output: 16
+Explanation:
+The figure above shows the given circles.
+There are exactly 16 lattice points which are present inside at least one circle. 
+Some of them are (0, 2), (2, 0), (2, 4), (3, 2), and (4, 4).
+ 
+
+Constraints:
+
+1 <= circles.length <= 200
+circles[i].length == 3
+1 <= xi, yi <= 100
+1 <= ri <= min(xi, yi);=;=https://leetcode.com/problems/count-lattice-points-inside-a-circle/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/7133891/circles-vs-grid-the-battle-of-lattice-po-gmwx/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/1976808/distance-formula-java-by-clasiqh-8nc6/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/1980902/javacpython-o1-space-by-lee215-t0xa/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/6762500/solution-with-indian-tadka-cpp-java-py-c-5s76/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/6203669/easy-solution-in-java-by-dhanu07-4z8a/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/7214772/count-lattice-points-inside-circles-by-a-vqh0/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/1977578/java-beats-10000-memoryspeed-0ms-april-2-7hhs/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/1976962/java-simple-solution-pythagoras-theorem-shay9/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/1980592/brute-force-java-solution-by-saurabh_173-n5co/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/2053545/a-simple-and-intuitive-java-solution-usi-qpz7/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/1982893/simple-java-solution-50-ms-using-boundin-tazd/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/1977046/java-dont-overthink-it-bruteforce-by-stu-0mal/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/6817370/best-solution-and-easy-to-understand-by-iolnz/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/6548558/java-by-muthusathya0-anjx/;;https://leetcode.com/problems/count-lattice-points-inside-a-circle/solutions/5311111/java-sol-by-salonijain-puzu/;;;=;==;=;=;

@@ -1,0 +1,28 @@
+1518. Water Bottles;=;=Easy;=;=public int numWaterBottles(int numBottles, int numExchange);=;=There are numBottles water bottles that are initially full of water. You can exchange numExchange empty water bottles from the market with one full water bottle.
+
+The operation of drinking a full water bottle turns it into an empty bottle.
+
+Given the two integers numBottles and numExchange, return the maximum number of water bottles you can drink.
+
+ 
+
+Example 1:
+
+
+Input: numBottles = 9, numExchange = 3
+Output: 13
+Explanation: You can exchange 3 empty bottles to get 1 full water bottle.
+Number of water bottles you can drink: 9 + 3 + 1 = 13.
+Example 2:
+
+
+Input: numBottles = 15, numExchange = 4
+Output: 19
+Explanation: You can exchange 4 empty bottles to get 1 full water bottle. 
+Number of water bottles you can drink: 15 + 3 + 1 = 19.
+ 
+
+Constraints:
+
+1 <= numBottles <= 100
+2 <= numExchange <= 100;=;=https://leetcode.com/problems/water-bottles/description/?envType=daily-question&envId=2025-10-01;=;=https://leetcode.com/problems/water-bottles/solutions/7237781/youtube-video-java-python-simple-problem-3lk8/;;https://leetcode.com/problems/water-bottles/solutions/7237854/easy-solution-beats-100-by-kundanprasad1-ek2z/;;https://leetcode.com/problems/water-bottles/solutions/7237843/water-bottles-o1-time-space-efficient-cj-8asj/;;https://leetcode.com/problems/water-bottles/solutions/7237829/java-simple-solution-by-trungkanto-ulhq/;;https://leetcode.com/problems/water-bottles/solutions/7237807/beats-100-easy-to-understand-java-soluti-qu54/;;https://leetcode.com/problems/water-bottles/solutions/7237691/java-solution-beats-by-sai_inapakolla1-zf8z/;;https://leetcode.com/problems/water-bottles/solutions/5431403/easy-to-understand-very-simple-explanati-xfua/;;https://leetcode.com/problems/water-bottles/solutions/5432621/explanations-no-one-will-give-you2-detai-niow/;;https://leetcode.com/problems/water-bottles/solutions/5431087/easy-beats-100-java-python-c-by-ravipari-7dhd/;;https://leetcode.com/problems/water-bottles/solutions/7176450/easiest-solution-best-explanation-in-c-b-rd1c/;;https://leetcode.com/problems/water-bottles/solutions/5431437/easy-and-clean-code-c-java-javascript-c-zlwug/;;https://leetcode.com/problems/water-bottles/solutions/7155243/1518-water-bottles-clean-simple-greedy-b-h7ph/;;https://leetcode.com/problems/water-bottles/solutions/5431464/1-liner-beats-988-users-give-it-a-try-an-8k3e/;;https://leetcode.com/problems/water-bottles/solutions/5431296/detailed-explanation2-methodsactual-simu-27vt/;;https://leetcode.com/problems/water-bottles/solutions/5095433/easy-solution-beats-100-water-bottles-dr-0gsy/;;;=;==;=;=;

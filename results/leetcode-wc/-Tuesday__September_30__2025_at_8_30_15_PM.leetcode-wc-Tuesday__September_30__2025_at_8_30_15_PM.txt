@@ -1,0 +1,41 @@
+1797. Design Authentication Manager;=;=Medium;=;=AuthenticationManagerÊÊÊÊÊpublicÊAuthenticationManager(intÊtimeToLive)ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊvoidÊgenerate(StringÊtokenId,ÊintÊcurrentTime)ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊpublicÊvoidÊrenew(StringÊtokenId,ÊintÊcurrentTime);=;=There is an authentication system that works with authentication tokens. For each session, the user will receive a new authentication token that will expire timeToLive seconds after the currentTime. If the token is renewed, the expiry time will be extended to expire timeToLive seconds after the (potentially different) currentTime.
+
+Implement the AuthenticationManager class:
+
+AuthenticationManager(int timeToLive) constructs the AuthenticationManager and sets the timeToLive.
+generate(string tokenId, int currentTime) generates a new token with the given tokenId at the given currentTime in seconds.
+renew(string tokenId, int currentTime) renews the unexpired token with the given tokenId at the given currentTime in seconds. If there are no unexpired tokens with the given tokenId, the request is ignored, and nothing happens.
+countUnexpiredTokens(int currentTime) returns the number of unexpired tokens at the given currentTime.
+Note that if a token expires at time t, and another action happens on time t (renew or countUnexpiredTokens), the expiration takes place before the other actions.
+
+Ê
+
+Example 1:
+
+
+Input
+["AuthenticationManager", "renew", "generate", "countUnexpiredTokens", "generate", "renew", "renew", "countUnexpiredTokens"]
+[[5], ["aaa", 1], ["aaa", 2], [6], ["bbb", 7], ["aaa", 8], ["bbb", 10], [15]]
+Output
+[null, null, null, 1, null, null, null, 0]
+
+Explanation
+AuthenticationManager authenticationManager = new AuthenticationManager(5); // Constructs the AuthenticationManager with timeToLive = 5 seconds.
+authenticationManager.renew("aaa", 1); // No token exists with tokenId "aaa" at time 1, so nothing happens.
+authenticationManager.generate("aaa", 2); // Generates a new token with tokenId "aaa" at time 2.
+authenticationManager.countUnexpiredTokens(6); // The token with tokenId "aaa" is the only unexpired one at time 6, so return 1.
+authenticationManager.generate("bbb", 7); // Generates a new token with tokenId "bbb" at time 7.
+authenticationManager.renew("aaa", 8); // The token with tokenId "aaa" expired at time 7, and 8 >= 7, so at time 8 the renew request is ignored, and nothing happens.
+authenticationManager.renew("bbb", 10); // The token with tokenId "bbb" is unexpired at time 10, so the renew request is fulfilled and now the token will expire at time 15.
+authenticationManager.countUnexpiredTokens(15); // The token with tokenId "bbb" expires at time 15, and the token with tokenId "aaa" expired at time 7, so currently no token is unexpired, so return 0.
+Ê
+
+Constraints:
+
+1 <= timeToLive <= 108
+1 <= currentTime <= 108
+1 <= tokenId.length <= 5
+tokenId consists only of lowercase letters.
+All calls to generate will contain unique values of tokenId.
+The values of currentTime across all the function calls will be strictly increasing.
+At most 2000 calls will be made to all functions combined.;=;=https://leetcode.com/problems/design-authentication-manager/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/design-authentication-manager/solutions/4832309/java-solution-with-map-and-pq-90-by-stil-kzo9/;;https://leetcode.com/problems/design-authentication-manager/solutions/7235068/java-simple-solution-with-linkedlist-and-gbal/;;https://leetcode.com/problems/design-authentication-manager/solutions/3036045/easiest-java-solution-for-beginners-by-j-x52o/;;https://leetcode.com/problems/design-authentication-manager/solutions/3677473/java-using-hashmap-by-tbekpro-tqdk/;;https://leetcode.com/problems/design-authentication-manager/solutions/4708091/simple-java-solution-with-streams-by-mrk-uhvl/;;https://leetcode.com/problems/design-authentication-manager/solutions/2638735/java-hashmap-treeset-by-hristokov-sznq/;;https://leetcode.com/problems/design-authentication-manager/solutions/4969168/java-solution-using-hashmap-queue-beats-skvwz/;;https://leetcode.com/problems/design-authentication-manager/solutions/3560411/java-easy-100-solution-using-hashmap-and-7pyn/;;https://leetcode.com/problems/design-authentication-manager/solutions/4743638/custom-doubly-linked-list-deletion-amort-7wh0/;;https://leetcode.com/problems/design-authentication-manager/solutions/3989923/heap-solution-beats-99-o1-generate-o1-re-in25/;;https://leetcode.com/problems/design-authentication-manager/solutions/3042276/java-solution-using-linkedhashmap-beats-yeyvo/;;https://leetcode.com/problems/design-authentication-manager/solutions/1896120/java-timemap-and-authmap-using-treemap-b-dxa6/;;https://leetcode.com/problems/design-authentication-manager/solutions/2166547/simple-and-readable-java-solution-hashma-yhs2/;;https://leetcode.com/problems/design-authentication-manager/solutions/1863248/java-clean-code-by-fllght-kc96/;;https://leetcode.com/problems/design-authentication-manager/solutions/1119611/java-simple-code-using-hashmap-by-champd-uho8/;;;=;==;=;=;

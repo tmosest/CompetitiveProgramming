@@ -1,0 +1,37 @@
+895. Maximum Frequency Stack;=;=Hard;=;=FreqStack     public FreqStack()                     public void push(int val)                     public int pop();=;=Design a stack-like data structure to push elements to the stack and pop the most frequent element from the stack.
+
+Implement the FreqStack class:
+
+FreqStack() constructs an empty frequency stack.
+void push(int val) pushes an integer val onto the top of the stack.
+int pop() removes and returns the most frequent element in the stack.
+If there is a tie for the most frequent element, the element closest to the stack's top is removed and returned.
+ 
+
+Example 1:
+
+Input
+["FreqStack", "push", "push", "push", "push", "push", "push", "pop", "pop", "pop", "pop"]
+[[], [5], [7], [5], [7], [4], [5], [], [], [], []]
+Output
+[null, null, null, null, null, null, null, 5, 7, 5, 4]
+
+Explanation
+FreqStack freqStack = new FreqStack();
+freqStack.push(5); // The stack is [5]
+freqStack.push(7); // The stack is [5,7]
+freqStack.push(5); // The stack is [5,7,5]
+freqStack.push(7); // The stack is [5,7,5,7]
+freqStack.push(4); // The stack is [5,7,5,7,4]
+freqStack.push(5); // The stack is [5,7,5,7,4,5]
+freqStack.pop();   // return 5, as 5 is the most frequent. The stack becomes [5,7,5,7,4].
+freqStack.pop();   // return 7, as 5 and 7 is the most frequent, but 7 is closest to the top. The stack becomes [5,7,5,4].
+freqStack.pop();   // return 5, as 5 is the most frequent. The stack becomes [5,7,4].
+freqStack.pop();   // return 4, as 4, 5 and 7 is the most frequent, but 4 is closest to the top. The stack becomes [5,7].
+ 
+
+Constraints:
+
+0 <= val <= 109
+At most 2 * 104 calls will be made to push and pop.
+It is guaranteed that there will be at least one element in the stack before calling pop.;=;=https://leetcode.com/problems/maximum-frequency-stack/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-frequency-stack/solutions/7180864/treemapstack-hashmap-ologn-per-operation-f62l/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/1086543/js-python-java-c-frequency-map-stack-sol-o8kz/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/1861901/java-stacks-explained-by-prashant404-cnz7/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/1114975/java-time-olgn-not-the-fastest-but-under-ppgd/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/7227882/895-maximum-frequency-stack-by-jaiveertr-yatc/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/5172171/stack-implementation-problem-by-dixon_n-dq2i/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/4112863/priority-queue-and-hashmap-simple-java-o-6na8/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/1863106/java-easy-comments-fastest-by-sagar0_0-zc5s/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/5014528/java-priorityqueue-and-map-solution-by-u-yi3l/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/4985352/java-easy-stack-solution-by-ytchouar-dr36/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/7230983/java-easy-to-understand-frequency-based-ma2hg/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/1086314/maximum-frequency-stack-java-easy-soluti-fsb1/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/2919452/java-map-list-stack-by-sourin_bruh-4nak/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/3597597/java-code-stackhashmap-by-soma20is-jwod/;;https://leetcode.com/problems/maximum-frequency-stack/solutions/3511730/solution-by-deleted_user-372d/;;;=;==;=;=;

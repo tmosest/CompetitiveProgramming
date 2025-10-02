@@ -1,0 +1,27 @@
+1903. Largest Odd Number in String;=;=Easy;=;=public String largestOddNumber(String num);=;=You are given a string num, representing a large integer. Return the largest-valued odd integer (as a string) that is a non-empty substring of num, or an empty string "" if no odd integer exists.
+
+A substring is a contiguous sequence of characters within a string.
+
+ 
+
+Example 1:
+
+Input: num = "52"
+Output: "5"
+Explanation: The only non-empty substrings are "5", "2", and "52". "5" is the only odd number.
+Example 2:
+
+Input: num = "4206"
+Output: ""
+Explanation: There are no odd numbers in "4206".
+Example 3:
+
+Input: num = "35427"
+Output: "35427"
+Explanation: "35427" is already an odd number.
+ 
+
+Constraints:
+
+1 <= num.length <= 105
+num only consists of digits and does not contain any leading zeros.;=;=https://leetcode.com/problems/largest-odd-number-in-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-odd-number-in-string/solutions/6097961/video-give-me-1-minute-by-niits-138w/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/7235584/learn-from-this-easy-java-by-sairanginee-low5/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/4372468/beats-100-cjavapythonjs-odd-number-subst-hpeb/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/7068575/most-optimal-solution-by-shivam7307-h8a8/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/7201527/easy-code-by-aesdtfg-b6y6/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/7182060/easy-code-for-solve-this-problem-by-4_k4-l8mi/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/4372966/faster-easy-algorithm-find-the-firs-odd-0whvr/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/7171404/very-easy-and-most-optimal-solution-beat-mggq/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/4372353/cjavapythonjavascript-easy-solution-expl-umbm/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/7161702/beats-995-simple-on-scan-largest-odd-num-2iqr/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/6854987/java-sol-easy-approch-beat-997-by-rushik-2j09/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/7043825/simple-java-solution-traverse-from-right-ispg/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/6476701/solution-in-java-and-c-by-vickyy234-f1hd/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/7028998/beats-999-java-solution-by-dhairya329-hkwi/;;https://leetcode.com/problems/largest-odd-number-in-string/solutions/7031363/largest-odd-number-in-string-by-rushabh1-l4gq/;;;=;==;=;=;

@@ -1,0 +1,28 @@
+1961. Check If String Is a Prefix of Array;=;=Easy;=;=public boolean isPrefixString(String s, String[] words);=;=Given a string s and an array of strings words, determine whether s is a prefix string of words.
+
+A string s is a prefix string of words if s can be made by concatenating the first k strings in words for some positive k no larger than words.length.
+
+Return true if s is a prefix string of words, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: s = "iloveleetcode", words = ["i","love","leetcode","apples"]
+Output: true
+Explanation:
+s can be made by concatenating "i", "love", and "leetcode" together.
+Example 2:
+
+Input: s = "iloveleetcode", words = ["apples","i","love","leetcode"]
+Output: false
+Explanation:
+It is impossible to make s using a prefix of arr.
+ 
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length <= 20
+1 <= s.length <= 1000
+words[i] and s consist of only lowercase English letters.;=;=https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/1390325/java-simple-append-and-check-algorithmic-2uzb/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/7111991/java-solution-on-by-anshulsarathe35-7ujt/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/6912307/most-optimized-java-beginner-friendly-by-b2sv/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/7039480/very-easy-solution-java-by-gokul_jagtap-d3gl/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/6788422/optimal-by-avinash516-ue77/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/6771853/easy-simple-way-to-do-this-using-string-0mm83/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/6776857/check-if-string-is-a-prefix-of-array-by-whbvc/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/7222197/optimized-simple-solution-beats-100-by-c-igsv/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/7152563/easy-java-solution-by-akkshadaaaa-w77w/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/6984662/cosmic-prefix-tailor-o1-space-beats-100-2tyid/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/6469451/java-time-beats-100-space-beats-72-by-mo-olf2/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/6477457/beats-100-easy-optimal-approach-using-st-blzz/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/2745414/java-solution-using-stringbuilder-by-yus-gkme/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/6307498/easy-java-code-in-2-3-lines-by-arshi_ban-oxhg/;;https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/solutions/5544300/1961-stringbuilder-java-solution-by-roge-dgbg/;;;=;==;=;=;

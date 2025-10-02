@@ -1,0 +1,25 @@
+823. Binary Trees With Factors;=;=Medium;=;=public int numFactoredBinaryTrees(int[] arr);=;=Given an array of unique integers, arr, where each integer arr[i] is strictly greater than 1.
+
+We make a binary tree using these integers, and each number may be used for any number of times. Each non-leaf node's value should be equal to the product of the values of its children.
+
+Return the number of binary trees we can make. The answer may be too large so return the answer modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: arr = [2,4]
+Output: 3
+Explanation: We can make these trees: [2], [4], [4, 2, 2]
+Example 2:
+
+Input: arr = [2,4,5,10]
+Output: 7
+Explanation: We can make these trees: [2], [4], [5], [10], [4, 2, 2], [10, 2, 5], [10, 5, 2].
+ 
+
+Constraints:
+
+1 <= arr.length <= 1000
+2 <= arr[i] <= 109
+All the values of arr are unique.;=;=https://leetcode.com/problems/binary-trees-with-factors/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/binary-trees-with-factors/solutions/4209156/video-give-me-10-minutes-how-we-think-ab-ccdn/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/2400159/java-easy-solution-using-hashmap-by-shiv-l666/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/4209092/efficient-method-explained-intuition-app-3j0b/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/4209335/how-to-answer-in-interview-intuition-to-612o9/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/1107268/js-python-java-c-fastest-solution-w-expl-a0lb/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/4209155/beats-100-easiest-approach-in-3-points-d-gf39/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/4209294/beats-9999-optimised-code-using-dynamic-86cs1/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/2400089/recursive-memo-c-java-detailed-explanati-xnbf/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/4210325/cjavapythonjavascript-2-approaches-expla-gfdm/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/4209100/accepted-easy-java-code-beats-97-by-thil-nf31/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/2403219/easy-java-solution-using-hashmap-faster-jgcm4/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/4209418/java-recursive-dp-solution-beats-100-has-ikxr/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/4211198/java-by-adityapandey1-6joj/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/2400239/java-based-on-concept-of-two-sum-really-hyqz9/;;https://leetcode.com/problems/binary-trees-with-factors/solutions/5306781/dp-tabulation-beats-100-java-by-vaibhav1-avws/;;;=;==;=;=;

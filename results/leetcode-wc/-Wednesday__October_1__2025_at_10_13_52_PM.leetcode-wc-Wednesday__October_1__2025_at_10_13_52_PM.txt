@@ -1,0 +1,42 @@
+3276. Select Cells in Grid With Maximum Score;=;=Hard;=;=public int maxScore(List<List<Integer>> grid);=;=You are given a 2D matrix grid consisting of positive integers.
+
+You have to select one or more cells from the matrix such that the following conditions are satisfied:
+
+No two selected cells are in the same row of the matrix.
+The values in the set of selected cells are unique.
+Your score will be the sum of the values of the selected cells.
+
+Return the maximum score you can achieve.
+
+ 
+
+Example 1:
+
+Input: grid = [[1,2,3],[4,3,2],[1,1,1]]
+
+Output: 8
+
+Explanation:
+
+
+
+We can select the cells with values 1, 3, and 4 that are colored above.
+
+Example 2:
+
+Input: grid = [[8,7,6],[8,3,2]]
+
+Output: 15
+
+Explanation:
+
+
+
+We can select the cells with values 7 and 8 that are colored above.
+
+ 
+
+Constraints:
+
+1 <= grid.length, grid[i].length <= 10
+1 <= grid[i][j] <= 100;=;=https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718057/python-java-dfs-in-descending-orders-wit-m5c1/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718452/min-cost-max-flow-solution-with-diagrams-cz81/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718459/easy-video-solution-how-to-in-interview-mpk5v/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718056/beats-100-time-beats-100-space-greedy-tr-robr/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718333/java-recursion-memoization-solution-by-i-dzj3/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718730/java-solution-by-harsh__005-owaz/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5722395/java-take-not-take-dp-using-bitmask-fast-xy13/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5719657/how-i-solved-it-by-shikharcookies-seu5/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718124/java-bruteforce-by-gr33dnim-zxhn/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5722330/bottom-up-dp-bitmask-clean-code-beats-10-zucl/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5720517/java-beats-100-dp-bitmask-by-neel_diyora-u5fv/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5719696/dp-bitmask-beats-10000-by-chenyuanqin826-35d4/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5718946/java-dp-bitmask-by-zephyryau-fsx3/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5961814/simple-and-easy-java-solution-using-memo-gz88/;;https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/solutions/5889855/java-solution-by-keshavkr_codderboy-o0xl/;;;=;==;=;=;

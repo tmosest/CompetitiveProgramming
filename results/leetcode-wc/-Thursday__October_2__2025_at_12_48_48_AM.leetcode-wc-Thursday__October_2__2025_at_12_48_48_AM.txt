@@ -1,0 +1,31 @@
+828. Count Unique Characters of All Substrings of a Given String;=;=Hard;=;=public int uniqueLetterString(String s);=;=Let's define a function countUniqueChars(s) that returns the number of unique characters in s.
+
+For example, calling countUniqueChars(s) if s = "LEETCODE" then "L", "T", "C", "O", "D" are the unique characters since they appear only once in s, therefore countUniqueChars(s) = 5.
+Given a string s, return the sum of countUniqueChars(t) where t is a substring of s. The test cases are generated such that the answer fits in a 32-bit integer.
+
+Notice that some substrings can be repeated so in this case you have to count the repeated ones too.
+
+ 
+
+Example 1:
+
+Input: s = "ABC"
+Output: 10
+Explanation: All possible substrings are: "A","B","C","AB","BC" and "ABC".
+Every substring is composed with only unique letters.
+Sum of lengths of all substring is 1 + 1 + 1 + 2 + 2 + 3 = 10
+Example 2:
+
+Input: s = "ABA"
+Output: 8
+Explanation: The same as example 1, except countUniqueChars("ABA") = 1.
+Example 3:
+
+Input: s = "LEETCODE"
+Output: 92
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of uppercase English letters only.;=;=https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/128952/javacpython-one-pass-on-by-lee215-5p06/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/1195587/java-clean-on-solution-detailed-explanat-gbcp/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/6958705/java-solution-using-contribution-techniq-uzxx/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/1910559/easy-java-solution-with-explanation-by-a-qlhs/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/1811205/java-multiple-approaches-by-ask025-gimt/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/3484873/solution-by-deleted_user-ebmc/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/2476051/java-explanation-with-simple-on-solution-jvmp/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/2726143/java-on-greedy-with-explaination-by-heka-9u4l/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/1569620/easy-to-understand-clean-solution-java-b-0moe/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/1582562/java-easy-solution-in-on-by-asppanda-j8r9/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/2569656/java-on-time-commented-with-3-test-cases-pzo7/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/5417012/solution-in-linear-complexity-no-dp-used-md9h/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/2652341/on-on-two-pass-hashmap-intuition-ccontri-imut/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/1490189/java-clean-on-solution-detailed-explanat-x23e/;;https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solutions/2014904/java-dp-solution-on-time-o1-space-by-run-ahwh/;;;=;==;=;=;

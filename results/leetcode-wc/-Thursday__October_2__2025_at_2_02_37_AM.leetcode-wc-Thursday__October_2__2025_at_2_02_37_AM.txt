@@ -1,0 +1,59 @@
+2671. Frequency Tracker;=;=Medium;=;=FrequencyTracker     public FrequencyTracker()                     public void add(int number)                     public void deleteOne(int number);=;=Design a data structure that keeps track of the values in it and answers some queries regarding their frequencies.
+
+Implement the FrequencyTracker class.
+
+FrequencyTracker(): Initializes the FrequencyTracker object with an empty array initially.
+void add(int number): Adds number to the data structure.
+void deleteOne(int number): Deletes one occurrence of number from the data structure. The data structure may not contain number, and in this case nothing is deleted.
+bool hasFrequency(int frequency): Returns true if there is a number in the data structure that occurs frequency number of times, otherwise, it returns false.
+ 
+
+Example 1:
+
+Input
+["FrequencyTracker", "add", "add", "hasFrequency"]
+[[], [3], [3], [2]]
+Output
+[null, null, null, true]
+
+Explanation
+FrequencyTracker frequencyTracker = new FrequencyTracker();
+frequencyTracker.add(3); // The data structure now contains [3]
+frequencyTracker.add(3); // The data structure now contains [3, 3]
+frequencyTracker.hasFrequency(2); // Returns true, because 3 occurs twice
+
+Example 2:
+
+Input
+["FrequencyTracker", "add", "deleteOne", "hasFrequency"]
+[[], [1], [1], [1]]
+Output
+[null, null, null, false]
+
+Explanation
+FrequencyTracker frequencyTracker = new FrequencyTracker();
+frequencyTracker.add(1); // The data structure now contains [1]
+frequencyTracker.deleteOne(1); // The data structure becomes empty []
+frequencyTracker.hasFrequency(1); // Returns false, because the data structure is empty
+
+Example 3:
+
+Input
+["FrequencyTracker", "hasFrequency", "add", "hasFrequency"]
+[[], [2], [3], [1]]
+Output
+[null, false, null, true]
+
+Explanation
+FrequencyTracker frequencyTracker = new FrequencyTracker();
+frequencyTracker.hasFrequency(2); // Returns false, because the data structure is empty
+frequencyTracker.add(3); // The data structure now contains [3]
+frequencyTracker.hasFrequency(1); // Returns true, because 3 occurs once
+
+ 
+
+Constraints:
+
+1 <= number <= 105
+1 <= frequency <= 105
+At most, 2 * 105 calls will be made to add, deleteOne, and hasFrequency in total.;=;=https://leetcode.com/problems/frequency-tracker/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/frequency-tracker/solutions/3494843/java-simple-solution-frequency-map-by-ju-84vd/;;https://leetcode.com/problems/frequency-tracker/solutions/3494900/day-402-better-100-0ms-pythonjavac-expla-iz07/;;https://leetcode.com/problems/frequency-tracker/solutions/6603296/java-solution-2-approaches-by-dsuryaprak-qr2q/;;https://leetcode.com/problems/frequency-tracker/solutions/3497498/simple-java-solution-by-siddhant_1602-6tdn/;;https://leetcode.com/problems/frequency-tracker/solutions/3494998/keep-2-hashmaps-and-update-them-by-slowk-5iu6/;;https://leetcode.com/problems/frequency-tracker/solutions/3495028/java-frequency-array-concise-code-by-nis-lfl6/;;https://leetcode.com/problems/frequency-tracker/solutions/3494904/java-solution-using-two-hashmaps-by-give-wdm0/;;https://leetcode.com/problems/frequency-tracker/solutions/3495095/simple-java-method-by-mia1117-g63t/;;https://leetcode.com/problems/frequency-tracker/solutions/3494962/java-solution-easy-to-understand-by-neel-y4hz/;;https://leetcode.com/problems/frequency-tracker/solutions/3495518/java-o1-explained-by-nimtish-qtt9/;;https://leetcode.com/problems/frequency-tracker/solutions/3529672/java-all-o1-operations-by-hobiter-rces/;;https://leetcode.com/problems/frequency-tracker/solutions/3495183/java-easy-using-2-arraysexplained-o1-by-07lt2/;;https://leetcode.com/problems/frequency-tracker/solutions/4539412/easy-java-solution-by-ikapoor123-z5ke/;;https://leetcode.com/problems/frequency-tracker/solutions/3495935/java-all-three-operations-in-o1-time-has-kv1l/;;https://leetcode.com/problems/frequency-tracker/solutions/3495512/java-arrays-by-da_arya-6m79/;;;=;==;=;=;

@@ -1,0 +1,23 @@
+3032. Count Numbers With Unique Digits II;=;=Easy;=;=public int numberCount(int a, int b);=;=Given two positive integers a and b, return the count of numbers having unique digits in the range [a, b] (inclusive).
+ 
+
+Example 1:
+
+Input: a = 1, b = 20
+Output: 19
+Explanation: All the numbers in the range [1, 20] have unique digits except 11. Hence, the answer is 19.
+Example 2:
+
+Input: a = 9, b = 19
+Output: 10
+Explanation: All the numbers in the range [9, 19] have unique digits except 11. Hence, the answer is 10. 
+Example 3:
+
+Input: a = 80, b = 120
+Output: 27
+Explanation: There are 41 numbers in the range [80, 120], 27 of which have unique digits.
+ 
+
+Constraints:
+
+1 <= a <= b <= 1000;=;=https://leetcode.com/problems/count-numbers-with-unique-digits-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/4694442/java-brute-force-digit-dp-solutions-on-d-rqhd/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/4705738/java-0ms-100-prefix-sums-dfs-and-brute-f-2ezb/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/4796956/very-simple-java-solution-beats-9468-by-p6vzs/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/4701254/java-beats-100-brute-force-digit-dp-with-3ha1/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/4817841/java-straightforward-division-solution-b-niud/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/4937797/java-dp-solution-with-ond-time-and-od-sp-8p2s/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/6160984/using-2-approachesvery-simple-solutions-y9ltm/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/6026424/easy-solution-to-understand-using-set-by-w9ed/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/5550839/3-ms-beats-8678-by-annu06-iw53/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/5193454/java-solution-by-arjun_16695-2tam/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/5108252/different-java-solution-by-jhapranay-vbw0/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/4699270/java-dummy-proof-brutal-force-solution-d-k5wp/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/5067881/simple-dp-by-alexirinacommon-rq1w/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/4884879/hash-by-shuabro888-1z3r/;;https://leetcode.com/problems/count-numbers-with-unique-digits-ii/solutions/4711361/two-easiest-solutions-bitmask-and-string-3j0w/;;;=;==;=;=;

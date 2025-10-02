@@ -1,0 +1,30 @@
+815. Bus Routes;=;=Hard;=;=publicÊintÊnumBusesToDestination(int[][]Êroutes,ÊintÊsource,ÊintÊtarget);=;=You are given an array routes representing bus routes where routes[i] is a bus route that the ith bus repeats forever.
+
+For example, if routes[0] = [1, 5, 7], this means that the 0th bus travels in the sequence 1 -> 5 -> 7 -> 1 -> 5 -> 7 -> 1 -> ... forever.
+You will start at the bus stop source (You are not on any bus initially), and you want to go to the bus stop target. You can travel between bus stops by buses only.
+
+Return the least number of buses you must take to travel from source to target. Return -1 if it is not possible.
+
+Ê
+
+Example 1:
+
+Input: routes = [[1,2,7],[3,6,7]], source = 1, target = 6
+Output: 2
+Explanation: The best strategy is take the first bus to the bus stop 7, then take the second bus to the bus stop 6.
+Example 2:
+
+Input: routes = [[7,12],[4,5,15],[6],[15,19],[9,12,13]], source = 15, target = 12
+Output: -1
+Ê
+
+Ê
+
+Constraints:
+
+1 <= routes.length <= 500.
+1 <= routes[i].length <= 105
+All the values of routes[i] are unique.
+sum(routes[i].length) <= 105
+0 <= routes[i][j] < 106
+0 <= source, target < 106;=;=https://leetcode.com/problems/bus-routes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/bus-routes/solutions/4277892/beats-100-explained-with-video-modified-z3sle/;;https://leetcode.com/problems/bus-routes/solutions/4279742/video-give-me-10-minutes-beats-9953-how-woyzh/;;https://leetcode.com/problems/bus-routes/solutions/7004610/simple-java-solution-by-rubiksolve-abtx/;;https://leetcode.com/problems/bus-routes/solutions/4279320/cjavapythonjavascript-2-approaches-expla-kr2y/;;https://leetcode.com/problems/bus-routes/solutions/6885532/optimized-bfs-for-minimum-buses-to-desti-v6p7/;;https://leetcode.com/problems/bus-routes/solutions/1657162/java-modified-bfs-comments-and-explanati-dyvb/;;https://leetcode.com/problems/bus-routes/solutions/6655850/bus-routes-problem-bfs-solution-java-by-nsyhd/;;https://leetcode.com/problems/bus-routes/solutions/6084183/bus-routes-simple-solution-in-java-using-9eb4/;;https://leetcode.com/problems/bus-routes/solutions/1361842/java-30-ms-faster-than-90-bfs-by-siddhan-2xhh/;;https://leetcode.com/problems/bus-routes/solutions/7198295/bus-routes-for-in-java-in-sample-by-poth-0ymf/;;https://leetcode.com/problems/bus-routes/solutions/4277843/beats-9384of-users-with-java-java-bfs-so-6ec5/;;https://leetcode.com/problems/bus-routes/solutions/6575987/very-very-easy-to-understand-just-go-and-v2gb/;;https://leetcode.com/problems/bus-routes/solutions/3810132/easy-java-solution-bfs-by-viraj_patil_09-r3wh/;;https://leetcode.com/problems/bus-routes/solutions/5245178/java-0-1-bfs-approach-by-dune2706-uqco/;;https://leetcode.com/problems/bus-routes/solutions/4857982/java-easy-100-solution-using-bfs-and-gra-tt1g/;;;=;==;=;=;

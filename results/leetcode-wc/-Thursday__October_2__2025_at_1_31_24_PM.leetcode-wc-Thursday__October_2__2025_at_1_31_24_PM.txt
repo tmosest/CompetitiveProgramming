@@ -1,0 +1,26 @@
+2719. Count of Integers;=;=Hard;=;=publicÊintÊcount(StringÊnum1,ÊStringÊnum2,ÊintÊmin_sum,ÊintÊmax_sum);=;=You are given two numeric strings num1 and num2 and two integers max_sum and min_sum. We denote an integer x to be good if:
+
+num1 <= x <= num2
+min_sum <= digit_sum(x) <= max_sum.
+Return the number of good integers. Since the answer may be large, return it modulo 109 + 7.
+
+Note that digit_sum(x) denotes the sum of the digits of x.
+
+Ê
+
+Example 1:
+
+Input: num1 = "1", num2 = "12", min_sum = 1, max_sum = 8
+Output: 11
+Explanation: There are 11 integers whose sum of digits lies between 1 and 8 are 1,2,3,4,5,6,7,8,10,11, and 12. Thus, we return 11.
+Example 2:
+
+Input: num1 = "1", num2 = "5", min_sum = 1, max_sum = 5
+Output: 5
+Explanation: The 5 integers whose sum of digits lies between 1 and 5 are 1,2,3,4, and 5. Thus, we return 5.
+Ê
+
+Constraints:
+
+1 <= num1 <= num2 <= 1022
+1 <= min_sum <= max_sum <= 400;=;=https://leetcode.com/problems/count-of-integers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-of-integers/solutions/3594897/dp-c-java-python-by-cpcs-82jl/;;https://leetcode.com/problems/count-of-integers/solutions/3596874/easy-explaination-digit-dp-solution-recu-z57l/;;https://leetcode.com/problems/count-of-integers/solutions/4167785/easy-to-understand-digit-dp-3d-memo-by-l-fhjm/;;https://leetcode.com/problems/count-of-integers/solutions/3595710/digit-dp-using-recursion-by-althafhussai-aa8o/;;https://leetcode.com/problems/count-of-integers/solutions/6656468/easy-java-solution-by-coder_giri-tpwo/;;https://leetcode.com/problems/count-of-integers/solutions/6656467/easy-java-solution-by-coder_giri-xffk/;;https://leetcode.com/problems/count-of-integers/solutions/6450726/java-solution-count-of-integers-by-shubh-qh6a/;;https://leetcode.com/problems/count-of-integers/solutions/5999168/using-digit-dp-by-risabhuchiha-2hmp/;;https://leetcode.com/problems/count-of-integers/solutions/5800144/yo-yo-honey-singh-java-easy-sol-by-vikas-0ovr/;;https://leetcode.com/problems/count-of-integers/solutions/5550660/1-pass-digit-dp-beats-100-java-by-zephyr-8h85/;;https://leetcode.com/problems/count-of-integers/solutions/5009860/solution-by-gp_777-n3t9/;;https://leetcode.com/problems/count-of-integers/solutions/4774506/digit-dp-solution-in-java-by-ajit_kumar-tfhfr/;;https://leetcode.com/problems/count-of-integers/solutions/4238854/java-optimal-digit-dp-by-vsai5120-n91c/;;https://leetcode.com/problems/count-of-integers/solutions/3619501/digit-dp-technique-java-solution-clean-c-qk4l/;;https://leetcode.com/problems/count-of-integers/solutions/3604899/java-solution-4d-digit-dp-by-ritwik-kapo-bzei/;;;=;==;=;=;

@@ -1,0 +1,30 @@
+2124. Check if All A's Appears Before All B's;=;=Easy;=;=public boolean checkString(String s);=;=Given a string s consisting of only the characters 'a' and 'b', return true if every 'a' appears before every 'b' in the string. Otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: s = "aaabbb"
+Output: true
+Explanation:
+The 'a's are at indices 0, 1, and 2, while the 'b's are at indices 3, 4, and 5.
+Hence, every 'a' appears before every 'b' and we return true.
+Example 2:
+
+Input: s = "abab"
+Output: false
+Explanation:
+There is an 'a' at index 2 and a 'b' at index 1.
+Hence, not every 'a' appears before every 'b' and we return false.
+Example 3:
+
+Input: s = "bbb"
+Output: true
+Explanation:
+There are no 'a's, hence, every 'a' appears before every 'b' and we return true.
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s[i] is either 'a' or 'b'.;=;=https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/7236427/clean-simple-100-beats-one-liner-python-3932h/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/1660987/javapython-3-check-if-b-followed-by-a-by-1l7q/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/7100181/ab-check-if-all-as-come-before-all-bs-by-ivku/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/7083832/approach-1-pointer-special-hint-beats-10-xlfi/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/7066638/micro-optimized-java-solution-by-gvonb-tfh6/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/6952016/java-solution-by-abhishek1331975-skxt/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/1662993/java-basic-100-clear-presentation-by-zel-4msn/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/6772494/check-if-all-as-appears-before-bs-java-b-8fya/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/6362207/100-beats-on-time-java-by-user8688f-qevs/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/6320358/simplest-solution-in-java-beats-100-user-t2jp/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/6744147/java-easy-solution-basic-for-loop-beats-azaao/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/6692721/very-easy-explanation-c-java-python-by-p-oki2/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/7084620/3-line-code-beats-100-by-thebluetext-sulj/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/7057843/validate-string-order-all-a-must-appear-c5487/;;https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/7014194/java-solution-beats-100-by-ankesh_tiwari-ueea/;;;=;==;=;=;

@@ -1,0 +1,44 @@
+3232. Find if Digit Game Can Be Won;=;=Easy;=;=public boolean canAliceWin(int[] nums);=;=You are given an array of positive integers nums.
+
+Alice and Bob are playing a game. In the game, Alice can choose either all single-digit numbers or all double-digit numbers from nums, and the rest of the numbers are given to Bob. Alice wins if the sum of her numbers is strictly greater than the sum of Bob's numbers.
+
+Return true if Alice can win this game, otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,4,10]
+
+Output: false
+
+Explanation:
+
+Alice cannot win by choosing either single-digit or double-digit numbers.
+
+Example 2:
+
+Input: nums = [1,2,3,4,5,14]
+
+Output: true
+
+Explanation:
+
+Alice can win by choosing single-digit numbers which have a sum equal to 15.
+
+Example 3:
+
+Input: nums = [5,5,5,25]
+
+Output: true
+
+Explanation:
+
+Alice can win by choosing double-digit numbers which have a sum equal to 25.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 99;=;=https://leetcode.com/problems/find-if-digit-game-can-be-won/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7208089/alice-vs-numbers-can-she-win-accurate-be-7ttt/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/5750655/simple-for-beginners-with-explanation-by-1vaa/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7191680/easy-code-for-beginners-and-understandab-gl8p/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7089259/title-determining-alices-winning-chance-u6dux/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7214220/alice-vs-bob-game-single-vs-double-digit-y0e6/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7006289/simplest-java-code-for-alicea-nd-bob-by-8dafg/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/6710141/java-easy-solution-beginner-level-by-pra-t5m7/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7101821/beats-100-0ms-beginner-friendly-java-cod-ux00/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7085016/find-if-digit-game-can-be-won-java-solut-t8t6/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7112686/easy-way-to-understand-and-compare-of-th-rn3q/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7087275/if-both-sum-are-not-equal-definitely-it-1pzfi/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/7056774/simplest-java-solution-by-arshiya1731-zpmr/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/5546371/explanations-no-one-will-give-youvery-de-9ysj/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/5546707/simple-java-c-code-by-abhinandannaik1717-c0tf/;;https://leetcode.com/problems/find-if-digit-game-can-be-won/solutions/5546359/detailed-explanation-of-two-scenarios-10-s4hn/;;;=;==;=;=;

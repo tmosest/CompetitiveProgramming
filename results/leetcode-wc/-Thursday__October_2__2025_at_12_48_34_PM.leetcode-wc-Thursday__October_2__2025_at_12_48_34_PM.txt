@@ -1,0 +1,28 @@
+1584. Min Cost to Connect All Points;=;=Medium;=;=public int minCostConnectPoints(int[][] points);=;=You are given an array points representing integer coordinates of some points on a 2D-plane, where points[i] = [xi, yi].
+
+The cost of connecting two points [xi, yi] and [xj, yj] is the manhattan distance between them: |xi - xj| + |yi - yj|, where |val| denotes the absolute value of val.
+
+Return the minimum cost to make all points connected. All points are connected if there is exactly one simple path between any two points.
+
+ 
+
+Example 1:
+
+
+Input: points = [[0,0],[2,2],[3,10],[5,2],[7,0]]
+Output: 20
+Explanation: 
+
+We can connect the points as shown above to get the minimum cost of 20.
+Notice that there is a unique path between every pair of points.
+Example 2:
+
+Input: points = [[3,12],[-2,5],[-4,1]]
+Output: 18
+ 
+
+Constraints:
+
+1 <= points.length <= 1000
+-106 <= xi, yi <= 106
+All pairs (xi, yi) are distinct.;=;=https://leetcode.com/problems/min-cost-to-connect-all-points/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/6280134/video-improved-prims-algorithm-solution-vh1as/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/4045874/9485-prim-kruskal-with-min-heap-by-vanam-4409/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/7008582/connect-all-points-with-minimum-cost-usi-vvdy/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/4046136/video-improved-prims-algorithm-solution-qsbz0/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/7182103/java-algorithm-by-f0939050162-aq0c/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/1982777/prims-kruscals-algorithm-with-explanatio-rn8h/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/6391130/mst-prims-kruskals-min-heap-simple-and-e-yg9g/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/4046233/9798-best-solution-with-concise-explanat-m7n5/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/1982828/java-python-prims-algo-mst-30ms-99-on-n-h7sxi/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/4046024/graph-prims-algorithm-kruskals-algorithm-ghg9/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/6819157/kruskal-union-and-find-easy-approach-by-fbida/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/6833272/prims-algorithm-by-rahul-jhamb-avdg/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/6335785/an-easy-solution-using-adjacency-list-wh-anec/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/1983005/javacpythonjavascriptkotlinontimebeats-9-3bw8/;;https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/1400943/java-kruskals-prims-algosunion-find-by-c-wp4o/;;;=;==;=;=;

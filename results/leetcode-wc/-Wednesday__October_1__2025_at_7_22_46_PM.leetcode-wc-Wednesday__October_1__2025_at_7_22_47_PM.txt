@@ -1,0 +1,53 @@
+3428. Maximum and Minimum Sums of at Most Size K Subsequences;=;=Medium;=;=public int minMaxSums(int[] nums, int k);=;=You are given an integer array nums and a positive integer k. Return the sum of the maximum and minimum elements of all subsequences of nums with at most k elements.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3], k = 2
+
+Output: 24
+
+Explanation:
+
+The subsequences of nums with at most 2 elements are:
+
+Subsequence	Minimum	Maximum	Sum
+[1]	1	1	2
+[2]	2	2	4
+[3]	3	3	6
+[1, 2]	1	2	3
+[1, 3]	1	3	4
+[2, 3]	2	3	5
+Final Total	 	 	24
+The output would be 24.
+
+Example 2:
+
+Input: nums = [5,0,6], k = 1
+
+Output: 22
+
+Explanation:
+
+For subsequences with exactly 1 element, the minimum and maximum values are the element itself. Therefore, the total is 5 + 5 + 0 + 0 + 6 + 6 = 22.
+
+Example 3:
+
+Input: nums = [1,1,1], k = 2
+
+Output: 12
+
+Explanation:
+
+The subsequences [1, 1] and [1] each appear 3 times. For all of them, the minimum and maximum are both 1. Thus, the total is 12.
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 109
+1 <= k <= min(70, nums.length);=;=https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6300925/detailed-solution-for-java-guys-by-resor-89oc/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6303193/well-explained-and-efficient-solution-ja-agie/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6300986/using-ncr-with-fermats-little-theoram-by-6klr/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6300808/pure-combinatorics-and-factorial-precomp-s2rj/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6307638/tabulation-java-code-by-wxyzplprat-esuv/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6301293/simple-java-solution-by-sakshikishore-w2j3/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6303699/summing-subsequence-extremes-with-binomi-kqg6/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6302003/java-easy-code-by-_aghori-fgkb/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6453090/easy-understand-fast-java-solution-by-co-bi79/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6332797/easy-java-solution-onk-with-combinatoric-abhi/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6309193/java-dynamic-programming-by-xuyiouqd-hiqi/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6306280/easy-solution-in-onk-by-priyanshu_sharma-6ur0/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6302647/clear-explanation-java-beats-100-space-a-nfw0/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6301334/optimized-combination-calculation-achiev-fnwe/;;https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/solutions/6301091/java-solution-by-sudhamshreddy07-1vyx/;;;=;==;=;=;

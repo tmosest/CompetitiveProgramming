@@ -1,0 +1,39 @@
+2284. Sender With Largest Word Count;=;=Medium;=;=public String largestWordCount(String[] messages, String[] senders);=;=You have a chat log of n messages. You are given two string arrays messages and senders where messages[i] is a message sent by senders[i].
+
+A message is list of words that are separated by a single space with no leading or trailing spaces. The word count of a sender is the total number of words sent by the sender. Note that a sender may send more than one message.
+
+Return the sender with the largest word count. If there is more than one sender with the largest word count, return the one with the lexicographically largest name.
+
+Note:
+
+Uppercase letters come before lowercase letters in lexicographical order.
+"Alice" and "alice" are distinct.
+ 
+
+Example 1:
+
+Input: messages = ["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"], senders = ["Alice","userTwo","userThree","Alice"]
+Output: "Alice"
+Explanation: Alice sends a total of 2 + 3 = 5 words.
+userTwo sends a total of 2 words.
+userThree sends a total of 3 words.
+Since Alice has the largest word count, we return "Alice".
+Example 2:
+
+Input: messages = ["How is leetcode for everyone","Leetcode is useful for practice"], senders = ["Bob","Charlie"]
+Output: "Charlie"
+Explanation: Bob sends a total of 5 words.
+Charlie sends a total of 5 words.
+Since there is a tie for the largest word count, we return the sender with the lexicographically larger name, Charlie.
+ 
+
+Constraints:
+
+n == messages.length == senders.length
+1 <= n <= 104
+1 <= messages[i].length <= 100
+1 <= senders[i].length <= 10
+messages[i] consists of uppercase and lowercase English letters and ' '.
+All the words in messages[i] are separated by a single space.
+messages[i] does not have leading or trailing spaces.
+senders[i] consists of uppercase and lowercase English letters only.;=;=https://leetcode.com/problems/sender-with-largest-word-count/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sender-with-largest-word-count/solutions/7030574/who-speaks-the-most-words-counting-words-pcgt/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/6570328/simple-to-understand-by-dummy_nick-y7u4/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/2083925/java-code-with-comments-hashmap-priority-utbu/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/2083945/easy-approach-in-java-using-hashmap-only-1awr/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/2083837/map-by-yadavharsha50-y7mx/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/3305575/java-clean-solution-using-hashmap-explai-krcd/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/2083930/sender-with-largest-word-count-java-solu-j1xy/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/3103370/java-hashmap-on-simple-by-judgementdey-r2iz/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/2720705/simple-java-solution-beats-99-by-nomaana-ydp2/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/4202957/sender-with-largest-word-count-by-riya12-6f6t/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/2208244/java-hashmap-one-pass-count-space-1-by-2-tp1e/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/3804918/java-easy-to-understand-solution-with-ex-vpg4/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/7048888/clean-code-and-simple-logic-by-sulinski-vmaj/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/2209262/easy-with-map-by-tuanbieber-pwta/;;https://leetcode.com/problems/sender-with-largest-word-count/solutions/6297684/2284-sender-with-largest-word-count-by-g-ofpx/;;;=;==;=;=;

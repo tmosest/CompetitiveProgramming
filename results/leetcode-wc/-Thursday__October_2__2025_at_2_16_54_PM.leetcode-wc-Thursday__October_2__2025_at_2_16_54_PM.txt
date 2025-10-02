@@ -1,0 +1,29 @@
+1802. Maximum Value at a Given Index in a Bounded Array;=;=Medium;=;=public int maxValue(int n, int index, int maxSum);=;=You are given three positive integers: n, index, and maxSum. You want to construct an array nums (0-indexed) that satisfies the following conditions:
+
+nums.length == n
+nums[i] is a positive integer where 0 <= i < n.
+abs(nums[i] - nums[i+1]) <= 1 where 0 <= i < n-1.
+The sum of all the elements of nums does not exceed maxSum.
+nums[index] is maximized.
+Return nums[index] of the constructed array.
+
+Note that abs(x) equals x if x >= 0, and -x otherwise.
+
+ 
+
+Example 1:
+
+Input: n = 4, index = 2,  maxSum = 6
+Output: 2
+Explanation: nums = [1,2,2,1] is one array that satisfies all the conditions.
+There are no arrays that satisfy all the conditions and have nums[2] == 3, so 2 is the maximum nums[2].
+Example 2:
+
+Input: n = 6, index = 1,  maxSum = 10
+Output: 3
+ 
+
+Constraints:
+
+1 <= n <= maxSum <= 109
+0 <= index < n;=;=https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/6840451/beats-100-using-basic-maths-java-python-2ly1f/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/3619912/java-c-python-solution-easy-to-understan-w0y6/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/3619947/easy-solution-of-java-beginner-friendly-9ey2n/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/1120761/greedy-binarysearch-math-explained-by-hi-1byw/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/6714409/easy-binary-search-solution-in-java-beat-v7us/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/1121538/easy-java-solution-without-using-binary-8my7p/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/3619913/pythonjavacsimple-solutioneasy-to-unders-3st3/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/1119755/intuition-explained-binary-search-java-h-clx1/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/1991392/java-clean-binary-search-by-fllght-2s7l/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/3620091/easy-solution-with-video-beats-100-java-nzl20/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/6513880/maximizing-element-value-at-a-given-inde-rzzd/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/6704513/easy-java-solution-using-bs-by-viraj_pat-cafj/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/3620525/java-100-faster-solution-using-binary-se-c1uh/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/3621999/java-binary-search-on-answer-4ms-runtime-haou/;;https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/3622205/beating-100-runtime-java-solution-by-pre-r7dt/;;;=;==;=;=;

@@ -1,0 +1,32 @@
+1568. Minimum Number of Days to Disconnect Island;=;=Hard;=;=publicÊintÊminDays(int[][]Êgrid);=;=You are given an m x n binary grid grid where 1 represents land and 0 represents water. An island is a maximal 4-directionally (horizontal or vertical) connected group of 1's.
+
+The grid is said to be connected if we have exactly one island, otherwise is said disconnected.
+
+In one day, we are allowed to change any single land cell (1) into a water cell (0).
+
+Return the minimum number of days to disconnect the grid.
+
+Ê
+
+Example 1:
+
+
+Input: grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]
+
+Output: 2
+Explanation: We need at least 2 days to get a disconnected grid.
+Change land grid[1][1] and grid[0][2] to water and get 2 disconnected island.
+Example 2:
+
+
+Input: grid = [[1,1]]
+Output: 2
+Explanation: Grid of full water is also disconnected ([[1,1]] -> [[0,0]]), 0 islands.
+Ê
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 30
+grid[i][j] is either 0 or 1.;=;=https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5619109/easy-to-understand-step-by-step-detailed-fzmv/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5619073/beats-100-explained-with-video-cjava-dfs-s21z/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5619134/easy-3-step-c-java-py-js-solution-dfs-wi-qpj5/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/7075330/minimum-days-to-break-the-island-disconn-z92u/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5620489/100-beats-dfs-or-tarjans-algorithm-by-b_-yq3c/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5619322/tarjans-algorithm-by-anand_shukla1312-l8vb/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5619853/dcc-11-aug-2024-dfs-by-sajaltiwari007-utqa/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/4826611/notes-explanation-by-ankit1478-mf2s/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/3638094/easy-java-solution-clean-code-by-niketh_-hfj9/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5619967/mastering-island-disconnect-in-2-days-wi-5ynj/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/6753913/minimum-number-of-days-to-disconnect-isl-jd78/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/6307740/minimum-number-of-days-to-disconnect-isl-77x2/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5619508/java-solution-using-graphbfs-traversal-s-6tr7/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5619733/top-one-ranking-code-optimised-code-easy-irck/;;https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/solutions/5620591/interview-solution-easy-to-understand-mo-81s4/;;;=;==;=;=;

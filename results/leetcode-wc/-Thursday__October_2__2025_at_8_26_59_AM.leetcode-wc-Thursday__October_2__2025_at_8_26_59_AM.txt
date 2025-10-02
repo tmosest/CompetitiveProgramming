@@ -1,0 +1,38 @@
+2825. Make String a Subsequence Using Cyclic Increments;=;=Medium;=;=public boolean canMakeSubsequence(String str1, String str2);=;=You are given two 0-indexed strings str1 and str2.
+
+In an operation, you select a set of indices in str1, and for each index i in the set, increment str1[i] to the next character cyclically. That is 'a' becomes 'b', 'b' becomes 'c', and so on, and 'z' becomes 'a'.
+
+Return true if it is possible to make str2 a subsequence of str1 by performing the operation at most once, and false otherwise.
+
+Note: A subsequence of a string is a new string that is formed from the original string by deleting some (possibly none) of the characters without disturbing the relative positions of the remaining characters.
+
+ 
+
+Example 1:
+
+Input: str1 = "abc", str2 = "ad"
+Output: true
+Explanation: Select index 2 in str1.
+Increment str1[2] to become 'd'. 
+Hence, str1 becomes "abd" and str2 is now a subsequence. Therefore, true is returned.
+Example 2:
+
+Input: str1 = "zc", str2 = "ad"
+Output: true
+Explanation: Select indices 0 and 1 in str1. 
+Increment str1[0] to become 'a'. 
+Increment str1[1] to become 'd'. 
+Hence, str1 becomes "ad" and str2 is now a subsequence. Therefore, true is returned.
+Example 3:
+
+Input: str1 = "ab", str2 = "d"
+Output: false
+Explanation: In this example, it can be shown that it is impossible to make str2 a subsequence of str1 using the operation at most once. 
+Therefore, false is returned.
+ 
+
+Constraints:
+
+1 <= str1.length <= 105
+1 <= str2.length <= 105
+str1 and str2 consist of only lowercase English letters.;=;=https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6110638/100-beats-short-simple-by-piotr_maminski-9kuk/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6110726/beats-100-two-pointers-solution-for-leet-ea4o/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/3932451/javacpython-two-pointers-checking-subseq-p5zb/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6110807/beats-10000-for-loop-explained-with-exam-jqhd/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/3931927/c-java-explained-iterative-on-solution-b-t1j9/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6110821/simple-pyjava-code-explained-in-detail-2-uknv/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6111111/java-easy-solution-100-beat-users-by-sau-nhjx/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/3935827/100-beat-c-java-python-c-swift-javascrip-igx7/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6113370/beats-100-detailed-test-case-mildly-arou-8fvt/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/3933313/python-3-6-lines-2-ptrs-hashmap-ts-97-21-tpe2/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6113109/100-faster-from-others-runtime-by-dev_bh-fih0/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6110854/most-optimized-solution-two-pointer-simp-mcgv/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6111063/easy-to-understand-java-solution-by-thel-3zm5/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6111749/simple-easy-to-follow-short-readable-by-att7v/;;https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/solutions/6110945/two-pointers-beats-100-easy-to-understan-82qx/;;;=;==;=;=;

@@ -1,0 +1,19 @@
+1523. Count Odd Numbers in an Interval Range;=;=Easy;=;=public int countOdds(int low, int high)         if (low==high) return (low%2==0)?0:1;        low=(low%2==0)?low+1:low;        high=(high%2==0)?high-1:high;        int count=(low!=high)?2:0;        while (low<high)            low+=2;            high-=2;            count=(low<high)?count+2:count;                count=(low==high)?count+1:count;        return count;;=;=Given two non-negative integers low and high. Return the count of odd numbers between low and high (inclusive).
+
+ 
+
+Example 1:
+
+Input: low = 3, high = 7
+Output: 3
+Explanation: The odd numbers between 3 and 7 are [3,5,7].
+Example 2:
+
+Input: low = 8, high = 10
+Output: 1
+Explanation: The odd numbers between 8 and 10 are [9].
+ 
+
+Constraints:
+
+0 <= low <= high <= 10^9;=;=https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/7227386/simple-solution-beat-100beginner-friendl-d7tk/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/1798724/java-math-logic-based-o1-time-and-space-2ees9/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/7181949/two-pointer-java-solution-320ms-by-sathv-k9xh/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/3178012/o1-tc-super-easy-solutionc-python3-java-jktwi/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/7148586/ap-formula-intuition-clean-o1-solution-b-r29h/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/3178185/0ms-beats-100-full-explanation-1-line-fo-2jtu/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/7118939/easy-simple-java-by-sairangineeni-z0t8/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/5644810/beats-and-o1-time-complexity-beginner-fr-bgb5/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/1815848/java-5-lines-code-with-explanation-in-de-37te/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/6817912/beats-100-java-code-easy-approach-by-moh-yy06/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/7019466/java-easy-solution-0ms-by-akashraj06-r8cp/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/3531372/100-faster100-lesser4-ways-to-solvepytho-jrsc/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/6962557/1523-count-odd-numbers-in-an-interval-ra-jg8u/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/6953469/count-odd-numbers-in-an-interval-range-b-5gvd/;;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/6843497/cracked-the-code-100-efficiency-java-c-p-hp2g/;;;=;==;=;=;

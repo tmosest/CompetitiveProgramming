@@ -1,0 +1,35 @@
+3295. Report Spam Message;=;=Medium;=;=public boolean reportSpam(String[] message, String[] bannedWords);=;=You are given an array of strings message and an array of strings bannedWords.
+
+An array of words is considered spam if there are at least two words in it that exactly match any word in bannedWords.
+
+Return true if the array message is spam, and false otherwise.
+
+ 
+
+Example 1:
+
+Input: message = ["hello","world","leetcode"], bannedWords = ["world","hello"]
+
+Output: true
+
+Explanation:
+
+The words "hello" and "world" from the message array both appear in the bannedWords array.
+
+Example 2:
+
+Input: message = ["hello","programming","fun"], bannedWords = ["world","programming","leetcode"]
+
+Output: false
+
+Explanation:
+
+Only one word from the message array ("programming") appears in the bannedWords array.
+
+ 
+
+Constraints:
+
+1 <= message.length, bannedWords.length <= 105
+1 <= message[i].length, bannedWords[i].length <= 15
+message[i] and bannedWords[i] consist only of lowercase English letters.;=;=https://leetcode.com/problems/report-spam-message/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/report-spam-message/solutions/5818250/using-hashset-in-java-by-shubhamyadav321-r29u/;;https://leetcode.com/problems/report-spam-message/solutions/7051533/leetcode-style-prompt-report-spam-messag-x9tn/;;https://leetcode.com/problems/report-spam-message/solutions/5819491/easiestfaster-lesser-cpython3javacpython-yo85/;;https://leetcode.com/problems/report-spam-message/solutions/5838146/two-lines-with-hashset-by-scala62-uh1n/;;https://leetcode.com/problems/report-spam-message/solutions/5819463/simple-java-code-by-abhinandannaik1717-er9d/;;https://leetcode.com/problems/report-spam-message/solutions/7223256/java-using-set-by-sandeepkc599-3ruf/;;https://leetcode.com/problems/report-spam-message/solutions/5820260/easy-java-solution-by-enkixly-fyyz/;;https://leetcode.com/problems/report-spam-message/solutions/5820121/simple-approach-without-using-much-brain-wm7b/;;https://leetcode.com/problems/report-spam-message/solutions/5818291/easy-java-solution-using-hashset-by-dhru-5nhb/;;https://leetcode.com/problems/report-spam-message/solutions/5824830/easy-beginner-friendly-set-solution-java-fab6/;;https://leetcode.com/problems/report-spam-message/solutions/5818561/detecting-spam-in-messages-using-banned-r5b28/;;https://leetcode.com/problems/report-spam-message/solutions/5819873/brute-force-java-solution-beats-time-bea-awom/;;https://leetcode.com/problems/report-spam-message/solutions/5818662/java-solution-using-hashset-beats-100-in-0ggh/;;https://leetcode.com/problems/report-spam-message/solutions/5818587/2-approaches-with-sort-constant-space-by-3zyz/;;https://leetcode.com/problems/report-spam-message/solutions/6592668/java-by-soumya_699-k50a/;;;=;==;=;=;

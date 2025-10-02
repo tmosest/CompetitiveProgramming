@@ -1,0 +1,26 @@
+300. Longest Increasing Subsequence;=;=Medium;=;=public int lengthOfLIS(int[] nums);=;=Given an integer array nums, return the length of the longest strictly increasing subsequence.
+
+ 
+
+Example 1:
+
+Input: nums = [10,9,2,5,3,7,101,18]
+Output: 4
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+Example 2:
+
+Input: nums = [0,1,0,3,2,3]
+Output: 4
+Example 3:
+
+Input: nums = [7,7,7,7,7,7,7]
+Output: 1
+ 
+
+Constraints:
+
+1 <= nums.length <= 2500
+-104 <= nums[i] <= 104
+ 
+
+Follow up: Can you come up with an algorithm that runs in O(n log(n)) time complexity?;=;=https://leetcode.com/problems/longest-increasing-subsequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-increasing-subsequence/solutions/6092590/video-keep-elements-in-ascending-order-b-m5w0/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/4509129/9954easy-solutionwith-explanation-by-mra-q5sf/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/74824/javapython-binary-search-onlogn-time-wit-7sbd/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/7083791/beats-10000-both-approach-brute-force-dp-31q0/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/7229226/longest-increasing-subsequence-lis-on2-d-ll6k/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/4509303/beats-100-binary-search-explained-with-v-38e3/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/7213676/java-solution-using-binary-search-by-nav-vbq0/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/74825/short-java-solution-using-dp-on-log-n-by-4qfn/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/7184510/easycode-by-aesdtfg-k8pe/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/4509201/beats-99-users-cjavapythonjavascript-2-d-tjek/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/6966046/99-beats-fast-and-clear-with-iterations-58zgz/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/7064722/find-longest-sequences-dynamic-prgrammin-payt/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/7165466/dp-bottom-up-tabulation-approach-c-java-eofcl/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/2164830/java-7-approaches-brute-to-binary-search-xu7q/;;https://leetcode.com/problems/longest-increasing-subsequence/solutions/7149636/easy-simple-java-solution-by-prakhar-131-29ie/;;;=;==;=;=;

@@ -1,0 +1,49 @@
+3265. Count Almost Equal Pairs I;=;=Medium;=;=public int countPairs(int[] nums);=;=You are given an array nums consisting of positive integers.
+
+We call two integers x and y in this problem almost equal if both integers can become equal after performing the following operation at most once:
+
+Choose either x or y and swap any two digits within the chosen number.
+Return the number of indices i and j in nums where i < j such that nums[i] and nums[j] are almost equal.
+
+Note that it is allowed for an integer to have leading zeros after performing an operation.
+
+ 
+
+Example 1:
+
+Input: nums = [3,12,30,17,21]
+
+Output: 2
+
+Explanation:
+
+The almost equal pairs of elements are:
+
+3 and 30. By swapping 3 and 0 in 30, you get 3.
+12 and 21. By swapping 1 and 2 in 12, you get 21.
+Example 2:
+
+Input: nums = [1,1,1,1,1]
+
+Output: 10
+
+Explanation:
+
+Every two elements in the array are almost equal.
+
+Example 3:
+
+Input: nums = [123,231]
+
+Output: 0
+
+Explanation:
+
+We cannot swap any two digits of 123 or 231 to reach the other.
+
+ 
+
+Constraints:
+
+2 <= nums.length <= 100
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/count-almost-equal-pairs-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5687053/easy-video-solution-critical-thinking-ho-wtip/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5686638/java-clean-solution-weekly-contest-by-sh-s0ak/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/7214061/java-37-ms-simple-modular-code-by-intbli-ufle/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5688252/solution-with-explanation-beats-100-easy-hn8w/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/6658727/beat-100-simple-java-solution-by-rohan_s-6a2n/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/6658724/beat-100-simple-java-solution-by-rohan_s-oerc/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5687024/super-simple-java-solu-by-harshsharma08-my9j/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5686840/a-different-approach-by-bhavesh18-ctlj/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5687641/must-see-100-beats-easy-to-understand-by-zv6b/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5686836/beats-100-users-java-very-easy-solution-jvoag/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5688938/java-solution200mssuper-bruteforce-by-ra-7xx3/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5686743/java-solution-beats-100-by-pavankumarcha-d93y/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5879160/intuitive-easy-to-understand-contest-412-vtmq/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5686679/beats-10000-count-almostequal-pairs-i-by-ottf/;;https://leetcode.com/problems/count-almost-equal-pairs-i/solutions/5692415/java-clean-sol-beginner-friendly-beats-1-wdej/;;;=;==;=;=;

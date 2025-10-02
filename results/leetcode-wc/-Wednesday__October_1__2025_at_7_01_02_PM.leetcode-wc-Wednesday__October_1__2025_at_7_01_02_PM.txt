@@ -1,0 +1,25 @@
+1197. Minimum Knight Moves;=;=Medium;=;=public int minKnightMoves(int x, int y);=;=In an infinite chess board with coordinates from -infinity to +infinity, you have a knight at square [0, 0].
+
+A knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.
+
+
+Return the minimum number of steps needed to move the knight to the square [x, y]. It is guaranteed the answer exists.
+
+ 
+
+Example 1:
+
+Input: x = 2, y = 1
+Output: 1
+Explanation: [0, 0] ? [2, 1]
+Example 2:
+
+Input: x = 5, y = 5
+Output: 4
+Explanation: [0, 0] ? [2, 1] ? [4, 2] ? [3, 4] ? [5, 5]
+ 
+
+Constraints:
+
+-300 <= x, y <= 300
+0 <= |x| + |y| <= 300;=;=https://leetcode.com/problems/minimum-knight-moves/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-knight-moves/solutions/2096373/how-to-approach-this-in-an-interview-by-84161/;;https://leetcode.com/problems/minimum-knight-moves/solutions/1422207/java-clean-concise-optimal-code-breadth-egxs4/;;https://leetcode.com/problems/minimum-knight-moves/solutions/388191/java-bfs-beats-100-explained-by-gthor10-qtxk/;;https://leetcode.com/problems/minimum-knight-moves/solutions/513243/java-on-simple-solution-no-bfsmath-by-uh-gyfw/;;https://leetcode.com/problems/minimum-knight-moves/solutions/571802/java-dp-clean-by-danyh-jpyc/;;https://leetcode.com/problems/minimum-knight-moves/solutions/2661495/java-why-do-we-have-305-in-the-seen-arra-kqeh/;;https://leetcode.com/problems/minimum-knight-moves/solutions/396026/java-breadth-first-search-commented-by-g-xvgc/;;https://leetcode.com/problems/minimum-knight-moves/solutions/387066/java-bfs-by-dpbacteria-jn99/;;https://leetcode.com/problems/minimum-knight-moves/solutions/541597/java-a-search-algorithm-very-fast-by-vor-7tob/;;https://leetcode.com/problems/minimum-knight-moves/solutions/1210452/java-bfs-with-board-symmetry-by-therumin-0qkc/;;https://leetcode.com/problems/minimum-knight-moves/solutions/2096074/java-97-a-algorithm-solution-by-cacotopi-nu79/;;https://leetcode.com/problems/minimum-knight-moves/solutions/6645693/bfs-by-labao-i3zg/;;https://leetcode.com/problems/minimum-knight-moves/solutions/6254389/superfast-greedy-bfs-approach-by-yogeshk-cj0h/;;https://leetcode.com/problems/minimum-knight-moves/solutions/6073273/very-well-explained-intuitive-and-effici-hits/;;https://leetcode.com/problems/minimum-knight-moves/solutions/5539221/not-so-efficient-dfs-by-jovamilenkovic-yjuf/;;;=;==;=;=;

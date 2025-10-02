@@ -1,0 +1,28 @@
+847. Shortest Path Visiting All Nodes;=;=Hard;=;=public int shortestPathLength(int[][] graph);=;=You have an undirected, connected graph of n nodes labeled from 0 to n - 1. You are given an array graph where graph[i] is a list of all the nodes connected with node i by an edge.
+
+Return the length of the shortest path that visits every node. You may start and stop at any node, you may revisit nodes multiple times, and you may reuse edges.
+
+ 
+
+Example 1:
+
+
+Input: graph = [[1,2,3],[0],[0],[0]]
+Output: 4
+Explanation: One possible path is [1,0,2,0,3]
+Example 2:
+
+
+Input: graph = [[1],[0,2,4],[1,3,4],[2],[1,2]]
+Output: 4
+Explanation: One possible path is [0,1,4,2,3]
+ 
+
+Constraints:
+
+n == graph.length
+1 <= n <= 12
+0 <= graph[i].length < n
+graph[i] does not contain i.
+If graph[a] contains b, then graph[b] contains a.
+The input graph is always connected.;=;=https://leetcode.com/problems/shortest-path-visiting-all-nodes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4053514/9474-bfs-bitmask-by-vanamsen-vm4q/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4053595/9792-bfs-bitmask-explained-intuition-com-c4xn/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4054619/easy-solution-beginner-friendly-line-by-t6hyq/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4053814/for-people-who-dont-understand-bitmask-b-945g/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4056637/efficient-algorithm-for-shortest-path-vi-bfdp/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/1800328/java-bfs-with-comments-clean-code-by-log-o461/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4053647/9828-with-proper-and-concise-explanation-ljim/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/1536112/java-7626-simple-code-with-explanation-u-3c1d/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/5728151/run-a-n-person-race-multi-source-bfs-alt-udwj/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/836630/java-bfs-solution-by-jianhuilin1124-5ktc/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/277082/java-bfs-solution-beats-9898-with-explan-55lj/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4053967/best-java-solution-beats-100-by-ravikuma-61g2/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4053668/simple-java-solution-using-queue-bfs-and-j4lt/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4058762/this-is-all-you-need-to-understand-this-625j7/;;https://leetcode.com/problems/shortest-path-visiting-all-nodes/solutions/4056725/847-shortest-path-visiting-all-nodes-by-9pl86/;;;=;==;=;=;

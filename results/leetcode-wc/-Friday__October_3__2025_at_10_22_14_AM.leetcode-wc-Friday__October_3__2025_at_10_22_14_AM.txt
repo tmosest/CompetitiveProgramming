@@ -1,0 +1,38 @@
+3675. Minimum Operations to Transform String;=;=Medium;=;=public int minOperations(String s);=;=You are given a string s consisting only of lowercase English letters.
+
+You can perform the following operation any number of times (including zero):
+
+Choose any character c in the string and replace every occurrence of c with the next lowercase letter in the English alphabet.
+
+Return the minimum number of operations required to transform s into a string consisting of only 'a' characters.
+
+Note: Consider the alphabet as circular, thus 'a' comes after 'z'.
+
+ 
+
+Example 1:
+
+Input: s = "yz"
+
+Output: 2
+
+Explanation:
+
+Change 'y' to 'z' to get "zz".
+Change 'z' to 'a' to get "aa".
+Thus, the answer is 2.
+Example 2:
+
+Input: s = "a"
+
+Output: 0
+
+Explanation:
+
+The string "a" only consists of 'a'??????? characters. Thus, the answer is 0.
+ 
+
+Constraints:
+
+1 <= s.length <= 5 * 105
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/minimum-operations-to-transform-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7163303/simple-solution-beginner-friendly-code-d-qyv5/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7163313/javacpython-farthest-from-a-by-lee215-kjac/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7163289/greedy-hashmap-explained-in-depth-cpytho-81ge/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7163513/the-max-distance-trick-beats-100-shortes-sccv/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7163700/easiest-solution-beats-100-by-arpitkr0-8f6z/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7163545/beat-100-efficient-greedy-approach-on-o1-8f9p/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7163470/simple-java-by-user4769vd-ghfx/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7166380/clear-explanation-transform-string-to-a-qiw42/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7165326/simple-java-solution-using-frequency-arr-j85c/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7164247/simple-and-easy-by-younus07-otmv/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7164217/using-character-function-and-maths-by-de-9f9n/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7163337/easy-solution-java-python-c-beats-10000-qiaiv/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7166030/minimum-operations-by-sorting-by-shreya_-2bet/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7163297/solution-javabeats-100-0-ms-on-by-harshg-mbot/;;https://leetcode.com/problems/minimum-operations-to-transform-string/solutions/7164954/best-solution-beat-100-complexity-java-c-vc92/;;;=;==;=;=;

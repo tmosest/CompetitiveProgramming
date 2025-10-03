@@ -1,0 +1,23 @@
+2540. Minimum Common Value;=;=Easy;=;=public int getCommon(int[] nums1, int[] nums2);=;=Given two integer arrays nums1 and nums2, sorted in non-decreasing order, return the minimum integer common to both arrays. If there is no common integer amongst nums1 and nums2, return -1.
+
+Note that an integer is said to be common to nums1 and nums2 if both arrays have at least one occurrence of that integer.
+
+ 
+
+Example 1:
+
+Input: nums1 = [1,2,3], nums2 = [2,4]
+Output: 2
+Explanation: The smallest element common to both arrays is 2, so we return 2.
+Example 2:
+
+Input: nums1 = [1,2,3,6], nums2 = [2,3,4,5]
+Output: 2
+Explanation: There are two common elements in the array 2 and 3 out of which 2 is the smallest, so 2 is returned.
+ 
+
+Constraints:
+
+1 <= nums1.length, nums2.length <= 105
+1 <= nums1[i], nums2[j] <= 109
+Both nums1 and nums2 are sorted in non-decreasing order.;=;=https://leetcode.com/problems/minimum-common-value/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-common-value/solutions/4845123/4-method-simple-cjavapython-with-explana-isvk/;;https://leetcode.com/problems/minimum-common-value/solutions/3082119/on-time-o1-space-without-hash-map-very-s-xzbv/;;https://leetcode.com/problems/minimum-common-value/solutions/4845109/simple-and-easy-approach-without-hashtab-fzsn/;;https://leetcode.com/problems/minimum-common-value/solutions/7028258/simple-solution-using-two-pointers-easy-4b4o9/;;https://leetcode.com/problems/minimum-common-value/solutions/7096194/easy-code-for-solve-this-problem-by-4_k4-yq5l/;;https://leetcode.com/problems/minimum-common-value/solutions/7002084/simple-javac-soln-map-by-rjv01-tj79/;;https://leetcode.com/problems/minimum-common-value/solutions/6983419/pointer-twins-meet-at-the-smallest-commo-1d4g/;;https://leetcode.com/problems/minimum-common-value/solutions/4845456/java-easy-solution-beats-100-no-hashmap-c7veg/;;https://leetcode.com/problems/minimum-common-value/solutions/3973578/java-10000-beats-0n-pointers-easy-by-sau-apqe/;;https://leetcode.com/problems/minimum-common-value/solutions/5561971/simple-java-c-code-by-abhinandannaik1717-86nl/;;https://leetcode.com/problems/minimum-common-value/solutions/4845131/2-different-approaches-java-easy-to-unde-xkdb/;;https://leetcode.com/problems/minimum-common-value/solutions/3082047/java-two-pointers-explained-by-sourin_br-p4us/;;https://leetcode.com/problems/minimum-common-value/solutions/6436850/leetcodedaybyday-beats-100-with-c-and-be-gerv/;;https://leetcode.com/problems/minimum-common-value/solutions/4845916/java-solution-explained-in-hindi-by-the_-qt17/;;https://leetcode.com/problems/minimum-common-value/solutions/3478262/easy-on-java-code-please-upvote-by-baibh-oszx/;;;=;==;=;=;

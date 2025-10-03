@@ -1,0 +1,32 @@
+1740. Find Distance in a Binary Tree;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=Given the root of a binary tree and two integers p and q, return the distance between the nodes of value p and value q in the tree.
+
+The distance between two nodes is the number of edges on the path from one to the other.
+
+ 
+
+Example 1:
+
+
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 0
+Output: 3
+Explanation: There are 3 edges between 5 and 0: 5-3-1-0.
+Example 2:
+
+
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 7
+Output: 2
+Explanation: There are 2 edges between 5 and 7: 5-2-7.
+Example 3:
+
+
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 5
+Output: 0
+Explanation: The distance between a node and itself is 0.
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 104].
+0 <= Node.val <= 109
+All Node.val are unique.
+p and q are values in the tree.;=;=https://leetcode.com/problems/find-distance-in-a-binary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/1556612/easy-to-understand-lca-java-100-by-luoyi-mrtl/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/4754516/recursive-height-search-by-hello-world-1ikd/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/1974764/clean-java-dfs-and-lca-100-fast-by-darkr-v2gq/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/1207092/clean-code-java-on-solution-easy-to-unde-9w7p/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/6840183/easy-solution-using-lca-by-abhignaogiral-5406/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/5498453/1-ms-beats-9422-by-songshengtao1-exds/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/5459266/java-solution-w-lca-approach-by-krishnam-ml52/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/5307414/java-by-vharshal1994-5cfy/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/6090357/build-graph-dfs-search-target-with-depth-rahc/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/6029727/java-easy-simple-with-explain-by-khaitq-cun6/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/5871638/simple-java-solution-by-sakshikishore-xdvl/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/5506738/java-solution-by-rimberse-5k49/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/5481250/find-lca-and-then-search-java-solution-b-udc3/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/5480639/get-lca-and-return-distance-from-lca-by-2u2jm/;;https://leetcode.com/problems/find-distance-in-a-binary-tree/solutions/5231520/lca-with-recursion-to-get-distance-by-ga-cpy4/;;;=;==;=;=;

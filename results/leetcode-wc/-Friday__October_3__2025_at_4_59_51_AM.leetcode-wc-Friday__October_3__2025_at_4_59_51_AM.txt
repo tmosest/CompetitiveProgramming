@@ -1,0 +1,29 @@
+2108. Find First Palindromic String in the Array;=;=Easy;=;=public String firstPalindrome(String[] words);=;=Given an array of strings words, return the first palindromic string in the array. If there is no such string, return an empty string "".
+
+A string is palindromic if it reads the same forward and backward.
+
+ 
+
+Example 1:
+
+Input: words = ["abc","car","ada","racecar","cool"]
+Output: "ada"
+Explanation: The first string that is palindromic is "ada".
+Note that "racecar" is also palindromic, but it is not the first.
+Example 2:
+
+Input: words = ["notapalindrome","racecar"]
+Output: "racecar"
+Explanation: The first and only string that is palindromic is "racecar".
+Example 3:
+
+Input: words = ["def","ghi"]
+Output: ""
+Explanation: There are no palindromic strings, so the empty string is returned.
+ 
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length <= 100
+words[i] consists only of lowercase English letters.;=;=https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/4717844/beat-100-2-simple-solution-c-java-python-6xlu/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7227058/java-first-palindrome-in-array-2-pointer-pjuh/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7200275/beginner-friendly-easy-to-understand-jav-qxao/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7213815/first-palindromic-string-in-an-arrayjava-8vyo/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7070929/easy-by-dima853-ed1c/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/4717921/beats-100-users-cjavapythonjavascript-2-a4vr0/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/4719691/beats-100-users-easy-understood-solution-yymz/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7149032/easy-two-pointer-by-sivaaleet-8vae/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7149038/easy-two-pointer1ms-by-sivaaleet-vj9u/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7149003/easy-using-stringbuilder-by-sivaaleet-eg4a/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7016331/easy-java-solution-beats-100-by-rajdeep0-vkr1/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7004367/simple-beats-100-0-ms-java-by-manoharan1-mz6v/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/4717857/100-faster-by-cs_monks-hl25/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7111550/first-palindrome-finder-two-pointers-osl-dc8x/;;https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/7096622/beats-100-java-codeeasy-to-understand-by-8dtw/;;;=;==;=;=;

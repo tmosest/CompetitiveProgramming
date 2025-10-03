@@ -1,0 +1,20 @@
+1305. All Elements in Two Binary Search Trees;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=Given two binary search trees root1 and root2, return a list containing all the integers from both trees sorted in ascending order.
+
+ 
+
+Example 1:
+
+
+Input: root1 = [2,1,4], root2 = [1,0,3]
+Output: [0,1,1,2,3,4]
+Example 2:
+
+
+Input: root1 = [1,null,8], root2 = [8,1]
+Output: [1,1,8,8]
+ 
+
+Constraints:
+
+The number of nodes in each tree is in the range [0, 5000].
+-105 <= Node.val <= 105;=;=https://leetcode.com/problems/all-elements-in-two-binary-search-trees/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/1720210/javacpython-a-very-very-detailed-explana-x2fx/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/7188704/merge-sort-a-straightforward-dfs-approac-qfk6/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/7093570/easy-code-in-java-by-yasl1-tt6q/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/7131865/easy-java-solution-recursion-by-teena_s-l5om/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/7106396/most-optimized-java-dfs-beginner-freindl-q65l/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/7106481/optimal-approach-in-order-traversal-by-s-ujkf/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/7123599/easy-java-solution-with-simple-explanati-itv3/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/7072982/easiest-solution-in-java-beats-9090-by-r-f42x/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/7065671/most-simple-beginner-approach-java-easie-lvax/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/1720739/de-serialize-trees-and-sorting-the-array-qrh7/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/6867459/easiest-solution-in-java-by-hitarthshah2-hgor/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/1720673/java-one-pass-algorithm-by-nam_22-18lr/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/6761658/morris-traversal-java-solution-must-try-dncxu/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/1361736/java-2-easy-approach-with-explanation-st-oaae/;;https://leetcode.com/problems/all-elements-in-two-binary-search-trees/solutions/5668709/easiestfaster-lesser-cpython3javacpython-g7mq/;;;=;==;=;=;

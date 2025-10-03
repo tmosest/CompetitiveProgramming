@@ -1,0 +1,48 @@
+3612. Process String with Special Operations I;=;=Medium;=;=public String processStr(String s);=;=You are given a string s consisting of lowercase English letters and the special characters: *, #, and %.
+
+Build a new string result by processing s according to the following rules from left to right:
+
+If the letter is a lowercase English letter append it to result.
+A '*' removes the last character from result, if it exists.
+A '#' duplicates the current result and appends it to itself.
+A '%' reverses the current result.
+Return the final string result after processing all characters in s.
+
+ 
+
+Example 1:
+
+Input: s = "a#b%*"
+
+Output: "ba"
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'a'	Append 'a'	"a"
+1	'#'	Duplicate result	"aa"
+2	'b'	Append 'b'	"aab"
+3	'%'	Reverse result	"baa"
+4	'*'	Remove the last character	"ba"
+Thus, the final result is "ba".
+
+Example 2:
+
+Input: s = "z*#"
+
+Output: ""
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'z'	Append 'z'	"z"
+1	'*'	Remove the last character	""
+2	'#'	Duplicate the string	""
+Thus, the final result is "".
+
+ 
+
+Constraints:
+
+1 <= s.length <= 20
+s consists of only lowercase English letters and special characters *, #, and %.;=;=https://leetcode.com/problems/process-string-with-special-operations-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6951614/very-easy-code-beginner-friendly-brute-a-u0ic/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/7164451/java-easy-solution-by-shreyagarg63-n1sy/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6954702/faster-lesser-cpython3javacpythoncexplai-znmc/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6960265/very-easy-detailed-solution-java-c-by-ch-7vij/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6969279/java-on-one-pass-string-processor-using-mnq0u/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/7137921/java-by-anurag1320-9myz/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6951574/beats-10000-simple-approach-with-intuiti-cso8/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6990878/javabeat-100-by-reshu_upadhyay-z63p/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6957435/stringbuilder-easy-code-on2-by-ankith_ku-sptd/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6951661/process-string-with-special-characters-j-bwwm/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6954503/stringbuilder-java-brute-force-by-mhr_22-sd3c/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6958666/easy-java-solution-bears-100-of-users-on-xvzf/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/6951595/easy-solution-using-java-beats-100-by-ra-p4j3/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/7232874/string-manipulation-solution-in-java-wit-spga/;;https://leetcode.com/problems/process-string-with-special-operations-i/solutions/7224447/simulation-with-follow-up-question-beats-4oa4/;;;=;==;=;=;

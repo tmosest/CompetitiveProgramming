@@ -1,0 +1,38 @@
+1804. Implement Trie II (Prefix Tree);=;=Medium;=;=Trie     public Trie()                     public void insert(String word)                     public int countWordsEqualTo(String word);=;=A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.
+
+Implement the Trie class:
+
+Trie() Initializes the trie object.
+void insert(String word) Inserts the string word into the trie.
+int countWordsEqualTo(String word) Returns the number of instances of the string word in the trie.
+int countWordsStartingWith(String prefix) Returns the number of strings in the trie that have the string prefix as a prefix.
+void erase(String word) Erases the string word from the trie.
+ 
+
+Example 1:
+
+Input
+["Trie", "insert", "insert", "countWordsEqualTo", "countWordsStartingWith", "erase", "countWordsEqualTo", "countWordsStartingWith", "erase", "countWordsStartingWith"]
+[[], ["apple"], ["apple"], ["apple"], ["app"], ["apple"], ["apple"], ["app"], ["apple"], ["app"]]
+Output
+[null, null, null, 2, 2, null, 1, 1, null, 0]
+
+Explanation
+Trie trie = new Trie();
+trie.insert("apple");               // Inserts "apple".
+trie.insert("apple");               // Inserts another "apple".
+trie.countWordsEqualTo("apple");    // There are two instances of "apple" so return 2.
+trie.countWordsStartingWith("app"); // "app" is a prefix of "apple" so return 2.
+trie.erase("apple");                // Erases one "apple".
+trie.countWordsEqualTo("apple");    // Now there is only one instance of "apple" so return 1.
+trie.countWordsStartingWith("app"); // return 1
+trie.erase("apple");                // Erases "apple". Now the trie is empty.
+trie.countWordsStartingWith("app"); // return 0
+ 
+
+Constraints:
+
+1 <= word.length, prefix.length <= 2000
+word and prefix consist only of lowercase English letters.
+At most 3 * 104 calls in total will be made to insert, countWordsEqualTo, countWordsStartingWith, and erase.
+It is guaranteed that for any function call to erase, the string word will exist in the trie.;=;=https://leetcode.com/problems/implement-trie-ii-prefix-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/1126702/java-trie-with-comments-by-rakhmedovrs-bopd/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/3158793/simple-java-implementation-with-example-1hsh6/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/1496208/java-simple-by-prashant404-ipcs/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/1866599/trie-solution-based-on-implement-trie-i-nksty/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/7001030/java-trie-with-hashmap-by-jingjie2-ljm2/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/6066218/java-easy-solution-with-nodes-cleanup-by-hn6g/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/6004346/java-trie-implementation-by-aqibjaved-kweg/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/6004342/trie-implementation-using-java-by-aqibja-15rb/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/5983248/java-trie-based-solution-clean-code-with-shea/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/5851389/implement-trie-interface-without-trie-sa-lyvh/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/5846725/java-trie-by-lxyustc-v7zy/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/5493988/trie-implementation-easy-approach-beat-8-xjh1/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/5320837/java-by-vharshal1994-c7k4/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/4467996/java-trie-tastic-text-handling-by-vrk199-yrm7/;;https://leetcode.com/problems/implement-trie-ii-prefix-tree/solutions/4684462/for-my-own-reference-not-clean-code-by-l-letj/;;;=;==;=;=;

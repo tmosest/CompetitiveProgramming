@@ -1,0 +1,26 @@
+1165. Single-Row Keyboard;=;=Easy;=;=public int calculateTime(String keyboard, String word);=;=There is a special keyboard with all keys in a single row.
+
+Given a string keyboard of length 26 indicating the layout of the keyboard (indexed from 0 to 25). Initially, your finger is at index 0. To type a character, you have to move your finger to the index of the desired character. The time taken to move your finger from index i to index j is |i - j|.
+
+You want to type a string word. Write a function to calculate how much time it takes to type it with one finger.
+
+ 
+
+Example 1:
+
+Input: keyboard = "abcdefghijklmnopqrstuvwxyz", word = "cba"
+Output: 4
+Explanation: The index moves from 0 to 2 to write 'c' then to 1 to write 'b' then to 0 again to write 'a'.
+Total time = 2 + 1 + 1 = 4. 
+Example 2:
+
+Input: keyboard = "pqrstuvwxyzabcdefghijklmno", word = "leetcode"
+Output: 73
+ 
+
+Constraints:
+
+keyboard.length == 26
+keyboard contains each English lowercase letter exactly once in some order.
+1 <= word.length <= 104
+word[i] is an English lowercase letter.;=;=https://leetcode.com/problems/single-row-keyboard/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/single-row-keyboard/solutions/366421/java-array-no-maps-beats-100-clean-code-568g9/;;https://leetcode.com/problems/single-row-keyboard/solutions/1423317/java-easy-understanding-by-lastdoctor-ikvk/;;https://leetcode.com/problems/single-row-keyboard/solutions/2865765/java-map-fast-solution-with-explanation-unskn/;;https://leetcode.com/problems/single-row-keyboard/solutions/2868115/java-solution-by-vishrutss-cgwx/;;https://leetcode.com/problems/single-row-keyboard/solutions/1088314/java-hashmap-solution-by-learn4fun-x3ra/;;https://leetcode.com/problems/single-row-keyboard/solutions/367089/java-beats-100-runtime-and-memory-by-jam-fs4a/;;https://leetcode.com/problems/single-row-keyboard/solutions/655773/java-o1-space-oword-length-time-by-mlive-nuq9/;;https://leetcode.com/problems/single-row-keyboard/solutions/404744/3ms-java-solution-by-ssinha7-tfnw/;;https://leetcode.com/problems/single-row-keyboard/solutions/6743382/java-by-kjghhj-1sxk/;;https://leetcode.com/problems/single-row-keyboard/solutions/934676/java-simple-solution-by-nicolasroony-06bg/;;https://leetcode.com/problems/single-row-keyboard/solutions/6689281/not-optimal-but-easy-to-understand-by-pr-jo03/;;https://leetcode.com/problems/single-row-keyboard/solutions/6865597/java-easy-by-ajay_bhat-hn1p/;;https://leetcode.com/problems/single-row-keyboard/solutions/5520964/simple-hash-map-java-solution-by-lakhans-dyom/;;https://leetcode.com/problems/single-row-keyboard/solutions/5069347/java-using-string-by-fnv-vv4r/;;https://leetcode.com/problems/single-row-keyboard/solutions/4967924/explained-in-easy-way-with-comment-for-e-i85p/;;;=;==;=;=;

@@ -1,0 +1,34 @@
+2257. Count Unguarded Cells in the Grid;=;=Medium;=;=public int countUnguarded(int m, int n, int[][] guards, int[][] walls);=;=You are given two integers m and n representing a 0-indexed m x n grid. You are also given two 2D integer arrays guards and walls where guards[i] = [rowi, coli] and walls[j] = [rowj, colj] represent the positions of the ith guard and jth wall respectively.
+
+A guard can see every cell in the four cardinal directions (north, east, south, or west) starting from their position unless obstructed by a wall or another guard. A cell is guarded if there is at least one guard that can see it.
+
+Return the number of unoccupied cells that are not guarded.
+
+ 
+
+Example 1:
+
+
+Input: m = 4, n = 6, guards = [[0,0],[1,1],[2,3]], walls = [[0,1],[2,2],[1,4]]
+Output: 7
+Explanation: The guarded and unguarded cells are shown in red and green respectively in the above diagram.
+There are a total of 7 unguarded cells, so we return 7.
+Example 2:
+
+
+Input: m = 3, n = 3, guards = [[1,1]], walls = [[0,1],[1,0],[2,1],[1,2]]
+Output: 4
+Explanation: The unguarded cells are shown in green in the above diagram.
+There are a total of 4 unguarded cells, so we return 4.
+ 
+
+Constraints:
+
+1 <= m, n <= 105
+2 <= m * n <= 105
+1 <= guards.length, walls.length <= 5 * 104
+2 <= guards.length + walls.length <= m * n
+guards[i].length == walls[j].length == 2
+0 <= rowi, rowj < m
+0 <= coli, colj < n
+All the positions in guards and walls are unique.;=;=https://leetcode.com/problems/count-unguarded-cells-in-the-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6067031/beats-100-video-full-explain-3-approache-q1b8/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6068074/very-very-easy-stepwise-illustration-ful-ist4/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/1994547/java-simulation-by-aaveshk-i8vt/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6067648/dfs-approach-simplified-approach-by-arun-qil7/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6067357/array-solution-for-leetcode2257-by-samir-bjmd/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6068103/title-count-unguarded-cells-in-the-grid-tpdjk/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6067765/beginner-friendly-simple-javac-solution-dn2s3/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6067553/guardians-of-the-grid-whos-watching-whom-wzzs/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6067347/easy-to-understand-by-21eca01-6whk/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6067110/simple-pyjava-solution-explained-in-deta-qbha/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6069017/easiestfaster-lesser-cpython3javacpython-yhd9/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6067392/java-solution-for-count-unguarded-cells-cyp62/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6069025/count-unguarded-cells-in-the-grid-by-man-utz2/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6069267/java-guard-building-greedy-100-faster-by-3eaj/;;https://leetcode.com/problems/count-unguarded-cells-in-the-grid/solutions/6067420/easiest-solution-grid-using-simulation-2-2m1p/;;;=;==;=;=;

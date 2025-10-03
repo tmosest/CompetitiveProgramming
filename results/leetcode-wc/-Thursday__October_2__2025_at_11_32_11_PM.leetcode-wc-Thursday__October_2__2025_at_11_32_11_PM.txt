@@ -1,0 +1,30 @@
+2244. Minimum Rounds to Complete All Tasks;=;=Medium;=;=public int minimumRounds(int[] tasks);=;=You are given a 0-indexed integer array tasks, where tasks[i] represents the difficulty level of a task. In each round, you can complete either 2 or 3 tasks of the same difficulty level.
+
+Return the minimum rounds required to complete all the tasks, or -1 if it is not possible to complete all the tasks.
+
+ 
+
+Example 1:
+
+Input: tasks = [2,2,3,3,2,4,4,4,4,4]
+Output: 4
+Explanation: To complete all the tasks, a possible plan is:
+- In the first round, you complete 3 tasks of difficulty level 2. 
+- In the second round, you complete 2 tasks of difficulty level 3. 
+- In the third round, you complete 3 tasks of difficulty level 4. 
+- In the fourth round, you complete 2 tasks of difficulty level 4.  
+It can be shown that all the tasks cannot be completed in fewer than 4 rounds, so the answer is 4.
+Example 2:
+
+Input: tasks = [2,3,3]
+Output: -1
+Explanation: There is only 1 task of difficulty level 2, but in each round, you can only complete either 2 or 3 tasks of the same difficulty level. Hence, you cannot complete all the tasks, and the answer is -1.
+ 
+
+Constraints:
+
+1 <= tasks.length <= 105
+1 <= tasks[i] <= 109
+ 
+
+Note: This question is the same as 2870: Minimum Number of Operations to Make Array Empty.;=;=https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/1955622/javacpython-sum-up-freq-2-3-by-lee215-7hjl/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/7179508/simple-java-solution-by-tejassinkar24-0tfg/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2995202/java-solution-with-2-approach-by-sarthak-t0ja/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2995198/java-on-hashmap-by-dee_coder01-nha7/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2994822/java-code-using-hash-map-by-deleted_user-ishe/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/7113066/simple-java-solution-by-shubhamxgupta-iw93/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/1956121/java-on-easy-solution-with-detailed-expl-zj3h/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/7068678/simple-and-easy-solution-c-python-java-b-l7lo/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2996053/java-hashmap-with-explanation-by-sachinb-b8jg/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/7229593/on-by-gitchuan-p3px/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2994718/c-java-python-map-w-comments-by-lraml-d7vk/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/1955377/greedy-every-number-is-a-sum-of-2s-and-3-fq2v/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2995879/tm-9896-9826-java-solution-easy-by-kaila-yh47/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2997700/complete-all-task-mathematical-approach-gxr8e/;;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2996311/java-5-solutions-by-conchwu-drp5/;;;=;==;=;=;

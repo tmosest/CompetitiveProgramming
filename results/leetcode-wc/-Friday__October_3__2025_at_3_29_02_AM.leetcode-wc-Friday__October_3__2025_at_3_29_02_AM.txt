@@ -1,0 +1,51 @@
+3698. Split Array With Minimum Difference;=;=Medium;=;=public long splitArray(int[] nums);=;=You are given an integer array nums.
+
+Split the array into exactly two subarrays, left and right, such that left is strictly increasing and right is strictly decreasing.
+
+Return the minimum possible absolute difference between the sums of left and right. If no valid split exists, return -1.
+
+ 
+
+Example 1:
+
+Input: nums = [1,3,2]
+
+Output: 2
+
+Explanation:
+
+i	left	right	Validity	left sum	right sum	Absolute difference
+0	[1]	[3, 2]	Yes	1	5	|1 - 5| = 4
+1	[1, 3]	[2]	Yes	4	2	|4 - 2| = 2
+Thus, the minimum absolute difference is 2.
+
+Example 2:
+
+Input: nums = [1,2,4,3]
+
+Output: 4
+
+Explanation:
+
+i	left	right	Validity	left sum	right sum	Absolute difference
+0	[1]	[2, 4, 3]	No	1	9	-
+1	[1, 2]	[4, 3]	Yes	3	7	|3 - 7| = 4
+2	[1, 2, 4]	[3]	Yes	7	3	|7 - 3| = 4
+Thus, the minimum absolute difference is 4.
+
+Example 3:
+
+Input: nums = [3,1,2]
+
+Output: -1
+
+Explanation:
+
+No valid split exists, so the answer is -1.
+
+ 
+
+Constraints:
+
+2 <= nums.length <= 105
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/split-array-with-minimum-difference/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7230226/beats-100two-pointercjavaeasy-to-underst-utte/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7229895/lc-3698-easy-on-explained-solution-c-jav-1nam/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7229845/simple-solution-by-fk3tv5uwka-8clo/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7242741/java-solution-easy-to-understand-by-jerr-41wl/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7230091/optimal-greedy-split-of-array-ono1-996-a-csqe/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7230164/simulation-by-jetinbiraj-f777/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7231903/clean-code-by-smileysuneet-lbd9/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7234486/super-easy-intuitive-solution-beginner-f-8a7s/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7230423/simple-and-easy-solution-no-prefix-sum-o-4ciy/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7229948/simple-solution-easy-to-understand-by-_y-g6z1/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7230934/precomputation-made-efficient-detailed-e-9btd/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7230298/simple-easy-to-understand-prefix-suffix-qg3u1/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7230069/the-most-optimal-on-time-o1-space-soluti-i2mo/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7229952/beats-100-easy-solution-using-for-loop-j-gvrj/;;https://leetcode.com/problems/split-array-with-minimum-difference/solutions/7229880/simple-solution-using-java-by-rajat9412-2swy/;;;=;==;=;=;

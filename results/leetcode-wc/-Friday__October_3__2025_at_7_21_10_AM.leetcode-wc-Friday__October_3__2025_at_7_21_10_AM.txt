@@ -1,0 +1,25 @@
+132. Palindrome Partitioning II;=;=Hard;=;=public int minCut(String s);=;=Given a string s, partition s such that every substring of the partition is a palindrome.
+
+Return the minimum cuts needed for a palindrome partitioning of s.
+
+ 
+
+Example 1:
+
+Input: s = "aab"
+Output: 1
+Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cut.
+Example 2:
+
+Input: s = "a"
+Output: 0
+Example 3:
+
+Input: s = "ab"
+Output: 1
+ 
+
+Constraints:
+
+1 <= s.length <= 2000
+s consists of lowercase English letters only.;=;=https://leetcode.com/problems/palindrome-partitioning-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/palindrome-partitioning-ii/solutions/7243066/minimum-palindromic-partition-two-dp-app-5l0f/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/7238067/2-solutions-dp-solution-expand-around-ce-4j6l/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/42213/easiest-java-dp-solution-9736-by-yavinci-nfpe/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/7197476/clear-explanation-manachers-algorithm-vi-6nwm/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/7186752/simple-easy-to-understand-solution-by-sa-dbtj/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/1267844/java-recursion-memoization-optimized-mat-mdek/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/6781656/3-approaches-simple-solution-java-by-mug-mmoo/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/6984037/optimal-palindrome-cuts-using-dp-on2-sol-7rz7/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/6988833/easiest-solution-intutive-beginner-frien-kj1b/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/6677995/beginner-friendly-step-by-step-walk-thro-06j7/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/42214/java-on2-dp-solution-by-jeantimex-ueua/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/5274798/palindrome-pattern-by-dixon_n-dmb9/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/7238850/accepted-recursive-solution-by-varun-agg-0uom/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/6508835/onn-java-memoization-recursive-easiest-d-yeft/;;https://leetcode.com/problems/palindrome-partitioning-ii/solutions/3629242/getting-tle-on-last-testcase-36-37-testc-6z0u/;;;=;==;=;=;

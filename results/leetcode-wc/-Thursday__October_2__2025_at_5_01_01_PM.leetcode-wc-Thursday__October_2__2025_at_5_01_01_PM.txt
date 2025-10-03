@@ -1,0 +1,25 @@
+407. Trapping Rain Water II;=;=Hard;=;=public int trapRainWater(int[][] heightMap)         // Direction arrays        int[] dRow =  0, 0, -1, 1 ;        int[] dCol =  -1, 1, 0, 0 ;        int numOfRows = heightMap.length;        int numOfCols = heightMap[0].length;        boolean[][] visited = new boolean[numOfRows][numOfCols];        // Priority queue (min-heap) to process boundary cells in increasing height order;=;=Given an m x n integer matrix heightMap representing the height of each unit cell in a 2D elevation map, return the volume of water it can trap after raining.
+
+ 
+
+Example 1:
+
+
+Input: heightMap = [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]
+Output: 4
+Explanation: After the rain, water is trapped between the blocks.
+We have two small ponds 1 and 3 units trapped.
+The total volume of water trapped is 4.
+Example 2:
+
+
+Input: heightMap = [[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]
+Output: 10
+ 
+
+Constraints:
+
+m == heightMap.length
+n == heightMap[i].length
+1 <= m, n <= 200
+0 <= heightMap[i][j] <= 2 * 104;=;=https://leetcode.com/problems/trapping-rain-water-ii/description/?envType=daily-question&envId=2025-10-03;=;=https://leetcode.com/problems/trapping-rain-water-ii/solutions/6300880/bfs-solution-by-arunk_leetcode-273x/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/7220040/my-java-solution-for-trapping-rain-water-2nu5/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6300730/beats-90-efficient-implementation-of-tra-d61v/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6301604/array-bfs-priority-queue-solution-for-le-4fzv/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6301530/most-optimal-solution-beats-100-c-java-p-9kkx/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6302530/optimized-water-trapping-in-2d-grids-usi-t8am/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6302765/2-way-dynamic-programming-22ms-simple-lo-t3c2/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6300904/easy-solution-beats-100-by-sharvil_karwa-1dec/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6300584/simple-trapping-rainwater-beats-100-deta-0vhe/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/89460/alternative-approach-using-dijkstra-in-o-bkqe/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6301994/bfs-traversal-very-easy-explanation-with-iwab/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6960402/trapping-rain-water-ii-min-heap-bfs-visi-a6lj/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6300843/easy-to-learn-solutionbeats-100-in-mostw-uy6s/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6699584/omn-unionfind-solution-by-srknzl-xnt2/;;https://leetcode.com/problems/trapping-rain-water-ii/solutions/6302460/beats-90-bfs-min-heap-java-solution-by-d-p2uc/;;;=;==;=;=;

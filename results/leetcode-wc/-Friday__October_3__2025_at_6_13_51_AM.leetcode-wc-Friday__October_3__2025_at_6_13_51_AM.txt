@@ -1,0 +1,72 @@
+3127. Make a Square with the Same Color;=;=Easy;=;=public boolean canMakeSquare(char[][] grid);=;=You are given a 2D matrix grid of size 3 x 3 consisting only of characters 'B' and 'W'. Character 'W' represents the white color, and character 'B' represents the black color.
+
+Your task is to change the color of at most one cell so that the matrix has a 2 x 2 square where all cells are of the same color.
+
+Return true if it is possible to create a 2 x 2 square of the same color, otherwise, return false.
+
+ 
+
+Example 1:
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Input: grid = [["B","W","B"],["B","W","W"],["B","W","B"]]
+
+Output: true
+
+Explanation:
+
+It can be done by changing the color of the grid[0][2].
+
+Example 2:
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Input: grid = [["B","W","B"],["W","B","W"],["B","W","B"]]
+
+Output: false
+
+Explanation:
+
+It cannot be done by changing at most one cell.
+
+Example 3:
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Input: grid = [["B","W","B"],["B","W","W"],["B","W","W"]]
+
+Output: true
+
+Explanation:
+
+The grid already contains a 2 x 2 square of the same color.
+
+ 
+
+Constraints:
+
+grid.length == 3
+grid[i].length == 3
+grid[i][j] is either 'W' or 'B'.;=;=https://leetcode.com/problems/make-a-square-with-the-same-color/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5080132/easy-solution-27042024-contest-by-mangeu-2jwj/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5080120/simple-java-solution-by-siddhant_1602-aex2/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/6771939/easy-java-code-by-ankitbisht-ivvq/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5080181/easiest-cpython3cjavapythonc-explained-c-ugja/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5097535/beats-100-grid-transformation-trick-by-c-fo6i/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/6249122/0ms-100-beat-in-java-very-easiest-code-b-delo/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5080668/easy-java-solution-0ms-exec-time-by-kari-uujx/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5349988/check-color-count-in-all-2x2-grids-by-an-qm3m/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5080124/beat-100-with-java-by-hoang_soict-lcm1/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5137753/beats-100-of-java-99-memory-hardcoded-by-zt2p/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5093046/simple-and-intuitive-thought-time-comple-zuwo/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5080312/beats-10000-of-users-with-java-by-abinay-sizs/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5080205/beats-10000-java-c-c-easy-explanation-be-pgsn/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/5080196/java-clean-solution-by-shree_govind_jee-f49k/;;https://leetcode.com/problems/make-a-square-with-the-same-color/solutions/7222629/optimized-simple-solution-beats-100-by-c-1ciq/;;;=;==;=;=;

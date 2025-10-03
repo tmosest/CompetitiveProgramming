@@ -1,0 +1,36 @@
+1547. Minimum Cost to Cut a Stick;=;=Hard;=;=public int minCost(int n, int[] cuts);=;=Given a wooden stick of length n units. The stick is labelled from 0 to n. For example, a stick of length 6 is labelled as follows:
+
+
+Given an integer array cuts where cuts[i] denotes a position you should perform a cut at.
+
+You should perform the cuts in order, you can change the order of the cuts as you wish.
+
+The cost of one cut is the length of the stick to be cut, the total cost is the sum of costs of all cuts. When you cut a stick, it will be split into two smaller sticks (i.e. the sum of their lengths is the length of the stick before the cut). Please refer to the first example for a better explanation.
+
+Return the minimum total cost of the cuts.
+
+ 
+
+Example 1:
+
+
+Input: n = 7, cuts = [1,3,4,5]
+Output: 16
+Explanation: Using cuts order = [1, 3, 4, 5] as in the input leads to the following scenario:
+
+The first cut is done to a rod of length 7 so the cost is 7. The second cut is done to a rod of length 6 (i.e. the second part of the first cut), the third is done to a rod of length 4 and the last cut is to a rod of length 3. The total cost is 7 + 6 + 4 + 3 = 20.
+Rearranging the cuts to be [3, 5, 1, 4] for example will lead to a scenario with total cost = 16 (as shown in the example photo 7 + 4 + 3 + 2 = 16).
+Example 2:
+
+Input: n = 9, cuts = [5,6,1,4,2]
+Output: 22
+Explanation: If you try the given cuts ordering the cost will be 25.
+There are much ordering with total cost <= 25, for example, the order [4, 6, 5, 2, 1] has total cost = 22 which is the minimum possible.
+ 
+
+Constraints:
+
+2 <= n <= 106
+1 <= cuts.length <= min(n - 1, 100)
+1 <= cuts[i] <= n - 1
+All the integers in cuts array are distinct.;=;=https://leetcode.com/problems/minimum-cost-to-cut-a-stick/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/7240839/minimum-cost-to-cut-a-stick-mcm-style-dp-gz6m/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/7235910/simple-solution-and-explanation-interval-fkn2/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/780880/dp-with-picture-burst-balloons-by-votrub-tjl3/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/3570562/image-explanation-recursion-memo4-states-ca64/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/1395121/4-minutes-read-simple-no-brainer-recursi-sbb9/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/3569897/pythonjavacsimple-solutioneasy-to-unders-yyh7/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/6498413/java-programdp-approachmemoization-by-de-6epb/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/6889108/make-it-simple-partition-dp-problem-by-h-kh5z/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/2101165/recursion-memoization-bottom-up-dp-table-eqjz/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/6778735/3-approaches-dp-solution-by-mugeshv-9dpp/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/2208973/dp-solution-3-solutions-by-aayush_d_1999-s6ic/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/2584658/java-solution-both-approaches-top-to-bot-fwgu/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/6442396/solution-using-dynamic-programming-memoi-fpd4/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/3572334/java-solution-for-minimum-cost-to-cut-a-6anpz/;;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/7235703/dps-toughest-problem-solution-dp-tabulat-e6dk/;;;=;==;=;=;

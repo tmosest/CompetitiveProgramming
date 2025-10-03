@@ -1,0 +1,42 @@
+3206. Alternating Groups I;=;=Easy;=;=public int numberOfAlternatingGroups(int[] colors);=;=There is a circle of red and blue tiles. You are given an array of integers colors. The color of tile i is represented by colors[i]:
+
+colors[i] == 0 means that tile i is red.
+colors[i] == 1 means that tile i is blue.
+Every 3 contiguous tiles in the circle with alternating colors (the middle tile has a different color from its left and right tiles) is called an alternating group.
+
+Return the number of alternating groups.
+
+Note that since colors represents a circle, the first and the last tiles are considered to be next to each other.
+
+ 
+
+Example 1:
+
+Input: colors = [1,1,1]
+
+Output: 0
+
+Explanation:
+
+
+
+Example 2:
+
+Input: colors = [0,1,0,0,1]
+
+Output: 3
+
+Explanation:
+
+
+
+Alternating groups:
+
+
+
+ 
+
+Constraints:
+
+3 <= colors.length <= 100
+0 <= colors[i] <= 1;=;=https://leetcode.com/problems/alternating-groups-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/alternating-groups-i/solutions/7176881/java-array-sliding-window-approach-beats-8s28/;;https://leetcode.com/problems/alternating-groups-i/solutions/7143360/alternating-groups-i-by-e_deepika24-6fq3/;;https://leetcode.com/problems/alternating-groups-i/solutions/7129985/100-beats-easiest-solution-ever-by-ajclu-uqe8/;;https://leetcode.com/problems/alternating-groups-i/solutions/6516784/clean-and-easy-java-solution-by-aditya_y-rfej/;;https://leetcode.com/problems/alternating-groups-i/solutions/5428958/solution-by-dare2solve-detailed-explanat-4mfg/;;https://leetcode.com/problems/alternating-groups-i/solutions/6554493/easiest-java-solution-beginner-friendly-pow8v/;;https://leetcode.com/problems/alternating-groups-i/solutions/5429937/simple-java-c-code-by-abhinandannaik1717-erah/;;https://leetcode.com/problems/alternating-groups-i/solutions/5429003/clear-straightforward-logic-easy-to-foll-4waf/;;https://leetcode.com/problems/alternating-groups-i/solutions/7155072/alternating-group-queery-by-trueslytheri-44d2/;;https://leetcode.com/problems/alternating-groups-i/solutions/6884743/count-alternating-groups-in-circular-til-amvq/;;https://leetcode.com/problems/alternating-groups-i/solutions/6689676/deque-java-by-nxbeyxnd-skxa/;;https://leetcode.com/problems/alternating-groups-i/solutions/6592838/java-solution-by-surbhi_rawat-gnjj/;;https://leetcode.com/problems/alternating-groups-i/solutions/5468105/alternating-groups-1-by-roger2023-k1fj/;;https://leetcode.com/problems/alternating-groups-i/solutions/6516267/checking-all-triplets-on-time-by-deepakm-8frz/;;https://leetcode.com/problems/alternating-groups-i/solutions/5429060/easy-to-point-straight-on-java-c-python-49svk/;;;=;==;=;=;

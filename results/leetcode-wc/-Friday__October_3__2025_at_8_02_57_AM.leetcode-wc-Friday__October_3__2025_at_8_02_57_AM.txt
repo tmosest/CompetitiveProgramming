@@ -1,0 +1,27 @@
+846. Hand of Straights;=;=Medium;=;=public boolean isNStraightHand(int[] hand, int groupSize);=;=Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.
+
+Given an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: hand = [1,2,3,6,2,3,4,7,8], groupSize = 3
+Output: true
+Explanation: Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]
+Example 2:
+
+Input: hand = [1,2,3,4,5], groupSize = 4
+Output: false
+Explanation: Alice's hand can not be rearranged into groups of 4.
+
+ 
+
+Constraints:
+
+1 <= hand.length <= 104
+0 <= hand[i] <= 109
+1 <= groupSize <= hand.length
+ 
+
+Note: This question is the same as 1296: https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/;=;=https://leetcode.com/problems/hand-of-straights/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/hand-of-straights/solutions/5266460/beats-100-explained-with-video-cjavapyth-84sn/;;https://leetcode.com/problems/hand-of-straights/solutions/5266441/fasterless-memdetailed-approachusing-sor-bwsf/;;https://leetcode.com/problems/hand-of-straights/solutions/5266171/easy-beginner-c-python-js-c-java-by-shar-mvcx/;;https://leetcode.com/problems/hand-of-straights/solutions/3444424/cjavapythonjavascript-very-easy-fully-ex-n37g/;;https://leetcode.com/problems/hand-of-straights/solutions/5266170/easy-solution-c-python-c-java-by-nikhil7-w74b/;;https://leetcode.com/problems/hand-of-straights/solutions/5266676/java-beats-100-by-deleted_user-tj43/;;https://leetcode.com/problems/hand-of-straights/solutions/7044515/group-cards-in-consecutive-hands-forming-fnnj/;;https://leetcode.com/problems/hand-of-straights/solutions/6982312/simple-and-direct-by-kiruthhik-fan6/;;https://leetcode.com/problems/hand-of-straights/solutions/7132739/easy-code-in-java-by-yasl1-o6il/;;https://leetcode.com/problems/hand-of-straights/solutions/5267784/simple-solution-easy-explanation-multise-19t0/;;https://leetcode.com/problems/hand-of-straights/solutions/5266205/easiest-solution-video-explaination-c-ja-k72m/;;https://leetcode.com/problems/hand-of-straights/solutions/6974058/hand-of-straights-by-pranavdewangan22-l2hi/;;https://leetcode.com/problems/hand-of-straights/solutions/6758271/simple-java-solution-easy-to-understand-0b8yi/;;https://leetcode.com/problems/hand-of-straights/solutions/5266503/faster-lesser-cpython3javacpythonexplain-jepe/;;https://leetcode.com/problems/hand-of-straights/solutions/5268303/easy-solution-golang-using-map-by-lobiri-hw3v/;;;=;==;=;=;

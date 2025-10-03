@@ -1,0 +1,30 @@
+2422. Merge Operations to Turn Array Into a Palindrome;=;=Medium;=;=public int minimumOperations(int[] nums);=;=You are given an array nums consisting of positive integers.
+
+You can perform the following operation on the array any number of times:
+
+Choose any two adjacent elements and replace them with their sum.
+For example, if nums = [1,2,3,1], you can apply one operation to make it [1,5,1].
+Return the minimum number of operations needed to turn the array into a palindrome.
+
+ 
+
+Example 1:
+
+Input: nums = [4,3,2,1,2,3,1]
+Output: 2
+Explanation: We can turn the array into a palindrome in 2 operations as follows:
+- Apply the operation on the fourth and fifth element of the array, nums becomes equal to [4,3,2,3,3,1].
+- Apply the operation on the fifth and sixth element of the array, nums becomes equal to [4,3,2,3,4].
+The array [4,3,2,3,4] is a palindrome.
+It can be shown that 2 is the minimum number of operations needed.
+Example 2:
+
+Input: nums = [1,2,3,4]
+Output: 3
+Explanation: We do the operation 3 times in any position, we obtain the array [10] at the end which is a palindrome.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/6261895/java-two-pointers-clean-code-with-commen-k46w/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/3673330/java-beats-100-on-time-two-pointers-very-rt1r/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/5060406/simple-java-solution-with-details-explan-r7vd/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/7114831/java-solution-two-pointers-beats-100-by-nw89v/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/6157988/java-solve-by-ttruelson-txph/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/6802017/two-pointer-approach-by-srknzl-ghfo/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/6504166/two-pointer-approach-on-constant-space-b-5x5i/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/6504152/two-pointer-approach-on-by-supriyaroy-yztf/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/5899814/on-clean-solution-by-pawelwar-x97k/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/6238725/java-solution-two-pointer-greedy-by-chir-u4mo/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/6059134/2-pointers-easy-java-solution-by-imochur-5v87/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/5989427/java-one-pass-solution-by-tbekpro-iljp/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/5762749/two-pointer-approach-simple-java-code-by-ipq2/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/5392895/simple-on-solution-by-masterdeniro-nqds/;;https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/solutions/5384839/left-right-sum-solution-by-pavvels-fkkq/;;;=;==;=;=;

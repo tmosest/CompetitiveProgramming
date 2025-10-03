@@ -1,0 +1,25 @@
+250. Count Univalue Subtrees;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=Given the root of a binary tree, return the number of uni-value subtrees.
+
+A uni-value subtree means all nodes of the subtree have the same value.
+
+ 
+
+Example 1:
+
+
+Input: root = [5,1,5,5,5,null,5]
+Output: 4
+Example 2:
+
+Input: root = []
+Output: 0
+Example 3:
+
+Input: root = [5,5,5,5,5,null,5]
+Output: 6
+ 
+
+Constraints:
+
+The number of the node in the tree will be in the range [0, 1000].
+-1000 <= Node.val <= 1000;=;=https://leetcode.com/problems/count-univalue-subtrees/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-univalue-subtrees/solutions/67602/java-11-lines-added-by-stefanpochmann-iagz/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/67644/ac-clean-java-solution-by-jeantimex-s8rc/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/67590/my-ac-java-code-by-andyliu0429-fnp2/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/6725542/dfs-by-lemonpepper-ktb7/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/67600/7-line-accepted-code-in-java-by-icodingg-78rd/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/599301/clear-and-intuitive-explanation-by-mars_-r85p/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/815493/one-variable-concise-java-with-comments-mg70f/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/67645/java-solution-with-dfs-by-lotustree86-nxka/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/2172880/java-recursive-by-sxs8814-ewhe/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/1383792/java-recursive-solution-without-global-v-vtxo/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/1135173/without-class-level-localglobal-counter-70rsj/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/67627/share-my-1ms-java-solution-with-an-insta-rqmb/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/7013747/java-17-recursive-solution-by-qladstone-t8zs/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/6805199/java-simple-dfs-by-rnotappl-5rw8/;;https://leetcode.com/problems/count-univalue-subtrees/solutions/1771477/recursive-approach-by-fakhreddinechaaban-lvk8/;;;=;==;=;=;

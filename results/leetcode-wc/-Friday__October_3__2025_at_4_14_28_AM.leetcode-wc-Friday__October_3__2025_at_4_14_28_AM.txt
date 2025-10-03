@@ -1,0 +1,27 @@
+1186. Maximum Subarray Sum with One Deletion;=;=Medium;=;=public int maximumSum(int[] arr);=;=Given an array of integers, return the maximum sum for a non-empty subarray (contiguous elements) with at most one element deletion. In other words, you want to choose a subarray and optionally delete one element from it so that there is still at least one element left and the sum of the remaining elements is maximum possible.
+
+Note that the subarray needs to be non-empty after deleting one element.
+
+ 
+
+Example 1:
+
+Input: arr = [1,-2,0,3]
+Output: 4
+Explanation: Because we can choose [1, -2, 0, 3] and drop -2, thus the subarray [1, 0, 3] becomes the maximum value.
+Example 2:
+
+Input: arr = [1,-2,-2,3]
+Output: 3
+Explanation: We just choose [3] and it's the maximum sum.
+Example 3:
+
+Input: arr = [-1,-1,-1,-1]
+Output: -1
+Explanation: The final subarray needs to be non-empty. You can't choose [-1] and delete -1 from it, then get an empty subarray to make the sum equals to 0.
+ 
+
+Constraints:
+
+1 <= arr.length <= 105
+-104 <= arr[i] <= 104;=;=https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/6965072/java-with-explanation-kadans-by-deadvika-p7ge/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/7136126/crystal-clear-explanation-of-dp-approach-rpdw/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/7215148/java-easy-intuitive-solution-on-beats-98-fdyz/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/2137263/very-clean-and-easy-to-understand-dp-sol-a6se/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/3717595/java-beats-100-easiest-solution-explaine-efk6/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/3664699/understand-the-solution-by-jaiarora-y5l9/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/6308539/java-kadanes-algorithm-clean-code-with-c-adqo/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/424806/java-solution-with-on-time-and-o1-space-qm2zw/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/4571418/easiest-way-to-solve-by-itzz-xzce/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/1907615/kadane-solution-with-on-timespace-comple-ev7f/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/521019/100-time-and-100-memory-best-dp-solution-m5th/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/7221064/easy-to-understand-java-dp-by-hitomyan-r6ra/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/1082316/java-memo-recursive-by-prateekvortex-uuvk/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/4574833/kadanes-algorithm-on-time-o1-space-by-go-2diq/;;https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/solutions/3222896/simple-java-solution-tcon-sco1-by-ria981-awop/;;;=;==;=;=;

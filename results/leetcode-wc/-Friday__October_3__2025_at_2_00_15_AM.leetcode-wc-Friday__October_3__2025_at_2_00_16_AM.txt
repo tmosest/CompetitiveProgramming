@@ -1,0 +1,37 @@
+1806. Minimum Number of Operations to Reinitialize a Permutation;=;=Medium;=;=public int reinitializePermutation(int n);=;=You are given an even integer n??????. You initially have a permutation perm of size n?? where perm[i] == i? (0-indexed)????.
+
+In one operation, you will create a new array arr, and for each i:
+
+If i % 2 == 0, then arr[i] = perm[i / 2].
+If i % 2 == 1, then arr[i] = perm[n / 2 + (i - 1) / 2].
+You will then assign arr???? to perm.
+
+Return the minimum non-zero number of operations you need to perform on perm to return the permutation to its initial value.
+
+ 
+
+Example 1:
+
+Input: n = 2
+Output: 1
+Explanation: perm = [0,1] initially.
+After the 1st operation, perm = [0,1]
+So it takes only 1 operation.
+Example 2:
+
+Input: n = 4
+Output: 2
+Explanation: perm = [0,1,2,3] initially.
+After the 1st operation, perm = [0,2,1,3]
+After the 2nd operation, perm = [0,1,2,3]
+So it takes only 2 operations.
+Example 3:
+
+Input: n = 6
+Output: 4
+ 
+
+Constraints:
+
+2 <= n <= 1000
+n?????? is even.;=;=https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/1131138/detailed-explanation-with-thought-proces-oh32/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/1130704/brute-force-by-himanshuchhikara-ynin/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/1130784/java-o1-space-easy-to-understand-by-alan-007d/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/1937954/java-3-solutions-from-brute-force-to-mat-0aeq/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/5110480/simple-easy-and-quick-java-solution-by-k-pabg/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/1131677/java-beats-100-o1-space-on-time-detail-e-jmfu/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/1130746/simple-java-brute-force-solution-by-sree-a9rg/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/1130587/java-solution-arrays-clone-method-by-pri-3ije/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/1517962/java-simple-solution-by-madhav1301-1063/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/7003823/easy-to-understand-solution-using-do-whi-u9qa/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/6636820/java-solution-by-upasana1357-rvr0/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/6527765/2-approach-cpp-java-python-code-beginner-xutk/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/4829677/java-beats-100-speed-o1-space-by-lunasoc-rub6/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/4504952/no-arraylist-allocated-short-lucky-solut-zblx/;;https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/solutions/4841355/java-simple-solution-by-sahu_ankit0107-puhp/;;;=;==;=;=;

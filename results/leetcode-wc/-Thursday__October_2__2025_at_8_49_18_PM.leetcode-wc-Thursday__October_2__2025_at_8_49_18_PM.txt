@@ -1,0 +1,35 @@
+2863. Maximum Length of Semi-Decreasing Subarrays;=;=Medium;=;=public int maxSubarrayLength(int[] nums);=;=You are given an integer array nums.
+
+Return the length of the longest semi-decreasing subarray of nums, and 0 if there are no such subarrays.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+A non-empty array is semi-decreasing if its first element is strictly greater than its last element.
+ 
+
+Example 1:
+
+Input: nums = [7,6,5,4,3,2,1,6,10,11]
+Output: 8
+Explanation: Take the subarray [7,6,5,4,3,2,1,6].
+The first element is 7 and the last one is 6 so the condition is met.
+Hence, the answer would be the length of the subarray or 8.
+It can be shown that there aren't any subarrays with the given condition with a length greater than 8.
+Example 2:
+
+Input: nums = [57,55,50,60,61,58,63,59,64,60,63]
+Output: 6
+Explanation: Take the subarray [61,58,63,59,64,60].
+The first element is 61 and the last one is 60 so the condition is met.
+Hence, the answer would be the length of the subarray or 6.
+It can be shown that there aren't any subarrays with the given condition with a length greater than 6.
+Example 3:
+
+Input: nums = [1,2,3,4]
+Output: 0
+Explanation: Since there are no semi-decreasing subarrays in the given array, the answer is 0.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+-109 <= nums[i] <= 109;=;=https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/4070047/linear-time-solution-in-c-java-python-by-4ku5/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/4070224/java-treemap-by-qiuwuxue-7vc8/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/4073191/two-pointers-on-java-python-by-wanhaozho-hiiv/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/4081458/java-on-with-an-explanation-by-bmask-dp2q/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/4443949/easy-to-understand-java-code-with-inline-ro9m/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/5314689/java-4-solutions-from-on-2-onlgn-to-on-b-njwg/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/4663798/simple-solution-with-two-loops-by-kendun-9tdl/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/4657546/two-pointers-method-using-java-by-molly-7b6f/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/4292029/java-simple-1ms-solution-by-timc0739-2xjs/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/5279702/max-length-of-semi-decreasing-array-on2-sb2s9/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/5831969/simple-java-solution-by-sakshikishore-aipq/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/5382687/sliding-window-optimised-beats-100-submi-timt/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/5137668/java-easy-on-with-explanation-using-stac-nmdz/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/5067374/java-onlogn-solution-by-tbekpro-eu69/;;https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/solutions/5050060/two-pointer-approch-best-solution-better-14f4/;;;=;==;=;=;

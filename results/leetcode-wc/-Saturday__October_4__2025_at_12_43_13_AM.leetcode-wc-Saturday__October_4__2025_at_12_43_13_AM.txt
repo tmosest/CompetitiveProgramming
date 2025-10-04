@@ -1,0 +1,46 @@
+2355. Maximum Number of Books You Can Take;=;=Hard;=;=public long maximumBooks(int[] books);=;=You are given a 0-indexed integer array books of length n where books[i] denotes the number of books on the ith shelf of a bookshelf.
+
+You are going to take books from a contiguous section of the bookshelf spanning from l to r where 0 <= l <= r < n. For each index i in the range l <= i < r, you must take strictly fewer books from shelf i than shelf i + 1.
+
+Return the maximum number of books you can take from the bookshelf.
+
+ 
+
+Example 1:
+
+Input: books = [8,5,2,7,9]
+Output: 19
+Explanation:
+- Take 1 book from shelf 1.
+- Take 2 books from shelf 2.
+- Take 7 books from shelf 3.
+- Take 9 books from shelf 4.
+You have taken 19 books, so return 19.
+It can be proven that 19 is the maximum number of books you can take.
+Example 2:
+
+Input: books = [7,0,3,4,5]
+Output: 12
+Explanation:
+- Take 3 books from shelf 2.
+- Take 4 books from shelf 3.
+- Take 5 books from shelf 4.
+You have taken 12 books so return 12.
+It can be proven that 12 is the maximum number of books you can take.
+Example 3:
+
+Input: books = [8,2,3,7,3,4,0,1,4,3]
+Output: 13
+Explanation:
+- Take 1 book from shelf 0.
+- Take 2 books from shelf 1.
+- Take 3 books from shelf 2.
+- Take 7 books from shelf 3.
+You have taken 13 books so return 13.
+It can be proven that 13 is the maximum number of books you can take.
+ 
+
+Constraints:
+
+1 <= books.length <= 105
+0 <= books[i] <= 105;=;=https://leetcode.com/problems/maximum-number-of-books-you-can-take/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/3345604/java-editorial-level-explanation-on-dyna-cz5b/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/2358714/java-stack-dp-find-that-bottleneck-expla-hdez/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/4533222/monostack-on-by-hzhaoc-khgv/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/2884262/java-100-runtime-easy-to-understand-with-ewsh/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/6257476/on-solution-with-monotonic-stack-and-dyn-vw4x/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/6033672/dp-monotonic-stack-code-with-comments-by-xtjy/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/5395244/dynamic-programming-solution-by-pavvels-hp6z/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/5249442/short-java-solution-on-using-stack-by-fa-bjce/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/4329298/java-dp-stack-by-jithin707-xvy3/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/4220164/java-solution-dp-by-ndsjqwbbb-wt18/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/3502183/fast-java-solution-dp-monostack-by-johnz-mbl6/;;https://leetcode.com/problems/maximum-number-of-books-you-can-take/solutions/2346138/java-11-lines-of-code-stack-tc-on-sc-on-zo6a5/;;;=;==;=;=;

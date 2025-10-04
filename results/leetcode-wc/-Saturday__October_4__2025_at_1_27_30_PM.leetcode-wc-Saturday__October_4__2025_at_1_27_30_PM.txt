@@ -1,0 +1,35 @@
+2194. Cells in a Range on an Excel Sheet;=;=Easy;=;=public List<String> cellsInRange(String s);=;=A cell (r, c) of an excel sheet is represented as a string "<col><row>" where:
+
+<col> denotes the column number c of the cell. It is represented by alphabetical letters.
+For example, the 1st column is denoted by 'A', the 2nd by 'B', the 3rd by 'C', and so on.
+<row> is the row number r of the cell. The rth row is represented by the integer r.
+You are given a string s in the format "<col1><row1>:<col2><row2>", where <col1> represents the column c1, <row1> represents the row r1, <col2> represents the column c2, and <row2> represents the row r2, such that r1 <= r2 and c1 <= c2.
+
+Return the list of cells (x, y) such that r1 <= x <= r2 and c1 <= y <= c2. The cells should be represented as strings in the format mentioned above and be sorted in non-decreasing order first by columns and then by rows.
+
+ 
+
+Example 1:
+
+
+Input: s = "K1:L2"
+Output: ["K1","K2","L1","L2"]
+Explanation:
+The above diagram shows the cells which should be present in the list.
+The red arrows denote the order in which the cells should be presented.
+Example 2:
+
+
+Input: s = "A1:F1"
+Output: ["A1","B1","C1","D1","E1","F1"]
+Explanation:
+The above diagram shows the cells which should be present in the list.
+The red arrow denotes the order in which the cells should be presented.
+ 
+
+Constraints:
+
+s.length == 5
+'A' <= s[0] <= s[3] <= 'Z'
+'1' <= s[1] <= s[4] <= '9'
+s consists of uppercase English letters, digits and ':'.;=;=https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/1823819/javapython-3-simple-code-w-analysis-by-r-2kjx/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/3165250/java-simple-solution-runtime-beat-100-by-zr0f/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/7040681/solution-by-deepakumar-developer-lkqv/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/6868776/java-solution-by-shubhamxgupta-iavd/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/1823695/easy-solution-in-java-6-lines-of-code-by-qr8c/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/1888602/1ms-java-solution-no-concatenation-by-gr-n2of/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/6590396/clean-java-code-beats-100-time-complexit-mj1s/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/4636218/2194-cells-in-a-range-on-an-excel-sheet-uiln1/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/3758952/beats-100-simple-easy-to-understand-solu-gyzl/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/7023183/simple-solution-using-java-by-srinivasan-lbly/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/3653355/100-beats-simple-solution-in-java-by-hom-mnaw/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/3334434/most-easy-simple-solution-by-tamosakatwa-o5zz/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/2863323/java-char-array-solution-by-azatakhunov-tu7q/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/3221188/simple-java-solution-by-imsavi15-j372/;;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/solutions/3866788/java-solution-orow-x-col-easy-to-underst-nk7r/;;;=;==;=;=;

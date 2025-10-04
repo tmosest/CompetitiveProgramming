@@ -1,0 +1,34 @@
+2170. Minimum Operations to Make the Array Alternating;=;=Medium;=;=publicÊintÊminimumOperations(int[]Ênums);=;=You are given a 0-indexed array nums consisting of n positive integers.
+
+The array nums is called alternating if:
+
+nums[i - 2] == nums[i], where 2 <= i <= n - 1.
+nums[i - 1] != nums[i], where 1 <= i <= n - 1.
+In one operation, you can choose an index i and change nums[i] into any positive integer.
+
+Return the minimum number of operations required to make the array alternating.
+
+Ê
+
+Example 1:
+
+Input: nums = [3,1,3,2,4,3]
+Output: 3
+Explanation:
+One way to make the array alternating is by converting it to [3,1,3,1,3,1].
+The number of operations required in this case is 3.
+It can be proven that it is not possible to make the array alternating in less than 3 operations. 
+Example 2:
+
+Input: nums = [1,2,2,2,2]
+Output: 2
+Explanation:
+One way to make the array alternating is by converting it to [1,2,1,2,1].
+The number of operations required in this case is 2.
+Note that the array cannot be converted to [2,2,2,2,2] because in this case nums[0] == nums[1] which violates the conditions of an alternating array.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/1766928/c-java-4-lines-frequency-table-explanati-2frq/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/1767085/java-find-max-second-max-approach-explai-gr0s/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/1766834/help-why-did-my-solution-fail-for-a-larg-mli8/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/5383447/get-top-two-freq-count-of-odd-and-even-p-6zps/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/2452638/java-frequency-maps-and-priorityqueues-b-6m3z/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/1767189/java-solution-using-hashmap-priorityqueu-yiad/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/1766977/commented-java-solution-with-mediocre-co-uuyz/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/3415495/best-java-solution-by-kishan_kumar_zalav-8yz7/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/1767544/java-find-odd-and-evens-mostfreq-and-sec-b252/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/3428665/java-simplest-solution-by-princeayush04-3l5d/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/1768444/java-9ms-beats-100-with-explanation-by-c-qvr2/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/1767107/java-hashmap-solution-by-aknagpal-2s7p/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/1768983/java-example-explained-with-comments-by-wpn2p/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/7077320/minimum-operations-to-make-the-array-alt-e6o3/;;https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/solutions/7013119/sort-of-greedy-by-smooth_op-nrxs/;;;=;==;=;=;

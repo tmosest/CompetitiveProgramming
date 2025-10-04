@@ -1,0 +1,29 @@
+1864. Minimum Number of Swaps to Make the Binary String Alternating;=;=Medium;=;=publicÊintÊminSwaps(StringÊs);=;=Given a binary string s, return the minimum number of character swaps to make it alternating, or -1 if it is impossible.
+
+The string is called alternating if no two adjacent characters are equal. For example, the strings "010" and "1010" are alternating, while the string "0100" is not.
+
+Any two characters may be swapped, even if they areÊnot adjacent.
+
+Ê
+
+Example 1:
+
+Input: s = "111000"
+Output: 1
+Explanation: Swap positions 1 and 4: "111000" -> "101010"
+The string is now alternating.
+Example 2:
+
+Input: s = "010"
+Output: 0
+Explanation: The string is already alternating, no swaps are needed.
+Example 3:
+
+Input: s = "1110"
+Output: -1
+Ê
+
+Constraints:
+
+1 <= s.length <= 1000
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/6980334/minimum-swaps-to-make-binary-string-alte-iutu/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/6887776/two-possible-target-states-problem-by-la-clhh/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/2477614/java-solution-with-easy-to-understand-co-fnyg/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/1232221/java-greedy-solution-by-himanshuchhikara-u75x/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/4162411/best-java-solution-beats-100-by-ravikuma-lkgj/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/2086558/java-on-time-complexity-easy-to-understa-afaf/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/2461028/java-solution-counting-ones-zeros-by-abh-ornq/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/6675056/beats-100-fun-way-to-write-by-shubham04j-8txi/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/7165587/easy-coding-solution-in-java-ultimately-opiyt/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/1211326/my-java-solution-by-counting-the-swaps-a-un28/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/2548504/java-1ms-by-darkforces11-vb51/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/1211938/java-on-beats-100-by-jalwal-i473/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/6882121/java-by-reyhanehsalkhi-okru/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/1211197/java-easy-to-understand-self-explanatory-qany/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/solutions/7117476/beats-992-by-codevik7-qht9/;;;=;==;=;=;

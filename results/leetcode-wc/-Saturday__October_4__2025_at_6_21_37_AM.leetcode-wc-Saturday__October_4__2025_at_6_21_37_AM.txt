@@ -1,0 +1,31 @@
+1877. Minimize Maximum Pair Sum in Array;=;=Medium;=;=public int minPairSum(int[] nums);=;=The pair sum of a pair (a,b) is equal to a + b. The maximum pair sum is the largest pair sum in a list of pairs.
+
+For example, if we have pairs (1,5), (2,3), and (4,4), the maximum pair sum would be max(1+5, 2+3, 4+4) = max(6, 5, 8) = 8.
+Given an array nums of even length n, pair up the elements of nums into n / 2 pairs such that:
+
+Each element of nums is in exactly one pair, and
+The maximum pair sum is minimized.
+Return the minimized maximum pair sum after optimally pairing up the elements.
+
+ 
+
+Example 1:
+
+Input: nums = [3,5,2,3]
+Output: 7
+Explanation: The elements can be paired up into pairs (3,3) and (5,2).
+The maximum pair sum is max(3+3, 5+2) = max(6, 7) = 7.
+Example 2:
+
+Input: nums = [3,5,4,2,4,6]
+Output: 8
+Explanation: The elements can be paired up into pairs (3,5), (4,4), and (6,2).
+The maximum pair sum is max(3+5, 4+4, 6+2) = max(8, 8, 8) = 8.
+ 
+
+Constraints:
+
+n == nums.length
+2 <= n <= 105
+n is even.
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/7239294/simple-clean-beats-7949-easy-explanation-0dqr/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/4296726/more-than-one-waydetail-explanation-java-s14b/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/4296926/brute-force-to-optimized-approach-entire-g5r4/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/4297828/video-give-me-u-minutes-how-we-think-abo-hc58/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/7162119/greedy-pairing-trick-minimize-the-maximu-oo0d/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/6860053/minimize-maximum-pair-sum-in-array-greed-pop2/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/1238666/sort-by-votrubac-dv87/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/7069159/java-code-easy-to-understandbeginner-fri-eo01/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/6334311/simple-solution-by-divyanshu_shukla-ej3j/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/6841517/90-beats-easiest-solution-by-hitarthshah-ogvx/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/6768332/two-pointers-very-easy-try-by-sairangine-eaox/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/6813418/easy-solution-best-solution-for-java-on-mxn1f/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/4400679/java-solution-by-tinesh_warke-6se4/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/5767815/easy-java-code-by-krushna_yeshwante-51li/;;https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/5062719/very-easy-solution-simplified-the-proble-fl1j/;;;=;==;=;=;

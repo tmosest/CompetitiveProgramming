@@ -1,0 +1,41 @@
+1963. Minimum Number of Swaps to Make the String Balanced;=;=Medium;=;=public int minSwaps(String s);=;=You are given a 0-indexed string s of even length n. The string consists of exactly n / 2 opening brackets '[' and n / 2 closing brackets ']'.
+
+A string is called balanced if and only if:
+
+It is the empty string, or
+It can be written as AB, where both A and B are balanced strings, or
+It can be written as [C], where C is a balanced string.
+You may swap the brackets at any two indices any number of times.
+
+Return the minimum number of swaps to make s balanced.
+
+ 
+
+Example 1:
+
+Input: s = "][]["
+Output: 1
+Explanation: You can make the string balanced by swapping index 0 with index 3.
+The resulting string is "[[]]".
+Example 2:
+
+Input: s = "]]][[["
+Output: 2
+Explanation: You can do the following to make the string balanced:
+- Swap index 0 with index 4. s = "[]][][".
+- Swap index 1 with index 5. s = "[[][]]".
+The resulting string is "[[][]]".
+Example 3:
+
+Input: s = "[]"
+Output: 0
+Explanation: The string is already balanced.
+ 
+
+Constraints:
+
+n == s.length
+2 <= n <= 106
+n is even.
+s[i] is either '[' or ']'.
+The number of opening brackets '[' equals n / 2, and the number of closing brackets ']' equals n / 2.;=;=https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5884227/easy-optimized-solution-python-java-c-on-i3o5/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/1390319/how-to-reach-the-optimal-solution-explai-kfy3/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5884240/beats-100-working-08102024-explained-ste-jo8x/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5885071/intuition-better-than-editorial-detailed-z82u/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5884566/dont-use-stack-in-interviews-simple-expl-ib6h/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/1676045/java-4-solutions-intuition-on-o1-solutio-35sr/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/1390249/javapython-3-space-o1-time-on-codes-w-br-v3k2/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5886919/lets-form-couples-very-easy-illustration-dovt/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/6591806/stack-method-easiest-explanation-java-py-q85v/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5884614/on-c-34ms-beats-10000-java-12ms-python3-5dyk7/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5885675/greedy-approach-using-two-pointer-techni-igdl/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5886926/easiestfaster-lesser-cpython3javacpython-cvjk/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5884267/one-pass-on-simple-and-detailed-explanat-ly1b/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5884356/number-of-swaps-to-make-the-string-balan-470o/;;https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5884318/best-greedy-java-explained-by-adnannshai-ef5p/;;;=;==;=;=;

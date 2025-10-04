@@ -1,0 +1,25 @@
+2185. Counting Words With a Given Prefix;=;=Easy;=;=public int prefixCount(String[] words, String pref);=;=You are given an array of strings words and a string pref.
+
+Return the number of strings in words that contain pref as a prefix.
+
+A prefix of a string s is any leading contiguous substring of s.
+
+ 
+
+Example 1:
+
+Input: words = ["pay","attention","practice","attend"], pref = "at"
+Output: 2
+Explanation: The 2 strings that contain "at" as a prefix are: "attention" and "attend".
+Example 2:
+
+Input: words = ["leetcode","win","loops","success"], pref = "code"
+Output: 0
+Explanation: There are no strings that contain "code" as a prefix.
+ 
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length, pref.length <= 100
+words[i] and pref consist of lowercase English letters.;=;=https://leetcode.com/problems/counting-words-with-a-given-prefix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/7244564/counting-prefix-wordssingle-line-of-code-n8ng/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6251654/simple-5-lines-detailed-expalation-by-su-fhvi/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6252005/easy-to-understand-beats-100-by-hema2607-tnrn/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/7202694/using-in-build-funtion-startswith-by-bha-t5a5/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6252157/beats-100-simple-and-easy-solution-c-jav-bu1k/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6252099/100-efficient-solution-optimal-prefix-co-z1yp/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6958708/use-startswith-by-gokilaselvi-9jvg/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6251932/0ms-solution-beating-100-with-super-scot-dj1s/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/7012495/easy-code-for-beginners-and-understandab-lb73/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6251769/on-m-c-java-py3-0ms-beats-10000-string-m-uebq/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6255930/100-beats-java-easy-to-understand-by-mam-wwuw/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/7134292/easy-code-for-solve-this-problem-by-4_k4-uzlk/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6252986/beats-100-simple-onm-by-arunk_leetcode-qz9e/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6256273/easy-solution-in-java-beats-100-by-lucif-o5se/;;https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6642720/easy-java-solution-beginner-friendly-bea-s0sf/;;;=;==;=;=;

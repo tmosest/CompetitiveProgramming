@@ -1,0 +1,19 @@
+1291. Sequential Digits;=;=Medium;=;=public List<Integer> sequentialDigits(int low, int high);=;=An integer has sequential digits if and only if each digit in the number is one more than the previous digit.
+
+Return a sorted list of all the integers in the range [low, high] inclusive that have sequential digits.
+
+ 
+
+Example 1:
+
+Input: low = 100, high = 300
+Output: [123,234]
+Example 2:
+
+Input: low = 1000, high = 13000
+Output: [1234,2345,3456,4567,5678,6789,12345]
+ 
+
+Constraints:
+
+10 <= low <= high <= 10^9;=;=https://leetcode.com/problems/sequential-digits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sequential-digits/solutions/4662886/beats-100-users-cjavapythonjavascript-2-czudz/;;https://leetcode.com/problems/sequential-digits/solutions/1712332/javacpython-very-easy-to-easy-explanatio-h4ri/;;https://leetcode.com/problems/sequential-digits/solutions/4662820/o1-time-and-space-easy-array-solution-ex-j7mo/;;https://leetcode.com/problems/sequential-digits/solutions/7125158/bfs-best-solution-by-arun_chaudhary01-d6i7/;;https://leetcode.com/problems/sequential-digits/solutions/5665428/video-give-me-4-minutes-how-we-think-abo-k49c/;;https://leetcode.com/problems/sequential-digits/solutions/1710951/java-just-generate-them-all-0ms-by-stude-9nls/;;https://leetcode.com/problems/sequential-digits/solutions/6998657/easy-java-solution-flawlessly-beats-100-r6bvj/;;https://leetcode.com/problems/sequential-digits/solutions/4665140/sliding-window-easy-to-understand-0-ms-b-zq31/;;https://leetcode.com/problems/sequential-digits/solutions/4663116/o1-o1-java-python-javascript-typescript-kzcok/;;https://leetcode.com/problems/sequential-digits/solutions/4663485/simple-solution-with-2-approaches-by-sag-a0c6/;;https://leetcode.com/problems/sequential-digits/solutions/4665470/very-easy-100-sequential-digits-beats-10-1uqp/;;https://leetcode.com/problems/sequential-digits/solutions/6415995/simple-way-by-hiyash1-s1pc/;;https://leetcode.com/problems/sequential-digits/solutions/4663878/2-approaches-full-explained-javacgopytho-vfj1/;;https://leetcode.com/problems/sequential-digits/solutions/4664681/java-sol-by-doaaosamak-5pp8/;;https://leetcode.com/problems/sequential-digits/solutions/4667588/java-2-approaches-beats-100-efficient-co-qojl/;;;=;==;=;=;

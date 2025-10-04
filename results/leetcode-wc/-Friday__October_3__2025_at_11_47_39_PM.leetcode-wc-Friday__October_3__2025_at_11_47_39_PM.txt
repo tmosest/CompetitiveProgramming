@@ -1,0 +1,27 @@
+11. Container With Most Water;=;=Medium;=;=public int maxArea(int[] height)         int max = 0;        int left = 0;        int right = height.length - 1;        while (left < right)             int lower = Math.min(height[left], height[right]);            max = Math.max((right - left)  lower, max);            if (height[left] < height[right])                 ++left;             else                 --right;;=;=You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+
+Return the maximum amount of water a container can store.
+
+Notice that you may not slant the container.
+
+ 
+
+Example 1:
+
+
+Input: height = [1,8,6,2,5,4,8,3,7]
+Output: 49
+Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+Example 2:
+
+Input: height = [1,1]
+Output: 1
+ 
+
+Constraints:
+
+n == height.length
+2 <= n <= 105
+0 <= height[i] <= 104;=;=https://leetcode.com/problems/container-with-most-water/description/?envType=daily-question&envId=2025-10-04;=;=https://leetcode.com/problems/container-with-most-water/solutions/7246589/solution-by-la_castille-1not/;;https://leetcode.com/problems/container-with-most-water/solutions/7246784/easy-solution-greedytwo-pointer-javacpyt-oqxz/;;https://leetcode.com/problems/container-with-most-water/solutions/7246779/container-with-most-water-because-rainwa-ix11/;;https://leetcode.com/problems/container-with-most-water/solutions/7246966/beginners-guide-to-max-water-3ms-with-96-uop9/;;https://leetcode.com/problems/container-with-most-water/solutions/7246812/simple-on-solution-java-python-c-easy-ex-oz0g/;;https://leetcode.com/problems/container-with-most-water/solutions/5139915/video-simple-two-pointer-solution-by-nii-9y0n/;;https://leetcode.com/problems/container-with-most-water/solutions/3701708/best-method-c-java-python-beginner-frien-dz4o/;;https://leetcode.com/problems/container-with-most-water/solutions/7247002/100-medium-problem-with-easy-approach-wi-3ffw/;;https://leetcode.com/problems/container-with-most-water/solutions/7246762/0ms-beats-10000-easy-approach-and-step-b-scsh/;;https://leetcode.com/problems/container-with-most-water/solutions/7246658/youtube-video-java-python-simple-problem-j0o8/;;https://leetcode.com/problems/container-with-most-water/solutions/7246628/easy-explanation-sliding-window-two-poin-t4bv/;;https://leetcode.com/problems/container-with-most-water/solutions/7247164/java-solution-100-beats-by-tarunarora11-j9n5/;;https://leetcode.com/problems/container-with-most-water/solutions/7247086/simple-2-pointer-by-kiwi157366-etnx/;;https://leetcode.com/problems/container-with-most-water/solutions/7247045/two-pointer-by-pramaywankhade7-iiky/;;https://leetcode.com/problems/container-with-most-water/solutions/7247043/container-with-most-water-on-two-pointer-4g5m/;;;=;==;=;=;

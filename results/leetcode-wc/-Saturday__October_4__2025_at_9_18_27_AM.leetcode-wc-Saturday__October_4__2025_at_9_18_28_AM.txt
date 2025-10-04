@@ -1,0 +1,34 @@
+2461. Maximum Sum of Distinct Subarrays With Length K;=;=Medium;=;=public long maximumSubarraySum(int[] nums, int k);=;=You are given an integer array nums and an integer k. Find the maximum subarray sum of all the subarrays of nums that meet the following conditions:
+
+The length of the subarray is k, and
+All the elements of the subarray are distinct.
+Return the maximum subarray sum of all the subarrays that meet the conditions. If no subarray meets the conditions, return 0.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+ 
+
+Example 1:
+
+Input: nums = [1,5,4,2,9,9,9], k = 3
+Output: 15
+Explanation: The subarrays of nums with length 3 are:
+- [1,5,4] which meets the requirements and has a sum of 10.
+- [5,4,2] which meets the requirements and has a sum of 11.
+- [4,2,9] which meets the requirements and has a sum of 15.
+- [2,9,9] which does not meet the requirements because the element 9 is repeated.
+- [9,9,9] which does not meet the requirements because the element 9 is repeated.
+We return 15 because it is the maximum subarray sum of all the subarrays that meet the conditions
+Example 2:
+
+Input: nums = [4,4,4], k = 3
+Output: 0
+Explanation: The subarrays of nums with length 3 are:
+- [4,4,4] which does not meet the requirements because the element 4 is repeated.
+We return 0 because no subarrays meet the conditions.
+ 
+
+Constraints:
+
+1 <= k <= nums.length <= 105
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/6060159/beats-100-video-list-most-common-array-i-giq1/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/7111186/code-explanation-by-amyy_1256-q6aq/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/2783175/sliding-window-using-hashmap-cjava-by-xx-6nwv/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/6060654/combine-two-different-idea-into-one-illu-6vgt/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/6872342/sliding-window-approach-hash-set-simple-7dfsm/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/5777721/beginner-friendly-solution-easy-and-deta-bir4/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/6062421/easy-sliding-window-hashmaps-by-arunk_le-v5h0/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/6060587/sliding-window-with-hash-map-c-java-pyth-7r1d/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/6060420/simple-and-easy-solution-sliding-window-inx1f/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/7068884/easy-solution-using-concept-of-sliding-w-8dph/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/6060817/sliding-window-solution-for-leetcode2461-j5c3/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/2783141/line-by-line-commented-sliding-window-on-3efp/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/6816462/memory-sharp-sum-sharper-hashset-window-98lvd/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/2783099/map-sliding-window-w-dry-run-by-_srahul-gn7g/;;https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/solutions/7007788/simple-easy-to-understand-solution-by-an-p990/;;;=;==;=;=;

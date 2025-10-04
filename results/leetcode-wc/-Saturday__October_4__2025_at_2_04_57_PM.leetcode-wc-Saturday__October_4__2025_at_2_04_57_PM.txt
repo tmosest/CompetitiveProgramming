@@ -1,0 +1,33 @@
+1933. Check if String Is Decomposable Into Value-Equal Substrings;=;=Easy;=;=public boolean isDecomposable(String s);=;=A value-equal string is a string where all characters are the same.
+
+For example, "1111" and "33" are value-equal strings.
+In contrast, "123" is not a value-equal string.
+Given a digit string s, decompose the string into some number of consecutive value-equal substrings where exactly one substring has a length of 2 and the remaining substrings have a length of 3.
+
+Return true if you can decompose s according to the above rules. Otherwise, return false.
+
+A substring is a contiguous sequence of characters in a string.
+
+ 
+
+Example 1:
+
+Input: s = "000111000"
+Output: false
+Explanation: s cannot be decomposed according to the rules because ["000", "111", "000"] does not have a substring of length 2.
+Example 2:
+
+Input: s = "00011111222"
+Output: true
+Explanation: s can be decomposed into ["000", "111", "11", "222"].
+Example 3:
+
+Input: s = "011100022233"
+Output: false
+Explanation: s cannot be decomposed according to the rules because of the first '0'.
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s consists of only digits '0' through '9'.;=;=https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/solutions/1311173/java-0ms-with-explanation-by-ferman-zkr5/;;https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/solutions/6802748/simple-java-solution-time-complexity-on-9tzr4/;;https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/solutions/6492334/easy-to-understand-java-solution-by-roni-k8i6/;;https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/solutions/6470336/easy-java-by-wds3817-qlpw/;;https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/solutions/6328172/java-on-solution-by-tbekpro-f16o/;;https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/solutions/4995485/java-beats-100-of-the-solution-by-k_uram-ghtg/;;https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/solutions/2858514/easy-to-understand-java-solution-by-aadi-m38c/;;https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/solutions/2224638/java-clean-simple-by-prashant404-fvy3/;;https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/solutions/1342222/java-o1-space-one-pass-easy-explanation-ba8o0/;;;=;==;=;=;

@@ -1,0 +1,34 @@
+1857. Largest Color Value in a Directed Graph;=;=Hard;=;=publicÊintÊlargestPathValue(StringÊcolors,Êint[][]Êedges);=;=There is a directed graph of n colored nodes and m edges. The nodes are numbered from 0 to n - 1.
+
+You are given a string colors where colors[i] is a lowercase English letter representing the color of the ith node in this graph (0-indexed). You are also given a 2D array edges where edges[j] = [aj, bj] indicates that there is a directed edge from node aj to node bj.
+
+A valid path in the graph is a sequence of nodes x1 -> x2 -> x3 -> ... -> xk such that there is a directed edge from xi to xi+1 for every 1 <= i < k. The color value of the path is the number of nodes that are colored the most frequently occurring color along that path.
+
+Return the largest color value of any valid path in the given graph, or -1 if the graph contains a cycle.
+
+Ê
+
+Example 1:
+
+
+
+Input: colors = "abaca", edges = [[0,1],[0,2],[2,3],[3,4]]
+Output: 3
+Explanation: The path 0 -> 2 -> 3 -> 4 contains 3 nodes that are colored "a" (red in the above image).
+Example 2:
+
+
+
+Input: colors = "a", edges = [[0,0]]
+Output: -1
+Explanation: There is a cycle from 0 to 0.
+Ê
+
+Constraints:
+
+n == colors.length
+m == edges.length
+1 <= n <= 105
+0 <= m <= 105
+colors consists of lowercase English letters.
+0 <= aj, bjÊ< n;=;=https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6781399/using-dfs-with-images-example-walkthroug-tbf3/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6781977/simple-space-o1-super-easy-beginners-jav-ri4c/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/3396205/image-explanation-simple-bfs-complete-in-bzji/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6782220/advance-mathematical-solution-for-geeks-kczkh/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6782181/fast-and-clear-with-iterations-in-tables-zbqx/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6784436/cpp-java-topological-sort-100-beats-easy-txlc/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/3395923/easy-solutions-in-java-python-and-c-look-skdh/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/1204630/java-topological-sort-dp-by-himanshuchhi-eibg/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6781352/easy-code-java-explained-with-comments-b-i4pm/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6781620/lets-visualize-with-simple-way-topologic-o82r/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6781895/easy-java-dp-toposort-solution-by-viraj_-x3qb/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6906807/beat-100-clean-topo-sort-dp-easiest-intu-0oas/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6782582/easy-code-must-try-code-in-java-by-notad-w4np/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6781344/2-efficient-python-solutions-by-python_c-p6is/;;https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/3395597/java-easy-solution-explained-similiar-qu-pypz/;;;=;==;=;=;

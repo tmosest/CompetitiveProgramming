@@ -1,0 +1,27 @@
+2839. Check if Strings Can be Made Equal With Operations I;=;=Easy;=;=public boolean canBeEqual(String s1, String s2);=;=You are given two strings s1 and s2, both of length 4, consisting of lowercase English letters.
+
+You can apply the following operation on any of the two strings any number of times:
+
+Choose any two indices i and j such that j - i = 2, then swap the two characters at those indices in the string.
+Return true if you can make the strings s1 and s2 equal, and false otherwise.
+
+ 
+
+Example 1:
+
+Input: s1 = "abcd", s2 = "cdab"
+Output: true
+Explanation: We can do the following operations on s1:
+- Choose the indices i = 0, j = 2. The resulting string is s1 = "cbad".
+- Choose the indices i = 1, j = 3. The resulting string is s1 = "cdab" = s2.
+Example 2:
+
+Input: s1 = "abcd", s2 = "dacb"
+Output: false
+Explanation: It is not possible to make the two strings equal.
+ 
+
+Constraints:
+
+s1.length == s2.length == 4
+s1 and s2 consist only of lowercase English letters.;=;=https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/7192172/1-ms-beats-10000-easy-approach-on-by-vij-x8xo/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/4875265/best-expanation-runtime-in-3-language-be-5uqz/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/6936878/easy-simple-sorting-way-by-sairangineeni-xked/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/3993754/easy-understandable-solution-by-hridoy10-q1g2/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/3993082/easy-solution-check-all-cases-tc-o1-by-a-z1cf/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/3993099/simple-two-pointer-approach-on-o1-by-shi-nrmh/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/5715249/two-pointers-approach-on-o1-by-yevhenchm-0oh4/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/3993438/beginner-friendly-unlocking-the-code-sol-mwbc/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/3992872/easy-java-solution-by-shoryasharda028-3977/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/3995728/probably-the-cleanest-looking-solution-2-qgkc/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/3998331/easy-java-solution-for-beginners-by-ahme-ai2l/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/3992978/o1-java-solution-by-crack_leet97-9uu8/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/3995846/fastest-and-easiest-approach-by-enigmani-ik6m/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/7036116/simple-java-o1-solution-by-teja_tirumala-1sut/;;https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/solutions/6040776/01-time-01-space-by-bitanu_ghosh_27-s9po/;;;=;==;=;=;

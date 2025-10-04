@@ -1,0 +1,32 @@
+1884. Egg Drop With 2 Eggs and N Floors;=;=Medium;=;=public int twoEggDrop(int n);=;=You are given two identical eggs and you have access to a building with n floors labeled from 1 to n.
+
+You know that there exists a floor f where 0 <= f <= n such that any egg dropped at a floor higher than f will break, and any egg dropped at or below floor f will not break.
+
+In each move, you may take an unbroken egg and drop it from any floor x (where 1 <= x <= n). If the egg breaks, you can no longer use it. However, if the egg does not break, you may reuse it in future moves.
+
+Return the minimum number of moves that you need to determine with certainty what the value of f is.
+
+ 
+
+Example 1:
+
+Input: n = 2
+Output: 2
+Explanation: We can drop the first egg from floor 1 and the second egg from floor 2.
+If the first egg breaks, we know that f = 0.
+If the second egg breaks but the first egg didn't, we know that f = 1.
+Otherwise, if both eggs survive, we know that f = 2.
+Example 2:
+
+Input: n = 100
+Output: 14
+Explanation: One optimal strategy is:
+- Drop the 1st egg at floor 9. If it breaks, we know f is between 0 and 8. Drop the 2nd egg starting from floor 1 and going up one at a time to find f within 8 more drops. Total drops is 1 + 8 = 9.
+- If the 1st egg does not break, drop the 1st egg again at floor 22. If it breaks, we know f is between 9 and 21. Drop the 2nd egg starting from floor 10 and going up one at a time to find f within 12 more drops. Total drops is 2 + 12 = 14.
+- If the 1st egg does not break again, follow a similar process dropping the 1st egg from floors 34, 45, 55, 64, 72, 79, 85, 90, 94, 97, 99, and 100.
+Regardless of the outcome, it takes at most 14 drops to determine f.
+ 
+
+Constraints:
+
+1 <= n <= 1000;=;=https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/1248069/recursive-iterative-generic-by-votrubac-lvxv/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/6997794/asked-in-usa-based-company-for-swe-role-tez50/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/1246621/java-o1-intuition-and-detailed-reasoning-kt43/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/3291262/recursion-memoization-dp-java-solution-b-bitd/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/1767634/simple-java-dp-solution-for-n-floor-k-eg-6u6d/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/1249773/java-dp-solution-by-aparna_g-6smk/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/2206621/memoization-tabulation-java-solution-by-3dz2z/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/4091756/recursion-memoization-tabulation-by-shad-emvq/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/5828577/this-is-my-first-solution-post-if-you-li-kdor/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/5848162/simplest-shortest-codebeast-100-by-rithw-6oen/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/1246594/verbose-intuition-by-pilazarus-3gh5/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/1371690/easy-java-and-c-solution-similar-as-supe-beqg/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/5170540/java-beats-100-percent-simple-loop-by-or-idmk/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/4608139/beats-100-dp-memoization-java-by-priyans-oqka/;;https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/solutions/2859189/java-runtime-0-ms-faster-than-10000-by-v-0dhk/;;;=;==;=;=;

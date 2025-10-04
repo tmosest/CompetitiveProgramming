@@ -1,0 +1,47 @@
+2361. Minimum Costs Using the Train Line;=;=Hard;=;=public long[] minimumCosts(int[] regular, int[] express, int expressCost);=;=A train line going through a city has two routes, the regular route and the express route. Both routes go through the same n + 1 stops labeled from 0 to n. Initially, you start on the regular route at stop 0.
+
+You are given two 1-indexed integer arrays regular and express, both of length n. regular[i] describes the cost it takes to go from stop i - 1 to stop i using the regular route, and express[i] describes the cost it takes to go from stop i - 1 to stop i using the express route.
+
+You are also given an integer expressCost which represents the cost to transfer from the regular route to the express route.
+
+Note that:
+
+There is no cost to transfer from the express route back to the regular route.
+You pay expressCost every time you transfer from the regular route to the express route.
+There is no extra cost to stay on the express route.
+Return a 1-indexed array costs of length n, where costs[i] is the minimum cost to reach stop i from stop 0.
+
+Note that a stop can be counted as reached from either route.
+
+ 
+
+Example 1:
+
+
+Input: regular = [1,6,9,5], express = [5,2,3,10], expressCost = 8
+Output: [1,7,14,19]
+Explanation: The diagram above shows how to reach stop 4 from stop 0 with minimum cost.
+- Take the regular route from stop 0 to stop 1, costing 1.
+- Take the express route from stop 1 to stop 2, costing 8 + 2 = 10.
+- Take the express route from stop 2 to stop 3, costing 3.
+- Take the regular route from stop 3 to stop 4, costing 5.
+The total cost is 1 + 10 + 3 + 5 = 19.
+Note that a different route could be taken to reach the other stops with minimum cost.
+Example 2:
+
+
+Input: regular = [11,5,13], express = [7,10,6], expressCost = 3
+Output: [10,15,24]
+Explanation: The diagram above shows how to reach stop 3 from stop 0 with minimum cost.
+- Take the express route from stop 0 to stop 1, costing 3 + 7 = 10.
+- Take the regular route from stop 1 to stop 2, costing 5.
+- Take the express route from stop 2 to stop 3, costing 3 + 6 = 9.
+The total cost is 10 + 5 + 9 = 24.
+Note that the expressCost is paid again to transfer back to the express route.
+ 
+
+Constraints:
+
+n == regular.length == express.length
+1 <= n <= 105
+1 <= regular[i], express[i], expressCost <= 105;=;=https://leetcode.com/problems/minimum-costs-using-the-train-line/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/2559284/simple-java-solution-on-runtime-complexi-wqwv/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/2961306/java-dp-solution-recursion-memoization-i-vhlg/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/2791920/simple-java-o1-space-on-time-by-agaltsov-l0ps/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/5520005/dp-by-chuko-c76w/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/5859830/intuitive-clear-beats-100-by-richardleee-mfva/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/5520007/dp-by-chuko-a22i/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/5145167/like-buy-and-sell-stock-on-by-ruinan-5iz8/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/4090760/simple-java-solution-by-sakshikishore-ualy/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/3908496/i-am-share-my-top-down-dp-solution-by-ca-cx27/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/3871252/java-with-dp-solution-understand-easily-u3d57/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/3866358/clean-solution-by-slicer9875-i4xh/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/3861328/java-commented-on-time-and-o1-space-dyna-eobb/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/3860333/java-on-time-o1-space-beats-98-by-zbelka-rltz/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/3849036/simple-java-dp-solution-beats-99-by-ming-2bla/;;https://leetcode.com/problems/minimum-costs-using-the-train-line/solutions/3846193/dp-of-finite-state-machine-problems-stan-p011/;;;=;==;=;=;

@@ -1,0 +1,25 @@
+188. Best Time to Buy and Sell Stock IV;=;=Hard;=;=public int maxProfit(int k, int[] prices);=;=You are given an integer array prices where prices[i] is the price of a given stock on the ith day, and an integer k.
+
+Find the maximum profit you can achieve. You may complete at most k transactions: i.e. you may buy at most k times and sell at most k times.
+
+Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+
+ 
+
+Example 1:
+
+Input: k = 2, prices = [2,4,1]
+Output: 2
+Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2.
+Example 2:
+
+Input: k = 2, prices = [3,2,6,5,0,3]
+Output: 7
+Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4. Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+ 
+
+Constraints:
+
+1 <= k <= 100
+1 <= prices.length <= 1000
+0 <= prices[i] <= 1000;=;=https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/2997000/solution-by-deleted_user-cwie/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/7226012/best-time-to-buy-and-sell-stock-iv-at-mo-84hr/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/54117/clean-java-dp-solution-with-comment-by-j-6lsq/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/6785122/java-dp-memoization-beginner-friendly-by-wrno/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/7154188/java-easy-with-explanation-by-chahandini-64le/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/7143169/dynamic-programming-easy-by-abhay_20-lswh/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/5197801/top-down-dp-by-fahad06-bgoq/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/7179439/just-see-3-lines-code-seriously-with-in-ef1em/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/7151831/beats-100-submission-in-dp-space-optimis-z42r/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/2555893/java-easy-solution-with-explanation-begi-2dwa/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/4894465/without-dp-beginner-friendly-solution-ea-qmps/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/6526115/simple-almost-100-beats-easy-to-understa-6367/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/6988972/easiest-solution-intutive-beginner-frien-3bg8/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/6962807/easy-understandable-tabulation-approach-b7anl/;;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/6977809/3d-tabular-dp-by-piyusha_7-zrsu/;;;=;==;=;=;

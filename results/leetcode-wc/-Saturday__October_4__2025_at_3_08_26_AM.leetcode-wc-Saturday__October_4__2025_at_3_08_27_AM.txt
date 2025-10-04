@@ -1,0 +1,31 @@
+2696. Minimum String Length After Removing Substrings;=;=Easy;=;=public int minLength(String s);=;=You are given a string s consisting only of uppercase English letters.
+
+You can apply some operations to this string where, in one operation, you can remove any occurrence of one of the substrings "AB" or "CD" from s.
+
+Return the minimum possible length of the resulting string that you can obtain.
+
+Note that the string concatenates after removing the substring and could produce new "AB" or "CD" substrings.
+
+ 
+
+Example 1:
+
+Input: s = "ABFCACDB"
+Output: 2
+Explanation: We can do the following operations:
+- Remove the substring "ABFCACDB", so s = "FCACDB".
+- Remove the substring "FCACDB", so s = "FCAB".
+- Remove the substring "FCAB", so s = "FC".
+So the resulting length of the string is 2.
+It can be shown that it is the minimum length that we can obtain.
+Example 2:
+
+Input: s = "ACBBD"
+Output: 5
+Explanation: We cannot do any operations on the string so the length remains the same.
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s consists only of uppercase English letters.;=;=https://leetcode.com/problems/minimum-string-length-after-removing-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5879675/easy-stack-solution-python-java-c-on-on-etm9m/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5879908/interviewers-expects-in-place-solution-s-qpxv/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/7175658/solution-in-java-by-bharath_1005-nx6z/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5880997/single-pass-69_beats_100easy-solutionwit-4qgy/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5879913/beginner-friendly-on-1ms-beats-100-easy-x5hze/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/7077923/java-easy-solution-by-monish1153-gza2/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/3546874/very-easy-java-solution-by-codehunter01-r0ab/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5880265/simulating-character-removal-with-stack-tnvzo/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/6951952/java-solution-by-dheerajpoojary-q1q3/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/6892597/easy-java-stack-solution-minimum-string-qih0u/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5879680/step-by-step-guide-to-minimizing-strings-tnts/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5880145/java-clean-solution-by-shree_govind_jee-h89g/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5880894/daily-problem-07102024-stack-on-by-sajal-x2p0/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5880948/simple-java-c-code-by-abhinandannaik1717-yiuv/;;https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5880658/easy-solution-100-beats-java-by-eshwarap-w0gw/;;;=;==;=;=;

@@ -1,0 +1,22 @@
+1745. Palindrome Partitioning IV;=;=Hard;=;=public boolean checkPartitioning(String s);=;=Given a string s, return true if it is possible to split the string s into three non-empty palindromic substrings. Otherwise, return false.?????
+
+A string is said to be palindrome if it the same string when reversed.
+
+ 
+
+Example 1:
+
+Input: s = "abcbdd"
+Output: true
+Explanation: "abcbdd" = "a" + "bcb" + "dd", and all three substrings are palindromes.
+Example 2:
+
+Input: s = "bcbddxy"
+Output: false
+Explanation: s cannot be split into 3 palindromes.
+ 
+
+Constraints:
+
+3 <= s.length <= 2000
+s?????? consists only of lowercase English letters.;=;=https://leetcode.com/problems/palindrome-partitioning-iv/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/palindrome-partitioning-iv/solutions/6894834/palindrome-partitioning-iv-by-pranavdewa-321s/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/2779795/easy-java-solutions-easy-by-infox_92-1267/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/5397782/java-clean-solution-by-shree_govind_jee-ac04/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/5712338/java-easy-with-explanation-strivers-appr-vnf9/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/4275702/beats-95-java-by-cs12b033-9xus/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/2115251/simple-java-solution-with-explanation-an-ge2z/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/3066978/70-faster-memoization-code-by-abhaydutt-x5yf/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/2837424/on2-time-solution-using-dp-by-pavan_karr-3dk1/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/2706714/java-simple-recursive-code-for-n-cuts-by-ub3q/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/2169656/java-easy-to-understand-dp-tabulation-ti-kqfi/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/1818968/on2-very-simple-dp-soln-in-java-by-ck240-s5we/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/7156426/parition-dp-memo-okn2-by-gitchuan-c0ys/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/1181771/dp-java-with-explanation-by-ruchir28-pg54/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/1043065/dp-on2-palindrome-partitioning-ii-easy-t-rmiq/;;https://leetcode.com/problems/palindrome-partitioning-iv/solutions/6983387/palindrome-partitioning-iv-solution-in-j-kwdg/;;;=;==;=;=;

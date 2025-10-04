@@ -1,0 +1,35 @@
+2129. Capitalize the Title;=;=Easy;=;=public String capitalizeTitle(String title);=;=You are given a string title consisting of one or more words separated by a single space, where each word consists of English letters. Capitalize the string by changing the capitalization of each word such that:
+
+If the length of the word is 1 or 2 letters, change all letters to lowercase.
+Otherwise, change the first letter to uppercase and the remaining letters to lowercase.
+Return the capitalized title.
+
+ 
+
+Example 1:
+
+Input: title = "capiTalIze tHe titLe"
+Output: "Capitalize The Title"
+Explanation:
+Since all the words have a length of at least 3, the first letter of each word is uppercase, and the remaining letters are lowercase.
+Example 2:
+
+Input: title = "First leTTeR of EACH Word"
+Output: "First Letter of Each Word"
+Explanation:
+The word "of" has length 2, so it is all lowercase.
+The remaining words have a length of at least 3, so the first letter of each remaining word is uppercase, and the remaining letters are lowercase.
+Example 3:
+
+Input: title = "i lOve leetcode"
+Output: "i Love Leetcode"
+Explanation:
+The word "i" has length 1, so it is lowercase.
+The remaining words have a length of at least 3, so the first letter of each remaining word is uppercase, and the remaining letters are lowercase.
+ 
+
+Constraints:
+
+1 <= title.length <= 100
+title consists of words separated by a single space without any leading or trailing spaces.
+Each word consists of uppercase and lowercase English letters and is non-empty.;=;=https://leetcode.com/problems/capitalize-the-title/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/capitalize-the-title/solutions/7194514/simple-clean-beats-easy-to-understand-be-9zsf/;;https://leetcode.com/problems/capitalize-the-title/solutions/1675922/java-c-2-approaches-pictorial-explanatio-gyf6/;;https://leetcode.com/problems/capitalize-the-title/solutions/7147479/easy-java-by-sivaaleet-l2tj/;;https://leetcode.com/problems/capitalize-the-title/solutions/6938153/first-occurrence-stringbuilder-array-sol-cyk9/;;https://leetcode.com/problems/capitalize-the-title/solutions/6879419/java-approach-by-gokilaselvi-h72u/;;https://leetcode.com/problems/capitalize-the-title/solutions/4192566/simple-java-solutions-runtime-2ms-by-ahm-pq4r/;;https://leetcode.com/problems/capitalize-the-title/solutions/6971052/java-easy-solution-by-kulkarnishreya04-8vmr/;;https://leetcode.com/problems/capitalize-the-title/solutions/1675380/javapython-3-clean-code-w-brief-analysis-ih5d/;;https://leetcode.com/problems/capitalize-the-title/solutions/1675667/java-simple-and-easy-to-understand-solut-1tte/;;https://leetcode.com/problems/capitalize-the-title/solutions/6808974/easy-substring-way-try-this-by-sairangin-hw4x/;;https://leetcode.com/problems/capitalize-the-title/solutions/3301507/java-2-line-code-100-faster-by-sharforaz-pqgn/;;https://leetcode.com/problems/capitalize-the-title/solutions/6347681/easy-java-solution-beating-8445-in-3ms-b-ddrw/;;https://leetcode.com/problems/capitalize-the-title/solutions/7244946/converting-letter-to-upper-case-by-adars-aau6/;;https://leetcode.com/problems/capitalize-the-title/solutions/7191710/java-by-devendran9993-6s8j/;;https://leetcode.com/problems/capitalize-the-title/solutions/6563163/java-easy-solution-runtime-3ms-by-user71-c6t1/;;;=;==;=;=;

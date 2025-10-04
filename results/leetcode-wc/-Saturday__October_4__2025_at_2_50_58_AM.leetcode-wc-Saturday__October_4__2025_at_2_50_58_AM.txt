@@ -1,0 +1,28 @@
+2447. Number of Subarrays With GCD Equal to K;=;=Medium;=;=public int subarrayGCD(int[] nums, int k);=;=Given an integer array nums and an integer k, return the number of subarrays of nums where the greatest common divisor of the subarray's elements is k.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+The greatest common divisor of an array is the largest integer that evenly divides all the array elements.
+
+ 
+
+Example 1:
+
+Input: nums = [9,3,1,2,6,3], k = 3
+Output: 4
+Explanation: The subarrays of nums where 3 is the greatest common divisor of all the subarray's elements are:
+- [9,3,1,2,6,3]
+- [9,3,1,2,6,3]
+- [9,3,1,2,6,3]
+- [9,3,1,2,6,3]
+Example 2:
+
+Input: nums = [4], k = 7
+Output: 0
+Explanation: There are no subarrays of nums where 7 is the greatest common divisor of all the subarray's elements.
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i], k <= 109;=;=https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/7226564/java-by-ankit6387-ckk0/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/6970223/number-of-subarrays-where-gcd-equals-k-b-isyn/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/2734313/java-100-fastest-on2logn-tc-o1-sc-easy-b-lhok/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/2734301/c-python-java-easy-brute-force-solution-zqebu/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/2736533/my-clean-java-solution-by-sourin_bruh-ni1x/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/7176893/number-of-subarrays-with-gcd-equal-to-k-dp3o9/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/2734273/java-easy-to-understand-by-woodyiiiiiii-sk4c/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/2735170/easy-java-solution-by-devkd-l2vq/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/2734759/java-solution-with-explanation-9ms-by-vi-3yoh/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/2735402/number-of-subarrays-with-gcd-equal-to-k-uqgnm/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/7192750/simple-easy-to-understand-by-samirsyntax-8wpo/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/7107607/gcd-sums-equals-k-by-vindhyachal21-0xxv/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/7070188/java-easy-solution-by-iamsd-kftv/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/7062006/easy-coding-solution-in-java-ultimately-go1ai/;;https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/solutions/7031425/java-math-gcd-by-vishal_v_d-jeur/;;;=;==;=;=;

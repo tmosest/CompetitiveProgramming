@@ -1,0 +1,25 @@
+128. Longest Consecutive Sequence;=;=Medium;=;=public int longestConsecutive(int[] nums);=;=Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+
+You must write an algorithm that runs in O(n) time.
+
+ 
+
+Example 1:
+
+Input: nums = [100,4,200,1,3,2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+Example 2:
+
+Input: nums = [0,3,7,2,5,8,4,6,0,1]
+Output: 9
+Example 3:
+
+Input: nums = [1,0,1,2]
+Output: 3
+ 
+
+Constraints:
+
+0 <= nums.length <= 105
+-109 <= nums[i] <= 109;=;=https://leetcode.com/problems/longest-consecutive-sequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-consecutive-sequence/solutions/6398280/video-check-n-1-by-niits-b1u0/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/3171254/solution-by-deleted_user-hvnb/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7247333/java-by-hashset-easy-solution-by-pushpra-s34w/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7247143/java-solution-100-beats-by-tarunarora11-r0zv/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7198867/hash-it-and-dash-it-8383-crushed-by-sdkv-g8no/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7244297/java-set-solution-by-trungkanto-q160/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7244285/longest-consecutive-sequence-hashset-app-xy0k/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7234022/solution-in-java30-ms-70-beats-by-polato-3gzq/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7172366/using-hashset-super-easy-explanation-jav-sfs8/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7223591/sorting-brute-approach-to-setoptimal-app-6g1p/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7231594/longest-consecutive-sequence-time-on-log-xxcu/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/4139456/ccjavapythonjavascript-beats-100-3-appro-tr5w/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/3888654/python3-c-javaintervalsgreedy-and-dp-wit-ula2/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/1127908/2-approaches-for-your-interviewhindi-by-44iz9/;;https://leetcode.com/problems/longest-consecutive-sequence/solutions/7215982/solution-for-longest-consecutive-sequenc-af97/;;;=;==;=;=;

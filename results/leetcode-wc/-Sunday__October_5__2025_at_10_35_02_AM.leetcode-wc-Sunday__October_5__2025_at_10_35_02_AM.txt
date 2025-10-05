@@ -1,0 +1,37 @@
+2607. Make K-Subarray Sums Equal;=;=Medium;=;=publicÊlongÊmakeSubKSumEqual(int[]Êarr,ÊintÊk);=;=You are given a 0-indexed integer array arr and an integer k. The array arr is circular. In other words, the first element of the array is the next element of the last element, and the last element of the array is the previous element of the first element.
+
+You can do the following operation any number of times:
+
+Pick any element from arr and increase or decrease it by 1.
+Return the minimum number of operations such that the sum of each subarray of length k is equal.
+
+A subarray is a contiguous part of the array.
+
+Ê
+
+Example 1:
+
+Input: arr = [1,4,1,3], k = 2
+Output: 1
+Explanation: we can do one operation on index 1 to make its value equal to 3.
+The array after the operation is [1,3,1,3]
+- Subarray starts at index 0 is [1, 3], and its sum is 4 
+- Subarray starts at index 1 is [3, 1], and its sum is 4 
+- Subarray starts at index 2 is [1, 3], and its sum is 4 
+- Subarray starts at index 3 is [3, 1], and its sum is 4 
+Example 2:
+
+Input: arr = [2,5,5,7], k = 3
+Output: 5
+Explanation: we can do three operations on index 0 to make its value equal to 5 and two operations on index 3 to make its value equal to 5.
+The array after the operations is [5,5,5,5]
+- Subarray starts at index 0 is [5, 5, 5], and its sum is 15
+- Subarray starts at index 1 is [5, 5, 5], and its sum is 15
+- Subarray starts at index 2 is [5, 5, 5], and its sum is 15
+- Subarray starts at index 3 is [5, 5, 5], and its sum is 15 
+Ê
+
+Constraints:
+
+1 <= k <= arr.length <= 105
+1 <= arr[i] <= 109;=;=https://leetcode.com/problems/make-k-subarray-sums-equal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3366373/k-cycles-by-votrubac-vd98/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3366378/javapython-3-divide-into-sequences-such-63fgx/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3366625/day-366-pythonjavac-explained-intuition-1pxsh/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/6647871/circular-array-gcd-median-minimum-steps-y7m9u/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3512476/easy-java-solution-by-homosapein-9fyn/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/4337017/java-solution-by-ndsjqwbbb-upq0/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/4042027/java-clean-code-gcd-grouping-median-cost-bj97/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/6846999/easy-no-gcd-approach-naive-by-ranadheer_-3gsw/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/4403977/aaa-by-user3043sb-9353/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3391633/easy-understand-solution-though-not-opti-ovsb/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3373272/java-easy-way-by-using-gcd-and-sort-by-m-xx63/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3372216/java-faster-then-100-by-mr-nikrray-iqlh/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3371353/simple-approach-by-__finale-yili/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3371274/make-k-subarray-sums-equal-java-group-sa-1ehs/;;https://leetcode.com/problems/make-k-subarray-sums-equal/solutions/3368978/beats_100time-beats_100meomry-by-aj-47-vkgo/;;;=;==;=;=;

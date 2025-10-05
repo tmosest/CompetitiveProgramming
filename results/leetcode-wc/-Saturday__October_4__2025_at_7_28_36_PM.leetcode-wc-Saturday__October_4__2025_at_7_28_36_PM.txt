@@ -1,0 +1,45 @@
+998. Maximum Binary Tree II;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=A maximum tree is a tree where every node has a value greater than any other value in its subtree.
+
+You are given the root of a maximum binary tree and an integer val.
+
+Just as in the previous problem, the given tree was constructed from a list a (root = Construct(a)) recursively with the following Construct(a) routine:
+
+If a is empty, return null.
+Otherwise, let a[i] be the largest element of a. Create a root node with the value a[i].
+The left child of root will be Construct([a[0], a[1], ..., a[i - 1]]).
+The right child of root will be Construct([a[i + 1], a[i + 2], ..., a[a.length - 1]]).
+Return root.
+Note that we were not given a directly, only a root node root = Construct(a).
+
+Suppose b is a copy of a with the value val appended to it. It is guaranteed that b has unique values.
+
+Return Construct(b).
+
+ 
+
+Example 1:
+
+
+Input: root = [4,1,3,null,null,2], val = 5
+Output: [5,4,null,1,3,null,null,2]
+Explanation: a = [1,4,2,3], b = [1,4,2,3,5]
+Example 2:
+
+
+Input: root = [5,2,4,null,1], val = 3
+Output: [5,2,4,null,1,null,3]
+Explanation: a = [2,1,5,4], b = [2,1,5,4,3]
+Example 3:
+
+
+Input: root = [5,2,3,null,1], val = 4
+Output: [5,2,4,null,1,3]
+Explanation: a = [2,1,5,3], b = [2,1,5,3,4]
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 100].
+1 <= Node.val <= 100
+All the values of the tree are unique.
+1 <= val <= 100;=;=https://leetcode.com/problems/maximum-binary-tree-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-binary-tree-ii/solutions/5325754/beats-100-2-lines-recursive-javac-soluti-bd30/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/777874/java-faster-than-100-recursion-by-hemant-f7ym/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/6248959/easy-recursive-code-beats-100-by-k_l_sri-9mmb/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/4616995/java-optimize-solution-beginner-friendly-c7d5/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/2953321/java-4-lines-of-code-0ms-by-_sikarwar-z929/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/3940074/simple-explanation-with-examples-by-ayus-cfjf/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/3540681/solution-by-deleted_user-91g2/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/4668172/beats-100-easy-java-solution-by-priyansh-1oaq/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/1956210/java-easy-recursive-by-devansh2805-cox8/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/1970264/java-solution-by-mihir05-yzzc/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/1833923/java-0ms-faster-than-100-by-meetsoni1214-zbme/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/1154361/java-iterative-dfs-o1-space-on-time-by-c-5iz2/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/7091162/iteration-by-wbcnskdhubcnjscs-y0ue/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/493507/java-simple-intuitive-solution-faster-th-n70x/;;https://leetcode.com/problems/maximum-binary-tree-ii/solutions/7000206/easy-in-order-approach-1ms-solution-by-m-3eqq/;;;=;==;=;=;

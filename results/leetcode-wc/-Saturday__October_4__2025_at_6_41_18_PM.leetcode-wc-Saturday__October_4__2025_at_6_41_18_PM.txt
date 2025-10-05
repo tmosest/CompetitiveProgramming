@@ -1,0 +1,20 @@
+2177. Find Three Consecutive Integers That Sum to a Given Number;=;=Medium;=;=public long[] sumOfThree(long num);=;=Given an integer num, return three consecutive integers (as a sorted array) that sum to num. If num cannot be expressed as the sum of three consecutive integers, return an empty array.
+
+ 
+
+Example 1:
+
+Input: num = 33
+Output: [10,11,12]
+Explanation: 33 can be expressed as 10 + 11 + 12 = 33.
+10, 11, 12 are 3 consecutive integers, so we return [10, 11, 12].
+Example 2:
+
+Input: num = 4
+Output: []
+Explanation: There is no way to express 4 as the sum of 3 consecutive integers.
+ 
+
+Constraints:
+
+0 <= num <= 1015;=;=https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/7242381/c-single-line-only-clear-and-efficient-s-y4vi/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/7242361/c-clear-and-efficient-o1-solution-beats-6q3qv/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/7171519/easy-video-explanation-by-deep_dive_codi-jp7p/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/7076045/optimal-approach-by-narasimha_0304-fnt6/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/7193994/simplest-and-easiest-to-understand-strat-92y2/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/1783715/c-easy-to-understand-explained-with-exam-55qz/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/1787777/shouldnt-it-have-been-classified-as-easy-5uco/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/6805309/two-liner-beginner-friendly-easy-solutio-dipr/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/1783625/javapython-3-divisible-by-3-by-rock-e6vh/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/6792608/easy-solution-in-java-by-sangeeta_techno-wi53/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/6958906/2177-find-three-consecutive-integers-tha-i1r6/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/5797451/simple-and-easy-javascript-solution-by-s-3jze/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/6803925/easy-mathematical-approach-by-ashuhd-2tjm/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/6822091/o1-cpp-by-varuntyagig-gwzp/;;https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/solutions/5797430/simple-and-easy-2-c-solution-by-shishirr-ow3c/;;;=;==;=;=;

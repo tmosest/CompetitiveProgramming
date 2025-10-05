@@ -1,0 +1,32 @@
+2591. Distribute Money to Maximum Children;=;=Easy;=;=public int distMoney(int money, int children);=;=You are given an integer money denoting the amount of money (in dollars) that you have and another integer children denoting the number of children that you must distribute the money to.
+
+You have to distribute the money according to the following rules:
+
+All money must be distributed.
+Everyone must receive at least 1 dollar.
+Nobody receives 4 dollars.
+Return the maximum number of children who may receive exactly 8 dollars if you distribute the money according to the aforementioned rules. If there is no way to distribute the money, return -1.
+
+ 
+
+Example 1:
+
+Input: money = 20, children = 3
+Output: 1
+Explanation: 
+The maximum number of children with 8 dollars will be 1. One of the ways to distribute the money is:
+- 8 dollars to the first child.
+- 9 dollars to the second child. 
+- 3 dollars to the third child.
+It can be proven that no distribution exists such that number of children getting 8 dollars is greater than 1.
+Example 2:
+
+Input: money = 16, children = 2
+Output: 2
+Explanation: Each child can be given 8 dollars.
+ 
+
+Constraints:
+
+1 <= money <= 200
+2 <= children <= 30;=;=https://leetcode.com/problems/distribute-money-to-maximum-children/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3313943/interview-approachhandwritteneasy-by-s_1-h1fg/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3347552/o1-short-if-else-solution-by-gurnainwadh-l62z/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3312275/easy-java-solution-by-himanshubhoir-23su/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/6480661/leetcodedaybyday-beats-100-with-c-100-wi-d6tj/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3311967/simple-java-solution-by-siddhant_1602-phof/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/5332619/java-solution-beats-100-by-star-dust24-lqs0/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3335943/c-java-easy-to-understand-tc-o1-sc-o1-ma-rsph/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3469911/easy-java-solution-with-single-while-loo-pc5b/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3339150/simple-java-solution-by-sourabh_k-nzg5/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3318537/javajavascript-o1-time-space-complexity-0yk3s/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3318470/java-easy-to-understand-by-venkat089-jwq7/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/4531850/simple-java-code-1-ms-beats-100-by-arobh-evxq/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3312036/java-by-recepkucek-ec3i/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3312400/easy-to-understand-in-on-by-princebharti-0rxf/;;https://leetcode.com/problems/distribute-money-to-maximum-children/solutions/3954831/distribute-money-equally-among-children-90zm8/;;;=;==;=;=;

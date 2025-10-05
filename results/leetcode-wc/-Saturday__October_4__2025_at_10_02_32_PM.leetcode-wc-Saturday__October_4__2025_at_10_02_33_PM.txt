@@ -1,0 +1,35 @@
+2583. Kth Largest Sum in a Binary Tree;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=You are given the root of a binary tree and a positive integer k.
+
+The level sum in the tree is the sum of the values of the nodes that are on the same level.
+
+Return the kth largest level sum in the tree (not necessarily distinct). If there are fewer than k levels in the tree, return -1.
+
+Note that two nodes are on the same level if they have the same distance from the root.
+
+ 
+
+Example 1:
+
+
+Input: root = [5,8,9,2,1,3,7,4,6], k = 2
+Output: 13
+Explanation: The level sums are the following:
+- Level 1: 5.
+- Level 2: 8 + 9 = 17.
+- Level 3: 2 + 1 + 3 + 7 = 13.
+- Level 4: 4 + 6 = 10.
+The 2nd largest level sum is 13.
+Example 2:
+
+
+Input: root = [1,2,null,3], k = 1
+Output: 3
+Explanation: The largest level sum is 3.
+ 
+
+Constraints:
+
+The number of nodes in the tree is n.
+2 <= n <= 105
+1 <= Node.val <= 106
+1 <= k <= n;=;=https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5949739/clean-and-fully-explained-code-beats-100-uyhf/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5950896/beats-10000-explained-with-example-by-sr-9iqe/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5951786/very-clean-clear-code-dfs-bfs-2-approach-5hba/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/7135628/optimal-kth-largest-level-sum-traversing-m5bl/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5949940/level-order-min-heap-very-simple-steps-t-4g7h/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5949683/explained-step-by-step-beats-100-working-3abc/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5735828/easiestfaster-lesser-cpython3javacpython-eelb/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5952378/track-level-sums-using-priority-queue-ja-m6q7/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/7034317/effortless-solution-for-beginners-by-rav-iwca/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/7017056/java-simple-bfs-level-order-traversal-so-ixn8/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/6979832/i-f-you-curious-to-see-the-intuitive-imp-v7u2/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5952411/beats-16-java-bfs-easy-by-priyadarshi_co-resc/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5954281/fastest-and-easy-to-understand-solution-r0irk/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/5950085/easy-solution-daily-question-221024-plea-6y2k/;;https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/solutions/6926074/o-n-solution-beats-100-bfs-priority-queu-mda7/;;;=;==;=;=;

@@ -1,0 +1,48 @@
+3634. Minimum Removals to Balance Array;=;=Medium;=;=public int minRemoval(int[] nums, int k);=;=You are given an integer array nums and an integer k.
+
+An array is considered balanced if the value of its maximum element is at most k times the minimum element.
+
+You may remove any number of elements from nums??????? without making it empty.
+
+Return the minimum number of elements to remove so that the remaining array is balanced.
+
+Note: An array of size 1 is considered balanced as its maximum and minimum are equal, and the condition always holds true.
+
+ 
+
+Example 1:
+
+Input: nums = [2,1,5], k = 2
+
+Output: 1
+
+Explanation:
+
+Remove nums[2] = 5 to get nums = [2, 1].
+Now max = 2, min = 1 and max <= min * k as 2 <= 1 * 2. Thus, the answer is 1.
+Example 2:
+
+Input: nums = [1,6,2,9], k = 3
+
+Output: 2
+
+Explanation:
+
+Remove nums[0] = 1 and nums[3] = 9 to get nums = [6, 2].
+Now max = 6, min = 2 and max <= min * k as 6 <= 2 * 3. Thus, the answer is 2.
+Example 3:
+
+Input: nums = [4,6], k = 2
+
+Output: 0
+
+Explanation:
+
+Since nums is already balanced as 6 <= 4 * 2, no elements need to be removed.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109
+1 <= k <= 105;=;=https://leetcode.com/problems/minimum-removals-to-balance-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7036667/beats-100-clean-sliding-window-with-sort-iqn6/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7036620/javacpython-sliding-window-by-lee215-xx8f/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7036684/binary-search-sliding-window-detailed-ex-6k7z/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7036600/without-binary-search-c-python-java-by-n-wqr5/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7164455/java-solution-by-shreyagarg63-l4e1/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7038091/sliding-window-solution-java-by-pbcool_0-qa8x/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7036657/easy-java-solution-using-binary-search-b-67a5/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7055567/well-detailed-explanation-java-easy-to-u-wxiz/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7036577/kotlin-java-c-python-simple-binary-searc-6cwb/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7037512/stellars-clean-code-video-intuition-appr-1ce7/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7058146/java-esy-by-mohits24-p131/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7039237/just-binary-search-no-sliding-window-by-zpmrq/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7039214/just-binary-search-no-sliding-window-by-3w96j/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7036729/java_solution-by-rishank1234-sfty/;;https://leetcode.com/problems/minimum-removals-to-balance-array/solutions/7036613/barely-working-java-solution-by-rishi123-9bgd/;;;=;==;=;=;

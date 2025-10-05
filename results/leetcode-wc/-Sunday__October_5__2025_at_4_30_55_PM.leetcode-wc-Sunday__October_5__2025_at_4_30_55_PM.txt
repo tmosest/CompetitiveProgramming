@@ -1,0 +1,22 @@
+1392. Longest Happy Prefix;=;=Hard;=;=public String longestPrefix(String s)     int[] lpsLength = new int[s.length()];    int len = 0;    int j = 1;        while (j < s.length())         if (s.charAt(j) == s.charAt(len))             len++;            lpsLength[j] = len;            j++;         else             if (len > 0)                 len = lpsLength[len - 1];             else;=;=A string is called a happy prefix if is a non-empty prefix which is also a suffix (excluding itself).
+
+Given a string s, return the longest happy prefix of s. Return an empty string "" if no such prefix exists.
+
+ 
+
+Example 1:
+
+Input: s = "level"
+Output: "l"
+Explanation: s contains 4 prefix excluding itself ("l", "le", "lev", "leve"), and suffix ("l", "el", "vel", "evel"). The largest prefix which is also suffix is given by "l".
+Example 2:
+
+Input: s = "ababab"
+Output: "abab"
+Explanation: "abab" is the largest prefix which is also suffix. They can overlap in the original string.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s contains only lowercase English letters.;=;=https://leetcode.com/problems/longest-happy-prefix/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-happy-prefix/solutions/6586824/easy-beginner-friendly-beats-100-notes-j-97dh/;;https://leetcode.com/problems/longest-happy-prefix/solutions/7166949/video-kmplps-fully-explained-c-java-pyth-8mo6/;;https://leetcode.com/problems/longest-happy-prefix/solutions/7057399/using-kmp-algorithm-by-tanisha1907-ysy9/;;https://leetcode.com/problems/longest-happy-prefix/solutions/6789216/prefix-function-lps-array-construction-u-8nkh/;;https://leetcode.com/problems/longest-happy-prefix/solutions/7045759/longest-happy-prefix-by-pranavdewangan22-4plt/;;https://leetcode.com/problems/longest-happy-prefix/solutions/6830064/java-kmp-algorithm-detailed-solution-wit-sol7/;;https://leetcode.com/problems/longest-happy-prefix/solutions/4379169/beats-100-kmp-easy-java-solution-by-priy-bvxt/;;https://leetcode.com/problems/longest-happy-prefix/solutions/7243767/longest-happy-prefix-z-algorithm-intuiti-terp/;;https://leetcode.com/problems/longest-happy-prefix/solutions/7234840/kmp-on-by-gitchuan-e3m3/;;https://leetcode.com/problems/longest-happy-prefix/solutions/7091972/longest-happy-prefix-brute-force-optimal-ljv9/;;https://leetcode.com/problems/longest-happy-prefix/solutions/6438133/longest-happy-prefix-by-steffiinfancia11-loxf/;;https://leetcode.com/problems/longest-happy-prefix/solutions/3480903/easy-java-solution-beginner-friendly-bea-9m1i/;;https://leetcode.com/problems/longest-happy-prefix/solutions/2994051/java-easiest-approach-with-explanation-o-d2s8/;;https://leetcode.com/problems/longest-happy-prefix/solutions/5852304/calculate-the-prefix-function-kmp-approa-8fdv/;;https://leetcode.com/problems/longest-happy-prefix/solutions/7238345/kmp-algo-made-simple-by-code-with-ashhar-5dev/;;;=;==;=;=;

@@ -1,0 +1,46 @@
+3267. Count Almost Equal Pairs II;=;=Hard;=;=public int countPairs(int[] nums);=;=Attention: In this version, the number of operations that can be performed, has been increased to twice.
+
+You are given an array nums consisting of positive integers.
+
+We call two integers x and y almost equal if both integers can become equal after performing the following operation at most twice:
+
+Choose either x or y and swap any two digits within the chosen number.
+Return the number of indices i and j in nums where i < j such that nums[i] and nums[j] are almost equal.
+
+Note that it is allowed for an integer to have leading zeros after performing an operation.
+
+ 
+
+Example 1:
+
+Input: nums = [1023,2310,2130,213]
+
+Output: 4
+
+Explanation:
+
+The almost equal pairs of elements are:
+
+1023 and 2310. By swapping the digits 1 and 2, and then the digits 0 and 3 in 1023, you get 2310.
+1023 and 213. By swapping the digits 1 and 0, and then the digits 1 and 2 in 1023, you get 0213, which is 213.
+2310 and 213. By swapping the digits 2 and 0, and then the digits 3 and 2 in 2310, you get 0213, which is 213.
+2310 and 2130. By swapping the digits 3 and 1 in 2310, you get 2130.
+Example 2:
+
+Input: nums = [1,10,100]
+
+Output: 3
+
+Explanation:
+
+The almost equal pairs of elements are:
+
+1 and 10. By swapping the digits 1 and 0 in 10, you get 01 which is 1.
+1 and 100. By swapping the second 0 with the digit 1 in 100, you get 001, which is 1.
+10 and 100. By swapping the first 0 with the digit 1 in 100, you get 010, which is 10.
+ 
+
+Constraints:
+
+2 <= nums.length <= 5000
+1 <= nums[i] < 107;=;=https://leetcode.com/problems/count-almost-equal-pairs-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5686744/on2-on-d4-brute-force-digits-diff-compar-dz2v/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5687137/line-by-line-explanation-initial-greedy-fu2et/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5686773/java-accepted-python-tle-by-chitraksh24-zv8n/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5686699/beats-100-users-java-very-easy-code-by-d-j4m8/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5687520/easy-solution-java-by-jangir_yashraj-h19d/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/6932818/my-solution-by-watercyb-hf43/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5687155/java-passes-beats-100-but-same-code-tle-5m34k/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5686740/java-100-beats-by-vilaparthibhaskar-st0z/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5686735/optimizing-the-brute-force-onn-approach-xgkz8/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5695237/hash-solution-c-by-fitran-pmca/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5702933/super-simple-java-ond4-solution-and-expl-nzq8/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5692619/easy-java-solution-by-danish_jamil-gj30/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5691203/beats-100-java-by-murariambofficial-dwbo/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5691180/java-brute-force-using-map-to-group-all-72exm/;;https://leetcode.com/problems/count-almost-equal-pairs-ii/solutions/5690882/easy-video-solution-critical-thinking-ho-yzcz/;;;=;==;=;=;

@@ -1,0 +1,27 @@
+1736. Latest Time by Replacing Hidden Digits;=;=Easy;=;=public String maximumTime(String time);=;=You are given a string time in the form of  hh:mm, where some of the digits in the string are hidden (represented by ?).
+
+The valid times are those inclusively between 00:00 and 23:59.
+
+Return the latest valid time you can get from time by replacing the hidden digits.
+
+ 
+
+Example 1:
+
+Input: time = "2?:?0"
+Output: "23:50"
+Explanation: The latest hour beginning with the digit '2' is 23 and the latest minute ending with the digit '0' is 50.
+Example 2:
+
+Input: time = "0?:3?"
+Output: "09:39"
+Example 3:
+
+Input: time = "1?:22"
+Output: "19:22"
+ 
+
+Constraints:
+
+time is in the format hh:mm.
+It is guaranteed that you can produce a valid time from the given string.;=;=https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/7177606/java-easy-solution-by-monish1153-967a/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/6323680/0ms-100-beat-java-by-galani_jenis-5zp2/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/1032518/java-c-explained-faster-than-100-by-raja-ybyi/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/4817222/easy-100-beat-beginner-friendly-code-by-gtnwn/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/5502999/beats-100-greedy-simulation-and-string-b-fak1/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/5788175/string-greedy-java-by-hemant-batra-juxq/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/1341169/java-0ms-100-fast-and-easy-to-understand-fc4y/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/1038377/java-faster-than-100-by-yurokusa-c3ch/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/4655067/simple-java-code-1-ms-beats-100-by-arobh-q35f/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/4670462/simple-solution-in-java-beats-100-by-saa-h5mw/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/7182736/using-if-blocks-by-puneetachauhan-9vg3/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/1591577/beautiful-c-solution-can-be-implemented-dg1ic/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/2998674/my-solution-in-java-by-alijavadov-1bt7/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/7234949/optimal-solution-in-python-java-c-beats-gnhva/;;https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/solutions/1032426/java-clean-solution-with-examples-by-o_i-2mej/;;;=;==;=;=;

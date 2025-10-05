@@ -1,0 +1,24 @@
+2443. Sum of Number and Its Reverse;=;=Medium;=;=publicÊbooleanÊsumOfNumberAndReverse(intÊnum);=;=Given a non-negative integer num, return true if num can be expressed as the sum of any non-negative integer and its reverse, or false otherwise.
+
+Ê
+
+Example 1:
+
+Input: num = 443
+Output: true
+Explanation: 172 + 271 = 443 so we return true.
+Example 2:
+
+Input: num = 63
+Output: false
+Explanation: 63 cannot be expressed as the sum of a non-negative integer and its reverse so we return false.
+Example 3:
+
+Input: num = 181
+Output: true
+Explanation: 140 + 041 = 181 so we return true. Note that when a number is reversed, there may be leading zeros.
+Ê
+
+Constraints:
+
+0 <= num <= 105;=;=https://leetcode.com/problems/sum-of-number-and-its-reverse/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/2708194/fast-solution-by-java_programmer_ketan-066c/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/2709340/java-beats-100-math-solution-with-backtr-sdng/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/6688767/simple-java-solution-enumeration-by-roha-hrht/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/6545651/simple-stringbuilder-way-by-sairangineen-kbrw/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/2708812/sum-of-number-and-its-reverse-by-praduma-naw6/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/3225467/no-more-easy-solution-can-be-in-8-lines-8ri2u/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/2741287/easy-to-understand-java-solution-by-abhi-narf/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/2711145/java-solution-by-janhvi__28-ri8q/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/5784735/o1-solution-using-divide-and-conquer-in-ws9nv/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/7034583/easy-beginner-friendly-java-code-brute-f-ws95/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/2708173/easy-java-solution-set-by-devkd-vkm7/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/2708598/easy-solution-0n-brute-force-java-by-bla-g4el/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/2757962/java-easiest-java-solution-of-this-quest-eagl/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/2710056/java-solution-for-beginners-easy-to-unde-l47l/;;https://leetcode.com/problems/sum-of-number-and-its-reverse/solutions/7217510/simple-and-easy-solution-by-kalai3117-0w7o/;;;=;==;=;=;

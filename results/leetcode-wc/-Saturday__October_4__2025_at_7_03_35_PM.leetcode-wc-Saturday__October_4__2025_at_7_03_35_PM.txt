@@ -1,0 +1,34 @@
+2099. Find Subsequence of Length K With the Largest Sum;=;=Easy;=;=public int[] maxSubsequence(int[] nums, int k);=;=You are given an integer array nums and an integer k. You want to find a subsequence of nums of length k that has the largest sum.
+
+Return any such subsequence as an integer array of length k.
+
+A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
+
+ 
+
+Example 1:
+
+Input: nums = [2,1,3,3], k = 2
+Output: [3,3]
+Explanation:
+The subsequence has the largest sum of 3 + 3 = 6.
+Example 2:
+
+Input: nums = [-1,-2,3,4], k = 3
+Output: [-1,3,4]
+Explanation: 
+The subsequence has the largest sum of -1 + 3 + 4 = 6.
+Example 3:
+
+Input: nums = [3,4,3,3], k = 2
+Output: [3,4]
+Explanation:
+The subsequence has the largest sum of 3 + 4 = 7. 
+Another possible subsequence is [4, 3].
+ 
+
+Constraints:
+
+1 <= nums.length <= 1000
+-105 <= nums[i] <= 105
+1 <= k <= nums.length;=;=https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6892969/beginner-freindly-by-ashokvarma5247-ma4s/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6893731/cpp-java-python-go-priority-queue-100-be-fic5/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6893871/top-k-but-in-order-smart-tricks-to-solve-290q/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6893802/easy-solution-eng-hing-explained-beats-1-c5i8/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6894052/easy-explanation-beats-100-python-java-c-uwvp/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6894894/beginner-no-problem-heres-in-detail-expl-0wvn/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6893872/the-most-optimal-approach-greedy-beats-1-phx4/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6894890/dont-understand-youll-understand-now-wit-8cy8/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6893889/beginner-freindly-greedy-sorting-java-py-vqeb/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/1623436/javapython-3-from-on-logn-to-average-on-nx8yo/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6893650/use-k-size-heap-on-log-k-simple-by-vinod-4rgw/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6894175/easyyyyyyy-solution-value-index-pairing-n44h2/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6885791/if-an-idiot-like-me-can-understand-it-so-2hr9/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6896262/beats-1000ms-easiest-approach-simple-exp-ymqc/;;https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6894427/max-subsequence-with-original-order-usin-k22l/;;;=;==;=;=;

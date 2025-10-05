@@ -1,0 +1,26 @@
+1043. Partition Array for Maximum Sum;=;=Medium;=;=public int maxSumAfterPartitioning(int[] arr, int k);=;=Given an integer array arr, partition the array into (contiguous) subarrays of length at most k. After partitioning, each subarray has their values changed to become the maximum value of that subarray.
+
+Return the largest sum of the given array after partitioning. Test cases are generated so that the answer fits in a 32-bit integer.
+
+ 
+
+Example 1:
+
+Input: arr = [1,15,7,9,2,5,10], k = 3
+Output: 84
+Explanation: arr becomes [15,15,15,9,10,10,10]
+Example 2:
+
+Input: arr = [1,4,1,5,7,3,6,1,9,9,3], k = 4
+Output: 83
+Example 3:
+
+Input: arr = [1], k = 1
+Output: 1
+ 
+
+Constraints:
+
+1 <= arr.length <= 500
+0 <= arr[i] <= 109
+1 <= k <= arr.length;=;=https://leetcode.com/problems/partition-array-for-maximum-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/7243525/maximum-sum-after-partitioning-two-dp-ap-ohxz/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4668560/beats-99-users-cjavapythonjavascript-exp-2icl/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4668715/beats-100-users-easy-understood-solution-bxgo/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4668571/dynamic-programming-solution-explained-b-isdz/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/7183178/tabulation-and-memoization-approach-by-s-r09u/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/5665424/video-how-we-think-about-a-solution-bonu-ggog/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4668576/beat-9946-cjava-python-explanation-memoz-7gke/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/7012937/100-beat-java-simple-solution-by-prakhar-sftl/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4672245/java-solution-explained-in-hindi-by-the_-ctb4/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/6781710/3-approaches-simple-solution-java-by-mug-ymce/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/5874897/simple-easy-clear-by-kdhakal-c404/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4669732/beats-100-in-depth-explained-javacpython-u6ui/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4668816/easy-solution-c-java-python-by-prashant_-4ykw/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4668769/beats-94-with-memorization-visualization-2ot1/;;https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4670872/variable-length-partitioins-and-sum-stat-76xt/;;;=;==;=;=;

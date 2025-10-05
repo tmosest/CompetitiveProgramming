@@ -1,0 +1,37 @@
+2454. Next Greater Element IV;=;=Hard;=;=publicÊint[]ÊsecondGreaterElement(int[]Ênums);=;=You are given a 0-indexed array of non-negative integers nums. For each integer in nums, you must find its respective second greater integer.
+
+The second greater integer of nums[i] is nums[j] such that:
+
+j > i
+nums[j] > nums[i]
+There exists exactly one index k such that nums[k] > nums[i] and i < k < j.
+If there is no such nums[j], the second greater integer is considered to be -1.
+
+For example, in the array [1, 2, 4, 3], the second greater integer of 1 is 4, 2 is 3,Êand that of 3 and 4 is -1.
+Return an integer array answer, where answer[i] is the second greater integer of nums[i].
+
+Ê
+
+Example 1:
+
+Input: nums = [2,4,0,9,6]
+Output: [9,6,6,-1,-1]
+Explanation:
+0th index: 4 is the first integer greater than 2, and 9 is the second integer greater than 2, to the right of 2.
+1st index: 9 is the first, and 6 is the second integer greater than 4, to the right of 4.
+2nd index: 9 is the first, and 6 is the second integer greater than 0, to the right of 0.
+3rd index: There is no integer greater than 9 to its right, so the second greater integer is considered to be -1.
+4th index: There is no integer greater than 6 to its right, so the second greater integer is considered to be -1.
+Thus, we return [9,6,6,-1,-1].
+Example 2:
+
+Input: nums = [3,3]
+Output: [-1,-1]
+Explanation:
+We return [-1,-1] since neither integer has any integer greater than it.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 109;=;=https://leetcode.com/problems/next-greater-element-iv/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/next-greater-element-iv/solutions/2756668/javacpython-one-pass-stack-solution-on-b-cv0w/;;https://leetcode.com/problems/next-greater-element-iv/solutions/2757269/javapython3-the-kth-greater-element-solu-bka4/;;https://leetcode.com/problems/next-greater-element-iv/solutions/6168515/java-solution-using-two-stacks-on-by-sv_-f7ma/;;https://leetcode.com/problems/next-greater-element-iv/solutions/2756416/java-nlogn-same-as-next-greater-element-ytlnq/;;https://leetcode.com/problems/next-greater-element-iv/solutions/5639636/in-java-with-on-time-complexity-by-parma-qgo5/;;https://leetcode.com/problems/next-greater-element-iv/solutions/4713564/using-the-stack-array-by-deepaklodha-v6km/;;https://leetcode.com/problems/next-greater-element-iv/solutions/7217469/simple-easy-to-understand-approach-by-sa-d4s6/;;https://leetcode.com/problems/next-greater-element-iv/solutions/2757825/java-two-min-heaps-priority-queue-by-hit-pf7z/;;https://leetcode.com/problems/next-greater-element-iv/solutions/2757493/java-solution-using-stack-and-max-heap-t-kaie/;;https://leetcode.com/problems/next-greater-element-iv/solutions/7197089/java-solution-using-a-priority-queue-and-ka1o/;;https://leetcode.com/problems/next-greater-element-iv/solutions/2756612/java-solution-brute-force-solution-on2-b-ipi7/;;https://leetcode.com/problems/next-greater-element-iv/solutions/7156061/next-greater-element-iv-secondgreaterele-3kh0/;;https://leetcode.com/problems/next-greater-element-iv/solutions/7177817/chasing-the-second-peak-efficiently-find-s1t5/;;https://leetcode.com/problems/next-greater-element-iv/solutions/2793162/visualization-mono-stack-priority-queue-vh01p/;;https://leetcode.com/problems/next-greater-element-iv/solutions/2757665/java-easy-understood-onlogn-time-on-spac-2yhk/;;;=;==;=;=;

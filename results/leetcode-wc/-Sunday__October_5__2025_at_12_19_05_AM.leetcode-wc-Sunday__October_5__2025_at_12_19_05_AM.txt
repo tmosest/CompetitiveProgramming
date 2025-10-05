@@ -1,0 +1,27 @@
+315. Count of Smaller Numbers After Self;=;=Hard;=;=public List<Integer> countSmaller(int[] nums);=;=Given an integer array nums, return an integer array counts where counts[i] is the number of smaller elements to the right of nums[i].
+
+ 
+
+Example 1:
+
+Input: nums = [5,2,6,1]
+Output: [2,1,1,0]
+Explanation:
+To the right of 5 there are 2 smaller elements (2 and 1).
+To the right of 2 there is only 1 smaller element (1).
+To the right of 6 there is 1 smaller element (1).
+To the right of 1 there is 0 smaller element.
+Example 2:
+
+Input: nums = [-1]
+Output: [0]
+Example 3:
+
+Input: nums = [-1,-1]
+Output: [0,0]
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+-104 <= nums[i] <= 104;=;=https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/445769/merge-sort-clear-simple-explanation-with-weee/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/7230473/count-of-smaller-numbers-after-self-expl-he9e/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/6829778/clean-short-solution-using-binary-search-86yl/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/76580/9ms-short-java-bst-solution-get-answer-w-qsv3/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/7222364/video-easy-to-understand-segment-tree-on-r4fx/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/76587/easiest-java-solution-by-yavinci-6kqy/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/7130529/easiest-solution-uses-merge-sort-descend-qvkr/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/5574684/guys-common-the-best-solution-you-can-ge-2p1z/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/76674/3-ways-segment-tree-binary-indexed-tree-qa0ie/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/2997564/solution-by-deleted_user-ep45/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/2319923/java-100-faster-code-by-shivrastogi-en4o/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/1783989/java-binary-search-easy-understandable-b-has8/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/76611/short-java-binary-index-tree-beat-9733-w-uemj/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/6551970/fenwick-tree-java-easy-explanation-by-or-lbgx/;;https://leetcode.com/problems/count-of-smaller-numbers-after-self/solutions/5511820/java-solution-segment-tree-by-dixon_n-5ci6/;;;=;==;=;=;

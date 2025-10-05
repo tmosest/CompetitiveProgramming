@@ -1,0 +1,27 @@
+990. Satisfiability of Equality Equations;=;=Medium;=;=public boolean equationsPossible(String[] equations);=;=You are given an array of strings equations that represent relationships between variables where each string equations[i] is of length 4 and takes one of two different forms: "xi==yi" or "xi!=yi".Here, xi and yi are lowercase letters (not necessarily different) that represent one-letter variable names.
+
+Return true if it is possible to assign integers to variable names so as to satisfy all the given equations, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: equations = ["a==b","b!=a"]
+Output: false
+Explanation: If we assign say, a = 1 and b = 1, then the first equation is satisfied, but not the second.
+There is no way to assign the variables to satisfy both equations.
+Example 2:
+
+Input: equations = ["b==a","a==b"]
+Output: true
+Explanation: We could assign a = 1 and b = 1 to satisfy both equations.
+ 
+
+Constraints:
+
+1 <= equations.length <= 500
+equations[i].length == 4
+equations[i][0] is a lowercase letter.
+equations[i][1] is either '=' or '!'.
+equations[i][2] is '='.
+equations[i][3] is a lowercase letter.;=;=https://leetcode.com/problems/satisfiability-of-equality-equations/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/2625039/leetcode-the-hard-way-explained-line-by-19da4/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/2624836/java-easy-solution-with-explanation-begi-lpq2/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/2624789/java-easy-solution-easy-understanding-10-4e51/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/6903258/beat-99-with-explaination-by-runningfalc-yndi/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/6930759/java-clean-code-explaination-by-user0837-yf3n/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/6517686/beats-100-java-with-explanation-well-str-uxg9/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/7222699/easy-to-understand-tc-on-graph-disjoint-9pt78/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/2626010/classic-union-find-by-fllght-3rgk/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/6397133/90-beats-do-check-it-easy-and-intuitive-2wzt9/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/6349018/union-find-using-java-explanation-from-b-jrg3/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/2626533/java-soln-union-find-100-faster-by-amand-k1sg/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/2488844/java-solution-union-find-by-nidhishgaur2-pgh2/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/3536524/solution-by-deleted_user-szxy/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/2625929/super-easy-java-with-union-find-and-path-6p6p/;;https://leetcode.com/problems/satisfiability-of-equality-equations/solutions/6774630/best-solution-beats-100-example-test-cas-p9ex/;;;=;==;=;=;

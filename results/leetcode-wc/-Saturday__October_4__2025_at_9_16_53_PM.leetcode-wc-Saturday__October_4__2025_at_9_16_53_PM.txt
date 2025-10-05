@@ -1,0 +1,34 @@
+1116. Print Zero Even Odd;=;=Medium;=;=ZeroEvenOdd     private int n;        public ZeroEvenOdd(int n)         this.n = n;        // printNumber.accept(x) outputs "x", where x is an integer.    public void zero(IntConsumer printNumber) throws InterruptedException                 public void even(IntConsumer printNumber) throws;=;=You have a function printNumber that can be called with an integer parameter and prints it to the console.
+
+For example, calling printNumber(7) prints 7 to the console.
+You are given an instance of the class ZeroEvenOdd that has three functions: zero, even, and odd. The same instance of ZeroEvenOdd will be passed to three different threads:
+
+Thread A: calls zero() that should only output 0's.
+Thread B: calls even() that should only output even numbers.
+Thread C: calls odd() that should only output odd numbers.
+Modify the given class to output the series "010203040506..." where the length of the series must be 2n.
+
+Implement the ZeroEvenOdd class:
+
+ZeroEvenOdd(int n) Initializes the object with the number n that represents the numbers that should be printed.
+void zero(printNumber) Calls printNumber to output one zero.
+void even(printNumber) Calls printNumber to output one even number.
+void odd(printNumber) Calls printNumber to output one odd number.
+ 
+
+Example 1:
+
+Input: n = 2
+Output: "0102"
+Explanation: There are three threads being fired asynchronously.
+One of them calls zero(), the other calls even(), and the last one calls odd().
+"0102" is the correct output.
+Example 2:
+
+Input: n = 5
+Output: "0102030405"
+ 
+
+Constraints:
+
+1 <= n <= 1000;=;=https://leetcode.com/problems/print-zero-even-odd/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/print-zero-even-odd/solutions/3066321/java-solution-beats-98-by-mitesh_pv-571q/;;https://leetcode.com/problems/print-zero-even-odd/solutions/438618/java-clean-java-solution-using-semaphore-4l3y/;;https://leetcode.com/problems/print-zero-even-odd/solutions/5843661/wait-and-notify-solution-by-terenin-domy/;;https://leetcode.com/problems/print-zero-even-odd/solutions/2531790/jave-detail-explained-method-use-synchro-4e0m/;;https://leetcode.com/problems/print-zero-even-odd/solutions/3973043/easy-solution-2-approaches-monitor-lock-t5kuv/;;https://leetcode.com/problems/print-zero-even-odd/solutions/3520302/java-2-atomic-integers-by-clhost-okog/;;https://leetcode.com/problems/print-zero-even-odd/solutions/6080143/using-wait-and-notifyall-by-marksman-iyii/;;https://leetcode.com/problems/print-zero-even-odd/solutions/2270076/java-using-3-semaphores-simple-solution-jq18s/;;https://leetcode.com/problems/print-zero-even-odd/solutions/2303824/java-solution-using-synchronized-wait-an-0bs7/;;https://leetcode.com/problems/print-zero-even-odd/solutions/7190155/my-solution-by-akisida-zkcn/;;https://leetcode.com/problems/print-zero-even-odd/solutions/3988294/beats-996-using-3-semaphore-easy-to-unde-1ijh/;;https://leetcode.com/problems/print-zero-even-odd/solutions/5687452/java-solution-using-locks-beats-98-by-s_-mtc3/;;https://leetcode.com/problems/print-zero-even-odd/solutions/1138594/easy-to-understand-solution-in-java-7ms-c7bav/;;https://leetcode.com/problems/print-zero-even-odd/solutions/1101638/java-easy-solution-3-semaphores-by-ctapa-pvqe/;;https://leetcode.com/problems/print-zero-even-odd/solutions/953928/java-solution-using-semaphores-7-ms-fast-s096/;;;=;==;=;=;

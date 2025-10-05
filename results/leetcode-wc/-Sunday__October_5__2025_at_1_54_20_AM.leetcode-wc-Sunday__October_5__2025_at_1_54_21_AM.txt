@@ -1,0 +1,32 @@
+1203. Sort Items by Groups Respecting Dependencies;=;=Hard;=;=public int[] sortItems(int n, int m, int[] group, List<List<Integer>> beforeItems);=;=There are n items each belonging to zero or one of m groups where group[i] is the group that the i-th item belongs to and it's equal to -1 if the i-th item belongs to no group. The items and the groups are zero indexed. A group can have no item belonging to it.
+
+Return a sorted list of the items such that:
+
+The items that belong to the same group are next to each other in the sorted list.
+There are some relations between these items where beforeItems[i] is a list containing all the items that should come before the i-th item in the sorted array (to the left of the i-th item).
+Return any solution if there is more than one solution and return an empty list if there is no solution.
+
+ 
+
+Example 1:
+
+
+
+Input: n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3,6],[],[],[]]
+Output: [6,3,4,1,5,2,0,7]
+Example 2:
+
+Input: n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]
+Output: []
+Explanation: This is the same as example 1 except that 4 needs to be before 6 in the sorted list.
+ 
+
+Constraints:
+
+1 <= m <= n <= 3 * 104
+group.length == beforeItems.length == n
+-1 <= group[i] <= m - 1
+0 <= beforeItems[i].length <= n - 1
+0 <= beforeItems[i][j] <= n - 1
+i != beforeItems[i][j]
+beforeItems[i] does not contain duplicates elements.;=;=https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3934487/detailed-video-solution-java-c-python-by-z7sw/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/7114281/well-explained-java-code-double-toposort-zxdo/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3933739/simple-java-solution-beginner-friendly-e-gd8m/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3933737/easy-solution-js-ts-java-c-python-by-20s-7pco/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3936038/faster-9527-easy-and-clean-topo-sort-wit-878a/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/6194164/cut-to-the-chase-java-direct-solution-wi-e80v/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3935649/beats-100-time-space-java-dfs-with-anima-a4yf/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/2190316/java-topsort-give-every-1-its-own-group-42sea/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3935872/java-graph-easy-method-by-tanisha_modii-ikg6/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3935693/java-20-by-preeom-bl4x/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3933906/java-solution-beats-100-in-time-space-by-vzha/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/2092080/java-topological-sort-tc-ov-e-sc-ov-e-by-ban5/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3936543/detailed-intuition-code-with-comments-by-8omu/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3934497/java-code-only-by-aashishbisht1-6q1h/;;https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3936255/java-14ms-100-on-before-topological-sort-kao9/;;;=;==;=;=;

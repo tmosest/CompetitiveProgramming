@@ -1,0 +1,41 @@
+3104. Find Longest Self-Contained Substring;=;=Hard;=;=public int maxSubstringLength(String s);=;=Given a string s, your task is to find the length of the longest self-contained substring of s.
+
+A substring t of a string s is called self-contained if t != s and for every character in t, it doesn't exist in the rest of s.
+
+Return the length of the longest self-contained substring of s if it exists, otherwise, return -1.
+
+ 
+
+Example 1:
+
+Input: s = "abba"
+
+Output: 2
+
+Explanation:
+Let's check the substring "bb". You can see that no other "b" is outside of this substring. Hence the answer is 2.
+
+Example 2:
+
+Input: s = "abab"
+
+Output: -1
+
+Explanation:
+Every substring we choose does not satisfy the described property (there is some character which is inside and outside of that substring). So the answer would be -1.
+
+Example 3:
+
+Input: s = "abacd"
+
+Output: 4
+
+Explanation:
+Let's check the substring "abac". There is only one character outside of this substring and that is "d". There is no "d" inside the chosen substring, so it satisfies the condition and the answer is 4.
+
+ 
+
+Constraints:
+
+2 <= s.length <= 5 * 104
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/find-longest-self-contained-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-longest-self-contained-substring/solutions/6312881/on-solution-by-aidenliuw-l7ou/;;https://leetcode.com/problems/find-longest-self-contained-substring/solutions/4975456/java-solution-14-lines-of-code-time-on-s-913l/;;https://leetcode.com/problems/find-longest-self-contained-substring/solutions/6364663/sliding-window-solution-by-yfl423-qs71/;;https://leetcode.com/problems/find-longest-self-contained-substring/solutions/6227346/java-solution-prefix-sum-by-wendyrl-8hnl/;;https://leetcode.com/problems/find-longest-self-contained-substring/solutions/6199089/properly-commented-beats-80-storing-firs-33ty/;;https://leetcode.com/problems/find-longest-self-contained-substring/solutions/6594021/same-solution-with-problem-3458-select-k-t2hj/;;https://leetcode.com/problems/find-longest-self-contained-substring/solutions/6434291/java-o26-26-n-by-etherwei-by7g/;;https://leetcode.com/problems/find-longest-self-contained-substring/solutions/4971353/java-simple-character-counting-o26-n-130-znm3/;;https://leetcode.com/problems/find-longest-self-contained-substring/solutions/4969562/java-o26n-by-reed_w-d2vd/;;;=;==;=;=;

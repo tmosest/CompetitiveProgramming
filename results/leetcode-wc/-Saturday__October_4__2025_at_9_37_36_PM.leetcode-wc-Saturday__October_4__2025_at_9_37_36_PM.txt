@@ -1,0 +1,30 @@
+769. Max Chunks To Make Sorted;=;=Medium;=;=public int maxChunksToSorted(int[] arr);=;=You are given an integer array arr of length n that represents a permutation of the integers in the range [0, n - 1].
+
+We split arr into some number of chunks (i.e., partitions), and individually sort each chunk. After concatenating them, the result should equal the sorted array.
+
+Return the largest number of chunks we can make to sort the array.
+
+ 
+
+Example 1:
+
+Input: arr = [4,3,2,1,0]
+Output: 1
+Explanation:
+Splitting into two or more chunks will not return the required result.
+For example, splitting into [4, 3], [2, 1, 0] will result in [3, 4, 0, 1, 2], which isn't sorted.
+Example 2:
+
+Input: arr = [1,0,2,3,4]
+Output: 4
+Explanation:
+We can split into two chunks, such as [1, 0], [2, 3, 4].
+However, splitting into [1, 0], [2], [3], [4] is the highest number of chunks possible.
+ 
+
+Constraints:
+
+n == arr.length
+1 <= n <= 10
+0 <= arr[i] < n
+All the elements of arr are unique.;=;=https://leetcode.com/problems/max-chunks-to-make-sorted/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6162054/most-optimize-solution-on-beats-100-c-ja-cnzg/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6163813/simplest-way-to-solve-and-in-one-loop-an-59fo/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6161789/simple-index-search-100-beats-by-sumeet_-vuxn/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6162247/100-beat-single-loop-solution-by-arunk_l-dt20/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/7124812/max-chunks-to-make-sorted-split-smart-so-r8da/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/7020012/100-efficient-using-greedy-approach-by-k-e3co/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6838660/beat-100-simple-java-solution-by-rohan_s-o8p9/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/5545751/simple-code-easy-to-understand-beats-100-c1d0/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6924754/easiest-solution-in-java-by-ronit_kanoje-esdl/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6162264/easy-program-in-c-and-java-by-nidhibarat-6v1s/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/4986893/beats-100-bruteoptimal-full-explained-ja-h0zg/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6163547/easy-java-solution-beats-100-by-himanshi-i2m7/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6162603/chunk-it-till-you-make-it-breaking-array-xoje/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6162513/o1-easiest-solution-with-just-a-bit-of-o-e18z/;;https://leetcode.com/problems/max-chunks-to-make-sorted/solutions/6163530/beats-100-proof-concise-code-java-beginn-q8yc/;;;=;==;=;=;

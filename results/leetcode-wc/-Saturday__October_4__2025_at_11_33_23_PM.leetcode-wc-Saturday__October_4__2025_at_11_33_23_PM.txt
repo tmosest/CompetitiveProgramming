@@ -1,0 +1,40 @@
+1195. Fizz Buzz Multithreaded;=;=Medium;=;=FizzBuzz     private int n;    public FizzBuzz(int n)         this.n = n;        // printFizz.run() outputs "fizz".    public void fizz(Runnable printFizz) throws InterruptedException                 // printBuzz.run() outputs "buzz".    public void buzz(Runnable printBuzz) throws InterruptedException;=;=You have the four functions:
+
+printFizz that prints the word "fizz" to the console,
+printBuzz that prints the word "buzz" to the console,
+printFizzBuzz that prints the word "fizzbuzz" to the console, and
+printNumber that prints a given integer to the console.
+You are given an instance of the class FizzBuzz that has four functions: fizz, buzz, fizzbuzz and number. The same instance of FizzBuzz will be passed to four different threads:
+
+Thread A: calls fizz() that should output the word "fizz".
+Thread B: calls buzz() that should output the word "buzz".
+Thread C: calls fizzbuzz() that should output the word "fizzbuzz".
+Thread D: calls number() that should only output the integers.
+Modify the given class to output the series [1, 2, "fizz", 4, "buzz", ...] where the ith token (1-indexed) of the series is:
+
+"fizzbuzz" if i is divisible by 3 and 5,
+"fizz" if i is divisible by 3 and not 5,
+"buzz" if i is divisible by 5 and not 3, or
+i if i is not divisible by 3 or 5.
+Implement the FizzBuzz class:
+
+FizzBuzz(int n) Initializes the object with the number n that represents the length of the sequence that should be printed.
+void fizz(printFizz) Calls printFizz to output "fizz".
+void buzz(printBuzz) Calls printBuzz to output "buzz".
+void fizzbuzz(printFizzBuzz) Calls printFizzBuzz to output "fizzbuzz".
+void number(printNumber) Calls printnumber to output the numbers.
+ 
+
+Example 1:
+
+Input: n = 15
+Output: [1,2,"fizz",4,"buzz","fizz",7,8,"fizz","buzz",11,"fizz",13,14,"fizzbuzz"]
+Example 2:
+
+Input: n = 5
+Output: [1,2,"fizz",4,"buzz"]
+ 
+
+Constraints:
+
+1 <= n <= 50;=;=https://leetcode.com/problems/fizz-buzz-multithreaded/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/3084050/java-solutions-with-explanation-approach-c9sk/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/385776/java-non-blocking-solution-using-atomici-cent/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/5070165/very-simple-and-easy-to-understand-solut-xa3o/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/772114/java-using-lock-mutex-simulation-by-mjay-1nxy/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/4951030/beats-97-java-users-by-aim_high_212-d53r/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/5102591/java-sync-step-with-phaser-by-give_me_th-o6mv/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/1346704/java-using-synchronized-by-shivbaba-5w89/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/1164466/java-8-ms-use-a-semaphore-with-one-permi-grjy/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/890801/java-solution-with-locks-by-anjana9-o0it/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/2364386/fizz-buzz-multithreaded-java-no-using-an-sqx9/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/4100089/best-java-solution-beats-100-by-ravikuma-5idz/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/1695910/java-using-reentrantlock-and-condition-b-2qje/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/1837901/java-solution-99-faster-using-lock-inclu-6uqi/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/2248428/java-5ms-simple-semaphores-solution-by-a-cr8y/;;https://leetcode.com/problems/fizz-buzz-multithreaded/solutions/5636045/java-easy-to-understand-95-by-mandyadb1-5cg6/;;;=;==;=;=;

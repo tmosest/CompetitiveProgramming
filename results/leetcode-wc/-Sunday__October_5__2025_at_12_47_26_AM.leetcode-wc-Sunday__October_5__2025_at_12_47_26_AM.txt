@@ -1,0 +1,35 @@
+1856. Maximum Subarray Min-Product;=;=Medium;=;=public int maxSumMinProduct(int[] nums);=;=The min-product of an array is equal to the minimum value in the array multiplied by the array's sum.
+
+For example, the array [3,2,5] (minimum value is 2) has a min-product of 2 * (3+2+5) = 2 * 10 = 20.
+Given an array of integers nums, return the maximum min-product of any non-empty subarray of nums. Since the answer may be large, return it modulo 109 + 7.
+
+Note that the min-product should be maximized before performing the modulo operation. Testcases are generated such that the maximum min-product without modulo will fit in a 64-bit signed integer.
+
+A subarray is a contiguous part of an array.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3,2]
+Output: 14
+Explanation: The maximum min-product is achieved with the subarray [2,3,2] (minimum value is 2).
+2 * (2+3+2) = 2 * 7 = 14.
+Example 2:
+
+Input: nums = [2,3,3,1,2]
+Output: 18
+Explanation: The maximum min-product is achieved with the subarray [3,3] (minimum value is 3).
+3 * (3+3) = 3 * 6 = 18.
+Example 3:
+
+Input: nums = [3,1,5,6,4,2]
+Output: 60
+Explanation: The maximum min-product is achieved with the subarray [5,6,4] (minimum value is 4).
+4 * (5+6+4) = 4 * 15 = 60.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 107;=;=https://leetcode.com/problems/maximum-subarray-min-product/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-subarray-min-product/solutions/1198896/on-monostack-with-picture-by-votrubac-0fga/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/6779686/monotonic-stack-prefix-sum-with-explanat-cise/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/7089470/simple-sol-java-nse-psl-techniques-prefi-6n8v/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/7022050/prefix-sum-monotonic-stack-on-by-gitchua-9k7u/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/2363116/javaon-one-pass-only-13ms-9955-499mb-mem-sf79/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/2400680/java-standard-monostack-13ms-9953-by-bye-fpzl/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/5167159/must-read-monotonic-stack-pattern-variat-i491/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/4344385/java-dp-solution-beginner-friendly-break-qsbw/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/6662348/ordered-set-and-prefix-sum-without-monot-5zn2/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/1199303/java-simple-and-easy-to-understand-solut-s7i2/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/1204859/java-simple-solution-using-stacks-applic-v4rv/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/1210476/java-on-prefix-sum-next-smallest-with-st-ty74/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/1309455/java-monotonic-stack-solution-time-on-by-atyh/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/1293356/java-solution-using-prefix-and-stack-42-1e6bs/;;https://leetcode.com/problems/maximum-subarray-min-product/solutions/4252756/prefix-sum-maximizing-the-widh-of-every-ld0rs/;;;=;==;=;=;

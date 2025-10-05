@@ -1,0 +1,35 @@
+2046. Sort Linked List Already Sorted Using Absolute Values;=;=Medium;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode()       ListNode(int val)  this.val = val;       ListNode(int val, ListNode next)  this.val = val; this.next = next;    class      public ListNode sortLinkedList(ListNode head);=;=Given the head of a singly linked list that is sorted in non-decreasing order using the absolute values of its nodes, return the list sorted in non-decreasing order using the actual values of its nodes.
+ 
+
+Example 1:
+
+
+Input: head = [0,2,-5,5,10,-10]
+Output: [-10,-5,0,2,5,10]
+Explanation:
+The list sorted in non-descending order using the absolute values of the nodes is [0,2,-5,5,10,-10].
+The list sorted in non-descending order using the actual values is [-10,-5,0,2,5,10].
+Example 2:
+
+
+Input: head = [0,1,2]
+Output: [0,1,2]
+Explanation:
+The linked list is already sorted in non-decreasing order.
+Example 3:
+
+Input: head = [1]
+Output: [1]
+Explanation:
+The linked list is already sorted in non-decreasing order.
+ 
+
+Constraints:
+
+The number of nodes in the list is the range [1, 105].
+-5000 <= Node.val <= 5000
+head is sorted in non-decreasing order using the absolute value of its nodes.
+ 
+
+Follow up:
+Can you think of a solution with O(n) time complexity?;=;=https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/1565859/java-on-solution-by-xtnhemwa-crmh/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/1536944/c-java-beats-100-by-cosmopolitan-7lnu/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/1894478/java-solution-using-loop-by-shreya12ria-c8wh/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/1542734/java-solution-one-pass-by-rkxyiiyk2-unkg/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/3539921/java-javascript-python3-simple-dummy-nod-b441/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/6127677/1ms-two-pointers-solution-by-yc0101-jqd9/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/5143022/java-on-solution-using-stack-by-tbekpro-34uc/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/4689014/brute-force-java-solution-by-tar_9897-xf3l/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/4340467/java-simple-solution-with-comments-by-ma-4f1i/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/4016317/simple-java-solution-by-sakshikishore-3e5i/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/3966633/java-2-approaches-easy-to-understand-upv-2e4j/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/3777455/single-pass-beats-100-on-explanation-by-spnnm/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/3577843/java-solution-100-just-keep-moving-neg-n-6q4s/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/3539414/java-on-easy-solution-by-1605448777-rgdq/;;https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/solutions/3375395/easy-java-solution-by-prashath-rwau/;;;=;==;=;=;

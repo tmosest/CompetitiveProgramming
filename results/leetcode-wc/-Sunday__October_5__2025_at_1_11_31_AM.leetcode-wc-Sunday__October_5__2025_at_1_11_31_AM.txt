@@ -1,0 +1,37 @@
+2024. Maximize the Confusion of an Exam;=;=Medium;=;=public int maxConsecutiveAnswers(String answerKey, int k);=;=A teacher is writing a test with n true/false questions, with 'T' denoting true and 'F' denoting false. He wants to confuse the students by maximizing the number of consecutive questions with the same answer (multiple trues or multiple falses in a row).
+
+You are given a string answerKey, where answerKey[i] is the original answer to the ith question. In addition, you are given an integer k, the maximum number of times you may perform the following operation:
+
+Change the answer key for any question to 'T' or 'F' (i.e., set answerKey[i] to 'T' or 'F').
+Return the maximum number of consecutive 'T's or 'F's in the answer key after performing the operation at most k times.
+
+ 
+
+Example 1:
+
+Input: answerKey = "TTFF", k = 2
+Output: 4
+Explanation: We can replace both the 'F's with 'T's to make answerKey = "TTTT".
+There are four consecutive 'T's.
+Example 2:
+
+Input: answerKey = "TFFT", k = 1
+Output: 3
+Explanation: We can replace the first 'T' with an 'F' to make answerKey = "FFFT".
+Alternatively, we can replace the second 'T' with an 'F' to make answerKey = "TFFF".
+In both cases, there are three consecutive 'F's.
+Example 3:
+
+Input: answerKey = "TTFTTFTT", k = 1
+Output: 5
+Explanation: We can replace the first 'F' to make answerKey = "TTTTTFTT"
+Alternatively, we can replace the second 'F' to make answerKey = "TTFTTTTT". 
+In both cases, there are five consecutive 'T's.
+ 
+
+Constraints:
+
+n == answerKey.length
+1 <= n <= 5 * 104
+answerKey[i] is either 'T' or 'F'
+1 <= k <= n;=;=https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/6299412/clean-code-beats-cjavapythonjs-optimal-s-krpw/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/3729844/detailed-line-by-line-explanation-c-java-ns0o/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/6655221/1004-max-consecutive-ones-iii-0-ms-runti-2pvo/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/3729656/video-solution-sliding-window-2-pointers-1980/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/6802007/easily-explained-java-time-on-space-on-b-9pzk/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/3730589/java-sliding-window-easy-by-saitama_2727-grnd/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/6538251/easy-java-solution-by-vermaanshul975-a5x8/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/7227050/sliding-window-java-by-user7576x-2x4a/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/7226316/simple-understand-for-java-people-by-ban-ayzg/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/3732296/sliding-window-java-python-c-by-niketh_1-28qj/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/1499054/javapython-3-longest-sliding-window-w-at-xpbb/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/1501080/java-solution-explanation-by-corsaro_ner-d5ko/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/5218273/sliding-window-and-two-pointer-pattern-b-6wow/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/3729837/simple-sliding-window-with-intuition-jav-5ul2/;;https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/3730089/java-approach-with-proper-explanation-of-hyiw/;;;=;==;=;=;

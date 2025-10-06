@@ -1,0 +1,31 @@
+1410. HTML Entity Parser;=;=Medium;=;=publicÊStringÊentityParser(StringÊtext);=;=HTML entity parser is the parser that takes HTML code as input and replace all the entities of the special characters by the characters itself.
+
+The special characters and their entities for HTML are:
+
+Quotation Mark: the entity is &quot; and symbol character is ".
+Single Quote Mark: the entity is &apos; and symbol character is '.
+Ampersand: the entity is &amp; and symbol character is &.
+Greater Than Sign: the entity is &gt; and symbol character is >.
+Less Than Sign: the entity is &lt; and symbol character is <.
+Slash: the entity is &frasl; and symbol character is /.
+Given the input text string to the HTML parser, you have to implement the entity parser.
+
+Return the text after replacing the entities by the special characters.
+
+Ê
+
+Example 1:
+
+Input: text = "&amp; is an HTML entity but &ambassador; is not."
+Output: "& is an HTML entity but &ambassador; is not."
+Explanation: The parser will replace the &amp; entity by &
+Example 2:
+
+Input: text = "and I quote: &quot;...&quot;"
+Output: "and I quote: \"...\""
+Ê
+
+Constraints:
+
+1 <= text.length <= 105
+The string may contain any possible characters out of all the 256 ASCII characters.;=;=https://leetcode.com/problems/html-entity-parser/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/html-entity-parser/solutions/7026784/java-solution-by-monish1153-l3ct/;;https://leetcode.com/problems/html-entity-parser/solutions/879759/my-simple-java-solution-using-map-and-re-hqvn/;;https://leetcode.com/problems/html-entity-parser/solutions/3861966/java-beats-100-by-mc801-i1so/;;https://leetcode.com/problems/html-entity-parser/solutions/1776637/java-very-simple-solution-by-nurniyazova-5kla/;;https://leetcode.com/problems/html-entity-parser/solutions/574989/java-stringbuilder-on-100-faster-and-spa-cqgd/;;https://leetcode.com/problems/html-entity-parser/solutions/5928845/two-pointers-stringbuilder-map-java-by-r-u5o6/;;https://leetcode.com/problems/html-entity-parser/solutions/7174587/simple-java-solution-using-map-and-strin-rdcq/;;https://leetcode.com/problems/html-entity-parser/solutions/576643/simple-java-solution-using-replaceall-on-h4no/;;https://leetcode.com/problems/html-entity-parser/solutions/7199890/on-recursive-solution-easy-readable-by-r-nifg/;;https://leetcode.com/problems/html-entity-parser/solutions/3014578/easy-o1-optimized-solution-without-hashm-vehj/;;https://leetcode.com/problems/html-entity-parser/solutions/7089582/solution-using-java-by-kushal_bharadwaj-iutm2/;;https://leetcode.com/problems/html-entity-parser/solutions/945909/true-on-solution-with-trie-in-java-no-sh-rof4/;;https://leetcode.com/problems/html-entity-parser/solutions/575403/java-use-replaceall-by-alextdkr-uuhu/;;https://leetcode.com/problems/html-entity-parser/solutions/6534225/simple-solution-beats-97-on-with-stringb-k3a3/;;https://leetcode.com/problems/html-entity-parser/solutions/6552854/beats-73-without-using-hashmap-by-alexan-auxs/;;;=;==;=;=;

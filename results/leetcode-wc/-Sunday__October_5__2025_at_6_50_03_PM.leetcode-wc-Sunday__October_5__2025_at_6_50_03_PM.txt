@@ -1,0 +1,32 @@
+1208. Get Equal Substrings Within Budget;=;=Medium;=;=public int equalSubstring(String s, String t, int maxCost);=;=You are given two strings s and t of the same length and an integer maxCost.
+
+You want to change s to t. Changing the ith character of s to ith character of t costs |s[i] - t[i]| (i.e., the absolute difference between the ASCII values of the characters).
+
+Return the maximum length of a substring of s that can be changed to be the same as the corresponding substring of t with a cost less than or equal to maxCost. If there is no substring from s that can be changed to its corresponding substring from t, return 0.
+
+ 
+
+Example 1:
+
+Input: s = "abcd", t = "bcdf", maxCost = 3
+Output: 3
+Explanation: "abc" of s can change to "bcd".
+That costs 3, so the maximum length is 3.
+Example 2:
+
+Input: s = "abcd", t = "cdef", maxCost = 3
+Output: 1
+Explanation: Each character in s costs 2 to change to character in t,  so the maximum length is 1.
+Example 3:
+
+Input: s = "abcd", t = "acde", maxCost = 0
+Output: 1
+Explanation: You cannot make any change, so the maximum length is 1.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+t.length == s.length
+0 <= maxCost <= 106
+s and t consist of only lowercase English letters.;=;=https://leetcode.com/problems/get-equal-substrings-within-budget/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5218505/9744easy-solutionwith-explanation-by-mra-92yz/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5218506/diagrammatic-explanation-by-hi-malik-jc93/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/7204445/sliding-window-java-on-by-vijayaragavan0-p155/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5219438/detailed-explanation2-approachesextremel-b5xy/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/392950/java-sliding-window-with-clear-explanati-prff/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5218697/detailed-explanationbeats-100sliding-win-sf70/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/7030893/javajsts-solution-jw-by-specter01wj-o4rr/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/7016285/easy-solution-using-sliding-window-conce-gn06/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/6972235/sliding-window-technique-by-anshgupta123-6g4k/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5218548/sliding-window-prefix-sum-binary-search-350y0/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5218488/java-sliding-window-15-lines-clean-code-pobgk/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/6740124/get-equal-substrings-within-budget-beats-leei/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5218525/easy-java-solution-12-ms-_-by-suyalneera-ut7s/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5964634/beats-100-working-25102024-by-piotr_mami-piti/;;https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5218706/bests-over-987-users-you-can-rely-on-thi-dyo3/;;;=;==;=;=;

@@ -1,0 +1,41 @@
+2577. Minimum Time to Visit a Cell In a Grid;=;=Hard;=;=public int minimumTime(int[][] grid);=;=You are given a m x n matrix grid consisting of non-negative integers where grid[row][col] represents the minimum time required to be able to visit the cell (row, col), which means you can visit the cell (row, col) only when the time you visit it is greater than or equal to grid[row][col].
+
+You are standing in the top-left cell of the matrix in the 0th second, and you must move to any adjacent cell in the four directions: up, down, left, and right. Each move you make takes 1 second.
+
+Return the minimum time required in which you can visit the bottom-right cell of the matrix. If you cannot visit the bottom-right cell, then return -1.
+
+ 
+
+Example 1:
+
+
+
+Input: grid = [[0,1,3,2],[5,1,2,5],[4,3,8,6]]
+Output: 7
+Explanation: One of the paths that we can take is the following:
+- at t = 0, we are on the cell (0,0).
+- at t = 1, we move to the cell (0,1). It is possible because grid[0][1] <= 1.
+- at t = 2, we move to the cell (1,1). It is possible because grid[1][1] <= 2.
+- at t = 3, we move to the cell (1,2). It is possible because grid[1][2] <= 3.
+- at t = 4, we move to the cell (1,1). It is possible because grid[1][1] <= 4.
+- at t = 5, we move to the cell (1,2). It is possible because grid[1][2] <= 5.
+- at t = 6, we move to the cell (1,3). It is possible because grid[1][3] <= 6.
+- at t = 7, we move to the cell (2,3). It is possible because grid[2][3] <= 7.
+The final time is 7. It can be shown that it is the minimum time possible.
+Example 2:
+
+
+
+Input: grid = [[0,2,4],[3,2,1],[1,0,4]]
+Output: -1
+Explanation: There is no path from the top left to the bottom-right cell.
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+2 <= m, n <= 1000
+4 <= m * n <= 105
+0 <= grid[i][j] <= 105
+grid[0][0] == 0;=;=https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/3230800/c-java-python-ping-pong-dijkstra-by-toju-4yvg/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6083425/video-beats-100-dijkstras-algorithm-by-p-98q3/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6093663/dijkstras-magic-find-the-fastest-path-c-u13ie/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/3230782/java-priorityqueue-with-comments-by-zade-m1d1/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6093376/bfs-solution-for-leetcode2577-by-samir02-2jqv/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6094985/easiest-sol-java-beats-100-simple-dijkst-6pc8/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6093322/dijkstras-algorithm-easy-to-understand-d-o6mv/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6093337/beats-100-optimized-dijkstras-algorithm-zkqyv/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6095884/java-by-mani-26-fd1z/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6093636/beats-100-waiting-time-approach-simple-d-pvtl/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/7240657/simple-easy-solution-java-by-mohitrana-gwyz/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6093362/simple-java-solution-by-harsh__005-52lq/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6093240/minimum-time-to-visit-a-cell-in-a-grid-e-4bn4/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6093983/easy-to-understand-beat-98-by-yash9325-mqed/;;https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/solutions/6093191/easy-c-code-runtime-beats-9989-memory-be-zn8j/;;;=;==;=;=;

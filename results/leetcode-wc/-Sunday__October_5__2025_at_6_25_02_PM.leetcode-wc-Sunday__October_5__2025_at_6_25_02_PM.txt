@@ -1,0 +1,28 @@
+2396. Strictly Palindromic Number;=;=Medium;=;=public boolean isStrictlyPalindromic(int n);=;=An integer n is strictly palindromic if, for every base b between 2 and n - 2 (inclusive), the string representation of the integer n in base b is palindromic.
+
+Given an integer n, return true if n is strictly palindromic and false otherwise.
+
+A string is palindromic if it reads the same forward and backward.
+
+ 
+
+Example 1:
+
+Input: n = 9
+Output: false
+Explanation: In base 2: 9 = 1001 (base 2), which is palindromic.
+In base 3: 9 = 100 (base 3), which is not palindromic.
+Therefore, 9 is not strictly palindromic so we return false.
+Note that in bases 4, 5, 6, and 7, n = 9 is also not palindromic.
+Example 2:
+
+Input: n = 4
+Output: false
+Explanation: We only consider base 2: 4 = 100 (base 2), which is not palindromic.
+Therefore, we return false.
+
+ 
+
+Constraints:
+
+4 <= n <= 105;=;=https://leetcode.com/problems/strictly-palindromic-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/strictly-palindromic-number/solutions/7170965/clean-simple-easy-explanation-one-liner-zcbzn/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/2524702/return-false-by-lee215-pmty/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7074807/100-beats-by-dima853-n7k8/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/2524893/the-actual-way-not-directly-returning-fa-if6r/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7206559/easy-solution-return-false-beats-100-by-8qrnh/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7207291/the-palindrome-that-wasnt-by-soloexeck-4ly0/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7201497/easy-code-by-sivaaleet-he3s/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7065037/100-beats-easy-for-beginners-by-strom-br-hkth/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7047186/dont-code-it-just-return-false-mathproof-cqbg/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7139077/beats-100-java-code-easiest-code-by-diya-tlzv/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7099018/easy-java-solution-false-for-n-4-by-rajd-otnl/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7118248/2396-strictly-palindromic-number-easy-to-m6ql/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7083952/beats-100-by-vansh2704-lrrr/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/7042154/easy-code-for-beginners-and-understandab-2pwn/;;https://leetcode.com/problems/strictly-palindromic-number/solutions/5171809/actual-solution-apart-from-return-false-y9g5l/;;;=;==;=;=;

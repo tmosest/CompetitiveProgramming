@@ -1,0 +1,27 @@
+2366. Minimum Replacements to Sort the Array;=;=Hard;=;=public long minimumReplacement(int[] nums);=;=You are given a 0-indexed integer array nums. In one operation you can replace any element of the array with any two elements that sum to it.
+
+For example, consider nums = [5,6,7]. In one operation, we can replace nums[1] with 2 and 4 and convert nums to [5,2,4,7].
+Return the minimum number of operations to make an array that is sorted in non-decreasing order.
+
+ 
+
+Example 1:
+
+Input: nums = [3,9,3]
+Output: 2
+Explanation: Here are the steps to sort the array in non-decreasing order:
+- From [3,9,3], replace the 9 with 3 and 6 so the array becomes [3,3,6,3]
+- From [3,3,6,3], replace the 6 with 3 and 3 so the array becomes [3,3,3,3,3]
+There are 2 steps to sort the array in non-decreasing order. Therefore, we return 2.
+
+Example 2:
+
+Input: nums = [1,2,3,4,5]
+Output: 0
+Explanation: The array is already in non-decreasing order. Therefore, we return 0. 
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/minimum-replacements-to-sort-the-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3978548/easy-to-understandfull-explanationdone-i-mtta/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/2388098/c-java-google-interview-question-on-by-i-6zl8/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/2388265/javacpython-one-reverse-pass-by-lee215-vj3c/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3978461/9917-on-greedy-with-dynamic-upper-bound-s34jd/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3978667/video-beat-99-solution-with-python-javas-2eoc/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3978557/easy-solutionpythonccjavacexplain-line-b-mqnm/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3978515/simple-solution-beginner-friendly-easy-t-yubu/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3980646/c-java-solution-math-997-faster-100-memo-cuwb/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/2388297/javapython-3-mathgreedy-algorithm-w-expl-me58/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3978575/hard-easy-if-you-have-the-better-explana-9ytz/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3979284/made-easy-with-explanations-biweekly-con-c71h/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3982153/java-beats-100-of-solutions-read-to-asce-r09s/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/2389469/java-on-explained-by-cooper-fmlc/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3979635/easy-java-greedy-solution-by-viraj_patil-elqb/;;https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3980975/java-on-time-o1-space-beats-80-time-expl-66po/;;;=;==;=;=;

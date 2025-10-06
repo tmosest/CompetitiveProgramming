@@ -1,0 +1,38 @@
+3473. Sum of K Subarrays With Length at Least M;=;=Medium;=;=publicÊintÊmaxSum(int[]Ênums,ÊintÊk,ÊintÊm);=;=You are given an integer array nums and two integers, k and m.
+
+Return the maximum sum of k non-overlapping subarrays of nums, where each subarray has a length of at least m.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,2,-1,3,3,4], k = 2, m = 2
+
+Output: 13
+
+Explanation:
+
+The optimal choice is:
+
+Subarray nums[3..5] with sum 3 + 3 + 4 = 10 (length is 3 >= m).
+Subarray nums[0..1] with sum 1 + 2 = 3 (length is 2 >= m).
+The total sum is 10 + 3 = 13.
+
+Example 2:
+
+Input: nums = [-10,3,-1,-2], k = 4, m = 1
+
+Output: -10
+
+Explanation:
+
+The optimal choice is choosing each element as a subarray. The output is (-10) + 3 + (-1) + (-2) = -10.
+
+Ê
+
+Constraints:
+
+1 <= nums.length <= 2000
+-104 <= nums[i] <= 104
+1 <= k <= floor(nums.length / m)
+1 <= m <= 3;=;=https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6487205/c-java-dp-solution-with-state-transition-aaw4/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6484595/dynamic-programming-easy-to-understand-d-5yal/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6487237/java-dp-optimisation-using-suffix-max-an-qk12/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6484764/easiest-solution-dp-memoization-java-100-by0d/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6484000/simple-easy-to-understand-java-dp-detail-01e3/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6664995/simple-java-solution-dp-similar-to-max-p-r3jo/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6502176/brute-force-approach-optimized-approach-mlroh/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6490506/easy-simple-java-solution-by-suraj_3000-x1cu/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6490508/easy-simple-java-solution-by-suraj_3000-broh/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6495988/python3-dp-by-ye15-yt4a/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6516285/dynamic-programming-bottom-up-video-solu-asof/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6516061/java-solution-by-barakamon-euxi/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6486230/simple-dp-solution-by-risabhuchiha-5w07/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6484734/java-solution-with-basic-intuition-and-o-zz23/;;https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/solutions/6485445/memoization-tabulation-dp-approaches-det-58z9/;;;=;==;=;=;

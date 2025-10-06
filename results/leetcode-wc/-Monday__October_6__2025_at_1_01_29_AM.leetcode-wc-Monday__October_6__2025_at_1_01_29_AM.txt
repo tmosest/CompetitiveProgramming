@@ -1,0 +1,40 @@
+3326. Minimum Division Operations to Make Array Non Decreasing;=;=Medium;=;=public int minOperations(int[] nums);=;=You are given an integer array nums.
+
+Any positive divisor of a natural number x that is strictly less than x is called a proper divisor of x. For example, 2 is a proper divisor of 4, while 6 is not a proper divisor of 6.
+
+You are allowed to perform an operation any number of times on nums, where in each operation you select any one element from nums and divide it by its greatest proper divisor.
+
+Return the minimum number of operations required to make the array non-decreasing.
+
+If it is not possible to make the array non-decreasing using any number of operations, return -1.
+
+ 
+
+Example 1:
+
+Input: nums = [25,7]
+
+Output: 1
+
+Explanation:
+
+Using a single operation, 25 gets divided by 5 and nums becomes [5, 7].
+
+Example 2:
+
+Input: nums = [7,7,6]
+
+Output: -1
+
+Example 3:
+
+Input: nums = [1,1,1,1]
+
+Output: 0
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5939788/easiest-solution-greedy-by-1afn19tfv2-m8mo/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5948662/python3-12-lines-smallest-prime-factor-t-ciki/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5939885/simple-java-code-by-shubhamyadav32100-9jv9/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5943990/detailed-explanation-c-java-solution-by-a52q7/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5970362/javacpython-sieve-of-eratosthenes-by-lee-qs43/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5939877/sieve-and-number-theory-by-james_hansel-kdvn/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5940021/easy-greedy-solution-by-be_fighter-yea9/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5939880/iterating-in-reverse-order-java-explaine-kyk0/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5940009/simple-java-beats-100-greedy-math-by-har-2xjr/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5941476/beats-100-simple-easy-to-understandclean-rxs0/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5940141/beats-100-using-easy-greedy-approach-by-e3rtw/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5939818/easy-java-sol-by-enkixly-yvvq/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/6022465/onsqrtm-solution-java-by-tadakamalla-6p13/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5942040/greedy-solution-beats-100-by-cryandrich-t8kk/;;https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/solutions/5940786/easiest-java-solution-by-devang_pardeshi-8g6r/;;;=;==;=;=;

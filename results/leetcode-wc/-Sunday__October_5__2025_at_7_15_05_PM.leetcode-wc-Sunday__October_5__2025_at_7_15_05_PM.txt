@@ -1,0 +1,25 @@
+1288. Remove Covered Intervals;=;=Medium;=;=publicÊintÊremoveCoveredIntervals(int[][]Êintervals);=;=Given an array intervals where intervals[i] = [li, ri] represent the interval [li, ri), remove all intervals that are covered by another interval in the list.
+
+The interval [a, b) is covered by the interval [c, d) if and only if c <= a and b <= d.
+
+Return the number of remaining intervals.
+
+Ê
+
+Example 1:
+
+Input: intervals = [[1,4],[3,6],[2,8]]
+Output: 2
+Explanation: Interval [3,6] is covered by [2,8], therefore it is removed.
+Example 2:
+
+Input: intervals = [[1,4],[2,3]]
+Output: 1
+Ê
+
+Constraints:
+
+1 <= intervals.length <= 1000
+intervals[i].length == 2
+0 <= li < ri <= 105
+All the given intervals are unique.;=;=https://leetcode.com/problems/remove-covered-intervals/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-covered-intervals/solutions/7120872/greedy-interval-filtering-by-yashkambari-ecmu/;;https://leetcode.com/problems/remove-covered-intervals/solutions/1784874/beginner-friendly-javajavascriptpython-s-uend/;;https://leetcode.com/problems/remove-covered-intervals/solutions/878605/java-nothing-fancy-by-miyamura-e0y8/;;https://leetcode.com/problems/remove-covered-intervals/solutions/878391/java-clean-code-no-sort-fast-than-100-by-mghi/;;https://leetcode.com/problems/remove-covered-intervals/solutions/1785768/java-custom-sorting-easy-sol-explained-b-y9zj/;;https://leetcode.com/problems/remove-covered-intervals/solutions/1785700/sort-solution-java-by-rajatag03-fk1q/;;https://leetcode.com/problems/remove-covered-intervals/solutions/1785343/java-easy-solution-2ms-by-yaswanth_sai_r-zj6s/;;https://leetcode.com/problems/remove-covered-intervals/solutions/1785633/best-java-solution-by-httpsashishgunjan2-0dmf/;;https://leetcode.com/problems/remove-covered-intervals/solutions/4893203/beats-90-simple-java-solution-by-gautam_-id00/;;https://leetcode.com/problems/remove-covered-intervals/solutions/1785721/simple-java-solution-with-explaination-n-nj1e/;;https://leetcode.com/problems/remove-covered-intervals/solutions/2919223/java-simple-solution-and-explanation-for-7oak/;;https://leetcode.com/problems/remove-covered-intervals/solutions/1787345/two-java-solutions-by-valentarmo-rh9c/;;https://leetcode.com/problems/remove-covered-intervals/solutions/1785569/clear-explanation-intuitive-java-by-abhi-wd1g/;;https://leetcode.com/problems/remove-covered-intervals/solutions/2093214/java-using-sorting-easy-to-understand-by-cpt9/;;https://leetcode.com/problems/remove-covered-intervals/solutions/1784895/java-sorting-by-dhaithiya_soodhan_t_s-5te4/;;;=;==;=;=;

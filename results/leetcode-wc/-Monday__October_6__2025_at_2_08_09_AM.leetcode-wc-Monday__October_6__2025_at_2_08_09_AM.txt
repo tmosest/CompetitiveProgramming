@@ -1,0 +1,28 @@
+2369. Check if There is a Valid Partition For The Array;=;=Medium;=;=public boolean validPartition(int[] nums);=;=You are given a 0-indexed integer array nums. You have to partition the array into one or more contiguous subarrays.
+
+We call a partition of the array valid if each of the obtained subarrays satisfies one of the following conditions:
+
+The subarray consists of exactly 2, equal elements. For example, the subarray [2,2] is good.
+The subarray consists of exactly 3, equal elements. For example, the subarray [4,4,4] is good.
+The subarray consists of exactly 3 consecutive increasing elements, that is, the difference between adjacent elements is 1. For example, the subarray [3,4,5] is good, but the subarray [1,3,5] is not.
+Return true if the array has at least one valid partition. Otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: nums = [4,4,4,5,6]
+Output: true
+Explanation: The array can be partitioned into the subarrays [4,4] and [4,5,6].
+This partition is valid, so we return true.
+Example 2:
+
+Input: nums = [1,1,1,2]
+Output: false
+Explanation: There is no valid partition for this array.
+ 
+
+Constraints:
+
+2 <= nums.length <= 105
+1 <= nums[i] <= 106;=;=https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/3901261/100-on-dynamic-programming-sliding-windo-ek4i/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/2390497/dp-by-votrubac-k2vi/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/2390802/javacpython-dp-o1-space-by-lee215-ycpd/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/3903603/very-easy-code-line-by-line-explained-me-ymqp/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/2390584/java-dp-check-3-conditions-by-student209-r1f2/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/3901531/video-ex-amazon-explains-a-solution-with-waqg/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/3902603/image-explanation-recursion-memoization-gxasq/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/3901362/easy-explanation-video-java-c-python-by-ltpdi/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/2390630/on-dp-easy-to-understand-by-sarthak2jain-jo7q/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/2392960/recursion-memoization-java-by-amandubeyy-5xs9/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/3902351/step-by-step-simple-java-solution-by-rec-h5cf/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/5590358/dp-by-chuko-h75v/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/3902090/dp-memoization-easy-to-understand-java-b-ziee/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/2390651/recursive-memoisaton-by-kundankrg-0fge/;;https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/2390726/easy-to-understand-dp-code-on-by-pulkit1-fftt/;;;=;==;=;=;

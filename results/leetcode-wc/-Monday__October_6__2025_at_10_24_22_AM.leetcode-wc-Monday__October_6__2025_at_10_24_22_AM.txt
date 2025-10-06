@@ -1,0 +1,33 @@
+1940. Longest Common Subsequence Between Sorted Arrays;=;=Medium;=;=public List<Integer> longestCommonSubsequence(int[][] arrays);=;=Given an array of integer arrays arrays where each arrays[i] is sorted in strictly increasing order, return an integer array representing the longest common subsequence among all the arrays.
+
+A subsequence is a sequence that can be derived from another sequence by deleting some elements (possibly none) without changing the order of the remaining elements.
+
+ 
+
+Example 1:
+
+Input: arrays = [[1,3,4],
+                 [1,4,7,9]]
+Output: [1,4]
+Explanation: The longest common subsequence in the two arrays is [1,4].
+Example 2:
+
+Input: arrays = [[2,3,6,8],
+                 [1,2,3,5,6,7,10],
+                 [2,3,4,6,9]]
+Output: [2,3,6]
+Explanation: The longest common subsequence in all three arrays is [2,3,6].
+Example 3:
+
+Input: arrays = [[1,2,3,4,5],
+                 [6,7,8]]
+Output: []
+Explanation: There is no common subsequence between the two arrays.
+ 
+
+Constraints:
+
+2 <= arrays.length <= 100
+1 <= arrays[i].length <= 100
+1 <= arrays[i][j] <= 100
+arrays[i] is sorted in strictly increasing order.;=;=https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/1354008/counting-numbers-one-liner-by-votrubac-rnwf/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/1355487/java-intuitive-divide-conquer-omlogn-by-ibhua/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5251874/java-javascript-typescript-c-c-kotlin-go-9fkk/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/1353977/java-solution-by-rkxyiiyk2-7k9x/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/6732280/java-with-sort-easy-to-understand-by-ary-lfyu/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5713032/yet-another-approach-using-recursion-by-raszg/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5350926/simple-java-code-by-majidforwebwerks-1njw/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5276476/short-simple-industry-style-java-solutio-r4jn/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5253360/on-linear-solution-explained-n-pointers-40w1u/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5240803/java-solution-by-abhishek_buragadda-y1nx/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5239953/java-solution-using-counting-by-ppbaozi-kr8q/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5238869/java-brute-force-using-loop-and-hashset-2s74a/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5238473/java-linkedhashmap-by-ankit16190-452f/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/5238427/java-simple-solution-by-varikkk3030-gd1e/;;https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/solutions/4761182/java-beats-100-simple-by-gauriguptacodes-l4kg/;;;=;==;=;=;

@@ -1,0 +1,29 @@
+1247. Minimum Swaps to Make Strings Equal;=;=Medium;=;=public int minimumSwap(String s1, String s2);=;=You are given two strings s1 and s2 of equal length consisting of letters "x" and "y" only. Your task is to make these two strings equal to each other. You can swap any two characters that belong to different strings, which means: swap s1[i] and s2[j].
+
+Return the minimum number of swaps required to make s1 and s2 equal, or return -1 if it is impossible to do so.
+
+ 
+
+Example 1:
+
+Input: s1 = "xx", s2 = "yy"
+Output: 1
+Explanation: Swap s1[0] and s2[1], s1 = "yx", s2 = "yx".
+Example 2:
+
+Input: s1 = "xy", s2 = "yx"
+Output: 2
+Explanation: Swap s1[0] and s2[0], s1 = "yy", s2 = "xx".
+Swap s1[0] and s2[1], s1 = "xy", s2 = "xy".
+Note that you cannot swap s1[0] and s1[1] to make s1 equal to "yx", cause we can only swap chars in different strings.
+Example 3:
+
+Input: s1 = "xx", s2 = "xy"
+Output: -1
+ 
+
+Constraints:
+
+1 <= s1.length, s2.length <= 1000
+s1.length == s2.length
+s1, s2 only contain 'x' or 'y'.;=;=https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/6735924/cpp-java-greedy-100-beats-easy-to-unders-k2kd/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/906645/on-solution-thought-process-by-133c7-509y/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/6364029/detailed-explaination-java-on-by-godofm4-t4qf/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/2099597/java-faster-than-100-on-time-constant-sp-w8wv/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/6574733/java-easy-to-understand-by-aryaman123-pna5/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/1029388/easy-java-solution-with-clear-explanatio-jv3a/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/2699144/easy-understanding-solution-by-pd357621-r3pp/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/3100962/java-faster-and-simple-solution-by-saura-8r3o/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/699003/java-greedy-solution-by-monsterspyy-pdkp/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/1996007/i-didnt-see-that-it-was-x-and-y-only-by-7kwcg/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/637064/java-easy-solution-count-pairs-by-dibyan-f4hd/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/1074303/java-solution-beats-100-by-anushka1201-1fcp/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/419528/java-solution-clear-variables-by-twon069-p1t9/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/420749/java-explained-beats-100-0-ms-by-gthor10-24wp/;;https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/solutions/6979678/java-by-junyk0205-b3yj/;;;=;==;=;=;

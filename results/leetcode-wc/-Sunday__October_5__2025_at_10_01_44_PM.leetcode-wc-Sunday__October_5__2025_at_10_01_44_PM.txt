@@ -1,0 +1,33 @@
+1573. Number of Ways to Split a String;=;=Medium;=;=public int numWays(String s);=;=Given a binary string s, you can split s into 3 non-empty strings s1, s2, and s3 where s1 + s2 + s3 = s.
+
+Return the number of ways s can be split such that the number of ones is the same in s1, s2, and s3. Since the answer may be too large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: s = "10101"
+Output: 4
+Explanation: There are four ways to split s in 3 parts where each part contain the same number of letters '1'.
+"1|010|1"
+"1|01|01"
+"10|10|1"
+"10|1|01"
+Example 2:
+
+Input: s = "1001"
+Output: 0
+Example 3:
+
+Input: s = "0000"
+Output: 3
+Explanation: There are three ways to split s in 3 parts.
+"0|0|00"
+"0|00|0"
+"00|0|0"
+ 
+
+Constraints:
+
+3 <= s.length <= 105
+s[i] is either '0' or '1'.;=;=https://leetcode.com/problems/number-of-ways-to-split-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/830455/javapython-3-multiplication-of-the-ways-7n2r8/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/1351857/simple-java-solution-by-keerthy0212-8u49/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/5193827/java-clean-solution-with-detail-explanat-rn5x/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/831912/java-3ms-100-one-pass-explanation-by-dud-plla/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/3484486/java-javascript-on-time-beats-95-by-nish-j9xr/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/2493730/java-string-by-suraj_100-biswal-7xfu/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/4292446/simpler-way-java-by-sahilgupta17-2c0i/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/2148360/java-solution-with-proper-indentation-fo-0n4u/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/1686508/suggestion-2-test-cases-are-failing-java-tc8n/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/830639/java-simple-by-using-1st-cut-and-second-8tx1a/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/834534/java-math-by-priyanpaulraj-7u0f/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/7152259/practice-modpow-by-hopecheung-6enx/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/7143918/java-solution-by-ndsjqwbbb-l1hj/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/7057820/generalized-approach-with-k-partitions-t-ss9w/;;https://leetcode.com/problems/number-of-ways-to-split-a-string/solutions/6698588/aizens-masterful-dissection-unleashing-t-tlyv/;;;=;==;=;=;

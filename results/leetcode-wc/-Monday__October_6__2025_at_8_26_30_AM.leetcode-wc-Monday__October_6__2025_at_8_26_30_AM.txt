@@ -1,0 +1,54 @@
+3504. Longest Palindrome After Substring Concatenation II;=;=Hard;=;=public int longestPalindrome(String s, String t);=;=You are given two strings, s and t.
+
+You can create a new string by selecting a substring from s (possibly empty) and a substring from t (possibly empty), then concatenating them in order.
+
+Return the length of the longest palindrome that can be formed this way.
+
+ 
+
+Example 1:
+
+Input: s = "a", t = "a"
+
+Output: 2
+
+Explanation:
+
+Concatenating "a" from s and "a" from t results in "aa", which is a palindrome of length 2.
+
+Example 2:
+
+Input: s = "abc", t = "def"
+
+Output: 1
+
+Explanation:
+
+Since all characters are different, the longest palindrome is any single character, so the answer is 1.
+
+Example 3:
+
+Input: s = "b", t = "aaaa"
+
+Output: 4
+
+Explanation:
+
+Selecting "aaaa" from t is the longest palindrome, so the answer is 4.
+
+Example 4:
+
+Input: s = "abcde", t = "ecdba"
+
+Output: 5
+
+Explanation:
+
+Concatenating "abc" from s and "ba" from t results in "abcba", which is a palindrome of length 5.
+
+ 
+
+Constraints:
+
+1 <= s.length, t.length <= 1000
+s and t consist of lowercase English letters.;=;=https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6596143/recursion-memo-on2-pre-compute-lcs-from-5melu/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6605474/simple-dp-detailed-explanation-easy-to-u-9zwr/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6600636/n2-optimal-dp-solution-by-srknzl-w1gp/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6596446/simple-solution-with-detailed-comments-b-k9a8/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6809622/dynamic-programing-greedy-algo-100-effic-258n/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6594670/explore-each-string-firt-then-dp-by-whoa-25oq/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/7059947/dp-palindrome-commonsubstring-on2-soluti-f12b/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6594558/trie-dp-by-22881a05h6-60ob/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6594519/easy-to-understand-java-solution-longest-6i86/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6798721/recursion-with-memoization-video-explana-lfqt/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6597598/2-d-dynamic-programming-based-solution-i-qt4g/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6594516/using-kmp-and-z-algorithm-by-risabhuchih-pzuu/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6617808/clean-java-code-with-detailed-explanatio-16by/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6595482/manacher-dp-by-megamonster-ex4k/;;https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/solutions/6594493/simple-java-solution-by-vidu171-mdnj/;;;=;==;=;=;

@@ -1,0 +1,27 @@
+1862. Sum of Floored Pairs;=;=Hard;=;=publicÊintÊsumOfFlooredPairs(int[]Ênums);=;=Given an integer array nums, return the sum of floor(nums[i] / nums[j]) for all pairs of indices 0 <= i, j < nums.length in the array. Since the answer may be too large, return it modulo 109 + 7.
+
+The floor() function returns the integer part of the division.
+
+Ê
+
+Example 1:
+
+Input: nums = [2,5,9]
+Output: 10
+Explanation:
+floor(2 / 5) = floor(2 / 9) = floor(5 / 9) = 0
+floor(2 / 2) = floor(5 / 5) = floor(9 / 9) = 1
+floor(5 / 2) = 2
+floor(9 / 2) = 4
+floor(9 / 5) = 1
+We calculate the floor of the division for every pair of indices in the array then sum them up.
+Example 2:
+
+Input: nums = [7,7,7,7,7,7,7]
+Output: 49
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/sum-of-floored-pairs/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/sum-of-floored-pairs/solutions/6724569/simple-java-solution-prefix-sum-by-rohan-nqzm/;;https://leetcode.com/problems/sum-of-floored-pairs/solutions/1214527/java-readable-code-by-himanshuchhikara-0qyh/;;https://leetcode.com/problems/sum-of-floored-pairs/solutions/1210458/java-simple-brute-approach-using-memoriz-358a/;;https://leetcode.com/problems/sum-of-floored-pairs/solutions/4162311/best-java-solution-beats-80-by-ravikumar-g2qm/;;https://leetcode.com/problems/sum-of-floored-pairs/solutions/6355223/java-by-karthi_saravanan_t-iycj/;;https://leetcode.com/problems/sum-of-floored-pairs/solutions/6284538/1862-sum-of-floored-pairs-by-g8xd0qpqty-escg/;;https://leetcode.com/problems/sum-of-floored-pairs/solutions/3372206/best-java-35ms-by-ht38nhatphan-srnp/;;https://leetcode.com/problems/sum-of-floored-pairs/solutions/2460939/java-solution-faster-than-987-of-other-s-w5vg/;;https://leetcode.com/problems/sum-of-floored-pairs/solutions/2153792/java-onlogn-number-theory-by-utsav_deep-e1t5/;;;=;==;=;=;

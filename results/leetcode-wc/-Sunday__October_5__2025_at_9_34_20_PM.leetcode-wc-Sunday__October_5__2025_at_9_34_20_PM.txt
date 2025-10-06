@@ -1,0 +1,26 @@
+254. Factor Combinations;=;=Medium;=;=public List<List<Integer>> getFactors(int n);=;=Numbers can be regarded as the product of their factors.
+
+For example, 8 = 2 x 2 x 2 = 2 x 4.
+Given an integer n, return all possible combinations of its factors. You may return the answer in any order.
+
+Note that the factors should be in the range [2, n - 1].
+
+ 
+
+Example 1:
+
+Input: n = 1
+Output: []
+Example 2:
+
+Input: n = 12
+Output: [[2,6],[3,4],[2,2,3]]
+Example 3:
+
+Input: n = 37
+Output: []
+ 
+
+Constraints:
+
+1 <= n <= 107;=;=https://leetcode.com/problems/factor-combinations/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/factor-combinations/solutions/68040/my-recursive-dfs-java-solution-by-lc_cl_-hsiy/;;https://leetcode.com/problems/factor-combinations/solutions/68041/my-short-java-solution-which-is-easy-to-1oqme/;;https://leetcode.com/problems/factor-combinations/solutions/360396/java-backtrack-solution-with-detailed-ex-rt5m/;;https://leetcode.com/problems/factor-combinations/solutions/1549648/java-optimized-backtracking-w-early-exit-bv28/;;https://leetcode.com/problems/factor-combinations/solutions/68102/java-2ms-easy-to-understand-short-and-sw-7znq/;;https://leetcode.com/problems/factor-combinations/solutions/3928804/backtracking-memorization-by-angel2-ozpv/;;https://leetcode.com/problems/factor-combinations/solutions/4030026/java-simple-solutionrecursionbacktrackin-ejmn/;;https://leetcode.com/problems/factor-combinations/solutions/68116/simple-java-recursive-solution-by-nighto-fpas/;;https://leetcode.com/problems/factor-combinations/solutions/1609077/java-backtracking-solution-by-tk-x-8fi7/;;https://leetcode.com/problems/factor-combinations/solutions/68099/java-easy-to-understand-recursive-soluti-3z43/;;https://leetcode.com/problems/factor-combinations/solutions/68114/why-is-this-solution-so-slow-and-how-to-01m95/;;https://leetcode.com/problems/factor-combinations/solutions/6290491/superfast-java-solution-dfs-backtracking-9y2y/;;https://leetcode.com/problems/factor-combinations/solutions/5462357/java-best-solution-by-srikanthborusu-lly2/;;https://leetcode.com/problems/factor-combinations/solutions/4492268/super-easy-intutive-solution-of-dynamic-wszzg/;;https://leetcode.com/problems/factor-combinations/solutions/4028878/java-solution-backtracking-by-ndsjqwbbb-xec1/;;;=;==;=;=;

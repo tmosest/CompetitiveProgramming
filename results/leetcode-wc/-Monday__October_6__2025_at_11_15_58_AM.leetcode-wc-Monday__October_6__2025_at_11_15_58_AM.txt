@@ -1,0 +1,24 @@
+854. K-Similar Strings;=;=Hard;=;=publicÊintÊkSimilarity(StringÊs1,ÊStringÊs2);=;=Strings s1 and s2 are k-similar (for some non-negative integer k) if we can swap the positions of two letters in s1 exactly k times so that the resulting string equals s2.
+
+Given two anagrams s1 and s2, return the smallest k for which s1 and s2 are k-similar.
+
+Ê
+
+Example 1:
+
+Input: s1 = "ab", s2 = "ba"
+Output: 1
+Explanation: The two string are 1-similar because we can use one swap to change s1 to s2: "ab" --> "ba".
+Example 2:
+
+Input: s1 = "abc", s2 = "bca"
+Output: 2
+Explanation: The two strings are 2-similar because we can use two swaps to change s1 to s2: "abc" --> "bac" --> "bca".
+Ê
+
+Constraints:
+
+1 <= s1.length <= 20
+s2.length == s1.length
+s1 and s2 contain only lowercase letters from the set {'a', 'b', 'c', 'd', 'e', 'f'}.
+s2 is an anagram of s1.;=;=https://leetcode.com/problems/k-similar-strings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/k-similar-strings/solutions/1351170/java-greedy-bfs-solution-with-explanatio-da02/;;https://leetcode.com/problems/k-similar-strings/solutions/3495369/solution-by-deleted_user-d783/;;https://leetcode.com/problems/k-similar-strings/solutions/3281428/java-bfs-with-complexity-analysis-by-br4-svzc/;;https://leetcode.com/problems/k-similar-strings/solutions/1324274/simple-solution-in-java-through-bfs-by-i-krqn/;;https://leetcode.com/problems/k-similar-strings/solutions/5067201/my-java-22ms-solution-89-faster-by-ragha-hs8p/;;https://leetcode.com/problems/k-similar-strings/solutions/7084024/solution-using-java-by-kushal_bharadwaj-wwiie/;;https://leetcode.com/problems/k-similar-strings/solutions/6441871/simple-backtracking-approach-easy-to-und-ezc1/;;https://leetcode.com/problems/k-similar-strings/solutions/6214640/854-k-similar-strings-by-g8xd0qpqty-eumj/;;https://leetcode.com/problems/k-similar-strings/solutions/4046898/easiest-solution-by-kunal7216-jo80/;;https://leetcode.com/problems/k-similar-strings/solutions/3472012/java-by-gadmo-rkiv/;;https://leetcode.com/problems/k-similar-strings/solutions/3250816/bfs-100-by-user8738zv-kq68/;;https://leetcode.com/problems/k-similar-strings/solutions/2818625/java-a-dp-style-memoization-based-approa-lso3/;;https://leetcode.com/problems/k-similar-strings/solutions/2558485/clean-java-solution-using-bfs-by-shanky_-e6fv/;;https://leetcode.com/problems/k-similar-strings/solutions/2316946/java-bfs-string-comparison-by-manishen-2sql/;;https://leetcode.com/problems/k-similar-strings/solutions/2255032/java-bfs-solution-easy-to-understand-by-i7um9/;;;=;==;=;=;

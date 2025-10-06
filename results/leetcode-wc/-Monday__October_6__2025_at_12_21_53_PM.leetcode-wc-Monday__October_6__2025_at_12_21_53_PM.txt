@@ -1,0 +1,38 @@
+1708. Largest Subarray Length K;=;=Easy;=;=publicÊint[]ÊlargestSubarray(int[]Ênums,ÊintÊk);=;=An array A is larger than some array B if for the first index i where A[i] != B[i], A[i] > B[i].
+
+For example, consider 0-indexing:
+
+[1,3,2,4] > [1,2,2,4], since at index 1, 3 > 2.
+[1,4,4,4] < [2,1,1,1], since at index 0, 1 < 2.
+A subarray is a contiguous subsequence of the array.
+
+Given an integer array nums of distinct integers, return the largest subarray of nums of length k.
+
+Ê
+
+Example 1:
+
+Input: nums = [1,4,5,2,3], k = 3
+Output: [5,2,3]
+Explanation: The subarrays of size 3 are: [1,4,5], [4,5,2], and [5,2,3].
+Of these, [5,2,3] is the largest.
+Example 2:
+
+Input: nums = [1,4,5,2,3], k = 4
+Output: [4,5,2,3]
+Explanation: The subarrays of size 4 are: [1,4,5,2], and [4,5,2,3].
+Of these, [4,5,2,3] is the largest.
+Example 3:
+
+Input: nums = [1,4,5,2,3], k = 1
+Output: [5]
+Ê
+
+Constraints:
+
+1 <= k <= nums.length <= 105
+1 <= nums[i] <= 109
+All the integers of nums are unique.
+Ê
+
+Follow up: What if the integers in nums are not distinct?;=;=https://leetcode.com/problems/largest-subarray-length-k/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-subarray-length-k/solutions/994709/java-duval-followup-two-pointers-on-time-xr2l/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/3375877/java-on-by-jga111-3lod/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/1002257/java-n-time-faster-than-100-by-yurokusa-tt60/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/7153380/not-optimal-2ms-beats9184-but-easy-to-un-0zg7/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/6452735/java-solution-by-nishitabhise-nx9h/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/5681141/javajsts-solution-jw-by-specter01wj-v4g2/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/4274280/readable-solution-description-beats-100-tl77j/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/3608679/java-simple-by-go_all_the_way-fl3a/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/2923056/beat-100-the-most-intuitive-solution-by-ebnwq/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/1699054/java-greedy-explained-by-prashant404-ku9c/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/1355980/java-sliding-window-approach-by-axooo-x8mj/;;https://leetcode.com/problems/largest-subarray-length-k/solutions/1177257/java-solution-100-by-jiaxichen-iqs0/;;;=;==;=;=;

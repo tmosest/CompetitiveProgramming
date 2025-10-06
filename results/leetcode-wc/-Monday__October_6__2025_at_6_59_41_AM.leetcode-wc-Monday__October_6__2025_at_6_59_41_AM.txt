@@ -1,0 +1,87 @@
+3624. Number of Integers With Popcount-Depth Equal to K II;=;=Hard;=;=publicÊint[]ÊpopcountDepth(long[]Ênums,Êlong[][]Êqueries);=;=You are given an integer array nums.
+
+For any positive integer x, define the following sequence:
+
+p0 = x
+pi+1 = popcount(pi) for all i >= 0, where popcount(y) is the number of set bits (1's) in the binary representation of y.
+This sequence will eventually reach the value 1.
+
+The popcount-depth of x is defined as the smallest integer d >= 0 such that pd = 1.
+
+For example, if x = 7 (binary representation "111"). Then, the sequence is: 7 ? 3 ? 2 ? 1, so the popcount-depth of 7 is 3.
+
+You are also given a 2D integer array queries, where each queries[i] is either:
+
+[1, l, r, k] - Determine the number of indices j such that l <= j <= r and the popcount-depth of nums[j] is equal to k.
+[2, idx, val] - Update nums[idx] to val.
+Return an integer array answer, where answer[i] is the number of indices for the ith query of type [1, l, r, k].
+
+Ê
+
+Example 1:
+
+Input: nums = [2,4], queries = [[1,0,1,1],[2,1,1],[1,0,1,0]]
+
+Output: [2,1]
+
+Explanation:
+
+i	queries[i]	nums	binary(nums)	popcount-
+depth	[l, r]	k	Valid
+nums[j]	updated
+nums	Answer
+0	[1,0,1,1]	[2,4]	[10, 100]	[1, 1]	[0, 1]	1	[0, 1]	Ñ	2
+1	[2,1,1]	[2,4]	[10, 100]	[1, 1]	Ñ	Ñ	Ñ	[2,1]	Ñ
+2	[1,0,1,0]	[2,1]	[10, 1]	[1, 0]	[0, 1]	0	[1]	Ñ	1
+Thus, the final answer is [2, 1].
+
+Example 2:
+
+Input: nums = [3,5,6], queries = [[1,0,2,2],[2,1,4],[1,1,2,1],[1,0,1,0]]
+
+Output: [3,1,0]
+
+Explanation:
+
+i	queries[i]	nums	binary(nums)	popcount-
+depth	[l, r]	k	Valid
+nums[j]	updated
+nums	Answer
+0	[1,0,2,2]	[3, 5, 6]	[11, 101, 110]	[2, 2, 2]	[0, 2]	2	[0, 1, 2]	Ñ	3
+1	[2,1,4]	[3, 5, 6]	[11, 101, 110]	[2, 2, 2]	Ñ	Ñ	Ñ	[3, 4, 6]	Ñ
+2	[1,1,2,1]	[3, 4, 6]	[11, 100, 110]	[2, 1, 2]	[1, 2]	1	[1]	Ñ	1
+3	[1,0,1,0]	[3, 4, 6]	[11, 100, 110]	[2, 1, 2]	[0, 1]	0	[]	Ñ	0
+Thus, the final answer is [3, 1, 0].
+
+Example 3:
+
+Input: nums = [1,2], queries = [[1,0,1,1],[2,0,3],[1,0,0,1],[1,0,0,2]]
+
+Output: [1,0,1]
+
+Explanation:
+
+i	queries[i]	nums	binary(nums)	popcount-
+depth	[l, r]	k	Valid
+nums[j]	updated
+nums	Answer
+0	[1,0,1,1]	[1, 2]	[1, 10]	[0, 1]	[0, 1]	1	[1]	Ñ	1
+1	[2,0,3]	[1, 2]	[1, 10]	[0, 1]	Ñ	Ñ	Ñ	[3, 2]	Ê
+2	[1,0,0,1]	[3, 2]	[11, 10]	[2, 1]	[0, 0]	1	[]	Ñ	0
+3	[1,0,0,2]	[3, 2]	[11, 10]	[2, 1]	[0, 0]	2	[0]	Ñ	1
+Thus, the final answer is [1, 0, 1].
+
+Ê
+
+Constraints:
+
+1 <= n == nums.length <= 105
+1 <= nums[i] <= 1015
+1 <= queries.length <= 105
+queries[i].length == 3 or 4
+queries[i] == [1, l, r, k] or,
+queries[i] == [2, idx, val]
+0 <= l <= r <= n - 1
+0 <= k <= 5
+0 <= idx <= n - 1
+1 <= val <= 1015;=;=https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6981120/bit-fenwick-tree-java-easy-to-understand-423e/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6981805/c-java-easy-sqrt-decomposition-by-meatym-twc7/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6980306/efficient-popcount-depth-queries-using-f-l9tu/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6981254/ordered-set-c-easy-efficient-by-ojasvi_t-kcyp/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6992898/best-question-to-learn-the-segment-tree-ey8q4/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6982308/beats-100-java-segment-tree-range-query-ydegs/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6985284/easy-fenwick-tree-solution-by-arham121-nuyw/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6982888/fenwick-2d-tree-java-by-ganeshmanchala-z6ov/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6985030/java-solution-beats-100-segment-tree-per-mb0j/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6992897/best-question-to-learn-the-segment-tree-iufub/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6990297/92-memory-buckets-configurable-java-by-v-4z35/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6980398/java-solution-by-shagun_raj-r6y6/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/7021317/segment-tree-dp-by-saketcodescribe-vwn6/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6981836/java-nlognn-fenwick-tree-approach-by-wxy-94o1/;;https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/solutions/6981522/my-first-segment-tree-code-java-by-shast-twuu/;;;=;==;=;=;

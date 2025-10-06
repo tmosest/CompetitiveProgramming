@@ -1,0 +1,33 @@
+2035. Partition Array Into Two Arrays to Minimize Sum Difference;=;=Hard;=;=public int minimumDifference(int[] nums);=;=You are given an integer array nums of 2 * n integers. You need to partition nums into two arrays of length n to minimize the absolute difference of the sums of the arrays. To partition nums, put each element of nums into one of the two arrays.
+
+Return the minimum possible absolute difference.
+
+ 
+
+Example 1:
+
+
+Input: nums = [3,9,7,3]
+Output: 2
+Explanation: One optimal partition is: [3,9] and [7,3].
+The absolute difference between the sums of the arrays is abs((3 + 9) - (7 + 3)) = 2.
+Example 2:
+
+Input: nums = [-36,36]
+Output: 72
+Explanation: One optimal partition is: [-36] and [36].
+The absolute difference between the sums of the arrays is abs((-36) - (36)) = 72.
+Example 3:
+
+
+Input: nums = [2,-1,0,4,-2,-9]
+Output: 0
+Explanation: One optimal partition is: [2,4,-9] and [-1,0,-2].
+The absolute difference between the sums of the arrays is abs((2 + 4 + -9) - (-1 + 0 + -2)) = 0.
+ 
+
+Constraints:
+
+1 <= n <= 15
+nums.length == 2 * n
+-107 <= nums[i] <= 107;=;=https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/7140543/the-only-solution-you-will-understand-no-2syv/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/6863074/meet-in-the-middle-java-solution-o2n-log-et12/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/7147796/meet-in-the-middle-with-binary-search-by-0mnw/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/4948994/man-in-the-middle-recursion-binary-searc-jgq1/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/5771085/dp-meet-in-the-middle-most-elaborate-exp-djl7/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/1513541/java-meet-in-the-middle-and-two-pointers-grx7/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/6293311/the-most-human-like-solution-binary-sear-erjc/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/5383779/cleanest-code-you-will-find-by-nandan101-ore5/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/6776966/partition-array-into-two-arrays-to-minim-9rlr/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/7251749/javabit-masking-by-khushi3107-73lj/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/1513432/java-bitmask-treeset-by-cdhcs1516-ch4t/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/6748913/simple-approach-with-dedicated-functions-93km/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/5536393/top-down-by-zephyraliswizard-vr42/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/1594677/meet-in-the-middle-by-zerocool1989-leqx/;;https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/2234929/all-subset-sum-dp-top-down-by-shuaib_123-e1lo/;;;=;==;=;=;

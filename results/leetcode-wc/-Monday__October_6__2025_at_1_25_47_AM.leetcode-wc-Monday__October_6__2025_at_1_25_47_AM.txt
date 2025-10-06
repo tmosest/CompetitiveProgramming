@@ -1,0 +1,39 @@
+3685. Subsequence Sum After Capping Elements;=;=Medium;=;=public boolean[] subsequenceSumAfterCapping(int[] nums, int k);=;=You are given an integer array nums of size n and a positive integer k.
+
+An array capped by value x is obtained by replacing every element nums[i] with min(nums[i], x).
+
+For each integer x from 1 to n, determine whether it is possible to choose a subsequence from the array capped by x such that the sum of the chosen elements is exactly k.
+
+Return a 0-indexed boolean array answer of size n, where answer[i] is true if it is possible when using x = i + 1, and false otherwise.
+
+ 
+
+Example 1:
+
+Input: nums = [4,3,2,4], k = 5
+
+Output: [false,false,true,true]
+
+Explanation:
+
+For x = 1, the capped array is [1, 1, 1, 1]. Possible sums are 1, 2, 3, 4, so it is impossible to form a sum of 5.
+For x = 2, the capped array is [2, 2, 2, 2]. Possible sums are 2, 4, 6, 8, so it is impossible to form a sum of 5.
+For x = 3, the capped array is [3, 3, 2, 3]. A subsequence [2, 3] sums to 5, so it is possible.
+For x = 4, the capped array is [4, 3, 2, 4]. A subsequence [3, 2] sums to 5, so it is possible.
+Example 2:
+
+Input: nums = [1,2,3,4,5], k = 3
+
+Output: [true,true,true,true,true]
+
+Explanation:
+
+For every value of x, it is always possible to select a subsequence from the capped array that sums exactly to 3.
+
+ 
+
+Constraints:
+
+1 <= n == nums.length <= 4000
+1 <= nums[i] <= n
+1 <= k <= 4000;=;=https://leetcode.com/problems/subsequence-sum-after-capping-elements/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7188218/dynamic-programming-for-intermediate-sum-90pe/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7187801/beats-100-c-solution-by-r7rdmpvi0f-7z0b/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7187647/sorting-knapsack-onk-by-gitchuan-vjxt/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7188322/subsequence-sum-using-dp-by-tharun_kumar-9ix3/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7187684/simple-subset-sum-and-modulo-based-solut-xkta/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7187748/java-solution-dp-approach-binary-search-witew/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7187692/100-efficient-solution-by-kgoutamkumar-oug0/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7187740/fast-subsequence-sum-after-capping-bitse-wk6k/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7196367/java-dp-intuition-approach-knapsack-by-m-1ild/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7189972/subsequence-sum-after-capping-elements-d-oudf/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7189126/beat-100-top-k-largest-distinct-elements-9p3x/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7188886/3685-subsequence-sum-after-capping-eleme-tfw8/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7189776/hash-table-dynamic-programming-and-binar-4qwp/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7187729/100-beats-easy-java-solution-by-harshvar-t95w/;;https://leetcode.com/problems/subsequence-sum-after-capping-elements/solutions/7187699/subsequence-sum-after-capping-elements-b-8rkv/;;;=;==;=;=;

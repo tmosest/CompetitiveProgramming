@@ -1,0 +1,27 @@
+1171. Remove Zero Sum Consecutive Nodes from Linked List;=;=Medium;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode()       ListNode(int val)  this.val = val;       ListNode(int val, ListNode next)  this.val = val; this.next = next;    class      public ListNode removeZeroSumSublists(ListNode head);=;=Given the head of a linked list, we repeatedly delete consecutive sequences of nodes that sum to 0 until there are no such sequences.
+
+After doing so, return the head of the final linked list.  You may return any such answer.
+
+ 
+
+(Note that in the examples below, all sequences are serializations of ListNode objects.)
+
+Example 1:
+
+Input: head = [1,2,-3,3,1]
+Output: [3,1]
+Note: The answer [1,2,1] would also be accepted.
+Example 2:
+
+Input: head = [1,2,3,-3,4]
+Output: [1,2,4]
+Example 3:
+
+Input: head = [1,2,3,-3,-2]
+Output: [1]
+ 
+
+Constraints:
+
+The given linked list will contain between 1 and 1000 nodes.
+Each node in the linked list has -1000 <= node.val <= 1000.;=;=https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4862118/speed-is-the-key-explained-efficient-by-yl7yg/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4862085/easy-explanation-prefixsum-hashmap-c-jav-ix4l/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/7102170/title-linked-list-detox-removing-zero-ca-6hck/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/507108/java-simple-on-solution-with-explanation-dg60/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4862311/codestorywithmik-c-java-youtube-video-al-lwpm/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4862857/getting-hold-of-nodes-before-and-after-t-1i39/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4862917/easy-full-explanation-with-comments-beat-ozdc/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4863178/java-solution-explained-in-hindi-by-the_-s5fh/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/2079419/java-two-pass-solution-using-prefix-sum-0alb9/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4863755/solve-using-recursion-by-raghu2004_rk-ist8/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/7239144/prefix-sum-with-hashmap-two-passes-by-co-uioo/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4054419/best-java-solution-beats-96-by-ravikumar-bupb/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4862226/1-ms-beats-100-dfs-digital-sum-logic-sel-yvkh/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4862243/java-2ms-hashmap-beats-8913-users-with-j-l8cx/;;https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/995902/java-two-pass-solution-by-vinsinin-b9md/;;;=;==;=;=;

@@ -1,0 +1,45 @@
+3183. The Number of Ways to Make the Sum;=;=Medium;=;=public int numberOfWays(int n);=;=You have an infinite number of coins with values 1, 2, and 6, and only 2 coins with value 4.
+
+Given an integer n, return the number of ways to make the sum of n with the coins you have.
+
+Since the answer may be very large, return it modulo 109 + 7.
+
+Note that the order of the coins doesn't matter and [2, 2, 3] is the same as [2, 3, 2].
+
+ 
+
+Example 1:
+
+Input: n = 4
+
+Output: 4
+
+Explanation:
+
+Here are the four combinations: [1, 1, 1, 1], [1, 1, 2], [2, 2], [4].
+
+Example 2:
+
+Input: n = 12
+
+Output: 22
+
+Explanation:
+
+Note that [4, 4, 4] is not a valid combination since we cannot use 4 three times.
+
+Example 3:
+
+Input: n = 5
+
+Output: 4
+
+Explanation:
+
+Here are the four combinations: [1, 1, 1, 1, 1], [1, 1, 1, 2], [1, 2, 2], [1, 4].
+
+ 
+
+Constraints:
+
+1 <= n <= 105;=;=https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/solutions/6204441/simple-coin-change-format-beats-100-by-a-y8w2/;;https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/solutions/5304944/java-recursion-with-memo-by-a068864-qw2s/;;https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/solutions/5314408/java-top-down-memoizationdp-by-robertsko-5in1/;;https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/solutions/5303063/java-complete-knapsack-solution-on-88ms-f7m6g/;;https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/solutions/5852286/java-bottom-up-with-space-optimization-d-327d/;;https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/solutions/5802516/simple-java-solution-by-sakshikishore-ncyf/;;https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/solutions/5308232/java-dp-beats-100-by-am_pm-xurz/;;;=;==;=;=;

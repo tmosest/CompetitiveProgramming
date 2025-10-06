@@ -1,0 +1,35 @@
+3280. Convert Date to Binary;=;=Easy;=;=public String convertDateToBinary(String date);=;=You are given a string date representing a Gregorian calendar date in the yyyy-mm-dd format.
+
+date can be written in its binary representation obtained by converting year, month, and day to their binary representations without any leading zeroes and writing them down in year-month-day format.
+
+Return the binary representation of date.
+
+ 
+
+Example 1:
+
+Input: date = "2080-02-29"
+
+Output: "100000100000-10-11101"
+
+Explanation:
+
+100000100000, 10, and 11101 are the binary representations of 2080, 02, and 29 respectively.
+
+Example 2:
+
+Input: date = "1900-01-01"
+
+Output: "11101101100-1-1"
+
+Explanation:
+
+11101101100, 1, and 1 are the binary representations of 1900, 1, and 1 respectively.
+
+ 
+
+Constraints:
+
+date.length == 10
+date[4] == date[7] == '-', and all other date[i]'s are digits.
+The input is generated such that date represents a valid Gregorian calendar date between Jan 1st, 1900 and Dec 31st, 2100 (both inclusive).;=;=https://leetcode.com/problems/convert-date-to-binary/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/convert-date-to-binary/solutions/7248378/easy-by-dima853-52sd/;;https://leetcode.com/problems/convert-date-to-binary/solutions/7221141/convert-date-to-binary-easy-optimal-solu-sbcj/;;https://leetcode.com/problems/convert-date-to-binary/solutions/7219392/convert-date-to-binary-java-by-arghadutt-5jmm/;;https://leetcode.com/problems/convert-date-to-binary/solutions/5757647/easiestfaster-lesser-cpython3javacpython-b593/;;https://leetcode.com/problems/convert-date-to-binary/solutions/7128461/convert-date-to-binary-simple-string-par-p5pv/;;https://leetcode.com/problems/convert-date-to-binary/solutions/7119657/easy-code-for-solve-this-problem-by-4_k4-r6y6/;;https://leetcode.com/problems/convert-date-to-binary/solutions/5754235/simple-java-code-by-abhinandannaik1717-8tlc/;;https://leetcode.com/problems/convert-date-to-binary/solutions/7047939/string-number-string-easy-to-use-by-vish-feje/;;https://leetcode.com/problems/convert-date-to-binary/solutions/7016466/easy-java-solution-beats-100-by-rajdeep0-j1bo/;;https://leetcode.com/problems/convert-date-to-binary/solutions/5754276/beats-100-best-and-simple-solution-by-ri-ewen/;;https://leetcode.com/problems/convert-date-to-binary/solutions/7021717/my-solution-by-codersquare-jycc/;;https://leetcode.com/problems/convert-date-to-binary/solutions/5754496/beats-100_-by-lijoice-7sql/;;https://leetcode.com/problems/convert-date-to-binary/solutions/6599292/java-simple-explaination-with-splitted-f-qaw4/;;https://leetcode.com/problems/convert-date-to-binary/solutions/6342797/1ms-java-by-galani_jenis-b8m4/;;https://leetcode.com/problems/convert-date-to-binary/solutions/5753483/java-constant-complexity-solution-by-shr-nb0e/;;;=;==;=;=;

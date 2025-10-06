@@ -1,0 +1,26 @@
+899. Orderly Queue;=;=Hard;=;=public String orderlyQueue(String s, int k);=;=You are given a string s and an integer k. You can choose one of the first k letters of s and append it at the end of the string.
+
+Return the lexicographically smallest string you could have after applying the mentioned step any number of moves.
+
+ 
+
+Example 1:
+
+Input: s = "cba", k = 1
+Output: "acb"
+Explanation: 
+In the first move, we move the 1st character 'c' to the end, obtaining the string "bac".
+In the second move, we move the 1st character 'b' to the end, obtaining the final result "acb".
+Example 2:
+
+Input: s = "baaca", k = 3
+Output: "aaabc"
+Explanation: 
+In the first move, we move the 1st character 'b' to the end, obtaining the string "aacab".
+In the second move, we move the 3rd character 'c' to the end, obtaining the final result "aaabc".
+ 
+
+Constraints:
+
+1 <= k <= s.length <= 1000
+s consist of lowercase English letters.;=;=https://leetcode.com/problems/orderly-queue/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/orderly-queue/solutions/7175609/easy-java-solution-beginner-friendly-sol-btg3/;;https://leetcode.com/problems/orderly-queue/solutions/2782998/leetcode-the-hard-way-explained-line-by-zi005/;;https://leetcode.com/problems/orderly-queue/solutions/2782816/java-faster-simple-and-easy-by-itsmesohi-m411/;;https://leetcode.com/problems/orderly-queue/solutions/6964732/2ms-solution-100-beat-zero-runtime-hack-2e6gi/;;https://leetcode.com/problems/orderly-queue/solutions/541497/real-on-solution-for-java-by-hihihi_hihi-u6yf/;;https://leetcode.com/problems/orderly-queue/solutions/1108744/bubble-sort-by-himanshuchhikara-5rsf/;;https://leetcode.com/problems/orderly-queue/solutions/2784761/javaeasy-solution-fast-explained-code-by-nkty/;;https://leetcode.com/problems/orderly-queue/solutions/2802903/java-solution-by-janhvi__28-3th1/;;https://leetcode.com/problems/orderly-queue/solutions/7246040/check-the-k-value-to-create-sort-by-hade-9z7x/;;https://leetcode.com/problems/orderly-queue/solutions/6124649/java-easy-100-solution-sorting-by-ytchou-uesq/;;https://leetcode.com/problems/orderly-queue/solutions/2783600/java-easy-96-string-by-samir_alam-uj4e/;;https://leetcode.com/problems/orderly-queue/solutions/2784929/smallest-and-easiest-java-soln-with-comm-bcuu/;;https://leetcode.com/problems/orderly-queue/solutions/2783767/java-easy-to-understand-sort-or-rotate-b-t5uo/;;https://leetcode.com/problems/orderly-queue/solutions/2782799/java-solution-faster-than-100-of-java-su-c6fb/;;https://leetcode.com/problems/orderly-queue/solutions/2786295/java-clean-and-simple-by-sourin_bruh-9um2/;;;=;==;=;=;

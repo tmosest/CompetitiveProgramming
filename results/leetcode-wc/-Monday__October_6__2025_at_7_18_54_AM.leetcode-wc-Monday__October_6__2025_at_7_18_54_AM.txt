@@ -1,0 +1,29 @@
+296. Best Meeting Point;=;=Hard;=;=public int minTotalDistance(int[][] grid);=;=Given an m x n binary grid grid where each 1 marks the home of one friend, return the minimal total travel distance.
+
+The total travel distance is the sum of the distances between the houses of the friends and the meeting point.
+
+The distance is calculated using Manhattan Distance, where distance(p1, p2) = |p2.x - p1.x| + |p2.y - p1.y|.
+
+ 
+
+Example 1:
+
+
+Input: grid = [[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]
+Output: 6
+Explanation: Given three friends living at (0,0), (0,4), and (2,2).
+The point (0,2) is an ideal meeting point, as the total travel distance of 2 + 2 + 2 = 6 is minimal.
+So return 6.
+Example 2:
+
+Input: grid = [[1,1]]
+Output: 1
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 200
+grid[i][j] is either 0 or 1.
+There will be at least two friends in the grid.;=;=https://leetcode.com/problems/best-meeting-point/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/best-meeting-point/solutions/74193/java-2mspython-40ms-two-pointers-solutio-yp9j/;;https://leetcode.com/problems/best-meeting-point/solutions/74188/omn-java-2ms-by-stefanpochmann-5qyr/;;https://leetcode.com/problems/best-meeting-point/solutions/74233/share-my-java-solution-using-quick-selec-po7d/;;https://leetcode.com/problems/best-meeting-point/solutions/4254562/dpdynamic-programming-solution-in-onm-ti-ftyz/;;https://leetcode.com/problems/best-meeting-point/solutions/3505298/omn-in-simple-way-by-sachintech-50oa/;;https://leetcode.com/problems/best-meeting-point/solutions/74244/simple-java-code-without-sorting-by-jinw-xm14/;;https://leetcode.com/problems/best-meeting-point/solutions/1464259/best-first-search-solution-heuristic-dis-214n/;;https://leetcode.com/problems/best-meeting-point/solutions/74226/2ms-java-solution-with-explanation-by-qi-pr4u/;;https://leetcode.com/problems/best-meeting-point/solutions/74234/java-3-ms-binary-search-by-sergeytacheno-9zg2/;;https://leetcode.com/problems/best-meeting-point/solutions/6850769/java-simple-maths-by-rnotappl-z1ed/;;https://leetcode.com/problems/best-meeting-point/solutions/5463269/java-simple-solution-median-explanation-h27go/;;https://leetcode.com/problems/best-meeting-point/solutions/4934228/finding-the-medains-no-need-to-sort-by-h-shy0/;;https://leetcode.com/problems/best-meeting-point/solutions/4697122/java-real-simple-by-principoshi-pude/;;https://leetcode.com/problems/best-meeting-point/solutions/4627002/find-bestmeeting-points-using-medians-by-fsg7/;;https://leetcode.com/problems/best-meeting-point/solutions/4425613/java-19-ms-solution-with-explanation-by-xoocc/;;;=;==;=;=;

@@ -1,0 +1,25 @@
+1297. Maximum Number of Occurrences of a Substring;=;=Medium;=;=public int maxFreq(String s, int maxLetters, int minSize, int maxSize);=;=Given a string s, return the maximum number of occurrences of any substring under the following rules:
+
+The number of unique characters in the substring must be less than or equal to maxLetters.
+The substring size must be between minSize and maxSize inclusive.
+ 
+
+Example 1:
+
+Input: s = "aababcaab", maxLetters = 2, minSize = 3, maxSize = 4
+Output: 2
+Explanation: Substring "aab" has 2 occurrences in the original string.
+It satisfies the conditions, 2 unique letters and size 3 (between minSize and maxSize).
+Example 2:
+
+Input: s = "aaaa", maxLetters = 1, minSize = 3, maxSize = 3
+Output: 2
+Explanation: Substring "aaa" occur 2 times in the string. It can overlap.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+1 <= maxLetters <= 26
+1 <= minSize <= maxSize <= min(26, s.length)
+s consists of only lowercase English letters.;=;=https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/4158907/java-90-onon-easy-to-understand-solution-95v3/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/6385430/1297-maximum-number-of-occurrence-of-a-s-evyp/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/6105020/intuition-optimized-sliding-window-by-fa-fc2b/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/1608302/java-simple-and-readable-faster-than-97-mtxae/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/6563814/maximum-number-of-occurrences-of-a-subst-42nn/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/6871520/optimized-brute-force-using-hashmap-java-dy72/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/763726/java-sliding-window-maxsize-is-useless-b-nkph/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/4102703/javapythontypescript-sliding-window-time-tgdx/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/3814252/using-substring-by-defunct_coder-mmlj/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/458311/java-hashmap-bitmap-on-solution-by-pnimi-n492/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/457683/cjava-40-ms-hashmap-bitset-11-lines-of-c-aees/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/1064316/java-on-solution-with-comments-by-sjsu15-ic9o/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/4232788/sharing-my-java-solution-with-neat-expla-xls3/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/466189/simple-java-solution-by-huayu_ivy-ak7m/;;https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/solutions/7233028/sliding-window-java-by-runlingli-h662/;;;=;==;=;=;

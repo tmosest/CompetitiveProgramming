@@ -1,0 +1,23 @@
+297. Serialize and Deserialize Binary Tree;=;=Hard;=;=public  Codec   public TreeNode rdeserialize(List<String> l)     // Recursive deserialization.    if (l.get(0).equals("null"))       l.remove(0);      return null;        TreeNode root = new TreeNode(Integer.valueOf(l.get(0)));    l.remove(0);    root.left = rdeserialize(l);    root.right = rdeserialize(l);    return root;;=;=Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
+
+Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.
+
+Clarification: The input/output format is the same as how LeetCode serializes a binary tree. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.
+
+ 
+
+Example 1:
+
+
+Input: root = [1,2,3,null,null,4,5]
+Output: [1,2,3,null,null,4,5]
+Example 2:
+
+Input: root = []
+Output: []
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [0, 104].
+-1000 <= Node.val <= 1000;=;=https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/6932485/bfs-most-easy-implementation-java-c-java-xaqh/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/6313014/animated-video-100-guarantee-understandi-u42x/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/74264/short-and-straight-forward-bfs-java-code-39cg/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/7182350/using-bfs-by-kshivhare-qsjn/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/281714/clean-java-solution-by-lhearen-hnqb/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/7212430/bfs-string-optimal-simple-easy-by-samrud-v74h/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/7078666/easiest-solution-in-java-by-shikharvarsh-4b5j/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/6873187/most-easy-serialize-deserialize-binary-t-icl2/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/7064225/most-easy-java-solution-by-fkbhjqzjpe-14ar/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/6991637/serialize-and-deserialize-binary-tree-le-5xxh/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/7128997/java-dfs-preorder-recursive-solution-wit-w33p/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/6685086/efficient-binary-tree-serialization-and-ajroe/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/6973238/serialize-and-deserialize-binary-tree-ea-oxmu/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/5647973/simple-commented-dfs-code-easy-to-unders-wnle/;;https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/6936900/on-solution-beats-100-bfs-string-cpp-jav-v37m/;;;=;==;=;=;

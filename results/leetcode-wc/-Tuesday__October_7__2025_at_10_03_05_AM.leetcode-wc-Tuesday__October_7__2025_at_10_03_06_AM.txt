@@ -1,0 +1,44 @@
+3361. Shift Distance Between Two Strings;=;=Medium;=;=public long shiftDistance(String s, String t, int[] nextCost, int[] previousCost);=;=You are given two strings s and t of the same length, and two integer arrays nextCost and previousCost.
+
+In one operation, you can pick any index i of s, and perform either one of the following actions:
+
+Shift s[i] to the next letter in the alphabet. If s[i] == 'z', you should replace it with 'a'. This operation costs nextCost[j] where j is the index of s[i] in the alphabet.
+Shift s[i] to the previous letter in the alphabet. If s[i] == 'a', you should replace it with 'z'. This operation costs previousCost[j] where j is the index of s[i] in the alphabet.
+The shift distance is the minimum total cost of operations required to transform s into t.
+
+Return the shift distance from s to t.
+
+ 
+
+Example 1:
+
+Input: s = "abab", t = "baba", nextCost = [100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], previousCost = [1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+Output: 2
+
+Explanation:
+
+We choose index i = 0 and shift s[0] 25 times to the previous character for a total cost of 1.
+We choose index i = 1 and shift s[1] 25 times to the next character for a total cost of 0.
+We choose index i = 2 and shift s[2] 25 times to the previous character for a total cost of 1.
+We choose index i = 3 and shift s[3] 25 times to the next character for a total cost of 0.
+Example 2:
+
+Input: s = "leet", t = "code", nextCost = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], previousCost = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+
+Output: 31
+
+Explanation:
+
+We choose index i = 0 and shift s[0] 9 times to the previous character for a total cost of 9.
+We choose index i = 1 and shift s[1] 10 times to the next character for a total cost of 10.
+We choose index i = 2 and shift s[2] 1 time to the previous character for a total cost of 1.
+We choose index i = 3 and shift s[3] 11 times to the next character for a total cost of 11.
+ 
+
+Constraints:
+
+1 <= s.length == t.length <= 105
+s and t consist only of lowercase English letters.
+nextCost.length == previousCost.length == 26
+0 <= nextCost[i], previousCost[i] <= 109;=;=https://leetcode.com/problems/shift-distance-between-two-strings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6075735/prefix-sum-by-fahad06-sgn5/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6075828/dijkstras-solution-with-explanation-on-g-3s04/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6082308/very-easy-detailed-solution-by-chaturved-jktv/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6075723/prefix-sum-on-c-python-java-by-not_yl3-jwb3/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6075758/easy-on-time-complexcity-solution-beats-ojbz8/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6075695/java-linear-time-constant-space-by-deepa-00xh/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6075827/java-beats-100-percent-users-by-noida-wgz9/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6075964/2-approaches-beats-100-java-users-by-nar-sjev/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6150426/prefix-and-suffix-sum-with-explanation-o-r973/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6076067/most-efficient-and-well-explained-soluti-t2bm/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6078269/easy-to-understand-solution-by-prashantk-v9wh/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6076699/java-solution-by-solved-kh91/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6075760/precompute-by-clcwcxfwf-dlcc/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6075734/easy-solution-by-ganesh_dandekar-u4m7/;;https://leetcode.com/problems/shift-distance-between-two-strings/solutions/6091861/prefix-sum-cleanest-solution-ever-java-1-55tu/;;;=;==;=;=;

@@ -1,0 +1,50 @@
+3207. Maximum Points After Enemy Battles;=;=Medium;=;=publicÊlongÊmaximumPoints(int[]ÊenemyEnergies,ÊintÊcurrentEnergy);=;=You are given an integer array enemyEnergies denoting the energy values of various enemies.
+
+You are also given an integer currentEnergy denoting the amount of energy you have initially.
+
+You start with 0 points, and all the enemies are unmarked initially.
+
+You can perform either of the following operations zero or multiple times to gain points:
+
+Choose an unmarked enemy, i, such that currentEnergy >= enemyEnergies[i]. By choosing this option:
+You gain 1 point.
+Your energy is reduced by the enemy's energy, i.e. currentEnergy = currentEnergy - enemyEnergies[i].
+If you have at least 1 point, you can choose an unmarked enemy, i. By choosing this option:
+Your energy increases by the enemy's energy, i.e. currentEnergy = currentEnergy + enemyEnergies[i].
+The enemy i is marked.
+Return an integer denoting the maximum points you can get in the end by optimally performing operations.
+
+Ê
+
+Example 1:
+
+Input: enemyEnergies = [3,2,2], currentEnergy = 2
+
+Output: 3
+
+Explanation:
+
+The following operations can be performed to get 3 points, which is the maximum:
+
+First operation on enemy 1: points increases by 1, and currentEnergy decreases by 2. So, points = 1, and currentEnergy = 0.
+Second operation on enemy 0: currentEnergy increases by 3, and enemy 0 is marked. So, points = 1, currentEnergy = 3, and marked enemies = [0].
+First operation on enemy 2: points increases by 1, and currentEnergy decreases by 2. So, points = 2, currentEnergy = 1, and marked enemies = [0].
+Second operation on enemy 2: currentEnergy increases by 2, and enemy 2 is marked. So, points = 2, currentEnergy = 3, and marked enemies = [0, 2].
+First operation on enemy 1: points increases by 1, and currentEnergy decreases by 2. So, points = 3, currentEnergy = 1, and marked enemies = [0, 2].
+Example 2:
+
+Input: enemyEnergies = [2], currentEnergy = 10
+
+Output: 5
+
+Explanation:
+
+Performing the first operation 5 times on enemy 0 results in the maximum number of points.
+
+Ê
+
+Constraints:
+
+1 <= enemyEnergies.length <= 105
+1 <= enemyEnergies[i] <= 109
+0 <= currentEnergy <= 109;=;=https://leetcode.com/problems/maximum-points-after-enemy-battles/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5429049/onlogn-on-by-fahad06-625d/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5428855/beats-100-short-code-with-detailed-expla-sd3d/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/7243869/onlogn-by-gitchuan-ofda/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5430251/simple-java-c-code-by-abhinandannaik1717-53oo/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5429016/java-biweekly-content-clean-solution-by-595r8/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5428967/solution-by-dare2solve-detailed-explanat-61c3/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5530646/simple-code-easy-to-understand-beats-100-f9cv/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5429202/linear-time-beats-100-by-mzip19-q51z/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5428856/effortless-mastery-dominates-100-with-th-mb4g/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/6041650/on-time-complexity-o1-space-complexity-s-dlyc/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5429169/java-just-an-easy-sum-up-by-yuyu222-5m0c/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5429689/greedy-sorting-approach-beats-100-in-jav-5zou/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5429132/i-bet-it-cant-be-this-easy-on-javacpytho-cg91/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5535392/java-1ms-beats-100-by-bharani1729-x1tp/;;https://leetcode.com/problems/maximum-points-after-enemy-battles/solutions/5466431/math-no-sorting-or-pointers-java-ono1-by-k6em/;;;=;==;=;=;

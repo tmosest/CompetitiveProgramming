@@ -1,0 +1,22 @@
+248. Strobogrammatic Number III;=;=Hard;=;=public int strobogrammaticInRange(String low, String high);=;=Given two strings low and high that represent two integers low and high where low <= high, return the number of strobogrammatic numbers in the range [low, high].
+
+A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+
+ 
+
+Example 1:
+
+Input: low = "50", high = "100"
+Output: 3
+Example 2:
+
+Input: low = "0", high = "0"
+Output: 1
+ 
+
+Constraints:
+
+1 <= low.length, high.length <= 15
+low and high consist of only digits.
+low <= high
+low and high do not contain any leading zeros except for zero itself.;=;=https://leetcode.com/problems/strobogrammatic-number-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/strobogrammatic-number-iii/solutions/67378/concise-java-solution-by-yavinci-qzwt/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/67406/clear-java-ac-solution-using-strobogramm-10as/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/5964713/simple-clean-and-easy-to-understand-java-n77k/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/67414/java-1ms-solution-with-comments-in-the-c-sn5b/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/67431/my-java-solution-easy-to-understand-by-5-4nl9/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/67437/ac-java-solution-with-explanation-by-jea-3zry/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/67420/java-1ms-98-solution-by-sergeytachenov-mnfz/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/67438/solution-based-on-strobogrammatic-number-znip/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/5712833/strobogramammatic-numbers-using-recursio-kcq9/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/3539930/backtrack-without-optimization-by-yangwu-7fhf/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/3299011/solution-by-deleted_user-4dxe/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/1830427/java-reuse-lc-247-explained-by-prashant4-764w/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/1606657/java-fully-iterative-building-on-strobog-dr2j/;;https://leetcode.com/problems/strobogrammatic-number-iii/solutions/507502/simple-java-biginteger-solution-by-alexv-m9fw/;;;=;==;=;=;

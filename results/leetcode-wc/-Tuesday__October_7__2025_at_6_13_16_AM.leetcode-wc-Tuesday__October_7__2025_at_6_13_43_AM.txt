@@ -1,0 +1,37 @@
+753. Cracking the Safe;=;=Hard;=;=public String crackSafe(int n, int k);=;=There is a safe protected by a password. The password is a sequence of n digits where each digit can be in the range [0, k - 1].
+
+The safe has a peculiar way of checking the password. When you enter in a sequence, it checks the most recent n digits that were entered each time you type a digit.
+
+For example, the correct password is "345" and you enter in "012345":
+After typing 0, the most recent 3 digits is "0", which is incorrect.
+After typing 1, the most recent 3 digits is "01", which is incorrect.
+After typing 2, the most recent 3 digits is "012", which is incorrect.
+After typing 3, the most recent 3 digits is "123", which is incorrect.
+After typing 4, the most recent 3 digits is "234", which is incorrect.
+After typing 5, the most recent 3 digits is "345", which is correct and the safe unlocks.
+Return any string of minimum length that will unlock the safe at some point of entering it.
+
+ 
+
+Example 1:
+
+Input: n = 1, k = 2
+Output: "10"
+Explanation: The password is a single digit, so enter each digit. "01" would also unlock the safe.
+Example 2:
+
+Input: n = 2, k = 2
+Output: "01100"
+Explanation: For each possible password:
+- "00" is typed in starting from the 4th digit.
+- "01" is typed in starting from the 1st digit.
+- "10" is typed in starting from the 3rd digit.
+- "11" is typed in starting from the 2nd digit.
+Thus "01100" will unlock the safe. "10011", and "11001" would also unlock the safe.
+ 
+
+Constraints:
+
+1 <= n <= 4
+1 <= k <= 10
+1 <= kn <= 4096;=;=https://leetcode.com/problems/cracking-the-safe/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/cracking-the-safe/solutions/6724904/beats-100-efficient-easy-explanation-by-74fog/;;https://leetcode.com/problems/cracking-the-safe/solutions/3453189/solution-by-deleted_user-qb58/;;https://leetcode.com/problems/cracking-the-safe/solutions/4546709/java-solution-by-archivebizzle-t5ug/;;https://leetcode.com/problems/cracking-the-safe/solutions/314906/java-dfs-not-a-fast-solution-but-easy-to-d8m9/;;https://leetcode.com/problems/cracking-the-safe/solutions/3463926/java-solution-by-21arka2002-udzd/;;https://leetcode.com/problems/cracking-the-safe/solutions/4008938/easy-solution-by-anupamkumar-1-g6p7/;;https://leetcode.com/problems/cracking-the-safe/solutions/2343032/the-most-ugly-code-but-works-javabacktra-idvh/;;https://leetcode.com/problems/cracking-the-safe/solutions/2741986/dfs-java-by-srianshi79-6ti6/;;https://leetcode.com/problems/cracking-the-safe/solutions/2331224/java-hashset-dfs-by-manishen-6gm8/;;https://leetcode.com/problems/cracking-the-safe/solutions/6999828/very-efficient-solution-beats-99-of-the-5i9d7/;;https://leetcode.com/problems/cracking-the-safe/solutions/6793714/java-simple-dfs-solution-by-hari-krishna-zhb8/;;https://leetcode.com/problems/cracking-the-safe/solutions/6515102/java-easy-to-understand-dfs-backtracking-ezbr/;;https://leetcode.com/problems/cracking-the-safe/solutions/6395713/java-best-solution-by-heyysankalp-ohmo/;;https://leetcode.com/problems/cracking-the-safe/solutions/6373325/runtime-1-ms-beats-9959-by-rhyd3dxa6x-4vs9/;;https://leetcode.com/problems/cracking-the-safe/solutions/5721932/java-backtracking-soln-by-vharshal1994-at0b/;;;=;==;=;=;

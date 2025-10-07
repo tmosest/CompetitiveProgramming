@@ -1,0 +1,25 @@
+777. Swap Adjacent in LR String;=;=Medium;=;=publicÊbooleanÊcanTransform(StringÊstart,ÊStringÊresult);=;=In a string composed of 'L', 'R', and 'X' characters, like "RXXLRXRXL", a move consists of either replacing one occurrence of "XL" with "LX", or replacing one occurrence of "RX" with "XR". Given the starting string start and the ending string result, return True if and only if there exists a sequence of moves to transform start to result.
+
+Ê
+
+Example 1:
+
+Input: start = "RXXLRXRXL", result = "XRLXXRRLX"
+Output: true
+Explanation: We can transform start to result following these steps:
+RXXLRXRXL ->
+XRXLRXRXL ->
+XRLXRXRXL ->
+XRLXXRRXL ->
+XRLXXRRLX
+Example 2:
+
+Input: start = "X", result = "L"
+Output: false
+Ê
+
+Constraints:
+
+1 <= start.lengthÊ<= 104
+start.length == result.length
+Both start and result will only consist of characters in 'L', 'R', andÊ'X'.;=;=https://leetcode.com/problems/swap-adjacent-in-lr-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/7191427/easy-way-to-solve-by-ashwingta-i84k/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/6929618/simple-and-easy-explained-aao-chill-kr-k-giby/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/7191440/easy-solution-for-the-fancy-number-777-b-yais/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/1571655/java-easy-to-understand-with-pictures-by-r6pg/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/2144775/java-easy-understanding-with-explanation-441r/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/1692037/java-simple-idea-and-clean-code-on-time-3ig49/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/1160198/my-java-solution-with-my-understanding-a-sxqu/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/4129762/4-solutions-tle-on-space-optimised-pytho-1h1a/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/3462893/solution-by-deleted_user-0y63/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/1169583/java-simple-solution-on-by-516527986-yyjy/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/2697002/simple-java-solution-keep-ordering-of-l-mvy20/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/2155986/simple-java-two-pointers-solution-no-rep-mt1y/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/1957581/java-2-pointers-on-by-agusg-m7p4/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/851274/java-stack-each-l-and-r-in-start-actuall-gvto/;;https://leetcode.com/problems/swap-adjacent-in-lr-string/solutions/2285502/java-solution-by-abhishekbahukhandi71-8a90/;;;=;==;=;=;

@@ -1,0 +1,28 @@
+1223. Dice Roll Simulation;=;=Hard;=;=public int dieSimulator(int n, int[] rollMax);=;=A die simulator generates a random number from 1 to 6 for each roll. You introduced a constraint to the generator such that it cannot roll the number i more than rollMax[i] (1-indexed) consecutive times.
+
+Given an array of integers rollMax and an integer n, return the number of distinct sequences that can be obtained with exact n rolls. Since the answer may be too large, return it modulo 109 + 7.
+
+Two sequences are considered different if at least one element differs from each other.
+
+ 
+
+Example 1:
+
+Input: n = 2, rollMax = [1,1,2,2,2,3]
+Output: 34
+Explanation: There will be 2 rolls of die, if there are no constraints on the die, there are 6 * 6 = 36 possible combinations. In this case, looking at rollMax array, the numbers 1 and 2 appear at most once consecutively, therefore sequences (1,1) and (2,2) cannot occur, so the final answer is 36-2 = 34.
+Example 2:
+
+Input: n = 2, rollMax = [1,1,1,1,1,1]
+Output: 30
+Example 3:
+
+Input: n = 3, rollMax = [1,1,1,2,2,3]
+Output: 181
+ 
+
+Constraints:
+
+1 <= n <= 5000
+rollMax.length == 6
+1 <= rollMax[i] <= 15;=;=https://leetcode.com/problems/dice-roll-simulation/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/dice-roll-simulation/solutions/423808/cjava-two-dimensional-dp-with-explanatio-0kwh/;;https://leetcode.com/problems/dice-roll-simulation/solutions/529294/java-2d-dp-with-rolls-and-the-last-numbe-rzyi/;;https://leetcode.com/problems/dice-roll-simulation/solutions/6692783/recursion-memo-tabulation-space-optimal-85u4h/;;https://leetcode.com/problems/dice-roll-simulation/solutions/6165662/java-solution-using-memoization-by-lohit-g84p/;;https://leetcode.com/problems/dice-roll-simulation/solutions/4205436/straight-forward-top-down-approach-by-sr-zto7/;;https://leetcode.com/problems/dice-roll-simulation/solutions/6912330/simple-and-beginner-friendly-dp-solution-8zgo/;;https://leetcode.com/problems/dice-roll-simulation/solutions/6780678/beats-90-easy-dp-approach-by-hsgreat-ktjj/;;https://leetcode.com/problems/dice-roll-simulation/solutions/6556608/was-asked-in-3-interview-super-easy-solu-4jyp/;;https://leetcode.com/problems/dice-roll-simulation/solutions/6491843/java-top-down-dp-recursion-memoization-c-vqu6/;;https://leetcode.com/problems/dice-roll-simulation/solutions/5448310/my-java-27ms-dp-solution-58-faster-by-ra-1kgj/;;https://leetcode.com/problems/dice-roll-simulation/solutions/5571850/java-beats-99-4ms-dynamic-programming-by-yg45/;;https://leetcode.com/problems/dice-roll-simulation/solutions/4677866/dp-solution-memorizing-last-step-by-alex-s6ki/;;https://leetcode.com/problems/dice-roll-simulation/solutions/4258425/java-97-2d-dp-solution-by-ajia_ucsd-i0zy/;;https://leetcode.com/problems/dice-roll-simulation/solutions/3324734/javadynamicprogramming-easy-soution-by-v-86mi/;;https://leetcode.com/problems/dice-roll-simulation/solutions/2648229/java-on-time-o1-memory-by-okrach-q89o/;;;=;==;=;=;

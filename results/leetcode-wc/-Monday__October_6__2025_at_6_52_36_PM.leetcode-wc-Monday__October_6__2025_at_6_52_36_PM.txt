@@ -1,0 +1,21 @@
+1832. Check if the Sentence Is Pangram;=;=Easy;=;=public boolean checkIfPangram(String sentence);=;=A pangram is a sentence where every letter of the English alphabet appears at least once.
+
+Given a string sentence containing only lowercase English letters, return true if sentence is a pangram, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: sentence = "thequickbrownfoxjumpsoverthelazydog"
+Output: true
+Explanation: sentence contains at least one of every letter of the English alphabet.
+Example 2:
+
+Input: sentence = "leetcode"
+Output: false
+ 
+
+Constraints:
+
+1 <= sentence.length <= 1000
+sentence consists of lowercase English letters.;=;=https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/6256739/simplest-solution-you-have-never-seen-if-nbd2/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/7209568/check-if-the-string-is-pangramjava-by-om-0kh0/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/7214803/javajsts-solution-jw-by-specter01wj-vftu/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/7166721/check-if-the-sentence-is-pangram-by-pran-xtm7/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/7037913/easy-java-pangram-checker-beats-just-a-l-e4yd/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/1164224/java-simple-and-easy-to-understand-solut-u5sb/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/6920278/easy-solution-by-shivangi1515-o2ss/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/7175404/hashset-approach-for-pangram-check-by-he-phzy/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/7174550/check-if-the-sentence-is-pangram-on-java-0ee9/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/7172085/easy-java-solution-beginner-friendly-sol-4491/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/1201598/simple-java-0ms-by-guptayash3-v3x6/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/7018401/easy-java-solution-beats-100-0ms-by-rajd-cc3u/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/5699235/java-solution-beats-100-easy-approach-by-nzp7/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/7158352/beginner-friendly-java-code-beats-100-us-33r6/;;https://leetcode.com/problems/check-if-the-sentence-is-pangram/solutions/6731962/2-solutions-beats-100-by-sagar__26-py8u/;;;=;==;=;=;

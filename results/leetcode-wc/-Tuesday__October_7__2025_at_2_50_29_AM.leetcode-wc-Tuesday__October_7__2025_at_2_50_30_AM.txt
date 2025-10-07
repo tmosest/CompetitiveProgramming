@@ -1,0 +1,26 @@
+1854. Maximum Population Year;=;=Easy;=;=public int maximumPopulation(int[][] logs);=;=You are given a 2D integer array logs where each logs[i] = [birthi, deathi] indicates the birth and death years of the ith person.
+
+The population of some year x is the number of people alive during that year. The ith person is counted in year x's population if x is in the inclusive range [birthi, deathi - 1]. Note that the person is not counted in the year that they die.
+
+Return the earliest year with the maximum population.
+
+ 
+
+Example 1:
+
+Input: logs = [[1993,1999],[2000,2010]]
+Output: 1993
+Explanation: The maximum population is 1, and 1993 is the earliest year with this population.
+Example 2:
+
+Input: logs = [[1950,1961],[1960,1971],[1970,1981]]
+Output: 1960
+Explanation: 
+The maximum population is 2, and it had happened in years 1960 and 1970.
+The earlier year between them is 1960.
+ 
+
+Constraints:
+
+1 <= logs.length <= 100
+1950 <= birthi < deathi <= 2050;=;=https://leetcode.com/problems/maximum-population-year/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-population-year/solutions/1198978/java-on-solution-with-explanation-range-4e3ei/;;https://leetcode.com/problems/maximum-population-year/solutions/1198892/on-line-sweep-by-votrubac-2yme/;;https://leetcode.com/problems/maximum-population-year/solutions/7207745/beat-100-by-digvijay-netke-uf70/;;https://leetcode.com/problems/maximum-population-year/solutions/6707041/deep-explanation-by-dima853-02q5/;;https://leetcode.com/problems/maximum-population-year/solutions/3844268/java-beginner-friendly-with-explanation-m8w8j/;;https://leetcode.com/problems/maximum-population-year/solutions/7109293/beats-100-mark-1-1-prefix-to-peak-popula-mjtt/;;https://leetcode.com/problems/maximum-population-year/solutions/5838327/prefix-sum-with-range-updates-by-dixon_n-4thw/;;https://leetcode.com/problems/maximum-population-year/solutions/6851797/beats-100-by-alexander_sergeev-3em0/;;https://leetcode.com/problems/maximum-population-year/solutions/5715254/hindi-explanation-with-comments-prefix-s-1jh1/;;https://leetcode.com/problems/maximum-population-year/solutions/6641754/simple-prefix-sum-approach-java-by-dsury-78et/;;https://leetcode.com/problems/maximum-population-year/solutions/6935193/population-peaks-simplified-difference-a-m82u/;;https://leetcode.com/problems/maximum-population-year/solutions/2556969/2-java-solutions-with-explanation-by-rah-lc6f/;;https://leetcode.com/problems/maximum-population-year/solutions/6240666/java-clean-sweep-100-prefix-sum-by-akash-j3lx/;;https://leetcode.com/problems/maximum-population-year/solutions/7249296/not-optimal-1ms-beats3666-but-easy-to-un-nd1j/;;https://leetcode.com/problems/maximum-population-year/solutions/6675662/java-easy-solution-beats-100-time-comple-efgz/;;;=;==;=;=;

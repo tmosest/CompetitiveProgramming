@@ -1,0 +1,49 @@
+1488. Avoid Flood in The City;=;=Medium;=;=publicÊint[]ÊavoidFlood(int[]Êrains);=;=Your country has an infinite number of lakes. Initially, all the lakes are empty, but when it rains over the nth lake, the nth lake becomes full of water. If it rains over a lake that is full of water, there will be a flood. Your goal is to avoid floods in any lake.
+
+Given an integer array rains where:
+
+rains[i] > 0 means there will be rains over the rains[i] lake.
+rains[i] == 0 means there are no rains this day and you can choose one lake this day and dry it.
+Return an array ans where:
+
+ans.length == rains.length
+ans[i] == -1 if rains[i] > 0.
+ans[i] is the lake you choose to dry in the ith day if rains[i] == 0.
+If there are multiple valid answers return any of them. If it is impossible to avoid flood return an empty array.
+
+Notice that if you chose to dry a full lake, it becomes empty, but if you chose to dry an empty lake, nothing changes.
+
+Ê
+
+Example 1:
+
+Input: rains = [1,2,3,4]
+Output: [-1,-1,-1,-1]
+Explanation: After the first day full lakes are [1]
+After the second day full lakes are [1,2]
+After the third day full lakes are [1,2,3]
+After the fourth day full lakes are [1,2,3,4]
+There's no day to dry any lake and there is no flood in any lake.
+Example 2:
+
+Input: rains = [1,2,0,0,2,1]
+Output: [-1,-1,2,1,-1,-1]
+Explanation: After the first day full lakes are [1]
+After the second day full lakes are [1,2]
+After the third day, we dry lake 2. Full lakes are [1]
+After the fourth day, we dry lake 1. There is no full lakes.
+After the fifth day, full lakes are [2].
+After the sixth day, full lakes are [1,2].
+It is easy that this scenario is flood-free. [-1,-1,1,2,-1,-1] is another acceptable scenario.
+Example 3:
+
+Input: rains = [1,2,0,1,2]
+Output: []
+Explanation: After the second day, full lakes are  [1,2]. We have to dry one lake in the third day.
+After that, it will rain over lakes [1,2]. It's easy to prove that no matter which lake you choose to dry in the 3rd day, the other one will flood.
+Ê
+
+Constraints:
+
+1 <= rains.length <= 105
+0 <= rains[i] <= 109;=;=https://leetcode.com/problems/avoid-flood-in-the-city/description/?envType=daily-question&envId=2025-10-07;=;=https://leetcode.com/problems/avoid-flood-in-the-city/solutions/7254853/solution-by-la_castille-5bp5/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/7254855/avoid-flood-in-the-city-union-find-optim-tnv2/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/7243445/avoid-flood-in-the-city-beats-92-runtime-qpxn/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/697701/java-nlogn-find-zero-that-can-be-used-to-vab9/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/7088767/solved-using-binary-search-without-inbui-ujkg/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/6586045/very-easy-java-solution-step-by-step-for-mgot/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/4168888/hashmap-treeset-solution-java-easy-by-ay-hs41/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/697735/java-map-treeset-solution-by-marvinbai-z463/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/2158331/java-binary-search-hashmap-easy-to-under-xdlz/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/3613276/using-hashmap-and-treeset-simple-and-fas-be6k/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/1269720/java-easy-solution-using-hashmap-by-arpi-4l4t/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/834672/my-java-solution-using-hashmap-treeset-o-wrba/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/1385202/java-easy-approach-with-explanation-hash-u3vx/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/3170798/beats-100-java-code-by-abstractconnoisse-8mq5/;;https://leetcode.com/problems/avoid-flood-in-the-city/solutions/697856/java-short-and-easy-to-understand-soluti-npda/;;;=;==;=;=;

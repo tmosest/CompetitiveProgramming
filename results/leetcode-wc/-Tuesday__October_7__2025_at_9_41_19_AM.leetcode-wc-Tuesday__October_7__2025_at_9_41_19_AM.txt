@@ -1,0 +1,34 @@
+1957. Delete Characters to Make Fancy String;=;=Easy;=;=public String makeFancyString(String s);=;=A fancy string is a string where no three consecutive characters are equal.
+
+Given a string s, delete the minimum possible number of characters from s to make it fancy.
+
+Return the final string after the deletion. It can be shown that the answer will always be unique.
+
+ 
+
+Example 1:
+
+Input: s = "leeetcode"
+Output: "leetcode"
+Explanation:
+Remove an 'e' from the first group of 'e's to create "leetcode".
+No three consecutive characters are equal, so return "leetcode".
+Example 2:
+
+Input: s = "aaabaaaa"
+Output: "aabaa"
+Explanation:
+Remove an 'a' from the first group of 'a's to create "aabaaaa".
+Remove two 'a's from the second group of 'a's to create "aabaa".
+No three consecutive characters are equal, so return "aabaa".
+Example 3:
+
+Input: s = "aab"
+Output: "aab"
+Explanation: No three consecutive characters are equal, so return "aab".
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/delete-characters-to-make-fancy-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6983637/delete-characters-to-make-fancy-string-b-ohcv/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6984272/fancy-string-in-on-time-the-simplest-gre-maoo/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6984465/beats-super-easy-beginners-java-c-c-pyth-i0cv/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/5991071/best-and-easiest-solution-c-java-python-tmruc/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6984626/easy-solution-eng-hing-explained-beats-9-oe1a/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6983992/remove-extra-repeating-characters-from-a-kbf5/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6984926/100-beats-fast-and-clear-with-iterations-9gvw/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6984401/one-pass-greedy-approach-no-extra-counte-f32o/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6985863/very-easy-solution-java-detailed-explana-943d/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6984176/delete-characters-to-make-fancy-string-o-5ivy/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6983727/best-approach-intuition-explaination-jav-eiub/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6986214/smooth-strings-only-no-triple-trouble-by-66b7/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6985958/easiestunderstandable-for-beginners-way-fk0rp/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6985493/100-betas-a-better-solution-for-problem-gm299/;;https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6984227/remove-extra-repeated-characters-from-st-gpbt/;;;=;==;=;=;

@@ -1,0 +1,38 @@
+2063. Vowels of All Substrings;=;=Medium;=;=public long countVowels(String word);=;=Given a string word, return the sum of the number of vowels ('a', 'e', 'i', 'o', and 'u') in every substring of word.
+
+A substring is a contiguous (non-empty) sequence of characters within a string.
+
+Note: Due to the large constraints, the answer may not fit in a signed 32-bit integer. Please be careful during the calculations.
+
+ 
+
+Example 1:
+
+Input: word = "aba"
+Output: 6
+Explanation: 
+All possible substrings are: "a", "ab", "aba", "b", "ba", and "a".
+- "b" has 0 vowels in it
+- "a", "ab", "ba", and "a" have 1 vowel each
+- "aba" has 2 vowels in it
+Hence, the total sum of vowels = 0 + 1 + 1 + 1 + 1 + 2 = 6. 
+Example 2:
+
+Input: word = "abc"
+Output: 3
+Explanation: 
+All possible substrings are: "a", "ab", "abc", "b", "bc", and "c".
+- "a", "ab", and "abc" have 1 vowel each
+- "b", "bc", and "c" have 0 vowels each
+Hence, the total sum of vowels = 1 + 1 + 1 + 0 + 0 + 0 = 3.
+Example 3:
+
+Input: word = "ltcd"
+Output: 0
+Explanation: There are no vowels in any substring of "ltcd".
+ 
+
+Constraints:
+
+1 <= word.length <= 105
+word consists of lowercase English letters.;=;=https://leetcode.com/problems/vowels-of-all-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/vowels-of-all-substrings/solutions/1564075/detailed-explanation-of-why-len-pos-pos-dqnjo/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/1563701/i-1-sz-i-by-votrubac-fnxg/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/1563845/simple-java-on-by-aayushbhala-zygw/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/7062377/easy-simple-code-java-by-sairangineeni-8vm2/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/7249957/easy-solution-by-tarunsharma45-blie/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/4118628/byte-explained-2-ways-fastest-and-simple-abkx/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/6446130/15ms-java-by-galani_jenis-2fj0/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/1563762/best-code-so-far-one-pass-solution-by-ia-w459/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/3832828/beats-100-runtime-and-memory-time-by-sub-edpi/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/4640591/java-7ms-beats-98-clean-code-by-stefanel-zx0z/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/1563841/java-solution-by-iambond26-30ol/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/1976290/java-beats-10000-memoryspeed-0ms-april-2-g0rc/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/6986249/optimistic-solution-by-mithun_ravi-6zi7/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/2571839/java-derived-formula-easy-concise-by-iam-6qkm/;;https://leetcode.com/problems/vowels-of-all-substrings/solutions/1564108/java-easy-solution-on-with-explanation-b-xa80/;;;=;==;=;=;

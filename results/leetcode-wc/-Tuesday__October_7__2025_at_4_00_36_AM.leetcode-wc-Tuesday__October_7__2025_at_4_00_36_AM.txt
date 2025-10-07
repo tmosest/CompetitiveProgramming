@@ -1,0 +1,21 @@
+1224. Maximum Equal Frequency;=;=Hard;=;=public int maxEqualFreq(int[] nums);=;=Given an array nums of positive integers, return the longest possible length of an array prefix of nums, such that it is possible to remove exactly one element from this prefix so that every number that has appeared in it will have the same number of occurrences.
+
+If after removing one element there are no remaining elements, it's still considered that every appeared number has the same number of ocurrences (0).
+
+ 
+
+Example 1:
+
+Input: nums = [2,2,1,1,5,3,3,5]
+Output: 7
+Explanation: For the subarray [2,2,1,1,5,3,3] of length 7, if we remove nums[4] = 5, we will get [2,2,1,1,3,3], so that each number will appear exactly twice.
+Example 2:
+
+Input: nums = [1,1,1,2,2,2,3,3,3,4,4,4,5]
+Output: 13
+ 
+
+Constraints:
+
+2 <= nums.length <= 105
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/maximum-equal-frequency/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-equal-frequency/solutions/403931/javacpython-easy-to-understand-compare-c-nsxa/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/3147426/java-explained-4ms-runtime-beats-100-has-65bg/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/647569/java-on-time-space-by-metadata-mstg/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/404201/java-easy-solution-by-pabbared-j3p2/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/6687327/java-with-buckets-by-lockmyre-d48x/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/6416267/easy-counting-based-solution-freq-map-in-gz55/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/5874444/two-maps-by-alch01-7d31/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/5353738/there-you-go-lads-easy-solution-here-tha-3x2o/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/5219752/simple-java-solution-by-sakshikishore-pyfq/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/4400374/count-freq-hashmap-by-mot882000-fsih/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/4347154/ugly-by-user3043sb-byk5/;;https://leetcode.com/problems/maximum-equal-frequency/solutions/403695/java-on-stupid-solution-by-nandathantsin-c64h/;;;=;==;=;=;

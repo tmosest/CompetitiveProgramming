@@ -1,0 +1,30 @@
+321. Create Maximum Number;=;=Hard;=;=publicÊint[]ÊmaxNumber(int[]Ênums1,Êint[]Ênums2,ÊintÊk);=;=You are given two integer arrays nums1 and nums2 of lengths m and n respectively. nums1 and nums2 represent the digits of two numbers. You are also given an integer k.
+
+Create the maximum number of length k <= m + n from digits of the two numbers. The relative order of the digits from the same array must be preserved.
+
+Return an array of the k digits representing the answer.
+
+Ê
+
+Example 1:
+
+Input: nums1 = [3,4,6,5], nums2 = [9,1,2,5,8,3], k = 5
+Output: [9,8,6,5,3]
+Example 2:
+
+Input: nums1 = [6,7], nums2 = [6,0,4], k = 5
+Output: [6,7,6,0,4]
+Example 3:
+
+Input: nums1 = [3,9], nums2 = [8,9], k = 3
+Output: [9,8,9]
+Ê
+
+Constraints:
+
+m == nums1.length
+n == nums2.length
+1 <= m, n <= 500
+0 <= nums1[i], nums2[i] <= 9
+1 <= k <= m + n
+nums1 and nums2 do not have leading zeros.;=;=https://leetcode.com/problems/create-maximum-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/create-maximum-number/solutions/77285/share-my-greedy-solution-by-dietpepsi-jm2d/;;https://leetcode.com/problems/create-maximum-number/solutions/6856448/simple-jawa-solution-by-amandeep541-wda5/;;https://leetcode.com/problems/create-maximum-number/solutions/6965813/create-maximum-numbers-in-java-for-begin-8wk5/;;https://leetcode.com/problems/create-maximum-number/solutions/77283/share-my-21ms-java-solution-with-comment-q94o/;;https://leetcode.com/problems/create-maximum-number/solutions/1611691/java-easy-to-understand-monotonic-stack-43ijd/;;https://leetcode.com/problems/create-maximum-number/solutions/6928333/java-solution-full-explained-best-approa-uqd0/;;https://leetcode.com/problems/create-maximum-number/solutions/6223101/lexicographically-largest-array-based-an-8myt/;;https://leetcode.com/problems/create-maximum-number/solutions/5442838/a-sweet-israeli-solution-by-e8hwn77klg-jni5/;;https://leetcode.com/problems/create-maximum-number/solutions/7234622/monotonic-stack-implementation-java-code-9n9l/;;https://leetcode.com/problems/create-maximum-number/solutions/3746717/java-solution-explained-by-anushdubey01-yhzt/;;https://leetcode.com/problems/create-maximum-number/solutions/4712325/java-solution-by-raghu3696-rl1o/;;https://leetcode.com/problems/create-maximum-number/solutions/3319525/solution-by-deleted_user-jkcq/;;https://leetcode.com/problems/create-maximum-number/solutions/7179062/greedy-monotonic-stack-merge-lexicograph-jibi/;;https://leetcode.com/problems/create-maximum-number/solutions/77341/java-17-ms-on-m-k2-or-3-worst-case-merge-nsa1/;;https://leetcode.com/problems/create-maximum-number/solutions/3517799/java-7ms-beats-9856-by-giang_dao_2023-hcey/;;;=;==;=;=;

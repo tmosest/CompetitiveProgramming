@@ -1,0 +1,31 @@
+2272. Substring With Largest Variance;=;=Hard;=;=public int largestVariance(String s);=;=The variance of a string is defined as the largest difference between the number of occurrences of any 2 characters present in the string. Note the two characters may or may not be the same.
+
+Given a string s consisting of lowercase English letters only, return the largest variance possible among all substrings of s.
+
+A substring is a contiguous sequence of characters within a string.
+
+ 
+
+Example 1:
+
+Input: s = "aababbb"
+Output: 3
+Explanation:
+All possible variances along with their respective substrings are listed below:
+- Variance 0 for substrings "a", "aa", "ab", "abab", "aababb", "ba", "b", "bb", and "bbb".
+- Variance 1 for substrings "aab", "aba", "abb", "aabab", "ababb", "aababbb", and "bab".
+- Variance 2 for substrings "aaba", "ababbb", "abbb", and "babb".
+- Variance 3 for substring "babbb".
+Since the largest possible variance is 3, we return it.
+Example 2:
+
+Input: s = "abcde"
+Output: 0
+Explanation:
+No letter occurs more than once in s, so the variance of every substring is 0.
+ 
+
+Constraints:
+
+1 <= s.length <= 104
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/substring-with-largest-variance/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/substring-with-largest-variance/solutions/2038222/kadanes-algorithm-solution-java-by-amjad-gyz0/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/3738829/python-java-c-simple-solution-easy-to-un-frk7/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/3738770/kadane-algorithm-c-java-pythonvideo-expl-hp3i/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/2297768/java-kadanes-algorithm-easy-to-understan-05f2/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/7130381/kadanes-algorithm-very-simple-video-solu-4r38/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/3740685/beats-100-java-solution-dynamic-programm-ss70/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/2564502/java-commented-walkthrough-by-buddymelso-6qp1/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/3739442/kadane-algorithm-java-c-simple-solution-cmach/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/6292470/kadanes-but-easy-explanation-java-o2626n-nsnv/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/2556094/java-well-explained-code-and-solution-by-kb5w/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/3740850/2272-substring-with-largest-variance-by-uryjn/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/3741643/java-easy-understanding-kadanes-algorith-nos5/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/3740687/beats-100-java-solution-dynamic-programm-mpo1/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/2533938/java-easy-to-understand-time-2626n-by-su-sqro/;;https://leetcode.com/problems/substring-with-largest-variance/solutions/5354363/brute-tle-prefix-frequency-tc-n2-26-by-v-26kn/;;;=;==;=;=;

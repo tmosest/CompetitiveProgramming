@@ -1,0 +1,33 @@
+2220. Minimum Bit Flips to Convert Number;=;=Easy;=;=publicÊintÊminBitFlips(intÊstart,ÊintÊgoal);=;=A bit flip of a number x is choosing a bit in the binary representation of x and flipping it from either 0 to 1 or 1 to 0.
+
+For example, for x = 7, the binary representation is 111 and we may choose any bit (including any leading zeros not shown) and flip it. We can flip the first bit from the right to get 110, flip the second bit from the right to get 101, flip the fifth bit from the right (a leading zero) to get 10111, etc.
+Given two integers start and goal, return the minimum number of bit flips to convert start to goal.
+
+Ê
+
+Example 1:
+
+Input: start = 10, goal = 7
+Output: 3
+Explanation: The binary representation of 10 and 7 are 1010 and 0111 respectively. We can convert 10 to 7 in 3 steps:
+- Flip the first bit from the right: 1010 -> 1011.
+- Flip the third bit from the right: 1011 -> 1111.
+- Flip the fourth bit from the right: 1111 -> 0111.
+It can be shown we cannot convert 10 to 7 in less than 3 steps. Hence, we return 3.
+Example 2:
+
+Input: start = 3, goal = 4
+Output: 3
+Explanation: The binary representation of 3 and 4 are 011 and 100 respectively. We can convert 3 to 4 in 3 steps:
+- Flip the first bit from the right: 011 -> 010.
+- Flip the second bit from the right: 010 -> 000.
+- Flip the third bit from the right: 000 -> 100.
+It can be shown we cannot convert 3 to 4 in less than 3 steps. Hence, we return 3.
+Ê
+
+Constraints:
+
+0 <= start, goal <= 109
+Ê
+
+Note: This question is the same as 461: Hamming Distance.;=;=https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/5765774/most-easy-beats-100-best-solution-all-la-84tu/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/5796434/h-by-viveksharma10-ytrh/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/7192711/bit-flip-by-soujitdas65-6cp5/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/5769018/o1-0-ms-beats-100-java-python-go-c-rust-jlb2c/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/1911170/one-liners-have-a-look-by-surajthapliyal-9b0o/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/7091533/bit-manipulation-by-sur2002-tozu/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/7119705/most-easy-beats-100-best-solution-java-m-8ccn/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/3513711/cjavajavascript-easy-solution-beats-100-rlgau/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/1907264/java-xor-and-counting-bits-beats-100-by-cuup8/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/6492606/you-will-get-the-easiest-explaination-bi-ad9l/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/7038887/beats-100-0ms-easy-approach-by-goutham_1-utdh/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/7017271/problem-2220-minimum-bit-flips-to-conver-11g0/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/6929965/kernighams-algo-by-ftsfr_nit-wpjm/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/5769029/flip-different-bits-only-java-c-video-so-a9lr/;;https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/7031553/easy-solution-in-java-beats-100-users-by-2df7/;;;=;==;=;=;

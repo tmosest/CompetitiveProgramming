@@ -1,0 +1,53 @@
+3238. Find the Number of Winning Players;=;=Easy;=;=public int winningPlayerCount(int n, int[][] pick);=;=You are given an integer n representing the number of players in a game and a 2D array pick where pick[i] = [xi, yi] represents that the player xi picked a ball of color yi.
+
+Player i wins the game if they pick strictly more than i balls of the same color. In other words,
+
+Player 0 wins if they pick any ball.
+Player 1 wins if they pick at least two balls of the same color.
+...
+Player i wins if they pick at least i + 1 balls of the same color.
+Return the number of players who win the game.
+
+Note that multiple players can win the game.
+
+ 
+
+Example 1:
+
+Input: n = 4, pick = [[0,0],[1,0],[1,0],[2,1],[2,1],[2,0]]
+
+Output: 2
+
+Explanation:
+
+Player 0 and player 1 win the game, while players 2 and 3 do not win.
+
+Example 2:
+
+Input: n = 5, pick = [[1,1],[1,2],[1,3],[1,4]]
+
+Output: 0
+
+Explanation:
+
+No player wins the game.
+
+Example 3:
+
+Input: n = 5, pick = [[1,1],[2,4],[2,4],[2,4]]
+
+Output: 1
+
+Explanation:
+
+Player 2 wins the game by picking 3 balls with color 4.
+
+ 
+
+Constraints:
+
+2 <= n <= 10
+1 <= pick.length <= 100
+pick[i].length == 2
+0 <= xi <= n - 1 
+0 <= yi <= 10;=;=https://leetcode.com/problems/find-the-number-of-winning-players/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-number-of-winning-players/solutions/7171324/java-easy-100-solution-by-ytchouar-hdf2/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5581866/shortest-one-pass-solution-c-python-java-32f2/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/6657012/100-beats-easy-to-understand-simple-by-k-gld9/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5580921/detailed-explanation-of-approach-code-10-dwrt/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5580948/java-clean-simple-solution-biweekly-cont-4pc1/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5581015/effortlessly-dominate-100-with-beginner-zxyvv/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/6471422/find-the-number-of-winning-players-by-al-5sis/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5809448/beginner-friendly-java-sol-easy-approach-3a9z/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5581190/simple-java-solution-by-swamy_p-c433/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5584816/java-solution-using-hashmap-and-hashset-52o2k/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5701748/easy-solution-beats-100-by-rohan_svsr-fast/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5584331/java-clean-simple-solution-by-pallavi246-ozq1/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5581289/using-arrayshashcoderow-by-computerofapl-x3ib/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5587123/easy-java-solution-by-cvm0-kfbb/;;https://leetcode.com/problems/find-the-number-of-winning-players/solutions/5582020/java_solution-by-rishank1-nvlb/;;;=;==;=;=;

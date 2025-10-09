@@ -1,0 +1,24 @@
+1180. Count Substrings with Only One Distinct Letter;=;=Easy;=;=public int countLetters(String s);=;=Given a string s, return the number of substrings that have only one distinct letter.
+
+ 
+
+Example 1:
+
+Input: s = "aaaba"
+Output: 8
+Explanation: The substrings with one distinct letter are "aaa", "aa", "a", "b".
+"aaa" occurs 1 time.
+"aa" occurs 2 times.
+"a" occurs 4 times.
+"b" occurs 1 time.
+So the answer is 1 + 2 + 4 + 1 = 8.
+Example 2:
+
+Input: s = "aaaaaaaaaa"
+Output: 55
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s[i] consists of only lowercase English letters.;=;=https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/876038/java-0ms-runtime-100-by-alfia94-i662/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/426744/java-python-sliding-window-solution-with-si5w/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/388261/simple-java-solution-on-by-magiceye07-twzv/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/3332345/java-string-tc-on-sc-o1-by-mhrj1425-ywjm/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/976940/java-simple-100-faster-0ms-on-time-and-o-shxj/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/746886/java-1ms-5-lines-code-with-explanation-o-s8it/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/679867/java-0ms-by-shuangpan-xibj/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/6700714/not-optimal-but-easy-to-understand-by-pr-f5rd/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/6714307/1180-count-substrings-with-only-one-dist-o0e2/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/5435716/easy-java-solution-by-annon20-5lpy/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/4674626/java-0ms-by-arti8190-pvsp/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/4379739/beats-10000of-users-with-java-by-gurmanj-oluw/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/4296637/sliding-window-java-by-linsun1020-xhjg/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/3628602/two-pointer-solution-in-java-by-yangwudi-ol75/;;https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/solutions/3567392/solution-by-deleted_user-4gg5/;;;=;==;=;=;

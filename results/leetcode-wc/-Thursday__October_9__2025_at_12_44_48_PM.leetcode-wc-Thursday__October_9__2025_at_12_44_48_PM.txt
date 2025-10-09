@@ -1,0 +1,32 @@
+2832. Maximal Range That Each Element Is Maximum in It;=;=Medium;=;=public int[] maximumLengthOfRanges(int[] nums);=;=You are given a 0-indexed array nums of distinct integers.
+
+Let us define a 0-indexed array ans of the same length as nums in the following way:
+
+ans[i] is the maximum length of a subarray nums[l..r], such that the maximum element in that subarray is equal to nums[i].
+Return the array ans.
+
+Note that a subarray is a contiguous part of the array.
+
+ 
+
+Example 1:
+
+Input: nums = [1,5,4,3,6]
+Output: [1,4,2,1,5]
+Explanation: For nums[0] the longest subarray in which 1 is the maximum is nums[0..0] so ans[0] = 1.
+For nums[1] the longest subarray in which 5 is the maximum is nums[0..3] so ans[1] = 4.
+For nums[2] the longest subarray in which 4 is the maximum is nums[2..3] so ans[2] = 2.
+For nums[3] the longest subarray in which 3 is the maximum is nums[3..3] so ans[3] = 1.
+For nums[4] the longest subarray in which 6 is the maximum is nums[0..4] so ans[4] = 5.
+Example 2:
+
+Input: nums = [1,2,3,4,5]
+Output: [1,2,3,4,5]
+Explanation: For nums[i] the longest subarray in which it's the maximum is nums[0..i] so ans[i] = i + 1.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 105
+All elements in nums are distinct.;=;=https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/3960441/javaon-monotonically-increasing-stack-by-tlrd/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/3956121/java-hashmap-mono-stack-by-qiuwuxue-gwj8/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/6149323/mastering-monotonic-stacks-in-java-easy-vsebb/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/6147685/java-mono-stack-by-lxyustc-r163/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/6168486/simple-java-solution-with-stack-beat-729-wmbh/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/6168099/beauty-of-previous-greater-element-pge-a-yb59/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/6147684/java-mono-stack-by-lxyustc-b8y5/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/5708991/monotonic-stack-lefttoright-greater-elem-0pjp/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/6175545/java-by-lachezartsk-y4sr/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/5511942/monotonic-stack-solution-java-by-david-h-izk6/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/5367953/java-stack-beats-100-by-urbanclimatefr-x49k/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/5549240/one-pass-by-shaggy_insomniac-bqnr/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/5228381/java-monotonic-stack-solution-by-ulyx-r92l/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/5020792/java-monotonic-stack-beats-100-by-shanta-8s6t/;;https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/solutions/3991199/java-monotonic-stack-solution-by-goodnig-nb7k/;;;=;==;=;=;

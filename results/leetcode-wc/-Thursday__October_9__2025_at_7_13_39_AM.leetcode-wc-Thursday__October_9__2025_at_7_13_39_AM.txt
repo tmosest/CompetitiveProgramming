@@ -1,0 +1,28 @@
+764. Largest Plus Sign;=;=Medium;=;=public int orderOfLargestPlusSign(int n, int[][] mines);=;=You are given an integer n. You have an n x n binary grid grid with all values initially 1's except for some indices given in the array mines. The ith element of the array mines is defined as mines[i] = [xi, yi] where grid[xi][yi] == 0.
+
+Return the order of the largest axis-aligned plus sign of 1's contained in grid. If there is none, return 0.
+
+An axis-aligned plus sign of 1's of order k has some center grid[r][c] == 1 along with four arms of length k - 1 going up, down, left, and right, and made of 1's. Note that there could be 0's or 1's beyond the arms of the plus sign, only the relevant area of the plus sign is checked for 1's.
+
+ 
+
+Example 1:
+
+
+Input: n = 5, mines = [[4,2]]
+Output: 2
+Explanation: In the above grid, the largest plus sign can only be of order 2. One of them is shown.
+Example 2:
+
+
+Input: n = 1, mines = [[0,0]]
+Output: 0
+Explanation: There is no plus sign, so return 0.
+ 
+
+Constraints:
+
+1 <= n <= 500
+1 <= mines.length <= 5000
+0 <= xi, yi < n
+All the pairs (xi, yi) are unique.;=;=https://leetcode.com/problems/largest-plus-sign/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/largest-plus-sign/solutions/5016119/java-solution-simple-easy-to-understand-czrs0/;;https://leetcode.com/problems/largest-plus-sign/solutions/4212671/simple-approach-to-understand-and-code-b-kv85/;;https://leetcode.com/problems/largest-plus-sign/solutions/4133569/intersting-solution-worth-your-time-by-a-za40/;;https://leetcode.com/problems/largest-plus-sign/solutions/1454847/java-solution-using-dfs-by-subhankar752-0m28/;;https://leetcode.com/problems/largest-plus-sign/solutions/3458894/solution-by-deleted_user-9w6g/;;https://leetcode.com/problems/largest-plus-sign/solutions/1453956/my-solution-java-easy-accepted-time-spac-2wpx/;;https://leetcode.com/problems/largest-plus-sign/solutions/1455030/java-pure-brute-approach-by-pgthebigshot-m682/;;https://leetcode.com/problems/largest-plus-sign/solutions/1460655/java-bottom-up-dp-by-prashant404-lbc8/;;https://leetcode.com/problems/largest-plus-sign/solutions/6823935/java-set-dp-by-iamrohanvidhate-10yg/;;https://leetcode.com/problems/largest-plus-sign/solutions/6488353/3d-dp-by-awuxiaoqi-msr5/;;https://leetcode.com/problems/largest-plus-sign/solutions/6700009/just-bruteforce-if-needed-easy-java-solu-05dl/;;https://leetcode.com/problems/largest-plus-sign/solutions/6260947/764-largest-plus-sign-by-g8xd0qpqty-zmju/;;https://leetcode.com/problems/largest-plus-sign/solutions/6235509/easy-approach-awszoabi-by-awsz-3u2t/;;https://leetcode.com/problems/largest-plus-sign/solutions/6188064/java-based-memoization-by-mani_12345-jtqh/;;https://leetcode.com/problems/largest-plus-sign/solutions/6144782/clean-solution-17ms-beat-100-one-grid-wi-73k7/;;;=;==;=;=;

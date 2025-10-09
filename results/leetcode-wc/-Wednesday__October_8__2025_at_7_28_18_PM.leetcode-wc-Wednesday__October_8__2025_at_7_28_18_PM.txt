@@ -1,0 +1,72 @@
+2660. Determine the Winner of a Bowling Game;=;=Easy;=;=public int isWinner(int[] player1, int[] player2);=;=You are given two 0-indexed integer arrays player1 and player2, representing the number of pins that player 1 and player 2 hit in a bowling game, respectively.
+
+The bowling game consists of n turns, and the number of pins in each turn is exactly 10.
+
+Assume a player hits xi pins in the ith turn. The value of the ith turn for the player is:
+
+2xi if the player hits 10 pins in either (i - 1)th or (i - 2)th turn.
+Otherwise, it is xi.
+The score of the player is the sum of the values of their n turns.
+
+Return
+
+1 if the score of player 1 is more than the score of player 2,
+2 if the score of player 2 is more than the score of player 1, and
+0 in case of a draw.
+ 
+
+Example 1:
+
+Input: player1 = [5,10,3,2], player2 = [6,5,7,3]
+
+Output: 1
+
+Explanation:
+
+The score of player 1 is 5 + 10 + 2*3 + 2*2 = 25.
+
+The score of player 2 is 6 + 5 + 7 + 3 = 21.
+
+Example 2:
+
+Input: player1 = [3,5,7,6], player2 = [8,10,10,2]
+
+Output: 2
+
+Explanation:
+
+The score of player 1 is 3 + 5 + 7 + 6 = 21.
+
+The score of player 2 is 8 + 10 + 2*10 + 2*2 = 42.
+
+Example 3:
+
+Input: player1 = [2,3], player2 = [4,1]
+
+Output: 0
+
+Explanation:
+
+The score of player1 is 2 + 3 = 5.
+
+The score of player2 is 4 + 1 = 5.
+
+Example 4:
+
+Input: player1 = [1,1,1,10,10,10,10], player2 = [10,10,10,10,1,1,1]
+
+Output: 2
+
+Explanation:
+
+The score of player1 is 1 + 1 + 1 + 10 + 2*10 + 2*10 + 2*10 = 73.
+
+The score of player2 is 10 + 2*10 + 2*10 + 2*10 + 2*1 + 2*1 + 1 = 75.
+
+ 
+
+Constraints:
+
+n == player1.length == player2.length
+1 <= n <= 1000
+0 <= player1[i], player2[i] <= 10;=;=https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/3468269/day-395-easy-100-0ms-pythonjavac-explain-srvn/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/3468263/short-simple-clean-java-solution-by-hima-tzgl/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/6719663/calculate-each-by-nghiemngocduc07-aj79/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/3468249/simple-java-solution-by-siddhant_1602-rrmv/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/3470681/beats-100-in-runtime-and-space-solution-p2912/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/3468312/java-simple-solution-by-judgementdey-f3i5/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/3468480/easy-short-java-code-by-wizard_ok-833v/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/5581319/java-easy-to-understand-clean-code-beats-zsv2/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/3468551/simplest-if-else-solution-nothing-else-b-y3c7/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/5062241/easy-approach-by-adarsh1278-5rg6/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/7131589/java-intermediate-solution-by-trevorkmci-hqty/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/6429722/easy-approach-simple-optimized-solution-uebng/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/4914956/simple-java-code-1-ms-beats-100-by-arobh-dwxj/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/4207587/java-easy-to-understand-clean-code-beats-8jjo/;;https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/solutions/3469431/beginner-friendly-java-code-using-hashse-dcl1/;;;=;==;=;=;

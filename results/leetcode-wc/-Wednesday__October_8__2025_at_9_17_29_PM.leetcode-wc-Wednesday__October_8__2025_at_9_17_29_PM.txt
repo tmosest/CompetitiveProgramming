@@ -1,0 +1,35 @@
+2131. Longest Palindrome by Concatenating Two Letter Words;=;=Medium;=;=public int longestPalindrome(String[] words);=;=You are given an array of strings words. Each element of words consists of two lowercase English letters.
+
+Create the longest possible palindrome by selecting some elements from words and concatenating them in any order. Each element can be selected at most once.
+
+Return the length of the longest palindrome that you can create. If it is impossible to create any palindrome, return 0.
+
+A palindrome is a string that reads the same forward and backward.
+
+ 
+
+Example 1:
+
+Input: words = ["lc","cl","gg"]
+Output: 6
+Explanation: One longest palindrome is "lc" + "gg" + "cl" = "lcggcl", of length 6.
+Note that "clgglc" is another longest palindrome that can be created.
+Example 2:
+
+Input: words = ["ab","ty","yt","lc","cl","ab"]
+Output: 8
+Explanation: One longest palindrome is "ty" + "lc" + "cl" + "yt" = "tylcclyt", of length 8.
+Note that "lcyttycl" is another longest palindrome that can be created.
+Example 3:
+
+Input: words = ["cc","ll","xx"]
+Output: 2
+Explanation: One longest palindrome is "cc", of length 2.
+Note that "ll" is another longest palindrome that can be created, and so is "xx".
+ 
+
+Constraints:
+
+1 <= words.length <= 105
+words[i].length == 2
+words[i] consists of lowercase English letters.;=;=https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6778146/on-l-on-with-images-example-walkthrough-w1ljs/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6779249/simple-super-easy-beginners-java-c-c-pyt-bys6/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/1675343/python3-java-c-counting-mirror-words-on-wiqyh/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6778314/cpp-java-greedy-100-beats-easy-to-unders-n79c/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/1675693/javapython-3-one-pass-w-brief-explanatio-fhwm/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6778082/2-python-approaches-by-python_champ123-bdn7/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6778755/building-the-longest-palindrome-from-two-vml3/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6786940/efficient-hashmap-based-approach-using-f-309f/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/2772074/java-explained-in-detail-simple-fast-sol-2vuf/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/7014816/no-map-no-reverse-learn-the-efficient-wa-rsre/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6778940/longest-palindrome-by-concatenating-two-kjmea/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6778058/longest-palindrome-by-concatenating-two-rdxsh/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6780403/59ms-beats-63-beginner-friendly-frequenc-x54d/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6778909/easy-to-understand-greedy-with-hash-tabl-4tw9/;;https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6780390/easy-java-solution-hashmap-by-gunasaihar-nt8x/;;;=;==;=;=;

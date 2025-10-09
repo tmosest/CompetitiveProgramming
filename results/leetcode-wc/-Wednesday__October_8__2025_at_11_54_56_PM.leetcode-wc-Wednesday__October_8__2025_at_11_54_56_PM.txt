@@ -1,0 +1,24 @@
+727. Minimum Window Subsequence;=;=Hard;=;=public String minWindow(String s1, String s2);=;=Given strings s1 and s2, return the minimum contiguous substring part of s1, so that s2 is a subsequence of the part.
+
+If there is no such window in s1 that covers all characters in s2, return the empty string "". If there are multiple such minimum-length windows, return the one with the left-most starting index.
+
+ 
+
+Example 1:
+
+Input: s1 = "abcdebdde", s2 = "bde"
+Output: "bcde"
+Explanation: 
+"bcde" is the answer because it occurs before "bdde" which has the same length.
+"deb" is not a smaller window because the elements of s2 in the window must occur in order.
+Example 2:
+
+Input: s1 = "jmeqksfrsdcmsiwvaovztaqenprpvnbstl", s2 = "u"
+Output: ""
+ 
+
+Constraints:
+
+1 <= s1.length <= 2 * 104
+1 <= s2.length <= 100
+s1 and s2 consist of lowercase English letters.;=;=https://leetcode.com/problems/minimum-window-subsequence/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-window-subsequence/solutions/1643455/java-dp-solution-omn-by-rishabhs72-vist/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/909321/most-simple-dp-solution-java-ost-by-baby-5xs9/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/1808258/very-straightforward-two-pointer-solutio-37wu/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/1110149/java-standard-optimal-dp-solution-detail-ud3u/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/2985135/2-pointer-sliding-window-solution-with-c-txyv/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/726088/treeset-oslogs-by-user1906bt-91l5/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/7026657/2-pointer-java-solution-with-proper-expl-pre3/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/6199380/java-using-sliding-window-pattern-omn-by-rloj/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/5732019/java-intuitive-omn-solution-by-gonchob-jdhm/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/4896784/working-solution-with-2-pointers-by-mehm-t1qq/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/4802230/dynamic-programming-solution-by-fanger-4owh/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/4427115/java-solution-by-ndsjqwbbb-nmnl/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/5242479/brute-force-dp-by-ericleet2008-shud/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/4915410/dp-hindi-explanation-omn-by-walichandpas-8jio/;;https://leetcode.com/problems/minimum-window-subsequence/solutions/4082552/using-binary-search-on-the-indexes-of-s2-0f1l/;;;=;==;=;=;

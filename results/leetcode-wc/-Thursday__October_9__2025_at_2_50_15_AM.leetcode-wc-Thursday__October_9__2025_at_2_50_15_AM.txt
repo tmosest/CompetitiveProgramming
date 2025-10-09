@@ -1,0 +1,33 @@
+887. Super Egg Drop;=;=Hard;=;=int[][] memo;    public int superEggDrop(int k, int n)         memo = new int[k + 1][n + 1];        for(int[] row : memo) Arrays.fill(row , -1);        return solve(k, n);        public int solve(int eggs, int floors)        if(floors == 0 || floors == 1 ) return floors;        if(eggs == 1) return floors;;=;=You are given k identical eggs and you have access to a building with n floors labeled from 1 to n.
+
+You know that there exists a floor f where 0 <= f <= n such that any egg dropped at a floor higher than f will break, and any egg dropped at or below floor f will not break.
+
+Each move, you may take an unbroken egg and drop it from any floor x (where 1 <= x <= n). If the egg breaks, you can no longer use it. However, if the egg does not break, you may reuse it in future moves.
+
+Return the minimum number of moves that you need to determine with certainty what the value of f is.
+
+ 
+
+Example 1:
+
+Input: k = 1, n = 2
+Output: 2
+Explanation: 
+Drop the egg from floor 1. If it breaks, we know that f = 0.
+Otherwise, drop the egg from floor 2. If it breaks, we know that f = 1.
+If it does not break, then we know f = 2.
+Hence, we need at minimum 2 moves to determine with certainty what the value of f is.
+Example 2:
+
+Input: k = 2, n = 6
+Output: 3
+Example 3:
+
+Input: k = 3, n = 14
+Output: 4
+ 
+
+Constraints:
+
+1 <= k <= 100
+1 <= n <= 104;=;=https://leetcode.com/problems/super-egg-drop/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/super-egg-drop/solutions/7154604/binary-search-memoization-by-_sudheer-u67x/;;https://leetcode.com/problems/super-egg-drop/solutions/794679/simple-java-solution-easy-to-understand-2dye2/;;https://leetcode.com/problems/super-egg-drop/solutions/6906465/super-egg-drop-by-pranavdewangan22-12zt/;;https://leetcode.com/problems/super-egg-drop/solutions/1760691/java-dp-explained-with-comments-by-anany-4izp/;;https://leetcode.com/problems/super-egg-drop/solutions/6529300/dynamic-programming-approach-in-javascri-1je1/;;https://leetcode.com/problems/super-egg-drop/solutions/6822979/memoized-dp-bs-sol-java-by-sandesh90-dwle/;;https://leetcode.com/problems/super-egg-drop/solutions/4608145/beats-935-dp-memoization-java-by-priyans-959l/;;https://leetcode.com/problems/super-egg-drop/solutions/4445104/cjava-solution-explained-using-dp-binary-sqsl/;;https://leetcode.com/problems/super-egg-drop/solutions/6492373/java-all-approaches-by-kt-ujwal-dl0j/;;https://leetcode.com/problems/super-egg-drop/solutions/6574476/super-egg-drop-optimized-binary-search-c-cyhr/;;https://leetcode.com/problems/super-egg-drop/solutions/1204455/recursion-top-down-bu-bu-real-dp-solutio-68x7/;;https://leetcode.com/problems/super-egg-drop/solutions/2328737/java-mcm-aditya-verma-recursion-memoizat-qf17/;;https://leetcode.com/problems/super-egg-drop/solutions/1779094/java-easy-and-clean-code-with-comments-b-f1gc/;;https://leetcode.com/problems/super-egg-drop/solutions/3118760/aditya-verma-updated-solution-java-easy-7bimt/;;https://leetcode.com/problems/super-egg-drop/solutions/2945461/java-easy-solution-aditya-verma-by-aahan-hh8e/;;;=;==;=;=;

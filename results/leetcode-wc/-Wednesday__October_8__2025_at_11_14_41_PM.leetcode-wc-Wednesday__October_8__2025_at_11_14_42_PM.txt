@@ -1,0 +1,43 @@
+2332. The Latest Time to Catch a Bus;=;=Medium;=;=publicÊintÊlatestTimeCatchTheBus(int[]Êbuses,Êint[]Êpassengers,ÊintÊcapacity);=;=You are given a 0-indexed integer array buses of length n, where buses[i] represents the departure time of the ith bus. You are also given a 0-indexed integer array passengers of length m, where passengers[j] represents the arrival time of the jth passenger. All bus departure times are unique. All passenger arrival times are unique.
+
+You are given an integer capacity, which represents the maximum number of passengers that can get on each bus.
+
+When a passenger arrives, they will wait in line for the next available bus. You can get on a bus that departs at x minutes if you arrive at y minutes where y <= x, and the bus is not full. Passengers with the earliest arrival times get on the bus first.
+
+More formally when a bus arrives, either:
+
+If capacity or fewer passengers are waiting for a bus, they will all get on the bus, or
+The capacity passengers with the earliest arrival times will get on the bus.
+Return the latest time you may arrive at the bus station to catch a bus. You cannot arrive at the same time as another passenger.
+
+Note: The arrays buses and passengers are not necessarily sorted.
+
+Ê
+
+Example 1:
+
+Input: buses = [10,20], passengers = [2,17,18,19], capacity = 2
+Output: 16
+Explanation: Suppose you arrive at time 16.
+At time 10, the first bus departs with the 0th passenger. 
+At time 20, the second bus departs with you and the 1st passenger.
+Note that you may not arrive at the same time as another passenger, which is why you must arrive before the 1st passenger to catch the bus.
+Example 2:
+
+Input: buses = [20,30,10], passengers = [19,13,26,4,25,11,21], capacity = 2
+Output: 20
+Explanation: Suppose you arrive at time 20.
+At time 10, the first bus departs with the 3rd passenger. 
+At time 20, the second bus departs with the 5th and 1st passengers.
+At time 30, the third bus departs with the 0th passenger and you.
+Notice if you had arrived any later, then the 6th passenger would have taken your seat on the third bus.
+Ê
+
+Constraints:
+
+n == buses.length
+m == passengers.length
+1 <= n, m, capacity <= 105
+2 <= buses[i], passengers[i] <= 109
+Each element in buses is unique.
+Each element in passengers is unique.;=;=https://leetcode.com/problems/the-latest-time-to-catch-a-bus/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/2259320/greedy-solution-java-by-virendra115-grz7/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/2262591/easiest-java-solution-with-comment-expla-5n8o/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/7194271/least-lines-of-code-in-java-intuitive-ea-yb34/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/6292500/37-lines-of-clean-code-with-explanatory-di8g6/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/4193958/easy-to-understand-beats-94-of-time-and-hitr0/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/3456171/java-two-pointer-beat-100-with-detail-ex-t3ds/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/3159086/c-sort-binary-search-by-shree2203-26gh/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/2297702/easy-faster-efficient-java-soln-by-devan-ci91/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/2259397/easy-java-solution-by-amaansiddiqui739-qz48/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/2263559/greedy-solution-took-me-1-hrs-to-do-itpl-vfcx/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/2276195/java-brute-force-to-optimized-easy-solut-ormi/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/2259525/100-faster-solution-by-anishkumar127-h4wy/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/7133367/binarysearch-by-asmit-srivas0-ipzi/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/2259338/java-sorted-set-easy-solution-by-exhaust-tfzx/;;https://leetcode.com/problems/the-latest-time-to-catch-a-bus/solutions/7194279/least-lines-of-code-in-java-intuitive-ea-ckrg/;;;=;==;=;=;

@@ -1,0 +1,44 @@
+3289. The Two Sneaky Numbers of Digitville;=;=Easy;=;=public int[] getSneakyNumbers(int[] nums);=;=In the town of Digitville, there was a list of numbers called nums containing integers from 0 to n - 1. Each number was supposed to appear exactly once in the list, however, two mischievous numbers sneaked in an additional time, making the list longer than usual.
+
+As the town detective, your task is to find these two sneaky numbers. Return an array of size two containing the two numbers (in any order), so peace can return to Digitville.
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,1,0]
+
+Output: [0,1]
+
+Explanation:
+
+The numbers 0 and 1 each appear twice in the array.
+
+Example 2:
+
+Input: nums = [0,3,2,1,3,2]
+
+Output: [2,3]
+
+Explanation:
+
+The numbers 2 and 3 each appear twice in the array.
+
+Example 3:
+
+Input: nums = [7,1,5,4,3,4,6,0,9,5,8,2]
+
+Output: [4,5]
+
+Explanation:
+
+The numbers 4 and 5 each appear twice in the array.
+
+ 
+
+Constraints:
+
+2 <= n <= 100
+nums.length == n + 2
+0 <= nums[i] < n
+The input is generated such that nums contains exactly two repeated elements.;=;=https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7192054/simple-and-easy-to-understand-using-just-di4t/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/5789363/easy-video-solution-without-extra-space-5namp/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7210086/single-loop-answer-in-java-easy-to-under-jeil/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7192473/noobish-style-java-easy-code-by-suryanar-594d/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6727039/easiest-100-beats-solution-in-java-by-hi-g3uf/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7130004/beats-100-easy-by-_siddu24-9okt/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7150113/the-two-sneaky-numbers-of-digitville-by-612wm/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/5809246/simple-java-code-by-abhinandannaik1717-0d51/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6568830/java-best-solution-hashmap-by-aimlc_22b1-ceqq/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6539706/100-beats-without-using-set-by-kdhakal-t2iz/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7017622/my-solution-java-by-codersquare-6d8l/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7042845/java-easy-solution-1ms-by-akashraj06-mt06/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6462432/easy-fr-beginners-by-hle0mpwjhw-osqw/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/6339574/java-hashset-solution-using-array-beat-1-j9yb/;;https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7004512/simple-java-solution-by-rajdeep001-w4mz/;;;=;==;=;=;

@@ -1,0 +1,39 @@
+308. Range Sum Query 2D - Mutable;=;=Medium;=;=NumMatrix     public NumMatrix(int[][] matrix)                     public void update(int row, int col, int val)                     public int sumRegion(int row1, int col1, int row2, int col2);=;=Given a 2D matrix matrix, handle multiple queries of the following types:
+
+Update the value of a cell in matrix.
+Calculate the sum of the elements of matrix inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
+Implement the NumMatrix class:
+
+NumMatrix(int[][] matrix) Initializes the object with the integer matrix matrix.
+void update(int row, int col, int val) Updates the value of matrix[row][col] to be val.
+int sumRegion(int row1, int col1, int row2, int col2) Returns the sum of the elements of matrix inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
+ 
+
+Example 1:
+
+
+Input
+["NumMatrix", "sumRegion", "update", "sumRegion"]
+[[[[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]], [2, 1, 4, 3], [3, 2, 2], [2, 1, 4, 3]]
+Output
+[null, 8, null, 10]
+
+Explanation
+NumMatrix numMatrix = new NumMatrix([[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]);
+numMatrix.sumRegion(2, 1, 4, 3); // return 8 (i.e. sum of the left red rectangle)
+numMatrix.update(3, 2, 2);       // matrix changes from left image to right image
+numMatrix.sumRegion(2, 1, 4, 3); // return 10 (i.e. sum of the right red rectangle)
+ 
+
+Constraints:
+
+m == matrix.length
+n == matrix[i].length
+1 <= m, n <= 200
+-1000 <= matrix[i][j] <= 1000
+0 <= row < m
+0 <= col < n
+-1000 <= val <= 1000
+0 <= row1 <= row2 < m
+0 <= col1 <= col2 < n
+At most 5000 calls will be made to sumRegion and update.;=;=https://leetcode.com/problems/range-sum-query-2d-mutable/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/75917/share-my-java-2-d-binary-indexed-tree-so-y026/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/950205/java-easy-prefix-sum-solution-10ms-beats-5ir7/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/1180118/java-2-dimensional-segment-tree-olog-m-l-7dqr/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/75919/java-quadtree-solution-tle-by-chao60-fn8c/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/6745559/beats-100-but-maybe-still-not-fastest-po-0wwc/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/6075078/java-prefix-sum-solution-by-tbekpro-uhit/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/6002390/range-sum-query-2d-mutable-using-segment-ks5a/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/4923475/binary-indexed-tree-solution-clean-code-4lzoh/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/4684367/object-oriented-clean-segment-tree-imple-l0jj/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/4425897/java-2d-segment-tree-update-ologn-logm-s-svkc/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/4204730/java-11ms-prefixsum-solution-beats-100-b-oezc/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/3869529/segment-tree-in-java-by-adityamathur97-9ekb/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/3315296/solution-by-deleted_user-zp3s/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/3292252/simple-java-solution-using-dynamic-progr-zvws/;;https://leetcode.com/problems/range-sum-query-2d-mutable/solutions/3288824/java-solution-the-same-method-as-304-ran-l8l8/;;;=;==;=;=;

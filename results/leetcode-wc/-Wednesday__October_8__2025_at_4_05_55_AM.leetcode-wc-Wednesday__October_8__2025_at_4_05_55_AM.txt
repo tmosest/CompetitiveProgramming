@@ -1,0 +1,43 @@
+3298. Count Substrings That Can Be Rearranged to Contain a String II;=;=Hard;=;=public long validSubstringCount(String word1, String word2);=;=You are given two strings word1 and word2.
+
+A string x is called valid if x can be rearranged to have word2 as a prefix.
+
+Return the total number of valid substrings of word1.
+
+Note that the memory limits in this problem are smaller than usual, so you must implement a solution with a linear runtime complexity.
+
+ 
+
+Example 1:
+
+Input: word1 = "bcca", word2 = "abc"
+
+Output: 1
+
+Explanation:
+
+The only valid substring is "bcca" which can be rearranged to "abcc" having "abc" as a prefix.
+
+Example 2:
+
+Input: word1 = "abcabc", word2 = "abc"
+
+Output: 10
+
+Explanation:
+
+All the substrings except substrings of size 1 and size 2 are valid.
+
+Example 3:
+
+Input: word1 = "abcabc", word2 = "aaabc"
+
+Output: 0
+
+ 
+
+Constraints:
+
+1 <= word1.length <= 106
+1 <= word2.length <= 104
+word1 and word2 consist only of lowercase English letters.;=;=https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818740/simple-two-pointers-approach-in-on-time-ah0ld/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5828829/contest-416-ques-4-sliding-window-by-saj-rapt/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818289/sliding-window-approach-in-java-by-shubh-xxrn/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818275/sliding-window-with-example-walkthrough-jfvit/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5855683/stepwise-approach-java-by-abhishekkant13-f894/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818318/simple-java-solution-beats-100-by-ram436-9sfx/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818952/beats-super-easy-beginners-by-codewithsp-m0hu/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/6916976/sliding-window-by-watt_walk-017x/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5820809/sliding-window-by-clcwcxfwf-vswh/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818987/easy-sliding-window-by-macrohard-circ/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818901/easy-solution-using-hashmap-beats-100-by-h3nh/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818696/sliding-window-solution-by-risabhuchiha-f12c/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818486/java-2-pointer-solution-by-pranay__01-2f76/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818482/same-approach-as-minimum-win-substring-b-e941/;;https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/solutions/5818472/java-sliding-window-by-user5433rk-jzmp/;;;=;==;=;=;

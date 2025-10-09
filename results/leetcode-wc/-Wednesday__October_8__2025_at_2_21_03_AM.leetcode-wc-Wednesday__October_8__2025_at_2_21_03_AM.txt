@@ -1,0 +1,26 @@
+2729. Check if The Number is Fascinating;=;=Easy;=;=public boolean isFascinating(int n);=;=You are given an integer n that consists of exactly 3 digits.
+
+We call the number n fascinating if, after the following modification, the resulting number contains all the digits from 1 to 9 exactly once and does not contain any 0's:
+
+Concatenate n with the numbers 2 * n and 3 * n.
+Return true if n is fascinating, or false otherwise.
+
+Concatenating two numbers means joining them together. For example, the concatenation of 121 and 371 is 121371.
+
+ 
+
+Example 1:
+
+Input: n = 192
+Output: true
+Explanation: We concatenate the numbers n = 192 and 2 * n = 384 and 3 * n = 576. The resulting number is 192384576. This number contains all the digits from 1 to 9 exactly once.
+Example 2:
+
+Input: n = 100
+Output: false
+Explanation: We concatenate the numbers n = 100 and 2 * n = 200 and 3 * n = 300. The resulting number is 100200300. This number does not satisfy any of the conditions.
+ 
+
+Constraints:
+
+100 <= n <= 999;=;=https://leetcode.com/problems/check-if-the-number-is-fascinating/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/7252314/unlocking-the-magic-of-fascinating-numbe-vhbs/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/7173931/java-easy-100-solution-by-ytchouar-scvm/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/6983567/digits-dont-lie-bruh-oneliner-beats-100-i5fel/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/7094393/is-your-number-fascinating-by-dharansund-lpj0/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/3622760/most-efficient-o1-by-java_programmer_ket-myud/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/6920264/easiest-approach-to-understand-in-java-b-6w9c/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/6896395/easy-way-using-hashset-by-sairangineeni-tuyv/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/6768588/o1-soln-java-easy-solution-with-explanat-hfxt/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/3622714/java-easy-solution-by-ydvaaman-owb2/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/3786674/java-100-faster-solution-by-jugantar2020-ckrw/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/3627893/java-simple-solution-no-string-100-faste-kb8p/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/3755310/java-solution-using-for-loop-by-ankur_ch-9qc1/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/3623045/cjava-bitwise-operations-for-efficient-d-mbs8/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/6019660/efficient-java-solution-by-abhivatsa1185-6czn/;;https://leetcode.com/problems/check-if-the-number-is-fascinating/solutions/3668241/beginners-approach-by-bhaskarkumar07-53bw/;;;=;==;=;=;

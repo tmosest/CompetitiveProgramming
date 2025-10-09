@@ -1,0 +1,27 @@
+2195. Append K Integers With Minimal Sum;=;=Medium;=;=public long minimalKSum(int[] nums, int k);=;=You are given an integer array nums and an integer k. Append k unique positive integers that do not appear in nums to nums such that the resulting total sum is minimum.
+
+Return the sum of the k integers appended to nums.
+
+ 
+
+Example 1:
+
+Input: nums = [1,4,25,10,25], k = 2
+Output: 5
+Explanation: The two unique positive integers that do not appear in nums which we append are 2 and 3.
+The resulting sum of nums is 1 + 4 + 25 + 10 + 25 + 2 + 3 = 70, which is the minimum.
+The sum of the two integers appended is 2 + 3 = 5, so we return 5.
+Example 2:
+
+Input: nums = [5,6], k = 6
+Output: 25
+Explanation: The six unique positive integers that do not appear in nums which we append are 1, 2, 3, 4, 7, and 8.
+The resulting sum of nums is 5 + 6 + 1 + 2 + 3 + 4 + 7 + 8 = 36, which is the minimum. 
+The sum of the six integers appended is 1 + 2 + 3 + 4 + 7 + 8 = 25, so we return 25.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109
+1 <= k <= 108;=;=https://leetcode.com/problems/append-k-integers-with-minimal-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1823848/java-solution-use-nn12-by-monsterjo-rphd/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1823808/javapython-3-two-methods-w-brief-explana-lp3h/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/5709732/simple-code-easy-to-understand-beginner-xsdgh/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1827071/java-easy-to-understand-solution-by-souv-lori/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1823734/java-easy-solution-on-time-space-complex-rftf/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/2339179/simple-java-solution-by-restart365-rto5/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/2630820/one-liner-in-java-by-manojkumarpatnaik-h34j/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1823853/python-got-wrong-answer-for-one-testcase-s6y4/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/2226100/java-solution-using-sum-of-n-natural-num-flvl/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1826262/cmy-own-most-efficient-solution-onlog-n-oh6u2/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1827973/java-sort-and-filter-taken-number-by-0x4-zvo5/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/7148449/java-using-arrayssort-by-sssanskarrr-1fi7/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1841668/java-easiest-solution-using-nn12-by-mayu-o93c/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1824039/java-sorting-with-clear-explanation-by-a-lv7f/;;https://leetcode.com/problems/append-k-integers-with-minimal-sum/solutions/1859882/kk12-by-adarsh2dubey-yqik/;;;=;==;=;=;

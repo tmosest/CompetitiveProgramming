@@ -1,0 +1,48 @@
+2956. Find Common Elements Between Two Arrays;=;=Easy;=;=public int[] findIntersectionValues(int[] nums1, int[] nums2);=;=You are given two integer arrays nums1 and nums2 of sizes n and m, respectively. Calculate the following values:
+
+answer1 : the number of indices i such that nums1[i] exists in nums2.
+answer2 : the number of indices i such that nums2[i] exists in nums1.
+Return [answer1,answer2].
+
+ 
+
+Example 1:
+
+Input: nums1 = [2,3,2], nums2 = [1,2]
+
+Output: [2,1]
+
+Explanation:
+
+
+
+Example 2:
+
+Input: nums1 = [4,3,2,3,1], nums2 = [2,2,5,2,3,6]
+
+Output: [3,4]
+
+Explanation:
+
+The elements at indices 1, 2, and 3 in nums1 exist in nums2 as well. So answer1 is 3.
+
+The elements at indices 0, 1, 3, and 4 in nums2 exist in nums1. So answer2 is 4.
+
+Example 3:
+
+Input: nums1 = [3,4,2,3], nums2 = [1,5]
+
+Output: [0,0]
+
+Explanation:
+
+No numbers are common between nums1 and nums2, so answer is [0,0].
+
+ 
+
+Constraints:
+
+n == nums1.length
+m == nums2.length
+1 <= n, m <= 100
+1 <= nums1[i], nums2[i] <= 100;=;=https://leetcode.com/problems/find-common-elements-between-two-arrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/7234202/easy-code-by-sivaaleet-5rj2/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/7124033/3-optimal-solution-hash-set-full-logic-e-vfu9/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/4385079/100-beat-c-java-easy-to-understand-by-ad-9um5/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/4382829/cjavapythonjavascript-easy-approach-expl-ettp/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/7174585/find-intersection-values-of-two-arrays-o-dpk4/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/7138199/two-way-intersection-counter-2956-find-c-0ii8/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/7135945/in-java-by-ishag0801-uvnu/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/6351512/easy-approach-line-by-line-explain-java-bo728/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/7014359/easy-java-solution-optimal-by-rajdeep001-8nr5/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/4382681/simple-java-solution-by-siddhant_1602-rbhp/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/6694303/using-hashset-simple-try-this-by-sairang-dz0e/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/6864096/java-solution-by-monish1153-pg97/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/4408774/2-different-approaches-by-manohar_001-vkd9/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/4895993/easiest-cpython3cpythonjava-solutions-be-2saa/;;https://leetcode.com/problems/find-common-elements-between-two-arrays/solutions/6716769/different-approach-without-using-hashset-0pq2/;;;=;==;=;=;

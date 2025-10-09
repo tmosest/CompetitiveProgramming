@@ -1,0 +1,39 @@
+3402. Minimum Operations to Make Columns Strictly Increasing;=;=Easy;=;=public int minimumOperations(int[][] grid);=;=You are given a m x n matrix grid consisting of non-negative integers.
+
+In one operation, you can increment the value of any grid[i][j] by 1.
+
+Return the minimum number of operations needed to make all columns of grid strictly increasing.
+
+ 
+
+Example 1:
+
+Input: grid = [[3,2],[1,3],[3,4],[0,1]]
+
+Output: 15
+
+Explanation:
+
+To make the 0th column strictly increasing, we can apply 3 operations on grid[1][0], 2 operations on grid[2][0], and 6 operations on grid[3][0].
+To make the 1st column strictly increasing, we can apply 4 operations on grid[3][1].
+
+Example 2:
+
+Input: grid = [[3,2,1],[2,1,0],[1,2,3]]
+
+Output: 12
+
+Explanation:
+
+To make the 0th column strictly increasing, we can apply 2 operations on grid[1][0], and 4 operations on grid[2][0].
+To make the 1st column strictly increasing, we can apply 2 operations on grid[1][1], and 2 operations on grid[2][1].
+To make the 2nd column strictly increasing, we can apply 2 operations on grid[1][2].
+
+ 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 50
+0 <= grid[i][j] < 2500;=;=https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6199750/c-java-simple-iterate-and-check-by-kreak-6kmh/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6274154/cjavapythonjavascript-best-solution-beat-tqm1/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/7177378/minimum-operations-to-make-columns-stric-qnbm/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6199496/simple-approach-by-muhammednihas2218-enx0/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6199493/javacpython-straight-forward-by-lee215-ymfy/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6467177/java-simple-easy-to-understand-almost-10-15z1/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6199667/java-solution-brute-force-soltuion-by-vi-bro2/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6926947/easy-and-100-fast-solution-using-naive-a-zdfn/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6199477/simple-java-solution-by-harsh__005-dmdl/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6947403/strictly-increasing-grid-columns-simple-8ivuv/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6823901/easy-java-solution-by-codernoobie111-pm9d/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6791497/clean-code-by-smileysuneet-xi4a/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6201748/java-easy-by-tanishak07-r9do/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6199837/simple-java-approach-omn-by-hamedtaghani-w88d/;;https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/solutions/6199679/simple-approach-by-pavithra_535-y5k1/;;;=;==;=;=;

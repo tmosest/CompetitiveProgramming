@@ -1,0 +1,60 @@
+2061. Number of Spaces Cleaning Robot Cleaned;=;=Medium;=;=public int numberOfCleanRooms(int[][] room);=;=A room is represented by a 0-indexed 2D binary matrix room where a 0 represents an empty space and a 1 represents a space with an object. The top left corner of the room will be empty in all test cases.
+
+A cleaning robot starts at the top left corner of the room and is facing right. The robot will continue heading straight until it reaches the edge of the room or it hits an object, after which it will turn 90 degrees clockwise and repeat this process. The starting space and all spaces that the robot visits are cleaned by it.
+
+Return the number of clean spaces in the room if the robot runs indefinitely.
+
+ 
+
+Example 1:
+
+
+ 
+
+Input: room = [[0,0,0],[1,1,0],[0,0,0]]
+
+Output: 7
+
+Explanation:
+
+???????The robot cleans the spaces at (0, 0), (0, 1), and (0, 2).
+The robot is at the edge of the room, so it turns 90 degrees clockwise and now faces down.
+The robot cleans the spaces at (1, 2), and (2, 2).
+The robot is at the edge of the room, so it turns 90 degrees clockwise and now faces left.
+The robot cleans the spaces at (2, 1), and (2, 0).
+The robot has cleaned all 7 empty spaces, so return 7.
+Example 2:
+
+
+ 
+
+Input: room = [[0,1,0],[1,0,0],[0,0,0]]
+
+Output: 1
+
+Explanation:
+
+The robot cleans the space at (0, 0).
+The robot hits an object, so it turns 90 degrees clockwise and now faces down.
+The robot hits an object, so it turns 90 degrees clockwise and now faces left.
+The robot is at the edge of the room, so it turns 90 degrees clockwise and now faces up.
+The robot is at the edge of the room, so it turns 90 degrees clockwise and now faces right.
+The robot is back at its starting position.
+The robot has cleaned 1 space, so return 1.
+Example 3:
+
+Input: room = [[0,0,0],[0,0,0],[0,0,0]]
+
+Output: 8???????
+
+ 
+
+ 
+
+Constraints:
+
+m == room.length
+n == room[r].length
+1 <= m, n <= 300
+room[r][c] is either 0 or 1.
+room[0][0] == 0;=;=https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/1575604/java-solution-with-explanation-by-rkxyii-8pvm/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/1725348/java-basic-and-simple-iterative-simulati-cb91/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/5783574/simple-java-solution-by-sakshikishore-qw1l/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/5164631/using-a-3d-boolean-array-to-track-direct-bhdb/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/5162512/video-explanation-easy-to-understand-bea-x0ej/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/5191587/java-by-ankit16190-ur4v/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/5190679/java-dfs-simulation-by-anurag0608-m22z/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/5175178/java-bfs-solution-by-n00bs404-5qfj/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/5171627/java-javascript-typescript-c-c-kotlin-go-jwc8/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/4970922/basic-java-solution-by-ahmed77-bjis/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/4779859/java-simple-solution-by-user9874t-r9rg/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/3129537/java-recursive-solution-by-jhapranay-mmm8/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/3052254/simple-java-simulation-solution-by-sycmt-r3mp/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/2885263/cjavapython3-simulation-by-ye15-jg34/;;https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/solutions/2281813/java-easy-bit-manipulation-by-haridevelo-z7c1/;;;=;==;=;=;

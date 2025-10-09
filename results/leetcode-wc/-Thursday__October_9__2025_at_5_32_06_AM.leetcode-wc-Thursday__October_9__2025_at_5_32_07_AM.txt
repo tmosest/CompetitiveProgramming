@@ -1,0 +1,39 @@
+1930. Unique Length-3 Palindromic Subsequences;=;=Medium;=;=public int countPalindromicSubsequence(String s);=;=Given a string s, return the number of unique palindromes of length three that are a subsequence of s.
+
+Note that even if there are multiple ways to obtain the same subsequence, it is still only counted once.
+
+A palindrome is a string that reads the same forwards and backwards.
+
+A subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.
+
+For example, "ace" is a subsequence of "abcde".
+ 
+
+Example 1:
+
+Input: s = "aabca"
+Output: 3
+Explanation: The 3 palindromic subsequences of length 3 are:
+- "aba" (subsequence of "aabca")
+- "aaa" (subsequence of "aabca")
+- "aca" (subsequence of "aabca")
+Example 2:
+
+Input: s = "adc"
+Output: 0
+Explanation: There are no palindromic subsequences of length 3 in "adc".
+Example 3:
+
+Input: s = "bbcbaba"
+Output: 4
+Explanation: The 4 palindromic subsequences of length 3 are:
+- "bbb" (subsequence of "bbcbaba")
+- "bcb" (subsequence of "bbcbaba")
+- "bab" (subsequence of "bbcbaba")
+- "aba" (subsequence of "bbcbaba")
+ 
+
+Constraints:
+
+3 <= s.length <= 105
+s consists of only lowercase English letters.;=;=https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/4285072/iterative-solution-explained-intuition-b-pxy5/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/6567101/video-give-me-8-minutes-how-we-think-abo-8wmy/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/1330165/leftmost-rightmost-and-in-between-by-vot-wfmn/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/4285239/video-give-me-8-minutes-how-we-think-abo-hhnt/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/6226725/simple-prefix-and-suffix-detailed-soluti-p9r3/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/6226749/java-easy-linear-time-complexity-constan-k3mg/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/6227904/easy-hashmaps-approach-by-arunk_leetcode-qq1h/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/6227194/beats-8991-array-string-solution-for-lee-ww01/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/4285023/c-python-java-on-explained-by-karan_8082-t2ym/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/6227278/counting-3-length-palindromic-subsequenc-jg83/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/1330187/java-o26-n-solution-with-explanation-by-knz0a/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/4285354/beats-100-explained-with-video-single-pa-aoc0/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/6227197/java-easy-solution-explained-beginner-fr-tlcj/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/4285483/beats-9616-easiest-approach-beginner-fri-dt78/;;https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/6226717/keep-it-simple-first-and-last-occurrence-030g/;;;=;==;=;=;

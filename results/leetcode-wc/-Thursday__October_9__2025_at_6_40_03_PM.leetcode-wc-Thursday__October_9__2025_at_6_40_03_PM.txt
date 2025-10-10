@@ -1,0 +1,24 @@
+1602. Find Nearest Right Node in Binary Tree;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=Given the root of a binary tree and a node u in the tree, return the nearest node on the same level that is to the right of u, or return null if u is the rightmost node in its level.
+
+ 
+
+Example 1:
+
+
+Input: root = [1,2,3,null,4,5,6], u = 4
+Output: 5
+Explanation: The nearest node on the same level to the right of node 4 is node 5.
+Example 2:
+
+
+Input: root = [3,null,4,2], u = 2
+Output: null
+Explanation: There are no nodes to the right of 2.
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 105].
+1 <= Node.val <= 105
+All values in the tree are distinct.
+u is a node in the binary tree rooted at root.;=;=https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/1714960/java-bfs-iterative-with-queue-by-lastdoc-mzfp/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/982184/java-dfs-and-other-solution-via-traverse-wgbc/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/982849/simple-explanation-bfs-iterative-java-by-cjid/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/6559897/solution-using-bfs-java-by-david-hackro-g8uj/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/6837398/easy-to-understand-bfs-logic-by-abhignao-pbs2/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/6530840/intuitive-simple-by-5fc0ytvzsd-stmn/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/5966485/bfs-java-soln-by-samruddhi_desh-khbp/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/5137499/java-solution-bfs-by-ndsjqwbbb-h24s/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/4874624/java-on-dfs-solution-by-tbekpro-gwdh/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/4717591/java-easy-and-concise-solution-by-wj4507-vrc2/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/4277488/bfs-solution-by-shivamd20-h3hk/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/4007602/simple-java-solution-by-sakshikishore-85rx/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/3970843/java-tree-level-order-traversal-easy-to-chxy2/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/3770986/using-the-bfs-and-the-lists-by-surya2316-mz9s/;;https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/solutions/3435541/swift-and-java-bfs-solutions-by-danilovd-dbqa/;;;=;==;=;=;

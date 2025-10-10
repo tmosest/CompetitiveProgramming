@@ -1,0 +1,28 @@
+1716. Calculate Money in Leetcode Bank;=;=Easy;=;=public int totalMoney(int n);=;=Hercy wants to save money for his first car. He puts money in the Leetcode bank every day.
+
+He starts by putting in $1 on Monday, the first day. Every day from Tuesday to Sunday, he will put in $1 more than the day before. On every subsequent Monday, he will put in $1 more than the previous Monday.
+
+Given n, return the total amount of money he will have in the Leetcode bank at the end of the nth day.
+
+ 
+
+Example 1:
+
+Input: n = 4
+Output: 10
+Explanation: After the 4th day, the total is 1 + 2 + 3 + 4 = 10.
+Example 2:
+
+Input: n = 10
+Output: 37
+Explanation: After the 10th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 + 3 + 4) = 37. Notice that on the 2nd Monday, Hercy only puts in $2.
+Example 3:
+
+Input: n = 20
+Output: 96
+Explanation: After the 20th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 + 3 + 4 + 5 + 6 + 7 + 8) + (3 + 4 + 5 + 6 + 7 + 8) = 96.
+ 
+
+Constraints:
+
+1 <= n <= 1000;=;=https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/4367796/beats-100-cjavapythonjs-explained-with-v-5bom/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/4367675/o-1-math-explained-by-karan_8082-nbh6/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/7244376/easy-and-simple-method-in-java-for-begin-d351/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/7227311/using-simulation-by-vishal-solanki-2h0y/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/4368080/video-give-me-10-minutes-how-we-think-ab-2mm5/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/1009171/faster-than-10000commentedjavacppc-by-ra-303o/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/4367726/cjavapythonjavascript-3-approaches-beats-7tne/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/7137302/simple-java-solution-by-shubhamxgupta-93ia/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/4367857/beats-100-simple-maths-by-sarthak__212-841a/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/4367837/simplest-code-2ms-for-beginners-fully-ex-ydq8/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/1008897/o1-java-2-liner-by-harin_mehta-5vgh/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/7080216/fastest-beats-100-space-o1-unique-soluti-lscd/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/4368143/simple-iteration-by-fllght-eaxx/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/4368967/gaussian-summation-theorem-beats-100-by-gzzml/;;https://leetcode.com/problems/calculate-money-in-leetcode-bank/solutions/6371311/solution-in-java-and-c-by-vickyy234-958p/;;;=;==;=;=;

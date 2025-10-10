@@ -1,0 +1,42 @@
+3157. Find the Level of Tree with Minimum Sum;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=Given the root of a binary tree root where each node has a value, return the level of the tree that has the minimum sum of values among all the levels (in case of a tie, return the lowest level).
+
+Note that the root of the tree is at level 1 and the level of any other node is its distance from the root + 1.
+
+ 
+
+Example 1:
+
+Input: root = [50,6,2,30,80,7]
+
+Output: 2
+
+Explanation:
+
+
+
+Example 2:
+
+Input: root = [36,17,10,null,null,24]
+
+Output: 3
+
+Explanation:
+
+
+
+Example 3:
+
+Input: root = [5,null,5,null,5]
+
+Output: 1
+
+Explanation:
+
+
+
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 105].
+1 <= Node.val <= 109;=;=https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/6838967/level-order-traversal-solution-by-abhign-j9ri/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/6370232/java-solution-bfs-by-ndsjqwbbb-5ril/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/5834825/straight-forward-bfs-solution-in-java-by-9ryv/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/5760449/simple-java-solution-by-sakshikishore-41z1/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/5274658/level-order-traversal-by-mushrif-lda7/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/5251051/java-level-order-traversal-bfs-by-georgi-w4q3/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/5251050/java-level-order-traversal-bfs-by-georgi-tzwy/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/5216167/java-on-dfs-solution-by-tbekpro-3s1d/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/5201842/clean-java-code-beats-100-by-jaideep_dah-pz5f/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/5194283/java-simple-bfs-solution-on-9ms-by-jobhu-bg7x/;;https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/solutions/5410208/simple-level-order-traversal-by-amolasth-ds4k/;;;=;==;=;=;

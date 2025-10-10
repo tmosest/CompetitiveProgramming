@@ -1,0 +1,32 @@
+3110. Score of a String;=;=Easy;=;=public int scoreOfString(String s);=;=You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
+
+Return the score of s.
+
+ 
+
+Example 1:
+
+Input: s = "hello"
+
+Output: 13
+
+Explanation:
+
+The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
+
+Example 2:
+
+Input: s = "zaz"
+
+Output: 50
+
+Explanation:
+
+The ASCII values of the characters in s are: 'z' = 122, 'a' = 97. So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
+
+ 
+
+Constraints:
+
+2 <= s.length <= 100
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/score-of-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/score-of-a-string/solutions/7255921/easy-to-understand-java-solution-detaile-k425/;;https://leetcode.com/problems/score-of-a-string/solutions/7201386/clean-simple-beats-100-only-4-lines-begi-c9qh/;;https://leetcode.com/problems/score-of-a-string/solutions/7237035/simple-approach-99-53-by-i_am_groot_2k-wb6m/;;https://leetcode.com/problems/score-of-a-string/solutions/5237624/one-line-solution-by-hi-malik-h75m/;;https://leetcode.com/problems/score-of-a-string/solutions/7157387/beats-99-simplest-solution-by-rohitkunta-4zvr/;;https://leetcode.com/problems/score-of-a-string/solutions/7223758/easy-solution-java-by-arghadutta-mzco/;;https://leetcode.com/problems/score-of-a-string/solutions/5237893/fasterless-memdetailed-explainationlinea-2p98/;;https://leetcode.com/problems/score-of-a-string/solutions/7184751/beats-100-score-of-a-string-java-0ms-by-dp7dt/;;https://leetcode.com/problems/score-of-a-string/solutions/7088631/beats-100-by-divyansh_kaushik_sharma-dc1h/;;https://leetcode.com/problems/score-of-a-string/solutions/7177294/java-easy-solution-1ms-by-akashraj06-93yk/;;https://leetcode.com/problems/score-of-a-string/solutions/7128646/java-code-by-gokilaselvi-61uf/;;https://leetcode.com/problems/score-of-a-string/solutions/7014891/easy-java-solution-beats-100-by-rajdeep0-8f3s/;;https://leetcode.com/problems/score-of-a-string/solutions/6927364/done-java-by-gkma6zcqoc-pflc/;;https://leetcode.com/problems/score-of-a-string/solutions/5238871/easy-with-explanation-on-runtime-by-iamh-mo8t/;;https://leetcode.com/problems/score-of-a-string/solutions/7017885/java-solution-by-kulkarnishreya04-5bt0/;;;=;==;=;=;

@@ -1,0 +1,35 @@
+1962. Remove Stones to Minimize the Total;=;=Medium;=;=public int minStoneSum(int[] piles, int k);=;=You are given a 0-indexed integer array piles, where piles[i] represents the number of stones in the ith pile, and an integer k. You should apply the following operation exactly k times:
+
+Choose any piles[i] and remove floor(piles[i] / 2) stones from it.
+Notice that you can apply the operation on the same pile more than once.
+
+Return the minimum possible total number of stones remaining after applying the k operations.
+
+floor(x) is the largest integer that is smaller than or equal to x (i.e., rounds x down).
+
+ 
+
+Example 1:
+
+Input: piles = [5,4,9], k = 2
+Output: 12
+Explanation: Steps of a possible scenario are:
+- Apply the operation on pile 2. The resulting piles are [5,4,5].
+- Apply the operation on pile 0. The resulting piles are [3,4,5].
+The total number of stones in [3,4,5] is 12.
+Example 2:
+
+Input: piles = [4,3,6,7], k = 3
+Output: 12
+Explanation: Steps of a possible scenario are:
+- Apply the operation on pile 2. The resulting piles are [4,3,3,7].
+- Apply the operation on pile 3. The resulting piles are [4,3,3,4].
+- Apply the operation on pile 0. The resulting piles are [2,3,3,4].
+The total number of stones in [2,3,3,4] is 12.
+ 
+
+Constraints:
+
+1 <= piles.length <= 105
+1 <= piles[i] <= 104
+1 <= k <= 105;=;=https://leetcode.com/problems/remove-stones-to-minimize-the-total/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/7232045/easiest-solution-in-java-using-priority-10dmb/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/1390274/java-max-heap-solution-with-algorithm-an-ltzt/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/6802983/java-easy-100-solution-max-heap-by-ytcho-t3wf/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/7227627/simple-easy-to-understand-maxheap-approa-b9ac/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/2961158/priority-queue-easy-to-understand-beginn-2nts/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/2962633/java-heap-by-nadaralp-q85x/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/1390166/java-priorityqueue-max-heap-greedy-with-cdatp/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/2962937/java-easy-solution-by-janhvi__28-0txm/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/2963840/without-using-queue-100-fast-java-by-sam-jiqx/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/2960860/simplest-java-solution-100-using-max-hea-h2qh/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/1390241/java-easy-using-priority-queue-by-jssam0-4pp9/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/1392285/easy-java-solution-with-easy-explanation-id2m/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/6423834/98-beats-by-thisismeriteshk1-9fto/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/2962186/easy-java-priorityqueue-soln-by-wizmurmu-lnc8/;;https://leetcode.com/problems/remove-stones-to-minimize-the-total/solutions/1390191/java-solution-using-priority-queue-by-pu-p8wx/;;;=;==;=;=;

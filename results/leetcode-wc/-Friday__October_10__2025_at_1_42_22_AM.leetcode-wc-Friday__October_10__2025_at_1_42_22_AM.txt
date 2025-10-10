@@ -1,0 +1,26 @@
+1749. Maximum Absolute Sum of Any Subarray;=;=Medium;=;=public boolean isFascinating(int n)         String s = "" + n + (n  2) + (n  3);        if (s.length() != 9)             return false;                 HashMap<Character, Integer> map = new HashMap<>();        for (char c : s.toCharArray())             if (c == '0')                 return false;                         map.put(c, map.getOrDefault(c, 0) + 1);            if (map.get(c) > 1)                 return false;;=;=You are given an integer array nums. The absolute sum of a subarray [numsl, numsl+1, ..., numsr-1, numsr] is abs(numsl + numsl+1 + ... + numsr-1 + numsr).
+
+Return the maximum absolute sum of any (possibly empty) subarray of nums.
+
+Note that abs(x) is defined as follows:
+
+If x is a negative integer, then abs(x) = -x.
+If x is a non-negative integer, then abs(x) = x.
+ 
+
+Example 1:
+
+Input: nums = [1,-3,2,3,-4]
+Output: 5
+Explanation: The subarray [2,3] has absolute sum = abs(2+3) = abs(5) = 5.
+Example 2:
+
+Input: nums = [2,-5,1,-4,3,-2]
+Output: 8
+Explanation: The subarray [-5,1,-4] has absolute sum = abs(-5+1-4) = abs(-8) = 8.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+-104 <= nums[i] <= 104;=;=https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6468153/2-methods-java-beginner-freindlycpython3-rom3/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6468288/kadane-vs-prefix-sum-two-paths-to-the-ma-3etj/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/7226621/simple-understandable-code-on-code-by-be-ntrg/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6470501/beats-super-easy-beginners-java-c-c-pyth-p48v/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6468900/kadanes-algorithm-now-with-a-plot-twist-lnp5u/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6469956/beats-100-easy-for-beginners-easy-approa-vkkq/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6468980/simple-java-solution-with-kadanes-algori-npcb/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6471722/guaranteed-beats-100easy-approach-best-s-nmex/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6469469/leetcodedaybyday-beats-100-with-c-9805-1-v17b/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6468513/beats-9788-prefix-sum-solution-for-leetc-509j/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6152122/easy-to-understand-beginner-friendly-kad-tgd9/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6469577/kadanes-algorithm-java-by-s_a_m2003-z9dj/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6469524/java-solution-kadane-algo-variation-brut-y9ks/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6468363/java-prefixsum-math-time-on-space-o1-by-wcq0p/;;https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6630604/maximum-absolute-sum-of-any-subarray-eas-419n/;;;=;==;=;=;

@@ -1,0 +1,41 @@
+3226. Number of Bit Changes to Make Two Integers Equal;=;=Easy;=;=public int minChanges(int n, int k);=;=You are given two positive integers n and k.
+
+You can choose any bit in the binary representation of n that is equal to 1 and change it to 0.
+
+Return the number of changes needed to make n equal to k. If it is impossible, return -1.
+
+ 
+
+Example 1:
+
+Input: n = 13, k = 4
+
+Output: 2
+
+Explanation:
+Initially, the binary representations of n and k are n = (1101)2 and k = (0100)2.
+We can change the first and fourth bits of n. The resulting integer is n = (0100)2 = k.
+
+Example 2:
+
+Input: n = 21, k = 21
+
+Output: 0
+
+Explanation:
+n and k are already equal, so no changes are needed.
+
+Example 3:
+
+Input: n = 14, k = 13
+
+Output: -1
+
+Explanation:
+It is not possible to make n equal to k.
+
+ 
+
+Constraints:
+
+1 <= n, k <= 106;=;=https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5508923/o1-bit-manipulation-by-fahad06-9gj5/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5509343/beats-100-explained-with-video-cjavapyth-yfv9/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/7182063/here-the-simple-java-solution-by-ashwins-gxcz/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5517876/python-s-java-scala-rust-elegant-short-o-dfbs/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/6651405/easy-peasy-o1-bit-manipulation-by-lucife-dk1x/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5508964/detailed-explanation-100-beats-by-muhamm-kmos/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5509530/simple-java-code-by-abhinandannaik1717-ctuq/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5849133/java-beats-100-user-in-java-by-shubhash_-t1v4/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5509101/java-solution-by-harsh__005-f7k0/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5518775/using-string-java-soln-not-used-bits-by-frnhi/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5511292/beats-100-beginner-friendly-easy-approac-98ck/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5509586/javasol-for-beginner-by-kdhyani2000-x5p8/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5511648/simple-array-approach-beats-100-in-time-czy6y/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5511623/string-array-logic-beats-100-in-time-and-3i9p/;;https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/solutions/5509247/java-explained-solution-by-gaurav621-f2vo/;;;=;==;=;=;

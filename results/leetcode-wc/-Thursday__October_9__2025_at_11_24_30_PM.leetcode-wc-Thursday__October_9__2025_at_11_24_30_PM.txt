@@ -1,0 +1,29 @@
+1151. Minimum Swaps to Group All 1's Together;=;=Medium;=;=public int minSwaps(int[] data);=;=Given a binary array data, return the minimum number of swaps required to group all 1’s present in the array together in any place in the array.
+
+ 
+
+Example 1:
+
+Input: data = [1,0,1,0,1]
+Output: 1
+Explanation: There are 3 ways to group all 1's together:
+[1,1,1,0,0] using 1 swap.
+[0,1,1,1,0] using 2 swaps.
+[0,0,1,1,1] using 1 swap.
+The minimum is 1.
+Example 2:
+
+Input: data = [0,0,0,1,0]
+Output: 0
+Explanation: Since there is only one 1 in the array, no swaps are needed.
+Example 3:
+
+Input: data = [1,0,1,0,1,0,0,1,1,0,1]
+Output: 3
+Explanation: One possible solution that uses 3 swaps is [0,0,0,0,0,1,1,1,1,1,1].
+ 
+
+Constraints:
+
+1 <= data.length <= 105
+data[i] is either 0 or 1.;=;=https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6480266/beats-100-simple-solution-readable-by-ap-012y/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6246965/java-clean-code-with-comments-and-very-e-h789/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/502379/java-sliding-window-approach-very-easy-t-tqhs/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/1657109/java-easy-to-understand-with-comments-in-v6aw/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6502356/java-sliding-fixed-window-cnt-of-1-is-fi-x2rj/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/370662/java-beats-100-clean-code-easy-to-unders-qg94/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6481941/simple-sliding-window-on-const-space-exp-ldqm/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6479577/sliding-window-by-wxs2204-3pjj/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/7025809/simple-sliding-window-solutiontc-onsc-o1-jqza/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/7112175/java-solution-sliding-window-by-ndsjqwbb-tgkv/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6503135/java-sliding-window-by-rssundarster-ma2a/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6376045/sliding-window-java-solution-by-user5849-92rm/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6620233/0ms-sliding-window-solution-by-leetcodet-jmpt/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6483028/java-on-sliding-windo-by-dmgcodevil-2cjt/;;https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/solutions/6479179/java-solution-using-sliding-window-by-ad-72sl/;;;=;==;=;=;

@@ -1,0 +1,28 @@
+1433. Check If a String Can Break Another String;=;=Medium;=;=public boolean checkIfCanBreak(String s1, String s2);=;=Given two strings: s1 and s2 with the same size, check if some permutation of string s1 can break some permutation of string s2 or vice-versa. In other words s2 can break s1 or vice-versa.
+
+A string x can break string y (both of size n) if x[i] >= y[i] (in alphabetical order) for all i between 0 and n-1.
+
+ 
+
+Example 1:
+
+Input: s1 = "abc", s2 = "xya"
+Output: true
+Explanation: "ayx" is a permutation of s2="xya" which can break to string "abc" which is a permutation of s1="abc".
+Example 2:
+
+Input: s1 = "abe", s2 = "acd"
+Output: false 
+Explanation: All permutations for s1="abe" are: "abe", "aeb", "bae", "bea", "eab" and "eba" and all permutation for s2="acd" are: "acd", "adc", "cad", "cda", "dac" and "dca". However, there is not any permutation from s1 which can break some permutation from s2 and vice-versa.
+Example 3:
+
+Input: s1 = "leetcodee", s2 = "interview"
+Output: true
+ 
+
+Constraints:
+
+s1.length == n
+s2.length == n
+1 <= n <= 10^5
+All strings consist of lowercase English letters.;=;=https://leetcode.com/problems/check-if-a-string-can-break-another-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/6977293/easy-java-solution-by-rajdeep001-eot7/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/623007/java-onlogn-easy-sorting-and-loop-by-mou-xy9u/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/2961837/java-brief-solution-by-tbekpro-ssnp/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/4980835/simple-java-solution-by-sumo25-x3z0/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/4962995/simple-java-solution-in-on-time-beats-93-tr21/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/1408326/java-ono1-by-counting-characters-by-soni-aopz/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/867546/java-2-easy-solutions-with-sorting-onlog-hzxw/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/2387103/java-simple-solution-by-aditya001-6y33/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/2291390/simple-easy-java-solution-by-saurabh_173-7thg/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/874654/my-java-solution-with-sorting-and-withou-mav6/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/6696248/java-code-by-riya0106-814o/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/609102/java-count-the-number-of-characters-6ms-3fw3x/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/2350371/easy-java-solution-tc-onlogn-by-ritabrat-vfhi/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/7108988/simple-clean-code-sort-and-compare-by-ge-23zc/;;https://leetcode.com/problems/check-if-a-string-can-break-another-string/solutions/6775188/simple-easy-to-understand-by-sanjay_v_p-dfxi/;;;=;==;=;=;

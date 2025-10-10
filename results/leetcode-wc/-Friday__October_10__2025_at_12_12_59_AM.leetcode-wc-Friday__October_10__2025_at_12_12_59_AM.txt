@@ -1,0 +1,64 @@
+3703. Remove K-Balanced Substrings;=;=Medium;=;=public String removeSubstring(String s, int k);=;=You are given a string s consisting of '(' and ')', and an integer k.
+
+A string is k-balanced if it is exactly k consecutive '(' followed by k consecutive ')', i.e., '(' * k + ')' * k.
+
+For example, if k = 3, k-balanced is "((()))".
+
+You must repeatedly remove all non-overlapping k-balanced substrings from s, and then join the remaining parts. Continue this process until no k-balanced substring exists.
+
+Return the final string after all possible removals.
+
+ 
+
+???????Example 1:
+
+Input: s = "(())", k = 1
+
+Output: ""
+
+Explanation:
+
+k-balanced substring is "()"
+
+Step	Current s	k-balanced	Result s
+1	(())	(())	()
+2	()	()	Empty
+Thus, the final string is "".
+
+Example 2:
+
+Input: s = "(()(", k = 1
+
+Output: "(("
+
+Explanation:
+
+k-balanced substring is "()"
+
+Step	Current s	k-balanced	Result s
+1	(()(	(()(	((
+2	((	-	((
+Thus, the final string is "((".
+
+Example 3:
+
+Input: s = "((()))()()()", k = 3
+
+Output: "()()()"
+
+Explanation:
+
+k-balanced substring is "((()))"
+
+Step	Current s	k-balanced	Result s
+1	((()))()()()	((()))()()()	()()()
+2	()()()	-	()()()
+Thus, the final string is "()()()".
+
+ 
+
+Constraints:
+
+2 <= s.length <= 105
+s consists only of '(' and ')'.
+1 <= k <= s.length / 2;=;=https://leetcode.com/problems/remove-k-balanced-substrings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7250126/beats-100-most-easy-approach-by-michaelm-jwv9/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7250276/stack-counter-approach-for-k-pair-remova-wdy0/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7249510/simple-solution-by-fk3tv5uwka-teod/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7249665/efficient-k-balanced-substring-removal-o-5fxg/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7249555/beginner-friendly-approach-beats-100-jav-rdiq/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7250137/easy-java-maintain-cnt-of-and-on-by-sart-booy/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7249525/java-beats-stack-by-_aman_varma-5qny/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7253647/only-stack-very-easy-java-c-by-viveksaha-tl14/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7251731/easy-and-intutive-by-aridcumin-jjho/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7251709/easy-solution-in-java-by-kumarakash-3h59/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7251099/stack-counting-segment-100-beats-java-so-jzu8/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7250020/from-tle-to-on-easy-java-solution-remove-6zx0/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7249831/java-easy-15-lines-of-code-explained-app-yt4c/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7249794/beats-100-stack-fully-explained-code-jav-g6qd/;;https://leetcode.com/problems/remove-k-balanced-substrings/solutions/7249566/java-solution-stack-solution-counting-ba-dswx/;;;=;==;=;=;

@@ -1,0 +1,55 @@
+3468. Find the Number of Copy Arrays;=;=Medium;=;=public int countArrays(int[] original, int[][] bounds);=;=You are given an array original of length n and a 2D array bounds of length n x 2, where bounds[i] = [ui, vi].
+
+You need to find the number of possible arrays copy of length n such that:
+
+(copy[i] - copy[i - 1]) == (original[i] - original[i - 1]) for 1 <= i <= n - 1.
+ui <= copy[i] <= vi for 0 <= i <= n - 1.
+Return the number of such arrays.
+
+ 
+
+Example 1:
+
+Input: original = [1,2,3,4], bounds = [[1,2],[2,3],[3,4],[4,5]]
+
+Output: 2
+
+Explanation:
+
+The possible arrays are:
+
+[1, 2, 3, 4]
+[2, 3, 4, 5]
+Example 2:
+
+Input: original = [1,2,3,4], bounds = [[1,10],[2,9],[3,8],[4,7]]
+
+Output: 4
+
+Explanation:
+
+The possible arrays are:
+
+[1, 2, 3, 4]
+[2, 3, 4, 5]
+[3, 4, 5, 6]
+[4, 5, 6, 7]
+Example 3:
+
+Input: original = [1,2,1,2], bounds = [[1,1],[2,3],[3,3],[2,3]]
+
+Output: 0
+
+Explanation:
+
+No array is possible.
+
+ 
+
+Constraints:
+
+2 <= n == original.length <= 105
+1 <= original[i] <= 109
+bounds.length == n
+bounds[i].length == 2
+1 <= bounds[i][0] <= bounds[i][1] <= 109;=;=https://leetcode.com/problems/find-the-number-of-copy-arrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482086/check-all-three-possible-picks-dp-with-m-m4t8/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482076/python-java-elegant-short-on-greedy-by-k-kvb0/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482117/easy-simple-on-greedy-range-updates-by-s-4b2s/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482070/find-the-number-of-copy-arrays-by-kinglo-in95/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482213/easy-to-understand-on-tc-o1-sc-pythonjav-hy8b/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6485089/beats-100-runtime-100-memoery-java-optim-dmas/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482306/easy-java-solution-beats-100-of-java-use-pxt9/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482293/easy-100-beatsexplain-for-beginners-java-jdjw/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482645/difference-of-possible-interval-optimal-5i231/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482148/intesection-of-all-bounds-on-by-ankith_k-y5lf/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6483386/java-explanation-with-diagrams-by-malygi-el0d/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482107/simple-solution-on-min-and-max-at-each-l-62tz/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482916/binary-search-and-prefix-sum-by-kushal-r-2x0t/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6486453/java-intersection-time-on-space-o1-by-zh-3b0c/;;https://leetcode.com/problems/find-the-number-of-copy-arrays/solutions/6482813/common-interval-by-akash_sonar-w8gd/;;;=;==;=;=;

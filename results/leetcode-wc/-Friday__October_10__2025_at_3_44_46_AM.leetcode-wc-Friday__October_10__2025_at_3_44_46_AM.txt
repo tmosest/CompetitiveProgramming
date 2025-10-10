@@ -1,0 +1,32 @@
+2426. Number of Pairs Satisfying Inequality;=;=Hard;=;=publicÊlongÊnumberOfPairs(int[]Ênums1,Êint[]Ênums2,ÊintÊdiff);=;=You are given two 0-indexed integer arrays nums1 and nums2, each of size n, and an integer diff. Find the number of pairs (i, j) such that:
+
+0 <= i < j <= n - 1 and
+nums1[i] - nums1[j] <= nums2[i] - nums2[j] + diff.
+Return the number of pairs that satisfy the conditions.
+
+Ê
+
+Example 1:
+
+Input: nums1 = [3,2,5], nums2 = [2,2,1], diff = 1
+Output: 3
+Explanation:
+There are 3 pairs that satisfy the conditions:
+1. i = 0, j = 1: 3 - 2 <= 2 - 2 + 1. Since i < j and 1 <= 1, this pair satisfies the conditions.
+2. i = 0, j = 2: 3 - 5 <= 2 - 1 + 1. Since i < j and -2 <= 2, this pair satisfies the conditions.
+3. i = 1, j = 2: 2 - 5 <= 2 - 1 + 1. Since i < j and -3 <= 2, this pair satisfies the conditions.
+Therefore, we return 3.
+Example 2:
+
+Input: nums1 = [3,-1], nums2 = [-2,2], diff = -1
+Output: 0
+Explanation:
+Since there does not exist any pair that satisfies the conditions, we return 0.
+Ê
+
+Constraints:
+
+n == nums1.length == nums2.length
+2 <= n <= 105
+-104 <= nums1[i], nums2[i] <= 104
+-104 <= diff <= 104;=;=https://leetcode.com/problems/number-of-pairs-satisfying-inequality/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/7232155/video-easy-to-understand-segment-tree-on-d8be/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/2648104/2-onlogn-solutions-merge-sort-bit-java-b-eun5/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/3369458/detailed-explanation-3-approaches-merge-pcic1/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/2646498/cpythonjava-binary-indexed-tree-with-exp-12pu/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/6397562/using-sorted-arraylist-very-easy-by-arna-8sqm/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/2647226/java-by-kotechahitesh892528-0x5c/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/2652366/java-easy-by-varlou-f01f/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/2646691/how-to-maintain-a-sorted-set-in-java-hel-i2xv/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/7032267/simple-java-solution-by-amit_sawant-y71q/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/6684347/binary-search-segmented-tree-onlogn-by-m-j8d2/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/6657190/2426-number-of-pairs-satisfying-inequali-tn9y/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/6042205/java-using-segmenttree-by-zanhd-jkp6/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/5936090/divide-and-conquer-binary-search-by-abhi-m7m0/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/5864688/java-using-bst-by-shrek02-9eqx/;;https://leetcode.com/problems/number-of-pairs-satisfying-inequality/solutions/5055069/java-100-binary-indexed-tree-on-log-max-7mqz1/;;;=;==;=;=;

@@ -1,0 +1,38 @@
+3147. Taking Maximum Energy From the Mystic Dungeon;=;=Medium;=;=public int maximumEnergy(int[] energy, int k);=;=In a mystic dungeon, n magicians are standing in a line. Each magician has an attribute that gives you energy. Some magicians can give you negative energy, which means taking energy from you.
+
+You have been cursed in such a way that after absorbing energy from magician i, you will be instantly transported to magician (i + k). This process will be repeated until you reach the magician where (i + k) does not exist.
+
+In other words, you will choose a starting point and then teleport with k jumps until you reach the end of the magicians' sequence, absorbing all the energy during the journey.
+
+You are given an array energy and an integer k. Return the maximum possible energy you can gain.
+
+Note that when you are reach a magician, you must take energy from them, whether it is negative or positive energy.
+
+ 
+
+Example 1:
+
+Input: energy = [5,2,-10,-5,1], k = 3
+
+Output: 3
+
+Explanation: We can gain a total energy of 3 by starting from magician 1 absorbing 2 + 1 = 3.
+
+Example 2:
+
+Input: energy = [-2,-3,-1], k = 2
+
+Output: -1
+
+Explanation: We can gain a total energy of -1 by starting from magician 2.
+
+ 
+
+Constraints:
+
+1 <= energy.length <= 105
+-1000 <= energy[i] <= 1000
+1 <= k <= energy.length - 1
+ 
+
+??????;=;=https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/description/?envType=daily-question&envId=2025-10-10;=;=https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5145897/fastest-100-easy-to-understand-iterative-shkc/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5145583/two-pass-by-fahad06-sslq/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/7141783/code-explanation-understanding-on-pass-o-fnux/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5145723/javacpython-dp-by-lee215-ecsu/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5145614/simple-java-solution-by-siddhant_1602-5vjp/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5145835/the-best-explanationbeats-100-users-by-h-rkok/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5146176/single-pass-dynamic-programming-easy-4-l-5lmi/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5145976/java-solution-beats-100-by-hksuryan-f8bj/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/7262848/easiest-most-efficient-dp-pythonjava-by-sdc58/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/7262845/java-easy-to-understand-kadanes-algorith-tdhy/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5145990/backward-dp-by-deleted_user-a31h/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5145661/java-solution-by-harsh__005-28kz/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5823727/simple-prefix-sum-by-harish_hk-9e2a/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5146966/sequence-idea-simple-java-solution-beats-fa1o/;;https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/5149044/100-faster-in-both-time-complexity-and-s-0a68/;;;=;==;=;=;

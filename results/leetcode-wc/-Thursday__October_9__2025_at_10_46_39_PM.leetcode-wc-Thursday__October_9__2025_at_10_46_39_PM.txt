@@ -1,0 +1,35 @@
+1553. Minimum Number of Days to Eat N Oranges;=;=Hard;=;=public int minDays(int n);=;=There are n oranges in the kitchen and you decided to eat some of these oranges every day as follows:
+
+Eat one orange.
+If the number of remaining oranges n is divisible by 2 then you can eat n / 2 oranges.
+If the number of remaining oranges n is divisible by 3 then you can eat 2 * (n / 3) oranges.
+You can only choose one of the actions per day.
+
+Given the integer n, return the minimum number of days to eat n oranges.
+
+ 
+
+Example 1:
+
+Input: n = 10
+Output: 4
+Explanation: You have 10 oranges.
+Day 1: Eat 1 orange,  10 - 1 = 9.  
+Day 2: Eat 6 oranges, 9 - 2*(9/3) = 9 - 6 = 3. (Since 9 is divisible by 3)
+Day 3: Eat 2 oranges, 3 - 2*(3/3) = 3 - 2 = 1. 
+Day 4: Eat the last orange  1 - 1  = 0.
+You need at least 4 days to eat the 10 oranges.
+Example 2:
+
+Input: n = 6
+Output: 3
+Explanation: You have 6 oranges.
+Day 1: Eat 3 oranges, 6 - 6/2 = 6 - 3 = 3. (Since 6 is divisible by 2).
+Day 2: Eat 2 oranges, 3 - 2*(3/3) = 3 - 2 = 1. (Since 3 is divisible by 3)
+Day 3: Eat the last orange  1 - 1  = 0.
+You need at least 3 days to eat the 6 oranges.
+ 
+
+Constraints:
+
+1 <= n <= 2 * 109;=;=https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/794351/java-olog2n-beats-100-time-with-explanat-vpj6/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/6885447/5-line-solution-brute-force-no-dp-needed-o4zd/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/794203/java-bfs-short-solution-with-set-by-svis-ydo2/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/4022404/java-simple-solutionrecursion-to-memoiza-tqi3/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/4197140/easy-java-solution-dynamic-programming-b-ai2u/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/794174/java-bfs-solution-with-hashset-by-bajru-eged/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/3002377/simple-solution-using-hashmap-dfs-by-ren-trks/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/2100965/java-solution-using-hash-maps-by-aayushk-lbue/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/1237240/java-naive-bfs-solution-by-xieyun95-tyop/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/795672/java-solution-using-bfs-by-pgngp-0l27/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/794677/java-solution-top-down-dp-by-satvik-a3v6/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/5994300/beats-10000-in-java-by-hassam_472-6qzj/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/5813093/easy-peasy-dp-solution-which-is-better-t-d08n/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/5735298/minimum-number-of-days-to-eat-n-oranges-c9v6s/;;https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/solutions/5283068/dp-recursion-memoization-clean-code-by-a-qotk/;;;=;==;=;=;

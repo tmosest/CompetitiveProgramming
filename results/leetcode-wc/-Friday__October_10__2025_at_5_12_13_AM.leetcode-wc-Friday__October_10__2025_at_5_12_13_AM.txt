@@ -1,0 +1,22 @@
+164. Maximum Gap;=;=Medium;=;=public int maximumGap(int[] nums);=;=Given an integer array nums, return the maximum difference between two successive elements in its sorted form. If the array contains less than two elements, return 0.
+
+You must write an algorithm that runs in linear time and uses linear extra space.
+
+ 
+
+Example 1:
+
+Input: nums = [3,6,9,1]
+Output: 3
+Explanation: The sorted form of the array is [1,3,6,9], either (3,6) or (6,9) has the maximum difference 3.
+Example 2:
+
+Input: nums = [10]
+Output: 0
+Explanation: The array contains less than 2 elements, therefore return 0.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 109;=;=https://leetcode.com/problems/maximum-gap/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-gap/solutions/1240838/js-python-java-c-simple-bucket-sort-solu-ws5s/;;https://leetcode.com/problems/maximum-gap/solutions/7204556/maximum-gap-arrays-sorting-medium-by-yat-xz88/;;https://leetcode.com/problems/maximum-gap/solutions/7192002/easy-code-for-solve-this-problem-by-4_k4-wu96/;;https://leetcode.com/problems/maximum-gap/solutions/7162549/maximum-gap-beginner-friendly-sorting-in-kzys/;;https://leetcode.com/problems/maximum-gap/solutions/50642/radix-sort-solution-in-java-with-explana-m003/;;https://leetcode.com/problems/maximum-gap/solutions/7149967/easy-code-in-java-by-aesdtfg-4bdf/;;https://leetcode.com/problems/maximum-gap/solutions/3908856/javapython3-explanation-code-brute-force-l90h/;;https://leetcode.com/problems/maximum-gap/solutions/7064898/easy-solution-in-java-using-heap-structu-18tl/;;https://leetcode.com/problems/maximum-gap/solutions/5701690/solution-by-dare2solve-detailed-explanat-3e73/;;https://leetcode.com/problems/maximum-gap/solutions/7040581/find-maximum-gappriorityqueue-by-abayev_-5j4c/;;https://leetcode.com/problems/maximum-gap/solutions/6534702/simple-java-code-by-adityaralhan-r0is/;;https://leetcode.com/problems/maximum-gap/solutions/6966655/a-simple-solution-for-maximum-gapjavabea-lq6w/;;https://leetcode.com/problems/maximum-gap/solutions/4469117/easy-solution-with-7-lines-of-code-runs-thnj9/;;https://leetcode.com/problems/maximum-gap/solutions/6754262/mind-the-gap-java-by-manjunadhbhavaraju-h3hb/;;https://leetcode.com/problems/maximum-gap/solutions/5803549/easy-and-simple-java-program-by-saiswaro-ttya/;;;=;==;=;=;

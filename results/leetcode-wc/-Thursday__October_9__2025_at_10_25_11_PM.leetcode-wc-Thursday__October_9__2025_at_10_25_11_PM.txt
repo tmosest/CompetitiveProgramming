@@ -1,0 +1,34 @@
+818. Race Car;=;=Hard;=;=publicÊintÊracecar(intÊtarget);=;=Your car starts at position 0 and speed +1 on an infinite number line. Your car can go into negative positions. Your car drives automatically according to a sequence of instructions 'A' (accelerate) and 'R' (reverse):
+
+When you get an instruction 'A', your car does the following:
+position += speed
+speed *= 2
+When you get an instruction 'R', your car does the following:
+If your speed is positive then speed = -1
+otherwise speed = 1
+Your position stays the same.
+For example, after commands "AAR", your car goes to positions 0 --> 1 --> 3 --> 3, and your speed goes to 1 --> 2 --> 4 --> -1.
+
+Given a target position target, return the length of the shortest sequence of instructions to get there.
+
+Ê
+
+Example 1:
+
+Input: target = 3
+Output: 2
+Explanation: 
+The shortest instruction sequence is "AA".
+Your position goes from 0 --> 1 --> 3.
+Example 2:
+
+Input: target = 6
+Output: 5
+Explanation: 
+The shortest instruction sequence is "AAARA".
+Your position goes from 0 --> 1 --> 3 --> 7 --> 7 --> 6.
+Ê
+
+Constraints:
+
+1 <= target <= 104;=;=https://leetcode.com/problems/race-car/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/race-car/solutions/2722348/super-easy-to-understand-bfs-java-soluti-46tj/;;https://leetcode.com/problems/race-car/solutions/7001838/bfs-solution-by-piyusha_7-w10s/;;https://leetcode.com/problems/race-car/solutions/6950404/top-down-dynamic-programming-with-memoiz-z801/;;https://leetcode.com/problems/race-car/solutions/4584587/unique-solution-probably-on-change-my-mi-eer3/;;https://leetcode.com/problems/race-car/solutions/1786951/java-bfs-solution-by-coding404_1-04pr/;;https://leetcode.com/problems/race-car/solutions/2075150/java-bfs-approach-comments-written-for-u-bthp/;;https://leetcode.com/problems/race-car/solutions/7263270/java-solution-bfs-tc-onlogn-sc-onlogn-by-7hrg/;;https://leetcode.com/problems/race-car/solutions/2394124/java-easy-bfs-beats-80-by-marzieh401-ggub/;;https://leetcode.com/problems/race-car/solutions/2000413/java-dp-solution-explanation-in-comments-297r/;;https://leetcode.com/problems/race-car/solutions/6191334/java-dp-solution-with-description-by-cha-vsbx/;;https://leetcode.com/problems/race-car/solutions/2601574/java-bfs-easy-to-understand-by-dpkk01-rlxp/;;https://leetcode.com/problems/race-car/solutions/2958154/java-100-discussed-dp-and-bfs-intuition-j6kd6/;;https://leetcode.com/problems/race-car/solutions/3481551/solution-by-deleted_user-2jm5/;;https://leetcode.com/problems/race-car/solutions/5455498/java-dp-solution-beats-9833-by-vinaycheg-6pyg/;;https://leetcode.com/problems/race-car/solutions/2492133/simple-java-solution-using-bfs-with-logn-b8y3/;;;=;==;=;=;

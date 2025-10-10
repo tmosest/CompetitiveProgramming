@@ -1,0 +1,36 @@
+1979. Find Greatest Common Divisor of Array;=;=Easy;=;=public int findGCD(int[] nums);=;=Given an integer array nums, return the greatest common divisor of the smallest number and largest number in nums.
+
+The greatest common divisor of two numbers is the largest positive integer that evenly divides both numbers.
+
+ 
+
+Example 1:
+
+Input: nums = [2,5,6,9,10]
+Output: 2
+Explanation:
+The smallest number in nums is 2.
+The largest number in nums is 10.
+The greatest common divisor of 2 and 10 is 2.
+Example 2:
+
+Input: nums = [7,5,6,8,3]
+Output: 1
+Explanation:
+The smallest number in nums is 3.
+The largest number in nums is 8.
+The greatest common divisor of 3 and 8 is 1.
+Example 3:
+
+Input: nums = [3,3]
+Output: 3
+Explanation:
+The smallest number in nums is 3.
+The largest number in nums is 3.
+The greatest common divisor of 3 and 3 is 3.
+ 
+
+Constraints:
+
+2 <= nums.length <= 1000
+1 <= nums[i] <= 1000;=;=https://leetcode.com/problems/find-greatest-common-divisor-of-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/7135618/java-solution-for-gcd-of-smallest-and-la-ms32/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/7234077/simple-approach-by-i_am_groot_2k-mqge/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/7223207/beat-100-simple-euclidean-approach-gcd-o-j12g/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/6284690/beginner-friendly-solution-in-java-with-czkkh/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/7157592/java-solution-beats-100-proof-concise-co-qql8/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/7194947/easy-code-for-beginners-and-understandab-wjgd/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/1419750/java-c-solution-using-euclidean-algorith-b1y9/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/7126585/beats-100-gcd-of-number-euclids-algorith-49ih/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/7102933/beginner-friendly-java-code-beats-100-0m-rcy2/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/7062267/simplest-java-solution-by-arshiya1731-fn4h/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/6766744/java-solution-using-inbuild-gcd-function-vtx8/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/7001969/beats-100-by-recursion-java-by-pushpraj_-yrsl/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/6967249/find-greatest-common-divisor-of-array-mi-p62a/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/6949794/find-gcd-of-array-simple-java-solution-b-f88x/;;https://leetcode.com/problems/find-greatest-common-divisor-of-array/solutions/5598685/easy-to-understand-solution-by-pratik_pa-5lo9/;;;=;==;=;=;

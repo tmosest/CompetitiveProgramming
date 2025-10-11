@@ -1,0 +1,38 @@
+3186. Maximum Total Damage With Spell Casting;=;=Medium;=;=public:    vector<long long> minimumRelativeLosses(vector<int>& prices, vector<vector<int>>& queries)         sort(prices.begin(), prices.end());        const int n = prices.size();        vector<long long> sum(n + 1);        for (int i = 1; i <= n; ++i)             sum[i] = sum[i - 1] + prices[i - 1];                const int m = queries.size();        vector<int> ind(m);        for (int i = 0; i < m; ++i)             ind[i] = i;;=;=A magician has various spells.
+
+You are given an array power, where each element represents the damage of a spell. Multiple spells can have the same damage value.
+
+It is a known fact that if a magician decides to cast a spell with a damage of power[i], they cannot cast any spell with a damage of power[i] - 2, power[i] - 1, power[i] + 1, or power[i] + 2.
+
+Each spell can be cast only once.
+
+Return the maximum possible total damage that a magician can cast.
+
+ 
+
+Example 1:
+
+Input: power = [1,1,3,4]
+
+Output: 6
+
+Explanation:
+
+The maximum possible damage of 6 is produced by casting spells 0, 1, 3 with damage 1, 1, 4.
+
+Example 2:
+
+Input: power = [7,1,6,6]
+
+Output: 13
+
+Explanation:
+
+The maximum possible damage of 13 is produced by casting spells 1, 2, 3 with damage 1, 6, 6.
+
+ 
+
+Constraints:
+
+1 <= power.length <= 105
+1 <= power[i] <= 109;=;=https://leetcode.com/problems/maximum-total-damage-with-spell-casting/description/?envType=daily-question&envId=2025-10-11;=;=https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265510/maximum-total-damage-w-spell-casting-mos-n3hx/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7266123/you-dont-understand-youll-understand-now-xtxx/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265528/max-damage-strategy-smart-dp-solution-su-u7sv/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265663/nahi-bana-aao-step-by-step-dekherecursiv-f84c/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7266756/easiest-java-code-by-05ewasuouk-b6bm/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265660/252ms-beats-10000-easy-approach-and-step-ilxg/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265568/youtube-video-java-python-simple-problem-fbu3/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265940/beats-100-rolling-dp-with-2-conflict-han-5zzt/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265753/simple-recursion-memoization-dp-binary-s-gi1x/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7266304/100-medium-problem-with-easy-approach-wi-ilbx/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265755/dp-use-binary-search-to-optimize-tc-by-w-diwi/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265691/java-recursive-memoization-and-iterative-rjoi/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7265606/maximum-total-damage-dynamic-programming-y1ae/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7264485/beginner-friend-dp-solution-with-hack-wa-yj9v/;;https://leetcode.com/problems/maximum-total-damage-with-spell-casting/solutions/7266963/dynamic-programming-with-binary-search-a-yr3t/;;;=;==;=;=;

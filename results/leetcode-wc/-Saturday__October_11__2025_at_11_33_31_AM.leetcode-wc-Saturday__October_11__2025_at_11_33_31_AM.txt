@@ -1,0 +1,21 @@
+1134. Armstrong Number;=;=Easy;=;=public boolean isArmstrong(int n);=;=Given an integer n, return true if and only if it is an Armstrong number.
+
+The k-digit number n is an Armstrong number if and only if the kth power of each digit sums to n.
+
+ 
+
+Example 1:
+
+Input: n = 153
+Output: true
+Explanation: 153 is a 3-digit number, and 153 = 13 + 53 + 33.
+Example 2:
+
+Input: n = 123
+Output: false
+Explanation: 123 is a 3-digit number, and 123 != 13 + 23 + 33 = 36.
+ 
+
+Constraints:
+
+1 <= n <= 108;=;=https://leetcode.com/problems/armstrong-number/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/armstrong-number/solutions/407604/java-100100-w-comments-by-carti-oyiy/;;https://leetcode.com/problems/armstrong-number/solutions/3252546/java-easy-soln-by-vj_77-py8i/;;https://leetcode.com/problems/armstrong-number/solutions/5819059/logn-beats-100-java-solution-by-yashvigu-sqsu/;;https://leetcode.com/problems/armstrong-number/solutions/641927/olog-n-time-o1-space-java-solution-by-ed-q3u8/;;https://leetcode.com/problems/armstrong-number/solutions/6709146/armstrong-number-beats-100-of-solutions-1yglz/;;https://leetcode.com/problems/armstrong-number/solutions/6784579/100-by-imahgref-wkit/;;https://leetcode.com/problems/armstrong-number/solutions/6276464/easy-to-understand-java-solution-by-beng-u9jq/;;https://leetcode.com/problems/armstrong-number/solutions/5862078/simple-olog10n-solution-by-koraykara-qpti/;;https://leetcode.com/problems/armstrong-number/solutions/5313057/easy-java-solution-beats-100-ologn-by-qu-ntxd/;;https://leetcode.com/problems/armstrong-number/solutions/6266735/java-javascript-typescript-c-c-kotlin-go-brhg/;;https://leetcode.com/problems/armstrong-number/solutions/6035147/by-using-math-inbuilt-library-by-lydiav0-szc7/;;https://leetcode.com/problems/armstrong-number/solutions/5203060/java-without-using-any-built-in-function-aod5/;;https://leetcode.com/problems/armstrong-number/solutions/4984850/java-beginner-approach-by-thilak654-r1t6/;;https://leetcode.com/problems/armstrong-number/solutions/4940358/java-easy-100-solution-by-ytchouar-isr6/;;https://leetcode.com/problems/armstrong-number/solutions/4689361/easy-java-solution-by-tar_9897-18bq/;;;=;==;=;=;

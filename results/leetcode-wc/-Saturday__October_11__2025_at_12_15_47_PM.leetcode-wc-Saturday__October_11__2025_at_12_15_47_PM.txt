@@ -1,0 +1,59 @@
+1172. Dinner Plate Stacks;=;=Hard;=;=DinnerPlates     public DinnerPlates(int capacity)                     public void push(int val)                     public int pop();=;=You have an infinite number of stacks arranged in a row and numbered (left to right) from 0, each of the stacks has the same maximum capacity.
+
+Implement the DinnerPlates class:
+
+DinnerPlates(int capacity) Initializes the object with the maximum capacity of the stacks capacity.
+void push(int val) Pushes the given integer val into the leftmost stack with a size less than capacity.
+int pop() Returns the value at the top of the rightmost non-empty stack and removes it from that stack, and returns -1 if all the stacks are empty.
+int popAtStack(int index) Returns the value at the top of the stack with the given index index and removes it from that stack or returns -1 if the stack with that given index is empty.
+ 
+
+Example 1:
+
+Input
+["DinnerPlates", "push", "push", "push", "push", "push", "popAtStack", "push", "push", "popAtStack", "popAtStack", "pop", "pop", "pop", "pop", "pop"]
+[[2], [1], [2], [3], [4], [5], [0], [20], [21], [0], [2], [], [], [], [], []]
+Output
+[null, null, null, null, null, null, 2, null, null, 20, 21, 5, 4, 3, 1, -1]
+
+Explanation: 
+DinnerPlates D = DinnerPlates(2);  // Initialize with capacity = 2
+D.push(1);
+D.push(2);
+D.push(3);
+D.push(4);
+D.push(5);         // The stacks are now:  2  4
+                                           1  3  5
+                                           ? ? ?
+D.popAtStack(0);   // Returns 2.  The stacks are now:     4
+                                                       1  3  5
+                                                       ? ? ?
+D.push(20);        // The stacks are now: 20  4
+                                           1  3  5
+                                           ? ? ?
+D.push(21);        // The stacks are now: 20  4 21
+                                           1  3  5
+                                           ? ? ?
+D.popAtStack(0);   // Returns 20.  The stacks are now:     4 21
+                                                        1  3  5
+                                                        ? ? ?
+D.popAtStack(2);   // Returns 21.  The stacks are now:     4
+                                                        1  3  5
+                                                        ? ? ? 
+D.pop()            // Returns 5.  The stacks are now:      4
+                                                        1  3 
+                                                        ? ?  
+D.pop()            // Returns 4.  The stacks are now:   1  3 
+                                                        ? ?   
+D.pop()            // Returns 3.  The stacks are now:   1 
+                                                        ?   
+D.pop()            // Returns 1.  There are no stacks.
+D.pop()            // Returns -1.  There are still no stacks.
+ 
+
+Constraints:
+
+1 <= capacity <= 2 * 104
+1 <= val <= 2 * 104
+0 <= index <= 105
+At most 2 * 105 calls will be made to push, pop, and popAtStack.;=;=https://leetcode.com/problems/dinner-plate-stacks/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/dinner-plate-stacks/solutions/1964851/java-beats-10000-memoryspeed-0ms-april-2-6aig/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/3051602/easy-java-solution-with-arraylist-and-tr-yloc/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/702594/java-treeset-arraylist-by-miyamura-l2up/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/1861976/java-with-comments-using-treeset-and-arr-imiv/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/625036/java-solution-using-liststack-and-priori-epqr/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/591896/java-faster-than-10000-with-my-own-stack-9z7t/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/367527/java-used-simple-double-array-by-gomoon-abn6/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/7093176/java-javascript-typescript-c-c-kotlin-go-x39z/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/6899242/very-simple-java-solution-by-drat-v3nc/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/6866477/java-priorityqueue-by-vivekrajapandian-tonv/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/6105540/java-using-monotonic-stack-by-ytchouar-e9qd/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/5820580/arraylisttreeset-by-pilani_pirate16-r3bx/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/5590937/dinner-plate-by-radhikathale13-qlht/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/5489497/java-list-of-stacks-priorityqueue-by-tha-jl5g/;;https://leetcode.com/problems/dinner-plate-stacks/solutions/4771776/simple-approach-by-ab__23-6yje/;;;=;==;=;=;

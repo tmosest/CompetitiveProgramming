@@ -1,0 +1,28 @@
+1146. Snapshot Array;=;=Medium;=;=SnapshotArray     public SnapshotArray(int length)                     public void set(int index, int val)                     public int snap();=;=Implement a SnapshotArray that supports the following interface:
+
+SnapshotArray(int length) initializes an array-like data structure with the given length. Initially, each element equals 0.
+void set(index, val) sets the element at the given index to be equal to val.
+int snap() takes a snapshot of the array and returns the snap_id: the total number of times we called snap() minus 1.
+int get(index, snap_id) returns the value at the given index, at the time we took the snapshot with the given snap_id
+ 
+
+Example 1:
+
+Input: ["SnapshotArray","set","snap","set","get"]
+[[3],[0,5],[],[0,6],[0,0]]
+Output: [null,null,0,null,5]
+Explanation: 
+SnapshotArray snapshotArr = new SnapshotArray(3); // set the length to be 3
+snapshotArr.set(0,5);  // Set array[0] = 5
+snapshotArr.snap();  // Take a snapshot, return snap_id = 0
+snapshotArr.set(0,6);
+snapshotArr.get(0,0);  // Get the value of array[0] with snap_id = 0, return 5
+ 
+
+Constraints:
+
+1 <= length <= 5 * 104
+0 <= index < length
+0 <= val <= 109
+0 <= snap_id < (the total number of times we call snap())
+At most 5 * 104 calls will be made to set, snap, and get.;=;=https://leetcode.com/problems/snapshot-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/snapshot-array/solutions/3623538/simple-java-c-python-easy-to-understand-k1adc/;;https://leetcode.com/problems/snapshot-array/solutions/350574/javapython-3-3-codes-w-analysis-store-di-2wml/;;https://leetcode.com/problems/snapshot-array/solutions/454280/java-list-and-map-explained-clean-beats-zfh76/;;https://leetcode.com/problems/snapshot-array/solutions/7074031/snapshot-array-versioned-array-with-hist-xj8o/;;https://leetcode.com/problems/snapshot-array/solutions/7033364/java-treemap-by-hopecheung-7ruk/;;https://leetcode.com/problems/snapshot-array/solutions/1032202/java-binary-search-without-treemap-by-ys-04ow/;;https://leetcode.com/problems/snapshot-array/solutions/3624495/simple-java-solution-using-hashmap-by-fo-qr64/;;https://leetcode.com/problems/snapshot-array/solutions/7241861/bisect-left-by-uday510-3oqd/;;https://leetcode.com/problems/snapshot-array/solutions/7228265/java-optimisations-while-setting-by-empe-54oj/;;https://leetcode.com/problems/snapshot-array/solutions/611220/java-hashmap-solution-optimal-concept-ex-zwo5/;;https://leetcode.com/problems/snapshot-array/solutions/3626862/java-treemap-10-lines-beats-95-clean-cod-3tpj/;;https://leetcode.com/problems/snapshot-array/solutions/5843800/java-easy-solution-by-pulkitdubey-g6ro/;;https://leetcode.com/problems/snapshot-array/solutions/1813871/java-3-solutions-binary-search-treemap-a-eoss/;;https://leetcode.com/problems/snapshot-array/solutions/3624443/snapshot-arrayjava-using-tree-map-easy-t-xzvv/;;https://leetcode.com/problems/snapshot-array/solutions/6126141/easy-to-understand-solution-using-list-b-ac0n/;;;=;==;=;=;

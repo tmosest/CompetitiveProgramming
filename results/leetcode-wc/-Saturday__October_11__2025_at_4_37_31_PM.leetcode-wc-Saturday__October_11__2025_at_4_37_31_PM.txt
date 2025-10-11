@@ -1,0 +1,38 @@
+699. Falling Squares;=;=Hard;=;=public List<Integer> fallingSquares(int[][] positions);=;=There are several squares being dropped onto the X-axis of a 2D plane.
+
+You are given a 2D integer array positions where positions[i] = [lefti, sideLengthi] represents the ith square with a side length of sideLengthi that is dropped with its left edge aligned with X-coordinate lefti.
+
+Each square is dropped one at a time from a height above any landed squares. It then falls downward (negative Y direction) until it either lands on the top side of another square or on the X-axis. A square brushing the left/right side of another square does not count as landing on it. Once it lands, it freezes in place and cannot be moved.
+
+After each square is dropped, you must record the height of the current tallest stack of squares.
+
+Return an integer array ans where ans[i] represents the height described above after dropping the ith square.
+
+ 
+
+Example 1:
+
+
+Input: positions = [[1,2],[2,3],[6,1]]
+Output: [2,5,5]
+Explanation:
+After the first drop, the tallest stack is square 1 with a height of 2.
+After the second drop, the tallest stack is squares 1 and 2 with a height of 5.
+After the third drop, the tallest stack is still squares 1 and 2 with a height of 5.
+Thus, we return an answer of [2, 5, 5].
+Example 2:
+
+Input: positions = [[100,100],[200,100]]
+Output: [100,100]
+Explanation:
+After the first drop, the tallest stack is square 1 with a height of 100.
+After the second drop, the tallest stack is either square 1 or square 2, both with heights of 100.
+Thus, we return an answer of [100, 100].
+Note that square 2 only brushes the right side of square 1, which does not count as landing on it.
+ 
+
+Constraints:
+
+1 <= positions.length <= 1000
+1 <= lefti <= 108
+1 <= sideLengthi <= 106;=;=https://leetcode.com/problems/falling-squares/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/falling-squares/solutions/108766/easy-understood-on2-solution-with-explan-us8x/;;https://leetcode.com/problems/falling-squares/solutions/7035564/java-solution-using-coordinate-compressi-yazi/;;https://leetcode.com/problems/falling-squares/solutions/495013/clean-and-concise-lazy-propagation-segme-kego/;;https://leetcode.com/problems/falling-squares/solutions/3437970/solution-by-deleted_user-wr9k/;;https://leetcode.com/problems/falling-squares/solutions/2785708/java-solutions-by-infox_92-zjpg/;;https://leetcode.com/problems/falling-squares/solutions/2952109/easy-java-solution-on2-by-sabrinakundu77-txfe/;;https://leetcode.com/problems/falling-squares/solutions/6973566/simple-dp-solution-by-arham121-cxtl/;;https://leetcode.com/problems/falling-squares/solutions/6200023/699-falling-squares-by-g8xd0qpqty-t5zj/;;https://leetcode.com/problems/falling-squares/solutions/5167672/java-5ms-100-fast-use-only-arrays-for-co-3wwv/;;https://leetcode.com/problems/falling-squares/solutions/4298826/solution-by-termot1-ivbm/;;https://leetcode.com/problems/falling-squares/solutions/4163431/java-discretizationsegment-tree-by-weill-6xvb/;;https://leetcode.com/problems/falling-squares/solutions/3931403/easiest-solution-by-kunal7216-jdcd/;;https://leetcode.com/problems/falling-squares/solutions/3708296/java-by-gadmo-k5xl/;;;=;==;=;=;

@@ -1,0 +1,29 @@
+1769. Minimum Number of Operations to Move All Balls to Each Box;=;=Medium;=;=public char repeatedCharacter(String s)         boolean[] seen = new boolean[26]; // for lowercase letters        for (char c : s.toCharArray())             if (seen[c - 'a'])                 return c; // first repeated character                        seen[c - 'a'] = true;                return '\0'; // if no repeated character is found (optional fallback);=;=You have n boxes. You are given a binary string boxes of length n, where boxes[i] is '0' if the ith box is empty, and '1' if it contains one ball.
+
+In one operation, you can move one ball from a box to an adjacent box. Box i is adjacent to box j if abs(i - j) == 1. Note that after doing so, there may be more than one ball in some boxes.
+
+Return an array answer of size n, where answer[i] is the minimum number of operations needed to move all the balls to the ith box.
+
+Each answer[i] is calculated considering the initial state of the boxes.
+
+ 
+
+Example 1:
+
+Input: boxes = "110"
+Output: [1,1,3]
+Explanation: The answer for each box is as follows:
+1) First box: you will have to move one ball from the second box to the first box in one operation.
+2) Second box: you will have to move one ball from the first box to the second box in one operation.
+3) Third box: you will have to move one ball from the first box to the third box in two operations, and move one ball from the second box to the third box in one operation.
+Example 2:
+
+Input: boxes = "001011"
+Output: [11,8,5,4,3,4]
+ 
+
+Constraints:
+
+n == boxes.length
+1 <= n <= 2000
+boxes[i] is either '0' or '1'.;=;=https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6236487/simple-prefix-suffix-detailed-expiation-cgypf/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6236466/straight-to-the-code-by-aim_high_212-4wh7/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/7238730/easy-to-understand-java-solution-brute-f-4k90/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6236713/beats-100-prefix-sum-array-solution-for-7okb2/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6237051/simple-and-easy-solution-beats-100-c-jav-z1pa/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6240367/easy-java-solution-beats-by-jeril-johnso-9lo8/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6236549/two-passes-on-c-python-java-by-not_yl3-y90f/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/1117526/java-100-faster-two-pass-with-explanatio-rulc/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6237347/java-on-by-avisinha-mjzr/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6237109/java-solution-for-minimum-number-of-oper-zhg3/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/7083611/easy-code-for-beginners-and-understandab-13k8/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6239859/worst-solution-i-wrote-in-my-whole-leetc-48ef/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6237371/faster-lesser-cpython3javacpythoncexplai-gz82/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6238500/prefix-sum-approach-explained-with-examp-cxgw/;;https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6609404/two-pass-prefix-calculation-3-ms-by-ds_s-end0/;;;=;==;=;=;

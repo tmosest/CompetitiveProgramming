@@ -1,0 +1,22 @@
+1796. Second Largest Digit in a String;=;=Easy;=;=public int secondHighest(String s);=;=Given an alphanumeric string s, return the second largest numerical digit that appears in s, or -1 if it does not exist.
+
+An alphanumeric string is a string consisting of lowercase English letters and digits.
+
+ 
+
+Example 1:
+
+Input: s = "dfa12321afd"
+Output: 2
+Explanation: The digits that appear in s are [1, 2, 3]. The second largest digit is 2.
+Example 2:
+
+Input: s = "abc1111"
+Output: -1
+Explanation: The digits that appear in s are [1]. There is no second largest digit. 
+ 
+
+Constraints:
+
+1 <= s.length <= 500
+s consists of only lowercase English letters and digits.;=;=https://leetcode.com/problems/second-largest-digit-in-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/6261663/beats-100-runtime-memory-very-easy-solut-31bo/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/7128515/easy-code-for-solve-this-problem-by-4_k4-i5zl/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/7079771/second-largest-digit-in-a-string-java-by-0u90/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/5823231/easy-to-understand-beginner-friendly-and-t7a5/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/7040498/second-largest-digit-in-a-string-using-j-86wv/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/1168765/java-easy-and-100-solution-using-just-tw-pkbu/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/7268816/java-solution-on-by-mihirshrestha4-g75c/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/7268802/java-solution-by-mihirshrestha4-k5vm/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/6026363/simple-ahh-solution-with-on-complexity-b-cr2k/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/1642413/java-bit-manipulation-beats-100-by-sanch-f1ex/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/1118905/easiest-solutions-java-timeon-and-spaceo-770d/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/6371988/easy-by-sairangineeni-fhx5/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/6264954/3ms-concise-code-java-beginner-freindly-928gh/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/7251901/java-solution-by-5odg8t7kha-m0ht/;;https://leetcode.com/problems/second-largest-digit-in-a-string/solutions/4735297/easy-c-c-java-solutions-beats-100-by-edw-8lew/;;;=;==;=;=;

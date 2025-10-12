@@ -1,0 +1,41 @@
+3424. Minimum Cost to Make Arrays Identical;=;=Medium;=;=public long minCost(int[] a, int[] b, long k)         long res1 = 0, res2 = 0;        for (int i = 0; i < a.length; ++i)             res1 += Math.abs(a[i] - b[i]);                Arrays.sort(a);        Arrays.sort(b);        for (int i = 0; i < a.length; ++i)             res2 += Math.abs(a[i] - b[i]);                return Math.min(res1, res2 + k);;=;=You are given two integer arrays arr and brr of length n, and an integer k. You can perform the following operations on arr any number of times:
+
+Split arr into any number of contiguous subarrays and rearrange these subarrays in any order. This operation has a fixed cost of k.
+Choose any element in arr and add or subtract a positive integer x to it. The cost of this operation is x.
+
+Return the minimum total cost to make arr equal to brr.
+
+ 
+
+Example 1:
+
+Input: arr = [-7,9,5], brr = [7,-2,-5], k = 2
+
+Output: 13
+
+Explanation:
+
+Split arr into two contiguous subarrays: [-7] and [9, 5] and rearrange them as [9, 5, -7], with a cost of 2.
+Subtract 2 from element arr[0]. The array becomes [7, 5, -7]. The cost of this operation is 2.
+Subtract 7 from element arr[1]. The array becomes [7, -2, -7]. The cost of this operation is 7.
+Add 2 to element arr[2]. The array becomes [7, -2, -5]. The cost of this operation is 2.
+The total cost to make the arrays equal is 2 + 2 + 7 + 2 = 13.
+
+Example 2:
+
+Input: arr = [2,1], brr = [2,1], k = 0
+
+Output: 0
+
+Explanation:
+
+Since the arrays are already equal, no operations are needed, and the total cost is 0.
+
+ 
+
+Constraints:
+
+1 <= arr.length == brr.length <= 105
+0 <= k <= 2 * 1010
+-105 <= arr[i] <= 105
+-105 <= brr[i] <= 105;=;=https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6299204/javacpython-sort-by-lee215-e6oy/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6299595/python3-7-lines-sort-or-dont-sort-ts-229-k4va/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6299552/most-optimal-solution-beats-100-c-java-p-o7ty/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/7170860/easy-level-solution-using-sorting-beats-c0jf2/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6299157/sorting-by-david1121-zl1d/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6300653/java-solution-by-dsuryaprakash89-5ptz/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6299220/61-ms-nlogn-solution-easy-to-understand-kt3ei/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6303213/java-solution-explanation-by-coding_begi-crp9/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6302568/simple-java-solution-beats-100-by-ruch21-250y/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6299762/easy-solution-with-sorting-beats-by-abh1-2cs0/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6299761/optimal-approach-sorting-by-murtaza19-r1sl/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6299185/easiest-java-solution-by-adityachauhan_2-9da5/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6299319/simple-java-solu-greedy-sorting-by-harsh-kt77/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/7241539/sort-or-not-sort-by-gitchuan-z2hc/;;https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/solutions/6948466/java-solution-exchange-arguments-by-thed-ya5e/;;;=;==;=;=;

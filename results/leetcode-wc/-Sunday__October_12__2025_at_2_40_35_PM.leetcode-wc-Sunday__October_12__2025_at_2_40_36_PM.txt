@@ -1,0 +1,57 @@
+3048. Earliest Second to Mark Indices I;=;=Medium;=;=public int earliestSecondToMarkIndices(int[] nums, int[] changeIndices);=;=You are given two 1-indexed integer arrays, nums and, changeIndices, having lengths n and m, respectively.
+
+Initially, all indices in nums are unmarked. Your task is to mark all indices in nums.
+
+In each second, s, in order from 1 to m (inclusive), you can perform one of the following operations:
+
+Choose an index i in the range [1, n] and decrement nums[i] by 1.
+If nums[changeIndices[s]] is equal to 0, mark the index changeIndices[s].
+Do nothing.
+Return an integer denoting the earliest second in the range [1, m] when all indices in nums can be marked by choosing operations optimally, or -1 if it is impossible.
+
+ 
+
+Example 1:
+
+Input: nums = [2,2,0], changeIndices = [2,2,2,2,3,2,2,1]
+Output: 8
+Explanation: In this example, we have 8 seconds. The following operations can be performed to mark all indices:
+Second 1: Choose index 1 and decrement nums[1] by one. nums becomes [1,2,0].
+Second 2: Choose index 1 and decrement nums[1] by one. nums becomes [0,2,0].
+Second 3: Choose index 2 and decrement nums[2] by one. nums becomes [0,1,0].
+Second 4: Choose index 2 and decrement nums[2] by one. nums becomes [0,0,0].
+Second 5: Mark the index changeIndices[5], which is marking index 3, since nums[3] is equal to 0.
+Second 6: Mark the index changeIndices[6], which is marking index 2, since nums[2] is equal to 0.
+Second 7: Do nothing.
+Second 8: Mark the index changeIndices[8], which is marking index 1, since nums[1] is equal to 0.
+Now all indices have been marked.
+It can be shown that it is not possible to mark all indices earlier than the 8th second.
+Hence, the answer is 8.
+Example 2:
+
+Input: nums = [1,3], changeIndices = [1,1,1,2,1,1,1]
+Output: 6
+Explanation: In this example, we have 7 seconds. The following operations can be performed to mark all indices:
+Second 1: Choose index 2 and decrement nums[2] by one. nums becomes [1,2].
+Second 2: Choose index 2 and decrement nums[2] by one. nums becomes [1,1].
+Second 3: Choose index 2 and decrement nums[2] by one. nums becomes [1,0].
+Second 4: Mark the index changeIndices[4], which is marking index 2, since nums[2] is equal to 0.
+Second 5: Choose index 1 and decrement nums[1] by one. nums becomes [0,0].
+Second 6: Mark the index changeIndices[6], which is marking index 1, since nums[1] is equal to 0.
+Now all indices have been marked.
+It can be shown that it is not possible to mark all indices earlier than the 6th second.
+Hence, the answer is 6.
+Example 3:
+
+Input: nums = [0,1], changeIndices = [2,2,2]
+Output: -1
+Explanation: In this example, it is impossible to mark all indices because index 1 isn't in changeIndices.
+Hence, the answer is -1.
+ 
+
+Constraints:
+
+1 <= n == nums.length <= 2000
+0 <= nums[i] <= 109
+1 <= m == changeIndices.length <= 2000
+1 <= changeIndices[i] <= n;=;=https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4778576/java-binary-search-intuition-explanation-cof2/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4780014/explained-like-i-would-to-5-year-old-bin-8mu8/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4780708/100-fastest-java-solution-using-binaryse-rxca/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4778971/java-clean-solution-weekly-contest-by-sh-lv3t/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4779960/java-binary-search-beats-100-time-comple-0k0d/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4950466/earliestsecondtomarkindices-in-java-by-l-bu1m/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4841480/java-solution-by-subhankar752-6bp9/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4796869/java-simple-solution-with-explanation-bi-06td/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4792863/binary-search-solution-by-dan21k-kcxc/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4791007/java-binary-search-solution-beats-904-su-z7v6/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4786029/java-binary-search-by-sbd5_941-wm9n/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4785698/easiest-java-solution-by-nishthaa2003-y0gz/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4781481/java-binary-search-simple-1-based-indexi-sp4s/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4781453/java-binary-search-simple-0-based-indexi-k18p/;;https://leetcode.com/problems/earliest-second-to-mark-indices-i/solutions/4780862/java-solution-2ms-by-sai_govind_2024-cqjh/;;;=;==;=;=;

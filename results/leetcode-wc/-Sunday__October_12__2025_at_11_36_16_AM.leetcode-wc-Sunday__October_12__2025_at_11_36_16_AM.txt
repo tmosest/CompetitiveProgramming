@@ -1,0 +1,69 @@
+3614. Process String with Special Operations II;=;=Hard;=;=public char processStr(String s, long k);=;=You are given a string s consisting of lowercase English letters and the special characters: '*', '#', and '%'.
+
+You are also given an integer k.
+
+Build a new string result by processing s according to the following rules from left to right:
+
+If the letter is a lowercase English letter append it to result.
+A '*' removes the last character from result, if it exists.
+A '#' duplicates the current result and appends it to itself.
+A '%' reverses the current result.
+Return the kth character of the final string result. If k is out of the bounds of result, return '.'.
+
+ 
+
+Example 1:
+
+Input: s = "a#b%*", k = 1
+
+Output: "a"
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'a'	Append 'a'	"a"
+1	'#'	Duplicate result	"aa"
+2	'b'	Append 'b'	"aab"
+3	'%'	Reverse result	"baa"
+4	'*'	Remove the last character	"ba"
+The final result is "ba". The character at index k = 1 is 'a'.
+
+Example 2:
+
+Input: s = "cd%#*#", k = 3
+
+Output: "d"
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'c'	Append 'c'	"c"
+1	'd'	Append 'd'	"cd"
+2	'%'	Reverse result	"dc"
+3	'#'	Duplicate result	"dcdc"
+4	'*'	Remove the last character	"dcd"
+5	'#'	Duplicate result	"dcddcd"
+The final result is "dcddcd". The character at index k = 3 is 'd'.
+
+Example 3:
+
+Input: s = "z*#", k = 0
+
+Output: "."
+
+Explanation:
+
+i	s[i]	Operation	Current result
+0	'z'	Append 'z'	"z"
+1	'*'	Remove the last character	""
+2	'#'	Duplicate the string	""
+The final result is "". Since index k = 0 is out of bounds, the output is '.'.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of only lowercase English letters and special characters '*', '#', and '%'.
+0 <= k <= 1015
+The length of result after processing s will not exceed 1015.;=;=https://leetcode.com/problems/process-string-with-special-operations-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951573/example-walkthrough-easy-optimal-beats-1-fkkd/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951646/javacpython-reverse-by-lee215-8fz9/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6953318/java-oop-logical-class-based-solution-la-nafp/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/7164445/java-easy-solution-by-shreyagarg63-u88v/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951639/java-simple-and-easy-solution-by-mokumok-s8lb/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951738/compute-max-length-after-all-operations-r4aj9/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6951760/beats-97-on-time-o1-space-no-string-buil-7p18/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6952295/easy-explanation-java-linear-time-by-var-7c4i/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6956334/java-beats-100-by-sayanta_nandi-j7xs/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6977811/2-approaches-by-kj1000-419i/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/7042035/java-solution-by-barakamon-j605/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6958598/java-on-recursive-solution-from-back-to-05jbn/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6982058/time-on-and-space-o1-java-answer-by-kamo-q51u/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6968719/reverse-simulation-with-length-only-trac-l3p6/;;https://leetcode.com/problems/process-string-with-special-operations-ii/solutions/6982041/visual-explanation-easy-understand-rever-558k/;;;=;==;=;=;

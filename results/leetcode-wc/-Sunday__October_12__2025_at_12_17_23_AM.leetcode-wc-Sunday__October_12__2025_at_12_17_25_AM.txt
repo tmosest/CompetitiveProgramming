@@ -1,0 +1,32 @@
+3039. Apply Operations to Make String Empty;=;=Medium;=;=public String lastNonEmptyString(String s);=;=You are given a string s.
+
+Consider performing the following operation until s becomes empty:
+
+For every alphabet character from 'a' to 'z', remove the first occurrence of that character in s (if it exists).
+For example, let initially s = "aabcbbca". We do the following operations:
+
+Remove the underlined characters s = "aabcbbca". The resulting string is s = "abbca".
+Remove the underlined characters s = "abbca". The resulting string is s = "ba".
+Remove the underlined characters s = "ba". The resulting string is s = "".
+Return the value of the string s right before applying the last operation. In the example above, answer is "ba".
+
+ 
+
+Example 1:
+
+Input: s = "aabcbbca"
+Output: "ba"
+Explanation: Explained in the statement.
+Example 2:
+
+Input: s = "abcd"
+Output: "abcd"
+Explanation: We do the following operation:
+- Remove the underlined characters s = "abcd". The resulting string is s = "".
+The string just before the last operation is "abcd".
+ 
+
+Constraints:
+
+1 <= s.length <= 5 * 105
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/apply-operations-to-make-string-empty/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4742321/javapython-3-on-code-w-brief-explanation-0w3f/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4742412/java-simple-using-map-intuitive-by-sande-6f5i/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4742330/easy-to-understand-by-shivamtech731-5n8e/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/6722629/beginner-friendly-step-by-step-walkthrou-mkae/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4915511/beats-98-easiest-solution-ever-beginner-d5nry/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4742268/easy-solution-using-map-and-max-count-by-khmy/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4742349/set-count-frequency-by-abburisaikarthik-ezva/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4752946/easy-javac-solution-simple-greedy-approa-r56a/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4742693/simple-and-easy-by-using-map-and-sorting-top1/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4747290/java-solution-very-easy-to-understand-by-ajfo/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4742617/10-lines-using-map-simply-explained-with-pxsg/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/4745544/java-solution-in-constant-space-and-on-t-gvq1/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/6127850/on-java-code-very-simple-approach-using-sarat/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/5268960/java-stream-by-ihatealgothrim-n0of/;;https://leetcode.com/problems/apply-operations-to-make-string-empty/solutions/6261122/2-best-methods-with-frequency-counting-a-oim7/;;;=;==;=;=;

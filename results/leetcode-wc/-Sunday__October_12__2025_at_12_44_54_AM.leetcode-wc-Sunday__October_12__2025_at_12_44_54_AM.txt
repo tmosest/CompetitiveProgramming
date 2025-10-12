@@ -1,0 +1,25 @@
+1258. Synonymous Sentences;=;=Medium;=;=public List<String> generateSentences(List<List<String>> synonyms, String text);=;=You are given a list of equivalent string pairs synonyms where synonyms[i] = [si, ti] indicates that si and ti are equivalent strings. You are also given a sentence text.
+
+Return all possible synonymous sentences sorted lexicographically.
+
+ 
+
+Example 1:
+
+Input: synonyms = [["happy","joy"],["sad","sorrow"],["joy","cheerful"]], text = "I am happy today but was sad yesterday"
+Output: ["I am cheerful today but was sad yesterday","I am cheerful today but was sorrow yesterday","I am happy today but was sad yesterday","I am happy today but was sorrow yesterday","I am joy today but was sad yesterday","I am joy today but was sorrow yesterday"]
+Example 2:
+
+Input: synonyms = [["happy","joy"],["cheerful","glad"]], text = "I am happy today but was sad yesterday"
+Output: ["I am happy today but was sad yesterday","I am joy today but was sad yesterday"]
+ 
+
+Constraints:
+
+0 <= synonyms.length <= 10
+synonyms[i].length == 2
+1 <= si.length, ti.length <= 10
+si != ti
+text consists of at most 10 words.
+All the pairs of synonyms are unique.
+The words of text are separated by single spaces.;=;=https://leetcode.com/problems/synonymous-sentences/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/synonymous-sentences/solutions/828731/java-unionfind-solution-by-jianhuilin112-2dlv/;;https://leetcode.com/problems/synonymous-sentences/solutions/2238069/java-clean-code-dfs-backtracking-by-yyat-g86v/;;https://leetcode.com/problems/synonymous-sentences/solutions/1941712/java-cpp-union-find-dfs-by-yeelimtse-l1ki/;;https://leetcode.com/problems/synonymous-sentences/solutions/4846446/union-find-java-beats-100-by-shantanu_ks-bosd/;;https://leetcode.com/problems/synonymous-sentences/solutions/1342448/java-dfs-by-fatezai-mqmd/;;https://leetcode.com/problems/synonymous-sentences/solutions/3794650/union-find-backtracking-beats-99-by-zapd-plzr/;;https://leetcode.com/problems/synonymous-sentences/solutions/1153016/java-dfs-backtracking-with-explanation-b-5pg1/;;https://leetcode.com/problems/synonymous-sentences/solutions/3713235/java-backtracking-dfs-search-in-graph-wi-p6dx/;;https://leetcode.com/problems/synonymous-sentences/solutions/1866690/java-concise-100-speed-2ms-solution-by-s-00b1/;;https://leetcode.com/problems/synonymous-sentences/solutions/2005094/java-solution-using-bfs-treeset-and-back-7v3d/;;https://leetcode.com/problems/synonymous-sentences/solutions/438334/java-dfs-100-space-by-fidato-ovu0/;;https://leetcode.com/problems/synonymous-sentences/solutions/6872877/graph-backtracking-dfs-by-ashwanijha04-gfga/;;https://leetcode.com/problems/synonymous-sentences/solutions/6924980/synonyms-sentences-java-by-lc_sai_07-1z9m/;;https://leetcode.com/problems/synonymous-sentences/solutions/6707972/bfs-backtrack-by-atul008-lcpk/;;https://leetcode.com/problems/synonymous-sentences/solutions/6744711/simple-java-by-arkadeepgr-fagq/;;;=;==;=;=;

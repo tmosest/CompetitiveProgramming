@@ -1,0 +1,26 @@
+793. Preimage Size of Factorial Zeroes Function;=;=Hard;=;=public int preimageSizeFZF(int k);=;=Let f(x) be the number of zeroes at the end of x!. Recall that x! = 1 * 2 * 3 * ... * x and by convention, 0! = 1.
+
+For example, f(3) = 0 because 3! = 6 has no zeroes at the end, while f(11) = 2 because 11! = 39916800 has two zeroes at the end.
+Given an integer k, return the number of non-negative integers x have the property that f(x) = k.
+
+ 
+
+Example 1:
+
+Input: k = 0
+Output: 5
+Explanation: 0!, 1!, 2!, 3!, and 4! end with k = 0 zeroes.
+Example 2:
+
+Input: k = 5
+Output: 0
+Explanation: There is no x such that x! ends in k = 5 zeroes.
+Example 3:
+
+Input: k = 3
+Output: 5
+ 
+
+Constraints:
+
+0 <= k <= 109;=;=https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/6774621/preimage-size-of-factorial-zeroes-functi-qws1/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/1873543/java-faster-than-100-best-explaination-b-jtdf/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/5099485/javac-clean-solution-with-explanation-by-jluo/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/5204377/java-beats-100-by-deleted_user-alaq/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/1013140/java-solution-using-binary-search-with-e-gwoe/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/4000739/easiest-solution-by-kunal7216-3rb3/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/2336850/simple-math-by-okrach-1yvq/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/3468203/solution-by-deleted_user-x4nu/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/7011864/java-solution-using-binary-search-by-she-7lo1/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/7011734/binary-solution-by-shednatn56-o6at/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/6072748/simple-java-solution-by-hk9262809-koww/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/6035736/efficient-search-by-counting-fives-by-ak-ulsg/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/5827552/easy-by-bhagya_patel_01-n05q/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/5800505/easy-in-java-by-princekeshri-ypdk/;;https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/solutions/5646280/approximation-with-4k-and-refinement-mat-lyty/;;;=;==;=;=;

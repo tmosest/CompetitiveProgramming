@@ -1,0 +1,36 @@
+2385. Amount of Time for Binary Tree to Be Infected;=;=Medium;=;=/  Definition for a binary tree node.  public  TreeNode       int val;      TreeNode left;      TreeNode right;      TreeNode()       TreeNode(int val)  this.val = val;       TreeNode(int val, TreeNode left, TreeNode right)           this.val = val;          this.left = left;          this.right = right;;=;=You are given the root of a binary tree with unique values, and an integer start. At minute 0, an infection starts from the node with value start.
+
+Each minute, a node becomes infected if:
+
+The node is currently uninfected.
+The node is adjacent to an infected node.
+Return the number of minutes needed for the entire tree to be infected.
+
+ 
+
+Example 1:
+
+
+Input: root = [1,5,3,null,4,10,6,9,2], start = 3
+Output: 4
+Explanation: The following nodes are infected during:
+- Minute 0: Node 3
+- Minute 1: Nodes 1, 10 and 6
+- Minute 2: Node 5
+- Minute 3: Node 4
+- Minute 4: Nodes 9 and 2
+It takes 4 minutes for the whole tree to be infected so we return 4.
+Example 2:
+
+
+Input: root = [1], start = 1
+Output: 0
+Explanation: At minute 0, the only node in the tree is infected so we return 0.
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 105].
+1 <= Node.val <= 105
+Each node has a unique value.
+A node with a value of start exists in the tree.;=;=https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/4537896/beats-100-breadth-first-search-explained-i67y/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/4537932/beats-9974-users-cjavapythonjavascript-2-2gi9/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/7205298/one-of-the-best-solution-to-solve-this-q-pckg/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/4537856/beats-100-users-c-java-python-javascript-talm/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/7152648/easy-code-in-java-by-yasl1-qrs4/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/4538708/on-java-python-javascript-typescript-c-c-xd48/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/6892687/binary-tree-infection-time-using-bfs-par-qe48/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/4540000/beats-92-with-explanation-dfs-by-priyans-f352/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/6757394/java-bfs-solution-by-jhanvi_chaudhary-4o3c/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/7061548/simple-java-solution-tree-graph-by-tejas-jft2/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/2462842/java-clean-by-fllght-ozk3/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/7105497/java-solution-beats-100-proof-concise-co-xr2v/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/6879335/amount-of-time-for-binary-tree-to-be-inf-y1dn/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/7024344/java-program-for-better-understanding-by-qp96/;;https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/7081736/graph-dfs-vs-genius-postorder-trick-two-72z4m/;;;=;==;=;=;

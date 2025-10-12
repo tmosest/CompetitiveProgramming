@@ -1,0 +1,22 @@
+149. Max Points on a Line;=;=Hard;=;=public int maxPoints(int[][] points);=;=Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane, return the maximum number of points that lie on the same straight line.
+
+ 
+
+Example 1:
+
+
+Input: points = [[1,1],[2,2],[3,3]]
+Output: 3
+Example 2:
+
+
+Input: points = [[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]
+Output: 4
+ 
+
+Constraints:
+
+1 <= points.length <= 300
+points[i].length == 2
+-104 <= xi, yi <= 104
+All the points are unique.;=;=https://leetcode.com/problems/max-points-on-a-line/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/max-points-on-a-line/solutions/7258029/easy-approach-using-normal-equation-of-2-f3bx/;;https://leetcode.com/problems/max-points-on-a-line/solutions/47113/a-java-solution-with-notes-by-reeclapple-98ck/;;https://leetcode.com/problems/max-points-on-a-line/solutions/3017341/java-solution-with-explantation-by-sarth-bwrz/;;https://leetcode.com/problems/max-points-on-a-line/solutions/7208230/max-points-on-a-line-slope-based-groupin-v43k/;;https://leetcode.com/problems/max-points-on-a-line/solutions/3018587/explanation-with-simulation-images-from-mcr0o/;;https://leetcode.com/problems/max-points-on-a-line/solutions/47098/accepted-java-solution-easy-to-understan-eh7m/;;https://leetcode.com/problems/max-points-on-a-line/solutions/6938414/hashmap-points-with-same-slope-easy-by-a-rt4x/;;https://leetcode.com/problems/max-points-on-a-line/solutions/3019363/my-accepted-solution-98-faster-by-sam022-9zxq/;;https://leetcode.com/problems/max-points-on-a-line/solutions/6959061/max-points-on-a-line-hashmap-slope-calcu-6xmn/;;https://leetcode.com/problems/max-points-on-a-line/solutions/494635/come-on-in-correct-and-natural-solution-ty62l/;;https://leetcode.com/problems/max-points-on-a-line/solutions/3016303/java-c-javascript-beats-90-map-on2-time-2axq8/;;https://leetcode.com/problems/max-points-on-a-line/solutions/7063417/easy-solution-in-java-c-and-python-by-ni-o210/;;https://leetcode.com/problems/max-points-on-a-line/solutions/3016349/explained-java-solution-by-nandanvyas-mjji/;;https://leetcode.com/problems/max-points-on-a-line/solutions/6946902/brute-force-but-easy-to-understand-by-ut-owrq/;;https://leetcode.com/problems/max-points-on-a-line/solutions/4516266/java-easy-solutionsmooooooooothbeginner-habk0/;;;=;==;=;=;

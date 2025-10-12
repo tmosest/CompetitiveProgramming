@@ -1,0 +1,29 @@
+1505. Minimum Possible Integer After at Most K Adjacent Swaps On Digits;=;=Hard;=;=public String minInteger(String num, int k);=;=You are given a string num representing the digits of a very large integer and an integer k. You are allowed to swap any two adjacent digits of the integer at most k times.
+
+Return the minimum integer you can obtain also as a string.
+
+ 
+
+Example 1:
+
+
+Input: num = "4321", k = 4
+Output: "1342"
+Explanation: The steps to obtain the minimum integer from 4321 with 4 adjacent swaps are shown.
+Example 2:
+
+Input: num = "100", k = 1
+Output: "010"
+Explanation: It's ok for the output to have leading zeros, but the input is guaranteed not to have any leading zeros.
+Example 3:
+
+Input: num = "36789", k = 1000
+Output: "36789"
+Explanation: We can keep the number without any swaps.
+ 
+
+Constraints:
+
+1 <= num.length <= 3 * 104
+num consists of only digits and does not contain leading zeros.
+1 <= k <= 109;=;=https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/720548/on-logn-detailed-explanation-by-khaufnak-50xq/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/7269556/greedy-approach-by-keerthanaanandhan-s3bq/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/5867979/minimum-possible-integer-after-at-most-k-ki16/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/2438941/java-simple-implementation-detailed-expl-7ux4/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/815261/java-super-easy-insertion-sort-on2-w-exp-aupf/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/728201/java-on2-108-ms-easy-understand-and-with-0nji/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/720293/java-recursive-solution-by-manasvi123-76mr/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/6199992/backtracking-approach-tle-by-anushakanda-v9ri/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/6199960/for-every-position-i-with-smallest-eleme-y7gc/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/3774607/easy-java-solution-by-thomasshelbyobe-2bik/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/2399591/java-onlogn-30ms-check-pos-by-pos-not-di-2kvw/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/2397016/my-intuitive-java-solution-by-divyaratho-i7d4/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/1529554/java-short-fenwicktree-solution-by-maste-176a/;;https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/solutions/725256/java-onsqrtn-sqrt-decomposition-and-inde-gn11/;;;=;==;=;=;

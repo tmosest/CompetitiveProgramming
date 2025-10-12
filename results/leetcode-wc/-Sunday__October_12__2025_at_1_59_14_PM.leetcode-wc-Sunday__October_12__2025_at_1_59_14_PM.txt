@@ -1,0 +1,22 @@
+2708. Maximum Strength of a Group;=;=Medium;=;=public long maxStrength(int[] nums);=;=You are given a 0-indexed integer array nums representing the score of students in an exam. The teacher would like to form one non-empty group of students with maximal strength, where the strength of a group of students of indices i0, i1, i2, ... , ik is defined as nums[i0] * nums[i1] * nums[i2] * ... * nums[ik?].
+
+Return the maximum strength of a group the teacher can create.
+
+ 
+
+Example 1:
+
+Input: nums = [3,-1,-5,2,5,-9]
+Output: 1350
+Explanation: One way to form a group of maximal strength is to group the students at indices [0,2,3,4,5]. Their strength is 3 * (-5) * 2 * 5 * (-9) = 1350, which we can show is optimal.
+Example 2:
+
+Input: nums = [-4,-5,-4]
+Output: 20
+Explanation: Group the students at indices [0, 1] . Then, we’ll have a resulting strength of 20. We cannot achieve greater strength.
+ 
+
+Constraints:
+
+1 <= nums.length <= 13
+-9 <= nums[i] <= 9;=;=https://leetcode.com/problems/maximum-strength-of-a-group/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-strength-of-a-group/solutions/7150349/beat-100-simple-java-solution-beginner-f-0fuc/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/3568799/o1-solution-sorting-c-java-python-by-ani-37ix/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/7269248/beat-100-by-mwhnyd0vii-t57y/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/3569327/very-simple-brute-force-knapsack-x-no-gr-4m4h/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/3568783/no-recursion-simple-java-by-shyamchadha3-to0w/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/3568699/clean-simple-java-solution-by-himanshubh-1nf1/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/6602730/java-one-time-traversal-on-by-joker7410-0qk3/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/3569905/some-tedious-edge-cases-by-kshitij_pande-0dxy/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/3569207/2708-java-simple-solution-by-saran456-kmdh/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/5277494/dp-recursion-simple-solution-by-akhil_pa-di5s/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/5191245/go-greedy-onlogn-o1-by-nir16r-9jh5/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/3568581/java-recursion-by-neel_diyora-szgy/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/3568585/cjava-one-pass-greedy-solution-by-suren-xgwv4/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/4582721/java-clean-code-two-solutions-dp-backtra-d3xq/;;https://leetcode.com/problems/maximum-strength-of-a-group/solutions/3771634/best-solution-complete-explanation-with-r278f/;;;=;==;=;=;

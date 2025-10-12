@@ -1,0 +1,24 @@
+522. Longest Uncommon Subsequence II;=;=Medium;=;=public int findLUSlength(String[] strs);=;=Given an array of strings strs, return the length of the longest uncommon subsequence between them. If the longest uncommon subsequence does not exist, return -1.
+
+An uncommon subsequence between an array of strings is a string that is a subsequence of one string but not the others.
+
+A subsequence of a string s is a string that can be obtained after deleting any number of characters from s.
+
+For example, "abc" is a subsequence of "aebdc" because you can delete the underlined characters in "aebdc" to get "abc". Other subsequences of "aebdc" include "aebdc", "aeb", and "" (empty string).
+ 
+
+Example 1:
+
+Input: strs = ["aba","cdc","eae"]
+Output: 3
+Example 2:
+
+Input: strs = ["aaa","aaa","aa"]
+Output: -1
+ 
+
+Constraints:
+
+2 <= strs.length <= 50
+1 <= strs[i].length <= 10
+strs[i] consists of lowercase English letters.;=;=https://leetcode.com/problems/longest-uncommon-subsequence-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/6442945/100-beats-java-sorting-greedt-by-adnanns-tk2j/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/6186696/c-beats-100-linear-subsequence-check-by-v4fpi/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/1387776/java-solution-by-fate7-gzlf/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/5299043/longest-uncommon-subsequence-ii-simplifi-3ikg/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/4518105/simple-java-code-1-ms-beats-100-by-arobh-p63r/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/4301071/optimize-solution-with-full-algorithm-ex-2lir/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/1429493/java-by-tarushi0503-bptd/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/1429190/java-solution-easy-to-understand-1ms-by-upkyi/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/3389474/solution-by-deleted_user-y6x0/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/2821540/longest-uncommon-subsequence-ii-java-sol-4rbz/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/1638977/java-o10nx-or-onlogn-nx-two-solutions-15-41zv/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/1429778/intuitive-brute-force-java-solution-with-rrkl/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/553062/java-solution-100100-by-allabakash-0rfp/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/7198268/beat-by-99-using-java-simple-code-by-rom-s1u6/;;https://leetcode.com/problems/longest-uncommon-subsequence-ii/solutions/7042682/two-pointer-java-easy-solution-by-sagark-xkvw/;;;=;==;=;=;

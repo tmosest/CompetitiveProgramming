@@ -1,0 +1,29 @@
+2251. Number of Flowers in Full Bloom;=;=Hard;=;=public int[] fullBloomFlowers(int[][] flowers, int[] people);=;=You are given a 0-indexed 2D integer array flowers, where flowers[i] = [starti, endi] means the ith flower will be in full bloom from starti to endi (inclusive). You are also given a 0-indexed integer array people of size n, where people[i] is the time that the ith person will arrive to see the flowers.
+
+Return an integer array answer of size n, where answer[i] is the number of flowers that are in full bloom when the ith person arrives.
+
+ 
+
+Example 1:
+
+
+Input: flowers = [[1,6],[3,7],[9,12],[4,13]], people = [2,3,7,11]
+Output: [1,2,2,2]
+Explanation: The figure above shows the times when the flowers are in full bloom and when the people arrive.
+For each person, we return the number of flowers in full bloom during their arrival.
+Example 2:
+
+
+Input: flowers = [[1,10],[3,3]], people = [3,3,2]
+Output: [2,2,1]
+Explanation: The figure above shows the times when the flowers are in full bloom and when the people arrive.
+For each person, we return the number of flowers in full bloom during their arrival.
+ 
+
+Constraints:
+
+1 <= flowers.length <= 5 * 104
+flowers[i].length == 2
+1 <= starti <= endi <= 109
+1 <= people.length <= 5 * 104
+1 <= people[i] <= 109;=;=https://leetcode.com/problems/number-of-flowers-in-full-bloom/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/6280059/video-give-me-15-minutes-how-we-can-thin-djmi/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/1977099/cpython-binary-search-and-sweep-line-by-hf7ry/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/4156243/video-give-me-15-minutes-how-we-can-thin-lo0n/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/7229262/line-sweep-partial-sum-hashmap-binary-se-kcmw/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/4155617/priority-queue-explained-intuition-comme-qp5f/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/4155773/beginner-friendly-easy-solution-line-by-rtt31/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/4155693/java-binary-search-beats-100-time-almost-n6gf/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/6925100/easy-java-solution-with-nlogn-time-compl-pg2r/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/5051581/video-give-me-15-minutes-how-we-can-thin-9dpa/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/1977565/java-beats-10000-memoryspeed-0ms-april-2-h2hx/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/4155615/video-solution-sorting-and-binary-search-msaj/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/4155999/easy-java-binary-search-approach-by-vira-lbch/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/7252732/number-of-flowers-in-full-bloombinary-se-uru2/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/4157056/ccjavapythonjavascript-beats-100-3-appro-x19g/;;https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/1977929/java-binary-search-by-psy_ck-32rm/;;;=;==;=;=;

@@ -1,0 +1,30 @@
+1240. Tiling a Rectangle with the Fewest Squares;=;=Hard;=;=public int tilingRectangle(int n, int m);=;=Given a rectangle of size n x m, return the minimum number of integer-sided squares that tile the rectangle.
+
+ 
+
+Example 1:
+
+
+
+Input: n = 2, m = 3
+Output: 3
+Explanation: 3 squares are necessary to cover the rectangle.
+2 (squares of 1x1)
+1 (square of 2x2)
+Example 2:
+
+
+
+Input: n = 5, m = 8
+Output: 5
+Example 3:
+
+
+
+Input: n = 11, m = 13
+Output: 6
+ 
+
+Constraints:
+
+1 <= n, m <= 13;=;=https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/417654/6ms-clean-java-backtrack-solution-with-d-qos8/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/6974436/recursive-dfs-to-minimize-square-tiles-i-uqdf/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/1856428/java-beats-100-simple-code-by-chparimi-y93b/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/1566469/backtracking-java-by-shurenzhou-vo8g/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/2436803/java-accepted-for-all-test-cases-by-java-bnop/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/2256293/dp-solution-with-image-explanation-and-h-okpr/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/427229/java-7ms-100space-backtrack-by-zmajia-72y2/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/1965681/clean-dp-by-gauravkabra-cdv5/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/914864/doubt-why-cant-we-treat-this-problem-as-a607v/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/6926547/java-code-using-dp-and-backtracking-by-b-4eny/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/6471079/100-beats-greedy-dfs-solution-with-one-s-8su0/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/6048553/easy-solution-by-rishitripathi-15f6/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/5965043/tiling-a-rectangle-with-fewest-squares_m-a5v4/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/5953758/java-by-hassam_472-puo1/;;https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/solutions/5915207/skyline-approach-by-hoangcongst-esaa/;;;=;==;=;=;

@@ -1,0 +1,18 @@
+2413. Smallest Even Multiple;=;=Easy;=;=public int smallestEvenMultiple(int n);=;=Given a positive integer n, return the smallest positive integer that is a multiple of both 2 and n.
+ 
+
+Example 1:
+
+Input: n = 5
+Output: 10
+Explanation: The smallest multiple of both 5 and 2 is 10.
+Example 2:
+
+Input: n = 6
+Output: 6
+Explanation: The smallest multiple of both 6 and 2 is 6. Note that a number is a multiple of itself.
+ 
+
+Constraints:
+
+1 <= n <= 150;=;=https://leetcode.com/problems/smallest-even-multiple/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/smallest-even-multiple/solutions/7249771/simple-approach-by-i_am_groot_2k-ve2a/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7227581/clean-simple-easy-explanation-beats-100-xiuqm/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7223981/easiest-question-of-leetcode-100ms-0ms-b-6y16/;;https://leetcode.com/problems/smallest-even-multiple/solutions/2590337/javacpython-bit-solution-by-lee215-qpd3/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7157912/0ms-one-line-code-by-sriram_26-p10x/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7157909/simple-one-line-code-to-solve-by-suryana-pikk/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7120096/easy-code-by-prajanthkumar-fdrr/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7027566/java-easy-solution-0ms-by-akashraj06-53x5/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7195056/easy-code-by-aesdtfg-91w8/;;https://leetcode.com/problems/smallest-even-multiple/solutions/6990933/easy-code-for-beginners-and-understandab-brdm/;;https://leetcode.com/problems/smallest-even-multiple/solutions/6911117/optimized-one-liner-for-smallest-even-mu-yous/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7130520/easy-java-code-with-two-line-solution-by-p6pu/;;https://leetcode.com/problems/smallest-even-multiple/solutions/2590557/beginner-friendly-javajavascriptpython-s-1diu/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7102101/dont-overthink-single-line-o-1-math-a-si-i2hu/;;https://leetcode.com/problems/smallest-even-multiple/solutions/7088567/smallest-even-multiple-by-e_deepika24-iwpb/;;;=;==;=;=;

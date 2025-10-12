@@ -1,0 +1,42 @@
+1181. Before and After Puzzle;=;=Medium;=;=// time = O(logk  nlogn), space = O(n)    List<Integer> q;    public int minThreshold(int[] nums, int k)         q = new ArrayList<>();        int l = 0, r = nums[0];        for (int x : nums)             q.add(x);            r = Math.max(r, x);                q = new ArrayList<>(new HashSet<>(q));        Collections.sort(q);        while (l < r)             int mid = l + r >> 1;;=;=Given a list of phrases, generate a list of Before and After puzzles.
+
+A phrase is a string that consists of lowercase English letters and spaces only. No space appears in the start or the end of a phrase. There are no consecutive spaces in a phrase.
+
+Before and After puzzles are phrases that are formed by merging two phrases where the last word of the first phrase is the same as the first word of the second phrase. Note that only the last word of the first phrase and the first word of the second phrase are merged in this process.
+
+Return the Before and After puzzles that can be formed by every two phrases phrases[i] and phrases[j] where i != j. Note that the order of matching two phrases matters, we want to consider both orders.
+
+You should return a list of distinct strings sorted lexicographically, after removing all duplicate phrases in the generated Before and After puzzles.
+
+ 
+
+Example 1:
+
+Input: phrases = ["writing code","code rocks"]
+
+Output: ["writing code rocks"]
+
+Example 2:
+
+Input: phrases = ["mission statement","a quick bite to eat","a chip off the old block","chocolate bar","mission impossible","a man on a mission","block party","eat my words","bar of soap"]
+
+Output: ["a chip off the old block party","a man on a mission impossible","a man on a mission statement","a quick bite to eat my words","chocolate bar of soap"]
+
+Example 3:
+
+Input: phrases = ["a","b","a"]
+
+Output: ["a"]
+
+Example 4:
+
+Input: phrases = ["ab ba","ba ab","ab ba"]
+
+Output: ["ab ba ab","ba ab ba"]
+
+ 
+
+Constraints:
+
+1 <= phrases.length <= 100
+1 <= phrases[i].length <= 100;=;=https://leetcode.com/problems/before-and-after-puzzle/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/before-and-after-puzzle/solutions/7121348/java-solution-brute-force-by-flyby_equin-o9po/;;https://leetcode.com/problems/before-and-after-puzzle/solutions/7113865/java-javascript-typescript-c-c-kotlin-go-0mgk/;;https://leetcode.com/problems/before-and-after-puzzle/solutions/5815767/java-using-hashmaps-by-tbekpro-lklw/;;https://leetcode.com/problems/before-and-after-puzzle/solutions/5760726/simple-java-solution-by-sakshikishore-kdj6/;;https://leetcode.com/problems/before-and-after-puzzle/solutions/3567393/solution-by-deleted_user-48uv/;;https://leetcode.com/problems/before-and-after-puzzle/solutions/1866592/java-2-solutions-by-student2091-xbh4/;;https://leetcode.com/problems/before-and-after-puzzle/solutions/470649/java-iterative-approach-using-list-and-c-o96b/;;https://leetcode.com/problems/before-and-after-puzzle/solutions/470440/java-hash-map-set-and-sorting-explained-9xtep/;;https://leetcode.com/problems/before-and-after-puzzle/solutions/454244/java-accepted-solution-by-rajatag03-deil/;;;=;==;=;=;

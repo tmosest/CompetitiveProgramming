@@ -1,0 +1,37 @@
+924. Minimize Malware Spread;=;=Hard;=;=public int minMalwareSpread(int[][] graph, int[] initial);=;=You are given a network of n nodes represented as an n x n adjacency matrix graph, where the ith node is directly connected to the jth node if graph[i][j] == 1.
+
+Some nodes initial are initially infected by malware. Whenever two nodes are directly connected, and at least one of those two nodes is infected by malware, both nodes will be infected by malware. This spread of malware will continue until no more nodes can be infected in this manner.
+
+Suppose M(initial) is the final number of nodes infected with malware in the entire network after the spread of malware stops. We will remove exactly one node from initial.
+
+Return the node that, if removed, would minimize M(initial). If multiple nodes could be removed to minimize M(initial), return such a node with the smallest index.
+
+Note that if a node was removed from the initial list of infected nodes, it might still be infected later due to the malware spread.
+
+ 
+
+Example 1:
+
+Input: graph = [[1,1,0],[1,1,0],[0,0,1]], initial = [0,1]
+Output: 0
+Example 2:
+
+Input: graph = [[1,0,0],[0,1,0],[0,0,1]], initial = [0,2]
+Output: 0
+Example 3:
+
+Input: graph = [[1,1,1],[1,1,1],[1,1,1]], initial = [1,2]
+Output: 1
+ 
+
+Constraints:
+
+n == graph.length
+n == graph[i].length
+2 <= n <= 300
+graph[i][j] is 0 or 1.
+graph[i][j] == graph[j][i]
+graph[i][i] == 1
+1 <= initial.length <= n
+0 <= initial[i] <= n - 1
+All the integers in initial are unique.;=;=https://leetcode.com/problems/minimize-malware-spread/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimize-malware-spread/solutions/5922008/java-bfs-intuitive-and-easy-to-understan-pufs/;;https://leetcode.com/problems/minimize-malware-spread/solutions/988233/java-2-approaches-union-find-and-dfs-bea-ao7q/;;https://leetcode.com/problems/minimize-malware-spread/solutions/1384867/union-find-well-commented-easy-to-read-c-zxfv/;;https://leetcode.com/problems/minimize-malware-spread/solutions/486277/java-dfs-intuitive-solution-by-apivase-psh8/;;https://leetcode.com/problems/minimize-malware-spread/solutions/3839054/2-time-dsu-connnected-components-for-nod-lhue/;;https://leetcode.com/problems/minimize-malware-spread/solutions/5379000/easy-java-solution-union-find-by-ravikum-ylo0/;;https://leetcode.com/problems/minimize-malware-spread/solutions/5047203/minimize-malware-spread-union-find-solut-hw34/;;https://leetcode.com/problems/minimize-malware-spread/solutions/1339134/java-dsu-union-find-with-comment-explana-10kv/;;https://leetcode.com/problems/minimize-malware-spread/solutions/1386360/faster-than-9563-java-union-find-by-rish-0u1y/;;https://leetcode.com/problems/minimize-malware-spread/solutions/3519595/solution-by-deleted_user-vyuk/;;https://leetcode.com/problems/minimize-malware-spread/solutions/1933810/union-find-java-with-comments-by-parth13-r3au/;;https://leetcode.com/problems/minimize-malware-spread/solutions/1704842/java-detailed-solution-with-handwritten-2hu7m/;;https://leetcode.com/problems/minimize-malware-spread/solutions/1296720/java-union-find-with-comments-by-sirpawa-h9tq/;;https://leetcode.com/problems/minimize-malware-spread/solutions/6842808/simple-java-code-with-explanaiton-by-ris-p9y6/;;https://leetcode.com/problems/minimize-malware-spread/solutions/6698750/java-dsa-dsu-by-code1withharshit-3hap/;;;=;==;=;=;

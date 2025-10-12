@@ -1,0 +1,20 @@
+159. Longest Substring with At Most Two Distinct Characters;=;=Medium;=;=public int lengthOfLongestSubstringTwoDistinct(String s);=;=Given a string s, return the length of the longest substring that contains at most two distinct characters.
+
+ 
+
+Example 1:
+
+Input: s = "eceba"
+Output: 3
+Explanation: The substring is "ece" which its length is 3.
+Example 2:
+
+Input: s = "ccaabbb"
+Output: 5
+Explanation: The substring is "aabbb" which its length is 5.
+ 
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of English letters.;=;=https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/6291417/intuitive-on-two-pointer-java-solution-b-7bgb/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/5829703/java-beats-97-7ms-on-time-o1-space-with-8vf1b/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/49777/accepted-java-on-solution-with-explanati-kgln/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/1121856/java-commented-solution-using-sliding-wi-y6s9/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/461265/java-simple-on-solution-10-lines-beats-1-l3sr/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/7118756/java-solution-sliding-window-by-ndsjqwbb-3v8l/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/1330427/java-sliding-window-reuse-lc-340-904-by-2c2do/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/2568999/my-easy-java-sliding-window-solution-by-v4ezl/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/1604999/java-on-easy-to-understand-share-my-solu-zhsf/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/6987277/sliding-window-solution-using-maptc-on-b-6yia/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/1496840/java-tc-on-sc-o1-one-pass-sliding-window-twch/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/1278703/java-sliding-window-solution-by-hardik03-2dyf/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/1181402/easiest-java-solution-using-sliding-wind-dsiu/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/49741/java-two-pointers-on-very-easy-to-unders-d350/;;https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solutions/773927/java-solution-using-set-by-user9098fo-hdze/;;;=;==;=;=;

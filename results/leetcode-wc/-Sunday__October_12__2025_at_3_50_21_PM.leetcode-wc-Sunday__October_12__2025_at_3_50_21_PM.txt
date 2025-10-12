@@ -1,0 +1,29 @@
+1885. Count Pairs in Two Arrays;=;=Medium;=;=publicÊlongÊcountPairs(int[]Ênums1,Êint[]Ênums2);=;=Given two integer arrays nums1 and nums2 of length n, count the pairs of indices (i, j) such that i < j and nums1[i] + nums1[j] > nums2[i] + nums2[j].
+
+Return the number of pairs satisfying the condition.
+
+Ê
+
+Example 1:
+
+Input: nums1 = [2,1,2,1], nums2 = [1,2,1,2]
+Output: 1
+Explanation: The pairs satisfying the condition are:
+- (0, 2) where 2 + 2 > 1 + 1.
+Example 2:
+
+Input: nums1 = [1,10,6,2], nums2 = [1,4,1,5]
+Output: 5
+Explanation: The pairs satisfying the condition are:
+- (0, 1) where 1 + 10 > 1 + 4.
+- (0, 2) where 1 + 6 > 1 + 1.
+- (1, 2) where 10 + 6 > 4 + 1.
+- (1, 3) where 10 + 2 > 4 + 5.
+- (2, 3) where 6 + 2 > 1 + 5.
+Ê
+
+Constraints:
+
+n == nums1.length == nums2.length
+1 <= n <= 105
+1 <= nums1[i], nums2[i] <= 105;=;=https://leetcode.com/problems/count-pairs-in-two-arrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/1250004/java-two-pointer-solution-with-osort-by-msnsg/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/1251421/java-binary-search-by-xiaomantou1998-4jdz/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/5125899/java-solution-detailed-explanation-by-pp-w6d3/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/1253601/java-clean-merge-sort-on-logn-solution-w-rhto/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/1884010/java-binary-index-tree-by-student2091-exz5/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/2403327/java-tc-onlogn-sc-on-by-imcodealchemist-cfum/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/6909202/two-pointer-over-differences-by-aleetlf-tjr5/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/5969259/sort-two-pointers-beats-100-by-ruinan-nahs/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/5303010/java-by-vharshal1994-w2j1/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/6147168/easy-java-solution-by-ezaz_nitd-pwlu/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/5093593/java-solution-with-binary-search-46-ms-b-vo26/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/5046569/simple-java-implementation-with-2-pointe-337v/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/3991864/solutionjava-by-sakshikishore-miu7/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/3562479/java-prefix-sum-on-by-andreinitu-bbzd/;;https://leetcode.com/problems/count-pairs-in-two-arrays/solutions/3321841/onlogn-time-java-solution-by-alexei_luzh-0j31/;;;=;==;=;=;

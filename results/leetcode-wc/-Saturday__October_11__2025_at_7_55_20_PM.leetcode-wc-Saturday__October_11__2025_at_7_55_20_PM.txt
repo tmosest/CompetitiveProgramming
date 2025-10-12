@@ -1,0 +1,26 @@
+2289. Steps to Make Array Non-decreasing;=;=Medium;=;=publicÊintÊtotalSteps(int[]Ênums);=;=You are given a 0-indexed integer array nums. In one step, remove all elements nums[i] where nums[i - 1] > nums[i] for all 0 < i < nums.length.
+
+Return the number of steps performed until nums becomes a non-decreasing array.
+
+Ê
+
+Example 1:
+
+Input: nums = [5,3,4,4,7,3,6,11,8,5,11]
+Output: 3
+Explanation: The following are the steps performed:
+- Step 1: [5,3,4,4,7,3,6,11,8,5,11] becomes [5,4,4,7,6,11,11]
+- Step 2: [5,4,4,7,6,11,11] becomes [5,4,7,11,11]
+- Step 3: [5,4,7,11,11] becomes [5,7,11,11]
+[5,7,11,11] is a non-decreasing array. Therefore, we return 3.
+Example 2:
+
+Input: nums = [4,5,7,7,13]
+Output: 0
+Explanation: nums is already a non-decreasing array. Therefore, we return 0.
+Ê
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/steps-to-make-array-non-decreasing/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/2085864/javacpython-stack-dp-explanation-poem-by-dlgo/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/7215218/java-easy-stack-dp-solution-by-ytchouar-r0em/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/2085833/java-monotonic-stack-on-by-chenjohnson58-ksjy/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/3511494/efficient-algorithm-for-making-an-array-50h4v/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/2086750/java-monostack-92-ac-wow-by-student2091-g2w2/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/2298418/java-solution-ontime-onspace-by-bishwaje-oa89/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/2087410/java-100-stack-by-sandeepbk01-1afl/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/2697579/java-solution-explanation-by-mjashwanth-4hys/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/7178055/simple-easiest-approach-by-samirsyntax-n2cn/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/6782599/code-with-rahul-provide-simple-solution-0vd3b/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/6683656/easy-and-monotonic-stack-solution-by-bro-lrxp/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/6390948/another-stack-solution-by-asafbu-c9bi/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/6185198/2289-steps-to-make-array-non-decreasing-ehjru/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/6028449/easy-on-recursion-by-atulydv-wkuu/;;https://leetcode.com/problems/steps-to-make-array-non-decreasing/solutions/5026149/java-monotonik-stack-find-maximum-in-ran-ag18/;;;=;==;=;=;

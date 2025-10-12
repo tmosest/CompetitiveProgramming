@@ -1,0 +1,47 @@
+3547. Maximum Sum of Edge Values in a Graph;=;=Hard;=;=public long maxScore(int n, int[][] edges);=;=You are given an undirected connected graph of n nodes, numbered from 0 to n - 1. Each node is connected to at most 2 other nodes.
+
+The graph consists of m edges, represented by a 2D array edges, where edges[i] = [ai, bi] indicates that there is an edge between nodes ai and bi.
+
+You have to assign a unique value from 1 to n to each node. The value of an edge will be the product of the values assigned to the two nodes it connects.
+
+Your score is the sum of the values of all edges in the graph.
+
+Return the maximum score you can achieve.
+
+ 
+
+Example 1:
+
+
+Input: n = 4, edges = [[0,1],[1,2],[2,3]]
+
+Output: 23
+
+Explanation:
+
+The diagram above illustrates an optimal assignment of values to nodes. The sum of the values of the edges is: (1 * 3) + (3 * 4) + (4 * 2) = 23.
+
+Example 2:
+
+
+Input: n = 6, edges = [[0,3],[4,5],[2,0],[1,3],[2,4],[1,5]]
+
+Output: 82
+
+Explanation:
+
+The diagram above illustrates an optimal assignment of values to nodes. The sum of the values of the edges is: (1 * 2) + (2 * 4) + (4 * 6) + (6 * 5) + (5 * 3) + (3 * 1) = 82.
+
+ 
+
+Constraints:
+
+1 <= n <= 5 * 104
+m == edges.length
+1 <= m <= n
+edges[i].length == 2
+0 <= ai, bi < n
+ai != bi
+There are no repeated edges.
+The graph is connected.
+Each node is connected to at most 2 other nodes.;=;=https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6748053/o1-approach-since-they-nerfed-the-proble-c1jl/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/7018400/on-formula-based-solution-maximum-sum-of-no4r/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6772352/newpython-math-o1-by-lee215-1eth/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6732963/greedy-value-assignment-on-paths-to-maxi-4kpd/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6732439/beats-100-bfs-by-22881a05h6-o3jv/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6740138/easy-solution-by-qddl3tbjhy-61ln/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6733754/easy-greedy-approach-explained-cycle-det-7oqy/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6741819/using-dsu-by-__tanjiro45-929k/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6736938/based-on-the-existing-solution-custom-by-g9jf/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6753548/greedy-approach-by-saketcodescribe-5zst/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6735608/java-greedy-solution-pick-smallest-circl-rrod/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6754546/java-easy-solution-maths-only-by-jiten36-a90e/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6743790/java-solution-by-shikhar0105-37l1/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6739167/6-step-algo-solution-by-punitpunde-r73u/;;https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/solutions/6735400/beats-100-memory-and-100-time-intuitive-tqepn/;;;=;==;=;=;

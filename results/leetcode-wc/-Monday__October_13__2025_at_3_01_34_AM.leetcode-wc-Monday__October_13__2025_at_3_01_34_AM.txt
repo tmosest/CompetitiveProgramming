@@ -1,0 +1,52 @@
+3708. Longest Fibonacci Subarray;=;=Medium;=;=public int longestSubarray(int[] nums);=;=You are given an array of positive integers nums.
+
+A Fibonacci array is a contiguous sequence whose third and subsequent terms each equal the sum of the two preceding terms.
+
+Return the length of the longest Fibonacci subarray in nums.
+
+Note: Subarrays of length 1 or 2 are always Fibonacci.
+
+ 
+
+Example 1:
+
+Input: nums = [1,1,1,1,2,3,5,1]
+
+Output: 5
+
+Explanation:
+
+The longest Fibonacci subarray is nums[2..6] = [1, 1, 2, 3, 5].
+
+[1, 1, 2, 3, 5] is Fibonacci because 1 + 1 = 2, 1 + 2 = 3, and 2 + 3 = 5.
+
+Example 2:
+
+Input: nums = [5,2,7,9,16]
+
+Output: 5
+
+Explanation:
+
+The longest Fibonacci subarray is nums[0..4] = [5, 2, 7, 9, 16].
+
+[5, 2, 7, 9, 16] is Fibonacci because 5 + 2 = 7, 2 + 7 = 9, and 7 + 9 = 16.
+
+Example 3:
+
+Input: nums = [1000000000,1000000000,1000000000]
+
+Output: 2
+
+Explanation:
+
+The longest Fibonacci subarray is nums[1..2] = [1000000000, 1000000000].
+
+[1000000000, 1000000000] is Fibonacci because its length is 2.
+
+ 
+
+Constraints:
+
+3 <= nums.length <= 105
+1 <= nums[i] <= 109;=;=https://leetcode.com/problems/longest-fibonacci-subarray/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267183/simple-logic-easy-to-understand-c-java-p-u4yi/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267097/sliding-window-approach-c-python-java-by-cg9u/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7269625/java-100100-solution-by-tbekpro-tfzg/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7269247/java-super-easy-on-100-beats-by-validakh-z9a3/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267246/easy-solution-java-beats-100-runtimememo-4rfj/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267233/beginner-friendly-java-array-simple-logi-k9ak/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267140/java-eazy-solution-beats-100-by-prajwals-8b23/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267265/sliding-window-approach-most-optimal-sol-tbni/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267144/fastest-easiest-java-solution-beats-100-j7t14/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267100/easy-solution-in-java-by-nidhibaratam200-808i/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267328/java-easy-to-understand-on-o1-by-arush_a-eayw/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7267118/simple-java-solution-array-on-by-divija_-q03s/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7271463/using-kadanes-algorithm-by-fruits_punch-lxv2/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7270488/easy-linear-solution-in-java-by-srprawin-i40n/;;https://leetcode.com/problems/longest-fibonacci-subarray/solutions/7270369/java-easy-and-concise-solution-by-wj4507-4b5j/;;;=;==;=;=;

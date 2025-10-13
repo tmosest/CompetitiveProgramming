@@ -1,0 +1,31 @@
+1995. Count Special Quadruplets;=;=Easy;=;=publicÊintÊcountQuadruplets(int[]Ênums);=;=Given a 0-indexed integer array nums, return the number of distinct quadruplets (a, b, c, d) such that:
+
+nums[a] + nums[b] + nums[c] == nums[d], and
+a < b < c < d
+Ê
+
+Example 1:
+
+Input: nums = [1,2,3,6]
+Output: 1
+Explanation: The only quadruplet that satisfies the requirement is (0, 1, 2, 3) because 1 + 2 + 3 == 6.
+Example 2:
+
+Input: nums = [3,3,6,4,5]
+Output: 0
+Explanation: There are no such quadruplets in [3,3,6,4,5].
+Example 3:
+
+Input: nums = [1,1,1,3,5]
+Output: 4
+Explanation: The 4 quadruplets that satisfy the requirement are:
+- (0, 1, 2, 3): 1 + 1 + 1 == 3
+- (0, 1, 3, 4): 1 + 1 + 3 == 5
+- (0, 2, 3, 4): 1 + 1 + 3 == 5
+- (1, 2, 3, 4): 1 + 1 + 3 == 5
+Ê
+
+Constraints:
+
+4 <= nums.length <= 50
+1 <= nums[i] <= 100;=;=https://leetcode.com/problems/count-special-quadruplets/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/count-special-quadruplets/solutions/1446988/javacpython3-real-on2-solution-by-kamika-88io/;;https://leetcode.com/problems/count-special-quadruplets/solutions/6672391/nested-forloop-way-easy-by-sairangineeni-ue7k/;;https://leetcode.com/problems/count-special-quadruplets/solutions/2689505/java-3-solutions-on4-on3-on2-by-conchwu-o80c/;;https://leetcode.com/problems/count-special-quadruplets/solutions/6666772/java-runtime-on2-space-o1-with-1ms-runti-fqwp/;;https://leetcode.com/problems/count-special-quadruplets/solutions/6648729/easiest-solutrion-in-java-using-4-loops-0q9xu/;;https://leetcode.com/problems/count-special-quadruplets/solutions/6451127/beats-79-users-as-mentioned-in-the-quest-7tfm/;;https://leetcode.com/problems/count-special-quadruplets/solutions/1445171/java-solution-loops-easy-by-pgthebigshot-ze9h/;;https://leetcode.com/problems/count-special-quadruplets/solutions/3315873/easy-to-understand-solution-of-count-spe-jiui/;;https://leetcode.com/problems/count-special-quadruplets/solutions/3382533/easy-solution-java-by-vanshgoyal_20-ehe7/;;https://leetcode.com/problems/count-special-quadruplets/solutions/5125082/solution-using-only-for-loop-in-java-wit-m8dn/;;https://leetcode.com/problems/count-special-quadruplets/solutions/1445324/java-non-brute-force-on2-solution-by-msy-4sjd/;;https://leetcode.com/problems/count-special-quadruplets/solutions/2313751/java-brute-force-fastest-solutionon4-by-ryrk9/;;https://leetcode.com/problems/count-special-quadruplets/solutions/4463680/simple-java-code-for-beginners-by-arobh-2ark/;;https://leetcode.com/problems/count-special-quadruplets/solutions/4612930/simple-solution-using-4-for-loops-by-pre-2pnf/;;https://leetcode.com/problems/count-special-quadruplets/solutions/1494468/easy-solution-in-java-begineer-friendly-g3qc8/;;;=;==;=;=;

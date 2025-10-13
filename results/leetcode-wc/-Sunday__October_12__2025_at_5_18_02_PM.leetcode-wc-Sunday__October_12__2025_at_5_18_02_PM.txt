@@ -1,0 +1,36 @@
+2273. Find Resultant Array After Removing Anagrams;=;=Easy;=;=public List<String> removeAnagrams(String[] words)         String prev ="";        List<String> li=new ArrayList<>();        for(int i=0;i<words.length;i++)            char[] ch=words[i].toCharArray();            Arrays.sort(ch);            String curr=String.valueOf(ch);            if(!curr.equals(prev))                li.add(words[i]);                prev=curr;                            return li;;=;=You are given a 0-indexed string array words, where words[i] consists of lowercase English letters.
+
+In one operation, select any index i such that 0 < i < words.length and words[i - 1] and words[i] are anagrams, and delete words[i] from words. Keep performing this operation as long as you can select an index that satisfies the conditions.
+
+Return words after performing all operations. It can be shown that selecting the indices for each operation in any arbitrary order will lead to the same result.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase using all the original letters exactly once. For example, "dacb" is an anagram of "abdc".
+
+ 
+
+Example 1:
+
+Input: words = ["abba","baba","bbaa","cd","cd"]
+Output: ["abba","cd"]
+Explanation:
+One of the ways we can obtain the resultant array is by using the following operations:
+- Since words[2] = "bbaa" and words[1] = "baba" are anagrams, we choose index 2 and delete words[2].
+  Now words = ["abba","baba","cd","cd"].
+- Since words[1] = "baba" and words[0] = "abba" are anagrams, we choose index 1 and delete words[1].
+  Now words = ["abba","cd","cd"].
+- Since words[2] = "cd" and words[1] = "cd" are anagrams, we choose index 2 and delete words[2].
+  Now words = ["abba","cd"].
+We can no longer perform any operations, so ["abba","cd"] is the final answer.
+Example 2:
+
+Input: words = ["a","b","c","d","e"]
+Output: ["a","b","c","d","e"]
+Explanation:
+No two adjacent strings in words are anagrams of each other, so no operations are performed.
+ 
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length <= 10
+words[i] consists of lowercase English letters.;=;=https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description/?envType=daily-question&envId=2025-10-13;=;=https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/7270396/remove-consecutive-anagrams-1ms-java-by-qfaty/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/2040664/java-easy-two-methods-clean-simple-by-ka-njoh/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/7111820/easy-solution-using-frequency-array-by-r-ua4a/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/2039931/2-pointers-without-sorting-by-xxvvpp-wqhl/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/3162725/c-easiest-beginner-friendly-sol-onm26-ti-ks8n/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/6940005/find-resultant-array-after-removing-anag-oftr/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/6919432/easy-to-understand-by-array-list-by-push-2uce/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/7265290/java-solution-by-janhaviii-563z/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/2351539/java-fast-solution-by-hurshidbek-rd66/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/2753693/java-easy-solution-by-ishag11-16l4/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/6101943/easy-java-solution-by-ervkaur2003-9rwy/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/6677305/sorted-string-comparison-by-23adr036-ww2j/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/6654467/beats-100-easy-solution-with-explanation-gblv/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/4981906/easy-solution-compare-adjacent-strings-f-h3l3/;;https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/2043991/clear-and-easily-understandable-by-adity-6zta/;;;=;==;=;=;

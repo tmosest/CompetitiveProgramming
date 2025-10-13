@@ -1,0 +1,28 @@
+1250. Check If It Is a Good Array;=;=Hard;=;=public boolean isGoodArray(int[] nums);=;=Given an array nums of positive integers. Your task is to select some subset of nums, multiply each element by an integer and add all these numbers. The array is said to be good if you can obtain a sum of 1 from the array by any possible subset and multiplicand.
+
+Return True if the array is good otherwise return False.
+
+ 
+
+Example 1:
+
+Input: nums = [12,5,7,23]
+Output: true
+Explanation: Pick numbers 5 and 7.
+5*3 + 7*(-2) = 1
+Example 2:
+
+Input: nums = [29,6,10]
+Output: true
+Explanation: Pick numbers 29, 6 and 10.
+29*1 + 6*(-3) + 10*(-1) = 1
+Example 3:
+
+Input: nums = [3,6]
+Output: false
+ 
+
+Constraints:
+
+1 <= nums.length <= 10^5
+1 <= nums[i] <= 10^9;=;=https://leetcode.com/problems/check-if-it-is-a-good-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/7020767/making-arrays-good-one-gcd-at-a-time-by-c7h1d/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/5196299/java-solution-simple-and-easy-by-darshan-hwdh/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/1718093/java-gcd-solution-by-hiteshprajapati8895-3nfx/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/5461771/1250-optimised-code-beats-94-understand-arqc4/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/4289823/java-simple-using-gcd-by-ravithemore-b3b8/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/2716855/java-solution-easy-to-understand-by-vish-s6ck/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/2689665/java-sol-using-bezouts-identity-by-rimmi-jyzl/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/3268418/java-beginner-friendly-gcd-by-deepakajay-ngeo/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/2864105/java-solution-easy-to-understand-code-by-tgii/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/1797525/java-solution-gcd-approach-by-kanikatyag-srcn/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/1957874/java-best-approach-by-devilabhi-6c16/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/6971987/solution-in-java-using-bezouts-theorem-s-6xo2/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/422940/java-by-master_alcy-cuxl/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/2317234/check-if-its-a-good-array-by-tunitx-5nhf/;;https://leetcode.com/problems/check-if-it-is-a-good-array/solutions/6863167/check-gcd-1-using-euclidean-algorithm-by-d67h/;;;=;==;=;=;

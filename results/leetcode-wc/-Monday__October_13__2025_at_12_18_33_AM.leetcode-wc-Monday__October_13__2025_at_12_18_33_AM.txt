@@ -1,0 +1,22 @@
+1196. How Many Apples Can You Put into the Basket;=;=Easy;=;=public int maxNumberOfApples(int[] weight);=;=You have some apples and a basket that can carry up to 5000 units of weight.
+
+Given an integer array weight where weight[i] is the weight of the ith apple, return the maximum number of apples you can put in the basket.
+
+ 
+
+Example 1:
+
+Input: weight = [100,200,150,1000]
+Output: 4
+Explanation: All 4 apples can be carried by the basket since their sum of weights is 1450.
+Example 2:
+
+Input: weight = [900,950,800,1000,700,800]
+Output: 5
+Explanation: The sum of weights of the 6 apples exceeds 5000 so we choose any 5 of them.
+ 
+
+Constraints:
+
+1 <= weight.length <= 103
+1 <= weight[i] <= 103;=;=https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/5373400/simple-counting-sort-with-optimizations-6regw/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/3291241/easy-solution-by-j_jebson-z1j2/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/388014/java-sort-greedy-easy-that-it-seems-expl-5l1y/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/6251339/easy-java-solution-by-gautam-2603-hpob/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/6203917/prefix-sum-java-easy-to-understand-by-de-dxsn/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/5837238/east-to-understand-java-cumulative-sum-i-6rne/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/6781341/beats-100-java-solution-on-time-o1-space-0ygu/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/6495766/easy-greedy-solution-by-vitorbrangioni-znrh/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/6028262/greedy-java-easy-to-understand-by-kant1p-diia/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/5627418/javajsts-solution-jw-by-specter01wj-cidv/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/4569664/java-easy-by-abdulhameed16-dlbm/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/4326922/easy-java-solution-by-swathikagunasekara-wftx/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/4153931/java-heap-easy-way-by-liujiachengsun-6ubm/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/3846834/easy-soluth-by-maharajanmr-n8fo/;;https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/solutions/3842717/simple-java-code-by-jayanarayan_m-vaud/;;;=;==;=;=;

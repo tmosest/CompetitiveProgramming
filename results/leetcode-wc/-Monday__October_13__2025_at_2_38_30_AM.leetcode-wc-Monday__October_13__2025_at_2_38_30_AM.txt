@@ -1,0 +1,56 @@
+3154. Find Number of Ways to Reach the K-th Stair;=;=Hard;=;=public int waysToReachStair(int k);=;=You are given a non-negative integer k. There exists a staircase with an infinite number of stairs, with the lowest stair numbered 0.
+
+Alice has an integer jump, with an initial value of 0. She starts on stair 1 and wants to reach stair k using any number of operations. If she is on stair i, in one operation she can:
+
+Go down to stair i - 1. This operation cannot be used consecutively or on stair 0.
+Go up to stair i + 2jump. And then, jump becomes jump + 1.
+Return the total number of ways Alice can reach stair k.
+
+Note that it is possible that Alice reaches the stair k, and performs some operations to reach the stair k again.
+
+ 
+
+Example 1:
+
+Input: k = 0
+
+Output: 2
+
+Explanation:
+
+The 2 possible ways of reaching stair 0 are:
+
+Alice starts at stair 1.
+Using an operation of the first type, she goes down 1 stair to reach stair 0.
+Alice starts at stair 1.
+Using an operation of the first type, she goes down 1 stair to reach stair 0.
+Using an operation of the second type, she goes up 20 stairs to reach stair 1.
+Using an operation of the first type, she goes down 1 stair to reach stair 0.
+Example 2:
+
+Input: k = 1
+
+Output: 4
+
+Explanation:
+
+The 4 possible ways of reaching stair 1 are:
+
+Alice starts at stair 1. Alice is at stair 1.
+Alice starts at stair 1.
+Using an operation of the first type, she goes down 1 stair to reach stair 0.
+Using an operation of the second type, she goes up 20 stairs to reach stair 1.
+Alice starts at stair 1.
+Using an operation of the second type, she goes up 20 stairs to reach stair 2.
+Using an operation of the first type, she goes down 1 stair to reach stair 1.
+Alice starts at stair 1.
+Using an operation of the first type, she goes down 1 stair to reach stair 0.
+Using an operation of the second type, she goes up 20 stairs to reach stair 1.
+Using an operation of the first type, she goes down 1 stair to reach stair 0.
+Using an operation of the second type, she goes up 21 stairs to reach stair 2.
+Using an operation of the first type, she goes down 1 stair to reach stair 1.
+ 
+
+Constraints:
+
+0 <= k <= 109;=;=https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/5177181/javacpython-combinations-o1-space-by-lee-mdpi/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/5177081/java-solution-by-harsh__005-39wo/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/5177381/basic-brute-force-with-caching-java-65-m-w8h7/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/5177148/java-clean-solution-weekly-contest-by-sh-ptwc/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/5179929/easy-approach-java-recursion-memoization-6p2m/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/5177298/beats-100-memoization-detailed-explainat-wg65/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/6777550/easy-to-understand-tc-ok-dp-memoization-i7498/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/6658395/binomial-by-nickulman-roi2/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/6345434/using-dp-and-bitmask-by-risabhuchiha-jfrw/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/6272519/find-number-of-ways-to-reach-the-k-th-st-quf4/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/6269548/easy-by-bhagya_patel_01-8lwe/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/6261022/find-number-of-ways-to-reach-the-k-th-st-4njz/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/5905953/java-dp-recursion-memoization-by-ruicarr-gpqb/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/5839057/simple-java-solution-dpmemo-by-harsha_na-nf1s/;;https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/solutions/5203639/java-memoization-explained-by-prashant40-xds8/;;;=;==;=;=;

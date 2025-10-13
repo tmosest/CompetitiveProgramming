@@ -1,0 +1,53 @@
+1649. Create Sorted Array through Instructions;=;=Hard;=;=public int createSortedArray(int[] instructions);=;=Given an integer array instructions, you are asked to create a sorted array from the elements in instructions. You start with an empty container nums. For each element from left to right in instructions, insert it into nums. The cost of each insertion is the minimum of the following:
+
+The number of elements currently in nums that are strictly less than instructions[i].
+The number of elements currently in nums that are strictly greater than instructions[i].
+For example, if inserting element 3 into nums = [1,2,3,5], the cost of insertion is min(2, 1) (elements 1 and 2 are less than 3, element 5 is greater than 3) and nums will become [1,2,3,3,5].
+
+Return the total cost to insert all elements from instructions into nums. Since the answer may be large, return it modulo 109 + 7
+
+ 
+
+Example 1:
+
+Input: instructions = [1,5,6,2]
+Output: 1
+Explanation: Begin with nums = [].
+Insert 1 with cost min(0, 0) = 0, now nums = [1].
+Insert 5 with cost min(1, 0) = 0, now nums = [1,5].
+Insert 6 with cost min(2, 0) = 0, now nums = [1,5,6].
+Insert 2 with cost min(1, 2) = 1, now nums = [1,2,5,6].
+The total cost is 0 + 0 + 0 + 1 = 1.
+Example 2:
+
+Input: instructions = [1,2,3,6,5,4]
+Output: 3
+Explanation: Begin with nums = [].
+Insert 1 with cost min(0, 0) = 0, now nums = [1].
+Insert 2 with cost min(1, 0) = 0, now nums = [1,2].
+Insert 3 with cost min(2, 0) = 0, now nums = [1,2,3].
+Insert 6 with cost min(3, 0) = 0, now nums = [1,2,3,6].
+Insert 5 with cost min(3, 1) = 1, now nums = [1,2,3,5,6].
+Insert 4 with cost min(3, 2) = 2, now nums = [1,2,3,4,5,6].
+The total cost is 0 + 0 + 0 + 0 + 1 + 2 = 3.
+Example 3:
+
+Input: instructions = [1,3,3,3,2,4,2,1,2]
+Output: 4
+Explanation: Begin with nums = [].
+Insert 1 with cost min(0, 0) = 0, now nums = [1].
+Insert 3 with cost min(1, 0) = 0, now nums = [1,3].
+Insert 3 with cost min(1, 0) = 0, now nums = [1,3,3].
+Insert 3 with cost min(1, 0) = 0, now nums = [1,3,3,3].
+Insert 2 with cost min(1, 3) = 1, now nums = [1,2,3,3,3].
+Insert 4 with cost min(5, 0) = 0, now nums = [1,2,3,3,3,4].
+???????Insert 2 with cost min(1, 4) = 1, now nums = [1,2,2,3,3,3,4].
+???????Insert 1 with cost min(0, 6) = 0, now nums = [1,1,2,2,3,3,3,4].
+???????Insert 2 with cost min(2, 4) = 2, now nums = [1,1,2,2,2,3,3,3,4].
+The total cost is 0 + 0 + 0 + 0 + 1 + 0 + 1 + 0 + 2 = 4.
+ 
+
+Constraints:
+
+1 <= instructions.length <= 105
+1 <= instructions[i] <= 105;=;=https://leetcode.com/problems/create-sorted-array-through-instructions/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/7233102/video-easy-to-understand-segment-tree-on-kh4h/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/1010274/create-sorted-array-through-instructions-6xdq/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/1011392/java-fenwick-tree-implementation-on-log-yrztl/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/2688078/java-3-solutions-binary-search-tree-segm-mgta/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/1011301/java-create-sorted-array-through-instruc-vdaq/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/3782809/java-segment-tree-solution-by-hardychang-po4t/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/929222/java-simple-two-binarysearch-onlogn-by-k-rbjj/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/7006420/simple-java-solution-by-amit_sawant-ofk1/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/6720115/used-fenwick-tree-as-leetcode-hints-didn-ffom/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/5137199/java-segment-tree-arrays-by-f20180991-g0qc/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/4622620/simple-java-solution-by-sakshikishore-uahz/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/4318582/create-sorted-array-through-instructions-80qx/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/4279392/3-solutions-so-i-sleep-well-by-user3043s-zmdw/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/4159550/java-very-simple-segment-tree-by-weill82-kh9i/;;https://leetcode.com/problems/create-sorted-array-through-instructions/solutions/3691791/java-solution-merge-sort-by-h_rshsingh-x7al/;;;=;==;=;=;

@@ -1,0 +1,44 @@
+3167. Better Compression of String;=;=Medium;=;=public String betterCompression(String compressed);=;=You are given a string compressed representing a compressed version of a string. The format is a character followed by its frequency. For example, "a3b1a1c2" is a compressed version of the string "aaabacc".
+
+We seek a better compression with the following conditions:
+
+Each character should appear only once in the compressed version.
+The characters should be in alphabetical order.
+Return the better compression of compressed.
+
+Note: In the better version of compression, the order of letters may change, which is acceptable.
+
+ 
+
+Example 1:
+
+Input: compressed = "a3c9b2c1"
+
+Output: "a3b2c10"
+
+Explanation:
+
+Characters "a" and "b" appear only once in the input, but "c" appears twice, once with a size of 9 and once with a size of 1.
+
+Hence, in the resulting string, it should have a size of 10.
+
+Example 2:
+
+Input: compressed = "c2b3a1"
+
+Output: "a1b3c2"
+
+Example 3:
+
+Input: compressed = "a2b4c1"
+
+Output: "a2b4c1"
+
+ 
+
+Constraints:
+
+1 <= compressed.length <= 6 * 104
+compressed consists only of lowercase English letters and digits.
+compressed is a valid compression, i.e., each character is followed by its frequency.
+Frequencies are in the range [1, 104] and have no leading zeroes.;=;=https://leetcode.com/problems/better-compression-of-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/better-compression-of-string/solutions/6945851/easy-to-understand-straight-forward-on-s-f8yt/;;https://leetcode.com/problems/better-compression-of-string/solutions/6284124/easy-to-understand-solution-in-java-in-o-zocq/;;https://leetcode.com/problems/better-compression-of-string/solutions/6020923/java-beats-9452-by-mushtaquddin443-vvf5/;;https://leetcode.com/problems/better-compression-of-string/solutions/5969001/concise-on-java-solution-with-detailed-e-84vg/;;https://leetcode.com/problems/better-compression-of-string/solutions/5887928/optimised-a-bit-by-rakeshshankar2k16-u4e3/;;https://leetcode.com/problems/better-compression-of-string/solutions/5887767/a-different-approach-by-rakeshshankar2k1-h8t5/;;https://leetcode.com/problems/better-compression-of-string/solutions/5801457/best-on-and-o1-by-sidd315-ufys/;;https://leetcode.com/problems/better-compression-of-string/solutions/5769947/simple-java-solution-by-sakshikishore-1nni/;;https://leetcode.com/problems/better-compression-of-string/solutions/5685895/easy-to-understand-solution-by-gracybhar-wak0/;;https://leetcode.com/problems/better-compression-of-string/solutions/5637788/hashmap-with-sort-by-xkstacy-b4ol/;;https://leetcode.com/problems/better-compression-of-string/solutions/5628852/easy-java-solution-by-annon20-pgb7/;;https://leetcode.com/problems/better-compression-of-string/solutions/5596812/java-beats-96-by-yashwanthchennu1999-tn3w/;;https://leetcode.com/problems/better-compression-of-string/solutions/5593955/easiest-dp-solution-with-time-complexity-uhxl/;;https://leetcode.com/problems/better-compression-of-string/solutions/5571742/easy-java-solution-using-tc-on-sc-o1-by-oyutj/;;https://leetcode.com/problems/better-compression-of-string/solutions/5537515/java-solution-by-ndsjqwbbb-i9k5/;;;=;==;=;=;

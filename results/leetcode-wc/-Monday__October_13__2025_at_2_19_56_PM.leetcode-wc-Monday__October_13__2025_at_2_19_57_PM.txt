@@ -1,0 +1,28 @@
+920. Number of Music Playlists;=;=Hard;=;=public int numMusicPlaylists(int n, int goal, int k);=;=Your music player contains n different songs. You want to listen to goal songs (not necessarily different) during your trip. To avoid boredom, you will create a playlist so that:
+
+Every song is played at least once.
+A song can only be played again only if k other songs have been played.
+Given n, goal, and k, return the number of possible playlists that you can create. Since the answer can be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: n = 3, goal = 3, k = 1
+Output: 6
+Explanation: There are 6 possible playlists: [1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], and [3, 2, 1].
+Example 2:
+
+Input: n = 2, goal = 3, k = 0
+Output: 6
+Explanation: There are 6 possible playlists: [1, 1, 2], [1, 2, 1], [2, 1, 1], [2, 2, 1], [2, 1, 2], and [1, 2, 2].
+Example 3:
+
+Input: n = 2, goal = 3, k = 1
+Output: 2
+Explanation: There are 2 possible playlists: [1, 2, 1] and [2, 1, 2].
+ 
+
+Constraints:
+
+0 <= k < n <= goal <= 100;=;=https://leetcode.com/problems/number-of-music-playlists/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-music-playlists/solutions/3869510/100-dynamic-programming-video-creating-u-d3kr/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3871317/ex-amazon-explains-a-solution-with-a-vid-v24y/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3873115/clean-recursion-memoization-by-hridoy100-bf7g/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3869809/java-dynamic-programming-recursion-memoi-xriq/;;https://leetcode.com/problems/number-of-music-playlists/solutions/409616/dew-it-math-solution-counting-93-100-by-wq8bt/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3871572/intuition-explained-in-details-java-solu-l8gw/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3873483/recursion-memoization-easy-java-solution-p08b/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3873114/easy-recursion-memoisation-well-commente-a0ij/;;https://leetcode.com/problems/number-of-music-playlists/solutions/732049/easy-memoization-solution-in-java-by-zis-senw/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3870486/java-6-by-preeom-ulvd/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3871038/memoization-not-the-most-efficient-solut-48j9/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3873191/easy-java-solution-dp-by-ujjwal218-kttt/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3869967/daily-coding-challenge-video-explanation-wm5t/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3872629/java-python-solution-fully-explained-by-qgzkv/;;https://leetcode.com/problems/number-of-music-playlists/solutions/3871142/java-easy-solution-5ms-beats100-by-007ha-bi2d/;;;=;==;=;=;

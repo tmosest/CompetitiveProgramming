@@ -1,0 +1,26 @@
+312. Burst Balloons;=;=Hard;=;=publicÊintÊmaxCoins(int[]Ênums);=;=You are given n balloons, indexed from 0 to n - 1. Each balloon is painted with a number on it represented by an array nums. You are asked to burst all the balloons.
+
+If you burst the ith balloon, you will get nums[i - 1] * nums[i] * nums[i + 1] coins. If i - 1 or i + 1 goes out of bounds of the array, then treat it as if there is a balloon with a 1 painted on it.
+
+Return the maximum coins you can collect by bursting the balloons wisely.
+
+Ê
+
+Example 1:
+
+Input: nums = [3,1,5,8]
+Output: 167
+Explanation:
+nums = [3,1,5,8] --> [3,5,8] --> [3,8] --> [8] --> []
+coins =  3*1*5    +   3*5*8   +  1*3*8  + 1*8*1 = 167
+Example 2:
+
+Input: nums = [1,5]
+Output: 10
+Ê
+
+Constraints:
+
+n == nums.length
+1 <= n <= 300
+0 <= nums[i] <= 100;=;=https://leetcode.com/problems/burst-balloons/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/burst-balloons/solutions/76228/share-some-analysis-and-explanations-by-wfqwo/;;https://leetcode.com/problems/burst-balloons/solutions/1659162/java-dp-divide-and-conquer-sliding-windo-q71d/;;https://leetcode.com/problems/burst-balloons/solutions/7242547/java-burst-balloons-intuitive-last-ballo-h4ni/;;https://leetcode.com/problems/burst-balloons/solutions/1659527/cpythonjava-2-simple-solutions-dp-and-re-tddg/;;https://leetcode.com/problems/burst-balloons/solutions/1524512/cusing-matrix-chain-multiplication-by-am-a592/;;https://leetcode.com/problems/burst-balloons/solutions/6989002/easiest-solution-intutive-beginner-frien-am2m/;;https://leetcode.com/problems/burst-balloons/solutions/1659892/happy-new-year-my-understanding-to-solve-68tn/;;https://leetcode.com/problems/burst-balloons/solutions/76227/java-dp-solution-with-detailed-explanati-w4hz/;;https://leetcode.com/problems/burst-balloons/solutions/733279/dp-intuitive-explannations-complete-demo-akl8/;;https://leetcode.com/problems/burst-balloons/solutions/6886050/burst-balloons-by-pranavdewangan22-nbmi/;;https://leetcode.com/problems/burst-balloons/solutions/6565206/best-explanation-ans-easy-solution-by-kr-j9s7/;;https://leetcode.com/problems/burst-balloons/solutions/5184693/simple-java-solution-using-mcm-by-dhingr-vi2e/;;https://leetcode.com/problems/burst-balloons/solutions/971203/burst-balloons-recursion-with-memorizati-uvb0/;;https://leetcode.com/problems/burst-balloons/solutions/7268528/best-java-soln-100-by-rakshit_kaintura-k2qc/;;https://leetcode.com/problems/burst-balloons/solutions/7250120/burst-balloons-by-ayuuxshh-6a62/;;;=;==;=;=;

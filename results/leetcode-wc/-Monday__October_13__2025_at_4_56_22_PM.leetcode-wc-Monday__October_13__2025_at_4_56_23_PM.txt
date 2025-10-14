@@ -1,0 +1,34 @@
+464. Can I Win;=;=Medium;=;=publicÊbooleanÊcanIWin(intÊmaxChoosableInteger,ÊintÊdesiredTotal);=;=In the "100 game" two players take turns adding, to a running total, any integer from 1 to 10. The player who first causes the running total to reach or exceed 100 wins.
+
+What if we change the game so that players cannot re-use integers?
+
+For example, two players might take turns drawing from a common pool of numbers from 1 to 15 without replacement until they reach a total >= 100.
+
+Given two integers maxChoosableInteger and desiredTotal, return true if the first player to move can force a win, otherwise, return false. Assume both players play optimally.
+
+Ê
+
+Example 1:
+
+Input: maxChoosableInteger = 10, desiredTotal = 11
+Output: false
+Explanation:
+No matter which integer the first player choose, the first player will lose.
+The first player can choose an integer from 1 up to 10.
+If the first player choose 1, the second player can only choose integers from 2 up to 10.
+The second player will win by choosing 10 and get a total = 11, which is >= desiredTotal.
+Same with other integers chosen by the first player, the second player will always win.
+Example 2:
+
+Input: maxChoosableInteger = 10, desiredTotal = 0
+Output: true
+Example 3:
+
+Input: maxChoosableInteger = 10, desiredTotal = 1
+Output: true
+Ê
+
+Constraints:
+
+1 <= maxChoosableInteger <= 20
+0 <= desiredTotal <= 300;=;=https://leetcode.com/problems/can-i-win/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/can-i-win/solutions/7204705/easy-code-by-prajanthkumar-lke9/;;https://leetcode.com/problems/can-i-win/solutions/6153051/100-beat-easy-explanation-c-dpbitmasking-6mqz/;;https://leetcode.com/problems/can-i-win/solutions/3780152/thoroughly-commented-with-clear-variable-1oiw/;;https://leetcode.com/problems/can-i-win/solutions/6798885/easy-to-understand-simple-and-clean-code-r7yp/;;https://leetcode.com/problems/can-i-win/solutions/4050398/bit-mask-concepts-with-solution-by-abhay-7jtt/;;https://leetcode.com/problems/can-i-win/solutions/6369698/bitmask-dp-by-is2ac-hdns/;;https://leetcode.com/problems/can-i-win/solutions/5823339/easy-solution-by-nisar-a-oskl/;;https://leetcode.com/problems/can-i-win/solutions/4678715/java-memoization-explained-by-prashant40-mdho/;;https://leetcode.com/problems/can-i-win/solutions/5242028/can-i-win-simplified-java-by-vishukalier-n26d/;;https://leetcode.com/problems/can-i-win/solutions/1454684/java-dp-solution-recursion-with-memory-b-s7c1/;;https://leetcode.com/problems/can-i-win/solutions/2379330/java-bitmask-recursion-95faster-by-codes-nro1/;;https://leetcode.com/problems/can-i-win/solutions/3165419/100-beginers-approach-by-gulimcherlaroop-ao0i/;;https://leetcode.com/problems/can-i-win/solutions/1342197/java-prettiest-code-np-problem-polynomia-k6v7/;;https://leetcode.com/problems/can-i-win/solutions/1860627/bitmask-solution-with-comments-by-snj07-ucz5/;;https://leetcode.com/problems/can-i-win/solutions/5461326/simplest-unique-java-by-mayank5045-x17u/;;;=;==;=;=;

@@ -1,0 +1,35 @@
+3674. Minimum Operations to Equalize Array;=;=Easy;=;=publicÊintÊminOperations(int[]Ênums);=;=You are given an integer array nums of length n.
+
+In one operation, choose any subarray nums[l...r] (0 <= l <= r < n) and replace each element in that subarray with the bitwise AND of all elements.
+
+Return the minimum number of operations required to make all elements of nums equal.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+Ê
+
+Example 1:
+
+Input: nums = [1,2]
+
+Output: 1
+
+Explanation:
+
+Choose nums[0...1]: (1 AND 2) = 0, so the array becomes [0, 0] and all elements are equal in 1 operation.
+
+Example 2:
+
+Input: nums = [5,5,5]
+
+Output: 0
+
+Explanation:
+
+nums is [5, 5, 5] which already has all elements equal, so 0 operations are required.
+
+Ê
+
+Constraints:
+
+1 <= n == nums.length <= 100
+1 <= nums[i] <= 105;=;=https://leetcode.com/problems/minimum-operations-to-equalize-array/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7163275/1-line-code-cpythonjava-by-leadingtheaby-81mz/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7266194/easy-to-understand-java-solution-detaile-0jhv/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7163274/simple-solution-by-fk3tv5uwka-v9pk/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7163370/most-optimal-short-java-code-beats-by-so-vcec/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7240968/optimal-solution-beats-100-python-java-c-ckj7/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7166886/check-for-different-elements-c-python-ja-v1c4/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7166169/jsdi-simple-solution-beats-100-by-abhina-7xqg/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7164620/minimum-operations-to-equalize-array-on-0z3sg/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7163302/javacpython-check-if-all-same-by-lee215-z985/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7210237/java-simple-by-sairangineeni-1h1b/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7166077/three-line-solution-by-shreya_pandey99-g5nk/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7163741/easiest-3-4-line-code-o1-solution-by-arp-tw0l/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7163508/easiest-3-4-line-code-o1-solution-by-arp-0mdo/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7164251/very-simple-and-easy-100-beats-by-younus-jzmv/;;https://leetcode.com/problems/minimum-operations-to-equalize-array/solutions/7163429/simple-java-by-user4769vd-tyoj/;;;=;==;=;=;

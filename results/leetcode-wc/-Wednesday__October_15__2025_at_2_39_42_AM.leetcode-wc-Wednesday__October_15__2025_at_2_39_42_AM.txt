@@ -1,0 +1,41 @@
+2013. Detect Squares;=;=Medium;=;=DetectSquares     public DetectSquares()                     public void add(int[] point)                     public int count(int[] point);=;=You are given a stream of points on the X-Y plane. Design an algorithm that:
+
+Adds new points from the stream into a data structure. Duplicate points are allowed and should be treated as different points.
+Given a query point, counts the number of ways to choose three points from the data structure such that the three points and the query point form an axis-aligned square with positive area.
+An axis-aligned square is a square whose edges are all the same length and are either parallel or perpendicular to the x-axis and y-axis.
+
+Implement the DetectSquares class:
+
+DetectSquares() Initializes the object with an empty data structure.
+void add(int[] point) Adds a new point point = [x, y] to the data structure.
+int count(int[] point) Counts the number of ways to form axis-aligned squares with point point = [x, y] as described above.
+ 
+
+Example 1:
+
+
+Input
+["DetectSquares", "add", "add", "add", "count", "count", "add", "count"]
+[[], [[3, 10]], [[11, 2]], [[3, 2]], [[11, 10]], [[14, 8]], [[11, 2]], [[11, 10]]]
+Output
+[null, null, null, null, 1, 0, null, 2]
+
+Explanation
+DetectSquares detectSquares = new DetectSquares();
+detectSquares.add([3, 10]);
+detectSquares.add([11, 2]);
+detectSquares.add([3, 2]);
+detectSquares.count([11, 10]); // return 1. You can choose:
+                               //   - The first, second, and third points
+detectSquares.count([14, 8]);  // return 0. The query point cannot form a square with any points in the data structure.
+detectSquares.add([11, 2]);    // Adding duplicate points is allowed.
+detectSquares.count([11, 10]); // return 2. You can choose:
+                               //   - The first, second, and third points
+                               //   - The first, third, and fourth points
+ 
+
+Constraints:
+
+point.length == 2
+0 <= x, y <= 1000
+At most 3000 calls in total will be made to add and count.;=;=https://leetcode.com/problems/detect-squares/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/detect-squares/solutions/1472167/java-clean-solution-with-list-and-hashma-y8ga/;;https://leetcode.com/problems/detect-squares/solutions/1471923/java-easy-and-concise-2-d-array-solution-t85n/;;https://leetcode.com/problems/detect-squares/solutions/6994606/detect-squares-by-dhyanam_janardhana-ffqx/;;https://leetcode.com/problems/detect-squares/solutions/1472327/easy-to-understand-java-single-hashmap-w-hga9/;;https://leetcode.com/problems/detect-squares/solutions/2219713/java-very-easy-trick-using-hashmap-by-lo-8fha/;;https://leetcode.com/problems/detect-squares/solutions/1684103/java-simple-solution-beats-99-with-custo-hx5l/;;https://leetcode.com/problems/detect-squares/solutions/5372789/easy-java-beats-72-hashmap-by-hsiaotingl-lxqx/;;https://leetcode.com/problems/detect-squares/solutions/2355913/faster-than-98-super-fast-and-efficient-kbi8o/;;https://leetcode.com/problems/detect-squares/solutions/2419118/java-hashmap-beats-90-no-strings-by-iman-n8y1/;;https://leetcode.com/problems/detect-squares/solutions/3485303/easy-solution-using-map-by-harshgrg02-jbr0/;;https://leetcode.com/problems/detect-squares/solutions/7254450/simple-java-solution-on-by-flash-ap0q/;;https://leetcode.com/problems/detect-squares/solutions/6506705/beats-97-in-time-and-memory-complexity-j-8ymt/;;https://leetcode.com/problems/detect-squares/solutions/1471918/o1-2-d-array-by-shreyansh94-rjar/;;https://leetcode.com/problems/detect-squares/solutions/2256005/java-hashmap-by-k_luo-p53e/;;https://leetcode.com/problems/detect-squares/solutions/2107619/java-88-ms-using-pair-with-comments-by-e-lngi/;;;=;==;=;=;

@@ -1,0 +1,28 @@
+1278. Palindrome Partitioning III;=;=Hard;=;=public int palindromePartition(String s, int k);=;=You are given a string s containing lowercase letters and an integer k. You need to :
+
+First, change some characters of s to other lowercase English letters.
+Then divide s into k non-empty disjoint substrings such that each substring is a palindrome.
+Return the minimal number of characters that you need to change to divide the string.
+
+ 
+
+Example 1:
+
+Input: s = "abc", k = 2
+Output: 1
+Explanation: You can split the string into "ab" and "c", and change 1 character in "ab" to make it palindrome.
+Example 2:
+
+Input: s = "aabbc", k = 3
+Output: 0
+Explanation: You can split the string into "aa", "bb" and "c", all of them are palindrome.
+Example 3:
+
+Input: s = "leetcode", k = 8
+Output: 0
+ 
+
+Constraints:
+
+1 <= k <= s.length <= 100.
+s only contains lowercase English letters.;=;=https://leetcode.com/problems/palindrome-partitioning-iii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/palindrome-partitioning-iii/solutions/7187012/beats-100-simple-easy-to-understand-solu-iham/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/6614018/beginner-friendly-code-and-easy-to-under-5pmb/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/3087553/java-recursion-memoization-tabulation-on-5bw7/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/1388630/java-bottom-up-dp-by-dakshbhabra-80yh/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/5648769/dp-bottom-up-by-chuko-ibdi/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/3390103/simple-dp-solution-java-memoization-71-b-0fbv/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/5012671/mcm-pattern-aditya-verma-mcm-pattern-rec-7omc/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/2652759/java-memoization-front-row-partition-alg-ol4h/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/5136480/palindrome-partitioning-i-ii-iii-java-cl-fn0i/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/3573710/java-solution-recurison-memoized-by-h_rs-btur/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/4120618/similar-to-mcn-java-solution-recurrence-8da29/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/7194062/beats-100-easy-to-understand-by-aditya_m-3wwh/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/7154427/partition-dp-onnk-memo-by-gitchuan-xvp4/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/7120506/how-to-think-language-agnostic-by-monalo-6pia/;;https://leetcode.com/problems/palindrome-partitioning-iii/solutions/449442/better-than-50100-recursion-memoization-nwxnh/;;;=;==;=;=;

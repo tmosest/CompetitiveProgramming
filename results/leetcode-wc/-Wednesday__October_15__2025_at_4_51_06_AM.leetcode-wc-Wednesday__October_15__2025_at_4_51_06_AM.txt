@@ -1,0 +1,23 @@
+996. Number of Squareful Arrays;=;=Hard;=;=publicÊintÊnumSquarefulPerms(int[]Ênums);=;=An array is squareful if the sum of every pair of adjacent elements is a perfect square.
+
+Given an integer array nums, return the number of permutations of nums that are squareful.
+
+Two permutations perm1 and perm2 are different if there is some index i such that perm1[i] != perm2[i].
+
+Ê
+
+Example 1:
+
+Input: nums = [1,17,8]
+Output: 2
+Explanation: [1,8,17] and [17,8,1] are the valid permutations.
+Example 2:
+
+Input: nums = [2,2,2]
+Output: 1
+Ê
+
+Constraints:
+
+1 <= nums.length <= 12
+0 <= nums[i] <= 109;=;=https://leetcode.com/problems/number-of-squareful-arrays/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-squareful-arrays/solutions/3536535/solution-by-deleted_user-tnva/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/238593/java-dfs-unique-perms-by-witchthewicked-67xf/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/4876712/simple-backtracking-solution-by-ayushach-jb9e/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/4067376/dfs-beats-10000of-users-with-java-by-nic-6cnl/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/5913648/beats-99-backtracking-dynamic-programmin-pq48/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/1443001/java-backtracking-by-intergalacticunicor-93yj/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/842262/java-simple-solution-by-jianhuilin1124-zpeo/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/4698970/backtrack-for-permutations-by-fanger-mbyq/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/4489860/optimize-solution-by-shree_govind_jee-561k/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/1328900/java-easy-to-understand-by-enthu_coder-z7ci/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/989149/java-dp-bitmask-by-adityakaushik99-msor/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/661132/1ms-permutation-beats-95-no-idea-why-wou-019f/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/7112349/java-soltuion-by-amit506-616j/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/7087635/dfs-backtracking-for-squareful-arrays-by-11ar/;;https://leetcode.com/problems/number-of-squareful-arrays/solutions/6935408/easy-intitutive-solution-backtrack-sorti-uodw/;;;=;==;=;=;

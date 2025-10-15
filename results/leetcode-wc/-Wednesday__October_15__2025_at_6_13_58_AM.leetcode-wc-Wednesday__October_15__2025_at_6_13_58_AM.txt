@@ -1,0 +1,33 @@
+2410. Maximum Matching of Players With Trainers;=;=Medium;=;=public int matchPlayersAndTrainers(int[] players, int[] trainers);=;=You are given a 0-indexed integer array players, where players[i] represents the ability of the ith player. You are also given a 0-indexed integer array trainers, where trainers[j] represents the training capacity of the jth trainer.
+
+The ith player can match with the jth trainer if the player's ability is less than or equal to the trainer's training capacity. Additionally, the ith player can be matched with at most one trainer, and the jth trainer can be matched with at most one player.
+
+Return the maximum number of matchings between players and trainers that satisfy these conditions.
+
+ 
+
+Example 1:
+
+Input: players = [4,7,9], trainers = [8,2,5,8]
+Output: 2
+Explanation:
+One of the ways we can form two matchings is as follows:
+- players[0] can be matched with trainers[0] since 4 <= 8.
+- players[1] can be matched with trainers[3] since 7 <= 8.
+It can be proven that 2 is the maximum number of matchings that can be formed.
+Example 2:
+
+Input: players = [1,1,1], trainers = [10]
+Output: 1
+Explanation:
+The trainer can be matched with any of the 3 players.
+Each player can only be matched with one trainer, so the maximum answer is 1.
+ 
+
+Constraints:
+
+1 <= players.length, trainers.length <= 105
+1 <= players[i], trainers[j] <= 109
+ 
+
+Note: This question is the same as 445: Assign Cookies.;=;=https://leetcode.com/problems/maximum-matching-of-players-with-trainers/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6950628/beginner-freindlyjavacpython-by-ashokvar-o1d2/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6952473/beats-space-o1-super-easy-beginners-java-6zg7/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6950902/maximum-matching-of-players-with-trainer-h6wt/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6953534/100-beats-fast-and-clear-with-iterations-9v6m/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6951554/sorting-greedy-two-pointers-java-dry-run-vl6d/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6951400/example-walkthrough-optimal-easy-solutio-lk1i/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6953385/simple-and-beginner-friendly-approach-ti-vqzc/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6951751/late-but-good-logic-in-this-solution-by-7tr6r/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6951887/cjava-sorting-approach-best-easy-solutio-lr8m/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6953717/java-easy-solution-2-pointers-by-shreyag-imwr/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6952943/optimal-matching-using-two-pointer-techn-27kk/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6951800/easy-solution-eng-hing-explained-beats-9-zf4k/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6952300/optimal-solution-using-sorting-by-veer-p-o5ra/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6951499/greedy-two-pointers-by-ashhar_1-2y9t/;;https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6953609/best-brute-force-approach-by-paliwalshiv-2jzz/;;;=;==;=;=;

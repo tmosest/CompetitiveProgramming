@@ -1,0 +1,44 @@
+3713. Longest Balanced Substring I;=;=Medium;=;=public int longestBalanced(String s);=;=You are given a string s consisting of lowercase English letters.
+
+A substring of s is called balanced if all distinct characters in the substring appear the same number of times.
+
+Return the length of the longest balanced substring of s.
+
+ 
+
+Example 1:
+
+Input: s = "abbac"
+
+Output: 4
+
+Explanation:
+
+The longest balanced substring is "abba" because both distinct characters 'a' and 'b' each appear exactly 2 times.
+
+Example 2:
+
+Input: s = "zzabccy"
+
+Output: 4
+
+Explanation:
+
+The longest balanced substring is "zabc" because the distinct characters 'z', 'a', 'b', and 'c' each appear exactly 1 time.???????
+
+Example 3:
+
+Input: s = "aba"
+
+Output: 2
+
+Explanation:
+
+???????One of the longest balanced substrings is "ab" because both distinct characters 'a' and 'b' each appear exactly 1 time. Another longest balanced substring is "ba".
+
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/longest-balanced-substring-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268251/simple-explained-solution-c-java-python-pje7e/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268401/simple-explnation-with-video-cjavapython-4kkm/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268586/sliding-frequency-window-to-find-the-lon-kayt/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268281/simple-and-easy-java-brute-force-solutio-p06n/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268196/beginner-friendly-approach-easy-to-under-whya/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7271064/longest-balanced-substring-simple-and-ea-5afp/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268453/bruteforce-solution-by-delbin_de_yohan-23of/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268458/very-easy-and-understandable-code-beginn-503l/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268383/simple-explnation-with-video-javacpython-azp4/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268247/easy-solution-using-frequency-array-by-y-kum7/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268181/easy-solution-in-java-using-hash-table-b-erju/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7276272/java-by-sumeetrayat-snr7/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7275354/java-optimal-clean-solution-by-prakashte-jv0s/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7270603/java-solution-by-cyqqz-gf4n/;;https://leetcode.com/problems/longest-balanced-substring-i/solutions/7268307/simple-java-solution-by-sakshikishore-xmmp/;;;=;==;=;=;

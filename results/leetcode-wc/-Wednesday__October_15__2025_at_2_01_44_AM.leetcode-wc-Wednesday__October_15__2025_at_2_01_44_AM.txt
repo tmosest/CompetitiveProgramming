@@ -1,0 +1,39 @@
+1115. Print FooBar Alternately;=;=Medium;=;=FooBar     private int n;    public FooBar(int n)         this.n = n;        public void foo(Runnable printFoo) throws InterruptedException                 for (int i = 0; i < n; i++)                         // printFoo.run() outputs "foo". Do not change or remove this line.            printFoo.run();;=;=Suppose you are given the following code:
+
+class FooBar {
+  public void foo() {
+    for (int i = 0; i < n; i++) {
+      print("foo");
+    }
+  }
+
+  public void bar() {
+    for (int i = 0; i < n; i++) {
+      print("bar");
+    }
+  }
+}
+The same instance of FooBar will be passed to two different threads:
+
+thread A will call foo(), while
+thread B will call bar().
+Modify the given program to output "foobar" n times.
+
+ 
+
+Example 1:
+
+Input: n = 1
+Output: "foobar"
+Explanation: There are two threads being fired asynchronously. One of them calls foo(), while the other calls bar().
+"foobar" is being output 1 time.
+Example 2:
+
+Input: n = 2
+Output: "foobarfoobar"
+Explanation: "foobar" is being output 2 times.
+ 
+
+Constraints:
+
+1 <= n <= 1000;=;=https://leetcode.com/problems/print-foobar-alternately/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/print-foobar-alternately/solutions/6955099/java-simple-prod-consumer-design-using-w-ljau/;;https://leetcode.com/problems/print-foobar-alternately/solutions/334574/java-semaphore-with-explaination-by-flor-6zxz/;;https://leetcode.com/problems/print-foobar-alternately/solutions/6323790/easy-beginner-friendly-solution-by-praga-kppy/;;https://leetcode.com/problems/print-foobar-alternately/solutions/6752304/easy-java-synchronized-by-wait_watch-b0w5/;;https://leetcode.com/problems/print-foobar-alternately/solutions/2535699/java-beat-85-simple-wait-and-notify-solu-0uxr/;;https://leetcode.com/problems/print-foobar-alternately/solutions/3092754/java-semaphore-in-details-explanation-wi-6rf7/;;https://leetcode.com/problems/print-foobar-alternately/solutions/3969138/simple-solution-using-await-notify-java-iajke/;;https://leetcode.com/problems/print-foobar-alternately/solutions/569932/java-simple-solution-using-two-semaphore-ha2e/;;https://leetcode.com/problems/print-foobar-alternately/solutions/6202923/intuitive-simple-by-richardleee-9n4l/;;https://leetcode.com/problems/print-foobar-alternately/solutions/1118149/java-very-simple-synchronized-solution-b-ni1k/;;https://leetcode.com/problems/print-foobar-alternately/solutions/3989416/beats-100-using-2-semaphores-easy-to-und-s82n/;;https://leetcode.com/problems/print-foobar-alternately/solutions/2077662/all-language-in-leetcode-solution-with-m-8chn/;;https://leetcode.com/problems/print-foobar-alternately/solutions/2532295/java-beat-80-simple-semaphore-solution-b-b7sg/;;https://leetcode.com/problems/print-foobar-alternately/solutions/1099109/easy-to-understand-java-solution-by-ctap-ijtl/;;https://leetcode.com/problems/print-foobar-alternately/solutions/1600113/java-reentrantlock-condition-volatile-by-tjom/;;;=;==;=;=;

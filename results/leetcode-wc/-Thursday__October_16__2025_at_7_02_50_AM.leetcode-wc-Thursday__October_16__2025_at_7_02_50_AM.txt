@@ -1,0 +1,34 @@
+2445. Number of Nodes With Value One;=;=Medium;=;=public int numberOfNodes(int n, int[] queries);=;=There is an undirected connected tree with n nodes labeled from 1 to n and n - 1 edges. You are given the integer n. The parent node of a node with a label v is the node with the label floor (v / 2). The root of the tree is the node with the label 1.
+
+For example, if n = 7, then the node with the label 3 has the node with the label floor(3 / 2) = 1 as its parent, and the node with the label 7 has the node with the label floor(7 / 2) = 3 as its parent.
+You are also given an integer array queries. Initially, every node has a value 0 on it. For each query queries[i], you should flip all values in the subtree of the node with the label queries[i].
+
+Return the total number of nodes with the value 1 after processing all the queries.
+
+Note that:
+
+Flipping the value of a node means that the node with the value 0 becomes 1 and vice versa.
+floor(x) is equivalent to rounding x down to the nearest integer.
+ 
+
+Example 1:
+
+
+Input: n = 5 , queries = [1,2,5]
+Output: 3
+Explanation: The diagram above shows the tree structure and its status after performing the queries. The blue node represents the value 0, and the red node represents the value 1.
+After processing the queries, there are three red nodes (nodes with value 1): 1, 3, and 5.
+Example 2:
+
+
+Input: n = 3, queries = [2,3,3]
+Output: 1
+Explanation: The diagram above shows the tree structure and its status after performing the queries. The blue node represents the value 0, and the red node represents the value 1.
+After processing the queries, there are one red node (node with value 1): 2.
+ 
+
+Constraints:
+
+1 <= n <= 105
+1 <= queries.length <= 105
+1 <= queries[i] <= n;=;=https://leetcode.com/problems/number-of-nodes-with-value-one/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-nodes-with-value-one/solutions/2747824/on-space-on-simple-loop-with-explanation-3fde/;;https://leetcode.com/problems/number-of-nodes-with-value-one/solutions/2727658/java-beats-100-in-runtime-and-memory-usa-b804/;;https://leetcode.com/problems/number-of-nodes-with-value-one/solutions/5334246/java-dfs-by-ulyx-m4h2/;;https://leetcode.com/problems/number-of-nodes-with-value-one/solutions/5038627/java-solution-dfs-by-ndsjqwbbb-rgfj/;;https://leetcode.com/problems/number-of-nodes-with-value-one/solutions/4688995/java-easy-and-concise-solution-dp-by-wj4-jpv4/;;https://leetcode.com/problems/number-of-nodes-with-value-one/solutions/4209114/java-100-faster-solution-intutive-using-y5rwa/;;https://leetcode.com/problems/number-of-nodes-with-value-one/solutions/3888945/java-3ms-100-bit-manipulation-array-no-r-rhdu/;;https://leetcode.com/problems/number-of-nodes-with-value-one/solutions/3718952/number-of-nodes-with-value-one-odd-even-a2wf3/;;https://leetcode.com/problems/number-of-nodes-with-value-one/solutions/2724976/simple-dp-solution-on-m-by-chris___yang-cu5v/;;;=;==;=;=;

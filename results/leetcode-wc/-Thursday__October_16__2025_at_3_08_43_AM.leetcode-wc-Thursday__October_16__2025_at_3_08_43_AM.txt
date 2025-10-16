@@ -1,0 +1,42 @@
+3330. Find the Original Typed String I;=;=Easy;=;=public int possibleStringCount(String word);=;=Alice is attempting to type a specific string on her computer. However, she tends to be clumsy and may press a key for too long, resulting in a character being typed multiple times.
+
+Although Alice tried to focus on her typing, she is aware that she may still have done this at most once.
+
+You are given a string word, which represents the final output displayed on Alice's screen.
+
+Return the total number of possible original strings that Alice might have intended to type.
+
+ 
+
+Example 1:
+
+Input: word = "abbcccc"
+
+Output: 5
+
+Explanation:
+
+The possible strings are: "abbcccc", "abbccc", "abbcc", "abbc", and "abcccc".
+
+Example 2:
+
+Input: word = "abcd"
+
+Output: 1
+
+Explanation:
+
+The only possible string is "abcd".
+
+Example 3:
+
+Input: word = "aaaa"
+
+Output: 4
+
+ 
+
+Constraints:
+
+1 <= word.length <= 100
+word consists only of lowercase English letters.;=;=https://leetcode.com/problems/find-the-original-typed-string-i/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6903838/beginner-freindlyjavacpythonjs-by-ashokv-7g9a/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6904787/naruto-how-its-done-step-by-step-simple-9xjkj/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6905563/beats-super-easy-beginners-java-c-c-pyth-ycab/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6904772/easy-solution-eng-hing-explained-beats-1-0rsw/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6905499/in-detail-explanation-beginner-easy-code-ylc3/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6906020/beats-100-o-n-java-by-mkarthick-by-tmkar-rocr/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6906724/beat-1002-solution-hashmap-as-well-by-ru-8vm5/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6906131/java-clean-on-only-one-group-can-be-redu-da4s/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6904589/continuous-frequency-count-simple-unders-g5vn/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6904893/simple-and-efficient-java-solution-by-ro-rvxh/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/7164862/find-the-original-typed-string-i-by-e_de-ja3f/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6906847/java-beginner-friendly-beats-100-on-by-p-cc8t/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6906511/easy-solution-by-qddl3tbjhy-4hdi/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6906073/beats-100-easy-solution-on-o1-by-sagar__-7jrk/;;https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6905435/java-solution-easy-approach-beats-90-by-rb2x4/;;;=;==;=;=;

@@ -1,0 +1,22 @@
+1411. Number of Ways to Paint N * 3 Grid;=;=Hard;=;=public int numOfWays(int n);=;=You have a grid of size n x 3 and you want to paint each cell of the grid with exactly one of the three colors: Red, Yellow, or Green while making sure that no two adjacent cells have the same color (i.e., no two cells that share vertical or horizontal sides have the same color).
+
+Given n the number of rows of the grid, return the number of ways you can paint this grid. As the answer may grow large, the answer must be computed modulo 109 + 7.
+
+ 
+
+Example 1:
+
+
+Input: n = 1
+Output: 12
+Explanation: There are 12 possible way to paint the grid as shown.
+Example 2:
+
+Input: n = 5000
+Output: 30228214
+ 
+
+Constraints:
+
+n == grid.length
+1 <= n <= 5000;=;=https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/4092537/brute-force-to-efficient-method-java-det-2861/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/663922/java-simple-dfs-memoization-solution-by-0tzko/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/6756841/recursion-memoization-best-easy-solution-icrv/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/6663703/simple-dp-math-formula-on-tc-o1-sc-pytho-lrl3/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/2887892/java-constant-space-on-time-how-to-appro-bmcg/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/3739659/please-upvote-by-aviraj2002-mmvr/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/574910/java-dp-based-on-coloring-pattern-by-dre-5j5n/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/987684/java-graph-dfs-on-by-kelvin2180-9wq3/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/813391/java-dp-solution-by-r-rajsingh-ri7v/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/6846901/8-lines-solution-with-comments-tc-on-sc-qkqez/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/6258868/python-recursion-memoization-by-naveenle-7mr8/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/6076584/math-by-fredzqm-2gvh/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/5813109/very-easy-question-doesnt-deserve-to-be-iib19/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/5088358/lab3-solution-by-2tieatie-9acp/;;https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/4437140/dp-by-mot882000-w7rm/;;;=;==;=;=;

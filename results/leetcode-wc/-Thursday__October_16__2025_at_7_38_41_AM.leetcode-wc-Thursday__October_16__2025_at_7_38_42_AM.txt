@@ -1,0 +1,32 @@
+2207. Maximize Number of Subsequences in a String;=;=Medium;=;=public long maximumSubsequenceCount(String text, String pattern);=;=You are given a 0-indexed string text and another 0-indexed string pattern of length 2, both of which consist of only lowercase English letters.
+
+You can add either pattern[0] or pattern[1] anywhere in text exactly once. Note that the character can be added even at the beginning or at the end of text.
+
+Return the maximum number of times pattern can occur as a subsequence of the modified text.
+
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+
+ 
+
+Example 1:
+
+Input: text = "abdcdbc", pattern = "ac"
+Output: 4
+Explanation:
+If we add pattern[0] = 'a' in between text[1] and text[2], we get "abadcdbc". Now, the number of times "ac" occurs as a subsequence is 4.
+Some other strings which have 4 subsequences "ac" after adding a character to text are "aabdcdbc" and "abdacdbc".
+However, strings such as "abdcadbc", "abdccdbc", and "abdcdbcc", although obtainable, have only 3 subsequences "ac" and are thus suboptimal.
+It can be shown that it is not possible to get more than 4 subsequences "ac" by adding only one character.
+Example 2:
+
+Input: text = "aabb", pattern = "ab"
+Output: 6
+Explanation:
+Some of the strings which can be obtained from text and have 6 subsequences "ab" are "aaabb", "aaabb", and "aabbb".
+ 
+
+Constraints:
+
+1 <= text.length <= 105
+pattern.length == 2
+text and pattern consist only of lowercase English letters.;=;=https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/1863900/javacpython-straight-forward-solution-by-ro2e/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/1863909/on-easy-to-understand-by-surajthapliyal-eaao/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/7013872/simplest-solution-no-dp-java-by-aaryavee-mr7l/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/7252521/not-optimistic-solution-binary-search-by-4zzk/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/1864950/why-first-or-last-intuition-easy-to-unde-d5gw/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/1864065/java-easy-by-akshay3213-tte4/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/4050027/java-easy-100-solution-by-ytchouar-r2cq/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/5038423/java-stack-easy-to-understand-by-parwez0-u2dv/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/6926989/very-easy-approach-in-java-by-patelcoded-rfjz/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/4622476/similar-to-distinct-subsequences-dp-appr-jmgd/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/2558644/simple-java-solution-by-vagabond112-qpmq/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/2058019/java-95-faster-easy-understanding-by-uda-259e/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/7088252/java-95-faster-easy-understanding-by-moh-n6g5/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/5668476/maximize-number-of-subsequences-in-a-str-n5v7/;;https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/solutions/5525541/add-to-head-or-tail-java-ono1-by-wangcai-n523/;;;=;==;=;=;

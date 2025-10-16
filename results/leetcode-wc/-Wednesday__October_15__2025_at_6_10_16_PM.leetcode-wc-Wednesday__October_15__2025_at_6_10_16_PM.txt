@@ -1,0 +1,33 @@
+2299. Strong Password Checker II;=;=Easy;=;=public boolean strongPasswordCheckerII(String password);=;=A password is said to be strong if it satisfies all the following criteria:
+
+It has at least 8 characters.
+It contains at least one lowercase letter.
+It contains at least one uppercase letter.
+It contains at least one digit.
+It contains at least one special character. The special characters are the characters in the following string: "!@#$%^&*()-+".
+It does not contain 2 of the same character in adjacent positions (i.e., "aab" violates this condition, but "aba" does not).
+Given a string password, return true if it is a strong password. Otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: password = "IloveLe3tcode!"
+Output: true
+Explanation: The password meets all the requirements. Therefore, we return true.
+Example 2:
+
+Input: password = "Me+You--IsMyDream"
+Output: false
+Explanation: The password does not contain a digit and also contains 2 of the same character in adjacent positions. Therefore, we return false.
+Example 3:
+
+Input: password = "1aB!"
+Output: false
+Explanation: The password does not meet the length requirement. Therefore, we return false.
+ 
+
+Constraints:
+
+1 <= password.length <= 100
+password consists of letters, digits, and special characters: "!@#$%^&*()-+".;=;=https://leetcode.com/problems/strong-password-checker-ii/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/strong-password-checker-ii/solutions/7201772/crack-the-strong-password-logic-simple-f-i6z3/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/2138969/javapython-3-2-codes-w-brief-explanation-cx3y/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/7108842/easy-java-by-sairangineeni-3rag/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/6632584/strong-password-checker-ii-java-solution-dpih/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/7042783/easy-beginner-friendly-dry-run-included-6jh7t/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/6966491/java-easy-sol-by-manya_sachdeva15-de8k/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/7014620/flag-based-logic-one-pass-validation-wit-ey61/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/2138983/java-solution-easy-to-understand-by-shri-xzwl/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/6632601/100-beats-on-optimized-solution-by-dhivy-bwr4/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/6632597/strong-password-checker-java-solution-by-2mkk/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/6297385/0ms-beats-100-easy-java-by-galani_jenis-3pjf/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/7264360/java-by-soumya_699-no48/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/7191726/java-by-devendran9993-je7y/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/2139347/pythonjavaccjavascriptphp-regex-by-i-i-r28o/;;https://leetcode.com/problems/strong-password-checker-ii/solutions/6715581/basic-solution-by-nghiemngocduc07-hlrn/;;;=;==;=;=;

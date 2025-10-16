@@ -1,0 +1,30 @@
+1836. Remove Duplicates From an Unsorted Linked List;=;=Medium;=;=/  Definition for singly-linked list.  public  ListNode       int val;      ListNode next;      ListNode()       ListNode(int val)  this.val = val;       ListNode(int val, ListNode next)  this.val = val; this.next = next;    class      public ListNode deleteDuplicatesUnsorted(ListNode head);=;=Given the head of a linked list, find all the values that appear more than once in the list and delete the nodes that have any of those values.
+
+Return the linked list after the deletions.
+
+ 
+
+Example 1:
+
+
+Input: head = [1,2,3,2]
+Output: [1,3]
+Explanation: 2 appears twice in the linked list, so all 2's should be deleted. After deleting all 2's, we are left with [1,3].
+Example 2:
+
+
+Input: head = [2,1,1,2]
+Output: []
+Explanation: 2 and 1 both appear twice. All the elements should be deleted.
+Example 3:
+
+
+Input: head = [3,2,2,1,3,2,4]
+Output: [1,4]
+Explanation: 3 appears twice and 2 appears three times. After deleting all 3's and 2's, we are left with [1,4].
+ 
+
+Constraints:
+
+The number of nodes in the list is in the range [1, 105]
+1 <= Node.val <= 105;=;=https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/1228736/java-clean-on-solution-by-xieyun95-4h00/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/2120986/one-pass-simple-on-java-solution-by-step-xsvb/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/1172057/java-with-detailed-comments-hashmap-2-pa-3ac2/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/4159780/using-dummy-head-pointers-by-nuvvula-updd/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/2127069/hashmap-java-tc-on-solution-by-balasudip-wb94/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/3148807/simple-java-99-runtime-by-guytal-8l0e/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/5905229/simple-solution-using-maps-java-on-hashm-o9nf/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/6252331/java-100-beat-by-bbansmu-s75o/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/6250332/java-98-by-gyarish-x81i/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/5457431/java-7-ms-beats-9388-by-songshengtao1-9aza/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/5443458/on-double-pass-hashmap-by-swanseafc-o1tc/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/6346158/java-solution-backed-by-sets-beats-more-bu46y/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/5476292/java-solution-by-rimberse-5t56/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/5450345/java-c-python-100-fast-one-and-two-pass-nyjj8/;;https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/solutions/5448442/linkedhashmap-on-by-am_pm-rz2i/;;;=;==;=;=;

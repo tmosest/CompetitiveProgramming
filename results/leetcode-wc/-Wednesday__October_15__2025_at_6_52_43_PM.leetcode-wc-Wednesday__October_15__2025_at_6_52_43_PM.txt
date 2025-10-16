@@ -1,0 +1,30 @@
+879. Profitable Schemes;=;=Hard;=;=public int profitableSchemes(int n, int minProfit, int[] group, int[] profit);=;=There is a group of n members, and a list of various crimes they could commit. The ith crime generates a profit[i] and requires group[i] members to participate in it. If a member participates in one crime, that member can't participate in another crime.
+
+Let's call a profitable scheme any subset of these crimes that generates at least minProfit profit, and the total number of members participating in that subset of crimes is at most n.
+
+Return the number of schemes that can be chosen. Since the answer may be very large, return it modulo 109 + 7.
+
+ 
+
+Example 1:
+
+Input: n = 5, minProfit = 3, group = [2,2], profit = [2,3]
+Output: 2
+Explanation: To make a profit of at least 3, the group could either commit crimes 0 and 1, or just crime 1.
+In total, there are 2 schemes.
+Example 2:
+
+Input: n = 10, minProfit = 5, group = [2,3,5], profit = [6,7,8]
+Output: 7
+Explanation: To make a profit of at least 5, the group could commit any crimes, as long as they commit one.
+There are 7 possible schemes: (0), (1), (2), (0,1), (0,2), (1,2), and (0,1,2).
+ 
+
+Constraints:
+
+1 <= n <= 100
+0 <= minProfit <= 100
+1 <= group.length <= 100
+1 <= group[i] <= 100
+profit.length == group.length
+0 <= profit[i] <= 100;=;=https://leetcode.com/problems/profitable-schemes/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/profitable-schemes/solutions/3439788/image-explanation-memoization-b-up-dp-dp-gjxv/;;https://leetcode.com/problems/profitable-schemes/solutions/3439502/easy-understand-simple-method-java-pytho-cdoa/;;https://leetcode.com/problems/profitable-schemes/solutions/3439778/easy-solutions-in-java-python-and-c-look-2pf0/;;https://leetcode.com/problems/profitable-schemes/solutions/3439553/easy-solution-of-java-c-beginner-friendl-bx2a/;;https://leetcode.com/problems/profitable-schemes/solutions/3442288/java-top-down-dp-clean-code-by-judgement-o1il/;;https://leetcode.com/problems/profitable-schemes/solutions/3439748/c-java-python-dynamic-programming-knapsa-hnyo/;;https://leetcode.com/problems/profitable-schemes/solutions/3439635/simplest-java-solution-memoization-by-mo-6d3s/;;https://leetcode.com/problems/profitable-schemes/solutions/3441838/best-solution-99-by-amitmungare27-qiqn/;;https://leetcode.com/problems/profitable-schemes/solutions/4996205/java-clean-solution-interview-related-qu-06fg/;;https://leetcode.com/problems/profitable-schemes/solutions/3441896/optimal-solution-using-dynamic-programmi-92rg/;;https://leetcode.com/problems/profitable-schemes/solutions/3443266/java-top-down-dp-by-markwongwkh-vkvk/;;https://leetcode.com/problems/profitable-schemes/solutions/3440189/memoized-solution-in-java-by-tripathiswa-okak/;;https://leetcode.com/problems/profitable-schemes/solutions/3441955/question-of-the-day-java-by-aakash-ak07-d2f9/;;https://leetcode.com/problems/profitable-schemes/solutions/3439774/java-runtime-31-ms-beats-7192-memory-404-unye/;;https://leetcode.com/problems/profitable-schemes/solutions/3503840/solution-by-deleted_user-tupu/;;;=;==;=;=;

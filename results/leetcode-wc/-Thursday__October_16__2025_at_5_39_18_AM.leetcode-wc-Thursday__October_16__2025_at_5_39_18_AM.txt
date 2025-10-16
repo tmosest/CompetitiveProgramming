@@ -1,0 +1,24 @@
+1698. Number of Distinct Substrings in a String;=;=Medium;=;=public int countDistinct(String s);=;=Given a string s, return the number of distinct substrings of s.
+
+A substring of a string is obtained by deleting any number of characters (possibly zero) from the front of the string and any number (possibly zero) from the back of the string.
+
+ 
+
+Example 1:
+
+Input: s = "aabbaba"
+Output: 21
+Explanation: The set of distinct strings is ["a","b","aa","bb","ab","ba","aab","abb","bab","bba","aba","aabb","abba","bbab","baba","aabba","abbab","bbaba","aabbab","abbaba","aabbaba"]
+Example 2:
+
+Input: s = "abcdefg"
+Output: 28
+ 
+
+Constraints:
+
+1 <= s.length <= 500
+s consists of lowercase English letters.
+ 
+
+Follow up: Can you solve this problem in O(n) time complexity?;=;=https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/4357135/trie-solution-on2-with-example-and-illus-vlj8/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/1196782/java-clean-on2-rabin-karp-rolling-hash-s-j19v/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/5027173/java-hashset-trie-solution-by-sachinaghe-50h9/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/5671350/easy-to-understand-solution-by-shruti_na-io1y/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/3212028/explained-java-suffix-array-sa-and-longe-cvg9/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/4742674/simple-hashset-based-approach-by-amitpat-qhde/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/4302961/using-set-on2-solution-by-priyankabera23-v4xg/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/2701623/java-rolling-hash-with-collision-resolut-lg36/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/2377552/easy-trie-approachtc-on2-by-aish_16-z0cb/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/986434/java-simple-100-100-by-sapienhwaker-j2bh/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/6518447/not-the-most-optimal-but-would-do-the-tr-xwtz/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/4652676/java-trie-solution-space-optimised-by-_p-v14j/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/4480612/easy-to-understand-solution-in-java-usin-fd2r/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/3771102/java-recursive-counting-onlogn-by-bigred-34t9/;;https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/solutions/2175499/naive-approach-on2-by-vaibhavgawad-9566/;;;=;==;=;=;

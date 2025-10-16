@@ -1,0 +1,39 @@
+1109. Corporate Flight Bookings;=;=Medium;=;=public int[] corpFlightBookings(int[][] bookings, int n);=;=There are n flights that are labeled from 1 to n.
+
+You are given an array of flight bookings bookings, where bookings[i] = [firsti, lasti, seatsi] represents a booking for flights firsti through lasti (inclusive) with seatsi seats reserved for each flight in the range.
+
+Return an array answer of length n, where answer[i] is the total number of seats reserved for flight i.
+
+ 
+
+Example 1:
+
+Input: bookings = [[1,2,10],[2,3,20],[2,5,25]], n = 5
+Output: [10,55,45,25,25]
+Explanation:
+Flight labels:        1   2   3   4   5
+Booking 1 reserved:  10  10
+Booking 2 reserved:      20  20
+Booking 3 reserved:      25  25  25  25
+Total seats:         10  55  45  25  25
+Hence, answer = [10,55,45,25,25]
+Example 2:
+
+Input: bookings = [[1,2,10],[2,2,15]], n = 2
+Output: [10,25]
+Explanation:
+Flight labels:        1   2
+Booking 1 reserved:  10  10
+Booking 2 reserved:      15
+Total seats:         10  25
+Hence, answer = [10,25]
+
+ 
+
+Constraints:
+
+1 <= n <= 2 * 104
+1 <= bookings.length <= 2 * 104
+bookings[i].length == 3
+1 <= firsti <= lasti <= n
+1 <= seatsi <= 104;=;=https://leetcode.com/problems/corporate-flight-bookings/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/corporate-flight-bookings/solutions/6533829/easy-hai-bhai-dekhlo-by-aryaman123-knfa/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/6624836/java-arraydifference-prefix-sum-97-beat-yogtw/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/1338804/java-2-approaches-brute-force-optimal-ap-e12t/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/491910/java-easy-to-read-solution-beats-100-in-k3ie6/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/6776599/with-comment-for-better-understanding-by-coyi/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/6764091/simple-java-code-by-adityaralhan-60f7/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/6144230/java-clear-detailed-solution-beats-98-by-osa6/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/6599929/java-by-vishall001-8icm/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/6080322/java-easy-100-solution-by-ytchouar-rrtc/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/2880215/java-easiest-solution-onn-approach-5-lin-u2k1/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/5816066/cjava-prefix-sum-easy-solution-on-beats-mx04x/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/328959/java-array-beats-100-by-gthor10-yz8w/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/2223303/corporate-flight-bookings-java-100-faste-dsv0/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/7250316/prefix-sum-range-java-on-by-mani89509-vati/;;https://leetcode.com/problems/corporate-flight-bookings/solutions/1651646/java-pre-difference-array-explained-on-b-kv3q/;;;=;==;=;=;

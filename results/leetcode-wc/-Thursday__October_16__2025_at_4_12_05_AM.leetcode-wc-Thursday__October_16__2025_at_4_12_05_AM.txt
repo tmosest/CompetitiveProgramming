@@ -1,0 +1,40 @@
+2430. Maximum Deletions on a String;=;=Hard;=;=public int deleteString(String s);=;=You are given a string s consisting of only lowercase English letters. In one operation, you can:
+
+Delete the entire string s, or
+Delete the first i letters of s if the first i letters of s are equal to the following i letters in s, for any i in the range 1 <= i <= s.length / 2.
+For example, if s = "ababc", then in one operation, you could delete the first two letters of s to get "abc", since the first two letters of s and the following two letters of s are both equal to "ab".
+
+Return the maximum number of operations needed to delete all of s.
+
+ 
+
+Example 1:
+
+Input: s = "abcabcdabc"
+Output: 2
+Explanation:
+- Delete the first 3 letters ("abc") since the next 3 letters are equal. Now, s = "abcdabc".
+- Delete all the letters.
+We used 2 operations so return 2. It can be proven that 2 is the maximum number of operations needed.
+Note that in the second operation we cannot delete "abc" again because the next occurrence of "abc" does not happen in the next 3 letters.
+Example 2:
+
+Input: s = "aaabaab"
+Output: 4
+Explanation:
+- Delete the first letter ("a") since the next letter is equal. Now, s = "aabaab".
+- Delete the first 3 letters ("aab") since the next 3 letters are equal. Now, s = "aab".
+- Delete the first letter ("a") since the next letter is equal. Now, s = "ab".
+- Delete all the letters.
+We used 4 operations so return 4. It can be proven that 4 is the maximum number of operations needed.
+Example 3:
+
+Input: s = "aaaaa"
+Output: 5
+Explanation: In each operation, we can delete the first letter of s.
+ 
+
+Constraints:
+
+1 <= s.length <= 4000
+s consists only of lowercase English letters.;=;=https://leetcode.com/problems/maximum-deletions-on-a-string/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2648900/javacpython-dp-solution-by-lee215-kz97/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2648909/java-dp-memorization-by-abhipriya19134-v0nv/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2652816/java-dp-hash-100-time-100-space-explaine-atns/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/4325890/java-dp-rolling-hash-by-a_love_r-3c2u/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2648695/simple-java-solution-by-sumitk7970-8rqy/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/7206654/simple-dp-triple-pointer-by-shrey_malik-p7bw/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2649720/simple-java-solution-using-recursion-by-6eysc/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2648973/java-top-down-dynamic-programming-explan-q2l4/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2649202/java-dp-recursion-logic-with-explainatio-uyr9/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2648952/z-algorithm-with-dp-corner-case-hard-cod-895t/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2651473/java-dp-move-backward-short-and-readable-9kbd/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/2648671/java-python-dp-pointer-solution-by-jacec-x01m/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/7114501/delete-string-dynamic-programming-with-r-susn/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/6283150/dp-java-by-prachikumari-da7t/;;https://leetcode.com/problems/maximum-deletions-on-a-string/solutions/6240656/prefix-which-is-also-suffix-kmp-by-auth2-en1b/;;;=;==;=;=;

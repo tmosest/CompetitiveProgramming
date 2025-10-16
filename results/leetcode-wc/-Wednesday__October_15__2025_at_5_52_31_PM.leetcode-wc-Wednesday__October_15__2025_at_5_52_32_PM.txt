@@ -1,0 +1,22 @@
+1271. Hexspeak;=;=Easy;=;=public String toHexspeak(String num);=;=A decimal number can be converted to its Hexspeak representation by first converting it to an uppercase hexadecimal string, then replacing all occurrences of the digit '0' with the letter 'O', and the digit '1' with the letter 'I'. Such a representation is valid if and only if it consists only of the letters in the set {'A', 'B', 'C', 'D', 'E', 'F', 'I', 'O'}.
+
+Given a string num representing a decimal integer n, return the Hexspeak representation of n if it is valid, otherwise return "ERROR".
+
+ 
+
+Example 1:
+
+Input: num = "257"
+Output: "IOI"
+Explanation: 257 is 101 in hexadecimal.
+Example 2:
+
+Input: num = "3"
+Output: "ERROR"
+ 
+
+Constraints:
+
+1 <= num.length <= 12
+num does not contain leading zeros.
+num represents an integer in the range [1, 1012].;=;=https://leetcode.com/problems/hexspeak/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/hexspeak/solutions/440807/java-2ms-100-solution-readable-simple-ea-eiha/;;https://leetcode.com/problems/hexspeak/solutions/687619/standard-java-solution-by-sriharik-a7eg/;;https://leetcode.com/problems/hexspeak/solutions/6764946/not-optimal-but-easy-to-understand-by-pr-sovo/;;https://leetcode.com/problems/hexspeak/solutions/6384966/my-hex-solution-by-tbekpro-6vgg/;;https://leetcode.com/problems/hexspeak/solutions/6066863/simple-java-solution-without-additional-1p1bm/;;https://leetcode.com/problems/hexspeak/solutions/5318679/java-check-for-remainder-during-conversi-jiii/;;https://leetcode.com/problems/hexspeak/solutions/4332136/java-solution-by-lathcsmath-22qo/;;https://leetcode.com/problems/hexspeak/solutions/3587874/solution-by-deleted_user-7ipx/;;https://leetcode.com/problems/hexspeak/solutions/3540096/easy-solution-beat-100-by-beyondfrequenc-m8hy/;;https://leetcode.com/problems/hexspeak/solutions/1724898/java-reuse-lc-405-explained-by-prashant4-msl2/;;https://leetcode.com/problems/hexspeak/solutions/1207216/concise-java-solution-by-rkxyiiyk2-44us/;;https://leetcode.com/problems/hexspeak/solutions/649052/olength-of-hexnum-time-olength-of-hexnum-2v4t/;;https://leetcode.com/problems/hexspeak/solutions/442589/java-simple-conversion-of-hex-by-nxy006-ib95/;;https://leetcode.com/problems/hexspeak/solutions/441881/java-manual-parsing-strings-beats-100-ex-7hjc/;;https://leetcode.com/problems/hexspeak/solutions/441264/java-simple-and-fast-stringbuilder-solut-i7tf/;;;=;==;=;=;

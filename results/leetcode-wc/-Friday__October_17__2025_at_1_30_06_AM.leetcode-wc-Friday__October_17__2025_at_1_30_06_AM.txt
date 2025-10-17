@@ -1,0 +1,58 @@
+3003. Maximize the Number of Partitions After Operations;=;=Hard;=;=private HashMap<Long, Integer> cache;    private String s;    private int k;    /      https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/            https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/4520834/c-java-python-clean-bitmask-dp/            @param s      @param k;=;=You are given a string s and an integer k.
+
+First, you are allowed to change at most one index in s to another lowercase English letter.
+
+After that, do the following partitioning operation until s is empty:
+
+Choose the longest prefix of s containing at most k distinct characters.
+Delete the prefix from s and increase the number of partitions by one. The remaining characters (if any) in s maintain their initial order.
+Return an integer denoting the maximum number of resulting partitions after the operations by optimally choosing at most one index to change.
+
+ 
+
+Example 1:
+
+Input: s = "accca", k = 2
+
+Output: 3
+
+Explanation:
+
+The optimal way is to change s[2] to something other than a and c, for example, b. then it becomes "acbca".
+
+Then we perform the operations:
+
+The longest prefix containing at most 2 distinct characters is "ac", we remove it and s becomes "bca".
+Now The longest prefix containing at most 2 distinct characters is "bc", so we remove it and s becomes "a".
+Finally, we remove "a" and s becomes empty, so the procedure ends.
+Doing the operations, the string is divided into 3 partitions, so the answer is 3.
+
+Example 2:
+
+Input: s = "aabaab", k = 3
+
+Output: 1
+
+Explanation:
+
+Initially s contains 2 distinct characters, so whichever character we change, it will contain at most 3 distinct characters, so the longest prefix with at most 3 distinct characters would always be all of it, therefore the answer is 1.
+
+Example 3:
+
+Input: s = "xxyz", k = 1
+
+Output: 4
+
+Explanation:
+
+The optimal way is to change s[0] or s[1] to something other than characters in s, for example, to change s[0] to w.
+
+Then s becomes "wxyz", which consists of 4 distinct characters, so as k is 1, it will divide into 4 partitions.
+
+ 
+
+Constraints:
+
+1 <= s.length <= 104
+s consists only of lowercase English letters.
+1 <= k <= 26;=;=https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/description/?envType=daily-question&envId=2025-10-17;=;=https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7280985/565-ms-beats-5164-easy-approach-and-step-n21u/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281504/still-confused-see-it-instantly-clear-10-a13d/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281071/best-solution-ever-by-05ewasuouk-461c/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281225/easiest-solution-for-beginners-fully-exp-ugkn/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281523/100-beats-by-uytke8koag-fj57/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281300/easy-code-must-try-code-in-java-by-notad-zyif/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281189/detailed-video-solution-english-by-kerne-wlvy/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281181/easy-code-in-java-by-madhuri_256-4mfn/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281083/beats-100-java-by-kiranbkvb6-afx5/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281513/simple-java-solution-by-shubhamxgupta-r8hh/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281338/brute-force-and-optimised-both-approache-59xk/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281254/optimized-bitmask-memoization-dp-solutio-3n61/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281161/java-solution-for-maximize-the-number-of-elgb/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281149/maximize-the-number-of-partitions-after-hpo2n/;;https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/solutions/7281136/4ms-runtime-optimal-solution-bit-masking-2ww1/;;;=;==;=;=;

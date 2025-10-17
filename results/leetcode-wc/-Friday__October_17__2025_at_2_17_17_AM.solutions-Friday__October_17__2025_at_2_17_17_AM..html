@@ -1,0 +1,443 @@
+<div class="w-full"><div class="flex min-w-0 flex-col gap-3"><div class="text-[22px] font-medium leading-8 [overflow-wrap:anywhere] text-lc-text-primary dark:text-dark-lc-text-primary">Stack || Sorting || Heap 3 Approach in 3 languages ? </div><div class="flex items-center gap-4"><div data-state="closed"><a target="_blank" rel="noopener noreferrer" class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate h-8 min-h-[32px] w-8 min-w-[32px] block" href="/u/JK_01/"><img alt="" class="rounded-1/2 object-cover h-full w-full rounded-full" src="https://assets.leetcode.com/users/JK_01/avatar_1747922380.png"></a></div><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2"><div class="flex items-center gap-1 truncate" translate="no"><a target="_blank" rel="noopener noreferrer" class="no-underline text-sm overflow-hidden max-w-[100px] md:max-w-[200px] truncate hover:text-blue-s dark:hover:text-dark-blue-s font-normal text-text-primary dark:text-text-primary" href="/u/JK_01/">Jayesh Kriplani</a></div></div><div class="flex items-center gap-3"><div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M1.104 12.444a1 1 0 010-.888c.13-.26.37-.693.722-1.241A18.85 18.85 0 013.88 7.652C6.184 5.176 8.896 3.667 12 3.667s5.816 1.509 8.119 3.985c.79.85 1.475 1.756 2.055 2.663.352.548.593.98.722 1.24a1 1 0 010 .89c-.13.26-.37.692-.722 1.24a18.848 18.848 0 01-2.055 2.663c-2.303 2.476-5.015 3.985-8.119 3.985s-5.816-1.509-8.119-3.985a18.846 18.846 0 01-2.055-2.663c-.352-.548-.593-.98-.722-1.24zm2.406.162a16.87 16.87 0 001.836 2.38c1.959 2.106 4.19 3.347 6.654 3.347 2.465 0 4.695-1.24 6.654-3.347A16.87 16.87 0 0020.86 12a16.871 16.871 0 00-2.206-2.986C16.695 6.908 14.464 5.667 12 5.667c-2.465 0-4.695 1.24-6.654 3.347A16.87 16.87 0 003.14 12c.108.188.232.391.37.607zM12 15.75c-2.06 0-3.727-1.68-3.727-3.75 0-2.07 1.667-3.75 3.727-3.75 2.06 0 3.727 1.68 3.727 3.75 0 2.07-1.667 3.75-3.727 3.75zm0-2c.952 0 1.727-.782 1.727-1.75s-.775-1.75-1.727-1.75c-.952 0-1.727.782-1.727 1.75s.775 1.75 1.727 1.75z" clip-rule="evenodd"></path></svg><div class="text-xs dark:text-sd-gray-500 text-sd-gray-400">14977</div></div><div class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M19 11.063V7h-2v1a1 1 0 11-2 0V7H9v1a1 1 0 01-2 0V7H5v4.063h14zm0 2H5V19h14v-5.938zM9 5h6V4a1 1 0 112 0v1h2a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2V4a1 1 0 012 0v1z" clip-rule="evenodd"></path></svg><div class="min-w-max text-xs dark:text-sd-gray-500 text-sd-gray-400"><span class="" data-state="closed">Dec 12, 2024</span></div></div></div></div></div><div class="flex flex-grow flex-nowrap items-center gap-2 overflow-hidden my-1"><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Stack</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Sorting</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Heap (Priority Queue)</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">C++</div><button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r35:" data-state="closed" class=""><span><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">2+</div></span></button></div></div></div><div class="break-words"><div><div class="flex flex-col w-full" style="position: relative;"><div><div class="mYe_l WRmCx"><h1 id="approch-1-stack-most-optimal-beats-99--soln">Approch 1: Stack (Most Optimal Beats 99 % soln)</h1>
+<h1 id="intuition">Intuition</h1>
+<p>The goal is to compute a score by summing specific elements in the array, following a rule where alternate elements are skipped. To achieve this efficiently, we use a deque to temporarily store elements as we traverse the array.</p>
+<p>The main idea is:</p>
+<ol>
+<li data-length="1">Process elements in a sequential manner.</li>
+<li data-length="1">Use a condition to flush and process the queue when the current number is greater than or equal to the last element in the queue.</li>
+<li data-length="1">Skip alternate elements during processing.</li>
+</ol>
+<p>This ensures an efficient traversal while maintaining the required logic.</p>
+<h1 id="approach">Approach</h1>
+<ol>
+<li data-length="1">Use a <code>deque</code> (double-ended queue) to temporarily store elements.</li>
+<li data-length="1">Traverse the array:</li>
+</ol>
+<ul>
+<li>If the current element is greater than or equal to the last element in the queue:</li>
+<li>Process the queue by summing elements alternately.</li>
+<li>Otherwise, add the current element to the queue.</li>
+</ul>
+<ol start="3">
+<li data-length="1">After traversing the array, process any remaining elements in the queue, summing alternate values.</li>
+<li data-length="1">Return the computed score.</li>
+</ol>
+<p>This approach avoids redundant checks and ensures an efficient solution.</p>
+<h1 id="complexity">Complexity</h1>
+<ul>
+<li>
+<p><strong>Time complexity:</strong><br>
+<span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.10903em;">N</span><span class="mclose">)</span></span></span></span></span><br>
+Each element is added to and removed from the queue at most once.</p>
+</li>
+<li>
+<p><strong>Space complexity:</strong><br>
+<span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.10903em;">N</span><span class="mclose">)</span></span></span></span></span><br>
+The deque can grow to hold all elements in the worst case.</p>
+</li>
+</ul>
+<h1 id="code">Code</h1>
+<div class="border-gray-3 dark:border-dark-gray-3 mb-6 overflow-hidden rounded-lg border text-sm"><div class="flex select-none overflow-x-auto bg-layer-2 dark:bg-dark-layer-2"><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-1 dark:text-dark-label-1 d8276">Python3</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Java</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C++</div></div><div class="px-3 py-2.5 bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-python" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span class="token" style="color: rgb(86, 156, 214);">class</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">Solution</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(86, 156, 214);">def</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">findScore</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>self</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> List</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(206, 145, 120);">int</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">int</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>        score </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span>
+</span></span><span><span>        n </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">len</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>nums</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>        q </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> deque</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(106, 153, 85);"># Traverse through the array</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> i </span><span class="token" style="color: rgb(86, 156, 214);">in</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">range</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>n</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(106, 153, 85);"># If queue is not empty and the current number is greater than or equal to the last in queue</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> q </span><span class="token" style="color: rgb(86, 156, 214);">and</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>i</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">&gt;=</span><span> q</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                skip </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">False</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(106, 153, 85);"># Process the elements in the queue</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(86, 156, 214);">while</span><span> q</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                    add </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> q</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>pop</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>                    </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">not</span><span> skip</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                        score </span><span class="token" style="color: rgb(212, 212, 212);">+=</span><span> add
+</span></span><span><span>                    skip </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">not</span><span> skip
+</span></span><span><span>                </span><span class="token" style="color: rgb(86, 156, 214);">continue</span><span>
+</span></span><span>
+</span><span><span>            </span><span class="token" style="color: rgb(106, 153, 85);"># Add current element to the queue</span><span>
+</span></span><span><span>            q</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>append</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>i</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(106, 153, 85);"># Final processing of remaining elements in the queue</span><span>
+</span></span><span><span>        skip </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">False</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">while</span><span> q</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>            add </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> q</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>pop</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">not</span><span> skip</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                score </span><span class="token" style="color: rgb(212, 212, 212);">+=</span><span> add
+</span></span><span><span>            skip </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">not</span><span> skip
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> score</span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div></div>
+<hr>
+<h1 id="approch-2--sorting">Approch 2 : Sorting</h1>
+<h2 id="intuition-1">Intuition</h2>
+<p>The problem involves finding the score by selecting elements from an array <code>nums</code> and marking the selected element and its adjacent neighbors (left and right) as "processed." The score is incremented by the value of the selected element, and no element can be selected more than once.</p>
+<h2 id="approach-1">Approach:</h2>
+<ol>
+<li data-length="1"><strong>Sorting</strong>: First, sort the elements of nums along with their original indices to process the elements in increasing order.</li>
+<li data-length="1"><strong>Processing the elements:</strong> For each element in the sorted list:</li>
+</ol>
+<ul>
+<li>If it has not been marked as "processed" (i.e., its value is not -1):</li>
+<li>Add its value to the score.</li>
+<li>Mark the current element and its adjacent neighbors as "processed" by setting them to -1.</li>
+</ul>
+<ol start="3">
+<li data-length="1"><strong>Final Result:</strong> The total score after processing all valid elements is returned.</li>
+</ol>
+<h2 id="complexity-1">Complexity</h2>
+<ul>
+<li>
+<p><strong>Time complexity:</strong><br>
+<span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.01968em;">Nl</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right: 0.03588em;">g</span><span class="mord mathnormal" style="margin-right: 0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>Space complexity:</strong><br>
+<span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
+</li>
+</ul>
+<h2 id="code-1">Code</h2>
+<div class="border-gray-3 dark:border-dark-gray-3 mb-6 overflow-hidden rounded-lg border text-sm"><div class="flex select-none overflow-x-auto bg-layer-2 dark:bg-dark-layer-2"><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-1 dark:text-dark-label-1 d8276">Python3</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Java</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C++</div></div><div class="px-3 py-2.5 bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-python" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span class="token" style="color: rgb(86, 156, 214);">class</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">Solution</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(86, 156, 214);">def</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">findScore</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>self</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> List</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(206, 145, 120);">int</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">int</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>        n </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">len</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>nums</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>        sorted_nums </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">sorted</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>num</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> idx</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> idx</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> num </span><span class="token" style="color: rgb(86, 156, 214);">in</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">enumerate</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>nums</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>        score </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> num</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> idx </span><span class="token" style="color: rgb(86, 156, 214);">in</span><span> sorted_nums</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">!=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Process only if not already marked</span><span>
+</span></span><span><span>                score </span><span class="token" style="color: rgb(212, 212, 212);">+=</span><span> num
+</span></span><span><span>                nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Mark current index</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> idx </span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                    nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Mark left neighbor</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> idx </span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span> n </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                    nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx </span><span class="token" style="color: rgb(212, 212, 212);">+</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Mark right neighbor</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> score
+</span></span><span>  </span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div></div>
+<hr>
+<h1 id="approch-3-heap">Approch 3: Heap</h1>
+<h2 id="approach-2">Approach:</h2>
+<ol>
+<li data-length="1">Using a min-heap (priority queue) to process elements in ascending order of their values.</li>
+<li data-length="1">modify nums directly by setting the marked elements to -1 (or any value that is not in the range of valid numbers in nums).</li>
+<li data-length="1">Just ensure that the heap operates based on the current values of nums.</li>
+</ol>
+<h2 id="complexity-2">Complexity</h2>
+<ul>
+<li>
+<p><strong>Time complexity:</strong><br>
+<span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.01968em;">Nl</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right: 0.03588em;">g</span><span class="mord mathnormal" style="margin-right: 0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>Space complexity:</strong><br>
+<span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
+</li>
+</ul>
+<h2 id="code-2">Code</h2>
+<div class="border-gray-3 dark:border-dark-gray-3 mb-6 overflow-hidden rounded-lg border text-sm"><div class="flex select-none overflow-x-auto bg-layer-2 dark:bg-dark-layer-2"><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-1 dark:text-dark-label-1 d8276">Python3</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C++</div></div><div class="px-3 py-2.5 bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-python" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span class="token" style="color: rgb(86, 156, 214);">class</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">Solution</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(86, 156, 214);">def</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">findScore</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>self</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> List</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(206, 145, 120);">int</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">int</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>        n </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">len</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>nums</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(106, 153, 85);"># Build a min-heap with (value, index) pairs</span><span>
+</span></span><span><span>        min_heap </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>num</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> i</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> i</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> num </span><span class="token" style="color: rgb(86, 156, 214);">in</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">enumerate</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>nums</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span>
+</span></span><span><span>        heapq</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>heapify</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>min_heap</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Convert to a min-heap</span><span>
+</span></span><span>
+</span><span><span>        score </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Initialize score</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(106, 153, 85);"># Process elements in min-heap</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">while</span><span> min_heap</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>            num</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> idx </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> heapq</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>heappop</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>min_heap</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Get the smallest unprocessed element</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">!=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Process only if not already marked</span><span>
+</span></span><span><span>                score </span><span class="token" style="color: rgb(212, 212, 212);">+=</span><span> num
+</span></span><span><span>                nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Mark the current index</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> idx </span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">and</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">!=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                    nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Mark the left neighbor</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(86, 156, 214);">if</span><span> idx </span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span> n </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">and</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx </span><span class="token" style="color: rgb(212, 212, 212);">+</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">!=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>                    nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>idx </span><span class="token" style="color: rgb(212, 212, 212);">+</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">-</span><span class="token" style="color: rgb(181, 206, 168);">1</span><span>  </span><span class="token" style="color: rgb(106, 153, 85);"># Mark the right neighbor</span><span>
+</span></span><span>
+</span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> score
+</span></span><span>
+</span><span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div></div>
+<hr>
+<p><img alt="c7a0bae9-3d2d-4f75-a1cb-b5eb09aba264_1733973284.784742.png" src="https://assets.leetcode.com/users/images/c9e314e6-274d-46bd-a0ff-2e8f9a56ff2c_1734052878.2244864.png"></p></div></div><span style="font-size: 0px; line-height: 0;">&nbsp;</span></div></div></div><div class="flex justify-between gap-4"><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/find-score-of-an-array-after-marking-all-elements/solutions/6130213/find-score-of-an-array-after-marking-all-elements/"><div class="flex h-full items-center order-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M5.414 11H21a1 1 0 110 2H5.414L12 19.586A1 1 0 0110.586 21l-8.293-8.293a.997.997 0 01.003-1.417L10.586 3A1 1 0 1112 4.414L5.414 11z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-2"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-right">Previous</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-right">Find Score of an Array After Marking All Elements</div></div></a><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/find-score-of-an-array-after-marking-all-elements/solutions/6142760/no-queues-no-sorting-single-pass-o-n-c-c-0-ms-java-c-2-ms-python-35-ms-beating-100/"><div class="flex h-full items-center order-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M18.586 13H3a1 1 0 110-2h15.586L12 4.414A1 1 0 0113.414 3l8.293 8.293a.997.997 0 01-.003 1.417L13.414 21A1 1 0 0112 19.586L18.586 13z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-1"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-left">Next</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-left">No Queues, No Sorting, Single Pass O(n) | C/C++ 0 ms Java/C# 2 ms Python 35 ms | Beating 100%</div></div></a></div><div class="w-full"><div class="flex min-w-0 flex-col gap-3"><div class="text-[22px] font-medium leading-8 [overflow-wrap:anywhere] text-lc-text-primary dark:text-dark-lc-text-primary">No Queues, No Sorting, Single Pass O(n) | C/C++ 0 ms Java/C# 2 ms Python 35 ms | Beating 100%</div><div class="flex items-center gap-4"><div data-state="closed"><a target="_blank" rel="noopener noreferrer" class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate h-8 min-h-[32px] w-8 min-w-[32px] block" href="/u/sergei99/"><img alt="" class="rounded-1/2 object-cover h-full w-full rounded-full" src="https://assets.leetcode.com/users/default_avatar.jpg"></a></div><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2"><div class="flex items-center gap-1 truncate" translate="no"><a target="_blank" rel="noopener noreferrer" class="no-underline text-sm overflow-hidden max-w-[100px] md:max-w-[200px] truncate hover:text-blue-s dark:hover:text-dark-blue-s font-normal text-text-primary dark:text-text-primary" href="/u/sergei99/">Sergei</a><div class="h-3.5 w-3.5" data-state="closed"><img alt="500 Days Badge" class="h-full w-full" src="https://assets.leetcode.com/static_assets/marketing/lg500.png"></div></div></div><div class="flex items-center gap-3"><div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M1.104 12.444a1 1 0 010-.888c.13-.26.37-.693.722-1.241A18.85 18.85 0 013.88 7.652C6.184 5.176 8.896 3.667 12 3.667s5.816 1.509 8.119 3.985c.79.85 1.475 1.756 2.055 2.663.352.548.593.98.722 1.24a1 1 0 010 .89c-.13.26-.37.692-.722 1.24a18.848 18.848 0 01-2.055 2.663c-2.303 2.476-5.015 3.985-8.119 3.985s-5.816-1.509-8.119-3.985a18.846 18.846 0 01-2.055-2.663c-.352-.548-.593-.98-.722-1.24zm2.406.162a16.87 16.87 0 001.836 2.38c1.959 2.106 4.19 3.347 6.654 3.347 2.465 0 4.695-1.24 6.654-3.347A16.87 16.87 0 0020.86 12a16.871 16.871 0 00-2.206-2.986C16.695 6.908 14.464 5.667 12 5.667c-2.465 0-4.695 1.24-6.654 3.347A16.87 16.87 0 003.14 12c.108.188.232.391.37.607zM12 15.75c-2.06 0-3.727-1.68-3.727-3.75 0-2.07 1.667-3.75 3.727-3.75 2.06 0 3.727 1.68 3.727 3.75 0 2.07-1.667 3.75-3.727 3.75zm0-2c.952 0 1.727-.782 1.727-1.75s-.775-1.75-1.727-1.75c-.952 0-1.727.782-1.727 1.75s.775 1.75 1.727 1.75z" clip-rule="evenodd"></path></svg><div class="text-xs dark:text-sd-gray-500 text-sd-gray-400">2756</div></div><div class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-4 w-4 dark:text-sd-gray-500 text-sd-gray-400"><path fill-rule="evenodd" d="M19 11.063V7h-2v1a1 1 0 11-2 0V7H9v1a1 1 0 01-2 0V7H5v4.063h14zm0 2H5V19h14v-5.938zM9 5h6V4a1 1 0 112 0v1h2a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2V4a1 1 0 012 0v1z" clip-rule="evenodd"></path></svg><div class="min-w-max text-xs dark:text-sd-gray-500 text-sd-gray-400"><span class="" data-state="closed">Dec 13, 2024</span></div></div></div></div></div><div class="flex flex-grow flex-nowrap items-center gap-2 overflow-hidden my-1"><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Array</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">C</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">C++</div><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">Java</div><button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r3e:" data-state="closed" class=""><span><div class="whitespace-nowrap rounded-[20px] py-[1px] text-xs h-5 flex items-center px-3 bg-lc-fill-01 dark:bg-dark-lc-fill-01 text-lc-text-secondary dark:text-dark-lc-text-secondary">4+</div></span></button></div></div></div><div class="break-words"><div><div class="flex flex-col w-full" style="position: relative;"><div><div class="mYe_l WRmCx"><h1 id="intuition">Intuition</h1>
+<p>The task is to pick up smallest unmarked elements from the input array and add them to the sum, each time marking the taken element and both of its neighbours if any. If there are multiple global minimums, we take the leftmost one. The processing order is fully deterministic.</p>
+<p>There can be up to <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span></span> elements in total, having values in the range <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">1</span><span class="mpunct">;</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span><span class="mclose">]</span></span></span></span></span>.</p>
+<h1 id="approach">Approach</h1>
+<p>Seeing as how the solution section is overwhelmed with heap and sort-based solutions (with some <a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/solutions/6141071/bitset-sorting33-ms-beats-9928-by-anwend-x4nb/" target="_blank">pleasant rare exceptions</a>), we are providing a simple and fast algorithm, already used by a number of participants.</p>
+<p>Consider a simplistic example:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>9</th><th>8</th><th>7</th><th>11</th><th>10</th><th>9</th><th>8</th><th>9</th><th>8</th><th>7</th></tr></thead></table>
+<p>If we process elements one by one as described in the problem statement, first of all we take the first-order element 7 (and cancel out both of its neighbours).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>9</th><th>_</th><th>_</th><th>_</th><th>10</th><th>9</th><th>8</th><th>9</th><th>8</th><th>7</th><th><code>? = 7</code></th></tr></thead></table>
+<p>Then we take another element 7.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>9</th><th>_</th><th>_</th><th>_</th><th>10</th><th>9</th><th>8</th><th>9</th><th>_</th><th>_</th><th><code>? = 14</code></th></tr></thead></table>
+<p>The next global minimum is 8.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>9</th><th>_</th><th>_</th><th>_</th><th>10</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th><code>? = 22</code></th></tr></thead></table>
+<p>The next global minimum is 9.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>_</th><th>_</th><th>_</th><th>_</th><th>10</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th><code>? = 31</code></th></tr></thead></table>
+<p>And the last one is 10.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th><code>? = 41</code></th></tr></thead></table>
+<p>The order of summation was 7, 7, 8, 9, 10.</p>
+<p>A few observations:</p>
+<ol>
+<li data-length="1">Priority elements are local minimums. Differing local minimums (e.g. 7 and 8) are always separated from each other by some other element, otherwise they wouldn't both be local minimums. So they don't cancel each other out.</li>
+<li data-length="1">If we have multiple subsequent equal local minimums, we would be able to process only half of them, starting from the leftmost one.</li>
+<li data-length="1">A subsequence preceding a local minimum is always descending (otherwise it wouldn't be a minimum). Therefore once we cancel out a local minimum and its immediately preceding element, the one before becomes a local minimum (if the subsequence is long enough). See e.g. the first step of our example.: we take out the leftmost 7, 8 gets cancelled out as a neighbour, and then preceding 9 becomes a local minimum. Therefore preceding elements are included in the sum if their indexes have the same oddity as the minimum's index.</li>
+<li data-length="1">The processing order is not important as long as we ensure that we don't process a local minimum that would otherwise be cancelled out before we get to it. That can be ensured by following left-to-right order for equal minimums and obeying the index oddity rule for descending sequences.</li>
+</ol>
+<p>So new "out-of-order" algorithm. The original sequence:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>9</th><th>8</th><th>7</th><th>11</th><th>10</th><th>9</th><th>8</th><th>9</th><th>8</th><th>7</th></tr></thead></table>
+<p>Finding the first local minimum, that would be 7.<br>
+Adding to the sum that element and every second element preceding it (so the element 9 gets included):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>_</th><th>_</th><th>_</th><th>_</th><th>10</th><th>9</th><th>8</th><th>9</th><th>8</th><th>7</th><th><code>?=16</code></th></tr></thead></table>
+<p>Then we advance the current index by 2 (because the neighbour of 7 has vanished) and look for another local minimum. That would be 8. Note that we don't care for a global minimum.<br>
+We add 8 and its predecessor at the distance of 2 (which is element 10). If there were more elements between minimums, we would have also included elements at the distances of 4, 6, 8, etc., i.e. strictly every second element.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>8</th><th>7</th><th><code>?=34</code></th></tr></thead></table>
+<p>Advancing the index by 2 and finding the remaining local minimum (7). There is nothing more to add now, because only one predecessor remains, and it's cancelled out. So we only add 7.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th>_</th><th><code>?=41</code></th></tr></thead></table>
+<p>The order of summation was 7, 9, 8, 10, 7. We've captured exactly same elements, but in a different order.</p>
+<p>Note that we don't have to scan the array backwards to get the interleaving sum. Instead we could separately accumulate sums of even and odd positioned elements, while searching for the minimum, and take the appropriate sum afterwards.</p>
+<h1 id="complexity">Complexity</h1>
+<ul>
+<li>
+<p>Time complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></p>
+</li>
+<li>
+<p>Space complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
+</li>
+</ul>
+<h1 id="measurements">Measurements</h1>
+<p>(Figures are clickable, referring to the relevant submissions)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Language</th><th>Time, ms</th><th>Beating</th><th>Memory, Mb</th><th>Beating</th></tr></thead><tbody><tr><td>C++</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477659296" target="_blank">0</a></td><td>100%</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477659296" target="_blank">92.48</a></td><td>99.35%</td></tr><tr><td>C</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477798729" target="_blank">0</a></td><td>100%</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477798729" target="_blank">16.78</a></td><td>100%</td></tr><tr><td>Java</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477796134" target="_blank">2</a></td><td>100%</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477796134" target="_blank">59.53</a></td><td>54.17%</td></tr><tr><td>Scala</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477810421" target="_blank">3</a></td><td>100%</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477810421" target="_blank">73.64</a></td><td>100%</td></tr><tr><td>Kotlin</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477818007" target="_blank">4</a></td><td>100%</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477818007" target="_blank">56.29</a></td><td>100%</td></tr><tr><td>C#</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477831407" target="_blank">2</a></td><td>100%</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477831407" target="_blank">68.42</a></td><td>92.31%</td></tr><tr><td>Python 3</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477802822" target="_blank">35</a></td><td>100%</td><td><a href="https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/submissions/1477802822" target="_blank">29.08</a></td><td>98.71%</td></tr></tbody></table>
+<h1 id="code">Code</h1>
+<div class="border-gray-3 dark:border-dark-gray-3 mb-6 overflow-hidden rounded-lg border text-sm"><div class="flex select-none overflow-x-auto bg-layer-2 dark:bg-dark-layer-2"><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-1 dark:text-dark-label-1 d8276">C++</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Java</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Scala</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Kotlin</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">C#</div><div class="font-menlo relative flex h-10 cursor-pointer items-center justify-center px-3 font-medium transition-all text-label-4 dark:text-dark-label-4 hover:text-label-1 dark:hover:text-dark-label-1 d8276">Python3</div></div><div class="px-3 py-2.5 bg-fill-3 dark:bg-dark-fill-3"><div class="group relative" translate="no"><pre style="color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 0px; margin: 0px; overflow: auto; background: none;"><code class="language-cpp" style="white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, &quot;Courier New&quot;, monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span><span class="token" style="color: rgb(86, 156, 214);">class</span><span> </span><span class="token" style="color: rgb(78, 201, 176);">Solution</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span></span><span class="token" style="color: rgb(86, 156, 214);">public</span><span class="token" style="color: rgb(212, 212, 212);">:</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(86, 156, 214);">static</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">long</span><span> </span><span class="token" style="color: rgb(86, 156, 214);">long</span><span> </span><span class="token" style="color: rgb(220, 220, 170);">findScore</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(86, 156, 214);">const</span><span> vector</span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span class="token" style="color: rgb(86, 156, 214);">int</span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">&amp;</span><span>nums</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">const</span><span> uint n </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span class="token" style="color: rgb(220, 220, 170);">size</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">uint64_t</span><span> s </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>uint j </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span> j </span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span> n</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span> j </span><span class="token" style="color: rgb(212, 212, 212);">+=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">2</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">{</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">uint64_t</span><span> odd </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> even </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>            </span><span class="token" style="color: rgb(86, 156, 214);">for</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>uint v </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>j</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> w</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span> j </span><span class="token" style="color: rgb(212, 212, 212);">+</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1u</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">&lt;</span><span> n </span><span class="token" style="color: rgb(212, 212, 212);">&amp;&amp;</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>j</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">&gt;</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>w </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>j </span><span class="token" style="color: rgb(212, 212, 212);">+</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1u</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span> j</span><span class="token" style="color: rgb(212, 212, 212);">++</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> v </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> w</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span></span><span><span>                </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>j </span><span class="token" style="color: rgb(212, 212, 212);">&amp;</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1u</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">?</span><span> odd </span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> even</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">+=</span><span> v</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>            s </span><span class="token" style="color: rgb(212, 212, 212);">+=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span>j </span><span class="token" style="color: rgb(212, 212, 212);">&amp;</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">1u</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">?</span><span> odd </span><span class="token" style="color: rgb(212, 212, 212);">:</span><span> even</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">+</span><span> nums</span><span class="token" style="color: rgb(212, 212, 212);">[</span><span>j</span><span class="token" style="color: rgb(212, 212, 212);">]</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span><span>        </span><span class="token" style="color: rgb(86, 156, 214);">return</span><span> s</span><span class="token" style="color: rgb(212, 212, 212);">;</span><span>
+</span></span><span><span>    </span><span class="token" style="color: rgb(212, 212, 212);">}</span><span>
+</span></span><span><span></span><span class="token" style="color: rgb(212, 212, 212);">}</span><span class="token" style="color: rgb(212, 212, 212);">;</span></span></code></pre><div class="absolute -right-1.5 -top-0.5 flex gap-2"><div class="z-base-1 hidden rounded border group-hover:block border-border-quaternary dark:border-border-quaternary bg-layer-02 dark:bg-layer-02"><div class="relative cursor-pointer flex h-[22px] w-[22px] items-center justify-center bg-layer-02 dark:bg-layer-02 hover:bg-fill-tertiary dark:hover:bg-fill-tertiary rounded-[4px]" data-state="closed"><div><div data-state="closed"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3 h-3.5 w-3.5 text-text-primary dark:text-text-primary"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"></path></svg></div></div></div></div></div></div></div></div></div></div></div><span style="font-size: 0px; line-height: 0;">&nbsp;</span></div></div></div><div class="flex justify-between gap-4"><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/find-score-of-an-array-after-marking-all-elements/solutions/6141171/stack-sorting-heap-3-approach-in-3-languages/"><div class="flex h-full items-center order-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M5.414 11H21a1 1 0 110 2H5.414L12 19.586A1 1 0 0110.586 21l-8.293-8.293a.997.997 0 01.003-1.417L10.586 3A1 1 0 1112 4.414L5.414 11z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-2"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-right">Previous</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-right">Stack || Sorting || Heap 3 Approach in 3 languages ? </div></div></a><a class="no-underline hover:text-blue-s dark:hover:text-dark-blue-s truncate hover:bg-fill-1 dark:hover:bg-dark-fill-1 border-fill-2 dark:border-dark-fill-2 flex min-w-0 justify-between gap-3 rounded-lg border px-4 py-3 w-full" href="/problems/find-score-of-an-array-after-marking-all-elements/solutions/6141071/2-pointer-bitset-sorting-vs-radix-sort-beats-100/"><div class="flex h-full items-center order-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="text-lc-icon-secondary dark:text-dark-lc-icon-secondary h-4 w-4"><path fill-rule="evenodd" d="M18.586 13H3a1 1 0 110-2h15.586L12 4.414A1 1 0 0113.414 3l8.293 8.293a.997.997 0 01-.003 1.417L13.414 21A1 1 0 0112 19.586L18.586 13z" clip-rule="evenodd"></path></svg></div><div class="flex w-full flex-col gap-1 overflow-hidden order-1"><div class="text-lc-text-tertiary dark:text-dark-lc-text-tertiary text-[11px] font-medium leading-[13px] text-left">Next</div><div class="text-lc-text-primary dark:text-dark-lc-text-primary text-md truncate font-medium text-left">2 pointer|Bitset+ sorting vs radix sort||Beats 100%</div></div></a></div>

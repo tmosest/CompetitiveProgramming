@@ -1,0 +1,25 @@
+2706. Buy Two Chocolates;=;=Easy;=;=public int buyChoco(int[] prices, int money);=;=You are given an integer array prices representing the prices of various chocolates in a store. You are also given a single integer money, which represents your initial amount of money.
+
+You must buy exactly two chocolates in such a way that you still have some non-negative leftover money. You would like to minimize the sum of the prices of the two chocolates you buy.
+
+Return the amount of money you will have leftover after buying the two chocolates. If there is no way for you to buy two chocolates without ending up in debt, return money. Note that the leftover must be non-negative.
+
+ 
+
+Example 1:
+
+Input: prices = [1,2,2], money = 3
+Output: 0
+Explanation: Purchase the chocolates priced at 1 and 2 units respectively. You will have 3 - 3 = 0 units of money afterwards. Thus, we return 0.
+Example 2:
+
+Input: prices = [3,2,3], money = 3
+Output: 3
+Explanation: You cannot buy 2 chocolates without going in debt, so we return 3.
+ 
+
+Constraints:
+
+2 <= prices.length <= 50
+1 <= prices[i] <= 100
+1 <= money <= 100;=;=https://leetcode.com/problems/buy-two-chocolates/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/buy-two-chocolates/solutions/7262706/beginner-friendly-java-solution-buy-two-umqcg/;;https://leetcode.com/problems/buy-two-chocolates/solutions/4427319/video-give-me-5-minutes-how-we-think-abo-el30/;;https://leetcode.com/problems/buy-two-chocolates/solutions/4427521/beats-100-in-java-explained-with-video-c-lrbu/;;https://leetcode.com/problems/buy-two-chocolates/solutions/4427795/101-beats-easy-solution-time-complexity-pgzxy/;;https://leetcode.com/problems/buy-two-chocolates/solutions/6762434/fast-and-clear-with-iterations-in-tables-tarp/;;https://leetcode.com/problems/buy-two-chocolates/solutions/4427257/beats-100-easiest-solutions-cjavapythonj-k8f2/;;https://leetcode.com/problems/buy-two-chocolates/solutions/7023553/easy-simple-java-solution-by-prakhar-131-cbw4/;;https://leetcode.com/problems/buy-two-chocolates/solutions/7154510/java-by-sivaaleet-h3uc/;;https://leetcode.com/problems/buy-two-chocolates/solutions/5330601/greedy-tutorial-buy-two-chocolates-by-ne-ujad/;;https://leetcode.com/problems/buy-two-chocolates/solutions/4428419/easy-solution-c-java-python-by-me_avi-iyje/;;https://leetcode.com/problems/buy-two-chocolates/solutions/4427501/easy-code-with-explanation-brute-and-bet-3gie/;;https://leetcode.com/problems/buy-two-chocolates/solutions/4427470/simplest-solution-on-leetcode-beats-100-5rzls/;;https://leetcode.com/problems/buy-two-chocolates/solutions/6535572/easy-solution-sorting-java-python-c-by-v-7olv/;;https://leetcode.com/problems/buy-two-chocolates/solutions/6858976/solution-that-beats-100-on-runtime-by-ra-ipg1/;;https://leetcode.com/problems/buy-two-chocolates/solutions/6626128/easy-solution-in-java-by-prajesh07-qrt9/;;;=;==;=;=;

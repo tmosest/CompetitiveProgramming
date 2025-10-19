@@ -1,0 +1,25 @@
+1062. Longest Repeating Substring;=;=Medium;=;=public int longestRepeatingSubstring(String s);=;=Given a string s, return the length of the longest repeating substrings. If no repeating substring exists, return 0.
+
+ 
+
+Example 1:
+
+Input: s = "abcd"
+Output: 0
+Explanation: There is no repeating substring.
+Example 2:
+
+Input: s = "abbaba"
+Output: 2
+Explanation: The longest repeating substrings are "ab" and "ba", each of which occurs twice.
+Example 3:
+
+Input: s = "aabcaabdaab"
+Output: 3
+Explanation: The longest repeating substring is "aab", which occurs 3 times.
+ 
+
+Constraints:
+
+1 <= s.length <= 2000
+s consists of lowercase English letters.;=;=https://leetcode.com/problems/longest-repeating-substring/description/?envType=problem-list-v2&envId=ve7on0q5;=;=https://leetcode.com/problems/longest-repeating-substring/solutions/1936688/simple-java-dp-by-varundhiman421-wwgw/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5570105/java-trie-longest-path-where-count-1-by-u9jcc/;;https://leetcode.com/problems/longest-repeating-substring/solutions/1712032/java-hashset-solution-by-oyangyang-m32t/;;https://leetcode.com/problems/longest-repeating-substring/solutions/6941421/binary-search-solution-on2logn-by-saketc-iqrt/;;https://leetcode.com/problems/longest-repeating-substring/solutions/687670/java-time-onlogn-binary-search-rabin-kar-4e7j/;;https://leetcode.com/problems/longest-repeating-substring/solutions/7136598/java-solution-dp-by-ndsjqwbbb-57qj/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5875874/kmp-solution-by-donl828-9ict/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5693032/java-binary-search-solution-using-rabin-p5vbo/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5621272/suffix-tree-java-n2-by-n00bs404-2b5w/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5604284/java-1ms-100-trie-limited-depth-and-self-kpkf/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5591059/kmp-time-on2-space-on-by-rojas-yikk/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5582615/trie-approach-by-abhishek_kandukoori-ijx4/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5565751/easy-to-understand-hashmap-max-heap-java-a9g8/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5323748/java-by-vharshal1994-qunu/;;https://leetcode.com/problems/longest-repeating-substring/solutions/5236877/java-brute-force-using-hashset-and-loop-b7c7a/;;;=;==;=;=;

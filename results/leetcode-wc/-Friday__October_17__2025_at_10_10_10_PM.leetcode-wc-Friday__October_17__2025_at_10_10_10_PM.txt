@@ -1,0 +1,36 @@
+3397. Maximum Number of Distinct Elements After Operations;=;=Medium;=;=public int maxDistinctElements(int[] nums, int k);=;=You are given an integer array nums and an integer k.
+
+You are allowed to perform the following operation on each element of the array at most once:
+
+Add an integer in the range [-k, k] to the element.
+Return the maximum possible number of distinct elements in nums after performing the operations.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,2,3,3,4], k = 2
+
+Output: 6
+
+Explanation:
+
+nums changes to [-1, 0, 1, 2, 3, 4] after performing operations on the first four elements.
+
+Example 2:
+
+Input: nums = [4,4,4,4], k = 1
+
+Output: 3
+
+Explanation:
+
+By adding -1 to nums[0] and 1 to nums[1], nums changes to [3, 5, 4, 4].
+
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109
+0 <= k <= 109;=;=https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/description/?envType=daily-question&envId=2025-10-18;=;=https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7282898/pick-the-smallest-cpythonjava-by-leading-a3e0/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7282866/maximum-number-of-distinct-elements-afte-ak3s/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7282962/simple-solution-c-java-python-detailed-e-uum4/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7283172/easiest-java-code-by-05ewasuouk-x1tc/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7282909/java-simple-explanation-video-included-b-w1xm/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7282916/134-ms-beats-3091-easy-approach-and-step-74ml/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7282897/greedy-placement-approach-easy-to-unders-cb3q/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7283155/beats-8414-greedy-sorting-3397-maximum-n-mygi/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7283153/maximum-number-of-distinct-elements-afte-heyy/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7283117/beats-100java-by-kiranbkvb6-jzyq/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7283111/easy-greedy-approach-in-on-log-n-java-c-4vhlm/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7283065/85-beats-easy-simple-java-solution-by-pr-zmfi/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7283038/onlogn-solution-by-mrdrac-3cgz/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7282996/19-ms-beats-8414-by-gunanshu_joshi-v2p0/;;https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/solutions/7282992/easy-intuition-easy-to-understand-logic-2frdp/;;;=;==;=;=;
